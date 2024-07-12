@@ -1,0 +1,768 @@
+@inproceedings{DBLP:conf/csfw/FirsovU23,
+	author = {Denis Firsov and
+                  Dominique Unruh},
+	title = {Zero-Knowledge in EasyCrypt},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00015},
+	doi = {10.1109/CSF57540.2023.00015},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FirsovU23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We formalize security properties of zero-knowledge protocols and their proofs in EasyCrypt. Specifically, we focus on sigma protocols (three-round protocols). Most importantly, we also cover properties whose security proofs require the use of rewinding; prior work has focused on properties that do not need this more advanced technique. On our way we give generic definitions of the main properties associated with sigma protocols, both in the computational and information-theoretical setting. We give generic derivations of soundness, (malicious-verifier) zero-knowledge, and proof of knowledge from simpler assumptions with proofs which rely on rewinding. Also, we address sequential composition of sigma protocols. Finally, we illustrate the applicability of our results on three zero-knowledge protocols: Fiat-Shamir (for quadratic residues), Schnorr (for discrete logarithms), and Blum (for Hamiltonian cycles, NP-complete).}
+}
+
+
+@inproceedings{DBLP:conf/csfw/FaustHKS23,
+	author = {Sebastian Faust and
+                  Carmit Hazay and
+                  David Kretzler and
+                  Benjamin Schlosser},
+	title = {Statement-Oblivious Threshold Witness Encryption},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {17--32},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00026},
+	doi = {10.1109/CSF57540.2023.00026},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FaustHKS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The notion of witness encryption introduced by Garg et al. (STOC'13) allows to encrypt a message under a statement x from some NP-language \mathcal{L} with associated relation (x, w)\in \mathcal{R} , where decryption can be carried out with the corresponding witness w . Unfortunately, known constructions for general-purpose witness encryption rely on strong assumptions, and are mostly of theoretical interest. To address these short-comings, Goyal et al. (PKC'22) recently introduced a blockchain-based alternative, where a committee decrypts ciphertexts when provided with a valid witness w . Blockchain-based committee solutions have recently gained broad interest to offer security against more powerful adversaries and construct new cryptographic primitives. We follow this line of work, and propose a new notion of statement-oblivious threshold witness encryption. Our new notion offers the functionality of committee-based witness encryption while additionally hiding the statement used for encryption. We present two ways to build statement-oblivious threshold witness encryption, one generic transformation based on anonymous threshold identity-based encryption (A-TIBE) and one direct construction based on bilinear maps. Due to the lack of efficient A-TIBE schemes, the former mainly constitutes a feasibility result, while the latter yields a concretely efficient scheme.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/JavarK23,
+	author = {Zahra Javar and
+                  Bruce M. Kapron},
+	title = {Preimage Awareness in Linicrypt},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {33--42},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00017},
+	doi = {10.1109/CSF57540.2023.00017},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/JavarK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We extend the analysis of collision-resistant hash functions in the Linicrypt model presented by McQuoid, Swope & Rosulek (TCC 2019) in order to characterize preimage awareness, a security property defined by Dodis, Ristenpart & Shrimpton (Eurocrypt 2009), who also demonstrate its utility in the construction of indifferentiable hash functions. We present a simple and efficiently-checkable property of Linicrypt programs which characterizes preimage awareness. Finally, we show that this characterization may be efficiently automated and as an example, use it to enumerate all preimage-aware compression functions which use two calls to the random oracle. This includes several functions shown to be preimage aware by Dodis et. al. using hand-crafted proofs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ChevalCD23,
+	author = {Vincent Cheval and
+                  V{\'{e}}ronique Cortier and
+                  Alexandre Debant},
+	title = {Election Verifiability with ProVerif},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {43--58},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00032},
+	doi = {10.1109/CSF57540.2023.00032},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ChevalCD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Electronic voting systems should guarantee (at least) vote privacy and verifiability. Formally proving these two properties is challenging. Indeed, vote privacy is typically expressed as an equivalence property, hard to analyze for automatic tools, while verifiability requires to count the number of votes, to guarantee that all honest votes are properly tallied. We provide a full characterization of E2E-verifiability in terms of two simple properties, that are shown to be both sufficient and necessary. In contrast, previous approaches proposed sufficient conditions only. These two properties can easily be expressed in a formal tool like ProVerif but remain hard to prove automatically. Therefore, we provide a generic election framework, together with a library of lemmas, for the (automatic) proof of E2E-verifiability. We successfully apply our framework to several protocols of the literature that include two complex, industrial-scale voting protocols, namely Swiss Post and CHVote, designed for the Swiss context.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BalogluBMP23,
+	author = {Sevdenur Baloglu and
+                  Sergiu Bursuc and
+                  Sjouke Mauw and
+                  Jun Pang},
+	title = {Election Verifiability in Receipt-Free Voting Protocols},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {59--74},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00005},
+	doi = {10.1109/CSF57540.2023.00005},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BalogluBMP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Electronic voting is a prominent example of conflicting requirements in security protocols, as the triad of privacy, verifiability and usability is essential for their deployment in practice. Receipt-freeness is a particularly strong notion of privacy, stating that it should be preserved even if voters cooperate with the adversary. While there are impossibility results showing we cannot have receipt-freeness and verifiability at the same time, there are several protocols that aim to achieve both, based on carefully devised trust assumptions. To evaluate their security, we propose a general symbolic definition of election verifiability, extending the state of the art to capture the more complex structure of receipt-free protocols. We apply this definition to analyse, using ProVerif, recent protocols with promising practical features: BeleniosRF and several variants of Selene. Against BeleniosRF, we find several attacks showing that verifiability in Belenios does indeed suffer from the attempt to introduce receipt-freeness. On the other hand, Selene satisfies a weaker notion of receipt-freeness, but we show that it satisfies verifiability in stronger corruption scenarios. We introduce a general frame-work to compare the verifiability of these protocols in various corruption scenarios and conclude with an analysis of SeleneRF, an attempt to get the best of both that we formalise in this paper. In addition to extending the symbolic model, our results point to foundational gaps in current cryptographic models for election verifiability, as they fail to uncover attacks that we do.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BaeldeDD23,
+	author = {David Baelde and
+                  Alexandre Debant and
+                  St{\'{e}}phanie Delaune},
+	title = {Proving Unlinkability Using ProVerif Through Desynchronised Bi-Processes},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {75--90},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00022},
+	doi = {10.1109/CSF57540.2023.00022},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BaeldeDD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unlinkability is a privacy property of crucial importance for several systems such as mobile phones or RFID chips. Analysing this security property is very complex, and highly error-prone. Therefore, formal verification with machine support is desirable. Unfortunately, existing techniques are not sufficient to directly apply verification tools to automatically prove unlinkability. In this paper, we overcome this limitation by defining a simple transformation that will exploit some specific features of ProVerif. This transformation, together with some generic axioms, allows the tool to successfully conclude on several case studies. We have implemented our approach, effectively obtaining direct proofs of unlinkability on several protocols that were, until now, out of reach of automatic verification tools.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/RanchalPedrosaG23,
+	author = {Alejandro Ranchal{-}Pedrosa and
+                  Vincent Gramoli},
+	title = {Basilic: Resilient-Optimal Consensus Protocols with Benign and Deceitful
+                  Faults},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {91--106},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00002},
+	doi = {10.1109/CSF57540.2023.00002},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/RanchalPedrosaG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The problem of Byzantine consensus has been key to designing secure distributed systems. However, it is particularly difficult, mainly due to the presence of Byzantine processes that act arbitrarily and the unknown message delays in general networks. Although it is well known that both safety and liveness are at risk as soon as
+n/3
+Byzantine processes fail, very few works attempted to characterize precisely the faults that produce safety violations from the faults that produce termination violations. In this paper, we present a new lower bound on the solvability of the consensus problem by distinguishing deceitful faults violating safety and benign faults violating termination from the more general Byzantine faults, in what we call the Byzantine-deceitful-benign fault model. We show that one cannot solve consensus if
+n≤3t+d+2q
+with
+t
+Byzantine processes,
+d
+deceitful processes, and
+q
+benign processes. In addition, we show that this bound is tight by presenting the Basilic class of consensus protocols that solve consensus when
+n>3t+d+2q
+. These protocols differ in the number of processes from which they wait to receive messages before progressing. Each of these protocols is thus better suited for some applications depending on the predominance of benign or deceitful faults.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/RainAKM23,
+	author = {Sophie Rain and
+                  Georgia Avarikioti and
+                  Laura Kov{\'{a}}cs and
+                  Matteo Maffei},
+	title = {Towards a Game-Theoretic Security Analysis of Off-Chain Protocols},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {107--122},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00003},
+	doi = {10.1109/CSF57540.2023.00003},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/RainAKM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Off-chain protocols constitute one of the most promising approaches to solve the inherent scalability issue of blockchain technologies. The core idea is to let parties transact on-chain only once to establish a channel between them, leveraging later on the resulting channel paths to perform arbitrarily many peer-to-peer transactions off-chain. While significant progress has been made in terms of proof techniques for off-chain protocols, existing approaches do not capture the game-theoretic incentives at the core of their design, which led to overlooking significant attack vectors like the Wormhole attack in the past. In this work we take a first step towards a principled game-theoretic security analysis of off-chain protocols by introducing the first game-theoretic model that is expressive enough to reason about their security. We advocate the use of Extensive Form Games (EFGs) and introduce two instances of EFGs to capture security properties of the closing and the routing of the Lightning Network. Specifically, we model the closing protocol, which relies on punishment mechanisms to disincentivize parties to upload old channel states on-chain. Moreover, we model the routing protocol, thereby formally characterizing the Wormhole attack, a vulnerability that undermines the fee-based incentive mechanism underlying the Lightning Network.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ZhangM23,
+	author = {Yunxiao Zhang and
+                  Pasquale Malacaria},
+	title = {Keep Spending: Beyond Optimal Cyber-Security Investment},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {123--136},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00024},
+	doi = {10.1109/CSF57540.2023.00024},
+	timestamp = {Mon, 05 Feb 2024 20:33:04 +0100},
+	biburl = {https://dblp.org/rec/conf/csfw/ZhangM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce an efficient solution for Stackelberg games in the context of a class of Security games and bounded rational attackers. These games model a threat scenario where an attacker can launch multi-stage attacks against a defender who can deploy defensive controls subject to some budget constraints. Because the optimal solution in these games may leave some unspent budget, the question of what to do in this situation arises. In this work, we suggest investing it iteratively in the closest sub-optimal solutions until possible. Here we develop the needed theory and framework, starting from defining sub-optimality and solving the corresponding optimisations. By using total unimodularity and precise linear programming (LP) relaxation, we provide an efficient computational solution to these games. The security improvement of the proposed approach is illustrated with an AI threat scenario.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BrzuskaO23,
+	author = {Chris Brzuska and
+                  Sabine Oechsner},
+	title = {A State-Separating Proof for Yao's Garbling Scheme},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {137--152},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00009},
+	doi = {10.1109/CSF57540.2023.00009},
+	timestamp = {Sat, 30 Sep 2023 09:37:58 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BrzuskaO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure multiparty computation enables mutually distrusting parties to compute a public function of their secret inputs. One of the main approaches for designing MPC protocols are garbled circuits whose core component is usually referred to as a garbling scheme. In this work, we revisit the security of Yao's garbling scheme and provide a modular security proof which composes the security of multiple layer garblings to prove security of the full circuit garbling. We perform our security proof in the style of state-separating proofs (ASIACRYPT 2018).}
+}
+
+
+@inproceedings{DBLP:conf/csfw/FraserGQ23,
+	author = {Ashley Fraser and
+                  Lydia Garms and
+                  Elizabeth A. Quaglia},
+	title = {On the Incoercibility of Digital Signatures},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {153--168},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00018},
+	doi = {10.1109/CSF57540.2023.00018},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FraserGQ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce incoercible digital signature schemes, a variant of a standard digital signature. Incoercible signatures enable signers, when coerced to produce a signature for a message chosen by an attacker, to generate fake signatures that are indistinguishable from real signatures, even if the signer is compelled to reveal their full history (including their secret signing keys and any randomness used to produce keys/signatures) to the attacker. Additionally, we introduce an authenticator that can detect fake signatures, which ensures that coercion is identified. We present a formal security model for incoercible signature schemes that comprises an established definition of unforgeability and captures new notions of weak receipt-freeness, strong receipt-freeness and coercion-resistance. We demonstrate that an incoercible signature scheme can be viewed as a transformation of any generic signature scheme. Indeed, we present two incoercible signature scheme constructions that are built from a standard signature scheme and a sender-deniable encryption scheme. We prove that our first construction satisfies coercion-resistance, and our second satisfies strong receipt-freeness. We conclude by presenting an extension to our security model: we show that our security model can be extended to the designated verifier signature scheme setting in an intuitive way as the designated verifier can assume the role of the authenticator and detect coercion during the verification process.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/MedleyLQ23,
+	author = {Liam Medley and
+                  Angelique Faye Loe and
+                  Elizabeth A. Quaglia},
+	title = {SoK: Delay-Based Cryptography},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {169--183},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00028},
+	doi = {10.1109/CSF57540.2023.00028},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/MedleyLQ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we provide a systematisation of knowledge of delay-based cryptography, in which we discuss and compare the existing primitives within cryptography that utilise a time-delay. We start by considering the role of time within cryptography, explaining broadly what a delay aimed to achieve at its inception and now, in the modern age. We then move on to describing the underlying assumptions used to achieve these goals, and analyse topics including trust, decentralisation and concrete methods to implement a delay. We then survey the existing primitives, discussing their security properties, instantiations and applications. We make explicit the relationships between these primitives, identifying a hierarchy and the theoretical gaps that exist. We end this systematisation of knowledge by highlighting relevant future research directions within the field of delay-based cryptography, from which this area would greatly benefit.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ChevalR23,
+	author = {Vincent Cheval and
+                  Itsaka Rakotonirina},
+	title = {Indistinguishability Beyond Diff-Equivalence in ProVerif},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {184--199},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00036},
+	doi = {10.1109/CSF57540.2023.00036},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ChevalR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {When formalising cryptographic protocols, privacy-type properties such as strong flavours of secrecy, anonymity or unlinkability, are often modelled by indistinguishability statements. Proving them is notoriously more challenging than trace properties which benefit from a well-established tool support today. State-of-the-art techniques often exhibit significant limitations, e.g., consider only a bounded number of protocol sessions, or prove diff-equivalence-a fine-grained, structure-guided notion of indistinguishability that commonly yields unnecessarily pessimistic analyses. In this paper, we design, implement and evaluate the first general framework for proving indistinguishability properties, for an unbounded number of protocol sessions, going beyond the scope of diff-equivalence. For that we relax the structural requirements of ProVerif, a state-of-the-art tool, through a notion of session decomposition, intuitively allowing a dynamic restructuration of the proofs. We can then verify in a modular way various, more realistic models of indistinguishability such as may-testing equivalence, by exhibiting for each relation a sufficient condition on ProVerif's output ensuring that it holds. We implement our approach into a prototype and showcase the gain in scope through several case studies.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/CremersJL23,
+	author = {Cas Cremers and
+                  Charlie Jacomme and
+                  Philip Lukert},
+	title = {Subterm-Based Proof Techniques for Improving the Automation and Scope
+                  of Security Protocol Analysis},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {200--213},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00001},
+	doi = {10.1109/CSF57540.2023.00001},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/CremersJL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {During the last decades, many advances in the field of automated security protocol analysis have seen the field mature and grow from being applicable to toy examples, to modeling intricate protocol standards and finding real-world vulnerabilities that extensive manual analysis had missed. However, modern security protocols often contain elements for which such tools were not originally designed, such as protocols that construct, by design, terms of unbounded size, such as counters, trees, and blockchains. Protocol analysis tools such as Tamarin and ProVerif have some very restricted support, but typically lack the ability to effectively reason about dynamically growing unbounded-depth terms. In this work, we introduce subterm-based proof techniques that are tailored for automated protocol analysis in the Tamarin prover. In several case studies, we show that these techniques improve automation (allow for analyzing more protocols, or remove the need for manually specified invariants), efficiency (reduce proof size for existing analyses), and expressive power (enable new kinds of properties). In particular, we provide the first automated proofs for TreeKEM, S/Key, and Tesla Scheme 2; and we show substantial benefits, most notably in WPA2 and 5G-AKA, two of the largest automated protocol proofs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/WilsonAJ23,
+	author = {Johannes Wilson and
+                  Mikael Asplund and
+                  Niklas Johansson},
+	title = {Extending the Authentication Hierarchy with One-Way Agreement},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {214--228},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00025},
+	doi = {10.1109/CSF57540.2023.00025},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/WilsonAJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Providing authenticated interactions is a key responsibility of most cryptographic protocols. When designing new protocols with strict security requirements it is therefore essential to formally verify that they fulfil appropriate authentication properties. We identify a gap in the case of protocols with unilateral (one-way) authentication, where existing properties are poorly adapted. In existing work, there is a preference for defining strong authentication properties, which is good in many cases but not universally applicable. In this work we make the case for weaker authentication properties. In particular, we investigate one-way authentication and extend Lowe's authentication hierarchy with two such properties. We formally prove the relationship between the added and existing properties. Moreover, we demonstrate the usefulness of the added properties in a case study on remote attestation protocols. This work complements earlier work with additional generic properties that support formal verification of a wider set of protocol types.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/StoukaZ23,
+	author = {Aikaterini{-}Panagiota Stouka and
+                  Thomas Zacharias},
+	title = {On the (De) centralization of FruitChains},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {229--244},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00020},
+	doi = {10.1109/CSF57540.2023.00020},
+	timestamp = {Sun, 12 Nov 2023 02:10:15 +0100},
+	biburl = {https://dblp.org/rec/conf/csfw/StoukaZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {One of the most important features of blockchain protocols is decentralization, as their main contribution is that they formulate a distributed ledger that will be maintained and extended without the need of a trusted party. Bitcoin has been criticized for its tendency to centralization, as very few pools control the majority of the hashing power. Pass et al. proposed FruitChain [PODC 17] and claimed that this blockchain protocol mitigates the formation of pools by reducing the variance of the rewards in the same way as mining pools, but in a fully decentralized fashion. Many follow up papers consider that the problem of centralization in Proof-of- Work (PoW) blockchain systems can be solved via lower rewards' variance, and that in FruitChain the formation of pools is unnecessary. Contrary to the common perception, in this work, we prove that lower variance of the rewards does not eliminate the tendency of the PoW blockchain protocols to centralization; miners have also other incentives to create large pools, and specifically to share the cost of creating the instance they need to solve the PoW puzzle. We abstract the procedures of FruitChain as oracles and assign to each of them a cost. Then, we provide a formal definition of a pool in a blockchain system, and by utilizing the notion of equilibrium with virtual payoffs (EVP) [AFT 21], we prove that there is a completely centralized EVP, where all the parties form a single pool controlled by one party called the pool leader. The pool leader is responsible for creating the instance used for the PoW procedure. To the best of our knowledge, this is the first work that examines the construction of mining pools in the FruitChain system.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/HollerBS23,
+	author = {Sebastian Holler and
+                  Sebastian Biewer and
+                  Clara Schneidewind},
+	title = {HoRStify: Sound Security Analysis of Smart Contracts},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {245--260},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00023},
+	doi = {10.1109/CSF57540.2023.00023},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/HollerBS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The cryptocurrency Ethereum is the most widely used execution platform for smart contracts. Smart contracts are distributed applications, which govern financial assets and, hence, can implement advanced financial instruments, such as decentralized exchanges or autonomous organizations (DAOs). Their financial nature makes smart contracts an attractive attack target, as demonstrated by numerous exploits on popular contracts resulting in financial damage of millions of dollars. This omnipresent attack hazard motivates the need for sound static analysis tools, which assist smart contract developers in eliminating contract vulnerabilities a priori to deployment. Vulnerability assessment that is sound and insightful for EVM contracts is a formidable challenge because contracts execute low-level bytecode in a largely unknown and potentially hostile execution environment. So far, there exists no provably sound automated analyzer that allows for the verification of security properties based on program dependencies, even though prevalent attack classes fall into this category. In this work, we present HoRStify, the first automated analyzer for dependency properties of Ethereum smart contracts based on sound static analysis. HoRStify grounds its soundness proof on a formal proof framework for static program slicing that we instantiate to the semantics of EVM bytecode. We demonstrate that HoRStify is flexible enough to soundly verify the absence of famous attack classes such as timestamp dependency and, at the same time, performant enough to analyze real-world smart contracts.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ChanCL23,
+	author = {Eric Chan and
+                  Marek Chrobak and
+                  Mohsen Lesani},
+	title = {Cross-Chain Swaps with Preferences},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {261--275},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00031},
+	doi = {10.1109/CSF57540.2023.00031},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ChanCL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Extreme valuation and volatility of cryptocurrencies require investors to diversify often which demands secure exchange protocols. A cross-chain swap protocol allows distrusting parties to securely exchange their assets. However, the current models and protocols assume predefined user preferences for acceptable outcomes. This paper presents a generalized model of swaps that allows each party to specify its preferences on the subsets of its incoming and outgoing assets. It shows that the existing swap protocols are not necessarily a strong Nash equilibrium in this model. It characterizes the class of swap graphs that have protocols that are safe, live and a strong Nash equilibrium, and presents such a protocol for this class. Further, it shows that deciding whether a swap is in this class is NP-hard through a reduction from 3SAT, and further is \Sigma_{2}^{\mathsf{P}}
+-complete through a reduction from \exists\forall \mathsf{DNF}
+.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/CoenenFHT23,
+	author = {Norine Coenen and
+                  Bernd Finkbeiner and
+                  Jana Hofmann and
+                  Julia J. Tillman},
+	title = {Smart Contract Synthesis Modulo Hyperproperties},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {276--291},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00006},
+	doi = {10.1109/CSF57540.2023.00006},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/CoenenFHT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart contracts are small but highly security-critical programs that implement wallets, token systems, auctions, crowd funding systems, elections, and other multi-party transactions on the blockchain. A broad range of methods has been developed to ensure that a smart contract is functionally correct. However, smart contracts often additionally need to satisfy certain hyperproperties, such as symmetry, determinism, or an information flow policy. In this paper, we show how a synthesis method for smart contracts can ensure that the contract satisfies its desired hyperproperties. We build on top of a recently developed synthesis approach from specifications in the temporal logic TSL. We present HyperTSL, an extension of TSL for the specification of hyperproperties of infinite-state software. As a preprocessing step, we show how to detect if a hyperproperty has an equivalent formulation as a (simpler) trace property. Finally, we describe how to refine a synthesized contract to adhere to its HyperTSL specification.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BlaabjergA23,
+	author = {Jeppe Fredsgaard Blaabjerg and
+                  Aslan Askarov},
+	title = {OblivIO: Securing Reactive Programs by Oblivious Execution with Bounded
+                  Traffic Overheads},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {292--307},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00014},
+	doi = {10.1109/CSF57540.2023.00014},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BlaabjergA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traffic analysis attacks remain a significant problem for online security. Communication between nodes can be observed by network level attackers as it inherently takes place in the open. Despite online services increasingly using encrypted traffic, the shape of the traffic is not hidden. To prevent traffic analysis, the shape of a system's traffic must be independent of secrets. We investigate adapting the data-oblivious approach the reactive setting and present OblivIO, a secure language for writing reactive programs driven by network events. Our approach pads with dummy messages to hide which program sends are genuinely executed. We use an information-flow type system to provably enforce timing-sensitive noninterference. The type system is extended with potentials to bound the overhead in traffic introduced by our approach. We address challenges that arise from joining data-oblivious and reactive programming and demonstrate the feasibility of our resulting language by developing an interpreter that implements security critical operations as constant-time algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/PatrignaniB23,
+	author = {Marco Patrignani and
+                  Sam Blackshear},
+	title = {Robust Safety for Move},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {308--323},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00045},
+	doi = {10.1109/CSF57540.2023.00045},
+	timestamp = {Mon, 05 Feb 2024 20:33:04 +0100},
+	biburl = {https://dblp.org/rec/conf/csfw/PatrignaniB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A program that maintains key safety properties even when interacting with arbitrary untrusted code is said to enjoy robust safety. Proving that a program written in a mainstream language is robustly safe is typically challenging because it requires static verification tools that work precisely even in the presence of language features like dynamic dispatch and shared mutability. The emerging Move programming language was designed to support strong encapsulation and static verification in the service of secure smart contract programming. However, the language design has not been analysed using a theoretical framework like robust safety. In this paper, we define robust safety for the Move language and introduce a generic framework for static tools that wish to enforce it. Our framework consists of two abstract components: a program verifier that can prove an invariant holds in a closed-world setting (e.g., the Move Prover [16], [47]), and a novel encapsulator that checks if the verifier's result generalizes to an open-world setting. We formalise an escape analysis as an instantiation of the encapsulator and prove that it attains the required security properties. Finally, we implement our encapsulator as an extension to the Move Prover and use the combination to analyse a large representative benchmark set of real-world Move programs. This toolchain certifies >99% of the Move modules we analyse, validating that automatic enforcement of strong security properties like robust safety is practical for Move. Additionally, our results tell that security-centric language design can be effective in attaining strong security properties such as robust safety.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DerakhshanZVJ23,
+	author = {Farzaneh Derakhshan and
+                  Zichao Zhang and
+                  Amit Vasudevan and
+                  Limin Jia},
+	title = {Towards End-to-End Verified TEEs via Verified Interface Conformance
+                  and Certified Compilers},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {324--339},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00021},
+	doi = {10.1109/CSF57540.2023.00021},
+	timestamp = {Sat, 30 Sep 2023 09:37:58 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DerakhshanZVJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Trusted Execution Environments (TEE) are ubiq-uitous. They form the highest privileged software component of the platform with full access to the system and associated devices. However, vulnerabilities have been found in deployed TEEs allowing an attacker to gain complete control. Despite the progress made in fully-verified software systems, few deployed TEEs are fully-verified, due to the high cost of verification. Instead of aiming for full-functional correctness, this paper proposes a formal framework and approach that leverages com-partmentalization at the source level to bring security-relevant properties verified at the source level down to the binary via existing certified compilers. The benefit of our approach is the relative low cost of verification: developers can use existing automated program verification tools and certified compilers. Our case studies demonstrate how security properties verified on two open-source TEEs at the source level can be pushed down to the compiled code by using an off-the-shelf certified compiler.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/TsoupidiLTP23,
+	author = {Rodothea{-}Myrsini Tsoupidi and
+                  Roberto Casta{\~{n}}eda Lozano and
+                  Elena Troubitsyna and
+                  Panagiotis Papadimitratos},
+	title = {Securing Optimized Code Against Power Side Channels},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {340--355},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00016},
+	doi = {10.1109/CSF57540.2023.00016},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/TsoupidiLTP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Side-channel attacks impose a serious threat to cryptographic algorithms, including widely employed ones, such as AES and RSA. These attacks take advantage of the algorithm implementation in hardware or software to extract secret information via side channels. Software masking is a mitigation approach against power side-channel attacks aiming at hiding the secret-revealing dependencies from the power footprint of a vulnerable implementation. However, this type of software mitigation often depends on general-purpose compilers, which do not preserve non-functional properties. Moreover, microarchitectural features, such as the memory bus and register reuse, may also leak secret information. These abstractions are not visible at the high-level implementation of the program. Instead, they are decided at compile time. To remedy these problems, security engineers often sacrifice code efficiency by turning off compiler optimization and/or performing local, post-compilation transformations. This paper proposes Secure by Construction Code Generation (SecCG), a constraint-based compiler approach that generates optimized yet protected against power side channels code. SecCG controls the quality of the mitigated program by efficiently searching the best possible low-level implementation according to a processor cost model. In our experiments with twelve masked cryptographic functions up to 100 lines of code on Mips32 and ARM Thumb, SecCG speeds up the generated code from 77% to 6.6 times compared to non-optimized secure code with an overhead of up to 13% compared to non-secure optimized code at the expense of a high compilation cost. For security and compiler researchers, this paper proposes a formal model to generate power side channel free low-level code. For software engineers, SecCG provides a practical approach to optimize performance critical and vulnerable cryptographic implementations that preserve security properties against power side channels.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AndersonBLPT23,
+	author = {Sean Noble Anderson and
+                  Roberto Blanco and
+                  Leonidas Lampropoulos and
+                  Benjamin C. Pierce and
+                  Andrew Tolmach},
+	title = {Formalizing Stack Safety as a Security Property},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {356--371},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00037},
+	doi = {10.1109/CSF57540.2023.00037},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AndersonBLPT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The term stack safety is used to describe a variety of compiler, runtime, and hardware mechanisms for protecting stack memory. Unlike “the heap,” the ISA-level stack does not correspond to a single high-level language concept: different compilers use it in different ways to support procedural and functional abstraction mechanisms from a wide range of languages. This protean nature makes it difficult to nail down what it means to correctly enforce stack safety.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BatyWHFT23,
+	author = {Matthieu Baty and
+                  Pierre Wilke and
+                  Guillaume Hiet and
+                  Arnaud Fontaine and
+                  Alix Trieu},
+	title = {A Generic Framework to Develop and Verify Security Mechanisms at the
+                  Microarchitectural Level: Application to Control-Flow Integrity},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {372--387},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00029},
+	doi = {10.1109/CSF57540.2023.00029},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BatyWHFT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the disclosure of several significant security vulnerabilities has revealed the trust put in some presumed security properties of commonplace hardware to be misplaced. We propose to design hardware systems with security mechanisms, together with a formal statement of the security properties obtained, and a machine-checked proof that the hardware security mechanisms indeed implement the sought-for security property. Formally proving security properties about hardware systems might seem prohibitively complex and expensive. In this paper, we tackle this concern by designing a realistic and accessible methodology on top of the Kôlka Hardware Description Language for specifying and proving security properties during hardware development. Our methodology is centered around a verified compiler from high-level and inefficient to work with Kôlka models to an equivalent lower-level representation, where side effects are made explicit and reasoning is convenient. We apply this methodology to a concrete example: the formal specification and implementation of a shadow stack mechanism on an RV32I processor. We prove that this security mechanism is correct, i.e., any illegal modification of a return address does indeed result in the termination of the whole system. Furthermore, we show that this modification of the processor does not impact its behaviour in other, unexpected ways.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ChatzikokolakisCPT23,
+	author = {Konstantinos Chatzikokolakis and
+                  Giovanni Cherubin and
+                  Catuscia Palamidessi and
+                  Carmela Troncoso},
+	title = {Bayes Security: {A} Not So Average Metric},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {388--406},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00011},
+	doi = {10.1109/CSF57540.2023.00011},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ChatzikokolakisCPT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security system designers favor worst-case security metrics, such as those derived from differential privacy (DP), due to the strong guarantees they provide. On the downside, these guarantees result in a high penalty on the system's performance. In this paper, we study Bayes security, a security metric inspired by the cryptographic advantage. Similarly to DP, Bayes security i) is independent of an adversary's prior knowledge, ii) it captures the worst-case scenario for the two most vulnerable secrets (e.g., data records); and iii) it is easy to compose, facilitating security analyses. Additionally, Bayes security iv) can be consistently estimated in a black-box manner, contrary to DP, which is useful when a formal analysis is not feasible; and v) provides a better utility-security trade-off in high-security regimes because it quantifies the risk for a specific threat model as opposed to threat-agnostic metrics such as DP. We formulate a theory around Bayes security, and we provide a thorough comparison with respect to well-known metrics, identifying the scenarios where Bayes Security is advantageous for designers.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/SakibAG23,
+	author = {Shahnewaz Karim Sakib and
+                  George T. Amariucai and
+                  Yong Guan},
+	title = {Variations and Extensions of Information Leakage Metrics with Applications
+                  to Privacy Problems with Imperfect Statistical Information},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {407--422},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00007},
+	doi = {10.1109/CSF57540.2023.00007},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/SakibAG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The conventional information leakage metrics assume that an adversary has complete knowledge of the distribution of the mechanism used to disclose information correlated with the sensitive attributes of a system. The only uncertainty arises from the specific realizations that are drawn from this distribution. This assumption does not hold in various practical scenarios where an adversary usually lacks complete information about the joint statistics of the private, utility, and the disclosed data. As a result, the typical information leakage metrics fail to measure the leakage appropriately. In this paper, we introduce multiple new versions of the traditional information-theoretic leakage metrics, that aptly represent information leakage for an adversary who lacks complete knowledge of the joint data statistics, and we provide insights into the potential uses of each. We experiment on a real-world dataset to further demonstrate how the introduced leakage metrics compare with the conventional notions of leakage. Finally, we show how privacy-utility optimization problems can be formulated in this context, such that their solutions result in the optimal information disclosure mechanisms, for various applications.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/JuradoGAP23,
+	author = {Mireya Jurado and
+                  Ramon G. Gonze and
+                  M{\'{a}}rio S. Alvim and
+                  Catuscia Palamidessi},
+	title = {Analyzing the Shuffle Model Through the Lens of Quantitative Information
+                  Flow},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {423--438},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00033},
+	doi = {10.1109/CSF57540.2023.00033},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/JuradoGAP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Local differential privacy (LDP) is a variant of differential privacy (DP) that avoids the necessity of a trusted central curator, at the expense of a worse trade-off between privacy and utility. The shuffle model has emerged as a way to provide greater anonymity to users by randomly permuting their messages, so that the direct link between users and their reported values is lost to the data collector. By combining an LDP mechanism with a shuffler, privacy can be improved at no cost for the accuracy of operations insensitive to permutations, thereby improving utility in many analytic tasks. However, the privacy implications of shuffling are not always immediately evident, and derivations of privacy bounds are made on a case-by-case basis. In this paper, we analyze the combination of LDP with shuffling in the rigorous framework of quantitative information flow (QIF), and reason about the resulting resilience to inference attacks. QIF naturally captures (combinations of) randomization mechanisms as information-theoretic channels, thus allowing for precise modeling of a variety of inference attacks in a natural way and for measuring the leakage of private information under these attacks. We exploit symmetries of k-RR mechanisms with the shuffle model to achieve closed formulas that express leakage exactly. We provide formulas that show how shuffling improves protection against leaks in the local model, and study how leakage behaves for various values of the privacy parameter of the LDP mechanism. In contrast to the strong adversary from differential privacy, who knows everyone's record in a dataset but the target's, we focus on an uninformed adversary, who does not know the value of any individual in the dataset. This adversary is often more realistic as a consumer of statistical datasets, and indeed we show that in some situations, mechanisms that are equivalent under the strong adversary can provide different privacy guarantees under the uninformed one. Finally, we also illustrate the application of our model to the typical strong adversary from DP.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/Dibbo23,
+	author = {Sayanton V. Dibbo},
+	title = {SoK: Model Inversion Attack Landscape: Taxonomy, Challenges, and Future
+                  Roadmap},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {439--456},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00027},
+	doi = {10.1109/CSF57540.2023.00027},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/Dibbo23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A crucial module of the widely applied machine learning (ML) model is the model training phase, which involves large-scale training data, often including sensitive private data. ML models trained on these sensitive data suffer from significant privacy concerns since ML models can intentionally or unintendedly leak information about training data. Adversaries can exploit this information to perform privacy attacks, including model extraction, membership inference, and model inversion. While a model extraction attack steals and replicates a trained model functionality, and membership inference infers the data sample's inclusiveness to the training set, a model inversion attack has the goal of inferring the training data sample's sensitive attribute value or reconstructing the training sample (i.e., image/audio/text). Distinct and inconsistent characteristics of model inversion attack make this attack even more challenging and consequential, opening up model inversion attack as a more prominent and increasingly expanding research paradigm. Thereby, to flourish research in this relatively underexplored model inversion domain, we conduct the first-ever systematic literature review of the model inversion attack landscape. We characterize model inversion attacks and provide a comprehensive taxonomy based on different dimensions. We illustrate foundational perspectives emphasizing methodologies and key principles of the existing attacks and defense techniques. Finally, we discuss challenges and open issues in the existing model inversion attacks, focusing on the roadmap for future research directions.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/TakagiKCY23,
+	author = {Shun Takagi and
+                  Fumiyuki Kato and
+                  Yang Cao and
+                  Masatoshi Yoshikawa},
+	title = {From Bounded to Unbounded: Privacy Amplification via Shuffling with
+                  Dummies},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {457--472},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00034},
+	doi = {10.1109/CSF57540.2023.00034},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/TakagiKCY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the shuffling model has been garnering attention in the realm of differential privacy (DP). This study focuses on the fact that the shuffling model follows bounded DP rather than unbounded DP. This characteristic causes a privacy issue in which participation itself is not protected. To address this issue, we propose a framework, called unbounded shuffling, which follows unbounded DP in addition to bounded DP under the trust assumption of the shuffling model. The main difference from the conventional shuffling model is the inclusion of dummies, which some users add to pose that perturbed records are sent by other users. We also analyze the privacy and utility of our proposed framework. The analysis shows that our framework achieves almost the same utility and privacy as that of the traditional shuffling model while guaranteeing unbounded DP. Additionally, we apply the technique of individual privacy accounting, which is built solely on unbounded DP, to stochastic gradient descent (SGD) using our framework. This approach approximately halves the value of
+ε
+of a baseline.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/HumphriesOTRGHK23,
+	author = {Thomas Humphries and
+                  Simon Oya and
+                  Lindsey Tulloch and
+                  Matthew Rafuse and
+                  Ian Goldberg and
+                  Urs Hengartner and
+                  Florian Kerschbaum},
+	title = {Investigating Membership Inference Attacks under Data Dependencies},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {473--488},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00013},
+	doi = {10.1109/CSF57540.2023.00013},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/HumphriesOTRGHK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Training machine learning models on privacy-sensitive data has become a popular practice, driving innovation in ever-expanding fields. This has opened the door to new attacks that can have serious privacy implications. One such attack, the Membership Inference Attack (MIA), exposes whether or not a particular data point was used to train a model. A growing body of literature uses Differentially Private (DP) training algorithms as a defence against such attacks. However, these works evaluate the defence under the restrictive assumption that all members of the training set, as well as non-members, are independent and identically distributed. This assumption does not hold for many real-world use cases in the literature. Motivated by this, we evaluate membership inference with statistical dependencies among samples and explain why DP does not provide meaningful protection (the privacy parameter
+ϵ
+scales with the training set size
+n
+) in this more general case. We conduct a series of empirical evaluations with off-the-shelf MIAs using training sets built from real-world data showing different types of dependencies among samples. Our results reveal that training set dependencies can severely increase the performance of MIAs, and therefore assuming that data samples are statistically independent can significantly underestimate the performance of MIAs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AkaviaGSWY23,
+	author = {Adi Akavia and
+                  Ben Galili and
+                  Hayim Shaul and
+                  Mor Weiss and
+                  Zohar Yakhini},
+	title = {Efficient Privacy-Preserving Viral Strain Classification via k-mer
+                  Signatures and {FHE}},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {489--504},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00012},
+	doi = {10.1109/CSF57540.2023.00012},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AkaviaGSWY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of sequencing technologies, viral strain classification - which is critical for many applications, including disease monitoring and control - has become widely deployed. Typically, a lab (client) holds a viral sequence, and requests classification services from a centralized repository of labeled viral sequences (server). However, such “classification as a service” raises privacy concerns. In this paper we propose a privacy-preserving viral strain classification protocol that allows the client to obtain classification services from the server, while maintaining complete privacy of the client's viral strains. The privacy guarantee is against active servers, and the correctness guarantee is against passive ones. We implemented our protocol and performed extensive benchmarks, showing that it obtains almost perfect accuracy (99.8%-100%) and microAUC (0.999), and high efficiency (amortized per-sequence client and server runtimes of 4.95ms and 0.53ms, respectively, and 0.21MB communication). In addition, we present an extension of our protocol that guarantees server privacy against passive clients, and provide an empirical evaluation showing that this extension provides the same high accuracy and microAUC, with amortized per sequences overhead of only a few milliseconds in client and server runtime, and 0.3MB in communication complexity. Along the way, we develop an enhanced packing technique in which two reals are packed in a single complex number, with support for homomorphic inner products of vectors of ciphertexts. We note that while similar packing techniques were used before, they only supported additions and multiplication by constants.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ReedR23,
+	author = {Andrew C. Reed and
+                  Michael K. Reiter},
+	title = {Optimally Hiding Object Sizes with Constrained Padding},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {505--520},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00004},
+	doi = {10.1109/CSF57540.2023.00004},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ReedR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Among the most challenging traffic-analysis attacks to confound are those leveraging the sizes of objects downloaded over the network. In this paper we systematically analyze this problem under realistic constraints regarding the padding overhead that the object store is willing to incur. We give algorithms to compute privacy-optimal padding schemes—specifically that minimize the network observer's information gain from a downloaded object's padded size—in several scenarios of interest: per-object padding, in which the object store responds to each request for an object with the same padded copy; per-request padding, in which the object store pads an object anew each time it serves that object; and a scenario unlike the previous ones in that the object store is unable to leverage a known distribution over the object queries. We provide constructions for privacy-optimal padding in each case, compare them to recent contenders in the research literature, and evaluate their performance on practical datasets.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/PortelaPJP23,
+	author = {Bernardo Portela and
+                  Hugo Pacheco and
+                  Pedro Jorge and
+                  Rog{\'{e}}rio Pontes},
+	title = {General-Purpose Secure Conflict-free Replicated Data Types},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {521--536},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00030},
+	doi = {10.1109/CSF57540.2023.00030},
+	timestamp = {Tue, 07 May 2024 20:11:42 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/PortelaPJP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Conflict-free Replicated Data Types (CRDTs) are a very popular class of distributed data structures that strike a compromise between strong and eventual consistency. Ensuring the protection of data stored within a CRDT, however, cannot be done trivially using standard encryption techniques, as secure CRDT protocols would require replica-side computation. This paper proposes an approach to lift general-purpose implementations of CRDTs to secure variants using secure multiparty computation (MPC). Each replica within the system is realized by a group of MPC parties that compute its functionality. Our results include: i) an extension of current formal models used for reasoning over the security of CRDT solutions to the MPC setting; ii) a MPC language and type system to enable the construction of secure versions of CRDTs and; iii) a proof of security that relates the security of CRDT constructions designed under said semantics to the underlying MPC library. We provide an open-source system implementation with an extensive evaluation, which compares different designs with their baseline throughput and latency.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/LanckrietBD23,
+	author = {Emiel Lanckriet and
+                  Matteo Busi and
+                  Dominique Devriese},
+	title = {{\textdollar}{\textbackslash}pi{\_}\{{\textbackslash}mathbf\{RA\}\}{\textdollar}:
+                  {A} {\textdollar}{\textbackslash}pi{\textbackslash}text\{-calculus\}{\textdollar}
+                  for Verifying Protocols that Use Remote Attestation},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {537--551},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00019},
+	doi = {10.1109/CSF57540.2023.00019},
+	timestamp = {Sat, 30 Sep 2023 09:37:59 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/LanckrietBD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remote attestation (RA) is a primitive that allows the authentication of software components on untrusted systems by relying on a root of trust. Network protocols can use the primitive to establish trust in remote software components they communicate with. As such, RA can be regarded as a first-class security primitive like (a)symmetric encryption, message authentication, etc. However, current formal models of RA do not allow analysing protocols that use the primitive without tying them to specific platforms, low-level languages, memory protection models, or implementation details. In this paper, we propose and demonstrate a new model, called \pi_{\mathbf{RA}}
+, that supports RA at a high level of abstraction by treating it as a cryptographic primitive in a variant of the applied \pi- \mathbf{calculus}
+. To demonstrate the use of \pi_{\mathbf{RA}}
+, we use it to formalise and analyse the security of MAGE, an SGX-based framework that allows mutual attestation of multiple enclaves. The protocol is formalised in the form of a compiler that implements actor-based communication primitives in a source language (\pi_{\text{Actor}})
+in terms of remote attestation primitives in \pi_{\text{RA}}
+. Our security analysis uncovers a caveat in the security of MAGE that was left unmentioned in the original paper.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/HvassAS23,
+	author = {Benjamin Salling Hvass and
+                  Diego F. Aranha and
+                  Bas Spitters},
+	title = {High-Assurance Field Inversion for Curve-Based Cryptography},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {552--567},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00008},
+	doi = {10.1109/CSF57540.2023.00008},
+	timestamp = {Sat, 30 Sep 2023 09:37:59 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/HvassAS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The security of modern cryptography depends on multiple factors, from sound hardness assumptions to correct implementations that resist side-channel cryptanalysis. Curve-based cryptography is not different in this regard, and substantial progress in the last few decades has been achieved in both selecting parameters and devising secure implementation strategies. In this context, the security of implementations of field inversion is sometimes overlooked in the research literature, because (i) the approach based on Fermat's Little Theorem (FLT) suffices performance-wise for many parameters used in practice; (ii) it is typically invoked only at the very end of a cryptographic computation, with a small impact on performance; (iii) it is challenging to implement securely for general parameters without a significant performance penalty. However, field inversion can process sensitive information and must be protected with side-channel countermeasures like any other cryptographic operation, as illustrated by recent attacks [1]–[3]. In this work, we focus on implementing field inversion for primes of cryptographic interest with security against timing attacks, irrespective of whether the FLT-based inversion can be efficiently implemented. We extend the Fiat-Crypto framework, which synthesizes provably correct-by-construction implementations, to implement the Bernstein-Yang inversion algorithm as a step towards this goal. This allows a correct implementation of prime field inversion to be synthesized for any prime. We benchmark the implementations across a range of primes for curve-based cryptography and they outperform traditional FLT-based approaches in most cases, with observed speedups up to 2 for the largest parameters. Our work is already used in production in the MirageOS unikernel operating system, zig programming language, and the ECCKiila framework [4]}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ChowELRW23,
+	author = {Sherman S. M. Chow and
+                  Christoph Egger and
+                  Russell W. F. Lai and
+                  Viktoria Ronge and
+                  Ivy K. Y. Woo},
+	title = {On Sustainable Ring-Based Anonymous Systems},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {568--583},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00035},
+	doi = {10.1109/CSF57540.2023.00035},
+	timestamp = {Sun, 12 Nov 2023 02:10:15 +0100},
+	biburl = {https://dblp.org/rec/conf/csfw/ChowELRW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anonymous systems (e.g. anonymous cryptocurrencies and updatable anonymous credentials) often follow a construction template where an account can only perform a single anonymous action, which in turn potentially spawns new (and still single-use) accounts (e.g. UTXO with a balance to spend or session with a score to claim). Due to the anonymous nature of the action, no party can be sure which account has taken part in an action and, therefore, must maintain an ever-growing list of potentially unused accounts to ensure that the system keeps running correctly. Consequently, anonymous systems constructed based on this common template are seemingly not sustainable. In this work, we study the sustainability of ring-based anonymous systems, where a user performing an anonymous action is hidden within a set of decoy users, traditionally called a “ring”. On the positive side, we propose a general technique for ring-based anonymous systems to achieve sustainability. Along the way, we define a general model of decentralised anonymous systems (DAS) for arbitrary anonymous actions, and provide a generic construction which provably achieves sustainability. As a special case, we obtain the first construction of anonymous cryptocurrencies achieving sustainability without compromising availability. We also demonstrate the generality of our model by constructing sustainable decentralised anonymous social networks. On the negative side, we show empirically that Monero, one of the most popular anonymous cryptocurrencies, is unlikely to be sustainable without altering its current ring sampling strategy. The main subroutine is a sub-quadratic-time algorithm for detecting used accounts in a ring-based anonymous system.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/MangipudiLPK23,
+	author = {Easwar Vivek Mangipudi and
+                  Donghang Lu and
+                  Alexandros Psomas and
+                  Aniket Kate},
+	title = {Collusion-Deterrent Threshold Information Escrow},
+	booktitle = {36th {IEEE} Computer Security Foundations Symposium, {CSF} 2023, Dubrovnik,
+                  Croatia, July 10-14, 2023},
+	pages = {584--599},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/CSF57540.2023.00010},
+	doi = {10.1109/CSF57540.2023.00010},
+	timestamp = {Tue, 05 Sep 2023 20:33:27 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/MangipudiLPK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {An information escrow (IE) service allows its users to encrypt a message such that the message is unlocked only when a user-specified condition is satisfied. Its instantiations include timed-release encryption and allegation escrows with applications ranging from e-auctions to the #metoo movement. The proposed IE systems typically employ threshold cryptography towards mitigating the single-point-of-failure problem. Here, a set of escrow agents securely realize the IE functionality as long as a threshold or more agents behave honestly. Nevertheless, these threshold information escrow (TIE) protocols are vulnerable to premature and undetectable unlocking of messages through collusion among rational agents offering the IE service. This work presents a provably secure TIE scheme in the mixed-behavior model consisting of rational and malicious escrow agents.; any collusion attempt among the agents towards premature decryption results in penalization through a loss of (crypto-)currency and getting banned from the system. The proposed collusion-deterrent escrow (CDE) scheme introduces a novel incentive-penalty mechanism among the agents to stay honest until the user-specified decryption condition is met. In particular, each agent makes a cryptocurrency deposit before the start of the protocol instance such that the deposit amount is returned to the agent when the user-specified condition is met or can be transferred by anyone who holds a secret key corresponding to a public key associated with the instance. Using a novel combination of oblivious transfer, robust bit watermarking, and secure multi-party computation, CDE ensures that whenever the agents collude to decrypt the user data prematurely, one or more whistle-blower agents can withdraw/transfer the deposits of all other agents, thereby penalizing them. We model collusion as a game induced among rational agents offering the CDE service and show that the agents do not collude at equilibrium in game-theoretic terms. We also present a prototype implementation of the CDE protocol and demonstrate its efficiency towards use in practice. While this work does not aim to solve the collusion problem fully, it significantly raises the bar for collusion. It offers an important step towards weakening the strong non-collusion assumption pervasive across multi-party computation applications.}
+}
