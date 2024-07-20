@@ -1,0 +1,1841 @@
+@inproceedings{DBLP:conf/nsdi/McClureOSR22,
+	author = {Sarah McClure and
+                  Amy Ousterhout and
+                  Scott Shenker and
+                  Sylvia Ratnasamy},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Efficient Scheduling Policies for Microsecond-Scale Tasks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1--18},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/mcclure},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/McClureOSR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Datacenter operators today strive to support microsecond-latency applications while also using their limited CPU resources as efficiently as possible. To achieve this, several recent systems allow multiple applications to run on the same server, granting each a dedicated set of cores and reallocating cores across applications over time as load varies. Unfortunately, many of these systems do a poor job of navigating the tradeoff between latency and efficiency, sacrificing one or both, especially when handling tasks as short as 1μs. While the implementations of these systems (threading libraries, network stacks, etc.) have been heavily optimized, the policy choices that they make have received less scrutiny. Most systems implement a single choice of policy for allocating cores across applications and for load-balancing tasks across cores within an application. In this paper, we use simulations to compare these different policy options and explore which yield the best combination of latency and efficiency. We conclude that work stealing performs best among load-balancing policies, multiple policies can perform well for core allocations, and, surprisingly, static core allocations often outperform reallocation with small tasks. We implement the best-performing policy choices by building on Caladan, an existing core-allocating system, and demonstrate that they can yield efficiency improvements of up to 13-22% without degrading (median or tail) latency.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/JajooHLD22,
+	author = {Akshay Jajoo and
+                  Y. Charlie Hu and
+                  Xiaojun Lin and
+                  Nan Deng},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {A Case for Task Sampling based Learning for Cluster Job Scheduling},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {19--33},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/jajoo},
+	timestamp = {Thu, 11 May 2023 13:49:59 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/JajooHLD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ability to accurately estimate job runtime properties allows a scheduler to effectively schedule jobs. State-of-the-art online cluster job schedulers use history-based learning, which uses past job execution information to estimate the runtime properties of newly arrived jobs. However, with fast-paced development in cluster technology (in both hardware and software) and changing user inputs, job runtime properties can change over time, which lead to inaccurate predictions. In this paper, we explore the potential and limitation of real-time learning of job runtime properties, by proactively sampling and scheduling a small fraction of the tasks of each job. Such a task-sampling-based approach exploits the similarity among runtime properties of the tasks of the same job and is inherently immune to changing job behavior. Our analytical and experimental analysis of 3 production traces with different skew and job distribution shows that learning in space can be substantially more accurate. Our simulation and testbed evaluation on Azure of the two learning approaches anchored in a generic job scheduler using 3 production cluster job traces shows that despite its online overhead, learning in space reduces the average Job Completion Time (JCT) by 1.28x, 1.56x, and 1.32x compared to the prior-art history-based predictor. Finally, we show how sampling-based learning can be extended to schedule DAG jobs and achieve similar speedups over the prior-art history-based predictor.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ChenLGL22,
+	author = {Jun Lin Chen and
+                  Daniyal Liaqat and
+                  Moshe Gabel and
+                  Eyal de Lara},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Starlight: Fast Container Provisioning on the Edge and over the {WAN}},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {35--50},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/chen-jun-lin},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ChenLGL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Containers, originally designed for cloud environments, are increasingly popular for provisioning workers outside the cloud, for example in mobile and edge computing. These settings, however, bring new challenges: high latency links, limited bandwidth, and resource-constrained workers. The result is longer provisioning times when deploying new workers or updating existing ones, much of it due to network traffic. Our analysis shows that current piecemeal approaches to reducing provisioning time are not always sufficient, and can even make things worse as round-trip times grow. Rather, we find that the very same layer-based structure that makes containers easy to develop and use also makes it more difficult to optimize deployment. Addressing this issue thus requires rethinking the container deployment pipeline as a whole. Based on our findings, we present Starlight: an accelerator for container provisioning. Starlight decouples provisioning from development by redesigning the container deployment protocol, filesystem, and image storage format. Our evaluation using 21 popular containers shows that, on average, Starlight deploys and starts containers 3.0x faster than the current state-of-the-art implementation while incurring no runtime overhead and little (5%) storage overhead. Finally, it is backwards compatible with existing workers and uses standard container registries.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/AddankiM022,
+	author = {Vamsi Addanki and
+                  Oliver Michel and
+                  Stefan Schmid},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {PowerTCP: Pushing the Performance Limits of Datacenter Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {51--70},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/addanki},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/AddankiM022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Increasingly stringent throughput and latency requirements in datacenter networks demand fast and accurate congestion control. We observe that the reaction time and accuracy of existing datacenter congestion control schemes are inherently limited. They either rely only on explicit feedback about the network state (e.g., queue lengths in DCTCP) or only on variations of state (e.g., RTT gradient in TIMELY). To overcome these limitations, we propose a novel congestion control algorithm, PowerTCP, which achieves much more fine-grained congestion control by adapting to the bandwidth-window product (henceforth called power). PowerTCP leverages in-band network telemetry to react to changes in the network instantaneously without loss of throughput and while keeping queues short. Due to its fast reaction time, our algorithm is particularly well-suited for dynamic network environments and bursty traffic patterns. We show analytically and empirically that PowerTCP can significantly outperform the state-of-the-art in both traditional datacenter topologies and emerging reconfigurable datacenters where frequent bandwidth changes make congestion control challenging. In traditional datacenter networks, PowerTCP reduces tail flow completion times of short flows by 80% compared to DCQCN and TIMELY, and by 33% compared to HPCC even at 60% network load. In reconfigurable datacenters, PowerTCP achieves 85% circuit utilization without incurring additional latency and cuts tail latency by at least 2x compared to existing approaches.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/RedaCKP22,
+	author = {Waleed Reda and
+                  Marco Canini and
+                  Dejan Kostic and
+                  Simon Peter},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {{RDMA} is Turing complete, we just did not know it yet!},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {71--85},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/reda},
+	timestamp = {Fri, 30 Dec 2022 23:08:53 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/RedaCKP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is becoming increasingly popular for distributed systems to exploit offload to reduce load on the CPU. Remote Direct Memory Access (RDMA) offload, in particular, has become popular. However, RDMA still requires CPU intervention for complex offloads that go beyond simple remote memory access. As such, the offload potential is limited and RDMA-based systems usually have to work around such limitations. We present RedN, a principled, practical approach to implementing complex RDMA offloads, without requiring any hardware modifications. Using self-modifying RDMA chains, we lift the existing RDMA verbs interface to a Turing complete set of programming abstractions. We explore what is possible in terms of offload complexity and performance with a commodity RDMA NIC. We show how to integrate these RDMA chains into applications, such as the Memcached key-value store, allowing us to offload complex tasks such as key lookups. RedN can reduce the latency of key-value get operations by up to 2.6× compared to state-of-the-art KV designs that use one-sided RDMA primitives (e.g., FaRM-KV), as well as traditional RPC-over-RDMA approaches. Moreover, compared to these baselines, RedN provides performance isolation and, in the presence of contention, can reduce latency by up to 35× while providing applications with failure resiliency to OS and process crashes.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ShashidharaSKP22,
+	author = {Rajath Shashidhara and
+                  Tim Stamler and
+                  Antoine Kaufmann and
+                  Simon Peter},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {FlexTOE: Flexible {TCP} Offload with Fine-Grained Parallelism},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {87--102},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/shashidhara},
+	timestamp = {Fri, 30 Dec 2022 23:08:53 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/ShashidharaSKP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {FlexTOE is a flexible, yet high-performance TCP offload engine (TOE) to SmartNICs. FlexTOE eliminates almost all host data-path TCP processing and is fully customizable. FlexTOE interoperates well with other TCP stacks, is robust under adverse network conditions, and supports POSIX sockets. FlexTOE focuses on data-path offload of established connections, avoiding complex control logic and packet buffering in the NIC. FlexTOE leverages fine-grained parallelization of the TCP data-path and segment reordering for high performance on wimpy SmartNIC architectures, while remaining flexible via a modular design. We compare FlexTOE on an Agilio-CX40 to host TCP stacks Linux and TAS, and to the Chelsio Terminator TOE. We find that Memcached scales up to 38% better on FlexTOE versus TAS, while saving up to 81% host CPU cycles versus Chelsio. FlexTOE provides competitive performance for RPCs, even with wimpy SmartNICs. FlexTOE cuts 99.99th-percentile RPC RTT by 3.2× and 50% versus Chelsio and TAS, respectively. FlexTOE's data-path parallelism generalizes across hardware architectures, improving single connection RPC throughput up to 2.4× on x86 and 4× on BlueField. FlexTOE supports C and XDP programs written in eBPF. It allows us to implement popular data center transport features, such as TCP tracing, packet filtering and capture, VLAN stripping, flow classification, firewalling, and connection splicing.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/DasariKDBS22,
+	author = {Mallesham Dasari and
+                  Kumara Kahatapitiya and
+                  Samir R. Das and
+                  Aruna Balasubramanian and
+                  Dimitris Samaras},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Swift: Adaptive Video Streaming with Layered Neural Codecs},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {103--118},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/dasari},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/DasariKDBS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Layered video coding compresses video segments into layers(additional code bits). Decoding with each additional layer improves video quality incrementally. This approach has potential for very fine-grained rate adaptation. However, layered coding has not seen much success in practice because of its cross-layer compression overheads and decoding latencies.We take a fresh new approach to layered video coding by exploiting recent advances in video coding using deep learning techniques. We develop Swift, an adaptive video streaming system that includes i) a layered encoder that learns to encode a video frame into layered codes by purely encoding residuals from previous layers without introducing any cross-layer compression overheads, ii) a decoder that can fuse together a subset of these codes (based on availability) and decode the mall in one go, and, iii) an adaptive bit rate (ABR) protocol that synergistically adapts video quality based on available network and client-side compute capacity. Swift can be integrated easily in the current streaming ecosystem without any change to network protocols and applications by simply replacing the current codecs with the proposed layered neural video codec when appropriate GPU or similar accelerator functionality is available on the client side. Extensive evaluations reveal Swift’s multi-dimensional benefits over prior video streaming systems.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/BhardwajXAJSKHB22,
+	author = {Romil Bhardwaj and
+                  Zhengxu Xia and
+                  Ganesh Ananthanarayanan and
+                  Junchen Jiang and
+                  Yuanchao Shu and
+                  Nikolaos Karianakis and
+                  Kevin Hsieh and
+                  Paramvir Bahl and
+                  Ion Stoica},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Ekya: Continuous Learning of Video Analytics Models on Edge Compute
+                  Servers},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {119--135},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/bhardwaj},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/BhardwajXAJSKHB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video analytics applications use edge compute servers for processing videos. Compressed models that are deployed on the edge servers for inference suffer from data drift where the live video data diverges from the training data. Continuous learning handles data drift by periodically retraining the models on new data. Our work addresses the challenge of jointly supporting inference and retraining tasks on edge servers, which requires navigating the fundamental tradeoff between the retrained model’s accuracy and the inference accuracy. Our solution Ekya balances this tradeoff across multiple models and uses a micro-profiler to identify the models most in need of retraining. Ekya’s accuracy gain compared to a baseline scheduler is 29% higher, and the baseline requires 4× more GPU resources to achieve the same accuracy as Ekya.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZhangW0022,
+	author = {Anlan Zhang and
+                  Chendong Wang and
+                  Bo Han and
+                  Feng Qian},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {YuZu: Neural-Enhanced Volumetric Video Streaming},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {137--154},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhang-anlan},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZhangW0022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Differing from traditional 2D videos, volumetric videos provide true 3D immersive viewing experiences and allow viewers to exercise six degree-of-freedom (6DoF) motion. However, streaming high-quality volumetric videos over the Internet is extremely bandwidth-consuming. In this paper, we propose to leverage 3D super resolution (SR) to drastically increase the visual quality of volumetric video streaming. To accomplish this goal, we conduct deep intra- and inter-frame optimizations for off-the-shelf 3D SR models, and achieve up to 542× speedup on SR inference without accuracy degradation. We also derive a first Quality of Experience (QoE) model for SR-enhanced volumetric video streaming, and validate it through extensive user studies involving 1,446 subjects, achieving a median QoE estimation error of 12.49%. We then integrate the above components, together with important features such as QoE-driven network/compute resource adaptation, into a holistic system called YuZu that performs line-rate (at 30+ FPS) adaptive SR for volumetric video streaming. Our evaluations show that YuZu can boost the QoE of volumetric video streaming by 37% to 178% compared to no SR, and outperform existing viewport-adaptive solutions by 101% to 175% on QoE.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZhuWHPS022,
+	author = {Hang Zhu and
+                  Tao Wang and
+                  Yi Hong and
+                  Dan R. K. Ports and
+                  Anirudh Sivaraman and
+                  Xin Jin},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {NetVRM: Virtual Register Memory for Programmable Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {155--170},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZhuWHPS022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable networks are enabling a new class of applications that leverage the line-rate processing capability and on-chip register memory of the switch data plane. Yet the status quo is focused on developing approaches that share the register memory statically. We present NetVRM, a network management system that supports dynamic register memory sharing between multiple concurrent applications on a programmable network and is readily deployable on commodity programmable switches. NetVRM provides a virtual register memory abstraction that enables applications to share the register memory in the data plane, and abstracts away the underlying details. In principle, NetVRM supports any memory allocation algorithm given the virtual register memory abstraction. It also provides a default memory allocation algorithm that exploits the observation that applications have diminishing returns on additional memory. NetVRM provides an extension of P4, P4VRM, for developing applications with virtual register memory, and a compiler to generate data plane programs and control plane APIs. Testbed experiments show that NetVRM generalizes to a diverse variety of applications, and that its utility-based dynamic allocation policy outperforms static resource allocation. Specifically, it improves the mean satisfaction ratio (i.e., the fraction of a network application’s lifetime that it meets its utility target) by 1.6–2.2× under a range of workloads.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZenoPNKFKRRPS22,
+	author = {Lior Zeno and
+                  Dan R. K. Ports and
+                  Jacob Nelson and
+                  Daehyeok Kim and
+                  Shir Landau Feibish and
+                  Idit Keidar and
+                  Arik Rinberg and
+                  Alon Rashelbach and
+                  Igor Lima de Paula and
+                  Mark Silberstein},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {SwiSh: Distributed Shared State Abstractions for Programmable Switches},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {171--191},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zeno},
+	timestamp = {Fri, 11 Aug 2023 15:02:58 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZenoPNKFKRRPS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We  design and evaluate SwiSh, a distributed shared state management layer for  data-plane P4 programs. SwiSh enables running scalable stateful distributed network functions on programmable switches entirely in the data-plane.  We explore several schemes to build a shared variable abstraction, which differ in consistency, performance, and in-switch implementation complexity. We introduce the novel Strong Delayed-Writes (SDW) protocol which offers consistent snapshots of shared data-plane objects with semantics known as r-relaxed strong linearizability, enabling implementation of distributed concurrent sketches with precise error bounds. We implement strong, eventual, and SDW consistency protocols in Tofino switches, and compare their performance in microbenchmarks and three realistic network functions, NAT, DDoS detector, and rate limiter. Our results show that the distributed state management in the data plane is practical, and outperforms centralized solutions by up to four orders of magnitude in update throughput and replication latency.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/HoganFARW22,
+	author = {Mary Hogan and
+                  Shir Landau Feibish and
+                  Mina Tahmasbi Arashloo and
+                  Jennifer Rexford and
+                  David Walker},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Modular Switch Programming Under Resource Constraints},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {193--207},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/hogan},
+	timestamp = {Mon, 08 Apr 2024 07:48:13 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/HoganFARW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable networks support a wide variety of applications, including access control, routing, monitoring, caching, and synchronization. As demand for applications grows, so does resource contention within the switch data plane. Cramming applications onto a switch is a challenging task that often results in non-modular programming, frustrating “trial and error” compile-debug cycles, and suboptimal use of resources. In this paper, we present P4All, an extension of P4 that allows programmers to define elastic data structures that stretch automatically to make optimal use of available switch resources. These data structures are defined using symbolic primitives (that parameterize the size and shape of the structure) and objective functions (that quantify the value gained or lost as that shape changes). A top-level optimization function specifies how to share resources amongst data structures or applications. We demonstrate the inherent modularity and effectiveness of our design by building a range of reusable elastic data structures including hash tables, Bloom filters, sketches, and key-value stores, and using those structures within larger applications. We show how to implement the P4All compiler using a combination of dependency analysis, loop unrolling, linear and non-linear constraint generation, and constraint solving. We evaluate the compiler’s performance, showing that a range of elastic programs can be compiled to P4 in few minutes at most, but usually less.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/CangialosiAANSN22,
+	author = {Frank Cangialosi and
+                  Neil Agarwal and
+                  Venkat Arun and
+                  Srinivas Narayana and
+                  Anand D. Sarwate and
+                  Ravi Netravali},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Privid: Practical, Privacy-Preserving Video Analytics Queries},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {209--228},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/cangialosi},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/CangialosiAANSN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Analytics on video recorded by cameras in public areas have the potential to fuel many exciting applications, but also pose the risk of intruding on individuals’ privacy. Unfortunately, existing solutions fail to practically resolve this tension between utility and privacy, relying on perfect detection of all private information in each video frame—an elusive requirement. This paper presents: (1) a new notion of differential privacy (DP) for video analytics, (ρ,K,ε)-event-duration privacy, which protects all private information visible for less than a particular duration, rather than relying on perfect detections of that information, and (2) a practical system called Privid that enforces duration-based privacy even with the (untrusted) analyst-provided deep neural networks that are commonplace for video analytics today. Across a variety of videos and queries, we show that Privid increases error by 1-21% relative to a non-private system.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/NewmanSD22,
+	author = {Zachary Newman and
+                  Sacha Servan{-}Schreiber and
+                  Srinivas Devadas},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Spectrum: High-bandwidth Anonymous Broadcast},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {229--248},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/newman},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/NewmanSD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present Spectrum, a high-bandwidth, metadata-private file broadcasting system. In Spectrum, a small number of broadcasters share a file with many subscribers via two or more non-colluding broadcast servers. Subscribers generate cover traffic by sending dummy files, hiding which users are broadcasters and which users are only consumers.  Spectrum optimizes for a setting with few broadcasters and many subscribers—as is common to many real-world applications—to drastically improve throughput over prior work. Malicious clients are prevented from disrupting broadcasts using a novel blind access control technique that allows servers to reject malformed requests. Spectrum also prevents deanonymization of broadcasters by malicious servers deviating from protocol. Our techniques for providing malicious security are applicable to other systems for anonymous broadcast and may be of independent interest. We implement and evaluate Spectrum. Compared to the state-of-the-art in cryptographic anonymous communication systems, Spectrum’s peak throughput is 4–120,000× faster (and commensurately cheaper) in a broadcast setting. Deployed on two commodity servers, Spectrum allows broadcasters to share 1GB (two full-length 720p documentary movies) in 13h 20m with an anonymity set of 10,000 (for a total cost of about $6.84). These costs scale roughly linearly in the size of the file and total number of users, and Spectrum parallelizes trivially with more hardware.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/BrombergDFR22,
+	author = {Y{\'{e}}rom{-}David Bromberg and
+                  Quentin Dufour and
+                  Davide Frey and
+                  Etienne Rivi{\`{e}}re},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Donar: Anonymous VoIP over Tor},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {249--265},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/bromberg},
+	timestamp = {Tue, 07 May 2024 20:13:40 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/BrombergDFR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present DONAR, a system enabling anonymous VoIP with good quality-of-experience (QoE) over Tor. No individual Tor link can match VoIP networking requirements. DONAR bridges this gap by spreading VoIP traffic over several links. It combines active performance monitoring, dynamic link selection, adaptive traffic scheduling, and redundancy at no extra bandwidth cost. DONAR enables high QoE: latency remains under 360 ms for 99% of VoIP packets during most (86%) 5-minute and 90-minute calls.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/WangWTCN22,
+	author = {Weitao Wang and
+                  Xinyu Crystal Wu and
+                  Praveen Tammana and
+                  Ang Chen and
+                  T. S. Eugene Ng},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Closed-loop Network Performance Monitoring and Diagnosis with SpiderMon},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {267--285},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/wang-weitao-spidermon},
+	timestamp = {Sat, 30 Sep 2023 09:54:14 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/WangWTCN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Performance monitoring and diagnosis are essential for data centers. The emergence of programmable switches has led to the development of a slew of monitoring systems, but most of them do not explicitly target posterior diagnosis. On one hand, “query-driven” monitoring systems must be pre-configured with a static query, but it is difficult to achieve high coverage because the right query for posterior diagnosis may not be known in advance. On the other hand, “blanket” monitoring systems have high coverage as they always collect telemetry data from all switches, but they collect excessive data. SpiderMon is a system that co-designs monitoring and posterior diagnosis in a closed loop to achieve low overhead and high coverage simultaneously, by leveraging “wait-for” relations to guide its operations. We evaluate SpiderMon in both Tofino hardware and BMv2 software switches and show that SpiderMon diagnoses performance problems accurately and quickly with low overhead.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/KongZZJYGZ22,
+	author = {Xinhao Kong and
+                  Yibo Zhu and
+                  Huaping Zhou and
+                  Zhuo Jiang and
+                  Jianxi Ye and
+                  Chuanxiong Guo and
+                  Danyang Zhuo},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Collie: Finding Performance Anomalies in {RDMA} Subsystems},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {287--305},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/kong},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/KongZZJYGZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {High-speed RDMA networks are getting rapidly adopted in the industry for their low latency and reduced CPU overheads. To verify that RDMA can be used in production, system administrators need to understand the set of application workloads that can potentially trigger abnormal performance behaviors (e.g., unexpected low throughput, PFC pause frame storm). We design and implement Collie, a tool for users to systematically uncover performance anomalies in RDMA subsystems without the need to access hardware internal designs. Instead of individually testing each hardware device (e.g., NIC, memory, PCIe), Collie is holistic, constructing a comprehensive search space for application workloads. Collie then uses simulated annealing to drive RDMA-related performance and diagnostic counters to extreme value regions to find workloads that can trigger performance anomalies. We evaluate Collie on combinations of various RDMA NIC, CPU, and other hardware components. Collie found 15 new performance anomalies. All of them are acknowledged by the hardware vendors. 7 of them are already fixed after we reported them. We also present our experience in using Collie to avoid performance anomalies for an RDMA RPC library and an RDMA distributed machine learning framework.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/KakarlaBMV22,
+	author = {Siva Kesava Reddy Kakarla and
+                  Ryan Beckett and
+                  Todd D. Millstein and
+                  George Varghese},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {{SCALE:} Automatically Finding {RFC} Compliance Bugs in {DNS} Nameservers},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {307--323},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/kakarla},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/KakarlaBMV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Domain Name System (DNS) has intricate features that interact in subtle ways. Bugs in DNS implementations while handling combinations of these features can lead to incorrect or implementation-dependent behavior, security vulnerabilities, and more. We introduce the first approach for finding RFC compliance errors in DNS nameserver implementations via automatic test generation. Our SCALE (Small-scope Constraint-driven Automated Logical Execution) approach jointly generates zone files and corresponding queries to cover RFC behaviors specified by an executable model of DNS resolution. We have built a tool called Ferret based on this approach and applied it to test 8 open-source DNS implementations, including popular implementations such as Bind, PowerDNS, Knot, and Nsd. Ferret generated over 13K test files, of which 62% resulted in some difference among implementations. We identified and reported 30 new unique bugs from these failed test cases, including at least one bug in every implementation, of which 20 have already been fixed.  Many of these existed in even the most popular DNS implementations, including a new critical vulnerability in Bind that attackers could easily exploit to crash DNS resolvers and nameservers remotely.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/KrishnaswamySBR22,
+	author = {Umesh Krishnaswamy and
+                  Rachee Singh and
+                  Nikolaj S. Bj{\o}rner and
+                  Himanshu Raj},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Decentralized cloud wide-area network traffic engineering with {BLASTSHIELD}},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {325--338},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/krishnaswamy},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/KrishnaswamySBR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud networks are increasingly managed by centralized software defined controllers. Centralized traffic engineering controllers achieve higher network throughput than decentralized implementations, but are a single point of failure in the network. Large scale networks require controllers with isolated fault domains to contain the blast radius of faults. In this work, we present BLASTSHIELD, Microsoft’s software-defined decentralized WAN traffic engineering system. BLASTSHIELD slices the WAN into smaller fault domains, each managed by its own slice controller. Slice controllers independently engineer traffic in their slices to maximize global network throughput without relying on hierarchical or central coordination. BLASTSHIELD is fully deployed in Microsoft’s WAN and carries a majority of the backbone traffic. BLASTSHIELD achieves similar network throughput as the previous generation centralized controller and reduces traffic loss from controller failures by 60%.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/MiaoCGMYXCHL0022,
+	author = {Congcong Miao and
+                  Minggang Chen and
+                  Arpit Gupta and
+                  Zili Meng and
+                  Lianjin Ye and
+                  Jingyu Xiao and
+                  Jie Chen and
+                  Zekun He and
+                  Xulong Luo and
+                  Jilong Wang and
+                  Heng Yu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Detecting Ephemeral Optical Events with OpTel},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {339--353},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/miao},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/MiaoCGMYXCHL0022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Degradation or failure events in optical backbone networks affect the service level agreements for cloud services. It is critical to detect and troubleshoot these events promptly to minimize their impact. Existing telemetry systems rely on arcane tools (e.g., SNMP) and vendor-specific controllers to collect optical data, which affects both the flexibility and scale of these systems. As a result, they fail to collect the required data on time to detect and troubleshoot degradation or failure events in a timely fashion. This paper presents the design and implementation of OpTel, an optical telemetry system, that uses a centralized vendor-agnostic controller to collect optical data in a streaming fashion. More specifically, it offers flexible vendor-agnostic interfaces between the optical devices and the controller and offloads data-management tasks (e.g., creating a queryable database) from the devices to the controller. As a result, OpTel enables the collection of fine-grained optical telemetry data at the one-second granularity. It has been running in Tencent's optical backbone network for the past six months. The fine-grained data collection enables the detection of short-lived events (i.e., ephemeral events). Compared to existing telemetry systems, OpTel accurately detects 2x more optical events. It also enables troubleshooting of these optical events in a few seconds, which is orders of magnitude faster than the state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ArumugamBBBCKMM22,
+	author = {Manikandan Arumugam and
+                  Deepak Bansal and
+                  Navdeep Bhatia and
+                  James Boerner and
+                  Simon Capper and
+                  Changhoon Kim and
+                  Sarah McClure and
+                  Neeraj Motwani and
+                  Ranga Narasimhan and
+                  Urvish Panchal and
+                  Tommaso Pimpo and
+                  Ariff Premji and
+                  Pranjal Shrivastava and
+                  Rishabh Tewari},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Bluebird: High-performance {SDN} for Bare-metal Cloud Services},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {355--370},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/arumugam},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ArumugamBBBCKMM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The bare-metal cloud service is a type of IaaS (Infrastructure as a Service) that offers dedicated server hardware to customers along with access to other shared infrastructure in the cloud, including network and storage. This paper presents our experiences in designing, implementing, and deploying Bluebird, the high-performance network virtualization system for the bare-metal cloud service on Azure. Bluebird's data plane is built using high-performance programmable switch ASICs. This design allows us to ensure the high performance, scale, and custom forwarding capabilities necessary for network virtualization on Azure. Bluebird employs a few well-established technical principles in the control plane that ensure scalability and high availability, including route caching, device abstraction, and architectural decoupling of switch-local agents from a remote controller.  The Bluebird system has been running on Azure for more than two years. During this time, it has served thousands of bare-metal tenant nodes and delivered full line-rate NIC speed of bare-metal servers of up to 100Gb/s while ensuring less than 1µs of maximum latency at each Bluebird-enabled SDN switch. We share our experiences of running bare-metal services on Azure, along with the P4 data plane program used in the Bluebird-enabled switches.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/LiGZLLL22,
+	author = {Yifan Li and
+                  Jiaqi Gao and
+                  Ennan Zhai and
+                  Mengqi Liu and
+                  Kun Liu and
+                  Hongqiang Harry Liu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Cetus: Releasing {P4} Programmers from the Chore of Trial and Error
+                  Compiling},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {371--385},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/li-yifan},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/LiGZLLL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable switches are widely deployed in Alibaba's edge networks. To enable the processing of packets at line rate, our programmers use P4 language to offload network functions onto these switches. As we were developing increasingly more complex offloaded network functions, we realized that our development needs to follow a certain set of constraints in order to fit the P4 programs into available hardware resources. Not adhering to these constraints results in fitting issues, making the program uncompilable. Therefore, we decide to build a system (called Cetus) that automatically converts an uncompilable P4 program into a functionally identical but compilable P4 program. In this paper, we share our experience in the building and using of Cetus at Alibaba. Our design insights for this system come from our investigation of the past fitting issues of our production P4 programs. We found that the long dependency chains between actions in our production P4 programs are creating difficulties for the programs to comply with the hardware resources of programmable switching ASICs, resulting in the majority of our fitting issues. Guided by this finding, we designed the core approach of Cetus to efficiently synthesize a compilable program by shortening the lengthy dependency chains. We have been using Cetus in our production P4 program development for one year, and it has effectively decreased our P4 development workload by two orders of magnitude (from O(day) to O(min)). In this paper we share several real cases addressed by Cetus, along with its performance evaluation.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/XuTZ22,
+	author = {Talia Xu and
+                  Miguel Ch{\'{a}}vez Tapia and
+                  Marco Z{\'{u}}{\~{n}}iga},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Exploiting Digital Micro-Mirror Devices for Ambient Light Communication},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {387--400},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/xu-talia},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/XuTZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There is a growing interest in exploiting ambient light for wireless communication. This new research area has two key advantages: it utilizes a free portion of the spectrum and does not require modifications of the lighting infrastructure. Most existing designs, however, rely on a single type of optical surface at the transmitter: liquid crystal displays (LCDs). LCDs have two inherent limitations, they cut the optical power in half, which affects the range; and they have slow time responses, which affects the data rate. We take a step back to provide a new perspective for ambient light communication with two novel contributions. First, we propose an optical model to understand the fundamental limits and opportunities of ambient light communication. Second, based on the insights of our model, we build a  novel platform, dubbedPhotoLink, that exploits a different type of optical surface: digital micro-mirror devices (DMDs). Considering the same scenario in terms of surface area and ambient light conditions, we benchmark the performance of PhotoLink using two types of receivers, one optimized for LCDs and the other for DMDs. In both cases, PhotoLink outperforms the data rate of equivalent LCD-transmitters by factors of 30 and 80: 30kbps & 80 kbps vs. 1 kbps, while consuming less than 50 mW. Even when compared to a more sophisticated multi-cell LCD platform, which has a surface area that is 500 times bigger than ours, PhotoLink’s data rate is 10-fold: 80 kbps vs. 8 kbps. To the best of our knowledge this is the first work providing an optical model for ambient light communication and breaking the 10 kbps barrier for these types of links.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ChakrabortySKPV22,
+	author = {Tusher Chakraborty and
+                  Heping Shi and
+                  Zerina Kapetanovic and
+                  Bodhi Priyantha and
+                  Deepak Vasisht and
+                  Binh Vu and
+                  Parag Pandit and
+                  Prasad Pillai and
+                  Yaswant Chabria and
+                  Andrew Nelson and
+                  Michael Daum and
+                  Ranveer Chandra},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Whisper: IoT in the {TV} White Space Spectrum},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {401--418},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/chakraborty},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ChakrabortySKPV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The deployment of Internet of Things (IoT) networks has rapidly increased over recent years -- to connect homes, cities, farms, and many other industries. Today, these networks rely on connectivity solutions, such as LoRaWAN, operating in the ISM bands. Our experience from deployments in multiple countries has shown that such networks are bottlenecked by range and bandwidth. Therefore, we propose a new connectivity solution operating in TV White Space (TVWS) spectrum, where narrowband devices configured for IoT can opportunistically transmit data, while protecting incumbents from receiving harmful interference. The lower frequency of operation extends the range by a factor of five over ISM bands. In less-densely populated area where larger swaths of such bandwidth are available, TVWS-based IoT networks can support many more devices simultaneously and larger transmission size per device. Our early experimental field work was incorporated into a petition to the US FCC, and further work influenced the subsequent regulations permitting the use of IoT devices in TVWS. We highlight the technical challenges and our solutions involved in deploying IoT devices in the shared spectrum and complying with the FCC rules.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GeissdoerferZ22,
+	author = {Kai Geissdoerfer and
+                  Marco Zimmerling},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Learning to Communicate Effectively Between Battery-free Devices},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {419--435},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/geissdoerfer},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GeissdoerferZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Successful wireless communication requires that sender and receiver are operational at the same time. This requirement is difficult to satisfy in battery-free networks, where the energy harvested from ambient sources varies across time and space and is often too weak to continuously power the devices. We present Bonito, the first connection protocol for battery-free systems that enables reliable and  efficient bi-directional communication between intermittently powered nodes. We collect and analyze real-world energy-harvesting traces from five diverse scenarios involving solar panels and piezoelectric harvesters, and find that the nodes' charging times approximately follow well-known distributions. Bonito learns a model of these distributions online and adapts the nodes' wake-up times so that sender and receiver are operational at the same time, enabling successful communication. Experiments with battery-free prototype nodes built from off-the-shelf hardware components demonstrate that our design improves the average throughput by 10-80× compared with the state of the art.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GuoS0JZJL22,
+	author = {Xiuzhen Guo and
+                  Longfei Shangguan and
+                  Yuan He and
+                  Nan Jing and
+                  Jiacheng Zhang and
+                  Haotian Jiang and
+                  Yunhao Liu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Saiyan: Design and Implementation of a Low-power Demodulator for LoRa
+                  Backscatter Systems},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {437--451},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/guo},
+	timestamp = {Tue, 20 Dec 2022 21:20:03 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/GuoS0JZJL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The radio range of backscatter systems continues growing as new wireless communication primitives are continuously invented. Nevertheless, both the bit error rate and the packet loss rate of backscatter signals increase rapidly with the radio range, thereby necessitating the cooperation between the access point and the backscatter tags through a feedback loop. Unfortunately, the low-power nature of backscatter tags limits their ability to demodulate feedback signals from a remote access point and scales down to such circumstances. This paper presents Saiyan, an ultra-low-power demodulator for long-range LoRa backscatter systems. With Saiyan, a backscatter tag can demodulate feedback signals from a remote access point with moderate power consumption and then perform an immediate packet re-transmission in the presence of packet loss. Moreover, Saiyan enables rate adaption and channel hopping – two PHY-layer operations that are important to channel efficiency yet unavailable on long-range backscatter systems. We prototype Saiyan on a two-layer PCB board and evaluate its performance in different environments. Results show that Saiyan achieves 3.5–5x gain on the demodulation range, compared with state-of-the-art systems. Our ASIC simulation shows that the power consumption of Saiyan is around 93.2 μW. Code and hardware schematics can be found at: https://github.com/ZangJac/Saiyan.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/NajafiW22,
+	author = {Ali Najafi and
+                  Michael Wei},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Graham: Synchronizing Clocks by Leveraging Local Clock Properties},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {453--466},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/najafi},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/NajafiW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {High performance, strongly consistent applications are beginning to require scalable sub-microsecond clock synchronization. State-of-the-art clock synchronization focuses on improving accuracy or frequency of synchronization, ignoring the properties of the local clock: lost of connectivity to the remote clock means synchronization failure. Our system, Graham, leverages the fact that the local clock still keeps time even when connectivity is lost and builds a failure model using the characteristics of the local clock and the desired synchronization accuracy. Graham characterizes the local clock using commodity sensors present in nearly every server and leverages this data to further improve clock accuracy, increasing the tolerance of Graham to failures. Graham reduces the clock drift of a commodity server by up to 2000×, reducing the maximum assumed drift in most situations from 200ppm to 100ppb.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ShamisPC0FACCDK22,
+	author = {Alex Shamis and
+                  Peter R. Pietzuch and
+                  Burcu Canakci and
+                  Miguel Castro and
+                  C{\'{e}}dric Fournet and
+                  Edward Ashton and
+                  Amaury Chamayou and
+                  Sylvan Clebsch and
+                  Antoine Delignat{-}Lavaud and
+                  Matthew Kerner and
+                  Julien Maffre and
+                  Olga Vrousgou and
+                  Christoph M. Wintersteiger and
+                  Manuel Costa and
+                  Mark Russinovich},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {{IA-CCF:} Individual Accountability for Permissioned Ledgers},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {467--491},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/shamis},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ShamisPC0FACCDK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Permissioned ledger systems allow a consortium of members that do not trust one another to execute transactions safely on a set of replicas. Such systems typically use Byzantine fault tolerance (BFT) protocols to distribute trust, which only ensures safety when fewer than 1/3 of the replicas misbehave. Providing guarantees beyond this threshold is a challenge: current systems assume that the ledger is corrupt and fail to identify misbehaving replicas or hold the members that operate them accountable—instead all members share the blame. We describe IA-CCF, a new permissioned ledger system that provides individual accountability. It can assign blame to the individual members that operate misbehaving replicas regardless of the number of misbehaving replicas or members. IA-CCF achieves this by signing and logging BFT protocol messages in the ledger, and by using Merkle trees to provide clients with succinct, universally-verifiable receipts as evidence of successful transaction execution. Anyone can audit the ledger against a set of receipts to discover inconsistencies and identify replicas that signed contradictory statements. IA-CCF also supports changes to consortium membership and replicas by tracking signing keys using a sub-ledger of governance transactions. IA-CCF provides strong disincentives to misbehavior with low overhead: it executes 47,000 tx/s while providing clients with receipts in two network round trips.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/YangPAKT22,
+	author = {Lei Yang and
+                  Seo Jin Park and
+                  Mohammad Alizadeh and
+                  Sreeram Kannan and
+                  David Tse},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {DispersedLedger: High-Throughput Byzantine Consensus on Variable Bandwidth
+                  Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {493--512},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/yang},
+	timestamp = {Thu, 04 Aug 2022 19:55:15 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/YangPAKT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The success of blockchains has sparked interest in large-scale deployments of Byzantine fault tolerant (BFT) consensus protocols over wide area networks. A central feature of such networks is variable communication bandwidth across nodes and across time. We present DispersedLedger, an asynchronous BFT protocol that provides near-optimal throughput in the presence of such variable network bandwidth. The core idea of DispersedLedger is to enable nodes to propose, order, and agree on blocks of transactions without having to download their full content. By enabling nodes to agree on an ordered log of blocks, with a guarantee that each block is available within the network and unmalleable, DispersedLedger decouples bandwidth-intensive block downloads at different nodes, allowing each to make progress at its own pace. We build a full system prototype and evaluate it on real-world and emulated networks. Our results on a geo-distributed wide-area deployment across the Internet shows that DispersedLedger achieves 2x better throughput and 74% reduction in latency compared to HoneyBadger, the state-of-the-art asynchronous protocol.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/SiracusanoGSMAC22,
+	author = {Giuseppe Siracusano and
+                  Salvator Galea and
+                  Davide Sanvito and
+                  Mohammad Malekzadeh and
+                  Gianni Antichi and
+                  Paolo Costa and
+                  Hamed Haddadi and
+                  Roberto Bifulco},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Re-architecting Traffic Analysis with Neural Network Interface Cards},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {513--533},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/siracusano},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/SiracusanoGSMAC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present an approach to improve the scalability of online machine learning-based network traffic analysis. We first make the case to replace widely-used supervised machine learning models for network traffic analysis with binary neural networks. We then introduce Neural Networks on the NIC (N3IC), a system that compiles binary neural network models into implementations that can be directly integrated in the data plane of SmartNICs. N3IC supports different hardware targets, and it generates data plane descriptions using both micro-C and P4 languages. We implement and evaluate our solution using two use cases related to traffic identification and to anomaly detection. In both cases, N3IC provides up to a 100x lower classification latency, and 1.5–7x higher throughput than state-of-the-art software-based machine learning classification systems. This is achieved by running the entire traffic analysis pipeline within the data plane of the SmartNIC, thereby completely freeing the system's CPU from any related tasks, while forwarding traffic at line rate (40Gbps) on the target NICs. Encouraged by these results we finally present the design and FPGA-based prototype of a hardware primitive that adds binary neural network support to a NIC data plane. Our new primitive requires less than 1–2% of the logic and memory resources of a VirteX7 FPGA. We show through experimental evaluation that extending the NIC data plane enables more challenging use cases that require online traffic analysis to be performed in a few microseconds.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/Wang0LWSW22,
+	author = {Yanshu Wang and
+                  Dan Li and
+                  Yuanwei Lu and
+                  Jianping Wu and
+                  Hua Shao and
+                  Yutian Wang},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Elixir: {A} High-performance and Low-cost Approach to Managing Hardware/Software
+                  Hybrid Flow Tables Considering Flow Burstiness},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {535--550},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/wang-yanshu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/Wang0LWSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hardware/software hybrid flow table is common in modern commodity network devices, such as NFV servers, smart NICs and SDN/OVS switches. The overall forwarding performance of the network device and the required CPU resources are considerably affected by the method of how to split the flow table between hardware and software. Previous works usually leverage the traffic skewness for flow table splitting, e.g. offloading top 10% largest flows to the hardware can save up to ~90% CPU resources. However, the widely-existing bursty flows bring more challenges to flow table splitting. In particular, we need to identify the proper flows and proper timing to exchange the flows between hardware and software by considering flow burstiness, so as to maximize the overall performance with low overhead. In this paper we present Elixir, a high-performance and low-cost approach to managing hardware/software hybrid flow tables on commodity devices. The core idea of Elixir includes three parts, namely, combining sampling-based and counter-based mechanisms for flow rate measurement, separating the replacement of large flows and bursty flows, as well as decoupling the flow rate identification window and the flow replacement window. We have implemented Elixir prototypes on both Mellanox ConnectX-5 NIC and Barefoot Wedge100BF-32X/65X P4 Switch, with a software library on top of DPDK. Our experiments based on real-world data traces demonstrate that, compared with the state-of-the-art solutions, Elixir can save up to ~50% software CPU resources while keeping the tail forwarding latency ~97.6% lower.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GaoD0C22,
+	author = {Peixuan Gao and
+                  Anthony Dalleggio and
+                  Yang Xu and
+                  H. Jonathan Chao},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Gearbox: {A} Hierarchical Packet Scheduler for Approximate Weighted
+                  Fair Queuing},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {551--565},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/gao-peixuan},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GaoD0C22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bandwidth allocation and performance isolation are crucial to achieving network virtualization and guaranteeing service quality in data centers as well as other network systems. Weighted Fair Queuing (WFQ) can achieve customized bandwidth allocation and flow isolation; however, its implementation in large-scale high-speed network systems is very challenging due to the high complexity of the scheduling and the large number of queues required. This paper proposes Gearbox, a scheduler primitive for next-generation programmable switches and smart NICs that practically approximates WFQ. Gearbox consists of a logical hierarchy of queuing levels, which accommodate a wide range of packet departure times using a relatively small number of FIFOs. Gearbox's enqueue and dequeue operations have O(1) time complexity, which makes it suitable to cope with high-speed line rates. Gearbox provides its simplicity and performance advantages by allowing slight discrepancies in packet departure time from strict WFQ. We show that Gearbox's normalized departure time discrepancy is bounded and has a negligible impact on bandwidth allocation and flow completion time (FCT). We implement Gearbox in NS2 and in VHDL, targeted to a Xilinx Alveo U250 card with an XCVU13P FPGA. The NS2 evaluation results show that Gearbox closely approximates WFQ and achieves weighted max-min fairness in bandwidth allocation as well as flow isolation. Gearbox provides FCT performance comparable to ideal WFQ. The Gearbox FPGA prototype runs at 350MHz and achieves full line rate for 100GbE with packets larger than 123 bytes. Gearbox consumes less than 1% of the FPGA's logic resources and less than 4% of its internal block memory.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/IyerAC22,
+	author = {Rishabh R. Iyer and
+                  Katerina J. Argyraki and
+                  George Candea},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Performance Interfaces for Network Functions},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {567--584},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/iyer},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/IyerAC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern programmers routinely use third-party code, and infrastructure operators deploy software they did not write. This would not be possible without semantic interfaces---documentation, header files, specifications---that succinctly describe what that third-party code does. We propose performance interfaces as a way to describe a system's performance, akin to how a semantic interface describes its functionality.  We concretize this idea in the domain of network functions (NFs) and present a tool (PIX) that automatically extracts performance interfaces from NF implementations. We evaluate PIX on 12 NFs, including several used in production. The resulting performance interfaces are accurate yet orders of magnitude simpler than the code itself and take minutes to extract. We show how developers and operators can use performance interfaces to identify performance regressions, diagnose and fix performance bugs and identify the latency impact of NIC offloads. PIX is available at https://github.com/dslab-epfl/pix.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/PirelliVAC22,
+	author = {Solal Pirelli and
+                  Akvile Valentukonyte and
+                  Katerina J. Argyraki and
+                  George Candea},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Automated Verification of Network Function Binaries},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {585--600},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/pirelli},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/PirelliVAC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Formally verifying the correctness of software network functions (NFs) is necessary for network reliability, yet existing techniques require full source code and mandate the use of specific data structures. We describe an automated technique to verify NF binaries, making verification usable by network operators even on proprietary code. To solve the key challenge of bridging the abstraction levels of NF implementations and specifications without special-casing a set of data structures, we observe that data structures used by NFs can be modeled as maps, and introduce a universal type to specify both NFs and their data structures, the "ghost map". In addition, we observe that the interactions between an NF and its environment are sufficient to infer control flow and types, removing the requirement for source code. We implement our technique in Klint, a tool with which we verify, in minutes, that 7 NF binaries satisfy their specifications, without limiting developers\' choices of data structures. The specifications are written in Python and use maps to model state. Klint can also verify an entire NF binary stack, all the way down to the NIC driver, using a minimal operating system. Operators can thus verify NF binaries, without source code or debug symbols, without requiring developers to use specific programming languages or data structures, and without trusting any software except Klint.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/0011GZH0022,
+	author = {Peng Zhang and
+                  Aaron Gember{-}Jacobson and
+                  Yueshang Zuo and
+                  Yuhao Huang and
+                  Xu Liu and
+                  Hao Li},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Differential Network Analysis},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {601--615},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhang-peng},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/0011GZH0022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Networks are constantly changing. To avoid outages, operators need to know whether prospective changes in a network\'s control plane will cause undesired changes in end-to-end forwarding behavior. For example, which pairs of end hosts are reachable before a configuration change but unreachable after the change? Control plane verifiers are ill-suited for answering such questions because they operate on a single snapshot to check its "compliance" with "explicitly specified" properties, instead of quantifying the "differences" in "affected" end-to-end forwarding behaviors. We argue for a new control plane analysis paradigm that makes differences first class citizens. Differential Network Analysis (DNA) takes control plane changes, incrementally computes control and data plane state, and outputs consequent differences in end-to-end behavior. We break the computation into three stages---control plane simulation, data plane modeling, and property checking---and leverage differential dataflow programming frameworks, incremental data plane verification, and customized graph algorithms, respectively, to make each stage incremental. Evaluations using both real and synthetic control plane changes demonstrate that DNA can compute the resulting differences in reachability in a few seconds---up to 3 orders of magnitude faster than state-of-the-art control plane verifiers.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/BeckettG22,
+	author = {Ryan Beckett and
+                  Aarti Gupta},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Katra: Realtime Verification for Multilayer Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {617--634},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/beckett},
+	timestamp = {Sat, 30 Sep 2023 09:54:14 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/BeckettG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a new verification algorithm to efficiently and incrementally verify arbitrarily layered network data planes that are implemented using packet encapsulation and decapsulation. Inspired by work on model checking of pushdown systems for recursive programs, we develop a verification algorithm for networks consisting of stacks of headers. Our algorithm is based on a new technique that lazily "repairs" a decomposed stack of header sets on demand to account for cross-layer dependencies. We demonstrate how to integrate our approach with existing fast incremental data plane verifiers and have implemented our ideas in a tool called Katra. Evaluating Katra against an alternative approach based on equipping existing incremental verifiers to emulate finite header stacks, we show that Katra is between 5x-32x faster for packets with just 2 headers (layers), and that its performance advantage grows with both network size and layering.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/FengC0XLZYW022,
+	author = {Yong Feng and
+                  Zhikang Chen and
+                  Haoyu Song and
+                  Wenquan Xu and
+                  Jiahao Li and
+                  Zijian Zhang and
+                  Tong Yun and
+                  Ying Wan and
+                  Bin Liu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Enabling In-situ Programmability in Network Data Plane: From Architecture
+                  to Language},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {635--649},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/feng},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/FengC0XLZYW022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-situ programmability refers to the capability for network devices to update data plane functions and protocol processing logic at runtime without interrupting the services, driven by dynamic and interactive network operations towards autonomous networks. The existing programmable switch architecture (e.g., PISA) and programming language (e.g., P4) were designed for monolithic and static implementation, which requires a complete programming and deployment cycle for functional update, incurring long delay and service interruption. Addressing the fundamental reasons for such inflexibility, we design a new In-situ Programmable Switch Architecture (IPSA) and the corresponding design flow using rP4, a P4 language extension, as a fix. The compiler contains algorithms to support efficient resource mapping for both base design and incremental updates. To manifest the in-situ programming feasibility, we demonstrate several practical use cases on both a software switch, ipbm, and an FPGA-based prototype.  Our experiments and analysis show that IPSA incurs moderate hardware cost which can be justified by its benefits and compensated by newer chip technologies. The in-situ programmability enabled by IPSA and rP4 advances the state of the art of programmable networks and opens a promising new design space.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/XingHKLPKC22,
+	author = {Jiarong Xing and
+                  Kuo{-}Feng Hsu and
+                  Matty Kadosh and
+                  Alan Lo and
+                  Yonatan Piasetzky and
+                  Arvind Krishnamurthy and
+                  Ang Chen},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Runtime Programmable Switches},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {651--665},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/xing},
+	timestamp = {Thu, 22 Dec 2022 16:48:30 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/XingHKLPKC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programming the network to add, remove, and modify functions has been a longstanding goal in our community. Unfortunately, in today’s programmable networks, the velocity of change is restricted by a practical yet fundamental barrier: reprogramming network devices is an intrusive change, requiring management operations such as draining and rerouting traffic from the target node, re-imaging the data plane, and redirecting traffic back to its original route. This project investigates design techniques to make future networks runtime programmable. FlexCore enables partial reconfiguration of switch data planes at runtime with minimum resource overheads, without service disruption, while processing packets with consistency guarantees. It involves design considerations in switch architectures, partial reconfiguration primitives, reconfiguration algorithms, as well as consistency guarantees. Our evaluation results demonstrate the feasibility and benefits of runtime programmable switches.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/LiZG0XHL22,
+	author = {Guanyu Li and
+                  Menghao Zhang and
+                  Cheng Guo and
+                  Han Bao and
+                  Mingwei Xu and
+                  Hongxin Hu and
+                  Fenghua Li},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {IMap: Fast and Scalable In-Network Scanning with Programmable Switches},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {667--681},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/li-guanyu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/LiZG0XHL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network scanning has been a standard measurement technique to understand a network’s security situations, e.g., revealing security vulnerabilities, monitoring service deployments. However, probing a large-scale scanning space with existing network scanners is both difficult and slow, since they are all implemented on commodity servers and deployed at the network edge. To address this, we introduce IMap, a fast and scalable in-network scanner based on programmable switches. In designing IMap, we overcome key restrictions posed by computation models and memory resources of programmable switches, and devise numerous techniques and optimizations, including an address-random and rate-adaptive probe packet generation mechanism, and a correct and efficient response packet processing scheme, to turn a switch into a practical high-speed network scanner. We implement an open-source prototype of IMap, and evaluate it with extensive testbed experiments and real-world deployments in our campus network. Evaluation results show that even with one switch port enabled, IMap can survey all ports of our campus network (i.e., a total of up to 25 billion scanning space) in 8 minutes. This demonstrates a nearly 4 times faster scanning speed and 1.5 times higher scanning accuracy than the state of the art, which shows that IMap has great potentials to be the next-generation terabit network scanner with all switch ports enabled. Leveraging IMap, we also discover several potential security threats in our campus network, and report them to our network administrators responsibly.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/YuanAFNPSCK22,
+	author = {Yifan Yuan and
+                  Omar Alama and
+                  Jiawei Fei and
+                  Jacob Nelson and
+                  Dan R. K. Ports and
+                  Amedeo Sapio and
+                  Marco Canini and
+                  Nam Sung Kim},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Unlocking the Power of Inline Floating-Point Operations on Programmable
+                  Switches},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {683--700},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/yuan},
+	timestamp = {Fri, 11 Aug 2023 15:02:58 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/YuanAFNPSCK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The advent of switches with programmable dataplanes has enabled the rapid development of new network functionality, as well as providing a platform for acceleration of a broad range of application-level functionality. However, existing switch hardware was not designed with application acceleration in mind, and thus applications requiring operations or datatypes not used in traditional network protocols must resort to expensive workarounds. Applications involving floating point data, including distributed training for machine learning and distributed query processing, are key examples. In this paper, we propose FPISA, a floating point representation designed to work efficiently in programmable switches. We first implement FPISA on an Intel Tofino switch, but find that it has limitations that impact throughput and accuracy. We then propose hardware changes to address these limitations based on the open-source Banzai switch architecture, and synthesize them in a 15-nm standard-cell library to demonstrate their feasibility. Finally, we use FPISA to implement accelerators for training for machine learning and for query processing, and evaluate their performance on a switch implementing our changes using emulation. We find that FPISA allows distributed training to use 25-75% fewer CPU cores and provide up to 85.9% better throughput in a CPU-constrained environment than SwitchML. For distributed query processing with floating point data, FPISA enables up to 2.7× better throughput than Spark.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/MisaODRW22,
+	author = {Chris Misa and
+                  Walt O'Connor and
+                  Ramakrishnan Durairajan and
+                  Reza Rejaie and
+                  Walter Willinger},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Dynamic Scheduling of Approximate Telemetry Queries},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {701--717},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/misa},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/MisaODRW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network telemetry systems provide critical visibility into the state of networks. While significant progress has been made by leveraging programmable switch hardware to scale these systems to high and time-varying traffic workloads, less attention has been paid towards efficiently utilizing limited hardware resources in the face of dynamics such as the composition of traffic as well as the number and types of queries running at a given point in time. Both these dynamics have implications on resource requirements and query accuracy. In this paper, we argue that this dynamics problem motivates reframing telemetry systems as resource schedulers---a significant departure from state-of-the-art. More concretely, rather than statically partition queries across hardware and software platforms, telemetry systems ought to decide on their own and at runtime when and for how long to execute the set of active queries on the data plane. To this end, we propose an efficient approximation and scheduling algorithm that exposes accuracy and latency tradeoffs with respect to query execution to reduce hardware resource usage. We evaluate our algorithm by building DynATOS, a hardware prototype built around a reconfigurable approach to ASIC programming. We show that our approach is more robust than state-of-the-art methods to traffic dynamics and can execute dynamic workloads comprised of multiple concurrent and sequential queries of varied complexities on a single switch while meeting per-query accuracy and latency goals.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/AgarwalLS22,
+	author = {Anup Agarwal and
+                  Zaoxing Liu and
+                  Srinivasan Seshan},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {HeteroSketch: Coordinating Network-wide Monitoring in Heterogeneous
+                  and Dynamic Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {719--741},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/agarwal},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/AgarwalLS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network monitoring and measurement have always been critical components of network management. Recent developments in sketch-based monitoring techniques and the deployment opportunities arising from the increasing programmability of network elements (e.g., programmable switches, SmartNICs, and software switches) have made the possibility of accurate, detailed, network-wide telemetry tantalizingly within reach. However, the wide heterogeneity of the programmable hardware and dynamic changes in both resources available and resources needed for monitoring over time make existing approaches to network-wide monitoring impractical. We present HeteroSketch, a framework that consists of two main components: (1) a profiling tool that automatically quantifies the capabilities of arbitrary hardware by predicting their performance for sketching algorithms, and (2) an optimization framework that decides placement of measurement tasks and resource allocation for devices to meet monitoring goals while considering heterogeneous device capabilities. HeteroSketch enables optimized deployments for large networks (> 40,000 nodes) using a novel clustering approach and enables prompt responses to network topology, traffic, query, and resource dynamics. Our evaluation shows that HeteroSketch reduces resource overheads by 20-60% compared to prior art, while maintaining monitoring performance, coverage, and accuracy.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/NamkungLKSS22,
+	author = {Hun Namkung and
+                  Zaoxing Liu and
+                  Daehyeok Kim and
+                  Vyas Sekar and
+                  Peter Steenkiste},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {SketchLib: Enabling Efficient Sketch-based Monitoring on Programmable
+                  Switches},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {743--759},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/namkung},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/NamkungLKSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sketching algorithms or sketches enable accurate network measurement results with low resource footprints. While emerging programmable switches are an attractive target to get these benefits, current implementations of sketches are either inefficient and/or infeasible on hardware. Our contributions in the paper are: (1) systematically analyzing the resource bottlenecks of existing sketch implementations in hardware; (2) identifying practical and correct-by-construction optimization techniques to tackle the identified bottlenecks; and (3) designing an easy-to-use library called SketchLib to help developers efficiently implement their sketch algorithms in switch hardware to benefit from these resource optimizations. Our evaluation on state-of-the-art sketches demonstrates that SketchLib reduces the hardware resource footprint up to 96% without impacting fidelity.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/OlteanuEDPBSNHR22,
+	author = {Vladimir Andrei Olteanu and
+                  Haggai Eran and
+                  Dragos Dumitrescu and
+                  Adrian Popa and
+                  Cristi Baciu and
+                  Mark Silberstein and
+                  Georgios Nikolaidis and
+                  Mark Handley and
+                  Costin Raiciu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {An edge-queued datagram service for all datacenter traffic},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {761--777},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/olteanu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/OlteanuEDPBSNHR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern datacenters support a wide range of protocols and in-network switch enhancements aimed at improving performance. Unfortunately, most new and legacy protocols and enhancements often don’t coexist gracefully because they inevitably interact via queuing in the network. In this paper we describe EQDS, a new datagram service for datacenters that moves almost all of the queuing out of the core network and into the sending host. This enables it to support multiple (conflicting) higher layer protocols, while only sending packets into the network when decided by a receiver-driven credit scheme. EQDS can speed-up legacy TCP and RDMA stacks and enable transport protocol evolution, while benefiting from future switch enhancements without needing to modify higher layer stacks. We show through simulation and multiple implementations that EQDS can reduce FCT of legacy TCP by 2x, improve the NVMeOF throughput by 30%, and safely run TCP alongside RDMA on the same network.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GoyalSZNAA22,
+	author = {Prateesh Goyal and
+                  Preey Shah and
+                  Kevin Zhao and
+                  Georgios Nikolaidis and
+                  Mohammad Alizadeh and
+                  Thomas E. Anderson},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Backpressure Flow Control},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {779--805},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/goyal},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GoyalSZNAA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Effective congestion control for data center networks is becoming increasingly challenging with a growing amount of latency-sensitive traffic, much fatter links, and extremely bursty traffic. Widely deployed algorithms, such as DCTCP and DCQCN, are still far from optimal in many plausible scenarios, particularly for tail latency. Many operators compensate by running their networks at low average utilization, dramatically increasing costs. In this paper, we argue that we have reached the practical limits of end-to-end congestion control. Instead, we propose, implement, and evaluate a new congestion control architecture called Backpressure Flow Control (BFC). BFC provides per-hop per-flow flow control, but with bounded state, constant-time switch operations, and careful use of buffers and queues. We demonstrate BFC’s feasibility by implementing it on Tofino2, a state-of-the-art P4-based programmable hardware switch. In simulation, we show that BFC achieves near optimal throughput and tail latency behavior even under challenging conditions such as high network load and incast cross traffic. Compared to deployed end-to-end schemes, BFC achieves 2.3 - 60× lower tail latency for short flows and 1.6 - 5× better average completion time for long flows.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GhasemirahniBKF22,
+	author = {Hamid Ghasemirahni and
+                  Tom Barbette and
+                  Georgios P. Katsikas and
+                  Alireza Farshin and
+                  Amir Roozbeh and
+                  Massimo Girondi and
+                  Marco Chiesa and
+                  Gerald Q. Maguire Jr. and
+                  Dejan Kostic},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Packet Order Matters! Improving Application Performance by Deliberately
+                  Delaying Packets},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {807--827},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/ghasemirahni},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GhasemirahniBKF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data centers increasingly deploy commodity servers with high-speed network interfaces to enable low-latency communication. However, achieving low latency at high data rates crucially depends on how the incoming traffic interacts with the system's caches. When packets that need to be processed in the same way are consecutive, i.e., exhibit high temporal and spatial locality, caches deliver great benefits. In this paper, we systematically study the impact of temporal and spatial traffic locality on the performance of commodity servers equipped with high-speed network interfaces. Our results show that (i) the performance of a variety of widely deployed applications degrade substantially with even the slightest lack of traffic locality, and (ii) a traffic trace from our organization reveals poor traffic locality as networking protocols, drivers, and the underlying switching/routing fabric spread packets out in time (reducing locality). To address these issues, we built Reframer, a software solution that deliberately delays packets and reorders them to increase traffic locality. Despite introducing μs-scale delays of some packets, we show that Reframer increases the throughput of a network service chain by up to 84% and reduces the flow completion time of a web server by 11% while improving its throughput by 20%.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GaoS00ZLZ022,
+	author = {Kaihui Gao and
+                  Chen Sun and
+                  Shuai Wang and
+                  Dan Li and
+                  Yu Zhou and
+                  Hongqiang Harry Liu and
+                  Lingjun Zhu and
+                  Ming Zhang},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Buffer-based End-to-end Request Event Monitoring in the Cloud},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {829--843},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/gao-kaihui},
+	timestamp = {Wed, 17 Jul 2024 07:49:06 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GaoS00ZLZ022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Request latency is a crucial concern for modern cloud providers. Due to various causes in hosts and networks, requests can suffer from request latency anomalies (RLAs), which may violate the Service-Level Agreement for tenants. However, existing performance monitoring tools have incomplete coverage and inconsistent semantics for monitoring requests, resulting in the difficulty to accurately diagnose RLAs. This paper presents BufScope, a high-coverage request event monitoring system, which aims to capture most RLA-related events with consistent request-level semantics in the end-to-end datapath of request. BufScope models the datapath of request as a buffer chain and defines RLA-related events based on different properties of buffers, so as to end-to-end monitor the root causes of RLA. To achieve consistent semantics for captured events, BufScope designs a concise request-level semantic injection mechanism to make events captured in networks have the victim requests' ID, and offloads the realization to SmartNICs for low overhead. We have implemented BufScope on commodity SmartNICs and programmable switches. Evaluation results show that BufScope can diagnose 95% RLAs with <0.07% network bandwidth overhead and <1% application throughput decline.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/HuZ022,
+	author = {Jiyao Hu and
+                  Zhenyu Zhou and
+                  Xiaowei Yang},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Characterizing Physical-Layer Transmission Errors in Cable Broadband
+                  Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {845--859},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/hu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/HuZ022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Packet loss rate in a broadband network is an important quality of service metric. Previous work that characterizes broadband performance does not separate packet loss caused by physical layer transmission errors from that caused by congestion. In this work, we investigate the physical layer transmission errors using data provided by a regional cable ISP. The data were collected from 77K+ devices that spread across 394 hybrid-fiber-coaxial (HFC) network segments during a 16-month period. We present a number of findings that are relevant to network operations and network research. We estimate that physical-layer errors can contribute to 12% to 25% of packet loss in the cable ISPs measured by the FCC’s Measuring Broadband America project. The average error loss rates of different HFC network segments vary by more than six orders of magnitude, from O(10−6%) to O(1%). Users in persistently high-error-rate networks do not report more trouble tickets than other users.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/HaeckiMSZGMBR22,
+	author = {Roni Haecki and
+                  Radhika Niranjan Mysore and
+                  Lalith Suresh and
+                  Gerd Zellweger and
+                  Bo Gan and
+                  Timothy Merrifield and
+                  Sujata Banerjee and
+                  Timothy Roscoe},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {How to diagnose nanosecond network latencies in rich end-host stacks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {861--877},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/haecki},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/HaeckiMSZGMBR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Low-latency network stacks have brought down network latencies within end-hosts to the microsecond-regime. However, end-host profilers have such high overheads that they are useful only to confirm a hypothesis, not to diagnose a problem in the first place. Indeed, every one of twenty low-latency network projects we surveyed rolled their own analysis tools instead of using an existing profiler.  This paper shows how to build a latency diagnosis tool with full-stack coverage and low overhead that can identify, not just confirm, sources of latency in end hosts. The unique measurement methodology reconstructs network-message lifetimes within end hosts with nanosecond precision, by reconciling CPU and NIC hardware profiling traces across multiple time domains (network and CPU). It uncovers unexpected latency sources in both kernel and user-space stacks.  We demonstrate these capabilities by using our implementation, NSight, to systematically identify and remove performance overheads in memcached, reducing 99.9th percentile latency by a factor of 40 from 2:2 ms to 41 μs.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/LiGSCJ22,
+	author = {Chenning Li and
+                  Xiuzhen Guo and
+                  Longfei Shangguan and
+                  Zhichao Cao and
+                  Kyle Jamieson},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {CurvingLoRa to Boost LoRa Network Throughput via Concurrent Transmission},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {879--895},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/li-chenning},
+	timestamp = {Mon, 13 Feb 2023 07:51:32 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/LiGSCJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LoRaWAN has emerged as an appealing technology to connect IoT devices but it functions without explicit coordination among transmitters, which can lead to many packet collisions as the network scales. State-of-the-art work proposes various approaches to deal with these collisions, but most functions only in high signal-to-interference ratio (SIR) conditions and thus does not scale to real scenarios where weak receptions are easily buried by stronger receptions from nearby transmitters. In this paper, we take a fresh look at LoRa’s physical layer, revealing that its underlying linear chirp modulation fundamentally limits the capacity and scalability of concurrentLoRa transmissions. We show that by replacing linear chirps with their non-linear counterparts, we can boost the throughput of concurrent LoRa transmissions and empower the LoRa receiver to successfully receive weak transmissions in the presence of strong colliding signals. Such a non-linear chirp design further enables the receiver to demodulate fully aligned collision symbols — a case where none of the existing approaches can deal with. We implement these ideas in a holistic LoRaWAN stack based on the USRP N210 software-defined radio platform. Our head-to-head comparison with two state-of-the-art research systems and a standard LoRaWAN base-line demonstrates that CurvingLoRa improves the network throughput by 1.6–7.6× while simultaneously sacrificing neither power efficiency nor noise resilience}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZhangSBGKR22,
+	author = {Junbo Zhang and
+                  Elahe Soltanaghai and
+                  Artur Balanuta and
+                  Reese Grimsley and
+                  Swarun Kumar and
+                  Anthony G. Rowe},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {PLatter: On the Feasibility of Building-scale Power Line Backscatter},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {897--911},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhang-junbo},
+	timestamp = {Mon, 22 May 2023 11:32:35 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZhangSBGKR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper explores the feasibility of reusing power lines in a large industrial space to enable long-range backscatter communication between a single reader and ultra-low-power backscatter sensors on the walls that are physically not connected to these power lines, but merely in their vicinity. Such a system could significantly improve the data rate and range of backscatter communication with only a single reader installed, by using pre-existing power lines as communication media. We present PLatter, a building-scale backscatter system that allows ultra-low-power backscatter sensors or tags attached to walls with power lines right behind them to communicate with a reader several hundred feet away. PLatter achieves this by inducing and modulating parasitic impedance on power lines with the tag toggling between two loads in specialized patterns. We present a detailed evaluation of both the strengths and weaknesses of PLatter on a large industrial testbed with power lines up to 300 feet long, demonstrating a maximum data rate of 4 Mbps.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/LiZZSYC0022,
+	author = {Songfan Li and
+                  Hui Zheng and
+                  Chong Zhang and
+                  Yihang Song and
+                  Shen Yang and
+                  Minghua Chen and
+                  Li Lu and
+                  Mo Li},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Passive {DSSS:} Empowering the Downlink Communication for Backscatter
+                  Systems},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {913--928},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/li-songfan},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/LiZZSYC0022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The uplink and downlink transmissions in most backscatter communication systems are highly asymmetric. The downlink transmission often suffers from its short range and vulnerability to interference, which limits the practical application and deployment of backscatter communication systems. In this paper, we propose passive DSSS to improve the downlink communication for practical backscatter systems. Passive DSSS is able to increase the downlink signal-to-interference-plus-noise ratio (SINR) by using direct sequence spread-spectrum (DSSS) techniques to suppress interference and noise. The key challenge lies in the demodulation of DSSS signals, where the conventional solutions require power-hungry computations to synchronize a locally generated spreading code with the received DSSS signal, which is infeasible on energy-constrained backscatter devices. Passive DSSS addresses such a challenge by shifting the generation and synchronization of the spreading code from the receiver to the gateway side, and therefore achieves ultra-low power DSSS demodulation. We prototype passive DSSS for proof of concept. The experimental results show that passive DSSS improves the downlink SINR by 16.5 dB, which translates to a longer effective downlink range for backscatter communication systems.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/EisenmanMIMKNSA22,
+	author = {Assaf Eisenman and
+                  Kiran Kumar Matam and
+                  Steven Ingram and
+                  Dheevatsa Mudigere and
+                  Raghuraman Krishnamoorthi and
+                  Krishnakumar Nair and
+                  Misha Smelyanskiy and
+                  Murali Annavaram},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Check-N-Run: a Checkpointing System for Training Deep Learning Recommendation
+                  Models},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {929--943},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/eisenman},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/EisenmanMIMKNSA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Checkpoints play an important role in training long running machine learning (ML) models. Checkpoints take a snapshot of an ML model and store it in a non-volatile memory so that they can be used to recover from failures to ensure rapid training progress. In addition, they are used for online training to improve inference prediction accuracy with continuous learning. Given the large and ever-increasing model sizes, checkpoint frequency is often bottlenecked by the storage write bandwidth and capacity. When checkpoints are maintained on remote storage, as is the case with many industrial settings, they are also bottlenecked by network bandwidth. We present Check-N-Run, a scalable checkpointing system for training large ML models at Facebook. While Check-N-Run is applicable to long running ML jobs, we focus on checkpointing recommendation models which are currently the largest ML models with Terabytes of model size. Check-N-Run uses two primary techniques to address the size and bandwidth challenges. First, it applies differential checkpointing, which tracks and checkpoints the modified part of the model. Differential checkpointing is particularly valuable in the context of recommendation models where only a fraction of the model (stored as embedding tables) is updated on each iteration. Second, Check-N-Run leverages quantization techniques to significantly reduce the checkpoint size, without degrading training accuracy. These techniques allow Check-N-Run to reduce the required write bandwidth by 6-17x and the required capacity by 2.5-8xon real-world models at Facebook, and thereby significantly improve checkpoint capabilities while reducing the total cost of ownership.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/WengXYWWHLZLD22,
+	author = {Qizhen Weng and
+                  Wencong Xiao and
+                  Yinghao Yu and
+                  Wei Wang and
+                  Cheng Wang and
+                  Jian He and
+                  Yong Li and
+                  Liping Zhang and
+                  Wei Lin and
+                  Yu Ding},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {MLaaS in the Wild: Workload Analysis and Scheduling in Large-Scale
+                  Heterogeneous {GPU} Clusters},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {945--960},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/weng},
+	timestamp = {Sat, 26 Aug 2023 17:33:04 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/WengXYWWHLZLD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the sustained technological advances in machine learning (ML) and the availability of massive datasets recently, tech companies are deploying large ML-as-a-Service (MLaaS) clouds, often with heterogeneous GPUs, to provision a host of ML applications. However, running diverse ML workloads in heterogeneous GPU clusters raises a number of challenges. In this paper, we present a characterization study of a two-month workload trace collected from a production MLaaS cluster with over 6,000 GPUs in Alibaba. We explain the challenges posed to cluster scheduling, including the low GPU utilization, the long queueing delays, the presence of hard-to-schedule tasks demanding high-end GPUs with picky scheduling requirements, the imbalance load across heterogeneous machines, and the potential bottleneck on CPUs. We describe our current solutions and call for further investigations into the challenges that remain open to address. We have released the trace for public access, which is the most comprehensive in terms of the workloads and cluster scale.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/0008ZYWCSW22,
+	author = {Yang Zhou and
+                  Ying Zhang and
+                  Minlan Yu and
+                  Guangyu Wang and
+                  Dexter Cao and
+                  Yu{-}Wei Eric Sung and
+                  Starsky H. Y. Wong},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Evolvable Network Telemetry at Facebook},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {961--975},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhou},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/0008ZYWCSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network telemetry is essential for service availability and performance in large-scale production environments. While there is recent advent in novel measurement primitives and algorithms for network telemetry, a challenge that is not well studied is Change. Facebook runs fast-evolving networks to adapt to varying application requirements. Changes occur not only in the data collection and processing stages but also when interpreted and consumed by applications. In this paper, we present PCAT, a production change-aware telemetry system that handles changes in fast-evolving networks. We propose to use a change cube abstraction to systematically track changes, and an intent-based layering design to confine and track changes. By sharing our experiences with PCAT, we bring a new aspect to the monitoring research area: improving the adaptivity and evolvability of network telemetry.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/XuC0SZHL22,
+	author = {Jingao Xu and
+                  Hao Cao and
+                  Zheng Yang and
+                  Longfei Shangguan and
+                  Jialin Zhang and
+                  Xiaowu He and
+                  Yunhao Liu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {SwarmMap: Scaling Up Real-time Collaborative Visual {SLAM} at the
+                  Edge},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {977--993},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/xu},
+	timestamp = {Tue, 20 Dec 2022 21:20:03 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/XuC0SZHL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Edge-based Multi-agent visual SLAM plays a key role in emerging mobile applications such as search-and-rescue, inventory automation, and drone grouping. This algorithm relies on a central node to maintain the global map and schedule agents to execute their individual tasks. However, as the number of agents continues growing, the operational overhead of the visual SLAM system such as data redundancy, bandwidth consumption, and localization errors also scale, which challenges the system scalability. In this paper, we present the design and implementation of SwarmMap, a framework design that scales up collaborative visual SLAM service in edge offloading settings. At the core of SwarmMap are three simple yet effective system modules — a change log-based server-client synchronization mechanism, a priority-aware task scheduler, and a lean representation of the global map that work hand-in-hand to address the data explosion caused by the growing number of agents. We make SwarmMap compatible with the robotic operating system (ROS) and open-source it. Existing visual SLAM applications could incorporate SwarmMap to enhance their performance and capacity in multi-agent scenarios. Comprehensive evaluations and a three-month case study at one of the world's largest oil fields demonstrate that SwarmMap can serve 2× more agents (>20 agents) than the state of the arts with the same resource overhead, meanwhile maintaining an average trajectory error of 38cm, outperforming existing works by > 55%.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/LakiGPVS22,
+	author = {S{\'{a}}ndor Laki and
+                  Csaba Gy{\"{o}}rgyi and
+                  J{\'{o}}zsef Peto and
+                  P{\'{e}}ter V{\"{o}}r{\"{o}}s and
+                  G{\'{e}}za Szab{\'{o}}},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {In-Network Velocity Control of Industrial Robot Arms},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {995--1009},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/laki},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/LakiGPVS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-network computing has emerged as a new computational paradigm made possible with the advent of programmable data planes. The benefits of moving computations traditionally performed by servers to the network have recently been demonstrated through different applications. In this paper, we argue that programmable data planes could be a key technology enabler of cloud and edge-cloud robotics, and in general could revitalize industrial networking. We propose an in-network approach for real-time robot control that separates delay sensitive tasks from high-level control processes. The proposed system offloads real-time velocity control of robot arms to P4-enabled programmable data planes and only keeps the high-level control and planning at the industrial controller. This separation allows the deployment of industrial control in non-real-time environments like virtual machines and service containers running in a remote cloud or an edgecomputing infrastructure. In addition, we also demonstrate that our method can smoothly control 100s of robot arms with a single P4-switch, enables fast reroute between trajectories, solves the precise synchronization of multiple robots by design and supports the plug-and-play deployment of new robot devices in the industrial system, reducing both operational and management costs.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/JogGMLGVH22,
+	author = {Suraj Jog and
+                  Junfeng Guan and
+                  Sohrab Madani and
+                  Ruochen Lu and
+                  Songbin Gong and
+                  Deepak Vasisht and
+                  Haitham Hassanieh},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Enabling IoT Self-Localization Using Ambient 5G Signals},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1011--1026},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/jog},
+	timestamp = {Mon, 26 Jun 2023 20:43:36 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/JogGMLGVH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents ISLA, a system that enables low power IoT nodes to self-localize using ambient 5G signals without any coordination with the base stations. ISLA operates by simply overhearing transmitted 5G packets and leverages the large bandwidth used in 5G to compute high-resolution time of flight of the signals. Capturing large 5G bandwidth consumes a lot of power. To address this, ISLA leverages recent advances in MEMS acoustic resonators to design a RF filter that can stretch the effective localization bandwidth to 100 MHz while using 6.25 MHz receivers, improving ranging resolution by 16x. We implement and evaluate ISLA in three large outdoors testbeds and show high localization accuracy that is comparable with having the full 100 MHz bandwidth.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/RomeroYLXYTSBSM22,
+	author = {Joshua Romero and
+                  Junqi Yin and
+                  Nouamane Laanait and
+                  Bing Xie and
+                  M. Todd Young and
+                  Sean Treichler and
+                  Vitalii Starchenko and
+                  Albina Y. Borisevich and
+                  Alex Sergeev and
+                  Michael A. Matheson},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Accelerating Collective Communication in Data Parallel Training across
+                  Deep Learning Frameworks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1027--1040},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/romero},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/RomeroYLXYTSBSM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This work develops new techniques within Horovod, a generic communication library supporting data parallel training across deep learning frameworks. In particular, we improve the Horovod control plane by implementing a new coordination scheme that takes advantage of the characteristics of the typical data parallel training paradigm, namely the repeated execution of collectives on the gradients of a fixed set of tensors. Using a caching strategy, we execute Horovod’s existing coordinator-worker logic only once during a typical training run, replacing it with a more efficient decentralized orchestration strategy using the cached data and a global intersection of a bitvector for the remaining training duration. Next, we introduce a feature for end users to explicitly group collective operations, enabling finer grained control over the communication buffer sizes. To evaluate our proposed strategies, we conduct experiments on a world-class supercomputer — Summit. We compare our proposals to Horovod’s original design and observe 2x performance improvement at a scale of 6000 GPUs; we also compare them against tf.distribute and torch.DDP and achieve 12% better and comparable performance, respectively, using up to 1536 GPUs; we compare our solution against BytePS in typical HPC settings and achieve about 20% better performance on a scale of 768 GPUs. Finally, we test our strategies on a scientific application (STEMDL) using up to 27,600 GPUs (the entire Summit) and show that we achieve a near-linear scaling of 0.93 with a sustained performance of 1.54 exaflops (with standard error +- 0.02) in FP16 precision.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GunasekaranMTSK22,
+	author = {Jashwant Raj Gunasekaran and
+                  Cyan Subhra Mishra and
+                  Prashanth Thinakaran and
+                  Bikash Sharma and
+                  Mahmut Taylan Kandemir and
+                  Chita R. Das},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Cocktail: {A} Multidimensional Optimization for Model Serving in Cloud},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1041--1057},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/gunasekaran},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GunasekaranMTSK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With a growing demand for adopting ML models for a variety of application services, it is vital that the frameworks serving these models are capable of delivering highly accurate predictions with minimal latency along with reduced deployment costs in a public cloud environment. Despite high latency, prior works in this domain are crucially limited by the accuracy offered by individual models. Intuitively, model ensembling can address the accuracy gap by intelligently combining different models in parallel. However, selecting the appropriate models dynamically at runtime to meet the desired accuracy with low latency at minimal deployment cost is a nontrivial problem. Towards this, we propose Cocktail, a cost effective ensembling-based model serving framework. Cocktail comprises of two key components: (i) a dynamic model selection framework, which reduces the number of models in the ensemble, while satisfying the accuracy and latency requirements; (ii) an adaptive resource management (RM) framework that employs a distributed proactive autoscaling policy combined with importance sampling, to efficiently allocate resources for the models. The RM framework leverages transient virtual machine (VM) instances to reduce the deployment cost in a public cloud. A prototype implementation of Cocktail on the AWS EC2 platform and exhaustive evaluations using a variety of workloads demonstrate that {Cocktail} can reduce deployment cost by 1.45x, while providing 2x reduction in latency and satisfying the target accuracy for up to 96% of the requests, when compared to state-of-the-art model-serving frameworks.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/KraftKBZ22,
+	author = {Peter Kraft and
+                  Fiodar Kazhamiaka and
+                  Peter Bailis and
+                  Matei Zaharia},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Data-Parallel Actors: {A} Programming Model for Scalable Query Serving
+                  Systems},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1059--1074},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/kraft},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/KraftKBZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present data-parallel actors (DPA), a programming model for building distributed query serving systems. Query serving systems are an important class of applications characterized by low-latency data-parallel queries and frequent bulk data updates; they include data analytics systems like Apache Druid, full-text search engines like ElasticSearch, and time series databases like InfluxDB. They are challenging to build because they run at scale and need complex distributed functionality like data replication, fault tolerance, and update consistency. DPA makes building these systems easier by allowing developers to construct them from purely single-node components while automatically providing these critical properties. In DPA, we view a query serving system as a collection of stateful actors, each encapsulating a partition of data. DPA provides parallel operators that enable consistent, atomic, and fault-tolerant parallel updates and queries over data stored in actors. We have used DPA to build a new query serving system, a simplified data warehouse based on the single-node database MonetDB, and enhance existing ones, such as Druid, Solr, and MongoDB, adding missing user-requested features such as load balancing and elasticity. We show that DPA can distribute a system in <1K lines of code (>10× less than typical implementations in current systems) while achieving state-of-the-art performance and adding rich functionality.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/DiabYH22,
+	author = {Khaled M. Diab and
+                  Parham Yassini and
+                  Mohamed Hefeeda},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Orca: Server-assisted Multicast for Datacenter Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1075--1091},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/diab-orca},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/DiabYH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Group communications appear in various large-scale datacenter applications. These applications, however, do not currently benefit from multicast, despite its potential substantial savings in network and processing resources. This is because current multicast systems do not scale and they impose considerable state and communication overheads. We propose a new architecture, called Orca, that addresses the challenges of multicast in datacenter networks. Orca divides the state and tasks of the data plane among switches and servers, and it partially offloads the management of multicast sessions to servers. Orca significantly reduces the state at switches, minimizes the bandwidth overhead, incurs small and constant processing overhead, and does not limit the size of multicast sessions. We implemented Orca in a testbed to demonstrate its performance in terms of throughput, consumption of server resources, packet latency, and the impact of server failures. We also implemented a sample multicast application in our testbed, and showed that Orca can substantially reduce its communication time, through optimizing the data transfer between nodes using multicast instead of unicast. In addition, we simulated a datacenter consisting of 27,648 hosts and handling 1M multicast sessions, and we compared Orca versus the state-of-art system in the literature. Our results show that Orca reduces the switch state by up to two orders of magnitude, the communication overhead by up to 19X, and the control overhead by up to 14X, compared to the state-of-art.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/DiabH22,
+	author = {Khaled M. Diab and
+                  Mohamed Hefeeda},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Yeti: Stateless and Generalized Multicast Forwarding},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1093--1114},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/diab-yeti},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/DiabH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Current multicast forwarding systems suffer from large state requirements at routers and high communication overheads. In addition, these systems do not support generalized multicast forwarding, where traffic needs to pass through traffic-engineered paths or requires service chaining. We propose a new system, called Yeti, to efficiently implement generalized multicast forwarding inside ISP networks and supports various forwarding requirements. Yeti completely eliminates the state at routers. Yeti consists of two components: centralized controller and packet processing algorithm. We propose an algorithm for the controller to create labels that represent generalized multicast graphs. The controller instructs an ingress router to attach the created labels to packets in the multicast session. We propose an efficient packet processing algorithm at routers to process labels of incoming packets and forwards them accordingly. We prove the correctness and efficiency of Yeti. In addition, we assess the performance of Yeti in a hardware testbed and using simulations. Our experimental results show that Yeti can efficiently support high speed links. Furthermore, we compare Yeti using real ISP topologies in simulations against the closest systems in the literature: a rule-based approach (built on top of OpenFlow) and two label-based systems. Our simulation results show substantial improvements compared to these systems. For example, Yeti reduces the label overhead by 65.3%, on average, compared to the closest label-based multicast approach in the literature.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/BhattacherjeeAJ22,
+	author = {Debopam Bhattacherjee and
+                  Waqar Aqeel and
+                  Sangeetha Abdu Jyothi and
+                  Ilker Nadi Bozkurt and
+                  William Sentosa and
+                  Muhammad Tirmazi and
+                  Anthony Aguirre and
+                  Balakrishnan Chandrasekaran and
+                  Philip Brighten Godfrey and
+                  Gregory Laughlin and
+                  Bruce M. Maggs and
+                  Ankit Singla},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {cISP: {A} Speed-of-Light Internet Service Provider},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1115--1133},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/bhattacherjee},
+	timestamp = {Mon, 05 Feb 2024 20:35:42 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/BhattacherjeeAJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Low latency is a requirement for a variety of interactive network applications. The Internet, however, is not optimized for latency. We thus explore the design of wide-area networks that move data at nearly the speed of light in vacuum. Our cISP design augments the Internet’s fiber with free-space microwave wireless connectivity over paths very close to great-circle paths. cISP addresses the fundamental challenge of simultaneously providing ultra-low latency while accounting for numerous practical factors ranging from transmission tower availability to packet queuing. We show that instantiations of cISP across the United States and Europe would achieve mean latencies within 5% of that achievable using great-circle paths at the speed of light, over medium and long distances. Further, using experiments conducted on a nearly-speed-of-light algorithmic trading network, together with an analysis of trading data at its end points, we show that microwave networks are reliably faster than fiber networks even in inclement weather. Finally, we estimate that the economic value of such networks would substantially exceed their expense.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/NaseerB22,
+	author = {Usama Naseer and
+                  Theophilus A. Benson},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Configanator: {A} Data-driven Approach to Improving {CDN} Performance},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1135--1158},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/naseer},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/NaseerB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The web serving protocol stack is constantly evolving to tackle the technological shifts in networking infrastructure and website complexity. As a result of this evolution, web servers can use a plethora of protocols and configuration parameters to address a variety of realistic network conditions. Yet, today, despite the significant diversity in end-user networks and devices, most content providers have adopted a “one-size-fits-all” approach to configuring the networking stack of their user-facing web servers (or at best employ moderate tuning). In this paper, we demonstrate that the status quo results in sub-optimal performance and argue for a novel framework that extends existing CDN architectures to provide programmatic control over a web server’s configuration parameters. We designed a data-driven framework, Configanator, that leverages data across connections to identify their network and device characteristics, and learn the optimal configuration parameters to improve end-user performance. We evaluate Configanator on five traces, including one from a global content provider, and evaluate the performance improvements for real users through two live deployments. Our results show that Configanator improves tail (p95) web performance by 32-67% across diverse websites and networks.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/YangSBRS22,
+	author = {Juncheng Yang and
+                  Anirudh Sabnis and
+                  Daniel S. Berger and
+                  K. V. Rashmi and
+                  Ramesh K. Sitaraman},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {{C2DN:} How to Harness Erasure Codes at the Edge for Efficient Content
+                  Delivery},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1159--1177},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/yang-juncheng},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/YangSBRS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Content Delivery Networks (CDNs) deliver much of the world’s web and video content to users from thousands of clusters deployed at the “edges” of the Internet. Maintaining consistent performance in this large distributed system is challenging. Through analysis of month-long logs from over 2000 clusters of a large CDN, we study the patterns of server unavailability. For a CDN with no redundancy, each server unavailability causes a sudden loss in performance as the objects previously cached on that server are not accessible, which leads to a miss ratio spike. The state-of-the-art mitigation technique used by large CDNs is to replicate objects across multiple servers within a cluster. We find that although replication reduces miss ratio spikes, spikes remain a performance challenge. We present C2DN, the first CDN design that achieves a lower miss ratio, higher availability, higher resource efficiency, and close-to-perfect write load balancing. The core of our design is to introduce erasure coding into the CDN architecture and use the parity chunks to re-balance the write load across servers. We implement C2DN on top of open-source production software and demonstrate that compared to replication-based CDNs, C2DN obtains 11% lower byte miss ratio, eliminates unavailability-induced miss ratio spikes, and reduces write load imbalance by 99%.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/SharmaTBBPBKV22,
+	author = {Harsha Sharma and
+                  Parth Thakkar and
+                  Sagar Bharadwaj and
+                  Ranjita Bhagwan and
+                  Venkata N. Padmanabhan and
+                  Yogesh Bansal and
+                  P. Vijay Kumar and
+                  Kathleen Voelbel},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Optimizing Network Provisioning through Cooperation},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1179--1194},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/sharma},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/SharmaTBBPBKV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rise of cloud-scale services has fueled a huge growth in inter-data center (DC) Wide-Area Network (WAN) traffic. As a result, cloud providers provision large amounts of WAN bandwidth at very high costs. However, the inter-DC traffic is often dominated by first-party applications, i.e., applications that are owned and operated by the same entity as the cloud provider. This creates a unique opportunity for the applications and the network to cooperate to optimize the provisioning plane, (which we term as optimizing the “provisioning plane”), since the demands placed by dominant first-party applications often define the network. Such optimization is distinct from and goes beyond past work focused on the control and data planes (e.g., traffic engineering), in that it helps optimize the provisioning of network capacity and consequently helps reduce cost. In this paper, we show how cooperation between application and network can optimize network capacity based on knowledge of the application’s deadline coupled with network link failure statistics. Using data from a tier-1 cloud provider and a large enterprise collaboration service, we show that our techniques can potentially help provision significantly lower network capacity, with savings ranging from 30% to 45%.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/YuSL22,
+	author = {Liangcheng Yu and
+                  John Sonchack and
+                  Vincent Liu},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {OrbWeaver: Using {IDLE} Cycles in Programmable Networks for Opportunistic
+                  Coordination},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1195--1212},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/yu},
+	timestamp = {Thu, 22 Dec 2022 16:48:30 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/YuSL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network operators are frequently presented with a tradeoff: either (a) introduce a control-/management-plane application that may improve overall performance, or (b) use the bandwidth it would have occupied to deliver user traffic. In this paper, we present OrbWeaver, a framework that can exploit unused network bandwidth for in-network coordination. Using real hardware, we demonstrate that OrbWeaver can harvest this bandwidth (1) with little-to-no impact on the bandwidth/latency of user packets and (2) while providing guarantees on the interarrival time of the injected traffic. Through an exploration of three example use cases, we show that this opportunistic coordination abstraction is sufficient to approximate recently proposed systems without any of their associated bandwidth overheads.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/PangPADG22,
+	author = {Weiwu Pang and
+                  Sourav Panda and
+                  Muhammad Jehangir Amjad and
+                  Christophe Diot and
+                  Ramesh Govindan},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {CloudCluster: Unearthing the Functional Structure of a Cloud Service},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1213--1230},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/pang},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/PangPADG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In their quest to provide customers with good tools to manage cloud services, cloud providers are hampered by having very little visibility into cloud service functionality; a provider often only knows where VMs of a service are placed, how the virtual networks are configured, how VMs are provisioned, and how VMs communicate with each other. In this paper, we show that, using the VM-to-VM traffic matrix, we can unearth the functional structure of a cloud service and use it to aid cloud service management. Leveraging the observation that cloud services use well-known design patterns for scaling (e.g., replication, communication locality), we show that clustering the VM-to-VM traffic matrix yields the functional structure of the cloud service. Our clustering algorithm, CloudCluster, must overcome challenges imposed by scale (cloud services contain tens of thousands of VMs) and must be robust to orders-of-magnitude variability in traffic volume and measurement noise. To do this, CloudCluster uses a novel combination of feature scaling, dimensionality reduction, and hierarchical clustering to achieve clustering with over 92% homogeneity and completeness. We show that CloudCluster can be used to explore opportunities to reduce cost for customers, identify anomalous traffic and potential misconfigurations.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZhangZXYXZQXH22,
+	author = {Qianyu Zhang and
+                  Gongming Zhao and
+                  Hongli Xu and
+                  Zhuolong Yu and
+                  Liguang Xie and
+                  Yangming Zhao and
+                  Chunming Qiao and
+                  Ying Xiong and
+                  Liusheng Huang},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Zeta: {A} Scalable and Robust East-West Communication Framework in
+                  Large-Scale Clouds},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1231--1248},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhang-qianyu},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZhangZXYXZQXH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the broad deployment of distributed applications on clouds, the dominant volume of traffic in cloud networks traverses in an east-west direction, flowing from server to server within a data center. Existing communication solutions are tightly coupled with either the control plane (e.g., preprogrammed model) or the location of compute nodes (e.g., conventional gateway model). The tight coupling makes it challenging to adapt to rapid network expansion, respond to network anomalies (e.g., burst traffic and device failures), and maintain low latency for east-west traffic. To address this issue, we design Zeta, a scalable and robust east-west communication framework with gateway clusters in large-scale clouds. Zeta abstracts the traffic forwarding capability as a Gateway Cluster Layer, decoupled from the logic of control plane and the location of compute nodes. Specifically, Zeta adopts gateway clusters to support large-scale networks and cope with burst traffic. Moreover, a transparent Multi IPs Migration is proposed to quickly recover the system/devices from unpredictable failures. We implement Zeta based on eXpress Data Path (XDP) and evaluate its scalability and robustness through comprehensive experiments with up to 100k container instances. Our evaluation shows that Zeta reduces the 99% RTT by 5.1 × in burst video traffic, and speeds up the gateway recovery by 10.8 × compared with the state-of-the-art solutions.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/GibsonHLMMSWWWY22,
+	author = {Dan Gibson and
+                  Hema Hariharan and
+                  Eric Lance and
+                  Moray McLaren and
+                  Behnam Montazeri and
+                  Arjun Singh and
+                  Stephen Wang and
+                  Hassan M. G. Wassel and
+                  Zhehua Wu and
+                  Sunghwan Yoo and
+                  Raghuraman Balasubramanian and
+                  Prashant Chandra and
+                  Michael Cutforth and
+                  Peter Cuy and
+                  David Decotigny and
+                  Rakesh Gautam and
+                  Alex Iriza and
+                  Milo M. K. Martin and
+                  Rick Roy and
+                  Zuowei Shen and
+                  Ming Tan and
+                  Ye Tang and
+                  Monica Wong{-}Chan and
+                  Joe Zbiciak and
+                  Amin Vahdat},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Aquila: {A} unified, low-latency fabric for datacenter networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1249--1266},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/gibson},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/GibsonHLMMSWWWY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Datacenter workloads have evolved from the data intensive, loosely-coupled workloads of the past decade to more tightly coupled ones, wherein ultra-low latency communication is essential for resource disaggregation over the network and to enable emerging programming models. We introduce Aquila, an experimental datacenter network fabric built with ultra-low latency support as a first-class design goal, while also supporting traditional datacenter traffic. Aquila uses a new Layer 2 cell-based protocol, GNet, an integrated switch, and a custom ASIC with low-latency Remote Memory Access (RMA) capabilities co-designed with GNet. We demonstrate that Aquila is able to achieve under 40 microseconds tail fabric Round Trip Time (RTT) for IP traffic and sub-10 microseconds RMA execution time across hundreds of host machines, even in the presence of background throughput-oriented IP traffic. This translates to more than 5x reduction in tail latency for a production quality key-value store running on a prototype Aquila network.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/Wang0DRCN22,
+	author = {Weitao Wang and
+                  Dingming Wu and
+                  Sushovan Das and
+                  Afsaneh Rahbar and
+                  Ang Chen and
+                  T. S. Eugene Ng},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {{RDC:} Energy-Efficient Data Center Network Congestion Relief with
+                  Topological Reconfigurability at the Edge},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1267--1288},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/wang-weitao-rdc},
+	timestamp = {Sat, 30 Sep 2023 09:54:14 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/Wang0DRCN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rackless data center (RDC) is a novel network architecture that logically removes the rack boundary of traditional data centers and the inefficiencies that come with it. As modern applications generate more and more inter-rack traffic, the traditional architecture suffers from contention at the core, imbalanced bandwidth utilization across racks, and longer network paths. RDC addresses these limitations by enabling servers to logically move across the rack boundary at runtime. Our design achieves this by inserting circuit switches at the network edge between the ToR switches and the servers, and by reconfiguring the circuits to regroup servers across racks based on the traffic patterns. We have performed extensive evaluations of RDC both in a hardware testbed and packet-level simulations and show that RDC can speed up a 4:1 oversubscribed network by 1.78× ∼ 3.9× for realistic applications and more than 10× in large-scale simulation; furthermore, RDC is up to 2.4× better in performance per watt than a conventional non-blocking network.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/WangYASP22,
+	author = {Tao Wang and
+                  Xiangrui Yang and
+                  Gianni Antichi and
+                  Anirudh Sivaraman and
+                  Aurojit Panda},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Isolation Mechanisms for High-Speed Packet-Processing Pipelines},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1289--1305},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/wang-tao},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/WangYASP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data-plane programmability is now mainstream. As we find more use cases, deployments need to be able to run multiple packet-processing modules in a single device. These are likely to be developed by independent teams, either within the same organization or from multiple organizations. Therefore, we need isolation mechanisms to ensure that modules on the same device do not interfere with each other. This paper presents Menshen, an extension of the Reconfigurable Match Tables (RMT) pipeline that enforces isolation between different packet-processing modules. Menshen is comprised of a set of lightweight hardware primitives and an extension to the open source P4-16 reference compiler that act in conjunction to meet this goal. We have prototyped Menshen on two FPGA platforms (NetFPGA and Corundum). We show that our design provides isolation, and allows new modules to be loaded without impacting the ones already running. Finally, we demonstrate the feasibility of implementing Menshen on ASICs by using the FreePDK45nm technology library and the Synopsys DC synthesis software, showing that our design meets timing at a 1 GHz clock frequency and needs approximately 6% additional chip area. We have open sourced the code for Menshen’s hardware and software at https://isolation.quest/.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZhangTSC22,
+	author = {Yiwen Zhang and
+                  Yue Tan and
+                  Brent E. Stephens and
+                  Mosharaf Chowdhury},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Justitia: Software Multi-Tenancy in Hardware Kernel-Bypass Networks},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1307--1326},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zhang-yiwen},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZhangTSC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Kernel-bypass networking (KBN) is becoming the new norm in modern datacenters. While hardware-based KBN offloads all dataplane tasks to specialized NICs to achieve better latency and CPU efficiency than software-based KBN, it also takes away the operator’s control over network sharing policies. Providing policy support in multi-tenant hardware KBN brings unique challenges – namely, preserving ultra-low latency and low CPU cost, finding a well-defined point of mediation, and rethinking traffic shapers. We present Justitia to address these challenges with three key design aspects: (i) Split Connection with message-level shaping, (ii) sender-based resource mediation together with receiver-side updates, and (iii) passive latency monitoring. Using a latency target as its knob, Justitia enables multi-tenancy policies such as predictable latencies and fair/weighted resource sharing. Our evaluation shows Justitia can effectively isolate latency-sensitive applications at the cost of slightly decreased utilization and ensure that throughput and bandwidth of the rest are not unfairly penalized.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/0002ZZLCSZ22,
+	author = {Jingrong Chen and
+                  Hong Zhang and
+                  Wei Zhang and
+                  Liang Luo and
+                  Jeffrey S. Chase and
+                  Ion Stoica and
+                  Danyang Zhuo},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {NetHint: White-Box Networking for Multi-Tenant Data Centers},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1327--1343},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/chen-jingrong},
+	timestamp = {Tue, 29 Nov 2022 08:31:22 +0100},
+	biburl = {https://dblp.org/rec/conf/nsdi/0002ZZLCSZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A cloud provider today provides its network resources to its tenants as a black box, such that cloud tenants have little knowledge of the underlying network characteristics. Meanwhile, data-intensive applications have increasingly migrated to the cloud, and these applications have both the ability and the incentive to adapt their data transfer schedules based on the cloud network characteristics. We find that the black-box networking abstraction and the adaptiveness of data-intensive applications together create a mismatch, leading to sub-optimal application performance. This paper explores a white-box approach to resolving this mismatch. We propose NetHint, an interactive mechanism between a cloud tenant and a cloud provider to jointly enhance application performance. With NetHint, the provider provides a hint — an indirect indication of the underlying network characteristics (e.g., link-layer network topologies for a tenant's virtual machines, number of co-locating tenants, network bandwidth utilization), and the tenant's applications then adapt their transfer schedules accordingly. The NetHint design provides abundant network information for cloud tenants to compute their optimal transfer schedules, while introducing little overhead for the cloud provider to collect and expose this information. Evaluation results show that NetHint improves the average performance of allreduce completion time, broadcast completion time, and MapReduce shuffle completion time by 2.7×, 1.5×, and 1.2×, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/ZengLZWLHCWLDGF22,
+	author = {Chaoliang Zeng and
+                  Layong Luo and
+                  Teng Zhang and
+                  Zilong Wang and
+                  Luyang Li and
+                  Wenchen Han and
+                  Nan Chen and
+                  Lebing Wan and
+                  Lichao Liu and
+                  Zhipeng Ding and
+                  Xiongfei Geng and
+                  Tao Feng and
+                  Feng Ning and
+                  Kai Chen and
+                  Chuanxiong Guo},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Tiara: {A} Scalable and Efficient Hardware Acceleration Architecture
+                  for Stateful Layer-4 Load Balancing},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1345--1358},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/zeng},
+	timestamp = {Tue, 09 Apr 2024 09:15:19 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/ZengLZWLHCWLDGF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Stateful layer-4 load balancers (LB) are deployed at datacenter boundaries to distribute Internet traffic to backend real servers. To steer terabits per second traffic, traditional software LBs scale out with many expensive servers. Recent switch-accelerated LBs scale up efficiently, but fail to offload a massive number of concurrent flows into limited on-chip SRAMs. This paper presents Tiara, a hardware architecture for stateful layer-4 LBs that aims to support a high traffic rate (> 1 Tbps), a large number of concurrent flows (> 10M), and many new connections per second (> 1M), without any assumption on traffic patterns. The three-tier architecture of Tiara makes the best use of heterogeneous hardware for stateful LBs, including a programmable switch and FPGAs for the fast path and x86 servers for the slow path. The core idea of Tiara is to divide the LB fast path into a memory-intensive task (real server selection) and a throughput-intensive task (packet encap/decap), and map them into the most suitable hardware, respectively (i.e., map real server selection into FPGA with large high-bandwidth memory (HBM) and packet encap/decap into a high-throughput programmable switch). We have implemented a fully functional Tiara prototype, and experiments show that Tiara can achieve extremely high performance (1.6 Tbps throughput, 80M concurrent flows, 1.8M new connections per second, and less than 4 us latency in the fast path) in a holistic server equipped with 8 FPGA cards, with high cost, energy, and space efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/RashelbachRS22,
+	author = {Alon Rashelbach and
+                  Ori Rottenstreich and
+                  Mark Silberstein},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Scaling Open vSwitch with a Computational Cache},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1359--1374},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/rashelbach},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/RashelbachRS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Open vSwitch (OVS) is a widely used open-source virtual switch implementation. In this work, we seek to scale up OVS to support hundreds of thousands of OpenFlow rules by accelerating the core component of its data-path — the packet classification mechanism. To do so we use NuevoMatch, a recent algorithm that uses neural network inference to match packets, and promises significant scalability and performance benefits. We overcome the primary algorithmic challenge of the slow rule update rate in the vanilla NuevoMatch, speeding it up by over three orders of magnitude. This improvement enables two design options to integrate NuevoMatch with OVS: (1) using it as an extra caching layer in front of OVS's megaflow cache, and (2) using it to completely replace OVS's data-path while performing classification directly on OpenFlow rules, and obviating control-path upcalls. Our comprehensive evaluation on real-world packet traces and between 1K to 500K ClassBench rules demonstrates the geometric mean speedups of 1.9× and 12.3× for the first and second designs, respectively, for 500K rules, with the latter also supporting up to 60K OpenFlow rule updates/second, by far exceeding the original OVS.}
+}
+
+
+@inproceedings{DBLP:conf/nsdi/SanaeeSAS22,
+	author = {Alireza Sanaee and
+                  Farbod Shahinfar and
+                  Gianni Antichi and
+                  Brent E. Stephens},
+	editor = {Amar Phanishayee and
+                  Vyas Sekar},
+	title = {Backdraft: a Lossless Virtual Switch that Prevents the Slow Receiver
+                  Problem},
+	booktitle = {19th {USENIX} Symposium on Networked Systems Design and Implementation,
+                  {NSDI} 2022, Renton, WA, USA, April 4-6, 2022},
+	pages = {1375--1392},
+	publisher = {{USENIX} Association},
+	year = {2022},
+	url = {https://www.usenix.org/conference/nsdi22/presentation/sanaee},
+	timestamp = {Wed, 06 Jul 2022 16:57:28 +0200},
+	biburl = {https://dblp.org/rec/conf/nsdi/SanaeeSAS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Virtual switches, used for end-host networking, drop packets when the receiving application is not fast enough to consume them. This is called the slow receiver problem, and it is important because packet loss hurts tail communication latency and wastes CPU cycles, resulting in application-level performance degradation. Further, solving this problem is challenging because application throughput is highly variable over short timescales as it depends on workload, memory contention, and OS thread scheduling.  This paper presents Backdraft, a new lossless virtual switch that addresses the slow receiver problem by combining three new components: (1) Dynamic Per-Flow Queuing (DPFQ) to prevent HOL blocking and provide on-demand memory usage; (2) Doorbell queues to reduce CPU overheads; (3) A new overlay network to avoid congestion spreading. We implemented Backdraft on top of BESS and conducted experiments with real applications on a 100 Gbps cluster with both DCTCP and Homa, a state-of-the-art congestion control scheme. We show that an application with Backdraft can achieve up to 20x lower tail latency at the 99th percentile.}
+}
