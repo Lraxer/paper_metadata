@@ -1,0 +1,583 @@
+@article{DBLP:journals/jcs/CatalanoFS22,
+	author = {Dario Catalano and
+                  Georg Fuchsbauer and
+                  Azam Soleimanian},
+	title = {Double-authentication-preventing signatures in the standard model},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {3--38},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200117},
+	doi = {10.3233/JCS-200117},
+	timestamp = {Mon, 28 Aug 2023 21:25:03 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/CatalanoFS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A double-authentication preventing signature (DAPS) scheme is a digital signature scheme equipped with a self-enforcement mechanism. Messages consist of an address and a payload component, and a signer is penalized if she signs two messages with the same addresses but different payloads. The penalty is the disclosure of the signer’s signing key. Most of the existing DAPS schemes are proved secure in the random oracle model (ROM), while the efficient ones in the standard model only support address spaces of polynomial size.  We present DAPS schemes that are efficient, secure in the standard model under standard assumptions and support large address spaces. Our main construction builds on vector commitments (VC) and double-trapdoor chameleon hash functions (DCH). We also provide a DAPS realization from Groth–Sahai (GS) proofs that builds on a generic construction by Derler et al., which they instantiate in the ROM. The GS-based construction, while less efficient than our main one, shows that a general yet efficient instantiation of DAPS in the standard model is possible.  An interesting feature of our main construction is that it can be easily modified to guarantee security even in the most challenging setting where no trusted setup is provided. To the best of our knowledge, ours seems to be the first construction achieving this in the standard model. }
+}
+
+
+@article{DBLP:journals/jcs/BaumEPST22,
+	author = {Carsten Baum and
+                  Daniel Escudero and
+                  Alberto Pedrouzo{-}Ulloa and
+                  Peter Scholl and
+                  Juan Ram{\'{o}}n Troncoso{-}Pastoriza},
+	title = {Efficient protocols for oblivious linear function evaluation from
+                  ring-LWE},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {39--78},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200116},
+	doi = {10.3233/JCS-200116},
+	timestamp = {Mon, 28 Aug 2023 21:25:01 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/BaumEPST22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {An oblivious linear function evaluation protocol, or OLE, is a two-party protocol for the function f ( x ) = a x + b   , where a sender inputs the field elements a , b , and a receiver inputs x  and learns f ( x )   . OLE can be used to build secret-shared multiplication, and is an essential component of many secure computation applications including general-purpose multi-party computation, private set intersection and more.  In this work, we present several efficient OLE protocols from the ring learning with errors (RLWE) assumption. Technically, we build two new passively secure protocols, which build upon recent advances in homomorphic secret sharing from (R)LWE (Boyle et al. in: EUROCRYPT 2019, Part II  (2019 ) 3–33 Springer), with optimizations tailored to the setting of OLE. We upgrade these to active security using efficient amortized zero-knowledge techniques for lattice relations (Baum et al. in: CRYPTO 2018, Part II  (2018 ) 669–699 Springer), and design new variants of zero-knowledge arguments that are necessary for some of our constructions.  Our protocols offer several advantages over existing constructions. Firstly, they have the lowest communication complexity amongst previous, practical protocols from RLWE and other assumptions; secondly, they are conceptually very simple, and have just one round of interaction for the case of OLE where b  is randomly chosen. We demonstrate this with an implementation of one of our passively secure protocols, which can perform more than 1 million OLEs per second over the ring Z  m     , for a 120-bit modulus m , on standard hardware. }
+}
+
+
+@article{DBLP:journals/jcs/KreuterPT22,
+	author = {Ben Kreuter and
+                  Sarvar Patel and
+                  Ben Terner},
+	title = {Private identity agreement for private set functionalities},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {79--107},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200115},
+	doi = {10.3233/JCS-200115},
+	timestamp = {Mon, 28 Aug 2023 21:25:02 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/KreuterPT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Private set intersection and related functionalities are among the most prominent real-world applications of secure multiparty computation. While such protocols have attracted significant attention from the research community, other functionalities are often required to support a PSI application in practice. For example, in order for two parties to run a PSI over the unique users contained in their databases, they might first invoke a support functionality to agree on the primary keys to represent their users.  This paper studies a secure approach to agreeing on primary keys. We introduce and realize a functionality that computes a common set of identifiers based on incomplete information held by two parties, which we refer to as private identity agreement , and we prove the security of our protocol in the honest-but-curious model. We explain the subtleties in designing such a functionality that arise from privacy requirements when intending to compose securely with PSI protocols. We also argue that the cost of invoking this functionality can be amortized over a large number of PSI sessions, and that for applications that require many repeated PSI executions, this represents an improvement over a PSI protocol that directly uses incomplete or fuzzy matches. }
+}
+
+
+@article{DBLP:journals/jcs/GarmsNQT22,
+	author = {Lydia Garms and
+                  Siaw{-}Lynn Ng and
+                  Elizabeth A. Quaglia and
+                  Giulia Traverso},
+	title = {Anonymity and rewards in peer rating systems},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {109--165},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200113},
+	doi = {10.3233/JCS-200113},
+	timestamp = {Mon, 28 Aug 2023 21:24:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/GarmsNQT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {When peers rate each other, they may rate inaccurately to boost their own reputation or unfairly lower another’s. This could be mitigated by having a reputation server incentivise accurate ratings with a reward. However, assigning rewards becomes challenging when ratings are anonymous, since the reputation server cannot tell which peers to reward for rating accurately. To address this, we propose an anonymous peer rating system in which users can be rewarded for accurate ratings, and we formally define its model and security requirements. In our system ratings are rewarded in batches, so that users claiming their rewards only reveal they authored one in this batch of ratings. To ensure the anonymity set of rewarded users is not reduced, we also split the reputation server into two entities, the Rewarder, who knows which ratings are rewarded, and the Reputation Holder, who knows which users were rewarded. We give a provably secure construction satisfying all the security properties required. For our construction we use a modification of a Direct Anonymous Attestation scheme to ensure that peers can prove their own reputation when rating others, and that multiple feedback on the same subject can be detected. We then use Linkable Ring Signatures to enable peers to be rewarded for their accurate ratings, while still ensuring that ratings are anonymous. Our work results in a system which allows accurate ratings to be rewarded, whilst still providing anonymity of ratings with respect to the central entities managing the system. }
+}
+
+
+@article{DBLP:journals/jcs/DamgardJNPO22,
+	author = {Ivan Damg{\aa}rd and
+                  Thomas P. Jakobsen and
+                  Jesper Buus Nielsen and
+                  Jakob Illeborg Pagter and
+                  Michael B{\ae}ksvang {\O}stergaard},
+	title = {Fast threshold {ECDSA} with honest majority},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {167--196},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200112},
+	doi = {10.3233/JCS-200112},
+	timestamp = {Mon, 28 Aug 2023 21:25:01 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/DamgardJNPO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {ECDSA is a widely adopted digital signature standard. A number of threshold protocols for ECDSA have been developed that let a set of parties jointly generate the secret signing key and compute signatures, without ever revealing the signing key. Threshold protocols for ECDSA have seen recent interest, in particular due to the need for additional security in cryptocurrency wallets where leakage of the signing key is equivalent to an immediate loss of money.  We propose a threshold ECDSA protocol secure against an active adversary in the honest majority model with abort. Our protocol is efficient in terms of both computation and bandwidth usage, and it allows the parties to pre-process parts of the signature, such that once the message to sign becomes known, they can compute a secret sharing of the signature very efficiently, using only local operations. We also show how to obtain guaranteed output delivery (and hence also fairness) in the online phase at the cost of some additional pre-processing work, i.e., such that it either aborts during the pre-processing phase, in which case nothing is revealed, or the signature is guaranteed to be delivered to all honest parties online. }
+}
+
+
+@article{DBLP:journals/jcs/HazayL22,
+	author = {Carmit Hazay and
+                  Mor Lilintal},
+	title = {Gradual {GRAM} and secure computation for {RAM} programs},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {1},
+	pages = {197--229},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200107},
+	doi = {10.3233/JCS-200107},
+	timestamp = {Mon, 28 Aug 2023 21:24:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/HazayL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite the fact that the majority of applications encountered in practice today are captured more efficiently by RAM programs, the area of secure two-party computation (2PC) has seen tremendous improvement mostly for Boolean circuits. One of the most studied objects in this domain is garbled circuits. Analogously, garbled RAM (GRAM) provide similar security guarantees for RAM programs with applications to constant round 2PC. In this work we consider the notion of gradual GRAM  which requires no memory garbling algorithm. Our approach provides several qualitative advantages over prior works due to the conceptual similarity to the analogue garbling mechanism for Boolean circuits. We next revisit the GRAM construction from (In STOC  (2015 ) 449–458) and improve it in two orthogonal aspects: match it directly with tree-based ORAMs and explore its consistency with gradual ORAM. }
+}
+
+
+@article{DBLP:journals/jcs/SamarthraoR22,
+	author = {Kadam Vikas Samarthrao and
+                  Vandana Milind Rohokale},
+	title = {Enhancement of email spam detection using improved deep learning algorithms
+                  for cyber security},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {2},
+	pages = {231--264},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200111},
+	doi = {10.3233/JCS-200111},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/SamarthraoR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Email has sustained to be an essential part of our lives and as a means for better communication on the internet. The challenge pertains to the spam emails residing a large amount of space and bandwidth. The defect of state-of-the-art spam filtering methods like misclassification of genuine emails as spam (false positives) is the rising challenge to the internet world. Depending on the classification techniques, literature provides various algorithms for the classification of email spam. This paper tactics to develop a novel spam detection model for improved cybersecurity. The proposed model involves several phases like dataset acquisition, feature extraction, optimal feature selection, and detection. Initially, the benchmark dataset of email is collected that involves both text and image datasets. Next, the feature extraction is performed using two sets of features like text features and visual features. In the text features, Term Frequency-Inverse Document Frequency (TF-IDF) is extracted. For the visual features, color correlogram and Gray-Level Co-occurrence Matrix (GLCM) are determined. Since the length of the extracted feature vector seems to the long, the optimal feature selection process is done. The optimal feature selection is performed by a new meta-heuristic algorithm called Fitness Oriented Levy Improvement-based Dragonfly Algorithm (FLI-DA). Once the optimal features are selected, the detection is performed by the hybrid learning technique that is composed of two deep learning approaches named Recurrent Neural Network (RNN) and Convolutional Neural Network (CNN). For improving the performance of existing deep learning approaches, the number of hidden neurons of RNN and CNN is optimized by the same FLI-DA. Finally, the optimized hybrid learning technique having CNN and RNN classifies the data into spam and ham. The experimental outcomes show the ability of the proposed method to perform the spam email classification based on improved deep learning. }
+}
+
+
+@article{DBLP:journals/jcs/HakkalaK22,
+	author = {Antti Hakkala and
+                  Jani Koskinen},
+	title = {Personal data protection in the age of mass surveillance},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {2},
+	pages = {265--289},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200033},
+	doi = {10.3233/JCS-200033},
+	timestamp = {Wed, 07 Dec 2022 23:04:19 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/HakkalaK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a solution to data ownership in the surveillance age in the form of an ethically sustainable framework for managing personal and person-derived data. This framework is based on the concept of Datenherrschaft – mastery over data that all natural persons should have on data they themselves produce or is derived thereof. We give numerous examples and tie cases to robust ethical analysis, and also discuss technological dimensions. }
+}
+
+
+@article{DBLP:journals/jcs/ObiriXXASG22,
+	author = {Isaac Amankona Obiri and
+                  Qi Xia and
+                  Hu Xia and
+                  Eric Affum and
+                  Abla Smahi and
+                  Jianbin Gao},
+	title = {Personal health records sharing scheme based on attribute based signcryption
+                  with data integrity verifiable},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {2},
+	pages = {291--324},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210045},
+	doi = {10.3233/JCS-210045},
+	timestamp = {Tue, 07 May 2024 20:25:10 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ObiriXXASG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The distribution of personal health records (PHRs) via a cloud server is a promising platform as it reduces the cost of data maintenance. Nevertheless, the cloud server is semi-trusted and can expose the patients’ PHRs to unauthorized third parties for financial gains or compromise the query result. Therefore, ensuring the integrity of the query results and privacy of PHRs as well as realizing fine-grained access control are critical key issues when PHRs are shared via cloud computing. Hence, we propose new personal health records sharing scheme with verifiable data integrity based on B+ tree data structure and attribute-based signcryption scheme to achieve data privacy, query result integrity, unforgeability, blind keyword search, and fine-grained access control. }
+}
+
+
+@article{DBLP:journals/jcs/ParkinC22,
+	author = {Simon Parkin and
+                  Yi Ting Chua},
+	title = {A cyber-risk framework for coordination of the prevention and preservation
+                  of behaviours},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {327--356},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210047},
+	doi = {10.3233/JCS-210047},
+	timestamp = {Tue, 16 Aug 2022 23:04:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ParkinC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybersecurity controls are deployed to manage risks posed by malicious behaviours or systems. What is not often considered or articulated is how cybersecurity controls may impact legitimate users (often those whose use of a managed system needs to be protected, and preserved). This oversight characterises the ‘blunt’ nature of many cybersecurity controls. Here we present a framework produced from consideration of concerns across methods from cybercrime opportunity reduction and behaviour change, and existing risk management guidelines. We illustrate the framework and its principles with a range of examples and potential applications, including management of suspicious emails in organizations, and social media controls. The framework describes a capacity to improve the precision of cybersecurity controls by examining shared determinants of negative and positive behaviours in a system. This identifies opportunities for risk owners to better protect legitimate users while simultaneously acting to prevent malicious activity in a managed system. We describe capabilities for a novel approach to managing sociotechnical cyber risk which can be integrated alongside elements of typical risk management processes. This includes consideration of user activities as a system asset to protect, and a consideration of how to engage with other stakeholders in the identification of behaviours to preserve in a system. }
+}
+
+
+@article{DBLP:journals/jcs/Chatzisofroniou22,
+	author = {George Chatzisofroniou and
+                  Panayiotis Kotzanikolaou},
+	title = {Exploiting WiFi usability features for association attacks in {IEEE}
+                  802.11: Attack analysis and mitigation controls},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {357--380},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210036},
+	doi = {10.3233/JCS-210036},
+	timestamp = {Mon, 28 Aug 2023 21:24:58 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/Chatzisofroniou22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Association attacks aim to manipulate WiFi clients into associating with a malicious access point, by exploiting protocol vulnerabilities and usability features implemented on the network managers of modern operating systems. In this paper we classify association attacks based on the network manager features that each attack exploits. To validate their current validity status, we implement and test all known association attacks against the network managers of popular operating systems, by using our Wifiphisher tool. We analyze various strategies that may be implemented by an adversary in order to increase the success rate of association attacks. Furthermore, we examine the behavior of association attacks against upcoming security protocols and certifications for IEEE 802.11, such as WPA3, Wi-Fi Enhanced Open and Easy Connect. Our results show that even though the network managers have hampered the effectiveness of some known attacks (e.g. KARMA), other techniques (e.g. Known Beacons) are still active threats. More importantly, our results show that even the newer security protocols leave room for association attacks. Finally, we describe novel detection and prevention techniques for association attacks, as well as security controls based on user awareness. }
+}
+
+
+@article{DBLP:journals/jcs/JamrogaKM22,
+	author = {Wojciech Jamroga and
+                  Damian Kurpiewski and
+                  Vadim Malvone},
+	title = {How to measure usable security: Natural strategies in voting protocols},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {381--409},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210049},
+	doi = {10.3233/JCS-210049},
+	timestamp = {Mon, 28 Aug 2023 21:25:03 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/JamrogaKM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Formal analysis of security is often focused on the technological side of the system. One implicitly assumes that the users will behave in the right way to preserve the relevant security properties. In real life, this cannot be taken for granted. In particular, security mechanisms that are difficult and costly to use are often ignored by the users, and do not really defend the system against possible attacks.  Here, we propose a graded notion of security based on the complexity of the user’s strategic behavior. More precisely, we suggest that the level to which a security property φ  is satisfied can be defined in terms of: (a) the complexity of the strategy that the user needs to execute to make φ  true, and (b) the resources that the user must employ on the way. The simpler and cheaper to obtain φ , the higher the degree of security.  We demonstrate how the idea works in a case study based on an electronic voting scenario. To this end, we model the vVote implementation of the Prêt à Voter voting protocol for coercion-resistant and voter-verifiable elections. Then, we identify “natural” strategies for the voter to obtain voter-verifiability, and measure the voter’s effort that they require. We also consider the dual view of graded security, measured by the complexity of the attacker’s strategy to compromise the relevant properties of the election. }
+}
+
+
+@article{DBLP:journals/jcs/BellaGS22,
+	author = {Giampaolo Bella and
+                  Rosario Giustolisi and
+                  Carsten Sch{\"{u}}rmann},
+	title = {Modelling human threats in security ceremonies},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {411--433},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210059},
+	doi = {10.3233/JCS-210059},
+	timestamp = {Wed, 10 Jan 2024 22:27:38 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/BellaGS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Socio-Technical Systems (STSs) combine the operations of technical systems with the choices and intervention of humans, namely the users of the technical systems. Designing such systems is far from trivial due to the interaction of heterogeneous components, including hardware components and software applications, physical elements such as tickets, user interfaces, such as touchscreens and displays, and notably, humans. While the possible security issues about the technical components are well known yet continuously investigated, the focus of this article is on the various levels of threat that human actors may pose, namely, the focus is on security ceremonies . The approach is to formally model human threats systematically and to formally verify whether they can break the security properties of a few running examples: two currently deployed Deposit-Return Systems (DRSs) and a variant that we designed to strengthen them. The two real-world DRSs are found to support security properties differently, and some relevant properties fail, yet our variant is verified to meet all the properties.  Our human threat model is distributed and interacting : it formalises all humans as potential threatening users because they can execute rules that encode specific threats in addition to being honest, that is, to follow the prescribed rules of interaction with the technical system; additionally, humans may exchange information or objects directly, hence practically favour each other although no specific form of collusion is prescribed. We start by introducing four different human threat models, and some security properties are found to succumb against the strongest model, the addition of the four. The question then arises on what meaningful combinations of the four would not break the properties. This leads to the definition of a lattice of human threat models and to a general methodology to traverse it by verifying each node against the properties. The methodology is executed on our running example for the sake of demonstration. Our approach thus is modular and extensible to include additional threats, potentially even borrowed from existing works, and, consequently, to the growth of the corresponding lattice. STSs can easily become very complex, hence we deem modularity and extensibility of the human threat model as key factors. The current computer-assisted tool support is put to test but proves to be sufficient. }
+}
+
+
+@article{DBLP:journals/jcs/DemjahaPP22,
+	author = {Albes{\"{e}} Demjaha and
+                  Simon Parkin and
+                  David J. Pym},
+	title = {The boundedly rational employee: Security economics for behaviour
+                  intervention support in organizations},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {435--464},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210046},
+	doi = {10.3233/JCS-210046},
+	timestamp = {Tue, 16 Aug 2022 23:04:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/DemjahaPP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security policy-makers (influencers) in an organization set security policies that embody intended behaviours for employees (as decision-makers) to follow. Decision-makers then face choices, where this is not simply a binary decision of whether to comply or not, but also how  to approach compliance and secure working alongside other workplace pressures, and limited resources for identifying optimal security-related choices. Conflict arises because of information asymmetries present in the relationship, where influencers and decision-makers both consider costs, gains, and losses in ways which are not necessarily  aligned. With the need to promote ‘good enough’ decisions about security-related behaviours under such constraints, we hypothesize that actions to resolve this misalignment can benefit from constructs from both traditional economics and  behavioural economics. Here we demonstrate how current approaches to security behaviour provisioning in organizations mirror rational-agent economics, even where behavioural economics is embodied in the promotion of individual security behaviours. We develop and present a framework to accommodate bounded security decision-making , within an ongoing programme of behaviours which must be provisioned for and supported. Our four stage plan to Capture, Adapt, Realign, and Enable behaviour choices provides guidance for security managers, focusing on a more effective response to the uncertainty associated with security behaviour in organizations. }
+}
+
+
+@article{DBLP:journals/jcs/HarperMM22,
+	author = {Scott Harper and
+                  Maryam Mehrnezhad and
+                  John C. Mace},
+	title = {User Privacy Concerns in Commercial Smart Buildings},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {465--497},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210035},
+	doi = {10.3233/JCS-210035},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/HarperMM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart buildings are socio-technical systems that bring together building systems, IoT technology and occupants. A multitude of embedded sensors continually collect and share building data on a large scale which is used to understand and streamline daily operations. Much of this data is highly influenced by the presence of building occupants and could be used to monitor and track their location and activities. The combination of open accessibility to smart building data and the rapid development and enforcement of data protection legislation such as the GDPR and CCPA make the privacy of smart building occupants a concern. Until now, little if any research exists on occupant privacy in work-based or commercial smart buildings. This paper addresses this gap by conducting two user studies (N = 81    and N = 40   ) on privacy concerns and preferences about smart buildings. The first study explores the perception of the occupants of a state-of-the-art commercial smart building, and the latter reflects on the concerns and preferences of a more general user group who do not use this building. Our results show that the majority of the participants are not familiar with the types of data being collected, that it is subtly related to them (only 19.75% of smart building residents (occupants) and 7.5% non-residents), nor the privacy risks associated with it. After being informed more about smart buildings and the data they collect, over half of our participants said that they would be concerned with how occupancy data is used. These findings show that despite the more public environment, there are similar levels of privacy concerns for some sensors to those living in smart homes. The participants called for more transparency in the data collection process and beyond, which means that better policies and regulations should be in place for smart building data. }
+}
+
+
+@article{DBLP:journals/jcs/LendakIP22,
+	author = {Imre Lend{\'{a}}k and
+                  Bal{\'{a}}zs Indig and
+                  G{\'{a}}bor Palk{\'{o}}},
+	title = {WARChain: Consensus-based trust in web archives via proof-of-stake
+                  blockchain technology},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {3},
+	pages = {499--515},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210040},
+	doi = {10.3233/JCS-210040},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/LendakIP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Web archives store born-digital documents, which are usually collected from the Internet by crawlers and stored in the Web Archive (WARC) format. The trustworthiness and integrity of web archives is still an open challenge, especially in the news portal domain, which face additional challenges of censorship even in democratic societies. The aim of this paper is to present a light-weight, blockchain-based solution for web archive validation, which would ensure that documents retrieved by crawlers are authentic for many years to come. We developed our archive validation solution as an extension and continuation of our work in web crawler development mainly targeting news portals. The system is designed as an overlay over a blockchain with a proof-of-stake (PoS) distributed consensus algorithm. PoS was chosen due to its lower ecological footprint compared to proof-of-work solutions (e.g. Bitcoin) and lower expected investment in computing infrastructure. We based our prototype on the open-source Nxt blockchain and implemented it in Python. The prototype was tested on web archive content crawled from Hungarian news portals at two different timestamps with more than 1 million articles in total. We concluded that the proposed solution is accessible, usable by different stakeholders to validate crawled content, deployable on cheap commodity hardware, tackles the archive integrity challenge and is capable to efficiently manage duplicate documents. }
+}
+
+
+@article{DBLP:journals/jcs/Powell22,
+	author = {Brian A. Powell},
+	title = {Securing {LSB} embedding against structural steganalysis},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {4},
+	pages = {517--539},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-200123},
+	doi = {10.3233/JCS-200123},
+	timestamp = {Mon, 28 Aug 2023 21:25:02 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/Powell22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This work explores the extent to which LSB embedding can be made secure against structural steganalysis through a modification of cover image statistics prior to message embedding. LSB embedding disturbs the statistics of consecutive k-tuples of pixels, and a k th-order structural attack detects hidden messages with lengths in proportion to the size of the imbalance amongst sets of k -tuples. To protect against k th-order structural attacks, cover modifications involve the redistribution of k -tuples among the different sets so that symmetries of the cover image are broken, then repaired through the act of LSB embedding so that the stego image bears the statistics of the original cover. We find this is only feasible for securing against up to 3rd-order attacks since higher-order protections result in virtually zero embedding capacities. To protect against 3rd-order attacks, we perform a redistribution of triplets that also preserves the statistics of pairs. This is done by embedding into only certain pixels of each sextuplet, constraining the maximum embedding rate to be ⩽ 2 / 3    bits per channel. Testing on a variety of image formats, we report best performance for JPEG-compressed images with a mean maximum embedding rate undetectable by 2nd- and 3rd-order attacks of 0.21 bpc. }
+}
+
+
+@article{DBLP:journals/jcs/ZouSSL22,
+	author = {Qingtian Zou and
+                  Anoop Singhal and
+                  Xiaoyan Sun and
+                  Peng Liu},
+	title = {Deep learning for detecting logic-flaw-exploiting network attacks:
+                  An end-to-end approach},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {4},
+	pages = {541--570},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210101},
+	doi = {10.3233/JCS-210101},
+	timestamp = {Mon, 28 Aug 2023 21:25:03 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ZouSSL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network attacks have become a major security concern for organizations worldwide. A category of network attacks that exploit the logic (security) flaws of a few widely-deployed authentication protocols has been commonly observed in recent years. Such logic-flaw-exploiting network attacks often do not have distinguishing signatures, and can thus easily evade the typical signature-based network intrusion detection systems. Recently, researchers have applied neural networks to detect network attacks with network logs. However, public network data sets have major drawbacks such as limited data sample variations and unbalanced data with respect to malicious and benign samples. In this paper, we present a new end-to-end approach based on protocol fuzzing to automatically generate high-quality network data, on which deep learning models can be trained for network attack detection. Our findings show that protocol fuzzing can generate data samples that cover real-world data, and deep learning models trained with fuzzed data can successfully detect the logic-flaw-exploiting network attacks. }
+}
+
+
+@article{DBLP:journals/jcs/CortierDDK22,
+	author = {V{\'{e}}ronique Cortier and
+                  St{\'{e}}phanie Delaune and
+                  Jannik Dreier and
+                  Elise Klein},
+	title = {Automatic generation of sources lemmas in Tamarin: Towards automatic
+                  proofs of security protocols},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {4},
+	pages = {573--598},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210053},
+	doi = {10.3233/JCS-210053},
+	timestamp = {Mon, 28 Aug 2023 21:25:01 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/CortierDDK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Tamarin  is a popular tool dedicated to the formal analysis of security protocols. One major strength of the tool is that it offers an interactive mode, allowing to go beyond what push-button tools can typically handle. Tamarin  is for example able to verify complex protocols such as TLS, 5G, or RFID protocols. However, one of its drawback is its lack of automation. For many simple protocols, the user often needs to help Tamarin  by writing specific lemmas, called “sources lemmas”, which requires some knowledge of the internal behaviour of the tool.  In this paper, we propose a technique to automatically  generate sources lemmas in Tamarin . Following the intuition of manually written sources lemmas, our lemmas try to keep track of the origin of a term by looking into emitted messages or facts. We prove formally that our lemmas indeed hold, for arbitrary protocols that make use of cryptographic primitives that can be modelled with a subterm convergent equational theory (modulo associativity and commutativity). We have implemented our approach within Tamarin . Our experiments show that, in most examples of the literature, we are now able to generate suitable sources lemmas automatically, in replacement of the hand-written lemmas. As a direct application, many simple protocols can now be analysed fully automatically, while they previously required user interaction. }
+}
+
+
+@article{DBLP:journals/jcs/AiolliCPP22,
+	author = {Fabio Aiolli and
+                  Mauro Conti and
+                  Stjepan Picek and
+                  Mirko Polato},
+	title = {On the feasibility of crawling-based attacks against recommender systems},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {4},
+	pages = {599--621},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210041},
+	doi = {10.3233/JCS-210041},
+	timestamp = {Mon, 28 Aug 2023 21:25:03 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/AiolliCPP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, online services, like e-commerce or streaming services, provide a personalized user experience through recommender systems. Recommender systems are built upon a vast amount of data about users/items acquired by the services. Such knowledge represents an invaluable resource. However, commonly, part of this knowledge is public and can be easily accessed via the Internet. Unfortunately, that same knowledge can be leveraged by competitors or malicious users. The literature offers a large number of works concerning attacks on recommender systems, but most of them assume that the attacker can easily access the full rating matrix. In practice, this is never the case. The only way to access the rating matrix is by gathering the ratings (e.g., reviews) by crawling the service’s website. Crawling a website has a cost in terms of time and resources. What is more, the targeted website can employ defensive measures to detect automatic scraping.  In this paper, we assess the impact of a series of attacks on recommender systems. Our analysis aims to set up the most realistic scenarios considering both the possibilities and the potential attacker’s limitations. In particular, we assess the impact of different crawling approaches when attacking a recommendation service. From the collected information, we mount various profile injection attacks. We measure the value of the collected knowledge through the identification of the most similar user/item. Our empirical results show that while crawling can indeed bring knowledge to the attacker (up to 65% of neighborhood reconstruction on a mid-size dataset and up to 90% on a small-size dataset), this will not be enough to mount a successful shilling attack in practice. }
+}
+
+
+@article{DBLP:journals/jcs/PaulSW22,
+	author = {Sebastian Paul and
+                  Patrik Scheible and
+                  Friedrich Wiemer},
+	title = {Towards post-quantum security for cyber-physical systems: Integrating
+                  {PQC} into industrial {M2M} communication},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {4},
+	pages = {623--653},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210037},
+	doi = {10.3233/JCS-210037},
+	timestamp = {Mon, 28 Aug 2023 21:24:58 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/PaulSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The threat of a cryptographically relevant quantum computer contributes to an increasing interest in the field of post-quantum cryptography (PQC). Compared to existing research efforts regarding the integration of PQC into the Transport Layer Security (TLS) protocol, industrial communication protocols have so far been neglected. Since industrial cyber-physical systems (CPS) are typically deployed for decades, protection against such long-term threats is needed.  In this work, we propose two novel solutions for the integration of post-quantum (PQ) primitives (digital signatures and key establishment) into the industrial protocol Open Platform Communications Unified Architecture (OPC\xa0UA): a hybrid solution combining conventional cryptography with PQC and a solution solely based on PQC. Both approaches provide mutual authentication between client and server and are realized with certificates fully compliant to the X.509 standard. We implement the two solutions and measure and evaluate their performance across three different security levels. All selected algorithms (Kyber, Dilithium, and Falcon) are candidates for standardization by the National Institute of Standards and Technology (NIST). We show that Falcon is a suitable option\xa0– especially\xa0– when using floating-point hardware provided by our ARM-based evaluation platform. Our proposed hybrid solution provides PQ security for early adopters but comes with additional performance and communication requirements. Our solution solely based on PQC shows superior performance across all evaluated security levels in terms of handshake duration compared to conventional OPC\xa0UA but comes at the cost of increased handshake sizes.  In addition to our performance evaluation, we provide a proof of security in the symbolic model for our two PQC-based variants of OPC\xa0UA. For this proof, we use the cryptographic protocol verifier ProVerif and formally verify confidentiality and authentication properties of our quantum-resistant variants. }
+}
+
+
+@article{DBLP:journals/jcs/DreierDLR22,
+	author = {Jannik Dreier and
+                  Jean{-}Guillaume Dumas and
+                  Pascal Lafourcade and
+                  L{\'{e}}o Robert},
+	title = {Optimal threshold padlock systems},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {5},
+	pages = {655--688},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210065},
+	doi = {10.3233/JCS-210065},
+	timestamp = {Mon, 28 Aug 2023 21:25:00 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/DreierDLR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In 1968, Liu described the problem of securing documents in a shared secret project. In an example, at least six out of eleven participating scientists need to be present to open the lock securing the secret documents. Shamir proposed a mathematical solution to this physical problem in 1979, by designing an efficient k -out-of-n  secret sharing scheme based on Lagrange’s interpolation. Liu and Shamir also claimed that the minimal solution using physical locks is clearly impractical and exponential in the number of participants. In this paper we relax some implicit assumptions in their claim and propose an optimal physical solution to the problem of Liu that uses physical padlocks, but the number of padlocks is not greater than the number of participants. Then, we show that no device can do better for k -out-of-n  threshold padlock systems as soon as k ⩾ 2 n     , which holds true in particular for Liu’s example. More generally, we derive bounds required to implement any threshold system and prove a lower bound of O ( log ( n ) )    padlocks for any threshold larger than 2. For instance we propose an optimal scheme reaching that bound for 2-out-of-n  threshold systems and requiring less than 2 log  2   ( n )    padlocks. We also discuss more complex access structures, a wrapping technique, and other sublinear realizations like an algorithm to generate 3-out-of-n  systems with 2.5 n      padlocks. Finally we give an algorithm building k -out-of-n  threshold padlock systems with only O ( log ( n )  k − 1   )    padlocks. Apart from the physical world, our results also show that it is possible to implement secret sharing over small fields. }
+}
+
+
+@article{DBLP:journals/jcs/DonnoFD22,
+	author = {Michele De Donno and
+                  Xenofon Fafoutis and
+                  Nicola Dragoni},
+	title = {AntibIoTic: The Fog-enhanced distributed security system to protect
+                  the (legacy) Internet of Things},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {5},
+	pages = {689--725},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210027},
+	doi = {10.3233/JCS-210027},
+	timestamp = {Mon, 28 Aug 2023 21:25:02 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/DonnoFD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Internet of Things (IoT) is evolving our society; however, the growing adoption of IoT devices in many scenarios brings security and privacy implications. Current security solutions are either unsuitable for every IoT scenario or provide only partial security. This paper presents AntibIoTic  2.0, a distributed security system that relies on Fog computing to secure IoT devices, including legacy ones. The system is composed of a backbone, made of core Fog nodes and Cloud server, a Fog node acting at the edge as the gateway of the IoT network, and a lightweight agent running on each IoT device. The proposed system offers fine-grained, host-level security coupled with network-level protection, while its distributed nature makes it scalable, versatile, lightweight, and easy to deploy, also for legacy IoT deployments. AntibIoTic  2.0 can also publish anonymized and aggregated data and statistics on the deployments it secures, to increase awareness and push cooperations in the area of IoT security. This manuscript recaps and largely expands previous works on AntibIoTic , providing an enhanced design of the system, an extended proof-of-concept that proves its feasibility and shows its operation, and an experimental evaluation that reports the low computational overhead it causes. }
+}
+
+
+@article{DBLP:journals/jcs/SheatsleyPWVM22,
+	author = {Ryan Sheatsley and
+                  Nicolas Papernot and
+                  Michael J. Weisman and
+                  Gunjan Verma and
+                  Patrick D. McDaniel},
+	title = {Adversarial examples for network intrusion detection systems},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {5},
+	pages = {727--752},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210094},
+	doi = {10.3233/JCS-210094},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/SheatsleyPWVM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning-based network intrusion detection systems have demonstrated state-of-the-art accuracy in flagging malicious traffic. However, machine learning has been shown to be vulnerable to adversarial examples, particularly in domains such as image recognition. In many threat models, the adversary exploits the unconstrained nature of images–the adversary is free to select some arbitrary amount of pixels to perturb. However, it is not clear how these attacks translate to domains such as network intrusion detection as they contain domain constraints , which limit which and how features can be modified by the adversary. In this paper, we explore whether the constrained nature of networks offers additional robustness against adversarial examples versus the unconstrained nature of images. We do this by creating two algorithms: (1)\xa0the Adapative-JSMA , an augmented version of the popular JSMA  which obeys domain constraints, and (2)\xa0the Histogram Sketch Generation  which generates adversarial sketches : targeted universal perturbation vectors that encode feature saliency within the envelope of domain constraints. To assess how these algorithms perform, we evaluate them in a constrained network intrusion detection setting and an unconstrained image recognition setting. The results show that our approaches generate misclassification rates in network intrusion detection applications that were comparable to those of image recognition applications (greater than 95%). Our investigation shows that the constrained attack surface exposed by network intrusion detection systems is still sufficiently large to craft successful adversarial examples – and thus, network constraints do not appear to add robustness against adversarial examples. Indeed, even if a defender constrains an adversary to as little as five random features, generating adversarial examples is still possible. }
+}
+
+
+@article{DBLP:journals/jcs/ZhouZCLZLRTZ22,
+	author = {Zhelei Zhou and
+                  Bingsheng Zhang and
+                  Yuan Chen and
+                  Jiaqi Li and
+                  Yajin Zhou and
+                  Yibiao Lu and
+                  Kui Ren and
+                  Phuc Thai and
+                  Hong{-}Sheng Zhou},
+	title = {Scriptable and composable SNARKs in the trusted hardware model},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {6},
+	pages = {757--793},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210167},
+	doi = {10.3233/JCS-210167},
+	timestamp = {Mon, 28 Aug 2023 21:24:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ZhouZCLZLRTZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Non-interactive zero-knowledge proof or argument (NIZK) systems are widely used in many security sensitive applications to enhance computation integrity, privacy and scalability. In such systems, a prover wants to convince one or more verifiers that the result of a public function is correctly computed without revealing the (potential) private input, such as the witness. In this work, we introduce a new notion, called scriptable SNARK, where the prover and verifier(s) can specify the function (or language instance) to be proven via a script. We formalize this notion in UC framework and provide a generic trusted hardware based solution. We then instantiate our solution in both SGX and Trustzone with Lua script engine. The system can be easily used by typical programmers without any cryptographic background. The benchmark result shows that our solution is better than all the known SNARK proof systems w.r.t. prover’s running time (1000 times faster), verifier’s running time, and the proof size. In addition, we also give a lightweight scriptable SNARK protocol for hardware with limited state, e.g., Θ ( λ )    bits. Finally, we show how the proposed scriptable SNARK can be readily deployed to solve many well-known problems in the blockchain context, e.g. verifier’s dilemma, fast joining for new players, etc. }
+}
+
+
+@article{DBLP:journals/jcs/LiuZYY22,
+	author = {Xiaoning Liu and
+                  Yifeng Zheng and
+                  Xingliang Yuan and
+                  Xun Yi},
+	title = {Deep learning-based medical diagnostic services: {A} secure, lightweight,
+                  and accurate realization},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {6},
+	pages = {795--827},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210165},
+	doi = {10.3233/JCS-210165},
+	timestamp = {Fri, 01 Mar 2024 15:57:33 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/LiuZYY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose CryptMed , a system framework that enables medical service providers to offer secure, lightweight, and accurate medical diagnostic service to their customers via an execution of neural network inference in the ciphertext domain. CryptMed \xa0ensures the privacy of both parties with cryptographic guarantees. Our technical contributions include: 1) presenting a secret sharing based inference protocol that can well cope with the commonly-used linear and non-linear NN layers; 2) devising optimized secure comparison function that can efficiently support comparison-based activation functions in NN architectures; 3) constructing a suite of secure smooth functions built on precise approximation approaches for accurate medical diagnoses. We evaluate CryptMed \xa0on 6 neural network architectures across a wide range of non-linear activation functions over two benchmark and four real-world medical datasets. We comprehensively compare our system with prior art in terms of end-to-end service workload and prediction accuracy. Our empirical results demonstrate that CryptMed \xa0achieves up to respectively 413 ×   , 19 ×   , and 43 ×    bandwidth savings for MNIST, CIFAR-10, and medical applications compared with prior art. For the smooth activation based inference, the best choice of our proposed approximations preserve the precision of original functions, with less than 1.2% accuracy loss and could enhance the precision due to the newly introduced activation function family. }
+}
+
+
+@article{DBLP:journals/jcs/KermanshahiDSSL22,
+	author = {Shabnam Kasra Kermanshahi and
+                  Rafael Dowsley and
+                  Ron Steinfeld and
+                  Amin Sakzad and
+                  Joseph K. Liu and
+                  Surya Nepal and
+                  Xun Yi and
+                  Shangqi Lai},
+	title = {Range search on encrypted spatial data with dynamic updates},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {6},
+	pages = {829--849},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210168},
+	doi = {10.3233/JCS-210168},
+	timestamp = {Mon, 28 Aug 2023 21:24:58 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/KermanshahiDSSL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Driven by the cloud-first initiative taken by various governments and companies, it has become a common practice to outsource spatial data to cloud servers for a wide range of applications such as location-based services and geographic information systems. Searchable encryption is a common practice for outsourcing spatial data which enables search over encrypted data by sacrificing the full security via leaking some information about the queries to the server. However, these inherent leakages could equip the server to learn beyond what is considered in the scheme, in the worst-case allowing it to reconstruct of the database. Recently, a novel form of database reconstruction attack against such kind of outsourced spatial data was introduced (Markatou and Tamassia, IACR ePrint 2020/284), which is performed using common leakages of searchable encryption schemes, i.e., access and search pattern leakages. An access pattern leakage is utilized to achieve an order reconstruction attack , whereas both access and search pattern leakages are exploited for the full database reconstruction attack . In this paper, we propose two novel schemes for outsourcing encrypted spatial data supporting dynamic range search. Our proposed schemes leverage R+ tree to partition the dataset and binary secret sharing to support secure range search. They further provide backward and content privacy and do not leak the access pattern, therefore being resilient against the above mentioned database reconstruction attacks. The evaluations and results on the real-world dataset demonstrate the practicality of our schemes, due to (a) the minimal round-trip between the client and server, and (b) the low computation and storage overhead on the client side. }
+}
+
+
+@article{DBLP:journals/jcs/NappaUPVTL22,
+	author = {Antonio Nappa and
+                  Aaron {\'{U}}beda{-}Portugu{\'{e}}s and
+                  Panagiotis Papadopoulos and
+                  Matteo Varvello and
+                  Juan Tapiador and
+                  Andrea Lanzi},
+	title = {Scramblesuit: An effective timing side-channels framework for malware
+                  sandbox evasion},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {6},
+	pages = {851--876},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-220005},
+	doi = {10.3233/JCS-220005},
+	timestamp = {Mon, 28 Aug 2023 21:25:02 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/NappaUPVTL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Online malware scanners are one of the best weapons in the arsenal of cybersecurity companies and researchers. A fundamental part of such systems is the sandbox that provides an instrumented and isolated environment (virtualized or emulated) for any user to upload and run unknown artifacts and identify potentially malicious behaviors. The provided API and the wealth of information in the reports produced by these services have also helped attackers test the efficacy of numerous techniques to make malware hard to detect.  The most common technique used by malware for evading the analysis system is to monitor the execution environment, detect the presence of any debugging artifacts, and hide its malicious behavior if needed. This is usually achieved by looking for signals suggesting that the execution environment does not belong to a native machine, such as specific memory patterns or behavioral traits of certain CPU instructions.  In this paper, we show how an attacker can evade detection on such analysis services by incorporating a Proof-of-Work (PoW) algorithm into a malware sample. Specifically, we leverage the asymptotic behavior of the computational cost of PoW algorithms when they run on some classes of hardware platforms to effectively detect a non bare-metal environment of the malware sandbox analyzer. To prove the validity of this intuition, we design and implement Scramblesuit , a framework to automatically (i) implement sandbox detection strategies, and (ii) embed a test evasion program into an arbitrary malware sample. We perform a comprehensive evaluation of  Scramblesuit  across a wide range of: 1) COTS architectures (ARM, Apple M1, i9, i7 and Xeon), 2) malware families, and 3) online sandboxes (JoeSandbox, Sysinternals, C2AE, Zenbox, Dr.Web VX Cube, Tencent HABO, YOMI Hunter) . Our empirical evaluation shows that a PoW-based evasion technique is hard to fingerprint, and reduces existing malware detection rate by a factor of 10. The only plausible counter-measure to  Scramblesuit  is to rely on bare-metal online malware scanners, which is unrealistic given they currently handle millions of daily submissions.  }
+}
+
+
+@article{DBLP:journals/jcs/DavidW22,
+	author = {Liron David and
+                  Avishai Wool},
+	title = {PESrank: An Explainable online password strength estimator},
+	journal = {J. Comput. Secur.},
+	volume = {30},
+	number = {6},
+	pages = {877--901},
+	year = {2022},
+	url = {https://doi.org/10.3233/JCS-210166},
+	doi = {10.3233/JCS-210166},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/DavidW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Human-chosen passwords are the dominant form of authentication systems. Passwords strength estimators are used to help users avoid picking weak passwords by predicting how many attempts a password cracker would need until it finds a given password.  In this paper we propose a novel password strength estimator, called PESrank, which accurately models the behavior of a powerful password cracker. PESrank calculates the rank of a given password in an optimal descending order of likelihood. PESrank estimates a given password’s rank in fractions of a second – without actually enumerating the passwords – so it is practical for online use. It also has a training time that is drastically shorter than previous methods. Moreover, PESrank is efficiently tweakable  to allow model personalization in fractions of a second, without the need to retrain the model; and it is explainable : it is able to provide information on why  the password has its calculated rank, and gives the user insight on how to pick a better password.  We implemented PESrank in Python and conducted an extensive evaluation study of it. We also integrated it into the registration page of a course at our university. Even with a model based on 905 million passwords, the response time was well under 1 second, with up to a 1-bit accuracy margin between the upper bound and the lower bound on the rank. }
+}

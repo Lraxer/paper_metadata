@@ -1,0 +1,460 @@
+@article{DBLP:journals/jcs/CiucanuLLS23,
+	author = {Radu Ciucanu and
+                  Pascal Lafourcade and
+                  Marius Lombard{-}Platet and
+                  Marta Soare},
+	title = {Secure protocols for cumulative reward maximization in stochastic
+                  multi-armed bandits},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {1},
+	pages = {1--27},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210051},
+	doi = {10.3233/JCS-210051},
+	timestamp = {Mon, 28 Aug 2023 21:24:58 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/CiucanuLLS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the problem of cumulative reward maximization in multi-armed bandits. We address the security concerns that occur when data and computations are outsourced to an honest-but-curious cloud i.e., that executes tasks dutifully, but tries to gain as much information as possible. We consider situations where data used in bandit algorithms is sensitive and has to be protected e.g., commercial or personal data. We rely on cryptographic schemes and propose UCB - MS   , a secure multi-party protocol based on the UCB algorithm. We prove that UCB - MS    computes the same cumulative reward as UCB while satisfying desirable security properties. In particular, cloud nodes cannot learn the cumulative reward or the sum of rewards for more than one arm. Moreover, by analyzing messages exchanged among cloud nodes, an external observer cannot learn the cumulative reward or the sum of rewards produced by some arm. We show that the overhead due to cryptographic primitives is linear in the size of the input. Our implementation confirms the linear-time behavior and the practical feasibility of our protocol, on both synthetic and real-world data. }
+}
+
+
+@article{DBLP:journals/jcs/Zenitani23,
+	author = {Kengo Zenitani},
+	title = {A scalable algorithm for network reachability analysis with cyclic
+                  attack graphs},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {1},
+	pages = {29--55},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210103},
+	doi = {10.3233/JCS-210103},
+	timestamp = {Mon, 26 Jun 2023 20:58:06 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/Zenitani23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today, it is indispensable for us to know our IT infrastructure’s security level to make rational decisions to protect it from malicious attacks. However, the ever-growing scale and complexity of our infrastructures make it difficult. One available approach is attack-graph analysis, a model-based algorithm that generates a directed graph called an attack graph composed of possible attack actions and their AND/OR combinations. An attack graph allows us to identify the logical possibility of cyber-attacks. Unfortunately, attack graphs lack quantitative information, such as the likelihood of a successful attack\xa0– the reachability. Meanwhile, some advanced approaches, such as the Bayesian attack-graph, compute reachabilities with an attack graph. Still, those methods have problems in the scalability and the handling of cycles contained in attack graphs. This study proposes and examines another approach named reachability-graph analysis. A reachability graph is a directed graph obtained from an attack graph by which we can compute the reachabilities. It is extremely fast to generate, thus applicable to large-scale network analysis. Furthermore, this method allows cycles in attack graphs. Such a scalable algorithm has been awaited for over a decade; it generates probabilistic security metrics and is guaranteed applicable to any cyclic AND/OR graphs. We compare our approach’s computational efficiency with the Bayesian attack-graph. Also, we apply our approach to large-scale, cyclic attack graphs. Several theoretical properties with proofs and the computational complexity of our approach are examined too. }
+}
+
+
+@article{DBLP:journals/jcs/CalzavaraFL23,
+	author = {Stefano Calzavara and
+                  Pietro Ferrara and
+                  Claudio Lucchese},
+	title = {Certifying machine learning models against evasion attacks by program
+                  analysis},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {1},
+	pages = {57--84},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210133},
+	doi = {10.3233/JCS-210133},
+	timestamp = {Sun, 12 Nov 2023 02:19:59 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/CalzavaraFL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning has proved invaluable for a range of different tasks, yet it also proved vulnerable to evasion attacks, i.e., maliciously crafted perturbations of inputs designed to force mispredictions. In this article we propose a novel technique to certify the security of machine learning models against evasion attacks with respect to an expressive threat model, where the attacker can be represented by an arbitrary imperative program. Our approach is based on a transformation of the model under attack into an equivalent imperative program, which is then analyzed using the traditional abstract interpretation framework. This solution is sound, efficient and general enough to be applied to a range of different models, including decision trees, logistic regression and neural networks. Our experiments on publicly available datasets show that our technique yields only a minimal number of false positives and scales up to cases which are intractable for a competitor approach. }
+}
+
+
+@article{DBLP:journals/jcs/HassaouiHK23,
+	author = {Mohamed Hassaoui and
+                  Mohamed Hanini and
+                  Said El Kafhali},
+	title = {Domain generated algorithms detection applying a combination of a
+                  deep feature selection and traditional machine learning models},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {1},
+	pages = {85--105},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210139},
+	doi = {10.3233/JCS-210139},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/HassaouiHK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The use of command and control (C2) servers in cyberattacks has risen considerably, attackers frequently employ the domain generated algorithm (DGA) technique to conceal their C2 servers. Various machine learning models have been suggested for binary identification of domain names as either benign or DGA domain. The Existing techniques are inefficient and have real-time detection issues and are also very data hypersensitive, therefore, they can be circumvented by the attackers. The main problem this article addresses is how to automatically detect DGA in a way that does not rely solely on reverse engineering, not strongly affected by data size, and allows detection of this DGA in real time. This paper presents DTFS-DGA model that combine neural networks models with traditional machine learning models and maintains its performance even if the data size changes to detect DGA in real time. The model uses 15 linguistics and networks features with the features extracted by long short-term memory and convolutional neural network to classify domain names using random forest and support vector machines. The comprehensive experimental findings confirm the suggested model’s accuracy. To be precise, the model achieve an average accuracy of 99.8 %    for the classification. }
+}
+
+
+@article{DBLP:journals/jcs/MpantiNP23,
+	author = {Anna Mpanti and
+                  Stavros D. Nikolopoulos and
+                  Leonidas Palios},
+	title = {Strong watermark numbers encoded as reducible permutation graphs against
+                  edge modification attacks},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {2},
+	pages = {107--128},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210048},
+	doi = {10.3233/JCS-210048},
+	timestamp = {Mon, 28 Aug 2023 21:25:02 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/MpantiNP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software watermarking is a defense technique used to prevent or discourage software piracy by embedding a signature in the code. In (Discrete Applied Mathematics  250  (2018 ) 145–164), a software watermarking system is presented which encodes an integer number\xa0w  (i.e., a watermark) as a reducible permutation flow-graph\xa0F [ π  ∗   ]    embeddable in the code through the use of a self-inverting permutation\xa0π  ∗     . In this work, we theoretically investigate this watermarking system and exploit structural properties of the self-inverting permutation π  ∗      encoding the watermark in order to prove its resilience to edge-modification attacks on the flow-graph F [ π  ∗   ]   . Based on the minimum number of edge modifications needed to be applied on F [ π  ∗   ]    so that a different watermark can be extracted from the resulting graph, we give a characterization of the watermarks as strong, intermediate or weak and provide good recommendations for the choices of watermark. }
+}
+
+
+@article{DBLP:journals/jcs/HanYH23,
+	author = {Ziyang Han and
+                  Qingqing Ye and
+                  Haibo Hu},
+	title = {{OTKI-F:} An efficient memory-secure multi-keyword fuzzy search protocol},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {2},
+	pages = {129--152},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210145},
+	doi = {10.3233/JCS-210145},
+	timestamp = {Mon, 28 Aug 2023 21:25:03 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/HanYH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many breakthroughs on security and privacy-preserving techniques have emerged to mitigate the trust loss of cloud hosting environment caused by various types of attacks. To enhance memory-level security of multi-keyword fuzzy search, a widely occurred query request, we take the initiative to apply Trusted Execution Environment (a.k.a TEE) technology to our protocol design which provides hardware-based tamper-proof enclaves. Then we propose the Edit Distance-based Obfuscation Mechanism to further protect the query process executed outside TEE against access pattern leakage. With concerns of practicality and performance, we also propose the two-layer fuzzy index structure and Trend-aware Cache. The former addresses the space limitation of TEE memory for searching large datasets, while the latter optimizes the cache utility of TEE with trend-aware coordinator to effectively reduce the communication overhead. }
+}
+
+
+@article{DBLP:journals/jcs/AfzaliTCC23,
+	author = {Hammad Afzali and
+                  Santiago Torres{-}Arias and
+                  Reza Curtmola and
+                  Justin Cappos},
+	title = {Towards verifiable web-based code review systems},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {2},
+	pages = {153--184},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210098},
+	doi = {10.3233/JCS-210098},
+	timestamp = {Sat, 30 Sep 2023 10:18:38 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/AfzaliTCC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Although code review is an essential step for ensuring the quality of software, it is surprising that current code review systems do not have mechanisms to protect the integrity of the code review process. We uncover multiple attacks against the code review infrastructure which are easy to execute, stealthy in nature, and can have a significant impact, such as allowing malicious or buggy code to be merged and propagated to future releases. To improve this status quo, in this work we lay the foundations for securing the code review process. Towards this end, we first identify a set of key design principles necessary to secure the code review process. We then use these principles to propose SecureReview , a security mechanism that can be applied on top of a Git-based code review system to ensure the integrity of the code review process and provide verifiable guarantees that the code review process followed the intended review policy. We implement SecureReview  as a Chrome browser extension for GitHub and Gerrit. Our security analysis shows that SecureReview  is effective in mitigating the aforementioned attacks. An experimental evaluation shows that the SecureReview  implementation only adds a slight storage overhead (i.e. , less than 0.0006 of the repository size). }
+}
+
+
+@article{DBLP:journals/jcs/SalemSJ23,
+	author = {Asma Salem and
+                  Ahmad Abdel{-}Aziz Sharieh and
+                  Riad Jabri},
+	title = {Online User Authentication System Using Keystroke Dynamics},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {3},
+	pages = {185--215},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210081},
+	doi = {10.3233/JCS-210081},
+	timestamp = {Mon, 28 Aug 2023 21:24:59 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/SalemSJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, people become more connected to the internet using their mobile devices. They tend to use their critical and sensitive data among many applications. These applications provide security via user authentication. Authentication by passwords is a reliable and efficient access control procedure, but it is not sufficient. Additional procedures are needed to enhance the security of these applications. Keystroke dynamics (KSD) is one of the common behavioral based systems. KSD rhythm uses combinations of timing and non-timing features that are extracted and processed from several devices. This work presents a novel authentication approach based on two factors: password and KSD. Also, it presents extensive comparative analysis conducted between authentication systems based on KSDs. It proposes a prototype for a keyboard in order to collect timing and non-timing information from KSDs. Hence, the proposed approach uses timing and several non-timing features. These features have a demonstrated significant role for improving the performance measures of KSD behavioral authentication systems. Several experiments have been done and show acceptable level in performance measures as a second authentication factor. The approach has been tested using multiple classifiers. When Random Forest classifier has been used, the approach reached 0% error rate with 100% accuracy for classification. }
+}
+
+
+@article{DBLP:journals/jcs/KlenzeSB23,
+	author = {Tobias Klenze and
+                  Christoph Sprenger and
+                  David A. Basin},
+	title = {IsaNet: {A} framework for verifying secure data plane protocols},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {3},
+	pages = {217--259},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-220021},
+	doi = {10.3233/JCS-220021},
+	timestamp = {Mon, 28 Aug 2023 21:25:04 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/KlenzeSB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today’s Internet is built on decades-old networking protocols that lack scalability, reliability and security. In response, the networking community has developed path-aware  Internet architectures that solve these problems while simultaneously empowering end hosts to exert some control on their packets’ route through the network. In these architectures, autonomous systems authorize forwarding paths in accordance with their routing policies, and protect these paths using cryptographic authenticators. For each packet, the sending end host selects an authorized path and embeds it and its authenticators in the packet header. This allows routers to efficiently determine how to forward the packet. The central security property of the data plane, i.e., of forwarding, is that packets can only travel along authorized paths. This property, which we call path authorization , protects the routing policies of autonomous systems from malicious senders.  The fundamental role of packet forwarding in the Internet’s ecosystem and the complexity of the authentication mechanisms employed call for a formal analysis. We develop IsaNet, a parameterized verification framework for data plane protocols in Isabelle/HOL. We first formulate an abstract model without an attacker for which we prove path authorization. We then refine this model by introducing a Dolev–Yao attacker and by protecting authorized paths using (generic) cryptographic validation fields. This model is parametrized by the path authorization mechanism and assumes five simple verification conditions. We propose novel attacker models and different sets of assumptions on the underlying routing protocol. We validate our framework by instantiating it with nine concrete protocol variants and prove that they each satisfy the verification conditions (and hence path authorization). The invariants needed for the security proof are proven in the parametrized model instead of the instance models. Our framework thus supports low-effort security proofs for data plane protocols. In contrast to what could be achieved with state-of-the-art automated protocol verifiers, our results hold for arbitrary network topologies and sets of authorized paths. }
+}
+
+
+@article{DBLP:journals/jcs/NevesSSBG23,
+	author = {Fl{\'{a}}vio Neves and
+                  Rafael Roque de Souza and
+                  Juliana Sousa and
+                  Michel S. Bonfim and
+                  Vinicius C. Garcia},
+	title = {Data privacy in the Internet of Things based on anonymization: {A}
+                  review},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {3},
+	pages = {261--291},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210089},
+	doi = {10.3233/JCS-210089},
+	timestamp = {Sun, 24 Mar 2024 21:06:01 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/NevesSSBG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Internet of Things (IoT) has shown rapid growth in recent years. However, it presents challenges related to the lack of standardization of communication produced by different types of devices. Another problem area is the security and privacy of data generated by IoT devices. Thus, with the focus on grouping, analyzing, and classifying existing data security and privacy methods in IoT, based on data anonymization, we have conducted a Systematic Literature Review (SLR). We have therefore reviewed the history of works developing solutions for security and privacy in the IoT, particularly data anonymization and the leading technologies used by researchers in their work. We also discussed the challenges and future directions for research. The objective of the work is to give order to the main approaches that promise to provide or facilitate data privacy using anonymization in the IoT area. The study’s results can help us understand the best anonymization techniques to provide data security and privacy in IoT environments. In addition, the findings can also help us understand the limitations of existing approaches and identify areas for improvement. The results found in most of the studies analyzed indicate a lack of consensus in the following areas: (i) with regard to a solution with a standardized methodology to be applied in all scenarios that encompass IoT; (ii) the use of different techniques to anonymize the data; and (iii), the resolution of privacy issues. On the other hand, results made available by the k-anonymity technique proved efficient in combination with other techniques. In this context, data privacy presents one of the main challenges for broadening secure domains in applying privacy with anonymity. }
+}
+
+
+@article{DBLP:journals/jcs/SempreboniV23,
+	author = {Diego Sempreboni and
+                  Luca Vigan{\`{o}}},
+	title = {A mutation-based approach for the formal and automated analysis of
+                  security ceremonies},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {4},
+	pages = {293--364},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210075},
+	doi = {10.3233/JCS-210075},
+	timestamp = {Wed, 30 Aug 2023 14:11:01 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/SempreboniV23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There is an increasing number of cyber-systems (e.g., systems for payment, transportation, voting, critical infrastructures) whose security depends intrinsically on human users. In this paper, we introduce a novel approach for the formal and automated analysis of security ceremonies. A security ceremony expands a security protocol to include human nodes alongside computer nodes, with communication links that comprise user interfaces, human-to-human communication and transfers of physical objects that carry data, and thus a ceremony’s security analysis should include, in particular, the mistakes that human users might make when participating actively in the ceremony. Our approach defines mutation rules that model possible behaviors of a human user, automatically generates mutations in the behavior of the other agents of the ceremony to match the human-induced mutations, and automatically propagates these mutations through the whole ceremony. This allows for the analysis of the original ceremony specification and its possible mutations, which may include the way in which the ceremony has actually been implemented or could be implemented. To automate our approach, we have developed the tool X-Men, which is a prototype that builds on top of Tamarin, one of the most common tools for the automatic unbounded verification of security protocols. As a proof of concept, we have applied our approach to three real-life case studies, uncovering a number of concrete vulnerabilities. Some of these vulnerabilities were so far unknown, whereas others had so far been discovered only by empirical observation of the actual ceremony execution or by directly formalizing alternative models of the ceremony by hand, but X-Men instead allowed us to find them automatically. }
+}
+
+
+@article{DBLP:journals/jcs/ChaudhariGR23,
+	author = {Ashish R. Chaudhari and
+                  Bhavesh N. Gohil and
+                  Udai Pratap Rao},
+	title = {A review on cloud security issues and solutions},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {4},
+	pages = {365--391},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-210140},
+	doi = {10.3233/JCS-210140},
+	timestamp = {Sun, 22 Oct 2023 11:15:34 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ChaudhariGR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud computing provides computing resources, platforms, and applications as a service in a flexible, cost-effective, and efficient way. Cloud computing has integrated with industry and many other fields in recent years, which prompted researchers to look into new technologies. Cloud users have moved their applications, data and services to the Cloud storage due to the availability and scalability of Cloud services. Cloud services and applications are provided through the Internet-based on a pay-per-use model. Plenty of security issues are created due to the migration from local to remote computing for both Cloud users and providers. This paper discusses an overview of Cloud computing, as well as a study of security issues at various levels of Cloud computing. The article also provides a complete review of security issues with their existing solutions for a better understanding of specific open research issues. }
+}
+
+
+@article{DBLP:journals/jcs/ZhangZX23,
+	author = {Jianfeng Zhang and
+                  Wensheng Zhang and
+                  Jingdong Xu},
+	title = {StegEdge: Privacy protection of unknown sensitive attributes in edge
+                  intelligence via deception},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {4},
+	pages = {393--417},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-220042},
+	doi = {10.3233/JCS-220042},
+	timestamp = {Sat, 02 Sep 2023 13:09:56 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/ZhangZX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the limited capabilities of user devices, such as smart phones, and the Internet of Things (IoT), edge intelligence is being recognized as a promising paradigm to enable effective analysis of the data generated by these devices with complex artificial intelligence (AI) models, and it often entails either fully or partially offloading the computation of neural networks from user devices to edge computing servers. To protect users’ data privacy in the process, most existing researches assume that the private (sensitive) attributes of user data are known in advance when designing privacy-protection measures. This assumption is restrictive in real life, and thus limits the application of these methods. Inspired by the research in image steganography and cyber deception, in this paper, we propose StegEdge, a conceptually novel approach to this challenge. StegEdge takes as input the user-generated image and a randomly selected “cover” image that does not pose any privacy concern (e.g., downloaded from the Internet), and extracts the features such that the utility tasks can still be conducted by the edge computing servers, while potential adversaries seeking to reconstruct/recover the original user data or analyze sensitive attributes from the extracted features sent from users to the server, will largely acquire information of the cover image. Thus, users’ data privacy is protected via a form of deception. Empirical results conducted on the CelebA and ImageNet datasets show that, at the same level of accuracy for utility tasks, StegEdge reduces the adversaries’ accuracy of predicting sensitive attributes by up to 38% compared with other methods, while also defending against adversaries seeking to reconstruct user data from the extracted features. }
+}
+
+
+@article{DBLP:journals/jcs/MestelMR23,
+	author = {David Mestel and
+                  Johannes M{\"{u}}ller and
+                  Pascal Reisert},
+	title = {How efficient are replay attacks against vote privacy? {A} formal
+                  quantitative analysis},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {421--467},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230047},
+	doi = {10.3233/JCS-230047},
+	timestamp = {Mon, 05 Feb 2024 20:26:30 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/MestelMR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Replay attacks  are among the most well-known attacks against vote privacy. Many e-voting systems have been proven vulnerable to replay attacks, including systems like Helios that are used in real practical elections.  Despite their popularity, it is commonly believed that replay attacks are inefficient but the actual threat that they pose to vote privacy has never been studied formally. Therefore, in this paper, we precisely analyze for the first time how efficient replay attacks really are.  We study this question from commonly used and complementary perspectives on vote privacy, showing as an independent contribution that a simple extension of a popular game-based privacy definition corresponds to a strong entropy-based notion.  Our results demonstrate that replay attacks can be devastating for a voter’s privacy even when an adversary’s resources are very limited. We illustrate our formal findings by applying them to a number of real-world elections, showing that a modest number of replays can result in significant privacy loss. Overall, our work reveals that, contrary to a common belief, replay attacks can be very efficient and must therefore be considered a serious threat. }
+}
+
+
+@article{DBLP:journals/jcs/DraganDEGHRRS23,
+	author = {Constantin Catalin Dragan and
+                  Fran{\c{c}}ois Dupressoir and
+                  Ehsan Estaji and
+                  Kristian Gj{\o}steen and
+                  Thomas Haines and
+                  Peter Y. A. Ryan and
+                  Peter B. R{\o}nne and
+                  Morten Rotvold Solberg},
+	title = {Machine-checked proofs of privacy against malicious boards for Selene
+                  {\&} Co},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {469--499},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230045},
+	doi = {10.3233/JCS-230045},
+	timestamp = {Thu, 09 Nov 2023 21:13:49 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/DraganDEGHRRS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Privacy is a notoriously difficult property to achieve in complicated systems and especially in electronic voting schemes. Moreover, electronic voting schemes is a class of systems that require very high assurance. The literature contains a number of ballot privacy definitions along with security proofs for common systems. Some machine-checked security proofs have also appeared. We define a new ballot privacy notion that captures a larger class of voting schemes. This notion improves on the state of the art by taking into account that verification in many schemes will happen or must happen after the tally has been published, not before as in previous definitions.  As a case study we give a machine-checked proof of privacy for Selene, which is a remote electronic voting scheme which offers an attractive mix of security properties and usability. Prior to our work, the computational privacy of Selene has never been formally verified. Finally, we also prove that MiniVoting and Belenios satisfies our definition. }
+}
+
+
+@article{DBLP:journals/jcs/ChevalCK23,
+	author = {Vincent Cheval and
+                  Rapha{\"{e}}lle Crubill{\'{e}} and
+                  Steve Kremer},
+	title = {Symbolic protocol verification with dice},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {501--538},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230037},
+	doi = {10.3233/JCS-230037},
+	timestamp = {Fri, 03 Nov 2023 22:12:28 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/ChevalCK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Symbolic protocol verification generally abstracts probabilities away, considering computations that succeed only with negligible probability, such as guessing random numbers or breaking an encryption scheme, as impossible. This abstraction, sometimes referred to as the perfect cryptography assumption, has shown very useful as it simplifies automation of the analysis. However, probabilities may also appear in the control flow where they are generally not negligible. In this paper we consider a framework for symbolic protocol analysis with a probabilistic choice operator: the probabilistic applied π -calculus. We define and explore the relationships between several behavioral equivalences. In particular we show the need for randomized schedulers and exhibit a counter-example to a result in a previous work that relied on non-randomized ones. As in other frameworks that mix both non-deterministic and probabilistic choices, schedulers may sometimes be unrealistically powerful. We therefore consider two subclasses of processes that avoid this problem. In particular, when considering purely non-deterministic protocols, as is done in classical symbolic verification, we show that a probabilistic adversary has\xa0– maybe surprisingly\xa0– a strictly superior distinguishing power for may testing, which, when the number of sessions is bounded, we show to coincide with purely possibilistic similarity. }
+}
+
+
+@article{DBLP:journals/jcs/FernandesMPD23,
+	author = {Natasha Fernandes and
+                  Annabelle McIver and
+                  Catuscia Palamidessi and
+                  Ming Ding},
+	title = {Universal optimality and robust utility bounds for metric differential
+                  privacy},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {539--580},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230036},
+	doi = {10.3233/JCS-230036},
+	timestamp = {Tue, 07 May 2024 20:25:10 +0200},
+	biburl = {https://dblp.org/rec/journals/jcs/FernandesMPD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the privacy-utility trade-off in the context of metric differential privacy. Ghosh et al. introduced the idea of universal optimality  to characterise the “best” mechanism for a certain query that simultaneously satisfies (a fixed) ε -differential privacy constraint whilst at the same time providing better utility compared to any other ε -differentially private mechanism for the same query. They showed that the Geometric mechanism is universally optimal for the class of counting queries. On the other hand, Brenner and Nissim showed that outside the space of counting queries, and for the Bayes risk loss function, no such universally optimal mechanisms exist. Except for the universal optimality of the Laplace mechanism, there have been no generalisations of these universally optimal results to other classes of differentially-private mechanisms.  In this paper, we use metric differential privacy and quantitative information flow as the fundamental principle for studying universal optimality. Metric differential privacy is a generalisation of both standard (i.e., central) differential privacy and local differential privacy, and it is increasingly being used in various application domains, for instance in location privacy and in privacy-preserving machine learning. Similar to the approaches adopted by Ghosh et al. and Brenner and Nissim, we measure utility in terms of loss functions, and we interpret the notion of a privacy mechanism as an information-theoretic channel satisfying constraints defined by ε -differential privacy and a metric meaningful to the underlying state space. Using this framework we are able to clarify Nissim and Brenner’s negative results by (a) that in fact all  privacy types contain optimal mechanisms relative to certain kinds of non-trivial loss functions, and (b) extending and generalising their negative results beyond Bayes risk specifically to a wide class of non-trivial loss functions.  Our exploration suggests that universally optimal mechanisms are indeed rare within privacy types. We therefore propose weaker universal benchmarks of utility called privacy type capacities . We show that such capacities always exist and can be computed using a convex optimisation algorithm. Further, we illustrate these ideas on a selection of examples with several different underlying metrics. }
+}
+
+
+@article{DBLP:journals/jcs/LiLPLHH23,
+	author = {Liyi Li and
+                  Yiyun Liu and
+                  Deena L. Postol and
+                  Leonidas Lampropoulos and
+                  David Van Horn and
+                  Michael Hicks},
+	title = {A formal model of Checked {C}},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {581--614},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230040},
+	doi = {10.3233/JCS-230040},
+	timestamp = {Fri, 10 Nov 2023 19:46:51 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/LiLPLHH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a formal model of Checked C, a dialect of C that aims to enforce spatial memory safety. Our model pays particular attention to the semantics of dynamically sized, potentially null-terminated arrays. We formalize this model in Coq, and prove that any spatial memory safety errors can be blamed  on portions of the program labeled unchecked ; this is a Checked C feature that supports incremental porting and backward compatibility. While our model’s operational semantics uses annotated (“fat”) pointers to enforce spatial safety, we show that such annotations can be safely erased. Using PLT Redex we formalize an executable version of our model and a compilation procedure to an untyped C-like language, as well as use randomized testing to validate that generated code faithfully simulates the original. Finally, we develop a custom random generator for well-typed and almost-well-typed terms in our Redex model, and use it to search for inconsistencies between our model and the Clang Checked C implementation. We find these steps to be a useful way to co-develop a language (Checked C is still in development) and a core model of it. }
+}
+
+
+@article{DBLP:journals/jcs/MondalAA23,
+	author = {Priyanka Mondal and
+                  Maximilian Algehed and
+                  Owen Arden},
+	title = {Flow-limited authorization for consensus, replication, and secret
+                  sharing},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {5},
+	pages = {615--645},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230048},
+	doi = {10.3233/JCS-230048},
+	timestamp = {Fri, 03 Nov 2023 22:12:28 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/MondalAA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Availability is crucial to the security of distributed systems, but guaranteeing availability is hard, especially when participants in the system may act maliciously. Quorum replication protocols provide both integrity and availability: data and computation is replicated at multiple independent hosts, and a quorum of these hosts must agree on the output of all operations applied to the data. Unfortunately, these protocols have high overhead and can be difficult to calibrate for a specific application’s needs. Ideally, developers could use high-level abstractions for consensus and replication to write fault-tolerant code that is secure by construction.  This paper presents Flow-Limited Authorization for Quorum Replication (FLAQR ), a core calculus for building distributed applications with heterogeneous quorum replication protocols while enforcing end-to-end information security. Our type system ensures that well-typed FLAQR  programs cannot fail  (experience an unrecoverable error) in ways that violate their type-level specifications. We present noninterference theorems that characterize FLAQR ’s confidentiality, integrity, and availability in the presence of consensus, replication, and failures, as well as a liveness theorem for the class of majority quorum protocols under a bounded number of faults. Additionally, we present an extension to FLAQR  that supports secret sharing as a form of declassification and prove it preserves integrity and availability security properties. }
+}
+
+
+@article{DBLP:journals/jcs/WangP23,
+	author = {Jingzhe Wang and
+                  Balaji Palanisamy},
+	title = {Securing blockchain-based timed data release against adversarial attacks},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {6},
+	pages = {649--677},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-230001},
+	doi = {10.3233/JCS-230001},
+	timestamp = {Thu, 21 Dec 2023 19:52:26 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/WangP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Timed data release refers to protecting sensitive data that can be accessed only after a pre-determined amount of time has passed. While blockchain-based solutions for timed data release provide a promising approach for decentralizing the process, designing an attack-resilient timed-release service that is resilient to malicious adversaries in a blockchain network is inherently challenging. A timed-release service on a blockchain network is inevitably exposed to the risk of post-facto attacks  where adversaries may launch attacks after the data is released in the blockchain network. Existing incentive-based solutions for timed data release in Ethereum blockchains guarantee protection under the assumption of a fully rational adversarial environment in which every peer acts rationally. However, these schemes fail invariably when even a single participating peer node in the protocol starts acting maliciously and deviates from the rational behavior.  In this paper, we propose a systematic solution for attack-resilient and practical blockchain-based timed data release in a mixed adversarial environment, where both malicious adversaries and rational adversaries exist. We first propose an effective uncertainty-aware reputation measure to capture the behaviors of the peer involved in timed data release activities in the network. In light of such a measure, we present the design of a basic protocol that consists of two critical ingredients, namely reputation-aware peer recruitment  and verifiable enforcement protocols . The former, prior to the start of the enforcement protocols, performs peer recruitment based on the reputation measure to make the design probabilistically attack-resilient to the post-facto attacks . The latter is responsible for contractually guarding the recruited peers at runtime by transparently reporting observed adversarial behaviors. However, the basic recruitment design is only aware of the reputation of the peers and it does not consider the working time schedule of the participating peers and as a result, it results in lower attack-resilience. To enhance the attack resilience further without impacting the verifiable enforcement protocols, we propose a temporal graph-based reputation-aware peer recruitment algorithm that carefully determines the peer recruitment plan to make the service more attack-resilient. In our proposed approach, we formally capture the timed data release service as a temporal graph and we develop a novel maximal attack-resilient path-finding algorithm on the temporal graph for the participating peers.  We implement a prototype of the proposed approach using Smart Contracts and deploy it on the Ethereum official test network, Rinkeby . For extensively evaluating the proposed techniques, we perform simulation experiments to validate the effectiveness of the reputation-aware timed data release protocols as well as our proposed temporal-graph-based improvements. The results demonstrate the effectiveness and strong attack resilience of the proposed mechanisms and our approach incurs only a modest gas cost. }
+}
+
+
+@article{DBLP:journals/jcs/GorbettSSR23,
+	author = {Matt Gorbett and
+                  Caspian Siebert and
+                  Hossein Shirazi and
+                  Indrakshi Ray},
+	title = {The intrinsic dimensionality of network datasets and its applications},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {6},
+	pages = {679--704},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-220131},
+	doi = {10.3233/JCS-220131},
+	timestamp = {Thu, 21 Dec 2023 19:52:26 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/GorbettSSR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern network infrastructures are in a constant state of transformation, in large part due to the exponential growth of Internet of Things (IoT) devices. The unique properties of IoT-connected networks, such as heterogeneity and non-standardized protocol, have created critical security holes and network mismanagement. In this paper we propose a new measurement tool, Intrinsic Dimensionality (ID), to aid in analyzing and classifying network traffic. A proxy for dataset complexity, ID can be used to understand the network as a whole, aiding in tasks such as network management and provisioning. We use ID to evaluate several modern network datasets empirically. Showing that, for network and device-level data, generated using IoT methodologies, the ID of the data fits into a low dimensional representation. Additionally we explore network data complexity at the sample level using Local Intrinsic Dimensionality (LID) and propose a novel unsupervised intrusion detection technique, the Weighted Hamming LID Estimator. We show that the algortihm performs better on IoT network datasets than the Autoencoder, KNN, and Isolation Forests. Finally, we propose the use of synthetic data as an additional tool for both network data measurement as well as intrusion detection. Synthetically generated data can aid in building a more robust network dataset, while also helping in downstream tasks such as machine learning based intrusion detection models. We explore the effects of synthetic data on ID measurements, as well as its role in intrusion detection systems. }
+}
+
+
+@article{DBLP:journals/jcs/LiKZWHT23,
+	author = {Xiaodi Li and
+                  Latifur Khan and
+                  Mahmoud Zamani and
+                  Shamila Wickramasuriya and
+                  Kevin W. Hamlen and
+                  Bhavani Thuraisingham},
+	title = {Con2Mix: {A} semi-supervised method for imbalanced tabular security
+                  data},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {6},
+	pages = {705--726},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-220130},
+	doi = {10.3233/JCS-220130},
+	timestamp = {Thu, 21 Dec 2023 19:52:26 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/LiKZWHT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Con2Mix  (Contrastive Double Mixup) is a new semi-supervised learning methodology that innovates a triplet mixup  data augmentation approach for finding code vulnerabilities in imbalanced, tabular security data sets. Tabular data sets in cybersecurity domains are widely known to pose challenges for machine learning because of their heavily imbalanced data (e.g., a small number of labeled attack samples buried in a sea of mostly benign, unlabeled data). Semi-supervised learning leverages a small subset of labeled data and a large subset of unlabeled data to train a learning model. While semi-supervised methods have been well studied in image and language domains, in security domains they remain underutilized, especially on tabular security data sets which pose especially difficult contextual information loss and balance challenges for machine learning. Experiments applying Con2Mix to collected security data sets show promise for addressing these challenges, achieving state-of-the-art performance on two evaluated data sets compared with other methods. }
+}
+
+
+@article{DBLP:journals/jcs/Bkakria23,
+	author = {Anis Bkakria},
+	title = {Robust, revocable, forward and backward adaptively secure attribute-based
+                  encryption with outsourced decryption},
+	journal = {J. Comput. Secur.},
+	volume = {31},
+	number = {6},
+	pages = {727--760},
+	year = {2023},
+	url = {https://doi.org/10.3233/JCS-220129},
+	doi = {10.3233/JCS-220129},
+	timestamp = {Thu, 21 Dec 2023 19:52:26 +0100},
+	biburl = {https://dblp.org/rec/journals/jcs/Bkakria23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attribute based encryption (ABE) is a cryptographic technique allowing fine-grained access control by enabling one-to-many encryption. Existing ABE constructions suffer from at least one of the following limitations. First, single point of failure on security meaning that, once an authority is compromised, an adversary can either easily break the confidentiality of the encrypted data or effortlessly prevent legitimate users from accessing data; second, the lack of user and/or attribute revocation mechanism achieving forward and backward secrecy; third, a heavy computation workload is placed on data user; last but not least, the lack of adaptive security in standard models.  In this paper, we propose the first single-point-of-failure free multi-authority ciphertext-policy ABE that simultaneously (1) ensures robustness for both decryption key issuing and access revocation while achieving both backward and forward secrecy; (2) enables outsourced decryption to reduce the decryption overhead for data users that have limited computational resources; and (3) achieves adaptive (full) security in standard models. The provided theoretical complexity comparison as well as the conducted experiments show that our construction introduces linear storage and computation overheads that occurs only once during its setup phase, which we believe to be a reasonable price to pay to achieve all previous features. }
+}
