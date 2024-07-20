@@ -1,0 +1,746 @@
+@inproceedings{DBLP:conf/raid/Xu0B21,
+	author = {Yuan Xu and
+                  Tianwei Zhang and
+                  Yungang Bao},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Analysis and Mitigation of Function Interaction Risks in Robot Apps},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {1--16},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471854},
+	doi = {10.1145/3471621.3471854},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/Xu0B21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Robot apps are becoming more automated, complex and diverse. An app usually consists of many functions, interacting with each other and the environment. This allows robots to conduct various tasks. However, it also opens a new door for cyber attacks: adversaries can leverage these interactions to threaten the safety of robot operations. Unfortunately, this issue is rarely explored in past works. We present the first systematic investigation about the function interactions in common robot apps. First, we disclose the potential risks and damages caused by malicious interactions. By investigating the relationships among different functions, we identify and categorize three types of interaction risks. Second, we propose RTron, a novel system to detect and mitigate these risks and protect the operations of robot apps. We introduce security policies for each type of risks, and design coordination nodes to enforce the policies and regulate the interactions. We conduct extensive experiments on 110 robot apps from the ROS platform and two complex apps (Baidu Apollo and Autoware) widely adopted in industry. Evaluation results indicated RTron can correctly identify and mitigate all potential risks with negligible performance cost. To validate the practicality of the risks and solutions, we implement and evaluate RTron on a physical UGV (Turtlebot) with real-word apps and environments.}
+}
+
+
+@inproceedings{DBLP:conf/raid/DengZX0L21,
+	author = {Gelei Deng and
+                  Yuan Zhou and
+                  Yuan Xu and
+                  Tianwei Zhang and
+                  Yang Liu},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {An Investigation of Byzantine Threats in Multi-Robot Systems},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {17--32},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471867},
+	doi = {10.1145/3471621.3471867},
+	timestamp = {Mon, 26 Jun 2023 20:48:36 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/DengZX0L21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-Robot Systems (MRSs) show significant advantages to deal with complex tasks efficiently. However, the system complexity inevitably enlarges the attack surface and adds difficulty in guaranteeing the security and safety of MRSs. In this paper, we present an in-depth investigation about the Byzantine threats in MRSs, where some robot is untrusted. We design a practical methodology to identify potential Byzantine risks in a given MRS workload built from the Robot Operating System (ROS). It consists of three novel steps (requirement specification using signal temporal logic, attack surface determination via data-flow analysis, attack identification using requirement-driven fuzzing) to thoroughly assess MRS workloads. We use this fuzzing method to inspect five typical MRS workloads from past works and the ROS platform, and identify three novel kinds of attacks that can be launched with five attack strategies. We conduct comprehensive experiments in the Gazebo simulator and a real-world MRS with three TurtlBot3 robots to validate these attacks, which can remarkably decrease the system’s performance, or even cause task failures.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Liu0DV0FL21,
+	author = {Xuanyu Liu and
+                  Qiang Zeng and
+                  Xiaojiang Du and
+                  Siva Likitha Valluru and
+                  Chenglong Fu and
+                  Xiao Fu and
+                  Bin Luo},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {SniffMislead: Non-Intrusive Privacy Protection against Wireless Packet
+                  Sniffers in Smart Homes},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {33--47},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471856},
+	doi = {10.1145/3471621.3471856},
+	timestamp = {Fri, 03 Mar 2023 09:01:53 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/Liu0DV0FL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the booming deployment of smart homes, concerns about user privacy keep growing. Recent research has shown that encrypted wireless traffic of IoT devices can be exploited by packet-sniffing attacks to reveal users’ privacy-sensitive information (e.g., the time when residents leave their home and go to work), which may be used to launch further attacks (e.g., a break-in). To address the growing concerns, we propose SniffMislead, a non-intrusive (i.e., without modifying IoT devices, hubs, or platforms) privacy-protecting approach, based on packet injection, against wireless packet sniffers. Instead of randomly injecting packets, which is ineffective against a smarter attacker, SniffMislead proposes the notion of phantom users, “people” who do not exist in the physical world. From an attacker’s perspective, however, they are perceived as real users. SniffMislead places multiple phantom users in a smart home, which can effectively prevent an attacker from inferring useful information. We design a top-down approach to synthesize phantom users’ behaviors, construct the sequence of decoy device events and commands, and then inject corresponding packets into the home. We show how SniffMislead ensures logical integrity and contextual consistency of injected packets, as well as how it makes a phantom user indistinguishable from a real user. Our evaluation results from a smart home testbed demonstrate that SniffMislead significantly reduces an attacker’s privacy-inferring capabilities, bringing the accuracy from 94.8% down to 3.5%.}
+}
+
+
+@inproceedings{DBLP:conf/raid/MaierT21,
+	author = {Dominik Christian Maier and
+                  Fabian Toepfer},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {{BSOD:} Binary-only Scalable fuzzing Of device Drivers},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {48--61},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471863},
+	doi = {10.1145/3471621.3471863},
+	timestamp = {Fri, 14 Apr 2023 23:05:46 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/MaierT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Operating system code interacting with the devices attached to our computers, device drivers, are often provided by their respective vendors. As they may run with kernel privileges, this effectively means that kernel code is written by third parties. Some of these may not live up to the high security standards the core kernel code abides by. A single bug in a driver can harm the complete operating system’s integrity, just as if the bug was in the kernel itself. Attackers can exploit these bugs to escape sandboxes and to gain system privileges. Automated security testing of device drivers is hard. It depends on the attached device, and the driver code is not freely available. Dependency on a physical device increases the complexity even further. To alleviate these issues, we present BSOD, a fuzzing framework for high-complexity device drivers, based on KVM-VMI. BSOD retargets the well-known and battle-proven fuzzers, Syzkaller and AFL-2++, for binary-only drivers. We do not depend on vendor-specific CPU features and exceed 10k execs/sec on COTS hardware for coverage-guided kernel fuzzing. For evaluation, we focus on the highly complex closed-source drivers of a major graphics-card vendor for multiple operating systems. To overcome the strict hardware dependency of device driver fuzzing, making scaling impractical, we implement BSOD-fakedev, a virtual record & replay device, able to load a full graphics card driver without a physical device attached. It allows to scale fuzz campaigns to a large number of machines without the need for additional hardware. BSOD was able to uncover numerous bugs in graphics card drivers on Windows, Linux, and FreeBSD.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Mi0GB21,
+	author = {Xianya Mi and
+                  Sanjay Rawat and
+                  Cristiano Giuffrida and
+                  Herbert Bos},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {LeanSym: Efficient Hybrid Fuzzing Through Conservative Constraint
+                  Debloating},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {62--77},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471852},
+	doi = {10.1145/3471621.3471852},
+	timestamp = {Mon, 03 Jan 2022 22:27:00 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/Mi0GB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To improve code coverage and flip complex program branches, hybrid fuzzers couple fuzzing with concolic execution. Despite its benefits, this strategy inherits the inherent slowness and memory bloat of concolic execution, due to path explosion and constraint solving. While path explosion has received much attention, constraint bloat (having to solve complex and unnecessary constraints) is much less studied. In this paper, we present LeanSym (LSym), an efficient hybrid fuzzer. LSym focuses on optimizing the core concolic component of hybrid fuzzing by conservatively eliminating constraint bloat without sacrificing concolic execution soundness. The key idea is to partially symbolize the input and the program in order to remove unnecessary constraints accumulated during execution and significantly speed up the fuzzing process. In particular, we use taint analysis to identify the bytes that may influence the branches that we want to flip and symbolize only those bytes to minimize the constraints to collect. Furthermore, we eliminate non-trivial constraints introduced by environment modelling for system I/O. This is done by targeting the concolic analysis solely to library function-level tracing. We show this simple approach is effective and can be implemented in a modular fashion on top of off-the-shelf binary analysis tools. In particular, with only 1k LOC to implement simple branch/seed selection policies for hybrid fuzzing on top of unmodified Triton, libdft, and AFL, LSym outperforms state-of-the-art hybrid fuzzers with much less memory bloat, including those with advanced branch/seed selection policies or heavily optimized concolic execution engines such as QSYM and derivatives. On average, LSym outperforms QSYM by 7.61% in coverage, while finding bugs 4.79x faster in 18 applications of Google Fuzzer Test Suite. In real-world application testing, LSym reported 17 new bugs in 5 applications.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Huang0LLD21,
+	author = {Jin Huang and
+                  Junjie Zhang and
+                  Jialun Liu and
+                  Chuang Li and
+                  Rui Dai},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {UFuzzer: Lightweight Detection of PHP-Based Unrestricted File Upload
+                  Vulnerabilities Via Static-Fuzzing Co-Analysis},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {78--90},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471859},
+	doi = {10.1145/3471621.3471859},
+	timestamp = {Sun, 12 Mar 2023 00:57:45 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/Huang0LLD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unrestricted file upload vulnerabilities enable attackers to upload malicious scripts to a web server for later execution. We have built a system, namely\xa0UFuzzer, to effectively and automatically detect such vulnerabilities in PHP-based server-side web programs. Different from existing detection methods that use either static program analysis or fuzzing, UFuzzer\xa0integrates both (i.e., static-fuzzing co-analysis). Specifically, it leverages static program analysis to generate executable code templates that compactly and effectively summarize the vulnerability-relevant semantics of a server-side web application. UFuzzer\xa0then “fuzzes” these templates in a local, native PHP runtime environment for vulnerability detection. Compared to static-analysis-based methods, UFuzzer\xa0preserves the semantics of an analyzed program more effectively, resulting in higher detection performance. Different from fuzzing-based methods, UFuzzer\xa0exercises each generated code template locally, thereby reducing the analysis overhead and meanwhile eliminating the need of operating web services. Experiments using real-world data have demonstrated that UFuzzer\xa0outperforms existing methods in either efficiency, or accuracy, or both. In addition, it has detected 31 unknown vulnerable PHP scripts including 5 CVEs.}
+}
+
+
+@inproceedings{DBLP:conf/raid/KumarS21,
+	author = {Sandeep Kumar and
+                  Smruti R. Sarangi},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {SecureFS: {A} Secure File System for Intel {SGX}},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {91--102},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471840},
+	doi = {10.1145/3471621.3471840},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/KumarS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A trusted execution environment or a TEE facilitates the secure execution of an application on a remote untrusted server. In a TEE, the confidentiality, integrity, and freshness properties for the code and data hold throughout the execution. In a TEE setting, specifically Intel SGX, even the operating system (OS) is not trusted. This results in certain limitations of a secure application’s functionality, such as no access to the file system and network – as it requires OS support. Prior works have focused on alleviating this problem by allowing an application to access the file system securely. However, we show that they are susceptible to replay attacks, where replaying an old encrypted version of a file may remain undetected. Furthermore, they do not consider the impact of Intel SGX operations on the design of the file system. To this end, we present SecureFS, a secure, efficient, and scalable file system for Intel SGX that ensures confidentiality, integrity, and freshness of the data stored in it. SecureFS can work with unmodified binaries. SecureFS also considers the impact of Intel SGX to ensure optimal performance. We implement a prototype of SecureFS on a real Intel SGX machine. We incur a minimal overhead () over the current state-of-the-art techniques while adding freshness to the list of security guarantees.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ThomaFKGB21,
+	author = {Jan Philipp Thoma and
+                  Jakob Feldtkeller and
+                  Markus Krausz and
+                  Tim G{\"{u}}neysu and
+                  Daniel J. Bernstein},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {BasicBlocker: {ISA} Redesign to Make Spectre-Immune CPUs Faster},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {103--118},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471857},
+	doi = {10.1145/3471621.3471857},
+	timestamp = {Tue, 07 May 2024 20:11:57 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ThomaFKGB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent research has revealed an ever-growing class of microarchitectural attacks that exploit speculative execution, a standard feature in modern processors. Proposed and deployed countermeasures involve a variety of compiler updates, firmware updates, and hardware updates. None of the deployed countermeasures have convincing security arguments, and many of them have already been broken. The obvious way to simplify the analysis of speculative-execution attacks is to eliminate speculative execution. This is normally dismissed as being unacceptably expensive, but the underlying cost analyses consider only software written for current instruction-set architectures, so they do not rule out the possibility of a new instruction-set architecture providing acceptable performance without speculative execution. A new ISA requires compiler and hardware updates, but these are happening in any case. This paper introduces BasicBlocker, a generic ISA modification that works for all common ISAs and that allows non-speculative CPUs to obtain most of the performance benefit that would have been provided by speculative execution. To demonstrate the feasibility of BasicBlocker, this paper defines a variant of the RISC-V ISA called BBRISC-V and provides a thorough evaluation on both a 5-stage in-order soft core and a superscalar out-of-order processor using an associated compiler and a variety of benchmarks.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GravaniHCS21,
+	author = {Spyridoula Gravani and
+                  Mohammad Hedayati and
+                  John Criswell and
+                  Michael L. Scott},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Fast Intra-kernel Isolation and Security with IskiOS},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {119--134},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471849},
+	doi = {10.1145/3471621.3471849},
+	timestamp = {Sun, 12 Feb 2023 18:48:41 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/GravaniHCS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The kernels of operating systems such as Windows, Linux, and MacOS are vulnerable to control-flow hijacking. Defenses exist, but many require efficient intra-address-space isolation. Execute-only memory, for example, requires read protection on code segments, and shadow stacks require protection from buffer overwrites. Intel’s Protection Keys for Userspace (PKU) could, in principle, provide the intra-kernel isolation needed by such defenses, but, when used as designed, it applies only to user-mode application code. This paper presents an unconventional approach to memory protection, allowing PKU to be used within the operating system kernel on existing Intel hardware, replacing the traditional user/supervisor isolation mechanism and, simultaneously, enabling efficient intra-kernel isolation. We call the resulting mechanism Protection Keys for Kernelspace (PKK). To demonstrate its utility and efficiency, we present a system we call IskiOS: a Linux variant featuring execute-only memory (XOM) and the first-ever race-free shadow stacks for x86-64. Experiments with the LMBench kernel microbenchmarks display a geometric mean overhead of about 11% for PKK and no additional overhead for XOM. IskiOS’s shadow stacks bring the total to 22%. For full applications, experiments with the system benchmarks of the Phoronix test suite display negligible overhead for PKK and XOM, and less than 5% geometric mean overhead for shadow stacks.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GatlinBESLWY21,
+	author = {Jacob Gatlin and
+                  Sofia Belikovetsky and
+                  Yuval Elovici and
+                  Anthony Skjellum and
+                  Joshua Lubell and
+                  Paul Witherell and
+                  Mark Yampolskiy},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Encryption is Futile: Reconstructing 3D-Printed Models Using the Power
+                  Side-Channel},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {135--147},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471850},
+	doi = {10.1145/3471621.3471850},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/GatlinBESLWY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Outsourced Additive Manufacturing (AM) exposes sensitive design data to external malicious actors. Even with end-to-end encryption between the design owner and 3D-printer, side-channel attacks can be used to bypass cyber-security measures and obtain the underlying design. In this paper, we develop a method based on the power side-channel that enables accurate design reconstruction in the face of full encryption measures without any prior knowledge of the design. Our evaluation on a Fused Deposition Modeling (FDM) 3D Printer has shown 99\xa0% accuracy in reconstruction, a significant improvement on the state of the art. This approach demonstrates the futility of pure cyber-security measures applied to Additive Manufacturing.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GDFAS21,
+	author = {Sri Shaila G and
+                  Ahmad Darki and
+                  Michalis Faloutsos and
+                  Nael B. Abu{-}Ghazaleh and
+                  Manu Sridharan},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {DisCo: Combining Disassemblers for Improved Performance},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {148--161},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471851},
+	doi = {10.1145/3471621.3471851},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/GDFAS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware infects thousands of systems globally each day causing millions of dollars in damages. Which disassembler should a malware analyst choose in order to get the most accurate disassembly and be able to detect, analyze and defuse malware quickly? There is no clear answer to this question: (a) the performance of disassemblers varies across configurations, and (b) most prior work on disassemblers focuses on benign software and the x86 CPU architecture. In this work, we take a different approach and ask: why not use all the disassemblers instead of picking one? We present DisCo, a novel and effective approach to harness the collective capability of a group of disassemblers combining their output into an ensemble consensus. We develop and evaluate our approach using 1760 IoT malware binaries compiled with different compilers and compiler options for the ARM and MIPS architectures. First, we show that DisCo can combine the collective wisdom of disassemblers effectively. For example, our approach outperforms the best contributing disassembler by as much as 17.8% in the F1 score for function start identification for MIPS binaries compiled using GCC with O3 option. Second, the collective wisdom of the disassemblers can be brought back to improve each disassembler. As a proof of concept, we show that byte-level signatures identified by DisCo can improve the performance of Ghidra by as much as 13.6% in terms of the F1 score. Third, we quantify the effect of the architecture, the compiler, and the compiler options on the performance of disassemblers. Finally, the systematic evaluation within our approach led to a bug discovery in Ghidra v9.1, which was acknowledged by the Ghidra team.}
+}
+
+
+@inproceedings{DBLP:conf/raid/MunteanVLTG021,
+	author = {Paul Muntean and
+                  Richard Viehoever and
+                  Zhiqiang Lin and
+                  Gang Tan and
+                  Jens Grossklags and
+                  Claudia Eckert},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {iTOP: Automating Counterfeit Object-Oriented Programming Attacks},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {162--176},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471847},
+	doi = {10.1145/3471621.3471847},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/MunteanVLTG021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Exploiting a program requires a security analyst to manipulate data in program memory with the goal to obtain control over the program counter and to escalate privileges. However, this is a tedious and lengthy process as: (1) the analyst has to massage program data such that a logical reliable data passing chain can be established, and (2) depending on the attacker goal certain in-place fine-grained protection mechanisms need to be bypassed. Previous work has proposed various techniques to facilitate exploit development. Unfortunately, none of them can be easily used to address the given challenges. This is due to the fact that data in memory is difficult to be massaged by an analyst who does not know the peculiarities of the program as the attack specification is most of the time only textually available, and not automated at all. In this paper, we present indirect transfer oriented programming (iTOP), a framework to automate the construction of control-flow hijacking attacks in the presence of strong protections including control flow integrity, data execution prevention, and stack canaries. Given a vulnerable program, iTOP automatically builds an exploit payload with a chain of viable gadgets with solved SMT-based memory constraints. One salient feature of iTOP is that it contains 13 attack primitives powered by a Turing complete payload specification language, ESL. It also combines virtual and non-virtual gadgets using COOP-like dispatchers. As such, when searching for gadget chains, iTOP can respect, for example, a previously enforced CFI policy, by using only legitimate control flow transfers. We have evaluated iTOP with a variety of programs and demonstrated that it can successfully generate exploits with the developed attack primitives.}
+}
+
+
+@inproceedings{DBLP:conf/raid/NisiGFB21,
+	author = {Dario Nisi and
+                  Mariano Graziano and
+                  Yanick Fratantonio and
+                  Davide Balzarotti},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Lost in the Loader: The Many Faces of the Windows {PE} File Format},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {177--192},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471848},
+	doi = {10.1145/3471621.3471848},
+	timestamp = {Sun, 02 Oct 2022 16:14:00 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/NisiGFB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A known problem in the security industry is that programs that deal with executable file formats, such as OS loaders, reverse-engineering tools, and antivirus software, often have little discrepancies in the way they interpret an input file. These differences can be abused by attackers to evade detection or complicate reverse engineering, and are often found by researchers through a manual, trial-and-error process. In this paper, we present the first systematic analysis and exploration of PE parsers. To this end, we developed a framework to easily capture the details on how different software parses, checks, and validates whether a file is compliant with a set of specifications. We then used this framework to create models for the loaders of three versions of Windows (XP, 7, and 10) and for several reverse-engineering and antivirus tools. Finally, we used this framework to automatically compare different models, generate new samples from a model, or validate an executable according to a chosen model. Our system also supports more complex tasks, such as “generating samples that would load on Windows 10 but not on Windows 7.” The results of our analysis have consequences on several aspects of system security. We show that popular analysis tools can be completely bypassed, that the information extracted by these analysis tools can be easily manipulated, and that it is trivial for malware authors to fingerprint and “target” only specific versions of an operating system in ways that are not obvious to someone analyzing the executable. But, more importantly, we show that there is not one correct way to parse PE files, and therefore that it is not sufficient for security tools to fix the many inconsistencies we found in our experiments. Instead, to tackle the problem at its roots, tools should allow the analyst to select which of the several loader models they should emulate.}
+}
+
+
+@inproceedings{DBLP:conf/raid/WangLWDC21,
+	author = {Junnan Wang and
+                  Qixu Liu and
+                  Di Wu and
+                  Ying Dong and
+                  Xiang Cui},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Crafting Adversarial Example to Bypass Flow-{\&}ML- based Botnet
+                  Detector via {RL}},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {193--204},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471841},
+	doi = {10.1145/3471621.3471841},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/WangLWDC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning(ML)-based botnet detection methods have become mainstream in corporate practice. However, researchers have found that ML models are vulnerable to adversarial attacks, which can mislead the models by adding subtle perturbations to the sample. Due to the complexity of traffic samples and the special constraints that to keep malicious functions, no substantial research of adversarial ML has been conducted in the botnet detection field, where the evasion attacks caused by carefully crafted adversarial examples may directly make ML-based detectors unavailable and cause significant property damage. In this paper, we propose a reinforcement learning(RL) method for bypassing ML-based botnet detectors. Specifically, we train an RL agent as a functionality-preserving botnet flow modifier through a series of interactions with the detector in a black-box scenario. This enables the attacker to evade detection without modifying the botnet source code or affecting the botnet utility. Experiments on 14 botnet families prove that our method has considerable evasion performance and time performance.}
+}
+
+
+@inproceedings{DBLP:conf/raid/NabeelASKWY21,
+	author = {Mohamed Nabeel and
+                  Enes Altinisik and
+                  Haipei Sun and
+                  Issa Khalil and
+                  Wendy Hui Wang and
+                  Ting Yu},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {{CADUE:} Content-Agnostic Detection of Unwanted Emails for Enterprise
+                  Security},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {205--219},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471862},
+	doi = {10.1145/3471621.3471862},
+	timestamp = {Mon, 05 Feb 2024 20:29:15 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/NabeelASKWY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {End-to-end email encryption (E2EE) ensures that an email could only be decrypted and read by its intended recipients. E2EE’s strong security guarantee is particularly desirable for the enterprises in the event of breaches: even if attackers break into an email server, under E2EE no contents of emails are leaked. Meanwhile, E2EE brings significant challenges for an enterprise to detect and filter unwanted emails (spams and phishing emails). Most existing solutions rely heavily on email contents (i.e., email body and attachments), which would be difficult when email contents are encrypted. In this paper, we investigate how to detect unwanted emails in a content-agnostic manner, that is, without access to the contents of emails at all. Our key observation is that the communication patterns and relationships among internal users of an enterprise contain rich and reliable information about benign email communications. Combining such information with other metadata of emails (headers and subjects when available), unwanted emails can be accurately distinguished from legitimate ones without access to email contents. Specifically, we propose two types of novel enterprise features from enterprise email logs: sender profiling features, which capture the patterns of past emails from external senders to internal recipients; and enterprise graph features, which capture the co-recipient and the sender-recipient relationships between internal users. We design a classifier utilizing the above features along with existing meta-data features. We run extensive experiments over a real-world enterprise email dataset, and show that our approach, even without any content-based features, achieves high true positive rate of 95.2% and low false positive rate of 0.3% with such stringent constraints.}
+}
+
+
+@inproceedings{DBLP:conf/raid/AberaBGJKS21,
+	author = {Tigist Abera and
+                  Ferdinand Brasser and
+                  Lachlan J. Gunn and
+                  Patrick Jauernig and
+                  David Koisser and
+                  Ahmad{-}Reza Sadeghi},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {GrandDetAuto: Detecting Malicious Nodes in Large-Scale Autonomous
+                  Networks},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {220--234},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471868},
+	doi = {10.1145/3471621.3471868},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/AberaBGJKS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Autonomous collaborative networks of devices are rapidly emerging in numerous domains, such as self-driving cars, smart factories, critical infrastructure, and Internet of Things in general. Although autonomy and self-organization are highly desired properties, they increase vulnerability to attacks. Hence, autonomous networks need dependable mechanisms to detect malicious devices in order to prevent compromise of the entire network. However, current mechanisms to detect malicious devices either require a trusted central entity or scale poorly. In this paper, we present GrandDetAuto, the first scheme to identify malicious devices efficiently within large autonomous networks of collaborating entities. GrandDetAuto functions without relying on a central trusted entity, works reliably for very large networks of devices, and is adaptable to a wide range of application scenarios thanks to interchangeable components. Our scheme uses random elections to embed integrity validation schemes in distributed consensus, providing a solution supporting tens of thousands of devices. We implemented and evaluated a concrete instance of GrandDetAuto on a network of embedded devices and conducted large-scale network simulations with up to 100\u2009000 nodes. Our results show the effectiveness and efficiency of our scheme, revealing logarithmic growth in run-time and message complexity with increasing network size. Moreover, we provide an extensive evaluation of key parameters showing that GrandDetAuto is applicable to many scenarios with diverse requirements.}
+}
+
+
+@inproceedings{DBLP:conf/raid/CastellanosOCA021,
+	author = {John Henry Castellanos and
+                  Mart{\'{\i}}n Ochoa and
+                  Alvaro A. C{\'{a}}rdenas and
+                  Owen Arden and
+                  Jianying Zhou},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {AttkFinder: Discovering Attack Vectors in {PLC} Programs using Information
+                  Flow Analysis},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {235--250},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471864},
+	doi = {10.1145/3471621.3471864},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/CastellanosOCA021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To protect an Industrial Control System (ICS), defenders need to identify potential attacks on the system and then design mechanisms to prevent them. Unfortunately, identifying potential attack conditions is a time-consuming and error-prone process. In this work, we propose and evaluate a set of tools to symbolically analyse the software of Programmable Logic Controllers (PLCs) guided by an information flow analysis that takes into account PLC network communication (compositions). Our tools systematically analyse malicious network packets that may force the PLC to send specific control commands to actuators. We evaluate our approach in a real-world system controlling the dosing of chemicals for water treatment. Our tools are able to find 75 attack tactics (56 were novel attacks), and we confirm that 96% of these tactics cause the intended effect in our testbed.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ZhangD21,
+	author = {Shaohu Zhang and
+                  Anupam Das},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {HandLock: Enabling 2-FA for Smart Home Voice Assistants using Inaudible
+                  Acoustic Signal},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {251--265},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471866},
+	doi = {10.1145/3471621.3471866},
+	timestamp = {Sun, 06 Aug 2023 20:52:15 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ZhangD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The use of voice-control technology has become mainstream and is growing worldwide. While voice assistants provide convenience through automation and control of home appliances, the open nature of the voice channel makes voice assistants difficult to secure. As a result voice assistants have been shown to be vulnerable to replay attacks, impersonation attacks and inaudible voice commands. Existing defenses do not provide a practical solution as they either rely on external hardware (e.g., motion sensors) or work under very constrained settings (e.g., holding the device close to a user’s mouth). We introduce the concept of using a gesture-based authentication system for smart home voice assistants called HandLock, which uses built-in microphones and speakers to generate and sense inaudible acoustic signals to detect the presence of a known (i.e., authorized) hand gesture. Our proposed approach can act as a second-factor authentication (2-FA) for performing specific sensitive operations like confirming online purchases through voice assistants. Through extensive experiments involving 45 participants, we show that HandLock can achieve on average 96.51% true-positive-rate (TPR) at the expense of 0.82% false-acceptance-rate (FAR). We perform a comprehensive analysis of HandLock under various settings to showcase its accuracy, stability, resilience to attacks, and usability. Our analysis shows that HandLock can not only successfully thwart impersonation attacks, but can do so while incurring very low overheads and is compatible with modern voice assistants.}
+}
+
+
+@inproceedings{DBLP:conf/raid/YampolskiyGGSY21,
+	author = {Mark Yampolskiy and
+                  Lynne Graves and
+                  Jacob Gatlin and
+                  Anthony Skjellum and
+                  Moti Yung},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {What Did You Add to My Additive Manufacturing Data?: Steganographic
+                  Attacks on 3D Printing Files},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {266--281},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471843},
+	doi = {10.1145/3471621.3471843},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/YampolskiyGGSY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Additive Manufacturing (AM) adoption is increasing in home and industrial settings, but information security for this technology is still immature. Thus far, three security threat categories have been identified: technical data theft, sabotage, and illegal part manufacturing. In this paper, we expand to a new threat category: misuse of digital design files as a subliminal communication channel. We identify and explore attacks by which arbitrary information can be embedded steganographically in the most common digital design file format, the STL, without distorting the printed object. Because the technique will not change the manufactured object’s geometry, it is likely to remain unnoticed and can be exploited for data transfer. Further, even with knowledge of our methods, defenders cannot distinguish between actual data transfer and random manipulation of the files. This is the first info-hiding attack on this system, conducted despite the fact that random changes may spoil the physical artifact and result in detection.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ZhangASHG21,
+	author = {Yangyong Zhang and
+                  Sunpreet S. Arora and
+                  Maliheh Shirvanian and
+                  Jianwei Huang and
+                  Guofei Gu},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Practical Speech Re-use Prevention in Voice-driven Services},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {282--295},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471855},
+	doi = {10.1145/3471621.3471855},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ZhangASHG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Voice-driven services (VDS) are being used in a variety of applications ranging from smart home control to payments using digital assistants. The input to such services is often captured via an open voice channel, e.g., using a microphone, in an unsupervised setting. One of the key operational security requirements in such setting is the freshness of the input speech. We present AEOLUS, a security overlay that proactively embeds a dynamic acoustic nonce at the time of user interaction, and detects the presence of the embedded nonce in the recorded speech to ensure freshness. We demonstrate that acoustic nonce can (i) be reliably embedded and retrieved, and (ii) be non-disruptive (and even imperceptible) to a VDS user. Optimal parameters (acoustic nonce’s operating frequency, amplitude, and bitrate) are determined for (i) and (ii) from a practical perspective. Experimental results show that AEOLUS yields 0.5% FRR at 0% FAR for speech re-use prevention upto a distance of 4 meters in three real-world environments with different background noise levels. We also conduct a user study with 120 participants, which shows that the acoustic nonce does not degrade overall user experience for 94.16% of speech samples, on average, in these environments. AEOLUS can therefore be used in practice to prevent speech re-use and ensure the freshness of speech input.}
+}
+
+
+@inproceedings{DBLP:conf/raid/RoesslerAPMPKPB21,
+	author = {Nick Roessler and
+                  Lucas Atayde and
+                  Imani Palmer and
+                  Derrick Paul McKee and
+                  Jai Pandey and
+                  Vasileios P. Kemerlis and
+                  Mathias Payer and
+                  Adam Bates and
+                  Jonathan M. Smith and
+                  Andr{\'{e}} DeHon and
+                  Nathan Dautenhahn},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {{\(\mu\)}SCOPE: {A} Methodology for Analyzing Least-Privilege Compartmentalization
+                  in Large Software Artifacts},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {296--311},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471839},
+	doi = {10.1145/3471621.3471839},
+	timestamp = {Tue, 07 May 2024 20:11:58 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/RoesslerAPMPKPB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {By prioritizing simplicity and portability, least-privilege engineering has been an afterthought in OS design, resulting in monolithic kernels where any exploit leads to total compromise. μSCOPE (“microscope”) addresses this problem by automatically identifying opportunities for least-privilege separation. μSCOPE replaces expert-driven, semi-automated analysis with a general methodology for exploring a continuum of security vs. performance design points by adopting a quantitative and systematic approach to privilege analysis. We apply the μSCOPE methodology to the Linux kernel by (1)\xa0instrumenting the entire kernel to gain comprehensive, fine-grained memory access and call activity; (2)\xa0mapping these accesses to semantic information; and (3)\xa0conducting separability analysis on the kernel using both quantitative privilege and overhead metrics. We discover opportunities for orders of magnitude privilege reduction while predicting relatively low overheads—at 15% mediation overhead, overprivilege in Linux can be reduced up to 99.8%—suggesting fine-grained privilege separation is feasible and laying the groundwork for accelerating real privilege separation.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Chinprutthiwong21,
+	author = {Phakpoom Chinprutthiwong and
+                  Raj Vardhan and
+                  Guangliang Yang and
+                  Yangyong Zhang and
+                  Guofei Gu},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {The Service Worker Hiding in Your Browser: The Next Web Attack Target?},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {312--323},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471845},
+	doi = {10.1145/3471621.3471845},
+	timestamp = {Thu, 11 Nov 2021 06:54:47 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/Chinprutthiwong21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, service workers are gaining attention from both web developers and attackers due to the unique features they provide. Recent findings have shown that an attacker can register a malicious service worker to take advantage of the victim such as by turning the victim’s device into a crypto-currency miner. However, the possibility of benign service workers being leveraged is not well studied. To bridge this gap, we systematically analyze the security of service workers from a new perspective. Specifically, we consider how an attacker can leverage a benign service worker installed in popular websites. To this end, we uncover two attack channels – IndexedDB and Push notification. Through IndexedDB, an attacker can compromise a benign service worker and persistently control the vulnerable website. Likewise, push subscription can also be easily hijacked and used to track a user’s location. To understand the prevalence and security impacts of these attack channels, we conduct a measurement study on popular websites that deploy a service worker. Our results show 200 websites that are vulnerable to XSS attacks are also susceptible to push hijacking. We estimate the number of potential victims, who visit these susceptible websites and could be exposed to location tracking, to be up to 1.75 million users per month. Finally, we discuss potential defenses to prevent this problem from growing further.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ShermanSR21,
+	author = {Imani N. Sherman and
+                  Jack W. Stokes and
+                  Elissa M. Redmiles},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Designing Media Provenance Indicators to Combat Fake Media},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {324--339},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471860},
+	doi = {10.1145/3471621.3471860},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ShermanSR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the growth of technology that produces misinformation, there is a growing need to help users identify emerging types of fake media such as edited images and manipulated videos. In this work, we conduct a mixed-methods investigation into how we can provide provenance indicators to assist users in detecting newer forms of fake media. Specifically, we interview users regarding their experiences with different misinformation modes (text, image, video) to inform the design and content of indicators for previously unexplored media, especially fake videos. We find that media provenance – the source of the information – is a key heuristic used to evaluate all forms of fake media, and a heuristic that can be addressed by emerging technology. Thus, we subsequently design and investigate the use of provenance indicators to help users identify fake videos. We conduct a participatory design study to develop and design provenance indicators and evaluate participant-designed indicators via both expert evaluations and quantitative surveys (n=1,456) with end-users. Our results provide concrete design guidelines for the emerging issue of fake media. Our findings also raise concerns regarding users’ tendency to overgeneralize indicators used to assist users in identifying misinformation, suggesting the need for further research on warning design in the ongoing fight against misinformation.}
+}
+
+
+@inproceedings{DBLP:conf/raid/IfeSMS21,
+	author = {Colin C. Ife and
+                  Yun Shen and
+                  Steven J. Murdoch and
+                  Gianluca Stringhini},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Marked for Disruption: Tracing the Evolution of Malware Delivery Operations
+                  Targeted for Takedown},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {340--353},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471844},
+	doi = {10.1145/3471621.3471844},
+	timestamp = {Sat, 09 Apr 2022 12:42:08 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/IfeSMS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The malware and botnet phenomenon is among the most significant threats to cybersecurity today. Consequently, law enforcement agencies, security companies, and researchers are constantly seeking to disrupt these malicious operations through so-called takedown counter-operations. Unfortunately, the success of these takedowns is mixed. Furthermore, very little is understood as to how botnets and malware delivery operations respond to takedown attempts. We present a comprehensive study of three malware delivery operations that were targeted for takedown in 2015–16 using global download metadata provided by Symantec. In summary, we found that: (1) Distributed delivery architectures were commonly used, indicating the need for better security hygiene and coordination by the (ab)used service providers. (2) A minority of malware binaries were responsible for the majority of download activity, suggesting that detecting these “super binaries” would yield the most benefit to the security community. (3) The malware operations exhibited displacing and defiant behaviours following their respective takedown attempts. We argue that these “predictable” behaviours could be factored into future takedown strategies. (4) The malware operations also exhibited previously undocumented behaviours, such as Dridex dropping competing brands of malware, or Dorkbot and Upatre heavily relying on upstream dropper malware. These “unpredictable” behaviours indicate the need for researchers to use better threat-monitoring techniques.}
+}
+
+
+@inproceedings{DBLP:conf/raid/TatangZH21,
+	author = {Dennis Tatang and
+                  Florian Zettl and
+                  Thorsten Holz},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {The Evolution of DNS-based Email Authentication: Measuring Adoption
+                  and Finding Flaws},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {354--369},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471842},
+	doi = {10.1145/3471621.3471842},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/TatangZH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Email is still one of the most common ways of communication in our digital world, the underlying Simple Mail Transport Protocol (SMTP) is crucial for our information society. Back when SMTP was developed, security goals for the exchanged messages did not play a major role in the protocol design, resulting in many types of design limitations and vulnerabilities. Especially spear-phishing campaigns take advantage of the fact that it is easy to spoof the originating email address to appear more trustworthy. Furthermore, trusted brands can be abused in email spam or phishing campaigns. Thus, if no additional authentication mechanisms protect a given domain, attackers can misuse the domain. To enable proper authentication, various extensions for SMTP were developed in the past years. In this paper, we analyze the three most common methods for originating DNS domain email authentication in a large-scale, longitudinal measurement study. Among other findings, we confirm that Sender Policy Framework (SPF) still constitutes the most widely used method for email authentication in practice. In general, we find that higher-ranked domains use more authentication mechanisms, but sometimes configuration errors emerge, e.g., we found that amazon.co.jp had an invalid SPF record. A trend analysis shows a (statistically significant) growing number of domains using SPF. Furthermore, we show that the Domain-based Message Authentication, Reporting and Conformance (DMARC) distribution evolved significantly as well by increasing tenfold over the last five years. However, is still far from being perfect with a total adoption rate of about 11%. The US and UK governmental domains are an exception, given that both have a high adoption rate due to binding legal directives. Finally, we study DomainKeys Identified Mail (DKIM) adoption in detail and find a lower bound of almost 13% for DKIM usage in practice. In addition, we reveal various flaws, such as weak or shared duplicate keys. As a whole, we find that about 3% of the domains use all three mechanisms in combination.}
+}
+
+
+@inproceedings{DBLP:conf/raid/LikajKP21,
+	author = {Xhelal Likaj and
+                  Soheil Khodayari and
+                  Giancarlo Pellegrino},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Where We Stand (or Fall): An Analysis of {CSRF} Defenses in Web Frameworks},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {370--385},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471846},
+	doi = {10.1145/3471621.3471846},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/LikajKP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cross-Site Request Forgery (CSRF) is among the oldest web vulnerabilities that, despite its popularity and severity, it is still an understudied security problem. In this paper, we undertake one of the first security evaluations of CSRF defense as implemented by popular web frameworks, with the overarching goal to identify additional explanations to the occurrences of such an old vulnerability. Starting from a review of existing literature, we identify 16 CSRF defenses and 18 potential threats agains them. Then, we evaluate the source code of the 44 most popular web frameworks across five languages (i.e., JavaScript, Python, Java, PHP, and C#) covering about 5.5 million LoCs, intending to determine the implemented defenses and their exposure to the identified threats. We also quantify the quality of web frameworks’ documentation, looking for incomplete, misleading, or insufficient information required by developers to use the implemented CSRF defenses correctly. Our study uncovers a rather complex landscape, suggesting that while implementations of CSRF defenses exist, their correct and secure use depends on developers’ awareness and expertise about CSRF attacks. More than a third of the frameworks require developers to write code to use the defense, modify the configuration to enable CSRF defenses, or look for an external library as CSRF defenses are not built-in. Even when using defenses, developers need to be aware and address a diversity of additional security risks. In total, we identified 157 security risks in 37\xa0frameworks, of which 17 are directly exploitable to mount a CSRF attack, leveraging implementation mistakes, cryptography-related flaws, cookie integrity, and leakage of CSRF tokens—including three critical vulnerabilities in CakePHP, Vert.x-Web, and Play. The developers’ feedback indicate that, for a significant fraction of risks, frameworks have divergent expectations about who is responsible for addressing them. Finally, the documentation analysis reveals several inadequacies, including not mentioning the implemented defense, and not showing code examples for correct use.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Zhang21,
+	author = {Zicheng Zhang},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {On the Usability (In)Security of In-App Browsing Interfaces in Mobile
+                  Apps},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {386--398},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471625},
+	doi = {10.1145/3471621.3471625},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/Zhang21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the frequent encountering of web URLs in various application scenarios (e.g., chatting and email reading), many mobile apps build their in-app browsing interfaces (IABIs) to provide a seamless user experience. Although this achieves user-friendliness by avoiding the constant switching between the subject app and the system built-in browser apps, we find that IABIs, if not well designed or customized, could result in usability security risks. In this paper, we conduct the first empirical study on the usability (in)security of in-app browsing interfaces in both Android and iOS apps. Specifically, we collect a dataset of 25 high-profile mobile apps from five common application categories that contain IABIs, including Facebook and Gmail, and perform a systematic analysis (not end-user study though) that comprises eight carefully designed security tests and covers the entire course of opening, displaying, and navigating an in-app web page. During this process, we obtain three major security findings: (1) about 30% of the tested apps fail to provide enough URL information for users to make informed decisions on opening an URL; (2) nearly all custom IABIs have various problems in providing sufficient indicators to faithfully display an in-app page to users, whereas ten IABIs that are based on Chrome Custom Tabs and SFSafariViewController are generally secure; and (3) only a few IABIs give warnings to remind users of the risk of inputting passwords during navigating a (potentially phishing) login page. Most developers had acknowledged our findings but their willingness and readiness to fix usability issues are rather low compared to fixing technical vulnerabilities, which is a puzzle in usability security research. Nevertheless, to help mitigate risky IABIs and guide future designs, we propose a set of secure IABI design principles.}
+}
+
+
+@inproceedings{DBLP:conf/raid/CableGID21,
+	author = {Jack Cable and
+                  Drew Mylander Gregory and
+                  Liz Izhikevich and
+                  Zakir Durumeric},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Stratosphere: Finding Vulnerable Cloud Storage Buckets},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {399--411},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3473500},
+	doi = {10.1145/3471621.3473500},
+	timestamp = {Thu, 25 Nov 2021 14:34:19 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/CableGID21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Misconfigured cloud storage buckets have leaked hundreds of millions of medical, voter, and customer records. These breaches are due to a combination of easily-guessable bucket names and error-prone security configurations, which, together, allow attackers to easily guess and access sensitive data. In this work, we investigate the security of buckets, finding that prior studies have largely underestimated cloud insecurity by focusing on simple, easy-to-guess names. By leveraging prior work in the password analysis space, we introduce Stratosphere, a system that learns how buckets are named in practice in order to efficiently guess the names of vulnerable buckets. Using Stratosphere, we find wide-spread exploitation of buckets and vulnerable configurations continuing to increase over the years. We conclude with recommendations for operators, researchers, and cloud providers.}
+}
+
+
+@inproceedings{DBLP:conf/raid/JiYA021,
+	author = {Tianxi Ji and
+                  Emre Yilmaz and
+                  Erman Ayday and
+                  Pan Li},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {The Curse of Correlations for Robust Fingerprinting of Relational
+                  Databases},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {412--427},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471853},
+	doi = {10.1145/3471621.3471853},
+	timestamp = {Thu, 14 Dec 2023 08:46:14 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/JiYA021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Database fingerprinting have been widely adopted to prevent unauthorized sharing of data and identify the source of data leakages. Although existing schemes are robust against common attacks, like random bit flipping and subset attack, their robustness degrades significantly if attackers utilize the inherent correlations among database entries. In this paper, we first demonstrate the vulnerability of existing database fingerprinting schemes by identifying different correlation attacks: column-wise correlation attack, row-wise correlation attack, and the integration of them. To provide robust fingerprinting against the identified correlation attacks, we then develop mitigation techniques, which can work as post-processing steps for any off-the-shelf database fingerprinting schemes. The proposed mitigation techniques also preserve the utility of the fingerprinted database considering different utility metrics. We empirically investigate the impact of the identified correlation attacks and the performance of mitigation techniques using real-world relational databases. Our results show (i) high success rates of the identified correlation attacks against existing fingerprinting schemes (e.g., the integrated correlation attack can distort 64.8% fingerprint bits by just modifying 14.2% entries in a fingerprinted database), and (ii) high robustness of the proposed mitigation techniques (e.g., with the mitigation techniques, the integrated correlation attack can only distort 3% fingerprint bits).}
+}
+
+
+@inproceedings{DBLP:conf/raid/DingMGSCZ21,
+	author = {Aolin Ding and
+                  Praveen Murthy and
+                  Luis Garcia and
+                  Pengfei Sun and
+                  Matthew Chan and
+                  Saman A. Zonouz},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Mini-Me, You Complete Me! Data-Driven Drone Security via DNN-based
+                  Approximate Computing},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {428--441},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471869},
+	doi = {10.1145/3471621.3471869},
+	timestamp = {Mon, 17 Jul 2023 15:25:37 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/DingMGSCZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The safe operation of robotic aerial vehicles (RAV) requires effective security protection of their controllers against cyber-physical attacks. The frequency and sophistication of past attacks against such embedded platforms highlight the need for better defense mechanisms. Existing estimation-based control monitors have tradeoffs, with lightweight linear state estimators lacking sufficient coverage, and heavier data-driven learned models facing implementation and accuracy issues on a constrained real-time RAV. We present Mini-Me, a data-driven online monitoring framework that models the program-level control state dynamics to detect runtime data-oriented attacks against RAVs. Mini-Me leverages the internal dataflow information and control variable dependencies of RAV controller functions to train a neural network-based approximate model as the lightweight replica of the original controller programs. Mini-Me runs the minimal approximate model and detects malicious control state deviation by comparing the estimated outputs with those outputs calculated by the original controller program. We demonstrate Mini-Me on a widely adopted RAV physical model as well as popular RAV virtual models based on open-source firmware, ArduPilot and PX4, and show its effectiveness in detecting five types of attack cases with an average 0.34% space overhead and 2.6% runtime overhead.}
+}
+
+
+@inproceedings{DBLP:conf/raid/OngunSOTTNSOP21,
+	author = {Talha Ongun and
+                  Jack W. Stokes and
+                  Jonathan Bar Or and
+                  Ke Tian and
+                  Farid Tajaddodianfar and
+                  Joshua Neil and
+                  Christian Seifert and
+                  Alina Oprea and
+                  John C. Platt},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {Living-Off-The-Land Command Detection Using Active Learning},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {442--455},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471858},
+	doi = {10.1145/3471621.3471858},
+	timestamp = {Fri, 08 Oct 2021 09:57:32 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/OngunSOTTNSOP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, enterprises have been targeted by advanced adversaries who leverage creative ways to infiltrate their systems and move laterally to gain access to critical data. One increasingly common evasive method is to hide the malicious activity behind a benign program by using tools that are already installed on user computers. These programs are usually part of the operating system distribution or another user-installed binary, therefore this type of attack is called “Living-Off-The-Land”. Detecting these attacks is challenging, as adversaries may not create malicious files on the victim computers and anti-virus scans fail to detect them. We propose the design of an Active Learning framework called LOLAL for detecting Living-Off-the-Land attacks that iteratively selects a set of uncertain and anomalous samples for labeling by a human analyst. LOLAL is specifically designed to work well when a limited number of labeled samples are available for training machine learning models to detect attacks. We investigate methods to represent command-line text using word-embedding techniques, and design ensemble boosting classifiers to distinguish malicious and benign samples based on the embedding representation. We leverage a large, anonymized dataset collected by an endpoint security product and demonstrate that our ensemble classifiers achieve an average F1 score of 96% at classifying different attack classes. We show that our active learning method consistently improves the classifier performance, as more training data is labeled, and converges in less than 30 iterations when starting with a small number of labeled instances.}
+}
+
+
+@inproceedings{DBLP:conf/raid/RuaroZDPBCZKV21,
+	author = {Nicola Ruaro and
+                  Kyle Zeng and
+                  Lukas Dresel and
+                  Mario Polino and
+                  Tiffany Bao and
+                  Andrea Continella and
+                  Stefano Zanero and
+                  Christopher Kruegel and
+                  Giovanni Vigna},
+	editor = {Leyla Bilge and
+                  Tudor Dumitras},
+	title = {SyML: Guiding Symbolic Execution Toward Vulnerable States Through
+                  Pattern Learning},
+	booktitle = {{RAID} '21: 24th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, San Sebastian, Spain, October 6-8, 2021},
+	pages = {456--468},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3471621.3471865},
+	doi = {10.1145/3471621.3471865},
+	timestamp = {Mon, 03 Jan 2022 22:27:00 +0100},
+	biburl = {https://dblp.org/rec/conf/raid/RuaroZDPBCZKV21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Exploring many execution paths in a binary program is essential to discover new vulnerabilities. Dynamic Symbolic Execution (DSE) is useful to trigger complex input conditions and enables an accurate exploration of a program while providing extensive crash replayability and semantic insights. However, scaling this type of analysis to complex binaries is difficult. Current methods suffer from the path explosion problem, despite many attempts to mitigate this challenge (e.g., by merging paths when appropriate). Still, in general, this challenge is not yet surmounted, and most bugs discovered through such techniques are shallow. We propose a novel approach to address the path explosion problem: A smart triaging system that leverages supervised machine learning techniques to replicate human expertise, leading to vulnerable path discovery. Our approach monitors the execution traces in vulnerable programs and extracts relevant features—register and memory accesses, function complexity, system calls—to guide the symbolic exploration. We train models to learn the patterns of vulnerable paths from the extracted features, and we leverage their predictions to discover interesting execution paths in new programs. We implement our approach in a tool called SyML, and we evaluate it on the Cyber Grand Challenge (CGC) dataset—a well-known dataset of vulnerable programs—and on 3 real-world Linux binaries. We show that the knowledge collected from the analysis of vulnerable paths, without any explicit prior knowledge about vulnerability patterns, is transferrable to unseen binaries, and leads to outperforming prior work in path prioritization by triggering more, and different, unique vulnerabilities.}
+}
