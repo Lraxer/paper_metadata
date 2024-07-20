@@ -1,0 +1,1042 @@
+@article{DBLP:journals/tissec/ZhangKL23,
+	author = {Xueru Zhang and
+                  Mohammad Mahdi Khalili and
+                  Mingyan Liu},
+	title = {Differentially Private Real-Time Release of Sequential Data},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {1:1--1:29},
+	year = {2023},
+	url = {https://doi.org/10.1145/3544837},
+	doi = {10.1145/3544837},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ZhangKL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many data analytics applications rely on temporal data, generated (and possibly acquired) sequentially for online analysis. How to release this type of data in a privacy-preserving manner is of great interest and more challenging than releasing one-time, static data. Because of the (potentially strong) temporal correlation within the data sequence, the overall privacy loss can accumulate significantly over time; an attacker with statistical knowledge of the correlation can be particularly hard to defend against. An idea that has been explored in the literature to mitigate this problem is to factor this correlation into the perturbation/noise mechanism. Existing work, however, either focuses on the offline setting (where perturbation is designed and introduced after the entire sequence has become available), or requires a priori information on the correlation in generating perturbation. In this study we propose an approach where the correlation is learned as the sequence is generated, and is used for estimating future data in the sequence. This estimate then drives the generation of the noisy released data. This method allows us to design better perturbation and is suitable for real-time operations. Using the notion of differential privacy, we show this approach achieves high accuracy with lower privacy loss compared to existing methods.}
+}
+
+
+@article{DBLP:journals/tissec/HagenWSDS23,
+	author = {Christoph Hagen and
+                  Christian Weinert and
+                  Christoph Sendner and
+                  Alexandra Dmitrienko and
+                  Thomas Schneider},
+	title = {Contact Discovery in Mobile Messengers: Low-cost Attacks, Quantitative
+                  Analyses, and Efficient Mitigations},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {2:1--2:44},
+	year = {2023},
+	url = {https://doi.org/10.1145/3546191},
+	doi = {10.1145/3546191},
+	timestamp = {Sun, 12 Nov 2023 02:21:07 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/HagenWSDS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Contact discovery allows users of mobile messengers to conveniently connect with people in their address book. In this work, we demonstrate that severe privacy issues exist in currently deployed contact discovery methods and propose suitable mitigations. Our study of three popular messengers\xa0(WhatsApp, Signal, and Telegram) shows that large-scale crawling attacks are\xa0(still) possible. Using an accurate database of mobile phone number prefixes and very few resources, we queried\xa010 % of\xa0US mobile phone numbers for\xa0WhatsApp and\xa0100 % for\xa0Signal. For\xa0Telegram, we find that its\xa0API exposes a wide range of sensitive information, even about numbers not registered with the service. We present interesting\xa0(cross-messenger) usage statistics, which also reveal that very few users change the default privacy settings. Furthermore, we demonstrate that currently deployed hashing-based contact discovery protocols are severely broken by comparing three methods for efficient hash reversal. Most notably, we show that with the password cracking tool\xa0“JTR,” we can iterate through the entire worldwide mobile phone number space in\xa0< 150 s on a consumer-grade\xa0GPU. We also propose a significantly improved rainbow table construction for non-uniformly distributed input domains that is of independent interest. Regarding mitigations, we most notably propose two novel rate-limiting schemes: our\xa0incremental contact discovery for services without server-side contact storage strictly improves over\xa0Signal’s current approach while being compatible with private set intersection, whereas our\xa0differential scheme allows even stricter rate limits at the overhead for service providers to store a small constant-size state that does not reveal any contact information.}
+}
+
+
+@article{DBLP:journals/tissec/KhanKHM23,
+	author = {Shaharyar Khan and
+                  Ilya Kabanov and
+                  Yunke Hua and
+                  Stuart E. Madnick},
+	title = {A Systematic Analysis of the Capital One Data Breach: Critical Lessons
+                  Learned},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {3:1--3:29},
+	year = {2023},
+	url = {https://doi.org/10.1145/3546068},
+	doi = {10.1145/3546068},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/KhanKHM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The 2019 Capital One data breach was one of the largest data breaches impacting the privacy and security of personal information of over a 100 million individuals. In most reports about a cyberattack, you will often hear that it succeeded because a single employee clicked on a link in a phishing email or forgot to patch some software, making it seem like an isolated, one-off, trivial problem involving maybe one person, committing a mistake or being negligent. But that is usually not the complete story. By ignoring the related managerial and organizational failures, you are leaving in place the conditions for the next breach. Using our Cybersafety analysis methodology, we identified control failures spanning control levels, going from rather technical issues up to top management, the Board of Directors, and Government regulators. In this analysis, we reconstruct the Capital One hierarchical cyber safety control structure, identify what parts failed and why, and provide recommendations for improvements. This work demonstrates how to discover the true causes of security failures in complex information systems and derive systematic cybersecurity improvements that likely apply to many other organizations. It also provides an approach that individuals can use to evaluate and better secure their organizations.}
+}
+
+
+@article{DBLP:journals/tissec/LanotteMM23,
+	author = {Ruggero Lanotte and
+                  Massimo Merro and
+                  Andrei Munteanu},
+	title = {Industrial Control Systems Security via Runtime Enforcement},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {4:1--4:41},
+	year = {2023},
+	url = {https://doi.org/10.1145/3546579},
+	doi = {10.1145/3546579},
+	timestamp = {Mon, 05 Dec 2022 13:35:16 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/LanotteMM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the advent of Industry 4.0, industrial facilities and critical infrastructures are transforming into an ecosystem of heterogeneous physical and cyber components, such as programmable logic controllers, increasingly interconnected and therefore exposed to cyber-physical attacks, i.e., security breaches in cyberspace that may adversely affect the physical processes underlying industrial control systems. In this article, we propose a formal approach based on runtime enforcement to ensure specification compliance in networks of controllers, possibly compromised by colluding malware that may locally tamper with actuator commands, sensor readings, and inter-controller communications. Our approach relies on an ad-hoc sub-class of Ligatti et\xa0al.’s edit automata to enforce controllers represented in Hennessy and Regan’s Timed Process Language. We define a synthesis algorithm that, given an alphabet 𝒫 of observable actions and a timed correctness property e, returns a monitor that enforces the property e during the execution of any (potentially corrupted) controller with alphabet 𝒫, and complying with the property e. Our monitors do mitigation by correcting and suppressing incorrect actions of corrupted controllers and by generating actions in full autonomy when the controller under scrutiny is not able to do so in a correct manner. Besides classical requirements, such as transparency and soundness, the proposed enforcement enjoys deadlock- and diverge-freedom of monitored controllers, together with scalability when dealing with networks of controllers. Finally, we test the proposed enforcement mechanism on a non-trivial case study, taken from the context of industrial water treatment systems, in which the controllers are injected with different malware with different malicious goals.}
+}
+
+
+@article{DBLP:journals/tissec/RamokapaneSR23,
+	author = {Kopo Marvin Ramokapane and
+                  Jose M. Such and
+                  Awais Rashid},
+	title = {What Users Want From Cloud Deletion and the Information They Need:
+                  {A} Participatory Action Study},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {5:1--5:34},
+	year = {2023},
+	url = {https://doi.org/10.1145/3546578},
+	doi = {10.1145/3546578},
+	timestamp = {Mon, 05 Dec 2022 13:35:16 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/RamokapaneSR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Current cloud deletion mechanisms fall short in meeting users’ various deletion needs. They assume all data is deleted the same way—data is temporally removed (or hidden) from users’ cloud accounts before being completely deleted. This assumption neglects users’ desire to have data completely deleted instantly or their preference to have it recoverable for a more extended period. To date, these preferences have not been explored. To address this gap, we conducted a participatory study with four groups of active cloud users (five subjects per group). We examined their deletion preferences and the information they require to aid deletion. In particular, we explored how users want to delete cloud data and identify what information about cloud deletion they consider essential, the time it should be made available to them, and the communication channel that should be used. We show that cloud deletion preferences are complex and multi-dimensional, varying between subjects and groups. Information about deletion should be within reach when needed, for instance, be part of deletion controls. Based on these findings, we discuss the implications of our study in improving the current deletion mechanism to accommodate these preferences.}
+}
+
+
+@article{DBLP:journals/tissec/WieflingJTI23,
+	author = {Stephan Wiefling and
+                  Paul Ren{\'{e}} J{\o}rgensen and
+                  Sigurd Thunem and
+                  Luigi Lo Iacono},
+	title = {Pump Up Password Security! Evaluating and Enhancing Risk-Based Authentication
+                  on a Real-World Large-Scale Online Service},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {6:1--6:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3546069},
+	doi = {10.1145/3546069},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/WieflingJTI23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Risk-based authentication (RBA) aims to protect users against attacks involving stolen passwords. RBA monitors features during login, and requests re-authentication when feature values widely differ from those previously observed. It is recommended by various national security organizations, and users perceive it more usable than and equally secure to equivalent two-factor authentication. Despite that, RBA is still used by very few online services. Reasons for this include a lack of validated open resources on RBA properties, implementation, and configuration. This effectively hinders the RBA research, development, and adoption progress. To close this gap, we provide the first long-term RBA analysis on a real-world large-scale online service. We collected feature data of 3.3 million users and 31.3 million login attempts over more than 1 year. Based on the data, we provide (i) studies on RBA’s real-world characteristics plus its configurations and enhancements to balance usability, security, and privacy; (ii) a machine learning–based RBA parameter optimization method to support administrators finding an optimal configuration for their own use case scenario; (iii) an evaluation of the round-trip time feature’s potential to replace the IP address for enhanced user privacy; and (iv) a synthesized RBA dataset to reproduce this research and to foster future RBA research. Our results provide insights on selecting an optimized RBA configuration so that users profit from RBA after just a few logins. The open dataset enables researchers to study, test, and improve RBA for widespread deployment in the wild.}
+}
+
+
+@article{DBLP:journals/tissec/WangYWML23,
+	author = {Huanran Wang and
+                  Wu Yang and
+                  Wei Wang and
+                  Dapeng Man and
+                  Jiguang Lv},
+	title = {A Novel Cross-Network Embedding for Anchor Link Prediction with Social
+                  Adversarial Attacks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {7:1--7:32},
+	year = {2023},
+	url = {https://doi.org/10.1145/3548685},
+	doi = {10.1145/3548685},
+	timestamp = {Mon, 05 Dec 2022 13:35:16 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/WangYWML23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anchor link prediction across social networks plays an important role in multiple social network analysis. Traditional methods rely heavily on user privacy information or high-quality network topology information. These methods are not suitable for multiple social networks analysis in real-life. Deep learning methods based on graph embedding are restricted by the impact of the active privacy protection policy of users on the graph structure. In this paper, we propose a novel method which neutralizes the impact of users’ evasion strategies. First, graph embedding with conditional estimation analysis is used to obtain a robust embedding vector space. Secondly, cross-network features space for supervised learning is constructed via the constraints of cross-network feature collisions. The combination of robustness enhancement and cross-network feature collisions constraints eliminate the impact of evasion strategies. Extensive experiments on large-scale real-life social networks demonstrate that the proposed method significantly outperforms the state-of-the-art methods in terms of precision, adaptability, and robustness for the scenarios with evasion strategies.}
+}
+
+
+@article{DBLP:journals/tissec/LembkeRRE23,
+	author = {James Lembke and
+                  Srivatsan Ravi and
+                  Pierre{-}Louis Roman and
+                  Patrick Eugster},
+	title = {Secure and Reliable Network Updates},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {8:1--8:41},
+	year = {2023},
+	url = {https://doi.org/10.1145/3556542},
+	doi = {10.1145/3556542},
+	timestamp = {Mon, 05 Dec 2022 13:35:16 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/LembkeRRE23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software-defined wide area networking (SD-WAN) enables dynamic network policy control over a large distributed network via network updates. To be practical, network updates must be consistent (i.e., free of transient errors caused by updates to multiple switches), secure (i.e., only be executed when sent from valid controllers), and reliable (i.e., function despite the presence of faulty or malicious members in the control plane), while imposing only minimal overhead on controllers and switches. We present SERENE: a protocol for secure and reliable network updates for SD-WAN environments. In short: Consistency is provided through the combination of an update scheduler and a distributed transactional protocol. Security is preserved by authenticating network events and updates, the latter with an adaptive threshold cryptographic scheme. Reliability is provided by replicating the control plane and making it resilient to a dynamic adversary by using a distributed ledger as a controller failure detector. We ensure practicality by providing a mechanism for scalability through the definition of independent network domains and exploiting the parallelism of network updates both within and across domains. We formally define SERENE’s protocol and prove its safety with regards to event-linearizability. Extensive experiments show that SERENE imposes minimal switch burden and scales to large networks running multiple network applications all requiring concurrent network updates, imposing at worst a 16% overhead on short-lived flow completion and negligible overhead on anticipated normal workloads.}
+}
+
+
+@article{DBLP:journals/tissec/ChooNAKYW23,
+	author = {Euijin Choo and
+                  Mohamed Nabeel and
+                  Mashael AlSabah and
+                  Issa Khalil and
+                  Ting Yu and
+                  Wei Wang},
+	title = {DeviceWatch: {A} Data-Driven Network Analysis Approach to Identifying
+                  Compromised Mobile Devices with Graph-Inference},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {9:1--9:32},
+	year = {2023},
+	url = {https://doi.org/10.1145/3558767},
+	doi = {10.1145/3558767},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ChooNAKYW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose to identify compromised mobile devices from a network administrator’s point of view. Intuitively, inadvertent users (and thus their devices) who download apps through untrustworthy markets are often lured to install malicious apps through in-app advertisements or phishing. We thus hypothesize that devices sharing similar apps would have a similar likelihood of being compromised, resulting in an association between a compromised device and its apps. We propose to leverage such associations to identify unknown compromised devices using the guilt-by-association principle. Admittedly, such associations could be relatively weak as it is hard, if not impossible, for an app to automatically download and install other apps without explicit user initiation. We describe how we can magnify such associations by carefully choosing parameters when applying graph-based inferences. We empirically evaluate the effectiveness of our approach on real datasets provided by a major mobile service provider. Specifically, we show that our approach achieves nearly 98% AUC (area under the ROC curve) and further detects as many as 6 ~ 7 times of new compromised devices not covered by the ground truth by expanding the limited knowledge on known devices. We show that the newly detected devices indeed present undesirable behavior in terms of leaking private information and accessing risky IPs and domains. We further conduct in-depth analysis of the effectiveness of graph inferences to understand the unique structure of the associations between mobile devices and their apps, and its impact on graph inferences, based on which we propose how to choose key parameters.}
+}
+
+
+@article{DBLP:journals/tissec/GilAHD23,
+	author = {Gonzalo Gil and
+                  Aitor Arnaiz and
+                  Marivi Higuero and
+                  Francisco Javier D{\'{\i}}ez},
+	title = {Assessment Framework for the Identification and Evaluation of Main
+                  Features for Distributed Usage Control Solutions},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {1},
+	pages = {10:1--10:28},
+	year = {2023},
+	url = {https://doi.org/10.1145/3561511},
+	doi = {10.1145/3561511},
+	timestamp = {Mon, 22 Apr 2024 16:49:20 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/GilAHD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data exchange between organizations is becoming an increasingly significant issue due to the great opportunities it presents. However, there is great reluctance to share if data sovereignty is not provided. Providing it calls for not only access control but also usage control implemented in distributed systems. Access control is a research field where there has been a great deal of work, but usage control, especially implemented in distributed systems as Distributed Usage Control (DUC), is a very new field of research that presents great challenges. Moreover, little is known about what challenges must really be faced and how they must be addressed. This is evidenced by the fact that existing research has focused non-specifically on different features of DUC, which are not formalized. Therefore, the path for the development of DUC solutions is unclear and it is difficult to analyze the scope of data sovereignty attained by the wide range of DUC solutions. In this context, this article is based on an initial in-depth analysis of DUC related work. In it, the challenges posed by DUC in terms of data sovereignty and the features that must be provided to address them are identified and analyzed for the first time. Based on these features, an initial DUC framework is proposed to assess in a practical and unified way the extent to which DUC solutions provide data sovereignty. Finally, the assessment framework is applied to compare the scopes of the most widespread DUC solutions and identify their limitations.}
+}
+
+
+@article{DBLP:journals/tissec/DanielBR23,
+	author = {Lesly{-}Ann Daniel and
+                  S{\'{e}}bastien Bardin and
+                  Tamara Rezk},
+	title = {Binsec/Rel: Symbolic Binary Analyzer for Security with Applications
+                  to Constant-Time and Secret-Erasure},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {11:1--11:42},
+	year = {2023},
+	url = {https://doi.org/10.1145/3563037},
+	doi = {10.1145/3563037},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/DanielBR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article tackles the problem of designing efficient binary-level verification for a subset of information flow properties encompassing constant-time and secret-erasure. These properties are crucial for cryptographic implementations but are generally not preserved by compilers. Our proposal builds on relational symbolic execution enhanced with new optimizations dedicated to information flow and binary-level analysis, yielding a dramatic improvement over prior work based on symbolic execution. We implement a prototype, Binsec/Rel, for bug-finding and bounded-verification of constant-time and secret-erasure and perform extensive experiments on a set of 338 cryptographic implementations, demonstrating the benefits of our approach. Using Binsec/Rel, we also automate two prior manual studies on preservation of constant-time and secret-erasure by compilers for a total of 4,148 and 1,156 binaries, respectively. Interestingly, our analysis highlights incorrect usages of volatile data pointer for secret-erasure and shows that scrubbing mechanisms based on volatile function pointers can introduce additional register spilling that might break secret-erasure. We also discovered that gcc -O0 and backend passes of clang introduce violations of constant-time in implementations that were previously deemed secure by a state-of-the-art constant-time verification tool operating at LLVM level, showing the importance of reasoning at binary level.}
+}
+
+
+@article{DBLP:journals/tissec/AlotaibiWK23,
+	author = {Norah Mohsen T. Alotaibi and
+                  John Williamson and
+                  Mohamed Khamis},
+	title = {ThermoSecure: Investigating the Effectiveness of AI-Driven Thermal
+                  Attacks on Commonly Used Computer Keyboards},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {12:1--12:24},
+	year = {2023},
+	url = {https://doi.org/10.1145/3563693},
+	doi = {10.1145/3563693},
+	timestamp = {Mon, 28 Aug 2023 21:37:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AlotaibiWK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Thermal cameras can reveal heat traces on user interfaces, such as keyboards. This can be exploited maliciously to infer sensitive input, such as passwords. While previous work considered thermal attacks that rely on visual inspection of simple image processing techniques, we show that attackers can perform more effective artificial intelligence (AI)–driven attacks. We demonstrate this by presenting the development of ThermoSecure and its evaluation in two user studies (N = 21, N = 16), which reveal novel insights about thermal attacks. We detail the implementation of ThermoSecure and make a dataset of 1,500 thermal images of keyboards with heat traces resulting from input publicly available. Our first study shows that ThermoSecure successfully attacks 6-symbol, 8-symbol, 12-symbol, and 16-symbol passwords with an average accuracy of 92%, 80%, 71%, and 55% respectively, and even higher accuracy when thermal images are taken within 30 seconds. We found that typing behavior significantly impacts vulnerability to thermal attacks: hunt-and-peck typists are more vulnerable than fast typists (92% vs. 83% thermal attack success. respectively, if performed within 30 seconds). The second study showed that keycap material has a statistically significant effect on the effectiveness of thermal attacks: ABS keycaps retain the thermal trace of user presses for a longer period of time, making them more vulnerable to thermal attacks, with a 52% average attack accuracy compared with 14% for keyboards with PBT keycaps. Finally, we discuss how systems can leverage our results to protect from thermal attacks and present 7 mitigation approaches that are based on our results and previous work.}
+}
+
+
+@article{DBLP:journals/tissec/BarreraBO23,
+	author = {David Barrera and
+                  Christopher Bellman and
+                  Paul C. van Oorschot},
+	title = {Security Best Practices: {A} Critical Analysis Using IoT as a Case
+                  Study},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {13:1--13:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3563392},
+	doi = {10.1145/3563392},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BarreraBO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Academic research has highlighted the failure of many Internet of Things (IoT) product manufacturers to follow accepted practices, while IoT security best practices have recently attracted considerable attention worldwide from industry and governments. Given current examples of security advice, confusion is evident from guidelines that conflate desired outcomes with security practices to achieve those outcomes. We explore a surprising lack of clarity, and void in the literature, on what (generically) best practice means, independent of identifying specific individual practices or highlighting failure to follow best practices. We consider categories of security advice, and analyze how they apply over the lifecycle of IoT devices. For concreteness in discussion, we use iterative inductive coding to code and systematically analyze a set of 1,013 IoT security best practices, recommendations, and guidelines collated from industrial, government, and academic sources. Among our findings, of all analyzed items, 68% fail to meet our definition of an (actionable) practice, and 73% of all actionable advice relates to the software development lifecycle phase, highlighting the critical position of manufacturers and developers. We hope that our work provides a basis for the community to better understand best practices, identify and reach consensus on specific practices, and find ways to motivate relevant stakeholders to follow them.}
+}
+
+
+@article{DBLP:journals/tissec/OtoniMAEHS23,
+	author = {Rodrigo Otoni and
+                  Matteo Marescotti and
+                  Leonardo Alt and
+                  Patrick Eugster and
+                  Antti E. J. Hyv{\"{a}}rinen and
+                  Natasha Sharygina},
+	title = {A Solicitous Approach to Smart Contract Verification},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {15:1--15:28},
+	year = {2023},
+	url = {https://doi.org/10.1145/3564699},
+	doi = {10.1145/3564699},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/OtoniMAEHS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart contracts are tempting targets of attacks, as they often hold and manipulate significant financial assets, are immutable after deployment, and have publicly available source code, with assets estimated in the order of millions of dollars being lost in the past due to vulnerabilities. Formal verification is thus a necessity, but smart contracts challenge the existing highly efficient techniques routinely applied in the symbolic verification of software, due to specificities not present in general programming languages. A common feature of existing works in this area is the attempt to reuse off-the-shelf verification tools designed for general programming languages. This reuse can lead to inefficiency and potentially unsound results, as domain translation is required. In this article, we describe a carefully crafted approach that directly models the central aspects of smart contracts natively, going from the contract to its logical representation without intermediary steps. We use the expressive and highly automatable logic of constrained Horn clauses for modeling and instantiate our approach to the Solidity language. A tool implementing our approach, called Solicitous, was developed and integrated into the SMTChecker module of the Solidity compiler solc. We evaluated our approach on an extensive benchmark set containing 22,446 real-world smart contracts deployed on the Ethereum blockchain over a 27-month period. The results show that our approach is able to establish safety of significantly more contracts than comparable, publicly available verification tools, with an order of magnitude increase in the percentage of formally verified contracts.}
+}
+
+
+@article{DBLP:journals/tissec/DambraBB23,
+	author = {Savino Dambra and
+                  Leyla Bilge and
+                  Davide Balzarotti},
+	title = {A Comparison of Systemic and Systematic Risks of Malware Encounters
+                  in Consumer and Enterprise Environments},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {16:1--16:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3565362},
+	doi = {10.1145/3565362},
+	timestamp = {Thu, 11 May 2023 21:35:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/DambraBB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware is still a widespread problem, and it is used by malicious actors to routinely compromise the security of computer systems. Consumers typically rely on a single AV product to detect and block possible malware infections, while corporations often install multiple security products, activate several layers of defenses, and establish security policies among employees. However, if a better security posture should lower the risk of malware infections, then the actual extent to which this happens is still under debate by risk analysis experts. Moreover, the difference in risks encountered by consumers and enterprises has never been empirically studied by using real-world data. In fact, the mere use of third-party software, network services, and the interconnected nature of our society necessarily exposes both classes of users to undiversifiable risks: Independently from how careful users are and how well they manage their cyber hygiene, a portion of that risk would simply exist because of the fact of using a computer, sharing the same networks, and running the same software. In this work, we shed light on both systemic (i.e., diversifiable and dependent on the security posture) and systematic (i.e., undiversifiable and independent of the cyber hygiene) risk classes. Leveraging the telemetry data of a popular security company, we compare, in the first part of our study, the effects that different security measures have on malware encounter risks in consumer and enterprise environments. In the second part, we conduct exploratory research on systematic risk, investigate the quality of nine different indicators we were able to extract from our telemetry, and provide, for the first time, quantitative indicators of their predictive power. Our results show that even if consumers have a slightly lower encounter rate than enterprises (9.8% vs. 12.0%), the latter do considerably better when selecting machines with an increasingly higher uptime (89% vs. 53%). The two segments also diverge when we separately consider the presence of Adware and Potentially Unwanted Applications (PUA) and the generic samples detected through behavioral signatures: While consumers have an encounter rate for Adware and PUA that is 6 times higher than enterprise machines, those on average match behavioral signatures 2 times more frequently than the counterpart. We find, instead, similar trends when analyzing the age of encountered signatures, and the prevalence of different classes of traditional malware (such as Ransomware and Cryptominers). Finally, our findings show that the amount of time a host is active, the volume of files generated on the machine, the number and reputation of vendors of the installed applications, the host geographical location, and its recurrent infected state carry useful information as indicators of systematic risk of malware encounters. Activity days and hours have a higher influence in the risk of consumers, increasing the odds of encountering malware of 4.51 and 2.65 times. In addition, we measure that the volume of files generated on the host represents a reliable indicator, especially when considering Adware. We further report that the likelihood of encountering Worms and Adware is much higher (on average 8 times in consumers and enterprises) for those machines that already reported this kind of signature in the past.}
+}
+
+
+@article{DBLP:journals/tissec/BhuiyanR23,
+	author = {Farzana Ahamed Bhuiyan and
+                  Akond Rahman},
+	title = {Log-related Coding Patterns to Conduct Postmortems of Attacks in Supervised
+                  Learning-based Projects},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {17:1--17:24},
+	year = {2023},
+	url = {https://doi.org/10.1145/3568020},
+	doi = {10.1145/3568020},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BhuiyanR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adversarial attacks against supervised learninga algorithms, which necessitates the application of logging while using supervised learning algorithms in software projects. Logging enables practitioners to conduct postmortem analysis, which can be helpful to diagnose any conducted attacks. We conduct an empirical study to identify and characterize log-related coding patterns, i.e., recurring coding patterns that can be leveraged to conduct adversarial attacks and needs to be logged. A list of log-related coding patterns can guide practitioners on what to log while using supervised learning algorithms in software projects. We apply qualitative analysis on 3,004 Python files used to implement 103 supervised learning-based software projects. We identify a list of 54 log-related coding patterns that map to six attacks related to supervised learning algorithms. Using Log Assistant to conduct Postmortems for Supervised Learning (LOPSUL), we quantify the frequency of the identified log-related coding patterns with 278 open-source software projects that use supervised learning. We observe log-related coding patterns to appear for 22% of the analyzed files, where training data forensics is the most frequently occurring category.}
+}
+
+
+@article{DBLP:journals/tissec/TizioSSBSK23,
+	author = {Giorgio Di Tizio and
+                  Patrick Speicher and
+                  Milivoj Simeonovski and
+                  Michael Backes and
+                  Ben Stock and
+                  Robert K{\"{u}}nnemann},
+	title = {Pareto-optimal Defenses for the Web Infrastructure: Theory and Practice},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {18:1--18:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3567595},
+	doi = {10.1145/3567595},
+	timestamp = {Fri, 02 Jun 2023 21:23:43 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/TizioSSBSK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The integrity of the content a user is exposed to when browsing the web relies on a plethora of non-web technologies and an infrastructure of interdependent hosts, communication technologies, and trust relations. Incidents like the Chinese Great Cannon or the MyEtherWallet attack make it painfully clear: the security of end users hinges on the security of the surrounding infrastructure: routing, DNS, content delivery, and the PKI. There are many competing, but isolated proposals to increase security, from the network up to the application layer. So far, researchers have focused on analyzing attacks and defenses on specific layers. We still lack an evaluation of how, given the status quo of the web, these proposals can be combined, how effective they are, and at what cost the increase of security comes. In this work, we propose a graph-based analysis based on Stackelberg planning that considers a rich attacker model and a multitude of proposals from IPsec to DNSSEC and SRI. Our threat model considers the security of billions of users against attackers ranging from small hacker groups to nation-state actors. Analyzing the infrastructure of the Top 5k Alexa domains, we discover that the security mechanisms currently deployed are ineffective and that some infrastructure providers have a comparable threat potential to nations. We find a considerable increase of security (up to 13% protected web visits) is possible at a relatively modest cost, due to the effectiveness of mitigations at the application and transport layer, which dominate expensive infrastructure enhancements such as DNSSEC and IPsec.}
+}
+
+
+@article{DBLP:journals/tissec/AloufiHB23,
+	author = {Ranya Aloufi and
+                  Hamed Haddadi and
+                  David Boyle},
+	title = {Paralinguistic Privacy Protection at the Edge},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {19:1--19:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3570161},
+	doi = {10.1145/3570161},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AloufiHB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Voice user interfaces and digital assistants are rapidly entering our lives and becoming singular touch points spanning our devices. These always-on services capture and transmit our audio data to powerful cloud services for further processing and subsequent actions. Our voices and raw audio signals collected through these devices contain a host of sensitive paralinguistic information that is transmitted to service providers regardless of deliberate or false triggers. As our emotional patterns and sensitive attributes like our identity, gender, and well-being are easily inferred using deep acoustic models, we encounter a new generation of privacy risks by using these services. One approach to mitigate the risk of paralinguistic-based privacy breaches is to exploit a combination of cloud-based processing with privacy-preserving, on-device paralinguistic information learning and filtering before transmitting voice data. In this article we introduce EDGY, a configurable, lightweight, disentangled representation learning framework that transforms and filters high-dimensional voice data to identify and contain sensitive attributes at the edge prior to offloading to the cloud. We evaluate EDGY’s on-device performance and explore optimization techniques, including model quantization and knowledge distillation, to enable private, accurate, and efficient representation learning on resource-constrained devices. Our results show that EDGY runs in tens of milliseconds with 0.2% relative improvement in “zero-shot” ABX score or minimal performance penalties of approximately 5.95% word error rate (WER) in learning linguistic representations from raw voice signals, using a CPU and a single-core ARM processor without specialized hardware.}
+}
+
+
+@article{DBLP:journals/tissec/EngstromJLRW23,
+	author = {Viktor Engstr{\"{o}}m and
+                  Pontus Johnson and
+                  Robert Lagerstr{\"{o}}m and
+                  Erik Ringdahl and
+                  Max W{\"{a}}llstedt},
+	title = {Automated Security Assessments of Amazon Web Services Environments},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {20:1--20:31},
+	year = {2023},
+	url = {https://doi.org/10.1145/3570903},
+	doi = {10.1145/3570903},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/EngstromJLRW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Migrating enterprises and business capabilities to cloud platforms like Amazon Web Services (AWS) has become increasingly common. However, securing cloud operations, especially at large scales, can quickly become intractable. Customer-side issues such as service misconfigurations, data breaches, and insecure changes are prevalent. Furthermore, cloud-specific tactics and techniques paired with application vulnerabilities create a large and complex search space. Various solutions and modeling languages for cloud security assessments exist. However, no single one appeared sufficiently cloud-centered and holistic. Many also did not account for tactical security dimensions. This article, therefore, presents a domain-specific modeling language for AWS environments. When used to model AWS environments, manually or automatically, the language automatically constructs and traverses attack graphs to assess security. Assessments, therefore, require minimal security expertise from the user. The modeling language was primarily tested on four third-party AWS environments through securiCAD Vanguard, a commercial tool built around the AWS modeling language. The language was validated further by measuring performance on models provided by anonymous end users and a comparison with a similar open source assessment tool. As of March 2020, the modeling language could represent essential AWS structures, cloud tactics, and threats. However, the tests highlighted certain shortcomings. Data collection steps, such as planted credentials, and some missing tactics were obvious. Nevertheless, the issues covered by the DSL were already reminiscent of common issues with real-world precedents. Future additions to attacker tactics and addressing data collection should yield considerable improvements.}
+}
+
+
+@article{DBLP:journals/tissec/HabibKHH23,
+	author = {Sohail Habib and
+                  Hassan Khan and
+                  Andrew Hamilton{-}Wright and
+                  Urs Hengartner},
+	title = {Revisiting the Security of Biometric Authentication Systems Against
+                  Statistical Attacks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {21:1--21:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3571743},
+	doi = {10.1145/3571743},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/HabibKHH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The uniqueness of behavioral biometrics (e.g., voice or keystroke patterns) has been challenged by recent works. Statistical attacks have been proposed that infer general population statistics and target behavioral biometrics against a particular victim. We show that despite their success, these approaches require several attempts for successful attacks against different biometrics due to the different nature of overlap in users’ behavior for these biometrics. Furthermore, no mechanism has been proposed to date that detects statistical attacks. In this work, we propose a new hypervolumes-based statistical attack and show that unlike existing methods, it (1)\xa0is successful against a variety of biometrics, (2)\xa0is successful against more users, and (3)\xa0requires fewest attempts for successful attacks. More specifically, across five diverse biometrics, for the first attempt, on average our attack is 18 percentage points more successful than the second best (37% vs. 19%). Similarly, for the fifth attack attempt, on average our attack is 18 percentage points more successful than the second best (67% vs. 49%). We propose and evaluate a mechanism that can detect the more devastating statistical attacks. False rejects in biometric systems are common, and by distinguishing statistical attacks from false rejects, our defense improves usability and security. The evaluation of the proposed detection mechanism shows its ability to detect on average 94% of the tested statistical attacks with an average probability of 3% to detect false rejects as a statistical attack. Given the serious threat posed by statistical attacks to biometrics that are used today (e.g., voice), our work highlights the need for defending against these attacks.}
+}
+
+
+@article{DBLP:journals/tissec/AmroGK23,
+	author = {Ahmed Amro and
+                  Vasileios Gkioulos and
+                  Sokratis K. Katsikas},
+	title = {Assessing Cyber Risk in Cyber-Physical Systems Using the ATT{\&}CK
+                  Framework},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {2},
+	pages = {22:1--22:33},
+	year = {2023},
+	url = {https://doi.org/10.1145/3571733},
+	doi = {10.1145/3571733},
+	timestamp = {Wed, 17 May 2023 21:56:54 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AmroGK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Autonomous transport is receiving increasing attention, with research and development activities already providing prototype implementations. In this article we focus on Autonomous Passenger Ships (APS), which are being considered as a solution for passenger transport across urban waterways. The ambition of the authors has been to examine the safety and security implications of such a Cyber Physical System (CPS), particularly focusing on threats that endanger the passengers and the operational environment of the APS. Accordingly, the article presents a new risk assessment approach based on a Failure Modes Effects and Criticality Analysis (FMECA) that is enriched with selected semantics and components of the MITRE ATT&CK framework, in order to utilize the encoded common knowledge and facilitate the expression of attacks. Then, the proposed approach is demonstrated through conducting a risk assessment for a communication architecture tailored to the requirements of APSs that were proposed in earlier work. Moreover, we propose a group of graph theory-based metrics for estimating the impact of the identified risks. The use of this method has resulted in the identification of risks and their corresponding countermeasures, in addition to identifying risks with limited existing mitigation mechanisms. The benefits of the proposed approach are the comprehensive, atomic, and descriptive nature of the identified threats, which reduce the need for expert judgment, and the granular impact estimation metrics that reduce the impact of bias. All these features are provided in a semi-automated approach to reduce the required effort and collectively are argued to enrich the design-level risk assessment processes with an updatable industry threat model standard, namely ATT&CK.}
+}
+
+
+@article{DBLP:journals/tissec/HwangOT23,
+	author = {Seoyeon Hwang and
+                  Ercan Ozturk and
+                  Gene Tsudik},
+	title = {Balancing Security and Privacy in Genomic Range Queries},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {23:1--23:28},
+	year = {2023},
+	url = {https://doi.org/10.1145/3575796},
+	doi = {10.1145/3575796},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/HwangOT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Exciting recent advances in genome sequencing, coupled with greatly reduced storage and computation costs, make genomic testing increasingly accessible to individuals. Already today, one’s digitized DNA can be easily obtained from a sequencing lab and later used to conduct numerous tests by engaging with a testing facility. Due to the inherent sensitivity of genetic material and the often-proprietary nature of genomic tests, privacy is a natural and crucial issue. While genomic privacy received a great deal of attention within and outside the research community, genomic security has not been sufficiently studied. This is surprising since the usage of fake or altered genomes can have grave consequences, such as erroneous drug prescriptions and genetic test outcomes. Unfortunately, in the genomic domain, privacy and security (as often happens) are at odds with each other. In this article, we attempt to reconcile security with privacy in genomic testing by designing a novel technique for a secure and private genomic range query protocol between a genomic testing facility and an individual user. The proposed technique ensures authenticity and completeness of user-supplied genomic material while maintaining its privacy by releasing only the minimum thereof. To confirm its broad usability, we show how to apply the proposed technique to a previously proposed genomic private substring matching protocol. Experiments show that the proposed technique offers good performance and is quite practical. Furthermore, we generalize the genomic range query problem to sparse integer sets and discuss potential use cases.}
+}
+
+
+@article{DBLP:journals/tissec/ZhuoBKLR23,
+	author = {Sijie Zhuo and
+                  Robert Biddle and
+                  Yun Sing Koh and
+                  Danielle M. Lottridge and
+                  Giovanni Russello},
+	title = {SoK: Human-centered Phishing Susceptibility},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {24:1--24:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3575797},
+	doi = {10.1145/3575797},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ZhuoBKLR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Phishing is recognized as a serious threat to organizations and individuals. While there have been significant technical advances in blocking phishing attacks, end-users remain the last line of defence after phishing emails reach their email inboxes. Most of the existing literature on this subject has focused on the technical aspects related to phishing. The factors that cause humans to be susceptible to phishing attacks are still not well-understood. To fill this gap, we reviewed the available literature and systematically categorized the phishing susceptibility variables studied. We classify variables based on their temporal scope, which led us to propose a three-stage Phishing Susceptibility Model (PSM) for explaining how humans are vulnerable to phishing attacks. This model reveals several research gaps that need to be addressed to understand and improve protection against phishing susceptibility. Our review also systematizes existing studies by their sample size and generalizability and further suggests a practical impact assessment of the value of studying variables: Some more easily lead to improvements than others. We believe that this article can provide guidelines for future phishing susceptibility research to improve experiment design and the quality of findings.}
+}
+
+
+@article{DBLP:journals/tissec/HessMB23,
+	author = {Andreas V. Hess and
+                  Sebastian Alexander M{\"{o}}dersheim and
+                  Achim D. Brucker},
+	title = {Stateful Protocol Composition in Isabelle/HOL},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {25:1--25:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3577020},
+	doi = {10.1145/3577020},
+	timestamp = {Sat, 28 Oct 2023 13:59:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/HessMB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Communication networks like the Internet form a large distributed system where a huge number of components run in parallel, such as security protocols and distributed web applications. For what concerns security, it is obviously infeasible to verify them all at once as one monolithic entity; rather, one has to verify individual components in isolation. While many typical components like TLS have been studied intensively, there exists much less research on analyzing and ensuring the security of the composition of security protocols. This is a problem since the composition of systems that are secure in isolation can easily be insecure. The main goal of compositionality is thus a theorem of the form: given a set of components that are already proved secure in isolation and that satisfy a number of easy-to-check conditions, then also their parallel composition is secure. Said conditions should of course also be realistic in practice, or better yet, already be satisfied for many existing components. Another benefit of compositionality is that when one would like to exchange a component with another one, all that is needed is the proof that the new component is secure in isolation and satisfies the composition conditions—without having to re-prove anything about the other components. This article has three contributions over previous work in parallel compositionality. First, we extend the compositionality paradigm to stateful systems: while previous approaches work only for simple protocols that only have a local session state, our result supports participants who maintain long-term databases that can be shared among several protocols. This includes a paradigm for declassification of shared secrets. This result is in fact so general that it also covers many forms of sequential composition as a special case of stateful parallel composition. Second, our compositionality result is formalized and proved in Isabelle/HOL, providing a strong correctness guarantee of our proofs. This also means that one can prove, without gaps, the security of an entire system in Isabelle/HOL, namely the security of components in isolation and the composition conditions, and thus derive the security of the entire system as an Isabelle theorem. For the components one can also make use of our tool PSPSP that can perform automatic proofs for many stateful protocols. Third, for the compositionality conditions we have also implemented an automated check procedure in Isabelle.}
+}
+
+
+@article{DBLP:journals/tissec/CabarcosFHSBS23,
+	author = {Patricia Arias Cabarcos and
+                  Matin Fallahi and
+                  Thilo Habrich and
+                  Karen Schulze and
+                  Christian Becker and
+                  Thorsten Strufe},
+	title = {Performance and Usability Evaluation of Brainwave Authentication Techniques
+                  with Consumer Devices},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {26:1--26:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3579356},
+	doi = {10.1145/3579356},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/CabarcosFHSBS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Brainwaves have demonstrated to be unique enough across individuals to be useful as biometrics. They also provide promising advantages over traditional means of authentication, such as resistance to external observability, revocability, and intrinsic liveness detection. However, most of the research so far has been conducted with expensive, bulky, medical-grade helmets, which offer limited applicability for everyday usage. With the aim to bring brainwave authentication and its benefits closer to real world deployment, we investigate brain biometrics with consumer devices. We conduct a comprehensive measurement experiment and user study that compare five authentication tasks on a user sample up to 10 times larger than those from previous studies, introducing three novel techniques based on cognitive semantic processing. Furthermore, we apply our analysis on high-quality open brainwave data obtained with a medical-grade headset, to assess the differences. We investigate both the performance, security, and usability of the different options and use this evidence to elicit design and research recommendations. Our results show that it is possible to achieve Equal Error Rates as low as 7.2% (a reduction between 68–72% with respect to existing approaches) based on brain responses to images with current inexpensive technology. We show that the common practice of testing authentication systems only with known attacker data is unrealistic and may lead to overly optimistic evaluations. With regard to adoption, users call for simpler devices, faster authentication, and better privacy.}
+}
+
+
+@article{DBLP:journals/tissec/LachtarIKB23,
+	author = {Nada Lachtar and
+                  Duha Ibdah and
+                  Hamza Khan and
+                  Anys Bacha},
+	title = {RansomShield: {A} Visualization Approach to Defending Mobile Systems
+                  Against Ransomware},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {27:1--27:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3579822},
+	doi = {10.1145/3579822},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/LachtarIKB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The unprecedented growth in mobile systems has transformed the way we approach everyday computing. Unfortunately, the emergence of a sophisticated type of malware known as ransomware poses a great threat to consumers of this technology. Traditional research on mobile malware detection has focused on approaches that rely on analyzing bytecode for uncovering malicious apps. However, cybercriminals can bypass such methods by embedding malware directly in native machine code, making traditional methods inadequate. Another challenge that detection solutions face is scalability. The sheer number of malware variants released every year makes it difficult for solutions to efficiently scale their coverage. To address these concerns, this work presents RansomShield, an energy-efficient solution that leverages CNNs to detect ransomware. We evaluate CNN architectures that have been known to perform well on computer vision tasks and examine their suitability for ransomware detection. We show that systematically converting native instructions from Android apps into images using space-filling curve visualization techniques enable CNNs to reliably detect ransomware with high accuracy. We characterize the robustness of this approach across ARM and x86 architectures and demonstrate the effectiveness of this solution across heterogeneous platforms including smartphones and chromebooks. We evaluate the suitability of different models for mobile systems by comparing their energy demands using different platforms. In addition, we present a CNN introspection framework that determines the important features that are needed for ransomware detection. Finally, we evaluate the robustness of this solution against adversarial machine learning (AML) attacks using state-of-the-art Android malware dataset.}
+}
+
+
+@article{DBLP:journals/tissec/LiDTFCOSC23,
+	author = {Litao Li and
+                  Steven H. H. Ding and
+                  Yuan Tian and
+                  Benjamin C. M. Fung and
+                  Philippe Charland and
+                  Weihan Ou and
+                  Leo Song and
+                  Congwei Chen},
+	title = {VulANalyzeR: Explainable Binary Vulnerability Detection with Multi-task
+                  Learning and Attentional Graph Convolution},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {28:1--28:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3585386},
+	doi = {10.1145/3585386},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/LiDTFCOSC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software vulnerabilities have been posing tremendous reliability threats to the general public as well as critical infrastructures, and there have been many studies aiming to detect and mitigate software defects at the binary level. Most of the standard practices leverage both static and dynamic analysis, which have several drawbacks like heavy manual workload and high complexity. Existing deep learning-based solutions not only suffer to capture the complex relationships among different variables from raw binary code but also lack the explainability required for humans to verify, evaluate, and patch the detected bugs. We propose VulANalyzeR, a deep learning-based model, for automated binary vulnerability detection, Common Weakness Enumeration-type classification, and root cause analysis to enhance safety and security. VulANalyzeR features sequential and topological learning through recurrent units and graph convolution to simulate how a program is executed. The attention mechanism is integrated throughout the model, which shows how different instructions and the corresponding states contribute to the final classification. It also classifies the specific vulnerability type through multi-task learning as this not only provides further explanation but also allows faster patching for zero-day vulnerabilities. We show that VulANalyzeR achieves better performance for vulnerability detection over the state-of-the-art baselines. Additionally, a Common Vulnerability Exposure dataset is used to evaluate real complex vulnerabilities. We conduct case studies to show that VulANalyzeR is able to accurately identify the instructions and basic blocks that cause the vulnerability even without given any prior knowledge related to the locations during the training phase.}
+}
+
+
+@article{DBLP:journals/tissec/AlexJP23,
+	author = {Sona Alex and
+                  Dhanaraj K. J. and
+                  Deepthi P. P.},
+	title = {Energy Efficient and Secure Neural Network-based Disease Detection
+                  Framework for Mobile Healthcare Network},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {29:1--29:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3585536},
+	doi = {10.1145/3585536},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AlexJP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adopting mobile healthcare network (MHN) services such as disease detection is fraught with concerns about the security and privacy of the entities involved and the resource restrictions at the Internet of Things (IoT) nodes. Hence, the essential requirements for disease detection services are to (i) produce accurate and fast disease detection without jeopardizing the privacy of health clouds and medical users and (ii) reduce the computational and transmission overhead (energy consumption) of the IoT devices while maintaining the privacy. For privacy preservation of widely used neural network– (NN) based disease detection, existing literature suggests either computationally heavy public key fully homomorphic encryption (FHE), or secure multiparty computation, with a large number of interactions. Hence, the existing privacy-preserving NN schemes are energy consuming and not suitable for resource-constrained IoT nodes in MHN. This work proposes a lightweight, fully homomorphic, symmetric key FHE scheme (SkFhe) to address the issues involved in implementing privacy-preserving NN. Based on SkFhe, widely used non-linear activation functions ReLU and Leaky ReLU are implemented over the encrypted domain. Furthermore, based on the proposed privacy-preserving linear transformation and non-linear activation functions, an energy-efficient, accurate, and privacy-preserving NN is proposed. The proposed scheme guarantees privacy preservation of the health cloud’s NN model and medical user’s data. The experimental analysis demonstrates that the proposed solution dramatically reduces the overhead in communication and computation at the user side compared to the existing schemes. Moreover, the improved energy efficiency at the user is accomplished with reduced diagnosis time without sacrificing classification accuracy.}
+}
+
+
+@article{DBLP:journals/tissec/MurrayM23,
+	author = {Hazel Murray and
+                  David Malone},
+	title = {Costs and Benefits of Authentication Advice},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {30:1--30:35},
+	year = {2023},
+	url = {https://doi.org/10.1145/3588031},
+	doi = {10.1145/3588031},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/MurrayM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Authentication security advice is given with the goal of guiding users and organisations towards secure actions and practices. In this article, a taxonomy of 270 pieces of authentication advice is created, and a survey is conducted to gather information on the costs associated with following or enforcing the advice. Our findings indicate that security advice can be ambiguous and contradictory, with 41% of the advice collected being contradicted by another source. Additionally, users reported high levels of frustration with the advice and identified high usability costs. The study also found that end-users disagreed with each other 71% of the time about whether a piece of advice was valuable or not. We define a formal approach to identifying security benefits of advice. Our research suggests that cost-benefit analysis is essential in understanding the value of enforcing security policies. Furthermore, we find that organisation investment in security seems to have better payoffs than mechanisms with high costs to users.}
+}
+
+
+@article{DBLP:journals/tissec/BoltonDBM23,
+	author = {Tom Bolton and
+                  Tooska Dargahi and
+                  Sana Belguith and
+                  Carsten Maple},
+	title = {PrivExtractor: Toward Redressing the Imbalance of Understanding between
+                  Virtual Assistant Users and Vendors},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {31:1--31:29},
+	year = {2023},
+	url = {https://doi.org/10.1145/3588770},
+	doi = {10.1145/3588770},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BoltonDBM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The use of voice-controlled virtual assistants (VAs) is significant, and user numbers increase every year. Extensive use of VAs has provided the large, cash-rich technology companies who sell them with another way of consuming users’ data, providing a lucrative revenue stream. Whilst these companies are legally obliged to treat users’ information “fairly and responsibly,” artificial intelligence techniques used to process data have become incredibly sophisticated, leading to users’ concerns that a lack of clarity is making it hard to understand the nature and scope of data collection and use. There has been little work undertaken on a self-contained user awareness tool targeting VAs. PrivExtractor, a novel web-based awareness dashboard for VA users, intends to redress this imbalance of understanding between the data “processors” and the user. It aims to achieve this using the four largest VA vendors as a case study and providing a comparison function that examines the four companies’ privacy practices and their compliance with data protection law. As a result of this research, we conclude that the companies studied are largely compliant with the law, as expected. However, the user remains disadvantaged due to the ineffectiveness of current data regulation that does not oblige the companies to fully and transparently disclose how and when they use, share, or profit from the data. Furthermore, the software tool developed during the research is, we believe, the first that is capable of a comparative analysis of VA privacy with a visual demonstration to increase ease of understanding for the user.}
+}
+
+
+@article{DBLP:journals/tissec/Wagner23,
+	author = {Isabel Wagner},
+	title = {Privacy Policies across the Ages: Content of Privacy Policies 1996-2021},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {32:1--32:32},
+	year = {2023},
+	url = {https://doi.org/10.1145/3590152},
+	doi = {10.1145/3590152},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/Wagner23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is well known that most users do not read privacy policies but almost always tick the box to agree with them. While the length and readability of privacy policies have been well studied and many approaches for policy analysis based on natural language processing have been proposed, existing studies are limited in their depth and scope, often focusing on a small number of data practices at single point in time. In this article, we fill this gap by analyzing the 25-year history of privacy policies using machine learning and natural language processing and presenting a comprehensive analysis of policy contents. Specifically, we collect a large-scale longitudinal corpus of privacy policies from 1996 to 2021 and analyze their content in terms of the data practices they describe, the rights they grant to users, and the rights they reserve for their organizations. We pay particular attention to changes in response to recent privacy regulations such as the GDPR and CCPA. We observe some positive changes, such as reductions in data collection post-GDPR, but also a range of concerning data practices, such as widespread implicit data collection for which users have no meaningful choices or access rights. Our work is an important step toward making privacy policies machine readable on the user side, which would help users match their privacy preferences against the policies offered by web services.}
+}
+
+
+@article{DBLP:journals/tissec/LuYS23,
+	author = {Yang Lu and
+                  Zhengxin Yu and
+                  Neeraj Suri},
+	title = {Privacy-preserving Decentralized Federated Learning over Time-varying
+                  Communication Graph},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {33:1--33:39},
+	year = {2023},
+	url = {https://doi.org/10.1145/3591354},
+	doi = {10.1145/3591354},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/LuYS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Establishing how a set of learners can provide privacy-preserving federated learning in a fully decentralized (peer-to-peer, no coordinator) manner is an open problem. We propose the first privacy-preserving consensus-based algorithm for the distributed learners to achieve decentralized global model aggregation in an environment of high mobility, where participating learners and the communication graph between them may vary during the learning process. In particular, whenever the communication graph changes, the Metropolis-Hastings method [69] is applied to update the weighted adjacency matrix based on the current communication topology. In addition, the Shamir’s secret sharing (SSS) scheme [61] is integrated to facilitate privacy in reaching consensus of the global model. The article establishes the correctness and privacy properties of the proposed algorithm. The computational efficiency is evaluated by a simulation built on a federated learning framework with a real-world dataset.}
+}
+
+
+@article{DBLP:journals/tissec/HouWZJWD23,
+	author = {Jian Hou and
+                  Jing Wang and
+                  Mingyue Zhang and
+                  Zhi Jin and
+                  Chunlin Wei and
+                  Zuohua Ding},
+	title = {Privacy-preserving Resilient Consensus for Multi-agent Systems in
+                  a General Topology Structure},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {34:1--34:22},
+	year = {2023},
+	url = {https://doi.org/10.1145/3587933},
+	doi = {10.1145/3587933},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/HouWZJWD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent advances of consensus control have made it significant in multi-agent systems such as in distributed machine learning, distributed multi-vehicle cooperative systems. However, during its application it is crucial to achieve resilience and privacy; specifically, when there are adversary/faulty nodes in a general topology structure, normal agents can also reach consensus while keeping their actual states unobserved. In this article, we modify the state-of-the-art Q-consensus algorithm by introducing predefined noise or well-designed cryptography to guarantee the privacy of each agent state. In the former case, we add specified noise on agent state before it is transmitted to the neighbors and then gradually decrease the value of noise so the exact agent state cannot be evaluated. In the latter one, the Paillier cryptosystem is applied for reconstructing reward function in two consecutive interactions between each pair of neighboring agents. Therefore, multi-agent privacy-preserving resilient consensus (MAPPRC) can be achieved in a general topology structure. Moreover, in the modified version, we reconstruct reward function and credibility function so both convergence rate and stability of the system are improved. The simulation results indicate the algorithms’ tolerance for constant and/or persistent faulty agents as well as their protection of privacy. Compared with the previous studies that consider both resilience and privacy-preserving requirements, the proposed algorithms in this article greatly relax the topological conditions. At the end of the article, to verify the effectiveness of the proposed algorithms, we conduct two sets of experiments, i.e., a smart-car hardware platform consisting of four vehicles and a distributed machine learning platform containing 10 workers and a server.}
+}
+
+
+@article{DBLP:journals/tissec/KingH23,
+	author = {Isaiah J. King and
+                  H. Howie Huang},
+	title = {Euler: Detecting Network Lateral Movement via Scalable Temporal Link
+                  Prediction},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {35:1--35:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3588771},
+	doi = {10.1145/3588771},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/KingH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Lateral movement is a key stage of system compromise used by advanced persistent threats. Detecting it is no simple task. When network host logs are abstracted into discrete temporal graphs, the problem can be reframed as anomalous edge detection in an evolving network. Research in modern deep graph learning techniques has produced many creative and complicated models for this task. However, as is the case in many machine learning fields, the generality of models is of paramount importance for accuracy and scalability during training and inference. In this article, we propose a formalized approach to this problem with a framework we call Euler. It consists of a model-agnostic graph neural network stacked upon a model-agnostic sequence encoding layer such as a recurrent neural network. Models built according to the Euler framework can easily distribute their graph convolutional layers across multiple machines for large performance improvements. Additionally, we demonstrate that Euler-based models are as good, or better, than every state-of-the-art approach to anomalous link detection and prediction that we tested. As anomaly-based intrusion detection systems, our models efficiently identified anomalous connections between entities with high precision and outperformed all other unsupervised techniques for anomalous lateral movement detection. Additionally, we show that as a piece of a larger anomaly detection pipeline, Euler models perform well enough for use in real-world systems. With more advanced, yet still lightweight, alerting mechanisms ingesting the embeddings produced by Euler models, precision is boosted from 0.243, to 0.986 on real-world network traffic.}
+}
+
+
+@article{DBLP:journals/tissec/VidanageCRS23,
+	author = {Anushka Vidanage and
+                  Peter Christen and
+                  Thilina Ranbaduge and
+                  Rainer Schnell},
+	title = {A Vulnerability Assessment Framework for Privacy-preserving Record
+                  Linkage},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {36:1--36:31},
+	year = {2023},
+	url = {https://doi.org/10.1145/3589641},
+	doi = {10.1145/3589641},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/VidanageCRS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The linkage of records to identify common entities across multiple data sources has gained increasing interest over the last few decades. In the absence of unique entity identifiers, quasi-identifying attributes such as personal names and addresses are generally used to link records. Due to privacy concerns that arise when such sensitive information is used, privacy-preserving record linkage (PPRL) methods have been proposed to link records without revealing any sensitive or confidential information about these records. Popular PPRL methods such as Bloom filter encoding, however, are known to be susceptible to various privacy attacks. Therefore, a systematic analysis of the privacy risks associated with sensitive databases as well as PPRL methods used in linkage projects is of great importance. In this article we present a novel framework to assess the vulnerabilities of sensitive databases and existing PPRL encoding methods. We discuss five types of vulnerabilities: frequency, length, co-occurrence, similarity, and similarity neighborhood, of both plaintext and encoded values that an adversary can exploit in order to reidentify sensitive plaintext values from encoded data. In an experimental evaluation we assess the vulnerabilities of two databases using five existing PPRL encoding methods. This evaluation shows that our proposed framework can be used in real-world linkage applications to assess the vulnerabilities associated with sensitive databases to be linked, as well as with PPRL encoding methods.}
+}
+
+
+@article{DBLP:journals/tissec/GuoWXY23,
+	author = {Chun Guo and
+                  Xiao Wang and
+                  Xiang Xie and
+                  Yu Yu},
+	title = {The Multi-User Constrained Pseudorandom Function Security of Generalized
+                  {GGM} Trees for {MPC} and Hierarchical Wallets},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {37:1--37:38},
+	year = {2023},
+	url = {https://doi.org/10.1145/3592608},
+	doi = {10.1145/3592608},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/GuoWXY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-user (mu) security considers large-scale attackers that, given access to a number of cryptosystem instances, attempt to compromise at least one of them. We initiate the study of mu security of the so-called GGM tree that stems from the pseudorandom generator to pseudorandom function transformation of Goldreich, Goldwasser, and Micali, with a goal to provide references for its recently popularized use in applied cryptography. We propose a generalized model for GGM trees and analyze its mu prefix-constrained pseudorandom function security in the random oracle model. Our model allows to derive concrete bounds and improvements for various protocols, and we showcase on the Bitcoin-Improvement-Proposal standard Bip32 hierarchical wallets and function secret sharing protocols. In both scenarios, we propose improvements with better performance and concrete security bounds at the same time. Compared with the state-of-the-art designs, our SHACAL3- and Keccak-p-based Bip32 variants reduce the communication cost of MPC-based implementations by 73.3% to 93.8%, whereas our AES-based function secret sharing substantially improves mu security while reducing computations by 50%.}
+}
+
+
+@article{DBLP:journals/tissec/UsyninRK23,
+	author = {Dmitrii Usynin and
+                  Daniel Rueckert and
+                  Georgios Kaissis},
+	title = {Beyond Gradients: Exploiting Adversarial Priors in Model Inversion
+                  Attacks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {38:1--38:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3592800},
+	doi = {10.1145/3592800},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/UsyninRK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Collaborative machine learning settings such as federated learning can be susceptible to adversarial interference and attacks. One class of such attacks is termed model inversion attacks, characterised by the adversary reverse-engineering the model into disclosing the training data. Previous implementations of this attack typically only rely on the shared data representations, ignoring the adversarial priors, or require that specific layers are present in the target model, reducing the potential attack surface. In this work, we propose a novel context-agnostic model inversion framework that builds on the foundations of gradient-based inversion attacks, but additionally exploits the features and the style of the data controlled by an in-the-network adversary. Our technique outperforms existing gradient-based approaches both qualitatively and quantitatively across all training settings, showing particular effectiveness against the collaborative medical imaging tasks. Finally, we demonstrate that our method achieves significant success on two downstream tasks: sensitive feature inference and facial recognition spoofing.}
+}
+
+
+@article{DBLP:journals/tissec/ScopellitiPNABPM23,
+	author = {Gianluca Scopelliti and
+                  Sepideh Pouyanrad and
+                  Job Noorman and
+                  Fritz Alder and
+                  Christoph Baumann and
+                  Frank Piessens and
+                  Jan Tobias M{\"{u}}hlberg},
+	title = {End-to-End Security for Distributed Event-driven Enclave Applications
+                  on Heterogeneous TEEs},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {39:1--39:46},
+	year = {2023},
+	url = {https://doi.org/10.1145/3592607},
+	doi = {10.1145/3592607},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ScopellitiPNABPM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article presents an approach to provide strong assurance of the secure execution of distributed event-driven applications on shared infrastructures, while relying on a small Trusted Computing Base. We build upon and extend security primitives provided by Trusted Execution Environments (TEEs) to guarantee authenticity and integrity properties of applications, and to secure control of input and output devices. More specifically, we guarantee that if an output is produced by the application, it was allowed to be produced by the application’s source code based on an authentic trace of inputs. We present an integrated open-source framework to develop, deploy, and use such applications across heterogeneous TEEs. Beyond authenticity and integrity, our framework optionally provides confidentiality and a notion of availability, and facilitates software development at a high level of abstraction over the platform-specific TEE layer. We support event-driven programming to develop distributed enclave applications in Rust and C for heterogeneous TEE, including Intel SGX, ARM TrustZone, and Sancus. In this article we discuss the workings of our approach, the extensions we made to the Sancus processor, and the integration of our development model with commercial TEEs. Our evaluation of security and performance aspects show that TEEs, together with our programming model, form a basis for powerful security architectures for dependable systems in domains such as Industrial Control Systems and the Internet of Things, illustrating our framework’s unique suitability for a broad range of use cases which combine cloud processing, mobile and edge devices, and lightweight sensing and actuation.}
+}
+
+
+@article{DBLP:journals/tissec/MallahHF23,
+	author = {Ranwa Al Mallah and
+                  Talal Halabi and
+                  Bilal Farooq},
+	title = {Resilience-by-design in Adaptive Multi-agent Traffic Control Systems},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {40:1--40:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3592799},
+	doi = {10.1145/3592799},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/MallahHF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Connected and Autonomous Vehicles (CAVs) with their evolving data gathering capabilities will play a significant role in road safety and efficiency applications supported by Intelligent Transport Systems (ITSs), such as Traffic Signal Control (TSC) for urban traffic congestion management. However, their involvement will expand the space of security vulnerabilities and create larger threat vectors. In this article, we perform the first detailed security analysis and implementation of a new cyber-physical attack category carried out by the network of CAVs against Adaptive Multi-Agent Traffic Signal Control (AMATSC), namely, coordinated Sybil attacks, where vehicles with forged or fake identities try to alter the data collected by the AMATSC algorithms to sabotage their decisions. Consequently, a novel, game-theoretic mitigation approach at the application layer is proposed to minimize the impact of such sophisticated data corruption attacks. The devised minimax game model enables the AMATSC algorithm to generate optimal decisions under a suspected attack, improving its resilience. Extensive experimentation is performed on a traffic dataset provided by the city of Montréal under real-world intersection settings to evaluate the attack impact. Our results improved time loss on attacked intersections by approximately 48.9%. Substantial benefits can be gained from the mitigation, yielding more robust adaptive control of traffic across networked intersections.}
+}
+
+
+@article{DBLP:journals/tissec/BarbosaBGKS23,
+	author = {Manuel Barbosa and
+                  Gilles Barthe and
+                  Benjamin Gr{\'{e}}goire and
+                  Adrien Koutsos and
+                  Pierre{-}Yves Strub},
+	title = {Mechanized Proofs of Adversarial Complexity and Application to Universal
+                  Composability},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {41:1--41:34},
+	year = {2023},
+	url = {https://doi.org/10.1145/3589962},
+	doi = {10.1145/3589962},
+	timestamp = {Thu, 09 Nov 2023 21:13:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/BarbosaBGKS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we enhance the EasyCrypt proof assistant to reason about the computational complexity of adversaries. The key technical tool is a Hoare logic for reasoning about computational complexity (execution time and oracle calls) of adversarial computations. Our Hoare logic is built on top of the module system used by EasyCrypt for modeling adversaries. We prove that our logic is sound w.r.t. the semantics of EasyCrypt programs—we also provide full semantics for the EasyCrypt module system, which was lacking previously. We showcase (for the first time in EasyCrypt and in other computer-aided cryptographic tools) how our approach can express precise relationships between the probability of adversarial success and their execution time. In particular, we can quantify existentially over adversaries in a complexity class and express general composition statements in simulation-based frameworks. Moreover, such statements can be composed to derive standard concrete security bounds for cryptographic constructions whose security is proved in a modular way. As a main benefit of our approach, we revisit security proofs of some well-known cryptographic constructions and present a new formalization of universal composability.}
+}
+
+
+@article{DBLP:journals/tissec/VenkatesaramaniWMV23,
+	author = {Rajagopal Venkatesaramani and
+                  Zhiyu Wan and
+                  Bradley A. Malin and
+                  Yevgeniy Vorobeychik},
+	title = {Defending Against Membership Inference Attacks on Beacon Services},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {3},
+	pages = {42:1--42:32},
+	year = {2023},
+	url = {https://doi.org/10.1145/3603627},
+	doi = {10.1145/3603627},
+	timestamp = {Fri, 27 Oct 2023 20:39:33 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/VenkatesaramaniWMV23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Large genomic datasets are created through numerous activities, including recreational genealogical investigations, biomedical research, and clinical care. At the same time, genomic data has become valuable for reuse beyond their initial point of collection, but privacy concerns often hinder access. Beacon services have emerged to broaden accessibility to such data. These services enable users to query for the presence of a particular minor allele in a dataset, and information helps care providers determine if genomic variation is spurious or has some known clinical indication. However, various studies have shown that this process can leak information regarding if individuals are members of the underlying dataset. There are various approaches to mitigate this vulnerability, but they are limited in that they (1) typically rely on heuristics to add noise to the Beacon responses; (2) offer probabilistic privacy guarantees only, neglecting data utility; and (3) assume a batch setting where all queries arrive at once. In this article, we present a novel algorithmic framework to ensure privacy in a Beacon service setting with a minimal number of query response flips. We represent this problem as one of combinatorial optimization in both the batch setting and the online setting (where queries arrive sequentially). We introduce principled algorithms with both privacy and, in some cases, worst-case utility guarantees. Moreover, through extensive experiments, we show that the proposed approaches significantly outperform the state of the art in terms of privacy and utility, using a dataset consisting of 800 individuals and 1.3 million single nucleotide variants.}
+}
+
+
+@article{DBLP:journals/tissec/GongCYHW23,
+	author = {Xueluan Gong and
+                  Yanjiao Chen and
+                  Wenbin Yang and
+                  Huayang Huang and
+                  Qian Wang},
+	title = {B\({}^{\mbox{3}}\): Backdoor Attacks against Black-box Machine Learning
+                  Models},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {43:1--43:24},
+	year = {2023},
+	url = {https://doi.org/10.1145/3605212},
+	doi = {10.1145/3605212},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/GongCYHW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Backdoor attacks aim to inject backdoors to victim machine learning models during training time, such that the backdoored model maintains the prediction power of the original model towards clean inputs and misbehaves towards backdoored inputs with the trigger. The reason for backdoor attacks is that resource-limited users usually download sophisticated models from model zoos or query the models from MLaaS rather than training a model from scratch, thus a malicious third party has a chance to provide a backdoored model. In general, the more precious the model provided (i.e., models trained on rare datasets), the more popular it is with users. In this article, from a malicious model provider perspective, we propose a black-box backdoor attack, named B3, where neither the rare victim model (including the model architecture, parameters, and hyperparameters) nor the training data is available to the adversary. To facilitate backdoor attacks in the black-box scenario, we design a cost-effective model extraction method that leverages a carefully constructed query dataset to steal the functionality of the victim model with a limited budget. As the trigger is key to successful backdoor attacks, we develop a novel trigger generation algorithm that intensifies the bond between the trigger and the targeted misclassification label through the neuron with the highest impact on the targeted label. Extensive experiments have been conducted on various simulated deep learning models and the commercial API of Alibaba Cloud Compute Service. We demonstrate that B3 has a high attack success rate and maintains high prediction accuracy for benign inputs. It is also shown that B3 is robust against state-of-the-art defense strategies against backdoor attacks, such as model pruning and NC.}
+}
+
+
+@article{DBLP:journals/tissec/ChenSCXYA23,
+	author = {Jinfu Chen and
+                  Luo Song and
+                  Saihua Cai and
+                  Haodi Xie and
+                  Shang Yin and
+                  Bilal Ahmad},
+	title = {{TLS-MHSA:} An Efficient Detection Model for Encrypted Malicious Traffic
+                  based on Multi-Head Self-Attention Mechanism},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {44:1--44:21},
+	year = {2023},
+	url = {https://doi.org/10.1145/3613960},
+	doi = {10.1145/3613960},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ChenSCXYA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the use of TLS (Transport Layer Security) protocol to protect communication information has become increasingly popular as users are more aware of network security. However, hackers have also exploited the salient features of the TLS protocol to carry out covert malicious attacks, which threaten the security of network space. Currently, the commonly used traffic detection methods are not always reliable when applied to the problem of encrypted malicious traffic detection due to their limitations. The most significant problem is that these methods do not focus on the key features of encrypted traffic. To address this problem, this study proposes an efficient detection model for encrypted malicious traffic based on transport layer security protocol and a multi-head self-attention mechanism called TLS-MHSA. Firstly, we extract the features of TLS traffic during pre-processing and perform traffic statistics to filter redundant features. Then, we use a multi-head self-attention mechanism to focus on learning key features as well as generate the most important combined features to construct the detection model, thereby detecting the encrypted malicious traffic. Finally, we use a public dataset to verify the effectiveness and efficiency of the TLS-MHSA model, and the experimental results show that the proposed TLS-MHSA model has high precision, recall, F1-measure, AUC-ROC as well as higher stability than seven state-of-the-art detection models.}
+}
+
+
+@article{DBLP:journals/tissec/PaladiniMPCZ23,
+	author = {Tommaso Paladini and
+                  Francesco Monti and
+                  Mario Polino and
+                  Michele Carminati and
+                  Stefano Zanero},
+	title = {Fraud Detection under Siege: Practical Poisoning Attacks and Defense
+                  Strategies},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {45:1--45:35},
+	year = {2023},
+	url = {https://doi.org/10.1145/3613244},
+	doi = {10.1145/3613244},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/PaladiniMPCZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning (ML) models are vulnerable to adversarial machine learning (AML) attacks. Unlike other contexts, the fraud detection domain is characterized by inherent challenges that make conventional approaches hardly applicable. In this article, we extend the application of AML techniques to the fraud detection task by studying poisoning attacks and their possible countermeasures. First, we present a novel approach for performing poisoning attacks that overcomes the fraud detection domain-specific constraints. It generates fraudulent candidate transactions and tests them against a machine learning-based Oracle, which simulates the target fraud detection system aiming at evading it. Misclassified fraudulent candidate transactions are then integrated into the target detection system’s training set, poisoning its model and shifting its decision boundary. Second, we propose a novel approach that extends the adversarial training technique to mitigate AML attacks: During the training phase of the detection system, we generate artificial frauds by modifying random original legitimate transactions; then, we include them in the training set with the correct label. By doing so, we instruct our model to recognize evasive transactions before an attack occurs. Using two real bank datasets, we evaluate the security of several state-of-the-art fraud detection systems by deploying our poisoning attack with different degrees of attacker’s knowledge and attacking strategies. The experimental results show that our attack works even when the attacker has minimal knowledge of the target system. Then, we demonstrate that the proposed countermeasure can mitigate adversarial attacks by reducing the stolen amount of money up to 100%.}
+}
+
+
+@article{DBLP:journals/tissec/KimCSKNK23,
+	author = {Dohyun Kim and
+                  ManGi Cho and
+                  Hocheol Shin and
+                  Jaehoon Kim and
+                  Juhwan Noh and
+                  Yongdae Kim},
+	title = {Lightbox: Sensor Attack Detection for Photoelectric Sensors via Spectrum
+                  Fingerprinting},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {46:1--46:30},
+	year = {2023},
+	url = {https://doi.org/10.1145/3615867},
+	doi = {10.1145/3615867},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/KimCSKNK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Photoelectric sensors are utilized in a range of safety-critical applications, such as medical devices and autonomous vehicles. However, the public exposure of the input channel of a photoelectric sensor makes it vulnerable to malicious inputs. Several studies have suggested possible attacks on photoelectric sensors by injecting malicious signals. While a few defense techniques have been proposed against such attacks, they could be either bypassed or used for limited purposes. In this study, we propose Lightbox, a novel defense system to detect sensor attacks on photoelectric sensors based on signal fingerprinting. Lightbox uses the spectrum of the received light as a feature to distinguish the attacker’s malicious signals from the authentic signal, which is a signal from the sensor’s light source. We evaluated Lightbox against (1) a saturation attacker, (2) a simple spoofing attacker, and (3) a sophisticated attacker who is aware of Lightbox and can combine multiple light sources to mimic the authentic light source. Lightbox achieved the overall accuracy over 99% for the saturation attacker and simple spoofing attacker, and robustness against a sophisticated attacker. We also evaluated Lightbox considering various environments such as transmission medium, background noise, and input waveform. Finally, we demonstrate the practicality of Lightbox with experiments using a single-board computer after further reducing the training time.}
+}
+
+
+@article{DBLP:journals/tissec/SakibAG23,
+	author = {Shahnewaz Karim Sakib and
+                  George T. Amariucai and
+                  Yong Guan},
+	title = {Measures of Information Leakage for Incomplete Statistical Information:
+                  Application to a Binary Privacy Mechanism},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {47:1--47:31},
+	year = {2023},
+	url = {https://doi.org/10.1145/3624982},
+	doi = {10.1145/3624982},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SakibAG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Information leakage is usually defined as the logarithmic increment in the adversary’s probability of correctly guessing the legitimate user’s private data or some arbitrary function of the private data when presented with the legitimate user’s publicly disclosed information. However, this definition of information leakage implicitly assumes that both the privacy mechanism and the prior probability of the original data are entirely known to the attacker. In reality, the assumption of complete knowledge of the privacy mechanism for an attacker is often impractical. The attacker can usually have access to only an approximate version of the correct privacy mechanism, computed from a limited set of the disclosed data, for which they can access the corresponding un-distorted data. In this scenario, the conventional definition of leakage no longer has an operational meaning. To address this problem, in this article, we propose novel meaningful information-theoretic metrics for information leakage when the attacker has incomplete information about the privacy mechanism—we call them average subjective leakage, average confidence boost, and average objective leakage, respectively. For the simplest, binary scenario, we demonstrate how to find an optimized privacy mechanism that minimizes the worst-case value of either of these leakages.}
+}
+
+
+@article{DBLP:journals/tissec/ErenBJRNA23,
+	author = {Maksim Ekin Eren and
+                  Manish Bhattarai and
+                  Robert J. Joyce and
+                  Edward Raff and
+                  Charles Nicholas and
+                  Boian S. Alexandrov},
+	title = {Semi-Supervised Classification of Malware Families Under Extreme Class
+                  Imbalance via Hierarchical Non-Negative Matrix Factorization with
+                  Automatic Model Selection},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {48:1--48:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3624567},
+	doi = {10.1145/3624567},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ErenBJRNA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Identification of the family to which a malware specimen belongs is essential in understanding the behavior of the malware and developing mitigation strategies. Solutions proposed by prior work, however, are often not practicable due to the lack of realistic evaluation factors. These factors include learning under class imbalance, the ability to identify new malware, and the cost of production-quality labeled data. In practice, deployed models face prominent, rare, and new malware families. At the same time, obtaining a large quantity of up-to-date labeled malware for training a model can be expensive. In this article, we address these problems and propose a novel hierarchical semi-supervised algorithm, which we call the HNMFk Classifier, that can be used in the early stages of the malware family labeling process. Our method is based on non-negative matrix factorization with automatic model selection, that is, with an estimation of the number of clusters. With HNMFk Classifier, we exploit the hierarchical structure of the malware data together with a semi-supervised setup, which enables us to classify malware families under conditions of extreme class imbalance. Our solution can perform abstaining predictions, or rejection option, which yields promising results in the identification of novel malware families and helps with maintaining the performance of the model when a low quantity of labeled data is used. We perform bulk classification of nearly 2,900 both rare and prominent malware families, through static analysis, using nearly 388,000 samples from the EMBER-2018 corpus. In our experiments, we surpass both supervised and semi-supervised baseline models with an F1 score of 0.80.}
+}
+
+
+@article{DBLP:journals/tissec/ZhangZYY23,
+	author = {Chenhan Zhang and
+                  Shiyao Zhang and
+                  James J. Q. Yu and
+                  Shui Yu},
+	title = {{SAM:} Query-efficient Adversarial Attacks against Graph Neural Networks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {49:1--49:19},
+	year = {2023},
+	url = {https://doi.org/10.1145/3611307},
+	doi = {10.1145/3611307},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ZhangZYY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent studies indicate that Graph Neural Networks (GNNs) are vulnerable to adversarial attacks. Particularly, adversarially perturbing the graph structure, e.g., flipping edges, can lead to salient degeneration of GNNs’ accuracy. In general, efficiency and stealthiness are two significant metrics to evaluate an attack method in practical use. However, most prevailing graph structure-based attack methods are query intensive, which impacts their practical use. Furthermore, while the stealthiness of perturbations has been discussed in previous studies, the majority of them focus on the attack scenario targeting a single node. To fill the research gap, we present a global attack method against GNNs, Saturation adversarial Attack with Meta-gradient, in this article. We first propose an enhanced meta-learning-based optimization method to obtain useful gradient information concerning graph structural perturbations. Then, leveraging the notion of saturation attack, we devise an effective algorithm to determine the perturbations based on the derived meta-gradients. Meanwhile, to ensure stealthiness, we introduce a similarity constraint to suppress the number of perturbed edges. Thorough experiments demonstrate that our method can effectively depreciate the accuracy of GNNs with a small number of queries. While achieving a higher misclassification rate, we also show that the perturbations developed by our method are not noticeable.}
+}
+
+
+@article{DBLP:journals/tissec/BansalKHCBM23,
+	author = {Ayoosh Bansal and
+                  Anant Kandikuppa and
+                  Monowar Hasan and
+                  Chien{-}Ying Chen and
+                  Adam Bates and
+                  Sibin Mohan},
+	title = {System Auditing for Real-Time Systems},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {50:1--50:37},
+	year = {2023},
+	url = {https://doi.org/10.1145/3625229},
+	doi = {10.1145/3625229},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/BansalKHCBM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {System auditing is an essential tool for detecting malicious events and conducting forensic analysis. Although used extensively on general-purpose systems, auditing frameworks have not been designed with consideration for the unique constraints and properties of Real-Time Systems (RTS). System auditing could provide tremendous benefits for security-critical RTS. However, a naive deployment of auditing on RTS could violate the temporal requirements of the system while also rendering auditing incomplete and ineffectual. To ensure effective auditing that meets the computational needs of recording complete audit information while adhering to the temporal requirements of the RTS, it is essential to carefully integrate auditing into the real-time (RT) schedule. This work adapts the Linux Audit framework for use in RT Linux by leveraging the common properties of such systems, such as special purpose and predictability. Ellipsis, an efficient system for auditing RTS, is devised that learns the expected benign behaviors of the system and generates succinct descriptions of the expected activity. Evaluations using varied RT applications show that Ellipsis reduces the volume of audit records generated during benign activity by up to 97.55% while recording detailed logs for suspicious activities. Empirical analyses establish that the auditing infrastructure adheres to the properties of predictability and isolation that are important to RTS. Furthermore, the schedulability of RT tasksets under audit is comprehensively analyzed to enable the safe integration of auditing in RT task schedules.}
+}
+
+
+@article{DBLP:journals/tissec/SajidWADAK23,
+	author = {Md Sajidul Islam Sajid and
+                  Jinpeng Wei and
+                  Ehab Al{-}Shaer and
+                  Qi Duan and
+                  Basel Abdeen and
+                  Latifur Khan},
+	title = {symbSODA: Configurable and Verifiable Orchestration Automation for
+                  Active Malware Deception},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {26},
+	number = {4},
+	pages = {51:1--51:36},
+	year = {2023},
+	url = {https://doi.org/10.1145/3624568},
+	doi = {10.1145/3624568},
+	timestamp = {Sat, 13 Jan 2024 17:36:04 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SajidWADAK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware is commonly used by adversaries to compromise and infiltrate cyber systems in order to steal sensitive information or destroy critical assets. Active Cyber Deception (ACD) has emerged as an effective proactive cyber defense against malware to enable misleading adversaries by presenting fake data and engaging them to learn novel attack techniques. However, real-time malware deception is a complex and challenging task because (1) it requires a comprehensive understanding of the malware behaviors at technical and tactical levels in order to create the appropriate deception ploys and resources that can leverage this behavior and mislead malware, and (2) it requires a configurable yet provably valid deception planning to guarantee effective and safe real-time deception orchestration. This article presents symbSODA, a highly configurable and verifiable cyber deception system that analyzes real-world malware using multipath execution to discover API patterns that represent attack techniques/tactics critical for deception, enables users to create their own customized deception ploys based on the malware type and objectives, allows for constructing conflict-free Deception Playbooks, and finally automates the deception orchestration to execute the malware inside a deceptive environment. symbSODA extracts Malicious Sub-graphs (MSGs) consisting of WinAPIs from real-world malware and maps them to tactics and techniques using the ATT&CK framework to facilitate the construction of meaningful user-defined deception playbooks. We conducted a comprehensive evaluation study on symbSODA using 255 recent malware samples. We demonstrated that the accuracy of the end-to-end malware deception is 95% on average, with negligible overhead using various deception goals and strategies. Furthermore, our approach successfully extracted MSGs with a 97% recall, and our MSG-to-MITRE mapping achieved a top-1 accuracy of 88.75%. Our study suggests that symbSODA can serve as a general-purpose Malware Deception Factory to automatically produce customized deception playbooks against arbitrary malware behavior.}
+}

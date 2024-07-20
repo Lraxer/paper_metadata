@@ -1,0 +1,698 @@
+@article{DBLP:journals/tissec/SavvidesKSE22,
+	author = {Savvas Savvides and
+                  Seema Kumar and
+                  Julian James Stephen and
+                  Patrick Eugster},
+	title = {{C3PO:} Cloud-based Confidentiality-preserving Continuous Query Processing},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {1:1--1:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3472717},
+	doi = {10.1145/3472717},
+	timestamp = {Wed, 19 Jan 2022 17:40:12 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SavvidesKSE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the advent of the Internet of things (IoT), billions of devices are expected to continuously collect and process sensitive data (e.g., location, personal health factors). Due to the limited computational capacity available on IoT devices, the current de facto model for building IoT applications is to send the gathered data to the cloud for computation. While building private cloud infrastructures for handling large amounts of data streams can be expensive, using low-cost public (untrusted) cloud infrastructures for processing continuous queries including sensitive data leads to strong concerns over data confidentiality. This article presents C3PO, a confidentiality-preserving, continuous query processing engine, that leverages the public cloud. The key idea is to intelligently utilize partially homomorphic and property-preserving encryption to perform as many computationally intensive operations as possible—without revealing plaintext—in the untrusted cloud. C3PO provides simple abstractions to the developer to hide the complexities of applying complex cryptographic primitives, reasoning about the performance of such primitives, deciding which computations can be executed in an untrusted tier, and optimizing cloud resource usage. An empirical evaluation with several benchmarks and case studies shows the feasibility of our approach. We consider different classes of IoT devices that differ in their computational and memory resources (from a Raspberry Pi 3 to a very small device with a Cortex-M3 microprocessor) and through the use of optimizations, we demonstrate the feasibility of using partially homomorphic and property-preserving encryption on IoT devices.}
+}
+
+
+@article{DBLP:journals/tissec/BerlatoCLR22,
+	author = {Stefano Berlato and
+                  Roberto Carbone and
+                  Adam J. Lee and
+                  Silvio Ranise},
+	title = {Formal Modelling and Automated Trade-off Analysis of Enforcement Architectures
+                  for Cryptographic Access Control in the Cloud},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {2:1--2:37},
+	year = {2022},
+	url = {https://doi.org/10.1145/3474056},
+	doi = {10.1145/3474056},
+	timestamp = {Tue, 07 May 2024 20:26:12 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BerlatoCLR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To facilitate the adoption of cloud by organizations, Cryptographic Access Control (CAC) is the obvious solution to control data sharing among users while preventing partially trusted Cloud Service Providers (CSP) from accessing sensitive data. Indeed, several CAC schemes have been proposed in the literature. Despite their differences, available solutions are based on a common set of entities—e.g., a data storage service or a proxy mediating the access of users to encrypted data—that operate in different (security) domains—e.g., on-premise or the CSP. However, the majority of these CAC schemes assumes a fixed assignment of entities to domains; this has security and usability implications that are not made explicit and can make inappropriate the use of a CAC scheme in certain scenarios with specific trust assumptions and requirements. For instance, assuming that the proxy runs at the premises of the organization avoids the vendor lock-in effect but may give rise to other security concerns (e.g., malicious insiders attackers). To the best of our knowledge, no previous work considers how to select the best possible architecture (i.e., the assignment of entities to domains) to deploy a CAC scheme for the trust assumptions and requirements of a given scenario. In this article, we propose a methodology to assist administrators in exploring different architectures for the enforcement of CAC schemes in a given scenario. We do this by identifying the possible architectures underlying the CAC schemes available in the literature and formalizing them in simple set theory. This allows us to reduce the problem of selecting the most suitable architectures satisfying a heterogeneous set of trust assumptions and requirements arising from the considered scenario to a decidable Multi-objective Combinatorial Optimization Problem (MOCOP) for which state-of-the-art solvers can be invoked. Finally, we show how we use the capability of solving the MOCOP to build a prototype tool assisting administrators to preliminarily perform a “What-if” analysis to explore the trade-offs among the various architectures and then use available standards and tools (such as TOSCA and Cloudify) for automated deployment in multiple CSPs.}
+}
+
+
+@article{DBLP:journals/tissec/AlperK22,
+	author = {Handan Kilin{\c{c}} Alper and
+                  Alptekin K{\"{u}}p{\c{c}}{\"{u}}},
+	title = {Optimally Efficient Multi-party Fair Exchange and Fair Secure Multi-party
+                  Computation},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {3:1--3:34},
+	year = {2022},
+	url = {https://doi.org/10.1145/3477530},
+	doi = {10.1145/3477530},
+	timestamp = {Sat, 30 Sep 2023 10:28:53 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AlperK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-party fair exchange (MFE) and fair secure multi-party computation (fair SMPC) are under-studied fields of research, with practical importance. In particular, we consider MFE scenarios where at the end of the protocol, either every participant receives every other participant’s item, or no participant receives anything. We analyze the case where a trusted third party (TTP) is optimistically available, although we emphasize that the trust put on the TTP is only regarding the fairness, and our protocols preserve the privacy of the exchanged items against the TTP. In the fair SMPC case, we prove that a malicious TTP can only harm fairness, but not security. We construct an asymptotically optimal multi-party fair exchange protocol that requires a constant number of rounds (in comparison to linear) and O(n2) messages (in comparison to cubic), where n is the number of participating parties. In our protocol, we enable the parties to efficiently exchange any item that can be efficiently put into a verifiable encryption (e.g., signatures on a contract). We show how to apply this protocol on top of any SMPC protocol to achieve fairness with very little overhead (independent of the circuit size). We then generalize our protocol to efficiently handle any exchange topology (participants exchange items with arbitrary other participants). Our protocol guarantees fairness in its strongest sense: even if all n-1 other participants are malicious and colluding with each other, the fairness is still guaranteed.}
+}
+
+
+@article{DBLP:journals/tissec/QinPLRB22,
+	author = {Le Qin and
+                  Fei Peng and
+                  Min Long and
+                  Raghavendra Ramachandra and
+                  Christoph Busch},
+	title = {Vulnerabilities of Unattended Face Verification Systems to Facial
+                  Components-based Presentation Attacks: An Empirical Study},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {4:1--4:28},
+	year = {2022},
+	url = {https://doi.org/10.1145/3491199},
+	doi = {10.1145/3491199},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/QinPLRB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As face presentation attacks (PAs) are realistic threats for unattended face verification systems, face presentation attack detection (PAD) has been intensively investigated in past years, and the recent advances in face PAD have significantly reduced the success rate of such attacks. In this article, an empirical study on a novel and effective face impostor PA is made. In the proposed PA, a facial artifact is created by using the most vulnerable facial components, which are optimally selected based on the vulnerability analysis of different facial components to impostor PAs. An attacker can launch a face PA by presenting a facial artifact on his or her own real face. With a collected PA database containing various types of artifacts and presentation attack instruments (PAIs), the experimental results and analysis show that the proposed PA poses a more serious threat to face verification and PAD systems compared with the print, replay, and mask PAs. Moreover, the generalization ability of the proposed PA and the vulnerability analysis with regard to commercial systems are also investigated by evaluating unknown face verification and real-world PAD systems. It provides a new paradigm for the study of face PAs.}
+}
+
+
+@article{DBLP:journals/tissec/BazaiJA22,
+	author = {Sibghat Ullah Bazai and
+                  Julian Jang{-}Jaccard and
+                  Hooman Alavizadeh},
+	title = {A Novel Hybrid Approach for Multi-Dimensional Data Anonymization for
+                  Apache Spark},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {5:1--5:25},
+	year = {2022},
+	url = {https://doi.org/10.1145/3484945},
+	doi = {10.1145/3484945},
+	timestamp = {Tue, 16 Aug 2022 23:09:26 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BazaiJA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-dimensional data anonymization approaches (e.g., Mondrian) ensure more fine-grained data privacy by providing a different anonymization strategy applied for each attribute. Many variations of multi-dimensional anonymization have been implemented on different distributed processing platforms (e.g., MapReduce, Spark) to take advantage of their scalability and parallelism supports. According to our critical analysis on overheads, either existing iteration-based or recursion-based approaches do not provide effective mechanisms for creating the optimal number of and relative size of resilient distributed datasets (RDDs), thus heavily suffer from performance overheads. To solve this issue, we propose a novel hybrid approach for effectively implementing a multi-dimensional data anonymization strategy (e.g., Mondrian) that is scalable and provides high-performance. Our hybrid approach provides a mechanism to create far fewer RDDs and smaller size partitions attached to each RDD than existing approaches. This optimal RDD creation and operations approach is critical for many multi-dimensional data anonymization applications that create tremendous execution complexity. The new mechanism in our proposed hybrid approach can dramatically reduce the critical overheads involved in re-computation cost, shuffle operations, message exchange, and cache management.}
+}
+
+
+@article{DBLP:journals/tissec/PaganiB22,
+	author = {Fabio Pagani and
+                  Davide Balzarotti},
+	title = {AutoProfile: Towards Automated Profile Generation for Memory Analysis},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {6:1--6:26},
+	year = {2022},
+	url = {https://doi.org/10.1145/3485471},
+	doi = {10.1145/3485471},
+	timestamp = {Wed, 19 Jan 2022 17:40:12 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/PaganiB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite a considerable number of approaches that have been proposed to protect computer systems, cyber-criminal activities are on the rise and forensic analysis of compromised machines and seized devices is becoming essential in computer security. This article focuses on memory forensics, a branch of digital forensics that extract artifacts from the volatile memory. In particular, this article looks at a key ingredient required by memory forensics frameworks: a precise model of the OS kernel under analysis, also known as profile. By using the information stored in the profile, memory forensics tools are able to bridge the semantic gap and interpret raw bytes to extract evidences from a memory dump. A big problem with profile-based solutions is that custom profiles must be created for each and every system under analysis. This is especially problematic for Linux systems, because profiles are not generic: they are strictly tied to a specific kernel version and to the configuration used to build the kernel. Failing to create a valid profile means that an analyst cannot unleash the true power of memory forensics and is limited to primitive carving strategies. For this reason, in this article we present a novel approach that combines source code and binary analysis techniques to automatically generate a profile from a memory dump, without relying on any non-public information. Our experiments show that this is a viable solution and that profiles reconstructed by our framework can be used to run many plugins, which are essential for a successful forensics investigation.}
+}
+
+
+@article{DBLP:journals/tissec/PerilloPT22,
+	author = {Angelo Massimo Perillo and
+                  Giuseppe Persiano and
+                  Alberto Trombetta},
+	title = {Secure Selections on Encrypted Multi-writer Streams},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {1},
+	pages = {7:1--7:33},
+	year = {2022},
+	url = {https://doi.org/10.1145/3485470},
+	doi = {10.1145/3485470},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/PerilloPT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Performing searches over encrypted data is a very current and active area. Several efficient solutions have been provided for the single-writer scenario in which all sensitive data originate with one party (the Data Owner) that encrypts and uploads the data to a public repository. Subsequently, the Data Owner accesses the encrypted data through a Query Processor, which has direct access to the public encrypted repository. Motivated by the recent trend in pervasive data collection, we depart from this model and consider a multi-writer scenario in which the data originate with several and mutually untrusted parties, the Data Sources. In this new scenario, the Data Owner provides public parameters so that each Data Source can add encrypted items to the public encrypted stream; moreover, the Data Owner keeps some related secret information needed to generate tokens so that different Query Sources can decrypt different subsets of the encrypted stream, as specified by corresponding access policies. We propose security model for this problem that we call Secure Selective Stream (SSS) and give a secure construction for it based on hard problems in Pairing-Based Cryptography. The cryptographic core of our construction is a new primitive, Amortized Orthogonality Encryption, that is crucial for the efficiency of the proposed implementation for SSS.}
+}
+
+
+@article{DBLP:journals/tissec/BraunDST22,
+	author = {Lennart Braun and
+                  Daniel Demmler and
+                  Thomas Schneider and
+                  Oleksandr Tkachenko},
+	title = {{MOTION} - {A} Framework for Mixed-Protocol Multi-Party Computation},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {8:1--8:35},
+	year = {2022},
+	url = {https://doi.org/10.1145/3490390},
+	doi = {10.1145/3490390},
+	timestamp = {Sun, 02 Oct 2022 15:51:13 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BraunDST22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present MOTION, an efficient and generic open-source framework for mixed-protocol secure multi-party computation\xa0(MPC). MOTION is built in a user-friendly, modular, and extensible way, intended to be used as a tool in MPC research and to increase adoption of MPC protocols in practice. Our framework incorporates several important engineering decisions such as full communication serialization, which enables MPC over arbitrary messaging interfaces and removes the need of owning network sockets. MOTION also incorporates several performance optimizations that improve the communication complexity and latency, e.g.,  \\( 2\\times \\) \xa0better online round complexity of precomputed correlated\xa0Oblivious Transfer\xa0(OT). We instantiate our framework with protocols for N\xa0parties and security against up to  \\( N-1 \\)  passive corruptions: the MPC protocols of Goldreich-Micali-Wigderson\xa0(GMW) in its arithmetic and Boolean version and OT-based BMR\xa0(Ben-Efraim et\xa0al., CCS’16), as well as novel and highly efficient conversions between them, including a non-interactive conversion from BMR to arithmetic GMW. MOTION is highly efficient, which we demonstrate in our experiments. Compared to secure evaluation of AES-128 with  \\( N=3 \\)  parties in a high-latency network with OT-based BMR, we achieve a 16 \\( \\times \\)  better throughput of 16\xa0AES evaluations per second using BMR. With this, we show that BMR is much more competitive than previously assumed. For  \\( N=3 \\)  parties and full-threshold protocols in a LAN, MOTION is  \\( 10\\times \\) – \\( 18\\times \\)  faster than the previous best passively secure implementation from the MP-SPDZ framework, and  \\( 190\\times \\) – \\( 586\\times \\)  faster than the actively secure SCALE-MAMBA framework. Finally, we show that our framework is highly efficient for privacy-preserving neural network inference.}
+}
+
+
+@article{DBLP:journals/tissec/BotacinMNGA22,
+	author = {Marcus Botacin and
+                  Francis B. Moreira and
+                  Philippe O. A. Navaux and
+                  Andr{\'{e}} Gr{\'{e}}gio and
+                  Marco A. Z. Alves},
+	title = {Terminator: {A} Secure Coprocessor to Accelerate Real-Time AntiViruses
+                  Using Inspection Breakpoints},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {9:1--9:34},
+	year = {2022},
+	url = {https://doi.org/10.1145/3494535},
+	doi = {10.1145/3494535},
+	timestamp = {Fri, 08 Jul 2022 23:03:31 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BotacinMNGA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {AntiViruses (AVs) are essential to face the myriad of malware threatening Internet users. AVs operate in two modes: on-demand checks and real-time verification. Software-based real-time AVs intercept system and function calls to execute AV’s inspection routines, resulting in significant performance penalties as the monitoring code runs among the suspicious code. Simultaneously, dark silicon problems push the industry to add more specialized accelerators inside the processor to mitigate these integration problems. In this article, we propose Terminator, an AV-specific coprocessor to assist software AVs by outsourcing their matching procedures to the hardware, thus saving CPU cycles and mitigating performance degradation. We designed Terminator \xa0 to be flexible and compatible with existing AVs by using YARA and ClamAVrules. Our experiments show that our approach can save up to 70 million CPU cycles per rule when outsourcing on-demand checks for matching typical, unmodified YARA rules against a dataset of 30 thousand in-the-wild malware samples. Our proposal eliminates the AV’s need for blocking the CPU to perform full system checks, which can now occur in parallel. We also designed a new inspection breakpoint mechanism that signals to the coprocessor the beginning of a monitored region, allowing it to scan the regions in parallel with their execution. Overall, our mechanism mitigated up to 44% of the overhead imposed to execute and monitor the SPEC benchmark applications in the most challenging scenario.}
+}
+
+
+@article{DBLP:journals/tissec/WangHRTO22,
+	author = {Xueou Wang and
+                  Xiaolu Hou and
+                  Ruben Rios and
+                  Nils Ole Tippenhauer and
+                  Mart{\'{\i}}n Ochoa},
+	title = {Constrained Proximity Attacks on Mobile Targets},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {10:1--10:29},
+	year = {2022},
+	url = {https://doi.org/10.1145/3498543},
+	doi = {10.1145/3498543},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/WangHRTO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proximity attacks allow an adversary to uncover the location of a victim by repeatedly issuing queries with fake location data. These attacks have been mostly studied in scenarios where victims remain static and there are no constraints that limit the actions of the attacker. In such a setting, it is not difficult for the attacker to locate a particular victim and quantifying the effort for doing so is straightforward. However, it is far more realistic to consider scenarios where potential victims present a particular mobility pattern. In this article, we consider abstract (constrained and unconstrained) attacks on services that provide location information on other users in the proximity. We derive strategies for constrained and unconstrained attackers, and show that when unconstrained they can practically achieve success with theoretically optimal effort. We then propose a simple yet effective constraint that may be employed by a proximity service (for example, running in the cloud or using a suitable two-party protocol) as a countermeasure to increase the effort for the attacker several orders of magnitude both in simulated and real-world cases.}
+}
+
+
+@article{DBLP:journals/tissec/DebantDW22,
+	author = {Alexandre Debant and
+                  St{\'{e}}phanie Delaune and
+                  Cyrille Wiedling},
+	title = {So Near and Yet So Far - Symbolic Verification of Distance-Bounding
+                  Protocols},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {11:1--11:39},
+	year = {2022},
+	url = {https://doi.org/10.1145/3501402},
+	doi = {10.1145/3501402},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/DebantDW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The continuous adoption of Near Field Communication (NFC) tags offers many new applications whose security is essential (e.g., contactless payments). In order to prevent flaws and attacks, we develop in this article a framework allowing us to analyse the underlying security protocols, taking into account the location of the agents and the transmission delay when exchanging messages. We propose two reduction results to render automatic verification possible relying on the existing verification tool ProVerif. Our first result allows one to consider a unique topology to catch all possible attacks. The second result simplifies the security analysis when considering Terrorist fraud. Then, based on these results, we perform a comprehensive case study analysis (27 protocols), in which we obtain new proofs of security for some protocols and detect attacks on some others.}
+}
+
+
+@article{DBLP:journals/tissec/ZolotavkinJKSD22,
+	author = {Yevhen Zolotavkin and
+                  Jongkil Jay Jeong and
+                  Veronika Kuchta and
+                  Maksym Slavnenko and
+                  Robin Doss},
+	title = {Improving Unlinkability of Attribute-based Authentication through
+                  Game Theory},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {12:1--12:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3501260},
+	doi = {10.1145/3501260},
+	timestamp = {Sun, 02 Oct 2022 15:51:13 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ZolotavkinJKSD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article first formalizes the problem of unlinkable attribute-based authentication in the system where each user possesses multiple assertions and uses them interchangeably. Currently, there are no recommendations for optimal usage of assertions in such authentication systems. To mitigate this issue, we use conditional entropy to measure the uncertainty for a Relying Party who attempts to link observed assertions with user labels. Conditional entropy is the function of usage statistics for all assertions in the system. Personal decisions made by the users about the usage of assertions contribute to these statistics. This collective effect from all the users impacts the unlinkability of authentication and must be studied using game theory. We specify several instances of the game where context information that is provided to the users differs. Through game theory and based on conditional entropy, we demonstrate how each user optimizes usage for the personal set of assertions. In the experiment, we substantiate the advantage of the proposed rational decision-making approaches: Unlinkability that we obtain under Nash equilibrium is higher than in the system where users authenticate using their assertions at random. We finally propose an algorithm that calculates equilibrium and assists users with the selection of assertions. This manifests that described techniques can be executed in realistic settings. This does not require modification of existing authentication protocols and can be implemented in platform-independent identity agents. As a use case, we describe how our technique can be used in Digital Credential Wallets: We suggest that unlinkability of authentication can be improved for Verifiable Credentials.}
+}
+
+
+@article{DBLP:journals/tissec/DaoudiABK22,
+	author = {Nadia Daoudi and
+                  Kevin Allix and
+                  Tegawend{\'{e}} Fran{\c{c}}ois D. Assise Bissyand{\'{e}} and
+                  Jacques Klein},
+	title = {A Deep Dive Inside {DREBIN:} An Explorative Analysis beyond Android
+                  Malware Detection Scores},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {13:1--13:28},
+	year = {2022},
+	url = {https://doi.org/10.1145/3503463},
+	doi = {10.1145/3503463},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/DaoudiABK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning advances have been extensively explored for implementing large-scale malware detection. When reported in the literature, performance evaluation of machine learning based detectors generally focuses on highlighting the ratio of samples that are correctly or incorrectly classified, overlooking essential questions on why/how the learned models can be demonstrated as reliable. In the Android ecosystem, several recent studies have highlighted how evaluation setups can carry biases related to datasets or evaluation methodologies. Nevertheless, there is little work attempting to dissect the produced model to provide some understanding of its intrinsic characteristics. In this work, we fill this gap by performing a comprehensive analysis of a state-of-the-art Android malware detector, namely DREBIN, which constitutes today a key reference in the literature. Our study mainly targets an in-depth understanding of the classifier characteristics in terms of (1) which features actually matter among the hundreds of thousands that DREBIN extracts, (2) whether the high scores of the classifier are dependent on the dataset age, and (3) whether DREBIN’s explanations are consistent within malware families, among others. Overall, our tentative analysis provides insights into the discriminatory power of the feature set used by DREBIN to detect malware. We expect our findings to bring about a systematisation of knowledge for the community.}
+}
+
+
+@article{DBLP:journals/tissec/OserHLK22,
+	author = {Pascal Oser and
+                  Rens W. van der Heijden and
+                  Stefan L{\"{u}}ders and
+                  Frank Kargl},
+	title = {Risk Prediction of IoT Devices Based on Vulnerability Analysis},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {14:1--14:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3510360},
+	doi = {10.1145/3510360},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/OserHLK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet of Things (IoT) devices are becoming more widespread not only in areas such as smart homes and smart cities but also in research and office environments. The sheer number, heterogeneity, and limited patch availability provide significant challenges for the security of both office networks and the Internet in general. The systematic estimation of device risks, which is essential for mitigation decisions, is currently a skill-intensive task that requires expertise in network vulnerability scanning, as well as manual effort in firmware binary analysis. This article introduces SAFER,1 the Security Assessment Framework for Embedded-device Risks, which enables a semi-automated risk assessment of IoT devices in any network. SAFER combines information from network device identification and automated firmware analysis to estimate the current risk associated with the device. Based on past vulnerability data and vendor patch intervals for device models, SAFER extrapolates those observations into the future using different automatically parameterized prediction models. Based on that, SAFER also estimates an indicator for future security risks. This enables users to be aware of devices exposing high risks in the future. One major strength of SAFER over other approaches is its scalability, achieved through significant automation. To demonstrate this strength, we apply SAFER in the network of a large multinational organization, to systematically assess the security level of hundreds of IoT devices on large-scale networks. Results indicate that SAFER successfully identified 531 out of 572 devices leading to a device identification rate of 92.83\xa0%, analyzed 825 firmware images, and predicted the current and future security risk for 240 devices.}
+}
+
+
+@article{DBLP:journals/tissec/BrisenoSS22,
+	author = {Julian de Gortari Briseno and
+                  Akash Deep Singh and
+                  Mani Srivastava},
+	title = {InkFiltration: Using Inkjet Printers for Acoustic Data Exfiltration
+                  from Air-Gapped Networks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {2},
+	pages = {15:1--15:26},
+	year = {2022},
+	url = {https://doi.org/10.1145/3510583},
+	doi = {10.1145/3510583},
+	timestamp = {Tue, 16 Aug 2022 23:09:26 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BrisenoSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Printers have become ubiquitous in modern office spaces, and their placement in these spaces been guided more by accessibility than security. Due to the proximity of printers to places with potentially high-stakes information, the possible misuse of these devices is concerning. We present a previously unexplored covert channel that effectively uses the sound generated by printers with inkjet technology to exfiltrate arbitrary sensitive data (unrelated to the apparent content of the document being printed) from an air-gapped network. We also discuss a series of defense techniques that can make these devices invulnerable to covert manipulation. The proposed covert channel works by malware installed on a computer with access to a printer, injecting certain imperceptible patterns into all documents that applications on the computer send to the printer. These patterns can control the printing process without visibly altering the original content of a document, and generate acoustic signals that a nearby acoustic recording device, such as a smartphone, can capture and decode. To prove and analyze the capabilities of this new covert channel, we carried out tests considering different types of document layouts and distances between the printer and recording device. We achieved a bit error ratio less than 5% and an average bit rate of approximately 0.5 bps across all tested printers at distances up to 4 m, which is sufficient to extract tiny bits of information.}
+}
+
+
+@article{DBLP:journals/tissec/CliftonHMM22,
+	author = {Chris Clifton and
+                  Eric J. Hanson and
+                  Keith Merrill and
+                  Shawn Merrill},
+	title = {Differentially Private \emph{k}-Nearest Neighbor Missing Data Imputation},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {16:1--16:23},
+	year = {2022},
+	url = {https://doi.org/10.1145/3507952},
+	doi = {10.1145/3507952},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/CliftonHMM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Using techniques employing smooth sensitivity, we develop a method for  \\( k \\) -nearest neighbor missing data imputation with differential privacy. This requires bounding the number of data incomplete tuples that can have their data complete “donor” changed by making a single addition or deletion to the dataset. The multiplicity of a single individual’s impact on an imputed dataset necessarily means our mechanisms require the addition of more noise than mechanisms that ignore missing data, but we show empirically that this is significantly outweighed by the bias reduction from imputing missing data.}
+}
+
+
+@article{DBLP:journals/tissec/ChenZYZCWG22,
+	author = {Yuxuan Chen and
+                  Jiangshan Zhang and
+                  Xuejing Yuan and
+                  Shengzhi Zhang and
+                  Kai Chen and
+                  Xiaofeng Wang and
+                  Shanqing Guo},
+	title = {SoK: {A} Modularized Approach to Study the Security of Automatic Speech
+                  Recognition Systems},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {17:1--17:31},
+	year = {2022},
+	url = {https://doi.org/10.1145/3510582},
+	doi = {10.1145/3510582},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ChenZYZCWG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the wide use of Automatic Speech Recognition (ASR) in applications such as human machine interaction, simultaneous interpretation, audio transcription, and so on, its security protection becomes increasingly important. Although recent studies have brought to light the weaknesses of popular ASR systems that enable out-of-band signal attack, adversarial attack, and so on, and further proposed various remedies (signal smoothing, adversarial training, etc.), a systematic understanding of ASR security (both attacks and defenses) is still missing, especially on how realistic such threats are and how general existing protection could be. In this article, we present our systematization of knowledge for ASR security and provide a comprehensive taxonomy for existing work based on a modularized workflow. More importantly, we align the research in this domain with that on security in Image Recognition System (IRS), which has been extensively studied, using the domain knowledge in the latter to help understand where we stand in the former. Generally, both IRS and ASR are perceptual systems. Their similarities allow us to systematically study existing literature in ASR security based on the spectrum of attacks and defense solutions proposed for IRS, and pinpoint the directions of more advanced attacks and the directions potentially leading to more effective protection in ASR. In contrast, their differences, especially the complexity of ASR compared with IRS, help us learn unique challenges and opportunities in ASR security. Particularly, our experimental study shows that transfer attacks across ASR models are feasible, even in the absence of knowledge about models (even their types) and training data.}
+}
+
+
+@article{DBLP:journals/tissec/LandauerSWR22,
+	author = {Max Landauer and
+                  Florian Skopik and
+                  Markus Wurzenberger and
+                  Andreas Rauber},
+	title = {Dealing with Security Alert Flooding: Using Machine Learning for Domain-independent
+                  Alert Aggregation},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {18:1--18:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3510581},
+	doi = {10.1145/3510581},
+	timestamp = {Mon, 26 Jun 2023 20:57:51 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/LandauerSWR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intrusion Detection Systems (IDS) secure all kinds of IT infrastructures through automatic detection of malicious activities. Unfortunately, they are known to produce large numbers of alerts that often become overwhelming for manual analysis. Therefore, aggregation methods have been developed for filtering, grouping, and correlating alerts. However, existing techniques either rely on manually defined attack scenarios or require specific alert formats, such as IDMEF that include IP addresses. This makes the application of existing aggregation methods infeasible for alerts from host-based or anomaly-based IDSs that frequently lack such network-related data. In this paper, we therefore present a domain-independent alert aggregation technique. We introduce similarity measures and merging strategies for arbitrary semi-structured alerts and alert groups. Based on these metrics and techniques we propose an incremental procedure for the generation of abstract alert patterns that enable continuous classification of incoming alerts. Evaluations show that our approach is capable of reducing the number of alert groups for human review by around  \\( 80\\% \\)  and assigning attack classifiers to the groups with true positive rates of  \\( 80\\% \\)  and false positive rates lower than  \\( 5\\% \\) .}
+}
+
+
+@article{DBLP:journals/tissec/MartinsM22,
+	author = {Cl{\'{a}}udio Martins and
+                  Ib{\'{e}}ria Medeiros},
+	title = {Generating Quality Threat Intelligence Leveraging {OSINT} and a Cyber
+                  Threat Unified Taxonomy},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {19:1--19:39},
+	year = {2022},
+	url = {https://doi.org/10.1145/3530977},
+	doi = {10.1145/3530977},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/MartinsM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today’s threats use multiple means of propagation, such as social engineering, email, and application vulnerabilities, and often operate in different phases, such as single device compromise, lateral network movement, and data exfiltration. These complex threats rely on advanced persistent threats supported by well-advanced tactics for appearing unknown to traditional security defenses. As organizations realize that attacks are increasing in size and complexity, cyber threat intelligence (TI) is growing in popularity and use. This trend followed the evolution of advanced persistent threats, as they require a different level of response that is more specific to the organization. TI can be obtained via many formats, with open-source intelligence one of the most common, and using threat intelligence platforms (TIPs) that aid organizations to consume, produce, and share TI. TIPs have multiple advantages that enable organizations to quickly bootstrap the core processes of collecting, analyzing, and sharing threat-related information. However, current TIPs have some limitations that prevent their mass adoption. This article proposes AECCP, a platform that addresses some of the TIPs limitations. AECCP improves quality TI by classifying it accordingly a single unified taxonomy, removing the information with low value, enriching it with valuable information from open-source intelligence sources, and aggregating it for complementing information associated with the same threat. AECCP was validated and evaluated with three datasets of events and compared with two other platforms, showing that it can generate quality TI automatically and help security analysts analyze security incidents in less time.}
+}
+
+
+@article{DBLP:journals/tissec/AlvimCKP22,
+	author = {M{\'{a}}rio S. Alvim and
+                  Konstantinos Chatzikokolakis and
+                  Yusuke Kawamoto and
+                  Catuscia Palamidessi},
+	title = {Information Leakage Games: Exploring Information as a Utility Function},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {20:1--20:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517330},
+	doi = {10.1145/3517330},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AlvimCKP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A common goal in the areas of secure information flow and privacy is to build effective defenses against unwanted leakage of information. To this end, one must be able to reason about potential attacks and their interplay with possible defenses. In this article, we propose a game-theoretic framework to formalize strategies of attacker and defender in the context of information leakage, and provide a basis for developing optimal defense methods. A novelty of our games is that their utility is given by information leakage, which in some cases may behave in a non-linear way. This causes a significant deviation from classic game theory, in which utility functions are linear with respect to players’ strategies. Hence, a key contribution of this work is the establishment of the foundations of information leakage games. We consider two kinds of games, depending on the notion of leakage considered. The first kind, the QIF-games, is tailored for the theory of quantitative information flow. The second one, the DP-games, corresponds to differential privacy.}
+}
+
+
+@article{DBLP:journals/tissec/FischerFKJKB22,
+	author = {Andreas Fischer and
+                  Benny Fuhry and
+                  J{\"{o}}rn Ku{\ss}maul and
+                  Jonas Janneck and
+                  Florian Kerschbaum and
+                  Eric Bodden},
+	title = {Computation on Encrypted Data Using Dataflow Authentication},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {21:1--21:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3513005},
+	doi = {10.1145/3513005},
+	timestamp = {Tue, 16 Aug 2022 23:09:26 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/FischerFKJKB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Encrypting data before sending it to the cloud ensures data confidentiality but requires the cloud to compute on encrypted data. Trusted execution environments, such as Intel SGX enclaves, promise to provide a secure environment in which data can be decrypted and then processed. However, vulnerabilities in the executed program give attackers ample opportunities to execute arbitrary code inside the enclave. This code can modify the dataflow of the program and leak secrets via SGX side channels. Fully homomorphic encryption would be an alternative to compute on encrypted data without data leaks. However, due to its high computational complexity, its applicability to general-purpose computing remains limited. Researchers have made several proposals for transforming programs to perform encrypted computations on less powerful encryption schemes. Yet current approaches do not support programs making control-flow decisions based on encrypted data. We introduce the concept of dataflow authentication (DFAuth) to enable such programs. DFAuth prevents an adversary from arbitrarily deviating from the dataflow of a program. Our technique hence offers protections against the side-channel attacks described previously. We implemented two flavors of DFAuth, a Java bytecode-to-bytecode compiler, and an SGX enclave running a small and program-independent trusted code base. We applied DFAuth to a neural network performing machine learning on sensitive medical data and a smart charging scheduler for electric vehicles. Our transformation yields a neural network with encrypted weights, which can be evaluated on encrypted inputs in  \\( 12.55 \\,\\mathrm{m}\\mathrm{s} \\) . Our protected scheduler is capable of updating the encrypted charging plan in approximately 1.06 seconds.}
+}
+
+
+@article{DBLP:journals/tissec/IyerM22,
+	author = {Padmavathi Iyer and
+                  Amirreza Masoumzadeh},
+	title = {Learning Relationship-Based Access Control Policies from Black-Box
+                  Systems},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {22:1--22:36},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517121},
+	doi = {10.1145/3517121},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/IyerM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Access control policies are crucial in securing data in information systems. Unfortunately, often times, such policies are poorly documented, and gaps between their specification and implementation prevent the system users, and even its developers, from understanding the overall enforced policy of a system. To tackle this problem, we propose the first of its kind systematic approach for learning the enforced authorizations from a target system by interacting with and observing it as a black box. The black-box view of the target system provides the advantage of learning its overall access control policy without dealing with its internal design complexities. Furthermore, compared to the previous literature on policy mining and policy inference, we avoid exhaustive exploration of the authorization space by minimizing our observations. We focus on learning relationship-based access control (ReBAC) policy, and show how we can construct a deterministic finite automaton (DFA) to formally characterize such an enforced policy. We theoretically analyze our proposed learning approach by studying its termination, correctness, and complexity. Furthermore, we conduct extensive experimental analysis based on realistic application scenarios to establish its cost, quality of learning, and scalability in practice.}
+}
+
+
+@article{DBLP:journals/tissec/QianGSWWGLW22,
+	author = {Yaguan Qian and
+                  Yankai Guo and
+                  Qiqi Shao and
+                  Jiamin Wang and
+                  Bin Wang and
+                  Zhaoquan Gu and
+                  Xiang Ling and
+                  Chunming Wu},
+	title = {{EI-MTD:} Moving Target Defense for Edge Intelligence against Adversarial
+                  Attacks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {23:1--23:24},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517806},
+	doi = {10.1145/3517806},
+	timestamp = {Wed, 08 Mar 2023 11:21:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/QianGSWWGLW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Edge intelligence has played an important role in constructing smart cities, but the vulnerability of edge nodes to adversarial attacks becomes an urgent problem. A so-called adversarial example can fool a deep learning model on an edge node for misclassification. Due to the transferability property of adversarial examples, an adversary can easily fool a black-box model by a local substitute model. Edge nodes in general have limited resources, which cannot afford a complicated defense mechanism like that on a cloud data center. To address the challenge, we propose a dynamic defense mechanism, namely EI-MTD. The mechanism first obtains robust member models of small size through differential knowledge distillation from a complicated teacher model on a cloud data center. Then, a dynamic scheduling policy, which builds on a Bayesian Stackelberg game, is applied to the choice of a target model for service. This dynamic defense mechanism can prohibit the adversary from selecting an optimal substitute model for black-box attacks. We also conduct extensive experiments to evaluate the proposed mechanism, and results show that EI-MTD could protect edge intelligence effectively against adversarial attacks in black-box settings.}
+}
+
+
+@article{DBLP:journals/tissec/AkaviaLRRSV22,
+	author = {Adi Akavia and
+                  Max Leibovich and
+                  Yehezkel S. Resheff and
+                  Roey Ron and
+                  Moni Shahar and
+                  Margarita Vald},
+	title = {Privacy-Preserving Decision Trees Training and Prediction},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {3},
+	pages = {24:1--24:30},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517197},
+	doi = {10.1145/3517197},
+	timestamp = {Mon, 25 Jul 2022 08:41:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AkaviaLRRSV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the era of cloud computing and machine learning, data has become a highly valuable resource. Recent history has shown that the benefits brought forth by this data driven culture come at a cost of potential data leakage. Such breaches have a devastating impact on individuals and industry, and lead the community to seek privacy preserving solutions. A promising approach is to utilize Fully Homomorphic Encryption ( \\( \\mathsf {FHE } \\) ) to enable machine learning over encrypted data, thus providing resiliency against information leakage. However, computing over encrypted data incurs a high computational overhead, thus requiring the redesign of algorithms, in an “ \\( \\mathsf {FHE } \\) -friendly” manner, to maintain their practicality. In this work we focus on the ever-popular tree based methods, and propose a new privacy-preserving solution to training and prediction for trees over data encrypted with homomorphic encryption. Our solution employs a low-degree approximation for the step-function together with a lightweight interactive protocol, to replace components of the vanilla algorithm that are costly over encrypted data. Our protocols for decision trees achieve practical usability demonstrated on standard UCI datasets encrypted with fully homomorphic encryption. In addition, the communication complexity of our protocols is independent of the tree size and dataset size in prediction and training, respectively, which significantly improves on prior works.1}
+}
+
+
+@article{DBLP:journals/tissec/FenskeM0S22,
+	author = {Ellis Fenske and
+                  Akshaya Mani and
+                  Aaron Johnson and
+                  Micah Sherr},
+	title = {Accountable Private Set Cardinality for Distributed Measurement},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {25:1--25:35},
+	year = {2022},
+	url = {https://doi.org/10.1145/3477531},
+	doi = {10.1145/3477531},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/FenskeM0S22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce cryptographic protocols for securely and efficiently computing the cardinality of set union and set intersection. Our private set-cardinality protocols (PSC) are designed for the setting in which a large set of parties in a distributed system makes observations, and a small set of parties with more resources and higher reliability aggregates the observations. PSC allows for secure and useful statistics gathering in privacy-preserving distributed systems. For example, it allows operators of anonymity networks such as Tor to securely answer the questions: How many unique users are using the network? and How many hidden services are being accessed? We prove the correctness and security of PSC in the Universal Composability framework against an active adversary that compromises all but one of the aggregating parties. Although successful output cannot be guaranteed in this setting, PSC either succeeds or terminates with an abort, and we furthermore make the adversary accountable for causing an abort by blaming at least one malicious party. We also show that PSC prevents adaptive corruption of the data parties from revealing past observations, which prevents them from being victims of targeted compromise, and we ensure safe measurements by making outputs differentially private. We present a proof-of-concept implementation of PSC and use it to demonstrate that PSC operates with low computational overhead and reasonable bandwidth. It can count tens of thousands of unique observations from tens to hundreds of data-collecting parties while completing within hours. PSC is thus suitable for daily measurements in a distributed system.}
+}
+
+
+@article{DBLP:journals/tissec/LehmanAKL022,
+	author = {Sarah M. Lehman and
+                  Abrar S. Alrumayh and
+                  Kunal Kolhe and
+                  Haibin Ling and
+                  Chiu C. Tan},
+	title = {Hidden in Plain Sight: Exploring Privacy Risks of Mobile Augmented
+                  Reality Applications},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {26:1--26:35},
+	year = {2022},
+	url = {https://doi.org/10.1145/3524020},
+	doi = {10.1145/3524020},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/LehmanAKL022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile augmented reality systems are becoming increasingly common and powerful, with applications in such domains as healthcare, manufacturing, education, and more. This rise in popularity is thanks in part to the functionalities offered by commercially available vision libraries such as ARCore, Vuforia, and Google’s ML Kit; however, these libraries also give rise to the possibility of a hidden operations threat, that is, the ability of a malicious or incompetent application developer to conduct additional vision operations behind the scenes of an otherwise honest AR application without alerting the end-user. In this article, we present the privacy risks associated with the hidden operations threat and propose a framework for application development and runtime permissions targeted specifically at preventing the execution of hidden operations. We follow this with a set of experimental results, exploring the feasibility and utility of our system in differentiating between user-expectation-compliant and non-compliant AR applications during runtime testing, for which preliminary results demonstrate accuracy of up to 71%. We conclude with a discussion of open problems in the areas of software testing and privacy standards in mobile AR systems.}
+}
+
+
+@article{DBLP:journals/tissec/OliveriB22,
+	author = {Andrea Oliveri and
+                  Davide Balzarotti},
+	title = {In the Land of MMUs: Multiarchitecture OS-Agnostic Virtual Memory
+                  Forensics},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {27:1--27:32},
+	year = {2022},
+	url = {https://doi.org/10.1145/3528102},
+	doi = {10.1145/3528102},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/OliveriB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The first step required to perform any analysis of a physical memory image is the reconstruction of the virtual address spaces, which allows translating virtual addresses to their corresponding physical offsets. However, this phase is often overlooked, and the challenges related to it are rarely discussed in the literature. Practical tools solve the problem by using a set of custom heuristics tailored on a very small number of well-known operating systems (OSs) running on few architectures. In this article, we look for the first time at all the different ways the virtual to physical translation can be operated in 10 different CPU architectures. In each case, we study the inviolable constraints imposed by the memory management unit that can be used to build signatures to recover the required data structures from memory without any knowledge about the running OS. We build a proof-of-concept tool to experiment with the extraction of virtual address spaces showing the challenges of performing an OS-agnostic virtual to physical address translation in real-world scenarios. We conduct experiments on a large set of 26 different OSs and a use case on a real hardware device. Finally, we show a possible usage of our technique to retrieve information about user space processes running on an unknown OS without any knowledge of its internals.}
+}
+
+
+@article{DBLP:journals/tissec/CramptonEGKM22,
+	author = {Jason Crampton and
+                  Eduard Eiben and
+                  Gregory Z. Gutin and
+                  Daniel Karapetyan and
+                  Diptapriyo Majumdar},
+	title = {Valued Authorization Policy Existence Problem: Theory and Experiments},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {28:1--28:32},
+	year = {2022},
+	url = {https://doi.org/10.1145/3528101},
+	doi = {10.1145/3528101},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/CramptonEGKM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent work has shown that many problems of satisfiability and resiliency in workflows may be viewed as special cases of the authorization policy existence problem (APEP), which returns an authorization policy if one exists and “No” otherwise. However, in many practical settings it would be more useful to obtain a “least bad” policy than just a “No,” where “least bad” is characterized by some numerical value indicating the extent to which the policy violates the base authorization relation and constraints. Accordingly, we introduce the Valued APEP, which returns an authorization policy of minimum weight, where the (non-negative) weight is determined by the constraints violated by the returned solution. We then establish a number of results concerning the parameterized complexity of Valued APEP. We prove that the problem is fixed-parameter tractable (FPT) if the set of constraints satisfies two restrictions, but is intractable if only one of these restrictions holds. (Most constraints known to be of practical use satisfy both restrictions.) Our analysis is based on the novel concept of a user profile. We also introduce a new type of resiliency problem in the context of workflow satisfiability, show how it can be addressed using Valued APEP, and use this to build a set of benchmark instances for Valued APEP. We describe two different formulations of this problem using mixed integer programming and report the results of computational experiments which solve the problem using these formulations as input to a general-purpose solver. Our results show that the formulation which employs the user profile concept, has FPT-like running time and usually significantly outperforms our naive formulation of the problem.}
+}
+
+
+@article{DBLP:journals/tissec/IdanF22,
+	author = {Lihi Idan and
+                  Joan Feigenbaum},
+	title = {PRShare: {A} Framework for Privacy-preserving, Interorganizational
+                  Data Sharing},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {29:1--29:38},
+	year = {2022},
+	url = {https://doi.org/10.1145/3531225},
+	doi = {10.1145/3531225},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/IdanF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the task of interorganizational data sharing, in which data owners, data clients, and data subjects have different and sometimes competing privacy concerns. One real-world scenario in which this problem arises concerns law-enforcement use of phone-call metadata: The data owner is a phone company, the data clients are law-enforcement agencies, and the data subjects are individuals who make phone calls. A key challenge in this type of scenario is that each organization uses its own set of proprietary intraorganizational attributes to describe the shared data; such attributes cannot be shared with other organizations. Moreover, data-access policies are determined by multiple parties and may be specified using attributes that are not directly comparable with the ones used by the owner to specify the data. We propose a system architecture and a suite of protocols that facilitate dynamic and efficient interorganizational data sharing, while allowing each party to use its own set of proprietary attributes to describe the shared data and preserving the confidentiality of both data records and proprietary intraorganizational attributes. We introduce the novel technique of Attribute-Based Encryption with Oblivious Attribute Translation (OTABE), which plays a crucial role in our solution. This extension of attribute-based encryption uses semi-trusted proxies to enable dynamic and oblivious translation between proprietary attributes that belong to different organizations; it supports hidden access policies, direct revocation, and fine-grained, data-centric keys and queries. We prove that our OTABE-based framework is secure in the standard model and provide two real-world use cases.}
+}
+
+
+@article{DBLP:journals/tissec/StojmenovicSSB22,
+	author = {Milica Stojmenovic and
+                  Eric Spero and
+                  Milos Stojmenovic and
+                  Robert Biddle},
+	title = {What is Beautiful is Secure},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {30:1--30:30},
+	year = {2022},
+	url = {https://doi.org/10.1145/3533047},
+	doi = {10.1145/3533047},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/StojmenovicSSB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Visual appeal has been shown to influence perceptions of usability and credibility, and we hypothesize that something similar is happening with user judgments of website security: What is beautiful is secure. Web certificates provide reliable information about a website’s level of security, presented in browser interfaces. Users should use this to inform their trust decisions online, but evidence from laboratory studies and real-world usage suggests that they do not. We conducted two studies—one in lab, and one online—in which participants view and interact with websites with high and low visual appeal, and various security levels, and then make security-related judgments. In both studies, participants consistently rated visually appealing websites as more secure, and indicated they would be more likely to enter sensitive information into visually appealing websites—even when they were less secure. Our results provide evidence that users rely on visual appeal when making security and trust decisions on websites. We discuss how these results may be used to help users.}
+}
+
+
+@article{DBLP:journals/tissec/Nussbaum022,
+	author = {Eyal Nussbaum and
+                  Michael Segal},
+	title = {Privacy Analysis of Query-Set-Size Control},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {31:1--31:19},
+	year = {2022},
+	url = {https://doi.org/10.1145/3532774},
+	doi = {10.1145/3532774},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/Nussbaum022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The publication of user data for statistical analysis and research can be extremely beneficial for both academic and commercial uses, such as statistical research and recommendation systems. To maintain user privacy when such a publication occurs many databases employ anonymization techniques, either on the query results or the data itself. In this article, we examine and analyze the privacy offered when using the query-set-size control method for aggregate queries over a data structures representing various topologies. We focus on the mathematical queries of minimum, maximum, median, and average and show some query types that may be used to extract hidden information. We prove some combinations of these queries will maintain a measurable level of privacy even when using multiple queries. We offer a privacy probability measure, indicating the probability of an attacker to obtain information defined as sensitive by utilizing legitimate queries over such a system. Our results are mathematically proven and backed by simulations using vehicular network data based on the TAPASCologne project.}
+}
+
+
+@article{DBLP:journals/tissec/CuiSSSY22,
+	author = {Jinhua Cui and
+                  Shweta Shinde and
+                  Satyaki Sen and
+                  Prateek Saxena and
+                  Pinghai Yuan},
+	title = {Dynamic Binary Translation for {SGX} Enclaves},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {32:1--32:40},
+	year = {2022},
+	url = {https://doi.org/10.1145/3532862},
+	doi = {10.1145/3532862},
+	timestamp = {Mon, 28 Aug 2023 21:37:06 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/CuiSSSY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Enclaves, such as those enabled by Intel SGX, offer a hardware primitive for shielding user-level applications from the OS. While enclaves are a useful starting point, code running in the enclave requires additional checks whenever control or data is transferred to/from the untrusted OS. The enclave-OS interface on SGX, however, can be extremely large if we wish to run existing unmodified binaries inside enclaves. This article presents Ratel, a dynamic binary translation engine running inside SGX enclaves on Linux. Ratel offers complete interposition, the ability to interpose on all executed instructions in the enclave and monitor all interactions with the OS. Instruction-level interposition offers a general foundation for implementing a large variety of inline security monitors in thefuture. We take a principled approach in explaining why complete interposition on SGX is challenging. We draw attention to five design decisions in SGX that create fundamental trade-offs between performance and ensuring complete interposition, and we explain how to resolve them in the favor of complete interposition. To illustrate the utility of the Ratel framework, we present the first attempt to offer binary compatibility with existing software on SGX. We report that Ratel offers binary compatibility with over 200 programs we tested, including micro-benchmarks and real applications, such as Linux shell utilities. Runtimes for two programming languages, namely, Python and R, tested with standard benchmarks work out-of-the-box on Ratel without any specialized handling.}
+}
+
+
+@article{DBLP:journals/tissec/BlairMAW0KE22,
+	author = {William Blair and
+                  Andrea Mambretti and
+                  Sajjad Arshad and
+                  Michael Weissbacher and
+                  William Robertson and
+                  Engin Kirda and
+                  Manuel Egele},
+	title = {HotFuzz: Discovering Temporal and Spatial Denial-of-Service Vulnerabilities
+                  Through Guided Micro-Fuzzing},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {33:1--33:35},
+	year = {2022},
+	url = {https://doi.org/10.1145/3532184},
+	doi = {10.1145/3532184},
+	timestamp = {Thu, 25 Aug 2022 08:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/BlairMAW0KE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzz testing repeatedly assails software with random inputs in order to trigger unexpected program behaviors, such as crashes or timeouts, and has historically revealed serious security vulnerabilities. In this article, we present HotFuzz, a framework for automatically discovering Algorithmic Complexity (AC) time and space vulnerabilities in Java libraries. HotFuzz uses micro-fuzzing, a genetic algorithm that evolves arbitrary Java objects in order to trigger the worst-case performance for a method under test. We define Small Recursive Instantiation (SRI) as a technique to derive seed inputs represented as Java objects to micro-fuzzing. After micro-fuzzing, HotFuzz synthesizes test cases that triggered AC vulnerabilities into Java programs and monitors their execution in order to reproduce vulnerabilities outside the fuzzing framework. HotFuzz outputs those programs that exhibit high resource utilization as witnesses for AC vulnerabilities in a Java library. We evaluate HotFuzz over the Java Runtime Environment (JRE), the 100 most popular Java libraries on Maven, and challenges contained in the DARPA Space and Time Analysis for Cybersecurity (STAC) program. We evaluate SRI’s effectiveness by comparing the performance of micro-fuzzing with SRI, measured by the number of AC vulnerabilities detected, to simply using empty values as seed inputs. In this evaluation, we verified known AC vulnerabilities, discovered previously unknown AC vulnerabilities that we responsibly reported to vendors, and received confirmation from both IBM and Oracle. Our results demonstrate that micro-fuzzing finds AC vulnerabilities in real-world software, and that micro-fuzzing with SRI-derived seed inputs outperforms using empty values in both the temporal and spatial domains.}
+}
+
+
+@article{DBLP:journals/tissec/ChernikovaO22,
+	author = {Alesia Chernikova and
+                  Alina Oprea},
+	title = {{FENCE:} Feasible Evasion Attacks on Neural Networks in Constrained
+                  Environments},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {25},
+	number = {4},
+	pages = {34:1--34:34},
+	year = {2022},
+	url = {https://doi.org/10.1145/3544746},
+	doi = {10.1145/3544746},
+	timestamp = {Mon, 28 Aug 2023 21:37:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ChernikovaO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As advances in Deep Neural Networks (DNNs) demonstrate unprecedented levels of performance in many critical applications, their vulnerability to attacks is still an open question. We consider evasion attacks at testing time against Deep Learning in constrained environments, in which dependencies between features need to be satisfied. These situations may arise naturally in tabular data or may be the result of feature engineering in specific application domains, such as threat detection in cyber security. We propose a general iterative gradient-based framework called FENCE for crafting evasion attacks that take into consideration the specifics of constrained domains and application requirements. We apply it against Feed-Forward Neural Networks trained for two cyber security applications: network traffic botnet classification and malicious domain classification, to generate feasible adversarial examples. We extensively evaluate the success rate and performance of our attacks, compare their improvement over several baselines, and analyze factors that impact the attack success rate, including the optimization objective and the data imbalance. We show that with minimal effort (e.g., generating 12 additional network connections), an attacker can change the model’s prediction from the Malicious class to Benign and evade the classifier. We show that models trained on datasets with higher imbalance are more vulnerable to our FENCE attacks. Finally, we demonstrate the potential of performing adversarial training in constrained domains to increase the model resilience against these evasion attacks.}
+}
