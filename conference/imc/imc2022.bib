@@ -1,0 +1,1896 @@
+@inproceedings{DBLP:conf/imc/ToornRSSJ22,
+	author = {Olivier van der Toorn and
+                  Roland van Rijswijk{-}Deij and
+                  Raffaele Sommese and
+                  Anna Sperotto and
+                  Mattijs Jonker},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Saving Brian's privacy: the perils of privacy exposure through reverse
+                  {DNS}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {1--13},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561424},
+	doi = {10.1145/3517745.3561424},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/ToornRSSJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given the importance of privacy, many Internet protocols are nowadays designed with privacy in mind (e.g., using TLS for confidentiality). Foreseeing all privacy issues at the time of protocol design is, however, challenging and may become near impossible when interaction out of protocol bounds occurs. One demonstrably not well understood interaction occurs when DHCP exchanges are accompanied by automated changes to the global DNS (e.g., to dynamically add hostnames for allocated IP addresses). As we will substantiate, this is a privacy risk: one may be able to infer device presence and network dynamics from virtually anywhere on the Internet --- and even identify and track individuals --- even if other mechanisms to limit tracking by outsiders (e.g., blocking pings) are in place. We present a first of its kind study into this risk. We identify networks that expose client identifiers in reverse DNS records and study the relation between the presence of clients and said records. Our results show a strong link: in 9 out of 10 cases, records linger for at most an hour, for a selection of academic, enterprise and ISP networks alike. We also demonstrate how client patterns and network dynamics can be learned, by tracking devices owned by persons named Brian over time, revealing shifts in work patterns caused by COVID-19 related work-from-home measures, and by determining a good time to stage a heist.}
+}
+
+
+@inproceedings{DBLP:conf/imc/AkiwateSJDcVS22,
+	author = {Gautam Akiwate and
+                  Raffaele Sommese and
+                  Mattijs Jonker and
+                  Zakir Durumeric and
+                  kc claffy and
+                  Geoffrey M. Voelker and
+                  Stefan Savage},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Retroactive identification of targeted {DNS} infrastructure hijacking},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {14--32},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561425},
+	doi = {10.1145/3517745.3561425},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/AkiwateSJDcVS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In 2019, the US Department of Homeland Security issued an emergency warning about DNS infrastructure tampering. This alert, in response to a series of attacks against foreign government websites, highlighted how a sophisticated attacker could leverage access to key DNS infrastructure to then hijack traffic and harvest valid login credentials for target organizations. However, even armed with this knowledge, identifying the existence of such incidents has been almost entirely via post hoc forensic reports (i.e., after a breach was found via some other method). Indeed, such attacks are particularly challenging to detect because they can be very short lived, bypass the protections of TLS and DNSSEC, and are imperceptible to users. Identifying them retroactively is even more complicated by the lack of fine-grained Internet-scale forensic data. This paper is a first attempt to make progress at this latter goal. Combining a range of longitudinal data from Internet-wide scans, passive DNS records, and Certificate Transparency logs, we have constructed a methodology for identifying potential victims of sophisticated DNS infrastructure hijacking and have used it to identify a range of victims (primarily government agencies), both those named in prior reporting, and others previously unknown.}
+}
+
+
+@inproceedings{DBLP:conf/imc/IzhikevichABDAP22,
+	author = {Liz Izhikevich and
+                  Gautam Akiwate and
+                  Briana Berger and
+                  Spencer Drakontaidis and
+                  Anna Ascheman and
+                  Paul Pearce and
+                  David Adrian and
+                  Zakir Durumeric},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{ZDNS:} a fast {DNS} toolkit for internet measurement},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {33--43},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561434},
+	doi = {10.1145/3517745.3561434},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/IzhikevichABDAP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Active DNS measurement is fundamental to understanding and improving the DNS ecosystem. However, the absence of an extensible, high-performance, and easy-to-use DNS toolkit has limited both the reproducibility and coverage of DNS research. In this paper, we introduce ZDNS, a modular and open-source active DNS measurement framework optimized for large-scale research studies of DNS on the public Internet. We describe ZDNS's architecture, evaluate its performance, and present two case studies that highlight how the tool can be used to shed light on the operational complexities of DNS. We hope that ZDNS will enable researchers to better---and in a more reproducible manner---understand Internet behavior.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KosekSMDB22,
+	author = {Mike Kosek and
+                  Luca Schumann and
+                  Robin Marx and
+                  Trinh Viet Doan and
+                  Vaibhav Bajpai},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{DNS} privacy with speed?: evaluating {DNS} over {QUIC} and its impact
+                  on web performance},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {44--50},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561445},
+	doi = {10.1145/3517745.3561445},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/KosekSMDB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Over the last decade, Web traffic has significantly shifted towards HTTPS due to an increased awareness for privacy. However, DNS traffic is still largely unencrypted, which allows user profiles to be derived from plaintext DNS queries. While DNS over TLS (DoT) and DNS over HTTPS (DoH) address this problem by leveraging transport encryption for DNS, both protocols are constrained by the underlying transport (TCP) and encryption (TLS) protocols, requiring multiple round-trips to establish a secure connection. In contrast, QUIC combines the transport and cryptographic handshake into a single round-trip, which allows the recently standardized DNS over QUIC (DoQ) to provide DNS privacy with minimal latency. In the first study of its kind, we perform distributed DoQ measurements across multiple vantage points to evaluate the impact of DoQ on Web performance. We find that DoQ excels over DoH, leading to significant improvements with up to 10% faster loads for simple webpages. With increasing complexity of webpages, DoQ even catches up to DNS over UDP (DoUDP) as the cost of encryption amortizes: With DoQ being only ~2% slower than DoUDP, encrypted DNS becomes much more appealing for the Web.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SommesecRCDSJ22,
+	author = {Raffaele Sommese and
+                  kc claffy and
+                  Roland van Rijswijk{-}Deij and
+                  Arnab Chattopadhyay and
+                  Alberto Dainotti and
+                  Anna Sperotto and
+                  Mattijs Jonker},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Investigating the impact of DDoS attacks on {DNS} infrastructure},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {51--64},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561458},
+	doi = {10.1145/3517745.3561458},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SommesecRCDSJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Denial of Service (DDoS) attacks both abuse and target core Internet infrastructures and services, including the Domain Name System (DNS). To characterize recent DDoS attacks against authoritative DNS infrastructure, we join two existing data sets - DoS activity inferred from a sizable darknet, and contemporaneous DNS measurement data - for a 17-month period (Nov. 20 - Mar. 22). Our measurements reveal evidence that millions of domains (up to 5% of the DNS namespace) experienced a DoS attack during our observation window. Most attacks did not substantially harm DNS performance, but in some cases we saw 100-fold increases in DNS resolution time, or complete unreachability. Our measurements captured a devastating attack against a large provider in the Netherlands (TransIP), and attacks against Russian infrastructure. Our data corroborates the value of known best practices to improve DNS resilience to attacks, including the use of anycast and topological redundancy in nameserver infrastructure. We discuss the strengths and weaknesses of our data sets for DDoS tracking and impact on the DNS, and promising next steps to improve our understanding of the evolving DDoS ecosystem.}
+}
+
+
+@inproceedings{DBLP:conf/imc/XiaWYLLXT22,
+	author = {Pengcheng Xia and
+                  Haoyu Wang and
+                  Zhou Yu and
+                  Xinyu Liu and
+                  Xiapu Luo and
+                  Guoai Xu and
+                  Gareth Tyson},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Challenges in decentralized name management: the case of {ENS}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {65--82},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561469},
+	doi = {10.1145/3517745.3561469},
+	timestamp = {Thu, 13 Jul 2023 13:56:51 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/XiaWYLLXT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DNS has often been criticized for inherent design flaws, which make the system vulnerable to attack. Further, domain names are not fully controlled by users, meaning that they can easily be taken down by authorities and registrars. Due to this, there have been efforts to build a decentralized name service that gives greater control to domain owners. The Ethereum Name Service (ENS) is a major example. Yet, no existing work has systematically studied this emerging system, particularly regarding security and misbehavior. To address this gap, we present the first large-scale measurement study of ENS. Our findings suggest that ENS has shown growth during its four years' evolution. We identify several security issues, including traditional name system problems, as well as new issues introduced by the unique properties of ENS. We find that attackers are abusing the system with thousands of squatting ENS names, a number of scam blockchain addresses and indexing of malicious websites. We further develop a new record persistence attack, to find that 22,716 .eth names (3.7% of all names) are vulnerable to name hijacking. Our exploration suggests that our community should invest more effort into the detection and mitigation of issues in decentralized name services.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MahimkarGLSXYPR22,
+	author = {Ajay Mahimkar and
+                  Zihui Ge and
+                  Xuan Liu and
+                  Yusef Shaqalle and
+                  Yu Xiang and
+                  Jennifer Yates and
+                  Shomik Pathak and
+                  Rick Reichel},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Aurora: conformity-based configuration recommendation to improve {LTE/5G}
+                  service},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {83--97},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561455},
+	doi = {10.1145/3517745.3561455},
+	timestamp = {Mon, 20 Nov 2023 09:55:21 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MahimkarGLSXYPR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cellular service operators frequently tune the network configuration to optimize coverage, support seamless handovers, minimize channel interference, and improve the service performance experience to the end-users. Tuning such a complicated network is highly challenging because of the many configuration parameters, evolving complexity of cellular networks, and diverse requirements across voice, video, and data applications. Any misconfigurations or even poor settings can significantly negatively impact service quality. In this paper, we propose a new approach Aurora that derives best practices knowledge from exploration of the massive existing configuration in the network and uses conformity-based recommendation with performance-based filtering to improve cellular service. We implemented and evaluated Aurora using data from a very large LTE and 5G cellular service provider. Our operational experience over the last one year highlights the benefits of Aurora and exposes exciting research opportunities and challenges in configuration tuning and performance management.}
+}
+
+
+@inproceedings{DBLP:conf/imc/BaltaciCMGBOS22,
+	author = {Ayg{\"{u}}n Baltaci and
+                  Hendrik Cech and
+                  Nitinder Mohan and
+                  Fabien Geyer and
+                  Vaibhav Bajpai and
+                  J{\"{o}}rg Ott and
+                  Dominic Schupke},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Analyzing real-time video delivery over cellular networks for remote
+                  piloting aerial vehicles},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {98--112},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561465},
+	doi = {10.1145/3517745.3561465},
+	timestamp = {Sat, 30 Sep 2023 09:48:41 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/BaltaciCMGBOS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emerging Remote Piloting (RP) operations of electrified Unmanned Aerial Vehicles (UAVs) demand low-latency and high-quality video delivery to conduct safe operations in the low-altitude airspace. Although cellular networks are one of the prominent candidates to provide connectivity for such operations, their ground-centric nature limits their capabilities in achieving seamless and reliable aerial connectivity. In this paper, we study the feasibility of supporting RP operations with low latency and high-quality video delivery over commercial cellular networks. By setting up an adaptive bitrate video transmission pipeline with the Google Congestion Control (GCC) and Self-Clocked Rate Adaptation for Multimedia (SCReAM) Congestion Control (CC) algorithms, we analyze the video delivery performance for the RP application requirements and compare the performance of GCC and SCReAM against constant bitrate video delivery. Our results show that low-latency video delivery with < 300 ms playback latency between full-HD and 4K resolution can be maintained up to about 95% of the time in the air. While static bitrate video delivery outperforms adaptive streaming in urban location with abundant link capacity, the latter becomes advantageous in rural locations, where the link capacity is affected by fluctuations. Although the study's findings highlight the capabilities of cellular networks in delivering low-latency video for a safety-critical aerial service, we also discuss the potential improvements and future research challenges for enabling safe operations and meeting the service requirements using cellular networks. We release our collected traces and the video transmission pipeline as open-source to facilitate research in this field.}
+}
+
+
+@inproceedings{DBLP:conf/imc/AbdullahQQ22,
+	author = {Muhammad Abdullah and
+                  Zafar Ayyub Qazi and
+                  Ihsan Ayyub Qazi},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Causal impact of Android go on mobile web performance},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {113--129},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561456},
+	doi = {10.1145/3517745.3561456},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/AbdullahQQ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid growth in the number of entry-level smartphones and mobile broadband subscriptions in developing countries has served as a motivation for several projects focused on improving mobile users' quality of experience (QoE). One such initiative is the development of Android Go, a customized operating system designed to run over entry-level smartphones. Today, more than 80% entry-level Android smartphones run Android Go. Despite its growing popularity, its effectiveness in improving the Web QoE remains unclear. This paper presents the first independent empirical analysis of Android Go's causal impact on mobile Web performance. We use a combination of controlled experiments and a set of methodological approaches from the econometrics literature to find unbiased estimates of the average causal effect. Our analysis provides insights that have implications for different stakeholders in the ecosystem of entry-level devices.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MichelTGB22,
+	author = {Fran{\c{c}}ois Michel and
+                  Martino Trevisan and
+                  Danilo Giordano and
+                  Olivier Bonaventure},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A first look at starlink performance},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {130--136},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561416},
+	doi = {10.1145/3517745.3561416},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MichelTGB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With new Low Earth Orbit satellite constellations such as Starlink, satellite-based Internet access is becoming an alternative to traditional fixed and wireless technologies with comparable throughputs and latencies. In this paper, we investigate the user-perceived performance of Starlink. Our measurements show that latency remains low and does not vary significantly under idle or lightly loaded links. Compared to another commercial Internet access using a geostationary satellite, Starlink achieves higher TCP throughput and provides faster web browsing. To avoid interference from performance enhancing proxies commonly used in satellite networks, we also use QUIC to assess performance under load and packet loss. Our results indicate that delay and packet loss increase slightly under load for both upload and download.}
+}
+
+
+@inproceedings{DBLP:conf/imc/PerdicesPTGM22,
+	author = {Daniel Perdices and
+                  Gianluca Perna and
+                  Martino Trevisan and
+                  Danilo Giordano and
+                  Marco Mellia},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {When satellite is all you have: watching the internet from 550 ms},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {137--150},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561432},
+	doi = {10.1145/3517745.3561432},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/PerdicesPTGM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Satellite Communication (SatCom) offers internet connectivity where traditional infrastructures are too expensive to deploy. When using satellites in a geostationary orbit, the distance from Earth forces a round trip time higher than 550 ms. Coupled with the limited and shared capacity of the physical link, this poses a challenge to the traditional internet access quality we are used to. In this paper, we present the first passive characterization of the traffic carried by an operational SatCom network. With this unique vantage point, we observe the performance of the SatCom technology, as well as the usage habits of subscribers in different countries in Europe and Africa. We highlight the implications of such technology on Internet usage and functioning, and we pin-point technical challenges due to the CDN and DNS resolution issues, while discussing possible optimizations that the ISP could implement to improve the service offered to SatCom subscribers.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KassemRPS22,
+	author = {Mohamed M. Kassem and
+                  Aravindh Raman and
+                  Diego Perino and
+                  Nishanth Sastry},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A browser-side view of starlink connectivity},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {151--158},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561457},
+	doi = {10.1145/3517745.3561457},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/KassemRPS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LEO satellite "mega-constellations" such as SpaceX\'s Starlink, Amazon\'s Kuiper, OneWeb are launching thousands of satellites annually, promising high-bandwidth low-latency connectivity. To quantify the achievable performance of such providers, we carry out a measurement study of the spatial and temporal characteristics as well as the geographic variability of the connectivity provided by Starlink, the current leader in this space. We do this by building and deploying a browser extension that provides data about web performance seen by 28 users from 10 cities across the world. We complement this with performance tests run from three measurement nodes hosted by volunteer enthusiasts in the UK, EU and USA. Our findings suggest that although Starlink offers some of the best web performance figures among the ISPs observed, there are important sources of variability in performance such as weather conditions. The bent-pipe connection to a satellite and back to earth also forms a significant component of the observed latency. We also observe frequent and significant packet losses of up to 50% of packets, which appear to be correlated with handovers between satellites. This has an effect on achievable throughput even when using modern congestion control protocols such as BBR or CUBIC.}
+}
+
+
+@inproceedings{DBLP:conf/imc/JonkerAAcBVRS22,
+	author = {Mattijs Jonker and
+                  Gautam Akiwate and
+                  Antonia Affinito and
+                  kc claffy and
+                  Alessio Botta and
+                  Geoffrey M. Voelker and
+                  Roland van Rijswijk{-}Deij and
+                  Stefan Savage},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Where .ru?: assessing the impact of conflict on russian domain infrastructure},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {159--165},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561423},
+	doi = {10.1145/3517745.3561423},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/JonkerAAcBVRS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The hostilities in Ukraine have driven unprecedented forces, both from third-party countries and in Russia, to create economic barriers. In the Internet, these manifest both as internal pressures on Russian sites to (re-)patriate the infrastructure they depend on (e.g., naming and hosting) and external pressures arising from Western providers disassociating from some or all Russian customers. While quite a bit has been written about this both from a policy perspective and anecdotally, our paper places the question on an empirical footing and directly measures longitudinal changes in the makeup of naming, hosting and certificate issuance for domains in the Russian Federation.}
+}
+
+
+@inproceedings{DBLP:conf/imc/JainPXSG22,
+	author = {Akshath Jain and
+                  Deepayan Patra and
+                  Peijing Xu and
+                  Justine Sherry and
+                  Phillipa Gill},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {The ukrainian internet under attack: an {NDT} perspective},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {166--178},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561449},
+	doi = {10.1145/3517745.3561449},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/JainPXSG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {On February 24, 2022, Russia began a large-scale invasion of Ukraine, the first widespread conflict in a country with high levels of network penetration. Because the Internet was designed with resilience under warfare in mind, the war in Ukraine offers the networking community a unique opportunity to evaluate whether and to what extent this design goal has been realized. We provide an early glimpse at Ukrainian network resilience over 54 days of war using data from Measurement Lab's Network Diagnostic Tool (NDT). We find that NDT users' network performance did indeed degrade - e.g. with average packet loss rates increasing by as much as 500% relative to pre-wartime baselines in some regions - and that the intensity of the degradation correlated with the presence of Russian troops in the region. Performance degradation also correlated with changes in traceroute paths; we observed an increase in path diversity and significant changes to routing decisions at Ukrainian border Autonomous Systems (ASes) post-invasion. Overall, the use of diverse and changing paths speaks to the resilience of the Internet's underlying routing algorithms, while the correlated degradation in performance highlights a need for continued efforts to ensure usability and stability during war.}
+}
+
+
+@inproceedings{DBLP:conf/imc/XueMVAKCE22,
+	author = {Diwen Xue and
+                  Benjamin Mixon{-}Baca and
+                  ValdikSS and
+                  Anna Ablove and
+                  Beau Kujath and
+                  Jedidiah R. Crandall and
+                  Roya Ensafi},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{TSPU:} Russia's decentralized censorship system},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {179--194},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561461},
+	doi = {10.1145/3517745.3561461},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/XueMVAKCE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Russia\'s Sovereign RuNet was designed to build a Russian national firewall. Previous anecdotes and isolated events in the past two years reflected centrally coordinated censorship behaviors across multiple ISPs, suggesting the deployment of "special equipment" in networks, colloquially known as "TSPU". Despite the TSPU comprising a critical part of the technical stack of RuNet, very little is known about its design, its capabilities, or the extent of its deployment. In this paper, we develop novel techniques and run in-country and remote measurements to discover the how, what, and where of TSPU\'s interference with users\' Internet traffic. We identify different types of blocking mechanisms triggered by SNI, IP, and QUIC, and we find the TSPU to be in-path and stateful, and possesses unique state-management characteristics. Using fragmentation behaviors as fingerprints, we identify over one million endpoints in Russia from 650 ASes that are behind TSPU devices and find that 70% of them are at most two hops away from the end IP. Considering that TSPU devices progressed from ideation to deployment in three years, we fear that the emerging TSPU architecture may become a blueprint for other countries with similar network topology.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KaplanGMS22,
+	author = {Levi Kaplan and
+                  Nicole Gerzon and
+                  Alan Mislove and
+                  Piotr Sapiezynski},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Measurement and analysis of implied identity in ad delivery optimization},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {195--209},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561450},
+	doi = {10.1145/3517745.3561450},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/KaplanGMS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Online services such as Facebook and Google serve as a popular way by which users today are exposed to products, services, viewpoints, and opportunities. These services implement advertising platforms that enable precise targeting of platform users, and they optimize the delivery of ads to the subset of the targeted users predicted to be most receptive. Unfortunately, recent work has shown that such delivery can---often without the advertisers' knowledge---show ads to biased sets of users based only on the content of the ad. Such concerns are particularly acute for ads that contain pictures of people (e.g., job ads showing workers), as advertisers often select images to carefully convey their goals and values (e.g., to promote diversity in hiring). However, it remains unknown how ad delivery algorithms react to---and make delivery decisions based on---demographic features of people represented in such ad images. Here, we examine how one major advertising platform (Facebook) delivers ads that include pictures of people of varying ages, genders, and races. We develop techniques to isolate the effect of these demographic variables, using a combination of both stock photos and realistic synthetically-generated images of people. We find dramatic skews in who ultimately sees ads solely based on the demographics of the person in the ad. Ads are often delivered disproportionately to users similar to those pictured: images of Black people are shown more to Black users, and the age of the person pictured correlates positively with the age of the users to whom it is shown. But, this is not universal, and more complex effects emerge: older women see more images of children, while images of younger women are shown disproportionately to men aged 55 and older. These findings bring up novel technical, legal, and policy questions and underscore the need to better understand how platforms deliver ads today.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ZengMKR22,
+	author = {Eric Zeng and
+                  Rachel McAmis and
+                  Tadayoshi Kohno and
+                  Franziska Roesner},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {What factors affect targeting and bids in online advertising?: a field
+                  measurement study},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {210--229},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561460},
+	doi = {10.1145/3517745.3561460},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ZengMKR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Targeted online advertising is a well-known but extremely opaque phenomenon. Though the targeting capabilities of the ad tech ecosystem are public knowledge, from an outside perspective, it is difficult to measure and quantify ad targeting at scale. To shed light on the extent of targeted advertising on the web today, we conducted a controlled field measurement study of the ads shown to a representative sample of 286 participants in the U.S. Using a browser extension, we collected data on ads seen by users on 10 popular websites, including the topic of the ad, the value of the bid placed by the advertiser (via header bidding), and participants' perceptions of targeting. We analyzed how ads were targeted across individuals, websites, and demographic groups, how those factors affected the amount advertisers bid, and how those results correlated with participants' perceptions of targeting. Among our findings, we observed that the primary factors that affected targeting and bid values were the website the ad appeared on and individual user profiles. Surprisingly, we found few differences in how advertisers target and bid across demographic groups. We also found that high outliers in bid values (10x higher than baseline) may be indicative of retargeting. Our measurements provide a rare in situ view of targeting and bidding across a diversity of users.}
+}
+
+
+@inproceedings{DBLP:conf/imc/RandallSUSVSS22,
+	author = {Audrey Randall and
+                  Peter Snyder and
+                  Alisha Ukani and
+                  Alex C. Snoeren and
+                  Geoffrey M. Voelker and
+                  Stefan Savage and
+                  Aaron Schulman},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Measuring {UID} smuggling in the wild},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {230--243},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561415},
+	doi = {10.1145/3517745.3561415},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/RandallSUSVSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This work presents a systematic study of UID smuggling, an emerging tracking technique that is designed to evade browsers' privacy protections. Browsers are increasingly attempting to prevent cross-site tracking by partitioning the storage where trackers store user identifiers (UIDs). UID smuggling allows trackers to synchronize UIDs across sites by inserting UIDs into users' navigation requests. Trackers can thus regain the ability to aggregate users' activities and behaviors across sites, in defiance of browser protections. In this work, we introduce CrumbCruncher, a system for measuring UID smuggling in the wild by crawling the Web. Crumb-Cruncher provides several improvements over prior work on identifying UIDs and measuring tracking via Web crawling, including in distinguishing UIDs from session IDs, handling dynamic Web content, and synchronizing multiple crawlers. We use CrumbCruncher to measure the frequency of UID smuggling on the Web, and find that UID smuggling is present on more than eight percent of all navigations that we made. Furthermore, we perform an analysis of the entities involved in UID smuggling, and discuss their methods and possible motivations. We discuss how our findings can be used to protect users from UID smuggling, and release both our complete dataset and our measurement pipeline to aid in protection efforts.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MichelSKNR22,
+	author = {Oliver Michel and
+                  Satadal Sengupta and
+                  Hyojoon Kim and
+                  Ravi Netravali and
+                  Jennifer Rexford},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Enabling passive measurement of zoom performance in production networks},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {244--260},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561414},
+	doi = {10.1145/3517745.3561414},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MichelSKNR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video-conferencing applications impose high loads and stringent performance requirements on the network. To better understand and manage these applications, we need effective ways to measure performance in the wild. For example, these measurements would help network operators in capacity planning, troubleshooting, and setting QoS policies. Unfortunately, large-scale measurements of production networks cannot rely on end-host cooperation, and an in-depth analysis of packet traces requires knowledge of the header formats. Zoom is one of the most sophisticated and popular applications, but it uses a proprietary network protocol. In this paper, we demystify how Zoom works at the packet level, and design techniques for analyzing Zoom performance from packet traces. We conduct systematic controlled experiments to discover the relevant unencrypted fields in Zoom packets, as well as how to group streams into meetings and how to identify peer-to-peer meetings. We show how to use the header fields to compute metrics like media bit rates, frame sizes and rates, and latency and jitter, and demonstrate the value of these fine-grained metrics on a 12-hour trace of Zoom traffic on our campus network.}
+}
+
+
+@inproceedings{DBLP:conf/imc/VarvelloCZ22,
+	author = {Matteo Varvello and
+                  Hyunseok Chang and
+                  Yasir Zaki},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Performance characterization of videoconferencing in the wild},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {261--273},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561442},
+	doi = {10.1145/3517745.3561442},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/VarvelloCZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the recent "work from home" trend, recent years have seen a growing research interest in understanding existing commercial videoconferencing systems in terms of their performance and architecture. One important question left unanswered that we tackle in this paper is: what is the performance of videoconferencing in the wild? Answering this generic question is challenging because it requires, ideally, a world-wide testbed composed of diverse devices (mobile, desktop), operating systems (Windows, MacOS, Linux) and network accesses (mobile and WiFi). In this paper, we present such a testbed that we develop to evaluate videoconferencing performance in the wild via automation for Android and Chromium-based browsers. We deploy our testbed via 85 distinct devices worldwide and collect performance metrics from 58 hours\' worth of more than 2,000 videoconferencing sessions from 37 unique countries in the world. This, to the best of our knowledge, is the largest collection of videoconferencing performance data in the wild.}
+}
+
+
+@inproceedings{DBLP:conf/imc/PaulLGGB22,
+	author = {Udit Paul and
+                  Jiamo Liu and
+                  Mengyang Gu and
+                  Arpit Gupta and
+                  Elizabeth M. Belding},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {The importance of contextualization of crowdsourced active speed test
+                  measurements},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {274--289},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561441},
+	doi = {10.1145/3517745.3561441},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/PaulLGGB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Crowdsourced speed test measurements, such as those by Ookla® and Measurement Lab (M-Lab), offer a critical view of network access and performance from the user's perspective. However, we argue that taking these measurements at surface value is problematic. It is essential to contextualize these measurements to understand better what the attained upload and download speeds truly measure. To this end, we develop a novel Broadband Subscription Tier (BST) methodology that associates a speed test data point with a residential broadband subscription plan. Our evaluation of this methodology with the FCC's MBA dataset shows over 96% accuracy. We augment approximately 1.5M Ookla and M-Lab speed test measurements from four major U.S. cities with the BST methodology. We show that many low-speed data points are attributable to lower-tier subscriptions and not necessarily poor access. Then, for a subset of the measurement sample (80k data points), we quantify the impact of access link type (WiFi or wired), WiFi spectrum band and RSSI (if applicable), and device memory on speed test performance. Interestingly, we observe that measurement time of day only marginally affects the reported speeds. Finally, we show that the median throughput reported by Ookla speed tests can be up to two times greater than M-Lab measurements for the same subscription tier, city, and ISP due to M-Lab's employment of different measurement methodologies. Based on our results, we put forward a set of recommendations for both speed test vendors and the FCC to con-textualize speed test data points and correctly interpret measured performance.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KirciVV22,
+	author = {Ege Cem Kirci and
+                  Martin Vahlensieck and
+                  Laurent Vanbever},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {"Is my internet down?": sifting through user-affecting outages with
+                  Google trends},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {290--297},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561428},
+	doi = {10.1145/3517745.3561428},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/KirciVV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {What are the worst outages for Internet users? How long do they last, and how wide are they? Such questions are hard to answer via traditional outage detection and analysis techniques, as they conventionally rely on network-level signals and do not necessarily represent users' perceptions of connectivity. We present SIFT, a detection and analysis tool for capturing user-affecting Internet outages. SIFT leverages users' aggregated web search activity to detect outages. Specifically, SIFT starts by building a timeline of users' interests in outage-related search queries. It then analyzes this timeline looking for spikes of user interest. Finally, SIFT characterizes these spikes in duration, geographical extent, and simultaneously trending search terms which may help understand root causes, such as power outages or associated ISPs. We use SIFT to collect more than 49 000 Internet outages in the United States over the last two years. Among others, SIFT reveals that user-affecting outages: (i) do not happen uniformly: half of them originate from 10 states only; (ii) can affect users for a long time: 10% of them last at least 3 hours; and (iii) can have a broad impact: 11% of them simultaneously affect at least 10 distinct states. SIFT annotations also reveal a perhaps overlooked fact: outages are often caused by climate and/or power-related issues.}
+}
+
+
+@inproceedings{DBLP:conf/imc/PirauxNRBD22,
+	author = {Maxime Piraux and
+                  Louis Navarre and
+                  Nicolas Rybowski and
+                  Olivier Bonaventure and
+                  Benoit Donnet},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Revealing the evolution of a cloud provider through its network weather
+                  map},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {298--304},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561462},
+	doi = {10.1145/3517745.3561462},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/PirauxNRBD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Researchers often face the lack of data on large operational networks to understand how they are used, how they behave, and sometimes how they fail. This data is crucial to drive the evolution of Internet protocols and develop techniques such as traffic engineering, DDoS detection and mitigation. Companies that have access to measurements from operational networks and services leverage this data to improve the availability, speed, and resilience of their Internet services. Unfortunately, the availability of large datasets, especially collected regularly over a long period of time, is a daunting task that remains scarce in the literature. We tackle this problem by releasing a dataset collected over roughly two years of observations of a major cloud company (OVH). Our dataset, called OVH Weather dataset, represents the evolution of more than 180 routers, 1,100 internal links, 500 external links, and their load percentages in the backbone network over time. Our dataset has a high density with snapshots taken every five minutes, totaling more than 500,000 files. In this paper, we also illustrate how our dataset could be used to study the backbone networks evolution. Finally, our dataset opens several exciting research questions that we make available to the research community.}
+}
+
+
+@inproceedings{DBLP:conf/imc/XuC22,
+	author = {Xiaokun Xu and
+                  Mark Claypool},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Measurement of cloud-based game streaming system response to competing
+                  {TCP} cubic or {TCP} {BBR} flows},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {305--316},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561464},
+	doi = {10.1145/3517745.3561464},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/XuC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud-based game streaming is emerging as a convenient way to play games when clients have a good network connection. However, high-quality game streams need high bitrates and low latencies, a challenge when competing for network capacity with other flows. While some network aspects of cloud-based game streaming have been studied, missing are comparative performance and congestion responses to competing TCP flows. This paper presents results from experiments that measure how three popular commercial cloud-based game streaming systems - Google Stadia, NVidia GeForce Now, and Amazon Luna - respond and then recover to TCP Cubic and TCP BBR flows on a congested network link. Analysis of bitrates, loss rates and round-trip times show the three systems have markedly different responses to the arrival and departure of competing network traffic.}
+}
+
+
+@inproceedings{DBLP:conf/imc/RuthFAPTSD22,
+	author = {Kimberly Ruth and
+                  Aurore Fass and
+                  Jonathan Azose and
+                  Mark Pearson and
+                  Emma Thomas and
+                  Caitlin Sadowski and
+                  Zakir Durumeric},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A world wide view of browsing the world wide web},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {317--336},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561418},
+	doi = {10.1145/3517745.3561418},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/RuthFAPTSD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we perform the first large-scale study of how people spend time on the web. Our study is based on anonymous, aggregate telemetry data from several hundred million Google Chrome users who have explicitly enabled sharing URLs with Google and who have usage statistic reporting enabled. We analyze the distribution of web traffic, the types of websites that people visit and spend the most time on, the differences between desktop and mobile browsing behavior, the geographical differences in web usage, and the most popular websites in regions worldwide. Our study sheds light on online user behavior and how the research community can more accurately analyze the web in the future.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KupoluyiCVCHSZ22,
+	author = {Jesutofunmi Kupoluyi and
+                  Moumena Chaqfeh and
+                  Matteo Varvello and
+                  Russell Coke and
+                  Waleed Hashmi and
+                  Lakshmi Subramanian and
+                  Yasir Zaki},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Muzeel: assessing the impact of JavaScript dead code elimination on
+                  mobile web performance},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {335--348},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561427},
+	doi = {10.1145/3517745.3561427},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/KupoluyiCVCHSZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To quickly create interactive web pages, developers heavily rely on (large) general-purpose JavaScript libraries. This practice bloats web pages with complex unused functions dead code which are unnecessarily downloaded and processed by the browser. The identification and the elimination of these functions is an open problem, which this paper tackles with Muzeel, a black-box approach requiring neither knowledge of the code nor execution traces. While the state-of-the-art solutions stop analyzing JavaScript when the page loads, the core design principle of Muzeel is to address the challenge of dynamically analyzing JavaScript after the page is loaded, by emulating all possible user interactions with the page, such that the used functions (executed when interactivity events fire) are accurately identified, whereas unused functions are filtered out and eliminated. We run Muzeel against 15,000 popular web pages and show that half of the 300,000 JavaScript files used in these pages have at least 70% of unused functions, accounting for 55% of the files' sizes. To assess the impact of dead code elimination on Mobile Web performance, we serve 200 Muzeel-ed pages to several Android phones and browsers, under variable network conditions. Our evaluation shows that Muzeel can speed up page loads by 25-30% thanks to a combination of lower CPU and bandwidth usage. Most importantly, we show that such savings are achieved while maintaining the pages' visual appearance and interactive functionality.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ChaliseNV22,
+	author = {Shekhar Chalise and
+                  Hoang Dai Nguyen and
+                  Phani Vadrevu},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Your speaker or my snooper?: measuring the effectiveness of web audio
+                  browser fingerprints},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {349--357},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561435},
+	doi = {10.1145/3517745.3561435},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ChaliseNV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We conduct the first systematic study of the effectiveness of Web Audio API-based browser fingerprinting mechanisms and present new insights. First, we show that audio fingerprinting vectors, unlike other prior vectors, reveal an apparent fickleness with some users' browsers giving away differing fingerprints in repeated attempts. However, we show that it is possible to devise a graph-based analysis mechanism to collectively consider all the different fingerprints left by users' browsers and thus craft a highly stable fingerprinting mechanism. Next, we investigate the diversity of audio fingerprints and compare this with prior fingerprinting techniques. Our results show that audio fingerprints are much less diverse than other vectors with only 95 distinct fingerprints among 2093 users. At the same time, further analysis shows that web audio fingerprinting can potentially bring considerable additive value to existing fingerprinting mechanisms. For instance, our results show that the addition of web audio fingerprinting causes a 9.6% increase in entropy when compared to using Canvas fingerprinting alone. We also show that our results contradict the current security and privacy recommendations provided by W3C regarding audio fingerprinting.}
+}
+
+
+@inproceedings{DBLP:conf/imc/HantkeS22,
+	author = {Florian Hantke and
+                  Ben Stock},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{HTML} violations and where to find them: a longitudinal analysis
+                  of specification violations in {HTML}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {358--373},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561437},
+	doi = {10.1145/3517745.3561437},
+	timestamp = {Mon, 26 Jun 2023 20:46:05 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/HantkeS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increased interest in the web in the 90s, everyone wanted to have their own website. However, given the lack of knowledge, such pages contained numerous HTML specification violations. This was when browser vendors came up with a new feature - error tolerance. This feature, part of browsers ever since, makes the HTML parsers tolerate and instead fix violations temporarily. On the downside, it risks security issues like Mutation XSS and Dangling Markup. In this paper, we asked, do we still need to rely on error tolerance, or can we abandon this security issue? To answer this question, we study the evolution of HTML violations over the past eight years. To this end, we identify security-relevant violations and leverage Common Crawl to check archived pages for these. Using this framework, we automatically analyze over 23K popular domains over time. This analysis reveals that while the number of violations has decreased over the years, more than 68% of all domains still contain at least one HTML violation today. While this number is obviously too high for browser vendors to tighten the parsing process immediately [59, 63], we show that automatic approaches could quickly correct up to 46% of today's violations. Based on our findings, we propose a roadmap for how we could tighten this process to improve the quality of HTML markup in the long run.}
+}
+
+
+@inproceedings{DBLP:conf/imc/Ruth0WVD22,
+	author = {Kimberly Ruth and
+                  Deepak Kumar and
+                  Brandon Wang and
+                  Luke Valenta and
+                  Zakir Durumeric},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Toppling top lists: evaluating the accuracy of popular website lists},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {374--387},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561444},
+	doi = {10.1145/3517745.3561444},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/Ruth0WVD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Researchers rely on lists of popular websites like the Alexa Top Million both to measure the web and to evaluate proposed protocols and systems. Prior work has questioned the correctness and consistency of these lists, but without ground truth data to compare against, there has been no direct evaluation of list accuracy. In this paper, we evaluate the relative accuracy of the most popular top lists of websites. We derive a set of popularity metrics from server-side requests seen at Cloudflare, which authoritatively serves a significant portion of the most popular websites. We evaluate top lists against these metrics and show that most lists capture web popularity poorly, with the exception of the Chrome User Experience Report (CrUX) dataset, which is the most accurate top list compared to Cloudflare across all metrics. We explore the biases that lower the accuracy of other lists, and we conclude with recommendations for researchers studying the web in the future.}
+}
+
+
+@inproceedings{DBLP:conf/imc/NyayachavadiZM22,
+	author = {Anish Nyayachavadi and
+                  Jingyuan Zhu and
+                  Harsha V. Madhyastha},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Characterizing "permanently dead" links on Wikipedia},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {388--394},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561451},
+	doi = {10.1145/3517745.3561451},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/NyayachavadiZM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is common for a web page to include links which help visitors discover related pages on other sites. When a link ceases to work (e.g., because the page that it is pointing to either no longer exists or has been moved), users could rely on an archived copy of the linked page. However, due to the incompleteness of web archives, a sizeable fraction of dead links have no archived copies. We study this problem in the context of Wikipedia. Broken external references on Wikipedia which lack archived copies are marked as "permanently dead". But, we find this term to be a misnomer, as many previously dysfunctional links work fine today. For links which do not work, it is rarely the case that no archived copies exist. Instead, we find that the current policy for determining which archived copies for an URL are not erroneous is too conservative, and many URLs are archived for the first time only after they no longer work. We discuss the implications of our findings for Wikipedia and the web at large.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ZirngiblSSGC22,
+	author = {Johannes Zirngibl and
+                  Lion Steger and
+                  Patrick Sattler and
+                  Oliver Gasser and
+                  Georg Carle},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Rusty clusters?: dusting an IPv6 research foundation},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {395--409},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561440},
+	doi = {10.1145/3517745.3561440},
+	timestamp = {Mon, 26 Jun 2023 20:46:05 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/ZirngiblSSGC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The long-running IPv6 Hitlist service is an important foundation for IPv6 measurement studies. It helps to overcome infeasible, complete address space scans by collecting valuable, unbiased IPv6 address candidates and regularly testing their responsiveness. However, the Internet itself is a quickly changing ecosystem that can affect long-running services, potentially inducing biases and obscurities into ongoing data collection means. Frequent analyses but also updates are necessary to enable a valuable service to the community. In this paper, we show that the existing hitlist is highly impacted by the Great Firewall of China, and we offer a cleaned view on the development of responsive addresses. While the accumulated input shows an increasing bias towards some networks, the cleaned set of responsive addresses is well distributed and shows a steady increase. Although it is a best practice to remove aliased prefixes from IPv6 hitlists, we show that this also removes major content delivery networks. More than 98% of all IPv6 addresses announced by Fastly were labeled as aliased and Cloudflare prefixes hosting more than 10 M domains were excluded. Depending on the hitlist usage, e.g., higher layer protocol scans, inclusion of addresses from these providers can be valuable. Lastly, we evaluate different new address candidate sources, including target generation algorithms to improve the coverage of the current IPv6 Hitlist. We show that a combination of different methodologies is able to identify 5.6 M new, responsive addresses. This accounts for an increase by 174% and combined with the current IPv6 Hitlist, we identify 8.8 M responsive addresses.}
+}
+
+
+@inproceedings{DBLP:conf/imc/RichterGB22,
+	author = {Philipp Richter and
+                  Oliver Gasser and
+                  Arthur W. Berger},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Illuminating large-scale IPv6 scanning in the internet},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {410--418},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561452},
+	doi = {10.1145/3517745.3561452},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/RichterGB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While scans of the IPv4 space are ubiquitous, today little is known about scanning activity in the IPv6 Internet. In this work, we present a longitudinal and detailed empirical study on large-scale IPv6 scanning behavior in the Internet, based on firewall logs captured at some 230,000 hosts of a major Content Distribution Network (CDN). We develop methods to identify IPv6 scans, assess current and past levels of IPv6 scanning activity, and study dominant characteristics of scans, including scanner origins, targeted services, and insights on how scanners find target IPv6 addresses. Where possible, we compare our findings to what can be assessed from publicly available traces. Our work identifies and highlights new challenges to detect scanning activity in the IPv6 Internet, and uncovers that today's scans of the IPv6 space show widely different characteristics when compared to the more well-known IPv4 scans.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ZhangHVO22,
+	author = {Ying Zhang and
+                  Nathan Hu and
+                  Carl Verge and
+                  Scott O'Brien},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Cross-layer diagnosis of optical backbone failures},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {419--432},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561447},
+	doi = {10.1145/3517745.3561447},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ZhangHVO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Optical backbone networks, the physical infrastructure interconnecting data centers, are the cornerstones of Wide-Area Network (WAN) connectivity and resilience. Yet, there is limited research on failure characteristics and diagnosis in large-scale operational optical networks. This paper fills the gap by presenting a comprehensive analysis and modeling of optical network failures from a production optical backbone consisting of hundreds of sites and thousands of optical devices. Subsequently, we present a diagnosis system for optical backbone failures, consisting of a multi-level dependency graph and a root-cause inference algorithm across the IP and optical layers. Further, we share our experiences of operating this system for six years and introduce three methods to make the outcome actionable in practice. With empirical evaluation, we demonstrate its high accuracy of 96% and a ticket reduction of 95% for our optical backbone.}
+}
+
+
+@inproceedings{DBLP:conf/imc/AndersonSBDB22,
+	author = {Scott Anderson and
+                  Loqman Salamatian and
+                  Zachary S. Bischof and
+                  Alberto Dainotti and
+                  Paul Barford},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {iGDB: connecting the physical and logical layers of the internet},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {433--448},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561443},
+	doi = {10.1145/3517745.3561443},
+	timestamp = {Tue, 21 Mar 2023 20:59:34 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/AndersonSBDB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Maps of physical and logical Internet connectivity that are informed by and consistent with each other can expand scope and improve accuracy in analysis of performance, robustness and security. In this paper, we describe a methodology for linking physical and logical Internet maps that aims toward a consistent, cross-layer representation. Our approach is constructive and uses geographic location as the key feature for linking physical and logical layers. We begin by building a representation of physical connectivity using online sources to identify locations that house transport hardware (i.e., PoPs, colocation centers, IXPs, etc.), and approximate locations of links between these based on shortest-path rights-of-way. We then utilize standard data sources for generating maps of IP-level and AS-level logical connectivity, and graft these onto physical maps using geographic anchors. We implement our methodology in an open-source framework called the Internet Geographic Database (iGDB), which includes tools for updating measurement data and assuring internal consistency. iGDB is built to be used with ArcGIS, a geographic information system that provides broad capability for spatial analysis and visualization. We describe the details of the iGDB implementation and demonstrate how it can be used in a variety of settings.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SattlerAZC22,
+	author = {Patrick Sattler and
+                  Juliane Aulbach and
+                  Johannes Zirngibl and
+                  Georg Carle},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Towards a tectonic traffic shift?: investigating Apple's new relay
+                  network},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {449--457},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561426},
+	doi = {10.1145/3517745.3561426},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SattlerAZC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Apple recently published its first Beta of the iCloud Private Relay, a privacy protection service with promises resembling the ones of VPNs. The architecture consists of two layers (ingress and egress), operated by disjoint providers. The service is directly integrated into Apple's operating systems, providing a low entry-level barrier for a large user base. It seems to be set up for significant adoption with its relatively moderate entry-level price. This paper analyzes the iCloud Private Relay from a network perspective, its effect on the Internet, and future measurement-based research. We perform EDNS0 Client Subnet DNS queries to collect ingress relay addresses and find 1586 IPv4 addresses. Supplementary RIPE Atlas DNS measurements reveal 1575 IPv6 addresses. Knowing these addresses helps to detect clients communicating through the relay network passively. According to our scans, ingress addresses grew by 20% from January through April. Moreover, according to our RIPE Atlas DNS measurements, 5.3% of all probes use a resolver that blocks access to iCloud Private Relay. The analysis of our scans through the relay network verifies Apple's claim of rotating egress addresses. Nevertheless, it reveals that ingress and egress relays can be located in the same autonomous system, thus sharing similar routes, potentially allowing traffic correlation.}
+}
+
+
+@inproceedings{DBLP:conf/imc/WeintraubTNS22,
+	author = {Ben Weintraub and
+                  Christof Ferreira Torres and
+                  Cristina Nita{-}Rotaru and
+                  Radu State},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A flash(bot) in the pan: measuring maximal extractable value in private
+                  pools},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {458--471},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561448},
+	doi = {10.1145/3517745.3561448},
+	timestamp = {Tue, 21 Mar 2023 20:59:34 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/WeintraubTNS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rise of Ethereum has lead to a flourishing decentralized marketplace that has, unfortunately, fallen victim to frontrunning and Maximal Extractable Value (MEV) activities, where savvy participants game transaction orderings within a block for profit. One popular solution to address such behavior is Flashbots, a private pool with infrastructure and design goals aimed at eliminating the negative externalities associated with MEV. While Flashbots has established laudable goals to address MEV behavior, no evidence has been provided to show that these goals are achieved in practice. In this paper, we measure the popularity of Flashbots and evaluate if it is meeting its chartered goals. We find that (1) Flashbots miners account for over 99.9% of the hashing power in the Ethereum network, (2) powerful miners are making more than 2X what they were making prior to using Flashbots, while non-miners' slice of the pie has shrunk commensurately, (3) mining is just as centralized as it was prior to Flashbots with more than 90% of Flashbots blocks coming from just two miners, and (4) while more than 80% of MEV extraction in Ethereum is happening through Flashbots, 13.2% is coming from other private pools.}
+}
+
+
+@inproceedings{DBLP:conf/imc/DavanianF22,
+	author = {Ali Davanian and
+                  Michalis Faloutsos},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {MalNet: a binary-centric network-level profiling of IoT malware},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {472--487},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561463},
+	doi = {10.1145/3517745.3561463},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/DavanianF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Where are the IoT C2 servers located? What vulnerabilities does IoT malware try to exploit? What DDoS attacks are launched in practice? In this work, we conduct a large scale study to answer these questions. Specifically, we collect and dynamically analyze 1447 malware binaries on the day that they become publicly known between March 2021 and March 2022 from VirusTotal and MalwareBazaar. By doing this, we are able to observe and profile their behavior at the network level including: (a) C2 communication, (b) proliferation, and (c) issued DDoS attacks. Our comprehensive study provides the following key observations. First, we quantify the elusive behavior of C2 servers: 91% of the time a server does not respond to a second probe four hours after a successful probe. In addition, we find that 15% of the live servers that we find are not known by threat intelligence feeds available on VirusTotal. Second, we find that the IoT malware relies on fairly old vulnerabilities in its proliferation. Our binaries attempt to exploit 12 different vulnerabilities with 9 of them more than 4 years old, while the most recent one was 5 months old. Third, we observe the launch of 42 DDoS attacks that span 8 types of attacks, with two types of attacks targeting gaming servers. The promising results indicate the significant value of using a dynamic analysis approach that includes active measurements and probing towards detecting and containing IoT botnets.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SaidiMGF22,
+	author = {Said Jawad Saidi and
+                  Srdjan Matic and
+                  Georgios Smaragdakis and
+                  Oliver Gasser and
+                  Anja Feldmann},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Deep dive into the IoT backend ecosystem},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {488--503},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561431},
+	doi = {10.1145/3517745.3561431},
+	timestamp = {Sat, 30 Sep 2023 09:48:42 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/SaidiMGF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet of Things (IoT) devices are becoming increasingly ubiquitous, e.g., at home, in enterprise environments, and in production lines. To support the advanced functionalities of IoT devices, IoT vendors as well as service and cloud companies operate IoT backends---the focus of this paper. We propose a methodology to identify and locate them by (a) compiling a list of domains used exclusively by major IoT backend providers and (b) then identifying their server IP addresses. We rely on multiple sources, including IoT backend provider documentation, passive DNS data, and active scanning. For analyzing IoT traffic patterns, we rely on passive network flows from a major European ISP. Our analysis focuses on the top IoT backends and unveils diverse operational strategies---from operating their own infrastructure to utilizing the public cloud. We find that the majority of the top IoT backend providers are located in multiple locations and countries. Still, a handful are located only in one country, which could raise regulatory scrutiny as the client IoT devices are located in other regions. Indeed, our analysis shows that up to 35% of IoT traffic is exchanged with IoT backend servers located in other continents. We also find that at least six of the top IoT backends rely on other IoT backend providers. We also evaluate if cascading effects among the IoT backend providers are possible in the event of an outage, a misconfiguration, or an attack.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ChengWVC022,
+	author = {Ruizhi Cheng and
+                  Nan Wu and
+                  Matteo Varvello and
+                  Songqing Chen and
+                  Bo Han},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Are we ready for metaverse?: a measurement study of social virtual
+                  reality platforms},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {504--518},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561417},
+	doi = {10.1145/3517745.3561417},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ChengWVC022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Social virtual reality (VR) has the potential to gradually replace traditional online social media, thanks to recent advances in consumer-grade VR devices and VR technology itself. As the vital foundation for building the Metaverse, social VR has been extensively examined by the computer graphics and HCI communities. However, there has been little systematic study dissecting the network performance of social VR, other than hype in the industry. To fill this critical gap, we conduct an in-depth measurement study of five popular social VR platforms: AltspaceVR, Horizon Worlds, Mozilla Hubs, Rec Room, and VRChat. Our experimental results reveal that all these platforms are still in their early stage and face fundamental technical challenges to realize the grand vision of Metaverse. For example, their throughput, end-to-end latency, and on-device computation resource utilization increase almost linearly with the number of users, leading to potential scalability issues. We identify the platform servers' direct forwarding of avatar data for embodying users without further processing as the main reason for the poor scalability and discuss potential solutions to address this problem. Moreover, while the visual quality of the current avatar embodiment is low and fails to provide a truly immersive experience, improving the avatar embodiment will consume more network bandwidth and further increase computation overhead and latency, making the scalability issues even more pressing.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ScherrerLP022,
+	author = {Simon Scherrer and
+                  Markus Legner and
+                  Adrian Perrig and
+                  Stefan Schmid},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Model-based insights on the performance, fairness, and stability of
+                  {BBR}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {519--537},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561420},
+	doi = {10.1145/3517745.3561420},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/ScherrerLP022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Google's BBR is the most prominent result of the recently revived quest for efficient, fair, and flexible congestion-control algorithms (CCAs). While BBR has been investigated by numerous studies, previous work still leaves gaps in the understanding of BBR performance: Experiment-based studies generally only consider network settings that researchers can set up with manageable effort, and model-based studies neglect important issues like convergence. To complement previous BBR analyses, this paper presents a fluid model of BBRv1 and BBRv2, allowing both efficient simulation under a wide variety of network settings and analytical treatment such as stability analysis. By experimental validation, we show that our fluid model provides highly accurate predictions of BBR behavior. Through extensive simulations and theoretical analysis, we arrive at several insights into both BBR versions, including a previously unknown bufferbloat issue in BBRv2.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MishraTL22,
+	author = {Ayush Mishra and
+                  Wee Han Tiu and
+                  Ben Leong},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Are we heading towards a BBR-dominant internet?},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {538--550},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561429},
+	doi = {10.1145/3517745.3561429},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MishraTL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since its introduction in 2016, BBR has grown in popularity rapidly and likely already accounts for more than 40% of the Internet's downstream traffic. In this paper, we investigate the following question: given BBR's performance benefits and rapid adoption, is BBR likely to completely replace CUBIC just like how CUBIC replaced New Reno? We present a mathematical model that allows us to estimate BBR's throughput to within a 5% error when competing with CUBIC flows. Using this model, we show that even though BBR currently has a throughput advantage over CUBIC, this advantage will be diminished as the proportion of BBR flows increases. Therefore, if throughput is a key consideration, it is likely that the Internet will reach a stable mixed distribution of CUBIC and BBR flows. This mixed distribution will be a Nash Equilibrium where none of the flows will have the performance incentive to switch between CUBIC and BBR. Our methodology is also applicable to other recently proposed congestion control algorithms, like BBRv2 and PCC Vivace. We make a bold prediction that BBR is unlikely to completely replace the CUBIC on the Internet in the near future.}
+}
+
+
+@inproceedings{DBLP:conf/imc/VargasGGB22,
+	author = {Santiago Vargas and
+                  Gautham Gunapati and
+                  Anshul Gandhi and
+                  Aruna Balasubramanian},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Are mobiles ready for BBR?},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {551--559},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561438},
+	doi = {10.1145/3517745.3561438},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/VargasGGB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {BBR is a new congestion control algorithm that has seen widespread Internet adoption in recent years with an estimated 40% of Internet traffic volume as BBR traffic. While many studies examine the performance and fairness of BBR on desktops and servers, there is still a question of how BBR would behave on mobile devices. This is especially important because mobiles represent a large segment of Internet devices. In this work, we study the potential performance bottlenecks of BBR if it were to be deployed on Android devices. We compare the performance of BBR and the default congestion control algorithm Cubic for different devices and device configurations. We find that BBR performs poorly compared to Cubic, especially under low-end device configurations. Further investigation reveals that this poor performance is because of packet pacing which is enabled in BBR by default. Pacing increases the computational overhead, which can affect performance for low-end devices. To address this problem, we propose a first cut solution that modifies BBR's pacing behavior to improve performance while still retaining the benefits of packet pacing.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MishraLL22,
+	author = {Ayush Mishra and
+                  Sherman Lim and
+                  Ben Leong},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Understanding speciation in {QUIC} congestion control},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {560--566},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561459},
+	doi = {10.1145/3517745.3561459},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MishraLL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The QUIC standard is expected to replace TCP in HTTP 3.0. While QUIC implements a number of the standard features of TCP differently, most QUIC stacks re-implement standard congestion control algorithms. This is because these algorithms are well-understood and time-tested. However, there is currently no systematic way to ensure that these QUIC congestion control protocols are implemented correctly and predict how these different QUIC implementations will interact with other congestion control algorithms on the Internet. To address this gap, we present QUICbench, which, to the best of our knowledge, is the first congestion control benchmarking tool for QUIC stacks. QUICbench determines how closely the implementation of a QUIC congestion control algorithm conforms to the reference (kernel) implementation by comparing their respective throughput-delay tradeoffs. QUICbench can also be used to systematically compare a new QUIC implementation to previous and different implementations of both QUIC and kernel-based congestion control algorithms. Our measurement study suggests that there is already significant deviation between the existing QUIC implementations of standard congestion control algorithms from the reference implementations. We demonstrate how QUICbench can help us identify the implementation differences responsible for these deviations so that they can be suitably corrected.}
+}
+
+
+@inproceedings{DBLP:conf/imc/GhabashnehZLSSR22,
+	author = {Ehab Ghabashneh and
+                  Yimeng Zhao and
+                  Cristian Lumezanu and
+                  Neil Spring and
+                  Srikanth Sundaresan and
+                  Sanjay G. Rao},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A microscopic view of bursts, buffer contention, and loss in data
+                  centers},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {567--580},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561430},
+	doi = {10.1145/3517745.3561430},
+	timestamp = {Mon, 27 Nov 2023 07:46:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/GhabashnehZLSSR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Managing data center networks with low loss requires understanding traffic dynamics at short (millisecond) time-scales, especially the burstiness of traffic, and to what extent bursts contend for switch buffer resources. Yet, monitoring traffic over such intervals is a challenge at scale. We make two contributions. First, we present Millisampler, a lightweight traffic characterization tool deployed across all Meta hosts. Millisampler takes a host-centric perspective to data collection, which is scalable and allows for correlating traffic patterns with transport layer statistics. Further, simultaneous collection of Millisampler data across servers in a rack enables analysis of how synchronized traffic interacts in rack buffers. In particular, we study contention, which occurs when multiple bursts arrive simultaneously at the dynamically shared rack buffer. Second, we present a data-center-scale analysis of contention, including a unique joint analysis of burstiness, contention, and loss. Our results show (i) contention characteristics vary widely across and within a region and is influenced by service placement; (ii) contention varies significantly over short time-scales; (iii) bursts are likely to encounter some contention; and (iv) higher contention need not lead to more loss, and the interplay with workload and burst properties matters. We discuss implications for data center design including service placement, buffer sharing algorithms and congestion control.}
+}
+
+
+@inproceedings{DBLP:conf/imc/EduMPPSS22,
+	author = {Jide S. Edu and
+                  Cliona Mulligan and
+                  Fabio Pierazzi and
+                  Jason Polakis and
+                  Guillermo Suarez{-}Tangil and
+                  Jose M. Such},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Exploring the security and privacy risks of chatbots in messaging
+                  services},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {581--588},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561433},
+	doi = {10.1145/3517745.3561433},
+	timestamp = {Tue, 21 Mar 2023 20:59:34 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/EduMPPSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The unprecedented adoption of messaging platforms for work and recreation has made it an attractive target for malicious actors. In this context, third-party apps (so-called chatbots) offer a variety of attractive functionalities that support the experience in large channels. Unfortunately, under the current permission and deployment models, chatbots in messaging systems could steal information from channels without the victim\'s awareness. In this paper, we propose a methodology that incorporates static and dynamic analysis for automatically assessing security and privacy issues in messaging platform chatbots. We also provide preliminary findings from the popular Discord platform that highlight the risks that chatbots pose to users. Unlike other popular platforms like Slack or MS Teams, Discord does not implement user-permission checks---a task entrusted to third-party developers. Among others, we find that 55% of chatbots from a leading Discord repository request the "administrator" permission, and only 4.35% of chatbots with permissions actually provide a privacy policy.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SubramaniMSVP22,
+	author = {Karthika Subramani and
+                  William Melicher and
+                  Oleksii Starov and
+                  Phani Vadrevu and
+                  Roberto Perdisci},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {PhishInPatterns: measuring elicited user interactions at scale on
+                  phishing websites},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {589--604},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561467},
+	doi = {10.1145/3517745.3561467},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SubramaniMSVP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite phishing attacks and detection systems being extensively studied, phishing is still on the rise and has recently reached an all-time high. Attacks are becoming increasingly sophisticated, leveraging new web design patterns to add perceived legitimacy and, at the same time, evade state-of-the-art detectors and web security crawlers. In this paper, we study phishing attacks from a new angle, focusing on how modern phishing websites are designed. Specifically, we aim to better understand what type of user interactions are elicited by phishing websites and how their user experience (UX) and interface (UI) design patterns can help them accomplish two main goals: i) lend a sense of professionalism and legitimacy to the phishing website, and ii) contribute to evading phishing detectors and web security crawlers. To study phishing at scale, we built an intelligent crawler that combines browser automation with machine learning methods to simulate user interactions with phishing pages and explore their UX and UI characteristics. Using our novel methodology, we explore more than 50,000 phishing websites and make the following new observations: i) modern phishing sites often impersonate a brand (e.g., Microsoft Office), but surprisingly, without necessarily cloning or closely mimicking the design of the corresponding legitimate website; ii) they often elicit personal information using a multi-step (or multi-page) process, to mimic users' experience on legitimate sites; iii) they embed modern user verification systems (including CAPTCHAs); and ironically, iv) they sometimes conclude the phishing experience by reassuring the user that their private data was not stolen. We believe our findings can help the community gain a more in-depth understanding of how web-based phishing attacks work from a users' perspective and can be used to inform the development of more accurate and robust phishing detectors.}
+}
+
+
+@inproceedings{DBLP:conf/imc/PradeepPBDRCLVL22,
+	author = {Amogh Pradeep and
+                  Muhammad Talha Paracha and
+                  Protick Bhowmick and
+                  Ali Davanian and
+                  Abbas Razaghpanah and
+                  Taejoong Chung and
+                  Martina Lindorfer and
+                  Narseo Vallina{-}Rodriguez and
+                  Dave Levin and
+                  David R. Choffnes},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A comparative analysis of certificate pinning in Android {\&}
+                  iOS},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {605--618},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561439},
+	doi = {10.1145/3517745.3561439},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/PradeepPBDRCLVL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {TLS certificate pinning is a security mechanism used by applications (apps) to protect their network traffic against malicious certificate authorities (CAs), in-path monitoring, and other methods of TLS tampering. Pinning can provide enhanced security to defend against malicious third-party access to sensitive data in transit (e.g., to protect sensitive banking and health care information), but can also hide an app\'s personal data collection from users and auditors. Prior studies found pinning was rarely used in the Android ecosystem, except in high-profile, security-sensitive apps; and, little is known about its usage on iOS and across mobile platforms. In this paper, we thoroughly investigate the use of certificate pinning on Android and iOS. We collect 5,079 unique apps from the two official app stores: 575 common apps, 1,000 popular apps each, and 1,000 randomly selected apps each. We develop novel, cross-platform, static and dynamic analysis techniques to detect the usage of certificate pinning. Thus, our study offers a more comprehensive understanding of certificate pinning than previous studies. We find certificate pinning as much as 4 times more widely adopted than reported in recent studies. More specifically, we find that 0.9% to 8% of Android apps and 2.5% to 11% of iOS apps use certificate pinning at run time (depending on the aforementioned sets of apps). We then investigate which categories of apps most frequently use pinning (e.g., apps in the "finance" category), which destinations are typically pinned (e.g., first-party destinations vs those used by third-party libraries), which certificates are pinned and how these are pinned (e.g., CA vs leaf certificates), and the connection security for pinned connections vs unpinned ones (e.g., the use of weak ciphers or improper certificate validation). Lastly, we investigate how many pinned connections are amenable to binary instrumentation to reveal the contents of their connections; for those that are, we analyze the data sent over pinned connections to understand what is protected by pinning.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KarlMMJL22,
+	author = {Manuel Karl and
+                  Marius Musch and
+                  Guoli Ma and
+                  Martin Johns and
+                  Sebastian Lekies},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {No keys to the kingdom required: a comprehensive investigation of
+                  missing authentication vulnerabilities in the wild},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {619--632},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561446},
+	doi = {10.1145/3517745.3561446},
+	timestamp = {Mon, 26 Jun 2023 20:46:05 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/KarlMMJL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, applications expose administrative endpoints to the Web that can be used for a plethora of security sensitive actions. Typical use cases range from running small snippets of user-provided code for rapid prototyping, administering databases, and running CI/CD pipelines, to managing job scheduling on whole clusters of computing devices. While accessing these applications over the Web make the lives of their users easier, they can be leveraged by attackers to compromise the underlying infrastructure if not properly configured. In this paper, we comprehensively investigate inadequate authentication mechanisms in such web endpoints. For this, we looked at 25 popular applications and exposed 18 of them to the Internet because they were either vulnerable in their default configuration or were easy to misconfigure. We identified ongoing attacks against 7 of them, some were even compromised within a few hours from the deployment. In an Internet-wide scan of the IPv4 address space, we examine the prevalence of such vulnerable applications at scale. Thereby, we found 4,221 vulnerable instances, enough to create a small botnet with little technical knowledge. We observed these vulnerable instances and found that even after four weeks, more than half of them were still online and vulnerable. Currently, most of the identified vulnerabilities are seen as features of the software and are often not yet considered by common security scanners or vulnerability databases. However, via our experiments, we found missing authentication vulnerabilities to be common and already actively exploited at scale. They thus represent a prevalent but often disregarded danger.}
+}
+
+
+@inproceedings{DBLP:conf/imc/BennettSD22,
+	author = {Nathaniel Bennett and
+                  Rebekah Sowards and
+                  Casey T. Deccio},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {SPFail: discovering, measuring, and remediating vulnerabilities in
+                  email sender validation},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {633--646},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561468},
+	doi = {10.1145/3517745.3561468},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/BennettSD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Email is an important medium for Internet communication. Secure email infrastructure is therefore of utmost importance. In this paper we discuss two software vulnerabilities discovered in libSPF2, a library used by mail servers across the Internet for email sender validation with the Sender Policy Framework (SPF). We describe a technique to remotely detect the vulnerabilities in a production mail server, and we use that technique to quantify the vulnerability of Internet mail servers. We also monitor the patch rate of affected servers by performing continuous measurement over a period of roughly four months. We identify thousands of vulnerable mail servers, some associated with high-profile mail providers. Even after private notifications and public disclosure of the vulnerabilities roughly 80% of the vulnerable servers remain vulnerable.}
+}
+
+
+@inproceedings{DBLP:conf/imc/HorowiczSS22,
+	author = {Eyal Horowicz and
+                  Tal Shapira and
+                  Yuval Shavitt},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A few shots traffic classification with mini-FlowPic augmentations},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {647--654},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561436},
+	doi = {10.1145/3517745.3561436},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/HorowiczSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet traffic classification has been intensively studied over the past decade due to its importance for traffic engineering and cyber security. One of the best solutions to several traffic classification problems is the FlowPic approach, where histograms of packet sizes in consecutive time slices are transformed into a picture that is fed into a Convolution Neural Network (CNN) model for classification. However, CNNs (and the FlowPic approach included) require a relatively large labeled flow dataset, which is not always easy to obtain. In this paper, we show that we can overcome this obstacle by replacing the large labeled dataset with a few samples of each class and by using augmentations in order to inflate the number of training samples. We show that common picture augmentation techniques can help, but accuracy improves further when introducing augmentation techniques that mimic network behavior such as changes in the RTT. Finally, we show that we can replace the large FlowPics suggested in the past with much smaller mini-FlowPics and achieve two advantages: improved model performance and easier engineering. Interestingly, this even improves accuracy in some cases.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ZhuVCKC22,
+	author = {Jiangchen Zhu and
+                  Kevin Vermeulen and
+                  {\'{I}}talo Cunha and
+                  Ethan Katz{-}Bassett and
+                  Matt Calder},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {The best of both worlds: high availability {CDN} routing without compromising
+                  control},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {655--663},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561421},
+	doi = {10.1145/3517745.3561421},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ZhuVCKC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Content delivery networks (CDNs) provide fast service to clients by replicating content at geographically distributed sites. Most CDNs route clients to a particular site using anycast or unicast with DNS-based redirection. We analyze anycast and unicast and explain why neither of them provides both precise control of user-to-site mapping and high availability in the face of failures, two fundamental goals of CDNs. Anycast compromises control (and hence performance), and unicast compromises availability. We then present new hybrid techniques and demonstrate via experiments on the real Internet that these techniques provide both a high level of traffic control and fast failover following site failures.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SinganamallaPAH22,
+	author = {Sudheesh Singanamalla and
+                  Muhammad Talha Paracha and
+                  Suleman Ahmad and
+                  Jonathan Hoyland and
+                  Luke Valenta and
+                  Yevgen Safronov and
+                  Peter Wu and
+                  Andrew Galloni and
+                  Kurtis Heimerl and
+                  Nick Sullivan and
+                  Christopher A. Wood and
+                  Marwan Fayed},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Respect the ORIGIN!: a best-case evaluation of connection coalescing
+                  in the wild},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {664--678},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561453},
+	doi = {10.1145/3517745.3561453},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/SinganamallaPAH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Connection coalescing, enabled by HTTP/2, permits a client to use an existing connection to request additional resources at the connected hostname. The potential for requests to be coalesced is hindered by the practice of domain sharding introduced by HTTP/1.1, because subresources are scattered across subdomains in an effort to improve performance with additional connections. When this happens, HTTP/2 clients invoke additional DNS queries and new connections to retrieve content that is available at the same server. ORIGIN Frame is an HTTP/2 extension that can be used by servers to inform clients about other domains that are reachable on the same connection. Despite being proposed by content delivery network (CDN) operators and standardized by the IETF in 2018, the extension has no known server implementation and is supported by only one browser. In this paper, we collect and characterize a large dataset. We use that dataset to model connection coalescing and identify a least-effort set of certificate changes that maximize opportunities for clients to coalesce. We then implemented and deployed ORIGIN Frame support at a large CDN. To evaluate and validate our modeling at scale, 5000 certificates were reissued. Passive measurements were conducted on production traffic over two weeks, during which we also actively measured on the 5000 domains.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SabnisS22,
+	author = {Anirudh Sabnis and
+                  Ramesh K. Sitaraman},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{JEDI:} model-driven trace generation for cache simulations},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {679--693},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561466},
+	doi = {10.1145/3517745.3561466},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SabnisS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A major obstacle for caching research is the increasing difficulty of obtaining original traces from production caching systems. Original traces are voluminous and also may contain private and proprietary information, and hence not generally made available to the public. The lack of original traces hampers our ability to evaluate new cache designs and provides the rationale for JEDI, our new synthetic trace generation tool. JEDI generates a synthetic trace that is "similar" to the original trace collected from a production cache, in particular, the two traces have similar object-level properties and produce similar hit rates in a cache simulation. JEDI uses a novel traffic model called Popularity-Size Footprint Descriptor (pFD) that concisely captures key properties of the original trace and uses the pFD to generate the synthetic trace. We show that the synthetic traces produced by JEDI can be used to accurately simulate a wide range of cache admission and eviction algorithms and the hit rates obtained from these simulations correspond closely to those obtained from simulations that use the original traces. JEDI will be provided to the public as open-source, along with a library of pFD\'s computed from traffic classes hosted on Akamai\'s production CDN. This will allow researchers to produce realistic synthetic traces for their own caching research.}
+}
+
+
+@inproceedings{DBLP:conf/imc/VermeulenGCCK22,
+	author = {Kevin Vermeulen and
+                  Ege G{\"{u}}rmeri{\c{c}}liler and
+                  {\'{I}}talo Cunha and
+                  David R. Choffnes and
+                  Ethan Katz{-}Bassett},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Internet scale reverse traceroute},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {694--715},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561422},
+	doi = {10.1145/3517745.3561422},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/VermeulenGCCK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Knowledge of Internet paths allows operators and researchers to better understand the Internet and troubleshoot problems. Paths are often asymmetric, so measuring just the forward path only gives partial visibility. Despite the existence of Reverse Traceroute, a technique that captures reverse paths (the sequence of routers traversed by traffic from an arbitrary, uncontrolled destination to a given source), this technique did not fulfill the needs of operators and the research community, as it had limited coverage, low throughput, and inconsistent accuracy. In this paper we design, implement and evaluate revtr 2.0, an Internet-scale Reverse Traceroute system that combines novel measurement approaches and studies with a large-scale deployment to improve throughput, accuracy, and coverage, enabling the first exploration of reverse paths at Internet scale. revtr 2.0 can run 15M reverse traceroutes in one day. This scale allows us to open the system to external sources and users, and supports tasks such as traffic engineering and troubleshooting.}
+}
+
+
+@inproceedings{DBLP:conf/imc/DuTFASc22,
+	author = {Ben Du and
+                  Cecilia Testart and
+                  Romain Fontugne and
+                  Gautam Akiwate and
+                  Alex C. Snoeren and
+                  kc claffy},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Mind your {MANRS:} measuring the {MANRS} ecosystem},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {716--729},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561419},
+	doi = {10.1145/3517745.3561419},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/DuTFASc22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mutually Agreed Norms on Routing Security (MANRS) is an industry-led initiative to improve Internet routing security by encouraging participating networks to implement a series of mandatory or recommended actions. MANRS members must register their IP prefixes in a trusted routing database and use such information to prevent propagation of invalid routing information. MANRS membership has increased significantly in recent years, but the impact of the MANRS initiative on the overall Internet routing security remains unclear. In this paper, we provide the first independent look into the MANRS ecosystem by using publicly available data to analyze the routing behavior of participant networks. We quantify MANRS participants' level of conformance with the stated requirements, and compare the behavior of MANRS and non-MANRS networks. While not all MANRS members fully comply with all required actions, we find that they are more likely to implement routing security practices described in MANRS actions. We assess the relevance of the MANRS effort in securing the overall routing ecosystem. We found that as of May 2022, over 83% of MANRS networks were conformant to the route filtering requirement by dropping BGP messages with invalid information according to authoritative records, and over 95% were conformant to the routing information facilitation requirement, registering their resources in authoritative databases.}
+}
+
+
+@inproceedings{DBLP:conf/imc/OliverALDc22,
+	author = {Leo Oliver and
+                  Gautam Akiwate and
+                  Matthew Luckie and
+                  Ben Du and
+                  kc claffy},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Stop, DROP, and {ROA:} effectiveness of defenses through the lens
+                  of {DROP}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {730--737},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3561454},
+	doi = {10.1145/3517745.3561454},
+	timestamp = {Tue, 07 May 2024 20:04:30 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/OliverALDc22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We analyze the properties of 712 prefixes that appeared in Spamhaus' Don't Route Or Peer (DROP) list over a nearly three-year period from June 2019 to March 2022. We show that attackers are subverting multiple defenses against malicious use of address space, including creating fraudulent Internet Routing Registry records for prefixes shortly before using them. Other attackers disguised their activities by announcing routes with spoofed origin ASes consistent with historic route announcements, and in one case, with the ASN in a Route Origin Authorization. We quantify the substantial and actively-exploited attack surface in unrouted address space, which warrants reconsideration of RPKI eligibility restrictions by RIRs, and reconsideration of AS0 policies by both operators and RIRs.}
+}
+
+
+@inproceedings{DBLP:conf/imc/GaoM22,
+	author = {Max Gao and
+                  Ricky K. P. Mok},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A scalable network event detection framework for darknet traffic},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {738--739},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563015},
+	doi = {10.1145/3517745.3563015},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/GaoM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unsolicited network traffic captured by network telescopes, namely darknet traffic, provides important data for studying malicious Internet activities, such as network scanning [9], the spread of malware [4], and DDoS attacks [6]. Inferring such activity in traffic often requires first obtaining fingerprints of the activity and searching historical traffic traces (e.g, pcaps) for that pattern. Traffic volume at the largest darknets can exceed 100GB/hour, rendering it challenging to process at the packet level. Aggregated flow-based metadata [2] can reduce computation, storage and I/O overhead at the expense of finer-grained information about the traffic. Customized data structures (e.g., [7]) and streaming algorithms (e.g., [5]) offer an alternative approach to extracting information from raw packets, but they are typically traffic tailored for estimating specific metrics and thus limited in their ability to detect a wide range of events. We propose a machine learning (ML)-based framework to detect events by characterizing traffic dynamics across many time series generated from raw traffic processed by the Corsaro software package [1]. Our method extracts signals of attacks in time-series statistics that can reveal promising time periods in which to further investigate an attack using raw packet traces.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SommeseJc22,
+	author = {Raffaele Sommese and
+                  Mattijs Jonker and
+                  kc claffy},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Observable {KINDNS:} validating {DNS} hygiene},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {740--741},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563016},
+	doi = {10.1145/3517745.3563016},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SommeseJc22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Internet's naming system (DNS) is a hierarchically structured database, with hundreds of millions of domains in a radically distributed management architecture. The distributed nature of the DNS is the primary factor that allowed it to scale to its current size, but it also brings security and stability risks. The Internet standards community (IETF) has published several operational best practices to improve DNS resilience, but operators must make their own decisions that tradeoff security, cost, and complexity. Since these decisions can impact the security of billions of Internet users, recently ICANN has proposed an initiative to codify best practices into a set of global norms to improve security: the Knowledge-Sharing and Instantiating Norms for DNS and Naming Security (KINDNS) [4]. A similar effort for routing security - Mutually Agreed Norms for Routing Security - provided inspiration for this effort. The MANRS program encourages operators to voluntarily commit to a set of practices that will improve collective routing security - a challenge when incentives to conform with these practices does not generate a clear return on investment for operators. One challenge for both initiatives is independent verification of conformance with the practices. The KINDNS conversation has just started, and stakeholders are still debating what should be in the set of practices. At this early stage, we analyze possible best practices in terms of their measurability by third parties, including a review of DNS measurement studies and available data sets (Table 1).}
+}
+
+
+@inproceedings{DBLP:conf/imc/EcheverriaC22,
+	author = {Mitziu Echeverria and
+                  Omar Chowdhury},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Demystifying the presence of cellular network attacks and misbehaviors},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {742--743},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563017},
+	doi = {10.1145/3517745.3563017},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/EcheverriaC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cellular networks nowadays are not only responsible for powering up worldwide communication systems, but also enable highly sensitive applications, such as the earthquake and tsunami warning system (ETWS), telemedicine, and autonomous vehicle communication. Due to its importance, one would expect this technology to be highly robust, secure, and reliable. However, even in the newest generations (i.e., 5G), this is not the case. Due to either implementation slipups [6, 11], errors in the standard [3, 5], or misconfigurations [2]. These errors enable numerous destructive attacks, enabling malicious parties to track a victim's location, disrupt cellular services, and eavesdrop on calls, among other implications. To make matters worse, developing defenses against these types of attacks is a non-trivial task as it requires network operator cooperation. Most importantly it requires a significant amount of resources to be allocated by network operators and device manufacturers [2]. To justify allocating resources to fix these issues, network operators need to quantify the misbehaviors and attacks being carried out in the wild. Unfortunately, there is no mechanism in place to perform this type of measurement. Furthermore, there is no empirical evidence of cellular network attacks occurring in the wild, which digresses the community from focusing on developing defenses. Instead, the defense community has to rely vastly on anecdotal evidence to motivate their work, such as the presence of rogue base stations near government facilities [8]. To provide the required empirical evidence and quantify the misbehaviors and attacks, we present HoneyLTE. HoneyLTE is the first tool that efficiently measures cellular network attacks and misbehaviors in the wild.}
+}
+
+
+@inproceedings{DBLP:conf/imc/SethuramanBD22,
+	author = {Manasvini Sethuraman and
+                  Zachary S. Bischof and
+                  Alberto Dainotti},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Analysis of IPv4 address space utilization with {ANT} {ISI} dataset
+                  and censys},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {744--745},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563018},
+	doi = {10.1145/3517745.3563018},
+	timestamp = {Tue, 21 Mar 2023 20:59:34 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/SethuramanBD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since 2003, the ANT Lab at ISI has used active measurements to conduct a census of the IPv4 address space [1]. Each census lasts approximately 2--3 months, scanning the entire IPv4 address space using ICMP ping probes and recording replies. To date, there have been 85 surveys. One of the by-products of these surveys is the address history dataset [5], which contains the ICMP responses from more than 1.4 billion IPv4 addresses over an 18 year period, starting in 2006.}
+}
+
+
+@inproceedings{DBLP:conf/imc/LeasIVD22,
+	author = {Rapha{\"{e}}l L{\'{e}}as and
+                  Justin Iurman and
+                  Eric Vyncke and
+                  Benoit Donnet},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Measuring IPv6 extension headers survivability with James},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {746--747},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563019},
+	doi = {10.1145/3517745.3563019},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/LeasIVD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This extended abstract introduces James, a new tool for measuring how IPv6 Extension Headers (IPv6 EHs) are processed in the network. James sends specially crafted Paris traceroute packets between a set of controlled vantage points. Early measurement results show that IPv6 EHs may be dropped in the network, depending on their type and the size of the Extension Header.}
+}
+
+
+@inproceedings{DBLP:conf/imc/MarechalSBD22,
+	author = {Emeline Marechal and
+                  Yining Shao and
+                  Marc Bruy{\`{e}}re and
+                  Benoit Donnet},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A first-look at segment routing deployment in a large european {ISP}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {748--749},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563020},
+	doi = {10.1145/3517745.3563020},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/MarechalSBD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This extended abstract discusses our first attempt in revealing the deployment and usage of Segment Routing with MPLS as forwarding plane (Sr-Mpls), in a large European ISP. To do so, we study a longitudinal traceroute like dataset. Early results show that Sr-Mpls is mainly used in interworking with classic MPLS tunnels.}
+}
+
+
+@inproceedings{DBLP:conf/imc/Gamero-GarridoB22,
+	author = {Alexander Gamero{-}Garrido and
+                  Elizabeth M. Belding and
+                  David R. Choffnes},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Using reverse {IP} geolocation to identify institutional networks},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {750--751},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563021},
+	doi = {10.1145/3517745.3563021},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/Gamero-GarridoB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The COVID-19 pandemic accelerated the emergence of networked applications as essential platforms for critical services, including those in education, healthcare, and government. In this context, there is renewed interest in understanding the availability of reliable, high-quality Internet connections in local community institutions, particularly those serving groups that have been historically marginalized. While previous work has focused on residential [4, 7] connections---and shown they are often underprovisioned for historically marginalized populations [6]---little is known about the reliability of networks serving schools, hospitals, and other non-residential infrastructure. An essential group of such networks serve anchor institutions: "place-based, mission-driven entities such as hospitals, universities, and government agencies that leverage their economic power alongside their human and intellectual resources to improve the long-term health and social welfare of their communities." [3] Access to digital information at such institutions (anchor institutional networks, or AIN) is an essential requirement for citizens to effectively participate in education, and access services in healthcare, community and government.}
+}
+
+
+@inproceedings{DBLP:conf/imc/ArounaJL22,
+	author = {Alfred Arouna and
+                  Mattijs Jonker and
+                  Ioana Livadariu},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {On unifying diverse {DNS} data sources},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {752--753},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563022},
+	doi = {10.1145/3517745.3563022},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/ArounaJL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The DNS maps human-readable identifiers to computer-friendly identifiers and relies on a reverse tree architecture to achieve this mapping. Backed by economic incentives, the DNS has become increasingly complex with data being shared among multiple autonomous stakeholders. The diversity of autonomous stakeholders limits data collection, access and sharing to researchers. For instance, each of stakeholder controls limited parts of the DNS space, thereby limiting analysis of real-world DNS behaviour. We aim to design and develop a software framework to unify diverse and large-scale public DNS data sources. The platform will facilitate the access to public DNS data by providing an efficient way of processing and analyzing large amounts of distributed data regardless of the DNS data format. Thus, the framework will help enable reproducibility in DNS studies.}
+}
+
+
+@inproceedings{DBLP:conf/imc/GirishTMV22,
+	author = {Aniketh Girish and
+                  Juan Tapiador and
+                  Srdjan Matic and
+                  Narseo Vallina{-}Rodriguez},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Towards an extensible privacy analysis framework for smart homes},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {754--755},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563023},
+	doi = {10.1145/3517745.3563023},
+	timestamp = {Tue, 21 Mar 2023 20:59:34 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/GirishTMV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The IoT ecosystem is an intricate and complex network of stakeholders that includes platforms, developers, ad networks and cloud providers. However, the ability of smart home platforms and devices to interact and exchange data, together with the data-driven business models adopted by most IoT stakeholders open the ground for unknown and unexpected privacy risks. Existing black-box testing approaches to audit IoT platforms cannot identify data dissemination through side- and covert-channels, and for this reason they are not well suited for rich execution environments where a wide range of devices and applications can co-operate using multiple network protocols and interfaces. This poster proposes ImposTer, a cost-effective and extensible privacy framework for exhaustively testing the IoT ecosystem. Our framework is able to capture, model and emulate horizontal interactions that occur across the different devices in a consumer household.}
+}
+
+
+@inproceedings{DBLP:conf/imc/IsobeKT22,
+	author = {Katsuki Isobe and
+                  Daishi Kondo and
+                  Hideki Tode},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A first look at the name resolution latency on handshake},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {756--757},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563024},
+	doi = {10.1145/3517745.3563024},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/IsobeKT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The domain name system (DNS) has been an important base of the Internet; however, it faces various issues, including DNS server attacks. Blockchain-based DNS services have recently emerged to solve these DNS issues. Among them, Handshake provides a decentralized root zone and supports state-of-the-art features. However, few studies have investigated the performance evaluations of Handshake. We measure the name resolution latency on Handshake to assess its suitability as an alternative to the current DNS root servers and reveal that it has a practical drawback compared to current root servers at the current early stage.}
+}
+
+
+@inproceedings{DBLP:conf/imc/KastanakisGS22,
+	author = {Savvas Kastanakis and
+                  Vasileios Giotsas and
+                  Neeraj Suri},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Understanding the confounding factors of inter-domain routing modeling},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {758--759},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563025},
+	doi = {10.1145/3517745.3563025},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/KastanakisGS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Border Gateway Protocol (BGP) is a policy-based protocol, which enables Autonomous Systems (ASes) to independently define their routing policies with little or no global coordination. AS-level topology and AS-level paths inference have been long-standing problems for the past two decades, yet, an important question remains open: "which elements of Internet routing affect the AS-path inference accuracy and how much do they contribute to the error?". In this work, we: (1) identify the confounding factors behind Internet routing modeling, and (2) quantify their contribution on the inference error. Our results indicate that by solving the first-hop inference problem, we can increase the exact-path score from 33.6% to 84.1%, and, by taking geolocation into consideration, we can refine the accuracy up to 94.6%.}
+}
+
+
+@inproceedings{DBLP:conf/imc/HeinrichMWO22,
+	author = {Tiago Heinrich and
+                  Carlos Alberto Maziero and
+                  Newton Carlos Will and
+                  Rafael R. Obelheiro},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {How DRDoS attacks vary across the globe?},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {760--761},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563026},
+	doi = {10.1145/3517745.3563026},
+	timestamp = {Tue, 21 Mar 2023 20:59:33 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/HeinrichMWO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this study we characterize Distributed Reflection Denial of Service (DRDoS) attack traffic taking into consideration the geographical distribution of victims. This type of characterization is not widely explored in the literature and could help to better understand this type of attack. We aim to explore this gap in the literature using data collected by four honeypots over three and a half years. Our findings highlight attack similarities and differences across continents.}
+}
+
+
+@inproceedings{DBLP:conf/imc/IqbalTGSC22,
+	author = {Waleed Iqbal and
+                  Gareth Tyson and
+                  Vahid Ghafouri and
+                  Guillermo Suarez{-}Tangil and
+                  Ignacio Castro},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Exploring online manifestations of real-world inequalities},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {762--763},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563027},
+	doi = {10.1145/3517745.3563027},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/IqbalTGSC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Socioeconomic gaps, particularly income inequality, affect crime and public opinion. Although official data sources can identify these patterns of income-based social disparity, a fundamental question remains: Can similar social inequalities be found using abundant online user activity? We explore two sub-questions. (i) How does a neighbourhood's income affect crime discussion in a geographical neighbourhood? (ii) Can user-generated data predict a neighbourhood's income? To answer these questions, we collect 2.5 million Nextdoor posts from 67608 USA and UK neighbourhoods between November 2020 and September 2021. We use official USA and UK data sources for crime and income information.}
+}
+
+
+@inproceedings{DBLP:conf/imc/AravenaBC22,
+	author = {Lucas Torrealba Aravena and
+                  Javier Bustos{-}Jim{\'{e}}nez and
+                  Pedro Casas},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {\emph{PHISHWEB}: a progressive, multi-layered system for phishing
+                  websites detection},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {764--765},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563028},
+	doi = {10.1145/3517745.3563028},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/AravenaBC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose PHISHWEB, a novel approach to website phishing detection, which detects and categorizes malicious websites through a progressive, multi-layered analysis. PHISHWEB combines and extends different detection approaches proposed in the literature, adding robustness to the identification and visibility into the particular type of deception technique employed by the attacker. We present preliminary results on the application of PHISHWEB to multiple open domain-name datasets, showing precision and recall results above 90% for the specific case of lexicographic-based analysis, improving state-of-the-art detection by more than 60% for Domain Generated Algorithms-driven attacks.}
+}
+
+
+@inproceedings{DBLP:conf/imc/YanCCZHMLc22,
+	author = {Tzu{-}Bin Yan and
+                  Yuxuan Chen and
+                  Anthea Chen and
+                  Zesen Zhang and
+                  Bradley Huffaker and
+                  Ricky K. P. Mok and
+                  Kirill Levchenko and
+                  kc claffy},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {PacketLab: tools alpha release and demo},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {766--767},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563029},
+	doi = {10.1145/3517745.3563029},
+	timestamp = {Mon, 05 Feb 2024 20:33:27 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/YanCCZHMLc22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The PacketLab universal measurement endpoint interface design facilitates vantage point sharing among experimenters and measurement endpoint operators [1]. We have continued working on fleshing out the design details of PacketLab components and adding enhancements to facilitate adoption. These include designing the PacketLab certificate system, adding support for measurement creation via a wrapper tool and a C library module, enhancement of reference endpoint ability for measurement flexibility and experiment scheduling, and devising a proxy program to accommodate experimenters without a public IP address. With the code base stabilizing, we are ready to announce our first open release of the PacketLab software package (available at pktlab.github.io). We invite network measurement researchers to try out our tools and welcome any feedback from the research community.}
+}
+
+
+@inproceedings{DBLP:conf/imc/BaldassinRUL22,
+	author = {David Baldassin and
+                  Ludovic Roux and
+                  Guillaume Urvoy{-}Keller and
+                  Dino Martin L{\'{o}}pez{-}Pacheco},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {A practical assessment approach of the interplay between WebRTC and
+                  {QUIC}},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {768--769},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563030},
+	doi = {10.1145/3517745.3563030},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/BaldassinRUL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the last years, Real-Time media transport using QUIC has aroused general interest. Ongoing research is studying protocol mechanisms to transport media with QUIC to build a new streaming protocol or to map existing ones like RTP onto QUIC. Our work focuses on the transport of RTP packets generated by WebRTC over QUIC and investigates the combination of the QUIC and WebRTC congestion control algorithms. To do so, we devised a testbed to study various combinations of congestion control algorithms, for different QUIC implementations, when sending RTP packets from an un-modified WebRTC client (Chrome).}
+}
+
+
+@inproceedings{DBLP:conf/imc/AlfroyHP22,
+	author = {Thomas Alfroy and
+                  Thomas Holterbach and
+                  Cristel Pelsser},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {{MVP:} measuring internet routing from the most valuable points},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {770--771},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563031},
+	doi = {10.1145/3517745.3563031},
+	timestamp = {Sat, 30 Sep 2023 09:48:41 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/AlfroyHP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Scrutinizing BGP routes is part of the everyday tasks that network operators and researchers conduct to monitor their networks and measure Internet routing. This task is facilitated by the expansion of routing information services such as RIPE RIS [2] and Route-Views [3] that collect BGP routes from an increasing number of Vantage Points (VPs). Unfortunately, while more data is often beneficial, in the case of BGP, it involves downloading and processing large volumes of route updates that exhibit a high level of redundancy. Today with more than one billion route updates collected every day, users often have no other option than to focus on a subset of the VP. Because of the highly skewed location of the VP, randomly selecting them may result in a lot of missing information.}
+}
+
+
+@inproceedings{DBLP:conf/imc/EnayetH22,
+	author = {Asma Enayet and
+                  John S. Heidemann},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Internet outage detection using passive analysis},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {772--773},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563032},
+	doi = {10.1145/3517745.3563032},
+	timestamp = {Mon, 26 Jun 2023 20:46:05 +0200},
+	biburl = {https://dblp.org/rec/conf/imc/EnayetH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Outages from natural disasters, political events, software or hardware issues, and human error [2] place a huge cost on e-commerce ($66k/minute at Amazon [1]).}
+}
+
+
+@inproceedings{DBLP:conf/imc/GonzalezCFG22,
+	author = {Gast{\'{o}}n Garc{\'{\i}}a Gonz{\'{a}}lez and
+                  Pedro Casas and
+                  Alicia Fern{\'{a}}ndez and
+                  Gabriel G{\'{o}}mez},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Steps towards continual learning in multivariate time-series anomaly
+                  detection using variational autoencoders},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {774--775},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563033},
+	doi = {10.1145/3517745.3563033},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/GonzalezCFG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present DC-VAE, an approach to network anomaly detection in multivariate time-series (MTS), using Variational Auto Encoders (VAEs) and Dilated Convolutional Neural Networks (CNN). DC-VAE detects anomalies in MTS data through a single model, exploiting temporal and spatial MTS information. We showcase DC-VAE in different MTS datasets, and portray its future application in a continual learning framework, exploiting the generative properties of the underlying generative model to deal with continuously evolving data, avoiding catastrophic forgetting. We showcase the functioning of DC-VAE in the event of concept drifts, and propose the application of a novel approach to generative-driven continual learning, introducing the Deep Generative Replay model.}
+}
+
+
+@inproceedings{DBLP:conf/imc/Sofoluwe0P22,
+	author = {Toyin Sofoluwe and
+                  Fung Po Tso and
+                  Iain W. Phillips},
+	editor = {Chadi Barakat and
+                  Cristel Pelsser and
+                  Theophilus A. Benson and
+                  David R. Choffnes},
+	title = {Mitigating cyber threats at the network edge},
+	booktitle = {Proceedings of the 22nd {ACM} Internet Measurement Conference, {IMC}
+                  2022, Nice, France, October 25-27, 2022},
+	pages = {776--777},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3517745.3563034},
+	doi = {10.1145/3517745.3563034},
+	timestamp = {Mon, 06 Feb 2023 21:45:20 +0100},
+	biburl = {https://dblp.org/rec/conf/imc/Sofoluwe0P22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The easy exploitation of IoT devices with limited security, compute and processing power has enabled hackers to carry out sophisticated attacks. Many research studies have highlighted the benefits of utilising artificial-intelligence based models in DDoS detection, but emphasis has not been placed on quantitative measurements of compute requirements for Machine Learning and Deep Learning algorithms used for DDoS detection, especially in the inference or detection stage. This research aims to fill the gap by performing quantitative measurement and comparison of various lightweight ML and DL algorithms, as well as design a lightweight collaborative framework capable of DDoS detection close to the source of the attack.}
+}
