@@ -1,0 +1,689 @@
+@inproceedings{DBLP:conf/conext/XuRRMY22,
+	author = {Zhiying Xu and
+                  Sivaramakrishnan Ramanathan and
+                  Alexander M. Rush and
+                  Jelena Mirkovic and
+                  Minlan Yu},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Xatu: boosting existing DDoS detection systems using auxiliary signals},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {1--17},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569121},
+	doi = {10.1145/3555050.3569121},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/XuRRMY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traditional DDoS attack detection monitors volumetric traffic features to detect attack onset. To reduce false positives, such detection is often conservative---raising an alert only after a sustained period of observed anomalous behavior. However, contemporary attacks tend to be short, which combined with a long detection delay means that most of the attack still reaches and impacts the victim. We propose Xatu, a system that utilizes auxiliary signals to improve the accuracy and timeliness of existing DDoS detection systems. We explore two types of auxiliary signals, attack preparation signals and the history of prior attacks. These signals can be easily mined from existing traffic monitoring systems in many ISP networks. To leverage these auxiliary signals for attack detection, we propose a multi-timescale LSTM model, which derives both long-term and short-term patterns from diverse auxiliary signals. We then leverage survival analysis to quickly detect attacks when they occur while minimizing false positives and thus scrubbing costs. We evaluate Xatu on traffic from a large ISP, using commercial defense alert data to label prevalent attack events. Xatu would help the commercial defense scrub up to 44.1% additional anomalous traffic and would reduce its median detection delay by 9.5 minutes.1}
+}
+
+
+@inproceedings{DBLP:conf/conext/RamanWDME22,
+	author = {Ram Sundara Raman and
+                  Mona Wang and
+                  Jakub Dalek and
+                  Jonathan R. Mayer and
+                  Roya Ensafi},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Network measurement methods for locating and examining censorship
+                  devices},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {18--34},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569133},
+	doi = {10.1145/3555050.3569133},
+	timestamp = {Thu, 25 May 2023 09:19:17 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/RamanWDME22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advances in networking and firewall technology have led to the emergence of network censorship devices that can perform large-scale, highly-performant content blocking. While such devices have proliferated, techniques to locate, identify, and understand them are still limited, require cumbersome manual effort, and are developed on a case-by-case basis. In this paper, we build robust, general-purpose methods to understand various aspects of censorship devices, and study devices deployed in 4 countries (Azerbaijan, Belarus, Kazakhstan, and Russia). We develop a censorship traceroute method, CenTrace, that automatically identifies the network location of censorship devices. We use banner grabs to identify vendors from potential censorship devices. To collect more features about the devices themselves, we build a censorship fuzzer, CenFuzz, that uses various HTTP request and TLS Client Hello fuzzing strategies to examine the rules and triggers of censorship devices. Finally, we use features collected using these methods to cluster censorship devices and explore device characteristics across deployments. Using CenTrace measurements, we find that censorship devices are often deployed in ISPs upstream to clients, sometimes even in other countries. Using data from banner grabs and injected block-pages, we identify 23 commercial censorship device deployments in Azerbaijan, Belarus, Kazakhstan, and Russia. We observe that certain CenFuzz strategies such as using a different HTTP method succeed in evading a large portion of these censorship devices, and observe that devices manufactured by the same vendors have similar evasion behavior using clustering. The methods developed in this paper apply consistently and rapidly across a wide range of censorship devices and enable continued understanding and monitoring of censorship devices around the world.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SikeridisHOD22,
+	author = {Dimitrios Sikeridis and
+                  Sean Huntley and
+                  David Ott and
+                  Michael Devetsikiotis},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Intermediate certificate suppression in post-quantum {TLS:} an approximate
+                  membership querying approach},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {35--42},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569127},
+	doi = {10.1145/3555050.3569127},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/SikeridisHOD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Quantum computing advances threaten the security of today's public key infrastructure, and have led to the pending standardization of alternative, quantum-resistant key encapsulation and digital signature cryptography schemes. Unfortunately, authentication algorithms based on the new post-quantum (PQ) cryptography create significant performance bottlenecks for TLS due to larger certificate chains which introduce additional packets and round-trips. The TLS handshake slowdown will be unacceptable to many applications, and detrimental to the broader adoption of quantum safe cryptography standards. In this paper, we propose a novel framework for Intermediate Certificate Authority (ICA) certificate suppression in TLS that reduces the authentication message size and prevents excessive round-trip delays. Our approach utilizes an approximate membership query (AMQ) data structure (probabilistic filter) to advertise known ICA certs to remote TLS endpoints so that unnecessary ICA certificates are omitted from the TLS handshake exchange. We showcase the extend of the PQ authentication overhead challenge in TLS, and evaluate the feasibility of AMQ filters for ICA suppression in terms of space and computational overhead. Finally, we experimentally evaluate the potential gains form our approach and showcase a 70% reduction in exchanged ICA cert data that translates to 15--50 MB of savings in PQ TLS and for certain Web-based application scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SunXMB22,
+	author = {Chuanhao Sun and
+                  Kai Xu and
+                  Mahesh K. Marina and
+                  Howard Benn},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {GenDT: mobile network drive testing made efficient with generative
+                  modeling},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {43--58},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569124},
+	doi = {10.1145/3555050.3569124},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/SunXMB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Drive testing continues to play a key role in mobile network optimization for operators but its high cost is a big concern. Alternative approaches like virtual drive testing (VDT) target device testing in the lab whereas MDT or crowdsourcing based approaches are limited by the incentives users have to participate and contribute measurements. With the aim of augmenting drive testing and significantly reducing its cost, we propose GenDT, a novel deep generative model that synthesizes high-fidelity time series of key radio network key performance indicators (KPIs). The training of GenDT relies on a relatively small amount of real-world measurement data along with corresponding and easily accessible network and environment context data. Through this, GenDT learns the relationship between context and radio network KPIs as they vary over time, and therefore trained GenDT model can subsequently be relied on to generate time series for different KPIs for new drive test routes (trajectories) without having to collect field measurements. GenDT represents an initial attempt at enabling efficient drive testing via generative modeling. Evaluations with real-world mobile network drive testing measurement datasets from two countries demonstrate that GenDT can synthesize significantly more dependable data than a range of baselines. We further show that GenDT has the potential to significantly reduce the drive testing related measurement effort, and that GenDT-generated data yields similar results to that with real data in the context of two downstream use cases - QoE prediction and handover analysis.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SharmaSARS22,
+	author = {Rahul Anand Sharma and
+                  Ishan Sabane and
+                  Maria Apostolaki and
+                  Anthony Rowe and
+                  Vyas Sekar},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Lumen: a framework for developing and evaluating ML-based IoT network
+                  anomaly detection},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {59--71},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569129},
+	doi = {10.1145/3555050.3569129},
+	timestamp = {Mon, 22 May 2023 11:34:27 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/SharmaSARS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rise of IoT devices brings a lot of security risks. To mitigate them, researchers have introduced various promising network-based anomaly detection algorithms, which oftentimes leverage machine learning. Unfortunately, though, their deployment and further improvement by network operators and the research community are hampered. We believe this is due to three key reasons. First, known ML-based anomaly detection algorithms are evaluated -in the best case- on a couple of publicly available datasets, making it hard to compare across algorithms. Second, each ML-based IoT anomaly-detection algorithm makes assumptions about attacker practices/classification granularity, which reduce their applicability. Finally, the implementation of those algorithms is often monolithic, prohibiting code reuse. To ease deployment and promote research in this area, we present Lumen. Lumen is a modular framework paired with a benchmarking suite that allows users to efficiently develop, evaluate, and compare IoT ML-based anomaly detection algorithms. We demonstrate the utility of Lumen by implementing state-of-the-art anomaly detection algorithms and faithfully evaluating them on various datasets. Among other interesting insights that could inform real-world deployments and future research, using Lumen, we were able to identify what algorithms are most suitable to detect particular types of attacks. Lumen can also be used to construct new algorithms with better performance by combining the building blocks of competing efforts and improving the training setup.}
+}
+
+
+@inproceedings{DBLP:conf/conext/HuRYTZ22,
+	author = {Xinyue Hu and
+                  Eman Ramadan and
+                  Wei Ye and
+                  Feng Tian and
+                  Zhi{-}Li Zhang},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Raven: belady-guided, predictive (deep) learning for in-memory and
+                  content caching},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {72--90},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569134},
+	doi = {10.1145/3555050.3569134},
+	timestamp = {Wed, 28 Feb 2024 00:16:42 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/HuRYTZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Performance of caching algorithms not only determines the quality of experience for users, but also affects the operating and capital expenditures for cloud service providers. Today's production systems rely on heuristics such as LRU (least recently used) and its variants, which work well for certain types of workloads, and cannot effectively cope with diverse and time-varying workload characteristics. While learning-based caching algorithms have been proposed to deal with these challenges, they still impose assumptions about workload characteristics and often suffer poor generalizability. In this paper, we propose Raven, a general learning-based caching framework that leverages the insights from the offline optimal Belady algorithm for both in-memory and content caching. Raven learns the distributions of objects' next-request arrival times without any prior assumptions by employing Mixture Density Network (MDN)-based universal distribution estimation. It utilizes the estimated distributions to compute the probability of an object that arrives farthest than any other objects in the cache and evicts the one with the largest such probability, regulated by the sizes of objects if appropriate. Raven (probabilistically) approximates Belady by explicitly accounting for the stochastic, time-varying, and non-stationary nature of object arrival processes. Evaluation results on production workloads demonstrate that, compared with the best existing caching algorithms, Raven improves the object hit ratio and byte hit ratio by up to 7.3% and 7.1%, respectively, reduces the average access latency by up to 17.9% and the traffic to the origin servers by up to 18.8%.}
+}
+
+
+@inproceedings{DBLP:conf/conext/WusteneyHSOHMH22,
+	author = {Lukas W{\"{u}}steney and
+                  David Hellmanns and
+                  Markus Schramm and
+                  Lukas Osswald and
+                  Ren{\'{e}} Hummen and
+                  Michael Menth and
+                  Tobias Heer},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Analyzing and modeling the latency and jitter behavior of mixed industrial
+                  {TSN} and DetNet networks},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {91--109},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569138},
+	doi = {10.1145/3555050.3569138},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/WusteneyHSOHMH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today, industrial real-time communication is commonly designed based on two key principles to satisfy the challenging Quality of Service (QoS) requirements of industrial applications: a) local communication and b) purpose-built networks. IEEE Time-Sensitive Networking (TSN) and IETF Deterministic Networking (DetNet) promise to lift these two limitations. This facilitates the transformation of previously loosely integrated automation network parts from isolated, purpose-built real-time networks to more tightly integrated, open, multi-purpose networks of networks. With TSN and DetNet, each of these interconnected networks, e.g., machine or backbone networks, can and will be fined-tuned for optimal performance regarding the different real-time applications located inside them. The resulting patchwork of DetNet-connected TSN networks, however, creates a challenge for cross-network real-time communication: predicting QoS properties, such as the end-to-end latency. To address this challenge, we propose a model that allows calculating best-case and worst-case latencies for time-critical communication across different DetNet-connected TSN networks. This enables validating end-to-end communication requirements in open, multi-purpose industrial networks. Our evaluation with real industrial hardware shows the applicability of our proposed model.}
+}
+
+
+@inproceedings{DBLP:conf/conext/JiangLRT22,
+	author = {Chuan Jiang and
+                  Zixuan Li and
+                  Sanjay G. Rao and
+                  Mohit Tawarmalani},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Flexile: meeting bandwidth objectives almost always},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {110--125},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569119},
+	doi = {10.1145/3555050.3569119},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/JiangLRT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wide-area cloud provider networks must support the bandwidth requirements of network traffic despite failures. Existing traffic engineering (TE) schemes perform no better than an approach that optimally routes traffic for each failure scenario. We show that this results in sub-optimal routing decisions that hurt performance, and are potentially unfair to some traffic across scenarios. To tackle this, we develop Flexile, which exploits and discovers opportunities to improve network performance by prioritizing certain traffic in each failure state so that it can meet its bandwidth requirements. Flexile seeks to minimize a desired percentile of loss across all traffic flows, while modeling diverse needs of different traffic classes. To achieve this, Flexile consists of (i) an offline phase that identifies which failure states are critical for each flow; and (ii) an online phase, which on failure allocates bandwidth prioritizing critical flows for that failure state, while also judiciously allocating bandwidth to non-critical flows. For tractability, Flexile's offline phase uses a decomposition algorithm aided with problem-specific accelerations. Evaluations using real topologies, and validated with emulation testbed experiments, show that Flexile outperforms state-of-the-art TE schemes including SWAN, SMORE, and Teavar in reducing flow loss at desired percentiles by 46% or more in the median case.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SuWN00XHX022,
+	author = {Qiang Su and
+                  Chuanwen Wang and
+                  Zhixiong Niu and
+                  Ran Shu and
+                  Peng Cheng and
+                  Yongqiang Xiong and
+                  Dongsu Han and
+                  Chun Jason Xue and
+                  Hong Xu},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {PipeDevice: a hardware-software co-design approach to intra-host container
+                  communication},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {126--139},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569118},
+	doi = {10.1145/3555050.3569118},
+	timestamp = {Tue, 21 Mar 2023 21:00:03 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/SuWN00XHX022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Containers are prevalently adopted due to the deployment and performance advantages over virtual machines. For many containerized data-intensive applications, however, bulky data transfers may pose performance issues. In particular, communication across co-located containers on the same host incurs large overheads in memory copy and the kernel's TCP stack. Existing solutions such as shared-memory networking and RDMA have their own limitations, including insufficient memory isolation and limited scalability. This paper presents PipeDevice, a new system for low overhead intra-host container communication. PipeDevice follows a hardware-software co-design approach --- it offloads data forwarding entirely onto hardware, which accesses application data in hugepages on the host, thereby eliminating CPU overhead from memory copy and TCP processing. PipeDevice preserves memory isolation and scales well to connections, making it deployable in public clouds. Isolation is achieved by allocating dedicated memory to each connection from hugepages. To achieve high scalability, PipeDevice stores the connection states entirely in host DRAM and manages them in software. Evaluation with a prototype implementation on commodity FPGA shows that for delivering 80 Gbps across containers PipeDevice saves 63.2% CPU compared to kernel TCP stack, and 40.5% over FreeFlow. PipeDevice provides salient benefits to applications. For example, we port baidu-allreduce to PipeDevice and obtain ~2.2× gains in allreduce throughput.}
+}
+
+
+@inproceedings{DBLP:conf/conext/LiuCH22,
+	author = {Qiang Liu and
+                  Nakjung Choi and
+                  Tao Han},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Atlas: automate online service configuration in network slicing},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {140--155},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569115},
+	doi = {10.1145/3555050.3569115},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/LiuCH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network slicing achieves cost-efficient slice customization to support heterogeneous applications and services. Configuring cross-domain resources to end-to-end slices based on service-level agreements, however, is challenging, due to the complicated underlying correlations and the simulation-to-reality discrepancy between simulators and real networks. In this paper, we propose Atlas, an online network slicing system, which automates the service configuration of slices via safe and sample-efficient learn-to-configure approaches in three interrelated stages. First, we design a learning-based simulator to reduce the sim-to-real discrepancy, which is accomplished by a new parameter searching method based on Bayesian optimization. Second, we offline train the policy in the augmented simulator via a novel offline algorithm with a Bayesian neural network and parallel Thompson sampling. Third, we online learn the policy in real networks with a novel online algorithm with safe exploration and Gaussian process regression. We implement Atlas on an end-to-end network prototype based on OpenAirInterface RAN, OpenDayLight SDN transport, OpenAir-CN core network, and Docker-based edge server. Experimental results show that, compared to state-of-the-art solutions, Atlas achieves 63.9% and 85.7% regret reduction on resource usage and slice quality of experience during the online learning stage, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/conext/XiaoV22,
+	author = {Yunming Xiao and
+                  Matteo Varvello},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {{FIAT:} frictionless authentication of IoT traffic},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {156--170},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569126},
+	doi = {10.1145/3555050.3569126},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/XiaoV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Home IoT (Internet of Things) deployments are vulnerable to local adversaries, compromising a LAN, and remote adversaries, compromising either the accounts associated with IoT devices or third-party devices like mobile phones used to control the IoT. There is, however, a fundamental difference between an attacker and a legitimate IoT user: the physical interaction with the device (e.g., via a mobile app) used to operate the IoT. Such physical interactions can be used to build frictionless authentications. However, their integration with IoT requires each vendor to independently adopt them, which is both complex and expensive. We instead design and build FIAT, the first third-party mechanism to automatically authorize IoT traffic by learning recurring traffic and validating human actions behind unpredictable traffic. FIAT does not require modification of the IoT devices or apps, as it operates passively on network traffic. Our evaluation shows that FIAT achieves high accuracy with minimal impact on the user experience.}
+}
+
+
+@inproceedings{DBLP:conf/conext/KrumnowJK22,
+	author = {Benjamin Krumnow and
+                  Hugo Jonker and
+                  Stefan Karsch},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {How gullible are web measurement tools?: a case study analysing and
+                  strengthening OpenWPM's reliability},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {171--186},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569131},
+	doi = {10.1145/3555050.3569131},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/KrumnowJK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automated browsers are widely used to study the web at scale. Their premise is that they measure what regular browsers would encounter on the web. In practice, deviations due to detection of automation have been found. To what extent automated browsers can be improved to reduce such deviations has so far not been investigated in detail. In this paper, we investigate this for a specific web automation framework: OpenWPM, a popular research framework specifically designed to study web privacy. We analyse (1) detectability of OpenWPM, (2) resilience of OpenWPM's data recording, and (3) prevalence of OpenWPM detection. Our analysis (1) reveals OpenWPM is easily detectable. Our investigation of OpenWPM's data recording integrity (2) identifies novel evasion techniques and previously unknown attacks against OpenWPM's instrumentation. We investigate and develop mitigations to address the identified issues. Finally, in a scan of 100,000 sites (3), we observe that OpenWPM is commonly detected (~14% of front pages). Moreover, we discover integrated routines in scripts specifically to detect OpenWPM clients. In conclusion, our case study shows that even the most popular web measurement framework, OpenWPM, is more gullible than expected, and this gullibility is rarely accounted for in studies.}
+}
+
+
+@inproceedings{DBLP:conf/conext/MaghsoudlouGPF22,
+	author = {Aniss Maghsoudlou and
+                  Oliver Gasser and
+                  Ingmar Poese and
+                  Anja Feldmann},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {FlowDNS: correlating netflow and {DNS} streams at scale},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {187--195},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569135},
+	doi = {10.1145/3555050.3569135},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/MaghsoudlouGPF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Knowing customer's interests, e.g. which Video-On-Demand (VoD) or Social Network services they are using, helps telecommunication companies with better network planning to enhance the performance exactly where the customer's interests lie, and also offer the customers relevant commercial packages. However, with the increasing deployment of CDNs by different services, identification, and attribution of the traffic on network-layer information alone becomes a challenge: If multiple services are using the same CDN provider, they cannot be easily distinguished based on IP prefixes alone. Therefore, it is crucial to go beyond pure network-layer information for traffic attribution. In this work, we leverage real-time DNS responses gathered by the clients' default DNS resolvers. Having these DNS responses and correlating them with network-layer headers, we are able to translate CDN-hosted domains to the actual services they belong to. We design a correlation system for this purpose and deploy it at a large European ISP. With our system, we can correlate an average of 81.7% of the traffic with the corresponding services, without any loss on our live data streams. Our correlation results also show that 0.5% of the daily traffic contains malformatted, spamming, or phishing domain names. Moreover, ISPs can correlate the results with their BGP information to find more details about the origin and destination of the traffic. We plan to publish our correlation software for other researchers or network operators to use.}
+}
+
+
+@inproceedings{DBLP:conf/conext/MazzolaMB22,
+	author = {Fabr{\'{\i}}cio M. Mazzola and
+                  Pedro de B. Marcos and
+                  Marinho P. Barcellos},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Light, camera, actions: characterizing the usage of IXPs' action {BGP}
+                  communities},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {196--203},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569143},
+	doi = {10.1145/3555050.3569143},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/MazzolaMB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Border Gateway Protocol (BGP) communities, an optional message attribute, allow network operators to tag BGP announcements and act on routing decisions. Although widely used, it is so far unclear how prevalent the different types of communities are and the degree to which the different traffic engineering actions have been used. There are two major reasons for this gap: few community values have been standardised and the limited visibility at route collectors. In this paper, leveraging the fact that Internet eXchange Points (IXPs) have sets of well-documented BGP communities, we use their BGP Looking Glasses (LGs) to inspect their route servers and shed light on how IXP members are using action BGP communities. During twelve weeks, we collected and analysed routing data from eight IXPs worldwide, focusing the analysis on the four largest IXPs. We observe that i) over one-third of IXP members (>35.7%) use action communities in at least one route; ii) two-thirds (66.6%) of them are intended to avoid propagating routes, mostly to content providers (CPs); iii) nearly one-third (31.8%) are targeting Autonomous Systems (ASes) that are not present at the IXPs' route servers, resulting in no practical routing effect and only increasing processing and memory storage overheads.}
+}
+
+
+@inproceedings{DBLP:conf/conext/NawrockiTHMSW22,
+	author = {Marcin Nawrocki and
+                  Pouyan Fotouhi Tehrani and
+                  Raphael Hiesgen and
+                  Jonas M{\"{u}}cke and
+                  Thomas C. Schmidt and
+                  Matthias W{\"{a}}hlisch},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {On the interplay between {TLS} certificates and {QUIC} performance},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {204--213},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569123},
+	doi = {10.1145/3555050.3569123},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/NawrockiTHMSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we revisit the performance of the QUIC connection setup and relate the design choices for fast and secure connections to common Web deployments. We analyze over 1M Web domains with 272k QUIC-enabled services and find two worrying results. First, current practices of creating, providing, and fetching Web certificates undermine reduced round trip times during the connection setup since sizes of 35% of server certificates exceed the amplification limit. Second, non-standard server implementations lead to larger amplification factors than QUIC permits, which increase even further in IP spoofing scenarios. We present guidance for all involved stakeholders to improve the situation.}
+}
+
+
+@inproceedings{DBLP:conf/conext/GuoMSP22,
+	author = {Yibo Guo and
+                  William M. Mellette and
+                  Alex C. Snoeren and
+                  George Porter},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Scaling beyond packet switch limits with multiple dataplanes},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {214--231},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569141},
+	doi = {10.1145/3555050.3569141},
+	timestamp = {Sat, 30 Sep 2023 09:37:43 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/GuoMSP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Scale-out datacenter network fabrics enable network operators to translate improved link and switch speeds directly into end-host throughput. Unfortunately, limits in the underlying CMOS packet switch chip manufacturing roadmap mean that NICs, links, and switches are not getting faster fast enough to meet demand. As a result, operators have introduced alternative, parallel fabric designs in the core of the network that deliver N-times the bandwidth by simply forwarding traffic over any of N parallel network fabrics. In this work, we consider extending this parallel network idea all the way to the end host. Our initial impressions found that direct application of existing path selection and forwarding techniques resulted in poor performance. Instead, we show that appropriate path selection and forwarding protocols can not only improve the performance of existing, homogeneous parallel fabrics, but enable the development of heterogeneous parallel network fabrics that can deliver even higher bandwidth, lower latency, and improved resiliency than traditional designs constructed from the same constituent components.}
+}
+
+
+@inproceedings{DBLP:conf/conext/HuangHYHLXZ0ZH022,
+	author = {Yibo Huang and
+                  Yukai Huang and
+                  Ming Yan and
+                  Jiayu Hu and
+                  Cunming Liang and
+                  Yang Xu and
+                  Wenxiong Zou and
+                  Yiming Zhang and
+                  Rui Zhang and
+                  Chunpu Huang and
+                  Jie Wu},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {An ultra-low latency and compatible PCIe interconnect for rack-scale
+                  communication},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {232--244},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569128},
+	doi = {10.1145/3555050.3569128},
+	timestamp = {Tue, 13 Dec 2022 07:51:09 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/HuangHYHLXZ0ZH022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emerging network-attached resource disaggregation architecture requires ultra-low latency rack-scale communication. However, current hardware offloading (e.g., RDMA) and user-space (e.g., mTCP) communication schemes still rely on heavily layered protocol stacks which requires the translation between PCIe bus and network protocol, or complex connection/memory resource management within RNICs, inevitably bringing latency overhead. We argue that PCIe Non-Transparent Bridge (NTB) is a superior high-speed in-rack network technology to interconnect PCIe-attached machines or devices with the same PCIe fabric since no translation is needed between PCIe and network protocol. We present NTSocks, the first user-space in-rack interconnect over PCIe fabric which virtualizes native NTB into high-level network functionalities for rack-scale systems with software-hardware co-design. NTSocks provides (1) compatibility with a fast socket-like abstraction, (2) multi-thread scalability using a core-driven dat-aplane model, and (3) fair and efficient resource sharing with a multi-tenant isolation mechanism. Even though PCIe NTB is originally designed for device communication across PCIe domains, NTSocks shows a flexible user-level indirection with performance close to bare-metal NTB while providing common network stack features. In the evaluations with latency-sensitive Key-Value Store, NTSocks achieves better latency by up to 24.5× and 1.58× than kernel and RDMA socket, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/conext/OsinskiPKTBT22,
+	author = {Tomasz Osinski and
+                  Jan Palimaka and
+                  Mateusz Kossakowski and
+                  Fr{\'{e}}d{\'{e}}ric Dang Tran and
+                  El{-}Fadel Bonfoh and
+                  Halina Tarasiuk},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {A novel programmable software datapath for software-defined networking},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {245--260},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569117},
+	doi = {10.1145/3555050.3569117},
+	timestamp = {Mon, 05 Feb 2024 20:34:45 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/OsinskiPKTBT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces NIKSS (Native In-Kernel SDN Switch), a novel programmable software switch for Software-Defined Networking. NIKSS leverages P4 as a high-level programming abstraction, Portable Switch Architecture (PSA) as a fully-featured P4 forwarding model and eBPF as a packet processing engine. The main component of NIKSS is the PSA-eBPF compiler that translates P4 programs into code that runs inside the eBPF execution environment. However, enabling a high degree of programmability for data planes without sacrificing performance or operability is a challenge. Therefore, NIKSS provides two alternative designs of generated code, with different trade-offs between supported PSA features and achieved performance. We demonstrate that NIKSS can be used successfully as a P4 software switch, with an acceptable performance gap compared to native eBPF programming. We also provide an extensive performance evaluation, proving that NIKSS might be a viable alternative to existing software switches.}
+}
+
+
+@inproceedings{DBLP:conf/conext/TianLZZC22,
+	author = {Han Tian and
+                  Xudong Liao and
+                  Chaoliang Zeng and
+                  Junxue Zhang and
+                  Kai Chen},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Spine: an efficient DRL-based congestion control with ultra-low overhead},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {261--275},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569125},
+	doi = {10.1145/3555050.3569125},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/TianLZZC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Previous congestion control (CC) algorithms based on deep reinforcement learning (DRL) directly adjust flow sending rate to respond to dynamic bandwidth change, resulting in high inference overhead. Such overhead may consume considerable CPU resources and hurt the datapath performance. In this paper, we present Spine, a hierarchical congestion control algorithm that fully utilizes the performance gain from deep reinforcement learning but with ultra-low overhead. At its heart, Spine decouples the congestion control task into two subtasks in different timescales and handles them with different components: i) a lightweight CC executor that performs fine-grained control responding to dynamic bandwidth changes, and ii) an RL agent that works at a coarse-grained level that generates control sub-policies for the CC executor. Such two-level control architecture can provide fine-grained DRL-based control with a low model inference overhead. Real-world experiments and emulations show that Spine achieves consistent high performance across various network conditions with an ultra-low control overhead reduced by at least 80% compared to its DRL-based counterparts, similar to classic CC schemes such as Cubic.}
+}
+
+
+@inproceedings{DBLP:conf/conext/0001SSV22,
+	author = {Stefan Schmid and
+                  Morten Konggaard Schou and
+                  Jir{\'{\i}} Srba and
+                  Juan Vanerio},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {{R-MPLS:} recursive protection for highly dependable {MPLS} networks},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {276--292},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569140},
+	doi = {10.1145/3555050.3569140},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/0001SSV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Most modern communication networks feature fast rerouting mechanisms in the data plane. However, design and configuration of such mechanisms even under multiple failures is known to be difficult. In order to increase the resilience of the widely deployed MPLS networks, we propose R-MPLS, an alternative link protection mechanism for MPLS networks that uses recursive protection and can route around multiple simultaneously failed links. Our new R-MPLS approach comes with strong theoretical underpinnings, is implementable in a fully distributed way and executable on existing MPLS hardware, and formally guarantees that no forwarding loops are introduced. We implement our R-MPLS protection in an automated tool which overcomes the complexity of configuring such resilient network data planes, and report on the benefits of recursive protection in realistic network topologies. We find that R-MPLS significantly increases network robustness against multiple failures, with only moderate increase in the number of forwarding rules and communication overhead (both comparable to industry-standards like RSVP-TE FRR).}
+}
+
+
+@inproceedings{DBLP:conf/conext/DhakalRWCR22,
+	author = {Aditya Dhakal and
+                  Xukan Ran and
+                  Yunshu Wang and
+                  Jiasi Chen and
+                  K. K. Ramakrishnan},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {SLAM-share: visual simultaneous localization and mapping for real-time
+                  multi-user augmented reality},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {293--306},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569142},
+	doi = {10.1145/3555050.3569142},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/DhakalRWCR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Augmented reality (AR) devices perform visual simultaneous localization and mapping (SLAM) to map the real world and localize themselves in it, enabling them to render the virtual holograms appropriately. Current multi-user AR platforms fall short in that they only allow asymmetric sharing of this SLAM information, resulting in multiple "secondary" devices viewing holograms placed by a single "primary" device, instead of equal participation. The goal of this work is to enable all AR devices to participate equally, by constructing a common global map to which all AR devices can contribute. However, doing so with low latency and high accuracy is challenging on resource-constrained mobile devices. This work proposes an appropriate partitioning between clients and a server to achieve high-throughput, low latency, multi-user SLAM. In our system, SLAM-Share, the edge server performs the complex SLAM computations so that the client devices need only perform lightweight operations. The server utilizes shared memory and efficient map merging to build and update a global map from different clients. It also exploits the parallelism of GPU processing to achieve high-performance tracking. Evaluations show that SLAM-Share is able to achieve significant tracking speedups (up to 50% reduction compared to alternative approaches), maintain good localization accuracy, and merge and update maps within 200 ms.}
+}
+
+
+@inproceedings{DBLP:conf/conext/WaheedQAQ22,
+	author = {Talha Waheed and
+                  Ihsan Ayyub Qazi and
+                  Zahaib Akhtar and
+                  Zafar Ayyub Qazi},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Coal not diamonds: how memory pressure falters mobile video QoE},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {307--320},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569120},
+	doi = {10.1145/3555050.3569120},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/WaheedQAQ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The popularity of video streaming on smartphones has led to rising demands for high-quality mobile video streaming. Consequently, we are observing growing support for higher resolution videos (e.g., HD, FHD, QHD) and higher video frame rates (e.g., 48 FPS, 60 FPS). However, supporting high-quality video streaming on smartphones introduces new challenges---besides the available network capacity, the smartphone itself can become a bottleneck due to resource constraints, such as low available memory. In this paper, we conduct an in-depth investigation of memory usage on smartphones and its impacts on mobile video streaming. Our investigation - driven by a combination of a user study, user survey, and experiments on real smartphones - reveals that (i) most smartphones observe memory pressure (i.e., low available memory scenarios), (ii) memory pressure can have a significant impact on mobile video QoE when streaming high-quality videos, e.g., resulting in the mean frame drop rate of 9--100% across smartphones and significantly lower user ratings, and (iii) the drop in mobile video QoE happens primarily due to the way in which video processes interact with kernel-level memory management mechanism, with opportunities for improving mobile video QoE through better adaptation by video clients.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ZhuLL0JCKLYXWY22,
+	author = {Shunmin Zhu and
+                  Jianyuan Lu and
+                  Biao Lyu and
+                  Tian Pan and
+                  Chenhao Jia and
+                  Xin Cheng and
+                  Daxiang Kang and
+                  Yilong Lv and
+                  Fukun Yang and
+                  Xiaobo Xue and
+                  Zhiliang Wang and
+                  Jiahai Yang},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Zoonet: a proactive telemetry system for large-scale cloud networks},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {321--336},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569116},
+	doi = {10.1145/3555050.3569116},
+	timestamp = {Thu, 16 Mar 2023 14:52:53 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/ZhuLL0JCKLYXWY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present Zoonet, a proactive virtual network telemetry system for multi-tenant clouds. The requirements are to (1) cover hyper-scale virtual networks with millions of tenants and millions of VMs for top tenants; (2) handle frequent virtual topology changes due to tenants' configuration through flexible APIs; (3) adapt to heterogeneous middleboxes along the probing paths; (4) achieve VM-to-VM telemetry without breaking tenant privacy; (5) differentiate virtual and physical network problems. We argue existing physical network telemetry solutions fail to satisfy our needs due to either incomplete telemetry coverage or outrageous telemetry overhead. Zoonet sets an ambitious goal to provide VM-to-VM hop-by-hop telemetry for each tenant, which is achieved based on self-developed, customizable middleboxes via hundreds of person-months under close team collaboration. At the data plane, Zoonet defines an elegant generalization of ping and traceroute, but made to work on multi-tenant clouds with heterogeneous middleboxes. At the control plane, Zoonet conducts substantial probing path pruning and update batch processing to lessen the overhead. Zoonet has been deployed in Alibaba Cloud for over two years, covering tens of cloud regions, hundreds of thousands of servers. We become increasingly reliant on Zoonet as it reduces 86% of the personnel engaged in troubleshooting.}
+}
+
+
+@inproceedings{DBLP:conf/conext/Zuo0XZ022,
+	author = {Xudong Zuo and
+                  Qing Li and
+                  Jingyu Xiao and
+                  Dan Zhao and
+                  Jiang Yong},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Drift-bottle: a lightweight and distributed approach to failure localization
+                  in general networks},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {337--348},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569137},
+	doi = {10.1145/3555050.3569137},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/Zuo0XZ022.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network failure severely impairs network performance, affecting latency and throughput of data transmission. Existing failure localization solutions for general networks face problems such as difficulty in acquiring data from end hosts, need for extra infrastructure, and excessive resource consumption. Meanwhile, solutions designed for data center networks are hard to apply in general networks, as they usually rely on the topology regularity of DCNs. In this paper, we propose Drift-Bottle, a lightweight and distributed approach to failure localization in general networks. In Drift-Bottle, each switch judges the status of flows and makes a local inference for suspicious links. We design a distributed localization scheme where each normal packet is used as a "drift-bottle" that carries a "letter", i.e., a lightweight inference header, while traversing the network. Each switch along the path updates the inference header by aggregating it with its local inference. Whenever the inference is evident enough to identify the culprit links of failures, a warning is sent to the operator immediately. Drift-Bottle implements its function mainly on the data plane of programmable switches and thus reduce the overhead brought to switches significantly. Evaluation based on simulation on different topologies demonstrates that Drift-Bottle provides fast, precise and lightweight failure localization to operators of general networks.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ChenLSZZBH22,
+	author = {Bo{-}Rong Chen and
+                  Zhuotao Liu and
+                  Jinhui Song and
+                  Fanhui Zeng and
+                  Zhoushi Zhu and
+                  Siva Phani Keshav Bachu and
+                  Yih{-}Chun Hu},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {FlowTele: remotely shaping traffic on internet-scale networks},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {349--368},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569139},
+	doi = {10.1145/3555050.3569139},
+	timestamp = {Sun, 12 Nov 2023 02:15:16 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/ChenLSZZBH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet content providers often deliver content through bandwidth bottlenecks that are out of their control. Thus, despite often having massively over-provisioned upstream servers, the content providers still cannot control the end-to-end user experience. This paper explores remote traffic shaping, allowing the content provider to allocate its share of a remote bottleneck link across its users using a metric other than TCP fairness, while remaining TCP-friendly to cross traffic on the bottleneck link. To evaluate this approach, we designed FlowTele, the first system that shapes outbound traffic on an Internet-scale network to optimize provider-selected metrics, using source control with neither in-network support nor special client support. Our extensive evaluations over the Internet show that by strategically reallocating bandwidth among provider-owned co-bottlenecked flows, FlowTele improves the provider's total revenue by roughly 20%--30% in various network settings, compared with both (i) status quo TCP fairshare and (ii) recent practice by content providers that proactively throttles video quality during the COVID-19 pandemic, while being TCP-friendly to cross-traffic. Besides revenue, we also study other metrics, such as QoE fairness, that a content provider may wish to optimize using FlowTele.}
+}
+
+
+@inproceedings{DBLP:conf/conext/KimLLJMH22,
+	author = {Jaehong Kim and
+                  Yunheon Lee and
+                  Hwijoon Lim and
+                  Youngmok Jung and
+                  Song Min Kim and
+                  Dongsu Han},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {OutRAN: co-optimizing for flow completion time in radio access network},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {369--385},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569122},
+	doi = {10.1145/3555050.3569122},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/KimLLJMH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traffic from interactive applications demanding low latency has become dominant in cellular networks. However, existing schedulers of cellular network base stations fall short in delivering low latency when prior information (i.e., dedicated Quality of Service (QoS)) is unavailable; they become service agnostic and perform towards maximizing the radio resource utilization or user fairness. We identify a new opportunity of providing a better latency for those latency-sensitive traffic flows by additionally taking the Flow Completion Time (FCT) into account in downlink scheduling at the base stations. However, the key challenges are 1) it can bring a severe cost in optimization metrics of the existing scheduler and 2) it should work without prior knowledge of the traffic. To this end, we present OutRAN, a practical flow scheduler designed for Radio Access Network that co-optimizes the FCT and optimization objectives of the cellular scheduler. The resulting system does not require prior information. Through simulation and over-the-air evaluation, we demonstrate that OutRAN outperforms the legacy LTE/5G schedulers in FCT, which leads to the reduction in webpage load time of Android phones.}
+}
+
+
+@inproceedings{DBLP:conf/conext/AhmadNTARQ22,
+	author = {Mukhtiar Ahmad and
+                  Muhammad Ali Nawazish and
+                  Muhammad Taimoor Tariq and
+                  Muhammad Basit Iqbal Awan and
+                  Muhammad Taqi Raza and
+                  Zafar Ayyub Qazi},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {Enabling emerging edge applications through a 5G control plane intervention},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {386--400},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569130},
+	doi = {10.1145/3555050.3569130},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/AhmadNTARQ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {5G networks are considered potential enablers for many emerging edge applications, such as those related to autonomous vehicles, virtual and augmented reality, and online gaming. However, recent works have shown the cellular control plane is a potential bottleneck in enabling such applications --- control plane operations are slow, frequent, and can directly impact the delay experienced by end-user applications. Moreover, failures in the cellular control plane can significantly degrade application performance. In this paper, we consider the problem of enabling latency-sensitive and safety-critical edge applications on 5G networks. We identify fundamental control plane design challenges and posit enabling these applications requires re-thinking the cellular control plane. We propose a new edge-based cellular control plane, CellClone, which provides fast and fault-tolerant control plane processing. CellClone employs multiple active control plane clones at the network edge to mask control plane faults and speedup control processing. Central to its design is a custom quorum-based consistency protocol that provides state consistency with low latency. Testbed evaluations using real cellular traces show a median improvement of more than 3.8× in speeding up control plane operations with outright node failures and stragglers. These improvements translate into better application performance; with CellClone, autonomous cars and VR applications reduce missed application deadlines by more than 90%.}
+}
+
+
+@inproceedings{DBLP:conf/conext/RathiZ22,
+	author = {Raghav Rathi and
+                  Zhenghao Zhang},
+	editor = {Giuseppe Bianchi and
+                  Alessandro Mei},
+	title = {TnB: resolving collisions in LoRa based on the peak matching cost
+                  and block error correction},
+	booktitle = {Proceedings of the 18th International Conference on emerging Networking
+                  EXperiments and Technologies, CoNEXT 2022, Roma, Italy, December 6-9,
+                  2022},
+	pages = {401--416},
+	publisher = {{ACM}},
+	year = {2022},
+	url = {https://doi.org/10.1145/3555050.3569132},
+	doi = {10.1145/3555050.3569132},
+	timestamp = {Thu, 01 Dec 2022 11:52:48 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/RathiZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LoRa has emerged as one of the main candidates for connecting low-power wireless IoT devices. Packet collisions occur in LoRa networks when multiple nodes transmit wireless signals simultaneously. In this paper, a novel solution, referred to as TnB, is proposed to decode collided LoRa signals. Two major components of TnB are Thrive and Block Error Correction (BEC). Thrive is a simple algorithm to resolve collisions by assigning an observed signal to a node according to a matching cost that reflects the likelihood for the node to have transmitted the signal. BEC is a novel algorithm for decoding the Hamming code used in LoRa, and is capable of correcting more errors than the default decoder by jointly decoding multiple codewords. TnB does not need any modification of the LoRa nodes and can be adopted by simply replacing the gateway. TnB has been tested with real-world experimental traces collected with commodity LoRa devices, and the results show that TnB can increase the median throughput by 1.36× and 2.46× over the state-of-the-art for Spreading Factors (SF) 8 and 10, respectively. Simulations further show that the improvement is even higher under more challenging channel conditions.}
+}

@@ -1,0 +1,1201 @@
+@inproceedings{DBLP:conf/conext/AbdousSG21,
+	author = {Sepehr Abdous and
+                  Erfan Sharafzadeh and
+                  Soudeh Ghorbani},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Burst-tolerant datacenter networks with Vertigo},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {1--15},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494873},
+	doi = {10.1145/3485983.3494873},
+	timestamp = {Sat, 30 Sep 2023 09:37:43 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/AbdousSG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Microsecond-scale congestion events, known as microbursts, are a main cause of packet loss and poor application performance in today's datacenters. Given the low network utilization in datacenters, one would expect packet deflection, in-situ re-routing of packets that arrive at a full buffer to a different port, to effectively prevent packet loss. However, if deployed naively, deflection leads to excessive packet re-ordering, exacerbated congestion, and head-of-the-line blocking in switch buffers. In this study, we resolve the above challenges by selectively deflecting the packets that cause persistent congestion in the network. To enable this, we augment the end-host network stacks with a transport-independent extension that tracks and marks flows with their remaining bytes. Our in-network deflection component uses the flow size information to re-route packets from flows with more data to send. Finally, an extension to the receive-side of end-host stacks retrieves the correct ordering of packets before passing them to transport and higherlevel protocols. We evaluate our design, Vertigo, under diverse datacenter workloads and show that it is effective in managing microbursts under light and heavy loads and when combined with various congestion control algorithms. For example, in a leaf-spine network under 85% load, Vertigo reduces the mean incast query completion times by 3.5x, 3.3x, 5x compared to ECMP, DRILL, and DIBS when using TCP, 3x, 3.5x, 4.5x alongside DCTCP, and 43x, 33x, 16x when using Swift, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SegalAS21,
+	author = {Raz Segal and
+                  Chen Avin and
+                  Gabriel Scalosub},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{SOAR:} minimizing network utilization with bounded in-network computing},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {16--29},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494853},
+	doi = {10.1145/3485983.3494853},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/SegalAS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-network computing via smart networking devices is a recent trend for modern datacenter networks. State-of-the-art switches with near line rate computing and aggregation capabilities are developed to enable, e.g., acceleration and better utilization for modern applications like big data analytics, and large scale distributed and federated machine learning. We formulate and study the problem of activating a limited number of in-network computing devices within a network, aiming at reducing the overall network utilization for a given workload. Such limitations on the number of in-network computing elements per workload arise, e.g., in incremental upgrades of network infrastructure, and are also due to requiring specialized middleboxes, or FPGAs, that should support heterogeneous workloads, and multiple tenants. We present an optimal and efficient algorithm for placing such devices in tree networks with arbitrary link rates, and further evaluate our proposed solution in various scenarios and for various tasks. Our results show that having merely a small fraction of network devices support in-network aggregation can lead to a significant reduction in network utilization. Furthermore, we show that various intuitive strategies for performing such placements exhibit significantly inferior performance compared to our solution, for varying workloads, tasks, and link rates.}
+}
+
+
+@inproceedings{DBLP:conf/conext/Liu0WZYSXMHFDC21,
+	author = {Kexin Liu and
+                  Chen Tian and
+                  Qingyue Wang and
+                  Hao Zheng and
+                  Peiwen Yu and
+                  Wenhao Sun and
+                  Yonghui Xu and
+                  Ke Meng and
+                  Lei Han and
+                  Jie Fu and
+                  Wanchun Dou and
+                  Guihai Chen},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Floodgate: taming incast in datacenter networks},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {30--44},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494854},
+	doi = {10.1145/3485983.3494854},
+	timestamp = {Sat, 09 Apr 2022 12:34:52 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/Liu0WZYSXMHFDC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Incast occurs frequently in datacenter networks where a large number of senders send data to a single receiver simultaneously, which makes the last hop the network bottleneck. Incast can hurt flows' performance. However, congestion control protocols are not effective at handling incast. One key insight is that it is too late to handle incast packets after they have already piled up at the last hop. Instead, we should avoid incast as early as possible. Inspired by flood control in Hydrologic Engineering, we propose Floodgate, a novel switch-based per-hop flow control to handle incast. Floodgate is compatible with existing congestion control protocols. We integrate it with practical congestion control approaches such as DCQCN, TIMELY, and HPCC. We evaluate Floodgate both in our implementations and large-scale simulations. Compared with state of the art, Floodgate reduces the buffer occupancy by a factor of 6.6x, as well as the queuing delay. Therefore, the average FCT and tail latency are greatly reduced.}
+}
+
+
+@inproceedings{DBLP:conf/conext/RochetAPEDB21,
+	author = {Florentin Rochet and
+                  Emery Assogba and
+                  Maxime Piraux and
+                  Korian Edeline and
+                  Benoit Donnet and
+                  Olivier Bonaventure},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{TCPLS:} modern transport services with {TCP} and {TLS}},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {45--59},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494865},
+	doi = {10.1145/3485983.3494865},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/RochetAPEDB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {TCP and TLS are among the essential protocols in today's Internet. TCP ensures reliable data delivery while TLS secures the data transfer. Although they are very often used together, they have been designed independently following the Internet layered model. This paper demonstrates the various benefits that a closer integration between TCP and TLS would bring. By leveraging the extensible TLS 1.3 records, we combine TCP and TLS into TCPLS to build modern transport services such as multiplexing, connection migration, stream steering, and bandwidth aggregation. These services do not modify the TCP wire format and are resistant to middleboxes. TCPLS offers a powerful API enabling applications to precisely express the required transport services, ranging from a single-path single-stream connection to a multi-stream connection over several network paths, enabling choices between aggregated bandwidth and head-of-line blocking avoidance. Compared to MPTCP, our TCPLS prototype offers more control to the application and can be easily deployed as an extension to user-space TLS libraries, while being implemented at a low cost. Measurements demonstrate that it offers higher performance than existing QUIC libraries with a super set of transport services.}
+}
+
+
+@inproceedings{DBLP:conf/conext/PandaFKRDB21,
+	author = {Sourav Panda and
+                  Yixiao Feng and
+                  Sameer G. Kulkarni and
+                  K. K. Ramakrishnan and
+                  Nick Duffield and
+                  Laxmi N. Bhuyan},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {SmartWatch: accurate traffic analysis and flow-state tracking for
+                  intrusion prevention using SmartNICs},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {60--75},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494861},
+	doi = {10.1145/3485983.3494861},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/PandaFKRDB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite advances in network security, attacks targeting mission critical systems and applications remain a significant problem for network and datacenter providers. Existing telemetry platforms detect volumetric attacks at terabit scales using approximation techniques and coarse grain analysis. However, the prevalence of low and slow attacks that require very little bandwidth, makes flow-state tracking critical to overall attack mitigation. Traffic queries deployed on network switches are often limited by hardware constraints, preventing them from carrying out flow tracking features required to detect stealthy attacks. Such attacks can go undetected in the midst of high traffic volumes. We design SmartWatch, a novel flow state tracking and flow logging system at line rate, using SmartNICs to optimize performance and simultaneously detect a number of stealthy attacks. SmartWatch leverages advances in switch based network telemetry platforms to process the bulk of the traffic and only forward suspicious traffic subsets to the SmartNIC. The programmable network switches perform coarse-grained traffic analysis while the SmartNIC conducts the finer-grained analysis which involves additional processing of the packet as a 'bump-in-the-wire'. A control loop between the SmartNIC and programmable switch tunes the queries performed in the switch to direct the most appropriate traffic subset to the SmartNIC. SmartWatch's cooperative monitoring approach yields 2.39 times better detection rate compared to existing platforms deployed on programmable switches. SmartWatch can detect covert timing channels and perform website fingerprinting more efficiently compared to standalone programmable switch solutions, relieving switch memory and control-plane processor resources. Compared to host-based approaches, SmartWatch can reduce the packet processing latency by 72.32%.}
+}
+
+
+@inproceedings{DBLP:conf/conext/GioacchiniVMDBR21,
+	author = {Luca Gioacchini and
+                  Luca Vassio and
+                  Marco Mellia and
+                  Idilio Drago and
+                  Zied Ben{-}Houidi and
+                  Dario Rossi},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {DarkVec: automatic analysis of darknet traffic with word embeddings},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {76--89},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494863},
+	doi = {10.1145/3485983.3494863},
+	timestamp = {Sat, 25 Feb 2023 11:49:47 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/GioacchiniVMDBR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Darknets are passive probes listening to traffic reaching IP addresses that host no services. Traffic reaching them is unsolicited by nature and often induced by scanners, malicious senders and misconfigured hosts. Its peculiar nature makes it a valuable source of information to learn about malicious activities. However, the massive amount of packets and sources that reach darknets makes it hard to extract meaningful insights. In particular, multiple senders contact the darknet while performing similar and coordinated tasks, which are often commanded by common controllers (botnets, crawlers, etc.). How to automatically identify and group those senders that share similar behaviors remains an open problem. We here introduce DarkVec, a methodology to identify clusters of senders (i.e., IP addresses) engaged in similar activities on darknets. DarkVec leverages word embedding techniques (e.g., Word2Vec) to capture the co-occurrence patterns of sources hitting the darknets. We extensively test DarkVec and explore its design space in a case study using one month of darknet data. We show that with a proper definition of service, the generated embeddings can be easily used to (i) associate unknown senders' IP addresses to the correct known labels (more than 96% accuracy), and (ii) identify new attack and scan groups of previously unknown senders. We contribute DarkVec source code and datasets to the community also to stimulate the use of word embeddings to automatically learn patterns on generic traffic traces.}
+}
+
+
+@inproceedings{DBLP:conf/conext/WangZJX21,
+	author = {Yue Wang and
+                  Guangxing Zhang and
+                  Haiyang Jiang and
+                  Gaogang Xie},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Compact-index: an efficient index algorithm for network traffic},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {90--103},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494858},
+	doi = {10.1145/3485983.3494858},
+	timestamp = {Wed, 02 Nov 2022 13:10:49 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/WangZJX21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In many network security systems, network packets will be archived with no loss for the purpose of forensic, troubleshooting and so on. In order to achieve fast retrieval for these stored packets, index is essential. However, with the rapid increase of network link bandwidth, indexing network traffic traces is facing the challenges of index construction speed, index storage overhead and retrieval efficiency. In this paper, we propose an efficient index scheme for packet index, named Compact-Index, that not only effectively reduces the storage cost of index, but also greatly improves index insertion rate and retrieval efficiency. Experimental results show that our scheme can achieve 7.14Mpps index insertion rate for IPv4 traffic and 6.11Mpps index insertion rate for IPv6 traffic, and supports millisecond scale response to most queries. In addition, the average space cost of index is only about 5% of the raw network traffic. All the experimental results above indicate that Compact-Index significantly outperforms the existing state-of-art index schemes.}
+}
+
+
+@inproceedings{DBLP:conf/conext/GiuliariRWGLP21,
+	author = {Giacomo Giuliari and
+                  Dominik Roos and
+                  Marc Wyss and
+                  Juan {\'{A}}ngel Garc{\'{\i}}a{-}Pardo and
+                  Markus Legner and
+                  Adrian Perrig},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Colibri: a cooperative lightweight inter-domain bandwidth-reservation
+                  infrastructure},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {104--118},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494871},
+	doi = {10.1145/3485983.3494871},
+	timestamp = {Wed, 07 Dec 2022 23:12:40 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/GiuliariRWGLP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Guarantees for traffic traversing the public Internet are hard to come by, as service-level agreements are typically only available for traffic within a single autonomous system or towards direct neighbors. This deficiency leads to unpredictable performance already under normal conditions and can cause outages in the face of networklevel distributed-denial-of-service (DDoS) attacks. In this paper, we present an architecture achieving guaranteed bandwidth properties for global inter-domain network traffic. The control plane of our architecture is based on a distributed server infrastructure, while the data plane enables efficient packet forwarding on per-flow stateless routers. Our implementation demonstrates the technical feasibility and scalability of the design.}
+}
+
+
+@inproceedings{DBLP:conf/conext/RuiterS21,
+	author = {Joeri de Ruiter and
+                  Caspar Schutijser},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Next-generation internet at terabit speed: {SCION} in {P4}},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {119--125},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494839},
+	doi = {10.1145/3485983.3494839},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/RuiterS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Regularly, new architectures are proposed to address shortcomings in the current internet. It is not always trivial to evaluate how these proposals would perform in practice. This situation is improved significantly with the introduction of the P4 programming language and programmable network equipment. In this paper we discuss our implementation of one particular future internet architecture, namely SCION. We implemented a SCION router in P4 for switches based on the Intel Tofino ASIC. Having an open source P4 implementation of SCION that runs on high-speed hardware can contribute to its adoption as well as support research in this area. Our work lead to several recommendations for and subsequent changes to the SCION protocol, as well as some generic guidelines when designing protocols. A first analysis of our implementation shows it can process SCION packets at high speeds.}
+}
+
+
+@inproceedings{DBLP:conf/conext/KrahenbuhlTGKPH21,
+	author = {Cyrill Kr{\"{a}}henb{\"{u}}hl and
+                  Seyedali Tabaeiaghdaei and
+                  Christelle Gloor and
+                  Jonghoon Kwon and
+                  Adrian Perrig and
+                  David Hausheer and
+                  Dominik Roos},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Deployment and scalability of an inter-domain multi-path routing infrastructure},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {126--140},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494862},
+	doi = {10.1145/3485983.3494862},
+	timestamp = {Sun, 06 Aug 2023 20:51:49 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/KrahenbuhlTGKPH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Path aware networking (PAN) is a promising approach that enables endpoints to participate in end-to-end path selection. PAN unlocks numerous benefits, such as fast failover after link failures, application-based path selection and optimization, and native interdomain multi-path. The utility of PAN hinges on the availability of a large number of high-quality path options. In an inter-domain context, two core questions arise. Can we deploy such an architecture natively in today's Internet infrastructure without creating an overlay relying on BGP? Can we build a scalable multi-path routing system that provides a large number of high-quality paths? We first report on the real-world native deployment of the SCION next-generation architecture, providing a usable PAN infrastructure operating in parallel to today's Internet. We then analyze the scalability of the architecture in an Internet-scale topology. Finally, we introduce a new routing approach to further improve scalability.}
+}
+
+
+@inproceedings{DBLP:conf/conext/LiuCH21,
+	author = {Qiang Liu and
+                  Nakjung Choi and
+                  Tao Han},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {OnSlicing: online end-to-end network slicing with reinforcement learning},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {141--153},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494850},
+	doi = {10.1145/3485983.3494850},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/LiuCH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network slicing allows mobile network operators to virtualize infrastructures and provide customized slices for supporting various use cases with heterogeneous requirements. Online deep reinforcement learning (DRL) has shown promising potential in solving network problems and eliminating the simulation-to-reality discrepancy. Optimizing cross-domain resources with online DRL is, however, challenging, as the random exploration of DRL violates the service level agreement (SLA) of slices and resource constraints of infrastructures. In this paper, we propose OnSlicing, an online end-to-end network slicing system, to achieve minimal resource usage while satisfying slices' SLA. OnSlicing allows individualized learning for each slice and maintains its SLA by using a novel constraint-aware policy update method and proactive baseline switching mechanism. OnSlicing complies with resource constraints of infrastructures by using a unique design of action modification in slices and parameter coordination in infrastructures. OnSlicing further mitigates the poor performance of online learning during the early learning stage by offline imitating a rule-based solution. Besides, we design four new domain managers to enable dynamic resource configuration in radio access, transport, core, and edge networks, respectively, at a timescale of subseconds. We implement OnSlicing on an end-to-end slicing testbed designed based on OpenAirInterface with both 4G LTE and 5G NR, OpenDayLight SDN platform, and OpenAir-CN core network. The experimental results show that OnSlicing achieves 61.3% usage reduction as compared to the rule-based solution and maintains nearly zero violation (0.06%) throughout the online learning phase. As online learning is converged, OnSlicing reduces 12.5% usage without any violations as compared to the state-of-the-art online DRL solution.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ParkCLH21,
+	author = {Jinwoo Park and
+                  Byungkwon Choi and
+                  Chunghan Lee and
+                  Dongsu Han},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{GRAF:} a graph neural network based proactive resource allocation
+                  framework for SLO-oriented microservices},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {154--167},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494866},
+	doi = {10.1145/3485983.3494866},
+	timestamp = {Sun, 02 Oct 2022 15:57:59 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/ParkCLH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Microservice is an architectural style that has been widely adopted in various latency-sensitive applications. Similar to the monolith, autoscaling has attracted the attention of operators for managing resource utilization of microservices. However, it is still challenging to optimize resources in terms of latency service-level-objective (SLO) without human intervention. In this paper, we present GRAF, a graph neural network-based proactive resource allocation framework for minimizing total CPU resources while satisfying latency SLO. GRAF leverages front-end workload, distributed tracing data, and machine learning approaches to (a) observe/estimate impact of traffic change (b) find optimal resource combinations (c) make proactive resource allocation. Experiments using various open-source benchmarks demonstrate that GRAF successfully targets latency SLO while saving up to 19% of total CPU resources compared to the fine-tuned autoscaler. Moreover, GRAF handles traffic surge with 36% fewer resources while achieving up to 2.6x faster tail latency convergence compared to the Kubernetes autoscaler.}
+}
+
+
+@inproceedings{DBLP:conf/conext/CaoS21,
+	author = {Lianjie Cao and
+                  Puneet Sharma},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Co-locating containerized workload using service mesh telemetry},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {168--174},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494867},
+	doi = {10.1145/3485983.3494867},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/CaoS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The cloud-native architecture and container-based technologies are revolutionizing how online services and applications are designed, developed, and managed by offering better elasticity and flexibility to developers and operators. However, the increasing adoption of microservice and serverless designs makes application workload more decomposed and transient at a larger scale. Most existing container orchestration systems still manage application workload based on simple system-level resource usage and policies manually created by operators, leading to ineffective application-agnostic scheduling and extra management burden for operators. In this work, we focus on workload placement for containerized applications and services and argue for the integration of application-level telemetry for profiling application status and co-locating application workload. To avoid extra performance overhead and modifications to existing applications, we propose to use the telemetry collected by service mesh to model the application communication patterns with a graph-based representation. By applying a graph partitioning algorithm, we create co-location groups for application workload that minimize cross-group communication traffic to improve the overall application performance, i.e., response time. Our preliminary experiments with a realistic online e-commerce application show that our solution can reduce the average response time by up to 58% compared to the default Kubernetes scheduler.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ZhouHKBF21,
+	author = {Zikai Zhou and
+                  Mu He and
+                  Wolfgang Kellerer and
+                  Andreas Blenk and
+                  Klaus{-}Tycho Foerster},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {P4Update: fast and locally verifiable consistent network updates in
+                  the {P4} data plane},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {175--190},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494845},
+	doi = {10.1145/3485983.3494845},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/ZhouHKBF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable networks come with the promise of logically centralized control, in order to optimize the network's routing behavior. However, until now, controllers are heavily involved in network operations to prevent inconsistencies such as blackholes, loops, and congestion. In this paper, we propose the P4Update framework, based on the network programming language P4, to shift the consistency control and most of the routing update logic out of the overloaded and slow control plane. As such P4Update avoids high and unnecessary control plane delays by mainly scheduling and offloading the update process to the data plane. P4Update returns to operating networks in a partially centralized and distributed manner --- taking the best of both centralized and distributed worlds. The main idea is to flip the problem setting and see asynchrony as an opportunity: switches inform their local neighborhood on resolved update dependencies. What's more, our mechanisms are also provably resilient against inconsistent, reordered, or conflicting concurrent updates. Unlike prior systems, P4Update enables switches to locally verify and reject inconsistent updates, and is also the first system to resolve inter-flow update dependencies purely in the data plane, significantly reducing control plane preparation time and improving its scalability. Beyond verification, we implement P4Update in a P4 software-switch-based environment. Measurements show that P4Update outperforms existing systems with respect to update speed by 28.6% to 39.1% in average.}
+}
+
+
+@inproceedings{DBLP:conf/conext/MendelsonVLBKO21,
+	author = {Gal Mendelson and
+                  Shay Vargaftik and
+                  Dean H. Lorenz and
+                  Kathy Barabash and
+                  Isaac Keslassy and
+                  Ariel Orda},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Load balancing with {JET:} just enough tracking for connection consistency},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {191--204},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494851},
+	doi = {10.1145/3485983.3494851},
+	timestamp = {Sun, 02 Oct 2022 15:57:59 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/MendelsonVLBKO21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hash-based stateful load-balancers employ connection tracking to avoid per-connection-consistency (PCC) violations that lead to broken connections. In this paper, we propose Just Enough Tracking (JET), a new algorithmic framework that significantly reduces the size of the connection tracking tables for hash-based stateful load-balancers without increasing PCC violations. Under mild assumptions on how backend servers are added, JET adapts consistent hash techniques to identify which connections do not need to be tracked. We provide a model to identify these safe connections and a pluggable framework with appealing theoretical guarantees that supports a variety of consistent hash and connection-tracking modules. We implement JET in two different environments and with four different consistent hash techniques. Using a series of evaluations, we demonstrate that JET requires connection-tracking tables that are an order of magnitude smaller than those required with full connection tracking while preserving PCC and balance properties. In addition, JET often increases the lookup rate due to improved caching.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ReviriegoP21,
+	author = {Pedro Reviriego and
+                  Salvatore Pontarelli},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Perfect cuckoo filters},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {205--211},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494852},
+	doi = {10.1145/3485983.3494852},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/ReviriegoP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bloom filters and cuckoo filters are used in many applications to reduce the amount of memory needed to check if an element belongs to a set. The main drawback of these filters is that with low probability, a positive is returned for an element that is not in the set. Recently, the concept of Bloom filters with a false positive free zone has been introduced showing that false positives can be avoided when the universe from which elements are taken and the number of elements inserted in the filter are both small. Unfortunately, this limits the use of such false positive free Bloom filters in many practical applications. In this paper, a false positive free, i.e. perfect, cuckoo filter is presented and evaluated. The proposed design supports universe sizes of billions of elements and stores millions of elements, making it practical for a wide range of applications. The perfect cuckoo filter can be also used to perform <key,value> mapping, further extending the range of scenarios in which can be used. The benefits of the proposed perfect cuckoo filter are illustrated with two case studies: IP address blacklisting and longest prefix match for IP forwarding.}
+}
+
+
+@inproceedings{DBLP:conf/conext/GonzalezSCGIN21,
+	author = {Roberto Gonzalez and
+                  Claudio Soriente and
+                  Juan Miguel Carrascosa and
+                  Alberto Garc{\'{\i}}a{-}Dur{\'{a}}n and
+                  Costas Iordanou and
+                  Mathias Niepert},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {User profiling by network observers},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {212--222},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494859},
+	doi = {10.1145/3485983.3494859},
+	timestamp = {Mon, 05 Feb 2024 20:34:46 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/GonzalezSCGIN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Targeted online advertising is a multi-billion dollar business based on the ability of profiling and delivering targeted ads to a wide range of users. Due to the privacy erosion associated with such business, researchers are trying to understand how profiling works and anti-tracking applications are becoming popular among users. Both research and privacy-enhancing apps, however, target ad-networks or over-the-top providers that have unrestricted access to users\' online activity. There seems to be little interest in potential profiling activities by "network observers" like ISPs or VPN providers. On the one side, this may be explained by the pervasiveness of TLS that secures connections end-to-end. On the other side, TLS does leak some information, and it is not clear what an eavesdropper can learn about a user, despite her traffic being encrypted. In this paper, we show that a network observer can build accurate user profiles notwithstanding the limited visibility due to TLS. In particular, we introduce a technique based on representation learning algorithms that can build profiles by only using the hostnames of URLs requested by users. To evaluate the accuracy of the profiles built with our technique, we setup an experiment where we serve personalized ads to more than one thousand real users over a period of one month. We compare the click-through rate of ads served by our system with the one of ads served by ad-networks. We empirically show that the quality of profiles that a network observer could build is comparable to the quality of profiles available to ad-networks and over-the-top providers. This is particularly worrisome since current anti-tracking mechanisms cannot counter profiling activities by network observers, whereas effective mechanisms like TOR incur in a performance and usability penalty.}
+}
+
+
+@inproceedings{DBLP:conf/conext/DaoF21,
+	author = {Ha Dao and
+                  Kensuke Fukuda},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Alternative to third-party cookies: investigating persistent {PII}
+                  leakage-based web tracking},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {223--229},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494860},
+	doi = {10.1145/3485983.3494860},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/DaoF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many popular websites give users the ability to sign up for their services, which requires personally identifiable information (PII). However, these websites embed third-party tracking and advertising resources, and as a consequence, the authentication flow can intentionally or unintentionally leak PII to these services. Since a user can be identified with PII, trackers can use it for tracking purposes, leading to further privacy leaks when cross-site, cross-browser, and cross-device tracking occur. In this paper, we document a persistent web tracking mechanism that relies on manipulating PII leakage after a user completes the sign-up and sign-in flow (authentication flows) on first-party sites. To the best of our knowledge, this is the first in-depth analysis of leaked PII in the authentication flows. By investigating the authentication flows for 307 popular shopping sites from the Tranco top 10,000 sites, we first discover that 42.3% of sites leak the PII to third-party services. Then, we present a previously unknown persistent web tracking technique based on PII leakage that enables tracking providers to generate and store a unique persistent identifier for a user with his/her browsing history on their tracking servers. By analyzing 130 first-party senders along with 100 third-party receiver domains, we show that PII leakage is a potentially important vector for online tracking for at least 20 providers. In addition, we check the privacy policy of the 130 first-party senders and observe that they are not clear about PII exchange with third parties. Finally, to provide a wider picture of current in-browser privacy protection techniques, we evaluate the effect of browsers and well-known blocklists against PII leakage. We point out that browsers are unable to deal with PII leakage except for Brave with its privacy-improving features, whereas blocklists reduce the number of leaked PII resources but do not fix this problem in general.}
+}
+
+
+@inproceedings{DBLP:conf/conext/DeccioYBHHNRTT21,
+	author = {Casey T. Deccio and
+                  Tarun Yadav and
+                  Nathaniel Bennett and
+                  Alden Hilton and
+                  Michael Howe and
+                  Tanner Norton and
+                  Jacob Rohde and
+                  Eunice Tan and
+                  Bradley Taylor},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Measuring email sender validation in the wild},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {230--242},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494868},
+	doi = {10.1145/3485983.3494868},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/DeccioYBHHNRTT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Email is a critical Internet application, and its security is important. The Sender Policy Framework (SPF), DomainKeys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC) were developed to enable mail servers to detect and reject email coming from fraudulent sources. In this paper we study the state of SPF, DKIM, and DMARC validation across a large number of mail servers, the first such study at scale that we know of. We consider two behaviors of sender-validating mail servers: behavior when an email with a valid sender is received and behavior when an email from a invalid sender is received. Our techniques allow us to elicit SPF, DKIM, and DMARC validation behavior of the servers without spam. We find that as many as 85% of mail servers are deploying SPF validation, and over half are deploying all three mechanisms: SPF, DKIM, and DMARC. We also observe there are some nuanced behaviors with regard to adherence to the SPF specification.}
+}
+
+
+@inproceedings{DBLP:conf/conext/XuSFMBUBZ21,
+	author = {Kai Xu and
+                  Rajkarn Singh and
+                  Marco Fiore and
+                  Mahesh K. Marina and
+                  Hakan Bilen and
+                  Muhammad Usama and
+                  Howard Benn and
+                  Cezary Ziemlicki},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {SpectraGAN: spectrum based generation of city scale spatiotemporal
+                  mobile network traffic data},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {243--258},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494844},
+	doi = {10.1145/3485983.3494844},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/XuSFMBUBZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {City-scale spatiotemporal mobile network traffic data can support numerous applications in and beyond networking. However, operators are very reluctant to share their data, which is curbing innovation and research reproducibility. To remedy this status quo, we propose SpectraGAN, a novel deep generative model that, upon training with real-world network traffic measurements, can produce high-fidelity synthetic mobile traffic data for new, arbitrary sized geographical regions over long periods. To this end, the model only requires publicly available context information about the target region, such as population census data. SpectraGAN is an original conditional GAN design with the defining feature of generating spectra of mobile traffic at all locations of the target region based on their contextual features. Evaluations with mobile traffic measurement datasets collected by different operators in 13 cities across two European countries demonstrate that SpectraGAN can synthesize more dependable traffic than a range of representative baselines from the literature. We also show that synthetic data generated with SpectraGAN yield similar results to that with real data when used in applications like radio access network infrastructure power savings and resource allocation, or dynamic population mapping.}
+}
+
+
+@inproceedings{DBLP:conf/conext/GallenmullerSSC21,
+	author = {Sebastian Gallenm{\"{u}}ller and
+                  Dominik Scholz and
+                  Henning Stubbe and
+                  Georg Carle},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {The pos framework: a methodology and toolchain for reproducible network
+                  experiments},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {259--266},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494841},
+	doi = {10.1145/3485983.3494841},
+	timestamp = {Mon, 03 Jan 2022 22:15:01 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/GallenmullerSSC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In scientific research, the independent reproduction of experimental results is the source of trust. The release of experimental artifacts enables the reproduction of results; however, additional efforts of researchers are required to prepare and document their experiments accordingly. To honor this increased effort, multiple initiatives were implemented to incentivize the creation and release of experimental artifacts, e.g., awards for papers that provide experimental artifacts. In this work, we want to propose a novel approach toward a reproducible research---a structured experimental workflow that allows the creation of reproducible experiments without requiring additional efforts of the researcher. Moreover, we present our own testbed and toolchain, namely, plain orchestrating service (pos), which enables the creation of such experimental workflows. The experiment is documented by our proposed, fully scripted experiment structure. Further, we consider the entire experimental workflow from experiment orchestration, to data measurement, to result evaluation. In addition, pos provides scripts that enable the automation of the bundling and release of all the created experimental artifacts. In this case study, we release one of our own experiments together with the necessary tools so that others can reproduce our experiment. Additionally, we provide an interactive environment where pos experiments can be executed and reproduced, which is available at https://gallenmu.github.io/pos-artifacts.}
+}
+
+
+@inproceedings{DBLP:conf/conext/KrudeRSRFW21,
+	author = {Johannes Krude and
+                  Jan R{\"{u}}th and
+                  Daniel Schemmel and
+                  Felix Rath and
+                  Iohannes{-}Heorh Folbort and
+                  Klaus Wehrle},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Determination of throughput guarantees for processor-based SmartNICs},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {267--281},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494842},
+	doi = {10.1145/3485983.3494842},
+	timestamp = {Mon, 26 Jun 2023 20:48:21 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/KrudeRSRFW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable network devices are on the rise with many applications ranging from improved network management to accelerating and offloading parts of distributed systems. Processor-based SmartNICs, match-action-based switches, and FPGA devices offer on-path programmability. Whereas processor-based SmartNICs are much easier and more versatile to program, they have the huge disadvantage that the resulting throughput may vary strongly and is not easily predictable even to the programmer. We want to close this gap by presenting a methodology which, given a SmartNIC program, determines the achievable throughput of this SmartNIC program in terms of achievable packet rate and bit rate. Our approach combines incremental longest path search with SMT checks to establish a lower bound for the slowest satisfiable program path. By analyzing only the slowest program paths, our approach estimates throughput bounds within a few seconds. The evaluation with our prototype on real programs shows that the estimated throughput guarantees are correct with an error of at most 1.7% and provide a tight lower bound for processor- and memory-bottlenecked programs with only 8.5% and 18.2% underestimation.}
+}
+
+
+@inproceedings{DBLP:conf/conext/DuZYKC21,
+	author = {Zhuoxuan Du and
+                  Jiaqi Zheng and
+                  Hebin Yu and
+                  Lingtao Kong and
+                  Guihai Chen},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {A unified congestion control framework for diverse application preferences
+                  and network conditions},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {282--296},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494840},
+	doi = {10.1145/3485983.3494840},
+	timestamp = {Wed, 22 Nov 2023 12:10:46 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/DuZYKC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increase of diversity in application needs and networks, existing congestion control algorithms (CCAs) do not accommodate this complicated reality. Previous classic CCAs are designed for a specific domain with fixed rules, failing to adapt to such diversities. Recently surged learning-based CCAs have great potential in adaptability and flexibility but are not practical due to unsatisfying performance on convergence, fairness, overhead and safety assurance. In this paper, we propose Libra, a unified congestion control framework, which empowers flexibility, adaptability, and practicality, by combining the wisdom of classic and reinforcement learning (RL)-based CCAs. Extensive evaluation of Libra's Linux kernel implementations on both live Internet and emulated networks shows performance improvement under dynamic networks (e.g., 1.2x throughput than Orca on average). At the same time, Libra can flexibly satisfy different application needs, reduce the running overhead by at most 0.92x and perform good fairness and convergence properties, well-fitting our theoretical analysis.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ZhangSYWWGL21,
+	author = {Han Zhang and
+                  Xingang Shi and
+                  Xia Yin and
+                  Jilong Wang and
+                  Zhiliang Wang and
+                  Yingya Guo and
+                  Tian Lan},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Boosting bandwidth availability over inter-DC {WAN}},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {297--312},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494843},
+	doi = {10.1145/3485983.3494843},
+	timestamp = {Thu, 04 Aug 2022 08:01:46 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/ZhangSYWWGL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Inter-DataCenter Wide Area Network (Inter-DC WAN) that connects geographically distributed data centers is becoming one of the most critical network infrastructures. Due to limited bandwidth and inevitable link failures, it is highly challenging to guarantee network availability for services, especially those with stringent bandwidth demands, over inter-DC WAN. We present BATE, a novel Traffic Engineering (TE) framework for bandwidth availability (BA) provision, which aims to ensure that each bandwidth demand must be satisfied with a stipulated probability, when subjected to the network capacity and possible failures of the inter-DC WAN. The three core components of BATE, i.e., admission control, traffic scheduling and failure recovery, are formulated through different mathematical models and theoretically analyzed. They are also extensively compared against state-of-the-art TE schemes, using a testbed as well as real trace driven simulations across different topologies, traffic matrices and failure scenarios. Our evaluations show that, compared with the optimal admission strategy, BATE can speed up the online admission control by 30x at the expense of less than 4% false rejections. On the other hand, compared with the latest TE schemes like FFC and TEAVAR, BATE can meet the bandwidth availability targets for 23%~60% more demands under normal loads, and when network failure causes BA targets violations.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ParhamFSF021,
+	author = {Mahmoud Parham and
+                  Thomas Fenz and
+                  Nikolaus S{\"{u}}ss and
+                  Klaus{-}Tycho Foerster and
+                  Stefan Schmid},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Traffic engineering with joint link weight and segment optimization},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {313--327},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494846},
+	doi = {10.1145/3485983.3494846},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/ParhamFSF021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Most ISPs use sophisticated traffic engineering strategies based on link weight optimizations to efficiently provision their backbone network and to serve intra-domain traffic. While traditionally, traffic is split among the shortest weighted paths using ECMP, recently, an additional dimension for optimization arose in the context of segment routing: traffic can be steered away from congested shortest paths by inserting intermediate destinations, so-called waypoints. This paper investigates the benefits of jointly optimizing the link weights and waypoints for traffic engineering both analytically and empirically. In particular, we formulate the joint optimization problem and formally quantify the benefits of joint optimizations over separate link-weights and waypoints optimizations, using a rigorous analysis. We also present an efficient joint optimization algorithm and evaluate its performance in realistic and synthetic scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/conext/HassanRCZCST21,
+	author = {Anaobi Ishaku Hassan and
+                  Aravindh Raman and
+                  Ignacio Castro and
+                  Haris Bin Zia and
+                  Emiliano De Cristofaro and
+                  Nishanth Sastry and
+                  Gareth Tyson},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Exploring content moderation in the decentralised web: the pleroma
+                  case},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {328--335},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494838},
+	doi = {10.1145/3485983.3494838},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/HassanRCZCST21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Decentralising the Web is a desirable but challenging goal. One particular challenge is achieving decentralised content moderation in the face of various adversaries (e.g. trolls). To overcome this challenge, many Decentralised Web (DW) implementations rely on federation policies. Administrators use these policies to create rules that ban or modify content that matches specific rules. This, however, can have unintended consequences for many users. In this paper, we present the first study of federation policies on the DW, their in-the-wild usage, and their impact on users. We identify how these policies may negatively impact "innocent" users and outline possible solutions to avoid this problem in the future.}
+}
+
+
+@inproceedings{DBLP:conf/conext/BaekDDR21,
+	author = {Duin Baek and
+                  Mallesham Dasari and
+                  Samir R. Das and
+                  Jihoon Ryoo},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {dcSR: practical video quality enhancement using data-centric super
+                  resolution},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {336--343},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494856},
+	doi = {10.1145/3485983.3494856},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/BaekDDR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the next generation immersive video applications, network capacity is becoming a growing bottleneck to deliver a high quality video to end-users. Recent advances to tackle this challenge introduced super-resolution (SR) for video quality enhancement through neural computations by leveraging client-side compute capacity. However, the existing SR models are bulky, compute-, and memory-expensive, which makes it difficult to deploy them in practice. In this work, we present dcSR, a lightweight data-centric SR approach that enables a practical neural quality enhancement for videos. On the server-side, dcSR constructs micro SR models trained on a few selected frames from each video through a data-centric paradigm by employing a long term video scene understanding mechanism. On the client-side, dcSR integrates the micro SR models into the regular video decoder and enhances the video quality in real-time without compromising on quality enhancement. We evaluate dcSR and show its benefits by comparing it with previous methods.}
+}
+
+
+@inproceedings{DBLP:conf/conext/YanLT21,
+	author = {Gang Yan and
+                  Jian Li and
+                  Don Towsley},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Learning from optimal caching for content delivery},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {344--358},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494855},
+	doi = {10.1145/3485983.3494855},
+	timestamp = {Sun, 12 Nov 2023 02:15:15 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/YanLT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Content delivery networks (CDNs) distribute much of today's Internet traffic by caching and serving users' contents requested. A major goal of a CDN is to improve hit probabilities of its caches, thereby reducing WAN traffic and user-perceived latency. In this paper, we develop a new approach for caching in CDNs that learns from optimal caching for decision making. To attain this goal, we first propose HRO to compute the upper bound on optimal caching in an online manner, and then leverage HRO to inform future content admission and eviction. We call this new cache design LHR. We show that LHR is efficient since it includes a detection mechanism for model update, an auto-tuned threshold-based model for content admission with a simple eviction rule. We have implemented an LHR simulator as well as a prototype within an Apache Traffic Server and the Caffeine, respectively. Our experimental results using four production CDN traces show that LHR consistently outperforms state of the arts with an increase in hit probability of up to 9% and a reduction in WAN traffic of up to 15% compared to a typical production CDN cache. Our evaluation of the LHR prototype shows that it only imposes a moderate overhead and can be deployed on today's CDN servers.}
+}
+
+
+@inproceedings{DBLP:conf/conext/PalmerAS0FS21,
+	author = {Mirko Palmer and
+                  Malte Appel and
+                  Kevin Spiteri and
+                  Balakrishnan Chandrasekaran and
+                  Anja Feldmann and
+                  Ramesh K. Sitaraman},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{VOXEL:} cross-layer optimization for video streaming with imperfect
+                  transmission},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {359--374},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494864},
+	doi = {10.1145/3485983.3494864},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/PalmerAS0FS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Delivering videos under less-than-ideal network conditions without compromising end-users\' quality of experiences is a hard problem. Virtually all prior work follow a piecemeal approach---either "tweaking" the fully reliable transport layer or making the client "smarter." We propose VOXEL, a cross-layer optimization system for video streaming. We use VOXEL to demonstrate how to combine application-provided "insights" with a partially reliable protocol for optimizing video streaming. To this end, we present a novel ABR algorithm that explicitly trades off losses for improving end-users\' video-watching experiences. VOXEL is fully compatible with DASH, and backward-compatible with VOXEL-unaware servers and clients. In our experiments emulating a wide range of network conditions, VOXEL outperforms the state-of-the-art: We stream videos in the 90th-percentile with up to 97% less rebuffering than the state-of-the-art without sacrificing visual fidelity. We also demonstrate the benefits of VOXEL for small-buffer regimes like the emerging use case of low-latency and live streaming. In a survey of 54 real users, 84% of the participants indicated that they prefer videos streamed using VOXEL compared to the state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/conext/BraudA021,
+	author = {Tristan Braud and
+                  Ahmad Yousef Alhilal and
+                  Pan Hui},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Talaria: in-engine synchronisation for seamless migration of mobile
+                  edge gaming instances},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {375--381},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494848},
+	doi = {10.1145/3485983.3494848},
+	timestamp = {Mon, 17 Oct 2022 22:14:49 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/BraudA021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile cloud gaming requires a very low end-to-end latency. Edge computing significantly reduces network latency. However, in mobility scenarios, the user will frequently move out of the edge server's coverage area, requiring frequent migration of the game instance. This paper presents Talaria, an in-engine content synchronisation solution for unnoticeable game instance migration between edge servers. Talaria creates a minimal instance with content immediately relevant to the game experience, allowing the client to switch servers in a minimal amount of time. The remaining content is then synchronised according to priority until the game's state is coherent between both instances. Our implementation of Talaria as a Unity engine plugin reduces the game's downtime by 61% compared to one-off server migration, with an average latency below 25 ms for the server migration, and 87 ms for the entire game synchronisation.}
+}
+
+
+@inproceedings{DBLP:conf/conext/PetersenSW21,
+	author = {Hauke Petersen and
+                  Thomas C. Schmidt and
+                  Matthias W{\"{a}}hlisch},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Mind the gap: multi-hop IPv6 over {BLE} in the IoT},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {382--396},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494847},
+	doi = {10.1145/3485983.3494847},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/PetersenSW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bluetooth Low Energy (BLE) is today's most popular low-power radio technology with compelling radio performance and battery-friendly characteristics, making it a promising deployment option for the Internet of Things (IoT). Little is known, however, about the performance and pitfalls when utilizing BLE as link layer in multi-hop IP over BLE scenarios, because of the lack of available software platforms and deployment experiences. In this work, we present both a fully open-source, configurable software platform and experiments to analyze multi-hop BLE network behavior. Our experiments, conducted in a larger testbed, reveal unexpected performance drawbacks. Even in scenarios with underutilized links, BLE connections break randomly. This results into large transmission delays on the network layer and thus hinders real-world deployments in the constrained IoT. As key reason for this behavior we identify the BLE connection interval. A deterministic interval leads to unpredictable link behavior and connection losses due to overlapping connection events. We propose randomizing connection intervals as mitigation strategy and demonstrate that this prevents connection losses and sporadic link degradation, improving the overall network behavior.}
+}
+
+
+@inproceedings{DBLP:conf/conext/Ayala-RomeroGCI21,
+	author = {Jose A. Ayala{-}Romero and
+                  Andres Garcia{-}Saavedra and
+                  Xavier Costa{-}P{\'{e}}rez and
+                  George Iosifidis},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {EdgeBOL: automating energy-savings for mobile edge {AI}},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {397--410},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494849},
+	doi = {10.1145/3485983.3494849},
+	timestamp = {Sun, 02 Oct 2022 15:57:59 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/Ayala-RomeroGCI21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Supporting Edge AI services is one of the most exciting features of future mobile networks. These services involve the collection and processing of voluminous data streams, right at the network edge, so as to offer real-time and accurate inferences to users. However, their widespread deployment is hampered by the energy cost they induce to the network. To overcome this obstacle, we propose a Bayesian learning framework for jointly configuring the service and the Radio Access Network (RAN), aiming to minimize the total energy consumption while respecting desirable accuracy and latency thresholds. Using a fully-fledged prototype with a software-defined base station (BS) and a GPU-enabled edge server, we profile a state-of-the-art video analytics AI service and identify new performance trade-offs. Accordingly, we tailor the optimization framework to account for the network context, the user needs, and the service metrics. The efficacy of our proposal is verified in a series of experiments and comparisons with neural network-based benchmarks.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SchmidtIN21,
+	author = {Robert Schmidt and
+                  Mikel Irazabal and
+                  Navid Nikaein},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {FlexRIC: an {SDK} for next-generation SD-RANs},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {411--425},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494870},
+	doi = {10.1145/3485983.3494870},
+	timestamp = {Thu, 16 Jun 2022 12:12:29 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/SchmidtIN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unlike previous mobile networks, 5G New Radio (5G-NR) provides unprecedented flexibility in the radio access network (RAN) to support diverse use cases in a multi-tenant environment. In this context, the need for programmability and control through software-defined radio access networking (SD-RAN) is well established. While the underlying RAN is designed to be ultra flexible and lean, existing SD-RAN controllers are either not flexible to address all use cases or use a one-size-fits-all approach. In this paper, we present FlexRIC, a flexible and efficient software development kit (SDK) that enables to build specialized service-oriented controllers. FlexRIC has a modular architecture with minimal footprint and is designed with extensibility in mind. We validate the SDK building concrete implementations of two specialized controllers for state-of-the-art 5G use cases: (1) a recursive RAN controller that virtualizes the network to allow multiple tenants to concurrently control and operate their services in a shared infrastructure over the heterogeneous landscape of 5G networks, and (2) an SD-RAN controller providing programmability for multi-radio access technology (RAT) RAN slicing, and flow-based traffic control targeting low-latency communications. The results reveal that FlexRIC reduces the round-trip time by two while incurring 83 % less CPU compared with O-RAN's reference implementation, and uses 10x less CPU and one third of the memory when compared to FlexRAN. Such performance is required to unleash the potential of emerging 5G use cases.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ZhuangW0PWLZ21,
+	author = {Shuying Zhuang and
+                  Jessie Hui Wang and
+                  Jilong Wang and
+                  Zujiang Pan and
+                  Tianhao Wu and
+                  Fenghua Li and
+                  Zhiyong Zhang},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Discovering obscure looking glass sites on the web to facilitate internet
+                  measurement research},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {426--439},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494857},
+	doi = {10.1145/3485983.3494857},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/ZhuangW0PWLZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite researchers have noticed that Looking Glass (LG) vantage points (VPs) are valuable for Internet measurement researches, they can only exploit VPs from well-known LG sites published on several LG portal pages. There should be a lot of LG sites that are not published in these portal pages, namely obscure LG sites, which are not easy to be found and exploited by researchers. In this paper, we design an efficient focused crawler to discover as many LG sites as possible which can avoid unnecessary resource consumption on analyzing irrelevant pages. Our designed focused crawler takes a similarity-guided search that exploits the well-developed search engines and comprehensively mines the common features shared by known LG sites to discover more LG pages. Moreover, the focused crawler takes a two-step PU learning classifier based on carefully selected LG features to efficiently discard irrelevant URLs, thus avoiding a lot of unnecessary resource consumption. As far as we know, we are the first to develop a method to discover obscure LG sites on the web. Experimental results show the effectiveness of our focused crawler. To facilitate practical applications, we further develop an automation tool, which can successfully retrieve 910 obscure automatable LG VPs from relevant pages obtained through our focused crawler. The 910 LG VPs significantly increase the geographic and network coverage of available VPs and we show their potential values in improving the completeness of AS-level Internet topology by a simple case study. Our method and the final VP list are beneficial to the measurement community.}
+}
+
+
+@inproceedings{DBLP:conf/conext/LuckieHMBFC21,
+	author = {Matthew Luckie and
+                  Bradley Huffaker and
+                  Alexander Marder and
+                  Zachary S. Bischof and
+                  Marianne Fletcher and
+                  Kimberly C. Claffy},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Learning to extract geographic information from internet router hostnames},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {440--453},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494869},
+	doi = {10.1145/3485983.3494869},
+	timestamp = {Mon, 05 Feb 2024 20:34:45 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/LuckieHMBFC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Geolocating Internet routers is a long-standing and notoriously difficult challenge, and current solutions lack the accuracy and adaptability to yield reliable results. We revisit this problem, designing a solution capable of accurately and comprehensively extracting geographic information that network operators embed into router interface hostnames. We train our system using dictionaries that map geographic codes to known locations, and constrain inferences with delay measurements conducted from a distributed set of vantage points. While most operators use known geographic codes, some devise their own mnemonic codes for locations, which our system also extracts and interprets. We evaluate our system on Internet-wide topology datasets, automatically learning regular expressions (regexes) for 1023 different domain suffixes with IPv4 routers, and 241 different domain suffixes with IPv6 routers. We received ground truth from operators of 13 domain suffixes, all of whom confirmed the correctness of our learned regexes, and that our system correctly interpreted 78.6% of the custom geographic codes. For these 13 suffixes, our solution more accurately extracts and interprets geographic information than the previous state-of-the-art, correctly geolocating 94.0% of router hostnames with a geohint compared to DRoP (56.6%) and HLOC (73.1%). This work advances the ability of researchers and network operators to characterize the location of critical Internet infrastructure, a foundational building block of network performance, security, and resilience analysis. We release the source code of our system and our inferred regexes.}
+}
+
+
+@inproceedings{DBLP:conf/conext/NawrockiKSW21,
+	author = {Marcin Nawrocki and
+                  Maynard Koch and
+                  Thomas C. Schmidt and
+                  Matthias W{\"{a}}hlisch},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Transparent forwarders: an unnoticed component of the open {DNS} infrastructure},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {454--462},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3494872},
+	doi = {10.1145/3485983.3494872},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/NawrockiKSW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we revisit the open DNS (ODNS) infrastructure and, for the first time, systematically measure and analyze transparent forwarders, DNS components that transparently relay between stub resolvers and recursive resolvers. Our key findings include four takeaways. First, transparent forwarders contribute 26% (563k) to the current ODNS infrastructure. Unfortunately, common periodic scanning campaigns such as Shadowserver do not capture transparent forwarders and thus underestimate the current threat potential of the ODNS. Second, we find an increased deployment of transparent forwarders in Asia and South America. In India alone, the ODNS consists of 80% transparent forwarders. Third, many transparent forwarders relay to a few selected public resolvers such as Google and Cloudflare, which confirms a consolidation trend of DNS stakeholders. Finally, we introduce DNSRoute++, a new traceroute approach to understand the network infrastructure connecting transparent forwarders and resolvers.}
+}
+
+
+@inproceedings{DBLP:conf/conext/AbiramK21,
+	author = {Ketheeswaran Abiram and
+                  Thabotharan Kathiravelu},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Congestion avoidance in data communication networks using software
+                  defined networking},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {463--464},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493343},
+	doi = {10.1145/3485983.3493343},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/AbiramK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software Defined Networking (SDN) has emerged as a new technology that enabled dynamic adaptation and configuration to the traditional networking. In this work, using SDN centralized control, we propose a path algorithm to avoid congestion in data communication networks. Our proposed algorithm will find a path between the source and the destination nodes by considering hop counts and the available bandwidth among the links. The path we find can be slightly longer, but is less congested compared to the congested least hops path. The found path will lead to better traffic load distribution in the network. We implemented the proposed algorithm and carried out experiments in Mininet using RYU controller. Our algorithm shows a good performance improvement in resolving the congestion when compared to the existing path algorithm in the RYU controller.}
+}
+
+
+@inproceedings{DBLP:conf/conext/FarasatRKPK21,
+	author = {Talaya Farasat and
+                  Muhammad Ahmad Rathore and
+                  Akmal Khan and
+                  Sun Park and
+                  JongWon Kim},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{BGP} traffic volume forecasting using {LSTM} framework},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {465--466},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493344},
+	doi = {10.1145/3485983.3493344},
+	timestamp = {Fri, 28 Apr 2023 23:58:25 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/FarasatRKPK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Forecasting network traffic is a challenging task for better network management. In this poster, we present a Border Gateway Protocol (BGP) traffic volume prediction framework that uses real BGP data from two famous Internet exchange points (IXPs) to train the LSTM network and generate future volume-based predictions. Our experimental evaluation shows that LSTM can indeed be used to predict BGP traffic volume with a very low prediction errors.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SharafzadehG21,
+	author = {Erfan Sharafzadeh and
+                  Soudeh Ghorbani},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {A high-resolution study of data center traffic at its origin},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {467--468},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493346},
+	doi = {10.1145/3485983.3493346},
+	timestamp = {Mon, 03 Jan 2022 22:15:01 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/SharafzadehG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {High-resolution studies of data center traffic at the network core uncover short-term bursty traffic patterns, periods of high buffer utilization that last for tens of microseconds and lead to packet loss and longer flow completion time tails. While recent attention has been directed towards studying the bursty traffic at the network core, less heed has been given to the origins of bursty traffic, e.g., host machines. In this study, we try to perform high-resolution traffic measurements in the host networking stack to quantify the impact of system software components on traffic burstiness. We enforce per-packet timestamping on the datapath using various techniques like NIC timestamping, eBPF, and direct kernel source modification and measure the gaps between egress packets under various configurations. We provide preliminary findings on how process scheduling can affect traffic burstiness.}
+}
+
+
+@inproceedings{DBLP:conf/conext/PrajapatiHWYK21,
+	author = {Rupesh Prajapati and
+                  Vasant G. Honavar and
+                  Dinghao Wu and
+                  John Yen and
+                  Michalis Kallitsis},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Shedding light into the darknet: scanning characterization and detection
+                  of temporal changes},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {469--470},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493347},
+	doi = {10.1145/3485983.3493347},
+	timestamp = {Wed, 07 Dec 2022 23:12:40 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/PrajapatiHWYK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network telescopes provide a unique window into Internet-wide malicious activities associated with malware propagation, denial of service attacks, network reconnaissance, and others. Analyses of this telescope data can highlight ongoing malicious events in the Internet which can be used to prevent or mitigate cyber-threats in real-time. However, large telescopes observe millions of events on a daily basis which renders the task of transforming this knowledge to meaningful insights challenging. In order to address this, we present a novel framework for characterizing Internet\'s background radiation and for tracking its temporal evolution. The proposed framework: (i) Extracts a high dimensional representation of telescope scanners composed of features distilled from telescope data and learns an information-preserving low-dimensional representation of these events that is amenable to clustering; (ii) Performs clustering of resulting representation space to characterize the scanners and (iii) Utilizes the clustering outcomes as "signatures" to detect temporal changes in the network telescope.}
+}
+
+
+@inproceedings{DBLP:conf/conext/SimpsonP21,
+	author = {Kyle A. Simpson and
+                  Dimitrios P. Pezaros},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Online {RL} in the programmable dataplane with OPaL},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {471--472},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493345},
+	doi = {10.1145/3485983.3493345},
+	timestamp = {Sat, 09 Apr 2022 12:34:52 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/SimpsonP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reinforcement learning (RL) is a key tool in data-driven networking for learning to control systems online. While recent research has shown how to offload machine learning tasks to the dataplane (reducing processing latency), online learning remains an open challenge unless the model is moved back to a host CPU, harming latency-sensitive applications. Our poster introduces OPaL---On Path Learning---the first work to bring online reinforcement learning to the dataplane. OPaL makes online learning possible in SmartNIC/NPU hardware by returning to classical RL techniques---avoiding neural networks. This simplifies update logic, enabling online learning, and benefits well from the parallelism common to SmartNICs. We show that our implementation on Netronome SmartNIC hardware offers concrete latency improvements over host execution.}
+}
+
+
+@inproceedings{DBLP:conf/conext/MostafaeiMS21,
+	author = {Habib Mostafaei and
+                  Seyed Milad Miri and
+                  Stefan Schmid},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {ReactNet: self-adjusting architecture for networked systems},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {473--474},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493348},
+	doi = {10.1145/3485983.3493348},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/MostafaeiMS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Providers today run numerous applications on their networks with diverse quality of service requirements. An appealing vision to deal with the resulting complexity of network operation, is to give more control to the network, allowing it to become more autonomous and to dynamically "self-adjust", to meet its requirements. This paper presents an architecture, ReactNet, to realize this vision, by leveraging two enabling technologies. First, we use programmable dataplanes and P4 to get accurate information about the traffic patterns the network currently serves. Second, we leverage Machine Learning (ML) techniques to process this information and react to the network changes dynamically.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ShahinfarMSSBA21,
+	author = {Farbod Shahinfar and
+                  Sebastiano Miano and
+                  Alireza Sanaee and
+                  Giuseppe Siracusano and
+                  Roberto Bifulco and
+                  Gianni Antichi},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {The case for network functions decomposition},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {475--476},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493349},
+	doi = {10.1145/3485983.3493349},
+	timestamp = {Tue, 07 May 2024 20:10:42 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/ShahinfarMSSBA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper makes a case for writing unrestricted eBPF network functions which then get automatically decomposed between kernel and user-space.}
+}
+
+
+@inproceedings{DBLP:conf/conext/HouLCY21,
+	author = {Kaiyu Hou and
+                  Sen Lin and
+                  Yan Chen and
+                  Vinod Yegneswaran},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Accelerate and secure serverless networks with {QUIC}},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {477--478},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493350},
+	doi = {10.1145/3485983.3493350},
+	timestamp = {Sun, 05 Mar 2023 13:16:58 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/HouLCY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In serverless computing [3], cloud providers manage responsibility for all server-related tasks, including both hardware resource allocation and software runtime preparation. Cloud tenants are thus free to simply focus on designing discrete stateless functions and orchestrate them together for their high-level business logic.}
+}
+
+
+@inproceedings{DBLP:conf/conext/LiSK21,
+	author = {Rengang Li and
+                  Dongdong Su and
+                  Hongwei Kan},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {A fast, scalable, and energy-efficient edge acceleration architecture
+                  based on {FPGA} cluster},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {479--480},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493351},
+	doi = {10.1145/3485983.3493351},
+	timestamp = {Sat, 30 Sep 2023 09:37:44 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/LiSK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {FPGA-based acceleration has been emerged to avoid the cloud computing overload problem by accelerating the compute-intensive workload on edge networks. Though existing studies for FPGA-based edge acceleration have focused on optimizing the computing time, they did not address the burden of the FPGA-aided server under an enormous computing requests circumstance. The massive computing requests can cause delays in transmission and processing at the FPGA-aided server, leading to long response times and high system energy consumption. Therefore, we propose an emerging edge acceleration architecture based on FPGA cluster over the low-latency RDMA-based network. Preliminary simulation results demonstrate that our architecture is fast, scalable, and energy-efficient in comparison with the FPGA-aided servers cluster.}
+}
+
+
+@inproceedings{DBLP:conf/conext/ParolaPR21,
+	author = {Federico Parola and
+                  Roberto Procopio and
+                  Fulvio Risso},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Assessing the performance of {XDP} and AF{\_}XDP based NFs in edge
+                  data center scenarios},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {481--482},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493352},
+	doi = {10.1145/3485983.3493352},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/ParolaPR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While servers in traditional data centers can be specialized to run either CPU-intensive or network-intensive workloads, edge data centers need to consolidate both on the same machine(s) due to the reduced number of servers. This paper presents some preliminary experiments to determine how to improve the overall throughput of the above servers, being XDP and AF_XDP the two main technologies into play.}
+}
+
+
+@inproceedings{DBLP:conf/conext/XiaoV21,
+	author = {Yunming Xiao and
+                  Matteo Varvello},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {{FIAT:} frictionless authentication of IoT traffic},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {483--484},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493353},
+	doi = {10.1145/3485983.3493353},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/XiaoV21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The average US household currently hosts more than 10 Internet of Things (IoT) devices [2]. Many research papers [5, 8] have demonstrated critical security concerns of the IoT, often due to lack of best practices like partial usage of HTTPS, or old ciphers. Even when best security practices are implemented, the IoT is still vulnerable to many attacks. Intruders can penetrate the home WiFi and directly control some IoT devices. They can compromise the account associated with an IoT device, mostly relying on username and password, or of third-party services like IFTTT [4]. They can also compromise the devices where IoT apps run, i.e., mostly mobile phones [1].}
+}
+
+
+@inproceedings{DBLP:conf/conext/IfathNH21,
+	author = {Md. Monzurul Amin Ifath and
+                  Miguel C. Neves and
+                  Israat Haque},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Raptor: rapid prototyping of distributed stream processing applications
+                  at scale},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {485--486},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493354},
+	doi = {10.1145/3485983.3493354},
+	timestamp = {Thu, 23 Jun 2022 08:31:53 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/IfathNH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Stream processing applications are becoming increasingly important in areas such as IoT, video analytics and social media. As a result, developers and operators must meet stringent time-to-market and scale requirements before bringing them to production. Unfortunately, testing a networked stream processing system is currently a cumbersome process that usually requires an expensive testbed and deep expertise on both networking and distributed systems. In this poster, we present Raptor, a tool for the fast prototyping of large-scale networked stream processing applications. Raptor builds on Mininet and Apache Kafka, two widely adopted platforms, to enable stakeholders to easily test their solutions under various operational conditions. Through a reasonably large setup (20 nodes) running on a single server, we show how unbalanced Kafka's leader selection algorithm can be and its implications on the overall system's throughput. We envision this work can help paving the way for more reproducible research in the stream processing domain, currently a first-class network application.}
+}
+
+
+@inproceedings{DBLP:conf/conext/MengWXWLW21,
+	author = {Rui Meng and
+                  Junjie Wan and
+                  Bing Xu and
+                  Wanhong Wang and
+                  Zhongwei Li and
+                  Chuang Wang},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Towards highly scalable multicast via explicit path definition},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {487--488},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493355},
+	doi = {10.1145/3485983.3493355},
+	timestamp = {Wed, 08 Dec 2021 15:27:17 +0100},
+	biburl = {https://dblp.org/rec/conf/conext/MengWXWLW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Group communication is a communication pattern where data is distributed from one sender to many receivers. It is widely applied in content distribution scenarios, such as IPTV, live streaming, video conference, data delivery, and others. Multicast is an efficient one-to-many data distribution method. However, application-layer multicast still has problems of inefficient network utilization as it is not allowed to control network elements. Existing network assisted multicast is unable to meet the newly emerging demand, such as multicast traffic engineering and load balancing. Some implementations of network assisted multicast are also limited to scalability issues caused by limitations of per-flow state maintained in network elements. In this paper, we introduce a novel multicast technology called Carrier-Grade Minimalism Multicast (CGMM) which leverages a string of bits, the bitmap, to instruct node to locally duplicate packets and forward them over several links without per-flow state and encapsulates bitmaps as binary in-packet tree for explicit forwarding path.}
+}
+
+
+@inproceedings{DBLP:conf/conext/HolzingerSBMKLZ21,
+	author = {Kilian Holzinger and
+                  Henning Stubbe and
+                  Franz Biersack and
+                  Angela Gonzalez Mari{\~{n}}o and
+                  Abdoul Kane and
+                  Francisco Fons Lluis and
+                  Haigang Zhang and
+                  Thomas Wild and
+                  Andreas Herkersdorf and
+                  Georg Carle},
+	editor = {Georg Carle and
+                  J{\"{o}}rg Ott},
+	title = {Precise real-time monitoring of time-critical flows},
+	booktitle = {CoNEXT '21: The 17th International Conference on emerging Networking
+                  EXperiments and Technologies, Virtual Event, Munich, Germany, December
+                  7 - 10, 2021},
+	pages = {489--490},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485983.3493356},
+	doi = {10.1145/3485983.3493356},
+	timestamp = {Sun, 02 Oct 2022 15:57:59 +0200},
+	biburl = {https://dblp.org/rec/conf/conext/HolzingerSBMKLZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ethernet is increasingly used in areas where time-critical and safety-relevant data are transported over the network along with best-effort flows, for example in intra vehicle networks or industrial networks. The resulting complex network architectures, time-sensitive networking configurations and system interactions are hard to foresee during the design phase. Therefore, it is hard to rule out any violations of flow specifications or timing and reliability requirements, especially in the presence of unpredictable failures. In this work, the design of a flow-oriented network monitoring system for time-sensitive applications is presented. It continuously supervises relevant performance metrics with high precision and short detection delay. Moreover, it allows to check compliance with flow specifications in real-time. Initial evaluations using intra vehicle network traffic yield a high measurement precision.}
+}
