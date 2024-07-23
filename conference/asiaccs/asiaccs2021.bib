@@ -1,0 +1,1814 @@
+@inproceedings{DBLP:conf/asiaccs/Jha21,
+	author = {Somesh Jha},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Trustworthy Machine Learning: Past, Present, and Future},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {1},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3460015},
+	doi = {10.1145/3433210.3460015},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Jha21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fueled by massive amounts of data, models produced by machine-learning (ML) algorithms, especially deep neural networks (DNNs), are being used in diverse domains where trustworthiness is a concern, including automotive systems, finance, healthcare, natural language processing, and malware detection. Of particular concern is the use of ML algorithms in cyber-physical systems (CPS), such as self-driving cars and aviation, where an adversary can cause serious consequences. Interest in this area of research has simply exploded. In this work, we will cover the state-of-the-art in trustworthy machine learning, and then cover some interesting future trends.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/JiaWG21,
+	author = {Jinyuan Jia and
+                  Binghui Wang and
+                  Neil Zhenqiang Gong},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Robust and Verifiable Information Embedding Attacks to Deep Neural
+                  Networks via Error-Correcting Codes},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {2--13},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437519},
+	doi = {10.1145/3433210.3437519},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/JiaWG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the era of deep learning, a user often leverages a third-party machine learning tool to train a deep neural network (DNN) classifier and then deploys the classifier as an end-user software product (e.g., a mobile app) or a cloud service. In an information embedding attack, an attacker is the provider of a malicious third-party machine learning tool. The attacker embeds a message into the DNN classifier during training and recovers the message via querying the API of the black-box classifier after the user deploys it. Information embedding attacks have attracted growing attention because of various applications such as watermarking DNN classifiers and compromising user privacy. State-of-the-art information embedding attacks have two key limitations: 1) they cannot verify the correctness of the recovered message, and 2) they are not robust against post-processing (e.g., compression) of the classifier. In this work, we aim to design information embedding attacks that are verifiable and robust against popular post-processing methods. Specifically, we leverage Cyclic Redundancy Check to verify the correctness of the recovered message. Moreover, to be robust against post-processing, we leverage Turbo codes, a type of error-correcting codes, to encode the message before embedding it to the DNN classifier. In order to save queries to the deployed classifier, we propose to recover the message via adaptively querying the classifier. Our adaptive recovery strategy leverages the property of Turbo codes that supports error correcting with a partial code. We evaluate our information embedding attacks using simulated messages and apply them to three applications (i.e., training data inference, property inference, DNN architecture inference), where messages have semantic interpretations. We consider 8 popular methods to post-process the classifier. Our results show that our attacks can accurately and verifiably recover the messages in all considered scenarios, while state-of-the-art attacks cannot accurately recover the messages in many scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/CaoJG21,
+	author = {Xiaoyu Cao and
+                  Jinyuan Jia and
+                  Neil Zhenqiang Gong},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {IPGuard: Protecting Intellectual Property of Deep Neural Networks
+                  via Fingerprinting the Classification Boundary},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {14--25},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437526},
+	doi = {10.1145/3433210.3437526},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/CaoJG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A deep neural network (DNN) classifier represents a model owner's intellectual property as training a DNN classifier often requires lots of resource. Watermarking was recently proposed to protect the intellectual property of DNN classifiers. However, watermarking suffers from a key limitation: it sacrifices the utility/accuracy of the model owner's classifier because it tampers the classifier's training or fine-tuning process. In this work, we propose IPGuard, the first method to protect intellectual property of DNN classifiers that provably incurs no accuracy loss for the classifiers. Our key observation is that a DNN classifier can be uniquely represented by its classification boundary. Based on this observation, IPGuard extracts some data points near the classification boundary of the model owner's classifier and uses them to fingerprint the classifier. A DNN classifier is said to be a pirated version of the model owner's classifier if they predict the same labels for most fingerprinting data points. IPGuard is qualitatively different from watermarking. Specifically, IPGuard extracts fingerprinting data points near the classification boundary of a classifier that is already trained, while watermarking embeds watermarks into a classifier during its training or fine-tuning process. We extensively evaluate IPGuard on CIFAR-10, CIFAR-100, and ImageNet datasets. Our results show that IPGuard can robustly identify post-processed versions of the model owner's classifier as pirated versions of the classifier, and IPGuard can identify classifiers, which are not the model owner's classifier nor its post-processed versions, as non-pirated versions of the classifier.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BhattacharjeeM021,
+	author = {Shameek Bhattacharjee and
+                  Venkata Praveen Kumar Madhavarapu and
+                  Sajal K. Das},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {A Diversity Index based Scoring Framework for Identifying Smart Meters
+                  Launching Stealthy Data Falsification Attacks},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {26--39},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437527},
+	doi = {10.1145/3433210.3437527},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BhattacharjeeM021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A challenging problem in Advanced Metering Infrastructure (AMI) of smart grids is the identification of smart meters under the control of a stealthy adversary, that inject very low margins of stealthy data falsification. The problem is challenging due to wide legitimate variation in both individual and aggregate trends in real world power consumption data, making such stealthy attacks unrecognizable by existing approaches. In this paper, via proposed modified diversity index scoring metric, we propose a novel information-theory inspired data driven device anomaly classification framework to identify compromised meters launching low margins of stealthy data falsification attacks. Specifically, we draw a parallelism between the effects of data falsification attacks and ecological balance disruptions and identify required mathematical modifications in existing Renyi Entropy and Hill's Diversity Entropy measures. These modifications such as expected self-similarity with weighted abundance shifts across various temporal scales, and diversity order are appropriately embedded in our resulting framework. The resulting diversity index score is used to classify smart meters launching additive, deductive, and alternating switching attack types with high sensitivity (as low as 100W) compared to the existing works that perform poorly at margins of false data below 400W. Our proposed theory is validated with two different real smart meter datasets from USA and Ireland. Experimental results demonstrate successful detection sensitivity from very low to high margins of false data, thus reducing undetectable strategy space of attacks in AMI for an adversary having complete knowledge of our method.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Zuo021,
+	author = {Fei Zuo and
+                  Qiang Zeng},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Exploiting the Sensitivity of {L2} Adversarial Examples to Erase-and-Restore},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {40--51},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437529},
+	doi = {10.1145/3433210.3437529},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Zuo021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {By adding carefully crafted perturbations to input images, adversarial examples (AEs) can be generated to mislead neural-network-based image classifiers. L2 adversarial perturbations by Carlini and Wagner (CW) are among the most effective but difficult-to-detect attacks. While many countermeasures against AEs have been proposed, detection of adaptive CW-L2 AEs is still an open question. We find that, by randomly erasing some pixels in an L2 AE and then restoring it with an inpainting technique, the AE, before and after the steps, tends to have different classification results, while a benign sample does not show this symptom. We thus propose a novel AE detection technique, Erase-and-Restore (E&R), that exploits the intriguing sensitivity of L2 attacks. Experiments conducted on two popular image datasets, CIFAR-10 and ImageNet, show that the proposed technique is able to detect over 98% of L2 AEs and has a very low false positive rate on benign images. The detection technique exhibits high transferability: a detection system trained using CW-L2 AEs can accurately detect AEs generated using another L2 attack method. More importantly, our approach demonstrates strong resilience to adaptive L2 attacks, filling a critical gap in AE detection. Finally, we interpret the detection technique through both visualization and quantification.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LiYSTQ21,
+	author = {Jiangnan Li and
+                  Yingyuan Yang and
+                  Jinyuan Stella Sun and
+                  Kevin Tomsovic and
+                  Hairong Qi},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {ConAML: Constrained Adversarial Machine Learning for Cyber-Physical
+                  Systems},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {52--66},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437513},
+	doi = {10.1145/3433210.3437513},
+	timestamp = {Thu, 29 Jul 2021 14:12:46 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LiYSTQ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent research demonstrated that the superficially well-trained machine learning (ML) models are highly vulnerable to adversarial examples. As ML techniques are becoming a popular solution for cyber-physical systems (CPSs) applications in research literatures, the security of these applications is of concern. However, current studies on adversarial machine learning (AML) mainly focus on pure cyberspace domains. The risks the adversarial examples can bring to the CPS applications have not been well investigated. In particular, due to the distributed property of data sources and the inherent physical constraints imposed by CPSs, the widely-used threat models and the state-of-the-art AML algorithms in previous cyberspace research become infeasible. We study the potential vulnerabilities of ML applied in CPSs by proposing Constrained Adversarial Machine Learning (ConAML), which generates adversarial examples that satisfy the intrinsic constraints of the physical systems. We first summarize the difference between AML in CPSs and AML in existing cyberspace systems and propose a general threat model for ConAML. We then design a best-effort search algorithm to iteratively generate adversarial examples with linear physical constraints. We evaluate our algorithms with simulations of two typical CPSs, the power grids and the water treatment system. The results show that our ConAML algorithms can effectively generate adversarial examples which significantly decrease the performance of the ML models even under practical constraints.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Anand0WSS021,
+	author = {S. Abhishek Anand and
+                  Jian Liu and
+                  Chen Wang and
+                  Maliheh Shirvanian and
+                  Nitesh Saxena and
+                  Yingying Chen},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {EchoVib: Exploring Voice Authentication via Unique Non-Linear Vibrations
+                  of Short Replayed Speech},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {67--81},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437518},
+	doi = {10.1145/3433210.3437518},
+	timestamp = {Sat, 18 Jun 2022 11:32:22 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Anand0WSS021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent advances in speaker verification and speech processing technology have seen voice authentication being adopted on a wide scale in commercial applications like online banking and customer care support and on devices such as smartphones and IoT voice assistant systems. However, it has been shown that the current voice authentication systems can be ineffective against voice synthesis attacks that mimic a user's voice to high precision. In this work, we suggest a paradigm shift from the traditional voice authentication systems operating in the audio domain but susceptible to speech synthesis attacks (in the same audio domain). We leverage a motion sensor's capability to pick up phonatory vibrations, that can help to uniquely identify a user via voice signatures in the vibration domain. The user's speech is played/echoed back by a device's speaker for a short duration (hence our method is termed EchoVib) and the resulting non-linear phonatory vibrations are picked up by the motion sensor for speaker recognition. The uniqueness of the device's speaker and its accelerometer results in a device-specific fingerprint in response to the echoed speech. The use of the vibration domain and its non-linear relationship with audio allows EchoVib to resist the state-of-the-art voice synthesis attacks, shown to be successful in the audio domain. We develop an instance of EchoVib using the onboard loudspeaker and the accelerometer embedded in smartphones, as the authenticator, based on machine learning techniques. Our evaluation shows that even with the low-quality loudspeaker and the low-sampling rate of accelerometer recordings, EchoVib can identify users with an accuracy of over 90%. We also analyze our system against state-of-art-voice synthesis attacks and show that it can distinguish between the morphed and the original speaker's voice samples, correctly rejecting the morphed samples with a success rate of 85% for voice conversion and voice modeling attacks. We believe that using the vibration domain to detect synthesized speech attacks is effective due to the hardness of preserving the unique phonatory vibration signatures and is difficult to mimic due to the non-linear mapping of the unique speaker and accelerometer response in the vibration domain to the voice in the audio domain.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/WuXW0S0Y21,
+	author = {Yi Wu and
+                  Xiangyu Xu and
+                  Payton R. Walker and
+                  Jian Liu and
+                  Nitesh Saxena and
+                  Yingying Chen and
+                  Jiadi Yu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{HVAC:} Evading Classifier-based Defenses in Hidden Voice Attacks},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {82--94},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437523},
+	doi = {10.1145/3433210.3437523},
+	timestamp = {Tue, 02 Apr 2024 15:05:10 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/WuXW0S0Y21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent years have witnessed the rapid development of automatic speech recognition (ASR) systems, providing a practical voice-user interface for widely deployed smart devices. With the ever-growing deployment of such an interface, several voice-based attack schemes have been proposed towards current ASR systems to exploit certain vulnerabilities. Posing one of the more serious threats,hidden voice attack uses the human-machine perception gap to generate obfuscated/hidden voice commands that are unintelligible to human listeners but can be interpreted as commands by machines. However, due to the nature of hidden voice commands (i.e., normal and obfuscated samples exhibit a significant difference in their acoustic features), recent studies show that they can be easily detected and defended by a pre-trained classifier, thereby making it less threatening. In this paper, we validate that such a defense strategy can be circumvented with a more advanced type of hidden voice attack calledHVAC. Our proposed HVAC attack can easily bypass the existing learning-based defense classifiers while preserving all the essential characteristics of hidden voice attacks (i.e., unintelligible to humans and recognizable to machines). Specifically, we find that all classifier-based defenses build on top of classification models that are trained with acoustic features extracted from the entire audio of normal and obfuscated samples. However, only speech parts (i.e., human voice parts) of these samples contain the useful linguistic information needed for machine transcription. We thus propose a fusion-based method to combine the normal sample and corresponding obfuscated sample as a hybrid HVAC command, which can effectively cheat the defense classifiers. Moreover, to make the command more unintelligible to humans, we tune the speed and pitch of the sample and make it even more distorted in the time domain while ensuring it can still be recognized by machines. Extensive physical over-the-air experiments demonstrate the robustness and generalizability of our HVAC attack under different realistic attack scenarios. Results show that our HVAC commands can achieve an average 94.1% success rate of bypassing machine-learning-based defense approaches under various realistic settings.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/SpenskyMRUFBOKV21,
+	author = {Chad Spensky and
+                  Aravind Machiry and
+                  Nilo Redini and
+                  Colin Unger and
+                  Graham Foster and
+                  Evan Blasband and
+                  Hamed Okhravi and
+                  Christopher Kruegel and
+                  Giovanni Vigna},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Conware: Automated Modeling of Hardware Peripherals},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {95--109},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437532},
+	doi = {10.1145/3433210.3437532},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/SpenskyMRUFBOKV21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emulation is at the core of many security analyses. However, emulating embedded systems is still not possible in most cases. To facilitate this critical analysis, we present Conware, a hardware emulation framework that can automatically generate models for hardware peripherals, which alleviates one of the major challenges currently hindering embedded systems emulation. Conware enables individual peripherals to be modeled, exported, and combined with other peripherals in a pluggable fashion. Conware achieves this by first obtaining a recording of the low-level hardware interactions between the firmware and the peripheral, using either existing methods or our source-code instrumentation technique. These recordings are then used to create high-fidelity automata representations of the peripheral using novel automata-generation techniques. The various models can then be merged to facilitate full-system emulation of any embedded firmware that uses any of the modeled peripherals, even if that specific firmware or its target hardware was never directly instrumented. Indeed, we demonstrate that Conware is able to successfully emulate a peripheral-heavy firmware binary that was never instrumented, by merging the models of six unique peripherals that were trained on a development board using only the vendor-provided example code.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/MeiserLS21,
+	author = {Gordon Meiser and
+                  Pierre Laperdrix and
+                  Ben Stock},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Careful Who You Trust: Studying the Pitfalls of Cross-Origin Communication},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {110--122},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437510},
+	doi = {10.1145/3433210.3437510},
+	timestamp = {Mon, 26 Jun 2023 20:43:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/MeiserLS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the past, Web applications were mostly static and most of the content was provided by the site itself. Nowadays, they have turned into rich client-side experiences customized for the user where third parties supply a considerable amount of content, e.g., analytics, advertisements, or integration with social media platforms and external services. By default, any exchange of data between documents is governed by the Same-Origin Policy, which only permits to exchange data with other documents sharing the same protocol, host, and port. Given the move to a more interconnected Web, standard bodies and browser vendors have added new mechanisms to enable cross-origin communication, primarily domain relaxation, postMessages, and CORS. While prior work has already shown the pitfalls of not using these mechanisms securely (e.g., omitting origin checks for incoming postMessages), we instead focus on the increased attack surface created by the trust that is necessarily put into the communication partners. We report on a study of the Tranco Top 5,000 to measure the prevalence of cross-origin communication. By analyzing the interactions between sites, we build an interconnected graph of the trust relations necessary to run the Web. Subsequently, based on this graph, we estimate the damage caused through exploitation of existing XSS flaws on trusted sites.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/AliyevaE21,
+	author = {Assel Aliyeva and
+                  Manuel Egele},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Oversharing Is Not Caring: How {CNAME} Cloaking Can Expose Your Session
+                  Cookies},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {123--134},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437524},
+	doi = {10.1145/3433210.3437524},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/AliyevaE21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In modern web ecosystem, online businesses often leverage third-party web analytics services to gain insights into the behavior of their users. Due to the recent privacy enhancements in major browsers that restrict third-party cookie usage for tracking, these businesses were urged to disguise third-party analytics infrastructure as regular subdomains of their websites [3]. The integration technique referred to as CNAME cloaking allows the businesses to continue monitoring user activity on their websites. However, it also opens up the possibility for severe security infractions as the businesses often share their session cookies with the analytics providers, thus putting online user accounts in danger. Previous work has raised privacy concerns with regards to subdomain tracking and extensively studied the drawbacks of widely used privacy-enhancing browser extensions. In this work, we demonstrate the impact of deploying CNAME cloaking along with lax cookie access control settings on web user security. To this end, we built a system that automatically detects the presence of the disguised third-party domains as well as the leakage of the first-party cookies. Using our system, we identified 2,139 web analytics domains that can be conveniently added to commonly deployed hostbased blacklists. Concerningly, we also found that 27 out of 90 highly sensitive web services (e.g., banks) that we analyzed expose session cookies to the web analytics services.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/KimCBSPN21,
+	author = {Jongkil Kim and
+                  Seyit Camtepe and
+                  Joonsang Baek and
+                  Willy Susilo and
+                  Josef Pieprzyk and
+                  Surya Nepal},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{P2DPI:} Practical and Privacy-Preserving Deep Packet Inspection},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {135--146},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437525},
+	doi = {10.1145/3433210.3437525},
+	timestamp = {Sun, 12 Nov 2023 02:16:11 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/KimCBSPN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The amount of encrypted Internet traffic almost doubles every year thanks to the wide adoption of end-to-end traffic encryption solutions such as IPSec, TLS and SSH. Despite all the benefits of user privacy the end-to-end encryption provides, the encrypted internet traffic blinds intrusion detection system (IDS) and makes detecting malicious traffic hugely difficult. The resulting conflict between the user\'s privacy and security has demanded solutions for deep packet inspection (DPI) over encrypted traffic. The approach of those solutions proposed to date is still restricted in that they require intensive computations during connection setup or detection. For example, BlindBox, introduced by Sherry et al. (SIGCOMM 2015) enables inspection over the TLS-encrypted traffic without compromising users\' privacy, but its usage is limited due to a significant delay on establishing an inspected channel. PrivDPI, proposed more recently by Ning et al. (ACM CCS 2019), improves the overall efficiency of BlindBox and makes the inspection scenario more viable. Despite the improvement, we show in this paper that the user privacy of Ning et al.\'s PrivDPI can be compromised entirely by the rule generator without involving any other parties, including the middlebox. Having observed the difficulties of realizing efficiency and security in the previous work, we propose a new DPI system for encrypted traffic, named "Practical and Privacy-Preserving Deep Packet Inspection (P2DPI)\'\'. P2DPI enjoys the same level of security and privacy that BlindBox provides. At the same time, P2DPI offers fast setup and encryption and outperforms PrivDPI. Our results are supported by formal security analysis. We implemented our P2DPI and comparable PrivDPI and performed extensive experimentation for performance analysis and comparison.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/SharmaGC21,
+	author = {Piyush Kumar Sharma and
+                  Devashish Gosain and
+                  Sambuddho Chakravarty},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Camoufler: Accessing The Censored Web By Utilizing Instant Messaging
+                  Channels},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {147--161},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453080},
+	doi = {10.1145/3433210.3453080},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/SharmaGC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Free and open communication over the Internet is considered a fundamental human right, essential to prevent repressions from silencing voices of dissent. This has led to the development of various anti-censorship systems. Recent systems have relied on a common blocking resistance strategy i.e., incurring collateral damage to the censoring regimes, if they attempt to restrict such systems. However, despite being promising, systems built on such strategies pose additional challenges, viz., deployment limitations, poor QoS etc. These challenges prevent their wide scale adoption. Thus, we propose a new anti-censorship system, Camoufler, that overcomes aforementioned challenges, while still maintaining similar blocking resistance. Camoufler leverages Instant Messaging (IM) platforms to tunnel client's censored content. This content (encapsulated inside IM traffic) is transported to the Camoufler server (hosted in a free country), which proxies it to the censored website. However, the eavesdropping censor would still observe regular IM traffic being exchanged between the IM peers. Thus, utilizing IM channels as-is for transporting traffic provides unobservability, while also ensuring good QoS, due to its inherent properties such as low-latency message transports. Moreover, it does not pose new deployment challenges. Performance evaluation of Camoufler, implemented on five popular IM apps indicate that it provides sufficient QoS for web browsing. E.g., the median time to render the homepages of Alexa top-1k sites was recorded to be about 3.6s, when using Camoufler implemented over Signal IM application.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ZhangLYG21,
+	author = {Zhenkai Zhang and
+                  Sisheng Liang and
+                  Fan Yao and
+                  Xing Gao},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Red Alert for Power Leakage: Exploiting Intel RAPL-Induced Side Channels},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {162--175},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437517},
+	doi = {10.1145/3433210.3437517},
+	timestamp = {Mon, 05 Feb 2024 20:35:02 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ZhangLYG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {RAPL (Running Average Power Limit) is a hardware feature introduced by Intel to facilitate power management. Even though RAPL and its supporting software interfaces can benefit power management significantly, they are unfortunately designed without taking certain security issues into careful consideration. In this paper, we demonstrate that information leaked through RAPL-induced side channels can be exploited to mount realistic attacks. Specifically, we have constructed a new RAPL-based covert channel using a single AVX instruction, which can exfiltrate data across different boundaries (e.g., those established by containers in software or even CPUs in hardware); and, we have investigated the first RAPL-based website fingerprinting technique that can identify visited webpages with a high accuracy (up to 99% in the case of the regular network using a browser like Chrome or Safari, and up to 81% in the case of the anonymity network using Tor). These two studies form a preliminary examination into RAPL-imposed security implications. In addition, we discuss some possible countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/OhiraDAF21,
+	author = {Shuji Ohira and
+                  Araya Kibrom Desta and
+                  Ismail Arai and
+                  Kazutoshi Fujikawa},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{PLI-TDC:} Super Fine Delay-Time Based Physical-Layer Identification
+                  with Time-to-Digital Converter for In-Vehicle Networks},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {176--186},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437530},
+	doi = {10.1145/3433210.3437530},
+	timestamp = {Tue, 21 Mar 2023 21:01:02 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/OhiraDAF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, cyberattacks on Controller Area Network (CAN) which is one of the automotive networks are becoming a severe problem. CAN is a protocol for communicating among Electronic Control Units (ECUs) and it is a de-facto standard of automotive networks. Some security researchers point out several vulnerabilities in CAN such as unable to distinguish spoofing messages due to no authentication and no sender identification. To prevent a malicious message injection, at least we should identify the malicious senders by analyzing live messages. In previous work, a delay-time based method called Divider to identify the sender node has been proposed. However, Divider could not identify ECUs which have similar variations because Divider's measurement clock has coarse time-resolution. In addition, Divider cannot adapt a drift of delay-time caused by the temperature drift at the ambient buses. In this paper, we propose a super fine delay-time based sender identification method with Time-to-Digital Converter (TDC). The proposed method achieves an accuracy rate of 99.67% in the CAN bus prototype and 97.04% in a real-vehicle. Besides, in an environment of drifting temperature, the proposed method can achieve a mean accuracy of over 99%.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/NasahlSWM21,
+	author = {Pascal Nasahl and
+                  Robert Schilling and
+                  Mario Werner and
+                  Stefan Mangard},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{HECTOR-V:} {A} Heterogeneous {CPU} Architecture for a Secure {RISC-V}
+                  Execution Environment},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {187--199},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453112},
+	doi = {10.1145/3433210.3453112},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/NasahlSWM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To ensure secure and trustworthy execution of applications in potentially insecure environments, vendors frequently embed trusted execution environments (TEE) into their systems. Applications executed in this safe, isolated space are protected from adversaries, including a malicious operating system. TEEs are usually build by integrating protection mechanisms directly into the processor or by using dedicated external secure elements. However, both of these approaches only cover a narrow threat model resulting in limited security guarantees. Enclaves nested into the application processor typically provide weak isolation between the secure and non-secure domain, especially when considering side-channel attacks. Although external secure elements do provide strong isolation, the slow communication interface to the application processor is exposed to adversaries and restricts the use cases. Independently of the used approach, TEEs often lack the possibility to establish secure communication to peripherals, and most operating systems executed inside TEEs do not provide state-of-the-art defense strategies, making them vulnerable to various attacks. We argue that TEEs, such as Intel SGX or ARM TrustZone, implemented on the main application processor, are insecure, especially when considering side-channel attacks. In this paper, we demonstrate how a heterogeneous multicore architecture can be utilized to realize a secure TEE design. We directly embed a secure processor into our HECTOR-V architecture to provide strong isolation between the secure and non-secure domain. The tight coupling of the TEE and the application processor enables HECTOR-V to provide mechanisms for establishing secure communication channels between different devices. We further introduce RISC-V Secure Co-Processor (RVSCP), a security-hardened processor tailored for TEEs. To secure applications executed inside the TEE, RVSCP provides hardware enforced control-flow integrity and rigorously restricts I/O accesses to certain execution states. RVSCP reduces the trusted computing base to a minimum by providing operating system services directly in hardware.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/NasahlSWHMM21,
+	author = {Pascal Nasahl and
+                  Robert Schilling and
+                  Mario Werner and
+                  Jan Hoogerbrugge and
+                  Marcel Medwed and
+                  Stefan Mangard},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {CrypTag: Thwarting Physical and Logical Memory Vulnerabilities using
+                  Cryptographically Colored Memory},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {200--212},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453684},
+	doi = {10.1145/3433210.3453684},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/NasahlSWHMM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory vulnerabilities are a major threat to many computing systems. To effectively thwart spatial and temporal memory vulnerabilities, full logical memory safety is required. However, current mitigation techniques for memory safety are either too expensive or trade security against efficiency. One promising attempt to detect memory safety vulnerabilities in hardware is memory coloring, a security policy deployed on top of tagged memory architectures. However, due to the memory storage and bandwidth overhead of large tags, commodity tagged memory architectures usually only provide small tag sizes, thus limiting their use for security applications. Irrespective of logical memory safety, physical memory safety is a necessity in hostile environments prevalent for modern cloud computing and IoT devices. Architectures from Intel and AMD already implement transparent memory encryption to maintain confidentiality and integrity of all off-chip data. Surprisingly, the combination of both, logical and physical memory safety, has not yet been extensively studied in previous research, and a naive combination of both security strategies would accumulate both overheads. In this paper, we propose CrypTag, an efficient hardware/software co-design mitigating a large class of logical memory safety issues and providing full physical memory safety. At its core, CrypTag utilizes a transparent memory encryption engine not only for physical memory safety, but also for memory coloring at hardly any additional costs. The design avoids any overhead for tag storage by embedding memory colors in the upper bits of a pointer and using these bits as an additional input for the memory encryption. A custom compiler extension automatically leverages CrypTag to detect logical memory safety issues for commodity programs and is fully backward compatible. For evaluating the design, we extended a RISC-V processor with memory encryption with CrypTag. Furthermore, we developed a LLVM-based toolchain automatically protecting all dynamic, local, and global data. Our evaluation shows a hardware overhead of less than 1% and an average runtime overhead between 1.5% and 6.1% for thwarting logical memory safety vulnerabilities on a system already featuring memory encryption. Enhancing a system with memory encryption typically induces a runtime overhead between 5% and 109.8% for commercial and open-source encryption units.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/KoLLKO21,
+	author = {Hankyung Ko and
+                  Ingeun Lee and
+                  Seunghwa Lee and
+                  Jihye Kim and
+                  Hyunok Oh},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Efficient Verifiable Image Redacting based on zk-SNARKs},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {213--226},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453110},
+	doi = {10.1145/3433210.3453110},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/KoLLKO21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Image is a visual representation of a certain fact and can be used as proof of events. As the utilization of the image increases, it is required to prove its authenticity with the protection of its sensitive personal information. In this paper, we propose a new efficient verifiable image redacting scheme based on zk-SNARKs, a commitment, and a digital signature scheme. We adopt a commit-and-prove SNARK scheme which takes commitments as inputs, in which the authenticity can be quickly verified outside the circuit. We also specify relations between the original and redacted images to guarantee the redacting correctness. Our experimental results show that the proposed scheme is superior to the existing works in terms of the key size and proving time without sacrificing the other parameters. The security of the proposed scheme is proven formally.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/PlappertJF21,
+	author = {Christian Plappert and
+                  Lukas J{\"{a}}ger and
+                  Andreas Fuchs},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Secure Role and Rights Management for Automotive Access and Feature
+                  Activation},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {227--241},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437521},
+	doi = {10.1145/3433210.3437521},
+	timestamp = {Sun, 02 Oct 2022 15:54:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/PlappertJF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The trend towards fully autonomous vehicles changes the concept of car ownership drastically. Purchasing a personal car becomes obsolete. Thus, business models related to feature activation are gaining even higher importance for car manufacturers in order to retain their customers. Various recent security incidents demonstrated however that vehicles are a valuable attack goal ranging from illegal access to car features to the theft of the whole vehicles. In this paper, we present a secure access and feature activation system for automotive scenarios that uses a TPM 2.0 as trust anchor within the vehicle to mitigate potential security threats. Our system enables a fine-granular authorization mechanism by utilizing TPM 2.0 enhanced authorization constructs to implement usage restrictions and revocation policies as well as offline rights delegation. The TPM 2.0 acts as a communication end point to the vehicles' environment and integrates seamlessly with already deployed security features of the in-vehicle network. We implemented our concept on a Raspberry Pi as a lightweight equivalent to hardware used in the automotive domain and evaluate our solution by performance measurements.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LiLW21,
+	author = {Jie Li and
+                  Yamin Liu and
+                  Shuang Wu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Pipa: Privacy-preserving Password Checkup via Homomorphic Encryption},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {242--251},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3457535},
+	doi = {10.1145/3433210.3457535},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LiLW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data-breach is not rare on Internet, and once it happens, web users may suffer from privacy leakage and property loss. In order to enable web users to conveniently check whether their confidential information is compromised in data-breach events while preserving their privacy, we design Pipa, which is essentially a special case of private set intersection protocol instantiated with homomorphic encryption. We choose the password checkup scenario for an entry point. In the architecture of Pipa, a server is needed to maintain the database of leaked accounts, namely usernames and passwords, and a homomorphic encryption (HE) module is deployed at the user-end. Once the user issues a checkup query to the server, the HE model encrypts the hash of the user's account information and sends the ciphertexts to the server. The server then evaluates a compare-add-multiply circuit on the ciphertexts and the database, and sends a result ciphertext back to the user-end. Finally the HE module decrypts the result and informs the user if the account information is leaked. The server will never know the username or password, or whether the user's information has matched some entry in the database. We have tested the prototype implementation of Pipa with the Brakerski-Fan-Vercauteren (BFV) HE scheme. By choosing proper parameters, the implementation is pretty practical on PC. For the most light-weight parameter settings in the paper, the total communication volume can be as low as about 2.2MB, and it only takes the server 0.17 seconds to finish the homomorphic computation on encrypted data.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/WangP21,
+	author = {Yun Wang and
+                  Dimitrios Papadopoulos},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Multi-User Collusion-Resistant Searchable Encryption with Optimal
+                  Search Time},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {252--264},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437535},
+	doi = {10.1145/3433210.3437535},
+	timestamp = {Sun, 02 Oct 2022 15:54:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/WangP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The continued development of cloud computing requires technologies that protect users\' data privacy even from the cloud providers themselves. Multi-user searchable encryption is one such kind of technology. It allows a data owner to selectively enable users to perform keyword searches over her encrypted documents that are stored at a cloud server. For privacy purposes, it is important to limit what an adversarial server can infer about the encrypted documents, even if it colludes with some of the users. Clearly, in this case it can learn the content of documents shared with this subset of "corrupted" users, however, it is important to ensure that this collusion does not reveal information about parts of the dataset that are only shared with the remaining "uncorrupted" users via cross-user leakage. In this work, we propose three novel multi-user searchable encryption schemes for this setting that achieve different trade-offs between performance and leakage. Compared to previous ones, our first two schemes are the first to achieve asymptotically optimal search time. Our third scheme achieves minimal user storage and forward privacy with respect to document sharing, but slightly slower search performance. We formally prove the security of our schemes under reasonable assumptions. Moreover, we implement and evaluate their performance both on a single machine and over WAN. Our experimental results are encouraging, e.g., the search computation time is in the order of a few milliseconds.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/DionysiouVA21,
+	author = {Antreas Dionysiou and
+                  Vassilis Vassiliades and
+                  Elias Athanasopoulos},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {HoneyGen: Generating Honeywords Using Representation Learning},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {265--279},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453092},
+	doi = {10.1145/3433210.3453092},
+	timestamp = {Tue, 21 Mar 2023 21:01:02 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/DionysiouVA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Honeywords are false passwords injected in a database for detecting password leakage. Generating honeywords is a challenging problem due to the various assumptions about the adversary's knowledge as well as users' password-selection behaviour. The success of a Honeywords Generation Technique (HGT) lies on the resulting honeywords; the method fails if an adversary can easily distinguish the real password. In this paper, we propose HoneyGen, a practical and highly robust HGT that produces realistic looking honeywords. We do this by leveraging representation learning techniques to learn useful and explanatory representations from a massive collection of unstructured data, i.e., each operator's password database. We perform both a quantitative and qualitative evaluation of our framework using the state-of-the-art metrics. Our results suggest that HoneyGen generates high-quality honeywords that cause sophisticated attackers to achieve low distinguishing success rates.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/PavurM21,
+	author = {James Pavur and
+                  Ivan Martinovic},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {On Detecting Deception in Space Situational Awareness},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {280--291},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453081},
+	doi = {10.1145/3433210.3453081},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/PavurM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Space Situational Awareness (SSA) data is critical to the safe piloting of satellites through an ever-growing field of orbital debris. However, measurement complexity means that most satellite operators cannot independently acquire SSA data and must rely on a handful of centralized repositories operated by major space powers. As interstate competition in orbit increases, so does the threat of attacks abusing these information-sharing relationships. This paper offers one of the first considerations of defense techniques against SSA deceptions. Building on historical precedent and real-world SSA data, we simulate an attack whereby an SSA operator seeks to disguise spy satellites as pieces of debris. We further develop and evaluate a machine-learning based anomaly detection tool which allows defenders to detect 90-98% of deception attempts with little to no in-house astrometry hardware. Beyond the direct contribution of this system, the paper takes a unique interdisciplinary approach, drawing connections between cyber-security, astrophysics, and international security studies. It presents the general case that systems security methods can tackle many novel and complex problems in an historically neglected domain and provides methods and techniques for doing so.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/CalzavaraCL21,
+	author = {Stefano Calzavara and
+                  Lorenzo Cazzaro and
+                  Claudio Lucchese},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{AMEBA:} An Adaptive Approach to the Black-Box Evasion of Machine
+                  Learning Models},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {292--306},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453114},
+	doi = {10.1145/3433210.3453114},
+	timestamp = {Sun, 02 Oct 2022 15:54:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/CalzavaraCL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning models are vulnerable to evasion attacks, where the attacker starts from a correctly classified instance and perturbs it so as to induce a misclassification. In the black-box setting where the attacker only has query access to the target model, traditional attack strategies exploit a property known as transferability, i.e., the empirical observation that evasion attacks often generalize across different models. The attacker can thus rely on the following two-step attack strategy: (i) query the target model to learn how to train a surrogate model approximating it; and (ii) craft evasion attacks against the surrogate model, hoping that they "transfer" to the target model. This attack strategy is sub-optimal, because it assumes a strict separation of the two steps and under-approximates the possible actions that a real attacker might take. In this work we propose AMEBA, the first adaptive approach to the black-box evasion of machine learning models. AMEBA builds on a well-known optimization problem, known as Multi-Armed Bandit, to infer the best alternation of actions spent for surrogate model training and evasion attack crafting. We experimentally show on public datasets that AMEBA outperforms traditional two-step attack strategies.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ChenGZXL21,
+	author = {Kangjie Chen and
+                  Shangwei Guo and
+                  Tianwei Zhang and
+                  Xiaofei Xie and
+                  Yang Liu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Stealing Deep Reinforcement Learning Models for Fun and Profit},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {307--319},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453090},
+	doi = {10.1145/3433210.3453090},
+	timestamp = {Mon, 26 Jun 2023 20:43:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ChenGZXL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents the first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment. Model extraction attacks against supervised Deep Learning models have been widely studied. However, those techniques cannot be applied to the reinforcement learning scenario due to DRL models' high complexity, stochasticity and limited observable information. We propose a novel methodology to overcome the above challenges. The key insight of our approach is that the process of DRL model extraction is equivalent to imitation learning, a well-established solution to learn sequential decision-making policies. Based on this observation, our methodology first builds a classifier to reveal the training algorithm family of the targeted black-box DRL model only based on its predicted actions, and then leverages state-of-the-art imitation learning techniques to replicate the model from the identified algorithm family. Experimental results indicate that our methodology can effectively recover the DRL models with high fidelity and accuracy. We also demonstrate two use cases to show that our model extraction attack can (1) significantly improve the success rate of adversarial attacks, and (2) steal DRL models stealthily even they are protected by DNN watermarks. These pose a severe threat to the intellectual property and privacy protection of DRL applications.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Shi21,
+	author = {Elaine Shi},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Streamlet: An Absurdly Simple, Textbook Blockchain Protocol},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {320},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3460016},
+	doi = {10.1145/3433210.3460016},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Shi21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Numerous works in the past have focused on constructing simple and understandable distributed consensus protocols. In this talk, I will present an absurdly simple consensus protocol called Streamlet. The entire protocol is: every epoch, a leader proposes a block extending the longest chain it has seen so far. Everyone votes for (i.e., signs) the first block proposed by the leader if it extends from one of the longest notarized chains they have seen so far. When a block collects votes from 2/3 of the nodes, it becomes notarized. Notarized does not mean final. Finality is decided with the following rule: for any chain in which all blocks are notarized and moreover, the last three blocks have consecutive epoch numbers, the entire chain except the first block is final. Streamlet is inspired by the community's past five years of work on consensus motivated by decentralized blockchains. To the best of our knowledge, it is the simplest embodiment known thus far, and it subsumes classical landmark protocols such as PBFT/Paxos and their numerous variants. It is a great fit for pedagogy. Streamlet has been incorporated into courses at universities such as Stanford and CMU. Streamlet is also part of my new distributed consensus textbook available at http://distributedconsensus.net/ This is joint work with Benjamin Chan.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Chen0BDJLS21,
+	author = {Xinyun Chen and
+                  Wenxiao Wang and
+                  Chris Bender and
+                  Yiming Ding and
+                  Ruoxi Jia and
+                  Bo Li and
+                  Dawn Song},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{REFIT:} {A} Unified Watermark Removal Framework For Deep Learning
+                  Systems With Limited Data},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {321--335},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453079},
+	doi = {10.1145/3433210.3453079},
+	timestamp = {Tue, 19 Mar 2024 17:22:10 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Chen0BDJLS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Training deep neural networks from scratch could be computationally expensive and requires a lot of training data. Recent work has explored different watermarking techniques to protect the pre-trained deep neural networks from potential copyright infringements. However, these techniques could be vulnerable to watermark removal attacks. In this work, we propose REFIT, a unified watermark removal framework based on fine-tuning, which does not rely on the knowledge of the watermarks, and is effective against a wide range of watermarking schemes. In particular, we conduct a comprehensive study of a realistic attack scenario where the adversary has limited training data, which has not been emphasized in prior work on attacks against watermarking schemes. To effectively remove the watermarks without compromising the model functionality under this weak threat model, we propose two techniques that are incorporated into our fine-tuning framework: (1) an adaption of the elastic weight consolidation (EWC) algorithm, which is originally proposed for mitigating the catastrophic forgetting phenomenon; and (2) unlabeled data augmentation (AU), where we leverage auxiliary unlabeled data from other sources. Our extensive evaluation shows the effectiveness of REFIT against diverse watermark embedding schemes. In particular, both EWC and AU significantly decrease the amount of labeled training data needed for effective watermark removal, and the unlabeled data samples used for AU do not necessarily need to be drawn from the same distribution as the benign data for model evaluation. The experimental results demonstrate that our fine-tuning based watermark removal attacks could pose real threats to the copyright of pre-trained models, and thus highlight the importance of further investigating the watermarking problem and proposing more robust watermark embedding schemes against the attacks.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/YuanLZ21,
+	author = {Lun{-}Pin Yuan and
+                  Peng Liu and
+                  Sencun Zhu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Recompose Event Sequences vs. Predict Next Events: {A} Novel Anomaly
+                  Detection Approach for Discrete Event Logs},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {336--348},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453098},
+	doi = {10.1145/3433210.3453098},
+	timestamp = {Thu, 11 Nov 2021 09:09:31 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/YuanLZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {One of the most challenging problems in the field of intrusion detection is anomaly detection for discrete event logs. While most earlier work focused on applying unsupervised learning upon engineered features, most recent work has started to resolve this challenge by applying deep learning methodology to abstraction of discrete event entries. Inspired by natural language processing, LSTM-based anomaly detection models were proposed. They try to predict upcoming events, and raise an anomaly alert when a prediction fails to meet a certain criterion. However, such a predict-next-event methodology has a fundamental limitation: event predictions may not be able to fully exploit the distinctive characteristics of sequences. This limitation leads to high false positives (FPs). It is also critical to examine the structure of sequences and the bi-directional causality among individual events. To this end, we propose a new methodology: Recomposing event sequences as anomaly detection. We propose DabLog, a LSTM-based Deep Autoencoder-Based anomaly detection method for discrete event Logs. The fundamental difference is that, rather than predicting upcoming events, our approach determines whether a sequence is normal or abnormal by analyzing (encoding) and reconstructing (decoding) the given sequence. Our evaluation results show that our new methodology can significantly reduce the numbers of FPs, hence achieving a higher F1 score.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/YangTYPHJ21,
+	author = {Kaichen Yang and
+                  Tzungyu Tsai and
+                  Honggang Yu and
+                  Max Panoff and
+                  Tsung{-}Yi Ho and
+                  Yier Jin},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Robust Roadside Physical Adversarial Attack Against Deep Learning
+                  in Lidar Perception Modules},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {349--362},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453106},
+	doi = {10.1145/3433210.3453106},
+	timestamp = {Wed, 07 Dec 2022 23:13:04 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/YangTYPHJ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As Autonomous Vehicles (AVs) mature into viable transportation solutions, mitigating potential vehicle control security risks becomes increasingly important. Perception modules in AVs combine multiple sensors to perceive the surrounding environment. As such, they have been the focus of efforts to exploit the aforementioned risks due to their critical role in controlling autonomous driving technology. Despite extensive and thorough research into the vulnerability of camera-based sensors, vulnerabilities originating from Lidar sensors and their corresponding deep learning models in AVs remain comparatively untouched. Being aware that small roadside objects can be occasionally incorrectly identified as vehicles through on-board deep learning models, we propose a novel adversarial attack inspired by this phenomenon in both white-box and black-box scenarios. The adversarial attacks proposed in this paper are launched against deep learning models that perform object detection tasks through raw 3D points collected by a Lidar sensor in an autonomous driving scenario. In comparison to existing works, our attack creates not only adversarial point clouds in simulated environments, but also robust adversarial objects that can cause behavioral reactions in state of the art autonomous driving systems. Defense methods are then proposed and evaluated against this type of adversarial objects.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/0001ZGZQT21,
+	author = {Han Qiu and
+                  Yi Zeng and
+                  Shangwei Guo and
+                  Tianwei Zhang and
+                  Meikang Qiu and
+                  Bhavani Thuraisingham},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {DeepSweep: An Evaluation Framework for Mitigating {DNN} Backdoor Attacks
+                  using Data Augmentation},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {363--377},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453108},
+	doi = {10.1145/3433210.3453108},
+	timestamp = {Wed, 29 Jun 2022 15:37:41 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/0001ZGZQT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Public resources and services (e.g., datasets, training platforms, pre-trained models) have been widely adopted to ease the development of Deep Learning-based applications. However, if the third-party providers are untrusted, they can inject poisoned samples into the datasets or embed backdoors in those models. Such an integrity breach can cause severe consequences, especially in safety- and security-critical applications. Various backdoor attack techniques have been proposed for higher effectiveness and stealthiness. Unfortunately, existing defense solutions are not practical to thwart those attacks in a comprehensive way. In this paper, we investigate the effectiveness of data augmentation techniques in mitigating backdoor attacks and enhancing DL models' robustness. An evaluation framework is introduced to achieve this goal. Specifically, we consider a unified defense solution, which (1) adopts a data augmentation policy to fine-tune the infected model and eliminate the effects of the embedded backdoor; (2) uses another augmentation policy to preprocess input samples and invalidate the triggers during inference. We propose a systematic approach to discover the optimal policies for defending against different backdoor attacks by comprehensively evaluating 71 state-of-the-art data augmentation functions. Extensive experiments show that our identified policy can effectively mitigate eight different kinds of backdoor attacks and outperform five existing defense methods. We envision this framework can be a good benchmark tool to advance future DNN backdoor studies.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/AbdallahWNKCSB21,
+	author = {Mustafa Abdallah and
+                  Daniel Woods and
+                  Parinaz Naghizadeh and
+                  Issa Khalil and
+                  Timothy N. Cason and
+                  Shreyas Sundaram and
+                  Saurabh Bagchi},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Morshed: Guiding Behavioral Decision-Makers towards Better Security
+                  Investment in Interdependent Systems},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {378--392},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437534},
+	doi = {10.1145/3433210.3437534},
+	timestamp = {Mon, 26 Jun 2023 20:43:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/AbdallahWNKCSB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We model the behavioral biases of human decision-making in securing interdependent systems and show that such behavioral decision-making leads to a suboptimal pattern of resource allocation compared to non-behavioral (rational) decision-making. We provide empirical evidence for the existence of such behavioral bias model through a controlled subject study with 145 participants. We then propose three learning techniques for enhancing decision-making in multi-round setups. We illustrate the benefits of our decision-making model through multiple interdependent real-world systems and quantify the level of gain compared to the case in which the defenders are behavioral. We also show the benefit of our learning techniques against different attack models. We identify the effects of different system parameters (e.g., the defenders' security budget availability and distribution, the degree of interdependency among defenders, and collaborative defense strategies) on the degree of suboptimality of security outcomes due to behavioral decision-making.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ZhangLJ21,
+	author = {Wenhui Zhang and
+                  Peng Liu and
+                  Trent Jaeger},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Analyzing the Overhead of File Protection by Linux Security Modules},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {393--406},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453078},
+	doi = {10.1145/3433210.3453078},
+	timestamp = {Thu, 11 Nov 2021 09:09:31 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ZhangLJ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Over the years, the complexity of the Linux Security Module (LSM) is keeping increasing (e.g. 10,684 LOC in Linux v2.6.0 vs. 64,018 LOC in v5.3), and the count of the authorization hooks is nearly doubled (e.g. 122 hooks in v2.6.0 vs. 224 hooks in v5.3). In addition, the computer industry has seen tremendous advancement in hardware (e.g., memory and processor frequency) in the past decade. These make the previous evaluation on LSM, which was done 18 years ago, less relevant nowadays. It is important to provide up-to-date measurement results of LSM for system practitioners so that they can make prudent trade-offs between security and performance. This work evaluates the overhead of LSM for file accesses on Linux v5.3.0. We build a performance evaluation framework for LSM. It has two parts, an extension of LMBench2.5 to evaluate the overhead of file operations for different security modules, and a security module with tunable latency for policy enforcement to study the impact of the latency of policy enforcement on the end-to-end latency of file operations. In our evaluation, we find opening a file would see about 87% (Linux v5.3) performance drop when the kernel is integrated with SELinux hooks (policy enforcement disabled) than without, while the figure was 27% (Linux v2.4.2). We found that the performance of the above downgrade is affected by two parts, policy enforcement, and hook placement. To further investigate the impact of policy enforcement and hook placement respectively, we build a Policy Testing Module, which reuses hook placements of LSM, while alternating latency of policy enforcement. With this module, we are able to quantitatively estimate the impact of the latency of policy enforcement on the end-to-end latency of file operations by using a multiple linear regression model and count policy authorization frequencies for each syscall. We then discuss and justify the evaluation results with static analysis on syscalls' call graphs.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/KimCKDSAD21,
+	author = {Doowon Kim and
+                  Haehyun Cho and
+                  Yonghwi Kwon and
+                  Adam Doup{\'{e}} and
+                  Sooel Son and
+                  Gail{-}Joon Ahn and
+                  Tudor Dumitras},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Security Analysis on Practices of Certificate Authorities in the {HTTPS}
+                  Phishing Ecosystem},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {407--420},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453100},
+	doi = {10.1145/3433210.3453100},
+	timestamp = {Tue, 07 May 2024 20:12:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/KimCKDSAD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Phishing attacks are causing substantial damage albeit extensive effort in academia and industry. Recently, a large volume of phishing attacks transit toward adopting HTTPS, leveraging TLS certificates issued from Certificate Authorities (CAs), to make the attacks more effective. In this paper, we present a comprehensive study on the security practices of CAs in the HTTPS phishing ecosystem. We focus on the CAs, critical actors under-studied in previous literature, to better understand the importance of the security practices of CAs and thwart the proliferating HTTPS phishing. In particular, we first present the current landscape and effectiveness of HTTPS phishing attacks comparing to traditional HTTP ones. Then, we conduct an empirical experiment on the CAs' security practices in terms of the issuance and revocation of the certificates. Our findings highlight serious conflicts between the expected security practices of CAs and reality, raising significant security concerns. We further validate our findings using a longitudinal dataset of abusive certificates used for real phishing attacks in the wild. We confirm that the security concerns of CAs prevail in the wild and these concerns can be one of the main contributors to the recent surge of HTTPS phishing attacks.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/XieZWWY21,
+	author = {Wei Xie and
+                  Chao Zhang and
+                  Pengfei Wang and
+                  Zhenhua Wang and
+                  Qiang Yang},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {{ARGUS:} Assessing Unpatched Vulnerable Devices on the Internet via
+                  Efficient Firmware Recognition},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {421--431},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453685},
+	doi = {10.1145/3433210.3453685},
+	timestamp = {Tue, 07 May 2024 20:12:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/XieZWWY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Assessing unpatched devices affected by a specified vulnerability is a vital but unsolved issue. Using a proof-of-concept tool on the Internet is illegal, while identifying vulnerable device models and firmware versions via fingerprints is a safer method. However, device search engines such as Shodan do not claim to accurately identify device models or versions, and existing works on firmware online recognition neglect the efficiency challenge of scanning redundant fingerprints. Consequently, this fingerprint-checking method has few real-world verifications on the Internet. We propose ARGUS, a simple but practical framework to identify device models and firmware versions. At its core is a heuristic fingerprint crush saga (FCS) scheme inspired by the phone game "Candy Crush Saga". It can improve efficiency by an average of 156 times compared to scanning fingerprints of all web files by default. This efficiency improvement enables us to widely assess the proportion of unpatched devices affected by 176 CVE vulnerabilities, which is 64.3% on average on the Internet. This result quantitatively proves that the majority of users do not periodically update device firmware.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/TannWPC21,
+	author = {Wesley Joon{-}Wie Tann and
+                  Jackie Tan Jin Wei and
+                  Joanna Purba and
+                  Ee{-}Chien Chang},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Filtering DDoS Attacks from Unlabeled Network Traffic Data Using Online
+                  Deep Learning},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {432--446},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453083},
+	doi = {10.1145/3433210.3453083},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/TannWPC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DDoS attacks are simple, effective, and still pose a significant threat even after more than two decades. Given the recent success in machine learning, it is interesting to investigate how we can leverage deep learning to filter out application layer attack requests. There are challenges in adopting deep learning solutions due to the ever-changing profiles, the lack of labeled data, and constraints in the online setting. Offline unsupervised learning methods can sidestep these hurdles by learning an anomaly detector N from the normal-day traffic N. However, anomaly detection does not exploit information acquired during attacks, and their performance typically is not satisfactory. In this paper, we propose two approaches that utilize both the historic N and the mixture M traffic obtained during attacks, consisting of unlabeled requests. First, our proposed approach, inspired by statistical methods, extends an unsupervised anomaly detector N to solve the problem using estimated conditional probability distributions. We adopt transfer learning to apply N on N and M separately and efficiently, combining the results to obtain an online learner. Second, we formulate a specific loss function more suited for deep learning and use iterative training to solve it in the online setting. On publicly available datasets, such as the CICIDS2017, our online learners achieve an average of 90.6% accuracy rates compared to the baseline detection method, which achieves around 60.0% accuracy. In the offline setting, our approaches on unlabeled data achieve competitive accuracy compared to classifiers trained on labeled data.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/JuburSSP21,
+	author = {Mohammed Jubur and
+                  Prakash Shrestha and
+                  Nitesh Saxena and
+                  Jay Prakash},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Bypassing Push-based Second Factor and Passwordless Authentication
+                  with Human-Indistinguishable Notifications},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {447--461},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453084},
+	doi = {10.1145/3433210.3453084},
+	timestamp = {Sat, 30 Sep 2023 09:34:41 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/JuburSSP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Second factor (2FA) or passwordless authentication based on notifications pushed to a user\'s personal device (e.g., a phone) that the user can simply approve (or deny) has become widely popular due to its convenience. In this paper, we show that the effortlessness of this approach gives rise to a fundamental design vulnerability. The vulnerability stems from the fact that the notification, as shown to the user, is not uniquely bound to the user\'s login session running through the browser, and thus if two notifications are sent around the same time (one for the user\'s session and one for an attacker\'s session), the user may not be able to distinguish between the two, likely ending up accepting the notification of the attacker\'s session. Exploiting this vulnerability, we present HIENA, a simple yet devastating attack against such "one-push" 2FA or passwordless schemes, which can allow a malicious actor to login soon after the victim user attempts to login triggering multiple near-concurrent notifications that seem indistinguishable to the user. To further deceive the user into accepting the attacker-triggered notification, HIENA can optionally spoof/mimic the victim\'s client machine information (e.g., the city from which the victim logs in, by being in the same city) and even issue other third-party notifications (e.g., email or social media) for obfuscation purposes. In case of 2FA schemes, we assume that the attacker knows the victim\'s password (e.g., obtained via breached password databases), a standard methodology to evaluate the security of any 2FA scheme. To evaluate the effectiveness of HIENA, we carefully designed and ran a human factors lab study where we tested benign and adversarial settings mimicking the user interface designs of well-known one-push 2FA and passwordless schemes. Our results show that users are prone to accepting attacker\'s notification in HIENA with high rates, about 83% overall and about 99% upon using spoofed information, which is almost similar to the rates of acceptance of benign login sessions. Even for the non-spoofed sessions (our primary attack), the attack success rates are about 68%, which go up to about 90-97% if the attack attempt is repeated 2-3 times. While we did not see a statistically significant effect of using third-party notifications on attack success rate, in real-life, the use of such obfuscation can be quite effective as users may only see one single 2FA notification (corresponding to attacker\'s session) on top of the notifications list which is most likely to be accepted. We have verified that many widely deployed one-push 2FA schemes (e.g., Duo Push, Authy OneTouch, LastPass, Facebook\'s and OpenOTP) seem directly vulnerable to our attack.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BarronSN21,
+	author = {Timothy Barron and
+                  Johnny So and
+                  Nick Nikiforakis},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Click This, Not That: Extending Web Authentication with Deception},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {462--474},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453088},
+	doi = {10.1145/3433210.3453088},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BarronSN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With phishing attacks, password breaches, and brute-force login attacks presenting constant threats, it is clear that passwords alone are inadequate for protecting the web applications entrusted with our personal data. Instead, web applications should practice defense in depth and give users multiple ways to secure their accounts. In this paper we propose login rituals, which define actions that a user must take to authenticate, and web tripwires, which define actions that a user must not take to remain authenticated. These actions outline expected behavior of users familiar with their individual setups on applications they use often. We show how we can detect and prevent intrusions from web attackers lacking this familiarity with their victim's behavior. We design a modular and application-agnostic system that incorporates these two mechanisms, allowing us to add an additional layer of deception-based security to existing web applications without modifying the applications themselves. Next to testing our system and evaluating its performance when applied to five popular open-source web applications, we demonstrate the promising nature of these mechanisms through a user study. Specifically, we evaluate the detection rate of tripwires against simulated attackers, 88% of whom clicked on at least one tripwire. We also observe web users' creation of personalized login rituals and evaluate the practicality and memorability of these rituals over time. Out of 39 user-created rituals, all of them are unique and 79% of users were able to reproduce their rituals even a week after creation.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Lee0JKK21,
+	author = {Joonhee Lee and
+                  Hyunwoo Lee and
+                  Jongheon Jeong and
+                  Doowon Kim and
+                  Ted Taekyoung Kwon},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Analyzing Spatial Differences in the {TLS} Security of Delegated Web
+                  Services},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {475--487},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453107},
+	doi = {10.1145/3433210.3453107},
+	timestamp = {Sun, 02 Oct 2022 15:54:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Lee0JKK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To provide secure content delivery, Transport Layer Security (TLS) has become a de facto standard over a couple of decades. However, TLS has a long history of security weaknesses and drawbacks. Thus, the security of TLS has been enhanced by addressing security problems through continuous version upgrades. Meanwhile, to provide fast content delivery globally, websites (or origin web servers) need to deploy and administer many machines in globally distributed environments. They often delegate the management of machines to web hosting services or content delivery networks (CDNs), where the security configurations of distributed servers may vary spatially depending on the managing entities or locations. Based on these spatial differences in TLS security, we find that the security level of TLS connections (and their web services) can be lowered. After collecting the information of (web) domains that exhibit different TLS versions and cryptographic options depending on clients' locations, we show that it is possible to redirect TLS handshake messages to weak TLS servers, which both the origin server and the client may not be aware of. We investigate 7M domains with these spatial differences of security levels in the wild and conduct the analyses to better understand the root causes of this phenomenon. We also measure redirection delays at various locations in the world to see whether there are noticeable delays in redirections.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Zhu021,
+	author = {Ruiyu Zhu and
+                  Yan Huang},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Hash-Enabled Garbling and the Insecurity of Free-Hashing Garbled Circuits},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {488--500},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437522},
+	doi = {10.1145/3433210.3437522},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Zhu021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hashing garbled circuits is an important, albeit expensive, bandwidth- saving technique that can be an order-of-magnitude slower than generating garbled circuits. In a recent work, Fan et al. (EURO- CRYPT, 2017) proposed a method to produce GC-hashes with- out any calls to expensive collision-resistant hash functions. They showed experimentally that the overhead of hashing GCs can be eliminated almost entirely. In this paper, we identify several security flaws in their approach. (1) We show some fundamental weakness in the notion of hash-security, which makes it impossible to support any existing malicious GC-hash-based cut-and-choose protocols. (2) Although the concept of hash-security could be useful in certain scenarios, we show (with concrete attacks) that the Free-Hash construction given in their paper is not really hash-secure. As a positive result of this work, we propose and formalize the concept of hash-enabled garbling and show how an actively-secure 2PC protocol can be constructed with black-box use of any hash- enabled garbling scheme. This is the first time when the use of GC-hashes in any cut-and-choose protocols is formally examined and rigorously proved secure. Our protocol allows to leverage GC- hashes to save bandwidth while minimizing the cut-and-choose duplication factor, i.e., using s (instead of 3s) copies of GCs to achieve 2-s statistical security.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/SinglaBHYB21,
+	author = {Ankush Singla and
+                  Rouzbeh Behnia and
+                  Syed Rafiul Hussain and
+                  Attila A. Yavuz and
+                  Elisa Bertino},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Look Before You Leap: Secure Connection Bootstrapping for 5G Networks
+                  to Defend Against Fake Base-Stations},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {501--515},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453082},
+	doi = {10.1145/3433210.3453082},
+	timestamp = {Sat, 30 Sep 2023 09:34:41 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/SinglaBHYB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The lack of authentication protection for bootstrapping messages broadcast by base-stations makes impossible for devices to differentiate between a legitimate and a fake base-station. This vulnerability has been widely acknowledged, but not yet fixed and thus enables law-enforcement agencies, motivated adversaries and nation-states to carry out attacks against targeted users. Although 5G cellular protocols have been enhanced to prevent some of these attacks, the root vulnerability for fake base-stations still exists. In this paper, we propose an efficient broadcast authentication protocol based on a hierarchical identity-based signature scheme, Schnorr-HIBS, which addresses the root cause of the fake base-station problem with minimal computation and communication overhead. We implement and evaluate our proposed protocol using off-the-shelf software-defined radios and open-source libraries. We also provide a comprehensive quantitative and qualitative comparison between our scheme and other candidate solutions for 5G base-station authentication proposed by 3GPP. Our proposed protocol achieves at least a 6x speedup in terms of end-to-end cryptographic delay and a communication cost reduction of 31% over other 3GPP proposals.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/GhoshKT21,
+	author = {Esha Ghosh and
+                  Seny Kamara and
+                  Roberto Tamassia},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Efficient Graph Encryption Scheme for Shortest Path Queries},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {516--525},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453099},
+	doi = {10.1145/3433210.3453099},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/GhoshKT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Graph encryption schemes (introduced by [Chase and Kamara, 2010]) have been receiving growing interest across various disciplines due to their attractive tradeoff between functionality, efficiency and privacy. In this paper, we advance the state of the art on encrypted graph search by providing an efficient graph encryption scheme for shortest path queries. The preprocessing time and space and the query time are proportional to those for building and querying the search structure for the unencrypted graph. Hence, the overhead of providing structured encryption is asymptotically optimal. We implement our scheme and experimentally validate its performance on real world networks. Furthermore, we extend our scheme to support verifiability. Our scheme is the first structured encryption scheme that supports a recursive algorithm, where the number of recursion steps is not known at setup time (unlike the chaining technique from [Chase and Kamara, 2010]). Recursion is an important algorithmic design paradigm. Hence, our technique may help develop other practical encrypted structures for recursive algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/PlotzAB21,
+	author = {Sebastian Plotz and
+                  Frederik Armknecht and
+                  Christian Bunse},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {How to Take Over Drones},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {526--536},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437515},
+	doi = {10.1145/3433210.3437515},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/PlotzAB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The number of unmanned aerial vehicles (UAV) (hereinafter referred to as drone) is rising in both, private and commercial applications. This makes it necessary that a drone remains under full control of the owner at any time. Most drones are controlled wirelessly by protocols in the 2.4 GHz band. The most commonly used protocols are DSMX (Spektrum), ACCST D16 EU-LBT (FrSky), DEVO (Walkera) and S-FHSS (Futaba). While it has been known that the DSMX protocol is vulnerable to attacks, the security of the other protocols was an open question. In this paper, we give a negative answer: all these protocols are insecure as well. More precisely, we show that it is practically possible to seize control over the drone in all cases. All presented attacks were implemented and validated under real conditions.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ShenKDSR21,
+	author = {Shiqi Shen and
+                  Aashish Kolluri and
+                  Zhen Dong and
+                  Prateek Saxena and
+                  Abhik Roychoudhury},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Localizing Vulnerabilities Statistically From One Exploit},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {537--549},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437528},
+	doi = {10.1145/3433210.3437528},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ShenKDSR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automatic vulnerability diagnosis can help security analysts identify and, therefore, quickly patch disclosed vulnerabilities. The vulnerability localization problem is to automatically find a program point at which the "root cause" of the bug can be fixed. This paper employs a statistical localization approach to analyze a given exploit. Our main technical contribution is a novel procedure to systematically construct a test-suite which enables high-fidelity localization. We build our techniques in a tool called VulnLoc which automatically pinpoints vulnerability locations, given just one exploit, with high accuracy. VulnLoc does not make any assumptions about the availability of source code, test suites, or specialized knowledge of the type of vulnerability. It identifies actionable locations in its Top-5 outputs, where a correct patch can be applied, for about 88% of 43 CVEs arising in large real-world applications we study. These include 6 different classes of security flaws. Our results highlight the under-explored power of statistical analyses, when combined with suitable test-generation techniques.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BauerR21,
+	author = {Markus Bauer and
+                  Christian Rossow},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Cali: Compiler-Assisted Library Isolation},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {550--564},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453111},
+	doi = {10.1145/3433210.3453111},
+	timestamp = {Sun, 12 Feb 2023 18:48:36 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BauerR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software libraries can freely access the program's entire address space, and also inherit its system-level privileges. This lack of separation regularly leads to security-critical incidents once libraries contain vulnerabilities or turn rogue. We present Cali, a compiler-assisted library isolation system that fully automatically shields a program from a given library. Cali is fully compatible with mainline Linux and does not require supervisor privileges to execute. We compartmentalize libraries into their own process with well-defined security policies. To preserve the functionality of the interactions between program and library, Cali uses a Program Dependence Graph to track data flow between the program and the library during link time. We evaluate our open-source prototype against three popular libraries: Ghostscript, OpenSSL, and SQLite. Cali successfully reduced the amount of memory that is shared between the program and library to 0.08% (ImageMagick) - 0.4% (Socat), while retaining an acceptable program performance.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LiuZLLWW21,
+	author = {Zhuotao Liu and
+                  Hao Zhao and
+                  Sainan Li and
+                  Qi Li and
+                  Tao Wei and
+                  Yu Wang},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Privilege-Escalation Vulnerability Discovery for Large-scale {RPC}
+                  Services: Principle, Design, and Deployment},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {565--577},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453076},
+	doi = {10.1145/3433210.3453076},
+	timestamp = {Wed, 21 Jul 2021 08:01:36 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LiuZLLWW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {RPCs are fundamental to our large-scale distributed system. From a security perspective, the blast radius of RPCs is worryingly big since each RPC often interacts with tens of internal system components. Thus, discovering RPC vulnerabilities is often a top priority in the software quality assurance process for production systems. In this paper, we present the design, implementation, and deployment experiences of PAIR, a fully automated system for privilege-escalation vulnerability discovery in Ant Group's large-scale RPC system. The design of PAIR centers around the live replay design principle where the vulnerability discovery is driven by the live RPC requests collected from production, rather than relying on any engineered testing requests. This ensures that PAIR is able to provide complete coverage to our production RPC requests in a privacy-preserving manner, despite the manifest of scale (billions of daily requests), complexity (hundreds of system-services involved) and heterogeneity (RPC protocols are highly customized). However, the live replay design principle is not a panacea. We made a couple of critical design decisions (and addressed their corresponding challenges) along the way to realize the principle in production. First, to avoid inspecting the responses of user-facing RPCs (due to privacy concerns), PAIR designs a universal and privacy-preserving mechanism, via profiling the end-to-end system invocation, to represent the RPC handling logic. Second, to ensure that PAIR provides proactive defense (rather than reactive defense that is often limited by known vulnerabilities), PAIR designs an empirical vulnerability labeling mechanism to effectively identify a group of potentially insecure RPCs while safely excluding other RPCs. During the course of three-year production development, PAIR in total helped locate 133 truly insecure RPCs, from billions of requests, while maintaining a zero false negative rate per our production observations.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/NguyenNSW021,
+	author = {Trung Tin Nguyen and
+                  Duc Cuong Nguyen and
+                  Michael Schilling and
+                  Gang Wang and
+                  Michael Backes},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Measuring User Perception for Detecting Unexpected Access to Sensitive
+                  Resource in Mobile Apps},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {578--592},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437511},
+	doi = {10.1145/3433210.3437511},
+	timestamp = {Mon, 31 Jan 2022 09:22:51 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/NguyenNSW021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Understanding users' perception of app behaviors is an important step to detect data access that violates user expectations. While existing works have used various proxies to infer user expectations (e.g., by analyzing app descriptions), how real-world users perceive an app's data access when they interact with graphical user interfaces (UI) has not been fully explored. In this paper, we aimed to fill this gap by directly measuring how end-users perceive app behaviors based on graphical UI elements via extensive user studies. The results are used to build an automated tool - GUIBAT (Graphical User Interface Behavioral Analysis Tool) - that detects sensitive resource accesses that violate user expectations. We conducted three user studies in total (N=904). The first two user studies were used to build a semantic mapping between user expectations of sensitive resource accesses and the common graphical UI elements (N=459). The third user study (N=445) was used to validate the performance of GUIBAT in predicting user expectations. By comparing user expectations and the actual app behavior (inferred by static program analysis) for 47,909 Android apps, we found that 75.38% of the apps have at least one unexpected sensitive resource access in which third-party libraries attributed to 46.13%. Our analysis lays a concrete foundation for modeling user expectations based on UI elements. We show the urgent need for more transparent UI designs to better inform users of data access, and call for new tools to support app developers in this endeavor.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/SepehriK21,
+	author = {Maryam Sepehri and
+                  Florian Kerschbaum},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Low-Cost Hiding of the Query Pattern},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {593--603},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453103},
+	doi = {10.1145/3433210.3453103},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/SepehriK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Several attacks have shown that the leakage from the access pattern in searchable encryption is dangerous. Attacks exploiting leakage from the query pattern are as dangerous, but less explored. While there are known, lightweight countermeasures to hide information in the access pattern by padding the ciphertexts, the same is not true for the query pattern. Oblivious RAM hides the query patterns, but requires a logarithmic overhead in the size of the database and hence will become even slower as data grows. In this paper we present a query smoothing algorithm to hide the frequency information in the query pattern of searchable encryption schemes by introducing fake queries. Our method only introduces a constant overhead of 7 to 13 fake queries per real query in our experiments. Furthermore, we show that our query smoothing algorithm can also be applied to range-searchable encryption schemes and then prevents all recent plaintext recovery attacks.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LuD21,
+	author = {Linpeng Lu and
+                  Ning Ding},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Horizontal Privacy-Preserving Linear Regression Which is Highly Efficient
+                  for Dataset of Low Dimension},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {604--615},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453105},
+	doi = {10.1145/3433210.3453105},
+	timestamp = {Tue, 24 Jan 2023 15:17:57 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LuD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Linear regression is a widely used machine learning model for applications such as personalized health-care prediction, recommendation systems, and policy making etc. Nowadays one important trend of applying this model (also others) is privacy-preserving linear regression, in which multiple parties, each possessing a part of dataset, jointly perform the learning process, while paying a specific attention to the goal of preserving privacy of their data. Consequently some works on how to achieve this goal with various properties appear in recent years. In this paper, we present a new privacy-preserving linear regression protocol for the scenario where dataset is distributed horizontally, which works highly efficiently in particular when training dataset is of low dimension. Our protocol uses two non-colluding servers, in which multiple data providers share their private data, i.e. a dxd matrix where d denotes the dimension of dataset, into two shares and send shares to the two servers respectively which then jointly perform the training process securely. Our technical novelties are as follows. We remark that in the method of solving linear systems (SLS), one mainstream method for linear regression (while the other one is stochastic gradient descent (SGD)), the time complexity only depends on the dimension, regardless of the number of samples. Note that known works using SLS employ garbled circuits for entire linear systems and thus use heavy computation. We implement SLS via the share-computation method which is known for securely implementing SGD and has not been applied to SLS to our knowledge, and thus inherit the advantages from them both (note that SLS admits fast computation when dataset is of low dimension, and the share-computation method is faster than the method of garbled circuits for entire linear systems). In the share-computation for SLS we propose a hybrid method, combining garbled circuits and secret sharing, to realize a secure and round-efficient division for fixed-point number (8+2θ rounds, where θ is a small number of iterations and is set to 5 in our experiment). We then use the division protocol to implement our new protocol for linear regression. As a consequence, our protocol is highly efficient for dataset of low dimension. We implement our protocol in C++ and the experiments show that our protocol is much more efficient than the state of the art implementations for privacy-preserving linear regression for dataset of low dimension.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/HiwatashiOON21,
+	author = {Keitaro Hiwatashi and
+                  Ken Ogura and
+                  Satsuya Ohata and
+                  Koji Nuida},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Accelerating Secure (2+1)-Party Computation by Insecure but Efficient
+                  Building Blocks},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {616--627},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453109},
+	doi = {10.1145/3433210.3453109},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/HiwatashiOON21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure multi-party computation (MPC) is a cryptographic tool that enables a set of parties to compute a function jointly while keeping each input secret. Since MPC based on secret sharing (SS) achieves high throughput and works fast, many applications have been developed. However, SS-based MPC requires many communication rounds in general, and this becomes a performance bottleneck in real-world applications under high-latency networks. In this paper, we propose SS-based secure three-party computation with almost no preprocessing based on our new (small-)constant-round fundamental gates, by revisiting a framework in a few previous works where a number of parties are assisted by another party who may partially learn secret information. Instead of ordinary logical gates, our fundamental gate is an efficient Equality, for which the result leaks to the third party, and we develop novel two-round constructions of secure building-block protocols (LessThan Comparison, RightShift, Table LookUp, etc.) from the insecure Equality. To show the practicality of our protocols, we implement a secure exact edit distance protocol for two genome strings. Our experiments show that in some network setting our protocol is about 2 times faster (14 times faster taking preprocessing into consideration) than the state-of-the-art SS-based protocol (Ohata and Nuida, FC 2020).}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/Ren21,
+	author = {Kui Ren},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Encrypted Databases: Progresses and Challenges},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {628},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3434067},
+	doi = {10.1145/3433210.3434067},
+	timestamp = {Tue, 29 Jun 2021 17:43:21 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/Ren21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, we have witnessed an upsurge in cyber-attacks and data breach incidents that put tremendous data at risk, affect millions of users, and cause severe economic losses. As an in-depth defence to counter the persistent and pervasive security threats, maintaining data in always encrypted form is becoming a trend and even a regulatory requirement. Satisfying the demand is particularly challenging in the context of databases, which, as a pillar in modern computing infrastructure, provide indispensable means to organize, store and retrieve data at different scales. The difficulty lies in how to perform the database query processing over encrypted data while meeting the requirements of security, performance, and complex query functions. This field has grown tremendously over the past two decades, though there is no dominant solution that is universally applicable. Solutions based on cryptographic techniques, e.g., searchable encryption or property-preserving encryption, can efficiently provide certain primitive operations for database queries. But studies have shown that their allowed leakage profiles can be (sometimes highly) exploitable. The recent advent of secure hardware enclaves opens up new opportunities. Yet, the first few enclave-based proposals mostly explore extreme design points that rest on strong assumptions (e.g., huge enclave) or result in weak security (e.g., leaking relations of ciphertexts). In this talk, we will overview these latest advancements and the potential challenges, respectively, and discuss the possible roadmap ahead towards practically more secure, efficient and functional encrypted databases.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/UzunYCKL21,
+	author = {Erkam Uzun and
+                  Carter Yagemann and
+                  Simon P. Chung and
+                  Vladimir Kolesnikov and
+                  Wenke Lee},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Cryptographic Key Derivation from Biometric Inferences for Remote
+                  Authentication},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {629--643},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437512},
+	doi = {10.1145/3433210.3437512},
+	timestamp = {Tue, 21 Mar 2023 21:01:02 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/UzunYCKL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Biometric authentication is getting increasingly popular because of its appealing usability and improvements in biometric sensors. At the same time, it raises serious privacy concerns since the common deployment involves storing bio-templates in remote servers. Current solutions propose to keep these templates on the client's device, outside the server's reach. This binds the client to the initial device. A more attractive solution is to have the server authenticate the client, thereby decoupling them from the device. Unfortunately, existing biometric template protection schemes either suffer from the practicality or accuracy. The state-of-the-art deep learning (DL) solutions solve the accuracy problem in face- and voice-based verification. However, existing privacy-preserving methods do not accommodate the DL methods, as they are tailored to hand-crafted feature space of specific modalities in general. In this work, we propose a novel pipeline, Justitia, that makes DL-inferences of face and voice biometrics compatible with the standard privacy-preserving primitives, like fuzzy extractors (FE). For this, we first form a bridge between Euclidean (or cosine) space of DL and Hamming space of FE, while maintaining the accuracy and privacy of underlying schemes. We also introduce efficient noise handling methods to keep the FE scheme practically applicable. We implement an end-to-end prototype to evaluate our design, then show how to improve the security for sensitive authentications and usability for non-sensitive, day-to-day, authentications. Justitia achieves the same, 0.33% false rejection at zero false acceptance, errors as the plaintext baseline does on the YouTube Faces benchmark. Moreover, combining face and voice achieves 1.32% false rejection at zero false acceptance. According to our systematical security assessments conducted through prior approaches and our novel black-box method, Justitia achieves ~25 bits and ~33 bits of security guarantees for face- and face&voice-based pipelines, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ZafarSA021,
+	author = {Ahsan Zafar and
+                  Aafaq Sabir and
+                  Dilawer Ahmed and
+                  Anupam Das},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Understanding the Privacy Implications of Adblock Plus's Acceptable
+                  Ads},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {644--657},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437536},
+	doi = {10.1145/3433210.3437536},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ZafarSA021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Targeted advertisement is prevalent on the Web. Many privacy-enhancing tools have been developed to thwart targeted advertisement. Adblock Plus is one such popular tool, used by millions of users on a daily basis, to block unwanted ads and trackers. Adblock Plus uses EasyList and EasyPrivacy, the most prominent and widely used open-source filters, to block unwanted web contents. However, Adblock Plus, by default, also enables an exception list to unblock web requests that comply with specific guidelines defined by the Acceptable Ads Committee. Any publisher can enroll into the Acceptable Ads initiative to request the unblocking of web contents. Adblock Plus in return charges a licensing fee from large entities, who gain a significant amount of ad impressions per month due to participation in the Acceptable Ads initiative. However, the privacy implications of the default inclusion of the exception list has not been well studied, especially as it can unblock not only ads, but also trackers (e.g., unblocking contents otherwise blocked by EasyPrivacy). In this paper, we take a data-driven approach, where we collect historical updates made to Adblock Plus's exception list and real-world web traffic by visiting the top 10k websites listed by Tranco. Using such data we analyze not only how the exception list has evolved over the years in terms of both contents unblocked and partners/entities enrolled into the Acceptable Ads initiative, but also the privacy implications of enabling the exception list by default. We found that Google not only unblocks the most number of unique domains, but is also unblocked by the most number of unique partners. From our traffic analysis, we see that of the 42,210 Google bound web requests, originally blocked by EasyPrivacy, around 80% of such requests are unblocked by the exception list. More worryingly, many of the requests enable 1-by-1 tracking pixel images. We, therefore, question exception rules that negate EasyPrivacy filtering rules by default and advocate for a better vetting process.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BozdemirCEMO021,
+	author = {Beyza Bozdemir and
+                  S{\'{e}}bastien Canard and
+                  Orhan Ermis and
+                  Helen M{\"{o}}llering and
+                  Melek {\"{O}}nen and
+                  Thomas Schneider},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Privacy-preserving Density-based Clustering},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {658--671},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453104},
+	doi = {10.1145/3433210.3453104},
+	timestamp = {Thu, 14 Oct 2021 09:48:40 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BozdemirCEMO021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Clustering is an unsupervised machine learning technique that outputs clusters containing similar data items. In this work, we investigate privacy-preserving density-based clustering which is, for example, used in financial analytics and medical diagnosis. When (multiple) data owners collaborate or outsource the computation, privacy concerns arise. To address this problem, we design, implement, and evaluate the first practical and fully private density-based clustering scheme based on secure two-party computation. Our protocol privately executes the DBSCAN algorithm without disclosing any information (including the number and size of clusters). It can be used for private clustering between two parties as well as for private outsourcing of an arbitrary number of data owners to two non-colluding servers. Our implementation of the DBSCAN algorithm privately clusters data sets with 400 elements in 7 minutes on commodity hardware. Thereby, it flexibly determines the number of required clusters and is insensitive to outliers, while being only factor 19x slower than today's fastest private K-means protocol (Mohassel et al., PETS'20) which can only be used for specific data sets. We then show how to transfer our newly designed protocol to related clustering algorithms by introducing a private approximation of the TRACLUS algorithm for trajectory clustering which has interesting real-world applications like financial time series forecasts and the investigation of the spread of a disease like COVID-19.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BoutetFGJN21,
+	author = {Antoine Boutet and
+                  Carole Frindel and
+                  S{\'{e}}bastien Gambs and
+                  Th{\'{e}}o Jourdan and
+                  Rosin Claude Ngueveu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {DySan: Dynamically Sanitizing Motion Sensor Data Against Sensitive
+                  Inferences through Adversarial Networks},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {672--686},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453095},
+	doi = {10.1145/3433210.3453095},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BoutetFGJN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the widespread development of the quantified-self movement, an increasing number of users rely on mobile applications to monitor their physical activity through their smartphones. However, granting applications a direct access to sensor data exposes users to privacy risks. In particular, motion sensor data are usually transmitted to analytics applications hosted in the cloud, which leverages on machine learning models to provide feedback on their activity status to users. In this setting, nothing prevents the service provider to infer private and sensitive information about a user such as health or demographic attributes. To address this issue, we propose DySan, a privacy-preserving framework to sanitize motion sensor data against unwanted sensitive inferences (i.e., improving privacy) while limiting the loss of accuracy on the physical activity monitoring (i.e., maintaining data utility). Our approach is inspired from the framework of Generative Adversarial Networks to sanitize the sensor data for the purpose of ensuring a good trade-off between utility and privacy. More precisely, by learning in a competitive manner several networks, DySan is able to build models that sanitize motion data against inferences on a specified sensitive attribute (e.g., gender) while maintaining an accurate activity recognition. DySan builds various sanitizing models, characterized by different sets of hyperparameters in the global loss function, to propose a transfer learning scheme over time by dynamically selecting the model which provides the best utility and privacy trade-off according to the incoming data. Experiments conducted on real datasets demonstrate that DySan can drastically limit the gender inference up to 41% (from 98% with raw data to 57% with sanitized data) while only reducing the accuracy of activity recognition by 3% (from 95% with raw data to 92% with sanitized data).}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/FasanoBMLBDEFLG21,
+	author = {Andrew Fasano and
+                  Tiemoko Ballo and
+                  Marius Muench and
+                  Tim Leek and
+                  Alexander Bulekov and
+                  Brendan Dolan{-}Gavitt and
+                  Manuel Egele and
+                  Aur{\'{e}}lien Francillon and
+                  Long Lu and
+                  Nick Gregory and
+                  Davide Balzarotti and
+                  William Robertson},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {SoK: Enabling Security Analyses of Embedded Systems via Rehosting},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {687--701},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453093},
+	doi = {10.1145/3433210.3453093},
+	timestamp = {Mon, 26 Jun 2023 20:43:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/FasanoBMLBDEFLG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Closely monitoring the behavior of a software system during its execution enables developers and analysts to observe, and ultimately understand, how it works. This kind of dynamic analysis can be instrumental to reverse engineering, vulnerability discovery, exploit development, and debugging. While these analyses are typically well-supported for homogeneous desktop platforms (e.g., x86 desktop PCs), they can rarely be applied in the heterogeneous world of embedded systems. One approach to enable dynamic analyses of embedded systems is to move software stacks from physical systems into virtual environments that sufficiently model hardware behavior. This process which we call "rehosting" poses a significant research challenge with major implications for security analyses. Although rehosting has traditionally been an unscientific and ad-hoc endeavor undertaken by domain experts with varying time and resources at their disposal, researchers are beginning to address rehosting challenges systematically and in earnest. In this paper, we establish that emulation is insufficient to conduct large-scale dynamic analysis of real-world hardware systems and present rehosting as a firmware-centric alternative. Furthermore, we taxonomize preliminary rehosting efforts, identify the fundamental components of the rehosting process, and propose directions for future research.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/JiCH21,
+	author = {Yuede Ji and
+                  Lei Cui and
+                  H. Howie Huang},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {BugGraph: Differentiating Source-Binary Code Similarity with Graph
+                  Triplet-Loss Network},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {702--715},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437533},
+	doi = {10.1145/3433210.3437533},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/JiCH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Binary code similarity detection, which answers whether two pieces of binary code are similar, has been used in a number of applications,such as vulnerability detection and automatic patching. Existing approaches face two hurdles in their efforts to achieve high accuracy and coverage: (1) the problem of source-binary code similarity detection, where the target code to be analyzed is in the binary format while the comparing code (with ground truth) is in source code format. Meanwhile, the source code is compiled to the comparing binary code with either a random or fixed configuration (e.g.,architecture, compiler family, compiler version, and optimization level), which significantly increases the difficulty of code similarity detection; and (2) the existence of different degrees of code similarity. Less similar code is known to be more, if not equally, important in various applications such as binary vulnerability study. To address these challenges, we design BugGraph, which performs source-binary code similarity detection in two steps. First, BugGraph identifies the compilation provenance of the target binary and compiles the comparing source code to a binary with the same provenance.Second, BugGraph utilizes a new graph triplet-loss network on the attributed control flow graph to produce a similarity ranking. The experiments on four real-world datasets show that BugGraph achieves 90% and 75% true positive rate for syntax equivalent and similar code, respectively, an improvement of 16% and 24% overstate-of-the-art methods. Moreover, BugGraph is able to identify 140 vulnerabilities in six commercial firmware.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/BundtFD0L21,
+	author = {Joshua Bundt and
+                  Andrew Fasano and
+                  Brendan Dolan{-}Gavitt and
+                  William Robertson and
+                  Tim Leek},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Evaluating Synthetic Bugs},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {716--730},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453096},
+	doi = {10.1145/3433210.3453096},
+	timestamp = {Sat, 30 Sep 2023 09:34:41 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/BundtFD0L21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzz testing has been used to find bugs in programs since the 1990s, but despite decades of dedicated research, there is still no consensus on which fuzzing techniques work best. One reason for this is the paucity of ground truth: bugs in real programs with known root causes and triggering inputs are difficult to collect at a meaningful scale. Bug injection technologies that add synthetic bugs into real programs seem to offer a solution, but the differences in finding these synthetic bugs versus organic bugs have not previously been explored at a large scale. Using over 80 years of CPU time, we ran eight fuzzers across 20 targets from the Rode0day bug-finding competition and the LAVA-M corpus. Experiments were standardized with respect to compute resources and metrics gathered. These experiments show differences in fuzzer performance as well as the impact of various configuration options. For instance, it is clear that integrating symbolic execution with mutational fuzzing is very effective and that using dictionaries improves performance. Other conclusions are less clear-cut; for example, no one fuzzer beat all others on all tests. It is noteworthy that no fuzzer found any organic bugs (i.e., one reported in a CVE), despite 50 such bugs being available for discovery in the fuzzing corpus. A close analysis of results revealed a possible explanation: a dramatic difference between where synthetic and organic bugs live with respect to the "main path" discovered by fuzzers. We find that recent updates to bug injection systems have made synthetic bugs more difficult to discover, but they are still significantly easier to find than organic bugs in our target programs. Finally, this study identifies flaws in bug injection techniques and suggests a number of axes along which synthetic bugs should be improved.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/MengGMABCKV21,
+	author = {Dongyu Meng and
+                  Michele Guerriero and
+                  Aravind Machiry and
+                  Hojjat Aghakhani and
+                  Priyanka Bose and
+                  Andrea Continella and
+                  Christopher Kruegel and
+                  Giovanni Vigna},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Bran: Reduce Vulnerability Search Space in Large Open Source Repositories
+                  by Learning Bug Symptoms},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {731--743},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453115},
+	doi = {10.1145/3433210.3453115},
+	timestamp = {Mon, 03 Jan 2022 22:14:51 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/MengGMABCKV21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software is continually increasing in size and complexity, and therefore, vulnerability discovery would benefit from techniques that identify potentially vulnerable regions within large code bases, as this allows for easing vulnerability detection by reducing the search space. Previous work has explored the use of conventional code-quality and complexity metrics in highlighting suspicious sections of (source) code. Recently, researchers also proposed to reduce the vulnerability search space by studying code properties with neural networks. However, previous work generally failed in leveraging the rich metadata that is available for long-running, large code repositories. In this paper, we present an approach, named Bran, to reduce the vulnerability search space by combining conventional code metrics with fine-grained repository metadata. Bran locates code sections that are more likely to contain vulnerabilities in large code bases, potentially improving the efficiency of both manual and automatic code audits. In our experiments on four large code bases, Bran successfully highlights potentially vulnerable functions, outperforming several baselines, including state-of-art vulnerability prediction tools. We also assess Bran's effectiveness in assisting automated testing tools. We use Bran to guide syzkaller, a known kernel fuzzer, in fuzzing a recent version of the Linux kernel. The guided fuzzer identifies 26 bugs (10 are zero-day flaws), including arbitrary writes and reads.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LucasSBRS21,
+	author = {Keane Lucas and
+                  Mahmood Sharif and
+                  Lujo Bauer and
+                  Michael K. Reiter and
+                  Saurabh Shintre},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Malware Makeover: Breaking ML-based Static Analysis by Modifying Executable
+                  Bytes},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {744--758},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453086},
+	doi = {10.1145/3433210.3453086},
+	timestamp = {Sat, 30 Sep 2023 09:34:41 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LucasSBRS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Motivated by the transformative impact of deep neural networks (DNNs) in various domains, researchers and anti-virus vendors have proposed DNNs for malware detection from raw bytes that do not require manual feature engineering. In this work, we propose an attack that interweaves binary-diversification techniques and optimization frameworks to mislead such DNNs while preserving the functionality of binaries. Unlike prior attacks, ours manipulates instructions that are a functional part of the binary, which makes it particularly challenging to defend against. We evaluated our attack against three DNNs in white- and black-box settings, and found that it often achieved success rates near 100%. Moreover, we found that our attack can fool some commercial anti-viruses, in certain cases with a success rate of 85%. We explored several defenses, both new and old, and identified some that can foil over 80% of our evasion attempts. However, these defenses may still be susceptible to evasion by attacks, and so we advocate for augmenting malware-detection systems with methods that do not rely on machine learning.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ParkSCZD0L21,
+	author = {Kyuhong Park and
+                  Burak Sahin and
+                  Yongheng Chen and
+                  Jisheng Zhao and
+                  Evan Downing and
+                  Hong Hu and
+                  Wenke Lee},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Identifying Behavior Dispatchers for Malware Analysis},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {759--773},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3457894},
+	doi = {10.1145/3433210.3457894},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ParkSCZD0L21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware is a major threat to modern computer systems. Malicious behaviors are hidden by a variety of techniques: code obfuscation, message encoding and encryption, etc. Countermeasures have been developed to thwart these techniques in order to expose malicious behaviors. However, these countermeasures rely heavily on identifying specific API calls, which has significant limitations as these calls can be misleading or hidden from the analyst. In this paper, we show that malicious programs share a key component which we call a behavior dispatcher, a code structure which is intercepted between various condition checks and malicious actions. By identifying these behavior dispatchers, a malware analysis can be guided into behavior dispatchers and activate hidden malicious actions more easily. We propose BDHunter, a system that automatically identifies behavior dispatchers to assist triggering malicious behaviors. BDHunter takes advantage of the observation that a dispatcher compares an input with a set of expected values to determine which malicious behaviors to execute next. We evaluate BDHunter on recent malware samples to identify behavior dispatchers and show that these dispatchers can help trigger more malicious behaviors (otherwise hidden). Our experimental results show that BDHunter identifies 77.4% of dispatchers within the top 20 candidates discovered. Furthermore, BDHunter-guided concolic execution successfully triggers 13.0x and 2.6x more malicious behaviors, compared to unguided symbolic and concolic execution, respectively. These demonstrate that BDHunter effectively identifies behavior dispatchers, which are useful for exposing malicious behaviors.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/PiskozubGBMM21,
+	author = {Michal Piskozub and
+                  Fabio De Gaspari and
+                  Freddie Barr{-}Smith and
+                  Luigi V. Mancini and
+                  Ivan Martinovic},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {MalPhase: Fine-Grained Malware Detection Using Network Flow Data},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {774--786},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453101},
+	doi = {10.1145/3433210.3453101},
+	timestamp = {Mon, 03 Jan 2022 22:14:51 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/PiskozubGBMM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Economic incentives encourage malware authors to constantly develop new, increasingly complex malware to steal sensitive data or blackmail individuals and companies into paying large ransoms. In 2017, the worldwide economic impact of cyberattacks is estimated to be between 445 and 600 billion USD, or 0.8% of global GDP. Traditionally, one of the approaches used to defend against malware is network traffic analysis, which relies on network data to detect the presence of potentially malicious software. However, to keep up with increasing network speeds and amount of traffic, network analysis is generally limited to work on aggregated network data, which is traditionally challenging and yields mixed results. In this paper we present MalPhase, a system that was designed to cope with the limitations of aggregated flows. MalPhase features a multi-phase pipeline for malware detection, type and family classification. The use of an extended set of network flow features and a simultaneous multi-tier architecture facilitates a performance improvement for deep learning models, making them able to detect malicious flows (>98% F1) and categorize them to a respective malware type (>93% F1) and family (>91% F1). Furthermore, the use of robust features and denoising autoencoders allows MalPhase to perform well on samples with varying amounts of benign traffic mixed in. Finally, MalPhase detects unseen malware samples with performance comparable to that of known samples, even when interlaced with benign flows to reflect realistic network environments.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/IvanovLC0Y21,
+	author = {Nikolay Ivanov and
+                  Jianzhi Lou and
+                  Ting Chen and
+                  Jin Li and
+                  Qiben Yan},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Targeting the Weakest Link: Social Engineering Attacks in Ethereum
+                  Smart Contracts},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {787--801},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453085},
+	doi = {10.1145/3433210.3453085},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/IvanovLC0Y21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ethereum holds multiple billions of U.S. dollars in the form of Ether cryptocurrency and ERC-20 tokens, with millions of deployed smart contracts algorithmically operating these funds. Unsurprisingly, the security of Ethereum smart contracts has been under rigorous scrutiny. In recent years, numerous defense tools have been developed to detect different types of smart contract code vulnerabilities. When opportunities for exploiting code vulnerabilities diminish, the attackers start resorting to social engineering attacks, which aim to influence humans - often the weakest link in the system. The only known class of social engineering attacks in Ethereum are honeypots, which plant hidden traps for attackers attempting to exploit existing vulnerabilities, thereby targeting only a small population of potential victims. In this work, we explore the possibility and existence of new social engineering attacks beyond smart contract honeypots. We present two novel classes of Ethereum social engineering attacks - Address Manipulation and Homograph - and develop six zero-day social engineering attacks. To show how the attacks can be used in popular programming patterns, we conduct a case study of five popular smart contracts with combined market capitalization exceeding $29 billion, and integrate our attack patterns in their source codes without altering their existing functionality. Moreover, we show that these attacks remain dormant during the test phase but activate their malicious logic only at the final production deployment. We further analyze 85,656 open-source smart contracts, and discover that 1,027 of them can be used for the proposed social engineering attacks. We conduct a professional opinion survey with experts from seven smart contract auditing firms, corroborating that the exposed social engineering attacks bring a major threat to the smart contract systems.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/KushwahDSS21,
+	author = {Shivendra Kushwah and
+                  Ankush Desai and
+                  Pramod Subramanyan and
+                  Sanjit A. Seshia},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {PSec: Programming Secure Distributed Systems using Enclaves},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {802--816},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453113},
+	doi = {10.1145/3433210.3453113},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/KushwahDSS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce PSec, a domain-specific language for programming secure distributed systems. PSec is a state-machine based programming language with information flow control capabilities that leverages Intel SGX enclaves to provide security guarantees at runtime. Combining state machines and information flow control with hardware enclaves enables programmers to build complex distributed systems without inadvertently leaking sensitive information to adversaries. We formally prove the security properties of PSec and evaluate our work by programming several real-world examples, including One Time Passcode and Secure Electronic Voting systems. We present performance results of PSec systems and show that there is an acceptable performance overhead of approximately 3x for long running systems with a possible minimum of approximately 1.2x, as compared to baseline systems that do not provide any security guarantees.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/HanSYL021,
+	author = {Runchao Han and
+                  Zhimei Sui and
+                  Jiangshan Yu and
+                  Joseph K. Liu and
+                  Shiping Chen},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Fact and Fiction: Challenging the Honest Majority Assumption of Permissionless
+                  Blockchains},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {817--831},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453087},
+	doi = {10.1145/3433210.3453087},
+	timestamp = {Sun, 12 Nov 2023 02:16:11 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/HanSYL021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Honest majority is the key security assumption of Proof-of-Work (PoW) based blockchains. However, the recent 51% attacks render this assumption unrealistic in practice. In this paper, we challenge this assumption against rational miners in the PoW-based blockchains in reality. In particular, we show that the current incentive mechanism may encourage rational miners to launch 51% attacks in two cases. In the first case, we consider a miner of a stronger blockchain launches 51% attacks on a weaker blockchain, where the two blockchains share the same mining algorithm. In the second case, we consider a miner rents mining power from cloud mining services to launch 51% attacks. As 51% attacks lead to double-spending, the miner can profit from these two attacks. If such double-spending is more profitable than mining, miners are more intended to launch 51% attacks rather than mine honestly. We formally model such behaviours as a series of actions through a Markov Decision Process. Our results show that, for most mainstream PoW-based blockchains, 51% attacks are feasible and profitable, so profit-driven miners are incentivised to launch 51% attacks to gain extra profit. In addition, we leverage our model to investigate the recent 51% attack on Ethereum Classic (on 07/01/2019), which is suspected to be an incident of 51% attacks. We provide insights on the attacker strategy and expected revenue, and show that the attacker's strategy is near-optimal.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/QiaoWK21,
+	author = {Yan Qiao and
+                  Kui Wu and
+                  Majid Khabbazian},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Non-Intrusive and High-Efficient Balance Tomography in the Lightning
+                  Network},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {832--843},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453089},
+	doi = {10.1145/3433210.3453089},
+	timestamp = {Wed, 15 Dec 2021 19:56:52 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/QiaoWK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Lightning Network (LN) is a second layer technology for solving the scalability problem of blockchain-based cryptocurrencies such as Bitcoin. The LN nodes (i.e., LN users), linked by payment channels, can make payments to each other directly or through multiple hops of payment channels, subject to the available balances of the serving channels. In current LN implementation, the channel capacity (i.e., the sum of the bidirectional balances in the channel) is open to the public, but the bidirectional balances are kept secret for privacy concerns. Nevertheless, the balances can be directly measured by conducting multiple fake payments to probe the precise value of the balance. Such a method, while effective, creates many fake invoices and incurs high cost when used for discovering balances for multiple users. We present a novel non-intrusive balance tomography (NIBT) method, which infers the channel balances by performing legal transactions between two pre-created LN nodes. NIBT iteratively reduces the balance ranges and uses an efficient balance inference algorithm to find the optimal payment in each iteration to cut off the maximum balance ranges. Experimental results show that NIBT can accurately infer about 92% of all covered balances with an extremely low cost.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/JiaSZLG21,
+	author = {Yanxue Jia and
+                  Shifeng Sun and
+                  Yi Zhang and
+                  Zhiqiang Liu and
+                  Dawu Gu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Redactable Blockchain Supporting Supervision and Self-Management},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {844--858},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453091},
+	doi = {10.1145/3433210.3453091},
+	timestamp = {Wed, 01 Mar 2023 21:34:35 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/JiaSZLG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The immutability of blockchain is crucial to the security of many blockchain applications, while it is still desired or even legally obliged to allow for redacting the contents of blockchain for some scenarios. In this work, we revisit the conflict between the immutability and redaction of blockchain, and put forward a new fine-grained redactable blockchain with a semi-trusted regulator, who follows our protocol but has a tendency to abuse his power. To the best of our knowledge, it is the first blockchain that not only supports the supervision of blockchain content, but also allows users themselves to manage their own data. To this end, we introduce a new variant of chameleon-hash function, named stateful Chameleon Hash with Revocable Subkey, which is important for building our redactable blockchain and may be of independent interest. We also propose a black-box construction from standard chameleon-hash functions, and prove its security properties under our proposed security notions. At last, we provide a proof-of-concept implementation. The evaluation results demonstrate that our redactable blockchain is practical and can be adopted with small additional overhead compared to the immutable blockchain.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LiSY0PL21,
+	author = {Yannan Li and
+                  Willy Susilo and
+                  Guomin Yang and
+                  Yong Yu and
+                  Tran Viet Xuan Phuong and
+                  Dongxi Liu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Non-Equivocation in Blockchain: Double-Authentication-Preventing Signatures
+                  Gone Contractual},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {859--871},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437516},
+	doi = {10.1145/3433210.3437516},
+	timestamp = {Thu, 14 Oct 2021 09:48:40 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LiSY0PL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Equivocation is one of the most fundamental problems that need to be solved when designing distributed protocols. Traditional methods to defeat equivocation rely on trusted hardware or particular assumptions, which may hinder their adoption in practice. The advent of blockchain and decentralized cryptocurrencies provides an auspicious breakthrough paradigm to resolve the problem above. In this paper, we propose a blockchain-based solution to address contractual equivocation, which supports user-defined fine-grained policy-based equivocation. Specifically, users will be de-incentive if the statements they made breach the predefined access rules. The core of our solution is a newly introduced primitive named Policy-Authentication-Preventing Signature (PoAPS), which combined with a deposit mechanism allows a signer to make conflict statements corresponding to a policy to be penalized. We present a generic construction of PoAPS based on Policy-Based Verifiable Secret Sharing (PBVSS) and demonstrate its practicality via a concrete implementation in the blockchain. Compared with the existing solutions that only handle specific types of equivocation, our proposed approach is more generic and can be instantiated to deal with various kinds of equivocation.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/NayakPGB21,
+	author = {Ajay Nayak and
+                  B. Pratheek and
+                  Vinod Ganapathy and
+                  Arkaprava Basu},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {(Mis)managed: {A} Novel TLB-based Covert Channel on GPUs},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {872--885},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453077},
+	doi = {10.1145/3433210.3453077},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/NayakPGB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {GPUs are now commonly available in most modern computing platforms. They are increasingly being adopted in cloud platforms and data centers due to their immense computing capability. In response to this growth in usage, manufacturers continuously try to improve GPU hardware by adding new features. However, this increase in usage and the addition of utility-improving features can create new, unexpected attack channels. In this paper, we show that two such features-unified virtual memory (UVM) and multi-process service (MPS)-primarily introduced to improve the programmability and efficiency of GPU kernels have an unexpected consequence-that of creating a novel covert-timing channel via the GPU's translation lookaside buffer (TLB) hierarchy. To enable this covert channel, we first perform experiments to understand the characteristics of TLBs present on a GPU. The use of UVM allows fine-grained management of translations, and helps us discover several idiosyncrasies of the TLB hierarchy, such as three-levels of TLB, coalesced entries. We use this newly-acquired understanding to demonstrate a novel covert channel via the shared TLB. We then leverage MPS to increase the bandwidth of this channel by 40×. Finally, we demonstrate the channel's utility by leaking data from a GPU-accelerated database application.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/AhmedO0M21,
+	author = {Chuadhry Mujeeb Ahmed and
+                  Mart{\'{\i}}n Ochoa and
+                  Jianying Zhou and
+                  Aditya Mathur},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Scanning the Cycle: Timing-based Authentication on PLCs},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {886--900},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453102},
+	doi = {10.1145/3433210.3453102},
+	timestamp = {Sun, 02 Oct 2022 15:54:59 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/AhmedO0M21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmable Logic Controllers (PLCs) are a core component of an Industrial Control System (ICS). However, if a PLC is compromised or the commands sent across a network from the PLCs are spoofed, consequences could be catastrophic. In this work, a novel technique to authenticate PLCs is proposed that aims at raising the bar against powerful attackers while being compatible with real-time systems. The proposed technique captures timing information for each controller in a non-invasive manner. It is argued that Scan Cycle is a unique feature of a PLC that can be approximated passively by observing network traffic. An attacker that spoofs commands issued by the PLCs would deviate from such fingerprints. To detect replay attacks a PLC Watermarking technique is proposed. PLC Watermarking models the relation between the scan cycle and the control logic by modeling the input/output as a function of request/response messages of a PLC. The proposed technique is validated on an operational water treatment plant (SWaT) and smart grid (EPIC) testbeds. Results from experiments indicate that PLCs can be distinguished based on their scan cycle timing characteristics.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/TuTPH21,
+	author = {Yazhou Tu and
+                  Vijay Srinivas Tida and
+                  Zhongqi Pan and
+                  Xiali Hei},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Transduction Shield: {A} Low-Complexity Method to Detect and Correct
+                  the Effects of {EMI} Injection Attacks on Sensors},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {901--915},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453097},
+	doi = {10.1145/3433210.3453097},
+	timestamp = {Wed, 09 Aug 2023 12:14:21 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/TuTPH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The reliability of control systems often relies on the trustworthiness of sensors. As process automation and robotics keep evolving, sensing methods such as pressure sensing are extensively used in both conventional systems and rapidly emerging applications. The goal of this paper is to investigate the threats and design a low-complexity defense method against EMI injection attacks on sensors. To ensure the security and usability of sensors and automated processes, we propose to leverage a matched dummy sensor circuit that shares the sensor's vulnerabilities to EMI but is insensitive to legitimate signals that the sensor is intended to measure. Our method can detect and correct corrupted sensor measurements without introducing components or modules that are highly complex compared to an original low-end sensor circuit. We analyze and evaluate our method on sensors with EMI injection experiments using different attack parameters. We investigate several attack scenarios, including manipulating the DC voltage of the sensor output, injecting sinusoidal signals, white noises, and malicious voice signals. Our experimental results suggest that, with relatively low cost and computation overhead, the proposed method not only detects the attack but also can correct corrupted sensor data to help maintain the functioning of systems based on different kinds of sensors in the presence of attacks.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/TaniguchiGD21,
+	author = {Tsuyoshi Taniguchi and
+                  Harm Griffioen and
+                  Christian Doerr},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {Analysis and Takeover of the Bitcoin-Coordinated Pony Malware},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {916--930},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437520},
+	doi = {10.1145/3433210.3437520},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/TaniguchiGD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware, like all products and services, evolves with bursts of innovation. These advances usually happen whenever security controls get ''good enough'' to significantly impact the revenue stream of malicious actors, and in the past we have seen the malware ecosystem to adopt concepts such as code obfuscation, polymorphism, domain-generation algorithms (DGAs), as well as virtual machine and sandbox evasion whenever defenses were able to perform consistent and pervasive suppression of these threats. The latest innovation step addresses one of the main Archilles' heels in malware operations: the resilient addressing of the command & control (C&C) server. As domain blacklisting and DGA reversing have become mature security practices, malware authors are now turning to the Bitcoin blockchain, and use its resilient design principle to disseminate control information that cannot be removed by defenders. In this paper, we report on the adoption of Bitcoin-based C&C addressing in the Pony malware, one of the most widely occurring malware platforms on Windows. We forensically analyze the blockchain-based C&C mechanism of the Pony malware, track the malicious operations over a period of 12 months, and report how the adversaries experimented and optimized their deployment over time. We identify a security flaw in the C&C addressing, which is used to perform a takeover of the malware's loading mechanism to quantify the volume and origin of the incoming infections.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/ZhangZ00ZLLL21,
+	author = {Zeyu Zhang and
+                  Xiaoli Zhang and
+                  Qi Li and
+                  Kun Sun and
+                  Yinqian Zhang and
+                  Songsong Liu and
+                  Yukun Liu and
+                  Xiaoning Li},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {See through Walls: Detecting Malware in {SGX} Enclaves with SGX-Bouncer},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {931--943},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3437531},
+	doi = {10.1145/3433210.3437531},
+	timestamp = {Wed, 09 Jun 2021 15:14:39 +0200},
+	biburl = {https://dblp.org/rec/conf/asiaccs/ZhangZ00ZLLL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intel Software Guard Extensions (SGX) offers strong confidentiality and integrity protection to software programs running in untrusted operating systems. Unfortunately, SGX may be abused by attackers to shield suspicious payloads and conceal misbehaviors in SGX enclaves, which cannot be easily detected by existing defense solutions. There is no comprehensive study conducted to characterize malicious enclaves. In this paper, we present the first systematic study that scrutinizes all possible interaction interfaces between enclaves and the outside (i.e., cache-memory hierarchy, host virtual memory, and enclave-mode transitions), and identifies seven attack vectors. Moreover, we propose SGX-Bouncer, a detection framework that can detect these attacks by leveraging multifarious side-channel observations and SGX-specific features. We conduct empirical evaluations with existing malicious SGX applications, which suggests SGX-Bouncer can effectively detect various abnormal behaviors from malicious enclaves.}
+}
+
+
+@inproceedings{DBLP:conf/asiaccs/LiuLD21,
+	author = {Ximing Liu and
+                  Yingjiu Li and
+                  Robert H. Deng},
+	editor = {Jiannong Cao and
+                  Man Ho Au and
+                  Zhiqiang Lin and
+                  Moti Yung},
+	title = {UltraPIN: Inferring {PIN} Entries via Ultrasound},
+	booktitle = {{ASIA} {CCS} '21: {ACM} Asia Conference on Computer and Communications
+                  Security, Virtual Event, Hong Kong, June 7-11, 2021},
+	pages = {944--957},
+	publisher = {{ACM}},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433210.3453075},
+	doi = {10.1145/3433210.3453075},
+	timestamp = {Mon, 03 Jan 2022 22:14:51 +0100},
+	biburl = {https://dblp.org/rec/conf/asiaccs/LiuLD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While PIN-based user authentication systems such as ATM have long been considered to be secure enough, they are facing new attacks, named UltraPIN, which can be launched from commodity smartphones. As a target user enters a PIN on a PIN-based user authentication system, an attacker may use UltraPIN to infer the PIN from a short distance (50 cm to 100 cm). In this process, UltraPIN leverages smartphone speakers to issue human-inaudible ultrasound signals and uses smartphone microphones to keep recording acoustic signals. It applies a series of signal processing techniques to extract high-quality feature vectors from low-energy and high-noise signals and then applies a combination of machine learning models to classify finger movement patterns during PIN entry and generate a ranked list of highly possible PINs as result. Rigorous experiments show that UltraPIN is highly effective and robust in PIN inference.}
+}
