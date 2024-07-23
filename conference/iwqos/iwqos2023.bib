@@ -1,0 +1,1756 @@
+@inproceedings{DBLP:conf/iwqos/LiMDG23,
+	author = {Hao Li and
+                  Xianghang Mi and
+                  Yanzhi Dou and
+                  Shanqing Guo},
+	title = {An Empirical Study of Storj {DCS:} Ecosystem, Performance, and Security},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188691},
+	doi = {10.1109/IWQOS57198.2023.10188691},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiMDG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the age of pervasive computing, traditionally centralized cloud storage (CCS) services may not fit in well due to their centralized architecture, limited worldwide availability, high expense, and security and privacy concerns. To address these issues, decentralized cloud storage (DCS) services emerged recently. However, previous works focus on analyzing the technical design of DCS services, e.g., their incentive mechanisms. Little is known regarding how well these DCS services work in real-world operations. In this paper, we fill this gap by providing the first empirical measurement of Storj, one of the most extensive in-operation decentralized cloud storage services, focusing on its ecosystem, performance, and security implications. Our study is made possible through multiple measurement techniques to automatically capture storage nodes, profile Storj's quality of service, understand co-located network threats, and evaluate potential attacks in a simulated environment. Leveraging these techniques, a set of insightful findings have been distilled. Particularly, we have observed over 32K storage nodes as well as 155K unique node IP addresses, which are widely distributed in 122 countries, 2,418 ASNs, and 205 /8 IPv4 prefixes. Regarding performance, storage customers located in Europe or the United States tend to enjoy a better storage performance than those in Asia-Pacific, likely due to the imbalanced distribution of storage nodes in different regions. Lastly, what is concerning is that 4.48% of IPs of storage nodes were found to have been associated with various malicious activities, especially botnets and cryptomining. Another vulnerability is that a malicious storage node could exploit multiple channels to boost its storage reputation while demoting that of benign nodes.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/SongHZLWFLWY23,
+	author = {Guanglei Song and
+                  Lin He and
+                  Tianyun Zhao and
+                  Yirui Luo and
+                  Yichao Wu and
+                  Linna Fan and
+                  Chenglong Li and
+                  Zhiliang Wang and
+                  Jiahai Yang},
+	title = {Which Doors Are Open: Reinforcement Learning-based Internet-wide Port
+                  Scanning},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188692},
+	doi = {10.1109/IWQOS57198.2023.10188692},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/SongHZLWFLWY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet-wide scanning is a commonly used research technique in various network surveys, such as measuring service deployment and security vulnerabilities. However, these network surveys are limited to the given port set, not comprehensively obtaining the real network landscape, and even misleading survey conclusions. In this work, we introduce PMap, a port scanning tool that efficiently discovers the majority of open ports from all 65K ports in the whole network. PMap uses the correlation of ports to build an open port correlation graph of each network, using a reinforcement learning framework to update the correlation graph based on feedback results and dynamically adjust the order of port scanning. Compared to current port scanning methods, PMap achieves better performance on hit rate, coverage, and intrusiveness. Our experiments over real-world networks show that PMap can find 90% open ports by only scanning 125 ports (90% @125) to each active address with 136× less than the state-of-the-art port probing methods. PMap reduces the number of scanned ports to decrease the intrusive nature of port scanning. PMap is the first effective practice for scanning open ports using reinforcement learning. It bridges the gap of existing scanning tools and effectively supports subsequent service discovery and security research.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhanTXZNZSL23,
+	author = {Huiyou Zhan and
+                  Haisheng Tan and
+                  Huang Xu and
+                  Chi Zhang and
+                  Hongqiu Ni and
+                  Pengfei Zhang and
+                  Weihua Shan and
+                  Xiangyang Li},
+	title = {Online Midgress-Sensitive Traffic Allocation for Percentile Charging
+                  in Pracitcal CDNs},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188693},
+	doi = {10.1109/IWQOS57198.2023.10188693},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhanTXZNZSL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The traffic bandwidth costs comprise a significant amount of operating expenditure in CDNs, induced by the traffic from the end-users to edge servers (edge cost) and from the edge to the center servers (midgress cost). Traffic allocation is the main approach to minimizing the total bandwidth cost. The joint optimization of the total costs is challenging, specifically when the percentile charging mechanism as well as some other practical issues are considered, such as the dynamicity of midgress traffic and the granularity of traffic allocation. In this work, based on our novel miss ratio prediction mechanism, we propose the first online framework, named Iris, jointly optimizing the edge and midgress costs under the 95th percentile charging in commercial CDNs. Iris can theoretically achieve a competitive ratio of 1+\\frac{p_{e}}{\\beta\\cdot p_{c}} , when the miss ratio of all domains is set as \\beta . Here p_{e} and p_{c} are the unit bandwidth price of the edge and midgress cost, respectively. Iris is tolerant to prediction errors which can be deployed in practical CDN systems. Extensive experiments based on real data indicate that Iris can dramatically reduce bandwidth costs by about 8.149% compared with the SOTA schemes, potentially saving millions of dollars per month for our large-scale commercial CDN collaborator.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiangWZLWW23,
+	author = {Yuzhu Liang and
+                  Wenhua Wang and
+                  Xi Zheng and
+                  Qin Liu and
+                  Liang Wang and
+                  Tian Wang},
+	title = {Collaborative Edge Service Placement for Maximizing QoS with Distributed
+                  Data Cleaning},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188694},
+	doi = {10.1109/IWQOS57198.2023.10188694},
+	timestamp = {Thu, 18 Jan 2024 15:23:39 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiangWZLWW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The proliferation of dirty data on Internet of Things (IoT) devices can undermine the accuracy of data-driven decision-making by affecting the distribution of original data. The Quality of Service (QoS) of data cleaning on these devices is heavily impacted by processing delay and accuracy. In this paper, we find that edge service placement is a key step aligned with data cleaning and consider the collaborative edge service placement with distributed data cleaning (SPDC) problem. To address this issue, we propose a novel distributed collaborative edge-based architecture that effectively balances the demands of storage, communication, computation, and load constraints. Experimental results show that the proposed approach significantly improves the accuracy of data cleaning by 0.31%-86.07% and reduces delay by 2.73%-58.71% compared to state-of-the-art baselines.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhuZDZC23,
+	author = {Tianxiang Zhu and
+                  Xiaoxi Zhang and
+                  Jingpu Duan and
+                  Zhi Zhou and
+                  Xu Chen},
+	title = {A Budget-aware Incentive Mechanism for Vehicle-to-Grid via Reinforcement
+                  Learning},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188695},
+	doi = {10.1109/IWQOS57198.2023.10188695},
+	timestamp = {Mon, 23 Oct 2023 20:48:21 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhuZDZC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increasing penetration of renewable energy and electric vehicles (EVs), the behavior of EVs' charging and discharging has shown great impact on the Micro Grid power load, motivating the development of Vehicle-to-Grid (V2G) technologies. However, the V2G market is still in its infancy, due to insufficient understanding of EV users' willingness and concerns. While many studies consider direct EV control, it's more realistic to indirectly affect users' behavior through monetary incentives. For better implementation flexibility, we advocate to display at charging piles strategically chosen incentives that are combined with electricity prices. Technically, this is the first model-free learning algorithm that can optimize incentives under unknown EV user reactions, increase the load control effectiveness and users' quality-of-service (QoS) simultaneously under a long-term incentive budget, and provide theoretical performance guarantees. We first construct a bi-level optimization framework to model the time-dependencies across our solutions. We then integrate primal-dual theories and upper-confidence bounds into reinforcement learning to balance power control and incentive consumption. A dynamic programming based algorithm is also proposed to maximize the aggregate user QoS. Finally, we prove bounded sub-optimality of our learning algorithm through theoretical analysis and conduct trace-driven simulations to demonstrate the advantages of our bi-level framework.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZengZGCG23,
+	author = {Deze Zeng and
+                  Andong Zhu and
+                  Lin Gu and
+                  Quan Chen and
+                  Minyi Guo},
+	title = {On Efficient Packet Batching and Resource Allocation for {GPU} based
+                  {NFV} Acceleration},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188696},
+	doi = {10.1109/IWQOS57198.2023.10188696},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZengZGCG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network Function Virtualization (NFV) has already become an essential technology for improving the scalability and flexibility of modern computer networks. The performance gap has become the main issue that impedes the development of NFV. GPUs, with massive parallel processors, are advocated to accelerate the Virtualized Network Functions (VNFs). However, the special architecture and workflow of GPUs introduce new challenges, especially on the batched processing, and resource allocation. In this paper, we propose GPU-based NFV Acceleration framework (GNFA) with an efficient packet batching and resource allocation solution. Considering the increased latency caused by the accumulation of the GPU kernel invoking overhead, we first invent a latency reduction mechanism called SM Performance Compensation (SPC). A Partition and Adjustment based Batching and Resource Allocation (PABARA) algorithm that jointly considers batch size tuning and GPU thread allocation is also proposed. We have practically implemented GNFA and extensively evaluated its performance on some well-known VNFs. The experiment results show that GNFA can effectively promote the GPU resource utilization and improve the NFV performance in terms of per-packet latency.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ChenSLALX23,
+	author = {Zixuan Chen and
+                  Lei Shi and
+                  Xuandong Liu and
+                  Xin Ai and
+                  Sen Liu and
+                  Yang Xu},
+	title = {Boosting Distributed Machine Learning Training Through Loss-tolerant
+                  Transmission Protocol},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188699},
+	doi = {10.1109/IWQOS57198.2023.10188699},
+	timestamp = {Sun, 21 Jul 2024 18:16:17 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ChenSLALX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed Machine Learning (DML) systems are utilized to enhance the speed of model training in data centers (DCs) and edge nodes. The Parameter Server (PS) communication architecture is commonly employed, but it faces severe long-tail latency caused by many-to-one “incast” traffic patterns, negatively impacting training throughput. To address this challenge, we design the Loss-tolerant Transmission Protocol (LTP), which permits partial loss of gradients during synchronization to avoid unneeded retransmission and contributes to faster synchronization per iteration. LTP implements loss-tolerant transmission through out-of-order transmission and out-of-order Acknowledges (ACKs). LTP employs Early Close to adjust the loss-tolerant threshold based on network conditions and bubble-filling for data correction to maintain training accuracy. LTP is implemented by C++ and integrated into PyTorch. Evaluations on a testbed of 8 worker nodes and one PS node demonstrate that LTP can significantly improve DML training task throughput by up to 30x compared to traditional TCP congestion controls, with no sacrifice to final accuracy.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GengZSWYHL23,
+	author = {Yantao Geng and
+                  Han Zhang and
+                  Xingang Shi and
+                  Jilong Wang and
+                  Xia Yin and
+                  Dongbiao He and
+                  Yahui Li},
+	title = {Delay Based Congestion Control for Cross-Datacenter Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188700},
+	doi = {10.1109/IWQOS57198.2023.10188700},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GengZSWYHL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Numerous distributed applications are deployed in the cross-datacenter networks (Cross-DC) where geographically distributed data centers (DC) are connected by wide area network (WAN). These online applications will generate both intra-datacenter and inter-datacenter traffic, each with distinct requirements and characteristics. We find that existing combined congestion control schemes ignore the interaction of the two types of traffic and the hybrid congestion control schemes fail to accurately estimate cross data center network congestion extent. In this paper, we propose IDCC a delay based congestion control scheme that uses delay to handle congestion inside the DC and in the WAN, respectively. We respectively utilize In-band network telemetry (INT) and round trip time (RTT) to measure the queuing delay inside DC and in the WAN and guarantee the stability of the algorithm by Proportional Integral Derivative (PID). Simultaneously, we demonstrate the empirical results of optimizing flow completion time (FCT) of intra-DC short flow by weight function in cross-DC. We implemented IDCC in simulation platform ns-3 and have performed extensive large scale simulation evaluations. Results show that IDCC decreases the FCT of intra-DC traffic by 3.6× to 12× and improves the throughput of inter-DC traffic by 9% to 16% compared to Gemini, Annulus.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZouLHXW23,
+	author = {Xiang Zou and
+                  Jianwei Liu and
+                  Jinsong Han and
+                  Wei Xi and
+                  Zhi Wang},
+	title = {WiHunter: Enabling Real-time Small Object Detection via Wireless Sensing},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188701},
+	doi = {10.1109/IWQOS57198.2023.10188701},
+	timestamp = {Thu, 24 Aug 2023 09:27:56 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZouLHXW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Rodent infestation is a great danger to human society, continuously threatening food safety and inducing disease spread. Existing methods to deal with rodent infestation are mainly based on passive bait traps and poisoning. These methods lack timeliness and effectiveness due to the missing of real-time detection. In this paper, we develop WiHunter, a new wireless sensing system to discover small objects (e.g., rat). Our idea is to exploit reflection signal effect of wireless channels induced by the movement of small objects around the receiver antenna. However, existing wireless sensing works usually employ customized or costly device-dependency Network Interface Cards(NIC), which are impractical to be densely deployed in reality. We implement WiHunter with several CSI-enabled standalone IoT nodes. We show how such devices enable moving small object detection via WiFi signal. The rationale behind this is 1) thanks to the widespread deployments of WiFi infrastructures and IoT devices, the WiFi signal covers almost every location of the corner, 2) the signal amplitude of each device is related to the small object near the receiver antenna. This ability gives us the opportunity to sense object as small as a rat. We implement WiHunter with ESP32 microcontroller on Espressif IoT Development Framework (both of them are cheap commodity off-the-shelf (COTS) devices) and design a practical small object intrusion detection system. Comprehensive and real-world experiments demonstrate that our system is effective in detecting the presence of small objects with an average accuracy of 92.1%.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/HeLZL23,
+	author = {Shichang He and
+                  Xuan Liu and
+                  Shigeng Zhang and
+                  Juan Luo},
+	title = {A Few-shot-learning-based Method to Object Recognition in Multiple
+                  Scenarios},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188702},
+	doi = {10.1109/IWQOS57198.2023.10188702},
+	timestamp = {Tue, 07 May 2024 20:11:32 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/HeLZL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To recognize the target classes with only a few samples, few-shot learning (FSL) uses prior knowledge learned from the source classes and is usually expressed as a special domain adaptation problem. However, Existing few-shot learning methods make the implicit assumption that the few target class samples are from the same domain or different domain as the source class samples, which greatly limits their application in the wild. This paper introduces a few-shot learning method in multiple scenarios which requires no prior knowledge on the label set. For a given target domain labels set, it may overlap with the set of source domain labels to varying degrees, thereby bringing up an additional class gap based on the domain gap. In order to solve this problem in a unified framework, we propose a novel domain adaptation network which is designed to address a specific challenge: How to achieve domain adaptation whilst maintaining source/target per-class discriminativeness when the target domain label set is unseen. Our solution is to design corresponding soft label transfer network and minimax entropy network for different target domain label set, then we quantify the transferability of the source domain label set during the training process to discover the relationship between the source domain label set and the target domain label set. Further, we broaden the model's understanding of the data by learning from self-supervised signals how to solve a jigsaw puzzle on the same sample. Extensive experiments show that our model outperforms the state-of-the-art models.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhaoDZXHQYL23,
+	author = {Laiping Zhao and
+                  Xinan Dai and
+                  Zhixin Zhao and
+                  Yusong Xin and
+                  Yitao Hu and
+                  Jun Qian and
+                  Jun Yao and
+                  Keqiu Li},
+	title = {High-throughput Sampling, Communicating and Training for Reinforcement
+                  Learning Systems},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188703},
+	doi = {10.1109/IWQOS57198.2023.10188703},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhaoDZXHQYL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reinforcement Learning (RL) algorithms require large amounts of computational resources and time to train due to the simultaneous model training and real-time interactions with simulation environments. This results in an RL algorithm's training time potentially exceeding days to months. We present HRL, a comprehensive optimization system designed to improve the system throughput of RL algorithms. HRL addresses the challenges of discovering and identifying bottlenecks in the sampling, training, or communication stages and promptly improving their performance. We propose a group-parallel pipeline method to improve the sampling efficiency and apply data quantization and multi-learner training to resolve the network and learning bottlenecks. The HRL system has been fully implemented and integrated with XingTian. The results of the experiments show that the HRL system can improve the throughput by 18.6%-90.6%.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/WangLYCYZ23,
+	author = {Xuan Wang and
+                  Jia Liu and
+                  Xi Yu and
+                  Xingyu Chen and
+                  Yujie Yu and
+                  Zhihong Zhao},
+	title = {People Counting with Carry-on {RFID} Tags},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188704},
+	doi = {10.1109/IWQOS57198.2023.10188704},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/WangLYCYZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {People counting tracks the number of people entering or exiting any given space in real-time, which helps make intelligent business decisions and improve quality of service (QoS) for a range of commercial applications, e.g., retail analytics, queue management, and occupancy monitoring. Existing CV-based and CSI-based solutions suffer from problems ranging from blind zones and privacy breaches to low robustness and complicated system calibration. In this paper, we propose a new solution to the counting problem with carry-on RFID tags. The basic idea behind the curtain is that when a person is under an RFID reader's coverage zone, his/her carry-on tags can be read by this reader at the same time. We can classify the tags based on the records of reading profiles. Hence, this problem can be boiled down to a clustering problem. To achieve this goal, we build a feature vector for each tag by gathering its reading profile, specify the distance between two feature vectors by combining the Hausdorff distance and the Euclidean distance, and perform a maximum density clustering algorithm to get the distributions of each tag. Afterward, we design an outlier detection algorithm to screen out the cluster centers from the non-cluster ones. The number of cluster centers is treated as the number of people. We implement the RFID-based counting model in a commodity RFID system. Extensive experimental results show that our approach is superior to existing solutions under different scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GaoZXZT23,
+	author = {Ruipeng Gao and
+                  Haoyue Zhao and
+                  Zonglin Xie and
+                  Ru Zhao and
+                  Dan Tao},
+	title = {Energy-Efficient Transmission Scheduling with Guaranteed Data Imputation
+                  in MHealth Systems},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188705},
+	doi = {10.1109/IWQOS57198.2023.10188705},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GaoZXZT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Transmission scheduling is a fundamental energy-saving problem in many wireless sensor networks (WSN), especially for mHealth systems with multiple distributed sensing modalities. Recent work has made significant progress to balance the transmission efficiency and timeliness, e.g., periodically entering sleep modes to reduce the power, but such corresponded missing samples impede data integrity and timeliness for realtime diagnosis. In this paper, we intuitively combine transmission scheduling with data imputation, and propose a novel software-hardware cooperated framework for energy-efficient mHealth systems. Specially, we devise a Wasserstein Generative Adversarial Imputation Network (WGAIN) model to impute missing samples, which exploits heterogeneous correlation, temporal dependency, and missing patterns by a divide-and-conquer strategy. We also propose a dropout-based uncertainty approximation method inside the imputation model, prove its equivalence to Gaussian process with variational inference, and explore a heuristic transmission scheduling algorithm for lifecycle management among heterogeneous sensory modules. Extensive experiments on the MIT-BIH dataset and our mHealth prototype have demonstrated the effectiveness compared with state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangZCWX23,
+	author = {Yuchao Zhang and
+                  Huahai Zhang and
+                  Peizhuang Cong and
+                  Wendong Wang and
+                  Ke Xu},
+	title = {Grandet: Cost-aware Traffic Scheduling without Prior Knowledge in
+                  {SD-WAN}},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188706},
+	doi = {10.1109/IWQOS57198.2023.10188706},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangZCWX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid growth of traffic demands on wide-area networks (WANs) has resulted in escalated transmission costs for cross-national enterprises. Many researchers have proposed traffic scheduling methods that can effectively reduce transmission costs and improve network performance. However, the majority of research in this field assumes that traffic demands and network link quality are known in advance, disregarding the impact of information agnostic. While some works try to obtain this knowledge through prediction, they lack awareness of prediction errors, which makes it difficult for their scheduling strategies to achieve theoretical results. In this paper, we propose a novel scheduler Grandet that aims to reduce transmission costs without any prior knowledge. First, instead of requiring prior knowledge or accurate prediction, Grandet determines the intervals of flow sizes and link quality parameters through confidence-based Bootstrap method combined with neural network model, thus quantifying the uncertainty of these information. Then, we design a cost-aware online traffic scheduling framework using the uncertainty intervals from interval determination to optimize the cost minimization problem. Through rigorous theoretical analysis, we prove the approximate optimality of Grandet in minimizing transmission costs. Trace-driven and large-scale simulations show that Grandet successfully reduces transmission costs by over 23%, reduces deadline miss rate by over 31%, and reduces Service Level Agreement (SLA) dissatisfaction rate by over 37%.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/XingZLWC23,
+	author = {Rui Xing and
+                  Zhenzhe Zheng and
+                  Qinya Li and
+                  Fan Wu and
+                  Guihai Chen},
+	title = {Distributed Model Interpretation for Vertical Federated Learning with
+                  Feature Discrepancy},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188708},
+	doi = {10.1109/IWQOS57198.2023.10188708},
+	timestamp = {Wed, 22 Nov 2023 16:56:34 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/XingZLWC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vertical federated learning (VFL) allows multiple clients with misaligned feature spaces to collaboratively accomplish the global model training. Applying VFL to high stakes decision scenarios greatly requires model interpretation for decision reliability and diagnosis. However, the feature discrepancy in VFL raises new issues for model interpretation in distributed setting: one is from the local-global perspective, where the local importance of features is not equal to the global importance; and the other is from the local-local perspective, where information asymmetry among clients causes difficulty in identifying overlapped features. In this work, we propose a new distributed Model Interpretation method for Vertical Federated Learning with feature discrepancy, namely MI-VFL. In particular, to deal with the local-global discrepancy, MI-VFL leverages the law of total probability to adjust the local importance of features and ensures the completeness of the selected features using adversarial game. To handle the local-local discrepancy, MI-VFL builds a federated adversarial learning model to efficiently identify the overlapped features once, rather than performing client-to-client intersections multiple times. We extensively evaluate MI-VFL on six synthetic datasets and five real-world datasets. The evaluation results reveal that MI-VFL can accurately identify the important features, suppress the overlapped features, and thus improve the model performance.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangWLDLLL23,
+	author = {Yaoying Zhang and
+                  Qian Wu and
+                  Zeqi Lai and
+                  Yangtao Deng and
+                  Hewu Li and
+                  Yuanjie Li and
+                  Jun Liu},
+	title = {Energy Drain Attack in Satellite Internet Constellations},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188709},
+	doi = {10.1109/IWQOS57198.2023.10188709},
+	timestamp = {Mon, 05 Feb 2024 20:33:54 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangWLDLLL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Entering the “NewSpace” era, satellite Internet constellation (SIC) is expanding rapidly. However, while operating a large number of broadband satellites in free space enables great opportunities for ubiquitous and low-latency Internet services, it also involves new threats that were previously ignored to the energy-limited satellite systems. In this paper, we investigate the feasibility and impact of a new class of real risk in emerging SICs: energy drain attack. To this end, we play the role of an attacker and propose Starmelt,an energy drain attack mechanism that persistently injects malicious traffic that goes through the victim satellite from various geo-distributed locations, preventing the victim from hibernating and overusing the satellite battery to cut its lifetime. Further, we design a series of techniques to: (i) handle the path ambiguity challenge caused by various access selection and routing schemes to guarantee that the deliberately crafted traffic can precisely pass through the victim; (ii) leverage the tail energy consumption characteristics to reduce the detectability as well as the traffic cost of an attack. Extensive simulations based on real constellation knowledge demonstrate that Starmeltcan substantially increase on-board energy consumption, reducing up to 76% lifetime of the victim satellite under various power models and traffic patterns.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/FanHSDYWLS23,
+	author = {Linna Fan and
+                  Lin He and
+                  Xiaoqing Sun and
+                  Enhuan Dong and
+                  Jiahai Yang and
+                  Zhiliang Wang and
+                  Jinlei Lin and
+                  Guanglei Song},
+	title = {GraphIoT: Accurate IoT Identification based on Heterogeneous Graph},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188710},
+	doi = {10.1109/IWQOS57198.2023.10188710},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/FanHSDYWLS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IoT devices deployed on campus and enterprise networks facilitate people's lives and work. However, these devices also bring serious network asset management and security management problems. IoT device identification is the premise to solve these problems. Although current IoT identification methods can identify devices with relatively high accuracy in ideal environments, it is difficult to accurately identify devices in real-world complex environments (e.g., campus networks, enterprise networks). Therefore, we propose to use exact features. To solve the problem of different dimensions of exact features, we creatively model the IoT identification problem as a heterogeneous graph representation learning problem and design a new representation learning algorithm. We are the first to propose an approach to accurately identify IoT devices in real-world complex environments and solve this problem through heterogeneous graphs. The evaluation shows that GraphIoT's macro F1 is on average 13.58% and 12.77% higher than the other methods on two public datasets.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/YinDCSZGH23,
+	author = {Daheng Yin and
+                  Fang Dong and
+                  Baijun Chen and
+                  Dian Shen and
+                  Ruiting Zhou and
+                  Xiaolin Guo and
+                  Zhaowu Huang},
+	title = {{WAEVSR:} Enabling Collaborative Live Video Super-Resolution in Wide-Area
+                  {MEC} Environment},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--11},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188713},
+	doi = {10.1109/IWQOS57198.2023.10188713},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/YinDCSZGH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Live video streaming is increasingly popular for its rich content and real-time interactions, but its demand for bandwidth has put a heavy burden on backbone networks. To save bandwidth, recent studies have proposed neural-enhanced live video streaming that deploys deep neural networks (DNNs) for video super-resolution (VSR) on end devices or nearby edge devices to enhance video quality by taking low-resolution frames as input and producing high-resolution output frames. In this solution, the high computational demands of high-quality VSR DNNs make them difficult to support on single end or edge device, necessitating the use of distributed resources in edge facilities. However, the distributed deployment of high-quality VSR DNNs for low-latency inference remains challenging due to the inherent data dependencies of VSR DNNs and the heterogeneity and dynamics of edge facilities. In this paper, we present WAEVSR, a novel collaborative neural-enhanced live video super-resolution system that enables effective leverage of distributed resources to maximize the latency-bounded quality in wide-area MEC environments. WAEVSR consists of two key components: 1) It deploys a parallel-friendly video super-resolution DNN among edge devices, 2) with an inference controller based on the variable-size sliding window to balance the latency and quality of distributed inference in the heterogeneous and dynamics MEC environment. Prototype-based evaluation shows that WAEVSR can achieve 2.5 × lower end-to-end latency than traditional super-resolution serving with a 0.01 drop in SSIM score. The case study also demonstrates its higher stability on latency than vanilla distributed MEC deployment.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiuCSHZZW23,
+	author = {Hongyan Liu and
+                  Xiang Chen and
+                  Yi Shen and
+                  Qun Huang and
+                  Zhengyan Zhou and
+                  Dong Zhang and
+                  Chunming Wu},
+	title = {Vulnerabilities and Attacks of Inter-device Coordination in Programmable
+                  Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188714},
+	doi = {10.1109/IWQOS57198.2023.10188714},
+	timestamp = {Wed, 25 Oct 2023 22:41:04 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiuCSHZZW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In programmable networks, some networking systems coordinate data plane switches to realize in-network functions (e.g., in-band network telemetry). However, the vulnerabilities of inter-device coordination are still largely unknown and neglected, which is highly concerning given the increasing popularity of this paradigm. In this paper, we identify three attack scenarios built upon such vulnerabilities, where attackers mislead the behaviors of networking systems that exploit inter-device coordination to execute in-network functions. We implement 20 existing networking systems on Tofino-based switches and a simulator, and attack these systems with the identified attacks. The experimental results indicate that our attacks significantly interfere with the normal operations of the selected networking systems, e.g., the cache hit rate of NetCache drops 38%. Our analysis also demonstrates that none of existing methods can fully mitigate our attacks since they fail to verify the packets for inter-device coordination.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/HuangLDCSKXLLS23,
+	author = {Yangfan Huang and
+                  Yuling Lin and
+                  Haizhou Du and
+                  Yijian Chen and
+                  Haohao Song and
+                  Linghe Kong and
+                  Qiao Xiang and
+                  Qiang Li and
+                  Franck Le and
+                  Jiwu Shu},
+	title = {Toward a Unified Framework for Verifying and Interpreting Learning-Based
+                  Networking Systems},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188716},
+	doi = {10.1109/IWQOS57198.2023.10188716},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/HuangLDCSKXLLS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There has been a growing interest in applying machine learning to real-world tasks. However, due to the blackbox nature of machine learning models, it is crucial to (1) verify important properties of a model and (2) understand the reasons behind a model's prediction before deploying them in a production environment. Existing approaches typically handle them as two separate and sometimes orthogonal topics. In this paper, we show that the verification and interpretability of machine learning models are tightly related and can be unified by satisfiability modulo theories (SMT). Our key insight is: not only a wide range of properties of machine learning models can be formulated as SMT problems and verified accordingly, but many commonly studied interpretability questions can also be answered by iteratively checking the satisfiability and related properties of multiple SMT problems. Leveraging this insight, we design UINT, a general verification and interpretability framework for learning-based networking systems. UINT (1) allows operators to specify verification and interpretability problems as SMT formulas, (2) encodes the target machine learning models into SMT constraints, and (3) automatically solves the corresponding verification and interpretability problems using commodity SMT solvers. We implement a prototype of UINT and evaluate it on real-world learning-based networking systems. Results demonstrate the efficiency and efficacy of UINT in verifying and interpreting key questions for these systems.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ShangXBCZL23,
+	author = {Ruitao Shang and
+                  Fei Xu and
+                  Zhuoyan Bai and
+                  Li Chen and
+                  Zhi Zhou and
+                  Fangming Liu},
+	title = {spotDNN: Provisioning Spot Instances for Predictable Distributed {DNN}
+                  Training in the Cloud},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188717},
+	doi = {10.1109/IWQOS57198.2023.10188717},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ShangXBCZL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed Deep Neural Network (DDNN) training on cloud spot instances is increasingly compelling as it can significantly save the user budget. To handle unexpected instance revocations, provisioning a heterogeneous cluster using the asynchronous parallel mechanism becomes the dominant method for DDNN training with spot instances. However, blindly provisioning a cluster of spot instances can easily result in unpre-dictable DDNN training performance, mainly because bottlenecks occur on the parameter server network bandwidth and PCIe bandwidth resources, as well as the inadequate cluster heterogeneity. To address the challenges above, we propose spotDNN, a heterogeneity-aware spot instance provisioning framework that provides predictable performance for DDNN training in the cloud. By explicitly considering the contention for bottle-neck resources, we first build an analytical performance model of DDNN training in heterogeneous clusters. It leverages the weighted average batch size and convergence coefficient to quantify the DDNN training loss in heterogeneous clusters. Through a lightweight workload profiling, we further design a cost-efficient instance provisioning strategy which incorporates the bounds calculation and sliding window techniques to effectively guarantee the training performance service level objectives (SLOs). We have implemented a prototype of spotDNN and conducted extensive experiments on Amazon EC2. Experiment results show that spotDNN can deliver predictable DDNN training performance while reducing the monetary cost by up to 68.1% compared to the existing solutions, yet with acceptable runtime overhead.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangLCLZ23,
+	author = {Shigeng Zhang and
+                  Yudong Li and
+                  Shuxin Chen and
+                  Xuan Li and
+                  Jian Zhang},
+	title = {A Fast Adversarial Sample Detection Approach for Industrial Internet-of-Things
+                  Applications},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188719},
+	doi = {10.1109/IWQOS57198.2023.10188719},
+	timestamp = {Fri, 25 Aug 2023 19:04:16 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangLCLZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adversarial attacks reveal the inherent vulnerability of deep neural networks, which face serious security issues for their security. Among them, the attack against the Deep Neural Network (DNN) application used in the Industrial Internet of Things (IIoT) is a key area in adversarial attacks. Adversarial examples generated by attackers by adding human-undetectable interference to legitimate examples may cause models to make wrong decision results, resulting in serious accidents. Many detection technologies have been proposed to mitigate the harm of adversarial examples to neural networks, among which the methods based on the difference of feature attribution between normal examples and adversarial examples show state-of-the-art detection performance, but they suffer from detection efficiency. In this work, we focus on improving the detection efficiency of the feature-attribution-based detection methods. We observe that there is still a significant difference in the feature attribution distribution of a normal image and an adversarial image even only some pixels in the image are processed, which can be verified by utilizing the Kolmogorov-Smirnov test. Based on this observation, we first adopt a variety of strategies to sample partial pixels in an image and then utilize the selected pixels to train a feature-attribution-based detector for detecting adversarial examples. Extensive experiments conducted on four datasets (MNIST, CIFAR-10, SVHN, CIFAR-100) against various attacks proved that the detection efficiency of the accelerated detection method is improved (for example, the average execution time was increased by 8.7 times on CIFAR-10) while the detection performance maintains state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ChengS23,
+	author = {Xia Cheng and
+                  Mo Sha},
+	title = {Meta-Learning Based Runtime Adaptation for Industrial Wireless Sensor-Actuator
+                  Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188720},
+	doi = {10.1109/IWQOS57198.2023.10188720},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ChengS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IEEE 802.15.4-based industrial wireless sensor-actuator networks (WSANs) have been widely deployed to connect sensors, actuators, and controllers in industrial facilities. Configuring an industrial WSAN to meet the application-specified quality of service (QoS) requirements is a complex process, which involves theoretical computation, simulation, and field testing, among other tasks. Since industrial wireless networks become increasingly hierarchical, heterogeneous, and complex, many research efforts have been made to apply wireless simulations and advanced machine learning techniques for network configuration. Unfortunately, our study shows that the network configuration model generated by the state-of-the-art method decays quickly over time. To address this issue, we develop a MEta-learning based Runtime Adaptation (MERA) method that efficiently adapts network configuration models for industrial WSANs at runtime. Under MERA, the parameters of the network configuration model are explicitly trained such that a small number of optimization steps with only a few new measurements will produce good generalization performance after the network condition changes. Experimental results show that MERA achieves higher prediction accuracy with less physical measurements, less computation time, and longer adaptation intervals compared to a state-of-the-art baseline.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangXYLW23,
+	author = {Shigeng Zhang and
+                  Kai Xiao and
+                  Jianjiang Yu and
+                  Xuan Liu and
+                  Weiping Wang},
+	title = {Accurate IoT Device Identification based on {A} Few Network Traffic},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188721},
+	doi = {10.1109/IWQOS57198.2023.10188721},
+	timestamp = {Tue, 15 Aug 2023 13:28:59 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangXYLW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The number of devices connected to the Internet has been exploding in recent years, and the wide range of device types poses a serious challenge for asset management and maintenance. We need to know if IoT devices are under cyberattack and if there are devices that violate our privacy, such as pinhole cameras. Traffic-oriented IoT device type identification has become an effective method to prevent cyberattacks and manage assets, but at this stage, in the face of the proliferation of novel IoT devices, the current mainstream IoT device type identification methods are difficult to identify them successfully. At the same time, for a significant number of lightweight IoT devices, most identification methods are simply unable to make correct identifications because the traffic generated by these devices is too little. In this paper, we propose IoT-Siamese, a type identification method for IoT devices based on few-shot traffic, which mainly relies on Siamese network to solve the problem of few samples. Experiments show that our proposed identification method has high identification accuracy for those devices that generate a small volume of traffic, and effectively identify novel devices that join the network.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ChenLF23,
+	author = {Xintong Chen and
+                  Jiangbin Lyu and
+                  Liqun Fu},
+	title = {IRS-Aided Sectorized Base Station Design and 3D Coverage Performance
+                  Analysis},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188723},
+	doi = {10.1109/IWQOS57198.2023.10188723},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ChenLF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intelligent reflecting surface (IRS) is regarded as a revolutionary paradigm that can reconfigure the wireless propagation environment for enhancing the desired signal and/or weakening the interference, and thus improving the quality of service (QoS) for communication systems. In this paper, we propose an IRS-aided sectorized BS design where the IRS is mounted in front of a transmitter (TX) and reflects/reconfigures signal towards the desired user equipment (UE). Unlike prior works that address link-level analysis/optimization of IRS-aided systems, we focus on the system-level three-dimensional (3D) coverage performance in both single-/multiple-cell scenarios. To this end, a distance/angle-dependent 3D channel model is considered for UEs in the 3D space, as well as the non-isotropic TX beam pattern and IRS element radiation pattern (ERP), both of which affect the average channel power as well as the multi-path fading statistics. Based on the above, a general formula of received signal power in our design is obtained, along with derived power scaling laws and upper/lower bounds on the mean signal/interference power under IRS passive beamforming or random scattering. Numerical results validate our analysis and demonstrate that our proposed design outperforms the benchmark schemes with fixed BS antenna patterns or active 3D beamforming. In particular, for aerial UEs that suffer from strong inter-cell interference, the IRS-aided BS design provides much better QoS in terms of the ergodic throughput performance compared with benchmarks, thanks to the IRS-inherent double pathloss effect that helps weaken the interference.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ShenFXZWWL23,
+	author = {Shihao Shen and
+                  Yicheng Feng and
+                  Mengwei Xu and
+                  Cheng Zhang and
+                  Xiaofei Wang and
+                  Wenyu Wang and
+                  Victor C. M. Leung},
+	title = {A Holistic QoS View of Crowdsourced Edge Cloud Platform},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188726},
+	doi = {10.1109/IWQOS57198.2023.10188726},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ShenFXZWWL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Edge clouds have become a de-facto paradigm to deliver low and stable networks to delay-critical applications such as web services and AR/VR. A unique form of edge clouds is those crowdsourced from third parties, e.g., idle PCs or workstations. Such crowdsourced edge platforms can better sink computations closer to users, reduce the purchase cost, and eliminates the carbon generated during manufacturing. Yet, they also face the challenge of out-of-control hardware, e.g., a server dropping in/out anytime. In this paper, we perform the first-of-its-kind measurement of Quality of Service (QoS) for a large-scale crowdsourced edge platform, which covers over 10,000 edge servers, 100,000 users and 10,000,000 user requests. The measurement takes a holistic QoS view: (1) First, we look at how much hardware resources are provided by edge servers, how much time they are available for service deployment, and what are the major abnormal behaviors. (2) Second, we analyze the factors affecting service stability and quantify the resource utilization pattern of containerized services hosted on those edge servers. (3) Third, we investigate the spatial and temporal features of user requests handled by the platform. Many useful and somehow surprising findings are obtained through the above measurements. We also derive insightful implications that could help edge platforms and edge applications to better deliver their services to users.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/RenWLLTMX23,
+	author = {Rui Ren and
+                  Yang Wang and
+                  Fengrui Liu and
+                  Zhenyu Li and
+                  Gareth Tyson and
+                  Tianhao Miao and
+                  Gaogang Xie},
+	title = {Grace: Interpretable Root Cause Analysis by Graph Convolutional Network
+                  for Microservices},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188728},
+	doi = {10.1109/IWQOS57198.2023.10188728},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/RenWLLTMX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of cloud applications, large monolithic services have been replaced by loosely-coupled and single-purpose microservices. To improve localization performance, deep learning techniques have been widely used for root cause analysis. Existing research focuses on performance, yet the lack of interpretability creates key barriers to applying deep learning models in practice. This paper presents Grace, an interpretable root cause localization framework. Our work has three aims. First, to more accurately localize root causes using a Spatial-Temporal Graph Convolutional Network (STGCN). To the best of our knowledge, we are the first to apply an STGCN in the domain. Second, to design an interpreter that helps engineers to understand the system decision (beyond the simple binary black-box result). Third, we apply our interpreter to two real cases, which replaces expert knowledge to help build prior knowledge for fault type diagnosis. Our results show that Grace consistently achieves improvements over other state-of-the-art models by 4%-140%.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/WangLY23,
+	author = {Weimeng Wang and
+                  Lei Liu and
+                  Zhongmin Yan},
+	title = {Proactive Auto-scaling For Delay-sensitive Service Providers Over
+                  Public Clouds},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--9},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188731},
+	doi = {10.1109/IWQOS57198.2023.10188731},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/WangLY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a new design mechanism for improving service quality and user experience, a common practice is to deploy the delay-sensitive services in a public cloud. However, this method is also faced with the challenge of serving the fluctuating resource demands through timely acquisition of enough instances. In this paper, we systematically study the problem of proactively purchasing cloud resources for delay-sensitive service providers over the public clouds which are under a flexible pricing model, so that the total cost can be minimized over the long run. We formulate the Proactive Cloud Resource Scaling Cost Minimization (PCRSCM) problem, in which we take the prediction, purchasing and deployment cost into consideration. This problem can be proved to be NP-hard and we propose the Proactive Online Instance Purchase (POIP) algorithm to solve the problem. We also evaluate the performance of POIP through real trace-driven simulations and real testbed. Our evaluation shows that POIP significantly reduces delay by more than 40% when compared to the reactive method and it costs about 20%, 25%, 30% less than state-of-the-art methods, such as POLAR, CMPVS and APOP, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/MengZTZW23,
+	author = {Yeqing Meng and
+                  Qianli Zhang and
+                  Xiangyu Tang and
+                  Wanhao Zhang and
+                  Jilong Wang},
+	title = {{FTM-RCA:} {A} Fast Two-Stage Multi-dimensional Root-Cause Analysis
+                  of Network Anomalies},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188732},
+	doi = {10.1109/IWQOS57198.2023.10188732},
+	timestamp = {Tue, 15 Aug 2023 13:22:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/MengZTZW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-dimensional Root Cause Analysis (RCA) is often applied to identify abnormal traffic patterns, i.e., localizing the abnormal combination of traffic header fields. Several techniques have been proposed recently, but they were mainly designed for smaller-scaled datasets and were not feasible in the real network due to the high computational overhead. To overcome the aforementioned limitations, we propose FTM-RCA, which accelerates RCA by breaking the analysis procedure into two stages: coarse-grained rules filtering and fine-grained localization. In the first stage, an optimized frequent itemset mining (FIM) technique called CUSC is proposed, which can detect high-volume combinations faster based on the mutual exclusion of dimension values. Experiments on CUSC show that it can speed up by 44.87% and reduce memory consumption by 21.89% compared to the best previous FIM algorithms. In the second stage, a dimension-based search method is proposed to identify the root cause combinations, which consists of two key components: 1) drill-down strategy, which utilizes Contributive Power to measure the correlation between the combination and anomaly. 2) pruning strategy, which adopts the Shannon entropy to avoid generating trivial results. As a result, the overall diagnostic time of FTM-RCA is at least 25 times faster than the previous best research while improving accuracy by an average of 21.6%. Also, our practical application in real network also illustrates the applicability of FTM-RCA.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GaoQHD23,
+	author = {Guoju Gao and
+                  Zhaorong Qian and
+                  He Huang and
+                  Yang Du},
+	title = {An Adaptive Counter-Splicing-Based Sketch for Efficient Per-Flow Size
+                  Measurement},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188733},
+	doi = {10.1109/IWQOS57198.2023.10188733},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GaoQHD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Accurate and fast per-flow size traffic measurement is fundamental to some network applications, e.g., load balancing, anomaly detection, traffic engineering, especially in face of the processing and memory constraints of switches. Sketch, a compact data structure, can output high-fidelity approximate perflow statistics. However, most existing sketches such as Count-Min are trapped in the dilemma between a large counting range and memory waste, due to the highly skewed characteristics of traffic size distribution. In this paper, we propose an adaptive counter-splicing-based sketch for per-flow size measurement. Specifically, we first allocate a small number of bits for each counter to handle mouse flows, and then splice several basic counters on the same layer to satisfy the counting range requirement for elephant flows. Extensive experiments based on real-world datasets CAIDA show that our proposed sketch can achieve better estimation performance in per-flow size estimation, flow size distribution, entropy estimation, heavy hitter detection, and heavy change detection, compared to several existing algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/DingYHWLX23,
+	author = {Kunpeng Ding and
+                  Jiayu Yang and
+                  Jiangping Han and
+                  Bobo Wang and
+                  Ruidong Li and
+                  Kaiping Xue},
+	title = {{RPBV:} Reputation-Based Probabilistic Batch Verification Scheme for
+                  Named Data Networking},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188736},
+	doi = {10.1109/IWQOS57198.2023.10188736},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/DingYHWLX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a promising implementation of Information Centric Networking, Named Data Networking (NDN) can facilitate content distribution with in-network caching and location-independent data access. However, the reliance on caches makes NDN vulnerable to content poisoning attacks, which waste network resources and decrease transmission efficiency. Most mitigating schemes follow the pattern that each content is repeatedly verified individually in each router and all producers have the same status, which wastes computation resources and degrades network performance. In this paper, we propose a Reputation-based Probabilistic Batch Verification (RPBV) scheme to address the issue, in which producers’ reputation is estimated according to verification results to distinguish different producers. We provide an adaptive probabilistic verification method based on reputation to avoid a lot of unnecessary verification operations. At the same time, we adopt an efficient batch verification algorithm to simultaneously verify multiple content, which reduces the overhead greatly. With the above mechanisms implemented only on the edge router to avoid repeated verification, we provide an optional probabilistic verification method on intermediate routers to strengthen the security. The extensive simulations show that RPBV achieves much lower computation overhead and shorter content retrieval time than the traditional schemes.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GuWWWDZMH23,
+	author = {Rong Gu and
+                  Jiajia Wei and
+                  Xu Wang and
+                  Jiahui Wang and
+                  Haipeng Dai and
+                  Jiaqi Zheng and
+                  Baolong Mao and
+                  Yihua Huang},
+	title = {Magpie: Efficient Big Data Query System Parameter Optimization based
+                  on Pre-selection and Search Pruning Approach},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188737},
+	doi = {10.1109/IWQOS57198.2023.10188737},
+	timestamp = {Fri, 19 Jul 2024 10:20:21 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GuWWWDZMH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of big data technology, big data systems are more and more used to process SQL query jobs. However, intricate big data system parameters have big effects on the quality of service for big data query performance. Moreover, the types of query jobs and data sizes of data sets are diversified, which have different optimal parameters for best running performance. There exist high complexity and difficulties in tuning the big data system parameters for efficient query job execution. To address this issue, we propose Magpie, an efficient big data query tuning system based on the genetic algorithm with customized pruning strategies. The experimental results show that the proposed approaches can reduce big data query job execution time by 35.5% on average compared with the cuttingedge big data system parameter tuning methods.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/JiSYQZCCSVY23,
+	author = {Mingtao Ji and
+                  Chenwei Su and
+                  Yuting Yan and
+                  Zhuzhong Qian and
+                  Sheng Zhang and
+                  Yu Chen and
+                  Tuo Cao and
+                  Xiaohang Shi and
+                  Luis Vasquez and
+                  Baoliu Ye},
+	title = {Adaptive Provisioning In-band Network Telemetry at Computing Power
+                  Network [invited]},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--2},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188738},
+	doi = {10.1109/IWQOS57198.2023.10188738},
+	timestamp = {Tue, 15 Aug 2023 15:18:46 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/JiSYQZCCSVY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-band Network Telemetry (INT) is proposed to detect networks via injecting specific probes to collect the hop-by-hop metadata within programmable switches. But there exist multiple challenges to conducting INT at Computing Power Network, such as control decisions of different INT frequencies, and the unforeseeable INT query workloads. In this study, we formulate an online non-linear time-varying integer programming problem that aims to maximize the overall quality of service through both frequency selection and INT query workload distribution. To achieve this, we propose an online learning, INTService, which utilizes a primal-dual mechanism to make fractional decisions. At last, extensive evaluations show that our proposed INTService exhibits up-lift performance 40% on average over other state-of-the-art algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/YangGY23,
+	author = {Yifan Yang and
+                  Wei Gong and
+                  Yu Yang},
+	title = {Ambient Backscatter with a Single Commodity {AP}},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188740},
+	doi = {10.1109/IWQOS57198.2023.10188740},
+	timestamp = {Fri, 24 Nov 2023 12:18:31 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/YangGY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ambient backscatter is one of the most promising wireless communication techniques that can accommodate the ever-growing scale of IoT devices and connections. The state-of-the-art ambient backscatter systems, however, have to employ two commodity receivers for tag-data demodulation, resulting in additional software and hardware overhead. Using off-the-shelf ambient WiFi signals and a single AP to achieve backscatter communication has seldom been studied before. In this paper, we introduce Twoferscatter, an innovative ambient backscatter system that uses a single commodity AP to decode tag data alone. We propose a nomination-verification decoding strategy to achieve tag-data decoding with the backscatter data. We also develope a block-level modulation method that extends our system to massive MIMO excitation. Our experiments demonstrate that Twoferscatter can successfully demodulate tag data with a single AP. It can deliver up to 5.62 kbps tag-data goodput and work at tag-Rx distances of up to 12\nm\nusing an unmodified NIC receiver. We believe Twoferscatter has a bright future in passive IoT applications since it is the first ambient backscatter that uses ambient WiFi as excitation and requires only a single AP for demodulation.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangHXGWLW23,
+	author = {Heng Zhang and
+                  Shaoyuan Huang and
+                  Mengwei Xu and
+                  Deke Guo and
+                  Xiaofei Wang and
+                  Victor C. M. Leung and
+                  Wenyu Wang},
+	title = {How Far Have Edge Clouds Gone? {A} Spatial-Temporal Analysis of Edge
+                  Network Latency In the Wild},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188741},
+	doi = {10.1109/IWQOS57198.2023.10188741},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangHXGWLW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The emergence of next-generation latency-critical applications places strict requirements on network latency and stability. Edge cloud, an instantiated paradigm for edge computing, is gaining more and more attention due to its benefits of low latency. In this work, we make an in-depth investigation into the network QoS, especially end-to-end latency, at both spatial and temporal dimensions on a nationwide edge computing platform. Through the measurements, we collect a multi-variable large-scale real-world dataset on latency. We then quantify how the spatial-temporal factors affect the end-to-end latency, and verified the predictability of end-to-end latency. The results reveal the limitation of centralized clouds and illustrate how could edge clouds provide low and stable latency. Our results also point out that existing edge clouds merely increase the density of servers and ignore spatial-temporal factors, so they still suffer from high latency and fluctuations. Based on the observations, we propose a robust prototype edge cloud model based on lessons we learn from the measurement and evaluate its performance in the production environment. The further evaluation result shows that edge clouds achieve 84.1% latency reduction with 0.5ms latency fluctuation and 73.3% QoS improvement compared with the centralized clouds.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/DouHLWG23,
+	author = {Songshi Dou and
+                  Yongchao He and
+                  Sen Liu and
+                  Wenfei Wu and
+                  Zehua Guo},
+	title = {RateSheriff: Multipath Flow-aware and Resource Efficient Rate Limiter
+                  Placement for Data Center Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188742},
+	doi = {10.1109/IWQOS57198.2023.10188742},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/DouHLWG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emerging cloud services and applications request different Quality of Service (QoS) in Data Center Networks (DCNs). To meet these various requirements, programmable switch-based rate limiters are introduced to provide performance isolation and benefit from easy control and fast deployment. However, existing programmable switch-based rate limiters have two limitations: (1) multipath flows (i.e., MultiPath TCP) cannot be precisely limited, and (2) rate limiter placement solutions in DCNs are missing. These limitations could lead to poor rate limiting performance and low bandwidth utilization. In this paper, we propose RateSheriff to improve rate limiting performance by providing multipath flow-aware and resource efficient rate limiter placement for programmable switch-enabled DCNs. We identify and associate subflows to a multipath flow by extracting and comparing specific packets and header fields. By solving the formulated resource efficient rate limiter placement problem, we can improve rate limiting performance and balance memory utilization among programmable switches in DCNs. Simulation results show that RateSheriff can correctly limit the rate of multipath flows, improve rate limiting performance by up to 46%, and improve memory balancing performance by up to 79% with low computation time, compared with baselines.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiFLZGLYC23,
+	author = {Xiaodong Li and
+                  Zhuochen Fan and
+                  Haoyu Li and
+                  Zheng Zhong and
+                  Jiarui Guo and
+                  Sheng Long and
+                  Tong Yang and
+                  Bin Cui},
+	title = {SteadySketch: Finding Steady Flows in Data Streams},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--9},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188743},
+	doi = {10.1109/IWQOS57198.2023.10188743},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiFLZGLYC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we study steady flows in data streams, which refers to those flows whose arrival rate is always non-zero and around a fixed value for several consecutive time windows. To find steady flows in real time, we propose a novel sketch, SteadySketch, aiming to accurately report steady flows with limited memory. To the best of our knowledge, this is the first work to define and find steady flows in data streams. The key novelty of SteadySketch is our proposed reborn technique, which reduces the required memory space by 75%. Experimental results show that SteadySketch improves the Precision Rate (PR) by 81.1% and reduces the Average Relative Error (ARE) by 955.3× compared with the strawman solution. Finally, we provide a concrete case: cache prefetch, and prove that SteadySketch can effectively improve the cache hit ratio. All related codes of SteadySketch are open-source and available at GitHub.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/HanHLJ23,
+	author = {Xueqiang Han and
+                  Biao Han and
+                  Ruidong Li and
+                  Xiaolan Ji},
+	title = {{MARS:} An Adaptive Multi-Agent DRL-based Scheduler for Multipath
+                  {QUIC} in Dynamic Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188744},
+	doi = {10.1109/IWQOS57198.2023.10188744},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/HanHLJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The multipath extension of the Quick UDP Internet Connection (QUIC) protocol, also called MPQUIC, is currently attracting increasing attention from both industry and academia. The multipath scheduler of MPQUIC determines how to distribute the packets onto different paths. However, our experimental results show that they fail to adapt to various receive buffer sizes and Quality of Service (QoS) requirements while applying current multipath schedulers into MPQUIC due to the diversity of devices and applications. These problems are especially severe under heterogeneous and dynamic network environments. To tackle these problems, we propose MARS, a Multi-Agent deep Reinforcement learning (MADRL) based Multipath QUIC Scheduler, which is able to promptly adapt to dynamic network environments. It exploits the MADRL method to learn a neural network for each path and generate scheduling policy. Besides, it introduces a novel multi-objective reward function that takes out-of-order (OFO) queue size and different QoS metrics into consideration to realize adaptive scheduling optimization. We implement MARS in an MPQUIC prototype and compare it with the state-of-the-art multipath schedulers in both emulated and real-world networks. Experimental results show that MARS outperforms the other schedulers with better adaptive capability regarding the receive buffer sizes and QoS.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangKMXM23,
+	author = {Xiao Zhang and
+                  Griffin Klevering and
+                  James Mariani and
+                  Li Xiao and
+                  Matt W. Mutka},
+	title = {Boosting Optical Camera Communication via 2D Rolling Blocks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188746},
+	doi = {10.1109/IWQOS57198.2023.10188746},
+	timestamp = {Mon, 05 Feb 2024 20:33:54 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangKMXM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Optical Camera Communication (OCC) appears as a promising technology to provide secure and pervasive wireless services with users' daily smart devices. Rolling shutter based modulations can improve the frequency response of the camera. This paper introduces a 2D Rolling Block (2DRB) based OCC modulation to use un-exploited spatial diversity to improve OCC's data rate for real-world applications. 2DRB outperforms traditional 1D strip based modulations. Using our 2DRB prototype with commercial devices, we show a significant data rate enhancement. We also discuss one promising real-world use case: indoor office integrated lighting and communication.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiLLFW23,
+	author = {Chenglong Li and
+                  Tao Li and
+                  Junnan Li and
+                  Wenwen Fu and
+                  Baosheng Wang},
+	title = {{DRA:} Ultra-Low Latency Network {I/O} for {TSN} Embedded End-Systems},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188749},
+	doi = {10.1109/IWQOS57198.2023.10188749},
+	timestamp = {Mon, 05 Feb 2024 20:33:54 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiLLFW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Time-Sensitive Networking (TSN) is a promising open-source technique for hard real-time embedded fields such as industrial automation and autonomous driving. The embedded end-system deployed in TSN must guarantee deterministic latency and jitter for network I/O in above scenarios. Recent researchers focus on eliminating jitter but neglect to reduce latency. The network I/O latency is still too high to satisfy the dozen-microsecond requirements of latency-sensitive applications. We observed that (1) the data path from registers to external storage is actually the bottleneck for latency reduction, and (2) the serial processing of CPU and NIC can be further optimized. Therefore, we proposed DRA (Direct Register Access), a novel network I/O mechanism to achieve microsecond-level latency. DRA delivers whole packet data from the NIC directly into extended registers inside the CPU, avoiding the waste of time to move data between internal registers and external storage. Moreover, DRA promotes parallelization of CPU processing and NIC transfer to reduce latency. Considering the increasing popularity of RISC-V ISA in embedded systems, we prototype DRA using an open-source RISC-V core on FPGA and evaluate it under real-life application scenarios. Compared with existing mechanisms, experimental results demonstrate that DRA reduces the network I/O latency and jitter by at least 60% and 30%, achieving microsecond-level network I/O processing.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhengWLTC23,
+	author = {Jiaqi Zheng and
+                  Changrong Wu and
+                  Tiancheng Lan and
+                  Chen Tian and
+                  Guihai Chen},
+	title = {Revisiting Weighted AIMD-based Congestion Control: {A} Comprehensive
+                  Perspective},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188753},
+	doi = {10.1109/IWQOS57198.2023.10188753},
+	timestamp = {Wed, 22 Nov 2023 12:10:46 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhengWLTC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Weighted congestion control aims to provide end-to-end differentiated bandwidth allocation. MulTCP and EWTCP are two closely related schemes for this purpose and they both want to achieve weighted proportionality through modifying AIMD behaviors. In this paper, we revisit the performance of MulTCP and EWTCP in terms of weighted proportionality. Through testbed experiments, we reveal a lot of counter-intuitive phenomena for achieving weighted proportionality — the switch buffer size, propagation delay and ACK options have a dominant impact on the weighted proportionality. Specifically, we develop WCC, a fundamental weighted AIMD-based congestion control building block, which can be implemented via individually modifying AI (WCC-AI) or MD (WCC-MD) behavior. We analyze WCC using extended fluid models, NS3 simulations and Linux kernel implementations with droptail and RED queues, and point out the determinant of performance. Finally, we clarify the influences of dynamic network characteristics on weighted proportionality with sufficient experimental results and summarize a basic law of how to implement weighted AIMD-based congestion control.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LuLX23,
+	author = {Mingxiang Lu and
+                  Min Lyu and
+                  Yinlong Xu},
+	title = {{TAG:} An Efficient Storage System Towards Transactional and Analytical
+                  Processing on Property Graphs},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188754},
+	doi = {10.1109/IWQOS57198.2023.10188754},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LuLX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The property graph, as the most widely adopted graph data model, is utilized extensively in various graph systems. However, these systems encounter challenges with regards to high latency, particularly when it comes to graph analysis workloads. Conversely, graph analysis systems are geared towards simple graphs and have limited transactional workload support. There is a growing demand for a graph storage system that can efficiently handle both workloads on the property graph. In this paper, we propose TAG, a graph storage system that surpasses the performance of transactional graph systems and achieves comparable results to that of graph analysis systems. We introduce a novel hybrid architecture for graph storage, incorporating in-memory indexes to enhance graph topology queries and label-based pages to optimize access to the properties. Through experimental evaluations, we demonstrate the superiority of TAG over state-of-the-art graph databases.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GaoHWHD23,
+	author = {Guoju Gao and
+                  He Huang and
+                  Jie Wu and
+                  Sijie Huang and
+                  Yang Du},
+	title = {You Can Trade Your Experience in Distributed Multi-Agent Multi-Armed
+                  Bandits},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188755},
+	doi = {10.1109/IWQOS57198.2023.10188755},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GaoHWHD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-Armed Bandit (MAB) that solves the sequential decision-making to the prior-unknown settings has been extensively studied and adopted in various applications such as online recommendation, transmission rate allocation, etc. Although some recent work has investigated the multi-agent MAB model, they supposed that agents share their bandit information based on social networks but neglected the incentives and arm-pulling budget for heterogeneous agents. In this paper, we propose a transaction-based multi-agent MAB framework, where agents can trade their bandit experience with each other to improve their total individual rewards. Agents not only face the dilemma between exploitation and exploration, but also decide to post a suitable price for their bandit experience. Meanwhile, as a buyer, the agent accepts another agent whose experience will help her the most, according to the posted price and her risk-tolerance level. The key challenge lies in that the arm-pulling and experience-trading decisions affect each other. To this end, we design the transaction-based upper confidence bound to estimate the prior-unknown rewards of arms, based on which the agents pull arms or trade their experience. We prove the regret bound of the proposed algorithm for each independent agent and conduct extensive experiments to verify the performance of our solution.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiLSSQT23,
+	author = {Weicheng Li and
+                  Hui Lu and
+                  Yanbin Sun and
+                  Shen Su and
+                  Jing Qiu and
+                  Zhihong Tian},
+	title = {Improving Precision of Detecting Deserialization Vulnerabilities with
+                  Bytecode Analysis},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--2},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188756},
+	doi = {10.1109/IWQOS57198.2023.10188756},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiLSSQT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traditional static taint analysis based on bytecode analysis such as GadgetInspector to detect deserialization vulnerabilities always faced precision problems. For example, missing the fact that taints flowing to members in called methods, type confusion, and chaotic inheritance relationships when detecting deserialization vulnerabilities, which would lead to many error results. To alleviate these problems, this paper considers three measures of improving precision of detecting deserialization vulnerabilities, including cross-function members data flow tracking, local variables and arguments types inference, and call chain subject inference based on inheritance relationships.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/HuangZZ23,
+	author = {Huawei Huang and
+                  Yetong Zhao and
+                  Zibin Zheng},
+	title = {tMPT: Reconfiguration across Blockchain Shards via Trimmed Merkle
+                  Patricia Trie},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188757},
+	doi = {10.1109/IWQOS57198.2023.10188757},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/HuangZZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sharding is one of the most promising techniques that can improve the scalability and storage issues of blockchain systems. In the past few years, many sharding protocols have been proposed to contribute to the technique matrix of blockchain sharding such as the coordination mechanisms of blockchain shards, the handling of cross-shard transactions, the security guarantee of blockchain shards, etc. Although those previous solutions are crucial for sharded blockchains, we still have not found any systematic implementation of shard reconfiguration, which determines the security of a sharded blockchain because the shuffling of blockchain nodes could prevent malicious nodes from corrupting a shard. However, the implementation of shard reconfiguration is not easy. When reallocating blockchain nodes to designated shards, typical challenges include the following: i) how to synchronize a large size of state data for a newly arrived node, and ii) how to mitigate the large reconfiguration latency of blockchain shards while keeping the liveness and consistency properties of a blockchain system. To overcome those challenges, we propose a dedicated protocol for shard reconfiguration in blockchain sharding using trimmed Merkle Patricia Trie (tMPT). The proposed tMPT-based protocol is designed to guarantee the high efficiency of the reconfiguration of blockchain shards while ensuring the uninterrupted services of the sharded blockchain. We implement the proposed tMPT-based reconfiguration protocol in a prototype, which enables the functionality of blockchain sharding. We then deploy our prototype in Alibaba Cloud. The experimental results show that the proposed tMPT-based protocol outperforms the existing methods in terms of reconfiguration efficiency. For example, the throughput of the proposed protocol shows 198% higher than Ethereum's full sync method.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZengGCL23,
+	author = {Deze Zeng and
+                  Lin Gu and
+                  Quan Chen and
+                  Yu Lei},
+	title = {{CONTC:} {A} Traffic Control System for Container Overlay Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188758},
+	doi = {10.1109/IWQOS57198.2023.10188758},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZengGCL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To enable inter-container communication of services on different hosts, container overlay network, the most widely used container network mode, provides a layer of virtual network between containers to transparent the physical device heterogeneous. However, overlay network produces two-layered packet encapsulation, and current container network management system cannot identify the source containers from the two-layered encapsulated packets or control the network traffics of different services. To tackle this issue, a traffic control system for container overlay networks (CONTC) is proposed and implemented by redesigning the packets processing procedure in overlay network model, enabling accurate network packet identification, multi-level network resource management and user-centric customized control. Extensive experiment results are conducted on different system settings and practical service cases to show that CONTC can provide accurate network traffic control for data flows with different network protocols and different packet sizes at both the service level and the container level. The results based on open-source microservice benchmarks also validate the correctness and effectiveness of CONTC by reducing the tail latency of single-service and multi-service environments by 37.53% and 22.33%, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/TaoLMRYCZXSOTZHQL23,
+	author = {Shimin Tao and
+                  Yilun Liu and
+                  Weibin Meng and
+                  Zuomin Ren and
+                  Hao Yang and
+                  Xun Chen and
+                  Liang Zhang and
+                  Yuming Xie and
+                  Chang Su and
+                  Xiaosong Oiao and
+                  Weinan Tian and
+                  Yichen Zhu and
+                  Tao Han and
+                  Ying Qin and
+                  Yun Li},
+	title = {Biglog: Unsupervised Large-scale Pre-training for a Unified Log Representation},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--11},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188759},
+	doi = {10.1109/IWQOS57198.2023.10188759},
+	timestamp = {Fri, 16 Feb 2024 07:58:49 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/TaoLMRYCZXSOTZHQL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automated log analysis has been widely applied in modern data-center network, performing critical tasks such as log parsing, log anomaly detection and log-based failure prediction. However, existing approaches rely on hand-crafted features or domain-specific vectors to represent logs, which are either laborious in manual efforts or ineffective facing multiple domains in a system. Furthermore, general-purpose word embeddings are not optimized for log data, thus are data-inefficient in handling complex log analysis tasks. In this paper, we present a pre-training phase for language models to understand both in-sentence and cross-sentence features of logs, resulting in a unified representation of logs that is well-suited for various downstream analysis tasks. The pre-training phase is unsupervised, utilizing 0.45 billion logs from 16 diverse domains. Experiments on 12 publicly available evaluation datasets across 3 tasks indicate superiority of our approach against existing approaches, especially in online scenarios with limited historical logs. Our approach also exhibits remarkable few-shot learning ability and domain-adaptiveness, which not only outperforms existing approaches using only 0.0025% of their required training data, but also adapts into new domains via only a few in-domain logs. We release our code and pre-trained model.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/WangCCHY23,
+	author = {Benran Wang and
+                  Hongyang Chen and
+                  Pengfei Chen and
+                  Zilong He and
+                  Guangba Yu},
+	title = {{MARS:} Fault Localization in Programmable Networking Systems with
+                  Low-cost In-Band Network Telemetry},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--2},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188760},
+	doi = {10.1109/IWQOS57198.2023.10188760},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/WangCCHY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents MARS, a lightweight system for anomaly detection with dynamic threshold and automatic root cause localization in programmable networking systems. MARS collects aggregated packet-level telemetry on demand and generates a ranked list of fine-grained fault culprits at port-level, switch-level, and flow-level.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhangMLWZ23,
+	author = {Weiyao Zhang and
+                  Xuying Meng and
+                  Jinyang Li and
+                  Yequan Wang and
+                  Yujun Zhang},
+	title = {Multi-Layer Collaborative Bandit for Multivariate Time Series Anomaly
+                  Detection},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188761},
+	doi = {10.1109/IWQOS57198.2023.10188761},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhangMLWZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multivariate Time Series Anomaly Detection (MTSAD) detects abnormal indicators from Multivariate Time Series (MTS), and provides the rank of the multiple abnormal indicators to meet the expert's detection interest in current environment, which underpin the security and stability of intelligent cyber-physical systems. However, popular integration-based methods, which are pre-defined, fall short in locating the exact abnormal indicator, nor can they perceive the environmental dynamic and evolve accordingly. Let alone meeting the expert's interest. As a result, the expert's workload is exaggerated. These issues motivate us to propose a novel multi-layer collaborative bandit framework MULA for MTSAD. MULA decomposes MTS and pairs individual time series with a bandit arm, which locates the abnormal indicator directly. Then, MULA sorts the indicators by abnormal scores computed based on the expert's feedback, which facilitates the experts. Besides, to address the adaptability issue, we devise a dual signal to comprehensively monitor environmental changes, and design a multi-layer collaborative mechanism for MULA to adapt to the dynamic environment. Theoretical analysis and experiments on public datasets demonstrate the superiority of MULA compared to the state-of-art.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/YeHZGC23,
+	author = {Minghao Ye and
+                  Yang Hu and
+                  Junjie Zhang and
+                  Zehua Guo and
+                  H. Jonathan Chao},
+	title = {Reinforcement Learning-based Traffic Engineering for QoS Provisioning
+                  and Load Balancing},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188762},
+	doi = {10.1109/IWQOS57198.2023.10188762},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/YeHZGC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emerging applications pose different Quality of Service (QoS) requirements for the network, where Traffic Engineering (TE) plays an important role in QoS provisioning by carefully selecting routing paths and adjusting traffic split ratios on routing paths. To accommodate diverse QoS requirements of traffic flows under network dynamics, TE usually periodically computes an optimal routing strategy and updates a significant number of forwarding entries, which introduces considerable network operation management overhead. In this paper, we propose QoS-RL, a Reinforcement Learning (RL)-based TE solution for QoS provisioning and load balancing with low management overhead and service disruption during routing updates. Given the traffic matrices that represent the traffic demands of high and low priority flows, QoS-RL can intelligently select and update only a few destination-based forwarding entries to satisfy the QoS requirements of high priority traffic while maintaining good load balancing performance by rerouting a small portion of low priority traffic. Extensive simulation results on four real-world network topologies demonstrate that QoS-RL provides at least 95.5 % of optimal end-to-end delay performance on average for high priority flows, and also achieves above 90 % of optimal load balancing performance in most cases by updating only 10% of destination-based forwarding entries.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiuLGJW23,
+	author = {Renrui Liu and
+                  Fuliang Li and
+                  Chengxi Gao and
+                  Ce Ji and
+                  Xingwei Wang},
+	title = {NetDiceSyn: Multi-Property Probabilistic Verification of Network Configurations},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188763},
+	doi = {10.1109/IWQOS57198.2023.10188763},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiuLGJW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, probabilistic network analysis has received significant attention as a crucial aspect of network management. With the increasing use of distributed routing protocols in networks, computing the probabilities of multiple properties becomes a challenging task, as different property violations derive from different failure scenarios. While some previous work has attempted to prune the space of failure scenarios by identifying a set of links whose failure does not change whether a property holds, this approach often requires multiple calls to the system, leading to redundant computation when verifying multiple properties. To solve this problem, we propose NetDiceSyn, a scalable multi-property probabilistic network configuration analyzer. As verifying each property requires exploring a state tree, NetDiceSyn proposes to explore all state trees synchronously and compute a shared data plane for multiple states in different state trees, thus reducing the redundant computation between different state trees and verifying multiple properties simultaneously. Besides, we design a state sharing method to reduce the redundant storage of states during synchronous exploration. Additionally, we propose abstract topology to merge equivalent states within a state tree to speed up probabilistic verification in series link networks. Extensive experiments are conducted with real-world network topologies, and the results show that NetDiceSyn outperforms state-of-the-art methods, providing up to an order of magnitude speedup when verifying hundreds of properties for networks with hundreds of links.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/GeZQWW23,
+	author = {Shuxin Ge and
+                  Xiaobo Zhou and
+                  Tie Qiu and
+                  Guobin Wu and
+                  Xiaotong Wang},
+	title = {ElasticShare: Ridesharing Order Dispatching with Dynamic Supply-demand
+                  Distribution},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188764},
+	doi = {10.1109/IWQOS57198.2023.10188764},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/GeZQWW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The mobility on demand (MoD) system relieves traffic pressure by simultaneously dispatching multiple orders to a vehicle via ridesharing. However, since the supply-demand distribution varies over time, existing dispatching methods for minimum fleet failed to achieve long-term supply-demand equilibrium, and thus greatly reduces the order completion rate. In this paper, ElasticShare, a ride-sharing order dispatch method, is proposed to maximize the order completion rate under dynamic supply-demand distribution. First, we formalize the ridesharing order dispatching problem as an offline optimization problem and then prove it can be solved in an online manner by adding dummy orders and vehicles satisfying long-term supply-demand equilibrium conditions when dispatching. Second, based on the proof, we generate a certain number of dummies according to the supply-demand relation to promote or restrain ridesharing in an elastic manner. The characteristics of the dummies are determined by statistics and a specific selection method to ensure that the solution approximates the long-term supply-demand equilibrium. Next, we decouple the online problem into two sub-problems (order associating and order association dispatching), which are solved by a greedy algorithm and correctional order association dispatching algorithm, respectively. Finally, simulations with real-world data are used to validate the superiority of ElasticShare over state-of-the-art solutions in terms of the order completion rate.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/YaoLLBLABC23,
+	author = {Jiaqi Yao and
+                  Ke Liu and
+                  Ting Liang and
+                  Theophilus A. Benson and
+                  Jack Y. B. Lee and
+                  Vaneet Aggarwal and
+                  Yungang Bao and
+                  Mingyu Chen},
+	title = {A Data-Driven Framework for {TCP} to Achieve Flexible QoS Control
+                  in Mobile Data Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--11},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188765},
+	doi = {10.1109/IWQOS57198.2023.10188765},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/YaoLLBLABC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Learning-based approaches have shown their great potential to adapt themselves to various environments (e.g., PCC and Sprout). Unfortunately, they do not consistently achieve superior QoS across different network conditions and configurations in mobile networks. Furthermore, although they can offer multiple application objectives by adjusting a preference weight vector, it is challenging for users to accurately express an application objective with a weight vector. In this work, we argue that, if configured correctly, the delay-based TCP scheme can outperform learned ones, and allow users to directly specify their objectives. To this end, we propose Post-QoS Analysis (PQSA), a data-driven framework that trains the key QoS-impacting parameters of the scheme to capture the statistical correlations between QoS objectives, network conditions, and configurations, thereby determining the optimal parameter-set that meets the user-defined QoS objective under different network conditions and configurations. To support this, we enhance conventional delay-based TCP design to develop a Generalized TCP-like Rate controller (GR) by exporting three key parameters. Extensive evaluations show that PQSA-optimized GR outperforms existing schemes in different scenarios consistently, and enables service providers to control the QoS flexibly.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/TianZDXHRL23,
+	author = {Ye Tian and
+                  Hao Zhou and
+                  Haohua Du and
+                  Chenren Xu and
+                  Jiahui Hou and
+                  Dong Ren and
+                  Xiang{-}Yang Li},
+	title = {BackLip: Passphrase-Independent Lip-reading User Authentication with
+                  Backscatter Signals},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188767},
+	doi = {10.1109/IWQOS57198.2023.10188767},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/TianZDXHRL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {User authentication is essential for threat defense and data protection. Existed authentication systems have some known limitations, such as spoofing attacks, privacy leakage, and user-unfriendliness. In this paper, we propose BackLip, a novel anti-spoofing authentication system based on lip reading. We employ Wi-Fi backscatter-based technology to recognize users lip reading due to its various advantages, e.g. privacy protection, low power consumption, and low cost. Our system is touch-free and passphrase-independent, making it user-friendly, especially for the elderly and disabled. We first filter out irrelevant interference and enhance the signal-to-noise ratio of lip-reading signals by modulating the backscatter tags and constructing a series of suitable filters. Then, we study the energy distribution and steady-state characteristics of the backscattered signal caused by lip-reading movement at different frequencies to extract passphrase-independen lip-reading fingerprints. We build a theoretical model to analyze and prove the feasibility of our method and design an adaptive correction method to resist the interference caused by distance and angle changes. Additionally, we propose an adaptive segmentation algorithm to label lip-reading motions automatically. Extensive experiments demonstrate that BackLip has an average accuracy of 92.1% and is improved to 96.5% when users use the same passphrases.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/SheLJXWL23,
+	author = {Yechao She and
+                  Minming Li and
+                  Yang Jin and
+                  Meng Xu and
+                  Jianping Wang and
+                  Bin Liu},
+	title = {On-demand Edge Inference Scheduling with Accuracy and Deadline Guarantee},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188769},
+	doi = {10.1109/IWQOS57198.2023.10188769},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/SheLJXWL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To meet increasing demands for machine-learning-based applications, pushing inference services to the network edge has been a trend. This work aims to design an on-demand edge inference scheduler with accuracy and deadline guarantee for repetitive tasks. Specifically, we consider an edge server that is preinstalled with multiple early-exit Deep Neural Networks (DNNs), and each DNN-exit pair can provide inference service of different quality. We also consider tasks' diversity in quality of service requirements and related utility. We aim to maximize the system's total utility by optimizing service assignment and time scheduling subject to resource, accuracy, and deadline constraints. We present this problem's integer linear problem formulation and show this problem is NP-hard even for the offline case. This problem is challenging due to the coupled effect of service assignment and time scheduling. To derive low-complexity scheduling solutions, we introduce a task-service graph and convert this problem into a service assignment selection problem with schedulability constraints. Then, we design a polynomial complexity algorithm with \\frac{\\rho}{\\delta}\n-approximation ratio for the offline problem, with \\rho\nreferring to the task-wise utility ratio, \\delta\nreferring to the maximum number of concurrent tasks. To handle the online problem, we propose an online heuristic algorithm. Simulation results show that the proposed algorithms outperform the state-of-the-art baseline algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZengLXWXZ23,
+	author = {Qingmin Zeng and
+                  Jianchun Liu and
+                  Hongli Xu and
+                  Zhiyuan Wang and
+                  Yang Xu and
+                  Yangming Zhao},
+	title = {Enhanced Federated Learning with Adaptive Block-wise Regularization
+                  and Knowledge Distillation},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188770},
+	doi = {10.1109/IWQOS57198.2023.10188770},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZengLXWXZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated Learning (FL) has emerged as an efficient distributed model training framework that enables multiple clients cooperatively to train a global model without exposing their local data in edge computing (EC). However, FL usually faces statistical heterogeneity (e.g., non-IID data) and system heterogeneity (e.g., computing and communication capabilities), resulting in poor model training performance. To deal with the above two challenges, we propose an efficient FL framework, named FedBR, which integrates the idea of block-wise regularization and knowledge distillation (KD) into the pioneer FL algorithm FedAvg, for resource-constrained edge computing. Besides, we design a heuristic algorithm (GMBS) to determine the appropriate number of model blocks for clients according to their varied data distributions, computing, and communication capabilities. Extensive experimental results show that FedBR can reduce the time cost by 19.5% and the communication cost by 27% on average compared with the other three baselines when achieving the target testing accuracy under heterogeneous settings.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ChenGXLSCG23,
+	author = {Quan Chen and
+                  Song Guo and
+                  Wenchao Xu and
+                  Jing Li and
+                  Tuo Shi and
+                  Zhipeng Cai and
+                  Hong Gao},
+	title = {Optimizing Average AoI with Directional Charging for Wireless-Powered
+                  Network Edge},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188771},
+	doi = {10.1109/IWQOS57198.2023.10188771},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ChenGXLSCG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Age of Information, which emerged as a new performance metric to quantify the data freshness, has drawn increasing interests recently. At wireless-powered network edge, the source nodes can only transmit their updates after being charged ready, which means the system AoI is not only determined by the update transmission strategies, but also the charging strategies. However, the existing works either only focused on the point of scheduling of update transmissions or have a rigid assumption that only one source node can be charged per time. Aiming at making the work more practical and general, we investigate the average\nA\noI optimization problem at wireless-powered network edge without such limitations in this paper. Firstly, the lower bound of the weighted sum of average\nA\noI of the whole network with a directional charger is analyzed, which is proved to be related to nodes' maximum transmitting interval and the charging strategy. An optimal charging time allocation algorithm is proposed to obtain the maximum transmitting interval of each source node by considering the overlapped areas of different charging orientations. After then, an AoI-aware periodical charging scheduling algorithm is proposed, which can obtain a periodical charging schedule including a charging period\nT\nand the charging orientation assigned to each time slot within\nT\n, while the average AoI is bounded. The proposed algorithm is proved to have an approximation ratio of up to 1.5625. Finally, the extensive simulations demonstrate the high performance of the proposed algorithm in terms of AoI.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/RenWLLX23,
+	author = {Rui Ren and
+                  Yang Wang and
+                  Fengrui Liu and
+                  Zhenyu Li and
+                  Gaogang Xie},
+	title = {Triple:The Interpretable Deep Learning Anomaly Detection Framework
+                  based on Trace-Metric-Log of Microservice},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188773},
+	doi = {10.1109/IWQOS57198.2023.10188773},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/RenWLLX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Existing anomaly detection approaches based on deep-learning just could simultaneously dig out key information from two dimensions in the traces, metrics or logs. Besides, they just output simple binary result, which ignores the key artificial statement information in the log. In this paper, we propose Triple, an interpretable anomaly detection approach based on deep learning for microservice system. More importantly, Triple aims to help engineers to establish trust in the system decision from key metrics and the artificial statements in logs. Triple leverages graph representation to describe the complicated dependency relationship in the traces with the logs and metrics embedded into the node features. Based on the graph representation, Triple trains a Spatial-Temporal Graph Convolutional Network(STGCN) to capture the key information and generate decision boundary by deep SVDD, which detects the system's anomaly. In addition, we design an interpreter to transfer the simple binary result into a humanly understandable result, including log, metrics and trace, to facilitate engineers' understanding and handling of the incoming incident. Our work has four aims. First, to the best of our knowledge, we are the first to simultaneously apply three data sources to finish anomaly detection in the domain. Second, we design a new anomaly detection method that is an STGCN based on SVDD. Third, we design an interpreter that makes the decision not only a simple binary result. The interpretable result could capture the key artificial statement information in the log and assist engineers in incident troubleshooting. Finally, we design a series experiments to validate our method's effectiveness in the real-world system's dataset. Our results show that Triple consistently achieves improvements over other state-of-the-art models by 11%-65%.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiHZCC23,
+	author = {Jingyi Li and
+                  Guangjing Huang and
+                  Liekang Zeng and
+                  Lin Chen and
+                  Xu Chen},
+	title = {Chained-DP: Can We Recycle Privacy Budget?},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188774},
+	doi = {10.1109/IWQOS57198.2023.10188774},
+	timestamp = {Tue, 12 Sep 2023 09:31:33 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiHZCC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Privacy-preserving vector mean estimation is a crucial primitive in federated analytics. Existing practices usually resort to Local Differentiated Privacy (LDP) mechanisms that inject random noise into users' vectors when communicating with users and the central server. Due to the privacy-utility trade-off, the privacy budget has been widely recognized as the bottleneck resource that requires well provisioning. In this paper, we explore the possibility of privacy budget recycling and propose a novel Chained-DP framework enabling users to carry out data aggregation sequentially to recycle the privacy budget. We establish a sequential game to model the user interactions in our framework. We theoretically show the mathematical nature of the sequential game, solve its Nash Equilibrium, and design an incentive mechanism with provable economic properties. Our numerical simulation validates the effectiveness of Chained-DP, showing that it can significantly save privacy budget as well as lower estimation error compared to the traditional LDP mechanism.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiCL23,
+	author = {Lingang Li and
+                  Yongrui Chen and
+                  Zhijun Li},
+	title = {Small Chunks can Talk: Fast Bandwidth Estimation without Filling up
+                  the Bottleneck Link},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188775},
+	doi = {10.1109/IWQOS57198.2023.10188775},
+	timestamp = {Mon, 23 Oct 2023 20:48:21 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiCL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of wireless communications (e.g., WiFi 6 and 5G), more and more high-bandwidth networks are emerging in our daily life. However, due to the limited speed of the slow start phase in congestion control algorithms, the high-bandwidth links may not be fully utilized, which will degrade the Quality of Service (QoS). The reason is, since the available link capacity is unknown until the link is fully occupied, the sender has to gradually increase the congestion window (cwnd) from a small initial value, causing the link to be underutilized, until a packet is dropped or a congestion signal is detected. Especially, for a short flow, the transmission is often finished before the link capacity is reached, leading to the waste of available bandwidth. To better exploit the high bandwidth links, this paper proposes FBE (Fast Bandwidth Estimation without Filling up the Bottleneck Link), by leveraging the effective ACK's returning rate to estimate the bottleneck link capacity. More specifically, instead of sending out any additional probe packets, FBE uses the ACK rates from the first two RTT rounds to quickly estimate the bandwidth during slow start phase. Since the original ACK rate is significantly lower than the available link bandwidth due to the exhaustion of send window, and the competing flows also have an impact on the ACK rate, FBE elaborates the ACK interval compensation algorithm to refine the ACK intervals to reflect the link rate, and then updates cwnd to a suitable size. To address the challenge of inaccurate bandwidth estimation, especially for rapidly changing wireless link, FBE dynamically adjusts cwnd according to the feedback of driver queue length after the bandwidth estimation. Experiments in real WiFi and LTE networks show that FBE reduces the slow start convergence time by 54.8% and 53.5% compared to CUBIC and BBR with traditional slow start, respectively. And when transferring short flows (512KB in size), FBE reduces the flow completion time by 40.4% and 43.8% compared to CUBIC and BBR, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhuZXHQ23,
+	author = {Qiucheng Zhu and
+                  Yangming Zhao and
+                  Hongli Xu and
+                  Liusheng Huang and
+                  Chunming Qiao},
+	title = {Integrating All-optical Switching and Entangled Photon Source Placement
+                  for Entanglement Routing},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188776},
+	doi = {10.1109/IWQOS57198.2023.10188776},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhuZXHQ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Entanglement routing plays a vital role in quantum networks. Previous works on entanglement routing did not note that all-optical switching capacity can be used to improve the network throughput or ignored that the placement of Entangled Photon Sources (EPS), another type of precious (and costly) quantum source, which also limits the network throughput. In this paper, we propose OptEPS to jointly optimize all-optical switching and EPS placement in entanglement routing to maximize the quantum network throughput. The main challenge of OptEPS lies in two folds: i). an entanglement may fail to be created; ii). the joint optimization problem suffers from a large time complexity. To overcome these challenges, we first formulate the joint optimization problem as a link-path based model and prune out some candidate paths in order to reduce the time complexity. Then, efficient algorithms are proposed to derive a near-optimal solution in a timely manner. Extensive simulations show that compared with the solutions ignoring EPS placement or without introducing all-optical switching, OptEPS will increase the network throughput by 1557% and 109%, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZhuHLL23,
+	author = {Bolun Zhu and
+                  Yu Hua and
+                  Ziyin Long and
+                  Xue Liu},
+	title = {{CATS:} {A} Computation-Aware Transaction Processing System with Proactive
+                  Unlocking},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188780},
+	doi = {10.1109/IWQOS57198.2023.10188780},
+	timestamp = {Fri, 25 Aug 2023 14:04:11 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZhuHLL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increasing complexity of network applications and high demands for QoS, transaction processing systems have received more attentions due to salient features of simplicity and atomicity. Computation operations play an important role in transaction processing systems. However, conventional QoS-based mechanisms become inefficient due to the limited concurrent support upon computation operations, thus causing high time consumption in the critical path of concurrency control. In order to efficiently offer concurrent computations, we propose CATS, a Computation Aware Transaction processing System, to mitigate performance impacts caused by computation operations. CATS further leverages program semantics to defer the execution of transaction operations in the commit phase to alleviate unnecessary conflicts caused by computations. Extensive evaluation results demonstrate that CATS significantly outperforms state-of-the-art designs, including 2PL and OCC based transaction processing systems on high-contended and computation-intensive workloads. We have released the open-source codes in GitHub for public use.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ShenWZLLF23,
+	author = {Linfeng Shen and
+                  Feng Wang and
+                  Miao Zhang and
+                  Jiangchuan Liu and
+                  Gaoyang Liu and
+                  Xiaoyi Fan},
+	title = {AIoT-Empowered Smart Grid Energy Management with Distributed Control
+                  and Non-Intrusive Load Monitoring},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188781},
+	doi = {10.1109/IWQOS57198.2023.10188781},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/ShenWZLLF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today's electrical grid is experiencing a fast transition toward a smart infrastructure. Modern smart grid is expected to integrate Artificial Intelligence of Things (AIoT)-empowered energy management systems (EMS) to sense, analyze, and optimize the power consumption and QoS of diverse end users. Non-Intrusive Load Monitoring (NILM) plays a key role in this transition, particularly considering that many legacy devices/appliances may not have built-in sensors. Yet most of the NILM solutions rely on large (often impractical) datasets for training. In this paper, we address this challenge through a meta learning-inspired approach, which implements a hierarchical architecture with a “meta-learner” to supervise the training of each appliance. Current EMS also relies on a central controller to access long-term information across all participants, which mismatches their distributed nature, and so often with slow responses. To this end, we develop a deep reinforcement learning based controller to make dynamic decisions for each component in the system. The experiment results based on real-world data sets and simulation data show that applying the meta learning approach can greatly improve the performance of NILM and the QoS of the whole system.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/JarachanthanCX23,
+	author = {Jananie Jarachanthan and
+                  Li Chen and
+                  Fei Xu},
+	title = {{ACTS:} Autonomous Cost-Efficient Task Orchestration for Serverless
+                  Analytics},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188782},
+	doi = {10.1109/IWQOS57198.2023.10188782},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/JarachanthanCX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Serverless computing has become increasingly popular for cloud applications, due to its compelling properties of high-level abstractions, lightweight runtime, high elasticity and pay-per-use billing. In this revolutionary computing paradigm shift, challenges arise when adapting data analytics applications to the serverless environment, due to the lack of support for efficient state sharing, which attract ever-growing research attention. In this paper, we aim to exploit the advantages of task-level orchestration and fine-grained resource provisioning for data analytics on serverless platforms, with the hope of fulfilling the promise of serverless deployment to the maximum extent. To this end, we present ACTS, an autonomous cost-efficient task orchestration framework for serverless analytics. ACTS judiciously schedules and coordinates function tasks to mitigate cold-start latency and state sharing overhead. In addition, ACTS explores the optimization space of fine-grained workload distribution and function resource configuration for cost efficiency. We have deployed and implemented ACTS on AWS Lambda, evaluated with various data analytics workloads. Results from extensive experiments demonstrate that ACTS achieves up to 98% monetary cost reduction while maintaining superior job completion time performance, in comparison with the state-of-the-art baselines.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/FangZXYSX23,
+	author = {Jin Fang and
+                  Gongming Zhao and
+                  Hongli Xu and
+                  Zhuolong Yu and
+                  Bingchen Shen and
+                  Liguang Xie},
+	title = {{GOAT:} Gradient Scheduling with Collaborative In-Network Aggregation
+                  for Distributed Training},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188783},
+	doi = {10.1109/IWQOS57198.2023.10188783},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/FangZXYSX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The surging scale of distributed training (DT) incurs significant communication overhead in datacenters, while a promising solution is in-network aggregation (INA). It leverages programmable switches (e.g., Intel Tofino switches) for gradient aggregation to accelerate the DT. Due to switches' limited on-chip memory size, existing solutions try to design the memory sharing mechanism for INA. This mechanism requires gradients to arrive at switches synchronously, while network dynamics make it common for the asynchronous arrival of gradients, resulting in existing solutions being inefficient (e.g., massive communication overhead). To address this issue, we propose GOAT, the first-of-its-kind work on gradient scheduling with collaborative in-network aggregation, so that switches can efficiently aggregate asynchronously arriving gradients. Specifically, GOAT first partitions the model into a set of sub-models, then decides which sub-model gradients each switch is responsible for aggregating exclusively and to which switch each worker should send its sub-model gradients. To this end, we design an efficient knapsack-based randomized rounding algorithm and formally analyze the approximation performance. We implement GOAT and evaluate its performance on a testbed consisting of 3 Intel Tofino switches and 9 servers. Experimental results show that GOAT can speed up the DT by 1.5× compared to the state-of-the-art solutions.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/HanafyWCMLS23,
+	author = {Walid A. Hanafy and
+                  Limin Wang and
+                  Hyunseok Chang and
+                  Sarit Mukherjee and
+                  T. V. Lakshman and
+                  Prashant J. Shenoy},
+	title = {Understanding the Benefits of Hardware-Accelerated Communication in
+                  Model-Serving Applications},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188785},
+	doi = {10.1109/IWQOS57198.2023.10188785},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/HanafyWCMLS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is commonly assumed that the end-to-end networking performance of edge offloading is purely dictated by that of the network connectivity between end devices and edge computing facilities, where ongoing innovation in 5G/6G networking can help. However, with the growing complexity of edge-offloaded computation and dynamic load balancing requirements, an offloaded task often goes through a multi-stage pipeline that spans across multiple compute nodes and proxies interconnected via a dedicated network fabric within a given edge computing facility. As the latest hardware-accelerated transport technologies such as RDMA and GPUDirect RDMA are adopted to build such network fabric, there is a need for good understanding of the full potential of these technologies in the context of computation offload and the effect of different factors such as GPU scheduling and characteristics of computation on the net performance gain achievable by these technologies. This paper unveils detailed insights into the latency overhead in typical machine learning (ML)-based computation pipelines and analyzes the potential benefits of adopting hardware-accelerated communication. To this end, we build a model-serving framework that supports various communication mechanisms. Using the framework, we identify performance bottlenecks in state-of-the-art model-serving pipelines and show how hardware-accelerated communication can alleviate them. For example, we show that GPUDirect RDMA can save 15-50% of model-serving latency, which amounts to 70–160 ms.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/XunLGHZDWZ23,
+	author = {Qinglin Xun and
+                  Weichao Li and
+                  Haorui Guo and
+                  Qianyi Huang and
+                  Jianer Zhou and
+                  Jingpu Duan and
+                  Yi Wang and
+                  Jinbei Zhang},
+	title = {Enabling Reliable and Efficient Performance Monitoring and Troubleshooting
+                  in Datacenter Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--4},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188787},
+	doi = {10.1109/IWQOS57198.2023.10188787},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/XunLGHZDWZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network performance monitoring and troubleshooting is a crucial but challenging task in datacenter management. Despite the numerous solutions that have been proposed in recent years, their efforts are often hindered by high costs and unreliable fault localization, making it difficult to deploy them in real-world environments. In this paper, we present LMon, a highly reliable and efficient system for monitoring and troubleshooting in datacenter networks. LMon utilizes the characteristic of ECMP hashing linearity to control the packet routing without any modification of the underlying protocols. Additionally, LMon leverages a lightweight probing technique to reduce monitoring overhead. Furthermore, the system integrates improved LASSO regression and statistical hypothesis testing for higher accuracy and faster processing in link failure localization. The effectiveness of LMon is demonstrated through its implementation and evaluation in ns-3 simulation. The results validate the reliability and efficiency of the system, making it a promising option for ensuring long-term network maintenance in datacenters.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/YuanPJWYX23,
+	author = {Xinjing Yuan and
+                  Lingjun Pu and
+                  Lei Jiao and
+                  Xiaofei Wang and
+                  Meijuan Yang and
+                  Jingdong Xu},
+	title = {When Computing Power Network Meets Distributed Machine Learning: An
+                  Efficient Federated Split Learning Framework},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188789},
+	doi = {10.1109/IWQOS57198.2023.10188789},
+	timestamp = {Sun, 12 Nov 2023 02:07:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/YuanPJWYX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we advocate CPN-FedSL, a novel and flexible Federated Split Learning (FedSL) framework over Computing Power Network (CPN). We build a dedicated model to capture the basic settings and learning characteristics (e.g., training flow, latency and convergence). Based on this model, we introduce Resource Usage Effectiveness (RUE), a novel performance metric integrating training utility with system cost, and formulate a multivariate scheduling problem that maximizes RUE by comprehensively taking client admission, model partition, server selection, routing and bandwidth allocation into account (i.e., mixed-integer fractional programming). We design Refinery, an efficient approach that first linearizes the fractional objective and non-convex constraints, and then solves the transformed problem via a greedy based rounding algorithm in multiple iterations. Extensive evaluations corroborate that CPN-FedSL is superior to the standard and state-of-the-art learning frameworks (e.g., FedAvg and SplitFed), and besides Refinery is lightweight and significantly outperforms its variants and de facto heuristic methods under a variety of settings.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/MaoYWY23,
+	author = {Yachen Mao and
+                  Panlong Yang and
+                  Shanyue Wang and
+                  Yubo Yan},
+	title = {STABack: Making Dynamic Backscattering Stable for Fast and Accurate
+                  Object Tracking},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188790},
+	doi = {10.1109/IWQOS57198.2023.10188790},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/MaoYWY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we present a novel object tracking system, named STABack, that utilizes backscatter tags and accelerometer sensors. The system is designed to support high-speed movement tracking with high accuracy. One of the challenges faced in this system is the instability of the received signal due to the motion and rotation of the backscatter tag. To address this issue, we propose an amplitude stabilization algorithm to eliminate the interference caused by the tag's motion. The algorithm uses envelope detection to remove the impact of high-frequency motion on the signal, and a dynamic threshold output to further reduce the bit error rate of backscatter demodulation. Additionally, we perform outliers removal and interpolation on the three-axis accelerometer data and compute the attitude angle using 3D geometric quadrants. Finally, we implement the prototype of STABack and evaluate its performance. Our method improves BER up to 0.3757 compared with the regular demodulation method. Our evaluation of the STABack prototype shows that it achieves a median distance measurement accuracy of 6.45 cm with a standard deviation of 6.95 cm. The mean error of the attitude angle estimation is less than 7 degrees, and the average relative error of three-axis acceleration tracking is only 0.097. The system's accuracy in detecting the target object's trajectory is as high as 98%, and it can still decode with a bit error rate of no more than 0.034 at a speed of 166 cm/s. The power consumption of backscatter communication is\n38.54 μW\n. Based on our experimental results, Overall, our results demonstrate that STABack can accurately estimate the movement and rotation of target objects in unstable backscatter channels.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiuTLWZS23,
+	author = {Dezheng Liu and
+                  Xiaobin Tan and
+                  Yangyang Liu and
+                  Shunyi Wang and
+                  Quan Zheng and
+                  Qianbao Shi},
+	title = {Joint Upload-Download Transmission Scheme for Low-Latency Mobile Live
+                  Video Streaming},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188793},
+	doi = {10.1109/IWQOS57198.2023.10188793},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiuTLWZS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Variations in wireless network bandwidth will have a significant impact on the performance of mobile live video streaming. When multiple users have different network latency, the way of uploading a higher bitrate version of previously uploaded video segments may improve the quality of experience (QoE) of users with high network latency. In this paper, we propose an upload-download collaborative transmission scheme for mobile live video streaming with the goal of improving the overall QoE of all users. Moreover, we designed a frame-based transmission and scheduling mechanism to reduce the delay experienced by users watching live videos. Then, we design a joint upload-download transmission algorithm based on deep reinforcement learning (DRL) that takes into account the states of both the video upload and download sides. Through extensive simulation in multi-client mobile live video streaming scenarios, the proposed scheme outperforms existing solutions in terms of overall QoE, smoothness, and live video delay.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ShiZCCZL23,
+	author = {Xiaohang Shi and
+                  Sheng Zhang and
+                  Ke Cheng and
+                  Yu Chen and
+                  Andong Zhu and
+                  Sanglu Lu},
+	title = {{OSCA:} Online User-managed Server Selection and Configuration Adaptation
+                  for Interactive {MAR}},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188796},
+	doi = {10.1109/IWQOS57198.2023.10188796},
+	timestamp = {Mon, 05 Feb 2024 20:33:54 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ShiZCCZL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Interactive mobile augmented reality (MAR) applications such as Connected Lens are becoming popular, which often rely on deep neural network (NN)-based video analytics techniques to understand the real world. However, performing computation-intensive NN inference on resource-constrained mobile devices is impractical. It is thus proposed to offload the workloads to edge servers with the help of mobile edge computing (MEC). Existing works often focus on system-wide offloading solutions, optimizing the personalized user experience for interactive applications in dynamic environments is yet rarely studied, where multiple challenges remain to be solved. First, the user has to decide the configuration for video analytics, where the inherent accuracy-cost trade-off exists. Second, it is intractable to decide the target server for offloading, since each server supports limited configurations, and a user needs to balance the experience of analytics service and the quality of interaction with others at the same time. Third, the fluctuating network information is often undisclosed to the users, and the candidate servers also vary over time. Therefore, in this paper, we propose an online user-managed server selection and configuration adaptation scheme (OSCA). Via Lyapunov optimization, we aim to maximize the long-term service experience, under the interactive quality constraint with other users. Besides, volatile multi-armed bandit (MAB) is utilized to handle the network fluctuation and the variance of the candidate servers. We conduct rigorous theoretical analysis, and the deviations of both the service experience and the interactive quality are bounded. Through extensive trace-driven experiments, we demonstrate the superior performance of OSCA.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/MeiSYCLCLLX23,
+	author = {Hao Mei and
+                  Ruoshi Sun and
+                  Ruyi Yao and
+                  Chuhao Chen and
+                  Cong Luo and
+                  Zixuan Chen and
+                  Jiahui Li and
+                  Sen Liu and
+                  Yang Xu},
+	title = {Rusen: Rule Semantics Enabler toward Fast {TCAM} Update for Commodity
+                  {SDN} Switches},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188797},
+	doi = {10.1109/IWQOS57198.2023.10188797},
+	timestamp = {Sat, 30 Sep 2023 09:51:34 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/MeiSYCLCLLX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ternary Content Addressable Memory (TCAM) is widely used in Software-Defined Networking (SDN) switches due to its impressive throughput. But its unique circuit design results in long and inconsistent update delays. To overcome this challenge, many TCAM update algorithms based on rule semantics have been proposed. These algorithms eliminate unnecessary order restrictions, thus reducing update delays in theory. However, most commodity switches are semantic-unaware, which maintain rules in strict priority order. These algorithms are therefore not available for practical use. To address this issue, this paper proposes Rusen, a framework that enables the use of many semantic-based algorithms on Semantic-unaware commodity switches. Working as a transparent middle layer, the core idea of Rusen is to express the update scheme derived by semantic-based algorithms as messages that the Semantic-unaware switches can execute. In addition, Rusen optimizes the update scheme based on the specific characteristics of each switch, leading to improved performance of these algorithms. We evaluate the performance of Rusen by enabling several state-of-the-art semantic-based algorithms on commodity SDN switches. Results show that the average update delay can be significantly reduced by 23%∼94% on OpenFlow switches and 39%∼84% on a P4 switch.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/Wang23,
+	author = {Rebekah Wang},
+	title = {Federated Learning with Adaptive Weighted Model Aggregation},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--2},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188800},
+	doi = {10.1109/IWQOS57198.2023.10188800},
+	timestamp = {Mon, 14 Aug 2023 15:24:20 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/Wang23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {When using federated learning (FL) to predict user preferences, not all data samples are equally useful. For example, in video recommendation, recent watch history is more useful than older watch history. Thus, a new FL approach with adaptive weighted model aggregation (FLAMA) is proposed, where model aggregation weights are recalculated each FL training round based on the number of useful data samples used by each client and global model performance. Additionally, training datasets are compiled with a higher preference for useful data samples via prioritized data sample selection (PDSS). It is demonstrated that the proposed FLAMA achieves a higher accuracy in less FL training rounds compared to other schemes.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/WangTYLLJW23,
+	author = {En Wang and
+                  Zijie Tian and
+                  Yongjian Yang and
+                  Wenbin Liu and
+                  Baoju Li and
+                  Nan Jiang and
+                  Jie Wu},
+	title = {Data-Driven Similarity-based Worker Recruitment Towards Multi-task
+                  Data Inference for Sparse Mobile Crowdsensing},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188803},
+	doi = {10.1109/IWQOS57198.2023.10188803},
+	timestamp = {Fri, 22 Sep 2023 09:31:12 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/WangTYLLJW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sparse Mobile Crowdsensing is an emerging paradigm for data collection with budgets and workers' limitations' which recruits workers to sense a part of spatio-temporal data and infer what is unsensed. In order to achieve high inferring accuracy in all spatio-temporal areas, we need to measure the importance level of each area and sense some important ones. Existing works usually use the average distance or the difficulty level inferred by historical data to measure the area's importance. However, we argue that neither distance nor difficulty level is suitable for measuring the importance. A better approach is inspired by the data itself, i.e., data similarity among different areas. Furthermore, there usually exist multiple data types in sparse mobile crowdsensing, which leads to a more complex inference from two-dimensional data (spatial and temporal) to three-dimensional data (spatial, temporal, and data type). In this paper, we study worker recruitment in a multi-task scenario, which aims to recruit workers to sense important data for a three-dimensional inference. Specifically, we first present the SWDTW method to calculate data similarity, which is used to evaluate data importance. Based on this, we further propose an evaluation model for three-dimensional data similarity and measure the importance of each area. Finally, inspired by generalized greedy and simulated annealing, we propose a worker recruitment method named WRGSA, the target of which is selecting workers to sense important areas to enhance the inference accuracy. Extensive experiments have been conducted over three real-world datasets with multiple data types, which can verify the effectiveness of our proposed methods.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiuTCLYZYY23,
+	author = {Jiacheng Liu and
+                  Feilong Tang and
+                  Long Chen and
+                  Xu Li and
+                  Jiadi Yu and
+                  Yanmin Zhu and
+                  Yichuan Yu and
+                  Yanqin Yang},
+	title = {{EAGLE:} Heterogeneous GNN-based Network Performance Analysis},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188804},
+	doi = {10.1109/IWQOS57198.2023.10188804},
+	timestamp = {Tue, 17 Oct 2023 16:54:49 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiuTCLYZYY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Performance analysis is of great importance for management and optimization of space-terrestrial integrated networks (STINs). Traditional approaches to network performance analysis are often based on idealized assumptions that are deviated from the real network environment. This leads to the fact that these models are usually inefficient and restricted in real-world STINs with complicated behavior and even dynamic capacity. In this paper, we propose a network performance analysis approach EAGLE based on heterogeneous graph neural networks. Firstly, we propose a powerful computer network representation model that can preserve all of the information in computer networks. It represents different components of computer networks as a set of heterogeneous nodes and edges, and finally constructs a heterogeneous graph. Then, we obtain the topological representation for the routers in the network through a bandwidth-aware network embedding model. Based on this heterogeneous graph, we propose a heterogeneous GNN model to accurately predict network KPIs because it can completely capture the rich topological and attribute information of computer networks. Experimental results demonstrate that EAGLE can accurately model different networks, and outperforms both traditional methods and the latest neural network-based methods.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/ZouLCXW23,
+	author = {Haodong Zou and
+                  Yupeng Li and
+                  Xiaowen Chu and
+                  Changfu Xu and
+                  Tian Wang},
+	title = {Improving Fairness in Coexisting 5G and Wi-Fi Network on Unlicensed
+                  Band with {URLLC}},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188806},
+	doi = {10.1109/IWQOS57198.2023.10188806},
+	timestamp = {Sat, 09 Mar 2024 21:04:39 +0100},
+	biburl = {https://dblp.org/rec/conf/iwqos/ZouLCXW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To meet the growing need of mobile traffic with Ultra-Reliable and Low Latency Communication (URLLC) requirement, 5G New Radio (NR) is extending from licensed band to unlicensed band on which Wi-Fi has already been operated, resulting in coexisting NR/Wi-Fi network. Existing works have made great efforts on throughput and latency of coexisting NR/Wi-Fi network. However, excessive NR requests offloaded from licensed band lead to unfair utilization of unlicensed band, which further causes unsatisfaction on URLLC and performance degradation of Wi-Fi. In this paper, we propose a novel Reinforcement Learning based Transmission Revoking Approach (RL-TRA) to address this problem aiming at fairer utilization of unlicensed band restrained by URLLC. Firstly, we formulate the coexistence problem of NR/Wi-Fi as integer non-linear programming and show its NP-hardness. Secondly, we decompose the problem into three sub-problems, namely redundancy determining, request scheduling, and transmission revoking. The former two sub-problems are solved with our proposed method to satisfy URLLC requirement. We further propose a novel transmission revoking mechanism when tackling transmission revoking sub-problem, aiming at maintaining fairness of coexisting NR/Wi-Fi network. Finally, simulation results verify the effectiveness of RL-TRA. By using our method, the fairness is improved by 16.5% averagely with only 1.77% loss on success rate of URLLC requests compared with baselines.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/LiuZDJZC23,
+	author = {Weijie Liu and
+                  Xiaoxi Zhang and
+                  Jingpu Duan and
+                  Carlee Joe{-}Wong and
+                  Zhi Zhou and
+                  Xu Chen},
+	title = {AdaCoOpt: Leverage the Interplay of Batch Size and Aggregation Frequency
+                  for Federated Learning},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188807},
+	doi = {10.1109/IWQOS57198.2023.10188807},
+	timestamp = {Mon, 23 Oct 2023 20:48:21 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/LiuZDJZC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated Learning (FL) is a distributed learning paradigm that can coordinate heterogeneous edge devices to perform model training without sharing private raw data. Many prior works have analyzed the FL convergence with respect to important hyperparameters, including batch size and aggregation frequency. However, adjusting the batch size and the number of local updates can affect the model performance, training time, and the cost of consuming computation and communication resources, in different and perhaps complex forms. Their joint effects have been overlooked and should be exploited to achieve accurate models with controllable operational expenditure. This paper proposes novel analytical models and optimization algorithms that leverage the interplay of batch size and aggregation frequency to navigate the trade-offs among convergence, cost, and completion time for FL. We first obtain a new convergence bound of the training error under heterogeneous training datasets across devices. Based on this bound, we derive closed-form solutions of a co-optimized batch size and aggregation frequency, a single configuration for all the devices. We then design an efficient exact algorithm for assigning different batch configurations across devices that can further improve the model accuracy to address the heterogeneity of both data and system characteristics. Further, we propose an adaptive control algorithm to dynamically adjust the solutions with estimated network states. Extensive experiments demonstrate the superiority of our offline optimal solutions and online adaptive algorithm.}
+}
+
+
+@inproceedings{DBLP:conf/iwqos/KongZSCCZW23,
+	author = {Dezhang Kong and
+                  Zhengyan Zhou and
+                  Yi Shen and
+                  Xiang Chen and
+                  Qiumei Cheng and
+                  Dong Zhang and
+                  Chunming Wu},
+	title = {In-band Network Telemetry Manipulation Attacks and Countermeasures
+                  in Programmable Networks},
+	booktitle = {31st {IEEE/ACM} International Symposium on Quality of Service, IWQoS
+                  2023, Orlando, FL, USA, June 19-21, 2023},
+	pages = {1--10},
+	publisher = {{IEEE}},
+	year = {2023},
+	url = {https://doi.org/10.1109/IWQoS57198.2023.10188809},
+	doi = {10.1109/IWQOS57198.2023.10188809},
+	timestamp = {Wed, 25 Oct 2023 22:41:04 +0200},
+	biburl = {https://dblp.org/rec/conf/iwqos/KongZSCCZW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-band Network Telemetry (INT) is a widely used monitoring framework in modern large-scale networks that provides fine-grained visibility into network conditions by inserting telemetry data into packets. However, this mechanism also introduces new vulnerabilities that malicious attackers can exploit. In this paper, we present four In-band Network Telemetry Manipulation Attacks that take advantage of INT's weakness, demonstrating that attackers can cause severe damage with little effort by manipulating INT packets. To address this issue, we design SecureINT, a novel INT prototype that ensures confidentiality and integrity for INT packets. To meet the stringent computational requirements of programmable switches, we comprehensively analyze possible attacks on the deployed encryption/hash algorithms and modify them accordingly without compromising their security. According to the experiments, SecureINT can be deployed on programmable switches using a single pipeline, providing encryption and integrity verification for INT packets with minimal overhead.}
+}
