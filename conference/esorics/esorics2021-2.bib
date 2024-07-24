@@ -1,0 +1,921 @@
+@inproceedings{DBLP:conf/esorics/ChenXWZSJ21,
+	author = {Tianyang Chen and
+                  Peng Xu and
+                  Wei Wang and
+                  Yubo Zheng and
+                  Willy Susilo and
+                  Hai Jin},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Bestie: Very Practical Searchable Encryption with Forward and Backward
+                  Security},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_1},
+	doi = {10.1007/978-3-030-88428-4\_1},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ChenXWZSJ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Dynamic searchable symmetric-key encryption (DSSE) is a promising crypto-tool that enables secure keyword searching over dynamically added or deleted ciphertexts. Currently, many works on DSSE devote their efforts to obtaining forward and backward security and practical performance. However, it is still challenging to design a single DSSE scheme that simultaneously achieves this security, high performance, and real deletion. Note that real deletion is a critical feature to guarantee the right of the user to be forgotten stipulated by GDPR. Due to this fact, we propose a new forward-and-backward secure DSSE scheme named Bestie. To achieve high search performance, Bestie takes the traditional hash and pseudorandom functions and symmetric-key encryption as building blocks and supports parallel keyword search. Bestie also achieves non-interactive real deletion for avoiding the client to do a clean-up process. This feature not only guarantees the above GDPR rule but also makes Bestie more suitable for managing large-scale data. Bestie also saves the client’s computation and communication costs. Finally, we experimentally compare Bestie with five previous well-known works and show that Bestie is much better in most respects. For example, Bestie requires approximately 3.66 microseconds to find a matching ciphertext. In contrast, Bestie has search performance at least 2 times faster than both \\(\\texttt {Mitra}^*\\) (CCS’18) and \\(\\texttt {Diana}_{del}\\) (CCS’17), 1,032\\(\\times \\) faster than Fides (CCS’17), and 38,332\\(\\times \\) faster than Janus++ (CCS’18), respectively. Compared with Mitra (CCS’18), Bestie saves at least 80% client time cost during a search.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KermanshahiDSSL21,
+	author = {Shabnam Kasra Kermanshahi and
+                  Rafael Dowsley and
+                  Ron Steinfeld and
+                  Amin Sakzad and
+                  Joseph K. Liu and
+                  Surya Nepal and
+                  Xun Yi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Geo-DRS: Geometric Dynamic Range Search on Spatial Data with Backward
+                  and Content Privacy},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {24--43},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_2},
+	doi = {10.1007/978-3-030-88428-4\_2},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KermanshahiDSSL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Driven by the cloud-first initiative taken by various governments and companies, it has become a common practice to outsource spatial data to cloud servers for a wide range of applications such as location-based services and geographic information systems. Searchable encryption is a common practice for outsourcing spatial data which enables search over encrypted data by sacrificing the full security via leaking some information about the queries to the server. However, these inherent leakages could equip the server to learn beyond what is considered in the scheme, in the worst-case allowing it to reconstruct of the database. Recently, a novel form of database reconstruction attack against such kind of outsourced spatial data was introduced (Markatou and Tamassia, IACR ePrint 2020/284), which is performed using common leakages of searchable encryption schemes, i.e., access and search pattern leakages. An access pattern leakage is utilized to achieve an order reconstruction attack, whereas both access and search pattern leakages are exploited for the full database reconstruction attack. In this paper, we propose two novel schemes for outsourcing encrypted spatial data supporting dynamic range search. Our proposed schemes leverage R\\(^{+}\\)tree to partition the dataset and binary secret sharing to support secure range search. They further provide backward and content privacy and do not leak the access pattern, therefore being resilient against the above mentioned database reconstruction attacks. Our evaluation shows the practicality of our schemes, due to (a) the minimal round-trip between the client and the server, and (b) low overhead in the client side in terms of computation and storage.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LvWSWQC21,
+	author = {Chunyang Lv and
+                  Jianfeng Wang and
+                  Shifeng Sun and
+                  Yunling Wang and
+                  Saiyu Qi and
+                  Xiaofeng Chen},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Efficient Multi-client Order-Revealing Encryption and Its Applications},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {44--63},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_3},
+	doi = {10.1007/978-3-030-88428-4\_3},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LvWSWQC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Order-revealing encryption (ORE) is a cryptographic primitive that enables ciphertext comparison while leaking nothing about the underlying plaintext beyond their lexicographic ordering. However, how to achieve efficient and secure ciphertext comparison for multi-user settings is still a challenging problem. In this work, we propose an efficient multi-client order-revealing encryption scheme (named m-ORE) by introducing a new token-based comparison method. Specifically, data owner is enabled to delegate token generation ability to some authorized users without revealing his secret key, and then each authorized user can perform comparison on ciphertexts from multiple data owners by generating the associated comparison tokens. Benefiting from our new method, m-ORE can not only reduce ciphertext size but also improve comparison efficiency, compared with the state-of-the-art (Cash et al. Asiacrypt 2018). Further, we present a non-interactive multi-client range query scheme by extending m-ORE. Finally, we show a formal security analysis and implement our scheme. The evaluation result demonstrates that m-ORE outperforms the scheme by Cash et al. in terms of both query and storage cost while achieving the same level of security.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChvojkaJSS21,
+	author = {Peter Chvojka and
+                  Tibor Jager and
+                  Daniel Slamanig and
+                  Christoph Striecks},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Versatile and Sustainable Timed-Release Encryption and Sequential
+                  Time-Lock Puzzles (Extended Abstract)},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {64--85},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_4},
+	doi = {10.1007/978-3-030-88428-4\_4},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChvojkaJSS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Timed-release encryption (TRE) makes it possible to send messages “into the future” such that a pre-determined amount of time needs to pass before a message can be accessed. Malavolta and Thyagarajan (CRYPTO’19) recently introduced an interesting variant of TRE called homomorphic time-lock puzzles (HTLPs), making TRE more versatile and greatly extending its applications. Here one considers multiple independently generated puzzles and the homomorphic evaluation of a circuit over these puzzles. Solving the so obtained puzzle yields the output of a circuit evaluated on the messages locked by the original puzzles. We observe that viewing HTLPs more abstractly gives rise to a simple generic construction of homomorphic TRE (HTRE) that is not necessarily based on sequential squaring, but can be instantiated based on any TLP, e.g., from the LWE assumption (via randomized encodings). This construction has slightly different properties, but provides essentially the same functionality for applications. It makes TRE versatile and can be used beyond HTRE, for instance to construct timed-release functional encryption. Interestingly, it achieves a new “solve one, get many for free” property, which supports that an arbitrary number of independently time-locked (homomorphically evaluated) messages can all be obtained simultaneously after solving only a single puzzle. This puzzle is independent of the number of time-locked messages and thus achieves optimal amortized cost. Moreover, we define and construct sequential TLPs as a particularly useful generalization of TLPs and TRE. Such puzzles can be solved sequentially in a way that solving a puzzle additionally considers the previous solution and the time required to solve the puzzle is determined by the difference in the time parameters. When instantiated from sequential squaring, this allows to realize public “sequential squaring services”, where everyone can time-lock messages, but only one entity needs to perform the computations required to solve puzzles. Thus, this removes the burden of wasting computational resources by every receiver and makes TRE economically and ecologically more sustainable.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FischlinMMP21,
+	author = {Marc Fischlin and
+                  Sven{-}Andr{\'{e}} M{\"{u}}ller and
+                  Jean{-}Pierre M{\"{u}}nch and
+                  Lars Porth},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Multipath {TLS} 1.3},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {86--105},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_5},
+	doi = {10.1007/978-3-030-88428-4\_5},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FischlinMMP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In a multipath key exchange protocol (Costea et al., CCS’18) the parties communicate over multiple connection lines, implemented for example with the multipath extension of TCP. Costea et al.\xa0show that, if one assumes that an adversary cannot attack all communication paths in an active and synchronized way, then one can securely establish a shared key under mild cryptographic assumptions. This holds even if classical authentication methods like certificate-based signatures fail. They show how to slightly modify TLS to achieve this security level. Here we discuss that the multipath security can also be achieved for TLS 1.3 without having to modify the crypto part of protocol at all. To this end one runs a regular handshake over one communication path and then a key update (or resumption) over the other path. We show that this already provides the desired security guarantees. At the same time, if only a single communication path is available, then one obtains the basic security properties of TLS 1.3 as a fall back guarantee.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PhuongSYKCL21,
+	author = {Tran Viet Xuan Phuong and
+                  Willy Susilo and
+                  Guomin Yang and
+                  Jongkil Kim and
+                  Yang{-}Wai Chow and
+                  Dongxi Liu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {SyLPEnIoT: Symmetric Lightweight Predicate Encryption for Data Privacy
+                  Applications in IoT Environments},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {106--126},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_6},
+	doi = {10.1007/978-3-030-88428-4\_6},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PhuongSYKCL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Privacy preserving mechanisms are essential for protecting data in IoT environments. This is particularly challenging as IoT environments often contain heterogeneous resource-constrained devices. One method for protecting privacy is to encrypt data with a pattern or metadata. To prevent information leakage, an evaluation using the pattern must be performed before the data can be retrieved. However, the computational costs associated with typical privacy preserving mechanisms can be costly. This makes such methods ill-suited for resource-constrained devices, as the high energy consumption will quickly drain the battery. This work solves this challenging problem by proposing SyLPEnIoT – Symmetric Lightweight Predicate Encryption for IoT, which is lightweight and efficient compared with existing encryption schemes. Based on the bitwise-XOR operation, we use this basic gate to construct a scheme that transfers encrypted data onto more powerful machines. Furthermore, for resource-constrained IoT devices, the requester can authenticate devices at different levels based on the type of communication. SyLPEnIoT was meticulously designed to run on a gamut of IoT devices, including ultra low-power sensors that are constrained in terms of CPU processing, memory and energy consumption, which are widely deployed in real IoT ecosystems.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/IsobeIM21,
+	author = {Takanori Isobe and
+                  Ryoma Ito and
+                  Kazuhiko Minematsu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Security Analysis of SFrame},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {127--146},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_7},
+	doi = {10.1007/978-3-030-88428-4\_7},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/IsobeIM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As people become more and more privacy conscious, the need for end-to-end encryption (E2EE) has become widely recognized. We study the security of SFrame, an E2EE mechanism recently proposed to IETF for video/audio group communications over the Internet. Although a quite recent project, SFrame is going to be adopted by a number of real-world applications. We inspected the original specification of SFrame. We found a critical issue that will lead to an impersonation (forgery) attack by a malicious group member with a practical complexity. We also investigated the several publicly-available SFrame implementations, and confirmed that this issue is present in these implementations.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiangWYYJW21,
+	author = {Xiaojian Liang and
+                  Jian Weng and
+                  Anjia Yang and
+                  Lisha Yao and
+                  Zike Jiang and
+                  Zhenghao Wu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Attribute-Based Conditional Proxy Re-encryption in the Standard Model
+                  Under {LWE}},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {147--168},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_8},
+	doi = {10.1007/978-3-030-88428-4\_8},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiangWYYJW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attribute-based conditional proxy re-encryption (AB-CPRE) allows delegators to carry out attribute-based control on the delegation of decryption by setting policies and attribute vectors. The fine-grained control of AB-CPRE makes it suitable for a variety of applications, such as cloud storage and distributed file systems. However, all existing AB-CPRE schemes are constructed under classical number-theoretic assumptions, which are vulnerable to quantum cryptoanalysis. Therefore, we propose the first AB-CPRE scheme based on the learning with errors (LWE) assumption. Constructed from fully key-homomorphic encryption (FKHE) and key-switching techniques, our scheme is unidirectional, single-hop, and enables a polynomial-depth boolean circuit as its policy. Furthermore, we split the ciphertext into two independent parts to avoid two-level or multi-level encryption/decryption mechanisms. Taking advantage of it, we then extend our single-hop AB-CPRE into an efficient and concise multi-hop one. No matter how many transformations are performed, the re-encrypted ciphertext is in constant size, and only one encryption/decryption algorithm is needed. Both of our schemes are proved to be selective secure against chosen-plaintext attacks (CPA) in the standard model.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SusiloDDR21,
+	author = {Willy Susilo and
+                  Priyanka Dutta and
+                  Dung Hoang Duong and
+                  Partha Sarathi Roy},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Lattice-Based HRA-secure Attribute-Based Proxy Re-Encryption in Standard
+                  Model},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {169--191},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_9},
+	doi = {10.1007/978-3-030-88428-4\_9},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SusiloDDR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proxy re-encryption (PRE), introduced by Blaze, Bleumer, and Strauss at EUROCRYPT 98, offers delegation of decryption rights, i.e., it securely enables the re-encryption of ciphertexts from one key to another, without relying on trusted parties. PRE allows a semi-trusted third party termed as a “proxy” to securely divert ciphertexts of a user (delegator) to another user (delegatee) without revealing any information about the underlying messages to the proxy. Attribute-based proxy re-encryption (ABPRE) generalizes PRE by allowing such transformation of ciphertext under an access-policy into another ciphertext under a new access policy. Such a primitive facilitates fine-grained secure sharing of encrypted data in the cloud. \xa0\xa0\xa0\xa0In order to capture the application goals of PRE, the security model of (Attribute-based) PRE evolves over the decades. There are two well-established notions of security for (Attribute-based) proxy re-encryption schemes: security under chosen-plaintext attacks (CPA) and security under chosen-ciphertext attacks (CCA). Both definitions aim to address the security that the delegator enjoys against both proxy and delegatee. Recently, at PKC 19, Cohen points out that CPA security guarantees much less security against delegatee than was previously understood. In particular, CPA security does not prevent delegatee from learning delegator’s secret key after receiving a single honestly re-encrypted ciphertext. To circumvent this issue, Cohen proposes security against honest re-encryption attacks (HRA) to strengthen CPA security that better captures the goals of PRE, and shows that two existing proxy re-encryption schemes are HRA-secure, one of them is quantum-safe, which is constructed from fully homomorphic encryption scheme (FHE). \xa0\xa0\xa0\xa0In this work, we advance the studies on HRA-secure PRE for the ABE setting. We first formalize the definition of HRA-secure Key-Policy ABPRE (\\(\\mathsf {KP\\hbox {-}ABPRE}\\)) and propose a construction, which is quantum-safe and secure in the standard model based on the hardness of the \\(\\mathsf {LWE}\\). As an important consequence, we have the first quantum-safe HRA-secure Identity-based PRE. Moreover, the underlying PRE of the proposed \\(\\mathsf {KP\\hbox {-}ABPRE}\\) is the first quantum-safe HRA-secure PRE without FHE.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChengM21,
+	author = {Leixiao Cheng and
+                  Fei Meng},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Server-Aided Revocable Attribute-Based Encryption Revised: Multi-User
+                  Setting and Fully Secure},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {192--212},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_10},
+	doi = {10.1007/978-3-030-88428-4\_10},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChengM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attribute-based encryption (ABE) is a promising cryptographic primitive achieving fine-grained access control on encrypted data. However, efficient user revocation is always essential to keep the system dynamic and protect data privacy. Cui et al. (ESORICS 2016) proposed the first server-aided revocable attribute-based encryption (SR-ABE) scheme, in which an untrusted server manages all the long-term transform keys and update keys generated by key generation center (KGC) in order to achieve efficient user revocation. So, there’s no need for any user to communicate with KGC to update his/her decryption key regularly. In addition, the most part of computational overhead of decryption is outsourced to the server and user keeps a small size of private key to decrypt the final ciphertext. Then, Qin et al.’s (CANS 2017) extended Cui et al.s’ work to be decryption key exposure resistant (DKER). Unfortunately, current SR-ABE schemes could only be provably secure in one-user setting, which means there’s only one “target user” \\(id^*\\) with an attribute set \\(S_{id^*}\\) satisfying the access structure \\((\\mathbb {M}^*, \\rho )\\) in the challenge ciphertext, i.e., \\(S_{id^*}\\vDash (\\mathbb {M}^*, \\rho )\\). However, a more reasonable security model, i.e., multi-user setting, requires that any user id in the system can be with an attribute set \\(S_{id}\\vDash (\\mathbb {M}^*, \\rho )\\), and the adversary is allowed to query on any user’s private key \\(SK_{id}\\) and his/her long-term transform key \\(PK_{id,S_{id}}\\) as long as his/her identity id is revoked at or before the challenge time \\(t^*\\). How to construct a SR-ABE secure in multi-user setting is still an open problem. In this paper, we propose the first SR-ABE scheme provably secure in multi-user setting. In addition, our SR-ABE is fully secure and decryption key exposure resistant. Our scheme is constructed based on dual system encryption methodology and novelly combines a variant of Lewko et al.’s work in EUROCRYPT 2010 and Lewko et al.’s work in TCC 2010. As a result, we solve the remaining open problem.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AvoineCL21,
+	author = {Gildas Avoine and
+                  Xavier Carpent and
+                  Diane Leblanc{-}Albarel},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Precomputation for Rainbow Tables has Never Been so Fast},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {215--234},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_11},
+	doi = {10.1007/978-3-030-88428-4\_11},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AvoineCL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cryptanalytic time-memory trade-offs (TMTOs) are techniques commonly used in computer security e.g., to crack passwords. However, TMTOs usually encounter in practice a bottleneck that is the time needed to perform the precomputation phase (preceding to the attack). We introduce in this paper a technique, called distributed filtration-computation, that significantly reduces the precomputation time without any negative impact the online phase. Experiments performed on large problems with a 128-core computer perfectly match the theoretical expectations. We construct a rainbow table for a space \\(N=2^{42}\\) in approximately 8\xa0h instead of 50\xa0h for the usual way to generate a table. We also show that the efficiency of our technique is very close from the theoretical time lower bound.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeberNSSAMW21,
+	author = {Alexandra Weber and
+                  Oleg Nikiforov and
+                  Alexander Sauer and
+                  Johannes Schickel and
+                  Gernot Alber and
+                  Heiko Mantel and
+                  Thomas Walther},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Cache-Side-Channel Quantification and Mitigation for Quantum Cryptography},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {235--256},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_12},
+	doi = {10.1007/978-3-030-88428-4\_12},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WeberNSSAMW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Quantum cryptography allows one to transmit secret information securely, based on the laws of quantum physics. It consists of (1) the transmission of physical particles like photons and (2) the software-based processing of measurements during the transmission. Quantum key distribution (QKD), e.g., transmits material for establishing a shared crypto key in this way. The key material is encoded into the particles in a way that leakage can be detected and mitigated via so-called privacy amplification. In this article, we investigate the role of the software implementation for the security of quantum cryptography. More concretely, we quantify the security of QKD software against cache side channels and show how to integrate cache-side-channel mitigation with the privacy amplification in QKD. We evaluate our approach at one variant of a QKD software that is in practical use. During our evaluation, we detect a cache-side-channel vulnerability, for which we develop a parametric mitigation that combines privacy amplification and program rewriting. We propose a cost model for the combined mitigation, which allows one to optimize the interaction between privacy amplification and program rewriting for the mitigation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhangZS21,
+	author = {Zimin Zhang and
+                  Wenying Zhang and
+                  Hongfang Shi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Genetic Algorithm Assisted State-Recovery Attack on Round-Reduced
+                  Xoodyak},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {257--274},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_13},
+	doi = {10.1007/978-3-030-88428-4\_13},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhangZS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Genetic algorithm (GA) has led to significant improvements in many challenging tasks, including combinatorial optimization, signal processing, and artificial life. It shows enormous potential for cryptanalysis. This paper designed a heuristic algorithm based on GA for the known-plaintext attack on round-reduced Xoodyak, a finalist of the NIST lightweight cryptography project, under the nonce-respecting setting. To accomplish this, we firstly remodel Xoodoo, the underlying permutation of Xoodyak, portraying it as a function whose input and output are continuous variables defined in [0,\xa01], representing the likelihood that each bit is equal to 1 and describing the goal of cryptanalysis as an objective function optimized with GA secondly. Consequently, we can abstract the potential information of the unknown state of Xoodyak from the results given by GA. Compared with traditional methods, ours requires less knowledge about complex cryptanalysis as GA can work well with lower complexity, both in time complexity and data complexity, and can be carried out under more restricted conditions.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Meadows21,
+	author = {Catherine Meadows},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Moving the Bar on Computationally Sound Exclusive-Or},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {275--295},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_14},
+	doi = {10.1007/978-3-030-88428-4\_14},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/Meadows21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Soundness of symbolic security with respect to computational security was originally investigated from the point of cryptographic protocol design. However, there has been an emerging interest in applying it to the automatic generation and verification of cryptographic algorithms. This creates a challenge, since it requires reasoning about low-level primitives like exclusive-or whose actual behavior may be inconsistent with any possible symbolic behavior. In this paper we consider symbolic and computational soundness of cryptographic algorithms defined in terms of block ciphers and exclusive-or. We present a class of algorithms in which security is defined in terms of IND$-CPA-security, that is, security against an adaptive chosen plaintext adversary’s distinguishing the output of the cryptosystem from a random string. We develop conditions for symbolic security and show that they imply computational security. As a result of this, we are able to identify a class of cryptosystems to which results such as Unruh’s [25] on the impossibility of computationally sound exclusive-or do not apply, in the sense that symbolic security implies computational security against an adaptive adversary. We also show how our results apply to a practical class of cryptosystems: cryptographic modes of operation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeiTSCS21,
+	author = {Jianghong Wei and
+                  Guohua Tian and
+                  Jun Shen and
+                  Xiaofeng Chen and
+                  Willy Susilo},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Optimal Verifiable Data Streaming Protocol with Data Auditing},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {296--312},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_15},
+	doi = {10.1007/978-3-030-88428-4\_15},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WeiTSCS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As smart devices connected to networks like Internet of Things and 5G become popular, the volume of data generated over time (i.e., stream data) by them is growing rapidly. As a consequence, for these resources-limited client-side devices, it becomes very challenging to store the continuously generated stream data locally. Although the cloud storage provides a perfect solution to this problem, the data owner still needs to ensure the integrity of the outsourced stream data, since various applications built upon stream data are sensitive of both its context and order. To this end, the notion of verifiable data streaming (VDS) was proposed to effectively append and update stream data outsourced to an untrusted cloud server, and has received significant attention. However, previous VDS constructions adopt Merkle hash tree to capture the integrity of outsourced data, and thus inevitably have logarithmic costs. In this paper, we further optimize the construction of VDS in terms of communication and computation costs. Specifically, we use the digital signature scheme to ensure the integrity of outsourced stream data, and employ a recently proposed RSA accumulator (v.s. Merkle hash tree) to invalidate the corresponding signature after each data update operation. Benefited from this approach, the resulted VDS construction achieves optimal, i.e., having constant costs. Furthermore, by specifying the underly signature scheme with the BLS short signature and carefully combining it with the RSA accumulator, we finally obtain an optimal verifiable data streaming protocol with data auditing. We prove the security of the proposed VDS construction in the random oracle model.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/QinCY21,
+	author = {Xianrui Qin and
+                  Cailing Cai and
+                  Tsz Hon Yuen},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {One-More Unforgeability of Blind {ECDSA}},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {313--331},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_16},
+	doi = {10.1007/978-3-030-88428-4\_16},
+	timestamp = {Tue, 07 May 2024 20:10:32 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/QinCY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we give the first formal security analysis on the one-more unforgeability of blind ECDSA. We start with giving a general attack on blind ECDSA, which is similar to the ROS attack on the blind Schnorr signature. We formulate the ECDSA-ROS problem to capture this attack. Next, we give a generic construction of blind ECDSA based on an additive homomorphic encryption and a corresponding zero-knowledge proof. Our concrete instantiation is about 40 times more bandwidth efficient than the blind ECDSA in AsiaCCS 2019. After that, we give the first formal proof of one-more unforgeability for blind ECDSA, under a new model called algebraic bijective random oracle. The security of our generic blind ECDSA relies on the hardness of a discrete logarithm-based interactive assumption and an assumption of the underlying elliptic curve. Finally, we analyze the hardness of the ECDSA-ROS problem in the algebraic bijective random oracle model.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CuiZCLY21,
+	author = {Hongrui Cui and
+                  Kaiyi Zhang and
+                  Yu Chen and
+                  Zhen Liu and
+                  Yu Yu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {MPC-in-Multi-Heads: {A} Multi-Prover Zero-Knowledge Proof System -
+                  (or: How to Jointly Prove Any {NP} Statements in {ZK)}},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {332--351},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_17},
+	doi = {10.1007/978-3-030-88428-4\_17},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/CuiZCLY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of distributed computing, the traditional zero-knowledge proofs (ZKP) are becoming less adequate for privacy-preserving applications in the distributed setting. Take “double financing” as an example: multiple financial providers jointly prove that the sum of their committed values is no more than a given threshold, which generalizes the “range proof” to the multiple-prover setting. Therefore, traditional zero-knowledge proof does not seemingly lend itself to this problem on its own. \xa0\xa0\xa0We identify and fill this gap by formalizing the ZKP system in the multi-prover setting (MPZK) that proves arbitrary NP statements with distributed witnesses. Our MPZK system offers zero-knowledge as long as one prover is honest (while others can collude arbitrarily), and thus is applicable to “double financing”, “credit checking”, and various other multi-prover applications. We then propose a generic black-box construction from multiparty computation, referred to as “MPC-in-Multi-Heads”, and prove its security under the simulation-based paradigm. We also offer a proof-of-concept implementation and present its experimental results.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Catrina21,
+	author = {Octavian Catrina},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Complexity and Performance of Secure Floating-Point Polynomial Evaluation
+                  Protocols},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {352--369},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_18},
+	doi = {10.1007/978-3-030-88428-4\_18},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/Catrina21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure computation provides cryptographic protocols for collaborative applications with private inputs and outputs. In this paper, we examine a collection of protocols for secure evaluation of polynomials using secure floating-point arithmetic. The main goal is to provide a comparative analysis of their construction, complexity, performance, and tradeoffs in different application settings. The analysis demonstrates the performance gains that can be obtained by evaluating the polynomials using optimized secure multi-operand arithmetic instead of relying on generic constructions based on two-operand arithmetic. It also examines the relations between performance and complexity metrics for different execution environments (LAN, Internet), floating-point precision, and problem sizes. These protocols are part of a framework for secure multiparty computation with fixed-point and floating-point numbers based on Shamir secret sharing and related techniques.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SteineggerSWNM21,
+	author = {Stefan Steinegger and
+                  David Schrammel and
+                  Samuel Weiser and
+                  Pascal Nasahl and
+                  Stefan Mangard},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {SERVAS! Secure Enclaves via {RISC-V} Authenticryption Shield},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {370--391},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_19},
+	doi = {10.1007/978-3-030-88428-4\_19},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SteineggerSWNM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Isolation is a long-standing security challenge. Privilege rings and virtual memory are increasingly augmented with capabilities, protection keys, and powerful enclaves. Moreover, we are facing an increased need for physical protection, e.g., via transparent memory encryption, resulting in a complex interplay of various security mechanisms. In this work, we tackle the isolation challenge with a new extensible isolation primitive called authenticryption shield that unifies various isolation policies. By using authenticated memory encryption, we streamline the security reasoning towards cryptographic guarantees. We showcase the versatility of our approach by designing and prototyping SERVAS – a novel enclave architecture for RISC-V. SERVAS facilitates a new efficient and secure enclave memory sharing mechanism. While the memory encryption constitutes the main overhead, invoking SERVAS enclave requires only 3.5x of a simple syscall instead of 71x for Intel SGX.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhangBLCCK21,
+	author = {Yanjun Zhang and
+                  Guangdong Bai and
+                  Xue Li and
+                  Caitlin Curtis and
+                  Chen Chen and
+                  Ryan K. L. Ko},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Privacy-Preserving Gradient Descent for Distributed Genome-Wide Analysis},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {395--416},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_20},
+	doi = {10.1007/978-3-030-88428-4\_20},
+	timestamp = {Sun, 12 Nov 2023 02:08:49 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhangBLCCK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Genome-wide analysis, which provides perceptive insights into complex diseases, plays an important role in biomedical data analytics. It usually involves large-scale human genomic data, and thus may disclose sensitive information about individuals. While existing studies have been conducted against data exfiltration by external malicious actors, this work focuses on the emerging identity tracing attack that occurs when a dishonest insider attempts to re-identify obtained DNA samples. We propose a framework named \\(\\upsilon \\textsc {Frag}\\) to facilitate privacy-preserving data sharing and computation in genome-wide analysis. \\(\\upsilon \\textsc {Frag}\\) mitigates privacy risks by using vertical fragmentations to disrupt the genetic architecture on which the adversary relies for re-identification. The fragmentation significantly reduces the overall amount of information the adversary can obtain. Notably, it introduces no sacrifice to the capability of genome-wide analysis—we prove that it preserves the correctness of gradient descent, the most popular optimization approach for training machine learning models. We also explore the efficiency performance of \\(\\upsilon \\textsc {Frag}\\) through experiments on a large-scale, real-world dataset. Our experiments demonstrate that \\(\\upsilon \\textsc {Frag}\\) outperforms not only secure multiparty computation (MPC) and homomorphic encryption (HE) protocols with a speedup of more than 221x for training neural networks, but also noise-based differential privacy (DP) solutions and traditional non-private algorithms in most settings.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PardoRPW21,
+	author = {Ra{\'{u}}l Pardo and
+                  Willard Rafnsson and
+                  Christian W. Probst and
+                  Andrzej Wasowski},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Privug: Using Probabilistic Programming for Quantifying Leakage in
+                  Privacy Risk Analysis},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {417--438},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_21},
+	doi = {10.1007/978-3-030-88428-4\_21},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/PardoRPW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Disclosure of data analytics results has important scientific and commercial justifications. However, no data shall be disclosed without a diligent investigation of risks for privacy of subjects. Privug is a tool-supported method to explore information leakage properties of data analytics and anonymization programs. In Privug, we reinterpret a program probabilistically, using off-the-shelf tools for Bayesian inference to perform information-theoretic analysis of the information flow. For privacy researchers, Privug provides a fast, lightweight way to experiment with privacy protection measures and mechanisms. We show that Privug is accurate, scalable, and applicable to a range of leakage analysis scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ReijsbergenYMDZ21,
+	author = {Dani{\"{e}}l Reijsbergen and
+                  Zheng Yang and
+                  Aung Maw and
+                  Tien Tuan Anh Dinh and
+                  Jianying Zhou},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Transparent Electricity Pricing with Privacy},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {439--460},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_22},
+	doi = {10.1007/978-3-030-88428-4\_22},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ReijsbergenYMDZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart grids leverage data from smart meters to improve operations management and to achieve cost reductions. The fine-grained meter data also enable pricing schemes that simultaneously benefit electricity retailers and users. Our goal is to design a practical dynamic pricing protocol for smart grids in which the rate charged by a retailer depends on the total demand among its users. Realizing this goal is challenging because neither the retailer nor the users are trusted. The first challenge is to design a pricing scheme that incentivizes consumption behavior that leads to lower costs for both the users and the retailer. The second challenge is to prevent the retailer from tampering with the data, for example, by claiming that the total consumption is much higher than its real value. The third challenge is data privacy, that is, how to hide the meter data from adversarial users. To address these challenges, we propose a scheme in which peak rates are charged if either the total or the individual consumptions exceed some thresholds. We formally define a privacy-preserving transparent pricing scheme (PPTP) that allows honest users to detect tampering at the retailer while ensuring data privacy. We present two instantiations of PPTP, and prove their security. Both protocols use secure commitments and zero-knowledge proofs. We implement and evaluate the protocols on server and edge hardware, demonstrating that PPTP has practical performance at scale.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DeuberS21,
+	author = {Dominic Deuber and
+                  Dominique Schr{\"{o}}der},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {CoinJoin in the Wild - An Empirical Analysis in Dash},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {461--480},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_23},
+	doi = {10.1007/978-3-030-88428-4\_23},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DeuberS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {CoinJoin is the predominant means to enhance privacy in non-private cryptocurrencies, such as Bitcoin. The basic idea of CoinJoin is to create transactions that combine equal-valued coins of multiple users. This mixing of coins aims to prevent linkage of the users’ transactional in- and outputs. The cryptocurrency Dash employs a built-in CoinJoin service and, therefore, is ideal for empirically studying CoinJoin. This paper presents the first empirical analysis of Dash, which reveals that over 40% of all private transactions can be de-anonymized depending on underlying assumptions. The main issue of these attacks is the coin-aggregation problem, i.e. the need to combine outputs of several CoinJoin transactions. The coin aggregation problem is not specific to Dash and affects other cryptocurrencies as empirical evidence in Bitcoin suggests. We show that the logical solution to the problem, namely CoinJoin transactions with non-fixed arbitrary values, suffers from other privacy weaknesses. We propose a novel mixing algorithm to mitigate the need for coin aggregation without introducing additional privacy vulnerabilities. In contrast to prior mixing algorithms, our approach removes the need for fixed values by dynamically creating equal-valued CoinJoin transactions. The mixing algorithm is not specific to Dash, and integration into other cryptocurrencies, especially into Bitcoin, is possible.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ScafuroZ21,
+	author = {Alessandra Scafuro and
+                  Bihan Zhang},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {One-Time Traceable Ring Signatures},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {481--500},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_24},
+	doi = {10.1007/978-3-030-88428-4\_24},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ScafuroZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A ring signature allows a party to sign messages anonymously on behalf of a group, which is called ring. Traceable ring signatures are a variant of ring signatures that limits the anonymity guarantees, enforcing that a member can sign anonymously at most one message per tag. Namely, if a party signs two different messages for the same tag, it will be de-anomymized. This property is very useful in decentralized platforms to allow members to anonymously endorse statements in a controlled manner. In this work we introduce one-time traceable ring signatures, where a member can sign anonymously only one message. This natural variant suffices in many applications for which traceable ring signatures are useful, and enables us to design a scheme that only requires a few hash evaluations and outperforms existing (non one-time) schemes. Our one-time traceable ring signature scheme presents many advantages: it is fast, with a signing time of less than 1\xa0s for a ring of \\(2^{10}\\) signers (and much less for smaller rings); it is post-quantum resistant, as it only requires hash evaluations; it is extremely simple, as it requires only a black-box access to a generic hash function (modeled as a random oracle) and no other cryptographic operation is involved. From a theoretical standpoint our scheme is also the first anonymous signature scheme based on a black-box access to a symmetric-key primitive. All existing anonymous signatures are either based on specific hardness assumptions (e.g., LWE, SIS, etc.) or use the underlying symmetric-key primitive in a non-black-box way, i.e., they leverage the circuit representation of the primitive.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KozielKK21,
+	author = {Patryk Koziel and
+                  Przemyslaw Kubiak and
+                  Miroslaw Kutylowski},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{PACE} with Mutual Authentication - Towards an Upgraded eID in Europe},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {501--519},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_25},
+	doi = {10.1007/978-3-030-88428-4\_25},
+	timestamp = {Mon, 23 Oct 2023 15:28:12 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KozielKK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper we present modifications to the protocols PACE (Password Authenticated Connection Establishment) and PACE CAM (PACE with Chip Authentication Mapping) from International Civil Aviation Organization (ICAO) specification. We show that with slight changes it is possible to convert PACE (which is limited to password authentication) and PACE CAM (where only the chip is strongly authenticated) to a full-fledged authentication where apart from password authentication both the terminal and the chip are authenticated in a strong cryptographic way. The new protocols provide better privacy protection and resilience against key leakage than the previous protocols and are implementation friendly. The idea is not to reveal an exponent (as in case of PACE CAM) – instead, we reuse the Diffie-Hellman key exchange for static Diffie-Hellman authentication in the PACE protected channel. The proposed fine tuning of the schemes adopted by ICAO for biometric passports may contribute to the future European eID practice, since the ICAO standards have been chosen by the EU as an obligatory basic platform for official personal identity documents issued since August 2021 in all EU countries.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HolohanB21,
+	author = {Naoise Holohan and
+                  Stefano Braghin},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Secure Random Sampling in Differential Privacy},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {523--542},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_26},
+	doi = {10.1007/978-3-030-88428-4\_26},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HolohanB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Differential privacy is among the most prominent techniques for preserving privacy of sensitive data, oweing to its robust mathematical guarantees and general applicability to a vast array of computations on data, including statistical analysis and machine learning. Previous work demonstrated that concrete implementations of differential privacy mechanisms are vulnerable to statistical attacks. This vulnerability is caused by the approximation of real values to floating point numbers. This paper presents a practical solution to the finite-precision floating point vulnerability, where the inverse transform sampling of the Laplace distribution can itself be inverted, thus enabling an attack where the original value can be retrieved with non-negligible advantage. The proposed solution has the advantages of being (i) mathematically sound, (ii) generalisable to any infinitely divisible probability distribution, and (iii) of simple implementation in modern architectures. Finally, the solution has been designed to make side channel attack infeasible, because of inherently exponential, in the size of the domain, brute force attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GondaraCW21,
+	author = {Lovedeep Gondara and
+                  Ricardo Silva Carvalho and
+                  Ke Wang},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Training Differentially Private Neural Networks with Lottery Tickets},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {543--562},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_27},
+	doi = {10.1007/978-3-030-88428-4\_27},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GondaraCW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose the differentially private lottery ticket hypothesis (DPLTH). An end-to-end differentially private training paradigm based on the lottery ticket hypothesis, designed specifically to improve the privacy-utility trade-off in differentially private neural networks. DPLTH, using high-quality winners privately selected via our custom score function outperforms current methods by a margin greater than 20%. We further show that DPLTH converges faster, allowing for early stopping with reduced privacy budget consumption and that a single publicly available dataset for ticket generation is enough for enhancing the utility on multiple datasets of varying properties and from varying domains. Our extensive evaluation on six public datasets provides evidence to our claims.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FernandesKM21,
+	author = {Natasha Fernandes and
+                  Yusuke Kawamoto and
+                  Takao Murakami},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Locality Sensitive Hashing with Extended Differential Privacy},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {563--583},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_28},
+	doi = {10.1007/978-3-030-88428-4\_28},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FernandesKM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Extended differential privacy, a generalization of standard differential privacy (DP) using a general metric, has been widely studied to provide rigorous privacy guarantees while keeping high utility. However, existing works on extended DP are limited to few metrics, such as the Euclidean metric. Consequently, they have only a small number of applications, such as location-based services and document processing. In this paper, we propose a couple of mechanisms providing extended DP with a different metric: angular distance (or cosine distance). Our mechanisms are based on locality sensitive hashing (LSH), which can be applied to the angular distance and work well for personal data in a high-dimensional space. We theoretically analyze the privacy properties of our mechanisms, and prove extended DP for input data by taking into account that LSH preserves the original metric only approximately. We apply our mechanisms to friend matching based on high-dimensional personal data with angular distance in the local model, and evaluate our mechanisms using two real datasets. We show that LDP requires a very large privacy budget and that RAPPOR does not work in this application. Then we show that our mechanisms enable friend matching with high utility and rigorous privacy guarantees based on extended DP.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DevigneDF21,
+	author = {Julien Devigne and
+                  C{\'{e}}line Duguey and
+                  Pierre{-}Alain Fouque},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{MLS} Group Messaging: How Zero-Knowledge Can Secure Updates},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {587--607},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_29},
+	doi = {10.1007/978-3-030-88428-4\_29},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DevigneDF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Messaging Layer Security (MLS) protocol currently developed by the Internet Engineering Task Force (IETF) aims at providing a secure group messaging solution. MLS aims for end-to-end security, including Forward Secrecy and Post Compromise Secrecy, properties well studied for one-to-one protocols. It proposes a tree-based regular asynchronous update of the group secrets, where a single user can alone perform a complete update. A main drawback is that a malicious user can create a denial of service attack by sending invalid update information. In this work, we propose a solution to prevent this kind of attacks, giving a checkpoint role to the server that transmits the messages. In our solution, the user sends to the server a proof that the update has been computed correctly, without revealing any information about this update. We use a Zero-Knowledge (ZK) protocol together with verifiable encryption as building blocks. As a main contribution, we provide two different ZK protocols to prove knowledge of the input of a pseudo random function implemented as a circuit, given an algebraic commitment of the output and the input.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BootleLNS21,
+	author = {Jonathan Bootle and
+                  Vadim Lyubashevsky and
+                  Ngoc Khanh Nguyen and
+                  Gregor Seiler},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {More Efficient Amortization of Exact Zero-Knowledge Proofs for {LWE}},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {608--627},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_30},
+	doi = {10.1007/978-3-030-88428-4\_30},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BootleLNS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose a practical zero-knowledge proof system for proving knowledge of short solutions \\(\\mathbf {s},\\mathbf {e}\\) to linear relations \\(\\mathbf {A}\\mathbf {s}+\\mathbf {e}=\\mathbf {u}\\pmod q\\) which gives the most efficient solution for two naturally-occurring classes of problems. The first is when \\(\\mathbf {A}\\) is very “tall”, which corresponds to a large number of LWE instances that use the same secret \\(\\mathbf {s}\\). In this case, we show that the proof size is independent of the height of the matrix (and thus the length of the error vector \\(\\mathbf {e}\\)) and rather only linearly depends on the length of \\(\\mathbf {s}\\). The second case is when \\(\\mathbf {A}\\) is of the form \\(\\mathbf {I} \\otimes \\mathbf {A}'\\), which corresponds to proving many LWE instances (with different secrets) that use the same samples \\(\\mathbf {A}'\\). The length of this second proof is square root in the length of \\(\\mathbf {s}\\), which corresponds to a square root of the length of all the secrets. Our constructions combine recent advances in “purely” lattice-based zero-knowledge proofs with the Reed-Solomon proximity testing ideas present in some generic zero-knowledge proof systems – with the main difference that the latter are applied directly to lattice instances without going through intermediate problems.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhouCLZR21,
+	author = {Zhelei Zhou and
+                  Xinle Cao and
+                  Jian Liu and
+                  Bingsheng Zhang and
+                  Kui Ren},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Zero Knowledge Contingent Payments for Trained Neural Networks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {628--648},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_31},
+	doi = {10.1007/978-3-030-88428-4\_31},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhouCLZR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, neural networks have been widely used in many machine learning tasks. In practice, one might not have enough expertise to fine-tune a neural network model; therefore, it becomes increasingly popular to outsource the model training process to a machine learning expert. This activity brings out the needs of fair model exchange: if the seller sends the model first, the buyer might refuse to pay; if the buyer pays first, the seller might refuse to send the model or send an inferior model. In this work, we aim to address this problem so that neither the buyer nor the seller can deceive the other. We start from Zero Knowledge Contingent Payment (ZKCP), which is used for fair exchange of digital goods and payment over blockchain, and extend it to Zero Knowledge Contingent Model Payment (ZKCMP). We then instantiate our ZKCMP with two state-of-the-art NIZK proofs: zk-SNARKs and Libra. We also propose a random sampling technique to improve the efficiency of zk-SNARKs. We extensively conduct experiments to demonstrate the practicality of our proposal.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LianPWZ21,
+	author = {Huanhuan Lian and
+                  Tianyu Pan and
+                  Huige Wang and
+                  Yunlei Zhao},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Identity-Based Identity-Concealed Authenticated Key Exchange},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {651--675},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_32},
+	doi = {10.1007/978-3-030-88428-4\_32},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LianPWZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Identity-based authenticated key exchange (ID-AKE) allows two parties (whose identities are just their public keys) to agree on a shared session key over open channels. At ESORICS 2019, Tomida et al. proposed a highly efficient ID-AKE protocol, referred to as the TFNS19-protocol, under the motivation of providing authentication and secure communication for huge number of low-power IoT devices. The TFNS19-protocol currently stands for the most efficient ID-AKE based on bilinear pairings, where each user remarkably performs only a single pairing operation. But it does not consider users’ identity privacy, and the security is based on relatively non-standard assumptions. In this work, we formulate and design identity-based identity-concealed AKE (IB-CAKE) protocols. Here, identity concealment means that the session transcript does not leak users’ identity information. We present a simple and highly practical IB-CAKE protocol, which is computationally more efficient than the remarkable TFNS19-protocol in\xa0total. We present a new security model for IB-CAKE, and show it is stronger than the ID-eCK model used for the TFNS19-protocol. The security of our IB-CAKE protocol is proved under relatively standard assumptions in the random oracle model, assuming the security of the underlying authenticated encryption and the gap bilinear Diffie-Hellman (Gap-BDH) problem. Finally, we provide the implementation results for the proposed IB-CAKE scheme, and present performance benchmark.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RamacherSW21,
+	author = {Sebastian Ramacher and
+                  Daniel Slamanig and
+                  Andreas Weninger},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Privacy-Preserving Authenticated Key Exchange: Stronger Privacy and
+                  Generic Constructions},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {676--696},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_33},
+	doi = {10.1007/978-3-030-88428-4\_33},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RamacherSW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Authenticated key-exchange (AKE) protocols are an important class of protocols that allow two parties to establish a common session key over an insecure channel such as the Internet to then protect their communication. They are widely deployed in security protocols such as TLS, IPsec and SSH. Besides the confidentiality of the communicated data, an orthogonal but increasingly important goal is the protection of the confidentiality of the identities of the involved parties (aka privacy). For instance, the Encrypted Client Hello (ECH) mechanism for TLS 1.3 has been designed for exactly this reason. Recently, a series of works (Zhao CCS’16, Arfaoui et al. PoPETS’19, Schäge et al. PKC’20) studied privacy guarantees of (existing) AKE protocols by integrating privacy into AKE models. We observe that these so called privacy-preserving AKE (PPAKE) models are typically strongly tailored to the specific setting, i.e., concrete protocols they investigate. Moreover, the privacy guarantees in these models might be too weak (or even are non-existent) when facing active adversaries. In this work we set the goal to provide a single PPAKE model that captures privacy guarantees against different types of attacks, thereby covering previously proposed notions as well as so far not achieved privacy guarantees. In doing so, we obtain different “degrees” of privacy within a single model, which, in its strongest forms also capture privacy guarantees against powerful active adversaries. We then proceed to investigate (generic) constructions of AKE protocols that provide strong privacy guarantees in our PPAKE model. This includes classical Diffie-Hellman type protocols as well as protocols based on generic building blocks, thus covering post-quantum instantiations.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuZZLZR21,
+	author = {Yibiao Lu and
+                  Bingsheng Zhang and
+                  Hong{-}Sheng Zhou and
+                  Weiran Liu and
+                  Lei Zhang and
+                  Kui Ren},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Correlated Randomness Teleportation via Semi-trusted Hardware - Enabling
+                  Silent Multi-party Computation},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {699--720},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_34},
+	doi = {10.1007/978-3-030-88428-4\_34},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LuZZLZR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the advancement of the trusted execution environment (TEE) technologies, hardware-supported secure computing becomes increasingly popular due to its efficiency. During the protocol execution, typically, the players need to contact a third-party server for remote attestation, ensuring the validity of the involved trusted hardware component, such as Intel SGX, as well as the integrity of the computation result. When the hardware manufacturer is not fully trusted, sensitive information may be leaked to the third-party server through backdoors, steganography, and kleptography, etc. In this work, we introduce a new security notion called semi-trusted hardware model, where the adversary is allowed to passively or maliciously corrupt the hardware. Therefore, she can learn the input of the hardware component and might also tamper its output. We then show how to utilize such semi-trusted hardwares for correlated randomness teleportation. When the semi-trusted hardware is instantiated by Intel SGX, to generate 10k random OT’s, our protocol is 24X and 450X faster than the EMP-IKNP-ROT in the LAN and WAN setting, respectively. When SGX is used to teleport Garbled circuits, the resulting two-party computation protocol is 5.3-5.7X and 43-47X faster than the EMP-SH2PC in the LAN and WAN setting, respectively, for the AES-128, SHA-256, and SHA-512 evaluation. We also show how to achieve malicious security with little overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AbadiMZ21,
+	author = {Aydin Abadi and
+                  Steven J. Murdoch and
+                  Thomas Zacharias},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Polynomial Representation Is Tricky: Maliciously Secure Private Set
+                  Intersection Revisited},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12973},
+	pages = {721--742},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88428-4\_35},
+	doi = {10.1007/978-3-030-88428-4\_35},
+	timestamp = {Sun, 12 Nov 2023 02:08:49 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AbadiMZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Private Set Intersection protocols (PSIs) allow parties to compute the intersection of their private sets, such that nothing about the sets’ elements beyond the intersection is revealed. PSIs have a variety of applications, primarily in efficiently supporting data sharing in a privacy-preserving manner. At Eurocrypt 2019, Ghosh and Nilges proposed three efficient PSIs based on the polynomial representation of sets and proved their security against active adversaries. In this work, we show that these three PSIs are susceptible to several serious attacks. The attacks let an adversary (1) learn the correct intersection while making its victim believe that the intersection is empty, (2) learn a certain element of its victim’s set beyond the intersection, and (3) delete multiple elements of its victim’s input set. We explain why the proofs did not identify these attacks and propose a set of mitigations.}
+}

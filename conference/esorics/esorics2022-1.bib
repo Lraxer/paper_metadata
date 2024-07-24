@@ -1,0 +1,943 @@
+@inproceedings{DBLP:conf/esorics/MengC22,
+	author = {Long Meng and
+                  Liqun Chen},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {A Blockchain-Based Long-Term Time-Stamping Scheme},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {3--24},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_1},
+	doi = {10.1007/978-3-031-17140-6\_1},
+	timestamp = {Mon, 22 Jul 2024 17:02:44 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MengC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traditional time-stamping services confirm the existence time of data items by using a time-stamping authority. To eliminate trust requirements on this authority, decentralized Blockchain-based Time-Stamping (BTS) services have been proposed. In these services, a hash digest of users’ data is written into a blockchain transaction. The security of such services relies on the security of hash functions used to hash the data, and of the cryptographic algorithms used to build the blockchain. It is well-known that any single cryptographic algorithm has a limited lifespan due to the increasing computational power of attackers. This directly impacts the security of the BTS services from a long-term perspective. However, the topic of long-term security has not been discussed in the existing BTS proposals. In this paper, we propose the first formal definition and security model of a Blockchain-based Long-Term Time-Stamping (BLTTS) scheme. To develop a BLTTS scheme, we first consider an intuitive solution that directly combines the BTS services and a long-term secure blockchain, but we prove that this solution is vulnerable to attacks in the long term. With this insight, we propose the first BLTTS scheme supporting cryptographic algorithm renewal. We show that the security of our scheme over the long term is not limited by the lifespan of any underlying cryptographic algorithm, and we successfully implement the proposed scheme under existing BTS services.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BuserDEKKLPZ22,
+	author = {Maxime Buser and
+                  Rafael Dowsley and
+                  Muhammed F. Esgin and
+                  Shabnam Kasra Kermanshahi and
+                  Veronika Kuchta and
+                  Joseph K. Liu and
+                  Rapha{\"{e}}l C.{-}W. Phan and
+                  Zhenfei Zhang},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Post-Quantum Verifiable Random Function from Symmetric Primitives
+                  in PoS Blockchain},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {25--45},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_2},
+	doi = {10.1007/978-3-031-17140-6\_2},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BuserDEKKLPZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Verifiable Random Functions (VRFs) play a key role in Proof-of-Stake blockchains such as Algorand to achieve highly scalable consensus, but currently deployed VRFs lack post-quantum security, which is crucial for future-readiness of blockchain systems. This work presents the first quantum-safe VRF scheme based on symmetric primitives. Our main proposal is a practical many-time quantum-safe VRF construction, \\(\\mathsf {X\\hbox {-}VRF}\\), based on the \\(\\textsf{XMSS}\\) signature scheme. An innovation of our work is to use the state of the blockchain to counter the undesired stateful nature of \\(\\textsf{XMSS}\\) by constructing a blockchain-empowered VRF. While increasing the usability of \\(\\textsf{XMSS}\\), our technique also enforces honest behavior when creating an \\(\\mathsf {X\\hbox {-}VRF}\\) output so as to satisfy the fundamental uniqueness property of VRFs. We show how \\(\\mathsf {X\\hbox {-}VRF}\\) can be used in the Algorand setting to extend it to a quantum-safe blockchain and provide four instances of \\(\\mathsf {X\\hbox {-}VRF}\\) with different key life-time. Our extensive performance evaluation, analysis and implementation indicate the effectiveness of our proposed constructions in practice. Particularly, we demonstrate that \\(\\mathsf {X\\hbox {-}VRF}\\) is the most efficient quantum-safe VRF with a maximum proof size of 3 KB and a possible TPS of 449 for a network of thousand nodes.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/StifterJSW22,
+	author = {Nicholas Stifter and
+                  Aljosha Judmayer and
+                  Philipp Schindler and
+                  Edgar R. Weippl},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Opportunistic Algorithmic Double-Spending: - How {I} Learned to Stop
+                  Worrying and Love the Fork},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {46--66},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_3},
+	doi = {10.1007/978-3-031-17140-6\_3},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/StifterJSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we outline a novel form of attack we refer to as Opportunistic Algorithmic Double-Spending (OpAl). OpAl attacks avoid equivocation, i.e., do not require conflicting transactions, and are carried out automatically in case of a fork. Algorithmic double-spending is facilitated through transaction semantics that dynamically depend on the context and ledger state at the time of execution. Hence, OpAl evades common double-spending detection mechanisms and can opportunistically leverage forks, even if the malicious sender themselves is not responsible for, or even actively aware of, any fork. Forkable ledger designs with expressive transaction semantics, especially stateful EVM-based smart contract platforms such as Ethereum, are particularly vulnerable. Hereby, the cost of modifying a regular transaction to opportunistically perform an OpAl attack is low enough to consider it a viable default strategy. While Bitcoin’s stateless UTXO model, or Cardano’s EUTXO model, appear more robust against OpAl, we nevertheless demonstrate scenarios where transactions are semantically malleable and thus vulnerable. To determine whether OpAl-like semantics can be observed in practice, we analyze the execution traces of \\(922\\,562\\) transactions on the Ethereum blockchain. Hereby, we are able to identify transactions, which may be associated with frontrunning and MEV bots, that exhibit some of the design patterns also employed as part of the herein presented attack.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AlupothaBM22,
+	author = {Jayamine Alupotha and
+                  Xavier Boyen and
+                  Matthew McKague},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Zero-History Confidential Chains with Zero-Knowledge Contracts: {A}
+                  New Normal for Decentralized Ledgers?},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {67--88},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_4},
+	doi = {10.1007/978-3-031-17140-6\_4},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AlupothaBM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Popular public blockchains face many problems due to their catastrophic blockchain sizes and verification time, e.g., lack of peer scalability, high computational fees, and impractical overheads for syncing. The origin of these problems is preserving everything that comes with the architecture of “append-only” blockchains, e.g., Bitcoin, Ethereum, Hyperledger, etc. Zero-history blockchains like Origami address the root of these problems by removing the history. We propose two Origami confidential chains, classical and quantum-safe, with zero-knowledge contracts. This paper demonstrates that zero-history blockchains should be the new normal blockchain structure due to their high scalability even with post-quantum settings and zero-knowledge contracts.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YinLYCZ22,
+	author = {Xin Yin and
+                  Zhen Liu and
+                  Guomin Yang and
+                  Guoxing Chen and
+                  Haojin Zhu},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Secure Hierarchical Deterministic Wallet Supporting Stealth Address},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {89--109},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_5},
+	doi = {10.1007/978-3-031-17140-6\_5},
+	timestamp = {Tue, 18 Oct 2022 22:16:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/YinLYCZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Over the past decade, cryptocurrency has been undergoing a rapid development. Digital wallet, as the tool to store and manage the cryptographic keys, is the primary entrance for the public to access cryptocurrency assets. Hierarchical Deterministic Wallet (HDW), proposed in Bitcoin Improvement Proposal 32 (BIP32), has attracted much attention and been widely used in the community, due to its virtues such as easy backup/recovery, convenient cold-address management, and supporting trust-less audits and applications in hierarchical organizations. While HDW allows the wallet owner to generate and manage his keys conveniently, Stealth Address (SA) allows a payer to generate fresh address (i.e., public key) for the receiver without any interaction, so that users can achieve “one coin each address” in a very convenient manner, which is widely regarded as a simple but effective way to protect user privacy. Consequently, SA has also attracted much attention and been widely used in the community. However, as so far, there is not a secure wallet algorithm that provides the virtues of both HDW and SA. Actually, even for standalone HDW, to the best of our knowledge, there is no strict definition of syntax and models that captures the functionality and security (i.e., safety of coins and privacy of users) requirements that practical scenarios in cryptocurrency impose on wallet. As a result, the existing wallet algorithms either have (potential) security flaws or lack crucial functionality features. In this work, after investigating HDW and SA comprehensively and deeply, we formally define the syntax and security models of Hierarchical Deterministic Wallet supporting Stealth Address (HDWSA), capturing the functionality and security (including safety and privacy) requirements imposed by the practice in cryptocurrency, which include all the versatile functionalities that lead to the popularity of HDW and SA as well as all the security guarantees that underlie these functionalities. We propose a concrete HDWSA construction and prove its security in the random oracle model. We implement our scheme and the experimental results show that the efficiency is suitable for typical cryptocurrency settings.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KesimGDS22,
+	author = {{\"{O}}zg{\"{u}}r Kesim and
+                  Christian Grothoff and
+                  Florian Dold and
+                  Martin Schanzenbach},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Zero-Knowledge Age Restriction for {GNU} Taler},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {110--129},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_6},
+	doi = {10.1007/978-3-031-17140-6\_6},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KesimGDS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose a design for a privacy-friendly method of age restriction in e-commerce that is aligned with the principle of subsidiarity. The design is presented as an extension of a privacy-friendly payment protocol with a zero-knowledge scheme that cryprographically augments coins for this purpose. Our scheme enables buyers to prove to be of sufficient age for a particular transaction without disclosing it. Our modification preserves the privacy and security properties of the payment system such as the anonymity of minors as buyers as well as unlinkability of transactions. We show how our scheme can be instantiated with ECDSA as well with a variant of EdDSA, respectively, and how it can be integrated with the GNU Taler payment system. We provide formal proofs and implementation of our proposal. Key performance measurements for various CPU architectures and implementations are presented.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeiZCLL22,
+	author = {Mengqi Wei and
+                  Wenxing Zhu and
+                  Liangkun Cui and
+                  Xiangxue Li and
+                  Qiang Li},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Privacy Leakage in Privacy-Preserving Neural Network Inference},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {133--152},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_7},
+	doi = {10.1007/978-3-031-17140-6\_7},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WeiZCLL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The community has seen many attempts to secure machine learning algorithms from multi-party computation or other cryptographic primitives. An interesting 3-party framework (SCSDF hereafter) for privacy-preserving neural network inference was presented at ESORICS 2020. SCSDF defines several protocols for non-linear activation functions including ReLU, Sigmoid, etc. In particular, these protocols reckon on a protocol DReLU (derivative computation for ReLU function) they proposed as a building block. All protocols are claimed secure (against one single semi-honest corruption and against one malicious corruption). Unfortunately, the paper shows that there exists grievous privacy leakage of private inputs during SCSDF executions. This would completely destroy the framework security. We first give detailed cryptanalysis on SCSDF from the perspective of the real-ideal simulation paradigm and indicate that these claimed-secure protocols do not meet the underlying security model. We then go into particular steps in SCSDF and demonstrate that the signs of input data would be inevitably revealed to the (either semi-honest or malicious) third party responsible for assisting protocol executions. To show such leakage more explicitly, we perform plenteous experiment evaluations on the MNIST dataset, the CIFAR-10 dataset, and CFD (Chicago Face Database) for both ReLU and Sigmoid non-linear activation functions. All experiments succeed in disclosing original private data of the data owner in the inference process. Potential countermeasures are recommended and demonstrated as well.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MendesCVB22,
+	author = {Ricardo Mendes and
+                  Mariana Cunha and
+                  Jo{\~{a}}o P. Vilela and
+                  Alastair R. Beresford},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Enhancing User Privacy in Mobile Devices Through Prediction of Privacy
+                  Preferences},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {153--172},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_8},
+	doi = {10.1007/978-3-031-17140-6\_8},
+	timestamp = {Mon, 05 Dec 2022 13:35:48 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MendesCVB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The multitude of applications and security configurations of mobile devices requires automated approaches for effective user privacy protection. Current permission managers, the core mechanism for privacy protection in smartphones, have shown to be ineffective by failing to account for privacy’s contextual dependency and personal preferences within context. In this paper we focus on the relation between privacy decisions (e.g. grant or deny a permission request) and their surrounding context, through an analysis of a real world dataset obtained in campaigns with 93 users. We leverage such findings and the collected data to develop methods for automated, personalized and context-aware privacy protection, so as to predict users’ preferences with respect to permission requests. Our analysis reveals that while contextual features have some relevance in privacy decisions, the increase in prediction performance of using such features is minimal, since two features alone are capable of capturing a relevant effect of context changes, namely the category of the requesting application and the requested permission. Our methods for prediction of privacy preferences achieved an F1 score of 0.88, while reducing the number of privacy violations by 28% when compared to the standard Android permission manager.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DelauneL22,
+	author = {St{\'{e}}phanie Delaune and
+                  Joseph Lallemand},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {One Vote Is Enough for Analysing Privacy},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {173--194},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_9},
+	doi = {10.1007/978-3-031-17140-6\_9},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DelauneL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Electronic voting promises the possibility of convenient and efficient systems for recording and tallying votes in an election. To be widely adopted, ensuring the security of the cryptographic protocols used in e-voting is of paramount importance. However, the security analysis of this type of protocols raises a number of challenges, and they are often out of reach of existing verification tools. In this paper, we study vote privacy, a central security property that should be satisfied by any e-voting system. More precisely, we propose the first formalisation of the recent \\(\\textsf{BPRIV}\\) notion in the symbolic setting. To ease the formal security analysis of this notion, we propose a reduction result allowing one to bound the number of voters and ballots needed to mount an attack. Our result applies on a number of case studies including several versions of Helios, Belenios, JCJ/Civitas, and Prêt-à-Voter. For some of these protocols, thanks to our result, we are able to conduct the analysis relying on the automatic tool Proverif.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChamikaraLCNGBK22,
+	author = {Mahawaga Arachchige Pathum Chamikara and
+                  Dongxi Liu and
+                  Seyit Camtepe and
+                  Surya Nepal and
+                  Marthie Grobler and
+                  Peter Bert{\'{o}}k and
+                  Ibrahim Khalil},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Local Differential Privacy for Federated Learning},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {195--216},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_10},
+	doi = {10.1007/978-3-031-17140-6\_10},
+	timestamp = {Tue, 21 Mar 2023 20:58:00 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ChamikaraLCNGBK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advanced adversarial attacks such as membership inference and model memorization can make federated learning (FL) vulnerable and potentially leak sensitive private data. Local differentially private (LDP) approaches are gaining more popularity due to stronger privacy notions and native support for data distribution compared to other differentially private (DP) solutions. However, DP approaches assume that the FL server (that aggregates the models) is honest (run the FL protocol honestly) or semi-honest (run the FL protocol honestly while also trying to learn as much information as possible). These assumptions make such approaches unrealistic and unreliable for real-world settings. Besides, in real-world industrial environments (e.g., healthcare), the distributed entities (e.g., hospitals) are already composed of locally running machine learning models (this setting is also referred to as the cross-silo setting). Existing approaches do not provide a scalable mechanism for privacy-preserving FL to be utilized under such settings, potentially with untrusted parties. This paper proposes a new local differentially private FL protocol (named LDPFL) for industrial settings. LDPFL can run in industrial settings with untrusted entities while enforcing stronger privacy guarantees than existing approaches. LDPFL shows high FL model performance (up to 98%) under small privacy budgets (e.g., \\(\\varepsilon = 0.5\\)) in comparison to existing methods.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LinLM22,
+	author = {Chengyu Lin and
+                  Zeyu Liu and
+                  Tal Malkin},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {{XSPIR:} Efficient Symmetrically Private Information Retrieval from
+                  Ring-LWE},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {217--236},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_11},
+	doi = {10.1007/978-3-031-17140-6\_11},
+	timestamp = {Tue, 05 Sep 2023 07:45:44 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LinLM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Private Information Retrieval (PIR) allows a client to retrieve one entry from a database held by a server, while hiding from the server which entry has been retrieved. Symmetrically Private Information Retrieval (SPIR) additionally protects the privacy of the data, requiring that the client obtains only its desired entry, and no information on other data entries. In recent years, considerable effort has been expanded towards making PIR practical, reducing communication and computation. State-of-the-art PIR protocols are based on homomorphic encryption from the ring-LWE assumption. However, these efficient PIR protocols do not achieve database privacy, and leak a lot of information about other data entries, even when the client is honest. Generic transformation of these PIR protocols to SPIR have been suggested, but not implemented. In this paper, we propose XSPIR, a practically efficient SPIR scheme. Our scheme is based on homomorphic encryption from ring-LWE like recent PIR works, but achieves a stronger security guarantee with low performance overhead. We implement XSPIR, and run experiments comparing its performance against SealPIR (Angel et al., IEEE S &P 2018) and MulPIR (Ali et al., USENIX SECURITY 2021). We find that, even though our scheme achieves a stronger security guarantee, our performance is comparable to these state-of-the-art PIR protocols.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DavidHMY22,
+	author = {Liron David and
+                  Avinatan Hassidim and
+                  Yossi Matias and
+                  Moti Yung},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Scaling up {GAEN} Pseudorandom Processes: Preparing for a More Extensive
+                  Pandemic},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {237--255},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_12},
+	doi = {10.1007/978-3-031-17140-6\_12},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DavidHMY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {“Exposure Notification (EN) Systems” which have been envisioned by a number of academic and industry groups, are useful in aiding health authorities worldwide to fight the COVID-19 pandemic spread via contact tracing. Among these systems, many rely on the BLE based Google-Apple Exposure Notification (GAEN) API (for iPhones and Android systems). We assert that it is now the time to investigate how to deal with scale issues, assuming the next pandemic/ variant will be more extensive. To this end, we present two modular enhancements to scale up the GAEN API by improving performance and suggesting a better performance-privacy tradeoff. Our modifications have the advantage of affecting only the GAEN API modules and do not require any change to the systems built on top of it, therefore it can be easily adopted upon emerging needs. The techniques we suggest in this paper (called “dice and splice” and “forest from the PRF-tree”) are general and applicable to scenarios of searching values within anonymous pseudo-randomly generated sequences.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuoAWH22,
+	author = {Fucai Luo and
+                  Saif M. Al{-}Kuwari and
+                  Haiyan Wang and
+                  Weihong Han},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Generic Construction of Trace-and-Revoke Inner Product Functional
+                  Encryption},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {259--282},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_13},
+	doi = {10.1007/978-3-031-17140-6\_13},
+	timestamp = {Tue, 23 May 2023 09:42:28 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LuoAWH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A traitor tracing system is a multi-receiver encryption that allows an authority or an arbitrary party (in the case of public traceability) to identify malicious users (traitors) that collude to create a pirate decoder. A trace-and-revoke system is an extension of the traitor tracing system where there is an additional user revocation mechanism that the content distributor can use to disable the decryption capabilities of compromised keys. Trace-and-revoke systems have been extensively studied in the settings of broadcast encryption (BE), identity-based encryption (IBE), and attribute-based encryption (ABE), but not functional encryption (FE). Recently, Do, Phan and Pointcheval (CT-RSA’20) studied traitor tracing for FE and proposed the first traceable inner-product functional encryption (IPFE) scheme. However, their scheme is selectively secure against chosen-plaintext attacks and supports one-target black-box traceability (a weaker notion of black-box traceability). In addition, their scheme does not support public traceability nor user revocation. In this work, we study trace-and-revoke mechanisms for FE and propose the first efficient trace-and-revoke IPFE systems from standard assumptions. Our schemes support public, black-box traceability, and are proven adaptively secure against chosen-plaintext attacks in the standard model. Technically, our construction is generic and relies on a generic transformation from IPFE schemes to trace-and-revoke IPFE systems. For traitor tracing systems, our generic construction also implies the first traceable IPFE schemes that simultaneously support public, black-box traceability, and achieve adaptive security. This provides a significant improvement over the previous traceable IPFE construction by Do, Phan and Pointcheval.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LeDSP22,
+	author = {Huy Quoc Le and
+                  Dung Hoang Duong and
+                  Willy Susilo and
+                  Josef Pieprzyk},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Spatial Encryption Revisited: From Delegatable Multiple Inner Product
+                  Encryption and More},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {283--302},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_14},
+	doi = {10.1007/978-3-031-17140-6\_14},
+	timestamp = {Tue, 18 Oct 2022 22:16:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LeDSP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Spatial encryption (SE), which involves encryption and decryption with affine/vector objects, was introduced by Boneh and Hamburg at Asiacrypt 2008. Since its introduction, SE has been shown as a versatile and elegant tool for implementing many other important primitives such as (Hierarchical) Identity-based Encryption ((H)IBE), Broadcast (H)IBE, Attribute-based Encryption, and Forward-secure cryptosystems. This paper revisits SE toward a more compact construction in the lattice setting. In doing that, we introduce a novel primitive called Delegatable Multiple Inner Product Encryption (DMIPE). It is a delegatable generalization of Inner Product Encryption (IPE) but different from the Hierarchical IPE (HIPE) (Okamoto and Takashima at Asiacrypt 2009). We point out that DMIPE and SE are equivalent in the sense that there are security-preserving conversions between them. As a proof of concept, we then successfully instantiate a concrete DMIPE construction relying on the hardness of the decisional learning with errors problem. In turn, the DMIPE design implies a more compact lattice-based SE in terms of sizes compared with SEs converted from HIPE (e.g., Xagawa’s HIPE at PKC 2013) using the framework by Chen et al. (Designs, Codes, and Cryptography, 2014). Furthermore, we demonstrate that one can also use SE to implement the Allow-/Deny-list encryption, which subsumes, e.g., puncturable encryption (Green and Miers at IEEE S &P 2015).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChengM22,
+	author = {Leixiao Cheng and
+                  Fei Meng},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Public Key Authenticated Encryption with Keyword Search from {LWE}},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {303--324},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_15},
+	doi = {10.1007/978-3-031-17140-6\_15},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChengM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Public key encryption with keyword search (PEKS) inherently suffers from the inside keyword guessing attack. To resist against this attack, Huang et al. proposed the public key authenticated encryption with keyword search (PAEKS), where the sender not only encrypts a keyword, but also authenticates it. To further resist against quantum attacks, Liu et al. proposed a generic construction of PAEKS and the first quantum-resistant PAEKS instantiation based on lattices. Later, Emura pointed out some issues in Liu et al.’s construction and proposed a new generic construction of PAEKS. The basic construction methodology of Liu et al. and Emura is the same. In this paper, we first analyze the schemes of Liu et al. and Emura, and point out some issues regarding their construction and security model. In short, in their lattice-based instantiations, the sender and receiver use a lattice-based word independent smooth projective hash functions (SPHF) to compute the same shared key to authenticate keywords, leading to a super-polynomial modulus q; their generic constructions need a trusted setup assumption or the designated-receiver setting; Liu et al. failed to provide convincing evidence that their scheme satisfies their claimed security. Then, we propose two new lattice-based PAEKS schemes with totally different construction methodology from Liu et al. and Emura. Specifically, in our PAEKS schemes, instead of using the shared key calculated by SPHF, the sender and receiver achieve keyword authentication by using their own secret key to sample a set of short vectors related to the keyword. In this way, the modulus q in our schemes could be of polynomial size, which results in much smaller size of the public key, ciphertext and trapdoor. In addition, our schemes need neither a trusted setup assumption nor the designated-receiver setting. Finally, our schemes can be proven secure in stronger security model, and thus provide stronger security guarantee for both ciphertext privacy and trapdoor privacy.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FalzonP22,
+	author = {Francesca Falzon and
+                  Kenneth G. Paterson},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {An Efficient Query Recovery Attack Against a Graph Encryption Scheme},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {325--345},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_16},
+	doi = {10.1007/978-3-031-17140-6\_16},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FalzonP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ghosh, Kamara and Tamassia (ASIA CCS 2021) presented a Graph Encryption Scheme supporting shortest path queries. We show how to perform a query recovery attack against this GKT scheme when the adversary is given the original graph together with the leakage of certain subsets of queries. Our attack falls within the security model used by Ghosh et al., and is the first targeting schemes supporting shortest path queries. Our attack uses classical graph algorithms to compute the canonical names of the single-destination shortest path spanning trees of the underlying graph and uses these canonical names to pre-compute the set of candidate queries that match each response. Then, when all shortest path queries to a single node have been observed, the canonical names for the corresponding query tree are computed and the responses are matched to the candidate queries from the offline phase. The output is guaranteed to contain the correct query. For a graph on n vertices, our attack runs in time \\(O(n^3)\\) and matches the time complexity of the GKT scheme’s setup. We evaluate the attack’s performance using the real world datasets used in the original paper and show that as many as 21.9% of the queries can be uniquely recovered and as many as 50% of the queries result in sets of only three candidates.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WuWYHC22,
+	author = {Jiaojiao Wu and
+                  Jianfeng Wang and
+                  Xinwei Yong and
+                  Xinyi Huang and
+                  Xiaofeng Chen},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {New Unbounded Verifiable Data Streaming for Batch Query with Almost
+                  Optimal Overhead},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {346--366},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_17},
+	doi = {10.1007/978-3-031-17140-6\_17},
+	timestamp = {Wed, 15 Mar 2023 13:55:59 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WuWYHC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Verifiable Data Streaming (VDS) enables a resource-limited client to continuously outsource data to an untrusted server in a sequential manner while supporting public integrity verification and efficient update. However, most existing VDS schemes require the client to generate all proofs in advance and store them at the server, which leads to a heavy computation burden on the client. In addition, all the previous VDS schemes can perform batch query (i.e., retrieving multiple data entries at once), but are subject to linear communication cost l, where l is the number of queried data. In this paper, we first introduce a new cryptographic primitive named Double-trapdoor Chameleon Vector Commitment (DCVC), and then present an unbounded VDS scheme \\(\\mathsf {VDS_1}\\) with optimal communication cost in the random oracle model from aggregatable cross-commitment variant of DCVC. Furthermore, we propose, to our best knowledge, the first unbounded VDS scheme \\(\\textsf{VDS}_2\\) with optimal communication and storage overhead in the standard model by integrating Double-trapdoor Chameleon Hash Function (DCH) and Key-Value Commitment (KVC). Both of our schemes enjoy constant-size public key. Finally, we demonstrate the efficiency of our two VDS schemes with a comprehensive performance evaluation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AlbaneseJS22,
+	author = {Massimiliano Albanese and
+                  Karin Johnsgard and
+                  Vipin Swarup},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {A Formal Model for Credential Hopping Attacks},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {367--386},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_18},
+	doi = {10.1007/978-3-031-17140-6\_18},
+	timestamp = {Tue, 18 Oct 2022 22:16:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AlbaneseJS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Centrally-managed authentication schemes allow users of\xa0complex distributed systems to present the same credentials to multiple applications and computer systems. To further simplify the user’s experience, the credentials are often cached on those remote systems. However, caching credentials introduces the risk of malicious actors stealing and using these credentials to hop between systems within the network. This problem has been studied by modeling authentication events as a graph, and proposed solutions rely on altering key properties of a system’s authentication graph to reduce the likelihood of successful attacks. However, current approaches make numerous simplifying assumptions, fail to reflect the time-variant nature of many of the variables involved, and do not readily accommodate modeling the effects of a wide range of potential countermeasures. To address these limitations, this paper presents a formal model that describes credential hopping attacks as iteratively performing multiple credential-harvesting operations and lateral movements to reach predefined objectives. We explicitly consider the time-variant nature of all variables involved. We show how different countermeasures impact key variables of the proposed model, and define an intuitive metric for quantifying the attacker’s expended effort to reach a given goal. Although direct computation of a verifiably minimum value for this metric is demonstrably infeasible, we propose heuristics to achieve reasonable upper bounds. We validate our model and bound-heuristics through simulations, including assessing the impact of a deployed countermeasure.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChenFL22,
+	author = {Huanhuan Chen and
+                  Shihui Fu and
+                  Kaitai Liang},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {No-Directional and Backward-Leak Uni-Directional Updatable Encryption
+                  Are Equivalent},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {387--407},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_19},
+	doi = {10.1007/978-3-031-17140-6\_19},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChenFL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Updatable encryption (UE) enables the cloud server to update the previously sourced encrypted data to a new key with only an update token received from the client. Two interesting works have been proposed to clarify the relationships among various UE security notions. Jiang (ASIACRYPT 2020) proved the equivalence of every security notion in the bi-directional and uni-directional key update settings and further, the security notion in the no-directional key update setting is strictly stronger than the above two. In contrast, Nishimaki (PKC 2022) proposed a new definition of uni-directional key update that is called the backward-leak uni-directional key update, and showed the equivalence relation by Jiang does not hold in this setting. We present a detailed comparison of every security notion in the four key update settings and prove that the security in the backward-leak uni-directional key update setting is actually equivalent to that in the no-directional key update setting. Our result reduces the hard problem of constructing no-directional key update UE schemes to the construction of those with backward-leak uni-directional key updates.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/VosVE22,
+	author = {Jelle Vos and
+                  Dani{\"{e}}l Vos and
+                  Zekeriya Erkin},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Efficient Circuits for Permuting and Mapping Packed Values Across
+                  Leveled Homomorphic Ciphertexts},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {408--423},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_20},
+	doi = {10.1007/978-3-031-17140-6\_20},
+	timestamp = {Tue, 18 Oct 2022 22:16:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/VosVE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud services are an essential part of our digital infrastructure as organizations outsource large amounts of data storage and computations. While organizations typically keep sensitive data in encrypted form at rest, they decrypt it when performing computations, leaving the cloud provider free to observe the data. Unfortunately, access to raw data creates privacy risks. To alleviate these risks, researchers have developed secure outsourced data processing techniques. Such techniques enable cloud services that keep sensitive data encrypted, even during computations. For this purpose, fully homomorphic encryption is particularly promising, but operations on ciphertexts are computationally demanding. Therefore, modern fully homomorphic cryptosystems use packing techniques to store and process multiple values within a single ciphertext. However, a problem arises when packed data in one ciphertext does not align with another. For this reason, we propose a method to construct circuits that perform arbitrary permutations and mappings of such packed values. Unlike existing work, our method supports moving values across multiple ciphertexts, considering that the values in real-world scenarios cannot all be packed within a single ciphertext. We compare our open-source implementation against the state-of-the-art method implemented in HElib, which we adjusted to work with multiple ciphertexts. When data is spread among five or more ciphertexts, our method outperforms the existing method by more than an order of magnitude. Even when we only consider a permutation within a single ciphertext, our method still outperforms the state-of-the-art works implemented by HElib for circuits of similar depth.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuWY22,
+	author = {Yi Liu and
+                  Qi Wang and
+                  Siu{-}Ming Yiu},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Towards Practical Homomorphic Time-Lock Puzzles: Applicability and
+                  Verifiability},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {424--443},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_21},
+	doi = {10.1007/978-3-031-17140-6\_21},
+	timestamp = {Tue, 18 Oct 2022 22:16:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuWY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Time-lock puzzle schemes allow one to encrypt messages for the future. More concretely, one can efficiently generate a time-lock puzzle for a secret/solution s, such that s remains hidden until a specified time T has elapsed, even for any parallel adversaries. However, since computation on secrets within multiple puzzles can be performed only when all of these puzzles are solved, the usage of classical time-lock puzzles is greatly limited. Homomorphic time-lock puzzle (HTLP) schemes were thus proposed to allow evaluating functions over puzzles directly without solving them. However, although efficient HTLP schemes exist, more improvements are still needed for practicability. In this paper, we improve HTLP schemes to broaden their application scenarios from the aspects of applicability and verifiability. In terms of applicability, we design the first multiplicatively HTLP scheme with the solution space over \\(\\mathbb {Z}_n^*\\), which is more expressible than the original one, e.g., representing integers. Then, to fit HTLP into scenarios requiring verifiability that is missing in existing schemes, we propose three simple and fast protocols for both the additively HTLP scheme and our multiplicatively HTLP scheme, respectively. The first two protocols allow a puzzle solver to convince others of the correctness of the solution or the invalidity of the puzzle so that others do not need to solve the puzzle themselves. The third protocol allows a puzzle generator to prove the validity of his puzzles. It is shown that a puzzle in our scheme is only 1.25\xa0KB, and one multiplication on puzzles takes simply 0.01\xa0ms. Meanwhile, the overhead of each protocol is less than 0.6KB in communication and 40\xa0ms in computation. Hence, HTLP still demonstrates excellent efficiency in both communication and computation with these versatile properties.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChenDSZSW22,
+	author = {Xiaoyi Chen and
+                  Yinpeng Dong and
+                  Zeyu Sun and
+                  Shengfang Zhai and
+                  Qingni Shen and
+                  Zhonghai Wu},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Kallima: {A} Clean-Label Framework for Textual Backdoor Attacks},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {447--466},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_22},
+	doi = {10.1007/978-3-031-17140-6\_22},
+	timestamp = {Mon, 27 May 2024 07:44:34 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChenDSZSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Although Deep Neural Network (DNN) has led to unprecedented progress in various natural language processing (NLP) tasks, research shows that deep models are extremely vulnerable to backdoor attacks. The existing backdoor attacks mainly inject a small number of poisoned samples into the training dataset with the labels changed to the target one. Such mislabeled samples would raise suspicion upon human inspection, potentially revealing the attack. To improve the stealthiness of textual backdoor attacks, we propose the first clean-label framework Kallima for synthesizing \\(mimesis\\)-style backdoor samples to develop insidious textual backdoor attacks. We modify inputs belonging to the target class with adversarial perturbations, making the model rely more on the backdoor trigger. Our framework is compatible with most existing backdoor triggers. The experimental results on three benchmark datasets demonstrate the effectiveness of the proposed method.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SongLYLX22,
+	author = {Hengxian Song and
+                  Jing Liu and
+                  Jianing Yang and
+                  Xinyu Lei and
+                  Gang Xue},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Two Types of Novel DoS Attacks Against CDNs Based on {HTTP/2} Flow
+                  Control Mechanism},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {467--487},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_23},
+	doi = {10.1007/978-3-031-17140-6\_23},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SongLYLX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Content Delivery Networks (CDNs) provide high availability and low latency for end users through their geographically distributed and high-performance edge servers. Compared to the HTTP/1.1 protocol, the HTTP/2 protocol greatly improves network transmission performance, and most CDN vendors have begun to support HTTP/2. However, in a CDN-mediated network path between a client and an origin server, most CDN vendors deploy HTTP/2 in the client-to-CDN connection while still using HTTP/1.1 for the CDN-to-origin connection. This asymmetric usage of two versions of the HTTP protocol may lead to new types of attacks. In this paper, we present two types of novel Denial of Service (DoS) attacks against CDNs: the HTTP/2 Traffic Amplification (HTA) attack and the HTTP/2 Slow Rate (HSR) attack. The HTA attack allows malicious users to exhaust the bandwidth of the origin server. The HSR attack can be used to consume all available connections of the origin server. We examined the HTA attack and the HSR attack on 10 popular CDNs to evaluate the feasibility and real-world impacts. Our experiment results show that all these CDNs are vulnerable to the HTA attack, and four of them are vulnerable to the HSR attack. In the worst-case scenario, attackers could amplify the network traffic by 403092 times, which poses a great DoS threat to CDN services. We responsibly disclosed these security vulnerabilities to the affected CDN vendors and received positive feedback from them. Some of them even rewarded us with bug bounties. At the end of this paper, we propose some mitigation countermeasures against these attacks.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ContiDPT22,
+	author = {Mauro Conti and
+                  Denis Donadel and
+                  Radha Poovendran and
+                  Federico Turrin},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {EVExchange: {A} Relay Attack on Electric Vehicle Charging System},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {488--508},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_24},
+	doi = {10.1007/978-3-031-17140-6\_24},
+	timestamp = {Mon, 24 Oct 2022 20:50:57 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ContiDPT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To support the increasing spread of Electric Vehicles (EVs), Charging Stations (CSs) are being installed worldwide. The new generation of CSs employs the Vehicle-To-Grid (V2G) paradigm by implementing novel standards such as the ISO 15118. This standard enables high-level communication between the vehicle and the charging column, helps manage the charge smartly, and simplifies the payment phase. This novel charging paradigm, which connects the Smart Grid to external networks (e.g., EVs and CSs), has not been thoroughly examined yet. Therefore, it may lead to dangerous vulnerability surfaces and new research challenges. In this paper, we present EVExchange, the first attack to steal energy during a charging session in a V2G communication: i.e., charging the attacker’s car while letting the victim pay for it. Furthermore, if reverse charging flow is enabled, the attacker can even sell the energy available on the victim’s car! Thus, getting the economic profit of this selling, and leaving the victim with a completely discharged battery. We developed a virtual and a physical testbed in which we validate the attack and prove its effectiveness in stealing the energy. To prevent the attack, we propose a lightweight modification of the ISO 15118 protocol to include a distance bounding algorithm. Finally, we validated the countermeasure on our testbeds. Our results show that the proposed countermeasure can identify all the relay attack attempts while being transparent to the user.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HlavacekSW22,
+	author = {Tomas Hlavacek and
+                  Haya Schulmann and
+                  Michael Waidner},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Smart {RPKI} Validation: Avoiding Errors and Preventing Hijacks},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {509--530},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_25},
+	doi = {10.1007/978-3-031-17140-6\_25},
+	timestamp = {Tue, 07 May 2024 20:10:32 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HlavacekSW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Resource Public Key Infrastructure (RPKI) was designed to authorize ownership of prefixes in the Internet, which routers use to filter bogus BGP announcements to prevent prefix hijacks. Although already 360K routes have valid covering Route Origin Authorizations (ROAs), RPKI is not widely validated. Erroneous ROAs are one of the obstacles towards wide filtering of bogus BGP announcements with Route Origin Validation (ROV). Erroneous ROAs conflict with BGP announcements and appear similar to hijacking announcements. Blocking such conflicting announcements can disconnect networks and hence demotivates enforcement of ROV. In this work we analyse the conflicts and develop an extension to ROV, which we call smart ROV (SROV), to automatically differentiate errors from traffic hijacks. The networks can then block only the hijacks and accept conflicting announcements due to errors. We demonstrate the effectiveness of SROV experimentally using real conflicts that we collected in the Internet, with simulations on empirically derived datasets. We also develop a global notification service based on SROV, for alerting networks of errors https://smart-validator.net/.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChernikovaGBALW22,
+	author = {Alesia Chernikova and
+                  Nicol{\`{o}} Gozzi and
+                  Simona Boboila and
+                  Priyanka Angadi and
+                  John Loughner and
+                  Matthew Wilden and
+                  Nicola Perra and
+                  Tina Eliassi{-}Rad and
+                  Alina Oprea},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Cyber Network Resilience Against Self-Propagating Malware Attacks},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {531--550},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_26},
+	doi = {10.1007/978-3-031-17140-6\_26},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChernikovaGBALW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Self-propagating malware (SPM) has led to huge financial losses, major data breaches, and widespread service disruptions in recent years. In this paper, we explore the problem of developing cyber resilient systems capable of mitigating the spread of SPM attacks. We begin with an in-depth study of a well-known self-propagating malware, WannaCry, and present a compartmental model called SIIDR that accurately captures the behavior observed in real-world attack traces. Next, we investigate ten cyber defense techniques, including existing edge and node hardening strategies, as well as newly developed methods based on reconfiguring network communication (NodeSplit) and isolating communities. We evaluate all defense strategies in detail using six real-world communication graphs collected from a large retail network and compare their performance across a wide range of attacks and network topologies. We show that several of these defenses are able to efficiently reduce the spread of SPM attacks modeled with SIIDR. For instance, given a strong attack that infects 97% of nodes when no defense is employed, strategically securing a small number of nodes (0.08%) reduces the infection footprint in one of the networks down to 1%.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FridayKBC22,
+	author = {Kurt Friday and
+                  Elie F. Kfoury and
+                  Elias Bou{-}Harb and
+                  Jorge Crichigno},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {{INC:} In-Network Classification of Botnet Propagation at Line Rate},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {551--569},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_27},
+	doi = {10.1007/978-3-031-17140-6\_27},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FridayKBC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ever-increasing botnet presence has enabled attackers to compromise millions of nodes and launch a plethora of Internet-scale coordinated attacks within a very short period of time. While the challenge of identifying and patching the vulnerabilities that these botnets exploit in a timely manner has proven elusive, a more promising solution is to mitigate such exploitation attempts at core traffic transmission mediums, such as within the forwarding devices of ISPs, backbones, and other high-rate network environments. To this end, we present an In-Network Classification (INC) technique to fingerprint the spread of botnets at wire-speed within busy networks. In particular, INC employs a unique bagging classification system residing entirely within programmable switch hardware in order to classify and subsequently mitigate bot infections amid Tbps traffic rates. Additionally, INC immediately pushes the data plane features of mitigated bots to the controller to infer botnet orchestration in real-time via behavioral clustering. INC was comprehensively evaluated against several datasets and achieved state-of-the-art results while reducing the detection times of comparable techniques by several orders of magnitude. Further, we demonstrate that INC can generalize well to previously unseen botnets.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XieHZDSC22,
+	author = {Yi Xie and
+                  Mengdie Huang and
+                  Xiaoyu Zhang and
+                  Changyu Dong and
+                  Willy Susilo and
+                  Xiaofeng Chen},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {{GAME:} Generative-Based Adaptive Model Extraction Attack},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {570--588},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_28},
+	doi = {10.1007/978-3-031-17140-6\_28},
+	timestamp = {Sun, 12 Nov 2023 02:08:49 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/XieHZDSC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The outstanding performance of deep learning has prompted the rise of Machine Learning as a Service (MLaaS), which significantly reduces the difficulty for users to train and deploy models. For privacy and security considerations, most models in the MLaaS scenario only provide users with black-box access. However, previous works have shown that this defense mechanism still faces potential threats, such as model extraction attacks, which aim at stealing the function or parameters of a black-box victim model. To further study the vulnerability of publicly deployed models, we propose a novel model extraction attack named Generative-Based Adaptive Model Extraction (GAME), which augments query data adaptively in a sample limited scenario using auxiliary classifier GANs (AC-GAN). Compared with the previous work, our attack has the following advantages: adaptive data generation without original datasets, high fidelity, high accuracy, and high stability under different data distributions. According to extensive experiments, we observe that: (1) GAME poses a threat to victim models despite the model architectures and the training sets; (2) synthetic samples closed to decision boundary without deviating from the center of the target distribution can accelerate the extraction process; (3) compared to state-of-the-art work, GAME improves relative accuracy by 12% at much lower data and query costs without the reliance on domain relevance of proxy datasets.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiZCL22,
+	author = {Zhenyuan Li and
+                  Jun Zeng and
+                  Yan Chen and
+                  Zhenkai Liang},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {AttacKG: Constructing Technique Knowledge Graph from Cyber Threat
+                  Intelligence Reports},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {589--609},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_29},
+	doi = {10.1007/978-3-031-17140-6\_29},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiZCL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cyber attacks are becoming more sophisticated and diverse, making attack detection increasingly challenging. To combat these attacks, security practitioners actively summarize and exchange their knowledge about attacks across organizations in the form of cyber threat intelligence (CTI) reports. However, as CTI reports written in natural language texts are not structured for automatic analysis, the report usage requires tedious manual efforts of threat intelligence recovery. Additionally, individual reports typically cover only a limited aspect of attack patterns (e.g., techniques) and thus are insufficient to provide a comprehensive view of attacks with multiple variants. In this paper, we propose AttacKG to automatically extract structured attack behavior graphs from CTI reports and identify the associated attack techniques. We then aggregate threat intelligence across reports to collect different aspects of techniques and enhance attack behavior graphs into technique knowledge graphs (TKGs). In our evaluation against real-world CTI reports from diverse intelligence sources, AttacKG effectively identifies 28,262 attack techniques with 8,393 unique Indicators of Compromises. To further verify the accuracy of AttacKG in extracting threat intelligence, we run AttacKG on 16 manually labeled CTI reports. Experimental results show that AttacKG accurately identifies attack-relevant entities, dependencies, and techniques with F1-scores of 0.887, 0.896, and 0.789, which outperforms the state-of-the-art approaches. Moreover, our TKGs directly benefit downstream security practices built atop attack techniques, e.g., advanced persistent threat detection and cyber attack reconstruction.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuMLQZW22,
+	author = {Xinjing Liu and
+                  Zhuo Ma and
+                  Yang Liu and
+                  Zhan Qin and
+                  Junwei Zhang and
+                  Zhuzhu Wang},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {SeInspect: Defending Model Stealing via Heterogeneous Semantic Inspection},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {610--630},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_30},
+	doi = {10.1007/978-3-031-17140-6\_30},
+	timestamp = {Sat, 25 Feb 2023 21:16:07 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuMLQZW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent works developed an emerging attack, called Model Stealing (MS), to steal the functionalities of remote models, rendering the privacy of cloud-based machine learning services under threat. In this paper, we propose a new defense against MS attacks, using Semantic Inspection (called SeInspect). SeInspect mainly achieves two breakthroughs in this line of work. First, state-of-the-art MS attacks tend to craft malicious queries within a distribution close to benign ones. Such a characteristic increases the stealthiness of these attacks and makes them able to circumvent most of the existing MS defenses. In SeInspect, we introduce a semantic feature based detection method to amplify the query distribution discrepancy between malicious and benign users. Thus, SeInspect can detect stealthy MS attacks with a higher detection rate than existing defenses. Second, in our evaluation, we notice that existing defenses cause significantly increased response latency of model service due to repetfitive user-by-user inspection (e.g., increased by 7.01 times for PRADA, EuroS &P 2019). To mitigate the problem, we propose to analyze semantic features with a two-layer defense mechanism. The first layer can achieve a “quickshot” on users in batches and pick out all potentially malicious users. Then, the second layer identifies the attacker in a user-by-user manner. In our evaluation, we experiment with SeInspect on eight typical MS attacks. The result shows that SeInspect can detect two more attacks than prior works while reducing latency by at least \\(54.00\\%\\).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BalaganiCCCT22,
+	author = {Kiran S. Balagani and
+                  Matteo Cardaioli and
+                  Stefano Cecconello and
+                  Mauro Conti and
+                  Gene Tsudik},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {We Can Hear Your {PIN} Drop: An Acoustic Side-Channel Attack on {ATM}
+                  {PIN} Pads},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {633--652},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_31},
+	doi = {10.1007/978-3-031-17140-6\_31},
+	timestamp = {Mon, 26 Jun 2023 20:46:41 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BalaganiCCCT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Personal Identification Numbers (PINs) are the most common user authentication method for in-person banking transactions at ATMs. The US Federal Reserve reported that, in 2018, PINs secured 31.4 billion transactions in the US, with an overall worth of US$ 1.19 trillion. One well-known attack type involves the use of cameras to spy on the ATM PIN pad during PIN entry. Countermeasures include covering the PIN pad with a shield or with the other hand while typing. Although this protects PINs from visual attacks, acoustic emanations from the PIN pad itself open the door for another attack type. In this paper, we show the feasibility of an acoustic side-channel attack (called \\(\\mathcal PinDrop\\)) to reconstruct PINs by profiling acoustic signatures of individual keys of a PIN pad. We demonstrate the practicality of \\(\\mathcal PinDrop\\) via two sets of data collection experiments involving two commercially available metal PIN pad models and 58 participants who entered a total of 5,800 5-digit PINs. We simulated two realistic attack scenarios: (1) a microphone placed near the ATM (0.3\xa0m away) and (2) a real-time attacker (with a microphone) standing in the queue at a common courtesy distance of 2\xa0m. In the former case, we show that \\(\\mathcal PinDrop\\) recovers 96% of 4-digit, and up to 94% of 5-digits, PINs. Whereas, at 2\xa0m away, it recovers up to 57% of 4-digit, and up to 39% of 5-digit PINs in three attempts. We believe that these results are both significant and worrisome.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LambregtsCNL22,
+	author = {Steven Lambregts and
+                  Huanhuan Chen and
+                  Jianting Ning and
+                  Kaitai Liang},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {{VAL:} Volume and Access Pattern Leakage-Abuse Attack with Leaked
+                  Documents},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {653--676},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_32},
+	doi = {10.1007/978-3-031-17140-6\_32},
+	timestamp = {Tue, 27 Sep 2022 21:06:59 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LambregtsCNL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable Encryption schemes provide secure search over encrypted databases while allowing admitted information leakages. Generally, the leakages can be categorized into access and volume pattern. In most existing SE schemes, these leakages are caused by practical designs but are considered an acceptable price to achieve high search efficiency. Recent attacks have shown that such leakages could be easily exploited to retrieve the underlying keywords for search queries. Under the umbrella of attacking SE, we design a new Volume and Access Pattern Leakage-Abuse Attack (VAL-Attack) that improves the matching technique of LEAP (CCS ’21) and exploits both the access and volume patterns. Our proposed attack only leverages leaked documents and the keywords present in those documents as auxiliary knowledge and can effectively retrieve document and keyword matches from leaked data. Furthermore, the recovery performs without false positives. We further compare VAL-Attack with two recent well-defined attacks on several real-world datasets to highlight the effectiveness of our attack and present the performance under popular countermeasures.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/QinDCBPD22,
+	author = {Yue Qin and
+                  Ruoyu Ding and
+                  Chi Cheng and
+                  Nina Bindel and
+                  Yanbin Pan and
+                  Jintai Ding},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {Light the Signal: Optimization of Signal Leakage Attacks Against LWE-Based
+                  Key Exchange},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {677--697},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_33},
+	doi = {10.1007/978-3-031-17140-6\_33},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/QinDCBPD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Key exchange protocols from the learning with errors (LWE) problem share many similarities with the Diffie-Hellman-Merkle (DHM) protocol, which plays a central role in securing our Internet. Therefore, there has been a long time effort in designing authenticated key exchange directly from LWE to mirror the advantages of DHM-based protocols. In this paper, we revisit signal leakage attacks and show that the severity of these attacks against LWE-based (authenticated) key exchange is still underestimated. In particular, by converting the problem of launching a signal leakage attack into a coding problem, we can significantly reduce the needed number of queries to reveal the secret key. Specifically, for DXL-KE we reduce the queries from 1,266 to only 29, while for DBS-KE, we need only 748 queries, a great improvement over the previous 1,074,434 queries. Moreover, our new view of signals as binary codes enables recognizing vulnerable schemes more easily. As such we completely recover the secret key of a password-based authenticated key exchange scheme by Dabra et al. with only 757 queries and partially reveal the secret used in a two-factor authentication by Wang et al. with only one query. The experimental evaluation supports our theoretical analysis and demonstrates the efficiency and effectiveness of our attacks. Our results caution against underestimating the power of signal leakage attacks as they are applicable even in settings with a very restricted number of interactions between adversary and victim.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GangwalSSS22,
+	author = {Ankit Gangwal and
+                  Shubham Singh and
+                  Riccardo Spolaor and
+                  Abhijeet Srivastava},
+	editor = {Vijayalakshmi Atluri and
+                  Roberto Di Pietro and
+                  Christian Damsgaard Jensen and
+                  Weizhi Meng},
+	title = {BLEWhisperer: Exploiting {BLE} Advertisements for Data Exfiltration},
+	booktitle = {Computer Security - {ESORICS} 2022 - 27th European Symposium on Research
+                  in Computer Security, Copenhagen, Denmark, September 26-30, 2022,
+                  Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {13554},
+	pages = {698--717},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-17140-6\_34},
+	doi = {10.1007/978-3-031-17140-6\_34},
+	timestamp = {Tue, 21 Mar 2023 20:58:00 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GangwalSSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bluetooth technology has enabled short-range wireless communication for billions of devices. Bluetooth Low-Energy (BLE) variant aims at improving power consumption on battery-constrained devices. BLE-enabled devices broadcast information (e.g., as beacons) to nearby devices via advertisements. Unfortunately, such functionality can become a double-edged sword at the hands of attackers. In this paper, we primarily show how an attacker can exploit BLE advertisements to exfiltrate information from BLE-enable devices. In particular, our attack establishes a communication medium between two devices without requiring any prior authentication or pairing. We develop a proof-of-concept attack framework on the Android ecosystem and assess its performance via a thorough set of experiments. Our results indicate that such an exfiltration attack is indeed possible though with a limited data rate. Nevertheless, we also demonstrate potential use cases and enhancements to our attack that can further its severeness. Finally, we discuss possible countermeasures to prevent such an attack.}
+}

@@ -1,0 +1,677 @@
+@inproceedings{DBLP:conf/esorics/BhargavanBHKPSWW23,
+	author = {Karthikeyan Bhargavan and
+                  Abhishek Bichhawat and
+                  Pedram Hosseyni and
+                  Ralf K{\"{u}}sters and
+                  Klaas Pruiksma and
+                  Guido Schmitz and
+                  Clara Waldmann and
+                  Tim W{\"{u}}rtele},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Layered Symbolic Security Analysis in {\textdollar}{\textbackslash}textsf
+                  \{DY\}{\^{}}{\textbackslash}star {\textdollar}},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {3--21},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_1},
+	doi = {10.1007/978-3-031-51479-1\_1},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BhargavanBHKPSWW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While cryptographic protocols are often analyzed in isolation, they are typically deployed within a stack of protocols, where each layer relies on the security guarantees provided by the protocol layer below it, and in turn provides its own security functionality to the layer above. Formally analyzing the whole stack in one go is infeasible even for semi-automated verification tools, and impossible for pen-and-paper proofs. The \\(\\textsf {DY}^\\star \\) protocol verification framework offers a modular and scalable technique that can reason about large protocols, specified as a set of \\(\\textsf {F}^\\star \\) modules. However, it does not support the compositional verification of layered protocols since it treats the global security invariants monolithically. In this paper, we extend \\(\\textsf {DY}^\\star \\) with a new methodology that allows analysts to modularly analyze each layer in a way that compose to provide security for a protocol stack. Importantly, our technique allows a layer to be replaced by another implementation, without affecting the proofs of other layers. We demonstrate this methodology on two case studies. We also present a verified library of generic authenticated and confidential communication patterns that can be used in future protocol analyses and is of independent interest.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeberTGZS23,
+	author = {Daniel Weber and
+                  Fabian Thomas and
+                  Lukas Gerlach and
+                  Ruiyi Zhang and
+                  Michael Schwarz},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Indirect Meltdown: Building Novel Side-Channel Attacks from Transient-Execution
+                  Attacks},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {22--42},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_2},
+	doi = {10.1007/978-3-031-51479-1\_2},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WeberTGZS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The transient-execution attack Meltdown leaks sensitive information by transiently accessing inaccessible data during out-of-order execution. Although Meltdown is fixed in hardware for recent CPU generations, most currently-deployed CPUs have to rely on software mitigations, such as KPTI. Still, Meltdown is considered non-exploitable on current systems. In this paper, we show that adding another layer of indirection to Meltdown transforms a transient-execution attack into a side-channel attack, leaking metadata instead of data. We show that despite software mitigations, attackers can still leak metadata from other security domains by observing the success rate of Meltdown on non-secret data. With LeakIDT, we present the first cache-line granular monitoring of kernel addresses. LeakIDT allows an attacker to obtain cycle-accurate timestamps for attacker-chosen interrupts. We use our attack to get accurate inter-keystroke timings and fingerprint visited websites. While we propose a low-overhead software mitigation to prevent the exploitation of LeakIDT, we emphasize that the side-channel aspect of transient-execution attacks should not be underestimated.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CohenS23,
+	author = {Amit Cohen and
+                  Mahmood Sharif},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Accessorize in the Dark: {A} Security Analysis of Near-Infrared Face
+                  Recognition},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {43--61},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_3},
+	doi = {10.1007/978-3-031-51479-1\_3},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/CohenS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Prior work showed that face-recognition systems ingesting RGB images captured via visible-light (VIS ) cameras are susceptible to real-world evasion attacks. Face-recognition systems in near-infrared (NIR ) are widely deployed for critical tasks (e.g., access control), and are hypothesized to be more secure due to the lower variability and dimensionality of NIR images compared to VIS ones. However, the actual robustness of NIR -based face recognition remains unknown. This work puts the hypothesis to the test by offering attacks well-suited for NIR -based face recognition and adapting them to facilitate physical realizability. The outcome of the attack is an adversarial accessory the adversary can wear to mislead NIR -based face-recognition systems. We tested the attack against six models, both defended and undefended, with varied numbers of subjects in the digital and physical domains. We found that face recognition in NIR is highly susceptible to real-world attacks. For example, \\(\\ge \\)96.66% of physically realized attack attempts seeking arbitrary misclassification succeeded, including against defended models. Overall, our work highlights the need to defend NIR -based face recognition, especially when deployed in high-stakes domains.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GerlachTPS23,
+	author = {Lukas Gerlach and
+                  Fabian Thomas and
+                  Robert Pietsch and
+                  Michael Schwarz},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {A Rowhammer Reproduction Study Using the Blacksmith Fuzzer},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {62--79},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_4},
+	doi = {10.1007/978-3-031-51479-1\_4},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GerlachTPS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Rowhammer is a hardware vulnerability that can be exploited to induce bit flips in dynamic random access memory (DRAM), compromising the security of a computer system. Multiple ways of exploiting Rowhammer have been shown and even in the presence of mitigations such as target row refresh (TRR), DRAM modules remain partially vulnerable. In this paper, we present a large-scale reproduction study on the Rowhammer vulnerability using the Blacksmith Rowhammer fuzzer. The main focus of our study is the impact of the fuzzing environment. Our study uses a diverse set of 10 DRAM chips from various manufacturers, with different capacities and memory frequencies. We show that the runtime, used seeds, and DRAM coverage of the fuzzer have been underestimated in previous work. Additionally, we study the entire hardware setup’s impact on the transferability of Rowhammer by fuzzing the same DRAM on 4 identical machines. The transferability study heavily relates to Rowhammer-based physically unclonable functions (PUFs) which rely on the stability of Rowhammer-induced bit flips. Our results confirm the findings of the Blacksmith fuzzer, showing that even modern DRAM chips are vulnerable to Rowhammer. In addition, we show that PUFs are challenging to achieve on commodity systems due to the high variability of Rowhammer bit flips.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeberTGZS23a,
+	author = {Daniel Weber and
+                  Fabian Thomas and
+                  Lukas Gerlach and
+                  Ruiyi Zhang and
+                  Michael Schwarz},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Reviving Meltdown 3a},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {80--99},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_5},
+	doi = {10.1007/978-3-031-51479-1\_5},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WeberTGZS23a.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since the initial discovery of Meltdown and Spectre in 2017, different variants of these attacks have been discovered. One often overlooked variant is Meltdown 3a, also known as Meltdown-CPL-REG. Even though Meltdown-CPL-REG was initially discovered in 2018, the available information regarding the vulnerability is still sparse. In this paper, we analyze Meltdown-CPL-REG on 19 different CPUs from different vendors using an automated tool. We observe that the impact is more diverse than documented and differs from CPU to CPU. Surprisingly, while the newest Intel CPUs do not seem affected by Meltdown-CPL-REG, the newest available AMD CPUs (Zen3+) are still affected by the vulnerability. Furthermore, given our attack primitive CounterLeak, we show that besides up-to-date patches, Meltdown-CPL-REG can still be exploited as we reenable performance-counter-based attacks on cryptographic algorithms, break KASLR, and mount Spectre attacks. Although Meltdown-CPL-REG is not as powerful as other transient-execution attacks, its attack surface should not be underestimated.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ClaverieADL23,
+	author = {Tristan Claverie and
+                  Gildas Avoine and
+                  St{\'{e}}phanie Delaune and
+                  Jos{\'{e}} Lopes{-}Esteves},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Tamarin-Based Analysis of Bluetooth Uncovers Two Practical Pairing
+                  Confusion Attacks},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {100--119},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_6},
+	doi = {10.1007/978-3-031-51479-1\_6},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ClaverieADL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper provides a Tamarin-based formal analysis of all key-agreement protocols available in Bluetooth technologies, i.e., Bluetooth BR/EDR, Bluetooth Low Energy, and Bluetooth Mesh. The automated analysis found several unreported attacks, including two attacks that exploit the confusion of Pairing modes, which occurs when a communicating party uses the Secure Pairing mode while the other one uses the Legacy Pairing mode. They have been validated in practice using off-the-shelf implementations for the genuine communicating parties, and a custom BR/EDR machine-in-the-middle framework for the attacker. Our attacks have been reported by Bluetooth SIG as CVEs.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KimHB23,
+	author = {Sowoong Kim and
+                  Myeonggyun Han and
+                  Woongki Baek},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {{MARF:} {A} Memory-Aware CLFLUSH-Based Intra- and Inter-CPU Side-Channel
+                  Attack},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {120--140},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_7},
+	doi = {10.1007/978-3-031-51479-1\_7},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KimHB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we conduct in-depth characterization to quantify the impact of DRAM refresh, the location of the target memory object within a non-uniform memory access (NUMA) node, and task and page placement across NUMA nodes and identify a set of the patterns in the clflush latency data. Based on characterization results, we propose MARF, a novel memory-aware clflush-based intra- and inter-CPU side-channel attack on NUMA systems. Our case studies on three real NUMA systems demonstrate that MARF can robustly be used to attack applications that use widely-used cryptographic and user-interface libraries. We also present potential countermeasures against MARF.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RaoSXZWJ23,
+	author = {Tingting Rao and
+                  Yixin Su and
+                  Peng Xu and
+                  Yubo Zheng and
+                  Wei Wang and
+                  Hai Jin},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {You Reset {I} Attack! {A} Master Password Guessing Attack Against
+                  Honey Password Vaults},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {141--161},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_8},
+	doi = {10.1007/978-3-031-51479-1\_8},
+	timestamp = {Mon, 22 Jul 2024 17:02:44 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RaoSXZWJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is natural for Internet users to use a password vault to encrypt and manage numerous passwords with a master password. Using one to rule all that is handy but attackers can focus on breaking the vault by brute-force attacking the master password. The honey password vault is proposed to handle the above security concern. It traps the attacker by generating a plausible decoy vault when decrypting the password vault with a “guessing” master password, such that it is hard for the attacker to obtain the real vault. Following the seminal work (S&P’15), many schemes have been proposed to counter advanced attacks, e.g., the Kullback-Leibler divergence attack (CCS’16), encoding attack (USENIX Security’19), and intersection attack (USENIX Security’21). But we find that they barely capture the security after the master password is reset. Once the reset is completed, the attacker can identify the decoy vault by decrypting and comparing the old and new versions of a password vault. To prove this, we propose a new master password guessing attack (MPGA) to break all the existing honey password vault schemes. Experimental results show that MPGA can easily distinguish real and decoy vaults with 99.12%–100.00% accuracy. We further design a secure master-password-updatable honey password vault scheme, named SMART, to resist MPGA. SMART guarantees that the MPGA attacker decrypts out similar decoy vaults from the old and new versions of a password vault. We demonstrate that SMART restricts the attack performance of the MPGA to 49.88% (close to the ideal value 50.00%).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LeeXSSAD23,
+	author = {Jehyun Lee and
+                  Zhe Xin and
+                  Melanie Ng Pei See and
+                  Kanav Sabharwal and
+                  Giovanni Apruzzese and
+                  Dinil Mon Divakaran},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Attacking Logo-Based Phishing Website Detectors with Adversarial Perturbations},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {162--182},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_9},
+	doi = {10.1007/978-3-031-51479-1\_9},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LeeXSSAD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent times have witnessed the rise of anti-phishing schemes powered by deep learning (DL). In particular, logo-based phishing detectors rely on DL models from Computer Vision to identify logos of well-known brands on webpages, to detect malicious webpages that imitate a given brand. For instance, Siamese networks have demonstrated notable performance for these tasks, enabling the corresponding anti-phishing solutions to detect even “zero-day” phishing webpages. In this work, we take the next step of studying the robustness of logo-based phishing detectors against adversarial ML attacks. We propose a novel attack leveraging generative adversarial perturbations to craft “adversarial logos” that, with no knowledge of phishing detection models, can successfully evade the detectors. We evaluate our attacks through: (i)\xa0experiments on datasets containing real logos, to evaluate the robustness of state-of-the-art phishing detectors; and (ii)\xa0user studies to gauge whether our adversarial logos can deceive human eyes. The results show that our proposed attack is capable of crafting perturbed logos subtle enough to evade various DL models—achieving an evasion rate of up to 95%. Moreover, users are not able to spot significant differences between generated adversarial logos and original ones.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiCPTZX23,
+	author = {Lin Li and
+                  Chao Chen and
+                  Lei Pan and
+                  Yonghang Tai and
+                  Jun Zhang and
+                  Yang Xiang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Hiding Your Signals: {A} Security Analysis of PPG-Based Biometric
+                  Authentication},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {183--202},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_10},
+	doi = {10.1007/978-3-031-51479-1\_10},
+	timestamp = {Fri, 01 Mar 2024 14:49:57 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiCPTZX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, physiological signal-based biometric systems have received wide attention. Photoplethysmogram (PPG) signal is easy to measure, making it more attractive than many other physiological signals for biometric authentication. However, with the advent of remote PPG, unobservability has been challenged when the attacker can remotely steal the PPG signals by monitoring the victim’s face, subsequently posing a threat to PPG-based biometrics. In this paper, we firstly analyze the security of PPG-based biometrics, including user authentication and communication protocols. We evaluate the signal waveforms and inter-pulse-interval information extracted by five rPPG methods. Our empirical studies on five datasets show that rPPG poses a serious threat to the authentication system. The success rate of the rPPG signal spoofing attack in the user authentication system reached 35%. The bit hit rate is 60% in inter-pulse-interval-based security protocols. Further, we propose an active defence strategy to hide the physiological signals of the face to resist the attack. It reduces the success rate of rPPG spoofing attacks in user authentication to 5%. The bit hit rate was reduced to 50%, which is at the level of a random guess. Our strategy effectively prevents the exposure of PPG signals to protect users’ sensitive physiological data.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/UchoaAVOA23,
+	author = {Heitor Uchoa and
+                  Vipul Arora and
+                  Dennis Vermoen and
+                  Marco Ottavi and
+                  Nikolaos Alachiotis},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Exploring Genomic Sequence Alignment for Improving Side-Channel Analysis},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {203--221},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_11},
+	doi = {10.1007/978-3-031-51479-1\_11},
+	timestamp = {Tue, 23 Jan 2024 17:11:00 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/UchoaAVOA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Side-channel analysis (SCA) extracts sensitive information from a device by analyzing information that is leaked through side channels. These measurements are correlated with specific operations executed on the device, e.g., encryption or decryption, allowing to extract useful information from the data. Countermeasures, however, disrupt the synchronization between the device’s operations and the corresponding side-channel data, yielding their alignment a prerequisite for successful SCA. In this work, we describe parallels between side-channel analysis and molecular biology, and propose a novel approach to align side-channel traces using genomic sequence alignment methods. We find that Multiple Sequence Alignment techniques can align power traces with higher quality than elastic alignment (based on Dynamic Time Warping), thereby enabling downstream SCA methods, e.g., Correlation Power Analysis, to extract cryptography keys with up to 44% less traces.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HelmschmidtHKPWW23,
+	author = {Florian Helmschmidt and
+                  Pedram Hosseyni and
+                  Ralf K{\"{u}}sters and
+                  Klaas Pruiksma and
+                  Clara Waldmann and
+                  Tim W{\"{u}}rtele},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {The Grant Negotiation and Authorization Protocol: Attacking, Fixing,
+                  and Verifying an Emerging Standard},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {222--242},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_12},
+	doi = {10.1007/978-3-031-51479-1\_12},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HelmschmidtHKPWW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Grant Negotiation and Authorization Protocol (GNAP) is an emerging authorization and authentication protocol which aims to consolidate and unify several use-cases of OAuth 2.0 and many of its common extensions while providing a higher degree of security. OAuth 2.0 is an essential cornerstone of the security of authorization and authentication for the Web, IoT, and beyond, and is used, among others, by many global players, like Google, Facebook, and Microsoft. Historical limitations of OAuth 2.0 and its extensions have led prominent members of the OAuth community to create GNAP, a newly designed protocol for authorization and authentication. Given GNAP’s advantages over OAuth 2.0 and its support within the OAuth community, GNAP is expected to become at least as important as OAuth\xa02.0. In this work, we present the first formal security analysis of GNAP. We build a detailed formal model of GNAP, based on the Web Infrastructure Model (WIM) of Fett, Küsters, and Schmitz, and provide formal statements of the key security properties of GNAP, namely authorization, authentication, and session integrity. We discovered several attacks on GNAP in the process of trying to prove these properties. We present these attacks, as well as changes to the protocol that prevent them. These modifications have been incorporated into the GNAP specification after discussion with the GNAP working group. We give the first formal security guarantees for GNAP, by proving that GNAP, with our modifications applied, satisfies the mentioned security properties. GNAP was still an early draft when we began our analysis, but is now on track to be adopted as an IETF standard. Hence, our analysis is just in time to help ensure the security of this important emerging standard.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Kario23,
+	author = {Hubert Kario},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Everlasting {ROBOT:} The Marvin Attack},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {243--262},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_13},
+	doi = {10.1007/978-3-031-51479-1\_13},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/Kario23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper we show that Bleichenbacher-style attacks on RSA decryption are not only still possible, but also that vulnerable implementations are common. We have successfully attacked multiple implementations using only timing of decryption operation and shown that many others are vulnerable. To perform the attack we used more statistically rigorous techniques like the sign test, Wilcoxon signed-rank test, and bootstrapping of median of pairwise differences. We publish a set of tools for testing libraries that perform RSA decryption against timing side-channel attacks, including one that can test arbitrary TLS servers with no need to write a test harnesses. Finally, we propose a set of workarounds that implementations can employ if they can’t avoid the use of RSA.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XuJLZMLGS23,
+	author = {Bowen Xu and
+                  Shijie Jia and
+                  Jingqiang Lin and
+                  Fangyu Zheng and
+                  Yuan Ma and
+                  Limin Liu and
+                  Xiaozhuo Gu and
+                  Li Song},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {JWTKey: Automatic Cryptographic Vulnerability Detection in {JWT} Applications},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {263--282},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_14},
+	doi = {10.1007/978-3-031-51479-1\_14},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/XuJLZMLGS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {JSON Web Token (JWT) has been widely adopted to increase the security of authentication and authorization scenarios. However, how to manage the JWT key during its lifecycle is rarely mentioned in the standards of JWT, which opens the door for developers with inadequate cryptography experience to implement cryptography incorrectly. Moreover, no effort has been devoted to checking the security of cryptographic usage in JWT applications. In this paper, we design and implement JWTKey, a static analysis detector leveraging program slicing technique to automatically identify cryptographic vulnerabilities in JWT applications. We derive 15 well-targeted cryptographic rules coupled with potential JWT key threats for the first time, and customized analysis entries and slicing criteria are identified accurately based on the observation of diversified JWT implementations, thus achieving balance between precise detection and overhead. Running on 358 open source JWT applications from GitHub, JWTKey discovered that 65.92% of the JWT applications have at least one cryptographic vulnerability. The comparative experiments with CryptoGuard demonstrate the effectiveness of our design. We disclose the findings to the developers and collect their feedback. Our findings highlight the poor cryptographic implementation in the current JWT applications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuZ23,
+	author = {Zhichun Lu and
+                  Ren Zhang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {When is Slower Block Propagation More Profitable for Large Miners?},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {285--305},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_15},
+	doi = {10.1007/978-3-031-51479-1\_15},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LuZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For years, Bitcoin miners put little effort into adopting several widely-acclaimed block acceleration techniques, which, as some argued, would secure their revenues. Their indifference inspires a theory that slower block propagation is beneficial for some miners. In this study, we analyze and confirm this counterintuitive theory. Specifically, by modeling inadvertent slower blocks, we show that a mining coalition that controls more than a third of the total mining power can earn unfair revenue by propagating blocks slower to outsiders. Afterward, we explore the strategies of an attacker that consciously exploits this phenomenon. The results indicate that an attacker with 45% of the total mining power can earn 58% of the total revenue. This attack is alarming as it is equally fundamental but more stealthy than the well-known selfish mining attack. At last, we discuss its detection and defense mechanisms.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiSXZHL23,
+	author = {Shaoyu Li and
+                  Shanghao Shi and
+                  Yang Xiao and
+                  Chaoyu Zhang and
+                  Y. Thomas Hou and
+                  Wenjing Lou},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Bijack: Breaking Bitcoin Network with {TCP} Vulnerabilities},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {306--326},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_16},
+	doi = {10.1007/978-3-031-51479-1\_16},
+	timestamp = {Tue, 07 May 2024 20:10:32 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiSXZHL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nRecent studies have shown that compromising Bitcoin’s peer-to-peer network is an effective way to disrupt the Bitcoin service. While many attack vectors have been uncovered such as BGP hijacking in the network layer and eclipse attack in the application layer, one significant attack vector that resides in the transport layer is largely overlooked. In this paper, we investigate the TCP vulnerabilities of the Bitcoin system and their consequences. We present Bijack, an off-path TCP hijacking attack on the Bitcoin network that is able to terminate Bitcoin connections or inject malicious data into the connections with only a few prior requirements and a limited amount of knowledge. This results in the Bitcoin network topology leakage, and the Bitcoin nodes isolation. We measured the real Bitcoin network and discovered that more than 1700 (27%) of the reachable Bitcoin nodes are vulnerable to our attack whose physical locations are spread across the world. We evaluated the efficiency and impacts of the Bijack attack in real-world settings, and the results show that Bijack successfully realizes several fatal Bitcoin attacks without too much effort.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MitropoulosSIM23,
+	author = {Charalambos Mitropoulos and
+                  Thodoris Sotiropoulos and
+                  Sotiris Ioannidis and
+                  Dimitris Mitropoulos},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Syntax-Aware Mutation for Testing the Solidity Compiler},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {327--347},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_17},
+	doi = {10.1007/978-3-031-51479-1\_17},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MitropoulosSIM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce\xa0fuzzol, the first syntax-aware mutation fuzzer for systematically testing the security and reliability of solc, the standard Solidity compiler. fuzzol\xa0addresses a challenge of existing fuzzers when dealing with structured inputs: the generation of inputs that get past the parser checks of the system under test. To do so, fuzzol\xa0introduces a novel syntax-aware mutation that breaks into three strategies, each of them making different kind of changes in the inputs. Contrary to existing mutations, our mutation is able to change constructs, statements, and entire pieces of code, in a fine-grained manner that conforms to the syntactic rules of the Solidity grammar. Moreover, to explore new paths in the compiler’s codebase faster, we introduce a mutation strategy prioritization algorithm that allows\xa0fuzzol\xa0to identify and apply only those mutation strategies that are most effective in exercising new interesting paths. To evaluate\xa0fuzzol, we test 33 of the latest solc stable releases, and compare\xa0fuzzol\xa0with (1) Superion, a grammar-aware fuzzer, (2) AFL-compiler-fuzzer, a text-mutation fuzzer and (3) two grammar-blind fuzzers with advanced test input generation schedules: AFLFast and MO pt-AFL. fuzzol\xa0identified 19 bugs in total (7 of which were previously unknown to Solidity developers), while the other fuzzers missed half of these bugs. Also, fuzzol\xa0outperforms all fuzzers in terms of line, function, and branch coverage (from 3.75% to 408.8% improvement), while it is the most effective one when it comes to test input generation. Finally, our experiments indicate that our prioritization algorithm makes\xa0fuzzol\xa0explore new paths roughly one day (\\(\\sim \\)24\xa0h) faster.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KimKSKKO23,
+	author = {Sungwook Kim and
+                  Sungju Kim and
+                  Yulim Shin and
+                  Sunmi Kim and
+                  Jihye Kim and
+                  Hyunok Oh},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Efficient Transparent Polynomial Commitments for zk-SNARKs},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {348--366},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_18},
+	doi = {10.1007/978-3-031-51479-1\_18},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KimKSKKO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper proposes a new efficient transparent polynomial commitment scheme. In a polynomial commitment scheme, a prover commits a polynomial and a verifier sends a random point to the prover. The prover then evaluates the polynomial on the given point with generating a proof that the evaluated value is correctly computed according to the committed function. Our construction is based on the polynomial commitment scheme (the DARK compiler) proposed by Bünz, Fisch, and Szepieniec in EUROCRYPT 2020. The approach of DARK is that a prover recursively generates 2 group elements as the proof for a polynomial with a halved degree and a verifier indirectly verifies them at each recursion. In our construction, a prover commits all the reduced polynomials across recursions at once, and then generates a single aggregated proof for them. By aggregating commitments from recursive steps in DARK, the proposed scheme reduces the proof size by half, and provides better performance in the proof generation and the proof verification compared to DARK. By adopting the proposed scheme, the efficiency of transparent SNARKs from polynomial IOPs can be significantly improved.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WangLLDX23,
+	author = {Jianhuan Wang and
+                  Jichen Li and
+                  Zecheng Li and
+                  Xiaotie Deng and
+                  Bin Xiao},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {n-MVTL Attack: Optimal Transaction Reordering Attack on DeFi},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {367--386},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_19},
+	doi = {10.1007/978-3-031-51479-1\_19},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WangLLDX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Decentralized finance (DeFi) is a global and open financial system built on the blockchain technology, typically using Ethereum smart contracts. Decentralized exchanges (DEXs) are very important sectors in the DeFi ecosystem, with billions of USD trading volume daily. Unfortunately, the transparency of pending pools can be exploited by attackers and DEXs are vulnerable to transaction reordering attacks, allowing attackers to gain miner extracted value (MEV). Previous transaction reordering attacks aim at exploiting the vulnerability of a single victim transaction, such as sandwich attack and dagwood sandwich attack. In this paper, we propose a novel transaction reordering attack named n-multiple-victim-transaction-layer (n-MVTL) attack to exploit the overall vulnerability among multiple victim transactions. Such advanced design can significantly expand the victim transaction search space and bring more profits to attackers. Given a set of ordered victim transactions, we propose an optimal algorithm to identify the optimal solution for n-MVTL attacks, which aims to maximize the profit of the attack strategy. This algorithm supports a trade-off between time efficiency and attack profit, making the attack algorithm more practical. Our simulations show that the n-MVTL attack can yield an average extra daily profit of 940 USD from the top 2 most popular liquidity pools in Uniswap V2 from Mar. 2021 to Apr. 2023, compared with the sandwich attack.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RabaninejadAMMN23,
+	author = {Reyhaneh Rabaninejad and
+                  Behzad Abdolmaleki and
+                  Giulio Malavolta and
+                  Antonis Michalas and
+                  Amir Nabizadeh},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {stoRNA: Stateless Transparent Proofs of Storage-time},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {389--410},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_20},
+	doi = {10.1007/978-3-031-51479-1\_20},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RabaninejadAMMN23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proof of Storage-time (PoSt) is a cryptographic primitive that enables a server to demonstrate non-interactive continuous availability of outsourced data in a publicly verifiable way. This notion was first introduced by Filecoin to secure their Blockchain-based decentralized storage marketplace, using expensive SNARKs to compact proofs. Recent work\xa0[2] employs the notion of trapdoor delay function to address the problem of compact PoSt without SNARKs. This approach however entails statefulness and non-transparency, while it requires an expensive pre-processing phase by the client. All of the above renders their solution impractical for decentralized storage marketplaces, leaving the stateless trapdoor-free PoSt with reduced setup costs as an open problem. In this work, we present stateless and transparent PoSt constructions using probabilistic sampling and a new Merkle variant commitment. In the process of enabling adjustable prover difficulty, we then propose a multi-prover construction to diminish the CPU work each prover is required to do. Both schemes feature a fast setup phase and logarithmic verification time and bandwidth with the end-to-end setup, prove, and verification costs lower than the existing solutions.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SongLCPW23,
+	author = {Shang Song and
+                  Lin Liu and
+                  Rongmao Chen and
+                  Wei Peng and
+                  Yi Wang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Secure Approximate Nearest Neighbor Search with Locality-Sensitive
+                  Hashing},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {411--430},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_21},
+	doi = {10.1007/978-3-031-51479-1\_21},
+	timestamp = {Sun, 21 Jan 2024 19:26:06 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/SongLCPW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ensuring both security and efficiency in Nearest Neighbor Search (NNS) on large datasets remains a formidable challenge, as it often leads to substantial computation and communication costs due to the resource-intensive nature of ciphertext computations. To date, there have been some solutions that are capable of handling privacy-preserving NNS queries on big datasets. However, these approaches either impose significant communication and computational burdens or compromise security. In this paper, we introduce a novel framework, namely SecureANNS, for secure approximate nearest neighbor search in the semi-honest setting. Our approach begins by enhancing the building blocks of secure NNS, specifically the multiplexer and comparison operations, through oblivious transfer. We then adapt the plaintext Locality-Sensitive Hashing algorithm to select a smaller subset, reducing the need for extensive two-party computation. Finally, we introduce a new bucket retrieval algorithm for efficient subset retrieval. Experimental results on various datasets demonstrate that our SecureANNS achieves a speedup of 4\\(\\times \\) and 14\\(\\times \\) compared to two state-of-the-art methods respectively.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CohenBSP23,
+	author = {Ofir Cohen and
+                  Ron Bitton and
+                  Asaf Shabtai and
+                  Rami Puzis},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {ConGISATA: {A} Framework for Continuous Gamified Information Security
+                  Awareness Training and Assessment},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {431--451},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_22},
+	doi = {10.1007/978-3-031-51479-1\_22},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/CohenBSP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The incidence of cybersecurity attacks utilizing social engineering techniques has increased. Such attacks exploit the fact that in every secure system, there is at least one individual with the means to access sensitive information. Since it is easier to deceive a person than it is to bypass the defense mechanisms in place, these types of attacks have gained popularity. This situation is exacerbated by the fact that people are more likely to take risks in their passive form, i.e., risks that arise due to the failure to perform an action. Passive risk has been identified as a significant threat to cybersecurity. To address these threats, there is a need to strengthen individuals’ information security awareness (ISA). Therefore, we developed ConGISATA - a continuous gamified ISA training and assessment framework based on embedded mobile sensors; a taxonomy for evaluating mobile users’ security awareness served as the basis for the sensors’ design. ConGISATA’s continuous and gradual training process enables users to learn from their real-life mistakes and adapt their behavior accordingly. ConGISATA aims to transform passive risk situations (as perceived by an individual) into active risk situations, as people tend to underestimate the potential impact of passive risks. Our evaluation of the proposed framework demonstrates its ability to improve individuals’ ISA, as assessed by the sensors and in simulations of common attack vectors.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ArnaboldiAKR23,
+	author = {Luca Arnaboldi and
+                  David Aspinall and
+                  Christina Kolb and
+                  Sasa Radomirovic},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Tactics for Account Access Graphs},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {452--470},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_23},
+	doi = {10.1007/978-3-031-51479-1\_23},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ArnaboldiAKR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Account access graphs have been proposed as a way to model relationships between user credentials, accounts, and methods of access; they capture both multiple simultaneous access routes (e.g., for multi-factor authentication) as well as multiple alternative access routes (e.g., for account recovery). In this paper we extend the formalism with state transitions and tactics. State transitions capture how access may change over time as users or adversaries use access routes and add or remove credentials and accounts. Tactics allow us to model and document attacker techniques or resilience strategies, by writing small programs. We illustrate these ideas using some attacks against mobile authentication and banking applications which have been publicised in 2023.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DraganDGHRS23,
+	author = {Constantin Catalin Dragan and
+                  Fran{\c{c}}ois Dupressoir and
+                  Kristian Gj{\o}steen and
+                  Thomas Haines and
+                  Peter B. R{\o}nne and
+                  Morten Rotvold Solberg},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Machine-Checked Proofs of Accountability: How to sElect Who is to
+                  Blame},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14346},
+	pages = {471--491},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51479-1\_24},
+	doi = {10.1007/978-3-031-51479-1\_24},
+	timestamp = {Thu, 18 Jan 2024 08:27:16 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/DraganDGHRS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Accountability is a critical requirement of any deployed voting system as it allows unequivocal identification of misbehaving parties, including authorities. In this paper, we propose the first game-based definition of accountability and demonstrate its usefulness by applying it to the sElect voting system (Küsters et al., 2016) – a voting system that relies on no other cryptographic primitives than digital signatures and public key encryption. We strengthen our contribution by proving accountability for sElect in the EasyCrypt proof assistant. As part of this, we identify a few errors in the proof for sElect as presented by Küsters et al. (2016) for their definition of accountability. Finally, we reinforce the known relation between accountability and verifiability, and show that it is still maintained by our new game-based definition of accountability.}
+}

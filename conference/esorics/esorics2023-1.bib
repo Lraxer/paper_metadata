@@ -1,0 +1,627 @@
+@inproceedings{DBLP:conf/esorics/AkinKO23,
+	author = {Yavuz Akin and
+                  Jakub Klemsa and
+                  Melek {\"{O}}nen},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {A Practical TFHE-Based Multi-Key Homomorphic Encryption with Linear
+                  Complexity and Low Noise Growth},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_1},
+	doi = {10.1007/978-3-031-50594-2\_1},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AkinKO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fully Homomorphic Encryption enables arbitrary computations over encrypted data and it has a\xa0multitude of applications, e.g., secure cloud computing in healthcare or finance. Multi-Key Homomorphic Encryption (MKHE) further allows to process encrypted data from multiple sources: the data can be encrypted with keys owned by different parties. In\xa0this paper, we propose a\xa0new variant of MKHE instantiated with the \\(\\textsf{TFHE}\\) scheme. Compared to previous attempts by Chen et al. and by Kwak et al., our scheme achieves computation runtime that is linear in the number of involved parties and it outperforms the faster scheme by a\xa0factor of 4.5–\\(6.9\\times \\), at the cost of a\xa0slightly extended pre-computation. In addition, for our scheme, we propose and practically evaluate parameters for up to 128 parties, which enjoy the same estimated security as parameters suggested for the previous schemes (100\xa0bits). It is also worth noting that our scheme—unlike the previous schemes—did not experience any error in any of our seven setups, each running \\(1\\,000\\) trials.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AnTCZ23,
+	author = {Zhiyuan An and
+                  Haibo Tian and
+                  Chao Chen and
+                  Fangguo Zhang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Deniable Cryptosystems: Simpler Constructions and Achieving Leakage
+                  Resilience},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {24--44},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_2},
+	doi = {10.1007/978-3-031-50594-2\_2},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AnTCZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deniable encryption (Canetti et al. in CRYPTO ’97) is an intriguing primitive, which provides security guarantee against coercion by allowing a sender to convincingly open the ciphertext into a fake message. Despite the notable result by Sahai and Waters in STOC ’14 and other efforts in functionality extension, all the deniable public key encryption (\\(\\textsf{DPKE}\\)) schemes suffer from intolerable overhead due to the heavy building blocks, e.g., translucent sets or indistinguishability obfuscation. Besides, none of them considers the possible damage from leakage in the real world, obstructing these protocols from practical use. To fill the gap, in this work we first present a simple and generic approach of sender-\\(\\textsf{DPKE}\\) from ciphertext-simulatable encryption, which can be instantiated with nearly all the common \\(\\textsf{PKE}\\) schemes. The core of this design is a newly-designed framework for flipping a bit-string that offers inverse polynomial distinguishability. Then we theoretically and experimentally expound on how classic side-channel attacks (timing or simple power attacks), can help the coercer break deniability, along with feasible countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SugizakiTHNNIM23,
+	author = {Yukimasa Sugizaki and
+                  Hikaru Tsuchida and
+                  Takuya Hayashi and
+                  Koji Nuida and
+                  Akira Nakashima and
+                  Toshiyuki Isshiki and
+                  Kengo Mori},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Threshold Fully Homomorphic Encryption Over the Torus},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {45--65},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_3},
+	doi = {10.1007/978-3-031-50594-2\_3},
+	timestamp = {Mon, 05 Feb 2024 20:29:40 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/SugizakiTHNNIM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fully homomorphic encryption (FHE) enables arithmetic operations to be performed over plaintext by operations on undecrypted ciphertext. The Chillotti-Gama-Georgieva-Izabachene (CGGI) scheme is a typical FHE scheme, has attracted attention because of its fast bootstrapping and the availability of open-source implementation software. A threshold FHE (ThFHE) scheme has protocols for distributed key generation and distributed decryption that are executed cooperatively among the parties while keeping the decryption key distributed among them. It is useful for secure computations with inputs from multiple parties. However, a ThFHE scheme based on CGGI has yet to be proposed. In this paper, we propose a client-aided ThFHE scheme based on CGGI. Our scheme achieves the same bootstrapping as CGGI without affecting the noise analysis or any CGGI parameter. Therefore, existing open-source software implementing CGGI can easily be extended to our scheme, a ThFHE variant of the CGGI scheme, without changing the implementation part regarding homomorphic operations.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WangHLY23,
+	author = {Qi Wang and
+                  Haodong Huang and
+                  Juyan Li and
+                  Qi Yuan},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Revocable {IBE} with En-DKER from Lattices: {A} Novel Approach for
+                  Lattice Basis Delegation},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {66--85},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_4},
+	doi = {10.1007/978-3-031-50594-2\_4},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WangHLY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In public key encryption (PKE), anonymity is essential to ensure privacy by preventing the ciphertext from revealing the recipient’s identity. However, the literature has addressed the anonymity of PKE under different attack scenarios to a limited extent. Benhamouda et al. (TCC 2020) introduced the first formal definition of anonymity for PKE under corruption, and Huang et al. (ASIACRYPT 2022) made further extensions and provided a generic framework. In this paper, we introduce a new security notion named enhanced decryption key exposure resistance (En-DKER) for revocable identity-based encryption (RIBE). This notion ensures that the exposure of decryption keys within any time period will not compromise the confidentiality and anonymity of ciphertexts encrypted during different periods. Meanwhile, we construct the first RIBE scheme with En-DKER and prove its security under the learning with errors (LWE) assumption. Our scheme offers several advantages. Firstly, the periodic workload of the key generation center (KGC) in our scheme is nearly zero. Secondly, the encryptor does not need to handle real-time revocation information of users within the system. Thirdly, the size of user secret keys remains constant in multi-bit encryption. Additionally, we present a novel approach to delegate a lattice basis. Diverging from the work of Cash et al. (J CRYPTOL 2012), our approach allows for the outsourcing of subsequent sampling operations to an untrusted server. Leveraging this approach, our scheme significantly reduces the periodic workload for users to generate decryption keys. Finally, we efficiently implemented our scheme using the number theory library (NTL) and multi-threaded parallel program. The experimental results confirm the advantages of our scheme.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AbidinPP23,
+	author = {Aysajan Abidin and
+                  Erik Pohle and
+                  Bart Preneel},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Arithmetic Circuit Implementations of S-boxes for {SKINNY} and {PHOTON}
+                  in {MPC}},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {86--105},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_5},
+	doi = {10.1007/978-3-031-50594-2\_5},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AbidinPP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure multi-party computation (MPC) enables multiple distrusting parties to compute a function while keeping their respective inputs private. In a threshold implementation of a symmetric primitive, e.g., of a block cipher, each party holds a share of the secret key or of the input block. The output block is computed without reconstructing the secret key. This enables the construction of distributed TPMs or transciphering for secure data transmission in/out of the MPC context. This paper investigates implementation approaches for the lightweight primitives SKINNY and PHOTON in arithmetic circuits. For these primitives, we identify arithmetic expressions for the S-box that result in smaller arithmetic circuits compared to the Boolean expressions from the literature. We validate the optimization using a generic actively secure MPC protocol and obtain 18% faster execution time with 49% less communication data for SKINNY-64-128 and 27% to 74% faster execution time with 49% to 81% less data for PHOTON \\(P_{100}\\) and \\(P_{288}\\). Furthermore, we find a new set of parameters for the heuristic method of polynomial decomposition, introduced by Coron, Roy and Vivek, specialized for SKINNY’s 8-bit S-box. We reduce the multiplicative depth from 9 to\xa05.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KimL23,
+	author = {Minkyu Kim and
+                  Hyung Tae Lee},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Code-Based Secret Handshake Scheme, Revisited},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {106--125},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_6},
+	doi = {10.1007/978-3-031-50594-2\_6},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KimL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secret handshake\xa0(SH) allows two users to authenticate each other anonymously only when they are in the same group. Recently, due to the concern of developments on large-scale quantum computers, designing post-quantum SH has been investigated and three constructions were proposed: One is code-based\xa0[21] and two others are lattice-based\xa0[1, 2]. However, it turns out that the code-based construction\xa0[21] has a security flaw that the adversary easily impersonates an honest user to activate a handshake. In this paper, we show how to construct a code-based SH scheme in the framework of CA-oblivious encryption by utilizing the recently proposed code-based signature scheme, called LESS-FM, whose security is based on the hardness of the code equivalence problem. Our proposed scheme is the first secure code-based SH and has the smallest communication cost among all known post-quantum SH schemes. For example, for 80-bit security, our scheme has communication costs of about 260\xa0KB and 3.4\xa0KB when instantiated with Classic McEliece and BIKE, respectively, while other existing post-quantum constructions have communication costs of megabytes or gigabytes.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiMMWS23,
+	author = {Feng Li and
+                  Jianfeng Ma and
+                  Yinbin Miao and
+                  Pengfei Wu and
+                  Xiangfu Song},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Beyond Volume Pattern: Storage-Efficient Boolean Searchable Symmetric
+                  Encryption with Suppressed Leakage},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {126--146},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_7},
+	doi = {10.1007/978-3-031-50594-2\_7},
+	timestamp = {Fri, 19 Jan 2024 11:50:47 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiMMWS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Boolean Searchable Symmetric Encryption (BSSE) enables users to perform retrieval operations on the encrypted data while supporting complex query capabilities. This paper focuses on addressing the storage overhead and privacy concerns associated with existing BSSE schemes. While Patel\xa0et al. (ASIACRYPT’21) and Bag\xa0et al. (PETS’23) introduced BSSE schemes that conceal the number of single keyword results, both of them suffer from quadratic storage overhead and neglect the privacy of search and access patterns. Consequently, an open question arises: Can we design a storage-efficient Boolean query scheme that effectively suppresses leakage, covering not only the volume pattern for singleton keywords, but also search and access patterns? In light of the limitations of existing schemes in terms of storage overhead and privacy protection, this work presents a novel solution called SESAME. It realizes efficient storage and privacy preserving based on Bloom filter and functional encryption. Moreover, we propose an enhanced version, SESAME+, which offers improved search performance. By rigorous security analysis on the leakage functions of our schemes, we provide a formal security proof. Finally, we implement our schemes and demonstrate that SESAME+ achieves superior search efficiency and reduced storage overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DayanikliL23,
+	author = {Dennis Dayanikli and
+                  Anja Lehmann},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Password-Based Credentials with Security Against Server Compromise},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {147--167},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_8},
+	doi = {10.1007/978-3-031-50594-2\_8},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/DayanikliL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Password-based credentials (PBCs), introduced by Zhang et al. (NDSS’20), provide an elegant solution to secure, yet convenient user authentication. Therein the user establishes a strong cryptographic access credential with the server. To avoid the assumption of secure storage on the user side, the user does not store the credential directly, but only a password-protected version of it. The ingenuity of PBCs is that the password-based credential cannot be offline attacked, offering essentially the same strong security as standard key-based authentication. This security relies on a secret key of the server that is needed to verify whether an authentication token derived from a password-based credential and password is correct. However, the work by Zhang et al. assumes that this server key never gets compromised, and their protocol loses all security in case of a breach. As such a passive leak of the server’s stored verification data is one of the main threats in user authentication, our work aims to strengthen PBC to remain secure even when the server’s key got compromised. We first show that the desired security against server compromise is impossible to achieve in the original framework. We then introduce a modified version of PBCs that circumvents our impossibility result and formally define a set of security properties, each being optimal for the respective corruption setting. Finally, we propose a surprisingly simple construction that provably achieves our stronger security guarantees, and is generically composed from basic building blocks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TiepeltES23,
+	author = {Marcel Tiepelt and
+                  Edward Eaton and
+                  Douglas Stebila},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Making an Asymmetric {PAKE} Quantum-Annoying by Hiding Group Elements},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {168--188},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_9},
+	doi = {10.1007/978-3-031-50594-2\_9},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/TiepeltES23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The KHAPE-HMQV protocol is a state-of-the-art highly efficient asymmetric password-authenticated key exchange protocol that provides several desirable security properties, but has the drawback of being vulnerable to quantum adversaries due to its reliance on discrete logarithm-based building blocks: solving a single discrete logarithm allows the attacker to perform an offline dictionary attack and recover the password. We show how to modify KHAPE-HMQV to make the protocol quantum-annoying: a classical adversary who has the additional ability to solve discrete logarithms can only break the protocol by solving a discrete logarithm for each guess of the password. While not fully resistant to attacks by quantum computers, a quantum-annoying protocol could offer some resistance to quantum adversaries for whom discrete logarithms are relatively expensive. Our modification to the protocol is small: encryption (using an ideal cipher) is added to one message. Our analysis uses the same ideal cipher model assumption as the original analysis of KHAPE, and quantum annoyingness is modelled using an extension of the generic group model which gives a classical adversary a discrete logarithm oracle.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MaireV23,
+	author = {Jules Maire and
+                  Damien Vergnaud},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Commitments with Efficient Zero-Knowledge Arguments from Subset Sum
+                  Problems},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {189--208},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_10},
+	doi = {10.1007/978-3-031-50594-2\_10},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MaireV23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a cryptographic string commitment scheme that is computationally hiding and binding based on (modular) subset sum problems. It is believed that these NP-complete problems provide post-quantum security contrary to the number theory assumptions currently used in cryptography. Using techniques recently introduced by Feneuil, Maire, Rivain and Vergnaud, this simple commitment scheme enables an efficient zero-knowledge proof of knowledge for committed values as well as proofs showing Boolean relations amongst the committed bits. In particular, one can prove that committed bits \\(m_0, m_1, ..., m_\\ell \\) satisfy \\(m_0 = C(m_1, ..., m_\\ell )\\) for any Boolean circuit C (without revealing any information on those bits). The proof system achieves good communication and computational complexity since for a security parameter \\(\\lambda \\), the protocol’s communication complexity is \\(\\tilde{O}(|C| \\lambda + \\lambda ^2)\\) (compared to \\(\\tilde{O}(|C| \\lambda ^2)\\) for the best code-based protocol due to Jain, Krenn, Pietrzak and Tentes).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WabarthaLHRK23,
+	author = {Carmen Wabartha and
+                  Julian Liedtke and
+                  Nicolas Huber and
+                  Daniel Rausch and
+                  Ralf K{\"{u}}sters},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Fully Tally-Hiding Verifiable E-Voting for Real-World Elections with
+                  Seat-Allocations},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {209--228},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_11},
+	doi = {10.1007/978-3-031-50594-2\_11},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WabarthaLHRK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern e-voting systems provide what is called verifiability, i.e., voters are able to check that their votes have actually been counted despite potentially malicious servers and voting authorities. Some of these systems, called tally-hiding systems, provide increased privacy by revealing only the actual election result, e.g., the winner of the election, but no further information that is supposed to be kept secret. However, due to these very strong privacy guarantees, supporting complex voting methods at a real-world scale has proven to be very challenging for tally-hiding systems. A widespread class of elections, and at the same time, one of the most involved ones is parliamentary election with party-based seat-allocation. These elections are performed for millions of voters, dozens of parties, and hundreds of individual candidates competing for seats; they also use very sophisticated multi-step algorithms to compute the final assignment of seats to candidates based on, e.g., party lists, hundreds of electoral constituencies, possibly additional votes for individual candidates, overhang seats, and special exceptions for minorities. So far, it has not been investigated whether and in how far such elections can be performed in a verifiable tally-hiding manner. In this work, we design and implement the first verifiable (fully) tally-hiding e-voting system for an election from this class, namely, for the German parliament (Bundestag). As part of this effort, we propose several new tally-hiding building blocks that are of independent interest. We perform benchmarks based on actual election data, which show, perhaps surprisingly, that our proposed system is practical even at a real-world scale. Our work thus serves as a foundational feasibility study for this class of elections.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AnandBCFIKLNST23,
+	author = {Ravi Anand and
+                  Subhadeep Banik and
+                  Andrea Caforio and
+                  Kazuhide Fukushima and
+                  Takanori Isobe and
+                  Shinsaku Kiyomoto and
+                  Fukang Liu and
+                  Yuto Nakano and
+                  Kosei Sakamoto and
+                  Nobuyuki Takeuchi},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {An Ultra-High Throughput AES-Based Authenticated Encryption Scheme
+                  for 6G: Design and Implementation},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {229--248},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_12},
+	doi = {10.1007/978-3-031-50594-2\_12},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AnandBCFIKLNST23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose Rocca-S, an authenticated encryption scheme with a 256-bit key and a 256-bit tag targeting 6G applications bootstrapped from AES.Rocca-S achieves an encryption/decryption speed of more than 200 Gbps in the latest software environments. In hardware implementation, Rocca-S is the first cryptographic algorithm to achieve speeds more than 2 Tbps without sacrificing other metrics such as occupied silicon area or power/energy consumption making Rocca-S a competitive choice satisfying the requirements of a wide spectrum of environments for 6G applications.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhuHCJ23,
+	author = {Lin Zhu and
+                  Qiang{-}Sheng Hua and
+                  Yi Chen and
+                  Hai Jin},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Secure Outsourced Matrix Multiplication with Fully Homomorphic Encryption},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {249--269},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_13},
+	doi = {10.1007/978-3-031-50594-2\_13},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhuHCJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fully Homomorphic Encryption (FHE) is a powerful cryptographic tool that enables the handling of sensitive encrypted data in untrusted computing environments. This capability allows for the outsourcing of computational tasks, effectively addressing security and privacy concerns. This paper studies the secure matrix multiplication problem, a fundamental operation used in various outsourced computing applications such as statistical analysis and machine learning. We propose a novel method to solve the secure matrix multiplication \\(A_{m\\times l}\\times B_{l\\times n}\\) with arbitrary dimensions, which requires only O(l) rotations and \\(\\min (m,l,n)\\) homomorphic multiplications. In comparison to the state-of-the-art method [14], our approach stands out by achieving a remarkable reduction in the number of rotations by a factor of \\(O(\\log \\max (l,n))\\), as well as a reduction in the number of homomorphic multiplications by a factor of \\(O(l/\\min (m,l,n))\\). We implemented [14, 21], and our method using the BGV scheme supported by the HElib library. Experimental results show that our scheme has the best performance for matrix multiplication of any dimension. For example, for \\(A_{16\\times 128}\\times B_{128\\times 4}=C_{16\\times 4}\\), the runtime of our method is 32\xa0s, while both [14, 21] take 569 seconds.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BoudgoustT23,
+	author = {Katharina Boudgoust and
+                  Akira Takahashi},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Sequential Half-Aggregation of Lattice-Based Signatures},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {270--289},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_14},
+	doi = {10.1007/978-3-031-50594-2\_14},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BoudgoustT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With\xa0\\(\\textsf {Dilithium} \\) and\xa0\\(\\textsf {Falcon} \\), NIST selected two lattice-based signature schemes during their post-quantum standardization project. Whereas \\(\\textsf {Dilithium} \\) follows the Fiat-Shamir with Aborts (Lyubashevsky, Asiacrypt’09) blueprint, \\(\\textsf {Falcon} \\) can be seen as an optimized version of the GPV-paradigm (Gentry et al., STOC’06). An important question now is whether those signatures allow additional features such as the aggregation of distinct signatures. One example are sequential aggregate signature (\\(\\textsf{SAS}\\)) schemes (Boneh et al., Eurocrypt’04) which allow a group of signers to sequentially combine signatures on distinct messages in a compressed manner. The present work first reviews the state of the art of (sequentially) aggregating lattice-based signatures, points out the insecurity of one of the existing \\(\\textsf {Falcon} \\)-based \\(\\textsf{SAS}\\) (Wang and Wu, PROVSEC’19), and proposes a fix for it. We then construct the first Fiat-Shamir with Aborts based\xa0\\(\\textsf{SAS}\\) by generalizing existing techniques from the discrete-log setting (Chen and Zhao, ESORICS’22) to the lattice framework. Going from the pre-quantum to the post-quantum world, however, does most often come with efficiency penalties. In our work, we also meet obstacles that seem inherent to lattice-based signatures, making the resulting scheme less efficient than what one would hope for. As a result, we only achieve quite small compression rates. We compare our construction with existing lattice-based\xa0\\(\\textsf{SAS}\\) which all follow the GPV-paradigm. The bottom line is that none of the schemes achieves a good compression rate so far.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/NunesRS23,
+	author = {Ivan De Oliveira Nunes and
+                  Peter Rindal and
+                  Maliheh Shirvanian},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Oblivious Extractors and Improved Security in Biometric-Based Authentication
+                  Systems},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {290--312},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_15},
+	doi = {10.1007/978-3-031-50594-2\_15},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/NunesRS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the problem of biometric-based authentication with template privacy. Typical schemes addressing this problem, such as Fuzzy Vaults (\\(\\mathsf {{FV}} \\)) and Fuzzy Extractors (\\(\\mathsf {{FE}} \\)), allow a server, aka \\(\\mathsf {{Authenticator}} \\), to store “random looking” Helper Data (\\(\\mathsf {{HD}} \\)) instead of biometric templates in clear.\\(\\mathsf {{HD}} \\) hides information about the corresponding biometric while still enabling secure biometric-based authentication. Even though these schemes reduce the risk of storing biometric data, their correspondent authentication procedures typically require sending the \\(\\mathsf {{HD}} \\) (stored by the \\(\\mathsf {{Authenticator}} \\)) to a client who claims a given identity. The premise here is that only the identity owner – i.e., the person whose biometric was sampled to originally generate the \\(\\mathsf {{HD}} \\)– is able to provide the same biometric to reconstruct the proper cryptographic key from \\(\\mathsf {{HD}} \\). As a side effect, the ability to freely retrieve \\(\\mathsf {{HD}} \\), by simply claiming a given identity, allows invested adversaries to perform offline statistical attacks (a biometric analog for dictionary attacks on hashed passwords) or re-usability attacks (if the \\(\\mathsf {{FE}} \\) scheme is not reusable) on the \\(\\mathsf {{HD}} \\) to eventually recover the user’s biometric template. In this work, we develop Oblivious Extractors: a new construction that allows an \\(\\mathsf {{Authenticator}} \\) to authenticate a user requiring neither the user to send a biometric to the \\(\\mathsf {{Authenticator}} \\), nor the server to send the \\(\\mathsf {{HD}} \\) to the client. Oblivious Extractors provide concrete security advantages for biometric-based authentication systems. From the perspective of secure storage, an oblivious extractor is as secure as its non-oblivious fuzzy extractor counterpart. In addition, it enhances security against aforementioned statistical and re-usability attacks. To demonstrate the construction’s practicality, we implement and evaluate a biometric-based authentication prototype using Oblivious Extractors.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MaffeiR23,
+	author = {Ivo Maffei and
+                  A. W. Roscoe},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Optimally-Fair Multi-party Exchange Without Trusted Parties},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {313--333},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_16},
+	doi = {10.1007/978-3-031-50594-2\_16},
+	timestamp = {Fri, 08 Mar 2024 13:22:17 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MaffeiR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nWe present a multi-party exchange protocol that achieves optimal partial fairness even in the presence of a dishonest majority. We demonstrate how this protocol can be applied to any type of multi-party exchange scenario where the network topology is complete. When combined with standard secure multi-party computation techniques, our protocol enables SMPC with partial fairness when a dishonest majority is involved. Fairness optimality is proven in an abstract model which applies to all protocols based on the concept of concealing the point when the secrets are exchanged. Our protocol improves known results via the use of timed-release encryption and commutative blinding.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AhnLYY23,
+	author = {Tae Min Ahn and
+                  Kang Hoon Lee and
+                  Joon Soo Yoo and
+                  Ji Won Yoon},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Cheap and Fast Iterative Matrix Inverse in Encrypted Domain},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {334--352},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_17},
+	doi = {10.1007/978-3-031-50594-2\_17},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AhnLYY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Homomorphic encryption (HE) is a promising technique for preserving the privacy of sensitive data by enabling computations to be performed on encrypted data. However, due to the limitations of arithmetic HE schemes, which typically only support addition and multiplication, many nonlinear operations must be approximated using these basic operations. As a result, some nonlinear operations cannot be executed in the same manner as they would be in the plain domain. For instance, the matrix inverse can be calculated using the Gaussian elimination method in the plain domain, which is not possible using only the usual arithmetic. Therefore, much literature has turned to iterative matrix inverse algorithms such as the Newton method, which can be implemented using only additions and multiplications. In this paper, we propose a new matrix inversion method with better performance and prove that the new method outperforms the existing method; the number of depths of the new method is fewer than that of the existing method. Thus, we can evaluate more operations and design the algorithm efficiently since the number of operations is limited in HE. We experiment on ML algorithms such as linear regression and LDA to show that our matrix inverse operation is more efficient than Newton’s in HE. Our approach exhibits approximately twice the performance improvement compared to the Newton’s method.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/JeonLP23,
+	author = {Sohyun Jeon and
+                  Hyang{-}Sook Lee and
+                  Jeongeun Park},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Practical Randomized Lattice Gadget Decomposition with Application
+                  to {FHE}},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {353--371},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_18},
+	doi = {10.1007/978-3-031-50594-2\_18},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/JeonLP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Gadget decomposition is widely used in lattice based cryptography, especially homomorphic encryption (HE) to keep the noise growth slow. If it is randomized following a subgaussian distribution, it is called subgaussian (gadget) decomposition which guarantees that we can bound the noise contained in ciphertexts by its variance. This gives tighter and cleaner noise bound in average case, instead of the use of its norm. Even though there are few attempts to build efficient such algorithms, most of them are still not practical enough to be applied to homomorphic encryption schemes due to somewhat high overhead compared to the deterministic decomposition. Furthermore, there has been no detailed analysis of existing works. Therefore, HE schemes use the deterministic decomposition algorithm and rely on a Heuristic assumption that every output element follows a subgaussian distribution independently. In this work, we introduce a new practical subgaussian gadget decomposition algorithm which has the least overhead (less than 14%) among existing works for certain parameter sets, by combining two previous works. In other words, we bring an existing technique based on an uniform distribution to a simpler and faster design (PKC’ 22) to exploit parallel computation, which allows to skip expensive parts due to pre-computation, resulting in even simpler and faster algorithm. When the modulus is large (over 100-bit), our algorithm is not always faster than the other similar work. Therefore, we give a detailed comparison, even for large modulus, with all the competitive algorithms for applications to choose the best algorithm for their choice of parameters.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BrezotPP23,
+	author = {Th{\'{e}}ophile Br{\'{e}}zot and
+                  Paola de Perthuis and
+                  David Pointcheval},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Covercrypt: An Efficient Early-Abort {KEM} for Hidden Access Policies
+                  with Traceability from the {DDH} and {LWE}},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {372--392},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_19},
+	doi = {10.1007/978-3-031-50594-2\_19},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BrezotPP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attribute-Based Encryption (ABE) is a very attractive primitive to limit access according to specific rights. While very powerful instantiations have been offered, under various computational assumptions, they rely on either classical or post-quantum problems, and are quite intricate to implement, generally resulting in poor efficiency; the construction we offer results in a powerful efficiency gap with respect to existing solutions. With the threat of quantum computers, post-quantum solutions are important, but not yet tested enough to rely on such problems only. We thus first study an hybrid approach to rely on the best of the two worlds: the scheme is secure if at least one of the two underlying assumptions is still valid (i.e. the DDH and LWE). Then, we address the ABE problem, with a practical solution delivering encrypted contents such that only authorized users can decrypt, without revealing the target sets, while also granting tracing capabilities. Our scheme is inspired by the Subset Cover framework where the users’ rights are organized as subsets and a content is encrypted with respect to a subset covering of the target set. Quite conveniently, we offer black-box modularity: one can easily use any public-key encryption of their choice, such as Kyber, with their favorite library, to combine it with a simple ElGamal variant of key encapsulation mechanisms, providing strong security guarantees.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CaoTDYVFHZKK23,
+	author = {Quang Cao and
+                  Hong{-}Yen Tran and
+                  Son Hoang Dau and
+                  Xun Yi and
+                  Emanuele Viterbo and
+                  Chen Feng and
+                  Yu{-}Chih Huang and
+                  Jingge Zhu and
+                  Stanislav Kruglik and
+                  Han Mao Kiah},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Committed Private Information Retrieval},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {393--413},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_20},
+	doi = {10.1007/978-3-031-50594-2\_20},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/CaoTDYVFHZKK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A private information retrieval (PIR) scheme allows a client to retrieve a data item \\(x_i\\) among n items \\(x_1,x_2,\\ldots ,x_n\\) from k servers, without revealing what i is even when \\(t < k\\) servers collude and try to learn i. Such a PIR scheme is said to be t-private. A PIR scheme is v-verifiable if the client can verify the correctness of the retrieved \\(x_i\\) even when \\(v \\le k\\) servers collude and try to fool the client by sending manipulated data. Most of the previous works in the literature on PIR assumed that \\(v < k\\), leaving the case of all-colluding servers open. We propose a generic construction that combines a linear map commitment (LMC) and an arbitrary linear PIR scheme to produce a k-verifiable PIR scheme, termed a committed PIR scheme. Such a scheme guarantees that even in the worst scenario, when all servers are under the control of an attacker, although the privacy is unavoidably lost, the client won’t be fooled into accepting an incorrect \\(x_i\\). We demonstrate the practicality of our proposal by implementing the committed PIR schemes based on the Lai-Malavolta LMC and three well-known PIR schemes using the GMP library and blst, the current fastest C library for elliptic curve pairings.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LyuL23,
+	author = {You Lyu and
+                  Shengli Liu},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Two-Message Authenticated Key Exchange from Public-Key Encryption},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {414--434},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_21},
+	doi = {10.1007/978-3-031-50594-2\_21},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LyuL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In two-message authenticated key exchange (AKE), it is necessary for the initiator to keep a round state after sending the first round-message, because he/she has to derive his/her session key after receiving the second round-message. Up to now almost all two-message AKEs constructed from public-key encryption (PKE) only achieve weak security which does not allow the adversary obtaining the round state. How to support state reveal to obtain a better security called IND-AA security has been an open problem proposed by Hövelmann et al. (PKC 2020). In this paper, we solve the open problem with a generic construction of two-message AKE from any CCA-secure Tagged Key Encapsulation Mechanism (TKEM). Our AKE supports state reveal and achieves IND-AA security. Given the fact that CCA-secure public-key encryption (PKE) implies CCA-secure TKEM, our AKE can be constructed from any CCA-secure PKE with proper message space. The abundant choices for CCA-secure PKE schemes lead to many IND-AA secure AKE schemes in the standard model. Moreover, following the online-extractability technique in recent work by Don et al. (Eurocrypt 2022), we can extend the Fujisaki-Okamoto transformation to transform any CPA-secure PKE into a CCA-secure Tagged KEM in QROM. Therefore, we obtain the first generic construction of IND-AA secure two-message AKE from CPA-secure PKE in QROM. This construction does not need any signature scheme, and this result is especially helpful in the post-quantum world, since the current quantum-secure PKE schemes are much more efficient than their signature counterparts.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MaireV23a,
+	author = {Jules Maire and
+                  Damien Vergnaud},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Efficient Zero-Knowledge Arguments and Digital Signatures via Sharing
+                  Conversion in the Head},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {435--454},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_22},
+	doi = {10.1007/978-3-031-50594-2\_22},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MaireV23a.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a novel technique within the MPC-in-the-Head framework, aiming to design efficient zero-knowledge protocols and digital signature schemes. The technique allows for the simultaneous use of additive and multiplicative sharings of secret information, enabling efficient proofs of linear and multiplicative relations. The applications of our technique are manifold. It is first applied to construct zero-knowledge arguments of knowledge for Double Discrete Logarithms. The resulting protocol achieves improved communication complexity without compromising efficiency. We also propose a new zero-knowledge argument of knowledge for the Permuted Kernel Problem. Eventually, we propose a short (candidate) post-quantum digital signature scheme constructed from a new one-way function based on simple polynomials known as fewnomials. This scheme offers simplicity and ease of implementation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HetzSW23,
+	author = {Laura Hetz and
+                  Thomas Schneider and
+                  Christian Weinert},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Scaling Mobile Private Contact Discovery to Billions of Users},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14344},
+	pages = {455--476},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-50594-2\_23},
+	doi = {10.1007/978-3-031-50594-2\_23},
+	timestamp = {Mon, 05 Feb 2024 20:29:40 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HetzSW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile contact discovery is a convenience feature of messengers such as\xa0WhatsApp or Telegram that helps users to identify which of their existing contacts are registered with the service. Unfortunately, the contact discovery implementation of many popular messengers massively violates the users’ privacy as demonstrated by\xa0Hagen\xa0et\xa0al.\xa0(NDSS\xa0’21, ACM\xa0TOPS\xa0’23). Unbalanced private set intersection\xa0(PSI) protocols are a promising cryptographic solution to realize mobile\xa0private contact discovery, however, state-of-the-art protocols do not scale to real-world database sizes with billions of registered users in terms of communication and/or computation overhead. In our work, we make significant steps towards truly practical large-scale mobile private contact discovery. For this, we combine and substantially optimize the unbalanced\xa0PSI protocol of\xa0Kales et al.\xa0(USENIX\xa0Security\xa0’19) and the private information retrieval\xa0(PIR) protocol of\xa0Kogan\xa0and\xa0Corrigan-Gibbs\xa0(USENIX\xa0Security\xa0’21). Our resulting protocol has a total communication overhead that is sublinear in the size of the server’s user database and also has sublinear online runtimes. We optimize our protocol by introducing database partitioning and efficient scheduling of user queries. To handle realistic change rates of databases and contact lists, we propose and evaluate different possibilities for efficient updates. We\xa0implement our protocol on smartphones and measure online runtimes of less than\xa02\xa0s to query up to\xa01\xa0024 contacts from a database with more than two billion entries. Furthermore, we achieve a reduction in setup communication up to factor\xa0\\(32\\times \\) compared to state-of-the-art mobile private contact discovery protocols.}
+}

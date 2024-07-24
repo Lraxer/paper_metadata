@@ -1,0 +1,949 @@
+@inproceedings{DBLP:conf/esorics/SchwabeSW21,
+	author = {Peter Schwabe and
+                  Douglas Stebila and
+                  Thom Wiggers},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {More Efficient Post-quantum {KEMTLS} with Pre-distributed Public Keys},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {3--22},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_1},
+	doi = {10.1007/978-3-030-88418-5\_1},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SchwabeSW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While server-only authentication with certificates is the most widely used mode of operation for the Transport Layer Security (TLS) protocol on the world wide web, there are many applications where TLS is used in a different way or with different constraints. For example, embedded Internet-of-Things clients may have a server certificate pre-programmed and be highly constrained in terms of communication bandwidth or computation power. As post-quantum algorithms have a wider range of performance trade-offs, designs other than traditional “signed-key-exchange” may be worthwhile. The KEMTLS protocol, presented at ACM CCS 2020, uses key encapsulation mechanisms (KEMs) rather than signatures for authentication in the TLS 1.3 handshake, a benefit since most post-quantum KEMs are more efficient than PQ signatures. However, KEMTLS has some drawbacks, especially in the client authentication scenario which requires a full additional roundtrip. We explore how the situation changes with pre-distributed public keys, which may be viable in many scenarios, for example pre-installed public keys in apps, on embedded devices, cached public keys, or keys distributed out of band. Our variant of KEMTLS with pre-distributed keys, called \\(\\mathsf{KEMTLS\\text {-}PDK}\\), is more efficient in terms of both bandwidth and computation compared to post-quantum signed-KEM TLS (even cached public keys), and has a smaller trusted code base. When client authentication is used, \\(\\mathsf{KEMTLS\\text {-}PDK}\\) is more bandwidth efficient than KEMTLS yet can complete client authentication in one fewer round trips, and has stronger authentication properties. Interestingly, using pre-distributed keys in \\(\\mathsf{KEMTLS\\text {-}PDK}\\) changes the landscape on suitability of PQ algorithms: schemes where public keys are larger than ciphertexts/signatures (such as Classic McEliece and Rainbow) can be viable, and the differences between some lattice-based schemes is reduced. We also discuss how using pre-distributed public keys provides privacy benefits compared to pre-shared symmetric keys in TLS.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ArfaouiBBFJNO21,
+	author = {Ghada Arfaoui and
+                  Olivier Blazy and
+                  Xavier Bultel and
+                  Pierre{-}Alain Fouque and
+                  Thibaut Jacques and
+                  Adina Nedelcu and
+                  Cristina Onete},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {How to (Legally) Keep Secrets from Mobile Operators},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {23--43},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_2},
+	doi = {10.1007/978-3-030-88418-5\_2},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ArfaouiBBFJNO21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure-channel establishment allows two endpoints to communicate confidentially and authentically. Since they hide all data sent across them, good or bad, secure channels are often subject to mass surveillance in the name of (inter)national security. Some protocols are constructed to allow easy data interception . Others are designed to preserve data privacy and are either subverted or prohibited to use without trapdoors. We introduce \\(\\mathsf {LIKE}\\), a primitive that provides secure-channel establishment with an exceptional, session-specific opening mechanism. Designed for mobile communications, where an operator forwards messages between the endpoints, it can also be used in other settings. \\(\\mathsf {LIKE}\\) allows Alice and Bob to establish a secure channel with respect to n authorities. If the authorities all agree on the need for interception, they can ensure that the session key is retrieved. As long as at least one honest authority prohibits interception, the key remains secure; moreover \\(\\mathsf {LIKE}\\) is versatile with respect to who learns the key. Furthermore, we guarantee non-frameability: nobody can falsely incriminate a user of taking part in a conversation; and honest-operator: if the operator accepts a transcript as valid, then the key retrieved by the authorities is the key that Alice and Bob should compute. Experimental results show that our protocol can be efficiently implemented.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GellertH21,
+	author = {Kai Gellert and
+                  Tobias Handirk},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {A Formal Security Analysis of Session Resumption Across Hostnames},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {44--64},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_3},
+	doi = {10.1007/978-3-030-88418-5\_3},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GellertH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The TLS 1.3 session resumption handshakes enables a client and a server to resume a previous connection via a shared secret, which was established during a previous session. In practice, this is often done via session tickets, where the server provides a “self-encrypted” ticket containing the shared secret to its clients. A client may resume its session by sending the ticket to the server, which allows the server to retrieve the shared secret stored within the ticket. Usually, a ticket is only accepted by the server that issued the ticket. However, in practice, servers that share the same hostname, often share the same key material for ticket encryption. The concept of a server accepting a ticket, which was issued by a different server, is known as session resumption across hostnames (SRAH). In 2020, Sy et al. showed in an empirical analysis that, by using SRAH, the time to load a webpage can be reduced by up\xa0to 31% when visiting the page for the very first time. Despite its performance advantages, the TLS 1.3 specification currently discourages the use of SRAH. In this work, we formally investigate which security guarantees can be achieved when using SRAH. To this end, we provide the first formalization of SRAH and analyze its security in the multi-stage key exchange model (Dowling et al.; JoC 2021), which proved useful in previous analyses of TLS handshakes. We find that an adversary can break authentication if clients do not specify the intended receiver of their first protocol message. However, if the intended receiver is specified by the client, we prove that SRAH is secure in the multi-stage key exchange model.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Rasheed0T21,
+	author = {Shawn Rasheed and
+                  Jens Dietrich and
+                  Amjed Tahir},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Caught in the Web: DoS Vulnerabilities in Parsers for Structured Data},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {67--85},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_4},
+	doi = {10.1007/978-3-030-88418-5\_4},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/Rasheed0T21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study a class of denial-of-service (DoS) vulnerabilities that occur in parsing structured data. These vulnerabilities enable low bandwidth DoS attacks with input that causes algorithms to execute in disproportionately large time and/or space. We generalise the characteristics of these vulnerabilities, and frame them in terms of three aspects, TTT: (1) the Topology of composite data structures formed by the internal representation of parsed data, (2) the presence of recursive functions for the Traversal of the data structures and (3) the presence of a Trigger that enables an attacker to activate the traversal. An analysis based on this abstraction was implemented for one target platform (Java), and in our study, we found that the impact of the results obtained with this method goes beyond Java. The inputs from our investigation revealed several similar vulnerabilities in programs written in other languages such as Rust and PHP. As a result we have reported 11 issues (of which seven have been accepted as issues), and obtained four CVEs for some of those issues in PDF, SVG and YAML libraries across different languages.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/NappaPVGTL21,
+	author = {Antonio Nappa and
+                  Panagiotis Papadopoulos and
+                  Matteo Varvello and
+                  Daniel Aceituno Gomez and
+                  Juan Tapiador and
+                  Andrea Lanzi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {PoW-How: An Enduring Timing Side-Channel to Evade Online Malware Sandboxes},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {86--109},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_5},
+	doi = {10.1007/978-3-030-88418-5\_5},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/NappaPVGTL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nOnline malware scanners are one of the best weapons in the arsenal of cybersecurity companies and researchers. A fundamental part of such systems is the sandbox that provides an instrumented and isolated environment (virtualized or emulated) for any user to upload and run unknown artifacts and identify potentially malicious behaviors. The provided API and the wealth of information in the reports produced by these services have also helped attackers test the efficacy of numerous techniques to make malware hard to detect. The most common technique used by malware for evading the analysis system is to monitor the execution environment, detect the presence of any debugging artifacts, and hide its malicious behavior if needed. This is usually achieved by looking for signals suggesting that the execution environment is not belong to a the native machine, such as specific memory patterns or behavioral traits of certain CPU instructions. In this paper, we show how an attacker can evade detection on such online services by incorporating a Proof-of-Work (PoW) algorithm into a malware sample. Specifically, we leverage the asymptotic behavior of the computational cost of PoW algorithms when they run on some classes of hardware platforms to effectively detect a non bare-metal environment of the malware sandbox analyzer. To prove the validity of this intuition, we design and implement the PoW-How framework, a tool to automatically implement sandbox detection strategies and embed a test evasion program into an arbitrary malware sample. Our empirical evaluation shows that the proposed evasion technique is durable, hard to fingerprint, and reduces existing malware detection rate by a factor of 10. Moreover, we show how bare-metal environments cannot scale with actual malware submissions rates for consumer services.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZuberiW21,
+	author = {Eldad Zuberi and
+                  Avishai Wool},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Characterizing {GPU} Overclocking Faults},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {110--130},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_6},
+	doi = {10.1007/978-3-030-88418-5\_6},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZuberiW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\n Graphics Processing Units (GPUs) are powerful parallel processors that are becoming common on computers. They are used in many high-performance tasks such as crypto-mining and neural-network training. It is common to overclock a GPU to gain performance, however this practice may introduce calculation faults. In our work, we lay the foundations to exploiting these faults, by characterizing their formation and structure. We find that temperature is a contributing factor to the fault rate, but is not the sole cause. We also find that faults are a byte-wide phenomenon: individual bit-flips are rare. Surprisingly, we find that the vast majority of byte faults are in fact byte-flips: all 8 bits are simultaneously negated. Finally, we find strong evidence that faults are triggered by memory-remnant reads at an alignment of a 32 byte memory transaction size.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KrollKKHC21,
+	author = {Tobias Kr{\"{o}}ll and
+                  Stephan Kleber and
+                  Frank Kargl and
+                  Matthias Hollick and
+                  Jiska Classen},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {ARIstoteles - Dissecting Apple's Baseband Interface},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {133--151},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_7},
+	doi = {10.1007/978-3-030-88418-5\_7},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KrollKKHC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless chips and interfaces expose a substantial remote attack surface. As of today, most cellular baseband security research is performed on the Android ecosystem, leaving a huge gap on Apple devices. With iOS jailbreaks, last-generation wireless chips become fairly accessible for performance and security research. Yet, iPhones were never intended to be used as a research platform, and chips and interfaces are undocumented. One protocol to interface with such chips is Apple Remote Invocation (ARI), which interacts with the central phone component CommCenter and multiple user-space daemons, thereby posing a Remote Code Execution (RCE) attack surface. We are the first to reverse-engineer and fuzz-test the ARI interface on iOS. Our Ghidra scripts automatically generate a Wireshark dissector, called ARIstoteles, by parsing closed-source iOS libraries for this undocumented protocol. Moreover, we compare the quality of the dissector to fully-automated approaches based on static trace analysis. Finally, we fuzz the ARI interface based on our reverse-engineering results. The fuzzing results indicate that ARI does not only lack public security research but also has not been well-tested by Apple. By releasing ARIstoteles open-source, we also aim to facilitate similar research in the future.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RooijCKPA21,
+	author = {Orpheas van Rooij and
+                  Marcos Antonios Charalambous and
+                  Demetris Kaizer and
+                  Michalis Papaevripides and
+                  Elias Athanasopoulos},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {webFuzz: Grey-Box Fuzzing for Web Applications},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {152--172},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_8},
+	doi = {10.1007/978-3-030-88418-5\_8},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RooijCKPA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nFuzzing is significantly evolved in analysing native code, but web applications, invariably, have received limited attention until now. This paper designs, implements and evaluates webFuzz, a gray-box fuzzing prototype for discovering vulnerabilities in web applications. webFuzz is successful in leveraging instrumentation for detecting cross-site scripting (XSS) vulnerabilities, as well as covering more code faster than black-box fuzzers. In particular, webFuzz has discovered one zero-day vulnerability in WordPress, a leading CMS platform, and five in an online commerce application named CE-Phoenix. Moreover, in order to systematically evaluate webFuzz, and similar tools, we provide the first attempt for automatically synthesizing reflective cross-site scripting (RXSS) vulnerabilities in vanilla web applications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PaassenSRD21,
+	author = {David Paa{\ss}en and
+                  Sebastian Surminski and
+                  Michael Rodler and
+                  Lucas Davi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {My Fuzzer Beats Them All! Developing a Framework for Fair Evaluation
+                  and Comparison of Fuzzers},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {173--193},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_9},
+	doi = {10.1007/978-3-030-88418-5\_9},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PaassenSRD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nFuzzing has become one of the most popular techniques to identify bugs in software. To improve the fuzzing process, a plethora of techniques have recently appeared in academic literature. However, evaluating and comparing these techniques is challenging as fuzzers depend on randomness when generating test inputs. Commonly, existing evaluations only partially follow best practices for fuzzing evaluations. We argue that the reason for this are twofold. First, it is unclear if the proposed guidelines are necessary due to the lack of comprehensive empirical data in the case of fuzz testing. Second, there does not yet exist a framework that integrates statistical evaluation techniques to enable fair comparison of fuzzers. To address these limitations, we introduce a novel fuzzing evaluation framework called SENF\xa0(Statistical EvaluatioN of Fuzzers). We demonstrate the practical applicability of our framework by utilizing the most wide-spread fuzzer AFL as our baseline fuzzer and exploring the impact of different evaluation parameters (e.g., the number of repetitions or run-time), compilers, seeds, and fuzzing strategies. Using our evaluation framework, we show that supposedly small changes of the parameters can have a major influence on the measured performance of a fuzzer.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DEliaIQ21,
+	author = {Daniele Cono D'Elia and
+                  Lorenzo Invidia and
+                  Leonardo Querzoni},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Rope: Covert Multi-process Malware Execution with Return-Oriented
+                  Programming},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {197--217},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_10},
+	doi = {10.1007/978-3-030-88418-5\_10},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DEliaIQ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed execution designs challenge behavioral analyses of anti-malware solutions by spreading seemingly benign chunks of a malicious payload to multiple processes. Researchers have explored methods to chop payloads, spread chunks to victim applications through process injection techniques, and orchestrate the execution. However, these methods can hardly be practical as they exhibit conspicuous features and make use of primitives that anti-malware solutions and operating system mitigations readily detect. In this paper we reason on fundamental requirements and properties for a stealth implementation of distributed malware. We propose a new covert design, Rope, that minimizes its footprint by making use of commodity techniques like transacted files and return-oriented programming for covert communication and payload distribution. We report on how synthetic Rope samples eluded a number of state-of-the-art anti-virus and endpoint security solutions, and bypassed the opt-in mitigations of Windows 10 for hardening applications. We then discuss directions and practical remediations to mitigate such threats.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SchlogelBBHH21,
+	author = {Moritz Schloegel and
+                  Tim Blazytko and
+                  Julius Basler and
+                  Fabian Hemmer and
+                  Thorsten Holz},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Towards Automating Code-Reuse Attacks Using Synthesized Gadget Chains},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {218--239},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_11},
+	doi = {10.1007/978-3-030-88418-5\_11},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SchlogelBBHH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the arms race between binary exploitation techniques and mitigation schemes, code-reuse attacks have been proven indispensable. Typically, one of the initial hurdles is that an attacker cannot execute their own code due to countermeasures such as data execution prevention (DEP, \n\n). While this technique is powerful, the task of finding and correctly chaining gadgets remains cumbersome. Although various methods automating this task have been proposed, they either rely on hard-coded heuristics or make specific assumptions about the gadgets’ semantics. This not only drastically limits the search space but also sacrifices their capability to find valid chains unless specific gadgets can be located. As a result, they often produce no chain or an incorrect chain that crashes the program. In this paper, we present SGC, the first generic approach to identify gadget chains in an automated manner without imposing restrictions on the gadgets or limiting its applicability to specific exploitation scenarios. Instead of using heuristics to find a gadget chain, we offload this task to an SMT solver. More specifically, we build a logical formula that encodes the CPU and memory state at the time when the attacker can divert execution flow to the gadget chain, as well as the attacker’s desired program state that the gadget chain should construct. In combination with a logical encoding of the data flow between gadgets, we query an SMT solver whether a valid gadget chain exists. If successful, the solver provides a proof of existence in the form of a synthesized gadget chain. This way, we remain fully flexible w.r.t. to the gadgets. In empirical tests, we find that the solver often uses all types of control-flow transfer instructions and even gadgets with side effects. Our evaluation shows that SGC successfully finds working gadget chains for real-world exploitation scenarios within minutes, even when all state-of-the-art approaches fail.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AhmedKCN21,
+	author = {Muhammad Ejaz Ahmed and
+                  Hyoungshick Kim and
+                  Seyit Camtepe and
+                  Surya Nepal},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Peeler: Profiling Kernel-Level Events to Detect Ransomware},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {240--260},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_12},
+	doi = {10.1007/978-3-030-88418-5\_12},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AhmedKCN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Because the recent ransomware families are becoming progressively more advanced, it is challenging to detect ransomware using static features only. However, their behaviors are still more generic and universal to analyze due to their inherent goals and functions. Therefore, we can capture their behaviors by monitoring their system-level activities on files and processes. In this paper, we present a novel ransomware detection system called “Peeler” (Profiling kErnEl -Level Events to detect Ransomware). Peeler first identifies ransomware’s inherent behavioral characteristics such as stealth operations performed during the attack, processes execution patterns, and correlations among different kernel-level events by analysing a large-scaled OS-level provenance data collected from a diverse set of ransomware families. Peeler specifically uses a novel NLP-based deep learning model to fingerprint the contextual behavior of applications by leveraging Bidirectional Encoder Representations from Transformers (BERT) pre-trained model. We evaluate Peeler on a large ransomware dataset including 67 ransomware families and demonstrate that it achieves a 99.5% F1-score.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YangDZHWZD21,
+	author = {Hao Yang and
+                  Kun Du and
+                  Yubao Zhang and
+                  Shuai Hao and
+                  Haining Wang and
+                  Jia Zhang and
+                  Haixin Duan},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Mingling of Clear and Muddy Water: Understanding and Detecting Semantic
+                  Confusion in Blackhat {SEO}},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {263--284},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_13},
+	doi = {10.1007/978-3-030-88418-5\_13},
+	timestamp = {Tue, 18 Jun 2024 20:16:47 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/YangDZHWZD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Search Engine Optimization (SEO) is a set of techniques that help website operators increase the visibility of their webpages to search engine users. However, there are also many unethical practices that abuse ranking algorithms of a search engine to promote illegal online content, called blackhat SEO. In this paper, we make the first attempt to systematically investigate a recent trend in blackhat SEO, semantic confusion, which mingles the content of a webpage to deceive existing detection of blackhat SEO. In particular, from a new perspective of content semantics, we propose an effective defense against the semantic confusion based blackhat SEO. We built a prototype of our defense called SCDS, and then we validated its effectiveness based on 4.5 million domains randomly selected from 11 zone files and passive DNS records. Our evaluation results show that SCDS can detect more than 82 thousand blackhat SEO websites with a precision of 98.35%. We further analyzed 57,477 long-tail keywords promoted by blackhat SEO and found more than 157 SEO campaigns. Finally, we deployed SCDS into the gateway of a campus network for ten months and detected 23,093 domains with malicious semantic confusion content, showing the effectiveness of SCDS in practice.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DavidW21,
+	author = {Liron David and
+                  Avishai Wool},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {An Explainable Online Password Strength Estimator},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {285--304},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_14},
+	doi = {10.1007/978-3-030-88418-5\_14},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DavidW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Human-chosen passwords are the dominant form of authentication systems. Passwords strength estimators are used to help users avoid picking weak passwords by predicting how many attempts a password cracker would need until it finds a given password. In this paper we propose a novel password strength estimator, called PESrank, which accurately models the behavior of a powerful password cracker. PESrank calculates the rank of a given password in an optimal descending order of likelihood. PESrank estimates a given password’s rank in fractions of a second—without actually enumerating the passwords—so it is practical for online use. It also has a training time that is drastically shorter than previous methods. Moreover, PESrank is efficiently tweakable to allow model personalization in fractions of a second, without the need to retrain the model; and it is explainable: it is able to provide information on why the password has its calculated rank, and gives the user insight on how to pick a better password. We implemented PESrank in Python and conducted an extensive evaluation study of it. We also integrated it into the registration page of a course at our university. Even with a model based on 905 million passwords, the response time was well under 1\xa0s, with up\xa0to a 1-bit accuracy margin between the upper bound and the lower bound on the rank.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KarkallisBSP21,
+	author = {Panicos Karkallis and
+                  Jorge Blasco and
+                  Guillermo Suarez{-}Tangil and
+                  Sergio Pastrana},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Detecting Video-Game Injectors Exchanged in Game Cheating Communities},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {305--324},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_15},
+	doi = {10.1007/978-3-030-88418-5\_15},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KarkallisBSP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video game cheats destroy the online play experience of users and result in financial losses for game developers. Similar to hacking communities, cheat developers often organize themselves around forums where they share game cheats and know-how. In this paper, we perform a large-scale measurement of two online forums, MPGH and UnknownCheats, devoted to video game cheating that are nowadays very active and altogether have more than 7 million posts. Video game cheats often require an auxiliary tool to access the victim process, i.e., an injector. This is a type of program that manipulates the game program memory, and it is a key piece for evading cheat detection on the client side. We leverage the output of our measurement study to build a machine learning classifier that identifies injectors based on their behavioural traits. Our system will help game developers and the anti-cheat industry to identify attack vectors more quickly and will reduce the barriers to study this topic within the academic community.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XuNMXYD21,
+	author = {Shengmin Xu and
+                  Jianting Ning and
+                  Jinhua Ma and
+                  Guowen Xu and
+                  Jiaming Yuan and
+                  Robert H. Deng},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Revocable Policy-Based Chameleon Hash},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {327--347},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_16},
+	doi = {10.1007/978-3-030-88418-5\_16},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/XuNMXYD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Policy-based chameleon hash (PCH) is a cryptographic building block which finds increasing practical applications. Given a message and an access policy, for any chameleon hash generated by a PCH scheme, a chameleon trapdoor holder whose rewriting privileges satisfy the access policy can amend the underlying message without affecting the hash value. In practice, it is necessary to revoke the rewriting privileges of a trapdoor holder due to various reasons, such as change of positions, compromise of credentials, or malicious behaviours. In this paper, we introduce the notion of revocable PCH (RPCH) and formally define its security. We instantiate a concrete RPCH construction by putting forward a practical revocable attribute-based encryption (RABE) scheme which is adaptively secure under a standard assumption on prime-order pairing groups. As application examples, we show how to effectively integrate RPCH into mutable blockchain and sanitizable signature for revoking the rewriting privileges of any chameleon trapdoor holders. We implement our RPCH scheme and evaluate its performance to demonstrate its efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/He00WW21,
+	author = {Songlin He and
+                  Yuan Lu and
+                  Qiang Tang and
+                  Guiling Wang and
+                  Chase Qishi Wu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Fair Peer-to-Peer Content Delivery via Blockchain},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {348--369},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_17},
+	doi = {10.1007/978-3-030-88418-5\_17},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/He00WW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In comparison with conventional content delivery networks, peer-to-peer (p2p) content delivery is promising to save cost and handle high peak-demand, and can also complement the decentralized storage networks such as Filecoin. However, reliable p2p delivery requires proper enforcement of delivery fairness, i.e., the deliverers should be rewarded according to their in-time delivery. Unfortunately, most existing studies on delivery fairness are based on non-cooperative game-theoretic assumptions that are arguably unrealistic in the ad-hoc p2p setting. We for the first time put forth an expressive yet still minimalist security notion for desired fair p2p content delivery, and give two efficient solutions \\(\\mathsf {FairDownload}\\) and \\(\\mathsf {FairStream}\\) via the blockchain for p2p downloading and p2p streaming scenarios, respectively. Our designs not only guarantee delivery fairness to ensure deliverers be paid (nearly) proportional to their in-time delivery but also ensure the content consumers and content providers are fairly treated. The fairness of each party can be guaranteed when the other two parties collude to arbitrarily misbehave. Moreover, the systems are efficient in the sense of attaining nearly asymptotically optimal on-chain costs and deliverer communication. We implement the protocols and build the prototype systems atop the Ethereum Ropsten network. Extensive experiments done in LAN and WAN settings showcase their high practicality.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KarakostasKL21,
+	author = {Dimitris Karakostas and
+                  Aggelos Kiayias and
+                  Mario Larangeira},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Conclave: {A} Collective Stake Pool Protocol},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {370--389},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_18},
+	doi = {10.1007/978-3-030-88418-5\_18},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KarakostasKL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proof-of-Stake (PoS) distributed ledgers are the most common alternative to Bitcoin’s Proof-of-Work (PoW) paradigm, replacing the hardware dependency with stake, i.e., assets that a party controls. Similar to PoW’s mining pools, PoS’s stake pools, i.e., collaborative entities comprising of multiple stakeholders, allow a party to earn rewards more regularly, compared to participating on an individual basis. However, stake pools tend to increase centralization, since they are typically managed by a single party that acts on behalf of the pool’s members. In this work we propose Conclave, a formal design of a Collective Stake Pool, i.e., a decentralized pool with no single point of authority. We formalize Conclave as an ideal functionality and implement it as a distributed protocol, based on standard cryptographic primitives. Among Conclave’s building blocks is a weighted threshold signature scheme (WTSS); to that end, we define a WTSS ideal functionality and propose two constructions based on threshold ECDSA, which enable (1) fast trustless setup and (2) identifiable aborts.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TakahashiO21,
+	author = {Taisei Takahashi and
+                  Akira Otsuka},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Probabilistic Micropayments with Transferability},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {390--406},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_19},
+	doi = {10.1007/978-3-030-88418-5\_19},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/TakahashiO21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Micropayments are one of the challenges in cryptocurrencies. The problems in realizing micropayments in the blockchain are the low throughput and the high blockchain transaction fee. As a solution, decentralized probabilistic micropayment has been proposed. The winning amount is registered in the blockchain, and the tickets are issued to be won with probability p, which allows us to aggregate approximately  transactions into one. Unfortunately, existing solutions do not allow for ticket transferability, and the smaller p, the more difficult it to use them in the real world. We propose a novel decentralized probabilistic micropayment Transferable Scheme. It allows tickets to be transferable among users. By allowing tickets to be transferable, we can make p smaller. We also propose a novel Proportional Fee Scheme. This is a scheme where each time a ticket is transferred, a portion of the blockchain transaction fee will be charged. With the proportional fee scheme, users will have the advantage of sending money with a smaller fee than they would generally send through the blockchain. For example, sending one dollar requires only ten cents.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChatzigiannisB21,
+	author = {Panagiotis Chatzigiannis and
+                  Foteini Baldimtsi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {MiniLedger: Compact-Sized Anonymous and Auditable Distributed Payments},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {407--429},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_20},
+	doi = {10.1007/978-3-030-88418-5\_20},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChatzigiannisB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work we present MiniLedger, a distributed payment system which not only guarantees the privacy of transactions, but also offers built-in functionalities for various types of audits by any external authority. MiniLedger is the first private and auditable payment system with storage costs independent of the number of transactions. To achieve such a storage improvement, we introduce pruning functionalities for the transaction history while maintaining integrity and auditing. We provide formal security definitions and a number of extensions for various auditing levels. Our evaluation results show that MiniLedger is practical in terms of storage requiring as low as 70 KB per participant for 128 bits of security, and depending on the implementation choices, can prune 1 million transactions in less than a second.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhangCLZTZ021,
+	author = {Bingsheng Zhang and
+                  Yuan Chen and
+                  Jiaqi Li and
+                  Yajin Zhou and
+                  Phuc Thai and
+                  Hong{-}Sheng Zhou and
+                  Kui Ren},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Succinct Scriptable {NIZK} via Trusted Hardware},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {430--451},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_21},
+	doi = {10.1007/978-3-030-88418-5\_21},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhangCLZTZ021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Non-interactive zero-knowledge proof or argument (NIZK) systems are widely used in many security sensitive applications to enhance computation integrity, privacy and scalability. In such systems, a prover wants to convince one or more verifiers that the result of a public function is correctly computed without revealing the (potential) private input, such as the witness. In this work, we introduce a new notion, called succinct scriptable NIZK, where the prover and verifier(s) can specify the function (or language instance) to be proven via a script. We formalize this notion is UC framework and provide a generic trusted hardware based solution. We then instantiate our solution in both SGX and Trustzone with Lua script engine. The system can be easily used by typical programmers without any cryptographic background. The benchmark result shows that our solution is better than all the known NIZK proof systems w.r.t. prover’s running time (1000 times faster), verifier’s running time, and the proof size. Finally, we show how the proposed scriptable succinct NIZK can be readily deployed to solve many well-known problems in the blockchain context, e.g. verifier’s dilemma, fast joining for new players, etc..}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AwanLL21,
+	author = {Sana Awan and
+                  Bo Luo and
+                  Fengjun Li},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{CONTRA:} Defending Against Poisoning Attacks in Federated Learning},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {455--475},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_22},
+	doi = {10.1007/978-3-030-88418-5\_22},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AwanLL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated learning (FL) is an emerging machine learning paradigm. With FL, distributed data owners aggregate their model updates to train a shared deep neural network collaboratively, while keeping the training data locally. However, FL has little control over the local data and the training process. Therefore, it is susceptible to poisoning attacks, in which malicious or compromised clients use malicious training data or local updates as the attack vector to poison the trained global model. Moreover, the performance of existing detection and defense mechanisms drops significantly in a scaled-up FL system with non-iid data distributions. In this paper, we propose a defense scheme named CONTRA\xa0to defend against poisoning attacks, e.g., label-flipping and backdoor attacks, in FL systems. CONTRA\xa0implements a cosine-similarity-based measure to determine the credibility of local model parameters in each round and a reputation scheme to dynamically promote or penalize individual clients based on their per-round and historical contributions to the global model. With extensive experiments, we show that CONTRA\xa0significantly reduces the attack success rate while achieving high accuracy with the global model. Compared with a state-of-the-art (SOTA) defense, CONTRA\xa0reduces the attack success rate by 70% and reduces the global model performance degradation by\xa050%.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MaoYZZ21,
+	author = {Yunlong Mao and
+                  Xinyu Yuan and
+                  Xinyang Zhao and
+                  Sheng Zhong},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Romoa: Robust Model Aggregation for the Resistance of Federated Learning
+                  to Model Poisoning Attacks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {476--496},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_23},
+	doi = {10.1007/978-3-030-88418-5\_23},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MaoYZZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Training a deep neural network requires substantial data and intensive computing resources. Unaffordable price holds back many potential applications of deep learning. Besides, it is risky to gather user’s private data for training centrally. Then federated learning appears as a promising solution to having users learned jointly while keeping training data local. However, security issues keep coming up in federated learning applications. One of the most threatening attacks is the model poisoning attack which can manipulate the inference result of a jointly learned model. Some recent studies show that elaborate model poisoning approaches can even breach the existing Byzantine-robust federated learning solutions. Hence, it is critical to discuss alternative solutions to secure federated learning. In this paper, we propose to protect federated learning against model poisoning attacks by introducing a robust model aggregation solution named Romoa. Unlike previous studies, Romoa can deal with targeted and untargeted poisoning attacks with a unified approach. Moreover, Romoa achieves more precise attack detection and better fairness for federated learning participants by constructing a new similarity measurement. We conclude that through a comprehensive evaluation of standard datasets, Romoa can provide a satisfying defense effect against model poisoning attacks, including those attacks breaching Byzantine-robust federated learning solutions.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DongCLWZ21,
+	author = {Ye Dong and
+                  Xiaojun Chen and
+                  Kaiyun Li and
+                  Dakui Wang and
+                  Shuai Zeng},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{FLOD:} Oblivious Defender for Private Byzantine-Robust Federated
+                  Learning with Dishonest-Majority},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {497--518},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_24},
+	doi = {10.1007/978-3-030-88418-5\_24},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DongCLWZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Privacy and Byzantine-robustness are two major concerns of federated learning (FL), but mitigating both threats simultaneously is highly challenging: privacy-preserving strategies prohibit access to individual model updates to avoid leakage, while Byzantine-robust methods require access for comprehensive mathematical analysis. Besides, most Byzantine-robust methods only work in the honest-majority setting. We present \\(\\mathsf {FLOD}\\), a novel oblivious defender for private Byzantine-robust FL in dishonest-majority setting. Basically, we propose a novel Hamming distance-based aggregation method to resist \\(>1/2\\) Byzantine attacks using a small root-dataset and server-model for bootstrapping trust. Furthermore, we employ two non-colluding servers and use additive homomorphic encryption (\\(\\mathsf {AHE}\\)) and secure two-party computation (2PC) primitives to construct efficient privacy-preserving building blocks for secure aggregation, in which we propose two novel in-depth variants of Beaver Multiplication triples (MT) to reduce the overhead of Bit to Arithmetic (\\(\\mathsf {Bit2A}\\)) conversion and vector weighted sum aggregation (\\(\\mathsf {VSWA}\\)) significantly. Experiments on real-world and synthetic datasets demonstrate our effectiveness and efficiency: (i) \\(\\mathsf {FLOD}\\) defeats known Byzantine attacks with a negligible effect on accuracy and convergence, (ii) achieves a reduction of \\(\\approx \\)2\\(\\times \\) for offline (resp. online) overhead of \\(\\mathsf {Bit2A}\\) and \\(\\mathsf {VSWA}\\) compared to \\(\\mathsf {ABY}\\)-\\(\\mathsf {AHE}\\) (resp. \\(\\mathsf {ABY}\\)-\\(\\mathsf {MT}\\)) based methods (NDSS’15), (iii) and reduces total online communication and run-time by 167–1416\\(\\times \\) and 3.1–7.4\\(\\times \\) compared to \\(\\mathsf {FLGUARD}\\) (Crypto Eprint 2021/025).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuZYY21,
+	author = {Xiaoning Liu and
+                  Yifeng Zheng and
+                  Xingliang Yuan and
+                  Xun Yi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {[inline-graphic not available: see fulltext] : Towards Secure and
+                  Lightweight Deep Learning as a Medical Diagnostic Service},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {519--541},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_25},
+	doi = {10.1007/978-3-030-88418-5\_25},
+	timestamp = {Fri, 01 Mar 2024 15:57:33 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuZYY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The striking progress of deep learning paves the way towards intelligent and quality medical diagnostic services. Enterprises deploy such services via the neural network (NN) inference, yet confronted with rising privacy concerns of the medical data being diagnosed and the pre-trained NN models. We propose \n\n, a system framework that enables enterprises to offer secure medical diagnostic service to their customers via an execution of NN inference in the ciphertext domain. \n\n\xa0ensures the privacy of both parties with cryptographic guarantees. At the heart, we present an efficient and communication-optimized secure inference protocol that purely relies on the lightweight secret sharing techniques and can well cope with the commonly-used linear and non-linear NN layers. Compared to the garbled circuits based solutions, the latency and communication of \n\n\xa0are 24\\(\\times \\) lower and 868\\(\\times \\) less for the secure ReLU, and 20\\(\\times \\) lower and 314\\(\\times \\) less for the secure Max-pool. We evaluate \n\n\xa0on two benchmark and four real-world medical datasets, and comprehensively compare it with prior arts. The results demonstrate the promising performance of \n\n, which is much more bandwidth-efficient compared to prior works.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PanZLY21,
+	author = {Xudong Pan and
+                  Mi Zhang and
+                  Yifan Lu and
+                  Min Yang},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{TAFA:} {A} Task-Agnostic Fingerprinting Algorithm for Neural Networks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {542--562},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_26},
+	doi = {10.1007/978-3-030-88418-5\_26},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PanZLY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Well-trained deep neural networks (DNN) are an indispensable part of the intellectual property of the model owner. However, the confidentiality of models are threatened by model piracy, which steals a DNN and obfuscates the pirated model with post-processing techniques. To counter model piracy, recent works propose several model fingerprinting methods, which are commonly based on a special set of adversarial examples of the owner’s classifier as the fingerprints, and verify whether a suspect model is pirated based on whether the predictions on the fingerprints from the suspect model and from the owner’s model match with one another. However, existing fingerprinting schemes are limited to models for classification and usually require access to the training data. In this paper, we propose the first Task-Agnostic Fingerprinting Algorithm (TAFA) for the broad family of neural networks with rectified linear units. Compared with existing adversarial example-based fingerprinting algorithms, TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative modeling, with no assumption on training data access. Extensive experimental results on three typical scenarios strongly validate the effectiveness and the robustness of TAFA.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SchulzeSB21,
+	author = {Jan{-}Philipp Schulze and
+                  Philip Sperl and
+                  Konstantin B{\"{o}}ttinger},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{DA3G:} Detecting Adversarial Attacks by Analysing Gradients},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {563--583},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_27},
+	doi = {10.1007/978-3-030-88418-5\_27},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SchulzeSB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning models are vulnerable to specifically crafted inputs, called adversarial examples. In this paper, we present DA3G, a novel method to reliably detect evasion attacks on neural networks. We analyse the behaviour of the network under test on the given input sample. Compared to the benign training data, adversarial examples cause a discrepancy between visual and causal perception. Although visually close to a benign input class, the output is shifted at the attacker’s will. DA3G detects these changes in the pattern of the gradient using an auxiliary neural network. Our end-to-end approach readily integrates with a variety of existing architectures. DA3G reliably detects known as well as unknown attacks and increases the difficulty of adaptive attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhangTCL21,
+	author = {Jiyi Zhang and
+                  Wesley Joon{-}Wie Tann and
+                  Ee{-}Chien Chang and
+                  Hwee Kuan Lee},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Common Component in Black-Boxes Is Prone to Attacks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {584--604},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_28},
+	doi = {10.1007/978-3-030-88418-5\_28},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhangTCL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Neural network models are getting increasingly complex. Large models are often modular, consisting of multiple separate sharable components. The development of such components may require specific domain knowledge, intensive computation power, and large datasets. Therefore, there is a high incentive for companies to keep these components proprietary. However, when a common component is included in multiple black-box models, it could potentially provide another attack vector and weaken security. In this paper, we present a method that “extracts” the common component from black-box models, using only limited resources. With a small number of data samples, an attacker can (1) obtain accurate information about the shared component, stealing propriety information of the intellectual property, and (2) utilize this component to train new tasks or execute subsequent attacks such as model cloning, class inversion, and adversarial attacks more effectively. Comprehensive experiments demonstrate that our proposed method successfully extracts the common component through hard-label and black-box access only. Moreover, the consequent attacks are also effective against straightforward defenses that introduce noise and dummy classifiers.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GiarettaLCFG21,
+	author = {Lodovico Giaretta and
+                  Ahmed Lekssays and
+                  Barbara Carminati and
+                  Elena Ferrari and
+                  Sarunas Girdzijauskas},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {LiMNet: Early-Stage Detection of IoT Botnets with Lightweight Memory
+                  Networks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {605--625},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_29},
+	doi = {10.1007/978-3-030-88418-5\_29},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GiarettaLCFG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IoT devices have been growing exponentially in the last few years. This growth makes them an attractive target for attackers due to their low computational power and limited security features. Attackers use IoT botnets as an instrument to perform DDoS attacks which caused major disruptions of Internet services in the last decade. While many works have tackled the task of detecting botnet attacks, only a few have considered early-stage detection of these botnets during their propagation phase. While previous approaches analyze each network packet individually to predict its maliciousness, we propose a novel deep learning model called LiMNet (Lightweight Memory Network), which uses an internal memory component to capture the behaviour of each IoT device over time. This memory incorporates both packet features and behaviour of the peer devices. With this information, LiMNet achieves almost maximum AUROC classification scores, between 98.8% and 99.7%, with a 14% improvement over state of the art. LiMNet is also lightweight, performing inference almost 8 times faster than previous approaches.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FallahiP21,
+	author = {Amin Fallahi and
+                  Vir V. Phoha},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Adversarial Activity Detection Using Keystroke Acoustics},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {626--648},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_30},
+	doi = {10.1007/978-3-030-88418-5\_30},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FallahiP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Using keystroke acoustics to predict typed text has significant advantages, such as being recorded covertly from a distance and requiring no physical access to the computer system. Recently, some studies have been done on keystroke acoustics, however, to the best of our knowledge none have used them to predict adversarial activities, such as password dictionary attacks, data exfiltration, etc. We show that keystrokes in an adversarial environment have unique characteristics that distinguish it from benign environments and these differences can be used to predict adversarial activities and threat levels against a computer system. On a dataset of two million keystrokes consisting of seven adversarial and one benign activity, we use a signal processing approach to extract keystrokes from the audio and a clustering method to recover the typed letters followed by a text recovery module to regenerate the typed words. Furthermore, we use a neural network model to classify the benign and adversarial activities and achieve significant results: (1) we extract individual keystroke sounds from the raw audio with 91% accuracy and recover words from audio recordings in a noisy environment with 71% average top-10 accuracy. (2) We classify adversarial activities with 93.11% to 98.07% average accuracy under different operating scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BrighenteCS21,
+	author = {Alessandro Brighente and
+                  Mauro Conti and
+                  Izza Sadaf},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Tell Me How You Re-Charge, {I} Will Tell You Where You Drove To: Electric
+                  Vehicles Profiling Based on Charging-Current Demand},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {651--667},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_31},
+	doi = {10.1007/978-3-030-88418-5\_31},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BrighenteCS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Charging an EV (Electric Vehicle) comprises two phases: a) resource negotiation, and b) actual charging. While the former phase runs over secure communication protocols, the latter is usually assumed not to be a threat to security and privacy. However, we believe that the physical signals exchanged between the EV and the EVSE (Electric Vehicle Supply Equipment) represent information that a malicious user could exploit for profiling. Furthermore, as a large number of EVSEs has been deployed in public places to ease out-of-home EV charging, an attacker might easily have physical access to unsecured data. In this paper, we propose EVScout, a novel attack to profile EVs during the charging process. By exploiting the physical signals exchanged by the EV and the EVSE as a side-channel to extract information, EVScout builds a set of features peculiar for each EV. As an EVScout component, we also propose a novel feature extraction framework, based on the intrinsic characteristics of EV batteries, to identify features from the exchanged electric current. We implemented and tested EVScout over a set of real-world measurements (considering 100 charging sessions of 22 EVs). Numerical results show that EVScout could profile EVs, attaining a maximum of 0.9 recall and 0.85 precision. To the best of authors’ knowledge, these results set a benchmark for upcoming privacy research for EVs.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GrozaM0J21,
+	author = {Bogdan Groza and
+                  Pal{-}Stefan Murvay and
+                  Lucian Popa and
+                  Camil Jichici},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{CAN-SQUARE} - Decimeter Level Localization of Electronic Control
+                  Units on {CAN} Buses},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {668--690},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_32},
+	doi = {10.1007/978-3-030-88418-5\_32},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GrozaM0J21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The CAN bus survived inside cars for more than three decades due to its simplicity and effectiveness while protecting it calls for solutions that are equally simple and effective. In this work we propose an efficient mechanism that achieves decimeter-level precision in localizing Electronic Control Units (ECUs) on the CAN bus. The proposed methodology requires two connections at the ends of the bus and a single rising edge, i.e., the start of a dominant bit. Since several such rising edges are present in every frame, malicious devices may be easily localized with high accuracy from single frame injections. Our methodology requires only elementary computations, e.g., additions and multiplications, which are trivial to perform and implement. We prove the feasibility of the proposed methodology inside a real car and perform more demanding experiments in a laboratory setup where we record modest overlaps only between nodes that are 10\xa0cm apart. We prove resilience against replacement and insertion attacks as well as against temperature variations in the range of 0–60 \\({}^\\circ \\)C.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HauDML21,
+	author = {Zhongyuan Hau and
+                  Soteris Demetriou and
+                  Luis Mu{\~{n}}oz{-}Gonz{\'{a}}lez and
+                  Emil C. Lupu},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Shadow-Catcher: Looking into Shadows to Detect Ghost Objects in Autonomous
+                  Vehicle 3D Sensing},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {691--711},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_33},
+	doi = {10.1007/978-3-030-88418-5\_33},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HauDML21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LiDAR-driven 3D sensing allows new generations of vehicles to achieve advanced levels of situation awareness. However, recent works have demonstrated that physical adversaries can spoof LiDAR return signals and deceive 3D object detectors to erroneously detect “ghost" objects. Existing defenses are either impractical or focus only on vehicles. Unfortunately, it is easier to spoof smaller objects such as pedestrians and cyclists, but harder to defend against and can have worse safety implications. To address this gap, we introduce Shadow-Catcher, a set of new techniques embodied in an end-to-end prototype to detect both large and small ghost object attacks on 3D detectors. We characterize a new semantically meaningful physical invariant (3D shadows) which Shadow-Catcher leverages for validating objects. Our evaluation on the KITTI dataset shows that Shadow-Catcher consistently achieves more than 94% accuracy in identifying anomalous shadows for vehicles, pedestrians, and cyclists, while it remains robust to a novel class of strong “invalidation” attacks targeting the defense system. Shadow-Catcher can achieve real-time detection, requiring only between 0.003\xa0s–0.021\xa0s on average to process an object in a 3D point cloud on commodity hardware and achieves a 2.17x speedup compared to prior work.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MadiAPBSA21,
+	author = {Taous Madi and
+                  Hyame Assem Alameddine and
+                  Makan Pourzandi and
+                  Amine Boukhtouta and
+                  Moataz Shoukry Samir and
+                  Chadi Assi},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {AutoGuard: {A} Dual Intelligence Proactive Anomaly Detection at Application-Layer
+                  in 5G Networks},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {715--735},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_34},
+	doi = {10.1007/978-3-030-88418-5\_34},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MadiAPBSA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Application-layer protocols are widely adopted for signaling in telecommunication networks such as the 5G networks. However, they can be subject to application-layer attacks that are hardly detected by existing traditional network-based security tools that often do not support telecommunication-specific applications. To address this issue, we propose in this work AutoGuard, a proactive anomaly detection solution that employs application-layer Performance Measurement (PM) counters to train two different Deep Learning (DL) techniques, namely, Long Short Term Memory (LSTM) networks and AutoEncoders (AEs). We leverage recent advancements in Machine Learning (ML) that show the advantages brought by combining multiple ML models to build a dual-intelligence approach allowing the proactive detection of application layer anomalies. Our proposed dual-intelligence solution promotes signaling workload forecasting and anomaly prediction as a proactive security control in 5G networks. As a proof of concept, we implement our approach for the proactive detection of Diameter-related signaling attacks on the Home Subscriber Server (HSS) core network function. To evaluate our solution, we conduct a set of experiments using data collected from a real 5G testbed. Our results show the effectiveness of our dual intelligence approach on proactively detecting signaling anomalies with a precision reaching 0.86.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DaihesTNS21,
+	author = {Yael Daihes and
+                  Hen Tzaban and
+                  Asaf Nadler and
+                  Asaf Shabtai},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {{MORTON:} Detection of Malicious Routines in Large-Scale {DNS} Traffic},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {736--756},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_35},
+	doi = {10.1007/978-3-030-88418-5\_35},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DaihesTNS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present MORTON, a method that identifies compromised devices in enterprise networks based on the existence of routine DNS communication between devices and disreputable host names. With its compact representation of the input data and use of efficient signal processing and a neural network for classification, MORTON is designed to be accurate, robust, and scalable. We evaluate MORTON using a large dataset of corporate DNS logs and compare it with two recently proposed beaconing detection methods aimed at detecting malware communication. The results demonstrate that while MORTON ’s accuracy in a synthetic experiment is comparable to that of the other methods, it outperforms those methods in terms of its ability to detect sophisticated bot communication techniques, such as multistage channels. Additionally, MORTON was the most efficient method, running at least 13 times faster than the other methods on large-scale datasets, thus reducing the time to detection. In a real-world evaluation, which includes previously unreported threats, MORTON and the two compared methods were deployed to monitor the (unlabeled) DNS traffic of two global enterprises for a week-long period; this evaluation demonstrates the effectiveness of MORTON in real-world scenarios where it achieved the highest F1-score.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LandauerHWSR21,
+	author = {Max Landauer and
+                  Georg H{\"{o}}ld and
+                  Markus Wurzenberger and
+                  Florian Skopik and
+                  Andreas Rauber},
+	editor = {Elisa Bertino and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Iterative Selection of Categorical Variables for Log Data Anomaly
+                  Detection},
+	booktitle = {Computer Security - {ESORICS} 2021 - 26th European Symposium on Research
+                  in Computer Security, Darmstadt, Germany, October 4-8, 2021, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12972},
+	pages = {757--777},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-88418-5\_36},
+	doi = {10.1007/978-3-030-88418-5\_36},
+	timestamp = {Tue, 17 Oct 2023 10:41:56 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LandauerHWSR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Log data is a well-known source for anomaly detection in cyber security. Accordingly, a large number of approaches based on self-learning algorithms have been proposed in the past. Most of these approaches focus on numeric features extracted from logs, since these variables are convenient to use with commonly known machine learning techniques. However, system log data frequently involves multiple categorical features that provide further insights into the state of a computer system and thus have the potential to improve detection accuracy. Unfortunately, it is non-trivial to derive useful correlation rules from the vast number of possible values of all available categorical variables. Therefore, we propose the Variable Correlation Detector (VCD) that employs a sequence of selection constraints to efficiently disclose pairs of variables with correlating values. The approach also comprises of an online mode that continuously updates the identified variable correlations to account for system evolution and applies statistical tests on conditional occurrence probabilities for anomaly detection. Our evaluations show that the VCD is well adjustable to fit properties of the data at hand and discloses associated variables with high accuracy. Our experiments with real log data indicate that the VCD is capable of detecting attacks such as scans and brute-force intrusions with higher accuracy than existing detectors.}
+}

@@ -1,0 +1,692 @@
+@inproceedings{DBLP:conf/esorics/VanderlindenGV23,
+	author = {Vik Vanderlinden and
+                  Tom van Goethem and
+                  Mathy Vanhoef},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Time Will Tell: Exploiting Timing Leaks Using {HTTP} Response Headers},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {3--22},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_1},
+	doi = {10.1007/978-3-031-51476-0\_1},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/VanderlindenGV23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To execute timing attacks, an attacker has to collect a large number of samples to overcome network jitter. Methods to reduce such jitter, which is a source of noise, increase the signal-to-noise ratio and thereby improve the attack performance. In this paper, we propose an attack technique that uses timing information exposed in HTTP responses by backend servers or services to reduce the jitter included in an attacker’s samples. By first synchronizing the attacker clock to the target, sources of low-accuracy timing data can still be used to exploit timing leaks. We collect real-world data on network latencies and use this data in millions of simulations of the synchronizations and attacks. Our simulations indicate that the synchronization can happen with less than 300 samples for accuracies of 1\xa0ms and works down to an accuracy of under \\(13~\\upmu \\textrm{s}\\). When comparing the performance of our novel synchronization-based timing attack to a classical timing attack which is simulated using the same dataset, our attack is able to reduce the exploitable difference in runtime by an order of magnitude to \\(1~\\upmu \\textrm{s}\\). For equal difference in runtime our attack reduces the required samples up to a factor of 20.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AnghelVRSMYGZ23,
+	author = {Radu Anghel and
+                  Swaathi Vetrivel and
+                  Elsa Turcios Rodriguez and
+                  Kaichi Sameshima and
+                  Daisuke Makita and
+                  Katsunari Yoshioka and
+                  Carlos Ga{\~{n}}{\'{a}}n and
+                  Yury Zhauniarovich},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Peering into the Darkness: The Use of {UTRS} in Combating DDoS Attacks},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {23--41},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_2},
+	doi = {10.1007/978-3-031-51476-0\_2},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AnghelVRSMYGZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remotely Triggered Black Hole (RTBH) is a common DDoS mitigation approach that has been in use for the last two decades. Usually, it is implemented close to the attack victim in networks sharing some type of physical connectivity. The Unwanted Traffic Removal Service (UTRS) project offers a free, global, and relatively low-effort-to-join and operate RTBH alternative by removing the requirement of physical connectivity. Given these unique value propositions of UTRS, this paper aims to understand to what extent UTRS is adopted and used to mitigate DDoS attacks. To reach this goal, we collected two DDoS datasets describing amplification and Internet-of-Things-botnet-driven attacks and correlated them with the information from the third dataset containing blackholing requests propagated to the members of UTRS. Our findings suggest that, currently, just a small portion of UTRS members (approximately \\(10\\%\\)) trigger mitigation attempts: out of 1200+ UTRS members, only 124 triggered blackholing events during our study. Among those, with high probability, 25 Autonomous Systems (ASes) reacted on AmpPot attacks mitigating \\(0.025\\%\\) of them globally or \\(1.03\\%\\) targeting UTRS members; 2 countered IoT-botnet-driven attacks alleviating \\(0.001\\%\\) of them globally or \\(0.06\\%\\) targeting UTRS members. This suggests that UTRS can be a useful tool in mitigating DDoS attacks, but it is not widely used.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GalanGEMM23,
+	author = {D. Gal{\'{a}}n and
+                  V{\'{\i}}ctor Garc{\'{\i}}a and
+                  Santiago Escobar and
+                  Catherine A. Meadows and
+                  Jos{\'{e}} Meseguer},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Protocol Dialects as Formal Patterns},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {42--61},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_3},
+	doi = {10.1007/978-3-031-51476-0\_3},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GalanGEMM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A protocol dialect is a lightweight method to obfuscate the communication exchanges between legitimate protocol users to make it hard for malicious users to interact with legitimate ones. So far, dialects have been based on a single obfuscation transformation, which we call a lingo. In this work dialects are generalized to become protocol and lingo generic. In this way they can be composed with other dialects for greater security. We present a formal semantics of dialects as formal patterns, i.e., as protocol transformations formalized in rewriting logic. We also present several attacker models and explain how our generalized notion of dialect can be used to harden dialects against such attackers.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BushartR23,
+	author = {Jonas Bushart and
+                  Christian Rossow},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {ResolFuzz: Differential Fuzzing of {DNS} Resolvers},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {62--80},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_4},
+	doi = {10.1007/978-3-031-51476-0\_4},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BushartR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper identifies and analyzes vulnerabilities in the DNS infrastructure, with particular focus on recursive DNS resolvers. We aim to identify semantic bugs that could lead to incorrect resolver responses, introducing risks to the internet’s critical infrastructure. To achieve this, we introduce ResolFuzz, a mutation-based fuzzer to search for semantic differences across DNS resolver implementations. ResolFuzz combines differential analysis with a rule-based mechanism to distinguish between benign differences and potential threats. We evaluate our prototype on seven resolvers and uncover multiple security vulnerabilities, including inaccuracies in resolver responses and possible amplification issues in PowerDNS Recursor’s handling of DNAME Resource Records (RRs). Moreover, we demonstrate the potential for self-sustaining DoS attacks in resolved and trust-dns, further underlining the necessity of comprehensive DNS security. Through these contributions, our research underscores the potential of differential fuzzing in uncovering DNS vulnerabilities.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BhattacharjeeCKS23,
+	author = {Anup Kiran Bhattacharjee and
+                  Stefano Cecconello and
+                  Fernando Kuipers and
+                  Georgios Smaragdakis},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Fingerprinting of Cellular Infrastructure Based on Broadcast Information},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {81--101},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_5},
+	doi = {10.1007/978-3-031-51476-0\_5},
+	timestamp = {Tue, 07 May 2024 20:10:32 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BhattacharjeeCKS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To avoid exploitation of known vulnerabilities, it is standard security practice to not disclose any model information regarding the antennas used in cellular infrastructure. However, in this work, we show that end-user devices receive enough information to infer, with high accuracy, the model-family of antennas. We demonstrate how low-cost hardware and software setups can fingerprint the cellular infrastructure of whole regions within a few minutes by only listening to cellular broadcast messages. To show the effectiveness and hence risk of such fingerprinting, we collected an extensive dataset of broadcast messages from three different countries. We then trained a machine-learning model to classify broadcast messages based on the model-family they belong to. Our results reveal a worryingly high average accuracy of 97% for model-family classification. We further discuss how inferring the model-family with such high accuracy can lead to a class of identification attacks on cellular infrastructure and we subsequently suggest countermeasures to mitigate the fingerprint effectiveness.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WolsingKWPWH23,
+	author = {Konrad Wolsing and
+                  Dominik Kus and
+                  Eric Wagner and
+                  Jan Pennekamp and
+                  Klaus Wehrle and
+                  Martin Henze},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {One {IDS} Is Not Enough! Exploring Ensemble Learning for Industrial
+                  Intrusion Detection},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {102--122},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_6},
+	doi = {10.1007/978-3-031-51476-0\_6},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WolsingKWPWH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industrial Intrusion Detection Systems (IIDSs) play a critical role in safeguarding Industrial Control Systems (ICSs) against targeted cyberattacks. Unsupervised anomaly detectors, capable of learning the expected behavior of physical processes, have proven effective in detecting even novel cyberattacks. While offering decent attack detection, these systems, however, still suffer from too many False-Positive Alarms (FPAs) that operators need to investigate, eventually leading to alarm fatigue. To address this issue, in this paper, we challenge the notion of relying on a single IIDS and explore the benefits of combining multiple IIDSs. To this end, we examine the concept of ensemble learning, where a collection of classifiers (IIDSs in our case) are combined to optimize attack detection and reduce FPAs. While training ensembles for supervised classifiers is relatively straightforward, retaining the unsupervised nature of IIDSs proves challenging. In that regard, novel time-aware ensemble methods that incorporate temporal correlations between alerts and transfer-learning to best utilize the scarce training data constitute viable solutions. By combining diverse IIDSs, the detection performance can be improved beyond the individual approaches with close to no FPAs, resulting in a promising path for strengthening ICS cybersecurity.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HoqYMSWBPD23,
+	author = {Md. Nazmul Hoq and
+                  Jia Wei Yao and
+                  Suryadipta Majumdar and
+                  Luis Su{\'{a}}rez and
+                  Lingyu Wang and
+                  Amine Boukhtouta and
+                  Makan Pourzandi and
+                  Mourad Debbabi},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Evaluating the Security Posture of 5G Networks by Combining State
+                  Auditing and Event Monitoring},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {123--144},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_7},
+	doi = {10.1007/978-3-031-51476-0\_7},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HoqYMSWBPD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {5G network technology is being rapidly adopted in various critical infrastructures, mainly due to its unique benefits (e.g., higher throughput, lower latency, and better scalability). This wide-spread and fast adoption necessitates securing those critical services deployed over 5G technology. However, evaluating the security posture of a 5G network is challenging due to the heterogeneous and large-scale nature of 5G networks coupled with new security threats. Moreover, existing 5G security approaches fall short as their results are typically binary and difficult to be translated into the overall security posture of a 5G network. In this paper, we propose a novel solution for evaluating the security posture of 5G networks by combining the results of existing security solutions for state auditing and event monitoring. To that end, our main idea is to first build a novel event-state model that captures both events and states in a 5G network, and then extend this model to evaluate the overall security posture and how such security posture may evolve over time due to persistent threats. We integrate this approach with free5GC (a popular 5G open-source project) and evaluate its effectiveness.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChandranNSS23,
+	author = {Gowri R. Chandran and
+                  Raine Nieminen and
+                  Thomas Schneider and
+                  Ajith Suresh},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {PrivMail: {A} Privacy-Preserving Framework for Secure Emails},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {145--165},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_8},
+	doi = {10.1007/978-3-031-51476-0\_8},
+	timestamp = {Mon, 05 Feb 2024 20:29:41 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ChandranNSS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emails have improved our workplace efficiency and communication. However, they are often processed unencrypted by mail servers, leaving them open to data breaches on a single service provider. Public-key based solutions for end-to-end secured email, such as Pretty Good Privacy (PGP) and Secure/Multipurpose Internet Mail Extensions (S/MIME), are available but are not widely adopted due to usability obstacles and also hinder processing of encrypted emails. We propose PrivMail, a novel approach to secure emails using secret sharing methods. Our framework utilizes Secure Multi-Party Computation techniques to relay emails through multiple service providers, thereby preventing any of them from accessing the content in plaintext. Additionally, PrivMail supports private server-side email processing similar to IMAP SEARCH, and eliminates the need for cryptographic certificates, resulting in better usability than public-key based solutions. An important aspect of our framework is its capability to enable third-party searches on user emails while maintaining the privacy of both the email and the query used to conduct the search. To evaluate our solution, we benchmarked transfer and search operations using the Enron Email Dataset and demonstrate that PrivMail is an effective solution for enhancing email security.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WangLHBL23,
+	author = {Weicheng Wang and
+                  Hyunwoo Lee and
+                  Yan Huang and
+                  Elisa Bertino and
+                  Ninghui Li},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Towards Efficient Privacy-Preserving Deep Packet Inspection},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {166--192},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_9},
+	doi = {10.1007/978-3-031-51476-0\_9},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WangLHBL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure Keyword-based Deep Packet Inspection (KDPI) allows a middlebox and a network sender (or receiver) to collaborate in fighting spams, viruses, and intrusions without fully trusting each other on the secret keyword list and encrypted traffic. Existing KDPI proposals have a heavy-weighted initialization phase, but also require dramatic changes to existing encryption methods used to the original network traffic during the inspection phase. In this work, we propose novel KDPI schemes CE-DPI and MT-DPI, which offer highly competitive performance in initialization and guarantee keyword integrity against malicious middlebox. Moreover, our methods work readily with AES-based encryption schemes that are already widely deployed and well-supported by AES-NI. We show that our KDPI schemes can be integrated with TLS, adding marginal overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CoijanovicWS23,
+	author = {Christoph Coijanovic and
+                  Christiane Weis and
+                  Thorsten Strufe},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Panini - Anonymous Anycast and an Instantiation},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {193--211},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_10},
+	doi = {10.1007/978-3-031-51476-0\_10},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/CoijanovicWS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anycast messaging (i.e., sending a message to an unspecified receiver) has long been neglected by the anonymous communication community. An anonymous anycast prevents senders from learning who the receiver of their message is, allowing for greater privacy in areas such as political activism and whistleblowing. To design protocols with provable guarantees for anonymous anycast, a formal consideration of the problem is necessary, but missing in current work. We use a game-based approach to provide formal definitions of anycast functionality and privacy. Our work also introduces Panini, the first anonymous anycast protocol that requires only existing infrastructure. We show that Panini allows the actual receiver of the anycast message to remain anonymous, even in the presence of an honest but curious sender. In an empirical evaluation, we find that Panini adds only minimal overhead over regular unicast: Sending a message anonymously to one of eight possible receivers results in an end-to-end latency of 0.76\xa0s.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TengWSWHLL23,
+	author = {Yajun Teng and
+                  Wei Wang and
+                  Jun Shao and
+                  Huiqing Wan and
+                  Heqing Huang and
+                  Yong Liu and
+                  Jingqiang Lin},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Curveball+: Exploring Curveball-Like Vulnerabilities of Implicit Certificate
+                  Validation},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {212--234},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_11},
+	doi = {10.1007/978-3-031-51476-0\_11},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/TengWSWHLL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Curveball vulnerability exploits defective ECC public-key comparisons without matching domain parameters on X.509 certificates in MS Windows. Attackers can forge certificate chains that have the same public key value as a Windows-trusted certificate to establish fake HTTPS websites or sign malware binaries, which will be successfully verified without any alerts. This paper expands the Curveball attack to Elliptic-curve Qu-Vanstone implicit certificates, which are ECC-specific and have reduced certificate size and computation cost of certificate validation. We present two versions of the Curveball+ attack that target the implicit certificate validation where the verifiers are prone to the Curveball vulnerability. We discuss different types of certificate chains, implicit and hybrid, and various certificate trust list entry structures and certificate formats. We prove that verifiers that compare the final public key of implicit certificates are secure against Curveball+ version 1 attacks, but Curveball+ version 2 attacks will succeed certificates in M2M format due to the assailable standard description. Our work has preventive values for developers to avoid some of the potential implementation pitfalls.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BialczakM23,
+	author = {Piotr Bialczak and
+                  Wojciech Mazurczyk},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Malware Classification Using Open Set Recognition and {HTTP} Protocol
+                  Requests},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {235--254},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_12},
+	doi = {10.1007/978-3-031-51476-0\_12},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BialczakM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware is a serious threat to the modern Internet, as it is used to, e.g., sending spam or stealing bank login credentials. Typically, to communicate with the attacker, it utilizes popular network protocols such as the HyperText Transfer Protocol (HTTP). The network traffic characteristics related to this protocol can be used to detect malware and identify its family. The latter is a standard multi-class classification problem for which machine learning algorithms are utilized. However, existing methods cannot identify a real-world situation of encountering a\xa0new malware family, which was not known during their training phase. To address this issue, an Open Set Recognition (OSR) approach can be used, capable of a multi-class classification and identification of unknown class occurrence. In this paper, we apply OSR to the malware classification using HTTP requests and compare it with the existing solutions. In more detail, we analyze the classification performance of three OSR and two standard algorithms and their computation time. Additionally, we utilize two request representations: one based on Hfinger tool and the other relying on trigrams. The obtained experimental results allowed to select an optimal set of algorithms and HTTP request representations suitable for OSR scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XiaHZLJW23,
+	author = {Yifan Xia and
+                  Ping He and
+                  Xuhong Zhang and
+                  Peiyu Liu and
+                  Shouling Ji and
+                  Wenhai Wang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Static Semantics Reconstruction for Enhancing JavaScript-WebAssembly
+                  Multilingual Malware Detection},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {255--276},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_13},
+	doi = {10.1007/978-3-031-51476-0\_13},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/XiaHZLJW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The emergence of WebAssembly allows attackers to hide the malicious functionalities of JavaScript malware in cross-language interoperations, termed JavaScript-WebAssembly multilingual malware (JWMM). However, existing anti-virus solutions based on static program analysis are still limited to monolingual code. As a result, their detection effectiveness decreases significantly against JWMM. The detection of JWMM is challenging due to the complex interoperations and semantic diversity between JavaScript and WebAssembly. To bridge this gap, we present JWBinder, the first technique aimed at enhancing the static detection of JWMM. JWBinder performs a language-specific data-flow analysis to capture the cross-language interoperations and then characterizes the functionalities of JWMM through a unified high-level structure called Inter-language Program Dependency Graph. The extensive evaluation on one of the most representative real-world anti-virus platforms, VirusTotal, shows that JWBinder effectively enhances anti-virus systems from various vendors and increases the overall successful detection rate against JWMM from 49.1% to 86.2%. Additionally, we assess the side effects and runtime overhead of JWBinder, corroborating its practical viability in real-world applications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PaoloBS23,
+	author = {Edoardo Di Paolo and
+                  Enrico Bassetti and
+                  Angelo Spognardi},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {A New Model for Testing IPv6 Fragment Handling},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {277--294},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_14},
+	doi = {10.1007/978-3-031-51476-0\_14},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/PaoloBS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since the origins of the Internet, various vulnerabilities exploiting the IP fragmentation process have plagued IPv4 protocol, many leading to a wide range of attacks. IPv6 modified the handling of fragmentations and introduced a specific extension header, not solving the related problems, as proved by extensive literature. One of the primary sources of problems has been the overlapping fragments, which result in unexpected or malicious packets when reassembled. To overcome the problem related to fragmentation, the authors of RFC 5722 decided that IPv6 hosts MUST silently drop overlapping fragments. Since then, several studies have proposed methodologies to check if IPv6 hosts accept overlapping fragments and are still vulnerable to related attacks. However, some of the above methodologies have not been proven complete or need to be more accurate. In this paper we propose a novel model to check IPv6 fragmentation handling specifically suited for the reassembling strategies of modern operating systems. Previous models, indeed, considered OS reassembly policy as byte-based. However, nowadays, reassembly policies are fragment-based, making previous models inadequate. Our model leverages the commutative property of the checksum, simplifying the whole assessing process. Starting with this new model, we were able to better evaluate the RFC-5722 and RFC-9099 compliance of modern operating systems against fragmentation handling. Our results suggest that IPv6 fragmentation can still be considered a threat and that more effort is needed to solve related security issues.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiXEL23,
+	author = {Tianyu Li and
+                  Li Xu and
+                  Zekeriya Erkin and
+                  Reginald L. Lagendijk},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Trajectory Hiding and Sharing for Supply Chains with Differential
+                  Privacy},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {297--317},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_15},
+	doi = {10.1007/978-3-031-51476-0\_15},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiXEL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the fast development of e-commerce, there is a higher demand for timely delivery. Logistic companies want to send receivers a more accurate arrival prediction to improve customer satisfaction and lower customer retention costs. One approach is to share (near) real-time location data with recipients, but this also introduces privacy and security issues such as malicious tracking and theft. In this paper, we propose a privacy-preserving real-time location sharing system including (1) a differential privacy based location publishing method and (2) location sharing protocols for both centralized and decentralized platforms. Different from existing location perturbation solutions which only consider privacy in theory, our location publishing method is based on a real map and different privacy levels for recipients. Our analyses and proofs show that the proposed location publishing method provides better privacy protection than existing works under real maps against possible attacks. We also provide a detailed analysis of the choice of the privacy parameter and their impact on the suggested noisy location outputs. The experimental results demonstrate that our proposed method is feasible for both centralized and decentralized systems and can provide more precise arrival prediction than using time slots in current delivery systems.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KalantariPDHJD23,
+	author = {Shirin Kalantari and
+                  Pieter Philippaerts and
+                  Yana Dimova and
+                  Danny Hughes and
+                  Wouter Joosen and
+                  Bart De Decker},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {A User-Centric Approach to {API} Delegations - Enforcing Privacy Policies
+                  on OAuth Delegations},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {318--337},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_16},
+	doi = {10.1007/978-3-031-51476-0\_16},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KalantariPDHJD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {OAuth is the most commonly used access delegation protocol. It enables the connection of different APIs to build increasingly sophisticated applications that enhance and amplify our abilities. Increasingly, OAuth is used in applications where a significant amount of personal data is exposed about users. Despite this privacy risk, in most OAuth flows that a user encounters, there is a lack of fine-grained control over the amount of data that is shared on behalf of users. To mitigate these privacy issues we design and implement utAPIa, a middleware which enforces privacy policies on OAuth delegations. utAPIa allows users to modify API responses that are made on their behalf by filtering unrelated attributes and protecting their sensitive information. To enforce privacy policies, utAPIa uses OAuth’s standardized Rich Authorization Requests (RAR) extension, requiring no modifications to the existing OAuth protocol. We evaluate utAPIa in a proof-of-concept implementation and show the feasibility of our design, which incurs a reasonable performance overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GuiratDEZ23,
+	author = {Iness Ben Guirat and
+                  Claudia D{\'{\i}}az and
+                  Karim Eldefrawy and
+                  Hadas Zeilberger},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Traffic Analysis by Adversaries with Partial Visibility},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {338--358},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_17},
+	doi = {10.1007/978-3-031-51476-0\_17},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GuiratDEZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mixnets are a fundamental privacy enhancing technology in the context of anonymous communication that have been extensively studied in terms of a Global passive Adversary (GPA). However a more realistic adversary that captures only a portion of the network have not yet been studied. We call these adversaries “Adversaries with Partial Visibility (APV)" In this paper we provide a framework that models the mixnet-based system and captures different types of Adversaries with Partial Visibility. Each adversary is modeled based on their goals, prior knowledge, and capabilities. We then use this model to perform traffic analysis using the Metropolis-Hastings algorithm in conjunction with a Bayesian inference engine. To the best of our knowledge this is the first time such an adversary is explicitly defined and studied, despite this adversary model being championed as more realistic than global passive adversaries in prior work. We highlight that our framework is flexible and able to encompass a broad range of different adversaries. Naturally, our model also captures the classical global passive adversary (GPA) as a special case.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GunerG23,
+	author = {Efehan Guner and
+                  Mehmet Emre Gursoy},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Learning Markov Chain Models from Sequential Data Under Local Differential
+                  Privacy},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {359--379},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_18},
+	doi = {10.1007/978-3-031-51476-0\_18},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GunerG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Markov chain models are frequently used in the analysis and modeling of sequential data such as location traces, time series, natural language, and speech. However, considering that many data sources are privacy-sensitive, it is imperative to design privacy-preserving methods for learning Markov models. In this paper, we propose Prima for learning discrete-time Markov chain models under local differential privacy (LDP), a state-of-the-art privacy standard. In Prima, each user locally encodes and perturbs their sequential record on their own device using LDP protocols. For this purpose, we adapt two bitvector-based LDP protocols (RAPPOR and OUE); and furthermore, we develop a novel extension of the GRR protocol called AdaGRR. We also propose to utilize custom privacy budget allocation strategies for perturbation, which enable uneven splitting of the privacy budget to better preserve utility in cases with uneven sequence lengths. On the server-side, Prima uses a novel algorithm for estimating Markov probabilities from perturbed data. We experimentally evaluate Prima using three real-world datasets, four utility metrics, and under various combinations of privacy budget and budget allocation strategies. Results show that Prima enables learning Markov chains under LDP with high utility and low error compared to Markov chains learned without privacy constraints.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MeeusGCM23,
+	author = {Matthieu Meeus and
+                  Florent Gu{\'{e}}pin and
+                  Ana{-}Maria Cretu and
+                  Yves{-}Alexandre de Montjoye},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Achilles' Heels: Vulnerable Record Identification in Synthetic
+                  Data Publishing},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {380--399},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_19},
+	doi = {10.1007/978-3-031-51476-0\_19},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MeeusGCM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Synthetic data is seen as the most promising solution to share individual-level data while preserving privacy. Shadow modeling-based Membership Inference Attacks (MIAs) have become the standard approach to evaluate the privacy risk of synthetic data. While very effective, they require a large number of datasets to be created and models trained to evaluate the risk posed by a single record. The privacy risk of a dataset is thus currently evaluated by running MIAs on a handful of records selected using ad-hoc methods. We here propose what is, to the best of our knowledge, the first principled vulnerable record identification technique for synthetic data publishing, leveraging the distance to a record’s closest neighbors. We show our method to strongly outperform previous ad-hoc methods across datasets and generators. We also show evidence of our method to be robust to the choice of MIA and to specific choice of parameters. Finally, we show it to accurately identify vulnerable records when synthetic data generators are made differentially private. The choice of vulnerable records is as important as more accurate MIAs when evaluating the privacy of synthetic data releases, including from a legal perspective. We here propose a simple yet highly effective method to do so. We hope our method will enable practitioners to better estimate the risk posed by synthetic data publishing and researchers to fairly compare ever improving MIAs on synthetic data.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HubletBK23,
+	author = {Fran{\c{c}}ois Hublet and
+                  David A. Basin and
+                  Srdan Krstic},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Enforcing the {GDPR}},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {400--422},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_20},
+	doi = {10.1007/978-3-031-51476-0\_20},
+	timestamp = {Sat, 10 Feb 2024 18:04:44 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HubletBK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Violations of data protection laws such as the General Data Protection Regulation (GDPR) are ubiquitous. Currently, building IT support to implement such laws is difficult and the alternatives such as manual controls augmented by auditing are limited and scale poorly. This calls for new automated enforcement techniques that can build on, and enforce, a formalization of the law. In this paper, we present the first enforceable specification of a core set of GDPR provisions, centered on data-subject rights, and describe an architecture that automatically enforces this specification in web applications. We evaluate our architecture by implementing three case studies and show that our approach incurs only modest development and runtime overhead, while covering the most relevant privacy-related aspects of GDPR that can be enforced at runtime.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BoyenL23,
+	author = {Xavier Boyen and
+                  Qinyi Li},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Identity-Based Matchmaking Encryption with Enhanced Privacy - {A}
+                  Generic Construction with Practical Instantiations},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {425--445},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_21},
+	doi = {10.1007/978-3-031-51476-0\_21},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BoyenL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Identity-based matchmaking encryption (IB-ME), proposed by Ateniese et al. (Crypto 2019), is a type of matchmaking encryption (ME). In IB-ME, the sender can specify a target identity \\(\\textsf{rcv}\\) during encryption, and the receiver can set a target identity \\(\\textsf{snd}\\) during decryption. The ciphertext can be decrypted if \\(\\textsf{snd}\\) matches the sender’s identity \\(\\sigma \\), and \\(\\textsf{rcv}\\) matches the receiver’s identity \\(\\rho \\). The basic security notion of IB-ME is privacy, whose original definition ensures that \\(\\sigma \\), \\(\\textsf{rcv}\\), and the message remain hidden as long as \\(\\textsf{rcv}\\ne \\rho \\), regardless the relation between \\(\\textsf{snd}\\) and \\(\\sigma \\). Francati et al. (IndoCrypt 2021) argue that the original privacy notion is unsatisfactory as it does not match the intuitive privacy guarantee of matching encryption. They revise the original privacy notion with an enhanced privacy notion to characterise meaningful privacy under the condition \\(\\textsf{snd}\\ne \\sigma \\) and construct an IB-ME system with the enhanced security in the plain model, albeit under a q-type pairing-based assumption. Chen et al. (AsiaCrypt 2022) leave how to construct IB-ME systems with enhanced privacy as an open problem. In this paper, we solve the problem by a generic construction of IB-ME with enhanced privacy. Instantiating our construction gives practical IB-ME systems with enhanced privacy from various standard assumptions.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiZZX23,
+	author = {Xin Li and
+                  Hong Zhu and
+                  Zhiqiang Zhang and
+                  Meiyi Xie},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Item-Oriented Personalized {LDP} for Discrete Distribution Estimation},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {446--466},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_22},
+	doi = {10.1007/978-3-031-51476-0\_22},
+	timestamp = {Fri, 26 Jan 2024 07:55:28 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiZZX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Discrete distribution estimation is a fundamental statistical tool, which is widely used to perform data analysis tasks in various applications involving sensitive personal information. Due to privacy concerns, individuals may not always provide their raw information, which leads to unpredictable biases in the final results of estimated distribution. Local Differential Privacy (LDP) is an advanced technique for privacy protection of discrete distribution estimation. Currently, typical LDP mechanisms provide same protection for all items in the domain, which imposes unnecessary perturbation on less sensitive items and thus degrades the utility of final results. Although, several recent works try to alleviate this problem, the utility can be further improved. In this paper, we propose a novel notion of LDP called Item-Oriented Personalized LDP (IPLDP), which independently perturbs different items with different privacy budgets to achieve personalized privacy protection. Furthermore, to satisfy IPLDP, we propose the Item-Oriented Personalized Randomized Response (IPRR) based on Mangat’s RR.Theoretical analysis and experimental results demonstrate that, our method can provide fine-grained privacy protection and improve data utility simultaneously, and our scheme does at most one order of magnitude better performance than previous work.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RenZRML23,
+	author = {Mengfei Ren and
+                  Haotian Zhang and
+                  Xiaolei Ren and
+                  Jiang Ming and
+                  Yu Lei},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {Intelligent Zigbee Protocol Fuzzing via Constraint-Field Dependency
+                  Inference},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {467--486},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_23},
+	doi = {10.1007/978-3-031-51476-0\_23},
+	timestamp = {Tue, 07 May 2024 20:10:33 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RenZRML23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Zigbee is one of the global most popular IoT standards widely deployed by millions of devices and customers. Its fast market growth also incentivizes cybercriminals. Inference-guided fuzzing has shown promising results for security vulnerability detection, which infers the relationship between input bytes and path constraints. However, deploying such a technique on Zigbee protocol implementation is not a trivial task because of the vendor-specific requirements and particular hardware configuration. In this paper, we propose TaintBFuzz, an intelligent Zigbee protocol fuzzing by inferring the dependency between message fields and path constraints. We then use the inference to prioritize the corresponding fields in the mutation process and generate inputs that could explore untouched branches. We implemented a prototype of TaintBFuzz and evaluated it on a mainstream Zigbee protocol implementation called Z-Stack. Compared with state-of-the-art protocol fuzzing tools, including Boofuzz, Peach, and Z-Fuzzer, TaintBFuzz outperforms them in code coverage with the assistance of constraint-field dependency inference. Notably, TaintBFuzz efficiently identifies eight distinct vulnerabilities, of which two are previously unidentified.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LinGYZWG23,
+	author = {Wei Lin and
+                  Qingli Guo and
+                  Jiawei Yin and
+                  Xiangyu Zuo and
+                  Rongqing Wang and
+                  Xiaorui Gong},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {FSmell: Recognizing Inline Function in Binary Code},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {487--506},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_24},
+	doi = {10.1007/978-3-031-51476-0\_24},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LinGYZWG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Function recognition is one of the most critical tasks in binary analysis and reverse engineering. However, the recognition of inline functions still remains challenging. This is mainly due to two factors. Firstly, in binaries, there exist no expert patterns, e.g., prologue/epilogue instructions, for inline functions. Secondly, instruction reordering introduced by compiler optimization makes the address space of the instruction from the same inline function discontinuous. The address space of an inline function is often mingled with that of regular functions. This paper proposes FSmell, a graph theory based function recognition framework that specifically targets inline functions. FSmell introduces Instruction Topology Graph (ITG) to represent the data flow dependencies for instructions in a basic block. With the help of ITG, the problem of distinguishing inline instructions from caller instructions is transformed into the graph connectivity problem, which is solved by computing the minimum vertex separator. We have applied FSmell to analyze 78 binaries compiled by GCC and CLANG with 3 different optimization levels. Of the 205,890 inline functions in the 78 binaries, FSmell reports 76,777, with a precision of 67.5%, and a recall of 39.2%. With the help of FSmell, 50% of the vulnerabilities missed by other methods are detected and located.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuW23,
+	author = {Wenqing Liu and
+                  An{-}I Andy Wang},
+	editor = {Gene Tsudik and
+                  Mauro Conti and
+                  Kaitai Liang and
+                  Georgios Smaragdakis},
+	title = {LFuzz: Exploiting Locality-Enabled Techniques for File-System Fuzzing},
+	booktitle = {Computer Security - {ESORICS} 2023 - 28th European Symposium on Research
+                  in Computer Security, The Hague, The Netherlands, September 25-29,
+                  2023, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14345},
+	pages = {507--525},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-51476-0\_25},
+	doi = {10.1007/978-3-031-51476-0\_25},
+	timestamp = {Thu, 18 Jan 2024 08:27:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {File systems (FSes) store crucial data. However, FS bugs can lead to data loss and security vulnerabilities. FS fuzzing is an effective technique for identifying FS bugs that may be difficult to detect through traditional regression suites and human testing. FS fuzzing involves two parts: (1) File image fuzzing often involves altering bits of an FS at random storage locations; (2) File operation fuzzing typically issues random sequences of file operations to an FS image. Since leading FS fuzzers tend to access a small set of files to encourage the exploration of deep code branches, the accessed FS image locations tend to be clustered and localized. Thus, altering bits at random FS locations is ineffective in triggering bugs, as these locations are often not referenced by file operations. Furthermore, the minimum FS image is insufficiently small for frequent image saves and restores due to performance and storage overhead. In this paper, we introduce LFuzz, which exploits the locality shown in typical FS fuzzing workloads. LFuzz tracks recently accessed image locations and nearby locations to predict which locations will soon be referenced. The scheme is adaptive to migrating file access patterns. Moreover, since modified image locations are localized, LFuzz can compactly and incrementally accumulate FS image changes so that FS states can be fuzzed from intermediary images instead of top-level seed images. LFuzz further explores the use of partially updated images to simulate corrupted FSes with mixed versions of metadata. We applied LFuzz to ext4, BTRFS, and F2FS and found 21 new bugs. Compared to JANUS, LFuzz reduced the fuzzing area by up to 8x with unique edges deviated by up to 15%.}
+}
