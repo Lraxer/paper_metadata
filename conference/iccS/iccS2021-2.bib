@@ -1,0 +1,1206 @@
+@inproceedings{DBLP:conf/iccS/KusakabeIFHW21,
+	author = {Ryota Kusakabe and
+                  Tsuyoshi Ichimura and
+                  Kohei Fujita and
+                  Muneo Hori and
+                  Lalith Wijerathne},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Large-Scale Stabilized Multi-physics Earthquake Simulation for Digital
+                  Twin},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {3--15},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_1},
+	doi = {10.1007/978-3-030-77964-1\_1},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KusakabeIFHW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The development of computing environments and computational techniques, together with data observation technology, big data and extreme-scale computing (BDEC) has gained immense attention. An example of BDEC is the digital twin concept of a city, a high-fidelity model of the city developed based on a computing system for the BDEC. The virtual experiments using numerical simulations are performed there, whose results are used in decision making. The earthquake simulation, which entails the highest computational cost among numerical simulations in the digital twin, was targeted in this study. In the multi-physics earthquake simulation considering soil liquefaction, the computation could become unstable when a high resolution is used for spatial discretization. In the digital twin, high-resolution large-scale simulation is performed repeatedly, and thus, it is important to avoid such instability due to the discretization setting. In this study, an earthquake simulation method was developed to stably perform high-resolution large-scale simulations by averaging the constitutive law spatially based on a non-local approach. The developed method enables us to stably perform simulations with high-resolution of the order of 0.1\xa0m and obtain a converged solution.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/BartmanA21,
+	author = {Piotr Bartman and
+                  Sylwester Arabas},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {On the Design of Monte-Carlo Particle Coagulation Solver Interface:
+                  {A} {CPU/GPU} Super-Droplet Method Case Study with PySDM},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {16--30},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_2},
+	doi = {10.1007/978-3-030-77964-1\_2},
+	timestamp = {Tue, 15 Jun 2021 17:23:46 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/BartmanA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Super-Droplet Method (SDM) is a probabilistic Monte-Carlo-type model of particle coagulation process, an alternative to the mean-field formulation of Smoluchowski. SDM as an algorithm has linear computational complexity with respect to the state vector length, the state vector length is constant throughout simulation, and most of the algorithm steps are readily parallelizable. This paper discusses the design and implementation of two number-crunching backends for SDM implemented in PySDM, a\xa0new free and open-source Python package for simulating the dynamics of atmospheric aerosol, cloud and rain particles. The two backends share their application programming interface (API) but leverage distinct parallelism paradigms, target different hardware, and are built on top of different lower-level routine sets. First offers multi-threaded CPU computations and is based on Numba (using Numpy arrays). Second offers GPU computations and is built on top of ThrustRTC and CURandRTC (and does not use Numpy arrays). In the paper, the API is discussed focusing on: data dependencies across steps, parallelisation opportunities, CPU and GPU implementation nuances, and algorithm workflow. Example simulations suitable for validating implementations of the API are presented.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ZhangS21,
+	author = {Jing Zhang and
+                  Ying Su},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Deep Neural Network Based on Stacked Auto-encoder and Dataset Stratification
+                  in Indoor Location},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {33--46},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_3},
+	doi = {10.1007/978-3-030-77964-1\_3},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ZhangS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Indoor location has become the core part in the large-scale location-aware services, especially in the extendable/scalable applications. Fingerprint location by using the signal strength indicator (RSSI) of the received WiFi signal has the advantages of full coverage and strong expansibility. It also has the disadvantages of requiring data calibration and lacking samples under the dynamic environment. This paper describes a deep neural network method used for indoor positioning (DNNIP) based on stacked auto-encoder and data stratification. The experimental results show that this DNNIP has better classification accuracy than the machine learning algorithms that are based on UJIIndoorLoc dataset.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Susik21,
+	author = {Robert Susik},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Recurrent Autoencoder with Sequence-Aware Encoding},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {47--57},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_4},
+	doi = {10.1007/978-3-030-77964-1\_4},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Susik21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recurrent Neural Networks (RNN) received a vast amount of attention last decade. Recently, the architectures of Recurrent AutoEncoders (RAE) found many applications in practice. RAE can extract the semantically valuable information, called context that represents a latent space useful for further processing. Nevertheless, recurrent autoencoders are hard to train, and the training process takes much time. This paper proposes a new recurrent autoencoder architecture with sequence-aware encoding (RAES), and its second variant which employs a 1D Convolutional layer (RAESC) to improve its performance and flexibility. We discuss the advantages and disadvantages of the solution and prove that the recurrent autoencoder with sequence-aware encoding outperforms a standard RAE in terms of model training time in most cases. The extensive experiments performed on a dataset of generated sequences of signals shows the advantages of RAES(C). The results show that the proposed solution dominates over the standard RAE, and the training process is the order of magnitude faster.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KongZM21,
+	author = {Yawei Kong and
+                  Lu Zhang and
+                  Can Ma},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Gist Information Guided Neural Network for Abstractive Summarization},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {58--71},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_5},
+	doi = {10.1007/978-3-030-77964-1\_5},
+	timestamp = {Tue, 15 Jun 2021 17:23:53 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KongZM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Abstractive summarization aims to condense the given documents and generate fluent summaries with important information. It is challenging for selecting the salient information and maintaining the semantic consistency between documents and summaries. To tackle these problems, we propose a novel framework - Gist Information Guided Neural Network (GIGN), which is inspired by the process that people usually summarize a document around the gist information. First, we incorporate multi-head attention mechanism with the self-adjust query to extract the global gist of the input document, which is equivalent to a question vector questions the model “What is the document gist?”. Through the interaction of the query and the input representations, the gist contains all salient semantics. Second, we propose the remaining gist guided module to dynamically guide the generation process, which can effectively reduce the redundancy by attending to different contents of gist. Finally, we introduce the gist consistency loss to improve the consistency between inputs and outputs. We conduct experiments on the benchmark dataset - CNN/Daily Mail to validate the effectiveness of our methods. The results indicate that our GIGN significantly outperforms all baseline models and achieves the state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Kuzelewska21,
+	author = {Urszula Kuzelewska},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Quality of Recommendations and Cold-Start Problem in Recommender Systems
+                  Based on Multi-clusters},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {72--86},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_6},
+	doi = {10.1007/978-3-030-77964-1\_6},
+	timestamp = {Tue, 15 Jun 2021 17:23:54 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Kuzelewska21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article presents a new approach to collaborative filtering recommender systems that focuses on the problem of an active user’s (a user to whom recommendations are generated) neighbourhood modelling. Precise identification of the neighbours has a direct impact on the quality of the generated recommendation lists. Clustering techniques are the solution that is often used for neighbourhood calculation, however, they negatively affect the quality (precision) of recommendations. In this article, a new version of the algorithm based on multi-clustering, \\(M-CCF\\), is proposed. Instead of one clustering scheme, it works on a set of multi-clusters, therefore it selects the most appropriate one that models the neighbourhood most precisely. This article presents the results of the experiments validating the advantage of multi-clustering approach, \\(M-CCF\\), over the traditional methods based on single-scheme clustering. The experiments focus on the overall recommendation performance including accuracy and coverage as well as a cold-start problem.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ChipchagovK21,
+	author = {Mihail Chipchagov and
+                  Evgeniy Kublik},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Model of the Cold-Start Recommender System Based on the Petri-Markov
+                  Nets},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {87--91},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_7},
+	doi = {10.1007/978-3-030-77964-1\_7},
+	timestamp = {Tue, 15 Jun 2021 17:23:43 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ChipchagovK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The article describes a model for constructing a cold-start recommendation system based on the mathematical apparatus of Petri-Markov nets. The model combines stochastic and structural approaches to building recommendations. This solution allows you to differentiate recommendation objects by their popularity and impose restrictions on the available latent data about the user.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/LukasikMKG21,
+	author = {Szymon Lukasik and
+                  Andrzej Michalowski and
+                  Piotr A. Kowalski and
+                  Amir H. Gandomi},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Text-Based Product Matching with Incomplete and Inconsistent Items
+                  Descriptions},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {92--103},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_8},
+	doi = {10.1007/978-3-030-77964-1\_8},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/LukasikMKG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years Machine Learning and Artificial Intelligence are reshaping the landscape of e-commerce and retail. Using advanced analytics, behavioral modeling, and inference, representatives of these industries can leverage collected data and increase their market performance. To perform assortment optimization – one of the most fundamentals problems in retail – one has to identify products that are present in the competitors’ portfolios. It is not possible without effective product matching. The paper deals with finding identical products in the offer of different retailers. The task is performed using a text-mining approach, assuming that the data may contain incomplete information. Besides the description of the algorithm, the results for real-world data fetched from the offers of two consumer electronics retailers are being demonstrated.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/QianYZSH21,
+	author = {Wanhui Qian and
+                  Jinzhu Yang and
+                  Fuqing Zhu and
+                  Yipeng Su and
+                  Songlin Hu},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Unsupervised Text Style Transfer via an Enhanced Operation Pipeline},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {104--117},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_9},
+	doi = {10.1007/978-3-030-77964-1\_9},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/QianYZSH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unsupervised text style transfer aims to change the style attribute of the given unpaired texts while preserving the style-independent semantic content. In order to preserve the content, some methods directly remove the style-related words in texts. The remaining content, together with target stylized words, are fused to produce target samples with transferred style. In such a mechanism, two main challenges should be well addressed. First, due to the style-related words are not given explicitly in the original dataset, a detection algorithm is required to recognize the words in an unsupervised paradigm. Second, the compatibility between the remaining content and target stylized words should be guaranteed to produce valid samples. In this paper, we propose a multi-stage method following the working pipeline – Detection, Matching, and Generation. In the Detection stage, the style-related words are recognized by an effective joint method and replaced by mask tokens. Then, in the Matching stage, the contexts of the masks are employed as queries to retrieve target stylized tokens from candidates. Finally, in the Generation stage, the masked texts and retrieved style tokens are transformed to the target results by attentive decoding. On two public sentimental style datasets, experimental results demonstrate that our proposed method addresses the challenges mentioned above and achieves competitive performance compared with several state-of-the-art methods.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Li000Z21,
+	author = {Miaojin Li and
+                  Peng Fu and
+                  Zheng Lin and
+                  Weiping Wang and
+                  Wenyu Zang},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Exemplar Guided Latent Pre-trained Dialogue Generation},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {118--132},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_10},
+	doi = {10.1007/978-3-030-77964-1\_10},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Li000Z21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Pre-trained models with latent variables have been proved to be an effective method in the diverse dialogue generation. However, the latent variables in current models are finite and uninformative, making the generated responses lack diversity and informativeness. In order to address this problem, we propose an exemplar guided latent pre-trained dialogue generation model to sample the latent variables from a continuous sentence embedding space, which can be controlled by the exemplar sentences. The proposed model contains two parts: exemplar seeking and response generation. First, the exemplar seeking builds a sentence graph based on the given dataset and seeks an enlightened exemplar from the graph. Next, the response generation constructs informative latent variables based on the exemplar and generates diverse responses with latent variables. Experiments show that the model can effectively improve the propriety and diversity of responses and achieve state-of-the-art performance.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GrzeszczukK21,
+	author = {Rafal Wojciech Grzeszczuk and
+                  Marcin Kurdziel},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Monte Carlo Winning Tickets},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {133--139},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_11},
+	doi = {10.1007/978-3-030-77964-1\_11},
+	timestamp = {Thu, 17 Jun 2021 08:29:56 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GrzeszczukK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent research on sparse neural networks demonstrates that densely-connected models contain sparse subnetworks that are trainable from a random initialization. Existence of these so called winning tickets suggests that we may possibly forego extensive training-and-pruning procedures, and train sparse neural networks from scratch. Unfortunately, winning tickets are data-derived models. That is, while they can be trained from scratch, their architecture is discovered via iterative pruning. In this work we propose Monte Carlo Winning Tickets (MCTWs) – random, sparse neural architectures that resemble winning tickets with respect to certain statistics over weights and activations. We show that MCTWs can match performance of standard winning tickets. This opens a route to constructing random but trainable sparse neural networks.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/PalczewskaM21,
+	author = {Anna Palczewska and
+                  Urszula Markowska{-}Kaczmar},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Interpreting Neural Networks Prediction for a Single Instance via
+                  Random Forest Feature Contributions},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {140--153},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_12},
+	doi = {10.1007/978-3-030-77964-1\_12},
+	timestamp = {Tue, 15 Jun 2021 17:23:45 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/PalczewskaM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we are focusing on the problem of interpreting Neural Networks on the instance level. The proposed approach uses the Feature Contributions, numerical values that domain experts further interpret to reveal some phenomena about a particular instance or model behaviour. In our method, Feature Contributions are calculated from the Random Forest model trained to mimic the Artificial Neural Network’s classification as close as possible. We assume that we can trust the Feature Contributions results when both predictions are the same, i.e., Neural Network and Feature Contributions give the same results. The results show that this highly depends on the level the Neural Network is trained because the error is then propagated to the Random Forest model. For good trained ANNs, we can trust in interpretation based on Feature Contributions on average in 80%.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/MentsT21,
+	author = {Laila van Ments and
+                  Jan Treur},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Higher-Order Adaptive Network Model to Simulate Development of and
+                  Recovery from {PTSD}},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {154--166},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_13},
+	doi = {10.1007/978-3-030-77964-1\_13},
+	timestamp = {Thu, 14 Oct 2021 10:08:01 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/MentsT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, a second-order adaptive network model is introduced for a number of phenomena that occur in the context of PTSD. First of all the model covers simulation of the formation of a mental model of a traumatic course of events and its emotional responses that make replay of flashback movies happen. Secondly, it addresses learning processes of how a stimulus can become a trigger to activate this acquired mental model. Furthermore, the influence of therapy on the ability of an individual to learn to control the emotional responses to the traumatic mental model was modeled. Finally, a form of second-order adaptation was covered to unblock and activate this learning ability.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/JiaYWWLJ21,
+	author = {Zijian Jia and
+                  Yepeng Yao and
+                  Qiuyun Wang and
+                  Xuren Wang and
+                  Baoxu Liu and
+                  Zhengwei Jiang},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Trojan Traffic Detection Based on Meta-learning},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {167--180},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_14},
+	doi = {10.1007/978-3-030-77964-1\_14},
+	timestamp = {Sun, 02 Oct 2022 16:03:52 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/JiaYWWLJ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {At present, Trojan traffic detection technology based on machine learning generally needs a large number of traffic samples as the training set. In the real network environment, in the face of Zero-Day attack and Trojan variant technology, we may only get a small number of traffic samples in a short time, which can not meet the training requirements of the model. To solve this problem, this paper proposes a method of Trojan traffic detection using meta-learning for the first time, which mainly includes the embedded part and the relation part. In the embedding part, we design a neural network combining ResNet and BiLSTM to transform the original traffic into eigenvectors and allocate the meta tasks of each round of training in the form of a C-way K-shot. In the relation part, we design a relationship network improved by dynamic routing algorithm to calculate the relationship score between samples and categories in the meta-task. The model can learn the ability to calculate the difference between different types of samples on multiple meta-tasks. The model can use a small number of samples to complete training and classify quickly according to prior knowledge. In few-shot, our method has better results in Trojan traffic classification than the traditional deep learning method.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GuZDTWZHH21,
+	author = {Mengtian Gu and
+                  Biyu Zhou and
+                  Fengyang Du and
+                  Xuehai Tang and
+                  Wang Wang and
+                  Liangjun Zang and
+                  Jizhong Han and
+                  Songlin Hu},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Grasp the Key: Towards Fast and Accurate Host-Based Intrusion Detection
+                  in Data Centers},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {181--194},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_15},
+	doi = {10.1007/978-3-030-77964-1\_15},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GuZDTWZHH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of data center facilities and technology, in addition to detection accuracy, detection speed has also become a concern for host-based intrusion detection. In this paper, we propose a DNN model to detect intrusion for host with high accuracy. Along with that, a data reduction method based on SHapley Additive exPlanations (SHAP) is incorperated to reduce the execution time of the DNN model. Extensive evaluation on two well-known public datasets in this field shows that our proposed method can achieve high-efficiency intrusion detection while ensuring high-precision.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GuoSCXZ21,
+	author = {Juncheng Guo and
+                  Yafei Sang and
+                  Peng Chang and
+                  Xiaolin Xu and
+                  Yongzheng Zhang},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {{MGEL:} {A} Robust Malware Encrypted Traffic Detection Method Based
+                  on Ensemble Learning with Multi-grained Features},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {195--208},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_16},
+	doi = {10.1007/978-3-030-77964-1\_16},
+	timestamp = {Thu, 01 Jul 2021 14:08:43 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GuoSCXZ21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the use of encryption protocols increase, so does the challenge of identifying malware encrypted traffic. One of the most significant challenges is the robustness of the model in different scenarios. In this paper, we propose an ensemble learning approach based on multi-grained features to address this problem which is called MGEL. The MGEL builds diverse base learners using multi-grained features and then identifies malware encrypted traffic in a stacking way. Moreover, we introduce the self-attention mechanism to process sequence features and solve the problem of long-term dependence. We verify the effectiveness of the MGEL on two public datasets and the experimental results show that the MGEL approach outperforms other state-of-the-art methods in four evaluation metrics.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/DangZWZYH21,
+	author = {Weixia Dang and
+                  Biyu Zhou and
+                  Lingwei Wei and
+                  Weigang Zhang and
+                  Ziang Yang and
+                  Songlin Hu},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {TS-Bert: Time Series Anomaly Detection via Pre-training Model Bert},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {209--223},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_17},
+	doi = {10.1007/978-3-030-77964-1\_17},
+	timestamp = {Sun, 02 Oct 2022 16:03:52 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/DangZWZYH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly detection of time series is of great importance in data mining research. Current state of the art suffer from scalability, over reliance on labels and high false positives. To this end, a novel framework, named TS-Bert, is proposed in this paper. TS-Bert is based on pre-training model Bert and consists of two phases, accordingly. In the pre-training phase, the model learns the behavior features of the time series from massive unlabeled data. In the fine-tuning phase, the model is fine-tuned based on the target dataset. Since the Bert model is not designed for the time series anomaly detection task, we have made some modifications thus to improve the detection accuracy. Furthermore, we have removed the dependency of the model on labeled data so that TS-Bert is unsupervised. Experiments on the public data set KPI and yahoo demonstrate that TS-Bert has significantly improved the f1 value compared to the current state-of-the-art unsupervised learning models.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/LazarzI21,
+	author = {Radoslaw Lazarz and
+                  Michal Idzik},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Relation Order Histograms as a Network Embedding Tool},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {224--237},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_18},
+	doi = {10.1007/978-3-030-77964-1\_18},
+	timestamp = {Tue, 15 Jun 2021 17:23:54 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/LazarzI21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we introduce a novel graph embedding technique called NERO (Network Embedding based on Relation Order histograms). Its performance is assessed using a number of well-known classification problems and a newly introduced benchmark dealing with detailed laminae venation networks. The proposed algorithm achieves results surpassing those attained by other kernel-type methods and comparable with many state-of-the-art GNNs while requiring no GPU support and being able to handle relatively large input data. It is also demonstrated that the produced representation can be easily paired with existing model interpretation techniques to provide an overview of the individual edge and vertex influence on the investigated process.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KorthouwerNT21,
+	author = {Alex Korthouwer and
+                  David Noordberg and
+                  Jan Treur},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Desensitization Due to Overstimulation: {A} Second-Order Adaptive
+                  Network Model},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {238--249},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_19},
+	doi = {10.1007/978-3-030-77964-1\_19},
+	timestamp = {Mon, 03 Jan 2022 22:23:25 +0100},
+	biburl = {https://dblp.org/rec/conf/iccS/KorthouwerNT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, a second-order adaptive network model is presented for the effects of supernormal stimuli. The model describes via the underlying mechanisms in the brain how responses on stimuli occur in absence of a supernormal stimulus. Moreover, it describes how these normal responses are lost after a supernormal stimulus occurs and due to that adaptive desensitization takes place. By simulated example scenarios, it was evaluated that the model describes the expected dynamics. By stationary point analysis correctness of the implemented model with respect to its design was verified.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Skulimowski21,
+	author = {Marcin Skulimowski},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Modified Deep Q-Network Algorithm Applied to the Evacuation Problem},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {250--256},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_20},
+	doi = {10.1007/978-3-030-77964-1\_20},
+	timestamp = {Tue, 15 Jun 2021 17:23:45 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Skulimowski21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we consider reinforcement learning applied to the evacuation problem. Namely, we propose a modification of the deep Q-network (DQN) algorithm, enabling more than one action to be taken before each update of the Q function. To test the algorithm, we have created a simple environment that enables evacuation modelling. We present and discuss the results of preliminary tests. In particular, we compare the performance of the modified DQN algorithm with its regular version.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ZhangKFCCLM21,
+	author = {Lu Zhang and
+                  Yawei Kong and
+                  Fang Fang and
+                  Cong Cao and
+                  Yanan Cao and
+                  Yanbing Liu and
+                  Can Ma},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Human-Like Storyteller: {A} Hierarchical Network with Gated Memory
+                  for Visual Storytelling},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {257--270},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_21},
+	doi = {10.1007/978-3-030-77964-1\_21},
+	timestamp = {Tue, 14 Mar 2023 11:26:26 +0100},
+	biburl = {https://dblp.org/rec/conf/iccS/ZhangKFCCLM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Different from the visual captioning that describes an image concretely, the visual storytelling aims at generating an imaginative paragraph with a deep understanding of the given image stream. It is more challenging for the requirements of inferring contextual relationships among images. Intuitively, humans tend to tell the story around a central idea that is constantly expressed with the continuation of the storytelling. Therefore, we propose the Human-Like StoryTeller (HLST), a hierarchical neural network with a gated memory module, which imitates the storytelling process of human beings. First, we utilize the hierarchical decoder to integrate the context information effectively. Second, we introduce the memory module as the story’s central idea to enhance the coherence of generated stories. And the multi-head attention mechanism with a self adjust query is employed to initialize the memory module, which distils the salient information of the visual semantic features. Finally, we equip the memory module with a gated mechanism to guide the story generation dynamically. During the generation process, the expressed information contained in memory is erased with the control of the read and write gate. The experimental results indicate that our approach significantly outperforms all state-of-the-art (SOTA) methods.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Burkhart21,
+	author = {Michael C. Burkhart},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Discriminative Bayesian Filtering for the Semi-supervised Augmentation
+                  of Sequential Observation Data},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {271--283},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_22},
+	doi = {10.1007/978-3-030-77964-1\_22},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Burkhart21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We aim to construct a probabilistic classifier to predict a latent, time-dependent boolean label given an observed vector of measurements. Our training data consists of sequences of observations paired with a label for precisely one of the observations in each sequence. As an initial approach, we learn a baseline supervised classifier by training on the labeled observations alone, ignoring the unlabeled observations in each sequence. We then leverage this first classifier and the sequential structure of our data to build a second training set as follows: (1) we apply the first classifier to each unlabeled observation and then (2) we filter the resulting estimates to incorporate information from the labeled observations and create a much larger training set. We describe a Bayesian filtering framework that can be used to perform step 2 and show how a second classifier built using the latter, filtered training set can outperform the initial classifier. At Adobe, our motivating application entails predicting customer segment membership from readily available proprietary features. We administer surveys to collect label data for our subscribers and then generate feature data for these customers at regular intervals around the survey time. While we can train a supervised classifier using paired feature and label data from the survey time alone, the availability of nearby feature data and the relative expensive of polling drive this semi-supervised approach. We perform an ablation study comparing both a baseline classifier and a likelihood-based augmentation approach to our proposed method and show how our method best improves predictive performance for an in-house classifier.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Fuad21,
+	author = {Muhammad Marwan Muhammad Fuad},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {{TSAX} is Trending},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {284--296},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_23},
+	doi = {10.1007/978-3-030-77964-1\_23},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Fuad21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Time series mining is an important branch of data mining, as time series data is ubiquitous and has many applications in several domains. The main task in time series mining is classification. Time series representation methods play an important role in time series classification and other time series mining tasks. One of the most popular representation methods of time series data is the Symbolic Aggregate approXimation (SAX). The secret behind its popularity is its simplicity and efficiency. SAX has however one major drawback, which is its inability to represent trend information. Several methods have been proposed to enable SAX to capture trend information, but this comes at the expense of complex processing, preprocessing, or post-processing procedures. In this paper we present a new modification of SAX that we call Trending SAX (TSAX), which only adds minimal complexity to SAX, but substantially improves its performance in time series classification. This is validated experimentally on 50 datasets. The results show the superior performance of our method, as it gives a smaller classification error on 39 datasets compared with SAX.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KoconMK21,
+	author = {Jan Kocon and
+                  Piotr Milkowski and
+                  Kamil Kanclerz},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {MultiEmo: Multilingual, Multilevel, Multidomain Sentiment Analysis
+                  Corpus of Consumer Reviews},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {297--312},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_24},
+	doi = {10.1007/978-3-030-77964-1\_24},
+	timestamp = {Tue, 15 Jun 2021 17:23:45 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KoconMK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article presents MultiEmo, a new benchmark data set for the multilingual sentiment analysis task including 11 languages. The collection contains consumer reviews from four domains: medicine, hotels, products and university. The original reviews in Polish contained 8,216 documents consisting of 57,466 sentences. The reviews were manually annotated with sentiment at the level of the whole document and at the level of a sentence (3 annotators per element). We achieved a high Positive Specific Agreement value of 0.91 for texts and 0.88 for sentences. The collection was then translated automatically into English, Chinese, Italian, Japanese, Russian, German, Spanish, French, Dutch and Portuguese. MultiEmo is publicly available under the MIT Licence. We present the results of the evaluation using the latest cross-lingual deep learning models such as XLM-RoBERTa, MultiFiT and LASER+BiLSTM. We have taken into account 3 aspects in the context of comparing the quality of the models: multilingualism, multilevel and multidomain knowledge transfer ability.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/DengC21,
+	author = {Quanling Deng and
+                  Victor M. Calo},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Outlier Removal for Isogeometric Spectral Approximation with the Optimally-Blended
+                  Quadratures},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {315--328},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_25},
+	doi = {10.1007/978-3-030-77964-1\_25},
+	timestamp = {Tue, 15 Jun 2021 17:23:53 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/DengC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It is well-known that outliers appear in the high-frequency region in the approximate spectrum of isogeometric analysis of the second-order elliptic operator. Recently, the outliers have been eliminated by a boundary penalty technique. The essential idea is to impose extra conditions arising from the differential equation at the domain boundary. In this paper, we extend the idea to remove outliers in the superconvergent approximate spectrum of isogeometric analysis with optimally-blended quadrature rules. We show numerically that the eigenvalue errors are of superconvergence rate \\(h^{2p+2}\\) and the overall spectrum is outlier-free. The condition number and stiffness of the resulting algebraic system are reduced significantly. Various numerical examples demonstrate the performance of the proposed method.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/UrbanczykNOMKB21,
+	author = {Aleksandra Urbanczyk and
+                  Bartosz Nowak and
+                  Patryk Orzechowski and
+                  Jason H. Moore and
+                  Marek Kisiel{-}Dorohinicki and
+                  Aleksander Byrski},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Socio-cognitive Evolution Strategies},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {329--342},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_26},
+	doi = {10.1007/978-3-030-77964-1\_26},
+	timestamp = {Tue, 15 Jun 2021 17:23:45 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/UrbanczykNOMKB21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Socio-cognitive computing is a paradigm developed for the last several years, it consists in introducing into metaheuristics mechanisms inspired by inter-individual learning and cognition. It was successfully applied in hybridizing ACO and PSO metaheuristics. In this paper we have followed our previous experiences in order to hybridize the acclaimed evolution strategies. The newly constructed hybrids were applied to popular benchmarks and compared with their referential versions.\n}
+}
+
+
+@inproceedings{DBLP:conf/iccS/LosSS21,
+	author = {Marcin Los and
+                  Robert Schaefer and
+                  Maciej Smolka},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Effective Solution of Ill-Posed Inverse Problems with Stabilized Forward
+                  Solver},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {343--357},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_27},
+	doi = {10.1007/978-3-030-77964-1\_27},
+	timestamp = {Fri, 23 Jul 2021 16:41:33 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/LosSS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider inverse parametric problems for elliptic variational PDEs. They are solved through the minimization of misfit functionals. Main difficulties encountered consist in the misfit multimodality and insensitivity as well as in the weak conditioning of the direct (forward) problem, that therefore requires stabilization. A complex multi-population memetic strategy hp-HMS combined with the Petrov-Galerkin method stabilized by the Demkowicz operator is proposed to overcome obstacles mentioned above. This paper delivers the theoretical motivation for the common inverse/forward error scaling, that can reduce significantly the computational cost of the whole strategy. A short illustrative numerical example is attached at the end of the paper.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/SiwikLD21,
+	author = {Leszek Siwik and
+                  Marcin Los and
+                  Witold Dzwinel},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Supermodeling - {A} Meta-procedure for Data Assimilation and Parameters
+                  Estimation},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {358--372},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_28},
+	doi = {10.1007/978-3-030-77964-1\_28},
+	timestamp = {Tue, 21 Mar 2023 20:57:05 +0100},
+	biburl = {https://dblp.org/rec/conf/iccS/SiwikLD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The supermodel synchronizes several imperfect instances of a baseline model - e.g., variously parametrized models of a complex system - into a single simulation engine with superior prediction accuracy. In this paper, we present convincing pieces of evidence in support of the hypothesis that supermodeling can be also used as a meta-procedure for fast data assimilation (DA). Thanks ago, the computational time of parameters’ estimation in multi-parameter models can be radically shortened. To this end, we compare various supermodeling approaches which employ: (1) three various training schemes, i.e., nudging, weighting and assimilation, (2) three classical data assimilation algorithms, i.e., ABC-SMC, 3DVAR, simplex method, and (3) various coupling schemes between dynamical variables of the ensembled models. We have performed extensive tests on a model of diversified cancer dynamics in the case of tumor growth, recurrence, and remission. We demonstrated that in all the configurations the supermodels are radically more efficient than single models trained by using classical DA schemes. We showed that the tightly coupled supermodel, trained by using the nudging scheme synchronizes the best, producing the efficient and the most accurate prognoses about cancer dynamics. Similarly, in the context of the application of supermodeling as the meta-algorithm for data assimilation, the classical 3DVAR algorithm appeared to be the most efficient baseline DA scheme for both the supermodel training and pre-training of the sub-models.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/RojekWG21,
+	author = {Krzysztof Rojek and
+                  Roman Wyrzykowski and
+                  Pawel Gepner},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {AI-Accelerated {CFD} Simulation Based on OpenFOAM and {CPU/GPU} Computing},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {373--385},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_29},
+	doi = {10.1007/978-3-030-77964-1\_29},
+	timestamp = {Tue, 15 Jun 2021 17:23:46 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/RojekWG21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose a method for accelerating CFD (computational fluid dynamics) simulations by integrating a conventional CFD solver with our AI module. The investigated phenomenon is responsible for chemical mixing. The considered CFD simulations belong to a group of steady-state simulations and utilize the MixIT tool, which is based on the OpenFOAM toolbox. The proposed module is implemented as a CNN (convolutional neural network) supervised learning algorithm. Our method distributes the data by creating a separate AI sub-model for each quantity of the simulated phenomenon. These sub-models can then be pipelined during the inference stage to reduce the execution time or called one-by-one to reduce memory requirements. We examine the performance of the proposed method depending on the usage of the CPU or GPU platforms. For test experiments with varying quantities conditions, we achieve time-to-solution reductions around a factor of 10. Comparing simulation results based on the histogram comparison method shows the average accuracy for all the quantities around 92%.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/FlorindoA21,
+	author = {Jo{\~{a}}o Batista Florindo and
+                  Eduardo Abreu},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {An Application of a Pseudo-Parabolic Modeling to Texture Image Recognition},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {386--397},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_30},
+	doi = {10.1007/978-3-030-77964-1\_30},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/FlorindoA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we present a novel methodology for texture image recognition using a partial differential equation modeling. More specifically, we employ the pseudo-parabolic equation to provide a dynamics to the digital image representation and collect local descriptors from those images evolving in time. For the local descriptors we employ the magnitude and signal binary patterns and a simple histogram of these features was capable of achieving promising results in a classification task. We compare the accuracy over well established benchmark texture databases and the results demonstrate competitiveness, even with the most modern deep learning approaches. The achieved results open space for future investigation on this type of modeling for image analysis, especially when there is no large amount of data for training deep learning models and therefore model-based approaches arise as suitable alternatives.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/AbreuF21,
+	author = {Eduardo Abreu and
+                  Jo{\~{a}}o Batista Florindo},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Study on a Feedforward Neural Network to Solve Partial Differential
+                  Equations in Hyperbolic-Transport Problems},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {398--411},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_31},
+	doi = {10.1007/978-3-030-77964-1\_31},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/AbreuF21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work we present an application of modern deep learning methodologies to the numerical solution of partial differential equations in transport models. More specifically, we employ a supervised deep neural network that takes into account the equation and initial conditions of the model. We apply it to the Riemann problems over the inviscid nonlinear Burger’s equation, whose solutions might develop discontinuity (shock wave) and rarefaction, as well as to the classical one-dimensional Buckley-Leverett two-phase problem. The Buckley-Leverett case is slightly more complex and interesting because it has a non-convex flux function with one inflection point. Our results suggest that a relatively simple deep learning model was capable of achieving promising results in such challenging tasks, providing numerical approximation of entropy solutions with very good precision and consistent to classical as well as to recently novel numerical methods in these particular scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/PaciorekT21,
+	author = {Mateusz Paciorek and
+                  Wojciech Turek},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Agent-Based Modeling of Social Phenomena for High Performance Distributed
+                  Simulations},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {412--425},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_32},
+	doi = {10.1007/978-3-030-77964-1\_32},
+	timestamp = {Sun, 02 Oct 2022 16:03:53 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/PaciorekT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Detailed models of numerous groups of social beings, which find applications in broad range of applications, require efficient methods of parallel simulation. Detailed features of particular models strongly influence the complexity of the parallelization problem. In this paper we identify and analyze existing classes of models and possible approaches to their simulation parallelization. We propose a new method for efficient scalability of the most challenging class of models: stochastic, with beings mobility and mutual exclusion of actions. The method is based on a concept of two-stage application of plans, which ensures equivalence of parallel and sequential execution. The method is analyzed in terms of distribution transparency and scalability at HPC-grade hardware. Both weak and strong scalability tests show speedup close to linear with more than 3000 parallel workers.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/SzandalaM21,
+	author = {Tomasz Szandala and
+                  Henryk Maciejewski},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Automated Method for Evaluating Neural Network's Attention Focus},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {426--436},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_33},
+	doi = {10.1007/978-3-030-77964-1\_33},
+	timestamp = {Tue, 15 Jun 2021 17:23:47 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/SzandalaM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Rapid progress in machine learning and artificial intelligence (AI) has brought increased attention to the potential security and reliability of AI technologies. This paper identifies the threat of network incorrectly relying on counterfactual features that can stay undetectable during validation but cause serious issues in life application. Furthermore, we propose a method to counter this hazard. It combines well-known techniques: object detection tool and saliency map obtaining formula to compute metric indicating potentially faulty learning. We prove the effectiveness of the method, as well as discuss its shortcomings.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/OssandonBR21,
+	author = {Sebasti{\'{a}}n Ossand{\'{o}}n and
+                  Mauricio Barrientos and
+                  Camilo Reyes},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Machine Learning Control Design for Elastic Composite Materials},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {437--451},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_34},
+	doi = {10.1007/978-3-030-77964-1\_34},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/OssandonBR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A novel numerical method, based on a machine learning approach, is used to solve an inverse problem involving the Dirichlet eigenfrequencies for the elasticity operator in a bounded domain filled with a composite material. The inhomogeneity of the material under study is characterized by a vector which is designed to control the constituent mixture of homogeneous elastic materials that compose it. Using the finite element method, we create a training set for a forward artificial neural network, solving the forward problem. A forward nonlinear map of the Dirichlet eigenfrequencies as a function of the vector design parameter is then obtained. This forward relationship is inverted and used to obtain a training set for an inverse radial basis neural network, solving the aforementioned inverse problem. A numerical example showing the applicability of this methodology is presented.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/TanBCT21,
+	author = {Nigel Tan and
+                  Robert F. Bird and
+                  Guangye Chen and
+                  Michela Taufer},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Optimize Memory Usage in Vector Particle-In-Cell {(VPIC)} to Break
+                  the 10 Trillion Particle Barrier in Plasma Simulations},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {452--465},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_35},
+	doi = {10.1007/978-3-030-77964-1\_35},
+	timestamp = {Sat, 09 Apr 2022 12:39:59 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/TanBCT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vector Particle-In-Cell (VPIC) is one of the fastest plasma simulation codes in the world, with particle numbers ranging from one trillion on the first petascale system, Roadrunner, to ten trillion particles on the more recent Blue Waters supercomputer. As supercomputers continue to grow rapidly in size, so too does the gap between compute capability and memory capability. Current memory systems limit VPIC simulations greatly as the maximum number of particles that can be simulated directly depends on the available memory. In this study, we present a suite of VPIC memory optimizations (i.e., particle weight, half-precision, and fixed-point optimizations) that enable a significant increase in the number of particles in VPIC simulations. We assess the optimizations’ impact on a GPU-accelerated Power9 system. Our optimizations enable a 31.25% reduction in memory usage and up\xa0to 40% increase in the number of particles.\n}
+}
+
+
+@inproceedings{DBLP:conf/iccS/FossumATE21,
+	author = {Kristian Fossum and
+                  Sergey Alyaev and
+                  Jan Tveranger and
+                  Ahmed H. Elsheikh},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Deep Learning for Prediction of Complex Geology Ahead of Drilling},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {466--479},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_36},
+	doi = {10.1007/978-3-030-77964-1\_36},
+	timestamp = {Thu, 23 Jun 2022 19:55:21 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/FossumATE21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {During a geosteering operation the well path is intentionally adjusted in response to the new data acquired while drilling. To achieve consistent high-quality decisions, especially when drilling in complex environments, decision support systems can help cope with high volumes of data and interpretation complexities. They can assimilate the real-time measurements into a probabilistic earth model and use the updated model for decision recommendations. Recently, machine learning (ML) techniques have enabled a wide range of methods that redistribute computational cost from on-line to off-line calculations. In this paper, we introduce two ML techniques into the geosteering decision support framework. Firstly, a complex earth model representation is generated using a Generative Adversarial Network (GAN). Secondly, a commercial extra-deep electromagnetic simulator is represented using a Forward Deep Neural Network (FDNN). The numerical experiments demonstrate that the combination of the GAN and the FDNN in an ensemble randomized maximum likelihood data assimilation scheme provides real-time estimates of complex geological uncertainty. This yields reduction of geological uncertainty ahead of the drill-bit from the measurements gathered behind and around the well bore.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/TeisseyreK21,
+	author = {Pawel Teisseyre and
+                  Tomasz Klonecki},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Controlling Costs in Feature Selection: Information Theoretic Approach},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {483--496},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_37},
+	doi = {10.1007/978-3-030-77964-1\_37},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/TeisseyreK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Feature selection in supervised classification is a crucial task in many biomedical applications. Most of the existing approaches assume that all features have the same cost. However, in many medical applications, this assumption may be inappropriate, as the acquisition of the value of some features can be costly. For example, in a medical diagnosis, each diagnostic value extracted by a clinical test is associated with its own cost. Costs can also refer to non-financial aspects, for example, the decision between an invasive exploratory surgery and a simple blood test. In such cases, the goal is to select a subset of features associated with the class variable (e.g., the occurrence of disease) within the assumed user-specified budget. We consider a general information theoretic framework that allows controlling the costs of features. The proposed criterion consists of two components: the first one describes the feature relevance and the second one is a penalty for its cost. We introduce a cost factor that controls the trade-off between these two components. We propose a procedure in which the optimal value of the cost factor is chosen in a data-driven way. The experiments on artificial and real medical datasets indicate that, when the budget is limited, the proposed approach is superior to existing traditional feature selection methods. The proposed framework has been implemented in an open source library (Python package: https://github.com/kaketo/bcselector).\n}
+}
+
+
+@inproceedings{DBLP:conf/iccS/OliveiraXVRRQLS21,
+	author = {Rafael Sachetto Oliveira and
+                  Carolina Ribeiro Xavier and
+                  Vin{\'{\i}}cius da Fonseca Vieira and
+                  Bernardo Martins Rocha and
+                  Ruy Freitas Reis and
+                  B{\'{a}}rbara de Melo Quintela and
+                  Marcelo Lobosco and
+                  Rodrigo Weber dos Santos},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {How Fast Vaccination Can Control the {COVID-19} Pandemic in Brazil?},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {497--510},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_38},
+	doi = {10.1007/978-3-030-77964-1\_38},
+	timestamp = {Thu, 14 Oct 2021 10:08:08 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/OliveiraXVRRQLS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The first case of Corona Virus Disease (COVID-19) was registered in Wuhan, China, in November 2019. In March, the World Health Organization (WHO) declared COVID-19 as a global pandemic. The effects of this pandemic have been devastating worldwide, especially in Brazil, which occupies the third position in the absolute number of cases of COVID-19 and the second position in the absolute number of deaths by the virus. A big question that the population yearns to be answered is: When can life return to normal? To address this question, this work proposes an extension of a SIRD-based mathematical model that includes vaccination effects. The model takes into account different rates of daily vaccination and different values of vaccine effectiveness. The results show that although the discussion is very much around the effectiveness of the vaccine, the daily vaccination rate is the most important variable for mitigating the pandemic. Vaccination rates of 1M per day can potentially stop the progression of COVID-19 epidemics in Brazil in less than one year.\n}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GuedesLSR21,
+	author = {Bruno Rocha Guedes and
+                  Marcelo Lobosco and
+                  Rodrigo Weber dos Santos and
+                  Ruy Freitas Reis},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Uncertainty Quantification of Tissue Damage Due to Blood Velocity
+                  in Hyperthermia Cancer Treatments},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {511--524},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_39},
+	doi = {10.1007/978-3-030-77964-1\_39},
+	timestamp = {Tue, 15 Jun 2021 17:23:44 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GuedesLSR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In 2020, cancer was responsible for almost 10 million deaths around the world. There are many treatments to fight against it, such as chemotherapy, radiation therapy, immunotherapy, and stem cell transplant. Hyperthermia is a new treatment that is under study in clinical trials. The idea is to raise the tumour temperature to reach its necroses. Since this is a new treatment, some questions are open, which can be addressed via computational models. Bioheat porous media models have been used to simulate this treatment, but each work adopts distinct values for some parameters, such as the blood velocity, which may impact the results obtained. In this paper, we carefully perform an uncertainty quantification analysis due to the uncertainties associated with estimating blood velocity parameters. The results of the in silico experiments have shown that considering the uncertainties presented in blood velocity, it is possible to plan the hyperthermia treatment to ensure that the entire tumour site reaches the target temperature that kills it.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/OpalkaSWDW21,
+	author = {Slawomir Opalka and
+                  Bartlomiej Stasiak and
+                  Agnieszka Wosiak and
+                  Aleksandra Dura and
+                  Adam Wojciechowski},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {EEG-Based Emotion Recognition - Evaluation Methodology Revisited},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {525--539},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_40},
+	doi = {10.1007/978-3-030-77964-1\_40},
+	timestamp = {Wed, 16 Mar 2022 23:55:34 +0100},
+	biburl = {https://dblp.org/rec/conf/iccS/OpalkaSWDW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The challenge of EEG-based emotion recognition had inspired researchers for years. However, lack of efficient technologies and methods of EEG signal analysis hindered the development of successful solutions in this domain. Recent advancements in deep convolutional neural networks (CNN), facilitating automatic signal feature extraction and classification, brought a hope for more efficient problem solving. Unfortunately, vague and subjective interpretation of emotional states limits effective training of deep models, especially when binary classification is performed basing on datasets with non-bimodal distribution of emotional state ratings. In this work we revisited the methodology of emotion recognition, proposing to use regression instead of classification, along with appropriate result evaluation measures based on mean absolute error (MAE) and mean squared error (MSE). The advantages of the proposed approach are clearly demonstrated on the example of the well-established and explored DEAP dataset.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/CoelhoCSXS21,
+	author = {Anna Luisa de Aguiar Bergo Coelho and
+                  Ricardo Silva Campos and
+                  Jo{\~{a}}o Gabriel Rocha Silva and
+                  Carolina Ribeiro Xavier and
+                  Rodrigo Weber dos Santos},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Modeling the Electromechanics of a Single Cardiac Myocyte},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {540--550},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_41},
+	doi = {10.1007/978-3-030-77964-1\_41},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/CoelhoCSXS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The synchronous and proper contraction of cardiomyocytes is essential for the correct function of the whole heart. Computational models of a cardiac cell may spam multiple cellular sub-components, scales, and physics. As a result, they are usually computationally expensive. This work proposes a low-cost model to simulate the cardiac myocyte’s electromechanics. The modeling of action potential and active force is performed via a system of six ordinary differential equations. Cardiac myocyte’s deformation that considers details of its geometry is captured using a mass-spring system. The mathematical model is integrated in time using Verlet’s method to obtain the position, velocity, and acceleration of each discretized point of the single cardiac myocyte. Our numerical results show that the obtained action potential, contraction, and deformation reproduces very well physiological data. Therefore, the low-cost mathematical model proposed here can be used as an essential tool for the correct characterization of cardiac electromechanics.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/RzyckiKD21,
+	author = {Mateusz Rzycki and
+                  Sebastian Kraszewski and
+                  Dominik Drabik},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Towards Mimetic Membrane Systems in Molecular Dynamics: Characteristics
+                  of E. Coli Membrane System},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {551--563},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_42},
+	doi = {10.1007/978-3-030-77964-1\_42},
+	timestamp = {Tue, 15 Jun 2021 17:23:53 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/RzyckiKD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Plenty of research is focused on the analysis of the interactions between bacteria membrane and antimicrobial compounds or proteins. The hypothesis of the research is formed according to the results from the numerical models such as molecular docking or molecular dynamics. However, simulated membrane models often vary significantly from the real ones. This may lead to inaccurate conclusions. In this paper, we employed molecular dynamic simulations to create a mimetic Escherichia coli full membrane model and to evaluate how the membrane complexity may influence the structural, mechanical and dynamical mainstream parameters. The impact of the O-antigen region presence in the outer membrane was also assessed. In the analysis, we calculated membrane thickness, area per lipid, order parameter, lateral diffusion coefficient, interdigitation of acyl chains, mechanical parameters such as bending rigidity and area compressibility, and also lateral pressure profiles. We demonstrated that outer membrane characteristics strongly depend on the structure of lipopolysaccharides, changing their properties dramatically in each of the investigated parameters. Furthermore, we showed that the presence of the inner membrane during simulations, as it exists in a full shell of E. coli, significantly changed the measured properties of the outer membrane.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/BokhariA21,
+	author = {Yahya Bokhari and
+                  Tomasz Arodz},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {PathMEx: Pathway-Based Mutual Exclusivity for Discovering Rare Cancer
+                  Driver Mutations},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {564--577},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_43},
+	doi = {10.1007/978-3-030-77964-1\_43},
+	timestamp = {Sat, 30 Sep 2023 09:43:59 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/BokhariA21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The genetic material we carry today is different from that we were born with: our DNA is prone to mutations. Some of these mutations can make a cell divide without control, resulting in a growing tumor. Typically, in a cancer sample from a patient, a large number of mutations can be detected, and only a few of those are drivers - mutations that positively contribute to tumor growth. The majority are passenger mutations that either accumulated before the onset of the disease but did not cause it, or are byproducts of the genetic instability of cancer cells. One of the key questions in understanding the process of cancer development is which mutations are drivers, and should be analyzed as potential diagnostic markers or targets for therapeutics, and which are passengers. We propose PathMEx, a novel method based on simultaneous optimization of patient coverage, mutation mutual exclusivity, and pathway overlap among putative cancer driver genes. Compared to state-of-the-art method Dendrix, the proposed algorithm finds sets of putative driver genes of higher quality in three sets of cancer samples: brain, lung, and breast tumors. The genes in the solutions belong to pathways with known associations with cancer. The results show that PathMEx is a tool that should be part of a state-of-the-art toolbox in the driver gene discovery pipeline. It can help detect low-frequency driver genes that can be missed by existing methods.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GrzesikM21a,
+	author = {Piotr Grzesik and
+                  Dariusz Mrozek},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Serverless Nanopore Basecalling with {AWS} Lambda},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {578--586},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_44},
+	doi = {10.1007/978-3-030-77964-1\_44},
+	timestamp = {Mon, 14 Jun 2021 12:15:03 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GrzesikM21a.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The serverless computing paradigm allows simplifying operations, offers highly parallel execution and high scalability without the need for manual management of underlying infrastructure. This paper aims to evaluate if recent advancements such as container support and increased computing resource limits in AWS Lambda allow it to serve as an underlying platform for running bioinformatics workflows such as basecalling of nanopore reads. For the purposes of the paper, we developed a sample workflow, where we focused on Guppy basecaller, which was tested in multiple scenarios. The results of the experiments showed that AWS Lambda is a viable platform for basecalling, which can support basecalling nanopore reads from multiple sequencing reads at the same time while keeping low infrastructure maintenance overhead. We also believe that recent improvements to AWS Lambda make it an interesting choice for a growing number of bioinformatics applications.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ScarpinoZC21,
+	author = {Ileana Scarpino and
+                  Chiara Zucco and
+                  Mario Cannataro},
+	editor = {Maciej Paszynski and
+                  Dieter Kranzlm{\"{u}}ller and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Software Pipeline Based on Sentiment Analysis to Analyze Narrative
+                  Medicine Texts},
+	booktitle = {Computational Science - {ICCS} 2021 - 21st International Conference,
+                  Krakow, Poland, June 16-18, 2021, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {12743},
+	pages = {587--593},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-77964-1\_45},
+	doi = {10.1007/978-3-030-77964-1\_45},
+	timestamp = {Mon, 26 Jun 2023 20:40:15 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ScarpinoZC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {By using social media people can exchange sentiments and emotions, allowing to understand public opinion on specific issues. Sentiment Analysis (SA) is a novel text-mining (TM) and natural language processing (NLP) methodology to extract sentiment, opinions and emotions from written texts, usually provided through social media or questionnaires. Sharing medical and clinical experiences of patients through social media, is the target of the so-called Narrative Medicine (NM). Here we report some research experiences in applying SA techniques to analyze NM texts. A problem to be faced in NM is the automatic analysis of a potentially large set of documents. Application of SA is useful for having immediate analysis and extracting information from medical literature quickly. Here we present a software pipeline based on SA and TM which allows to effectively analyze NM texts. First experimental results allow to discover topics related to diseases.\n}
+}

@@ -1,0 +1,908 @@
+@inproceedings{DBLP:conf/iccS/KozielPL24,
+	author = {Slawomir Koziel and
+                  Anna Pietrenko{-}Dabrowska and
+                  Leifur Leifsson},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Cost-Efficient Multi-Objective Design of Miniaturized Microwave Circuits
+                  Using Machine Learning and Artificial Neural Networks},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {3--18},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_1},
+	doi = {10.1007/978-3-031-63775-9\_1},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KozielPL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Designing microwave components involves managing multiple objectives such as center frequencies, impedance matching, and size reduction for miniaturized structures. Traditional multi-objective optimization (MO) approaches heavily rely on computationally expensive population-based methods, especially when executed with full-wave electromagnetic (EM) analysis to guarantee reliability. This paper introduces a novel and cost-effective MO technique for microwave passive components utilizing a machine learning (ML) framework with artificial neural network (ANN) surrogates as the primary prediction tool. In this approach, multiple candidate solutions are extracted from the Pareto set via optimization using a multi-objective evolutionary algorithm (MOEA) applied to the current ANN model. These solutions expand the dataset of available (EM-simulated) parameter vectors and refine the surrogate model iteratively. To enhance computational efficiency, we employ variable-resolution EM models. Tested on two microstrip circuits, our methodology competes effectively against several surrogate-based approaches. The average computational cost of the algorithm is below three hundred EM analyses of the circuit, with the quality of generated Pareto sets surpassing those produced by the benchmark methods.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/PietrenkoDabrowskaKL24,
+	author = {Anna Pietrenko{-}Dabrowska and
+                  Slawomir Koziel and
+                  Leifur Leifsson},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Expedited Machine-Learning-Based Global Design Optimization of Antenna
+                  Systems Using Response Features and Multi-fidelity {EM} Analysis},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {19--34},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_2},
+	doi = {10.1007/978-3-031-63775-9\_2},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/PietrenkoDabrowskaKL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The design of antenna systems poses a significant challenge due to stringent performance requirements dictated by contemporary applications and the high computational costs associated with models, particularly full-wave electromagnetic (EM) analysis. Presently, EM simulation plays a crucial role in all design phases, encompassing topology development, parametric studies, and the final adjustment of antenna dimensions. The latter stage is especially critical as rigorous numerical optimization becomes essential for achieving optimal performance. In an increasing number of instances, global parameter tuning is necessary. Unfortunately, the use of nature-inspired algorithms, the prevalent choice for global design, is hindered by their poor computational efficiency. This article presents an innovative approach to cost-efficient global optimization of antenna input characteristics. Our methodology leverages response feature technology, ensuring inherent regularization of the optimization task by exploring the nearly-linear dependence between the coordinates of feature points and the antenna's dimensions. The optimization process is structured as a machine learning (ML) procedure, utilizing a kriging surrogate model rendering response features to generate promising candidate designs (infill points). This model is iteratively refined using accumulated EM simulation data. Further acceleration is achieved by incorporating multi-fidelity EM analysis, where initial sampling and surrogate model construction use low-fidelity EM simulations, and the ML optimization loop employs high-fidelity EM analysis. The multi-fidelity EM simulation data is blended into a single surrogate using co-kriging. Extensive verification of the presented algorithm demonstrates its remarkable computational efficiency, with an average running cost not exceeding ninety EM simulations per run and up to a seventy percent relative speedup over the single-fidelity procedure.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/StruniawskiKK24,
+	author = {Karol Struniawski and
+                  Aleksandra Konopka and
+                  Ryszard Kozera},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Exploring Apple Silicon's Potential from Simulation and Optimization
+                  Perspective},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {35--42},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_3},
+	doi = {10.1007/978-3-031-63775-9\_3},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/StruniawskiKK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This study explores the performance of Apple Silicon processors in real-world research tasks, with a specific focus on optimization and Machine Learning applications. Diverging from conventional benchmarks, various algorithms across fundamental datasets have been assessed using diverse hardware configurations, including Apple’s M1 and M2 processors, NVIDIA RTX 3090 GPU and a mid-range laptop. The M2 demonstrates competitiveness in tasks such as BreastCancer, liver and yeast classification, establishing it as a suitable platform for practical applications. Conversely, the dedicated GPU outperformed M1 and M2 on the eyestate1 dataset, underscoring its superiority in handling more complex tasks, albeit at the expense of substantial power consumption. With the technology advances, Apple Silicon emerges as a compelling choice for real-world applications, warranting further exploration and research in chip development. This study underscores the critical role of device specifications in evaluating Machine Learning algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/VyhmeisterPG24,
+	author = {Eduardo Vyhmeister and
+                  Rocio Paez and
+                  Gabriel Gonz{\'{a}}lez{-}Casta{\~{n}}{\'{e}}},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Deep Neural Network for Constraint Acquisition Through Tailored Loss
+                  Function},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {43--57},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_4},
+	doi = {10.1007/978-3-031-63775-9\_4},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/VyhmeisterPG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The importance of extracting constraints from data is emphasized by its potential practical applications in solving real-world problems. While constraints are commonly used for modeling and problem-solving, methods for learning constraints from data are still relatively scarce. Moreover, the complex nature of modeling requires expertise and is susceptible to errors, making constraint acquisition methods valuable for automating this process through learning constraints from examples or behaviours of solutions and non-solutions. This study introduces a novel approach grounded in Deep Neural Networks (DNN) based on Symbolic Regression, where suitable loss functions are used to extract constraints directly from datasets. With this approach, constraints can be directly formulated. Additionally, given the wide range of pre-developed architectures and functionalities of DNNs, potential connections and extensions with other frameworks are foreseeable.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/DjukanovicKERB24,
+	author = {Marko Djukanovic and
+                  Aleksandar Kartelj and
+                  Tome Eftimov and
+                  Jaume Reixach and
+                  Christian Blum},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Efficient Search Algorithms for the Restricted Longest Common Subsequence
+                  Problem},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {58--73},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_5},
+	doi = {10.1007/978-3-031-63775-9\_5},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/DjukanovicKERB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper deals with the restricted longest common subsequence (RLCS) problem, an extension of the well-studied longest common subsequence problem involving two sets of strings: the input strings and the restricted strings. This problem has applications in bioinformatics, particularly in identifying similarities and discovering mutual patterns and motifs among DNA, RNA, and protein molecules. We introduce a general search framework to tackle the RLCS problem. Based on this, we present an exact best-first search algorithm and a meta-heuristic Beam Search algorithm. To evaluate the effectiveness of these algorithms, we compare them with two exact algorithms and two approximate algorithms from the literature along with a greedy approach. Our experimental results show the superior performance of our proposed approaches. In particular, our exact approach outperforms the other exact methods in terms of significantly shorter computation times, often reaching an order of magnitude compared to the second-best approach. Moreover, it successfully solves all problem instances, which was not the case with the other approaches. In addition, Beam Search provides close-to-optimal solutions with remarkably short computation times.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/JeongKLKP24,
+	author = {Taeho Jeong and
+                  Pavankumar Koratikere and
+                  Leifur Leifsson and
+                  Slawomir Koziel and
+                  Anna Pietrenko{-}Dabrowska},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Adaptive Hyperparameter Tuning Within Neural Network-Based Efficient
+                  Global Optimization},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {74--89},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_6},
+	doi = {10.1007/978-3-031-63775-9\_6},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/JeongKLKP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, adaptive hyperparameter optimization (HPO) strategies within the efficient global optimization (EGO) with neural network (NN)-based prediction and uncertainty (EGONN) algorithm are proposed. These strategies utilize Bayesian optimization and multi-armed bandit optimization to tune HPs during the sequential sampling process either every iteration (HPO-1itr) or every five iterations (HPO-5itr). Through experiments using the three-dimensional Hartmann function and evaluating both full and partial sets of HPs, adaptive HPOs are compared to traditional static HPO (HPO-static) that keep HPs constant. The results reveal that adaptive HPO strategies outperform HPO-static, and the frequency of tuning and number of tuning HPs impact both the optimization accuracy and computational efficiency. Specifically, adaptive HPOs demonstrate rapid convergence rates (HPO-1itr at 28 iterations, HPO-5itr at 26 for full HPs; HPO-1itr at 13, HPO-5itr at 28 iterations for selected HPs), while HPO-static fails to approximate the minimum within the allocated 45 iterations for both scenarios. Mainly, HPO-5itr is the most balanced approach, found to require 21% of the time taken by HPO-1itr for tuning full HPs and 29% for tuning a subset of HPs. This work demonstrates the importance of adaptive HPO and sets the stage for future research.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/RodriguezGPZ24,
+	author = {Julien Rodriguez and
+                  Fran{\c{c}}ois Galea and
+                  Fran{\c{c}}ois Pellegrini and
+                  Lilia Zaourar},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Hypergraph Clustering with Path-Length Awareness},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {90--104},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_7},
+	doi = {10.1007/978-3-031-63775-9\_7},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/RodriguezGPZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Electronic design automation toolchains require solving various circuit manipulation problems, such as floor planning, placement and routing. These circuits may be implemented using either Very Large-Scale Integration (VLSI) or Field Programmable Gate Arrays (FPGAs). However, with the ever-increasing size of circuits, now up to billions of gates, straightforward approaches to these problems do not scale well. A possible approach to reduce circuit complexity is to cluster circuits. In this work, we consider the problem of clustering combinatorial circuits, without cell replication. We propose a dedicated clustering algorithm based on binary search and study and improve the existing parameterized approximation ratio from \\(M^2+M\\)\xa0[8] (with M being the maximum size of each cluster) to M under specific hypothesis. We present an extension of the weighting schemes introduced in [19] to model path length more accurately. This weighting scheme is combined with clustering methods based on a recursive matching algorithm. We evaluate and compare our approximation algorithm and recursive matching on several circuit instances and we obtain better results for a large number of instances with our algorithm than recursive matching.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/DikshitLKP24,
+	author = {Abhijnan Dikshit and
+                  Leifur Leifsson and
+                  Slawomir Koziel and
+                  Anna Pietrenko{-}Dabrowska},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Adaptive Sampling for Non-intrusive Reduced Order Models Using Multi-task
+                  Variance},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {105--119},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_8},
+	doi = {10.1007/978-3-031-63775-9\_8},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/DikshitLKP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Non-intrusive reduced order modeling methods (ROMs) have become increasingly popular for science and engineering applications such as predicting the field-based solutions for aerodynamic flows. A large sample size is, however, required to train the models for global accuracy. In this paper, a novel adaptive sampling strategy is introduced for these models that uses field-based uncertainty as a sampling metric. The strategy uses Monte Carlo simulations to propagate the uncertainty in the prediction of the latent space of the ROM obtained using a multi-task Gaussian process to the high-dimensional solution of the ROM. The high-dimensional uncertainty is used to discover new sampling locations to improve the global accuracy of the ROM with fewer samples. The performance of the proposed method is demonstrated on the environment model function and compared to one-shot sampling strategies. The results indicate that the proposed adaptive sampling strategies can reduce the mean relative error of the ROM to the order of \\(8 \\times 10^{-4}\\) which is a 20% and 27% improvement over the Latin hypercube and Halton sequence sampling strategies, respectively at the same number of samples.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KhanYCK24,
+	author = {Ainulla Khan and
+                  Moyuru Yamada and
+                  Abhishek Chikane and
+                  Manohar Kaul},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {GraphMesh: Geometrically Generalized Mesh Refinement Using GNNs},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {120--134},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_9},
+	doi = {10.1007/978-3-031-63775-9\_9},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KhanYCK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Optimal mesh refinement is important for finite element simulations, facilitating the generation of non-uniform meshes. While existing neural network-based approaches have successfully generated high quality meshes, they can only handle a fixed number of vertices seen during training. We introduce GraphMesh, a novel mesh refinement method designed for geometric generalization across meshes with varying vertex counts. Our method employs a two-step process, initially learning a unified embedding for each node within an input coarse mesh, and subsequently propagating this embedding based on mesh connectivity to predict error distributions. By learning a node-wise embedding, our method achieves superior simulation accuracy with reduced computational costs compared to current state-of-the-art methods. Through experimentation and comparisons, we showcase the effectiveness of our approach across various scenarios, including geometries with different vertex counts. We validated our approach by predicting the local error estimates for the solution of Poisson’s equation.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/Bodzioch24,
+	author = {Mariusz Bodzioch},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Gradient Method for Solving Singular Optimal Control Problems},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {135--149},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_10},
+	doi = {10.1007/978-3-031-63775-9\_10},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/Bodzioch24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Solving an optimal control problem consists in finding a control structure and corresponding switching times. Unlike in a bang-bang case, switching to a singular control perturbs the control structure. The perturbation of one of the switching times affects any subsequent singular intervals in the control, as the trajectories move along different singular arcs with different values of singular controls. It makes the problem of finding optimal solutions extremely difficult. In this paper, we discuss a gradient method for solving optimal control problems, when singular intervals are present in the optimal structure. The method is based on applying the necessary conditions of optimality given by the Pontryagin Maximum Principle, where the control variable enters the Hamiltonian linearly. To demonstrate the method, we formulate a\xa0nonlinear optimal control problem and then, using the proposed algorithm, we solve the problem and find the optimal control structure and corresponding switching times. Lastly, we compare the results with results obtained using three popular optimisation modelling languages: Pyomo, AMPL and JuMP. These languages serve as interfaces for solving the optimal control problem with the non-linear optimisation algorithm Ipopt. Our case study shows that the presented method not only computes the switching times accurately, but also moves precisely along the singular arc.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/TrojanowskiMGG24,
+	author = {Krzysztof Trojanowski and
+                  Artur Mikitiuk and
+                  Jakub A. Grzeszczak and
+                  Fr{\'{e}}d{\'{e}}ric Guinand},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Multiobjective Optimization of Complete Coverage and Path Planning
+                  for Emergency Response by UAVs in Disaster Areas},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {150--165},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_11},
+	doi = {10.1007/978-3-031-63775-9\_11},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/TrojanowskiMGG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Complete Coverage and Path Planning methods operate on many models depending on initial constraints and user demands. In this case, we optimize paths for a set of UAVs in the disaster area divided into rectangular regions of different sizes and priorities representing the expected number of victims. Paths maximize the number of victims localized in the first minutes of the UAVs’ operation and minimize the entire operation makespan. The problem belongs to the domain of multiobjective optimization; therefore, we apply the Strength Pareto Evolutionary Algorithm 2, which is equipped with several problem-specific perturbation operators. In the experimental part, we use SPEA2 to four selected test cases from a TCG-CCPP generator powered by actual data on residents in selected regions in Poland published by Statistics Poland.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/BajkowskiS24,
+	author = {Mikolaj Bajkowski and
+                  Dominik Szajerman},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Single-Scattering and Multi-scattering in Real-Time Volumetric Rendering
+                  of Clouds},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {166--180},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_12},
+	doi = {10.1007/978-3-031-63775-9\_12},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/BajkowskiS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The aim of this work was to design an algorithm for rendering volumetric clouds in real time using a voxel representation. The results were verified using reference renders created with the Blender program using the Principled Volume shader. The important properties of the algorithm that were tried to be achieved are the ability to display clouds with different characteristics (thin and dense clouds) and the speed of operation enabling interactivity. We proposed a method consisting of two parameterizable image display algorithms with various performance and properties. The starting point was the single-scattering algorithm, which was extended with precalculation, and a simplified form of multi-scattering. Individual methods were compared with reference images. Methods performing similar tasks, depending on the purpose, generate single image frames at a rate ranging from several dozen hours to a few seconds. Using the described mechanisms, the proposed method allowed to achieve times between 1 and 200 milliseconds, depending on the method variant and quality settings.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ProkopenyaMK24,
+	author = {Alexander N. Prokopenya and
+                  Mukhtar Zh. Minglibayev and
+                  Aiken Kosherbayeva},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Modeling the Dynamics of a Multi-planetary System with Anisotropic
+                  Mass Variation},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {181--196},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_13},
+	doi = {10.1007/978-3-031-63775-9\_13},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ProkopenyaMK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A classical non-stationary \\((n+1)\\)-body planetary problem with n bodies of variable mass moving around the central star on quasi-elliptic orbits is considered. In addition to the mutual gravitational attraction, the bodies may be acted on by reactive forces arising due to anisotropic variation of their masses. The problem is analyzed in the framework of Newtonian’s formalism and the differential equations of motion are derived in terms of the osculating elements of aperiodic motion on quasi-conic sections. These equations can be solved numerically and their solution will describe the motion of the bodies in detail. However, due to the orbital motion of the bodies the perturbing forces include many terms describing short-period oscillations. Therefore, to obtain the solution with high precision one needs to choose very small step size or to use an adoptive step size method and this increase a time of calculation substantially. As we are interested in the long-term behaviour of the system it will be necessary to perform additional calculations in order to extract a secular part of the solution. To simplify the calculations we expand the perturbing forces into power series in terms of eccentricities and inclinations which are assumed to be small and average these equations over the mean longitudes of the bodies. Finally, we obtain the differential equations describing the evolution of orbital parameters over a long period of time. As an application, we have solved the evolution equations numerically in the case of \\(n=3\\) and demonstrated an influence of the mass variation on the motion of the bodies. All the relevant symbolic and numeric calculations are performed with the aid of the computer algebra system Wolfram Mathematica.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/FertinMV24,
+	author = {Guillaume Fertin and
+                  {\'{E}}ric Monfroy and
+                  Claudia Vasconcellos{-}Gaete},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Best of Both Worlds: Solving the Cyclic Bandwidth Problem by Combining
+                  Pre-existing Knowledge and Constraint Programming Techniques},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {197--211},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_14},
+	doi = {10.1007/978-3-031-63775-9\_14},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/FertinMV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given an optimization problem, combining knowledge from both (i)\xa0structural or algorithmic known results and (ii)\xa0new solving techniques, helps gain insight and knowledge on the aforementioned problem by tightening the gap between lower and upper bounds on the sought optimal value. Additionally, this gain may be further improved by iterating (i) and (ii) until a fixed point is reached.\n In this paper, we illustrate the above through the classical Cyclic Bandwidth problem, an optimization problem which takes as input an undirected graph \\(G=(V,E)\\) with \\(|V|=n\\), and asks for a labeling \\(\\varphi \\) of V in which every vertex v takes a unique value \\(\\varphi (v)\\in [1;n]\\), in such a way that \\(B_c(G,\\varphi )=\\max \\{\\min _{uv\\in E(G)}\\{|\\varphi (u)-\\varphi (v)|,n-|\\varphi (u)-\\varphi (v)|\\}\\}\\), called the cyclic bandwidth of G, is minimized.\n Using the classic benchmark from the Harwell-Boeing sparse matrix collection introduced in\xa0[16], we show how to combine (i)\xa0previous results from the Cyclic Bandwidth literature, and (ii)\xa0new solving techniques, which we first present, and then implement, starting from the best results obtained in step\xa0(i). We show that this process allows us to determine the optimal cyclic bandwidth value for half of the instances of our benchmark, and improves the best known bounds for a large number of the remaining instances.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KrysztofikGSSK24,
+	author = {Pawel Krysztofik and
+                  Bartlomiej Piotr Grzelak and
+                  Piotr Sliwka and
+                  Slawomir Sujecki and
+                  Stanislaw Kozdrowski},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Novel Bandwidth Occupancy Forecasting Method for Optical Networks},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {212--226},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_15},
+	doi = {10.1007/978-3-031-63775-9\_15},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KrysztofikGSSK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this contribution, we developed a software tool for collecting information on the data traffic via control plane of an operating optical network. From this data, demand matrix elements were calculated and used to numerically estimate the edge occupancy in the optical network studied. For this purpose, a detailed network model was formulated with cost function and constraints. The formulated network model leads to an optimization problem, which was efficiently solved by meta-heuristic algorithms. Finally, statistical methods were used to model forecasting, in terms of the probability of the edge occupancy, under a Markov process approximation. Additionally, on the basis of the numerical results obtained, the scalability of the applied heuristic and statistical methods was analyzed.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/AndelfingerK24,
+	author = {Philipp Andelfinger and
+                  Justin Noah Kreikemeyer},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Automatic Gradient Estimation for Calibrating Crowd Models with Discrete
+                  Decision Making},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {227--241},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_16},
+	doi = {10.1007/978-3-031-63775-9\_16},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/AndelfingerK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently proposed gradient estimators enable gradient descent over stochastic programs with discrete jumps in the response surface, which are not covered by automatic differentiation (AD) alone. Although these estimators’ capability to guide a swift local search has been shown for certain problems, their applicability to models relevant to real-world applications remains largely unexplored. As the gradients governing the choice in candidate solutions are calculated from sampled simulation trajectories, the optimization procedure bears similarities to metaheuristics such as particle swarm optimization, which puts the focus on the different methods’ calibration progress per function evaluation. Here, we consider the calibration of force-based crowd evacuation models based on the popular Social Force model augmented by discrete decision making. After studying the ability of an AD-based estimator for branching programs to capture the simulation’s rugged response surface, calibration problems are tackled using gradient descent and two metaheuristics. As our main insights, we find 1) that the estimation’s fidelity benefits from disregarding large jumps inherent to the Social Force model, and 2) that the common problem of inferring a parameter’s posterior distribution given some data obviates the need for AD across the Social Force calculations, allowing gradient descent to excel.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/JoyHY24,
+	author = {Geethu Joy and
+                  Christian R. Huyck and
+                  Xin{-}She Yang},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Parameter Tuning of the Firefly Algorithm by Standard Monte Carlo
+                  and Quasi-Monte Carlo Methods},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {242--253},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_17},
+	doi = {10.1007/978-3-031-63775-9\_17},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/JoyHY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Almost all optimization algorithms have algorithm-dependent parameters, and the setting of such parameter values can significantly influence the behavior of the algorithm under consideration. Thus, proper parameter tuning should be carried out to ensure that the algorithm used for optimization performs well and is sufficiently robust for solving different types of optimization problems. In this study, the Firefly Algorithm (FA) is used to evaluate the influence of its parameter values on its efficiency. Parameter values are randomly initialized using both the standard Monte Carlo method and the Quasi Monte-Carlo method. The values are then used for tuning the FA. Two benchmark functions and a spring design problem are used to test the robustness of the tuned FA. From the preliminary findings, it can be deduced that both the Monte Carlo method and Quasi-Monte Carlo method produce similar results in terms of optimal fitness values. Numerical experiments using the two different methods on both benchmark functions and the spring design problem showed no major variations in the final fitness values, irrespective of the different sample values selected during the simulations. This insensitivity indicates the robustness of the FA.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KlimczakH24,
+	author = {Jakub Klimczak and
+                  Ahmed Abdeen Hamed},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Quantifying Similarity: Text-Mining Approaches to Evaluate ChatGPT
+                  and Google Bard Content in Relation to BioMedical Literature},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {257--265},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_18},
+	doi = {10.1007/978-3-031-63775-9\_18},
+	timestamp = {Wed, 10 Jul 2024 20:46:40 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KlimczakH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The emergence of generative AI tools, empowered by Large Language Models (LLMs), has shown power in generating content. The assessment of the usefulness of such content has become an interesting research question. Using prompt engineering, we assess the similarity of such contents to real literature produced by scientists. In this exploratory analysis, we prompt-engineer ChatGPT and Google Bard to generate clinical content to be compared with medical literature, and we assess the similarities of the generated contents by comparing them with biomedical literature. Our approach is to use text-mining methods to compare documents and bigrams and to use network analysis to check the centrality. The experiments demonstrated that ChatGPT outperformed Google Bard in different similarity and term network centrality methods, but both tools achieved good results compared to the baseline.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GallegoLSKV24,
+	author = {Fernando Gallego and
+                  Guillermo L{\'{o}}pez{-}Garc{\'{\i}}a and
+                  Luis Gasc{\'{o}} S{\'{a}}nchez and
+                  Martin Krallinger and
+                  Francisco J. Veredas},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {ClinLinker: Medical Entity Linking of Clinical Concept Mentions in
+                  Spanish},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {266--280},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_19},
+	doi = {10.1007/978-3-031-63775-9\_19},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GallegoLSKV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advances in natural language processing techniques, such as named entity recognition and normalization to widely used standardized terminologies like UMLS or SNOMED-CT, along with the digitalization of electronic health records, have significantly advanced clinical text analysis. This study presents ClinLinker, a novel approach employing a two-phase pipeline for medical entity linking that leverages the potential of in-domain adapted language models for biomedical text mining: initial candidate retrieval using a SapBERT-based bi-encoder and subsequent re-ranking with a cross-encoder, trained by following a contrastive-learning strategy to be tailored to medical concepts in Spanish. This methodology, focused initially on content in Spanish, substantially outperforming multilingual language models designed for the same purpose. This is true even for complex scenarios involving heterogeneous medical terminologies and being trained on a subset of the original data. Our results, evaluated using top-k accuracy at 25 and other top-k metrics, demonstrate our approach’s performance on two distinct clinical entity linking Gold Standard corpora, DisTEMIST (diseases) and MedProcNER (clinical procedures), outperforming previous benchmarks by 40 points in DisTEMIST and 43 points in MedProcNER, both normalized to SNOMED-CT codes. These findings highlight our approach’s ability to address language-specific nuances and set a new benchmark in entity linking, offering a potent tool for enhancing the utility of digital medical records. The resulting system is of practical value, both for large scale automatic generation of structured data derived from clinical records, as well as for exhaustive extraction and harmonization of predefined clinical variables of interest.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ArgasinskiGPOW24,
+	author = {Jan K. Argasinski and
+                  Iwona Grabska{-}Gradzinska and
+                  Karol Przystalski and
+                  Jeremi K. Ochab and
+                  Tomasz Walkowiak},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Stylometric Analysis of Large Language Model-Generated Commentaries
+                  in the Context of Medical Neuroscience},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {281--295},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_20},
+	doi = {10.1007/978-3-031-63775-9\_20},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ArgasinskiGPOW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This study investigates the application of Large Language Models (LLMs) in generating commentaries on neuroscientific papers, with a focus on their stylometric differences from human-written texts. Utilizing three papers from reputable journals in the field of medical neuroscience, each accompanied by published expert commentaries, we compare these with commentaries generated by state-of-the-art LLMs. Through quantitative stylometric analysis and qualitative assessments, we aim to be a part of the discussion around the viability of LLMs in augmenting scientific discourse within the domain of medical neuroscience.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/GijonEMBLMG24,
+	author = {Alfonso Gij{\'{o}}n and
+                  Simone Eiraudo and
+                  Antonio Manjavacas and
+                  Lorenzo Bottaccioli and
+                  Andrea Lanzini and
+                  Miguel Molina{-}Solana and
+                  Juan G{\'{o}}mez{-}Romero},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Explainable Hybrid Semi-parametric Model for Prediction of Power Generated
+                  by Wind Turbines},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {299--306},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_21},
+	doi = {10.1007/978-3-031-63775-9\_21},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/GijonEMBLMG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ever-growing sector of wind energy underscores the importance of optimizing turbine operations and ensuring their maintenance with early fault detection mechanisms. Existing empirical and physics-based models provide approximate predictions of the generated power as a function of the wind speed, but face limitations in capturing the non-linear and complex relationships between input variables and output power. Data-driven methods present new avenues for enhancing wind turbine modeling using large datasets, thereby improving accuracy and efficiency. In this study, we use a hybrid semi-parametric model to leverage the strengths of two distinct approaches in a dataset with four turbines of a wind farm. Our model comprises a physics-inspired submodel, which offers a reliable approximation of the power, combined with a non-parametric submodel to predict the residual component. This non-parametric submodel is fed with a broader set of variables, aiming to capture phenomena not addressed by the physics-based part. For explainability purposes, the influence of input features on the output of the residual submodel is analyzed using SHAP values. The proposed hybrid model finally yields a 35–40\xa0% accuracy improvement in the prediction of power generation with respect to the physics-based model. At the same time, the explainability analysis, along with the physics grounding from the parametric submodel, ensure deep understanding of the analyzed problem. In the end, this investigation paves the way for assessing the impact, and thus the potential optimization, of several unmodeled independent variables on the power generated by wind turbines.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ChinellatoM24,
+	author = {Erik Chinellato and
+                  Fabio Marcuzzi},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {State Estimation of Partially Unknown Dynamical Systems with a Deep
+                  Kalman Filter},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {307--321},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_22},
+	doi = {10.1007/978-3-031-63775-9\_22},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ChinellatoM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper we present a novel scientific machine learning reinterpretation of the well-known Kalman Filter, we explain its flexibility in dealing with partially-unknown models and show its effectiveness in a couple of situations where the classic Kalman Filter is problematic.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/WangPWA24,
+	author = {Kun Wang and
+                  Matthew D. Piggott and
+                  Yanghua Wang and
+                  Rossella Arcucci},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Neural Network as Transformation Function in Data Assimilation},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {322--329},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_23},
+	doi = {10.1007/978-3-031-63775-9\_23},
+	timestamp = {Wed, 10 Jul 2024 20:46:40 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/WangPWA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Variational\xa0Data Assimilation (DA) is a technique aimed at mitigating the error in simulated states by integrating observations. Variational\xa0DA is widely employed in weather forecasting and hydrological modeling as an optimization technique for refining dynamic simulation states. However, when constructing the cost function in variational\xa0DA, it is necessary to establish a transformation function from simulated states to observations. When observations come from ground sensors or from remote sensing, representing such a transformation function with explicit expressions can sometimes be challenging or even impossible. Therefore, considering the strong mapping capabilities of Neural Network (NN)s in representing the relationship from simulated states to observations, this paper proposes a method utilizing a NN as the transformation function. We evaluate our method on a real dataset of river discharge in the UK and achieved a 39% enhancement in prediction accuracy, measured by Mean Square Error (MSE), compared to the results obtained without DA.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/JakubowskiSBN24,
+	author = {Jakub Jakubowski and
+                  Przemyslaw Stanisz and
+                  Szymon Bobek and
+                  Grzegorz J. Nalepa},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Assessment of Explainable Anomaly Detection for Monitoring of Cold
+                  Rolling Process},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {330--344},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_24},
+	doi = {10.1007/978-3-031-63775-9\_24},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/JakubowskiSBN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The detection and explanation of anomalies within the industrial context remains a difficult task, which requires the use of well-designed methods. In this study, we focus on evaluating the performance of Explainable Anomaly Detection (XAD) algorithms in the context of a complex industrial process, specifically cold rolling. We train several state-of-the-art anomaly detection algorithms on the synthetic data from the cold rolling process and optimize their hyperparameters to maximize its predictive capabilities. Then we employ various model-agnostic Explainable AI (XAI) methods to generate explanations for the abnormal observations. The explanations are evaluated using a set of XAI metrics specifically selected for the anomaly detection task in industrial setting. The results provide insights into the impact of the selection of both machine learning and XAI methods on the overall performance of the model, emphasizing the importance of interpretability in industrial applications. For the detection of anomalies in cold rolling, we found that autoencoder-based approaches outperformed other methods, with the SHAP method providing the best explanations according to the evaluation metrics used.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/OzanM24,
+	author = {Defne Ege Ozan and
+                  Luca Magri},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Adjoint Sensitivities of Chaotic Flows Without Adjoint Solvers: {A}
+                  Data-Driven Approach},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {345--352},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_25},
+	doi = {10.1007/978-3-031-63775-9\_25},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/OzanM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In one calculation, adjoint sensitivity analysis provides the gradient of a quantity of interest with respect to all system’s parameters. Conventionally, adjoint solvers need to be implemented by differentiating computational models, which can be a cumbersome task and is code-specific. To propose an adjoint solver that is not code-specific, we develop a data-driven strategy. We demonstrate its application on the computation of gradients of long-time averages of chaotic flows. First, we deploy a parameter-aware echo state network (ESN) to accurately forecast and simulate the dynamics of a dynamical system for a range of system’s parameters. Second, we derive the adjoint of the parameter-aware ESN. Finally, we combine the parameter-aware ESN with its adjoint version to compute the sensitivities to the system parameters. We showcase the method on a prototypical chaotic system. Because adjoint sensitivities in chaotic regimes diverge for long integration times, we analyse the application of ensemble adjoint method to the ESN. We find that the adjoint sensitivities obtained from the ESN match closely with the original system. This work opens possibilities for sensitivity analysis without code-specific adjoint solvers.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/SerwataNM24,
+	author = {Damian Serwata and
+                  Mateusz Nurek and
+                  Radoslaw Michalski},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Perspective on the Ubiquity of Interaction Streams in Human Realm},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {353--367},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_26},
+	doi = {10.1007/978-3-031-63775-9\_26},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/SerwataNM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Typically, for analysing and modelling social phenomena, networks are a convenient framework that allows for the representation of the interconnectivity of individuals. These networks are often considered transmission structures for processes that happen in society, e.g. diffusion of information, epidemics, and spread of influence. However, constructing a network can be challenging, as one needs to choose its type and parameters accurately. As a result, the outcomes of analysing dynamic processes often heavily depend on whether this step was done correctly. In this work, we advocate that it might be more beneficial to step down from the tedious process of building a network and base it on the level of the interactions instead. By taking this perspective, we can be closer to reality, and from the cognitive perspective, human beings are directly exposed to events, not networks. However, we can also draw a parallel to stream data mining, which brings a valuable apparatus for stream processing. Apart from taking the interaction stream perspective as a typical way in which we should study social phenomena, this work advocates that it is possible to map the concepts embodied in human nature and cognitive processes to the ones that occur in interaction streams. Exploiting this mapping can help reduce the diversity of problems that one can find in data stream processing for machine learning problems. Finally, we demonstrate one of the use cases in which the interaction stream perspective can be applied, namely, the social learning process.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/CatalfamoABDV24,
+	author = {Alessio Catalfamo and
+                  Atakan Aral and
+                  Ivona Brandic and
+                  Ewa Deelman and
+                  Massimo Villari},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Machine Learning Workflows in the Computing Continuum for Environmental
+                  Monitoring},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {368--382},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_27},
+	doi = {10.1007/978-3-031-63775-9\_27},
+	timestamp = {Wed, 10 Jul 2024 20:46:40 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/CatalfamoABDV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud-Edge Continuum is an innovative approach that exploits the strengths of the two paradigms: Cloud and Edge computing. This new approach gives us a holistic vision of this environment, enabling new kinds of applications that can exploit both the Edge computing advantages (e.g., real-time response, data security, and so on) and the powerful Cloud computing infrastructure for high computational requirements. This paper proposes a Cloud-Edge computing Workflow solution for Machine Learning (ML) inference in a hydrogeological use case. Our solution is designed in a Cloud-Edge Continuum environment thanks to Pegasus Workflow Management System Tools that we use for the implementation phase. The proposed work splits the inference tasks, transparently distributing the computation performed by each layer between Cloud and Edge infrastructure. We use two models to implement a proof-of-concept of the proposed solution.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/RakotoharisoaCA24,
+	author = {Andrianirina Rakotoharisoa and
+                  Simone Cenci and
+                  Rossella Arcucci},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Evaluating the Impact of Atmospheric {CO2} Emissions via Super Resolution
+                  of Remote Sensing Data},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {383--390},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_28},
+	doi = {10.1007/978-3-031-63775-9\_28},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/RakotoharisoaCA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Understanding how emissions from point sources affect the atmospheric concentrations of Greenhouse Gases (GHGs) locally and on a wider scale is crucial to quantify their impact on climate change. To this end, different ways of performing global monitoring of GHGs concentration using remote sensing data have been explored. The main difficulty remains to find the right balance between high resolution monitoring, which is often incomplete, and global monitoring, but at a coarser resolution. This study proposes the application of Super Resolution (SR), a Deep Learning (DL) technique commonly employed in Computer Vision, to increase the resolution of atmospheric CO2 L3 satellite data. The resulting maps are achieving an approximate resolution of 1\xa0km\xa0*\xa01\xa0km and are then compared with a benchmark of existing methods, before being used for emissions monitoring.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/FuCF24,
+	author = {Ziyan Fu and
+                  Jorge Corker and
+                  Mizi Fan},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Integrated Multi-scale Model of Thermal Conductivity for Expanded
+                  Perlite Powder Vacuum Insulation Panels},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {393--407},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_29},
+	doi = {10.1007/978-3-031-63775-9\_29},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/FuCF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vacuum Insulation Panels (VIPs) have emerged as a forefront solution in energy-efficient building materials. Expanded perlite (EP) stands out for its unique combination of low density, cost-effectiveness, and excellent thermal insulating properties among the myriad materials employed in VIPs. This study presents an integrated model utilizing analytical methods and finite element analysis (FEA) to simulate the heat transfer and predict the thermal conductivity of EP powder VIPs across varying gas pressures. It introduces a procedure to generate representative elementary areas (REAs) adaptable to various material characteristics; in comparing the simulation results to measurement values, the proposed model demonstrates reliable predictive performance from 0.0001 to 1 atm. The proposed model efficiently handles rapid thermal conductivity changes near atmospheric pressure, resolving distortion issues in other works. Based on the model results of REAs reflecting various material characteristics, we found that reducing the non-flake ratio of particles and decreasing the thickness of flake particles obstruct the heat transfer across all pressure ranges. When the thermal conductivity of the absolute solid is relatively high, it is advisable for the industry to prioritize applying finer grinding; conversely, efforts should be directed towards reducing the thickness of flake particles.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/XueMLZJC24,
+	author = {Xiao Xue and
+                  Jon W. S. McCullough and
+                  Sharp Chim Yui Lo and
+                  Ioannis Zacharoudiou and
+                  B{\'{a}}lint Jo{\'{o}} and
+                  Peter V. Coveney},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {The Lattice Boltzmann Based Large Eddy Simulations for the Stenosis
+                  of the Aorta},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {408--420},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_30},
+	doi = {10.1007/978-3-031-63775-9\_30},
+	timestamp = {Wed, 10 Jul 2024 20:46:40 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/XueMLZJC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Large eddy simulations (LES) are extensively employed in aerodynamics-related industrial research and applications. However, the application of lattice Boltzmann based LES techniques in vascular blood flow research is less extensively documented. This study investigates the feasibility of employing lattice Boltzmann based large eddy simulation techniques, specifically the Smagorinsky-based subgrid scale turbulence model, for simulating high Reynolds number blood flow at a coarse-grained resolution. Initially, a stenotic channel flow simulation is conducted, with results undergoing validation against existing experimental data and direct numerical simulation results, showing strong agreement for both. Subsequently, our model is applied to simulate aortic stenosis at a resolution of 100 \\(\\upmu \\)m, demonstrating the capability to model high Reynolds numbers around 4500, despite such flows conventionally requiring a resolution of around 20 \\(\\upmu \\)m. These results underscore the substantial promise of utilising LES techniques in blood flow simulations, benefiting not just the lattice Boltzmann method but also enlightening the broader computational fluid dynamics community. This approach offers advantages for large-scale human simulations at coarser resolutions.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/HarbachGJSGX24,
+	author = {Laura M. Harbach and
+                  Derek Groen and
+                  Alireza Jahani and
+                  Diana Suleimenova and
+                  Maziar Ghorbani and
+                  Yani Xue},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Conceptual Approach to Agent-Based Modelling of Coping Mechanisms
+                  in Climate-Driven Flooding in Bangladesh},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {421--428},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_31},
+	doi = {10.1007/978-3-031-63775-9\_31},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/HarbachGJSGX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bangladesh stands as a prime example of a nation exceptionally vulnerable to the adverse effects of climate change. Its low-lying coastal and deltaic landscape predisposes it to frequent flooding, a challenge exacerbated by a significant portion of its population grappling with poverty. The country is already experiencing the impacts of climate change, including more frequent and severe flooding that has led to the displacement of millions of people and has intensified existing social and economic challenges. Despite these formidable challenges, Bangladesh has also emerged as a global leader in climate resilience and preparedness, having made significant progress in reducing cyclone-related deaths and protecting its population from the consequences of climate change. Notably, non-governmental organisations, like our partners Save the Children, are keen to explore how they can support the most vulnerable communities by establishing the efficacy of current coping strategies for sustained resilience against climate change. To facilitate this, we are in the process of creating an agent-based model that examines the coping mechanisms adopted in response to climate-induced flooding in Bangladesh. This paper presents the initial phase of developing a multiscale conceptual model tailored to understanding this complex situation.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KashefiA24,
+	author = {Armin Kashefi and
+                  Faris Alwzinani},
+	editor = {Leonardo Franco and
+                  Cl{\'{e}}lia de Mulatier and
+                  Maciej Paszynski and
+                  Valeria V. Krzhizhanovskaya and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Advancing Organizational Performance: {A} Strategic Framework to Multiscale
+                  Modeling and Simulation},
+	booktitle = {Computational Science - {ICCS} 2024 - 24th International Conference,
+                  Malaga, Spain, July 2-4, 2024, Proceedings, Part {V}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14836},
+	pages = {429--436},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-63775-9\_32},
+	doi = {10.1007/978-3-031-63775-9\_32},
+	timestamp = {Fri, 19 Jul 2024 23:15:39 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KashefiA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the modern, fast-moving, and technology-centric business world, the importance of service desks in swiftly and effectively addressing tech-related challenges cannot be overstated. The changing nature of work environments, particularly with the rise of remote and hybrid models post-pandemic, highlights the critical need for a simulation strategy that goes beyond individual departments to include the broader organizational context across various levels. Focusing on this need, we embarked on a project using Discrete Event Simulation (DES) to tackle the operational hurdles faced by the service desk of a leading UK-based telecommunications firm, marking the beginning of a larger initiative aimed at multiscale modeling and simulation (MMS). We have formulated a robust five-phase strategic framework to elevate and enhance organizational performance by applying a detailed DES analysis to refine the service desk operations. This framework examines the potential for targeted improvements within the service desk to have wider benefits, impacting everything from staff satisfaction and efficiency to the overall resilience of the organization.}
+}
