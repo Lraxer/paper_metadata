@@ -1,0 +1,549 @@
+@inproceedings{DBLP:conf/esorics/DudduDKYSA24,
+	author = {Vasisht Duddu and
+                  Anudeep Das and
+                  Nora Khayata and
+                  Hossein Yalame and
+                  Thomas Schneider and
+                  N. Asokan},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Attesting Distributional Properties of Training Data for Machine Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_1},
+	doi = {10.1007/978-3-031-70879-4\_1},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DudduDKYSA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The success of machine learning (ML) has been accompanied by increased concerns about its trustworthiness. Several jurisdictions are preparing ML regulatory frameworks. One such concern is ensuring that model training data has desirable distributional properties for certain sensitive attributes. For example, draft regulations indicate that model trainers are required to show that training datasets have specific distributional properties, such as reflecting the diversity of the population. We propose the novel notion of ML property attestation allowing a prover (e.g., model trainer) to demonstrate relevant properties of an ML model to a verifier (e.g., a customer) while preserving the confidentiality of sensitive data. We focus on the attestation of distributional properties of training data without revealing the data. We present an effective hybrid property attestation combining property inference with cryptographic mechanisms.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HuangZDJXYTY24,
+	author = {Yuanmin Huang and
+                  Mi Zhang and
+                  Daizong Ding and
+                  Erling Jiang and
+                  Qifan Xiao and
+                  Xiaoyu You and
+                  Yuan Tian and
+                  Min Yang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Towards Detection-Recovery Strategy for Robust Decentralized Matrix
+                  Factorization},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {24--44},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_2},
+	doi = {10.1007/978-3-031-70879-4\_2},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HuangZDJXYTY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Decentralized matrix factorization (DMF) has emerged as a prominent technique for handling large-scale matrix completion tasks, such as those encountered in commercial recommender systems and social network analysis. Despite its effectiveness and efficiency, the decentralized structure renders it vulnerable to model tampering attacks. Due to the unique parameter passing scheme of DMF, we reveal that even a minimal number of malicious workers can rapidly propagate adverse impacts throughout the model and cause significant damage. Even worse, the scale of DMF nomadic parameters (over 10 billion) poses considerable challenges when employing current centralized aggregation-based methods to defend against such attacks. To tackle these challenges, we present a completely decentralized defense framework that runs independently on each worker featuring two main modules: the decentralized detection scheme based on the extreme value theory and a recovery algorithm repairing the corrupted parameters. Extensive empirical results of three state-of-the-art attacks including the data poisoning attack, adversarial attack, and random attack on three datasets (Movielens, Netflix, and Yahoo Music) prove the effectiveness of our framework, e.g., there is no performance degradation even when in scenarios with up to \\(80\\%\\) malicious workers in the peer-to-peer (P2P) network.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DoanNMAVCKAR24,
+	author = {Bao Gia Doan and
+                  Dang Quang Nguyen and
+                  Paul Montague and
+                  Tamas Abraham and
+                  Olivier Y. de Vel and
+                  Seyit Camtepe and
+                  Salil S. Kanhere and
+                  Ehsan Abbasnejad and
+                  Damith C. Ranasinghe},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Bayesian Learned Models Can Detect Adversarial Malware for Free},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {45--65},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_3},
+	doi = {10.1007/978-3-031-70879-4\_3},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/DoanNMAVCKAR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vulnerability of machine learning-based malware detectors to adversarial attacks has prompted the need for robust solutions. Adversarial training is an effective method but is computationally expensive to scale up to large datasets and comes at the cost of sacrificing model performance for robustness. We hypothesize that adversarial malware exploits the low-confidence regions of models and can be identified using epistemic uncertainty of ML approaches—epistemic uncertainty in a machine learning-based malware detector is a result of a lack of similar training samples in regions of the problem space. In particular, a Bayesian formulation can capture the model parameters’ distribution and quantify epistemic uncertainty without sacrificing model performance. To verify our hypothesis, we consider Bayesian learning approaches with a mutual information-based formulation to quantify uncertainty and detect adversarial malware in Android, Windows domains and PDF malware. We found, quantifying uncertainty through Bayesian learning methods can defend against adversarial malware. In particular, Bayesian models: (1)\xa0are generally capable of identifying adversarial malware in both feature and problem space, (2)\xa0can detect concept drift by measuring uncertainty, and (3)\xa0with a diversity-promoting approach (or better posterior approximations) leads to parameter instances from the posterior to significantly enhance a detectors’ ability.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MalinkaFKLSH24,
+	author = {Kamil Malinka and
+                  Anton Firc and
+                  Petr Kaska and
+                  Tom{\'{a}}s Lapsansk{\'{y}} and
+                  Oskar Sandor and
+                  Ivan Homoliak},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Resilience of Voice Assistants to Synthetic Speech},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {66--84},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_4},
+	doi = {10.1007/978-3-031-70879-4\_4},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MalinkaFKLSH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increasing integration of voice assistants in smart home systems, concerns regarding their security, especially regarding personal information access and physical entry control, have escalated. This is further amplified by the rapid development of generative AI methods, which bring new types of attacks. Therefore, we focus on modern voice assistants and their resilience against deepfake spoofing attacks. We rigorously assess the resistance of smart devices to sophisticated audio impersonation techniques. In detail, we evaluate voice assistants on four devices (Google Assistant, Siri, Bixby, and Alexa) with 72 test subjects. Subsequently, we conduct a comprehensive security analysis to determine the extent of potential impacts stemming from identified vulnerabilities. Our findings contribute to the enhancement of voice assistant security, ensuring safer and more reliable utilization in domestic environments.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GaspariHM24,
+	author = {Fabio De Gaspari and
+                  Dorjan Hitaj and
+                  Luigi V. Mancini},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Have You Poisoned My Data? Defending Neural Networks Against Data
+                  Poisoning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {85--104},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_5},
+	doi = {10.1007/978-3-031-70879-4\_5},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GaspariHM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The unprecedented availability of training data fueled the rapid development of powerful neural networks in recent years. However, the need for such large amounts of data leads to potential threats such as poisoning attacks: adversarial manipulations of the training data aimed at compromising the learned model to achieve a given adversarial goal. This paper investigates defenses against clean-label poisoning attacks and proposes a novel approach to detect and filter poisoned datapoints in the transfer learning setting. We define a new characteristic vector representation of datapoints and show that it effectively captures the intrinsic properties of the data distribution. Through experimental analysis, we demonstrate that effective poison datapoints can be successfully differentiated from clean datapoints in the characteristic vector space. We thoroughly evaluate our proposed approach and compare it to existing state-of-the-art defenses using multiple architectures, datasets, and poison budgets. Our evaluation shows that our proposal outperforms existing approaches in defense rate and final trained model performance across all experimental settings.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PietASCWSAW24,
+	author = {Julien Piet and
+                  Maha Alrashed and
+                  Chawin Sitawarin and
+                  Sizhe Chen and
+                  Zeming Wei and
+                  Elizabeth Sun and
+                  Basel Alomair and
+                  David A. Wagner},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Jatmo: Prompt Injection Defense by Task-Specific Finetuning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {105--124},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_6},
+	doi = {10.1007/978-3-031-70879-4\_6},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PietASCWSAW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Large Language Models (LLMs) are attracting significant research attention due to their instruction-following abilities, allowing users and developers to leverage LLMs for a variety of tasks. However, LLMs are vulnerable to prompt-injection attacks: a class of attacks that hijack the model’s instruction-following abilities, changing responses to prompts to undesired, possibly malicious ones. In this work, we introduce Jatmo , a method for generating task-specific models resilient to prompt-injection attacks. Jatmo leverages the fact that LLMs can only follow instructions once they have undergone instruction tuning. It harnesses a teacher instruction-tuned model to generate a task-specific dataset, which is then used to fine-tune a base model (i.e., a non-instruction-tuned model). Jatmo only needs a task prompt and a dataset of inputs for the task: it uses the teacher model to generate outputs. For situations with no pre-existing datasets, Jatmo can use a single example, or in some cases none at all, to produce a fully synthetic dataset. Our experiments on seven tasks show that Jatmo models provide similar quality of outputs on their specific task as standard LLMs, while being resilient to prompt injections. The best attacks succeeded in less than 0.5% of cases against our models, versus 87% success rate against GPT-3.5-Turbo. We release Jatmo at https://github.com/wagner-group/prompt-injection-defense.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WangLXLZHZ24,
+	author = {Xianlong Wang and
+                  Minghui Li and
+                  Peng Xu and
+                  Wei Liu and
+                  Leo Yu Zhang and
+                  Shengshan Hu and
+                  Yanjun Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {PointAPA: Towards Availability Poisoning Attacks in 3D Point Clouds},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {125--145},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_7},
+	doi = {10.1007/978-3-031-70879-4\_7},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WangLXLZHZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, the realm of deep learning applied to 3D point clouds has witnessed significant progress, accompanied by a growing concern about the emerging security threats to point cloud models. While adversarial attacks and backdoor attacks have gained continuous attention, the potentially more detrimental availability poisoning attack (APA) remains unexplored in this domain. In response, we propose the first APA approach in 3D point cloud domain (PointAPA), which utilizes class-wise rotations to serve as shortcuts for poisoning, thus satisfying efficiency, effectiveness, concealment, and the black-box setting. Drawing inspiration from the prevalence of shortcuts in deep neural networks, we exploit the impact of rotation in 3D data augmentation on feature extraction in point cloud networks. This rotation serves as a shortcut, allowing us to apply varying degrees of rotation to training samples from different categories, creating effective shortcuts that contaminate the training process. The natural and efficient rotating operation makes our attack highly inconspicuous and easy to launch. Furthermore, our poisoning scheme is more concealed due to keeping the labels clean (i.e.,\xa0clean-label APA). Extensive experiments on benchmark datasets of 3D point clouds (including real-world datasets for autonomous driving) have provided compelling evidence that our approach largely compromises 3D point cloud models, resulting in a reduction in model accuracy ranging from 40.6% to 73.1% compared to clean training. Additionally, our method demonstrates resilience against statistical outlier removal (SOR) and three types of random data augmentation defense schemes. Our code is available at https://github.com/wxldragon/PointAPA.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WangHZZZXWJ24,
+	author = {Xianlong Wang and
+                  Shengshan Hu and
+                  Yechao Zhang and
+                  Ziqi Zhou and
+                  Leo Yu Zhang and
+                  Peng Xu and
+                  Wei Wan and
+                  Hai Jin},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{ECLIPSE:} Expunging Clean-Label Indiscriminate Poisons via Sparse
+                  Diffusion Purification},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {146--166},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_8},
+	doi = {10.1007/978-3-031-70879-4\_8},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WangHZZZXWJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Clean-label indiscriminate poisoning attacks add invisible perturbations to correctly labeled training images, thus dramatically reducing the generalization capability of the victim models. Recently, defense mechanisms such as adversarial training, image transformation techniques, and image purification have been proposed. However, these schemes are either susceptible to adaptive attacks, built on unrealistic assumptions, or only effective against specific poison types, limiting their universal applicability. In this research, we propose a more universally effective, practical, and robust defense scheme called ECLIPSE. We first investigate the impact of Gaussian noise on the poisons and theoretically prove that any kind of poison will be largely assimilated when imposing sufficient random noise. In light of this, we assume the victim has access to an extremely limited number of clean images (a more practical scene) and subsequently enlarge this sparse set for training a denoising probabilistic model (a universal denoising tool). We then introduce Gaussian noise to absorb the poisons and apply the model for denoising, resulting in a roughly purified dataset. Finally, to address the trade-off of the inconsistency in the assimilation sensitivity of different poisons by Gaussian noise, we propose a lightweight corruption compensation module to effectively eliminate residual poisons, providing a more universal defense approach. Extensive experiments demonstrate that our defense approach outperforms 10 state-of-the-art defenses. We also propose an adaptive attack against ECLIPSE and verify the robustness of our defense scheme. Our code is available at https://github.com/CGCL-codes/ECLIPSE.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/IbrahimP24,
+	author = {Omar Adel Ibrahim and
+                  Roberto Di Pietro},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{MAG-JAM:} Jamming Detection via Magnetic Emissions},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {167--186},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_9},
+	doi = {10.1007/978-3-031-70879-4\_9},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/IbrahimP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless networks inherently rely on a shared medium, making them exposed to jamming attacks. In this paper, we present MAG-JAM, a novel solution for jamming detection in static and mobile scenarios leveraging the physical layer properties of wireless communication by analyzing the magnetic emissions near the antennas of target wireless devices. To the best of our knowledge, MAG-JAM represents the first solution based on the key observation that the magnetic emissions profile of normal wireless communication between transmitter-receiver pairs is different from the magnetic emissions profile when an active jamming signal starts affecting the communication channel. MAG-JAM has several advantages: its implementation requires mainly an inexpensive magnetic sensor, it is non-invasive and privacy-preserving as it is implemented as a standalone unit, does not need access to the wireless device, and demonstrates a remarkable performance. We design and implement a proof of concept jamming detection system using a cheap magnetic sensor and test MAG-JAM on a set of different wireless devices with a perfect score in jamming detection using no more than 1\xa0s of the magnetic emissions collected by the magnetic sensor under a normalized jamming power of 0.1–1. In addition, we also implement a more advanced jamming detection system using a specialized magnetic probe and autoencoders that, using just 150 ms of collected data, achieves a minimum of 0.91 F1-Score in detecting jamming with a normalized power of 0.2 and an F1-Score of 1 for jamming powers greater than 0.4.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MozaffariCH24,
+	author = {Hamid Mozaffari and
+                  Sunav Choudhary and
+                  Amir Houmansadr},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Fake or Compromised? Making Sense of Malicious Clients in Federated
+                  Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {187--207},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_10},
+	doi = {10.1007/978-3-031-70879-4\_10},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MozaffariCH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated learning (FL) is a distributed machine learning paradigm that enables training models on decentralized data. The field of FL security against poisoning attacks is plagued with confusion due to the proliferation of research that makes different assumptions about the capabilities of adversaries and the adversary models they operate under. Our work aims to clarify this confusion by presenting a comprehensive analysis of the various poisoning attacks and defensive aggregation rules (AGRs) proposed in the literature, and connecting them under a common framework. To connect existing adversary models, we present a hybrid adversary model, which lies in the middle of the spectrum of adversaries, where the adversary compromises a few clients, trains a generative (e.g., DDPM) model with their compromised samples, and generates new synthetic data to solve an optimization for a stronger (e.g., cheaper, more practical) attack against different robust aggregation rules. By presenting the spectrum of FL adversaries, we aim to provide practitioners and researchers with a clear understanding of the different types of threats they need to consider when designing FL systems, and identify areas where further research is needed.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/UllahLVSVC24,
+	author = {Ubaid Ullah and
+                  Sonia Laudanna and
+                  P. Vinod and
+                  Andrea Di Sorbo and
+                  Corrado Aaron Visaggio and
+                  Gerardo Canfora},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Beyond Words: Stylometric Analysis for Detecting {AI} Manipulation
+                  on Social Media},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {208--228},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_11},
+	doi = {10.1007/978-3-031-70879-4\_11},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/UllahLVSVC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, there has been a noticeable growth in textual content generated through advanced language models, such as chatGPT, across various social networks. ChatGPT can produce content that closely emulates human writing, making it indistinguishable from human content and introducing concerns regarding its potential exploitation by social bots for malicious purposes. This study undertakes a comprehensive investigation leveraging stylometric features to assess and identify bot accounts and chatGPT writing style on the Twitter platform. In particular, we extract stylometric features from bot- and human-written tweets, perform statistical tests, and evaluate the performance of machine-learning models fed by stylistic indicators. Our findings indicate that chatGPT-driven accounts are statistically different from human accounts based on consistency in their writing style, while the experimented models achieve an accuracy of up to 96% and 91% in the detection of chatGPT-based bot accounts and chatGPT-generated tweets, respectively. Finally, we assess the detection performance when adversarial text is introduced in test samples, demonstrating the robustness of the stylometry-based approach under adversarial attacks.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YangJZFYW24,
+	author = {Peng Yang and
+                  Zoe Lin Jiang and
+                  Jiehang Zhuang and
+                  Junbin Fang and
+                  Siu{-}Ming Yiu and
+                  Xuan Wang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {FSSiBNN: FSS-Based Secure Binarized Neural Network Inference with
+                  Free Bitwidth Conversion},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {229--250},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_12},
+	doi = {10.1007/978-3-031-70879-4\_12},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/YangJZFYW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Neural network inference as a service enables a cloud server to provide inference services to clients. To ensure the privacy of both the cloud server’s model and the client’s data, secure neural network inference is essential. Binarized neural networks (BNNs), which use binary weights and activations, are often employed to accelerate inference. However, achieving secure BNN inference with secure multi-party computation (MPC) is challenging because MPC protocols cannot directly operate on values of different bitwidths and require bitwidth conversion. Existing bitwidth conversion schemes expand the bitwidths of weights and activations, leading to significant communication overhead. To address these challenges, we propose FSSiBNN, a secure BNN inference framework featuring free bitwidth conversion based on function secret sharing (FSS). By leveraging FSS, which supports arbitrary input and output bitwidths, we introduce a bitwidth-reduced parameter encoding scheme. This scheme seamlessly integrates bitwidth conversion into FSS-based secure binary activation and max pooling protocols, thereby eliminating the additional communication overhead. Additionally, we enhance communication efficiency by combining and converting multiple BNN layers into fewer matrix multiplication and comparison operations. We precompute matrix multiplication tuples for matrix multiplication and FSS keys for comparison during the offline phase, enabling constant-round online inference. In our experiments, we evaluated various datasets and models, comparing our results with state-of-the-art frameworks. Compared with the two-party framework XONN (USENIX Security ’19), FSSiBNN achieves approximately 7\\(\\times \\) faster inference times and reduces communication overhead by about 577\\(\\times \\). Compared with the three-party frameworks SecureBiNN (ESORICS ’22) and FLEXBNN (TIFS ’23), FSSiBNN is approximately 2.5\\(\\times \\) faster in inference time and reduces communication overhead by 1.3\\(\\times \\) to 16.4\\(\\times \\).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FeiGMS24,
+	author = {Hongming Fei and
+                  Prosanta Gope and
+                  Owen Millwood and
+                  Biplab Sikdar},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Optimal Machine-Learning Attacks on Hybrid PUFs},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {251--270},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_13},
+	doi = {10.1007/978-3-031-70879-4\_13},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FeiGMS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Physical Unclonable Functions (PUFs) are a promising, low-cost entropy source and security primitive for Internet-of-Things (IoT) applications, widely used in authentication, key generation and management. As PUFs have been investigated further, they have often been found to be vulnerable to machine-learning attacks (MLA). Despite numerous attempts to fortify PUFs against such vulnerabilities by innovating with different structures and compositions - among which hybrid PUFs were considered a promising approach - the security of these designs against MLA largely remained untested. Specifically, this paper targets the recently introduced hybrid PUFs, namely the heterogeneous Feed-Forward PUFs [1] and OAX PUFs [28], which were claimed to be secure against MLAs. Contrary to these claims, to the best of our knowledge, we are the first to report that even these advanced PUF structures are not immune to MLA. Furthermore, the paper delivers a comprehensive evaluation of the MLA resistance of hybrid PUF structures and proposes the Transition Theorem, which provides a novel insight for performing Hybrid PUF modelling. We successfully apply this theory to three classic attack models, Ruhrmair2010 [18], Mursi2020 [16] and Wisiol2022 [27], and enable them to successfully attack the earlier PUFs modelling failures. This theory contributes to the effectiveness of current strategies and lays the groundwork for future advancements in PUF security.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GuoPHTC24,
+	author = {Yuejun Guo and
+                  Constantinos Patsakis and
+                  Qiang Hu and
+                  Qiang Tang and
+                  Fran Casino},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Outside the Comfort Zone: Analysing {LLM} Capabilities in Software
+                  Vulnerability Detection},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {271--289},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_14},
+	doi = {10.1007/978-3-031-70879-4\_14},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GuoPHTC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The significant increase in software production driven by automation and faster development lifecycles has resulted in a corresponding surge in software vulnerabilities. In parallel, the evolving landscape of software vulnerability detection, highlighting the shift from traditional methods to machine learning and large language models (LLMs), provides massive opportunities at the cost of resource-demanding computations. This paper thoroughly analyses LLMs’ capabilities in detecting vulnerabilities within source code by testing models beyond their usual applications to study their potential in cybersecurity tasks. We evaluate the performance of six open-source models that are specifically trained for vulnerability detection against six general-purpose LLMs, three of which were further fine-tuned on a dataset that we compiled. Our dataset, alongside five state-of-the-art benchmark datasets, were used to create a pipeline to leverage a binary classification task, namely classifying code into vulnerable and non-vulnerable. The findings highlight significant variations in classification accuracy across benchmarks, revealing the critical influence of fine-tuning in enhancing the detection capabilities of small LLMs over their larger counterparts, yet only in the specific scenarios in which they were trained. Further experiments and analysis also underscore the issues with current benchmark datasets, particularly around mislabeling and their impact on model training and performance, which raises concerns about the current state of practice. We also discuss the road ahead in the field suggesting strategies for improved model training and dataset curation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TolS24,
+	author = {M. Caner Tol and
+                  Berk Sunar},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {ZeroLeak: Automated Side-Channel Patching in Source Code Using LLMs},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {290--310},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_15},
+	doi = {10.1007/978-3-031-70879-4\_15},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/TolS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security-critical software comes with numerous side-channel leakages left unpatched due to a lack of resources or experts. The situation will only worsen as the pace of code development accelerates, with developers relying on Large Language Models (LLMs) to automatically generate code. Compiler-based approaches are limited to only certain types of leakages and languages, and there is no automated method to solve the issue in the source code. In this work, we explore the use of LLMs in generating patches for vulnerable code with microarchitectural side-channel leakages in the source code. Automatic patching with LLMs in the source code provides portability to interpreted languages as well, eases the maintenance burden on the developers, and provides flexibility for different types of leakages. For this, we investigate the abilities of LLMs by carefully crafting prompts to generate candidate replacements for vulnerable code, which are then analyzed for correctness and leakage resilience. We dynamically analyze the generated code using leakage detection tools, which are capable of pinpointing information leakage at the instruction level leaked either from secret dependent accesses or branches or vulnerable Spectre gadgets, respectively. After extensive experimentation, we determined that the way prompts are formed and stacked over a series of queries plays a critical role in the LLMs’ ability to generate correct and leakage-free patches. We develop a number of tricks to improve the chances of correct and side-channel secure code. We show that side-channel vulnerabilities can be fixed using GPT-4 with a cost of a few cents per vulnerability fixed. Finally, our proposed framework will improve over time, especially as vulnerability detection tools and LLMs mature.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiLZRLLL24,
+	author = {Yuying Li and
+                  Zeyan Liu and
+                  Junyi Zhao and
+                  Liangqin Ren and
+                  Fengjun Li and
+                  Jiebo Luo and
+                  Bo Luo},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {The Adversarial AI-Art: Understanding, Generation, Detection, and
+                  Benchmarking},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {311--331},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_16},
+	doi = {10.1007/978-3-031-70879-4\_16},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiLZRLLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Generative AI models can produce high-quality images based on text prompts. The generated images often appear indistinguishable from images generated by conventional optical photography devices or created by human artists (i.e., real images). While the outstanding performance of such generative models is generally well received, security concerns arise. For instance, such image generators could be used to facilitate fraud or scam schemes, generate and spread misinformation, or produce fabricated artworks. In this paper, we present a systematic attempt at understanding and detecting AI-generated images (AI-art) in adversarial scenarios. First, we collect and share a dataset of real images and their corresponding artificial counterparts generated by four popular AI image generators. The dataset, named ARIA, contains over 140K images in five categories: artworks (painting), social media images, news photos, disaster scenes, and anime pictures. This dataset can be used as a foundation to support future research on adversarial AI-art. Next, we present a user study that employs the ARIA dataset to evaluate if real-world users can distinguish with or without reference images. In a benchmarking study, we further evaluate if state-of-the-art open-source and commercial AI image detectors can effectively identify the images in the ARIA dataset. Finally, we present a ResNet-50 classifier and evaluate its accuracy and transferability on the ARIA dataset. The ARIA dataset and the project source code are shared at: https://github.com/AdvAIArtProject/AdvAIArt.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GoelMGWKC24,
+	author = {Diksha Goel and
+                  Kristen Moore and
+                  Mingyu Guo and
+                  Derui Wang and
+                  Minjune Kim and
+                  Seyit Camtepe},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Optimizing Cyber Defense in Dynamic Active Directories Through Reinforcement
+                  Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {332--352},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_17},
+	doi = {10.1007/978-3-031-70879-4\_17},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GoelMGWKC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper addresses a significant gap in Autonomous Cyber Operations (ACO) literature: the absence of effective edge-blocking ACO strategies in dynamic, real-world networks. It specifically targets the cybersecurity vulnerabilities of organizational Active Directory (AD) systems. Unlike the existing literature on edge-blocking defenses which considers AD systems as static entities, our study counters this by recognizing their dynamic nature and developing advanced edge-blocking defenses through a Stackelberg game model between attacker and defender. We devise a Reinforcement Learning (RL)-based attack strategy and an RL-assisted Evolutionary Diversity Optimization-based defense strategy, where the attacker and defender improve each other’s strategy via parallel gameplay. To address the computational challenges of training attacker-defender strategies on numerous dynamic AD graphs, we propose an RL Training Facilitator that prunes environments and neural networks to eliminate irrelevant elements, enabling efficient and scalable training for large graphs. We extensively train the attacker strategy, as a sophisticated attacker model is essential for a robust defense. Our empirical results successfully demonstrate that our proposed approach enhances defender’s proficiency in hardening dynamic AD graphs while ensuring scalability for large-scale AD.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BaekLK24,
+	author = {Heewon Baek and
+                  Minwook Lee and
+                  Hyoungshick Kim},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {CryptoLLM: Harnessing the Power of LLMs to Detect Cryptographic {API}
+                  Misuse},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {353--373},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_18},
+	doi = {10.1007/978-3-031-70879-4\_18},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BaekLK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose CryptoLLM, a novel static analysis tool leveraging large language models (LLMs) to detect cryptographic API misuse vulnerabilities. Integrating optimized code slicing with fine-tuned LLMs, CryptoLLM achieves superior detection capabilities. After evaluating four models, we recommend CodeT5. CryptoLLM outperforms existing rule-based tools such as CryptoGuard, CogniCrypt, and SpotBugs on the CryptoAPI-Bench dataset (F1 score: 0.935). For unseen real-world Android apps, with a 20-minute analysis limit, CryptoLLM achieved the highest F1 score of 0.898, analyzing all apps without errors, while other tools failed to analyze a significant proportion, with CryptoGuard’s highest F1 score at 0.645. Although CryptoLLM ’s performance initially dropped to 0.749 F1 score on mutated code, retraining with augmented data improved it to 0.988, demonstrating adaptability across diverse datasets.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/EfatinasabBRAC24,
+	author = {Emad Efatinasab and
+                  Alessandro Brighente and
+                  Mirco Rampazzo and
+                  Nahal Azadi and
+                  Mauro Conti},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{GAN-GRID:} {A} Novel Generative Attack on Smart Grid Stability Prediction},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14982},
+	pages = {374--393},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70879-4\_19},
+	doi = {10.1007/978-3-031-70879-4\_19},
+	timestamp = {Thu, 26 Sep 2024 09:28:03 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/EfatinasabBRAC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The smart grid represents a pivotal innovation in modernizing the electricity sector, offering an intelligent, digitalized energy network capable of optimizing energy delivery from source to consumer. It hence represents the backbone of the energy sector of a nation. Due to its central role, the availability of the smart grid is paramount and is hence necessary to have in-depth control of its operations and safety. To this aim, researchers developed multiple solutions to assess the smart grid’s stability and guarantee that it operates in a safe state. Artificial intelligence and Machine learning algorithms have proven to be effective measures to accurately predict the smart grid’s stability. Despite the presence of known adversarial attacks and potential solutions, currently, there exists no standardized measure to protect smart grids against this threat, leaving them open to new adversarial attacks. In this paper, we propose GAN-GRID a novel adversarial attack targeting the stability prediction system of a smart grid tailored to real-world constraints. Our findings reveal that an adversary armed solely with the stability model’s output, devoid of data or model knowledge, can craft data classified as stable with an Attack Success Rate (ASR) of 0.99. Also by manipulating authentic data and sensor values, the attacker can amplify grid issues, potentially undetected due to a compromised stability prediction system. These results underscore the imperative of fortifying smart grid security mechanisms against adversarial manipulation to uphold system stability and reliability.}
+}

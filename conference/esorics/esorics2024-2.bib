@@ -1,0 +1,649 @@
+@inproceedings{DBLP:conf/esorics/LeeJDL24,
+	author = {Choongin Lee and
+                  Isa Jafarov and
+                  Sven Dietrich and
+                  Heejo Lee},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{PRETT2:} Discovering {HTTP/2} DoS Vulnerabilities via Protocol Reverse
+                  Engineering},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_1},
+	doi = {10.1007/978-3-031-70890-9\_1},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LeeJDL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MelchorBGGJS24,
+	author = {Carlos Aguilar Melchor and
+                  Thomas Bailleux and
+                  Jason Goertzen and
+                  Adrien Guinet and
+                  David Joseph and
+                  Douglas Stebila},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {TurboTLS: {TLS} Connection Establishment with 1 Less Round Trip},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {24--44},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_2},
+	doi = {10.1007/978-3-031-70890-9\_2},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MelchorBGGJS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We show how to establish TLS connections using one less round trip. In our approach, which we call TurboTLS, the initial client-to-server and server-to-client flows of the TLS handshake are sent over UDP rather than TCP. At the same time, in the same flights, the three-way TCP handshake is carried out. Once the TCP connection is established, the client and server can complete the final flight of the TLS handshake over the TCP connection and continue using it for application data. No changes are made to the contents of the TLS handshake protocol, only its delivery mechanism. We avoid problems with UDP fragmentation by using request-based fragmentation, in which the client sends in advance enough UDP requests to provide sufficient room for the server to fit its response with one response packet per request packet. Clients can detect which servers support this without an additional round trip, if the server advertises its support in a DNS HTTPS resource record. Experiments using our software implementation show substantial latency improvements. On reliable connections, we effectively eliminate a round trip without any noticeable cost. To ensure adequate performance on unreliable connections, we use lightweight packet ordering and buffering; we can have a client wait a very small time to receive a potentially lost packet (e.g. a fraction of the RTT observed for the first fragment) before falling back to TCP without any further delay, since the TCP connection was already in the process of being established. This approach offers substantial performance improvements with low complexity, even in heterogeneous network environments with poorly configured middleboxes.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiZDSZLG24,
+	author = {Baiyang Li and
+                  Yujia Zhu and
+                  Yong Ding and
+                  Yong Sun and
+                  Yuedong Zhang and
+                  Qingyun Liu and
+                  Li Guo},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {From Fingerprint to Footprint: Characterizing the Dependencies in
+                  Encrypted {DNS} Infrastructures},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {45--64},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_3},
+	doi = {10.1007/978-3-031-70890-9\_3},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiZDSZLG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Encrypted DNS protocols—DNS-over-TLS (DoT), DNS-over-HTTPS (DoH), and DNS-over-QUIC (DoQ), have been standardized and widely embraced by the industry to enhance the security and privacy of DNS transmissions. As more software and devices support encrypted DNS protocols, adopting encrypted DNS is fast becoming the prevailing trend in domain name resolution. Despite this growing trend, the dependencies within the encrypted DNS infrastructures remain largely unexplored. Key questions arise regarding the server components and third-party DNS providers that encrypted DNS servers rely on during the resolution process. Understanding these dependencies is essential for gaining a comprehensive view of the encrypted DNS ecosystem and revealing potential vulnerabilities or points of centralization that could impact the robustness and reliability of DNS services. This paper analyzes the dependencies from two critical aspects: the server components and the DNS resolution process. To this end, we perform large-scale measurements on encrypted DNS infrastructures and distinguish the role of servers. Based on the classification results,\xa0we extract fingerprints to identify the server components and measure\xa0the upstream DNS resolver leveraging the resolution footprints. Our findings show that (i) an encrypted DNS resolver can encompass multiple components that cooperate in the resolution process; (ii) despite the dispersed nature of encrypted DNS entrances, 75.24% of all encrypted DNS resolvers rely on the top 10 DNS providers. The concentration of query forwarding towards specific upstream resolvers signifies a growing concern related to dependencies and centralization in encrypted DNS.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RobbenV24,
+	author = {Jeroen Robben and
+                  Mathy Vanhoef},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Netfuzzlib: Adding First-Class Fuzzing Support to Network Protocol
+                  Implementations},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {65--84},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_4},
+	doi = {10.1007/978-3-031-70890-9\_4},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RobbenV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces Netfuzzlib, a framework that emulates network input and output in user space, allowing more efficient fuzz testing and symbolic execution of Linux network programs. We first systemize common requirements and caveats for efficient fuzzing and symbolic execution of socket-based network software. Building on top of the collected requirements, we design and implement a framework that seamlessly integrates with state-of-the-art fuzzing tools, as well as symbolic execution engines, and requires no knowledge of the program’s source code. Moreover, Netfuzzlib enables a range of speed optimizations, where in our evaluations it improved fuzzing speed by a factor ranging from roughly 10 to 600. By using this framework it becomes significantly easier to fuzz and symbolically analyze Linux network programs.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuoDGNZ24,
+	author = {Yihao Luo and
+                  Yunjie Deng and
+                  Jingquan Ge and
+                  Zhenyu Ning and
+                  Fengwei Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {BootRIST: Detecting and Isolating Mercurial Cores at the Booting Stage},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {85--103},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_5},
+	doi = {10.1007/978-3-031-70890-9\_5},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LuoDGNZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the shrinking of transistor size and their own increasing complexity, CPUs have become more fault-prone. The mercurial cores, one type of processor failure, can randomly return silent miscomputation results and have been discovered in commercial CPUs. To address the mercurial core problem, we propose BootRIST, a software-based solution to detect and isolate mercurial cores in CPUs at the booting stage. BootRIST provides a framework to execute the testing instructions and store the result for each CPU core. Based on the execution result, BootRIST leverages the CPU hotplug mechanism to isolate mercurial cores. With BootRIST, the system and software can correctly run on CPUs with mercurial cores. We have implemented a prototype of BootRIST and deployed it on an Arm Linux server to perform an extensive evaluation. The empirical studies demonstrate that BootRIST can effectively detect and isolate mercurial cores at the booting stage.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RahmanF24,
+	author = {Md Mushfekur Rahman and
+                  Philip W. L. Fong},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Social Control and Interactivity in Anonymous Public Events},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {104--122},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_6},
+	doi = {10.1007/978-3-031-70890-9\_6},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RahmanF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Online event hosting platforms, such as Zoom Meetings and Twitch Streams, have revolutionized the way we socialize with one another. These platforms offer a rich set of interactive features such\xa0as live chat and gestures, enabling dynamic and engaging social events. In public events, however, participants are not well-known entities originating from the same institution, and thus traditional access control fails to provide means for maintaining order without disrupting interactivity. Zoombombing and cyberbullying in Twitch Streams are symptoms of this dilemma. The design of\xa0the aforementioned event hosting systems thus resort to social control mechanisms that allow moderators to monitor the social interactions of the participants and respond to disorderly behavior in real time. The designer of an event hosting system needs to make sure\xa0that social control mechanisms preserve interactivity expectations. \xa0In this paper, we introduce HIPE (Highly Interactive Public Event),\xa0a framework for modelling social control mechanisms, articulating interactivity expectations, as well as verifying if social control interferes with interactivity. We catalogued 4 classes of social control mechanisms that can be reused in the design of event hosting systems, including sanction, remedy, containment, and retaliation. Additionally, we formulated a 2-safety hyperproperty known\xa0as (a,\xa0p)-interactivity, for expressing the degree of interactivity expected of an event hosting system. Furthermore, we designed\xa0a model checking algorithm for verifying (a,\xa0p)-interactivity. \xa0An empirical case study has been conducted to illustrate the interplay between social control and interactivity, as well as to evaluate\xa0the performance of our model checking algorithm. To the best of\xa0our knowledge this is the first work to formally study the balancing\xa0of social control and interactivity in public events.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhengZDSZYZ24,
+	author = {Jieyu Zheng and
+                  Haoliang Zhu and
+                  Yifan Dong and
+                  Zhenyu Song and
+                  Zhenhao Zhang and
+                  Yafang Yang and
+                  Yunlei Zhao},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Faster Post-quantum {TLS} 1.3 Based on {ML-KEM:} Implementation and
+                  Assessment},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {123--143},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_7},
+	doi = {10.1007/978-3-031-70890-9\_7},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhengZDSZYZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {TLS is extensively utilized for secure data transmission over networks. However, with the advent of quantum computers, the security of TLS based on traditional public-key cryptography is under threat. To counter quantum threats, it is imperative to integrate Post-Quantum Cryptography (PQC) into TLS (PQ-TLS, for short). Most PQ-TLS research focuses on integration and evaluation, but few studies address the improvement of PQ-TLS performance by optimizing PQC implementation. As a critical part of PQ-TLS, post-quantum key encapsulation Mechanisms (PQ-KEMs) directly impact PQ-TLS handshake performance. ML-KEM is a NIST-standardized PQ-KEM. In this work, we explore how to improve ML-KEM performance using the latest Intel’s Advanced Vector Extensions instruction set AVX-512. We give our implementation details of parallelizing polynomial multiplication, modular reduction, and other computationally intensive modules strategically within ML-KEM. Our optimized ML-KEM implementation achieves up to 1.64\\(\\times \\) speedup compared to the latest AVX2 implementation. Based on our ML-KEM AVX-512 implementation, we introduce a novel batch key generation method for ML-KEM that can seamlessly integrate into the TLS protocols. The batch method accelerates the key generation procedure by 3.5\\(\\times \\) to 4.9\\(\\times \\). Finally, we integrate the optimized AVX-512 implementation of ML-KEM into TLS 1.3 and assess handshake performance under both PQ-only and PQ-hybrid modes. The assessment demonstrates that our faster ML-KEM implementation results in a higher number of TLS 1.3 handshakes per second under both modes. To further investigate ML-KEM performance improvement, we revisit two IND-1-CCA KEM constructions proposed at Eurocrypt’22 and Asiacrypt’23, implement them based on ML-KEM and integrate the one of better performance into TLS 1.3 with benchmarks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PascaleCTH24,
+	author = {Daniel De Pascale and
+                  Giuseppe Cascavilla and
+                  Damian A. Tamburri and
+                  Willem{-}Jan van den Heuvel},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{CRATOR} a CRAwler for {TOR:} Turning Dark Web Pages into Open Source
+                  INTelligence},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {144--161},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_8},
+	doi = {10.1007/978-3-031-70890-9\_8},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PascaleCTH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Dark web crawling is a complex process that involves specific methodologies and techniques to navigate the Tor network and extract data from hidden services. This study proposes a dark web crawler designed to extract pages handling security protocols, such as CAPTCHAs, efficiently. Our approach uses a combination of seed URL lists, link analysis, and scanning to discover new content. We also incorporate methods for user-agent rotation and proxy usage to maintain anonymity and avoid detection. We evaluate the effectiveness of our crawler using metrics such as coverage, performance, and robustness. Our results demonstrate that our crawler effectively extracts pages handling security protocols while preserving anonymity and avoiding detection. Our proposed dark web crawler can be used for several applications, including threat intelligence, cybersecurity, and online investigations.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XuCLWSXL24,
+	author = {Hongbo Xu and
+                  Zhenyu Cheng and
+                  Shuhao Li and
+                  Chenxu Wang and
+                  Peishuai Sun and
+                  Jiang Xie and
+                  Qingyun Liu},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {ProxyKiller: An Anonymous Proxy Traffic Attack Model Based on Traffic
+                  Behavior Graphs},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {162--181},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_9},
+	doi = {10.1007/978-3-031-70890-9\_9},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/XuCLWSXL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As common tools for evading censorship and protecting privacy, anonymous proxies are widely favored for their lightweight and easy deployment. In recent years, anonymous proxies have continually evolved regarding traffic obfuscation and masking strategies. Due to the lack of design targeting the connection behavior features of different proxy flows, current methods for proxy traffic identification often suffer from high false positive rates. Consequently, these methods are insufficient for real-world applications. This masks the deficiencies of existing anonymous proxy technologies in combating detection models based on flow relationship analysis. To address the issues mentioned, we introduce a novel proxy traffic attack model called ProxyKiller based on multi-flow connection behavior features. After obtaining the original PCAP traffic files, ProxyKiller constructs traffic behavior graphs using extracted temporal, spatial, content, and specially designed byte features. Subsequently, ProxyKiller extracts latent topological structure features through graph neural networks, integrates them into a unified graph-level representation vector, and obtains prediction results for each traffic behavior graph through a random forest model. Finally, ProxyKiller implements a global decision-making mechanism from a traffic graph correlation perspective to correct prediction results for related traffic behavior graphs. Experimental results on three real-world datasets demonstrate that ProxyKiller outperforms several state-of-the-art traffic classification methods and shows robustness in various proxy traffic classification tasks. These results indicate that current anonymous proxies exhibit certain vulnerabilities when countering traffic analysis methods based on traffic behavior graph structure.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WuHZ24,
+	author = {Wenxuan Wu and
+                  Soamar Homsi and
+                  Yupeng Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Confidential and Verifiable Machine Learning Delegations on the Cloud},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {182--201},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_10},
+	doi = {10.1007/978-3-031-70890-9\_10},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WuHZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the growing adoption of cloud computing, the ability to store data and delegate computations to powerful and affordable cloud servers have become advantageous for both companies and individual users. However, the security of cloud computing has emerged as a significant concern. Particularly, Cloud Service Providers (CSPs) cannot assure data confidentiality and computations integrity in mission-critical applications. In this paper, we propose a confidential and verifiable delegation scheme that advances and overcomes major performance limitations of existing Secure Multiparty Computation (MPC) and Zero Knowledge Proof (ZKP). Secret-shared Data and delegated computations to multiple cloud servers remain completely confidential as long as there is at least one honest MPC server. Moreover, results are guaranteed to be valid even if all the participating servers are malicious. Specifically, we design an efficient protocol based on interactive proofs, such that most of the computations generating the proof can be done locally on each server. In addition, we propose a special protocol for matrix multiplication where the overhead of generating the proof is asymptotically smaller than the time to evaluate the result in MPC. Experimental evaluation demonstrates that our scheme significantly outperforms prior work, with the online prover time being 1–2 orders of magnitude faster. Notably, in the matrix multiplication protocol, only a minimal 2% of the total time is spent on the proof generation. Furthermore, we conducted tests on machine learning inference tasks. We executed the protocol for a fully-connected neural network with 3 layers on the MNIST dataset and it takes 2.6\xa0s to compute the inference in MPC and generate the proof, 88\\(\\times \\) faster than prior work. We also tested the convolutional neural network of Lenet with 2 convolution layers and 3 dense layers and the running time is less than 300\xa0s across three servers.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MantuCR24,
+	author = {Radu Mantu and
+                  Mihai Chiroiu and
+                  Costin Raiciu},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Process Identity-Based Firewalling},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {202--221},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_11},
+	doi = {10.1007/978-3-031-70890-9\_11},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MantuCR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper we introduce DAF, a distributed application firewall capable of filtering traffic based on process identity. The process identity is inferred from local-system level knowledge of processes and their access to specific sockets, without needing to examine the user data. In order to ensure its reliable operation in microservice-rich environments, we extend the process identification capabilities to function across namespaces, thus allowing seamless runtime container inspection. Additionally, individual instances of DAF are able attach proof of compliance to the locally configured firewall ruleset by annotating packets with HMACs as IP options. In an effort to reduce the difficulty of integrating our solution with existing software stacks, we offer iptables and snort3 extensions that are capable of ascertaining the compliance of intercepted traffic with said ruleset.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuoWSTRP24,
+	author = {Ning Luo and
+                  Chenkai Weng and
+                  Jaspal Singh and
+                  Gefei Tan and
+                  Mariana Raykova and
+                  Ruzica Piskac},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Privacy-Preserving Regular Expression Matching Using {TNFA}},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {225--246},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_12},
+	doi = {10.1007/978-3-031-70890-9\_12},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LuoWSTRP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Regular expression (regex) is a powerful tool to efficiently search patterns in text strings. However, it is common when the regex and string are privately held by different parties who are unwilling to reveal sensitive information. In this work, we provide solutions for private regex pattern match. By exploiting the structure of Thompson nondeterministic automata, we design a regex match algorithm with O(mn) complexity where m and n are the length of the string and regex. It is oblivious to the input string and, hence, is friendly to private evaluation. We develop two 2-party regex matching protocols that take input a private string from one party and a private regex from another. The first protocol uses oblivious stack as a building block and reduces the communication complexity of the state-of-the-art secure regex protocols from \\(O(mn^2)\\) to \\(O(mn\\log n)\\). The second protocol is based on the oblivious transfer and shows better empirical results for short regex in low-latency networks. We also evaluated our protocols in the context of joint intrusion detection and DNA sequence search. The results indicate one more step toward the practicality of private regex pattern matching in real-world applications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LianMCZWJ24,
+	author = {Rui Lian and
+                  Yulong Ming and
+                  Chengjun Cai and
+                  Yifeng Zheng and
+                  Cong Wang and
+                  Xiaohua Jia},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Nemesis: Combating Abusive Information in Encrypted Messaging with
+                  Private Reporting},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {247--267},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_13},
+	doi = {10.1007/978-3-031-70890-9\_13},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LianMCZWJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Abusive messages spread rapidly within popular end-to-end encrypted messaging services (EEMSs) due to the inability to conduct content moderation on plaintext messages. This issue has turned EEMSs into breeding grounds for fake news, misinformation, and other viral abusive content. However, enabling the identification of abusive information without careful consideration can compromise the cherished confidentiality feature of EEMSs. To address this issue, we propose Nemesis, a privacy-friendly, user-reporting-based content moderation system for EEMSs. In Nemesis, users can privately report abusive messages, and the system traces the source if the report count exceeds a predefined threshold. Compared to existing systems, Nemesis offers three key advantages: 1) it supports flexible and adaptable thresholds to meet different content moderation needs, 2) it prevents dishonest reporters from disrupting the system, and 3) it better ensures the privacy of all users during the moderation process. Nemesis utilizes lightweight cryptographic techniques to achieve these goals, and evaluation results demonstrate its low overhead in securely identifying abusive messages and tracing their sources in EEMSs.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HeLWWJ24,
+	author = {Junlin He and
+                  Lingguang Lei and
+                  Yuewu Wang and
+                  Pingjian Wang and
+                  Jiwu Jing},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{ARPSSO:} An OIDC-Compatible Privacy-Preserving {SSO} Scheme Based
+                  on {RP} Anonymization},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {268--288},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_14},
+	doi = {10.1007/978-3-031-70890-9\_14},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HeLWWJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {OpenID Connect (OIDC) is one of the most widely used single sign-on (SSO) protocols today. However, like all other popular SSO protocols, it does not take user privacy into account, which means that Identity Providers (IdPs) and colluding Relying Parties (RPs) may carve a user’s behavior through protocol interaction easily. Many studies have attempted to address these privacy issues, but none of them support the most commonly adopted OIDC code flow very well because of their insufficient consideration of the IdP-to-RP authentication, which is the key mechanism to enhance the security of OIDC. In this paper, we propose a privacy-preserving SSO scheme named ARPSSO that may be adapted to OIDC code flow very well. We first realize RP anonymous authentication by issuing anonymous credentials to the RP, thus preventing the user’s login behavior from being tracked by the IdP. We also design a two-party secure computation scheme based on anonymous credentials, which implements user identity mix-up and thus prevents the user identity from being linked by colluding RPs. In addition, we introduce a user-imperceptible trusted in-browser data forwarding mechanism to ensure that the entire SSO process is transparent to the user, allowing users to seamlessly use conventional authentication mechanisms and standard browsers for a great user experience. The security analysis shows that ARPSSO achieves the privacy goals without compromising the intrinsic security properties of the OIDC protocol. Performance evaluation on the prototype implementation shows that ARPSSO may work with acceptable overhead compared to original SSO systems.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YanTCHD24,
+	author = {Yukun Yan and
+                  Peng Tang and
+                  Rui Chen and
+                  Qilong Han and
+                  Ruochen Du},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{DPC:} Filtering Out Patch-Based Poisoned Samples with Differential
+                  Privacy},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {289--309},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_15},
+	doi = {10.1007/978-3-031-70890-9\_15},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/YanTCHD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Patch-based data poisoning backdoor attacks have been exposed the vulnerability of deep neural networks (DNNs). While the differentially private training algorithm is a promising defense method, it faces significant challenges: 1) simultaneously limiting the fitting of clean and poisoned samples induces the degradation of clean accuracy, and 2) maintaining model stability struggles when poisoned samples dominate the target class. To address these challenges, we propose the Bi-optimization Training Strategy, which integrates robust training with poisoned sample filtering techniques and conducts asynchronous optimization to complete the defense. Next, to implement this strategy, we combine the Differentially Private training algorithm with the Confusion training method to unveil a practical defense framework (DPC). This approach focuses on filtering out poisoned samples and retraining the model with the rest. To take full advantage of inherent stability of the differentially private training algorithm, even the poisoned samples dominate the target class, we adopt self-supervised pre-training to treat poisoned samples as outliers in the latent space. Then, the supervised fine-tuning algorithm enhanced with differential privacy can effectively limit the fitting of these poisoned samples. Additionally, we adaptively adjust the strength of differential privacy protection based on insights from filtered samples, improving clean sample fitting and further strengthening poison samples detection. Finally, our extensive experiments demonstrate that DPC (Our code is publicly available at https://github.com/yyk1997/DPC) preserves clean accuracy effectively while providing robust backdoor protection.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FuCXSLS24,
+	author = {Jiaxuan Fu and
+                  Ke Cheng and
+                  Yuheng Xia and
+                  Anxiao Song and
+                  Qianxing Li and
+                  Yulong Shen},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Private Decision Tree Evaluation with Malicious Security via Function
+                  Secret Sharing},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {310--330},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_16},
+	doi = {10.1007/978-3-031-70890-9\_16},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FuCXSLS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Private Decision Tree Evaluation (PDTE) allows the client to use a decision tree classification model on the server to classify their private data, without revealing the data or the classification results to the server. Recent advancements in PDTE have greatly enhanced its effectiveness in scenarios involving semi-honest security, offering a viable and secure alternative to traditional, less secure approaches for decision tree evaluation. However, this model of semi-honest security may not always align well with real-world problems. In this work, we present FSSTree, a malicious-secure three-party PDTE protocol using function secret sharing (FSS). FSSTree achieves its high performance against malicious adversaries via several innovative cryptographic designs. Especially, 1) we transform a comparison operation into a prefix parity query problem, allowing us to implement malicious-secure comparisons rapidly using lightweight and verifiable FSS. 2) Building upon this, we further propose a constant-round protocol for securely evaluating Conditional Oblivious Selection (COS). 3) We utilize these optimized protocols to enhance the PDTE processes, achieving a considerable decrease in both communication costs and the number of rounds. The experimental results show that FSSTree reduces the runtime in a WAN environment by up to \\(22.3\\times \\) times and saves up to \\(4.1 \\times \\) the communication cost compared to the state-of-the-art work.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuLT24,
+	author = {Keyang Liu and
+                  Xingxin Li and
+                  Tsuyoshi Takagi},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Review the Cuckoo Hash-Based Unbalanced Private Set Union: Leakage,
+                  Fix, and Optimization},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {331--352},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_17},
+	doi = {10.1007/978-3-031-70890-9\_17},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuLT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A Private Set Union (PSU) protocol involves two participants-the sender and receiver-computing the union of their privately held sets, X and Y, and outputs the result to the receiver. PSU protocols are categorized into balanced (\\(|X| \\approx |Y|\\)) and unbalanced (\\(|X| \\ll |Y|\\) or \\(|X| \\gg |Y|\\)) settings. Tu et al. (CCS 2023) developed the first efficient unbalanced PSU (\\(|X| \\ll |Y|\\)) protocol using cuckoo hashing and a novel permuted Reversed Private Membership Test. In this paper, we reassess Tu et al.’s protocol and present a statistical and computational leakage attack targeting their Hash + RPMT framework. We estimate the lower bound of our attack’s success probability and highlight how Tu’s parameter choices lead to leaks. To counter these vulnerabilities, we offer two mitigation strategies with different tradeoffs. Finally, we optimize the p-RPMT protocol by introducing a new shuffled-PMT (s-PMT), which eliminates one permutation round at no extra cost.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/EklundIWPR24,
+	author = {David Eklund and
+                  Alfonso Iacovazzi and
+                  Han Wang and
+                  Apostolos Pyrgelis and
+                  Shahid Raza},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{BMI:} Bounded Mutual Information for Efficient Privacy-Preserving
+                  Feature Selection},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {353--373},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_18},
+	doi = {10.1007/978-3-031-70890-9\_18},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/EklundIWPR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce low complexity bounds on mutual information for efficient privacy-preserving feature selection with secure multi-party computation (MPC). Considering a discrete feature with N possible values and a discrete label with M possible values, our approach requires O(N) multiplications as opposed to O(NM) in a direct MPC implementation of mutual information. Our experimental results show that for regression tasks, we achieve a computation speed up of over 1,000\\(\\times \\) compared to a straightforward MPC implementation of mutual information, while achieving similar accuracy for the downstream machine learning model.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GargT24,
+	author = {Sonakshi Garg and
+                  Vicen{\c{c}} Torra},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Task-Specific Knowledge Distillation with Differential Privacy in
+                  LLMs},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {374--389},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_19},
+	doi = {10.1007/978-3-031-70890-9\_19},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GargT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Large Language Models (LLMs) have demonstrated state-of-the-art performance across various applications. However, these models which consists of millions of parameters still face challenges due to their computational inefficiency during inference time. In many real-time tasks, the inference time of the tasks should be in the order of milliseconds to be useful. Deploying LLMs in real-time requires reducing inference time. One effective approach is model compression, which reduces the model’s parameters. Also, ensuring data privacy is crucial when using LLMs due to their vulnerability to privacy attacks. To address this, LLMs should be trained with Differential Privacy (DP) on private data. Developing a compact, efficient, and private domain-specific language model is an active area of research. To facilitate the deployment of efficiently compressed models with DP while minimizing any degradation in model utility, we propose our framework, Task-Specific Knowledge Distillation with Differential Privacy. In our approach, we prioritize task-specific distillation that generally enhances the performance of downstream tasks unlike traditional methods. Additionally, we leverage transfer learning by utilizing pre-trained models trained on similar tasks, and then use these models for private fine-tuning. We also emphasized on the initialization of student models with pre-trained models from open domains. We demonstrate the effectiveness of our framework on the GLUE benchmark datasets, employing the BERT-base model as our teacher model, and utilizing BERT-tiny and DistilBERT models as student models. Our framework showcases comparable accuracy to non-private learning methods while also improving the accuracy of student models compared to existing baselines. Remarkably, we achieve this while reducing the parameters of student models by 95%.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SunDMZXLF24,
+	author = {Yulian Sun and
+                  Li Duan and
+                  Ricardo Mendes and
+                  Derui Zhu and
+                  Yue Xia and
+                  Yong Li and
+                  Asja Fischer},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Exploiting Internal Randomness for Privacy in Vertical Federated Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {390--409},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_20},
+	doi = {10.1007/978-3-031-70890-9\_20},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SunDMZXLF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vertical Federated Learning (VFL) is becoming a standard collaborative learning paradigm with various practical applications. Randomness is essential to enhancing privacy in VFL, but introducing too much external randomness often leads to an intolerable performance loss. Instead, as it was demonstrated for other federated learning settings, leveraging internal randomness – as provided by variational autoencoders (VAEs) –can be beneficial. However, the resulting privacy has never been quantified so far, nor has the approach been investigated for VFL. We therefore propose a novel differential privacy (DP) estimate, denoted as distance-based empirical local differential privacy (\\(\\textsf{dELDP}\\)). It allows us to empirically bound DP parameters of models or model components, quantifying the internal randomness with appropriate distance and sensitivity metrics. We apply \\(\\textsf{dELDP}\\) to investigate the DP of VAEs and observe values up to \\(\\epsilon \\approx 6.4\\) and \\(\\delta = 2^{-32}\\). Based on this, to link the \\(\\textsf{dELDP}\\) parameters to the privacy of VAE-including VFL systems in practice, we conduct comprehensive experiments on the robustness against state-of-the-art privacy attacks. The results illustrate that the VAE system is robust against feature reconstruction attacks and outperforms other privacy-enhancing methods for VFL, especially when the adversary holds 75% of the features during label inference attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CortierDM24,
+	author = {V{\'{e}}ronique Cortier and
+                  Alexandre Debant and
+                  Florian Moser},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Code Voting: When Simplicity Meets Security},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {410--429},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_21},
+	doi = {10.1007/978-3-031-70890-9\_21},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/CortierDM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Swiss Chancellery has developed highly demanding requirements in terms of security for electronic voting. A few protocols have been proposed that meet the requirements. We propose a very simple protocol that satisfies the Swiss requirements while achieving an additional property: secrecy against a dishonest voting device, thanks to code voting. One key feature of our protocol is to use very short codes (typically one or two digits), so that it can be easily used by voters. Moreover, it only relies on standard primitives. Using the tool ProVerif, we formally prove vote privacy and end-to-end verifiability under the trust model of the Swiss Chancellery, assuming a dishonest voting device.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChenLCFYSH24,
+	author = {Yu Chen and
+                  Lin Liu and
+                  Rongmao Chen and
+                  Shaojing Fu and
+                  Yuexiang Yang and
+                  Jiangyong Shi and
+                  Liangzhong He},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Speedy Privacy-Preserving Skyline Queries on Outsourced Data},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {430--450},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_22},
+	doi = {10.1007/978-3-031-70890-9\_22},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChenLCFYSH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Supporting efficient and secure skyline query services on outsourced data remains an ongoing challenge, given the fact that existing solutions either incur significant overhead due to the underlying algorithm traversing the entire dataset or raise privacy issues when specific data structures are introduced. Motivated by addressing these limitations, this work proposes the Speedy and Privacy-Preserving Skyline Query scheme (SPSQ) to support efficient skyline queries that preserve the privacy requirements of datasets, skylines, queries, and indirect privacy with low online computational costs. SPSQ is an optimized distributed skyline diagram constructed by a novel privacy-preserving set intersection with the deduplication algorithm. Moreover, it converts the skyline queries into a lightweight polynomial-based private information retrieval for diagrams to reduce user-perceived latency. The quadrant skyline is extracted directly while the retrieval scale of the dynamic skyline is rapidly reduced by around 100\\(\\times \\). We also carefully analyze its security and conduct experimental evaluations on different datasets. The results show that our SPSQ is more efficient than current works, and it is at least an order of magnitude faster in computational complexity than the state-of-the-art with the same security level.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BeltrameCGMO24,
+	author = {Mirco Beltrame and
+                  Mauro Conti and
+                  Pierpaolo Guglielmin and
+                  Francesco Marchiori and
+                  Gabriele Orazi},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {RedactBuster: Entity Type Recognition from Redacted Documents},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14983},
+	pages = {451--470},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70890-9\_23},
+	doi = {10.1007/978-3-031-70890-9\_23},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BeltrameCGMO24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The widespread exchange of digital documents in various domains has resulted in abundant private information being shared. This proliferation necessitates redaction techniques to protect sensitive content and user privacy. While numerous redaction methods exist, their effectiveness varies, with some proving more robust than others. As such, the literature proposes several deanonymization techniques, raising awareness of potential privacy threats. However, while none of these methods are successful against the most effective redaction techniques, these attacks only focus on the anonymized tokens and ignore the sentence context. In this paper, we propose RedactBuster, the first deanonymization model using sentence context to perform Named Entity Recognition on redacted text. Our methodology leverages fine-tuned state-of-the-art Transformers and Deep Learning models to determine the anonymized entity types in a document. We test RedactBuster against the most effective redaction technique and evaluate it using the publicly available Text Anonymization Benchmark (TAB). Our results show accuracy values up to 0.985 regardless of the document nature or entity type. In raising awareness of this privacy issue, we propose a countermeasure we call character evasion that helps strengthen the secrecy of sensitive information. Furthermore, we make our model and testbed open-source to aid researchers and practitioners in evaluating the resilience of novel redaction techniques and enhancing document privacy.}
+}

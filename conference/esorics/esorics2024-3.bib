@@ -1,0 +1,583 @@
+@inproceedings{DBLP:conf/esorics/ShiTCYS24,
+	author = {Yangyang Shi and
+                  Linan Tian and
+                  Liwei Chen and
+                  Yanqi Yang and
+                  Gang Shi},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Scheduled Execution-Based Binary Indirect Call Targets Refinement},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_1},
+	doi = {10.1007/978-3-031-70896-1\_1},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ShiTCYS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Inferring binary indirect call targets is challenging due to dynamic generation and lack of symbol information in stripped binaries. Although type analysis and points-to analysis methods aid the inference, existing methods still yield high false positives. This paper introduces a novel scheduled execution framework to identify indirect call targets with low false positives. We achieve this by executing each basic block once and then combining the execution flow and unexecuted states to infer indirect call targets that were not generated during execution. We implemented the SchedExec prototype and evaluated it with SPEC2006 integer benchmarks. Results show SchedExec’s average precision rate exceeds that of existing state-of-the-art binary static analysis tool, BPA, by 40.3%, and even outperforms the source code type analysis tool, LLVM-CFI, by 30.1%. Besides, SchedExec’s average execution time is 58.1% lower than that of BPA.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MallojulaLDL24,
+	author = {Prashanthi Mallojula and
+                  Fengjun Li and
+                  Xiaojiang Du and
+                  Bo Luo},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Companion Apps or Backdoors? On the Security of Automotive Companion
+                  Apps},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {24--44},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_2},
+	doi = {10.1007/978-3-031-70896-1\_2},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/MallojulaLDL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automotive companion apps are mobile apps designed to remotely connect with cars to provide features such as diagnostics, logging, navigation, and safety alerts. Specifically, onboard diagnostics (OBD) based mobile applications directly communicate with the in-vehicle network through the OBD device. This can lead to several security issues, for instance, onboard information of vehicles can be tracked or altered through a malicious or vulnerable app. We conduct a comprehensive measurement study including static, runtime, and network traffic analysis of OBD companion apps. Our analysis has been applied to 125 Android mobile applications available on the Google Play Store. We identify a set of vulnerabilities and further validate these vulnerabilities with real-world vehicles. We show that 70% of the apps have vulnerabilities that can lead to private information leakage, property theft, and direct risk while driving. For instance, 18 apps could connect to open OBD dongles without requiring any authentication, accept arbitrary CAN commands as inputs from the (potentially malicious) user, and deliver the commands to the CAN bus without any validation. We discuss the possible countermeasures and also make responsible disclosures to app developers.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TereszkowskiKaminskiDS24,
+	author = {Michal Tereszkowski{-}Kaminski and
+                  Santanu Kumar Dash and
+                  Guillermo Suarez{-}Tangil},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {A Study of Malicious Source Code Reuse Among GitHub, StackOverflow
+                  and Underground Forums},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {45--66},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_3},
+	doi = {10.1007/978-3-031-70896-1\_3},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/TereszkowskiKaminskiDS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To date, most analysis of collaboration between malware authors has been performed on meta-data and compiled binaries, while ignoring artifacts present in the source code. We collect a vast amount of malicious source code from Underground Forums posts, Underground Forum code attachments, and GitHub repositories and devise a methodology that allows us to filter out most auxiliary code, leaving the measurement to focus on malicious code. We leverage this to perform an in-depth measurement of the reuse of malicious code between these malware centers as well as StackOverflow. We find that our methodology has high precision in identifying malicious code (93.1%) and provides a contemporary snapshot of malware code reuse across the Web, offering insights into the manners in which this takes place.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LuoXX24,
+	author = {Yu Luo and
+                  Weifeng Xu and
+                  Dianxiang Xu},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Predicting Code Vulnerability Types via Heterogeneous {GNN} Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {67--87},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_4},
+	doi = {10.1007/978-3-031-70896-1\_4},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LuoXX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Graph Neural Network (GNN)-based techniques have demonstrated significant success in detecting code vulnerability. Due to the great variety of code vulnerabilities, the binary prediction outcomes offer limited support for accurate debugging and pinpointing vulnerabilities across different types. Additionally, the prevalent use of homogeneous GNN training has constrained the ability to effectively model the diverse relationships existing between code elements that contribute to various vulnerabilities. This paper introduces an innovative approach using a heterogeneous GNN framework for the prediction of code vulnerability types. Our method begins with the construction of Inter-Procedural Compressed Code Property Graphs (ICCPGs), designed to capture the structural and contextual attributes of code components. Then, we establish a heterogeneous GNN model to learn features by leveraging the diverse relationships within ICCPGs, thereby enabling the classification of vulnerabilities into specific types. The proposed approach achieved an accuracy of 92.8% in the C language, covering up to 108 different vulnerability types, and the top-2 classification further improved this score to 95.5%. This performance surpasses the previous state-of-the-art methods, marking a notable 4.6% improvement over the best prior results. Additionally, the method also demonstrated strong performance in Java with 90 types of vulnerabilities, achieving 94.1% accuracy, which is further enhanced to 96.7% with top-2 classification.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CaoHGW24,
+	author = {Shangtong Cao and
+                  Ningyu He and
+                  Yao Guo and
+                  Haoyu Wang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {WASMixer: Binary Obfuscation for WebAssembly},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {88--109},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_5},
+	doi = {10.1007/978-3-031-70896-1\_5},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/CaoHGW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {WebAssembly (Wasm) is an emerging binary format that draws great attention from the community. However, Wasm binaries are weakly protected, as they can be read, edited, and manipulated by adversaries using either the officially provided readable text format or some advanced binary analysis tools. Reverse engineering of Wasm binaries is often used for nefarious intentions, e.g., identifying and exploiting both classic and Wasm-specific vulnerabilities exposed in binaries. However, no Wasm-specific obfuscator is available to secure the Wasm binaries. To fill this gap, we present WASMixer, the first general-purpose Wasm binary obfuscator, enforcing data-level (string literals and readable names) and code-level (control flow and instructions) obfuscation against Wasm binaries. We propose a series of key techniques to overcome challenges during Wasm binary rewriting, including a runtime on-demand en(de)cryption method to minimize the performance impact on memory data, and code splitting/reconstructing algorithms to handle Wasm highly-structured control flow. Extensive experiments demonstrate the correctness, effectiveness and efficiency of WASMixer. Our research has shed light on the promising direction of Wasm binary research, including Wasm code protection, Wasm binary diversification, and the attack-defense arm race of Wasm binaries.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AhnJWL24,
+	author = {Pyeongju Ahn and
+                  Yeonseok Jang and
+                  Seunghoon Woo and
+                  Heejo Lee},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {BloomFuzz: Unveiling Bluetooth {L2CAP} Vulnerabilities via State Cluster
+                  Fuzzing with Target-Oriented State Machines},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {110--129},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_6},
+	doi = {10.1007/978-3-031-70896-1\_6},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/AhnJWL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bluetooth technologies are widely utilized across various devices. Despite the advantages, the lack of security in Bluetooth can pose critical threats. Existing approaches that rely solely on Bluetooth specification have failed to bridge the gap between documentation and implemented devices. Therefore, they struggle to (1) precisely generate state machines for target devices and (2) accurately track states during the fuzzing process, resulting in low fuzzing efficiency. In this paper, we propose BloomFuzz, a stateful fuzzer to discover vulnerabilities in Bluetooth Logical\xa0Link Control and Adaptation Protocol (L2CAP) layer. Utilizing the concept of the state cluster, which is a set of one or more states with similar attributes, BloomFuzz \xa0can generate a target-oriented state machine by pruning unimplemented states (missing states) and addressing states that are implemented but not introduced in the specification (hidden states). Furthermore, BloomFuzz \xa0enhances fuzzing efficiency by generating valid test packets for each cluster via cluster-based state machine tracking. When we applied BloomFuzz \xa0to real-world Bluetooth devices, we observed that BloomFuzz \xa0outperformed existing L2CAP fuzzers by (1) discovering 56 potential vulnerabilities (more than twice compared to existing fuzzers), (2) precisely generating a target-oriented state machine, (3) significantly reducing the probability of test packets being rejected (from 76% to 23%), and (4) producing nine times more valid malformed test packets. Our proposed approach can contribute to preventing threats within L2CAP, thereby rendering a secure Bluetooth environment.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhongCZXDXZLLH24,
+	author = {Nanyu Zhong and
+                  Yueqi Chen and
+                  Yanyan Zou and
+                  Xinyu Xing and
+                  Jinwei Dong and
+                  Bingcheng Xian and
+                  Jiaxu Zhao and
+                  Menghao Li and
+                  Binghong Liu and
+                  Wei Huo},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {TGRop: Top Gun of Return-Oriented Programming Automation},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {130--152},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_7},
+	doi = {10.1007/978-3-031-70896-1\_7},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhongCZXDXZLLH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given the prevalence of Return-Oriented Programming (ROP) in exploitation, automating ROP has become a cornerstone of security research and education. Many security measures are evaluated against and thus restricted by the practical capability of ROP. However, the ROP automation state-of-the-art approaches have fundamental limitations in their gadget utilization and fall short of delivering the promise. To overcome these fundamental limitations, we design and implement TGRop which advances ROP automation to a new level. TGRop can leverage gadgets that operate memory and perform complex arithmetic calculations. By breaking down the entire computation into sub-goals, TGRop effectively reduces search space and thus maximizes the utility of the SAT/SMT solver. More importantly, TGRop employs a systematic approach to resolving data dependencies and eliminating side effects. Our thorough measurement shows that TGRop outperforms all existing approaches by more than 1.62–3.11 times. Additionally, we validate the rationale behind its design via analytical experiments. When running TGRop against the newest ROP mitigations, we discovered their weaknesses and reported to vendors.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HatchikianHoudotWBH24,
+	author = {Jean{-}Loup Hatchikian{-}Houdot and
+                  Pierre Wilke and
+                  Fr{\'{e}}d{\'{e}}ric Besson and
+                  Guillaume Hiet},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Formal Hardware/Software Models for Cache Locking Enabling Fast and
+                  Secure Code},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {153--173},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_8},
+	doi = {10.1007/978-3-031-70896-1\_8},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HatchikianHoudotWBH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Constant-time programming is the de facto standard to protect security-sensitive software against cache-based timing attacks. This software countermeasure is effective but may incur a significant performance overhead and require a substantial rewrite of the code. In this work, we study a secure cache-locking hardware mechanism which eases the writing of secure code and has little execution overhead. To reason about the security of software, we propose a high-level leakage model such that accesses to locked memory addresses do not generate any observable leakage. To ensure the adequacy of this leakage model, we also propose a concrete hardware leakage\xa0model for a RISC-V microcontroller where the secure code may be interrupted, at any time, by some arbitrary malicious code. Using the Observational Non-Interference setting, we show formally that the security of the software model is preserved at the hardware level. We evaluate the effectiveness and performance of this mechanism, notably on block ciphers. We also propose and evaluate a new constant-time sorting algorithm.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuWXZ24,
+	author = {Xinrong Liu and
+                  He Wang and
+                  Meng Xu and
+                  Yuqing Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {SerdeSniffer: Enhancing Java Deserialization Vulnerability Detection
+                  with Function Summaries},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {174--193},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_9},
+	doi = {10.1007/978-3-031-70896-1\_9},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuWXZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Java deserialization vulnerabilities arise when unexpected data triggers dangerous function calls during deserialization processes. Current deserialization vulnerability detection faces challenges such as path explosion caused by polymorphism\xa0[29] in Java, leading to incomplete analysis and inefficiency. In this paper, we present SerdeSniffer, a new Java deserialization vulnerability detection tool to address these challenges. SerdeSniffer is the first tool that employs a bottom-up function summarization technique to mitigate path explosion effectively. Specifically, SerdeSniffer uses function summaries during interprocedural analysis to effectively prevent multiple calculations in taint analysis and utilizes fixpoint computation to analyze issues related to function recursion and cyclic calls. To avoid omissions in summary information, we use the over-tainting method in taint analysis and treat uninitialized variables as taint sources. We also merge the summary information of called functions to facilitate polymorphic analysis. Furthermore, SerdeSniffer includes a vulnerability detection algorithm that starts from dangerous functions and uses summary information and propagation rules in a bottom-up approach, and employs a sanitizer to eliminate ineffective propagation paths. In comparative experiments based on ysoserial [23], a tool for generating payloads that exploit Java object deserialization, SerdeSniffer identified nine more historical gadget chains than other open source tools. In testing the latest versions of components, SerdeSniffer discovered three new gadget chains within 600\xa0s, the longest being 14 nodes, two of these new chains confirmed by CVEs in the PUBLISHED state.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiuSZZHNLC24,
+	author = {Qirui Liu and
+                  Wenbo Shen and
+                  Jinmeng Zhou and
+                  Zhuoruo Zhang and
+                  Jiayi Hu and
+                  Shukai Ni and
+                  Kangjie Lu and
+                  Rui Chang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Interp-flow Hijacking: Launching Non-control Data Attack via Hijacking
+                  eBPF Interpretation Flow},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {194--214},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_10},
+	doi = {10.1007/978-3-031-70896-1\_10},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiuSZZHNLC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {eBPF (extended Berkeley Packet Filter) is regarded as a secure alternative to kernel modules for enhancing kernel functionalities. As an emerging kernel subsystem, eBPF should not be exploited by kernel vulnerabilities to bypass established protection. Unfortunately, the exploitability of eBPF has not been fully studied so far. This paper investigates the exploitability of eBPF. Our study uncovers a previously unidentified security risk: eBPF bytecode lacks injection and hijack prevention, thus eBPF interpretation flow can be hijacked to execute malicious bytecode. To understand the risk, we propose Interp-flow Hijacking, a novel attack that hijacks the eBPF interpretation flow to circumvent kernel code and Control Flow Integrity (CFI) protections, thereby enabling arbitrary code execution within the kernel. To realize the attack, we propose a novel technique named Tailcall Trampoline for hijacking the interpretation flow without violating CFI. To evaluate the exploitability, we formulate CVE requirements and give techniques to pivot different types of CVEs. The evaluation of 16 real CVEs from different kernel subsystems shows that Interp-flow Hijacking can enhance all their capabilities in bypassing kernel protection. Finally, we design and implement a protection mechanism to safeguard against Interp-flow Hijacking. We are communicating with the Linux community to address the identified issues.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ShinCLKL24,
+	author = {Hojune Shin and
+                  Jina Choi and
+                  Dain Lee and
+                  Kyoungok Kim and
+                  Younho Lee},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Fully Homomorphic Training and Inference on Binary Decision Tree and
+                  Random Forest},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {217--237},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_11},
+	doi = {10.1007/978-3-031-70896-1\_11},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ShinCLKL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces a new method for training decision trees and random forests using CKKS homomorphic encryption (HE) in cloud environments, enhancing data privacy from multiple sources. The innovative Homomorphic Binary Decision Tree (HBDT) method utilizes a modified Gini Impurity index (MGI) for node splitting in encrypted data scenarios. Notably, the proposed training approach operates in a single cloud security domain without the need for decryption, addressing key challenges in privacy-preserving machine learning. We also propose an efficient method for inference utilizing only addition for path evaluation even when both models and inputs are encrypted, achieving O(1) multiplicative depth. Experiments demonstrate that this method surpasses the previous study by Akavia et al.’s by at least 3.7 times in the speed of inference. The study also expands to privacy-preserving random forests, with GPU acceleration ensuring feasibly efficient performance in both training and inference.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhaoWW24,
+	author = {Feixiang Zhao and
+                  Huaxiong Wang and
+                  Jian Weng},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Constant-Size Unbounded Multi-hop Fully Homomorphic Proxy Re-encryption
+                  from Lattices},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {238--258},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_12},
+	doi = {10.1007/978-3-031-70896-1\_12},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhaoWW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proxy re-encryption is a cryptosystem that achieves efficient encrypted data sharing by allowing a proxy to transform a ciphertext encrypted under one key into another ciphertext under a different key. Homomorphic proxy re-encryption (HPRE) extends this concept by integrating homomorphic encryption, allowing not only the sharing of encrypted data but also the homomorphic computations on such data. The existing HPRE schemes, however, are limited to a single or bounded number of hops of ciphertext re-encryptions. To address this limitation, this paper introduces a novel lattice-based, unbounded multi-hop fully homomorphic proxy re-encryption (FHPRE) scheme, with constant-size ciphertexts. Our FHPRE scheme supports an unbounded number of re-encryption operations and enables arbitrary homomorphic computations over original, re-encrypted, and evaluated ciphertexts. Additionally, we propose a potential application of our FHPRE scheme in the form of a non-interactive, constant-size multi-user computation system for cloud computing environments.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiXZH24,
+	author = {Zhiwei Li and
+                  Jun Xu and
+                  Yanli Zou and
+                  Lei Hu},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Key Recovery Attack on CRYSTALS-Kyber and Saber KEMs in Key Reuse
+                  Scenario},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {259--278},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_13},
+	doi = {10.1007/978-3-031-70896-1\_13},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LiXZH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Crystals-Kyber, a key encapsulation mechanism (KEM) whose security is based on the Module-LWE problem, has recently been selected by NIST as part of its post-quantum cryptography initiative. At ASIACRYPT 2021, Qin et al. gave a method to evaluate the number of forged ciphertexts to recover a reused private key. For CPA-secure Kyber KEM, key mismatch attack is applied to get the first position of the decrypted message. However, for CCA-secure KEM, the Fujisaki-Okamoto transformation is used to detect the forged ciphertexts, thus, side channel techniques are necessary to get the first position of the decrypted message. Once the first position is obtained, the reused private key can be recovered. Using Qin et al.’s method the adversary should forge ciphertexts for several times, but the number of forged ciphertexts does not reach the Huffman bound. In this paper, we propose a generalized key mismatch attack based on dynamic chunking approach for CPA-secure Kyber KEM, and a new key recovery attack based on linear programming for CCA-secure Kyber KEM, where the number of forged ciphertexts reaches the Huffman bound. Meanwhile, the two approaches can also be applied to Saber KEM, which is the third round candidate scheme.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LafourcadeMOR24,
+	author = {Pascal Lafourcade and
+                  Lola{-}Baie Mallordy and
+                  Charles Olivier{-}Anclin and
+                  L{\'{e}}o Robert},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Secure Keyless Multi-party Storage Scheme},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {279--298},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_14},
+	doi = {10.1007/978-3-031-70896-1\_14},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LafourcadeMOR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Using threshold secret sharing, we propose a solution tailored for forgetful clients (i.e., not required to keep any cryptographic secret) while accommodating the dynamic nature of multi-cloud deployments. Furthermore, we delegate the computation and distribution of shares to an intermediate server (proxy), effectively minimizing the client workload. We propose two variants of a keyless, space-efficient multi-cloud storage scheme named \\(\\textsf{KAPRE}\\) and \\(\\textsf{KAME}\\). Our solution \\(\\textsf{KAPRE}\\) requires less communications and computations, while \\(\\textsf{KAME}\\) preserves data confidentiality against a colluding proxy. Our protocols offer robust guarantees for data integrity, and we demonstrate the proxy’s ability to identify and attribute blame to servers responsible for sending corrupted shares during data reconstruction. We establish a comprehensive security model and provide proofs of the security properties of our protocols. To complement this theoretical analysis, we present a proof-of-concept to illustrate the practical implementation of our proposed scheme.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HuiC24,
+	author = {Xiangyu Hui and
+                  Sid Chi{-}Kin Chau},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {tt LLRing: Logarithmic Linkable Ring Signatures with Transparent Setup},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {299--319},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_15},
+	doi = {10.1007/978-3-031-70896-1\_15},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HuiC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Linkable ring signatures are an important cryptographic primitive for anonymized applications, such as e-voting, e-cash and confidential transactions. To eliminate backdoor and overhead in a trusted setup, transparent setup in the discrete logarithm or pairing settings has received considerable attention in practice. Recent advances have improved the proof sizes and verification efficiency of linkable ring signatures with a transparent setup to achieve logarithmic bounds. Omniring (CCS ’19) and RingCT 3.0 (FC ’20) proposed linkable ring signatures in the discrete logarithm setting with logarithmic proof sizes with respect to the ring size, whereas DualDory (ESORICS ’22) achieves logarithmic verifiability in the pairing setting. We make three novel contributions in this paper to improve the efficiency and soundness of logarithmic linkable ring signatures: (1) We identify an attack on DualDory that breaks its linkability. (2) To eliminate such an attack, we present a new linkable ring signature scheme in the pairing setting with logarithmic verifiability. (3) We improve the verification efficiency of linkable ring signatures in the discrete logarithm setting, by a technique of reducing the number of group exponentiations for verification in Omniring by 50%. Our technique is applicable to general inner-product relation proofs, which might be of independent interest. Finally, we empirically evaluate our schemes and compare them with the extant linkable ring signatures.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/RadoyHS24,
+	author = {Maximilian Radoy and
+                  Sven Hebrok and
+                  Juraj Somorovsky},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {In Search of Partitioning Oracle Attacks Against {TLS} Session Tickets},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {320--340},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_16},
+	doi = {10.1007/978-3-031-70896-1\_16},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/RadoyHS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In 2021, researchers introduced a new type of chosen-ciphertext attack known as the partitioning oracle attack. This attack uses properties of Carter-Wegman MACs in Authenticated Encryption with Associated Data (AEAD) schemes, like AES-GCM or ChaCha20-Poly1305, to recover the key. These algorithms are employed in Transport Layer Security (TLS), a widely used protocol to secure communication on the internet. At first glance, it might seem that these attacks are irrelevant to TLS. However, our focus shifts to the session ticket mechanism used in TLS. This mechanism speeds up the connection process by allowing the reuse of previously negotiated parameters, including key material. Servers encrypt session tickets using the Session Ticket Encryption Key (STEK) to protect the ticket contents. Should the STEK become compromised, it enables attackers to decrypt intercepted connections or impersonate a server. We tested six TLS implementations using AES-GCM or ChaCha20-Poly1305 to protect session tickets to determine whether they are susceptible to partitioning oracle attacks. We identified three libraries that provide an oracle and one that provides a limited oracle. We analyzed the market share and exploitability of the vulnerable libraries using large-scale scans. Our results suggest that the proposed attack does not provide a significant advantage over simple bruteforce decryption due to library-specific formats of session tickets.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GokayBA24,
+	author = {Huseyin Gokay and
+                  Foteini Baldimtsi and
+                  Giuseppe Ateniese},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Atomic Swaps for Boneh-Lynn-Shacham {(BLS)} Based Blockchains},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {341--361},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_17},
+	doi = {10.1007/978-3-031-70896-1\_17},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GokayBA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Atomic swaps are crucial in blockchains, enabling secure coin exchanges between users; either both parties receive their coins, or the transaction fails entirely. While the BLS signature scheme offers advantages for this application, existing BLS-compatible atomic swap protocols often rely on third-party intermediaries. This reliance can introduce points of failure and dependencies that detract from the decentralized nature of blockchains. Our novel protocol addresses this limitation, fully leveraging the signature aggregation capabilities of BLS for a self-contained solution. This design ensures seamless integration within any blockchain system supporting BLS without the need for timelock scripting functionalities.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HwangJKKT24,
+	author = {Seoyeon Hwang and
+                  Stanislaw Jarecki and
+                  Zane Karl and
+                  Elina van Kempen and
+                  Gene Tsudik},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {\emph{P}sfIVA: Privacy-Preserving Identity Verification Methods for
+                  Accountless Users via Private List Intersection and Variants},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {362--382},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_18},
+	doi = {10.1007/978-3-031-70896-1\_18},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HwangJKKT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Several prominent privacy regulation (e.g., CCPA and GDPR) require service providers to let consumers request access to, correct, or delete, their personal data. Compliance necessitates verification of consumer identity. This is not a problem for consumers who already have an account with a service provider since they can authenticate themselves via a successful account log-in. However, there are no such methods for accountless consumers, even though service providers routinely collect data about casual consumers, i.e., those without accounts. Currently, in order to access their collected data, accountless consumers are asked to provide Personally Identifiable Information (PII) to service providers, which is privacy-invasive. To address this problem, we propose \\(\\mathcal {P}\\textsf{IVA}\\) : Privacy-Preserving Identity Verification for Accountless Users, a technique based on Private List Intersection (PLI) and its variants. First, we introduce PLI, a close relative of private set intersection (PSI), a well-known cryptographic primitive that allows two or more mutually suspicious parties to compute the intersection of their private input sets. PLI takes advantage of the (ordered and fixed) list structure of each party’s private set. As a result, PLI is more efficient than PSI. We also explore PLI variants: PLI-cardinality (PLI-CA), threshold-PLI (t-PLI), and threshold-PLI-cardinality (t-PLI-CA), all of which yield less information than PLI. These variants are progressively better suited for addressing the accountless consumer authentication problem. We prototype \\(\\mathcal {P}\\textsf{IVA}\\) and compare its performance against techniques based on regular PSI and garbled circuits (GCs). Results show that proposed PLI and PLI-CA constructions are more efficient than GC-based techniques, in terms of both computation and communication overheads. While GC-based t-PLI and t-PLI-CA execute faster, proposed constructs greatly outperform the former in terms of bandwidth, e.g., our t-PLI protocol consumes \\(16\\times \\) less bandwidth. We also show that proposed protocols can be made secure against malicious adversaries, with only moderate increases in overhead. These variants outperform their GC-based counterparts by at least one order of magnitude.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SuCQG24,
+	author = {Jiuheng Su and
+                  Zhili Chen and
+                  Haifeng Qian and
+                  Junqing Gong},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Efficient and Scalable Circuit-Based Protocol for Multi-party Private
+                  Set Intersection},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {383--402},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_19},
+	doi = {10.1007/978-3-031-70896-1\_19},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SuCQG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose a novel protocol for computing a circuit which implements the multi-party Private Set Intersection (PSI) functionality. The circuit-based approach has advantages over using custom protocols to achieve this task, since many applications of PSI do not require the computation of the intersection itself, but rather specific functional computations over the items in the intersection. As far as we know, our proposal is the first circuit-based multi-party PSI protocol. It generalizes and optimizes the previous two-party sort-compare-shuffle PSI protocol. By designing an efficient multi-party PSI circuit with a succinct output, our protocol demonstrates both high efficiency and good scalability. The resulted protocol has input obliviousness property and achieves a complexity of \\(O(mn\\log (mn))\\) with the uniform size n of sets and the number m of parties. In order to mitigate the overhead associated with circuit-based constructions, we further enhance our protocol by simple hashing and permutation-based hashing. These tricks enable us to minimize circuit size, simultaneously attaining noteworthy reductions in both computation and communication expenses. The optimized protocol does not has input obliviousness property, but achieves an improved complexity of \\(O(mn\\log (m\\log n))\\).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WanLFJ24,
+	author = {Junping Wan and
+                  Danjie Li and
+                  Junbin Fang and
+                  Zoe L. Jiang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{LPFHE:} Low-Complexity Polynomial CNNs for Secure Inference over
+                  {FHE}},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {403--423},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_20},
+	doi = {10.1007/978-3-031-70896-1\_20},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WanLFJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning as a service (MLaaS) has gained popularity among clients. To address the privacy concerns in MLaaS, fully homomorphic encryption (FHE) has been introduced to protect clients’ data. However, FHE cannot directly evaluate the non-arithmetic activation function in convolutional neural networks (CNNs). Existing works replace the activation function with polynomials of varying degrees to obtain FHE-friendly CNNs, while having to face a trade-off between accuracy loss and latency increases. It remains a significant challenge to maintain accuracy with low latency in secure inference. \xa0\xa0\xa0We propose a framework called LPFHE to precisely approximate the essential ReLU function in CNNs using low-complexity polynomials. LPFHE supports finding the optimal approximation domain and polynomial for each ReLU function. By integrating our segmented weighted least squares algorithm with the Remez algorithm, LPFHE achieves higher approximation precision compared to existing works. Consequently, LPFHE is capable of generating a low-complexity polynomial CNN with high inference accuracy, as the low-degree polynomials preserve the properties of the ReLU function well. \xa0\xa0\xa0We implement LPFHE on ResNet20/32/44 networks on encrypted CIFAR10/100 datasets under RNS-CKKS, which shows up to a 48.7% reduction in amortized inference latency with little accuracy loss, in comparison to the previous works.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LanghoutCL24,
+	author = {Tjard Langhout and
+                  Huanhuan Chen and
+                  Kaitai Liang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {File-Injection Attacks on Searchable Encryption, Based on Binomial
+                  Structures},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14984},
+	pages = {424--443},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70896-1\_21},
+	doi = {10.1007/978-3-031-70896-1\_21},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LanghoutCL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {One distinguishable feature of file-inject attacks on searchable encryption schemes is the 100% query recovery rate, i.e., confirming the corresponding keyword for each query. The main efficiency consideration of file-injection attacks is the number of injected files. In the work of Zhang et al. (USENIX 2016), \\(|\\log _2|K||\\) injected files are required, each of which contains |K|/2 keywords for the keyword set K. Based on the construction of the uniform (s,\xa0n)-set, Wang et al. need fewer injected files when considering the threshold countermeasure. In this work, we propose a new attack that further reduces the number of injected files where Wang et al. need up to 38% more injections to achieve the same results. The attack is based on an increment (s,\xa0n)-set, which is also defined in this paper.\n}
+}

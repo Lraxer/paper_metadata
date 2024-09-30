@@ -1,0 +1,647 @@
+@inproceedings{DBLP:conf/esorics/ThomaSG24,
+	author = {Jan Philipp Thoma and
+                  Florian Stolz and
+                  Tim G{\"{u}}neysu},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Cips: The Cache Intrusion Prevention System},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_1},
+	doi = {10.1007/978-3-031-70903-6\_1},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ThomaSG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Caches are an essential component in the performance-driven memory hierarchy of modern CPUs. However, they are also known to be vulnerable against a variety of timing side-channel attacks like Prime+Probe, Flush+Reload, and others. These allow attackers to leak sensitive information across process boundaries. While detection-based approaches have proven capable of identifying cache attacks, it remains unclear how to handle a potentially malicious application once it has been classified as such. In particular, in environments with strict requirements on safety or availability, the termination of a potentially malicious process is not a viable option. In this paper we present Cips, a hardware-based Intrusion Prevention System (IPS) for cache attacks. Cips\xa0combines a lightweight hardware-based attack detection mechanism with a set of non-disruptive attack prevention techniques. Hence, when a potentially malicious process is detected Cips\xa0automatically activates appropriate countermeasures to stop the attack without interrupting the process. Our design only affects the performance when a potential attack is detected, and the effect is limited to the attacked cache sets. We implement Cips\xa0in gem5, provide a hardware prototype, and demonstrate its effectiveness against state-of-the-art cache attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChenZZQZJ24,
+	author = {Weijie Chen and
+                  Yu Zhao and
+                  Yinqian Zhang and
+                  Weizhong Qiang and
+                  Deqing Zou and
+                  Hai Jin},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {ReminISCence: Trusted Monitoring Against Privileged Preemption Side-Channel
+                  Attacks},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {24--44},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_2},
+	doi = {10.1007/978-3-031-70903-6\_2},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChenZZQZJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Trusted Execution Environments (TEEs) have long served as a prominent security measure for ensuring isolation and data privacy in cloud environments. However, their security foundations face challenges from numerous side-channel threats, particularly those involving privileged capabilities that enable potent preemption attacks. Various solutions exist to mitigate these attacks, including monitoring-based ones featured with higher efficiency. Unfortunately, existing monitoring-based solutions do not consider privileged preemption attacks and, therefore, are not qualified for trusted monitoring within TEE enclaves. In this paper, we propose ReminISCence, a novel trusted monitoring framework designed to mitigate privileged preemption side-channel attacks on TEE architectures. We present a trusted scheduling design that enforces control over the timer interrupts, which ensures the monitoring relies on untampered trusted time slices with valid lengths and cannot be bypassed via arbitrary timer preemption. Consequently, the privileged adversary is constrained to performing preemption attacks within trusted time slices solely via non-timer interrupts, which are confidentially monitored with full coverage by ReminISCence. We implement the ReminISCence prototype on off-the-shelf RISC-V hardware by extending the OpenSBI and leveraging the RISC-V HPM facility. Our evaluations demonstrate the prototype’s effectiveness and resilience to evasion in monitoring and analyzing preemption attacks of various RISC-V microarchitectural side-channels while maintaining high temporal resolution with negligible performance overhead (approximately 1% overhead at a resolution of 125 us).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/NgCLMKZ24,
+	author = {Lucien K. L. Ng and
+                  Panagiotis Chatzigiannis and
+                  Duc Viet Le and
+                  Mohsen Minaei and
+                  Ranjit Kumaresan and
+                  Mahdi Zamani},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {A Plug-and-Play Long-Range Defense System for Proof-of-Stake Blockchains},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {45--64},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_3},
+	doi = {10.1007/978-3-031-70903-6\_3},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/NgCLMKZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, many blockchain systems have progressively transitioned to proof-of-stake (PoS) consensus algorithms. These algorithms are not only more energy efficient than proof-of-work but are also well-studied and widely accepted within the community. However, PoS systems are susceptible to a particularly powerful “long-range" attack, where an adversary can corrupt the validator set retroactively and present forked versions of the blockchain. These versions would still be acceptable to clients, thereby creating the potential for double-spending. Several methods and research efforts have proposed countermeasures against such attacks. Still, they often necessitate modifications to the underlying blockchain, introduce heavy assumptions such as centralized entities, or prove inefficient for securely bootstrapping light clients. In this work, we propose a method of defending against these attacks with the aid of external servers running our protocol. Our method does not require any soft or hard-forks on the underlying blockchain and operates under reasonable assumptions, specifically the requirement of at least one honest server. Central to our approach is a new primitive called “Insertable Proof of Sequential Work" (InPoSW). Traditional\xa0PoSW ensures that a server performs computational tasks that cannot be parallelized and require a minimum execution time, effectively timestamping the input data. InPoSW additionally allows the prover to “insert" new data into an ongoing InPoSW instance. This primitive can be of independent interest for other timestamp applications. Compared to naïvely adopting prior PoSW schemes for InPoSW, our construction achieves \\({>}22\\times \\) storage reduction on the server side and \\({>}17900\\times \\) communication cost reduction for each verification.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HaoLFLD24,
+	author = {Zhiqiang Hao and
+                  Chuanyi Li and
+                  Xiao Fu and
+                  Bin Luo and
+                  Xiaojiang Du},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Leveraging Hierarchies: {HMCAT} for Efficiently Mapping {CTI} to Attack
+                  Techniques},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {65--85},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_4},
+	doi = {10.1007/978-3-031-70903-6\_4},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HaoLFLD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the advancement of cyber technology, proactive security methods such as adversary emulation and leveraging Cyber Threat Intelligence (CTI) have become increasingly essential. Currently, some methods have achieved automatic mapping of unstructured text Cyber Threat Intelligence to attack techniques that could facilitate proactive security. However, these methods do not consider the semantic relationships between CTI and attack techniques at different abstraction levels, which leads to poor performance in the classification. In this work, we propose a Hierarchy-aware method for Mapping of CTI to Attack Techniques (HMCAT). Specifically, HMCAT first extracts Indicators of Compromise (IOC) entities in the CTI with two steps, then projects the CTI with IOC entities and the corresponding attack technique into a joint embedding space. Finally, HMCAT captures the semantics relationship among text descriptions, coarse-grained techniques, fine-grained techniques and unrelated techniques through a hierarchy-aware mapping loss. Meanwhile, we also propose a data augmentation technique based on in-context learning to solve the problem of long-tailed distribution in the Adversarial Tactics, Techniques and Common Knowledge (ATT&CK) datasets, which could further improve the performance of mapping. Experimental results demonstrate that HMCAT significantly outperforms previous ML and DL methods, improving precision, recall and F-Measure by 6.6%, 13.9% and 9.9% respectively.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BezsmertnyiCE24,
+	author = {Volodymyr Bezsmertnyi and
+                  Jean{-}Michel Cioranesco and
+                  Thomas Eisenbarth},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Duplication-Based Fault Tolerance for {RISC-V} Embedded Software},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {86--104},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_5},
+	doi = {10.1007/978-3-031-70903-6\_5},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BezsmertnyiCE24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Embedded devices play critical roles in security and safety, demanding robust protection against fault injection attacks. Among the myriad of fault effects, the instruction skip fault model stands out due to its recurrent manifestation in silicon devices. Furthermore, the continually evolving landscape of hardware attacks facilitates increasingly sophisticated exploits by achieving multiple instruction skips. In this work, we propose an extension of the RISC-V debug specification which enables efficient fault injection testing of the firmware executed on an FPGA-emulated core under a commonly observed instruction skip fault model. We use insights from a fault injection campaign to harden and protect potentially exploitable instructions and propose an assembly level duplication-based approach for software fault tolerance against instruction skip applied to RISC-V architecture. Additionally, we provide a custom debugger implementation which accelerates fault injection campaign by factor of ten. By combining fault injection testing and a generic instruction duplication technique, our methodology can increase fault tolerance of the reference software while having minimal performance loss and code size overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HoCSL24,
+	author = {Bj{\"{o}}rn Ho and
+                  Huanhuan Chen and
+                  Zeshun Shi and
+                  Kaitai Liang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Similar Data is Powerful: Enhancing Inference Attacks on {SSE} with
+                  Volume Leakages},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {105--126},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_6},
+	doi = {10.1007/978-3-031-70903-6\_6},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HoCSL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable symmetric encryption (SSE) schemes provide users with the ability to perform keyword searches on encrypted databases without the need for decryption. While this functionality is advantageous, it introduces the potential for inadvertent information disclosure, thereby exposing SSE systems to various types of attacks. In this work, we introduce a new inference attack aimed at enhancing the query recovery accuracy of RefScore (presented at USENIX 2021). The proposed approach capitalizes on both similar data knowledge and an additional volume leakage as auxiliary information, facilitating the extraction of keyword matches from leaked data. Empirical evaluations conducted on multiple real-world datasets demonstrate a notable enhancement in query recovery accuracy, up to 19.5%. We also analyze the performance of the proposed attack in the presence of diverse countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WuLZZ24,
+	author = {Yifan Wu and
+                  Yinshuai Li and
+                  Hong Zhu and
+                  Yinqian Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{SAEG:} Stateful Automatic Exploit Generation},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {127--145},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_7},
+	doi = {10.1007/978-3-031-70903-6\_7},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WuLZZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The field of Automatic Exploit Generation (AEG) plays a pivotal role in the assessment of software vulnerabilities, automating the analysis for exploit creation. Although AEG systems are instrumental in probing for vulnerabilities, they often lack the capability to contend with defense mechanisms such as vulnerability mitigation, which are commonly deployed in target environments. This shortfall presents significant challenges in exploitation. Additionally, most frameworks are tailored to specific vulnerabilities, rendering their extension a complex process that necessitates in-depth familiarity with their architectures. To overcome these limitations, we introduce the SAEG framework, which streamlines the repetitious aspects of existing exploit templates through a modular and extensible state machine that builds upon the concept of an Exploit Graph. SAEG can methodically filter out impractical exploitation paths by utilizing current information and the target program’s state. Additionally, it simplifies the integration of new information leakage methods with minimal overhead and handles multi-step exploitation procedures, including those requiring the leakage of sensitive data. We demonstrate a prototype of SAEG founded on symbolic execution that can simultaneously explore heap and stack vulnerabilities. This prototype can explore and combine leakage and exploitation effectively, generating complete exploits to obtain shell access for binary files across i386 and x86_64 architectures.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ShangYYSFZJ24,
+	author = {Shang Shang and
+                  Zhongjiang Yao and
+                  Yepeng Yao and
+                  Liya Su and
+                  Zijing Fan and
+                  Xiaodan Zhang and
+                  Zhengwei Jiang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {IntentObfuscator: {A} Jailbreaking Method via Confusing {LLM} with
+                  Prompts},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {146--165},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_8},
+	doi = {10.1007/978-3-031-70903-6\_8},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ShangYYSFZJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the era of Large Language Models (LLMs), developers establish content review conditions to comply with legal, policy, and societal requirements, aiming to prevent the generation of sensitive or restricted content due to considerations like social security, privacy, and criminal justice. However, persistent attempts by attackers and security researchers to bypass content security measures have led to the emergence of various jailbreak technologies, including role-playing, adversarial suffixes, encryption, and more. This paper presents a novel LLM black-box jailbreak framework called IntentObfuscator, designed to obscure the true intention of user prompts and thereby elicit restricted content during content generation. Two examples, namely Obscure Intention and Create Ambiguity, are presented within this framework, outlining the implementation method. Experimental results highlight the effectiveness of the proposed method, which significantly improves the attack strategy against LLM content security mechanisms, referred to as the “Red Team” attack.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HuWZNC24,
+	author = {Nan Hu and
+                  Hua Wu and
+                  Hangyu Zhao and
+                  Shanshan Ni and
+                  Guang Cheng},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Breaking Through the Diversity: Encrypted Video Identification Attack
+                  Based on {QUIC} Features},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {166--186},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_9},
+	doi = {10.1007/978-3-031-70903-6\_9},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/HuWZNC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video traffic is increasingly dominating the Internet, and most video platforms encrypt their transmissions to ensure content security and user privacy. However, attackers can still leverage traffic analysis methods to identify the being-watching videos, a practice known as the video identification attack. Nevertheless, traditional methods for encrypted video identification attacks have become ineffective as video platforms adopt the combined transmission mode and the QUIC transmission protocol. The combined transmission mode diversifies video traffic patterns, and the UDP-based QUIC protocol no longer provides the TCP header information commonly exploited in existing research. These changes in the transmission environment pose new challenges for video identification attacks. To address this, we propose a novel attack method to identify encrypted QUIC videos in combined transmission scenarios. We utilize a pre-established key-value structured real fingerprint database to match transmission fingerprints corrected with QUIC features. Additionally, we design a fingerprint-matching method, HBFMM, to efficiently implement video identification attacks. We evaluate our method with real video traffic from YouTube and validate the applicability on Facebook and Instagram, achieving closed-world accuracies of 99.04%, 98.11%, and 98.03%, with open-world accuracies exceeding 97%. Our work reveals exploitable vulnerabilities in the new transmission environment and proposes a possible countermeasure to better promote user privacy protection.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WuPCHZHLLX24,
+	author = {Jiahao Wu and
+                  Heng Pan and
+                  Penglai Cui and
+                  Yiwen Huang and
+                  Jianer Zhou and
+                  Peng He and
+                  Yanbiao Li and
+                  Zhenyu Li and
+                  Gaogang Xie},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Patronum: In-network Volumetric DDoS Detection and Mitigation with
+                  Programmable Switches},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {187--207},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_10},
+	doi = {10.1007/978-3-031-70903-6\_10},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WuPCHZHLLX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed Denial-of-Service (DDoS) attacks continue to pose a significant threat to the Internet. While middlebox-based defenses offer high performance, they are costly and lack flexibility. Software-based defenses, on the other hand, provide flexibility but suffer from low performance. Recently, programmable switches have emerged and present an opportunity for efficient in-network defenses against DDoS attacks at line speed. Unfortunately, most existing in-network defenses fail to run on the switch data plane and introduce high latency. To address these issues, we propose Patronum, an in-network defense system running entirely in the data plane of programmable switches to defend against various volumetric DDoS attacks. We summarize volumetric DDoS attacks into two distinct threat models with thoroughly study: many-to-few (M2F) and few-to-few (F2F). With this basis, we implement two independent approaches to detect M2F and F2F, respectively. For M2F attacks, we devise an entropy-based approach and employ an approximate calculation method to facilitate its execution within the switch data plane. In addressing F2F attacks, we further design a bandwidth monitor with a fine-grained time window management mechanism to detect these types of attacks. We implement Patronum based on an Intel Tofino switch and compare it with the state-of-the-art DDoS defense systems, AccTurbo and Jaqen, under CAIDA and MAWI datasets. The experimental results show that the average impact of Patronum on benign traffic is only 28% of that of AccTurbo, while its mitigation effect on attack traffic is 16% better than that of Jaqen.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LangeGHC24,
+	author = {Swantje Lange and
+                  Francesco Gringoli and
+                  Matthias Hollick and
+                  Jiska Classen},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Wherever {I} May Roam: Stealthy Interception and Injection Attacks
+                  Through Roaming Agreements},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {208--228},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_11},
+	doi = {10.1007/978-3-031-70903-6\_11},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LangeGHC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cellular network users can be attacked through Rogue Base Stations (RBSes). 3G introduced network authentication as a mitigation. However, roaming partnerships between network operators allow requesting authentication vectors. This feature opens doors for state-sponsored attackers with access to roaming infrastructure, allowing the operation of stealthy RBSes anywhere in the world. This by far exceeds what lawful interception interfaces were designed for but provides attackers with similar capabilities, such as network traffic interception, manipulation, and injecting management frames towards a user’s device. Updated 5G roaming procedures do not prevent this issue. We demonstrate that modern smartphones effectively cannot indicate such attacks to end-users.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PalmaA24,
+	author = {Alessandro Palma and
+                  Marco Angelini},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {It is Time To Steer: {A} Scalable Framework for Analysis-Driven Attack
+                  Graph Generation},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {229--250},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_12},
+	doi = {10.1007/978-3-031-70903-6\_12},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/PalmaA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attack Graph (AG) represents the best-suited solution to support cyber risk assessment for multi-step attacks on computer networks, although their generation suffers from poor scalability due to their combinatorial complexity. Current solutions propose to address the generation problem from the algorithmic perspective and postulate the analysis only after the generation is complete, thus implying too long waiting time before enabling analysis capabilities. Additionally, they poorly capture the dynamic changes in the networks due to long generation times. To mitigate these problems, this paper rethinks the classic AG analysis through a novel workflow in which the analyst can query the system anytime, thus enabling real-time analysis before the completion of the AG generation with quantifiable statistical significance. Further, we introduce a mechanism to accelerate the generation by steering it with the analysis query. To show the capabilities of the proposed framework, we perform an extensive quantitative validation and present a realistic case study on networks of unprecedented size. It demonstrates the advantages of our approach in terms of scalability and fitting to common attack path analyses.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GramoliLTZ24,
+	author = {Vincent Gramoli and
+                  Zhenliang Lu and
+                  Qiang Tang and
+                  Pouriya Zarbafian},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Resilience to Chain-Quality Attacks in Fair Separability},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {251--270},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_13},
+	doi = {10.1007/978-3-031-70903-6\_13},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/GramoliLTZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, a new research area called order-fairness has emerged within State Machine Replication (SMR). Its goal is to prevent malicious processes from reordering transactions, ensuring that the SMR output reflects the local orderings observed by processes. One of the advanced approaches to addressing this challenge is fair separability, which is designed to mitigate cyclic dependencies present in transaction dependency graphs. However, in the existing implementation of fair separability, a transaction input by a Byzantine process can be output with only \\(\\mathcal {O}(1)\\) resources, whereas outputting a transaction input by a correct process requires \\(\\mathcal {O}(n)\\) resources. This vulnerability exposes the protocol to chain-quality attacks. In this paper, we propose an implementation of fair separability where the cost of outputting transactions remains consistent for the inputs of all processes, which enhances resilience to chain-quality attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KorichiDGT24,
+	author = {Youcef Korichi and
+                  Jos{\'{e}}e Desharnais and
+                  S{\'{e}}bastien Gambs and
+                  Nadia Tawbi},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Leveraging Transformer Architecture for Effective Trajectory-User
+                  Linking {(TUL)} Attack and Its Mitigation},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {271--290},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_14},
+	doi = {10.1007/978-3-031-70903-6\_14},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/KorichiDGT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Trajectories, a specific type of mobility data, can be\xa0used for many useful data mining tasks. However, these trajectories also raises important privacy concerns due to their strong inference potential. In this work, we propose TUL-STEO, a novel deep learning approach, based on a combination of pretraining and fine-tuning, for performing a Trajectory-User Linking (TUL) attack (also called user re-identification attack). More precisely, TUL-STEO can be used to identify individuals associated with given anonymized trajectories. Traditional methods to achieve TUL, as well as its mitigation, usually rely heavily on manual feature extraction, which is less adapted to complex, high resolution and large-scale trajectory datasets. In contrast, our attack is based on an end-to-end machine learning pipeline employing advanced neural architectures derived from transformer neural architectures. Furthermore, we propose Priv-STEO, an adversarial regularization approach to mitigate TUL. We demonstrate how these architectures can be used to effectively mitigate TUL, through an adversarial regularization approach, without a significant degradation of trajectory data utility.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChoHYLBP24,
+	author = {Yungi Cho and
+                  Woorim Han and
+                  Miseon Yu and
+                  Younghan Lee and
+                  Ho Bae and
+                  Yunheung Paek},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {{VFLIP:} {A} Backdoor Defense for Vertical Federated Learning via
+                  Identification and Purification},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {291--312},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_15},
+	doi = {10.1007/978-3-031-70903-6\_15},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChoHYLBP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vertical Federated Learning (VFL) focuses on handling vertically partitioned data over FL participants. Recent studies have discovered a significant vulnerability in VFL to backdoor attacks which specifically target the distinct characteristics of VFL. Therefore, these attacks may neutralize existing defense mechanisms designed primarily for Horizontal Federated Learning (HFL) and deep neural networks. In this paper, we present the first backdoor defense, called VFLIP, specialized for VFL. VFLIP employs the identification and purification techniques that operate at the inference stage, consequently improving the robustness against backdoor attacks to a great extent. VFLIP first identifies backdoor-triggered embeddings by adopting a participant-wise anomaly detection approach. Subsequently, VFLIP conducts purification which removes the embeddings identified as malicious and reconstructs all the embeddings based on the remaining embeddings. We conduct extensive experiments on CIFAR10, CINIC10, Imagenette, NUS-WIDE, and Bank-Marketing to demonstrate that VFLIP can effectively mitigate backdoor attacks in VFL. https://github.com/blingcho/VFLIP-esorics24}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FaillonBFNBCY24,
+	author = {Marc{-}Antoine Faillon and
+                  Baptiste Bout and
+                  Julien Francq and
+                  Christopher Neal and
+                  Nora Boulahia{-}Cuppens and
+                  Fr{\'{e}}d{\'{e}}ric Cuppens and
+                  Reda Yaich},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {How to Better Fit Reinforcement Learning for Pentesting: {A} New Hierarchical
+                  Approach},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {313--332},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_16},
+	doi = {10.1007/978-3-031-70903-6\_16},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/FaillonBFNBCY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In response to the rapidly evolving landscape of Information Technology (IT) and Operational Technology (OT) systems, automated vulnerability assessment is gaining prominence. While traditional scripted approaches are common, supervised and unsupervised Machine Learning (ML) methods are gaining traction in cybersecurity. However, AI models’ generalization is often hindered by the scarcity and quality of the data representing the ever-evolving cyber-threats. Meanwhile, Reinforcement Learning (RL) approaches that rely on agents learning from living environments rather than static datasets, have shown promising generalization performances, while overcoming data availability issues. Nevertheless, striking the right balance between performance and fidelity remains an ongoing challenge. In this paper, we design the basis of an attacking agent which aims to help cybersecurity analysts to assess their systems’ vulnerabilities. This agent is based on a new Hierarchical RL (HRL) architecture combined to a sequential high-level policy with feature selection to take advantage of the structure of the observation and the action spaces. Our experiments on the CybORG RL environment show that our attacking agent is able to better tackle the complexity of Penetration Testing (PT) scenarios and adapt well to scenarios, significantly improving other state-of-the-art models in terms of efficiency and scalability.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BhudiaOH24,
+	author = {Alpesh Bhudia and
+                  Daniel O'Keeffe and
+                  Darren Hurley{-}Smith},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Revoke: Mitigating Ransomware Attacks Against Ethereum Validators},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {333--353},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_17},
+	doi = {10.1007/978-3-031-70903-6\_17},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/BhudiaOH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent research has shown the viability of ransomware attacks on Ethereum Proof-of-Stake (PoS) validators, whereby an attacker that compromises\xa0a validator can threaten to perform slashable actions unless a ransom is paid. Given the size of Ethereum validator stakes, validators could become\xa0an attractive target for future ransomware. However, there are currently\xa0no practical mechanisms to recover from ransomware since even validators\xa0that attempt to exit the network are retrospectively slashable during\xa0the withdrawal period. We propose  Revoke, an extension of Ethereum that mitigates\xa0the impact of ransomware attacks on validators.  Revoke  introduces\xa0a new decentralised key revocation mechanism that enables validators to change\xa0their signing key without withdrawing their stake. A challenge\xa0for  Revoke  is balancing the utility of the revocation mechanism\xa0for individual validators against potential reductions in overall chain security.  Revoke  exposes a trade-off whereby validators cannot propose or attest to blocks during the revocation process, and hence incur inactivity penalties, but are\xa0not susceptible to much larger slashing penalties. Our design extends\xa0the Ethereum specification to capture the impact of  Revoke ’s core key-change mechanism on both the beacon-chain state transition function and fork-choice decisions. We also adapt the existing safety and liveness proofs of Ethereum\xa0to incorporate the effects of  Revoke.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WalterNK24,
+	author = {Kane Walter and
+                  Surya Nepal and
+                  Salil S. Kanhere},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Exploiting Layerwise Feature Representation Similarity For Backdoor
+                  Defence in Federated Learning},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {354--374},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_18},
+	doi = {10.1007/978-3-031-70903-6\_18},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/WalterNK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated learning is an emerging paradigm for distributed machine learning that enables clients to collaboratively train models while maintaining data privacy. However, this approach introduces vulnerabilities, notably the risk of backdoor attacks where compromised models may perform normally on clean data but maliciously on poisoned inputs. A range of defences has been proposed in the literature based on robust aggregation, differential privacy or certified robustness and clustering/trust score-based approaches. In this work, we introduce FedAvgCKA, a novel defence mechanism that leverages the learned representations of neural networks to distinguish between benign and malicious submissions from clients. We demonstrate the effectiveness of FedAvgCKA across various federated learning scenarios and datasets, showcasing its ability to maintain high main task accuracy and significantly reduce backdoor attack success rates even in non-iid settings.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LaiLSTWY24,
+	author = {Li{-}Chang Lai and
+                  Jiaxiang Liu and
+                  Xiaomu Shi and
+                  Ming{-}Hsien Tsai and
+                  Bow{-}Yaw Wang and
+                  Bo{-}Yin Yang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Automatic Verification of Cryptographic Block Function Implementations
+                  with Logical Equivalence Checking},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {377--395},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_19},
+	doi = {10.1007/978-3-031-70903-6\_19},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/LaiLSTWY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a fixed-size block, cryptographic block functions generate outputs by a sequence of bitwise operations. Block functions are widely used in the design of hash functions and stream ciphers. Their correct implementations hence are crucial to computer security. We propose a method that leverages logic equivalence checking from hardware verification to verify assembly implementations of cryptographic block functions. Using our technique, we verify more than two dozen assembly implementations of ChaCha20, SHA-256, and SHA-3 block functions from OpenSSL and XKCP automatically. We also compare the performance of our technique with SMT-based techniques in experiments.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/JiangXY24,
+	author = {Changsong Jiang and
+                  Chunxiang Xu and
+                  Guomin Yang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Device-Enhanced Secure Cloud Storage with Keyword Searchable Encryption
+                  and Deduplication},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {396--413},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_20},
+	doi = {10.1007/978-3-031-70903-6\_20},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/JiangXY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We observe that server-aided message-locked encryption (MLE) and server-aided public key encryption with keyword search (PEKS) can be integrated into one cloud storage system to support both deduplication and keyword search over encrypted outsourced data. However, the system is confronted with a potential key management problem: a user has to store her/his private key in all potential clients for data access, thereby leading to security concerns about key migration among different clients and key storage in multiple clients. To alleviate the problem, we present a device-aided private key recovery mechanism for public-key cryptosystems, which enables a user holding a personal device and a password to recover her/his private key in any client. Such recovery is accomplished with the combination of an oblivious protocol and short-authentication-string message authentication, which does not require any secure link between the device and a client while guaranteeing the security of the password and the private key. Based on the presented mechanism, we propose a device-enhanced secure cloud storage system with keyword searchable encryption and deduplication, dubbed DULCET. We analyze the security of DULCET and conduct a comprehensive performance evaluation, which shows that DULCET is secure and efficient.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SiniscalchiV24,
+	author = {Luisa Siniscalchi and
+                  Ivan Visconti},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Incremental Time-Deniable Signatures},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {414--434},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_21},
+	doi = {10.1007/978-3-031-70903-6\_21},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/SiniscalchiV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Digital signatures guarantee long-term public verifiability and non-repudiation. However, in some applications, signatures can be stored by several actors and, later on (e.g., if leaked after an attack), those signatures could be adversarially used, beyond their original purposes. In particular, such risks are possible in scenarios (e.g., DKIM) where short-lived authentication (in contrast to long-term public verifiability) suffices and the use of digital signatures is an overkill exposing vulnerabilities due to deniability issues. Motivated by the above problem, a very recent work of Beck et al. (PETS 2023, IACR eprint 2022/1018) formally defines and constructs Time-Deniable Signatures, illustrating their benefits (among them, the major feature of non-requiring special external infrastructures) compared to prior formulations such as Epochal Signatures (S&P 2021), Forward-Forgeable Signatures (Usenix 2021) and Short-Lived Signatures (Asiacrypt 2022). Their construction requires an HIBE scheme that satisfies a special key-indistinguishability property and in the conclusions of their work they explicitly mention as an open problem for future work the important direction of obtaining non-HIBE based time-deniable signatures. In this work, as the main contribution, we show a construction of a Time-Deniable Signature that is conceptually simpler and concretely more efficient than the one presented by Beck et al. Our construction achieves perfect deniability and moreover does not require Hierarchical Identity-Based Encryption (HIBE), therefore solving the above open problem. The main idea behind our design, compared to the work of Beck et al., consists of exploiting the fact that in concrete scenarios even though the space of possible timestamps is not a-priori bounded, it is still relatively small and its size slowly increases over time. We will therefore relax the definition of Beck et al. to leverage the constraints on the size of the timestamp space, and we name the resulting primitive “Incremental” Time-Deniable Signature scheme.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XueLAZ24,
+	author = {Yuxi Xue and
+                  Xingye Lu and
+                  Man Ho Au and
+                  Chengru Zhang},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {Efficient Linkable Ring Signatures: New Framework and Post-quantum
+                  Instantiations},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {435--456},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_22},
+	doi = {10.1007/978-3-031-70903-6\_22},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/XueLAZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we introduce a new framework for constructing linkable ring signatures (LRS). Our framework is based purely on signatures of knowledge (SoK) which allows one to issue signatures on behalf of any NP-statement using the corresponding witness. Our framework enjoys the following advantages: (1) the security of the resulting LRS depends only on the security of the underlying SoK; (2) the resulting LRS naturally supports online/offline signing (resp. verification), where the output of the offline signing (resp. verification) can be re-used across signatures of the same ring. For a ring size n, our framework requires an SoK of the NP statement with size \\(\\log n\\). To instantiate our framework, we adapt the well-known post-quantum secure non-interactive argument of knowledge (NIAoK), ethSTARK, into an SoK. This SoK is inherently post-quantum secure and has a signature size poly-logarithmic in the size of the NP statement. Thus, our resulting LRS has a signature size of \\(O(\\text {polylog}(\\log n))\\). By comparison, existing post-quantum ring signatures, regardless of linkability considerations, have signature sizes of \\(O(\\log n)\\) at best. Furthermore, leveraging online/offline verification, part of the verification of signatures on the same ring can be shared, resulting in a state-of-the-art amortized verification cost of \\(O(\\text {polylog}(\\log n))\\). Our LRS also performs favourably against existing schemes in practical scenarios. Concretely, our scheme has the smallest signature size among all post-quantum linkable ring signatures with non-slanderability for ring size larger than 32. In our experiment, at 128-bit security and ring size of 1024, our LRS has a size of 29\xa0KB, and an amortized verification cost of 0.3 ms, surpassing the state-of-the-art by a significant margin. Even without considering amortization, the verification time for a single signature is 128 ms, comparable to those featuring linear signature size. A similar performance advantage can also be seen at signing. Furthermore, our LRS has extremely short public keys (32 bytes), while public keys of existing constructions are in the order of kilobytes.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChaturvediCCM24,
+	author = {Bhuvnesh Chaturvedi and
+                  Anirban Chakraborty and
+                  Ayantika Chatterjee and
+                  Debdeep Mukhopadhyay},
+	editor = {Joaqu{\'{\i}}n Garc{\'{\i}}a{-}Alfaro and
+                  Rafal Kozik and
+                  Michal Choras and
+                  Sokratis K. Katsikas},
+	title = {"Ask and Thou Shall Receive": Reaction-Based Full Key Recovery
+                  Attacks on {FHE}},
+	booktitle = {Computer Security - {ESORICS} 2024 - 29th European Symposium on Research
+                  in Computer Security, Bydgoszcz, Poland, September 16-20, 2024, Proceedings,
+                  Part {IV}},
+	series = {Lecture Notes in Computer Science},
+	volume = {14985},
+	pages = {457--477},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-70903-6\_23},
+	doi = {10.1007/978-3-031-70903-6\_23},
+	timestamp = {Thu, 26 Sep 2024 09:28:04 +0200},
+	biburl = {https://dblp.org/rec/conf/esorics/ChaturvediCCM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fully Homomorphic Encryption (FHE) promises to secure our data on the untrusted cloud by allowing arbitrary computations\xa0on encrypted data. However, the malleability and flexibility provided by FHE schemes also open up arenas for integrity issues where\xa0a cloud server can intentionally perturb clients’ data. Contemporary FHE schemes assume an honest-but-curious server who, although curious to glean sensitive information, performs all operations judiciously. However, this assumption does not capture a practical scenario where a server can be malicious, which can perform crafted perturbations in the cloud-stored data and computational results to entice the client into providing feedback. In this work, we demonstrate reaction-based full-key recovery attack\xa0on four state-of-the-art (R)LWE-based exact FHE schemes: TFHE, FHEW, B/FV, and BGV. We first define practical scenarios where a client pursuing FHE services from a malicious server can inadvertently\xa0act as a Ciphertext Verification Oracle (CVO) when it reacts due\xa0to decryption errors. Next, we propose a novel reaction attack where the attacker can recover the secret key in a bit-by-bit fashion by taking advantage of the key distribution of these\xa0FHE schemes. We first provide the details of our attack on LWE-based\xa0FHE schemes, namely TFHE and FHEW. We further show an extension of\xa0our attack on RLWE-based FHE schemes, namely BGV and B/FV, since\xa0the LWE-based attack does not directly translate to the RLWE setting\xa0due to the differences in their underlying operations. These attacks\xa0are deemed practical in literature as a new line of work, called verifiable FHE, has recently gained traction that focuses\xa0on protecting FHE schemes from these reaction attacks.}
+}
