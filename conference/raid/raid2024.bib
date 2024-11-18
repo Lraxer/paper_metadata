@@ -1,0 +1,1160 @@
+@inproceedings{DBLP:conf/raid/TerranovaLC24,
+	author = {Franco Terranova and
+                  Abdelkader Lahmadi and
+                  Isabelle Chrisment},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Leveraging Deep Reinforcement Learning for Cyber-Attack Paths Prediction:
+                  Formulation, Generalization, and Evaluation},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {1--16},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678902},
+	doi = {10.1145/3678890.3678902},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/TerranovaLC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attack paths represent the sequences of network nodes compromised by attackers while exploiting their respective vulnerabilities. Current methods for predicting such attack paths largely depend on existing human expertise or established heuristics. These traditional methods are time-consuming and require highly skilled threat-hunting analysts to identify these attack paths and proactively apply security measures. However, the task becomes challenging when facing large-scale and highly vulnerable networks. In this paper, we propose an alternative approach leveraging Deep Reinforcement Learning (DRL) techniques aiming to approximate the decision-making of attackers. Our approach embodies the attacker’s perspective and tactics to leverage discovered paths for proactive security analysis and establish defense strategies. We introduce a novel re-formulation of the problem with a local view for the DRL agent, representing the source and target node of the attack at each timestep. Additionally, our training methodology involves a diverse set of network topologies of different sizes and exploitable vulnerabilities, demonstrating the ability of DRL algorithms to navigate topologies, identify attack paths, and compromise nodes. Results highlight the capability of the learned policies to generalize within entirely new topologies, arriving to discover 80% ± 0.08% of the attack paths in 1500 steps.}
+}
+
+
+@inproceedings{DBLP:conf/raid/CebereR24,
+	author = {Bogdan Cebere and
+                  Christian Rossow},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Understanding Web Fingerprinting with a Protocol-Centric Approach},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {17--34},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678910},
+	doi = {10.1145/3678890.3678910},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/CebereR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent breakthroughs in machine learning (ML) have unleashed several approaches to fingerprinting web traffic based on traffic analysis. In particular, researchers report impressive classification performances by modeling HTTPS traces using packet metadata. Recent works focus mainly on the packet burst metadata (packet lengths, counts, and directions). The fact that burst metadata characterizes web traces is not surprising per se. Then again, most works stop at providing evaluation results and do not question the reasons for the success in qualitative analyses or ablation studies. In this paper, we try to better understand why and when burst-based web fingerprinting works. To this end, we follow a protocol-centric approach —instead of promoting yet another classification approach—that seeks to investigate the impact of the underlying protocols on web fingerprinting. We study several research questions based on typical domain and page classification datasets. Most importantly, we show where the classification gain comes from, i.e., which messages or flows are particularly valuable. In contrast to recent works, we show that the beginning of communication does not always leak valuable fingerprinting information. This knowledge allows the design of targeted and, thus, more efficient fingerprinting attacks and defenses. In addition, we study how data availability (number of labels) and HTTP protocol features (e.g., caching, user agents) might skew the classification results. We hope that future research can profit from this analysis, which complements existing fingerprinting approaches, by better understanding fingerprinting methods and respective countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/raid/KumarasingheNE24,
+	author = {Udesh Kumarasinghe and
+                  Mohamed Nabeel and
+                  Charitha Elvitigala},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Blocklist-Forecast: Proactive Domain Blocklisting by Identifying Malicious
+                  Hosting Infrastructure},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {35--48},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678925},
+	doi = {10.1145/3678890.3678925},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/KumarasingheNE24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Domain blocklists play an important role in blocking malicious domains reaching users. However, existing blocklists are reactive in nature and slow to react to attacks, by which time the damage is already caused. This is mainly due to the fact that existing blocklists and reputation systems rely on either website content or user interactions with the websites in order to ascertain if a website is malicious. In this work, we explore the possibility of predicting malicious domains proactively, given a seed list of malicious domains from such reactive blocklists. We observe that malicious domains often share the infrastructure utilized for previous attacks, reuse or rotate resources. Leveraging this observation, we selectively crawl passive DNS data to identify domains in the "neighborhood" of seed malicious domains extracted from reactive blocklists. Due to the increased utilization of cloud hosting, not all such domains in the neighborhood are malicious. Further vetting is required to identify unseen malicious domains. Along with the proximity, we identify that hosting and lexical features help distinguish malicious domains from benign ones. We model the infrastructure as a heterogeneous network graph and design a graph neural network to detect malicious domains. Our approach is blocklist-agnostic in that it can work with any blocklist and detect new malicious domains. We demonstrate our approach utilizing 7 month longitudinal data from three popular blocklists, PhishTank, OpenPhish, and VirusTotal. Our experimental results show that, our approach for VirusTotal feed detects 4.7 unseen malicious domains for every seed malicious domain at a very low FPR of 0.059. Further, we observe the concerning trend that 47% of predicted malicious domains that are later flagged in VirusTotal are identified only after more than 3 weeks to months since our model detects them.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SunKZOSB0SDA24,
+	author = {Zhibo Sun and
+                  Faris Bugra Kokulu and
+                  Penghui Zhang and
+                  Adam Oest and
+                  Gianluca Stringhini and
+                  Tiffany Bao and
+                  Ruoyu Wang and
+                  Yan Shoshitaishvili and
+                  Adam Doup{\'{e}} and
+                  Gail{-}Joon Ahn},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {From Victims to Defenders: An Exploration of the Phishing Attack Reporting
+                  Ecosystem},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {49--64},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678926},
+	doi = {10.1145/3678890.3678926},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SunKZOSB0SDA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reporting phishing attacks can significantly shorten the time required to take down their operations and deter further victimization by the same phishing websites. However, little research has been conducted to understand the phishing reporting ecosystem and its effectiveness. In this paper, we comprehensively evaluate the phishing reporting ecosystem to identify the critical challenges people face and their concerns when reporting smishing, vishing, and phishing email attacks. First, we analyze the existing security advice and channels for reporting phishing attacks in both the public and private sectors. Then, we conduct a scenario-based experiment involving 89 participants to investigate what factors affect a participant’s decision to report a phishing attack and what challenges they face in preparing the report. Third, we report phishing attacks ourselves and monitor the status of the reported phishing websites to empirically measure how reports are acted upon and how that affects the reported phishing websites. Finally, we propose approaches under five major concern categories to mitigate the challenges that we discover in the phishing reporting ecosystem.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GolinelliC24,
+	author = {Matteo Golinelli and
+                  Bruno Crispo},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Hidden Web Caches Discovery},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {65--76},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678931},
+	doi = {10.1145/3678890.3678931},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/GolinelliC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Web caches play a crucial role in web performance and scalability. However, detecting cached responses is challenging when web servers do not reliably communicate the cache status through standardized headers. This paper presents a novel methodology for cache detection using timing analysis. Our approach eliminates the dependency on cache status headers, making it applicable to any web server. The methodology relies on sending paired requests using HTTP multiplexing functionality and makes heavy use of cache-busting to control the origin of the responses. By measuring the time it takes to receive responses from paired requests, we can determine if a response is cached or not. In each pair, one request is cache-busted to force retrieval from the origin server, while the other request is not and might be served from the cache, if present. A faster response time for the non-cache-busted request compared to the cache-busted one suggests the first one is coming from the cache. We implemented this approach in a tool and achieved an estimated accuracy of 89.6% compared to state-of-the-art methods based on cache status headers. Leveraging our cache detection approach, we conducted a large-scale experiment on the Tranco Top 50k websites. We identified a significant presence of hidden caches (5.8%) that do not advertise themselves through headers. Additionally, we employed our methodology to detect Web Cache Deception (WCD) vulnerabilities in these hidden caches. We discovered that 1.020 of them are susceptible to WCD vulnerabilities, potentially leaking sensitive data. Our findings demonstrate the effectiveness of our timing analysis methodology for cache discovery and highlight the importance of a tool that does not rely on cache-communicated cache status headers.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Botacin24,
+	author = {Marcus Botacin},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {What do malware analysts want from academia? {A} survey on the state-of-the-practice
+                  to guide research developments},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {77--96},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678892},
+	doi = {10.1145/3678890.3678892},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/Botacin24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware analysis tasks are as fundamental for modern cybersecurity as they are challenging to perform. More than depending on any tool capability, malware analysis tasks depend on human analysts’ abilities, experiences, and practices when using the tools. Academic research has traditionally been focused on producing solutions to overcome malware analysis technical challenges, but are these solutions adopted in practice by malware analysts? Are these solutions useful? If not, how can the academic community improve its practices to foster adoption and cause a greater impact? To answer these questions, we surveyed 21 professional malware analysts working in different companies, from CSIRTs to AV companies, to hear their opinions about existing tools, practices, and the challenges they face in their daily tasks. In 31 questions, we cover a broad range of aspects, from the number of observed malware variants to the use of public sandboxes and the tools the analysts would like to exist to make their lives easier. We aim to bridge the gap between academic developments and malware practices. To do so, on the one hand, we suggest to the analysts the solutions proposed in the literature that could be integrated into their practices. On the other hand, we also point out to the academic community possible future directions to bridge existing development gaps that significantly affect malware analysis practices.}
+}
+
+
+@inproceedings{DBLP:conf/raid/BotacinG24,
+	author = {Marcus Botacin and
+                  Heitor Murilo Gomes},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Cross-Regional Malware Detection via Model Distilling and Federated
+                  Learning},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {97--113},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678893},
+	doi = {10.1145/3678890.3678893},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/BotacinG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine Learning (ML) is a key part of modern malware detection pipelines, but its application is not straightforward. It involves multiple practical challenges that are frequently unaddressed by the literature works. A key challenge is the heterogeneity of scenarios. Antivirus (AV) companies for instance operate under different performance constraints in the backend and in the endpoint, and with a diversity of datasets according to the country they operate in. In this paper, we evaluate the impact of these heterogeneous aspects by developing a classification pipeline for 3 datasets of 10K malware samples each collected by an AV company in the USA, Brazil, and Japan in the same period. We characterize the different requirements for these datasets and we show that a different number of features is required to reach the optimal detection rate in each scenario. We show that a global model combining the three datasets increases the detection of the three individual datasets. We propose using Federated Learning (FL) to build the global model and a distilling process to generate the local versions. We order the samples temporally to show that although retraining on concept drift detection helps recover the detection rate, only a FL approach can increase the detection rate.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SahaBCL24,
+	author = {Aakanksha Saha and
+                  Jorge Blasco and
+                  Lorenzo Cavallaro and
+                  Martina Lindorfer},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {{ADAPT} it! Automating {APT} Campaign and Group Attribution by Leveraging
+                  and Linking Heterogeneous Files},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {114--129},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678909},
+	doi = {10.1145/3678890.3678909},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SahaBCL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent years have witnessed a surge in the growth of Advanced Persistent Threats (APTs), with significant challenges to the security landscape, affecting industry, governance, and democracy. The ever-growing number of actors and the complexity of their campaigns have made it difficult for defenders to track and attribute these malicious activities effectively. Traditionally, researchers relied on threat intelligence to track APTs. However, this often led to fragmented information, delays in connecting campaigns with specific threat groups, and misattribution. In response to these challenges, we introduce ADAPT, a machine learning-based approach for automatically attributing APTs at two levels: (1) the threat campaign level, to identify samples with similar objectives and (2) the threat group level, to identify samples operated by the same entity. ADAPT supports a variety of heterogeneous file types targeting different platforms, including executables and documents, and uses linking features to find connections between them. We evaluate ADAPT on a reference dataset from MITRE as well as a comprehensive, label-standardized dataset of 6,134 APT samples belonging to 92 threat groups. Using real-world case studies, we demonstrate that ADAPT effectively identifies clusters representing threat campaigns and associates them with their respective groups.}
+}
+
+
+@inproceedings{DBLP:conf/raid/TsingenopoulosC24,
+	author = {Ilias Tsingenopoulos and
+                  Jacopo Cortellazzi and
+                  Branislav Bosansk{\'{y}} and
+                  Simone Aonzo and
+                  Davy Preuveneers and
+                  Wouter Joosen and
+                  Fabio Pierazzi and
+                  Lorenzo Cavallaro},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {How to Train your Antivirus: RL-based Hardening through the Problem
+                  Space},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {130--146},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678912},
+	doi = {10.1145/3678890.3678912},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/TsingenopoulosC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {ML-based malware detection on dynamic analysis reports is vulnerable to both evasion and spurious correlations. In this work, we investigate a specific ML architecture employed in the pipeline of a widely-known commercial antivirus, with the goal to harden it against adversarial malware. Adversarial training, the most reliable defensive technique that can confer empirical robustness, is not applicable out of the box in this domain, for the principal reason that gradient-based perturbations rarely map back to feasible problem-space programs. We introduce a novel Reinforcement Learning approach for constructing adversarial examples, a constituent part of adversarially training a model against evasion. Our approach comes with multiple advantages. It performs modifications that are feasible in the problem-space, and only those; thus it circumvents the inverse mapping problem. It also makes it possible to provide theoretical guarantees on the robustness of the model against a well-defined set of adversarial capabilities. Our empirical exploration validates our theoretical insights, where we can consistently reach 0% Attack Success Rate after a few adversarial retraining iterations.}
+}
+
+
+@inproceedings{DBLP:conf/raid/CebereFSPR24,
+	author = {Bogdan{-}Constantin Cebere and
+                  Jonathan Lasse Bennet Flueren and
+                  Silvia Sebasti{\'{a}}n and
+                  Daniel Plohmann and
+                  Christian Rossow},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Down to earth! Guidelines for DGA-based Malware Detection},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {147--165},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678913},
+	doi = {10.1145/3678890.3678913},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/CebereFSPR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Successful malware campaigns rely on Command-and-Control (C2) infrastructure, enabling attackers to extract sensitive data and give instructions to bots. As a resilient mechanism to obtain C2 endpoints, attackers can employ Domain Generation Algorithms (DGAs), which automatically generate C2 domains instead of relying on static ones. Thus, researchers have proposed network-level detection approaches that reveal DGA usage by differentiating between non-DGA and generated domains. Recent approaches train machine learning (ML) models to recognize DGA domains using pattern recognition at the domain’s character level. In this paper, we review network-level DGA detection from a meta-perspective. In particular, we survey 38 DGA detection papers in light of nine popular assumptions that are critical for the approaches to be practical. The assumptions range from foundational ones to assumptions about experiments and deployment of the detection systems. We then revisit if these assumptions hold, showing that most DGA detection approaches operate on a fragile basis. To prevent these issues in the future, we describe the technical security concepts underlying each assumption and indicate best practices for obtaining more reliable results.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SeeR024,
+	author = {Richard August See and
+                  Kevin R{\"{o}}bert and
+                  Mathias Fischer},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Encrypted Endpoints: Defending Online Services from Illegitimate Bot
+                  Automation},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {166--180},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678918},
+	doi = {10.1145/3678890.3678918},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SeeR024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automated usage of web services by programs, known as bots, poses risks such as data scraping, spam, and cyber attacks. For instance, X suffers from millions of bot accounts typically controlled by relatively fewer adversarial organizations to create fake likes and comments. The most widely used solution to distinguish humans from bots (CAPTCHA) is perishing due to advances in machine learning. Obfuscation techniques in binaries, applications, or websites are designed to impede the creation of bots but fail to prevent their scalability. Bypassing these measures often requires only a one-time effort. We propose encrypted endpoints as a novel strategy to combat the scalability of web bots, particularly in scenarios where bots leverage multiple accounts. For that we assign unique endpoints (URLs) to each user account, thereby restricting bot applicability across different accounts and necessitating the extraction of account-specific endpoints per bot instance. Our approach is applicable to a wide range of services utilizing endpoints, including desktop and mobile applications, web applications, and even static or HTML-only websites. We implemented our approach directly within a backend framework and observed that the latency overhead is less than 0.1ms per request, which constitutes less than 1% of the total request time. Our solution, developed as simple middleware, can be easily integrated in existing projects with low effort. Additionally, we have extended our approach to the Jinja2 template engine, thereby supporting encrypted endpoints for websites out of the box. Our analysis indicates that our approach not only effectively protects against simple bots but also, when coupled with obfuscation techniques, further impedes bot creation.}
+}
+
+
+@inproceedings{DBLP:conf/raid/BarradasNPR024,
+	author = {Diogo Barradas and
+                  Carlos Novo and
+                  Bernardo Portela and
+                  Sofia Romeiro and
+                  Nuno Santos},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Extending {C2} Traffic Detection Methodologies: From {TLS} 1.2 to
+                  {TLS} 1.3-enabled Malware},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {181--196},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678921},
+	doi = {10.1145/3678890.3678921},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/BarradasNPR024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the Internet evolves from TLS 1.2 to TLS 1.3, it offers enhanced security against network eavesdropping for online communications. However, this advancement also enables malicious command and control (C2) traffic to more effectively evade malware detectors and intrusion detection systems. Among other capabilities, TLS 1.3 introduces encryption for most handshake messages and conceals the actual TLS record content type, complicating the task for state-of-the-art C2 traffic classifiers that were initially developed for TLS 1.2 traffic. Given the pressing need to accurately detect malicious C2 communications, this paper examines to what extent existing C2 classifiers for TLS 1.2 are less effective when applied to TLS 1.3 traffic, posing a central research question: is it possible to adapt TLS 1.2 detection methodologies for C2 traffic to work with TLS 1.3 flows? We answer this question affirmatively by introducing new methods for inferring certificate size and filtering handshake/protocol-related records in TLS 1.3 flows. These techniques enable the extraction of key features for enhancing traffic detection and can be utilized to pre-process data flows before applying C2 classifiers. We demonstrate that this approach facilitates the use of existing TLS 1.2 C2 classifiers with high efficacy, allowing for the passive classification of encrypted network traffic. In our tests, we inferred certificate sizes with an average error of 1.0%, and achieved detection rates of 100% when classifying traffic based on certificate size, and over 93% when classifying TLS 1.3 traffic behavior after training solely on TLS 1.2 traffic. To our knowledge, these are the first findings to showcase specialized TLS 1.3 C2 traffic classification.}
+}
+
+
+@inproceedings{DBLP:conf/raid/StevensEZKP24,
+	author = {Kevin Stevens and
+                  Mert Erdemir and
+                  Hang Zhang and
+                  Taesoo Kim and
+                  Paul Pearce},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {BluePrint: Automatic Malware Signature Generation for Internet Scanning},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {197--214},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678923},
+	doi = {10.1145/3678890.3678923},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/StevensEZKP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traditional malware-detection research has focused on techniques for detection on end hosts or passively on networks. In contrast, global malware detection on the Internet using active Internet scanning remains relatively unstudied, with research still relying on manual reverse engineering and handwritten scanning code. In this work, we introduce BluePrint, the first end-to-end system for analyzing new samples of “server-like malware” and automatically preparing and executing Internet scans for them. BluePrint requires only a low degree of human involvement, requiring only analysis of results before launching Internet scans. Important high-level challenges BluePrint must overcome include resiliency and scalability issues with symbolic execution, state explosion from some common networking code patterns, and a high number of duplicate symbolic network signatures with only small, inconsequential structural differences. We solve these with novel binary analysis techniques; respectively, “path sketches” for guided symbolic execution, new symbolic models for accept() and recv(), and an efficient and effective signature deduplication algorithm. We evaluate BluePrint on a varied selection of server-like malware, and demonstrate that it successfully identifies infected devices both in simulated local network experiments and on the Internet. We then perform more detailed analyses to characterize the infected hosts found by our scanning experiments, and find that they span a wide range of usage scenarios and geographical locations. We also show that many of these devices seem to have poor general security posture, and that the infections persist for months.}
+}
+
+
+@inproceedings{DBLP:conf/raid/AlotaibiM24,
+	author = {Fahad Alotaibi and
+                  Sergio Maffeis},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Mateen: Adaptive Ensemble Learning for Network Anomaly Detection},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {215--234},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678901},
+	doi = {10.1145/3678890.3678901},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/AlotaibiM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly-based intrusion detection systems are tasked with identifying deviations from established benign network behaviors, assuming such deviations to be indicators of malicious intent. Deep AutoEncoders (DAEs) have become increasingly popular in these systems due to their exceptional ability to model benign behavior with high accuracy, particularly in static, offline settings where the network’s benign activity pattern is presumed to remain constant. However, this static approach becomes less effective as network behavior naturally evolves, leading to challenges in distinguishing new, benign activities from genuine threats. This evolution raises a critical question: How can we enhance offline DAEs to accurately identify threats while avoiding false alarms caused by benign behavior changes? To address this question, we propose Mateen, an online learning framework designed to augment the capabilities of offline DAEs, enabling them to recognize and adapt to changing benign network behaviors efficiently and with minimal overhead. Mateen leverages an ensemble of DAEs to monitor and adjust to these changes. It optimizes resource usage by selecting only a few representative samples for updates and reduces the overall framework’s complexity by retaining only the relevant models. We evaluate the effectiveness of Mateen on five network intrusion datasets, each exhibiting different types of benign behavior evolution. The results demonstrate that Mateen consistently enhances offline DAE performance across various evolution types. For instance, Mateen boosts the F1-score on the IDS17 dataset, which exhibits light change, by 4.13%, and on the Kitsune dataset, characterized by heavy change, by 72.6%, while only necessitating labeling for 1% of the incoming samples.}
+}
+
+
+@inproceedings{DBLP:conf/raid/JabiyevGOK24,
+	author = {Bahruz Jabiyev and
+                  Anthony Gavazzi and
+                  Kaan Onarlioglu and
+                  Engin Kirda},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Gudifu: Guided Differential Fuzzing for {HTTP} Request Parsing Discrepancies},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {235--247},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678904},
+	doi = {10.1145/3678890.3678904},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/JabiyevGOK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern web applications involve multiple HTTP processors on the traffic path, each acting as a reverse proxy and processing client requests. Even when such proxies are secure in isolation, when combined into complex systems, minor HTTP parsing discrepancies between them can lead to various severe attacks such as cache poisoning and HTTP request smuggling attacks. We propose Gudifu, a new approach that improves the state-of-the-art HTTP differential fuzzing approaches in two main ways: 1) taking a graybox fuzzing approach to probe the parsing behavior of HTTP proxies and 2) using a new algorithm which is capable of searching for discrepancies in the entire HTTP request. These improvements lead to the discovery of significantly more parsing discrepancies and discrepancy-based attack vectors which were previously unknown.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SangW0JZ24,
+	author = {Anyuan Sang and
+                  Yuchen Wang and
+                  Li Yang and
+                  Junbo Jia and
+                  Lu Zhou},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Obfuscating Provenance-Based Forensic Investigations with Mapping
+                  System Meta-Behavior},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {248--262},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678916},
+	doi = {10.1145/3678890.3678916},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SangW0JZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The provenance graph technique has gained popularity for attack analysis, such as Advanced Persistent Threat (APT) attacks, by creating entity interaction graphs from host audit logs. While this method has shown promising analysis results and interpretability, its robustness against mimic attacks carried out by potentially skilled attackers has yet to be fully proven. Recent research has showcased adversarial methodologies targeting provenance-based Machine Learning (ML) detectors, leading to evasion attacks through the addition of corresponding nodes and edges to the feature space. However, these approaches face several challenges, including the difficulty in translating feature alterations into practical attack scenarios and limited applicability to other provenance graph-based detection schemes. In this study, we propose the Provenance-based Attack Investigation Obfuscation Framework(PAIOF), which proposes a novel obfuscation attack for the existing provenance-based forensic investigation system and demonstrates it needs to be extended and upgraded. More specifically, by thoughtfully analyzing key indicators from three classic provenance-based investigation approaches to set obfuscation goals. We establish an end-to-end mapping relationship between system operational behaviors and provenance graphs and create obfuscation programs guided by obfuscation goals to generate real attack instances. Our experiments demonstrate that our obfuscation scheme significantly reduces both the recall and precision of current state-of-the-art schemes in the DARPA Transparent Computing (TC) dataset and in simulated real-world attack scenarios. Furthermore, the meta-behavioral modeling approach of our system ensures its applicability in real-world scenarios, while we also discuss potential defenses against such attacks.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SunWWJH024,
+	author = {Hongbin Sun and
+                  Su Wang and
+                  Zhiliang Wang and
+                  Zheyu Jiang and
+                  Dongqi Han and
+                  Jiahai Yang},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {AudiTrim: {A} Real-time, General, Efficient, and Low-overhead Data
+                  Compaction System for Intrusion Detection},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {263--277},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3679048},
+	doi = {10.1145/3678890.3679048},
+	timestamp = {Thu, 03 Oct 2024 00:45:02 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SunWWJH024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently enterprises and governments face escalating APT attacks, leading to significant economic losses. APT attacks often persist for extended periods, necessitating the storage of extensive audit logs for effective detection. To reduce data storage overhead, enterprises commonly adopt compression strategies. However, efficient compression strategies may introduce additional query overhead. Existing approaches propose data reduction algorithms, but these methods can compromise data integrity, rendering current attack investigation and anomaly-based intrusion detection ineffective. To address these difficulties, we present AudiTrim, a system that ensures real-time, general, efficient, and low-overhead data compaction without compromising attack investigation and anomaly-based intrusion detection. It efficiently reduces log sizes without impacting user experiences, achieving real-time compaction and adaptable deployment on different operating systems. AudiTrim employs two strategies: 1) Data Reduction: By analyzing the types of duplicate edges, our data reduction approach not only considers a broader range of scenarios for redundant edges compared to previous methods but also enhances the efficiency of data reduction. 2) Data Compression: By aggregating log information at the server-side and training a compression model, we facilitate a data compression algorithm that ensures ease of querying. Both strategies meet real-time, low-overhead, and general requirements, fulfilling enterprise data storage needs. The final compaction ratio reaches 26×-65×.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SchusterK24,
+	author = {Franka Schuster and
+                  Hartmut K{\"{o}}nig},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {No Need for Details: Effective Anomaly Detection for Process Control
+                  Traffic in Absence of Protocol and Attack Knowledge},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {278--297},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678932},
+	doi = {10.1145/3678890.3678932},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SchusterK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapidly expanding landscape of attack vectors on cyber-physical systems (CPS) has led to the proposal of various attack detection methods for this area. Most approaches focus on analyzing time series of data from physical processes. However, the availability of such well-prepared data is not guaranteed in most infrastructures. In contrast, relatively few approaches address the direct analysis of network traffic, which is the natural basis for interaction between CPS devices. In this paper, we examine traffic-based methods using data flows, packets, and packet sequences as monitoring base. We include the packet payload in the analysis in a protocol-agnostic manner. This offers the possibility to apply the approach in different networks independently of the used CPS technologies or processes. We use one-class machine learning methods applied on only normal traffic in the training phase. This allows us to configure the detection capabilities independently of attack knowledge or given attack examples. Besides the evaluation regarding detection capability and efficiency, we further examine the potential of the protocol-agnostic models for a transfer on foreign detection scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ZhangZZL24,
+	author = {Mengya Zhang and
+                  Xiaokuan Zhang and
+                  Yinqian Zhang and
+                  Zhiqiang Lin},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Security of Cross-chain Bridges: Attack Surfaces, Defenses, and Open
+                  Problems},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {298--316},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678894},
+	doi = {10.1145/3678890.3678894},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ZhangZZL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cross-chain bridges play a pivotal role in enabling token and data exchanges between disparate blockchains. Despite their growing popularity, these bridges are still in their infancy and have been the target of numerous attacks, leading to significant financial losses. Current literature lacks a comprehensive examination of the security landscape surrounding cross-chain bridges, with existing incident reports dispersed and unconsolidated. Addressing this gap, this paper presents a systematic investigation into the security challenges facing cross-chain bridges. We begin by outlining the key features of current cross-chain bridges, including their applications, verification processes, communication models, and a novel threefold categorization. From this foundation, we identify 12 potential attack vectors and develop a taxonomy of cross-chain bridge attacks observed over the past three years, classifying them into 10 unique categories. Each category is detailed with corresponding vulnerabilities, illustrated through Solidity code examples. Furthermore, we explore existing defense mechanisms, propose potential security solutions, and highlight crucial open questions and avenues for future research. This paper aims to illuminate the path towards more secure cross-chain bridge designs and stimulate further investigation into fortifying the cross-chain bridge ecosystem.}
+}
+
+
+@inproceedings{DBLP:conf/raid/KahlhoferARM24,
+	author = {Mario Kahlhofer and
+                  Stefan Achleitner and
+                  Stefan Rass and
+                  Ren{\'{e}} Mayrhofer},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Honeyquest: Rapidly Measuring the Enticingness of Cyber Deception
+                  Techniques with Code-based Questionnaires},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {317--336},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678897},
+	doi = {10.1145/3678890.3678897},
+	timestamp = {Tue, 22 Oct 2024 21:07:55 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/KahlhoferARM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fooling adversaries with traps such as honeytokens can slow down cyber attacks and create strong indicators of compromise. Unfortunately, cyber deception techniques are often poorly specified. Also, realistically measuring their effectiveness requires a well-exposed software system together with a production-ready implementation of these techniques. This makes rapid prototyping challenging. Our work translates 13\xa0previously researched and 12\xa0self-defined techniques into a high-level, machine-readable specification. Our open-source tool, Honeyquest, allows researchers to quickly evaluate the enticingness of deception techniques without implementing them. We test the enticingness of 25\xa0cyber deception techniques and 19\xa0true security risks in an experiment with 47\xa0humans. We successfully replicate the goals of previous work with many consistent findings, but without a time-consuming implementation of these techniques on real computer systems. We provide valuable insights for the design of enticing deception and also show that the presence of cyber deception can significantly reduce the risk that adversaries will find a true security risk by about 22% on average.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GerasS24,
+	author = {Thomas Geras and
+                  Thomas Schreck},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {The "Big Beast to Tackle": Practices in Quality Assurance for Cyber
+                  Threat Intelligence},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {337--352},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678903},
+	doi = {10.1145/3678890.3678903},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/GerasS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The quality of Cyber Threat Intelligence (CTI) has a profound impact on the efficacy of an organization’s defense against cyber threats, directly influencing its ability to safeguard critical assets and sensitive data. Despite its critical importance, the domain of CTI quality remains a multifaceted and evolving field, often operating at the intersection of theory and practice. Many organizations recognize the need for high-quality intelligence but may struggle to establish systematic processes for assessing and enhancing its quality. To investigate these issues, our research, encompassing 25 interviews with experts in the field, enriches the understanding of CTI quality in the real world, contributing valuable insights for practitioners and organizations striving to fortify their cybersecurity defenses and information-sharing practices. By bridging the gap between theory and practice, this work aims to inform and inspire advancements in CTI quality measurement.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SaeedAPBS24,
+	author = {Mohammad Hammas Saeed and
+                  Shiza Ali and
+                  Pujan Paudel and
+                  Jeremy Blackburn and
+                  Gianluca Stringhini},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Unraveling the Web of Disinformation: Exploring the Larger Context
+                  of State-Sponsored Influence Campaigns on Twitter},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {353--367},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678911},
+	doi = {10.1145/3678890.3678911},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SaeedAPBS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Social media platforms offer unprecedented opportunities for connectivity and exchange of ideas; however, they also serve as fertile grounds for the dissemination of disinformation. Over the years, there has been a rise in state-sponsored campaigns aiming to spread disinformation and sway public opinion on sensitive topics through designated accounts, known as troll accounts. Past works on detecting accounts belonging to state-backed operations focus on a single campaign. While campaign-specific detection techniques are easier to build, there is no work done on developing systems that are campaign-agnostic and offer generalized detection of troll accounts unaffected by the biases of the specific campaign they belong to. In this paper, we identify several strategies adopted across different state actors and present a system that leverages them to detect accounts from previously unseen campaigns. We study 19 state-sponsored disinformation campaigns that took place on Twitter, originating from various countries. The strategies include sending automated messages through popular scheduling services, retweeting and sharing selective content and using fake versions of verified applications for pushing content. By translating these traits into a feature set, we build a machine-learning-based classifier that can correctly identify up to 94% of accounts from unseen campaigns. Additionally, we run our system in the wild and find more accounts that could potentially belong to state-backed operations. We also present case studies to highlight the similarity between the accounts found by our system and those identified by Twitter.}
+}
+
+
+@inproceedings{DBLP:conf/raid/PaladiniFPZC24,
+	author = {Tommaso Paladini and
+                  Lara Ferro and
+                  Mario Polino and
+                  Stefano Zanero and
+                  Michele Carminati},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {You Might Have Known It Earlier: Analyzing the Role of Underground
+                  Forums in Threat Intelligence},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {368--383},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678930},
+	doi = {10.1145/3678890.3678930},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/PaladiniFPZC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper analyzes 88 million hacker forum posts of a publicly available dataset and 75,000 online articles over a 20-year timespan, studying the potential of hacker forums as a proactive Cyber Threat Intelligence (CTI) source. Using a custom Natural Language Processing pipeline with fine-tuned BERT-based models, we extract named entities from forum posts and reports and cross-reference their date of occurrence over different periods. Our analysis reveals that discussions on hacker forums precede official security reports for over 60% of the identified entities in 20 years of data. This highlights the relevance of these platforms as early indicators of cyber threats. However, our longitudinal analysis shows that such a trend has been constantly decreasing since 2012: forum discussions no longer consistently anticipate threats discussed in cybersecurity reports, possibly due to increased scrutiny or the emergence of alternative channels. This suggests that the CTI community should adapt by identifying and monitoring new platforms where threat actors congregate. Despite not being as thriving as in the first decade of 2000, underground communities are still releasing novel malware and showing interest in discussing malware employed in real cyberattacks. Our results highlight the value of hacker forums as early threat indicators and the importance of proactively monitoring them for potential cyberattack detection. This approach addresses the research gap that predominantly focuses on traditional cybersecurity reports.}
+}
+
+
+@inproceedings{DBLP:conf/raid/RuanLZL24,
+	author = {Bonan Ruan and
+                  Jiahao Liu and
+                  Chuqi Zhang and
+                  Zhenkai Liang},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {KernJC: Automated Vulnerable Environment Generation for Linux Kernel
+                  Vulnerabilities},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {384--402},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678891},
+	doi = {10.1145/3678890.3678891},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/RuanLZL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Linux kernel vulnerability reproduction is a critical task in system security. To reproduce a kernel vulnerability, the vulnerable environment and the Proof of Concept (PoC) program are needed. Most existing research focuses on the generation of PoC, while the construction of environment is overlooked. However, establishing an effective vulnerable environment to trigger a vulnerability is challenging. Firstly, it is hard to guarantee that the selected kernel version for reproduction is vulnerable, as the vulnerability version claims in online databases can occasionally be incorrect. Secondly, many vulnerabilities cannot be reproduced in kernels built with default configurations. Intricate non-default kernel configurations must be set to include and trigger a kernel vulnerability, but less information is available on how to recognize these configurations. To solve these challenges, we propose a patch-based approach to identify real vulnerable kernel versions and a graph-based approach to identify necessary configs for activating a specific vulnerability. We implement these approaches in a tool, KernJC, automating the generation of vulnerable environments for kernel vulnerabilities. To evaluate the efficacy of KernJC, we build a dataset containing 66 representative real-world vulnerabilities with PoCs from kernel vulnerability research in the past five years. The evaluation shows that KernJC builds vulnerable environments for all these vulnerabilities, 32 (48.5%) of which require non-default configs, and 4 have incorrect version claims in the National Vulnerability Database (NVD). Furthermore, we conduct large-scale spurious version detection on kernel vulnerabilities and identify 128 vulnerabilities that have spurious version claims in NVD. To foster future research, we release KernJC with the dataset in the community.}
+}
+
+
+@inproceedings{DBLP:conf/raid/HazimehX0WP24,
+	author = {Ahmad Hazimeh and
+                  Duo Xu and
+                  Qiang Liu and
+                  Yan Wang and
+                  Mathias Payer},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Tango: Extracting Higher-Order Feedback through State Inference},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {403--418},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678908},
+	doi = {10.1145/3678890.3678908},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/HazimehX0WP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzing is the de facto standard for automated testing. However, while coverage-guided fuzzing excels at code discovery, its effectiveness falters when applied to complex systems. One such class entails persistent targets whose behavior depends on the state of the system, where code coverage alone is insufficient for comprehensive testing. It is difficult for a fuzzer to optimize for state discovery when the feedback does not correlate with the objective. We introduce Tango, an extensible framework for state-aware fuzzing. Our design incorporates “state” as a first-class citizen in all operations, enabling Tango to fuzz complex targets that otherwise remain out-of-scope. We present state inference, a cross-validation technique that distills portable coverage metrics to reveal hidden path dependencies in the target. This in turn allows us to aggregate feedback from different paths while maintaining state-specific operation. We leverage Tango to fuzz stateful targets covering network servers, language parsers, and video games, demonstrating the flexibility of our framework in exploring complex systems. Using state inference, we shrink the scheduling queue of a fuzzer by around seven times by identifying functionally equivalent paths. We extend current state-of-the-art fuzzers, i.e., AFL++ and Nyx-Net, with state feedback from Tango. During our evaluation, fuzzers using our technique uncovered two new bugs in yajl and dcmtk.}
+}
+
+
+@inproceedings{DBLP:conf/raid/KastenZH24,
+	author = {Florian Kasten and
+                  Philipp Zieris and
+                  Julian Horsch},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Integrating Static Analyses for High-Precision Control-Flow Integrity},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {419--434},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678920},
+	doi = {10.1145/3678890.3678920},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/KastenZH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory corruptions are still one of the most prevalent and severe security vulnerabilities in today’s programs. For this reason, several techniques for mitigating software vulnerabilities exist and are used in production systems. An important mitigation involves the prevention of invalid control flow transfers. Attackers often corrupt function pointers to subvert a forward-edge in a program’s call graph. Forward-edges can be protected using Control-Flow Integrity (CFI), for which practical implementations already exist. However, current CFI implementations are often imprecise, allowing more control flow transfers than necessary. This often leaves sufficient leeway for an attacker to successfully exploit a program. This paper presents High-Precision CFI (HPCFI), a concept and implementation for precise forward-edge CFI protection of indirect calls in C and C++ programs using a combination of type analysis and static data-flow analysis for determining valid forward-edges. HPCFI is implemented as LLVM compiler passes that perform a precise type analysis and utilize the Static Value-Flow (SVF) framework to conduct a static data-flow analysis. The combination of type analysis and static data-flow analysis offers higher precision than conventional heuristic-based approaches. Our evaluation, using all compatible benchmarks from SPEC CPU 2017, demonstrates that HPCFI can be effectively applied to large projects with an average performance overhead of only 1.3%, while improving the precision of established CFI mechanisms, such as Clang CFI, by up to 99% and 40% on average.}
+}
+
+
+@inproceedings{DBLP:conf/raid/WangX24,
+	author = {Yu Wang and
+                  Yue Xu},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Beyond {REST:} Introducing {APIF} for Comprehensive {API} Vulnerability
+                  Fuzzing},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {435--449},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678928},
+	doi = {10.1145/3678890.3678928},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/WangX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In modern software development, APIs play a crucial role as they facilitate platform interoperability and serve as conduits for data transmission. API fuzzing has emerged to explore errors and vulnerabilities in web applications, cloud services, and IoT systems. Its effectiveness highly depends on parameter structure analysis and fuzzing request generation. However, existing methods focus more on RESTful APIs, lacking generalizability for other protocols. Additionally, shortcomings in the effectiveness of test payloads and testing efficiency have limited the large-scale application of these methods in real-world scenarios. This paper introduces APIF, a novel API fuzzing framework that incorporates three innovative designs. Firstly, by adopting a tree-structured model for parsing and mutating parameters in different API protocols, APIF breaks the limitations of existing research that are only effective for RESTful APIs, thus broadening its applicability. Secondly, APIF utilizes a recursive decoder to tackle the complex encodings in API parameters, increasing the fuzzing effectiveness. Thirdly, APIF leverages a testing priority calculation algorithm together with a parameter independence analysis algorithm to enhance fuzzing efficiency, enabling this method to be widely applied in real-world, large-scale API vulnerability fuzzing. We evaluate APIF against the state-of-the-art fuzzers on 7 open-source projects via 412 APIs. The results demonstrate APIF’s superior precision, recall, and efficiency. Moreover, in real-world API vulnerability exploration, APIF discovered 188 bugs over 60 API projects, with 26 vulnerabilities confirmed by the software maintainers.}
+}
+
+
+@inproceedings{DBLP:conf/raid/Yue0ZNWZL24,
+	author = {Tai Yue and
+                  Yibo Jin and
+                  Fengwei Zhang and
+                  Zhenyu Ning and
+                  Pengfei Wang and
+                  Xu Zhou and
+                  Kai Lu},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Efficiently Rebuilding Coverage in Hardware-Assisted Greybox Fuzzing},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {450--464},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678933},
+	doi = {10.1145/3678890.3678933},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/Yue0ZNWZL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Coverage-based greybox fuzzing (CGF) is an efficient technique for detecting vulnerabilities, but its coverage-feedback mechanism introduces significant overhead in binary-only fuzzing. Although hardware-assisted greybox fuzzing (HGF) has been proposed to address this issue, existing approaches struggle to achieve a balance between the efficiency and sensitivity of coverage, as well as to cope with trace buffer overflow. In this paper, we review the typical HGF tools and identify several challenges in their coverage-feedback mechanisms, including efficiency, sensitivity, and stability. Taking Arm CoreSight as an example, we present an efficient tool called Stalker to address these challenges. To achieve high-speed execution while maintaining a branch-sensitivity coverage, we propose two coverage strategies with different overheads and sensitivities and design a novel double-layer coverage mechanism that maximizes the benefits of these strategies. We further accelerate Stalker by conducting many optimizations in the decoder and kernel. To mitigate the imprecision and instability in coverage introduced by trace buffer overflow, we propose an adaptive CPU frequency modulation mechanism that adjusts the bandwidth of the trace units. We implement Stalker on an Arm Juno R2 development board and thoroughly evaluate the efficiency and sensitivity of coverage-feedback mechanisms in existing tools. Our comprehensive evaluations demonstrate that Stalker outperforms other state-of-the-art (SOTA) tools in addressing these challenges. Compared with Armored-Edge, Armored-Path, and μ AFL, Stalker accelerates the execution speed by 2.81 ×, 1.74 ×, and 1.4 × and covers <Formula format="inline"><TexMath><?TeX $23.9\\%$?></TexMath><AltText>Math 1</AltText><File name="raid2024-43-inline1" type="svg"/></Formula>, <Formula format="inline"><TexMath><?TeX $66.1\\%$?></TexMath><AltText>Math 2</AltText><File name="raid2024-43-inline2" type="svg"/></Formula>, and <Formula format="inline"><TexMath><?TeX $3.5\\%$?></TexMath><AltText>Math 3</AltText><File name="raid2024-43-inline3" type="svg"/></Formula> more branches, as well as <Formula format="inline"><TexMath><?TeX $66.4\\%$?></TexMath><AltText>Math 4</AltText><File name="raid2024-43-inline4" type="svg"/></Formula>, <Formula format="inline"><TexMath><?TeX $323.3\\%$?></TexMath><AltText>Math 5</AltText><File name="raid2024-43-inline5" type="svg"/></Formula>, and <Formula format="inline"><TexMath><?TeX $19.2\\%$?></TexMath><AltText>Math 6</AltText><File name="raid2024-43-inline6" type="svg"/></Formula> more paths, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/raid/HaldankarRNPH24,
+	author = {Atharva Haldankar and
+                  Arman Riasi and
+                  Hoang{-}Dung Nguyen and
+                  Tran Phuong and
+                  Thang Hoang},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Breaking Privacy in Model-Heterogeneous Federated Learning},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {465--479},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678905},
+	doi = {10.1145/3678890.3678905},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/HaldankarRNPH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated learning (FL) allows multiple distrustful clients to collaboratively train a machine learning model. In FL, data never leaves client devices; instead, clients only share locally computed gradients with a central server. As individual gradients may leak information about a given client’s dataset, secure aggregation was proposed. With secure aggregation, the server only receives the aggregate gradient update from the set of all sampled clients without being able to access any individual gradient. One challenge in FL is the systems-level heterogeneity that is quite often present among client devices. Specifically, clients in the FL protocol may have varying levels of compute power, on-device memory, and communication bandwidth. These limitations are addressed by model-heterogeneous FL schemes, where clients are able to train on subsets of the global model. Despite the benefits of model-heterogeneous schemes in addressing systems-level challenges, the implications of these schemes on client privacy have not been thoroughly investigated. In this paper, we investigate whether the nature of model distribution and the computational heterogeneity among client devices in model-heterogeneous FL schemes may result in the server being able to recover sensitive data from target clients. To this end, we propose two attacks in the model-heterogeneous FL setting, even with secure aggregation in place. We call these attacks the Convergence Rate Attack and the Rolling Model Attack. The Convergence Rate Attack targets schemes where clients train on the same subset of the global model, while the Rolling Model Attack targets schemes where model parameters are dynamically updated each round. We show that a malicious adversary can compromise the model and data confidentiality of a target group of clients. We evaluate our attacks on the MNIST and CIFAR-10 datasets and show that using our techniques, an adversary can reconstruct data samples with near perfect accuracy for batch sizes of up to 20 samples.}
+}
+
+
+@inproceedings{DBLP:conf/raid/MaL0Z24,
+	author = {Hualong Ma and
+                  Peizhuo Lv and
+                  Kai Chen and
+                  Jiachen Zhou},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {KGDist: {A} Prompt-Based Distillation Attack against LMs Augmented
+                  with Knowledge Graphs},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {480--495},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678906},
+	doi = {10.1145/3678890.3678906},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/MaL0Z24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With Knowledge Graph (KG) increasingly applied in various fields, the integration of KG has gained significant attention to augment the knowledge-specific task capabilities of language models (LMs). However, constructing and maintaining large KGs, much like LMs, can be expensive and challenging, often requiring extensive domain knowledge and human resources. This makes KG a valuable resource potentially vulnerable to theft threats from attackers. In this paper, we present KGDist, the first prompt-based KG distillation technique for extracting KG knowledge from KG+LM augmented models. Through iterations of prompt-based queries, we can steal a substitute KG containing task domain knowledge from the original KG. First of all, we initialize entities from a small scale task-specific corpus. Then, we construct specific task prompts for querying the victim LMs. According to the model outputs, we iteratively select entities showing strong correlation and reconstruct the relation edges for subsequent prompt crafting. We also propose a multi-granularity prompt construction method for reducing the querying cost. After acquiring the extracted KG, we launch a relation type-based pruning to cut off redundant edges forming cycles decreasing the performance of distilled KGs. We evaluate the effectiveness of KGDist \xa0on five benchmark KG+LM models designed for various tasks. Results demonstrate that our attack successfully extracts the distilled KGs with minimal performance degradation (under 2.4%) applied on LMs and less storage space. And also, the mechanism we apply greatly saves API queries compared to brute force method. In addition, further experiments demonstrate that we can split the KG knowledge from the LM noises effectively, and the distilled KGs have similar properties in knowledge distribution and graph structures to the original ones. Our code is available at https://github.com/Haro-M/KGDist.}
+}
+
+
+@inproceedings{DBLP:conf/raid/YanW0024,
+	author = {Gang Yan and
+                  Hao Wang and
+                  Xu Yuan and
+                  Jian Li},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Enhancing Model Poisoning Attacks to Byzantine-Robust Federated Learning
+                  via Critical Learning Periods},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {496--512},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678915},
+	doi = {10.1145/3678890.3678915},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/YanW0024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Most existing model poisoning attacks in federated learning (FL) control a set of malicious clients and share a fixed number of malicious gradients with the server in each FL training round, to achieve a desired tradeoff between the attack impact and the attack budget. In this paper, we show that such a tradeoff is not fundamental and an adaptive attack budget not only improves the impact of attack <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 1</AltText><File name="raid2024-25-inline1" type="svg"/></Formula> but also makes it more resilient to defenses. However, adaptively determining the number of malicious clients that share malicious gradients with the central server in each FL training round has been less investigated. This is due to the fact that most existing model poisoning attacks mainly focus on FL optimization itself to maximize the damage to the global model, and largely ignore the impact of the underlying deep neural networks that are used to train FL models. Inspired by recent findings on critical learning periods (CLP), where small gradient errors have irrecoverable impact on model accuracy, we advocate CLP augmented model poisoning attacks <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 2</AltText><File name="raid2024-25-inline2" type="svg"/></Formula>-CLP in this paper. <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 3</AltText><File name="raid2024-25-inline3" type="svg"/></Formula>-CLP merely augments an existing model poisoning attack <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 4</AltText><File name="raid2024-25-inline4" type="svg"/></Formula> with an adaptive attack budget scheme. Specifically, <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 5</AltText><File name="raid2024-25-inline5" type="svg"/></Formula>-CLP inspects the changes in federated gradient norms to identify CLP and adaptively adjusts the number of malicious clients that share their malicious gradients with the server in each round, leading to dramatically improved attack impact compared to <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 6</AltText><File name="raid2024-25-inline6" type="svg"/></Formula> by up to 6.85 ×, with a smaller attack budget. This in turn improves the resilience of <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 7</AltText><File name="raid2024-25-inline7" type="svg"/></Formula> by up to 2 ×. Since <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 8</AltText><File name="raid2024-25-inline8" type="svg"/></Formula>-CLP is orthogonal to the attack <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 9</AltText><File name="raid2024-25-inline9" type="svg"/></Formula>, it also crafts malicious gradients by solving a difficult optimization problem. To tackle this challenge and based on our understandings of <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 10</AltText><File name="raid2024-25-inline10" type="svg"/></Formula>-CLP, we further relax the inner attack subroutine <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 11</AltText><File name="raid2024-25-inline11" type="svg"/></Formula> in <Formula format="inline"><TexMath><?TeX $\\mathcal {A}$?></TexMath><AltText>Math 12</AltText><File name="raid2024-25-inline12" type="svg"/></Formula>-CLP and design GraSP, a lightweight CLP augmented similarity-based attack. We show that GraSP not only is more flexible but also achieves an improved attack impact compared to the strongest of existing model poisoning attacks.}
+}
+
+
+@inproceedings{DBLP:conf/raid/RickerAHFQ24,
+	author = {Jonas Ricker and
+                  Dennis Assenmacher and
+                  Thorsten Holz and
+                  Asja Fischer and
+                  Erwin Quiring},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {AI-Generated Faces in the Real World: {A} Large-Scale Case Study of
+                  Twitter Profile Images},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {513--530},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678922},
+	doi = {10.1145/3678890.3678922},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/RickerAHFQ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent advances in the field of generative artificial intelligence (AI) have blurred the lines between authentic and machine-generated content, making it almost impossible for humans to distinguish between such media. One notable consequence is the use of AI-generated images for fake profiles on social media. While several types of disinformation campaigns and similar incidents have been reported in the past, a systematic analysis has been lacking. In this work, we conduct the first large-scale investigation of the prevalence of AI-generated profile pictures on Twitter. We tackle the challenges of a real-world measurement study by carefully integrating various data sources and designing a multi-stage detection pipeline. Our analysis of nearly 15 million Twitter profile pictures shows that 0.052% were artificially generated, confirming their notable presence on the platform. We comprehensively examine the characteristics of these accounts and their tweet content, and uncover patterns of coordinated inauthentic behavior. The results also reveal several motives, including spamming and political amplification campaigns. Our research reaffirms the need for effective detection and mitigation strategies to cope with the potential negative effects of generative AI in the future.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ChenSD24,
+	author = {Chun{-}Yu Chen and
+                  Kang G. Shin and
+                  Soodeh Dadras},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Context-Aware Anomaly Detection Using Vehicle Dynamics},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {531--545},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678895},
+	doi = {10.1145/3678890.3678895},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ChenSD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Replacing traditional vehicular components with electronic components brings numerous benefits but also introduces new vulnerabilities. To cope with this double-edged trend, we propose Context-Aware Detection of abnormal vehicle Dynamics (CADD) in general, or abnormal vehicle accelerations in particular. To account for the limited data availability common in production vehicles, we propose a new detection mechanism based on estimated vehicular contexts, instead of the commonly used “predict-input-then-compare.” That is, without relying on the unrealistically assumed availability of detailed measurements for accurate behavior modeling and prediction, CADD utilizes four sets of vehicle data to perform anomaly detection by cross-validating estimations of the underlying driving contexts, including road inclination, tire slippage, and total mass. Our extensive evaluation with > 87,000 test-cases has shown CADD to achieve > 96% recall and < 0.5% false positive rate. Furthermore, CADD can efficiently pinpoint the anomalous group of data with > 95% accuracy when the vehicle’s behavior deviates 0.07g (0.69 m/s2) from its normal pattern.}
+}
+
+
+@inproceedings{DBLP:conf/raid/0001P0Y00024,
+	author = {Zeyu Yang and
+                  Hongyi Pu and
+                  Liang He and
+                  Chengtao Yao and
+                  Jianying Zhou and
+                  Peng Cheng and
+                  Jiming Chen},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Deception-Resistant Stochastic Manufacturing for Automated Production
+                  Lines},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {546--560},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678896},
+	doi = {10.1145/3678890.3678896},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/0001P0Y00024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The advancement of Industrial Internet-of-Things (IIoT) magnifies the cyber risk of automated production lines, especially to deception attacks that tamper with the monitoring data to prevent the manipulated operation of production lines from being detected. To address this issue, we propose Stochastic Manufacturing (StoM), a new paradigm of manufacturing that is resistant to deception by design. StoM voids the foundation of deception attacks — i.e., the highly predictable operation data due to the cyclical manufacturing process — by injecting controlled stochasticity into the operation of production lines without degrading manufacturing efficiency or quality. StoM then examines if this stochasticity can be observed from the operation data and triggers an alarm of deception attack if not. We have experimentally evaluated StoM on two production line platforms, showing StoM to detect deception attacks with a detection rate exceeding 99.1%, a false alarm rate below 0.1%, and a latency of less than 1.2 manufacturing cycles. Our empirical analysis also shows that it is highly impractical for attackers to spoof the controlled stochasticity.}
+}
+
+
+@inproceedings{DBLP:conf/raid/TagliaroKCBL24,
+	author = {Carlotta Tagliaro and
+                  Martina Komsic and
+                  Andrea Continella and
+                  Kevin Borgolte and
+                  Martina Lindorfer},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Large-Scale Security Analysis of Real-World Backend Deployments Speaking
+                  IoT-Focused Protocols},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {561--578},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678899},
+	doi = {10.1145/3678890.3678899},
+	timestamp = {Tue, 01 Oct 2024 16:37:51 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/TagliaroKCBL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet-of-Things (IoT) devices, ranging from smart home assistants to health devices, are pervasive: Forecasts estimate their number to reach 29 billion by 2030. Understanding the security of their machine-to-machine communication is crucial. Prior work focused on identifying devices’ vulnerabilities or proposed protocol-specific solutions. Instead, we investigate the security of backends speaking IoT protocols, that is, the backbone of the IoT ecosystem. We focus on three real-world protocols for our large-scale analysis: MQTT, CoAP, and XMPP. We gather a dataset of over 337,000 backends, augment it with geographical and provider data, and perform non-invasive active measurements to investigate three major security threats: information leakage, weak authentication, and denial of service. Our results provide quantitative evidence of a problematic immaturity in the IoT ecosystem. Among other issues, we find that 9.44% backends expose information, 30.38% CoAP-speaking backends are vulnerable to denial of service attacks, and 99.84% of MQTT- and XMPP-speaking backends use insecure transport protocols (only 0.16% adopt TLS, of which 70.93% adopt a vulnerable version).}
+}
+
+
+@inproceedings{DBLP:conf/raid/WangGDLDLL24,
+	author = {Jianing Wang and
+                  Shanqing Guo and
+                  Wenrui Diao and
+                  Yue Liu and
+                  Haixin Duan and
+                  Yichen Liu and
+                  Zhenkai Liang},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {CrypTody: Cryptographic Misuse Analysis of IoT Firmware via Data-flow
+                  Reasoning},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {579--593},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678914},
+	doi = {10.1145/3678890.3678914},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/WangGDLDLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cryptographic techniques form the foundation of the security and privacy of computing solutions. However, if cryptographic APIs are not invoked correctly, they can result in significant security problems. In this paper, we abstract the intricate crypto misuse detection problem as a data-flow reasoning task. Towards this end, we propose CrypTody, a novel logic-inference-based framework for detecting crypto misuses via reasoning about data flows on multi-architecture IoT firmware images. It carries out cross-architecture analysis, with detection strategies to reduce false positives and false negatives, such as cross-flow misuse inference. To evaluate the effectiveness of CrypTody, we conducted a large-scale experiment on 1,431 firmware images from 16 vendors. Our evaluation shows that 46% of the firmware images have high-risk misuses and 95% have at least one cryptographic misuse. In total, we find 6,624 potential crypto misuses, with 760 being cross-flow misuses that are not detected by existing solutions. We have responsibly disclosed portions of our findings to the relevant vendors. From the feedback, we note that CrypTody has a low false-positive rate for the confirmed misuses. Some typical cases have been assigned CVEs and fixed by the vendors.}
+}
+
+
+@inproceedings{DBLP:conf/raid/LorchLTC24,
+	author = {Robert Lorch and
+                  Daniel Larraz and
+                  Cesare Tinelli and
+                  Omar Chowdhury},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {A Comprehensive, Automated Security Analysis of the Uptane Automotive
+                  Over-the-Air Update Framework},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {594--612},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678927},
+	doi = {10.1145/3678890.3678927},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/LorchLTC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present our experience of formally verifying the desired security properties of the Uptane over-the-air (OTA) software update framework against a set of applicable threat models. Uptane is gaining traction in the automobile industry and is widely considered the next de-facto standard for OTA automobile software updates. The security of Uptane is of utmost importance because modern automobiles rely on software for their safety-critical functionalities and, especially, require OTA software updates to add new safety features or patch bugs in existing ones. Design flaws in Uptane can either violate the integrity of the updates to be installed or prevent vehicles from installing new updates, both of which can cause severe safety issues. Previous approaches to protocol verification either fail to capture the necessary features of Uptane or suffer from termination issues due to Uptane’s complexity. A key component of our approach lies in the eager combination of an infinite-state model checker and a cryptographic protocol verifier, where (in contrast to prior lazy approaches) we are able to eliminate a key manual step in the workflow while enabling reasoning over more fine-grained message structures. In addition, our approach utilizes two proven soundness- and completeness-preserving state-space-reduction optimizations for computational tractability, as well as a meta-level analysis technique that makes it feasible to reason over Uptane’s set of optional protocol features. Our approach is able to discover six new vulnerabilities while rediscovering all five known ones. While there have been previous analyses of Uptane’s security properties, they either missed design flaws identified by our approach or suffered from coverage and termination issues. The Uptane standards body has positively acknowledged our findings and has suggested updates to the protocol specification documents to address them.}
+}
+
+
+@inproceedings{DBLP:conf/raid/ArnoldHC24,
+	author = {Lukas Arnold and
+                  Matthias Hollick and
+                  Jiska Classen},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Catch You Cause {I} Can: Busting Rogue Base Stations using CellGuard
+                  and the Apple Cell Location Database},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {613--629},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678898},
+	doi = {10.1145/3678890.3678898},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/ArnoldHC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile phones connect to the Internet and receive phone calls using a cellular baseband chip. Basebands pose a substantial attack surface, as they do not only process but also decrypt personal data. Cellular attackers usually force a phone to connect with a, e.g., to record identity information and locations, intercept or manipulate traffic, or execute arbitrary code by exploiting vulnerabilities in the baseband stack. s are stealthy, as smartphones attempt to connect to nearby base stations and do not display any indicators of compromise to the user. While their detection with Software-defined Radios (SDRs) is possible, usability and scalability are limited. We research and expose the baseband interface on recent iPhones for Intel and Qualcomm chips to detect attacks. We integrate these findings into a user-friendly app called CellGuard. Detection even works on non-jailbroken iPhones with the latest security updates and Lockdown mode. We enhance detection by utilizing Apple’s internal database with highly accurate cell tower information and in-depth reverse engineering of Apple’s baseband interface protocols to find further indicators of compromise. During multiple weeks of evaluation, we collect data on various devices using CellGuard and evaluate the results, along with measurements from our own setup. Our baseband analysis framework BaseTrace will be helpful beyond detection, as it can interact with the baseband and decode any management information exchanged, including satellite communication in the iPhone 15.}
+}
+
+
+@inproceedings{DBLP:conf/raid/NinanNRSSWE24,
+	author = {Mabon Ninan and
+                  Evan Nimmo and
+                  Shane Reilly and
+                  Channing Smith and
+                  Wenhai Sun and
+                  Boyang Wang and
+                  John Marty Emmert},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {A Second Look at the Portability of Deep Learning Side-Channel Attacks
+                  over {EM} Traces},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {630--643},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678900},
+	doi = {10.1145/3678890.3678900},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/NinanNRSSWE24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning side-channel attacks can recover encryption keys on a target by analyzing power consumption or electromagnetic (EM) signals. However, they are less portable when there are domain shifts between training and test data. While existing studies have shown that pre-processing and unsupervised domain adaptation can enhance the portability of deep learning side-channel attacks given domain shifts over EM traces, the findings are limited to easy targets (e.g. 8-bit microcontrollers). In this paper, we investigate the portability of deep learning side-channel attacks over EM traces acquired from more challenging targets, including 32-bit microcontrollers and EM traces with random delay. We study domain shifts introduced by the combination of hardware variations, distinct keys, and inconsistent probe locations between two targets. In addition, we perform comparative analyses of multiple existing (and new) pre-processing and unsupervised domain adaptation methods. We conduct a series of comprehensive experiments and derive three main observations. (1) Pre-processing and unsupervised domain adaptation methods can enhance the portability of deep learning side-channel attacks over more challenging targets. (2) The effectiveness of each method, however, varies depending on the target and probe locations in use. In other words, observations of a method on easy targets do not necessarily generalize to challenging targets. (3) None of the methods can constantly outperform others. Moreover, we highlight two types of pitfalls that could lead to over-optimistic attack results in cross-device evaluations. We also contribute a large-scale public dataset (with 3 million EM traces from 9 probe locations over multiple targets) for benchmarking and reproducibility of side-channel attacks tackling domain shifts over EM traces.}
+}
+
+
+@inproceedings{DBLP:conf/raid/GerhorstHWOKH24,
+	author = {Luis Gerhorst and
+                  Henriette Herzog and
+                  Peter W{\"{a}}gemann and
+                  Maximilian Ott and
+                  R{\"{u}}diger Kapitza and
+                  Timo H{\"{o}}nig},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {VeriFence: Lightweight and Precise Spectre Defenses for Untrusted
+                  Linux Kernel Extensions},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {644--659},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678907},
+	doi = {10.1145/3678890.3678907},
+	timestamp = {Tue, 22 Oct 2024 21:07:55 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/GerhorstHWOKH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {High-performance IO demands low-overhead communication between user- and kernel space. This demand can no longer be fulfilled by traditional system calls. Linux's extended Berkeley Packet Filter (BPF) avoids user-/kernel transitions by just-in-time compiling user-provided bytecode and executing it in kernel mode with near-native speed. To still isolate BPF programs from the kernel, they are statically analyzed for memory- and type-safety, which imposes some restrictions but allows for good expressiveness and high performance. However, to mitigate the Spectre vulnerabilities disclosed in 2018, defenses which reject potentially-dangerous programs had to be deployed. We find that this affects 31 % to 54 % of programs in a dataset with 844 real-world BPF programs from popular open-source projects. To solve this, users are forced to disable the defenses to continue using the programs, which puts the entire system at risk. To enable secure and expressive untrusted Linux kernel extensions, we propose VeriFence, an enhancement to the kernel's Spectre defenses that reduces the number of BPF application programs rejected from 54 % to zero. We measure VeriFence's overhead for all mainstream performance-sensitive applications of BPF (i.e., event tracing, profiling, and packet processing) and find that it improves significantly upon the status-quo where affected BPF programs are either unusable or enable transient execution attacks on the kernel.}
+}
+
+
+@inproceedings{DBLP:conf/raid/SongLLH24,
+	author = {Wenfan Song and
+                  Jianwei Liu and
+                  Yajie Liu and
+                  Jinsong Han},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Replay-resistant Disk Fingerprinting via Unintentional Electromagnetic
+                  Emanations},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {660--673},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678917},
+	doi = {10.1145/3678890.3678917},
+	timestamp = {Thu, 03 Oct 2024 00:45:03 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/SongLLH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {External disks (abbr., disks) are common data storage peripherals for hosts. Verifying the disk’s legitimacy is crucial to prevent security issues on a host like privacy leakage and virus propagation before interaction setup. To address this issue, we propose DiskPrint, a novel non-intrusive and replay-resistant disk authentication system that relies on unintentional electromagnetic (EM) emanations from disks’ internal components. The core idea of DiskPrint is that EM signals emitted during data writing can reflect hardware discrepancies among different disks. Based on electromagnetic principles, we establish a theoretical model associating EM signals with built-in electronic components to demonstrate the feasibility of extracting disk fingerprints from such EM emanations. We also propose a series of signal enhancement methods to remove the EM interface and improve the signal-to-noise ratio (SNR) of the EM measurements. To boost the security of DiskPrint, we propose a device-agnostic replay-resistant method by introducing randomness into leaked EM signals. Real-world experiments with 60 disks including hard disk drives (HDDs) and solid state drives (SSDs) from seven brands and 14 models indicate that DiskPrint achieves a 99%+ authentication success rate. Robustness analysis demonstrates DiskPrint’s stability over time. Security study shows its ability to defend against various attacks.}
+}
+
+
+@inproceedings{DBLP:conf/raid/HuangWZ24,
+	author = {Ziyi Huang and
+                  Ding Wang and
+                  Yunkai Zou},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Prob-Hashcat: Accelerating Probabilistic Password Guessing with Hashcat
+                  by Hundreds of Times},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {674--692},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678919},
+	doi = {10.1145/3678890.3678919},
+	timestamp = {Mon, 07 Oct 2024 08:28:28 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/HuangWZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While the academic community has proposed dozens of probabilistic password guessing models to improve the success rate of password guessing, few studies have considered the speed of generating password guesses (which is a crucial factor in realistic password guessing scenarios). Real-world attackers often aim to crack more passwords in less time, and the speed of these models thus becomes a significant concern. Consequently, real-world attackers tend to prefer simple heuristic methods (such as Rule attack and Mask attack) and off-the-shelf password cracking tools (such as Hashcat and John the Ripper), over academic probabilistic password guessing models, despite the latter’s superior scientific flavor. To fill this gap, we introduce an offline guessing speed theory for measuring the speed of generating guesses, and a probabilistic model parallelization framework to accelerate probabilistic guessing models. We use our theory to elucidate the acceleration principles of our framework, and provide a method for integrating this framework with Hashcat to fully leverage GPU acceleration. Our framework is scalable, generalizable for various probabilistic models and applicable to guessing scenarios that tackle multiple hashes. To exhibit the practical value of our theory and framework, we implement two probabilistic password guessing models, PCFG and OMEN, within our framework and develop a high-speed cracking tool, Prob-hashcat. Extensive experiments on eight large real-world password datasets demonstrate the effectiveness of Prob-hashcat: (1) Both models can generate over 100 million guesses per second on a common computer and handle computing and matching hashes; (2) The average speeds of PCFG and OMEN increase by 31~104 times and 213~646 times, respectively, compared to their original speeds; (3) Within 20 minutes, the cracking rates of PCFG and OMEN increase by 12%~42% and 16%~182%, respectively, compared to their original rates, and this advantage becomes larger as the cracking time increases. We, for the first time, addresses the issue of employing GPU acceleration for probabilistic password models with Hashcat, highlighting that these models are significantly greater threats in real-world guessing attacks than expected.}
+}
+
+
+@inproceedings{DBLP:conf/raid/RossRNCJ24,
+	author = {Alexander J. Ross and
+                  Bradley Reaves and
+                  Yomna Nasser and
+                  Gil Cukierman and
+                  Roger Piqueras Jover},
+	editor = {Eleonora Losiouk and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Yousra Aafer and
+                  Yanick Fratantonio},
+	title = {Fixing Insecure Cellular System Information Broadcasts For Good},
+	booktitle = {The 27th International Symposium on Research in Attacks, Intrusions
+                  and Defenses, {RAID} 2024, Padua, Italy, 30 September 2024- 2 October
+                  2024},
+	pages = {693--708},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678890.3678924},
+	doi = {10.1145/3678890.3678924},
+	timestamp = {Tue, 01 Oct 2024 16:37:51 +0200},
+	biburl = {https://dblp.org/rec/conf/raid/RossRNCJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cellular networks are essential everywhere, and securing them is increasingly important as attacks against them become more prevalent and powerful. All cellular network generations bootstrap new radio connections with unauthenticated System Information Blocks (SIBs), which provide critical parameters needed to identify and connect to the network. Many cellular network attacks require exploiting SIBs. Authenticating these messages would eliminate whole classes of attack, from spoofed emergency alerts to fake base stations. This paper presents Broadcast But Verify, an efficient backwards-compatible mechanism for SIB authentication. Broadcast But Verify specifies a new signing SIB that encodes authentication signatures and hashes for all other SIBs while building on a standard cellular PKI. We identify the security and functional requirements for such a system, define a scalable and flexible mechanism to meet those requirements, and demonstrate negligible common-case connection latency overhead of 3.220 ms in a 4G LTE testbed. We also demonstrate that unmodified mobile devices successfully connect to networks deploying Broadcast But Verify. In contrast to prior proposals, Broadcast But Verify authenticates every SIB broadcasted by a cell. By demonstrating that even 4G LTE has the capacity to authenticate SIBs, we argue that future network generations can and should mandate authenticated SIBs.}
+}
