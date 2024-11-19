@@ -1,0 +1,890 @@
+@inproceedings{DBLP:conf/csfw/RajaonaBRW24,
+	author = {Fortunat Rajaona and
+                  Ioana Boureanu and
+                  R. Ramanujam and
+                  Stephan Wesemeyer},
+	title = {Epistemic Model Checking for Privacy},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00020},
+	doi = {10.1109/CSF61375.2024.00020},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/RajaonaBRW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We define an epistemic logic or logic of knowledge, PL, and a formalism to undertake privacy-centric reasoning in security protocols, over a Dolev-Yao model. We are able to automatically verify all the privacy requirements that are commonplace in security-protocol verification (i.e., strong secrecy, anonymity, various types of unlinkablity including weak unlinkability), as well as privacy notions that are less studied (i.e., privacy regarding lists' membership). Our methodology does not vary with the property: it is uniform no matter the kind of privacy requirement specified and/or verified. We operate in the setting of a bounded number of protocol-sessions. We also implement Phoebe – a proof-of-concept model checker for this methodology. We use Phoebe to check all the aforementioned properties, and we also show-case it on the “benchmark” anonymity and unlinkability requirements of several well-known protocols.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AndreevaBRT24,
+	author = {Elena Andreeva and
+                  Rishiraj Bhattacharyya and
+                  Arnab Roy and
+                  Stefano Trevisani},
+	title = {On Efficient and Secure Compression Functions for Arithmetization-Oriented
+                  Hashing},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00045},
+	doi = {10.1109/CSF61375.2024.00045},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AndreevaBRT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {ZK-SNARKs, a fundamental component of privacyoriented payment systems, identity protocols, or anonymous voting systems, are advanced cryptographic protocols for verifiable computation: modern SNARKs allow to encode the invariants of a program, expressed as an arithmetic circuit, in an appropriate constraint language from which short, zero-knowledge proofs for correct computations can be constructed. One of the most important computations that is run through SNARK systems is the verification of Merkle tree (MT) opening proofs, which relies on the evaluation of a fixed-input-length (FIL) cryptographic compression function over binary MTs. As classical, bit-oriented hash functions like SHA-2 are not compactly representable in SNARK frameworks, Arithmetization-Oriented (AO) cryptographic designs have emerged as an alternative, efficient solution. Today, the majority of AO compression functions are built from permutation-based hashing modes, such as Sponge. While this approach allows cost savings, compared to blockcipher-based modes, as it does not require key-scheduling, AO blockcipher schedulers are often cheap to compute. Furthermore, classical bitoriented cryptography has long studied how to construct provably secure compression functions from blockciphers, following the Preneel-Govaerts-Vandewalle (PGV) framework. The potential efficiency gains together with the strong provable security foundations in the classic setting, motivate the study of AO blockcipher-based compression functions. In this work, we propose AO PGV-LC and PGV-ELC, two AO blockcipher-based FIL compression modes inspired by and extending the classical PGV approach, offering flexible input and output sizes and coming with provable security guarantees in the AO setting. We prove the collision and preimage resistance in the ideal cipher model, and give bounds for collision and opening resistance over MTs of arbitrary arity. We compare experimentally the AO PGV-ELC mode over the HADES blockcipher with its popular and widely adopted Sponge instantiation, POSEIDON, and its improved variant POSEIDON2. Our resulting constructions are up to 3× faster than POSEIDONAND 2× faster than POSEIDON2 in native x86 execution, and up to 50% faster in the Groth16 SNARK framework. Finally, we study the benefits of using MTs of arity wider than two, proposing a new strategy to obtain a compact R1CS constraint system in such case. In fact, by combining an efficient parametrization of the HADES blockcipher over the PGV-ELC mode, together with an optimal choice of the MT arity, we measured an improvement of up to 9× in native MT construction time, and up to 2.5× in proof generation time, compared to POSEIDON over binary MTs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BursucPMT24,
+	author = {Sergiu Bursuc and
+                  Reynaldo Gil Pons and
+                  Sjouke Mauw and
+                  Rolando Trujillo{-}Rasua},
+	title = {Software-Based Memory Erasure with Relaxed Isolation Requirements},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00022},
+	doi = {10.1109/CSF61375.2024.00022},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BursucPMT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A Proof of Secure Erasure (PoSE) is a communication protocol where a verifier seeks evidence that a prover has erased the memory on a given device within the time frame of the protocol execution. Designers of PoSE protocols have long been aware that, if a prover can outsource the computation of the memory erasure proof to another device, then their protocols are trivially defeated. As a result, most software-based PoSE protocols in the literature assume that provers are isolated during the protocol execution, that is, provers cannot receive help from a network adversary. Our main contribution is to show that this assumption is not necessary. We introduce formal models for PoSE protocols playing against provers aided by external conspirators and develop two PoSE protocols that we prove secure in this context. We reduce the requirement of isolation to the more realistic requirement that the communication with the external conspirator is relatively slow. Software-based protocols with such relaxed isolation assumptions are especially pertinent for low-end devices, where it is too costly to deploy sophisticated protection methods.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/RamanujamSS24,
+	author = {R. Ramanujam and
+                  Vaishnavi Sundararajan and
+                  S. P. Suresh},
+	title = {Solving the Insecurity Problem for Assertions},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {1--15},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00008},
+	doi = {10.1109/CSF61375.2024.00008},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/RamanujamSS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the symbolic verification of cryptographic protocols, a central problem is deciding whether a protocol admits an execution which leaks a designated secret to the malicious intruder. In [1], it is shown that, when considering finitely many sessions, this “insecurity problem” is NP-complete. Central to their proof strategy is the observation that any execution of a protocol can be simulated by one where the intruder only communicates terms of bounded size. However, when we consider models where, in addition to terms, one can also communicate logical statements about terms, the analysis of the insecurity problem becomes tricky when both these inference systems are considered together. In this paper we consider the insecurity problem for protocols with logical statements that include equality on terms and existential quantification. Witnesses for existential quantifiers may be unbounded, and obtaining small witness terms while maintaining equality proofs complicates the analysis considerably. We extend techniques from [1] to show that this problem is also in NP.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/MakhloufSAP24,
+	author = {Karima Makhlouf and
+                  Tamara Stefanovic and
+                  H{\'{e}}ber Hwang Arcolezi and
+                  Catuscia Palamidessi},
+	title = {A Systematic and Formal Study of the Impact of Local Differential
+                  Privacy on Fairness: Preliminary Results},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00039},
+	doi = {10.1109/CSF61375.2024.00039},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/MakhloufSAP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning (ML) algorithms rely primarily on the availability of training data, and, depending on the domain, these data may include sensitive information about the data providers, thus leading to significant privacy issues. Differential privacy (DP) is the predominant solution for privacy-preserving ML, and the local model of DP is the preferred choice when the server or the data collector are not trusted. Recent experimental studies have shown that local DP can impact ML prediction for different subgroups of individuals, thus affecting fair decision-making. However, the results are conflicting in the sense that some studies show a positive impact of privacy on fairness while others show a negative one. In this work, we conduct a systematic and formal study of the effect of local DP on fairness. Specifically, we perform a quantitative study of how the fairness of the decisions made by the ML model changes under local DP for different levels of privacy and data distributions. In particular, we provide bounds in terms of the joint distributions and the privacy level, delimiting the extent to which local DP can impact the fairness of the model. We characterize the cases in which privacy reduces discrimination and those with the opposite effect. We validate our theoretical findings on synthetic and real-world datasets. Our results are preliminary in the sense that, for now, we study only the case of one sensitive attribute, and only statistical disparity, conditional statistical disparity, and equal opportunity difference.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/FernetMV24,
+	author = {Laouen Fernet and
+                  Sebastian M{\"{o}}dersheim and
+                  Luca Vigan{\`{o}}},
+	title = {A Decision Procedure for Alpha-Beta Privacy for a Bounded Number of
+                  Transitions},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {17--32},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00011},
+	doi = {10.1109/CSF61375.2024.00011},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FernetMV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a decision procedure for verifying whether a protocol respects privacy goals, given a bound on the number of transitions. We consider multi message-analysis problems, where the intruder does not know exactly the structure of the messages but rather knows several possible structures and that the real execution corresponds to one of them. This allows for modeling a large class of security protocols, with standard cryptographic operators, non-determinism and branching. Our main contribution is the definition of a decision procedure for a fragment of alpha-beta privacy. Moreover, we have implemented a prototype tool as a proof-of-concept and a first step towards automation.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DasMMK24,
+	author = {Debajyoti Das and
+                  Sebastian Meiser and
+                  Esfandiar Mohammadi and
+                  Aniket Kate},
+	title = {Divide and Funnel: {A} Scaling Technique for Mix-Networks},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {49--64},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00031},
+	doi = {10.1109/CSF61375.2024.00031},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DasMMK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While many anonymous communication (AC) protocols have been proposed to provide anonymity over the internet, scaling to a large number of users while remaining provably secure is challenging. We tackle this challenge by proposing a new scaling technique to improve the scalability/anonymity of AC protocols that distributes the computational load over many nodes without completely disconnecting the paths different messages take through the network. We demonstrate that our scaling technique is useful and practical through a core sample anonymous broadcast protocol, Streams, that offers provable security guarantees and scales for a million messages. The scaling technique ensures that each node in the system does the computation-heavy public key operation only for a tiny fraction of the total messages routed through the Streams network while maximizing the mixing/shuffling in every round. Our experimental results show that Streams can scale well even if the system has a load of one million messages at any point in time, with a latency of 16 seconds while offering provable “one-in-a-billion” unlinkability, and can be leveraged for applications such as anonymous microblogging and network-level anonymity for blockchains. We also illustrate by examples that our scaling technique can be useful to other AC protocols to improve their scalability and privacy, and can be interesting to protocol developers.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DekaZCV24,
+	author = {Nabarun Deka and
+                  Minjian Zhang and
+                  Rohit Chadha and
+                  Mahesh Viswanathan},
+	title = {Deciding Branching Hyperproperties for Real Time Systems},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {65--79},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00032},
+	doi = {10.1109/CSF61375.2024.00032},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DekaZCV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security properties of real-time systems often in-volve reasoning about hyper-properties, as opposed to properties of single executions or trees of executions. These hyper-properties need to additionally be expressive enough to reason about real-time constraints. Examples of such properties include information flow, side channel attacks and service-level agreements. In this paper we study computational problems related to a branching-time, hyper-property extension of metric temporal logic (MTL) that we call HCMTL*. We consider both the interval-based and point-based semantics of this logic. The verification problem that we consider is to determine if a given HCMTL* formula ℑ is true in a system represented by a timed automaton. We show that this problem is undecidable. We then show that the verification problem is decidable if we consider executions upto a fixed time horizon\nT\n. Our decidability result relies on reducing the verification problem to the truth of an MSO formula over reals with a bounded time interval.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/LagoDK24,
+	author = {Ugo Dal Lago and
+                  Davide Davoli and
+                  Bruce M. Kapron},
+	title = {On Separation Logic, Computational Independence, and Pseudorandomness},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {80--95},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00040},
+	doi = {10.1109/CSF61375.2024.00040},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/LagoDK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Separation logic is a substructural logic which has proved to have numerous and fruitful applications to the verification of programs working on dynamic data structures. Recently, Barthe, Hsu and Liao have proposed a new way of giving semantics to separation logic formulas in which separating conjunction is interpreted in terms of probabilistic independence. The latter is taken in its exact form, i.e., two events are independent if and only if the joint probability is the product of the probabilities of the two events. There is indeed a literature on weaker notions of independence which are computational in nature, i.e. independence holds only against efficient adversaries and modulo a negligible probability of success. The aim of this work is to explore the nature of computational independence in a cryptographic scenario, in view of the aforementioned advances in separation logic. We show on the one hand that the semantics of separation logic can be adapted so as to account for complexity bounded adversaries, and on the other hand that the obtained logical system is useful for writing simple and compact proofs of standard cryptographic results in which the adversary remains hidden. Remarkably, this allows for a fruitful interplay between independence and pseudorandomness, itself a crucial notion in cryptography.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/IleriZCK24,
+	author = {Atalay Mert Ileri and
+                  Nickolai Zeldovich and
+                  Adam Chlipala and
+                  M. Frans Kaashoek},
+	title = {Probability from Possibility: Probabilistic Confidentiality for Storage
+                  Systems Under Nondeterminism},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {96--111},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00041},
+	doi = {10.1109/CSF61375.2024.00041},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/IleriZCK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nondeterminism, such as system crashes, poses an important challenge to the security of storage systems by making leakages possible through secret-dependent result probabilities. This paper proposes a new possibilistic confidentiality specification prohibiting such probabilistic leakages. Our specification is preserved under simulation to enable modularity and is sequentially compositional. We implemented our specification in a framework that contains structures to implement storage systems and prove their confidentiality in a modular fashion. On top of our framework, we implemented the first crash-safe file system with a termination-insensitive version of our specification and machine-checkable confidentiality proofs. Our evaluation shows that proving confidentiality incurs 9.2x proof overhead per line of implementation code. Both our framework and file system are implemented in Coq and extracted to Haskell to obtain an executable artifact.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/CapozuccaCHK24,
+	author = {Alfredo Capozucca and
+                  Maximiliano Cristi{\'{a}} and
+                  Ross Horne and
+                  Ricardo Katz},
+	title = {Brewer-Nash Scrutinised: Mechanised Checking of Policies Featuring
+                  Write Revocation},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {112--126},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00042},
+	doi = {10.1109/CSF61375.2024.00042},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/CapozuccaCHK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper revisits the Brewer-Nash security policy model inspired by ethical Chinese Wall policies. We draw attention to the fact that write access can be revoked in the Brewer-Nash model. The semantics of write access were underspecified originally, leading to multiple interpretations for which we provide a modern operational semantics. We go on to modernise the analysis of information flow in the Brewer-Nash model, by adopting a more precise definition adapted from Kessler. For our modernised reformulation, we provide full mechanised coverage for all theorems proposed by Brewer & Nash. Most theorems are established automatically using the tool {log} with the exception of a theorem regarding information flow, which combines a lemma in {log} with a theorem mechanised in Coq. Having covered all theorems originally posed by Brewer-Nash, achieving modern precision and mechanisation, we propose this work as a step towards a methodology for automated checking of more complex security policy models.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DAmatoZ24,
+	author = {Francesco D'Amato and
+                  Luca Zanolini},
+	title = {Recent Latest Message Driven {GHOST:} Balancing Dynamic Availability
+                  With Asynchrony Resilience},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {127--142},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00001},
+	doi = {10.1109/CSF61375.2024.00001},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DAmatoZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Dynamic participation has recently become a crucial requirement for devising (permissionless) consensus protocols. This notion, originally formalized by Pass and Shi (ASIACRYPT 2017) through their “sleepy model”, captures the essence of a system's ability to handle participants joining or leaving during a protocol execution. A dynamically available consensus protocol preserves safety and liveness while allowing dynamic participation. Blockchain protocols, such as Bitcoin's consensus protocol, have implicitly adopted this concept. In the context of Ethereum's consensus protocol, Gasper, Neu, Tas, and Tse (S&P 2021) presented an attack against LMD-GHOST - the component of Gasper designed to ensure dynamic availability. Consequently, LMD-GHOST results unable to fulfill its intended function of providing dynamic availability for the protocol. Despite attempts to mitigate this issue, the modified protocol still does not achieve dynamic availability, highlighting the need for more secure dynamically available protocols. In this work, we present RLMD-GHOST, a synchronous consensus protocol that not only ensures dynamic availability but also maintains safety during bounded periods of asynchrony. This protocol is particularly appealing for practical systems where strict synchrony assumptions may not always hold, contrary to general assumptions in standard synchronous protocols. Additionally, we present the “generalized sleepy model”, within which our results are proven. Building upon the original sleepy model proposed by Pass and Shi, our model extends it with more generalized and stronger constraints on the corruption and sleepiness power of the adversary. This approach allows us to explore a wide range of dynamic participation regimes, spanning from complete dynamic participation to no dynamic participation, i.e., with every participant online. Consequently, this model provides a foundation for analyzing dynamically available protocols.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BadertscherGKRZ24,
+	author = {Christian Badertscher and
+                  Peter Gazi and
+                  Aggelos Kiayias and
+                  Alexander Russell and
+                  Vassilis Zikas},
+	title = {Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {143--158},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00018},
+	doi = {10.1109/CSF61375.2024.00018},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BadertscherGKRZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Permissionless distributed ledgers, such as those arising from blockchain protocols, have been touted as the centerpiece of an upcoming security-critical information technology infrastructure. Their basic properties-consistency and liveness-can be guaranteed under specific constraints on the resources available to an adversary relative to the resources of the participants that follow the protocol. Given their permissionless participation convention and their intended long-livedness, a critical open security question is their behavior-and potential resilience-to temporary spikes in adversarial resources. In this work we give the first thorough treatment of the self-healing properties of Nakamoto ledgers, addressing both proof-of-work (PoW) and proof-of-stake (PoS) protocols. First, we present a unified model that allows us to define self-healing for both of these protocol classes. Then we provide a formal analysis establishing self-healing with respect to both consistency and liveness in both classes, quantifying the resulting vulnerability period as a function of the magnitude of the spike. Finally, we provide numerical simulations giving explicit quantitative bounds relevant for practice.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/SchmiedelHTSY24,
+	author = {Hans Schmiedel and
+                  Runchao Han and
+                  Qiang Tang and
+                  Ron Steinfeld and
+                  Jiangshan Yu},
+	title = {Modeling Mobile Crash in Byzantine Consensus},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {159--171},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00043},
+	doi = {10.1109/CSF61375.2024.00043},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/SchmiedelHTSY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Targeted Denial-of-Service (DoS) attacks have been a practical concern for permissionless blockchains. Potential solutions, such as random sampling, are adopted by blockchains. However, the associated security guarantees have only been informally discussed in prior work. This is due to the fact that existing adversary models are either not fully capturing this attack or giving up certain design choices (as in the sleepy model or asynchronous network model), or too strong to be practical (as in the mobile Byzantine adversary model). This paper provides theoretical foundations and desired properties for consensus protocols that resist against targeted DoS attacks. In particular, we define the Mobile Crash Adaptive Byzantine (MCAB) model to capture such an attack. In addition, we identify and formalize two properties for consensus protocols under the MCAB model, and analyze their trade-offs. As case studies, we prove that Ouroboros Praos and Algorand are secure in our MCAB model, giving the first formal proofs supporting their security guarantee against targeted DoS attacks, which were previously only informally discussed. We also illustrate an application of our properties to secure a streamlined BFT protocol, chained Hotstuff, against targeted DoS attacks.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/QiaoZ24,
+	author = {Wenhui Qiao and
+                  Liang Feng Zhang},
+	title = {A Maintainable Matrix Commitment Scheme with Constant-Size Public
+                  Parameters and Incremental Aggregation},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {172--185},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00030},
+	doi = {10.1109/CSF61375.2024.00030},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/QiaoZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose a new matrix commitment scheme that allows one to commit to any matrix and open any subset of the matrix entries. The proposed scheme is a vector commitment (VC) scheme that supports subvector opening, if we interpret the matrix as a vector. It gives the first VC scheme that is maintainable and incrementally aggregatable, and has constant-size public parameters. We implement the proposed scheme with groups of hidden orders that require a trusted setup. The experimental results show that it is around 1000 times faster in setup or 10 times faster in committing/opening than the existing schemes that are most relevant. With these interesting features, our scheme can significantly reduce the storage cost and result in meaningful applications in the domain of stateless cryptocurrencies and other data-intensive systems that require secure and verifiable storage solutions.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/CortierGY24,
+	author = {V{\'{e}}ronique Cortier and
+                  Pierrick Gaudry and
+                  Quentin Yang},
+	title = {Is the {JCJ} voting system really coercion-resistant?},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {186--200},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00003},
+	doi = {10.1109/CSF61375.2024.00003},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/CortierGY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Coercion-resistance is a security property of electronic voting, often considered as a must-have for high-stake elections. The JCJ voting scheme, proposed in 2005 by Juels, Catalano and Jakobsson, is still the reference paradigm when designing a coercion-resistant protocol. We highlight a weakness in JCJ that is also present in all the systems following its general structure. This comes from the procedure that precedes the tally, where the trustees remove the ballots that should not be counted. This phase leaks more information than necessary, leading to potential threats for the coerced voters. Fixing this leads to the notion of cleansing-hiding, that we apply to form a variant of JCJ that we call CHide. One reason for the problem not being seen before is the fact that the associated formal definition of coercion-resistance was too weak. We therefore propose a definition that takes into account more behaviors such as revoting or the addition of fake ballots by authorities. We then prove that CHide is coercion-resistant for this definition.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/GrafKREBF24,
+	author = {Mike Graf and
+                  Ralf K{\"{u}}sters and
+                  Daniel Rausch and
+                  Simon Egger and
+                  Marvin Bechtold and
+                  Marcel Flinspach},
+	title = {Accountable Bulletin Boards: Definition and Provably Secure Implementation},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {201--216},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00013},
+	doi = {10.1109/CSF61375.2024.00013},
+	timestamp = {Sun, 06 Oct 2024 20:59:00 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/GrafKREBF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bulletin boards (BB) are important cryptographic building blocks that, at their core, provide a broadcast channel with memory. BBs are widely used within many security protocols, including secure multiparty computation protocols, evoting systems, and electronic auctions. Even though the security of protocols crucially depends on the underlying BB, as also highlighted by recent works, the literature on constructing secure BBs is sparse. The so-far only provably secure BBs requiretrusted components and sometimes also networks without message loss, which makes them unsuitable for applications with particularly high security needs where these assumptions might not always be met. In this work, we fill this gap by leveraging the concepts of accountability and universal composability (UC). More specifically, we propose the first ideal functionality for accountable BBs that formalizes the security requirements of such BBs in UC. We then propose Fabric* BB as a slight extension designed on top of Fabric*, which is a variant of the prominent Hyperledger Fabric distributed ledger protocol, and show that Fabric* BB UC-realizes our ideal BB functionality. This result makes Fabric* BB the first provably accountable BB, an often desired, but so far not formally proven property for BBs, and also the first BB that has been proven to be secure based only on standard cryptographic assumptions and without requiring trusted BB components or network assumptions. Through an implementation and performance evaluation we show that Fabric* BB is practical for many applications of BBs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AgrawalJSB24,
+	author = {Prashant Agrawal and
+                  Mahabir Prasad Jhanwar and
+                  Subodh Vishnu Sharma and
+                  Subhashis Banerjee},
+	title = {Publicly Auditable Privacy-Preserving Electoral Rolls},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {217--232},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00044},
+	doi = {10.1109/CSF61375.2024.00044},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AgrawalJSB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While existing literature on electronic voting has extensively addressed verifiability of voting protocols, the vulnerability of electoral rolls in large public elections remains a critical concern. To ensure integrity of electoral rolls, the current practice is to either make electoral rolls public or share them with the political parties. However, this enables construction of detailed voter profiles and selective targeting and manipulation of voters, thereby undermining the fundamental principle of free and fair elections. In this paper, we study the problem of designing publicly auditable yet privacy-preserving electoral rolls. We first formulate a threat model and provide formal security definitions. We then present a protocol for creation, maintenance and usage of electoral rolls that mitigates the threats. Eligible voters can verify their inclusion, whereas political parties and auditors can statistically audit the electoral roll. Further, the audit can also detect polling-day ballot stuffing and denials to eligible voters by malicious polling officers. The entire electoral roll is never revealed, which prevents any large-scale systematic voter targeting and manipulation.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BusiFL24,
+	author = {Matteo Busi and
+                  Riccardo Focardi and
+                  Flaminia L. Luccio},
+	title = {Bridging the Gap: Automated Analysis of Sancus},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {233--248},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00023},
+	doi = {10.1109/CSF61375.2024.00023},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BusiFL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Techniques for verifying or invalidating the security of computer systems have come a long way in recent years. Extremely sophisticated tools are available to specify and for-mally verify the behavior of a system and, at the same time, attack techniques have evolved to the point of questioning the possibility of obtaining adequate levels of security, especially in critical applications. In a recent paper, Bognar et al. [1] have clearly highlighted this inconsistency between the two worlds: on one side, formal verification allows writing irrefutable proofs of the security of a system, on the other side concrete attacks make these proofs waver, exhibiting a gap between models and implementations which is very complex to bridge. In this paper, we propose a new method to reduce this gap in the Sancus embedded security architecture, by exploiting some peculiarities of both approaches. Our technique first extracts a behavioral model by directly interacting with the real Sancus system and then analyzes it to identify attacks and anomalies. Given a threat model, our method either finds attacks in the given threat model or gives probabilistic guarantees on the security of the system. We implement our method and use it to systematically rediscover known attacks and uncover new ones.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/SchererBSSM24,
+	author = {Markus Scherer and
+                  Jeppe Fredsgaard Blaabjerg and
+                  Alexander Sj{\"{o}}sten and
+                  Magdalena Solitro and
+                  Matteo Maffei},
+	title = {Wappler: Sound Reachability Analysis for WebAssembly},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {249--264},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00025},
+	doi = {10.1109/CSF61375.2024.00025},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/SchererBSSM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {WebAssembly (Wasm) is an increasingly deployed low-level language providing near-native performance to security-critical domains such as web browsers, smart contracts, and edge computing. In all of these domains, establishing the absence of bugs and security vulnerabilities is of utmost importance, which motivates the development of sound and automated static analysis techniques. This is, however, a challenging task since the Wasm formal semantics is not directly amenable to efficient static analysis, Wasm code is typically embedded in statically unknown and possibly malicious contexts, and the low-level nature of the language makes it hard to precisely and yet soundly capture memory management and other core features. In this work, we present Wappler, the first sound and automated static analysis technique for WebAssembly. The core idea is to encode the semantics into Horn clauses so as to make it accessible to automated theorem provers, such as z3. The realization of this approach, however, requires to tackle several challenges. We address the fact that the Wasm semantics is not directly amenable to automation of security proofs by introducing annotations that enable a precise, practical, and yet sound encoding. Furthermore, we devise a formalism to specify embedder behavior and introduce a sound yet precise memory abstraction. We demonstrate the expressiveness of our logical formalism by encoding several general as well as Wasm-specific security properties. Finally, we implement our static analysis technique and conduct an experimental evaluation over the official Wasm test suite to demonstrate its performance.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/KunnemannPC24,
+	author = {Robert K{\"{u}}nnemann and
+                  Marco Patrignani and
+                  Ethan Cecchetti},
+	title = {Computationally Bounded Robust Compilation and Universally Composable
+                  Security},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {265--278},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00024},
+	doi = {10.1109/CSF61375.2024.00024},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/KunnemannPC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Universal Composability (UC) is the gold standard for cryptographic security, but mechanizing proofs of UC is notoriously difficult. A recently-discovered connection between UC and Robust Compilation (RC)-a novel theory of secure compilation-provides a means to verify UC proofs using tools that mechanize equality results. Unfortunately, the existing methods apply only to perfect UC security, and real-world protocols relying on cryptography are only computationally secure. This paper addresses this gap by lifting the connection between UC and RC to the computational setting, extending techniques from the RC setting to apply to computational UC security. Moreover, it further generalizes the UC-RC connection beyond computational security to arbitrary equalities, providing a framework to subsume the existing perfect case, and to instantiate future theories with more complex notions of security. This connection allows the use of tools for proofs of computational indistinguishability to properly mechanize proofs of computational UC security. We demonstrate this power by using CRYPTOVERIF to mechanize a proof that parts of the Wireguard protocol are computationally UC secure. Finally, all proofs of the framework itself are verified in Isabelle/HOL.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BlanchetBDGS24,
+	author = {Bruno Blanchet and
+                  Pierre Boutry and
+                  Christian Doczkal and
+                  Benjamin Gr{\'{e}}goire and
+                  Pierre{-}Yves Strub},
+	title = {{CV2EC:} Getting the Best of Both Worlds},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {279--294},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00019},
+	doi = {10.1109/CSF61375.2024.00019},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BlanchetBDGS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We define and implement CV2EC, a translation from CryptoVerif assumptions on primitives to EasyCrypt games. CryptoVerif and EasyCrypt are two proof tools for mechanizing game-based proofs. While CryptoVerif is primarily suited for verifying security protocols, EasyCrypt has the expressive power for verifying cryptographic primitives and schemes. CV2EC allows us to prove security protocols in CryptoVerif and then use EasyCrypt to prove the assumptions made in CryptoVerif, either directly or by reducing them to lower-level or more standard cryptographic assumptions. We apply this approach to several case studies: we prove the multikey computational and gap Diffie-Hellman assumptions used in CryptoVerif from the standard version of these assumptions; we also prove an n-user security property of authenticated key encapsulation mechanisms (KEMs), used in the CryptoVerif study of hybrid public-key encryption (HPKE), from the 2-user version. By doing that, we discovered errors in the paper proof of this property, which we reported to the authors who then fixed their proof.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/ZhangSCL24,
+	author = {Manning Zhang and
+                  Zeshun Shi and
+                  Huanhuan Chen and
+                  Kaitai Liang},
+	title = {Inject Less, Recover More: Unlocking the Potential of Document Recovery
+                  in Injection Attacks Against {SSE}},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {311--323},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00029},
+	doi = {10.1109/CSF61375.2024.00029},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/ZhangSCL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable symmetric encryption has been vulnerable to inference attacks that rely on uniqueness in leakage patterns. However, many keywords in datasets lack distinctive leakage patterns, limiting the effectiveness of such attacks. The file injection attacks, initially proposed by Cash et al. (CCS 2015), have shown impressive performance with 100% accuracy and no prior knowledge requirement. Nevertheless, this attack fails to recover queries with underlying keywords not present in the injected files. To address these limitations, our research introduces a novel attack strategy called LEAP-Hierarchical Fusion Attack (LHFA) that combines the strengths of both file injection attacks and inference attacks. Before initiating keyword injection, we introduce a new approach for inert/active keyword selection. In the phase of selecting injected keywords, we focus on keywords without unique leakage patterns and recover them, leveraging their presence for document recovery. Our goal is to achieve an amplified effect in query recovery. We demonstrate a minimum query recovery rate of 1.3 queries per injected keyword with a 10% data leakage of a real-life dataset, and initiate further research to overcome challenges associated with non-distinctive keywords.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BaeldeFKSV24,
+	author = {David Baelde and
+                  Caroline Fontaine and
+                  Adrien Koutsos and
+                  Guillaume Scerri and
+                  Th{\'{e}}o Vignon},
+	title = {A Probabilistic Logic for Concrete Security},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {324--339},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00046},
+	doi = {10.1109/CSF61375.2024.00046},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BaeldeFKSV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Squirrel Prover is a proof assistant designed for the computational verification of cryptographic protocols. It implements a probabilistic logic that captures cryptographic and probabilistic arguments used in security proofs. This logic operates in the asymptotic security setting, which limits the expressiveness of formulas and proofs. As a consequence, it can only prove security for finite interactions with a protocol, falling outside of the polynomial-level of security usually expected by cryptographers. We lift all these limitations by moving to a concrete security setting. We extend the logic with concrete security predicates, and design a corresponding proof system. We show the usefulness of these extensions on a case study, and through a novel proof-transformation result which shows that a large class of asymptotic logic security proofs can be automatically rewritten into concrete logic security proofs, improving security bounds exponentially.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/SolovievBG24,
+	author = {Matvey Soloviev and
+                  Musard Balliu and
+                  Roberto Guanciale},
+	title = {Security Properties through the Lens of Modal Logic},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {340--355},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00009},
+	doi = {10.1109/CSF61375.2024.00009},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/SolovievBG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce a framework for reasoning about the security of computer systems using modal logic. This framework is sufficiently expressive to capture a variety of known security properties, while also being intuitive and independent of syntactic details and enforcement mechanisms. We show how to use our formalism to represent various progress- and termination-(in)sensitive variants of confidentiality, integrity, robust declas-sification and transparent endorsement, and prove equivalence to standard definitions. The intuitive nature and closeness to semantic reality of our approach allows us to make explicit several hidden assumptions of these definitions, and identify potential issues and subtleties with them, while also holding the promise of formulating cleaner versions and future extension to entirely novel properties.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/JaggardSM24,
+	author = {Aaron D. Jaggard and
+                  Paul Syverson and
+                  Catherine Meadows},
+	title = {A Logic of Sattestation},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {356--371},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00047},
+	doi = {10.1109/CSF61375.2024.00047},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/JaggardSM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce a logic for reasoning about contextual trust for web addresses, provide a Kripke semantics for it, and prove its soundness under reasonable assumptions about principals' policies. Self-Authenticating Traditional Addresses (SATAs) are valid DNS addresses or URLs that are generally meaningful—to both humans and web infrastructure—and contain a commitment to a public key in the address itself. Trust in web addresses is currently established via domain name registration, TLS certificates, and other hierarchical elements of the internet infrastructure. SATAs support such structural roots of trust but also complementary contextual roots associated with descriptive properties. The existing structural roots leave web connections open to a variety of well-documented and significant hijack vulnerabilities. Contextual trust roots provide, among other things, stronger resistance to such vulnerabilities. We also consider labeled SATAs, which include descriptive properties such as that a SATA is an address for a news organization, a site belonging to a particular government or company, a site with information about a certain topic, etc. Our logic addresses both trust in the bound together identity of the address and trust in the binding of labels to it. Our logic allows reasoning about delegation of trust with respect to specified labels, relationships between labels that provide more or less specific information, and the interaction between these two aspects. In addition to soundness, we prove that if a principal trusts a particular identity (possibly with label), then either this trust is initially assumed, or there is a trust chain of delegations to this from initial trust assumptions. We also present an algorithm that effectively derives all possible trust statements from the set of initial trust assumptions and show it to be sound, complete, and terminating.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BogdanovJLNPRRSTV24,
+	author = {Dan Bogdanov and
+                  Joosep J{\"{a}}{\"{a}}ger and
+                  Peeter Laud and
+                  H{\"{a}}rmel Nestra and
+                  Martin Pettai and
+                  Jaak Randmets and
+                  Raul{-}Martin Rebane and
+                  Ville Sokk and
+                  Kert Tali and
+                  Sandhra{-}Mirella Valdma},
+	title = {ZK-SecreC: a Domain-Specific Language for Zero-Knowledge Proofs},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {372--387},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00010},
+	doi = {10.1109/CSF61375.2024.00010},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BogdanovJLNPRRSTV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present ZK-SECREC, a domain-specific language for zero-knowledge (ZK) proofs. We focus on its type system, making the point that this is the most appropriate mechanism for tracking information flows in a statement that is meant to be proved using a zero-knowledge protocol. The appropriateness stems from the necessary distinctions between the two involved parties and between the computations made locally or on top of the protocol. The appropriateness also stems from how the types match with the major steps of typical ZK protocols, including the generation of Common Reference Strings. We compare the type system of ZK-SECREC with those of the previously proposed languages for ZK proofs and privacy-preserving computations, and show how ZK-SECREC handles certain aspects better.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AhmadianSB24,
+	author = {Amir M. Ahmadian and
+                  Matvey Soloviev and
+                  Musard Balliu},
+	title = {Disjunctive Policies for Database-Backed Programs},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {388--402},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00017},
+	doi = {10.1109/CSF61375.2024.00017},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AhmadianSB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {When specifying security policies for databases, it is often natural to formulate disjunctive dependencies, where a piece of information may depend on at most one of two dependencies\nP\n1\nor\nP\n2\n, but not both. A formal semantic model of such disjunctive dependencies, the Quantale of Information, was recently introduced by Hunt and Sands as a generalization of the Lattice of Information. In this paper, we seek to contribute to the understanding of disjunctive dependencies in database-backed programs and introduce a practical framework to statically enforce disjunctive security policies. To that end, we introduce the Determinacy Quantale, a new query-based structure which captures the ordering of disjunctive information in databases. This structure can be understood as a query-based counterpart to the Quantale of Information. Based on this structure, we design a sound enforcement mechanism to check disjunctive policies for database-backed programs. This mechanism is based on a type-based analysis for a simple imperative language with database queries, which is precise enough to accommodate a variety of row-and column-level database policies flexibly while keeping track of disjunctions due to control flow. We validate our mechanism by implementing it in a tool, Divert, and demonstrate its feasibility on a number of use cases.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DongolGPW24,
+	author = {Brijesh Dongol and
+                  Matt Griffin and
+                  Andrei Popescu and
+                  Jamie Wright},
+	title = {Relative Security: Formally Modeling and (Dis)Proving Resilience Against
+                  Semantic Optimization Vulnerabilities},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {403--418},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00027},
+	doi = {10.1109/CSF61375.2024.00027},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DongolGPW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Meltdown and Spectre are vulnerabilities known as transient execution vulnerabilities, where an attacker exploits speculative execution (a semantic optimization present in most modern processors) to break confidentiality. We introduce relative security, a general notion of information-flow security that models this type of vulnerability by contrasting the leaks that are possible in a “vanilla” semantics with those possible in a different semantics, often obtained from the vanilla semantics via some optimizations. We describe incremental proof methods, in the style of Goguen and Meseguer's unwinding, both for proving and for disproving relative security, and deploy these to formally establish the relative (in)security of some standard Spectre examples. Both the abstract results and the case studies have been mechanized in the Isabelle/HOL theorem prover.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/FernandesMS24,
+	author = {Natasha Fernandes and
+                  Annabelle McIver and
+                  Parastoo Sadeghi},
+	title = {Explaining {\unicode{8714}} in Local Differential Privacy Through
+                  the Lens of Quantitative Information Flow},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {419--432},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00012},
+	doi = {10.1109/CSF61375.2024.00012},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FernandesMS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The study of leakage measures for privacy has been a subject of intensive research and is an important aspect of understanding how privacy leaks occur in computer systems. Differential privacy has been a focal point in the privacy community for some years and yet its leakage characteristics are not completely understood. In this paper we bring together two areas of research -information theory and the g-leakage framework of quantitative information flow (QIF)- to give an operational interpretation for the epsilon parameter of local differential privacy. We find that epsilon emerges as a capacity measure in both frameworks; via (log)-lift, a popular measure in information theory; and via max-case g-leakage, which we introduce to describe the leakage of any system to Bayesian adversaries modelled using “worst-case” assumptions under the QIF framework. Our characterisation resolves an important question of interpretability of epsilon and consolidates a number of disparate results covering the literature of both information theory and Quantitative information flow.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AcayGRM24,
+	author = {Cosku Acay and
+                  Joshua Gancher and
+                  Rolph Recto and
+                  Andrew C. Myers},
+	title = {Secure Synthesis of Distributed Cryptographic Applications},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {433--448},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00021},
+	doi = {10.1109/CSF61375.2024.00021},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AcayGRM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Developing secure distributed systems is difficult, and even harder when advanced cryptography must be used to achieve security goals. Following prior work, we advocate using secure program partitioning to synthesize cryptographic applications: instead of implementing a system of communicating processes, the programmer implements a centralized, sequential program, which is automatically compiled into a secure distributed version that uses cryptography. While this approach is promising, formal results for the security of such compilers are limited in scope. In particular, no security proof yet simultaneously addresses subtleties essential for robust, efficient applications: multiple cryptographic mechanisms, malicious corruption, and asynchronous communication. In this work, we develop a compiler security proof that handles these subtleties. Our proof relies on a novel unification of simulation-based security, information-flow control, choreographic programming, and sequentialization techniques for concurrent programs. While our proof targets hybrid protocols, which abstract cryptographic mechanisms as idealized functionalities, our approach offers a clear path toward leveraging Universal Composability to obtain end-to-end, modular security results with fully instantiated cryptographic mechanisms. Finally, following prior observations about simulation-based security, we prove that our result guarantees robust hyperproperty preservation, an important criterion for compiler correctness that preserves all source-level security properties in target programs.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/OakleyHO24,
+	author = {Lisa Oakley and
+                  Steven Holtzen and
+                  Alina Oprea},
+	title = {Synthesizing Tight Privacy and Accuracy Bounds via Weighted Model
+                  Counting},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {449--463},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00048},
+	doi = {10.1109/CSF61375.2024.00048},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/OakleyHO24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Programmatically generating tight differential privacy (DP) bounds is a hard problem. Two core challenges are (1) finding expressive, compact, and efficient encodings of the distributions of DP algorithms, and (2) state space explosion stemming from the multiple quantifiers and relational properties of the DP definition. We address the first challenge by developing a method for tight privacy and accuracy bound synthesis using weighted model counting on binary decision diagrams, a state of the art technique from the artificial intelligence and automated reasoning communities for exactly computing probability distributions. We address the second challenge by developing a framework for leveraging inherent symmetries in DP algorithms. Our solution benefits from ongoing research in probabilistic programming languages, allowing us to succinctly and expressively represent different DP algorithms with approachable language syntax that can be used by non-experts. We provide a detailed case study of our solution on the binary randomized response algorithm. We also evaluate an implementation of our solution using the Dice probabilistic programming language for the randomized response and truncated geometric above threshold algorithms. We compare to prior work on exact DP verification using Markov chain probabilistic model checking and the decision procedure DiPC. Very few existing works consider mechanized analysis of accuracy guarantees for DP algorithms. We additionally provide a detailed analysis using our technique for finding tight accuracy bounds for DP algorithms.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/FilaR24,
+	author = {Barbara Fila and
+                  Sasa Radomirovic},
+	title = {Nothing is Out-of-Band: Formal Modeling of Ceremonies},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {464--478},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00049},
+	doi = {10.1109/CSF61375.2024.00049},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/FilaR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We develop and explain the design decisions of a framework for the formal specification and analysis of interactions in generalized distributed systems. Our approach is suitable to reason about various types of agents and supports the modeling of synchronous interactions between any finite number of agents. Our proposal provides a common ground for existing modeling techniques for cryptographic protocols and security ceremonies, by generalizing and unifying them in a single formalism. We discuss the specification of security properties in our framework and demonstrate on a short voting ceremony a technique to model our ceremonies in the Tamarin prover.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/Blanchet24,
+	author = {Bruno Blanchet},
+	title = {Dealing with Dynamic Key Compromise in Crypto Verif},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {495--510},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00015},
+	doi = {10.1109/CSF61375.2024.00015},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/Blanchet24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {CryptoVerif is a mechanized security protocol verifier sound in the computational model. In this paper, we explore and extend its treatment of dynamic key compromise. First, we present a basic treatment of compromise and explain its limitations. Next, we introduce several extensions in order to remove these limitations: improved proof of secrecy; building different proofs for the various properties to prove; removing code that cannot be executed when the adversary breaks the desired security properties; and guessing tested sessions, values, and branches. We illustrate how these extensions improve the treatment of key compromise on protocols ranging from toy examples to filling gaps in previous large case studies including TLS 1.3 and the WireGuard VPN protocol.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/Kreuzer24,
+	author = {Katharina Kreuzer},
+	title = {Verification of Correctness and Security Properties for {CRYSTALS-KYBER}},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {511--526},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00016},
+	doi = {10.1109/CSF61375.2024.00016},
+	timestamp = {Tue, 22 Oct 2024 21:07:55 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/Kreuzer24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since the post-quantum crypto system CRYSTALS-KYBER has been chosen for standardization by the National Institute for Standards and Technology (US), a formal verification of its correctness and security properties becomes even more relevant. Using the automated theorem prover Isabelle, we are able to formalize the algorithm specifications and parameter sets of Kyber's public key encryption scheme and verify the\nδ\n-correctness and indistinguishability under chosen plaintext attack property. However, during the formalization process, several gaps in the pen-and-paper proofs were discovered. All but one gap concerning the error bound\nδ\ncould be filled. Calculations in smaller dimensions give examples where the bound\nδ\nis less than the actual error term, violating the correctness property. Since the correctness proof could be formalized up to an application of the module-Learning-with-Errors assumption, we believe that the discrepancy of the original error bound and the formalized version is relatively small. Thus the correctness could be formalized up to a minimal change to the error bound.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AbdolmalekiGRS24,
+	author = {Behzad Abdolmaleki and
+                  Noemi Glaeser and
+                  Sebastian Ramacher and
+                  Daniel Slamanig},
+	title = {Circuit-Succinct Universally-Composable NIZKs with Updatable {CRS}},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {527--542},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00006},
+	doi = {10.1109/CSF61375.2024.00006},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AbdolmalekiGRS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Non-interactive zero-knowledge proofs (NIZKs) and in particular succinct NIZK arguments of knowledge (zk-SNARKs) increasingly see real-world adoption in large and complex systems. Many zk-SNARKs require a trusted setup, i.e., a common reference string (CRS), and for practical use it is desirable to reduce the trust in the CRS generation. The latter can be achieved via the notions of subversion or updatable CRS. Another important property when deployed in large systems is the ability to securely compose them to obtain more complex protocols, e.g., via the Universal Composability (UC) framework. Relying on the UC framework allows arbitrary and secure composition of protocols in a modular way. In this work, we investigate whether zk-SNARKs can provide updatability and composability simultaneously. This is a challenging task as the UC framework rules out several natural techniques for such a construction. As our main result, we show that it is indeed possible to achieve these properties in a generic and modular way if we relax the succinctness properties of zk-SNARKs slightly to those of a circuit-succinct NIZK which is not witness-succinct, i.e., by increasing the proof size of the underlying zk-SNARK by the size of the witness\nw\n. We argue that for various practical applications of zk-SNARKs this overhead is acceptable. Our starting point is the Lamassu framework (ACM CCS'20), which we extend in several directions. Our new generic compiler adds only minimal overhead, which we demonstrate by benchmarking its application to the Sonic proof system (ACM CCS'19).}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BlanchetJ24,
+	author = {Bruno Blanchet and
+                  Charlie Jacomme},
+	title = {Post-Quantum Sound CryptoVerif and Verification of Hybrid {TLS} and
+                  {SSH} Key-Exchanges},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {543--556},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00050},
+	doi = {10.1109/CSF61375.2024.00050},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BlanchetJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the potential arrival of quantum computers, communication protocols are now being updated at a fast pace to be secure even against attackers with access to such a computer. A core issue is that we need to update the existing tools used to verify security protocols, as classical security proofs do not always carry over to quantum attackers. In this work, we prove the post-quantum soundness of the CryptoVerif prover, a tool used to semi-automatically obtain computational security guarantees over cryptographic constructions. It required an update of the whole semantics in order to define it for any black-box interactive attacker and not just probabilistic Turing machines. We also had to validate the soundness of all its proof techniques, the so-called game transformations. We used this new post-quantum sound CryptoVerif to obtain the first formal security guarantees over two IETF draft proposals designing post-quantum variants of SSH and TLS.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/HuYY24,
+	author = {Zhenkai Hu and
+                  Kang Yang and
+                  Yu Yu},
+	title = {Unconditionally Secure {MPC} for Boolean Circuits With Constant Online
+                  Communication},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {557--572},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00028},
+	doi = {10.1109/CSF61375.2024.00028},
+	timestamp = {Fri, 04 Oct 2024 08:55:44 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/HuYY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Through tremendous efforts, the communication cost of secure multi-party computation (MPC) in the honest-majority setting has been significantly improved. In particular, the state-of-the-art honest-majority MPC protocol by Escudero et al. (CCS'22) takes 12 field elements in total per multiplication gate for arithmetic circuits in the online phase. However, it still requires\n12log(5n/4\n) bits of online communication per AND gate for Boolean circuits. That is, for Boolean circuits, no MPC protocol with constant online communication is known. In this paper, we present an unconditionally secure MPC protocol for Boolean circuits in the honest-majority setting, which has constant online communication complexity and the offline communication complexity linear to the number\nn\nof parties. We first describe the semi-honest MPC protocol and then show how to extend it to achieve malicious security, where the maliciously secure protocol has the same communication cost as the semi-honest protocol. In particular, our protocol achieves the amortized communication cost 36 bits per AND gate in the online phase and 30n + 24 bits per AND gate in the offline phase.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/AlnashwanGD24,
+	author = {Rabiah Alnashwan and
+                  Prosanta Gope and
+                  Benjamin Dowling},
+	title = {UniHand: Privacy-Preserving Universal Handover for Small-Cell Networks
+                  in 5G-Enabled Mobile Communication with {KCI} Resilience},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {573--588},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00007},
+	doi = {10.1109/CSF61375.2024.00007},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/AlnashwanGD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Introducing Small Cell Networks (SCN) has significantly improved wireless link quality, spectrum efficiency and network capacity, which has been viewed as one of the key technologies in the fifth-generation (5G) mobile network. However, this technology increases the frequency of handover (HO) procedures caused by the dense deployment of cells in the network with reduced cell coverage, bringing new security and privacy issues. The current 5G-AKA and HO protocols are vulnerable to security weaknesses, such as the lack of forward secrecy and identity confusion attacks. The high HO frequency of HOs might magnify these security and privacy concerns in the 5G mobile network. This work addresses these issues by proposing a secure privacy-preserving universal HO scheme (UniHand) for SCNs in 5G mobile communication. UniHand can achieve mutual authentication, strong anonymity, perfect forward secrecy, keyescrow-free and key compromise impersonation (KCI) resilience. To the best of our knowledge, this is the first scheme to achieve secure, privacy-preserving universal HO with KCI resilience for roaming users in 5G environment. We demonstrate that our proposed scheme is resilient against all the essential security threats by performing a comprehensive formal security analysis and conducting relevant experiments to show the cost-effectiveness of the proposed scheme.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/HosseyniKW24,
+	author = {Pedram Hosseyni and
+                  Ralf K{\"{u}}sters and
+                  Tim W{\"{u}}rtele},
+	title = {Formal Security Analysis of the OpenID {FAPI} 2.0: Accompanying a
+                  Standardization Process},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {589--604},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00002},
+	doi = {10.1109/CSF61375.2024.00002},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/HosseyniKW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the number of third-party services that can access highly-sensitive data has increased steadily, e.g., in the financial sector, in eGovernment applications, or in high-assurance identity services. Protocols that enable this access must provide strong security guarantees. A prominent and widely employed protocol for this purpose is the OpenID Foundation's FAPI protocol. The FAPI protocol is already in widespread use, e.g., as part of the UK's Open Banking standards and Brazil's Open Banking Initiative as well as outside of the financial sector, for instance, as part of the Australian government's Consumer Data Rights standards. Based on lessons learned from FAPI 1.0, the OpenID Foundation has developed a completely new protocol, called FAPI 2.0. The specifications of FAPI 2.0 include a concrete set of security goals and attacker models under which the protocol aims to be secure. Following an invitation from the OpenID Foundation's FAPI Working Group (FAPI WG), we have accompanied the standard-ization process of the FAPI 2.0 protocol by an in-depth formal security analysis. In this paper, we report on our analysis and findings. Our analysis incorporates the first formal model of the FAPI 2.0 protocol and is based on a detailed model of the web infrastructure, the Web Infrastructure Model, originally proposed by Fett, Kiisters, and Schmitz. Our analysis has uncovered several types of attacks on the protocol, violating the aforementioned security goals set by the FAPI WG. We subsequently have worked with the FAPI WG to fix the protocol, resulting in several changes to the specifications. After adapting our model to the changed specifications, we have proved the security properties to hold under the strong attacker model defined by the FAPI WG.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/BosshardBS24,
+	author = {Azucena Garv{\'{\i}}a Bosshard and
+                  Jonathan Bootle and
+                  Christoph Sprenger},
+	title = {Formal Verification of the Sumcheck Protocol},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {605--619},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00014},
+	doi = {10.1109/CSF61375.2024.00014},
+	timestamp = {Sun, 06 Oct 2024 20:59:00 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/BosshardBS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The sumcheck protocol, introduced in 1992, is an interactive proof which is a key component of many probabilistic proof systems in computational complexity theory and cryptography, some of which have been deployed. However, none of these proof systems based on the sumcheck protocol enjoy a formally-verified security analysis. In this paper, we make progress in this direction by providing a formally verified security analysis of the sumcheck protocol using the interactive theorem prover Isabelle/HOL. We follow a general and modular approach. First, we give a general formalization of public-coin interactive proofs. We then define a generalized sumcheck protocol for which we axiomatize the underlying mathematical structure and we establish its soundness and completeness. Finally, we prove that these axioms hold for multivariate polynomials, the original setting of the sumcheck protocol. Our modular analysis facilitates formal verification of sumcheck instances based on different mathematical structures with little effort, by simply proving that these structures satisfy the axioms. Moreover, the analysis supports the development and formal verification of future cryptographic protocols using the sumcheck protocol as a building block.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/DayanikliL24,
+	author = {Dennis Dayanikli and
+                  Anja Lehmann},
+	title = {Provable Security Analysis of the Secure Remote Password Protocol},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {620--635},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00026},
+	doi = {10.1109/CSF61375.2024.00026},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/DayanikliL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper analyses the Secure Remote Password Protocol (SRP) in the context of provable security. SRP is an asymmetric Password-Authenticated Key Exchange (aPAKE) protocol introduced in 1998. It allows a client to establish a shared cryptographic key with a server based on a password of potentially low entropy. Although the protocol was part of several standardization efforts, and is deployed in numerous commercial applications such as Apple Homekit, 1Password or Telegram, it still lacks a formal proof of security. This is mainly due to some of the protocol's design choices which were implemented to circumvent patent issues. Our paper gives the first security analysis of SRP in the universal composability (UC) framework. We show that SRP is UC-secure against passive eavesdropping attacks under the standard CDH assumption in the random oracle model. We then highlight a major protocol change designed to thwart active attacks and propose a new assumption – the additive Simultaneous Diffie Hellman (aSDH) assumption – under which we can guarantee security in the presence of an active attacker. Using this new assumption as well as the Gap CDH assumption, we prove security of the SRP protocol against active attacks. Our proof is in the “Angel-based UC framework”, a relaxation of the UC framework which gives all parties access to an oracle with super-polynomial power. In our proof, we assume that all parties have access to a DDH oracle (limited to finite fields). We further discuss the plausibility of this assumption and which level of security can be shown without it.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/Mann24,
+	author = {Zolt{\'{a}}n {\'{A}}d{\'{a}}m Mann},
+	title = {Urgency in Cybersecurity Risk Management: Toward a Solid Theory},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {651--664},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00051},
+	doi = {10.1109/CSF61375.2024.00051},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/Mann24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IT systems are exposed to a rapidly changing landscape of serious security risks. Given the limited resources available to an organization, it is becoming more and more important to properly prioritize security risks, so that the organization can focus its efforts on the most critical risks. Traditionally, risks are assessed in terms of two aspects: occurrence probability and caused damage. However, for real-time risk prioritization, a third aspect is also of critical importance: urgency. Urgency stems from time-related considerations, such as the time needed by adversaries to exploit a vulnerability or the time needed for system administrators to put a countermeasure in place. These time-related considerations are orthogonal to the traditional aspects of occurrence probability and caused damage, and are largely ignored by existing risk management approaches. This paper proposes a way for introducing the notion of urgency into risk assessment. Our aim is to devise an intuitive approach for assessing risks, taking urgency into account, based on a solid theoretical underpinning. We establish a mathematical model using probability theory, and derive formulas for time-aware risk assessment in different settings.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/LopuhaaZwakenberg24,
+	author = {Milan Lopuha{\"{a}}{-}Zwakenberg},
+	title = {Attack Tree Metrics are Operad Algebras},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {665--679},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00005},
+	doi = {10.1109/CSF61375.2024.00005},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/LopuhaaZwakenberg24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attack Trees (ATs) are a widely used tool for security analysis. ATs can be employed in quantitative security analysis through metrics, which assign a security value to an AT. Many different AT metrics exist, and there exist multiple general definitions that aim to study a wide variety of AT metrics at once. However, these all have drawbacks: they do not capture all metrics, and they do not easily generalize to extensions of ATs. In this paper, we introduce a definition of AT metrics based on category theory, specifically operad algebras. This encompasses all previous definitions of AT metrics, and is easily generalized to extensions of ATs. Furthermore, we show that under easily expressed operad-theoretic conditions, existing metric calculation algorithms can be extended in considerable generality.}
+}
+
+
+@inproceedings{DBLP:conf/csfw/GuerraBalboaMPS24,
+	author = {Patricia Guerra{-}Balboa and
+                  {\`{A}}lex Miranda{-}Pascual and
+                  Javier Parra{-}Arnau and
+                  Thorsten Strufe},
+	title = {Composition in Differential Privacy for General Granularity Notions},
+	booktitle = {37th {IEEE} Computer Security Foundations Symposium, {CSF} 2024, Enschede,
+                  Netherlands, July 8-12, 2024},
+	pages = {680--696},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/CSF61375.2024.00004},
+	doi = {10.1109/CSF61375.2024.00004},
+	timestamp = {Tue, 01 Oct 2024 21:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/csfw/GuerraBalboaMPS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The composition theorems of differential privacy (DP) allow data curators to combine different algorithms to obtain a new algorithm that continues to satisfy DP. However, new granularity notions (i.e., neigh-borhood definitions), data domains, and composition settings have appeared in the literature that the classical composition theorems do not cover. For instance, the original parallel composition theorem does not translate well to general granularity notions. This complicates the opportunity of composing DP mechanisms in new settings and obtaining accurate estimates of the incurred privacy loss after composition. To overcome these limitations, we study the composability of DP in a general framework and for any kind of data domain or neighborhood definition. We give a general composition theorem in both independent and adaptive versions and we provide analogous composition results for approximate, zero-concentrated, and Gaussian DP. Besides, we study the hypothesis needed to obtain the best composition bounds. Our theorems cover both parallel and sequential composition settings. Importantly, they also cover every setting in between, allowing us to compute the final privacy loss of a composition with greatly improved accuracy.}
+}
