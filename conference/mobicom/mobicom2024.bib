@@ -1,0 +1,1294 @@
+@inproceedings{DBLP:conf/mobicom/BanerjeeZC0024,
+	author = {Avishek Banerjee and
+                  Xingya Zhao and
+                  Vishnu Chhabra and
+                  Kannan Srinivasan and
+                  Srinivasan Parthasarathy},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {{HORCRUX:} Accurate Cross Band Channel Prediction},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {1--15},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649343},
+	doi = {10.1145/3636534.3649343},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/BanerjeeZC0024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent advancement in Frequency Domain Duplexing (FDD) enables wireless systems to use different frequency bands for uplink and downlink communication without explicit channel feedback information. The current state-of-the-art approaches either estimate the underlying variables in the uplink channel or use an artificial neural network architecture to estimate the downlink channel from the uplink channel. However, such techniques fail to perform accurately in multipath-rich environments and environments unseen during training. This paper presents HORCRUX, a physics-based machine learning system that can be generalized and scaled to any environment while predicting downlink channels with high accuracy and applies to single-antenna and MIMO systems. Our approach uses multiple neural networks, trained on the standard wireless channel model, firstly to divide the uplink channel into smaller sub-channels and secondly to generate coarse estimates for the variables for each of the underlying sub-channels. Finally, we use an efficient and fast optimization framework to get fine-tuned variable estimates to predict the downlink channel. We implement our system using software-defined radios. Our evaluations show that HORCRUX performs ~8 dB better than state of the art in downlink channel prediction accuracy in diverse wireless environments. 1}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiZCZR24,
+	author = {Xinyi Li and
+                  Gaoteng Zhao and
+                  Ling Chen and
+                  Xinyu Zhang and
+                  Ju Ren},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {RFMagus: Programming the Radio Environment With Networked Metasurfaces},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {16--30},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649344},
+	doi = {10.1145/3636534.3649344},
+	timestamp = {Fri, 26 Jul 2024 07:36:53 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiZCZR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The complexity and volatility of real-world radio environments often hamper wireless networks from achieving optimal performance. Recently, intelligent metasurfaces have been explored to dynamically reshape the radio propagation environment. However, existing systems are limited to standalone metasurfaces, only enabling one-time signal redirection/reshaping effects within their direct line-of-sight. They cannot effectively scale to cover larger areas. In this paper, we propose RFMagus, which employs a network of metasurfaces to overcome the limitation. We carefully optimize the configurations of the networked metasurfaces so that they can cooperatively and coherently propagate the analog signals towards the target regions. We have implemented the networked metasurfaces and deployed them in a variety of real-world environments. Experimental results demonstrate that RFMagus can effectively expand the coverage, improve the throughput, and operate transparently to different wireless standards.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ZhangPTSW0024,
+	author = {Tianfang Zhang and
+                  Huy Phan and
+                  Zijie Tang and
+                  Cong Shi and
+                  Yan Wang and
+                  Bo Yuan and
+                  Yingying Chen},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Inaudible Backdoor Attack via Stealthy Frequency Trigger Injection
+                  in Audio Spectrogram},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {31--45},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649345},
+	doi = {10.1145/3636534.3649345},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ZhangPTSW0024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning-enabled Voice User Interfaces (VUIs) have surpassed human-level performance in acoustic perception tasks. However, the significant cost associated with training these models compels users to rely on third-party data or outsource training services. Such emerging trends have drawn substantial attention to training-phase attacks, particularly backdoor attacks. Such attacks implant hidden trigger patterns (e.g., tones, environmental sounds) into the model during training, thereby manipulating the model's predictions in the inference phase. However, existing backdoor attacks can be easily undermined in practice as the inserted triggers are audible. Users may notice such attacks when listening to the training data and remaining alert for suspicious sounds. In this work, we present a novel audio backdoor attack that exploits completely inaudible triggers in the frequency domain of the audio spectrograms. Specifically, we optimize the trigger to be a frequency-domain pattern with the energy below the noise floor (e.g., background and hardware noises) at any given frequency, thereby rendering the trigger inaudible. To realize such attacks, we design a strategy that automatically generates inaudible triggers in the spectrum supported by commodity playback devices (e.g., smartphones and laptops). We further develop optimization techniques to enhance the trigger's robustness against speech content and onset variations. Experiments on hotword and speaker recognition indicate that our attack can achieve attack success rates of more than 98.2% and 81.0% under digital and physical attack scenarios. The results also demonstrate the trigger's inaudibility with a Signal-to-Noise Ratio (SNR) less than -3.54 dB against background noises. We further verify that our attack can successfully bypass state-of-the-art backdoor defense strategies based on learning and audio processing.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ChenYF00GZ24,
+	author = {Lili Chen and
+                  Bozhong Yu and
+                  Yongjian Fu and
+                  Ju Ren and
+                  Hao Pan and
+                  Jeremy Gummeson and
+                  Yaoxue Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Pushing Wireless Charging from Station to Travel},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {46--61},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649346},
+	doi = {10.1145/3636534.3649346},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ChenYF00GZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless charging has achieved promising progress in recent years. However, the severe bottlenecks are the small charging range and poor flexibility. This paper presents ChargeX to enable smart and long-range wireless charging for small mobile devices. ChargeX incorporates emerging smart metasurface into the magnetic resonance coupling-based wireless charging to extend the charging range and accommodates the mobility of charging device. Unlike previous endeavors in metasurface-assisted wireless charging that focused on simulation, ChargeX makes efforts across software and hardware to meet three crucial requirements for a practical wireless charging system: (i) realize high-freedom and accurate metasurface control under the premise of low loss; (ii) obtain real-time feedback from the receiver and make effective manipulation for transmitted magnetic flux; and (iii) generate a proper AC signal source at the desired frequency band. We developed a prototype of ChargeX, and evaluated its performance through controlled experiments and real-world phone charging. Extensive experiments demonstrate the great potential of ChargeX for long-range and flexible wireless charging with a compact receiver design.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/MaZPQCLLHR24,
+	author = {Ruichun Ma and
+                  Shicheng Zheng and
+                  Hao Pan and
+                  Lili Qiu and
+                  Xingyu Chen and
+                  Liangyu Liu and
+                  Yihong Liu and
+                  Wenjun Hu and
+                  Ju Ren},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {AutoMS: Automated Service for mmWave Coverage Optimization using Low-cost
+                  Metasurfaces},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {62--76},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649347},
+	doi = {10.1145/3636534.3649347},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/MaZPQCLLHR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {mmWave networks offer wide bandwidth for high-speed wireless communication but suffer from limited range and susceptibility to blockage. Existing coverage provisioning solutions not only incur high costs but also require significant expert knowledge and manual efforts. In this paper, we present AutoMS, an automated service framework to optimize mmWave coverage by strategically designing and placing low-cost passive metasurfaces. Our approach consists of three key components: (1) joint optimization of metasurface phase configurations and placement as well as access point beamforming codebooks. (2) a fast 3D ray-tracing simulator for accelerated large-scale metasurface channel modeling. (3) a metasurface design amenable to ultra-low-cost hot stamping fabrication, featuring high reflectivity, near 2π phase control, and wideband support. Simulation and testbed experiments show that AutoMS can increase the median received signal strength by 11 dB in target rooms and over 20 dB at previous blind spots, and improve the median throughput by over 3× in real-world scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/Chi0WXG0H24,
+	author = {Guoxuan Chi and
+                  Zheng Yang and
+                  Chenshu Wu and
+                  Jingao Xu and
+                  Yuchong Gao and
+                  Yunhao Liu and
+                  Tony Xiao Han},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {RF-Diffusion: Radio Signal Generation via Time-Frequency Diffusion},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {77--92},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649348},
+	doi = {10.1145/3636534.3649348},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/Chi0WXG0H24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Along with AIGC shines in CV and NLP, its potential in the wireless domain has also emerged in recent years. Yet, existing RF-oriented generative solutions are ill-suited for generating high-quality, time-series RF data due to limited representation capabilities. In this work, inspired by the stellar achievements of the diffusion model in CV and NLP, we adapt it to the RF domain and propose RF-Diffusion. To accommodate the unique characteristics of RF signals, we first introduce a novel Time-Frequency Diffusion theory to enhance the original diffusion model, enabling it to tap into the information within the time, frequency, and complex-valued domains of RF signals. On this basis, we propose a Hierarchical Diffusion Transformer to translate the theory into a practical generative DNN through elaborated design spanning network architecture, functional block, and complex-valued operator, making RF-Diffusion a versatile solution to generate diverse, high-quality, and time-series RF data. Performance comparison with three prevalent generative models demonstrates the RF-Diffusion's superior performance in synthesizing Wi-Fi and FMCW signals. We also showcase the versatility of RF-Diffusion in boosting Wi-Fi sensing systems and performing channel estimation in 5G networks.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/GuoTCGSH00S24,
+	author = {Xiuzhen Guo and
+                  Long Tan and
+                  Tao Chen and
+                  Chaojie Gu and
+                  Yuanchao Shu and
+                  Shibo He and
+                  Yuan He and
+                  Jiming Chen and
+                  Longfei Shangguan},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Exploring Biomagnetism for Inclusive Vital Sign Monitoring: Modeling
+                  and Implementation},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {93--107},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649349},
+	doi = {10.1145/3636534.3649349},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/GuoTCGSH00S24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents the design, implementation, and evaluation of MagWear, a novel biomagnetism-based system that can accurately and inclusively monitor the heart rate and respiration rate of mobile users with diverse skin tones. MagWear's contributions are twofold. Firstly, we build a mathematical model that characterizes the magnetic coupling effect of blood flow under the influence of an external magnetic field. This model uncovers the variations in accuracy when monitoring vital signs among individuals. Secondly, leveraging insights derived from this mathematical model, we present a softwarehardware co-design that effectively handles the impact of human diversity on the performance of vital sign monitoring, pushing this generic solution one big step closer to real adoptions. We have implemented a prototype of MagWear on a two-layer PCB board and followed IRB protocols to conduct system evaluations. Our extensive experiments involving 30 volunteers demonstrate that MagWear achieves high monitoring accuracy with a mean percentage error (MPE) of 1.55% for heart rate and 1.79% for respiration rate. The head-to-head comparison with Apple Watch 8 further demonstrates MagWear's consistently high performance in different user conditions.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/0001Z0C024,
+	author = {Zhaoxin Chang and
+                  Fusang Zhang and
+                  Jie Xiong and
+                  Weiyan Chen and
+                  Daqing Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {MSense: Boosting Wireless Sensing Capability Under Motion Interference},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {108--123},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649350},
+	doi = {10.1145/3636534.3649350},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/0001Z0C024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless signals have been widely utilized for human sensing. However, wireless sensing systems face a fundamental limitation, i.e., the wireless device must keep static during the sensing process. Also, when sensing fine-grained human motions such as respiration, the human target is required to stay stationary. This is because wireless sensing relies on signal variations for sensing. When device is moving or human body is moving, the signal variation caused by the target area (e.g., chest for respiration sensing) is mixed with the signal variation induced by device or other body parts, failing wireless sensing. In this paper, we propose MSense, a general solution to deal with motion interference from wireless device and/or human body, moving wireless sensing one step forward towards real-life adoption. We establish the sensing model by taking both device motion and interfering body motion into consideration. By extracting the effect of body and device motions through pure signal processing, the motion interference can be removed to achieve accurate target sensing. Comprehensive experiments demonstrate the effectiveness of the proposed scheme. The achieved solution is general and can be applied to different sensing tasks involving both periodic and aperiodic motions.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/Xie0ZZTWZ24,
+	author = {Mingqi Xie and
+                  Meng Jin and
+                  Fengyuan Zhu and
+                  Yuzhe Zhang and
+                  Xiaohua Tian and
+                  Xinbing Wang and
+                  Chenghu Zhou},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Enabling High-rate Backscatter Sensing at Scale},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {124--138},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649351},
+	doi = {10.1145/3636534.3649351},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/Xie0ZZTWZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents μTag, an ultra-low-power backscatter sensor that supports high-frequency sensing of a large number of targets simultaneously. The core of μTag is an RF "gene editing" technique that embeds both the identity of the sensor and the real-time motion state of the attached target intensively in the transient features of the sensor\'s RF signal, in a collision-resilient manner. We provide practical techniques which i) generate such "genetic signal" with purely analog and extremely simple circuits; and ii) separate the signals from a large scale of sensors reliably. Our experimental results show that our design can support concurrent tracking of 150 targets with a 12kHz per-tag sampling rate. We also demonstrate with multiple sensing applications that μTag can achieve high-speed and large-scale motion tracking and rotation frequency sensing. The PCB power consumption of μTag is 38~107μW, according to the operating frequency of the tag. Our ASIC simulation based on the 40nm CMOS process shows that the power consumption can be further reduced to 0.13~0.52μW.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ShiLJHHZYBX0YX24,
+	author = {Shuyao Shi and
+                  Neiwen Ling and
+                  Zhehao Jiang and
+                  Xuan Huang and
+                  Yuze He and
+                  Xiaoguang Zhao and
+                  Bufang Yang and
+                  Chen Bian and
+                  Jingfei Xia and
+                  Zhenyu Yan and
+                  Raymond W. Yeung and
+                  Guoliang Xing},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Soar: Design and Deployment of {A} Smart Roadside Infrastructure System
+                  for Autonomous Driving},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {139--154},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649352},
+	doi = {10.1145/3636534.3649352},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ShiLJHHZYBX0YX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, smart roadside infrastructure (SRI) has demonstrated the potential of achieving fully autonomous driving systems. To explore the potential of infrastructure-assisted autonomous driving, this paper presents the design and deployment of Soar, the first end-to-end SRI system specifically designed to support autonomous driving systems. Soar consists of both software and hardware components carefully designed to overcome various system and physical challenges. Soar can leverage the existing operational infrastructure like street lampposts for a lower barrier of adoption. Soar adopts a new communication architecture that comprises a bi-directional multi-hop I2I network and a downlink I2V broadcast service, which are designed based on off-the-shelf 802.11ac interfaces in an integrated manner. Soar also features a hierarchical DL task management framework to achieve desirable load balancing among nodes and enable them to collaborate efficiently to run multiple data-intensive autonomous driving applications. We deployed a total of 18 Soar nodes on existing lampposts on campus, which have been operational for over two years. Our real-world evaluation shows that Soar can support a diverse set of autonomous driving applications and achieve desirable real-time performance and high communication reliability. Our findings and experiences in this work offer key insights into the development and deployment of next-generation smart roadside infrastructure and autonomous driving systems.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/MaH24,
+	author = {Ruichun Ma and
+                  Wenjun Hu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {RF-Mediator: Tuning Medium Interfaces with Flexible Metasurfaces},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {155--169},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649353},
+	doi = {10.1145/3636534.3649353},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/MaH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Emerging wireless IoT applications increasingly venture beyond over-the-air communication, such as deep-tissue networking for medical sensors, air-water communication for oceanography, and soil sensing for agriculture. These applications face the fundamental challenge of significant reflection and power loss at medium interfaces. We present RF-Mediator, a programmable metasurface placed near a medium interface to mask the presence of a physical boundary. Our hardware design comprises a single layer of varactor-based surface elements with specific metallic patterns and wiring. With the biasing voltage tuned element-wise, the surface dynamically mediates between the adjacent media to minimize unwanted reflection and boost transmission through the medium interface. A multi-stage control algorithm efficiently determines the surface configuration to handle all dynamic adaptation needs for medium impedance matching and beamforming jointly. We implement a lightweight and flexible metasurface prototype and experiment with diverse cross-medium setups. Extensive evaluation shows that RF-Mediator provides a median power gain of 8 dB for air-tissue links and up to 30 dB for cross-medium backscatter links.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ZhangAZZSLC0MF24,
+	author = {Huanhuan Zhang and
+                  Congkai An and
+                  Anfu Zhou and
+                  Yifan Zhu and
+                  Weilin Sun and
+                  Yixuan Lu and
+                  Jiahao Chen and
+                  Liang Liu and
+                  Huadong Ma and
+                  Aiguo Fei},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Venus: Enhancing QoE of Crowdsourced Live Video Streaming by Exploiting
+                  Multiflow Viewer Assistance},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {170--184},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649354},
+	doi = {10.1145/3636534.3649354},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ZhangAZZSLC0MF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite the prevalence of Crowdsourced Live Video Streaming (CLVS), video viewers still suffer from low QoE particularly under rush hours, as the existing Content Delivery Network (CDN) is not scalable enough to handle the massive concurrent streaming. The rapid emergence of Web 3.0 provides new incentives for revisiting and applying the classical P2P networking in CLVS. However, the highly dynamic joining or leaving behavior of CLVS viewers frequently interrupts the real-time streaming and leads to low QoE, which demands to retrofit P2P. In this work, we bridge the gap by proposing a reliable P2P-assisted CLVS system named Venus, where viewers can share their streaming content smoothly, without video freeze regardless of viewers leaving. To realize Venus, different from the single-flow sharing in previous P2P video streaming, we design a novel multiflow framework with lightweight redundancy encoding, so as to handle the inherently high viewer dynamics. Correspondingly, we introduce a multiflow scheduler to enable QoE adaption concertedly over heterogeneous multiple flows. Real-world evaluation confirms the benefits of decentralized CLVS streaming, with Venus outperforming the state-of-the-art CDN solution by almost totally eliminating the video stall while enhancing the video quality by 10.2%.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/YaoW0ZW024,
+	author = {Zhiyun Yao and
+                  Xuanzhi Wang and
+                  Kai Niu and
+                  Rong Zheng and
+                  Junzhe Wang and
+                  Daqing Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {WiProfile: Unlocking Diffraction Effects for Sub-Centimeter Target
+                  Profiling Using Commodity WiFi Devices},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {185--199},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649355},
+	doi = {10.1145/3636534.3649355},
+	timestamp = {Mon, 22 Jul 2024 08:26:52 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/YaoW0ZW024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite intensive research efforts in radio frequency noncontact sensing, capturing fine-grained geometric properties of objects, such as shape and size, remains an open problem using commodity WiFi devices. Prior attempts are incapable of characterizing object shape or size because they predominantly rely on weak signals reflected off objects in a very small number of directions. In this paper, motivated by the observation that the diffracted signals around an object between two WiFi devices carry the contour information of the object, we formulate the problem of reconstructing the 2D target profile and develop WiProfile, the first WiFi-based system that unlocks the diffraction effects for target profiling. We introduce a CSI-Profile model to characterize the relationship between the CSI measured at different target positions and the target profile in the diffraction zone. With suitable approximations, the inverse problem of deriving the target profile from CSI can be solved by the inverse Fresnel transform. To mitigate CSI measurement errors on commodity WiFi devices, we propose a novel antenna placement strategy. Comprehensive experiments demonstrate that WiProfile can accurately reconstruct profiles with median absolute errors of less than 1 cm under various conditions, and effectively estimate the profiles of everyday objects of diverse shapes, sizes, and materials. We believe this work opens up new directions for fine-grained target imaging using commodity WiFi devices.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/FanLLHLJ00WC24,
+	author = {Xiubin Fan and
+                  Guanyao Li and
+                  Zhongming Lin and
+                  Yuming Hu and
+                  Yang Liu and
+                  Tianrui Jiang and
+                  Zhimeng Yin and
+                  Feng Qian and
+                  Shuai Wang and
+                  S.{-}H. Gary Chan},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Experiences of Deploying a Citywide Crowdsourcing Platform to Search
+                  for Missing People with Dementia},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {200--214},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649356},
+	doi = {10.1145/3636534.3649356},
+	timestamp = {Fri, 16 Aug 2024 07:47:08 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/FanLLHLJ00WC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {People with Dementia (PwD) suffer from a high risk of getting lost due to their cognitive deterioration, leading to potential safety hazards and significant search efforts. In this paper, we propose DEmentia Caring System (DECS), an effective crowdsourcing platform to search for missing PwD. Specifically, PwD carry our customized Bluetooth Low Energy (BLE) tags that broadcast BLE packets, which are detected and then uploaded by mobile volunteers via their smartphones. To further enhance search efficiency, DECS deploys BLE gateways as its infrastructure and analyzes PwD's daily spatial-temporal mobility patterns. DECS has been deployed in Hong Kong since 2019, supporting 3,100+ PwD's families with over 45,000 app downloads by volunteers. More importantly, it has successfully served the search for 254 missing cases. This paper reports the unique lessons and experiences learned through our 4-year citywide deployment of DECS.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/000300L00XZWZ24,
+	author = {Jianwei Zheng and
+                  Zhenhua Li and
+                  Feng Qian and
+                  Wei Liu and
+                  Hao Lin and
+                  Yunhao Liu and
+                  Tianyin Xu and
+                  Nan Zhang and
+                  Ju Wang and
+                  Cang Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Rethinking Process Management for Interactive Mobile Systems},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {215--229},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649357},
+	doi = {10.1145/3636534.3649357},
+	timestamp = {Thu, 25 Jul 2024 07:48:20 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/000300L00XZWZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern mobile systems are featured by their increasing interactivity with users, which however is accompanied by a severe side effect---users constantly suffer from slow UI responsiveness (SUR). To date, the community have limited understandings of this issue for the challenges of comprehensively measuring SUR events on massive mobile devices. As a major Android phone vendor, in this paper we close the knowledge gap by conducting the first large-scale, long-term measurement study on SUR with 47M devices. Our study identifies the critical factors that lead to SUR from the perspectives of device, system, application, and app market. Most importantly, we note that the largest root cause lies in the wide existence of "hogging" apps, which persistently occupy an unreasonable amount of system resources by leveraging the optimistic design of Android process management. We have built on the insights to remodel Android process states by fully considering their time-sensitive transitions and the actual behaviors of processes, with remarkable real-world impact---the occurrences of SUR are reduced by 60%, together with 10.7% saving of battery consumption.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/RenSDZDZC0L024,
+	author = {Yidong Ren and
+                  Wei Sun and
+                  Jialuo Du and
+                  Huaili Zeng and
+                  Younsuk Dong and
+                  Mi Zhang and
+                  Shigang Chen and
+                  Yunhao Liu and
+                  Tianxing Li and
+                  Zhichao Cao},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Demeter: Reliable Cross-soil {LPWAN} with Low-cost Signal Polarization
+                  Alignment},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {230--245},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649358},
+	doi = {10.1145/3636534.3649358},
+	timestamp = {Tue, 13 Aug 2024 08:01:17 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/RenSDZDZC0L024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Soil monitoring plays an essential role in agricultural systems. Rather than deploying sensors' antennas above the ground, burying them in the soil is an attractive way to retain a non-intrusive aboveground space. Low Power Wide-Area Network (LPWAN) has shown its long-distance and low-power features for aboveground Internet-of-Things (IoT) communication, presenting a potential of extending to underground cross-soil communication over a wide area, which however has not been investigated before. The variation of soil conditions brings significant signal polarization misalignment, degrading communication reliability. In this paper, we propose Demeter, a low-cost low-power programmable antenna design to keep reliable cross-soil communication automatically. First, we propose a hardware architecture to enable polarization adjustment on commercial-off-the-shelf (COTS) single-RF-chain LoRa radio. Moreover, we develop a low-power programmable circuit to obtain polarization adjustment. We further design an energy-efficient heuristic calibration algorithm and an adaptive calibration scheduling method to keep signal polarization alignment automatically. We implement Demeter with a customized PCB circuit and COTS devices. Then, we evaluate its performance in various soil types and environmental conditions. The results show that Demeter can achieve up to 11.6 dB SNR gain indoors and 9.94 dB outdoors, 4× horizontal communication distance, at least 20 cm deeper underground deployment, and up to 82% energy consumption reduction per day compared with the standard LoRa.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LvWL0TYCMGCX24,
+	author = {Gerui Lv and
+                  Qinghua Wu and
+                  Yanmei Liu and
+                  Zhenyu Li and
+                  Qingyue Tan and
+                  Furong Yang and
+                  Wentao Chen and
+                  Yunfei Ma and
+                  Hongyu Guo and
+                  Ying Chen and
+                  Gaogang Xie},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Chorus: Coordinating Mobile Multipath Scheduling and Adaptive Video
+                  Streaming},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {246--262},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649359},
+	doi = {10.1145/3636534.3649359},
+	timestamp = {Mon, 29 Jul 2024 21:17:52 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LvWL0TYCMGCX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Increasing bandwidth demands of mobile video streaming pose a challenge in optimizing the Quality of Experience (QoE) for better user engagement. Multipath transmission promises to extend network capacity by utilizing multiple wireless links simultaneously. Previous studies mainly tune the packet scheduler in multipath transmission, expecting higher QoE by accelerating transmission. However, since Adaptive BitRate (ABR) algorithms overlook the impact of multipath scheduling on throughput prediction, multipath adaptive streaming can even experience lower QoE than single-path. This paper proposes Chorus, a cross-layer framework that coordinates multipath scheduling with adaptive streaming to optimize QoE jointly. Chorus establishes two-way feedback control loops between the server and the client. Furthermore, Chorus introduces Coarse-grained Decisions, which assist appropriate bitrate selection by considering the scheduling decision in throughput prediction, and Finegrained Corrections, which meet the predicted throughput by QoE-oriented multipath scheduling. Extensive emulation and real-world mobile Internet evaluations show that Chorus outperforms the state-of-the-art MPQUIC scheduler, improving average QoE by 23.5% and 65.7%, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiZD0QYX24,
+	author = {Yijie Li and
+                  Juntao Zhou and
+                  Dian Ding and
+                  Yi{-}Chao Chen and
+                  Lili Qiu and
+                  Jiadi Yu and
+                  Guangtao Xue},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {MuDiS: An Audio-independent, Wide-angle, and Leak-free Multi-directional
+                  Speaker},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {263--278},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649360},
+	doi = {10.1145/3636534.3649360},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiZD0QYX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces a novel multi-directional speaker, named MuDiS, which utilizes a parametric array to generate highly focused sound beams in multiple directions. The system capitalizes on air nonlinearity to reproduce sound from ultrasounds, successfully overcoming challenges inherent in traditional parametric arrays, such as transducer size and wavefront shape. It supports three important features simultaneously: independent beams, wide-angle digital steering, and unintended leakage suppression. To address these challenges, we designed a specialized cell structure that connects ultrasonic transducers, redirecting an approximately omnidirectional wavefront with optimal interspacing. An optimization-based algorithm is developed to minimize unintended leakages, and a nonlinear distortion reduction scheme is proposed to enhance sound quality. The paper showcases a prototype demonstrating the system's capabilities as a multidirectional speaker with a wide sound projection angle. Experimental results validate the effectiveness of our approach. The proposed multi-beam projection system rivals the performance of commercially available single-beam projection directional speakers, and improved steering angle and sound fidelity compared to multi-beamforming performance using traditional parametric arrays.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/YuanYCWYZLZMJWX24,
+	author = {Jinliang Yuan and
+                  Chen Yang and
+                  Dongqi Cai and
+                  Shihe Wang and
+                  Xin Yuan and
+                  Zeling Zhang and
+                  Xiang Li and
+                  Dingge Zhang and
+                  Hanzi Mei and
+                  Xianqing Jia and
+                  Shangguang Wang and
+                  Mengwei Xu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Mobile Foundation Model as Firmware},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {279--295},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649361},
+	doi = {10.1145/3636534.3649361},
+	timestamp = {Fri, 16 Aug 2024 07:47:09 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/YuanYCWYZLZMJWX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the current AI era, mobile devices such as smartphones are tasked with executing a myriad of deep neural networks (DNNs) locally. It presents a complex landscape, as these models are highly fragmented in terms of architecture, operators, and implementations. Such fragmentation poses significant challenges to the co-optimization of hardware, systems, and algorithms for efficient and scalable mobile AI. Inspired by the recent groundbreaking progress in large foundation models, this work introduces a novel paradigm for mobile AI, where mobile OS and hardware jointly manage a foundation model that is capable of serving a wide array of mobile AI tasks. This foundation model functions akin to firmware, unmodifiable by apps or the OS, exposed as a system service to Apps. They can invoke this foundation model through a small, offline fine-tuned "adapter" for various downstream tasks. We propose a tangible design of this vision called M4, and prototype it from publicly available pre-trained models. To assess its capability, we also build a comprehensive benchmark consisting of 38 mobile AI tasks and 50 datasets, spanning 5 multimodal inputs. Extensive experiments demonstrate M4\'s remarkable results: it achieves comparable accuracy in 85% of tasks, offers enhanced scalability regarding storage and memory, and has much simpler operations. In broader terms, this work paves a new way towards efficient and scalable mobile AI in the post-LLM era.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiLLLCZWWLL24,
+	author = {Yuanjie Li and
+                  Lixin Liu and
+                  Hewu Li and
+                  Wei Liu and
+                  Yimei Chen and
+                  Wei Zhao and
+                  Jianping Wu and
+                  Qian Wu and
+                  Jun Liu and
+                  Zeqi Lai},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Stable Hierarchical Routing for Operational {LEO} Networks},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {296--311},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649362},
+	doi = {10.1145/3636534.3649362},
+	timestamp = {Fri, 21 Jun 2024 15:45:56 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiLLLCZWWLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Low Earth Orbit (LEO) satellite mega-constellations promise ubiquitous network services to "unconnected" users. But their upcoming global routing for Earth will be unstable due to exhaustive topology updates between satellites and Earth, inside an orbital shell, and across heterogeneous orbital shells. In real LEO networks, these multi-dimensional dynamics are interleaved and complicated by chaotic orbital maneuvers and random failures. They are less predictable than most satellite routing proposals expect and threaten these proposals\' availability, efficiency, or resiliency at scale. We propose SHORT, a Stable Hierarchical Orbital Routing Technique to decouple, localize, and mask multi-dimensional dynamics from operational LEO networks. SHORT takes a geographic paradigm to organize the LEO network as stable hierarchical routing domains, split heterogeneous LEO dynamics into each domain, mask them with domain-specific routing via orbital-geodetic coordinates, and localize adaptions to orbital maneuvers, random failures, and partial deployments. SHORT can work incrementally as a control-plane overlay to enhance existing LEO routing proposals. Our evaluations with the U.S. Space Surveillance Network datasets and prototype validate SHORT\'s near-optimal availability, efficiency, and resiliency in operational LEO networks.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/YeZCXC24,
+	author = {Shengyuan Ye and
+                  Liekang Zeng and
+                  Xiaowen Chu and
+                  Guoliang Xing and
+                  Xu Chen},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Asteroid: Resource-Efficient Hybrid Pipeline Parallelism for Collaborative
+                  {DNN} Training on Heterogeneous Edge Devices},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {312--326},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649363},
+	doi = {10.1145/3636534.3649363},
+	timestamp = {Tue, 13 Aug 2024 08:07:07 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/YeZCXC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {On-device Deep Neural Network (DNN) training has been recognized as crucial for privacy-preserving machine learning at the edge. However, the intensive training workload and limited onboard computing resources pose significant challenges to the availability and efficiency of model training. While existing works address these challenges through native resource management optimization, we instead leverage our observation that edge environments usually comprise a rich set of accompanying trusted edge devices with idle resources beyond a single terminal. We propose Asteroid, a distributed edge training system that breaks the resource walls across heterogeneous edge devices for efficient model training acceleration. Asteroid adopts a hybrid pipeline parallelism to orchestrate distributed training, along with a judicious parallelism planning for maximizing throughput under certain resource constraints. Furthermore, a fault-tolerant yet lightweight pipeline replay mechanism is developed to tame the device-level dynamics for training robustness and performance stability. We implement Asteroid on heterogeneous edge devices with both vision and language models, demonstrating up to 12.2× faster training than conventional parallelism methods and 2.1× faster than state-of-the-art hybrid parallelism methods through evaluations. Furthermore, Asteroid can recover training pipeline 14× faster than baseline methods while preserving comparable throughput despite unexpected device exiting and failure.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiuZZZ00024,
+	author = {Yu Liu and
+                  Puqi Zhou and
+                  Zejun Zhang and
+                  Anlan Zhang and
+                  Bo Han and
+                  Zhenhua Li and
+                  Feng Qian},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {MuV2: Scaling up Multi-user Mobile Volumetric Video Streaming via
+                  Content Hybridization and Sharing},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {327--341},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649364},
+	doi = {10.1145/3636534.3649364},
+	timestamp = {Mon, 18 Nov 2024 16:04:56 +0100},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiuZZZ00024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Volumetric videos offer a unique interactive experience and have the potential to enhance social virtual reality and telepresence. Streaming volumetric videos to multiple users remains a challenge due to its tremendous requirements of network and computation resources. In this paper, we develop MuV2, an edge-assisted multi-user mobile volumetric video streaming system to support important use cases such as tens of students simultaneously consuming volumetric content in a classroom. MuV2 achieves high scalability and good streaming quality through three orthogonal designs: hybridizing direct streaming of 3D volumetric content with remote rendering, dynamically sharing edge-transcoded views across users, and multiplexing encoding tasks of multiple transcoding sessions into a limited number of hardware encoders on the edge. MuV2 then integrates the three designs into a holistic optimization framework. We fully implement MuV2 and experimentally demonstrate that MuV2 can deliver high-quality volumetric videos to over 30 concurrent untethered mobile devices with a single WiFi access point and a commodity edge server.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/SunXFLZLFC24,
+	author = {Xue Sun and
+                  Jie Xiong and
+                  Chao Feng and
+                  Xiaohui Li and
+                  Jiayi Zhang and
+                  Binghao Li and
+                  Dingyi Fang and
+                  Xiaojiang Chen},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Gastag: {A} Gas Sensing Paradigm using Graphene-based Tags},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {342--356},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649365},
+	doi = {10.1145/3636534.3649365},
+	timestamp = {Sun, 21 Jul 2024 18:16:15 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/SunXFLZLFC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Gas sensing plays a key role in detecting explosive/toxic gases and monitoring environmental pollution. Existing approaches usually require expensive hardware or high maintenance cost, and are thus ill-suited for large-scale long-term deployment. In this paper, we propose Gastag, a gas sensing paradigm based on passive tags. The heart of Gastag design is embedding a small piece of gas-sensitive material to a cheap RFID tag. When gas concentration varies, the conductivity of gas-sensitive materials changes, impacting the impedance of the tag and accordingly the received signal. To increase the sensing sensitivity and gas concentration range capable of sensing, we carefully select multiple materials and synthesize a new material that exhibits high sensitivity and high surface-to-weight ratio. To enable a long working range, we redesigned the tag antenna and carefully determined the location to place the gas-sensitive material in order to achieve impedance matching. Comprehensive experiments demonstrate the effectiveness of the proposed system. Gastag can achieve a median error of 6.7 ppm for CH4 concentration measurements, 12.6 ppm for CO2 concentration measurements, and 3 ppm for CO concentration measurements, outperforming a lot of commodity gas sensors on the market. The working range is successfully increased to 8.5 m, enabling the coverage of many tags with a single reader, laying the foundation for large-scale deployment.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ChenYFGXS24,
+	author = {Tao Chen and
+                  Yongjie Yang and
+                  Xiaoran Fan and
+                  Xiuzhen Guo and
+                  Jie Xiong and
+                  Longfei Shangguan},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Exploring the Feasibility of Remote Cardiac Auscultation Using Earphones},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {357--372},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649366},
+	doi = {10.1145/3636534.3649366},
+	timestamp = {Mon, 22 Jul 2024 08:26:52 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ChenYFGXS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The elderly over 65 accounts for 80% of COVID deaths in the United States. In response to the pandemic, the federal, state governments, and commercial insurers are promoting video visits, through which the elderly can access specialists at home over the Internet, without the risk of COVID exposure. However, the current video visit practice barely relies on video observation and talking. The specialist could not assess the patient's health conditions by performing auscultations. This paper tries to address this key missing component in video visits by proposing Asclepius, a hardware-software solution that turns the patient's earphones into a stethoscope, allowing the specialist to hear the patient's fine-grained heart sound (i.e., PCG signals) in video visits. To achieve this goal, we contribute a low-cost plug-in peripheral that repurposes the earphone's speaker into a microphone and uses it to capture the patient's minute PCG signals from her ear canal. As the PCG signals suffer from strong attenuation and multi-path effects when propagating from the heart to ear canals, we then propose efficient signal processing algorithms coupled with a data-driven approach to de-reverberate and further correct the amplitude and frequency distortion in raw PCG receptions. We implement Asclepius on a 2-layer PCB board and follow the IRB protocol to evaluate its performance with 30 volunteers. Our extensive experiments show that Asclepius can effectively recover Phonocardiogram (PCG) signals with different types of earphones. The objective blind testing and subjective interview with five cardiologists further confirm the clinical efficacy and efficiency of our system. PCG signal samples, benchmark results, and cardiologist interviews can be found at: https://asclepius-system.github.io/}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiXDLSWLC24,
+	author = {Changming Li and
+                  Mingjing Xu and
+                  Yicong Du and
+                  Limin Liu and
+                  Cong Shi and
+                  Yan Wang and
+                  Hongbo Liu and
+                  Yingying Chen},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Practical Adversarial Attack on WiFi Sensing Through Unnoticeable
+                  Communication Packet Perturbation},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {373--387},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649367},
+	doi = {10.1145/3636534.3649367},
+	timestamp = {Fri, 19 Jul 2024 09:05:47 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiXDLSWLC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The pervasive use of WiFi has driven the recent research in WiFi sensing, converting communication tech into sensing for applications such as activity recognition, user authentication, and vital sign monitoring. Despite the integration of deep learning into WiFi sensing systems, potential security vulnerabilities to adversarial attacks remain unexplored. This paper introduces the first physical attack focusing on deep learning-based WiFi sensing systems, demonstrating how adversaries can subtly manipulate WiFi packet preambles to affect channel state information (CSI), a critical feature in such systems, and thereby influence underlying deep learning models without disrupting regular communication. To realize the proposed attack in practical scenarios, we rigorously analyze and derive the intricate relationship between the pilot symbol and CSI. A novel mechanism is proposed to facilitate quantitive control of receiver-side CSI through minimal modifications to the pilot symbols of WiFi packets at the transmitter. We further develop a perturbation optimization method based on the Carlini & Wagner (CW) attack and a penalty-based training process to ensure the attack's universal efficacy across various CSI responses and noise. The physical attack is implemented and evaluated in two representative WiFi sensing systems (i.e., activity recognition and user authentication) with 35 participants over 3 months. Extensive experiments demonstrate the remarkable attack success rates of 90.47% and 83.83% for activity recognition and user authentication, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LaiLLZ24,
+	author = {Haowen Lai and
+                  Gaoxiang Luo and
+                  Yifei Liu and
+                  Mingmin Zhao},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Enabling Visual Recognition at Radio Frequency},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {388--403},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649369},
+	doi = {10.1145/3636534.3649369},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LaiLLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces PanoRadar, a novel RF imaging system that brings RF resolution close to that of LiDAR, while providing resilience against conditions challenging for optical signals. Our LiDAR-comparable 3D imaging results enable, for the first time, a variety of visual recognition tasks at radio frequency, including surface normal estimation, semantic segmentation, and object detection. PanoRadar utilizes a rotating single-chip mmWave radar, along with a combination of novel signal processing and machine learning algorithms, to create high-resolution 3D images of the surroundings. Our system accurately estimates robot motion, allowing for coherent imaging through a dense grid of synthetic antennas. It also exploits the high azimuth resolution to enhance elevation resolution using learning-based methods. Furthermore, PanoRadar tackles 3D learning via 2D convolutions and addresses challenges due to the unique characteristics of RF signals. Our results demonstrate PanoRadar's robust performance across 12 buildings. Code, datasets, and demo videos are available on our website.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/OuyangSLPZFCWCX24,
+	author = {Xiaomin Ouyang and
+                  Xian Shuai and
+                  Yang Li and
+                  Li Pan and
+                  Xifan Zhang and
+                  Heming Fu and
+                  Sitong Cheng and
+                  Xinyan Wang and
+                  Shihua Cao and
+                  Jiang Xin and
+                  Hazel Mok and
+                  Zhenyu Yan and
+                  Doris Sau{-}Fung Yu and
+                  Timothy Kwok and
+                  Guoliang Xing},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {ADMarker: {A} Multi-Modal Federated Learning System for Monitoring
+                  Digital Biomarkers of Alzheimer's Disease},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {404--419},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649370},
+	doi = {10.1145/3636534.3649370},
+	timestamp = {Tue, 27 Aug 2024 18:50:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/OuyangSLPZFCWCX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Alzheimer's Disease (AD) and related dementia are a growing global health challenge due to the aging population. In this paper, we present ADMarker, the first end-to-end system that integrates multi-modal sensors and new federated learning algorithms for detecting multidimensional AD digital biomarkers in natural living environments. ADMarker features a novel three-stage multi-modal federated learning architecture that can accurately detect digital biomarkers in a privacy-preserving manner. Our approach collectively addresses several major real-world challenges, such as limited data labels, data heterogeneity, and limited computing resources. We built a compact multi-modality hardware system and deployed it in a four-week clinical trial involving 91 elderly participants. The results indicate that ADMarker can accurately detect a comprehensive set of digital biomarkers with up to 93.8% accuracy and identify early AD with an average of 88.9% accuracy. ADMarker offers a new platform that can allow AD clinicians to characterize and track the complex correlation between multidimensional interpretable digital biomarkers, demographic factors of patients, and AD diagnosis in a longitudinal manner.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/XingX0LZ0W24,
+	author = {Ruolin Xing and
+                  Mengwei Xu and
+                  Ao Zhou and
+                  Qing Li and
+                  Yiran Zhang and
+                  Feng Qian and
+                  Shangguang Wang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Deciphering the Enigma of Satellite Computing with {COTS} Devices:
+                  Measurement and Analysis},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {420--435},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649371},
+	doi = {10.1145/3636534.3649371},
+	timestamp = {Tue, 16 Jul 2024 16:34:10 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/XingX0LZ0W24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the wake of the rapid deployment of large-scale low-Earth orbit satellite constellations, exploiting the full computing potential of Commercial Off-The-Shelf (COTS) devices in these environments has become a pressing issue. However, understanding this problem is far from straightforward due to the inherent differences between the terrestrial infrastructure and the satellite platform in space. In this paper, we take an important step towards closing this knowledge gap by presenting the first measurement study on the thermal control, power management, and performance of COTS computing devices on satellites. Our measurements reveal that the satellite platform and COTS computing devices significantly interplay in terms of the temperature and energy, forming the main constraints on satellite computing. Further, we analyze the critical factors that shape the characteristics of onboard COTS computing devices. We provide guidelines for future research on optimizing the use of such devices for computing purposes. Finally, we have released the datasets to facilitate further study in satellite computing.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ZhuMXYSQ24,
+	author = {Yi Zhu and
+                  Chenglin Miao and
+                  Hongfei Xue and
+                  Yunnan Yu and
+                  Lu Su and
+                  Chunming Qiao},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Malicious Attacks against Multi-Sensor Fusion in Autonomous Driving},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {436--451},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649372},
+	doi = {10.1145/3636534.3649372},
+	timestamp = {Fri, 27 Sep 2024 18:43:50 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ZhuMXYSQ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-sensor fusion has been widely used by autonomous vehicles (AVs) to integrate the perception results from different sensing modalities including LiDAR, camera and radar. Despite the rapid development of multi-sensor fusion systems in autonomous driving, their vulnerability to malicious attacks have not been well studied. Although some prior works have studied the attacks against the perception systems of AVs, they only consider a single sensing modality or a camera-LiDAR fusion system, which can not attack the sensor fusion system based on LiDAR, camera, and radar. To fill this research gap, in this paper, we present the first study on the vulnerability of multi-sensor fusion systems that employ LiDAR, camera, and radar. Specifically, we propose a novel attack method that can simultaneously attack all three types of sensing modalities using a single type of adversarial object. The adversarial object can be easily fabricated at low cost, and the proposed attack can be easily performed with high stealthiness and flexibility in practice. Extensive experiments based on a real-world AV testbed show that the proposed attack can continuously hide a target vehicle from the perception system of a victim AV using only two small adversarial objects.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/JohnsonPAL24,
+	author = {Jacob Johnson and
+                  Ashton Palacios and
+                  Cody Arvonen and
+                  Philip Lundrigan},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Wireless Latency Shift Keying},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {452--466},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649373},
+	doi = {10.1145/3636534.3649373},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/JohnsonPAL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IEEE 802.11 (WiFi) only has two modes of trust---complete trust or complete untrust. The lack of nuance leaves no room for sensors that a user does not fully trust but wants to connect to their network, such as a WiFi sensor. Solutions exist, but they require advanced knowledge of network administration. We solve this problem by introducing a new way of modulating data in the latency of the network, called Latency Shift Keying. We use specific characteristics of the WiFi protocol to carefully control the latency of just one device on the network. We build a transmitter, receiver, and modulation scheme that is designed to encode data in the latency of a network. We develop an application, Wicket, that solves the WiFi trust issue using Latency Shift Keying to create a new security association between an untrusted WiFi sensor and a wired device on the trusted network. We evaluate its performance and show that it works in many network conditions and environments.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/NingX0BL24,
+	author = {Jingyi Ning and
+                  Lei Xie and
+                  Zhihao Yan and
+                  Yanling Bu and
+                  Jun Luo},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Moir{\'{e}}Vision: {A} Generalized Moir{\'{e}}-based Mechanism
+                  for 6-DoF Motion Sensing},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {467--481},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649374},
+	doi = {10.1145/3636534.3649374},
+	timestamp = {Fri, 09 Aug 2024 16:05:02 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/NingX0BL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ultra-high precision motion sensing leveraging computer vision (CV) is a key technology in many high-precision AR/VR applications such as precise industrial manufacture and image-guided surgery, yet conventional CV can be challenged by moiré-based sensing mechanism, thanks to moiré pattern\'s high sensitivity to six degrees of freedom (6-DoF) pose changes. Unfortunately, existing moiré-based solutions, in their infancy, cannot deal with complicated curvilinear moiré patterns caused by various perspective angles. In this paper, we propose a generalized moiré-based mechanism, MoiréVision, towards practical adoptions; it relies on high-frequency gratings as visual marker to help extract the fine-grained feature points for ultra-high precision motion sensing. As the foundation of general moiré-based sensing, we propose a formulation to characterize "uncontrolled" curvilinear moiré patterns in practical scenarios. To deal with the problem of moiré feature interference in practice, we propose a Gabor-based algorithm to separate overlapped curvilinear moiré patterns from two dimensions. Furthermore, to extract fine-grained feature points for high-precision motion sensing, we propose a bending function-based model and a resolution-enhanced strategy to reconstruct detailed texture of moiré markers and extract moiré feature points at sub-pixel level. Extensive experimental results show that MoiréVision greatly enhances the usability and generalizability of moiré-based sensing systems in real-world applications.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/YuXHZG24,
+	author = {Shiming Yu and
+                  Xianjin Xia and
+                  Ningning Hou and
+                  Yuanqing Zheng and
+                  Tao Gu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Revolutionizing LoRa Gateway with XGate: Scalable Concurrent Transmission
+                  across Massive Logical Channels},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {482--496},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649375},
+	doi = {10.1145/3636534.3649375},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/YuXHZG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LoRa is a promising technology that offers ubiquitous low-power IoT connectivity. With the features of multi-channel communication, orthogonal transmission, and spectrum sharing, LoRaWAN is poised to connect millions of IoT devices across thousands of logical channels. However, current LoRa gateways utilize hardwired Rx chains that cover only a small fraction (<1%) of the logical channels, limiting the potential for massive LoRa communications. This paper presents XGate, a novel gateway design that uses a single Rx chain to concurrently receive packets from all logical channels, fundamentally enabling scalable LoRa transmission and flexible network access. Unlike hardwired Rx chains in the current gateway design, XGate allocates resources including software-controlled Rx chains and demodulators based on the extracted meta information of incoming packets. XGate addresses a series of challenges to efficiently detect incoming packets without prior knowledge of their parameter configurations. Evaluations show that XGate boosts LoRa concurrent transmissions by 8.4× than state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiZCCYMLGZ24,
+	author = {Ke Li and
+                  Ruidong Zhang and
+                  Boao Chen and
+                  Siyuan Chen and
+                  Sicheng Yin and
+                  Saif Mahmud and
+                  Qikang Liang and
+                  Fran{\c{c}}ois Guimbreti{\`{e}}re and
+                  Cheng Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {GazeTrak: Exploring Acoustic-based Eye Tracking on a Glass Frame},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {497--512},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649376},
+	doi = {10.1145/3636534.3649376},
+	timestamp = {Tue, 25 Jun 2024 16:59:20 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiZCCYMLGZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we present GazeTrak, the first acoustic-based eye tracking system on glasses. Our system only needs one speaker and four microphones attached to each side of the glasses. These acoustic sensors capture the formations of the eyeballs and the surrounding areas by emitting encoded inaudible sound towards eyeballs and receiving the reflected signals. These reflected signals are further processed to calculate the echo profiles, which are fed to a customized deep learning pipeline to continuously infer the gaze position. In a user study with 20 participants, GazeTrak achieves an accuracy of 3.6° within the same remounting session and 4.9° across different sessions with a refreshing rate of 83.3 Hz and a power signature of 287.9 mW. Furthermore, we report the performance of our gaze tracking system fully implemented on an MCU with a low-power CNN accelerator (MAX78002). In this configuration, the system runs at up to 83.3 Hz and has a total power signature of 95.4 mW with a 30 Hz FPS.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ShiWCTXCHL024,
+	author = {Jingwen Shi and
+                  Sihan Wang and
+                  Min{-}Yue Chen and
+                  Guan{-}Hua Tu and
+                  Tian Xie and
+                  Man{-}Hsin Chen and
+                  Yiwen Hu and
+                  Chi{-}Yu Li and
+                  Chunyi Peng},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {{IMS} is Not That Secure on Your 5G/4G Phones},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {513--527},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649377},
+	doi = {10.1145/3636534.3649377},
+	timestamp = {Thu, 27 Jun 2024 17:17:02 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ShiWCTXCHL024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IMS (IP Multimedia Subsystem) is vital for delivering IP-based multimedia services in mobile networks. Despite constant upgrades by 3GPP over the past two decades to support heterogeneous radio access networks (e.g., 4G LTE, 5G NR, and Wi-Fi) and enhance IMS security, the focus has primarily been on cellular infrastructure. Consequently, IMS security measures on mobile equipment (ME), such as smartphones, lag behind rapid technological advancements. Our study reveals that mandated IMS security measures on ME fail to keep pace, resulting in new vulnerabilities and attack vectors, including denial of service (DoS) across all networks, named SMS source spoofing, and covert communications over Video-over-IMS attacks. All vulnerabilities and proof-of-concept attacks have been experimentally validated in operational 5G/4G networks across various phone models and network operators. Finally, we propose and prototype standard-compliant remedies for these vulnerabilities.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/Sun0CD0X24,
+	author = {Zehua Sun and
+                  Tao Ni and
+                  Yongliang Chen and
+                  Di Duan and
+                  Kai Liu and
+                  Weitao Xu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {RF-Egg: An {RF} Solution for Fine-Grained Multi-Target and Multi-Task
+                  Egg Incubation Sensing},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {528--542},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649378},
+	doi = {10.1145/3636534.3649378},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/Sun0CD0X24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Eggs and chickens serve as crucial animal-source proteins in our diets, making large-scale breeding egg incubation an essential undertaking. However, current solutions, i.e., vision-based and sensor-based methods, are primarily designed for egg fertility detection tasks under single-egg settings, which have not yet satisfied the goal of multi-target and multi-task sensing. In this paper, we propose RF-Egg, the first RF-based fine-grained multi-target and multi-task egg incubation sensing system with respect to sensing fertility, incubation status, and early mortality of chicken embryos. RF-Egg leverages the weak coupling effects of RFID tags when interacting with eggs, which induces different impedance changes of RFID tags with the incubation levels of eggs, thereby resulting in a variation of low-level phase readings of the backscatter signals. Regarding the challenge of multi-target profiling interference, we propose a multipath combating algorithm to extract the target-induced signal component based on the built signal model, and address non-uniformity issues across multiple tags. Moreover, we devise three unique feature maps tailored to each task, and then design an Multi-Task Triplet (MTT) network for multitasking. Our evaluation results based on 189 eggs show that RF-Egg achieves an accuracy of 94.4%, 96.1%, and 90.1% for the aforementioned three tasks when supporting 16 targets. Additionally, our extensive field study in a local egg hatchery suggests that RF-Egg presents the potential to be widely deployed in the modern poultry industry.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/0004LLZYLJLZL24,
+	author = {Hao Wen and
+                  Yuanchun Li and
+                  Guohong Liu and
+                  Shanhui Zhao and
+                  Tao Yu and
+                  Toby Jia{-}Jun Li and
+                  Shiqi Jiang and
+                  Yunhao Liu and
+                  Yaqin Zhang and
+                  Yunxin Liu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {AutoDroid: LLM-powered Task Automation in Android},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {543--557},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649379},
+	doi = {10.1145/3636534.3649379},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/0004LLZYLJLZL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile task automation is an attractive technique that aims to enable voice-based hands-free user interaction with smartphones. However, existing approaches suffer from poor scalability due to the limited language understanding ability and the non-trivial manual efforts required from developers or endusers. The recent advance of large language models (LLMs) in language understanding and reasoning inspires us to rethink the problem from a model-centric perspective, where task preparation, comprehension, and execution are handled by a unified language model. In this work, we introduce AutoDroid, a mobile task automation system capable of handling arbitrary tasks on any Android application without manual efforts. The key insight is to combine the commonsense knowledge of LLMs and domain-specific knowledge of apps through automated dynamic analysis. The main components include a functionality-aware UI representation method that bridges the UI with the LLM, exploration-based memory injection techniques that augment the app-specific domain knowledge of LLM, and a multi-granularity query optimization module that reduces the cost of model inference. We integrate AutoDroid with off-the-shelf LLMs including online GPT-4/GPT-3.5 and on-device Vicuna, and evaluate its performance on a new benchmark for memory-augmented Android task automation with 158 common tasks. The results demonstrated that AutoDroid is able to precisely generate actions with an accuracy of 90.9%, and complete tasks with a success rate of 71.3%, outperforming the GPT-4-powered baselines by 36.4% and 39.7%.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/SchiavoGGGFBC24,
+	author = {Leonardo Lo Schiavo and
+                  Gines Garcia{-}Aviles and
+                  Andres Garcia{-}Saavedra and
+                  Marco Gramaglia and
+                  Marco Fiore and
+                  Albert Banchs and
+                  Xavier Costa{-}P{\'{e}}rez},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {CloudRIC: Open Radio Access Network {(O-RAN)} Virtualization with
+                  Shared Heterogeneous Computing},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {558--572},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649381},
+	doi = {10.1145/3636534.3649381},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/SchiavoGGGFBC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Open and virtualized Radio Access Networks (vRANs) are breeding a new market with unprecedented opportunities. However, carrier-grade vRANs today are expensive and energy-hungry, as they rely on hardware accelerators (HAs) that are dedicated to individual distributed units (DUs). In this paper, we argue that sharing pools of heterogeneous processors among DUs leads to more cost- and energy-efficient vRANs. We then design CloudRIC, a system that, powered by lightweight data-driven models, meets specific reliability targets while (i) coordinating access between DUs and heterogeneous computing infrastructure; and (ii) assisting DUs with compute-aware radio scheduling procedures. Experiments on a GPU-accelerated O-Cloud show that CloudRIC can achieve, respectively, 3x and 15x mean gains in energy- and cost-efficiency under real RAN workloads while ensuring 99.999% reliability even in dense scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/SethJK0M24,
+	author = {Avishkar Seth and
+                  Alice James and
+                  Endrowednes Kuantama and
+                  Richard Han and
+                  Subhas Mukhopadhyay},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {AeroBridge: Autonomous Drone Handoff System for Emergency Battery
+                  Service},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {573--587},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649382},
+	doi = {10.1145/3636534.3649382},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/SethJK0M24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper proposes an Emergency Battery Service (EBS) for drones in which an EBS drone flies to a drone in the field with a depleted battery and transfers a fresh battery to the exhausted drone. The authors present a unique battery transfer mechanism and drone localization that uses the Cross Marker Position (CMP) method. The main challenges include a stable and balanced transfer that precisely localizes the receiver drone. The proposed EBS drone mitigates the effects of downwash due to the vertical proximity between the drones by implementing diagonal alignment with the receiver, reducing the distance to 0.5 m between the two drones. CFD analysis shows that diagonal instead of perpendicular alignment minimizes turbulence, and the authors verify the actual system for change in output airflow and thrust measurements. The CMP marker-based localization method enables position lock for the EBS drone with up to 0.9 cm accuracy. The performance of the transfer mechanism is validated experimentally by successful mid-air transfer in 5 seconds, where the EBS drone is within 0.5 m vertical distance from the receiver drone, wherein 4m/s turbulence does not affect the transfer process.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/Liu0CSAT24,
+	author = {Yuxin (Myles) Liu and
+                  Zhihao Yao and
+                  Mingyi Chen and
+                  Ardalan Amiri Sani and
+                  Sharad Agarwal and
+                  Gene Tsudik},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {ProvCam: {A} Camera Module with Self-Contained {TCB} for Producing
+                  Verifiable Videos},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {588--602},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649383},
+	doi = {10.1145/3636534.3649383},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/Liu0CSAT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Our perception of reality is under constant threat from ever-improving video manipulation techniques, including deep-fakes and generative AI. Therefore, proving authenticity of videos is increasingly important, especially in legal and news contexts. However, it is very challenging to prove it based on post-factum video content analysis. In this work, we take a preventative stance and construct ProvCam, a novel camera module that generates a cryptographic proof of video authenticity. Our solution greatly reduces the size of Trusted Computing Base (TCB) to include the module itself. Moreover, it mitigates tampering during the numerous processing steps between video capture by the camera sensor and generation of the digital video output. To confirm its practicality, we present a complete prototype of ProvCam on a Xilinx FPGA evaluation board. As experiments show, ProvCam incurs a negligible performance overhead (latency and throughput) and small energy consumption overhead when recording a video. It imposes a moderate hardware cost but is relatively small compared to other major components such as SoC. Moreover, it does not change the existing camera software stack and thus can be easily integrated with various camera-bearing devices, such as smartphones.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/YangAP0LF24,
+	author = {Xueyuan Yang and
+                  Zhenlin An and
+                  Qingrui Pan and
+                  Lei Yang and
+                  Dangyuan Lei and
+                  Yulong Fan},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Binary Optical Machine Learning: Million-Scale Physical Neural Networks
+                  with Nano Neurons},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {603--617},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649384},
+	doi = {10.1145/3636534.3649384},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/YangAP0LF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning excels in advanced inference tasks using electronic neural networks (ENN), but faces energy consumption and limited computation speed challenges. To mitigate this, optical neural networks (ONNs) were developed, utilizing light for computations. However, their high manufacturing costs limited accessibility. In this work, we first introduce the binary optical neural network (BONN) - a streamlined ONN variant with binarized weights, which significantly reduces fabrication complexities and costs. Specifically, we address (i) the development of a binarization weight function aligned with backward-error propagation, and (ii) a simulation-based training for extra-large neural networks housing millions of neurons. We prototype six BONNs, each comprising four 0.8 × 0.8mm2 layers with one million 800 nm diameter neurons. Costs are cut to 0.13 USD per layer, marking a substantial decrease of 769× from previous ONNs. Experimental results reveal BONNs consume 2, 405× less power than leading ENNs while maintaining an average recognition accuracy of 74% across six datasets.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/Li0A24,
+	author = {Tianxiang Li and
+                  Mohammad Hossein Mazaheri and
+                  Omid Abari},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Enabling On-Demand Low-Power mmWave Repeaters via Passive Beamforming},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {618--632},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649385},
+	doi = {10.1145/3636534.3649385},
+	timestamp = {Tue, 18 Jun 2024 09:23:57 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/Li0A24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advancements in computing have enabled emerging applications such as telesurgery, robot automation, holographic telepresence, and extended reality, which require gigabitper-second throughput, sub-millisecond latency, and highly reliable wireless connectivity. Millimeter wave (mmWave) technology has promised to enable such connectivity by operating over a large bandwidth in the high-frequency spectrum bands (24 GHz and above). However, due to the short wavelength and high directionality of mmWave signals, mmWave networks have limited coverage and are highly susceptible to blockage. In particular, high-data-rate mmWave networks work reliably only when there is a clear line-of-sight (LOS) path between users and base stations. Unfortunately, due to this problem, mmWave networks have not been able to scale and become ubiquitous. Past work has proposed mmWave repeaters and intelligent surfaces to solve this issue by rerouting signal around blockages. However, these solutions are expensive and complex to build, consume high power, or/and require constant feedback from the network to operate since they use active techniques for beam steering. In this paper, we present the first mmWave repeater which uses passive beamforming technique. Our repeater is low-cost, low-power, and can support multiple users simultaneously. Most importantly, it does not require any feedback from the network to operate. Hence, it can be easily deployed on-demand to solve the coverage and blockage problem of mmWave networks whenever and wherever high-data-rate and low-latency connectivity is needed.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ZhangZDZS0JZ24,
+	author = {Xinran Zhang and
+                  Hanqi Zhu and
+                  Yifan Duan and
+                  Wuyang Zhang and
+                  Longfei Shangguan and
+                  Yu Zhang and
+                  Jianmin Ji and
+                  Yanyong Zhang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Map++: Towards User-Participatory Visual {SLAM} Systems with Efficient
+                  Map Expansion and Sharing},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {633--647},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649386},
+	doi = {10.1145/3636534.3649386},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ZhangZDZS0JZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Constructing precise 3D maps is crucial for the development of future map-based systems such as self-driving and navigation. However, generating these maps in complex environments, such as multi-level parking garages or shopping malls, remains a formidable challenge. In this paper, we introduce a participatory sensing approach that delegates map-building tasks to map users, thereby enabling cost-effective and continuous data collection. The proposed method harnesses the collective efforts of users, facilitating the expansion and ongoing update of the maps as the environment evolves. We realized this approach by developing Map++, an efficient system that functions as a plug-and-play extension, supporting participatory map-building based on existing SLAM algorithms. Map++ addresses a plethora of scalability issues in this participatory map-building system by proposing a set of lightweight, application-layer protocols. We evaluated Map++ in four representative settings: an indoor garage, an outdoor plaza, a public SLAM benchmark, and a simulated environment. The results demonstrate that Map++ can reduce traffic volume by approximately 46% with negligible degradation in mapping accuracy, i.e., less than 0.03m compared to the baseline system. It can support approximately 2× as many concurrent users as the baseline under the same network bandwidth. Additionally, for users who travel on already-mapped trajectories, they can directly utilize the existing maps for localization and save 47% of the CPU usage.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/GongADTLY24,
+	author = {Zheng Gong and
+                  Zhenlin An and
+                  Donghui Dai and
+                  Jingyu Tong and
+                  Shuijie Long and
+                  Lei Yang},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Enabling Cross-Medium Wireless Networks with Miniature Mechanical
+                  Antennas},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {648--662},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649387},
+	doi = {10.1145/3636534.3649387},
+	timestamp = {Thu, 25 Jul 2024 07:47:42 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/GongADTLY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Within the burgeoning 6G wireless network landscape, there is an intensified push toward achieving all-encompassing accessibility through integrated solutions spanning a multitude of domains. Notwithstanding recent advancements, the conventional relay-centric communication paradigms grapple with scalability and optimal performance issues. In this paper, we introduce MeAnt ---a versatile IoT platform uniquely architected to foster seamless cross-medium communication by leveraging the compact design of piezoelectric-based mechanical antennas (Piezo-MAs). By capitalizing on the propagation attributes of medium-frequency radios emitted from Piezo-MAs, MeAnt promises communication across diverse environments such as air, water, soil, concrete, and even biological tissue, all while maintaining a compact antenna footprint. Moreover, in light of challenges such as potential interference from AM broadcasts and the intrinsic unidirectional nature of Piezo-MAs, we have developed a finely crafted full-stack communication protocol. Comprehensive tests underscore the system's proficiency, demonstrating a penetration depth of up to 10 m in cross-medium environments and realizing a throughput of 8.7 kbps.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/ChoS24,
+	author = {Hsun{-}Wei Cho and
+                  Kang G. Shin},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {{DREW:} Double-Throughput Emulated WiFi},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {663--678},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649388},
+	doi = {10.1145/3636534.3649388},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/ChoS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bidirectional communication between BLE/FSK devices and WiFi access points (APs) combines the benefits of long battery life, low device cost, and ubiquitous Internet access. However, prior cross-technology communication (CTC) solutions require transmission mixers inside FSK chips, thus not applicable to newer ultra-low-power (ULP) BLE chips, which removes these mixers to conserve power. Furthermore, throughputs of prior CTC solutions are limited to 1Mbps. We present DREW that fundamentally overcomes these limitations. It is designed to effectively transmit WiFi packets by only controlling the power amplifier (PA), and is thus applicable to mixer-less ULP BLE chips. We also propose an innovative use of BLE's IQ sampling capability to receive standard WiFi packets. We design efficient algorithms with SIMD (Single Instruction Multiple Data) acceleration to detect, synchronize and demodulate WiFi packets from IQ samples in real time. DREW also implements WiFi's CS-MA/CA and timing, thus adding direct WiFi connectivity to ULP BLE devices. Unlike prior work, DREW uniquely supports QPSK and therefore doubles the downlink throughput. This 2x throughput increase is crucial for new applications that prior work cannot support. In particular, DREW can stream lossless, HiFi-quality audio from WiFi to ULP BLE chips. Since stereo audio requires a throughput of 1.411Mbps, no prior work can support this important application due to their 1Mbps limitation.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/CuiXWX24,
+	author = {Minhao Cui and
+                  Binbin Xie and
+                  Qing Wang and
+                  Jie Xiong},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {EVLeSen: In-Vehicle Sensing with EV-Leaked Signal},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {679--693},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649389},
+	doi = {10.1145/3636534.3649389},
+	timestamp = {Fri, 26 Jul 2024 07:36:18 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/CuiXWX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While out-vehicle sensing has achieved great success with the development of vehicle radar and Lidar systems, invehicle sensing attracts a lot of attention recently. However, the popular camera-based solutions raise privacy concerns and pose requirement on lighting conditions. Researchers recently utilize wireless signals for sensing. However, besides requiring dedicated hardware, the rich multipath in a small cabin space causes severe interference, degrading the sensing reliability. In this paper, we propose a new sensing modality for in-vehicle sensing, leveraging the leaked EM signals from electric vehicles. The key observation is that the human body can capture the leaked signals, and body motions affect the signal variation patterns. Our solution involves designing conductive cloth tags on the seat to effectively collect body-captured signals and adopting a reference tag to deal with interference. Through extensive experiments conducted over 100 hours, covering a driving distance of 4000 kilometers on various real roads, our system, EVLeSen, can achieve over 90% accuracy in recognizing body motions utilizing just the leaked ambient signals.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/GaoQC24,
+	author = {Zhihui Gao and
+                  Zhenzhou Qi and
+                  Tingjun Chen},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {Mambas: Maneuvering Analog Multi-User Beamforming using an Array of
+                  Subarrays in mmWave Networks},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {694--708},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649390},
+	doi = {10.1145/3636534.3649390},
+	timestamp = {Tue, 18 Jun 2024 09:23:58 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/GaoQC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Beyond-5G and 6G wireless networks exploit the millimeter-wave (mmWave) frequency bands to achieve significantly improved data rates, and existing mmWave systems rely on analog single-user beamforming (SUBF) or hybrid multi-user beamforming (MUBF). In this work, we focus on improving the performance of multi-user communication in mmWave networks by exploring analog MUBF using an array of subarrays (ASA) with reduced system overhead and hardware complexity as it eliminates digital beamforming and the need for estimating the channel state information (CSI). We present Mambas, a novel system that maneuvers analog MUBF using an ASA to support simultaneous communication with multiple users located in close proximity, e.g., within the half-power beamwidth of the ASA. In essence, Mambas effectively decouples the user selection, subarray allocation, and beamforming optimization based on a comprehensive understanding of the multi-user support determined by the ASA. We evaluate Mambas using a 28 GHz software-defined radio testbed and show that, compared to existing methods, Mambas can effectively support users that are 2× more closely spaced while achieving an improved sum rate of up to 2×, using only two subarrays. Large-scale ray tracing-based simulations also show that Mambas can achieve a sum rate gain of 1.92--3.86× and is able to maintain consistent performance with significantly increased user density.}
+}
+
+
+@inproceedings{DBLP:conf/mobicom/LiLLCL24,
+	author = {Xiangyu Li and
+                  Yuanchun Li and
+                  Yuanzhe Li and
+                  Ting Cao and
+                  Yunxin Liu},
+	editor = {Weisong Shi and
+                  Deepak Ganesan and
+                  Nicholas D. Lane},
+	title = {FlexNN: Efficient and Adaptive {DNN} Inference on Memory-Constrained
+                  Edge Devices},
+	booktitle = {Proceedings of the 30th Annual International Conference on Mobile
+                  Computing and Networking, {ACM} MobiCom 2024, Washington D.C., DC,
+                  USA, November 18-22, 2024},
+	pages = {709--723},
+	publisher = {{ACM}},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636534.3649391},
+	doi = {10.1145/3636534.3649391},
+	timestamp = {Sun, 02 Jun 2024 13:06:51 +0200},
+	biburl = {https://dblp.org/rec/conf/mobicom/LiLLCL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the popularity of deep neural networks (DNNs) and considerations over network overhead, data privacy, and inference latency, there is a growing interest in deploying DNNs to edge devices in recent years. However, the limited memory becomes a major bottleneck for on-device DNN deployment, making it crucial to reduce the memory footprint of DNN. The mainstream model customization solutions require intensive deployment efforts and may lead to severe accuracy degradation, and existing deep learning (DL) frameworks don't take memory as a priority. Besides, recent works to enhance the memory management scheme cannot be directly applied because of several challenges, including the unbalanced memory footprint across layers, the inevitable overhead of memory management, and the memory budget dynamicity. To tackle these challenges, we introduce FlexNN, an efficient and adaptive memory management framework for DNN inference on memory-constrained devices. FlexNN uses a slicing-loading-computing joint planning approach, to achieve optimal memory utilization and minimal memory management overhead. We implemented FlexNN atop NCNN, and conducted comprehensive evaluations with common model architectures on various devices. The results have shown that our approach is able to adapt to different memory constraints with optimal latency-memory trade-offs. For example, FlexNN can reduce the memory consumption by 93.81% with only a 3.64% increase in latency, as compared with the original NCNN on smartphones.}
+}
