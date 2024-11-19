@@ -1,0 +1,712 @@
+@article{DBLP:journals/compsec/YangJKQZ24,
+	author = {Chengyi Yang and
+                  Kun Jia and
+                  Deli Kong and
+                  Jiayin Qi and
+                  Aimin Zhou},
+	title = {{DP-GSGLD:} {A} Bayesian optimizer inspired by differential privacy
+                  defending against privacy leakage in federated learning},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103839},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103839},
+	doi = {10.1016/J.COSE.2024.103839},
+	timestamp = {Thu, 22 Aug 2024 20:25:15 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/YangJKQZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Stochastic Gradient Langevin Dynamics (SGLD) is believed to preserve differential privacy as its intrinsic attribute since it obtain randomness from posterior sampling and natural noise. In this paper, we propose Differentially Private General Stochastic Gradient Langevin Dynamics (DP-GSGLD), a novel variant of SGLD which realizes gradient estimation in parameter updating through Bayesian sampling. We introduce the technique of parameter clipping and prove that DP-GSGLD satisfies the property of Differential Privacy (DP). We conduct experiments on several image datasets for defending against gradient attack that is commonly appeared in the scenario of federated learning. The results demonstrate that DP-GSGLD can decrease the time for model training and achieve higher accuracy under the same privacy level.}
+}
+
+
+@article{DBLP:journals/compsec/SongQLYS24,
+	author = {Jiaru Song and
+                  Guihe Qin and
+                  Yanhua Liang and
+                  Jie Yan and
+                  Minghui Sun},
+	title = {SIDiLDNG: {A} similarity-based intrusion detection system using improved
+                  Levenshtein Distance and N-gram for {CAN}},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103847},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103847},
+	doi = {10.1016/J.COSE.2024.103847},
+	timestamp = {Mon, 05 Aug 2024 21:42:41 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/SongQLYS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the absence of encryption and authentication mechanisms in the Controller Area Network (CAN), it is highly susceptible to attacks, especially with the increasing connectivity of cars to networks. Existing statistical-based intrusion detection systems for CAN often focus solely on individual message transition relationships or consider only the overall message properties within a given time window, thereby failing to capture some essential features in CAN communication. To address the limitations of existing methods, we propose a novel Similarity-based Intrusion Detection System using improved Levenshtein Distance and N-gram algorithms (SIDiLDNG) to effectively capture both the overall characteristics and individual attributes of message sequences. Moreover, to enhance the detection time and response time for anomalous messages, we propose a combined block- and stream-based detection method. Evaluation on two publicly available datasets and a self-developed CAN prototype demonstrates that our method exhibits superior detection performance, faster detection times, and reduced response messages.}
+}
+
+
+@article{DBLP:journals/compsec/ShiLZP24,
+	author = {Ze Shi and
+                  Hongyi Li and
+                  Di Zhao and
+                  Chengwei Pan},
+	title = {Research on quality assessment methods for cybersecurity knowledge
+                  graphs},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103848},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103848},
+	doi = {10.1016/J.COSE.2024.103848},
+	timestamp = {Thu, 22 Aug 2024 20:25:15 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ShiLZP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In light of the continuous evolution of cyber threats and the escalating frequency of cyberattacks, cybersecurity knowledge graphs have emerged as vital tools for comprehending and countering cyber threats. Nonetheless, the quality of these knowledge graphs is of paramount significance for their effectiveness in cybersecurity applications. This research proposes a Parameter-Efficient Knowledge Graphs Quality Assessment model (PEKGQA), aimed at evaluating the quality of cybersecurity knowledge graphs. We partition the knowledge graph into different communities and select reserved entities based on degree centrality within each community, and we only learn the embeddings of these reserved entities, significantly reducing the model's parameter size. Moreover, we leverage linkage relationships information and K-nearest neighbor information to encode all entities. Then we employ graph attention networks for the joint iterative update of entity and relation embeddings. This approach not only reduces the parameter count but also achieves excellent quality assessment results. Experimental outcomes demonstrate that the PEKGQA model-based approach significantly outperforms traditional methods in evaluation metrics such as F1 value and accuracy, providing an efficient and accurate solution for quality assessment in the field of cybersecurity knowledge graphs.}
+}
+
+
+@article{DBLP:journals/compsec/CenDJD24,
+	author = {Mingcan Cen and
+                  Xizhen Deng and
+                  Frank Jiang and
+                  Robin Doss},
+	title = {Zero-Ran Sniff: {A} zero-day ransomware early detection method based
+                  on zero-shot learning},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103849},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103849},
+	doi = {10.1016/J.COSE.2024.103849},
+	timestamp = {Thu, 22 Aug 2024 20:25:15 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/CenDJD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ransomware attacks, which blackmail victims into paying a ransom by locking their devices or encrypting their files, have become one of the major threats to network security. Conventional anti-ransomware tools often fail to detect zero-day ransomware attacks due to the inability to obtain zero-day ransomware signatures in advance to train detection models. In addition, zero-day ransomware attacks often use sophisticated encryption techniques to launch attacks on new vulnerabilities, and these encryption attacks cause irreversible damage to victims' digital files even if they choose to pay a ransom. Hence, it is imperative and urgent to detect unknown ransomware attacks at the earliest possible stage, ideally before the encryption phase. To this end, this paper proposes Zero-Ran Sniff (ZRS), an early zero-day ransomware detection method based on zero-shot learning, which can detect zero-day ransomware attacks in the early stage. ZRS leverages the portable executable header (PE header) feature from executable files to identify ransomware. It comprises two stages: an auto-encoding network-based core attribute learning (AE-CAL) stage and a self-attentive mechanism-based convolutional neural network inference Stage (SA-CNN-IS). During the AE-CAL stage, the core features of known and unknown classes of ransomware are extracted using self-encoding networks, and the SA-CNN-IS phase identifies ransomware. To the best of our knowledge, we are the first to explore the use of zero-shot learning for zero-day ransomware early detection. Experimental results demonstrate that the proposed ZRS outperforms traditional machine learning methods. Compared to previous zero-day detection work, ZRS achieves a recall of 98.47% and an accuracy of 96.31%}
+}
+
+
+@article{DBLP:journals/compsec/MengKH24,
+	author = {Yunfei Meng and
+                  Changbo Ke and
+                  Zhiqiu Huang},
+	title = {A model transformation based security policy automatic management
+                  framework for software-defined networking},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103850},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103850},
+	doi = {10.1016/J.COSE.2024.103850},
+	timestamp = {Thu, 22 Aug 2024 20:25:15 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/MengKH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software-defined networking (SDN) has been utilized to enforce the security of traditional networks. However, the existing SDN-based security enforcement mechanisms rely heavily on the security policies containing the underlying information of data plane, such as MAC address, IP address or switch ports. These security policies need to be specifically developed by network operators and loaded into the control plane manually. With increasing the scale of underlying network, the existing security policy management mechanisms confront more and more challenges. The security policy transformation for SDN networks is to research how to transform the high-level security policy without containing the underlying information into the practical flow entries used by Openflow switches automatically, thereby implementing the automatic management of security policies. To achieve this objective, we propose a model transformation based security policy automatic management framework for software-defined networking in this paper. Leveraging its functional modules, the framework can solve the problems of how to find a connected path for each access control rule of security policy model (SPM) in data plane, how to transform the connected path into the system model of flow entries, as well as how to generate the practical flow entries according to the system model of flow entries. In order to validate the effectiveness and performance of framework, we implement the framework by leveraging POX controller and Mininet emulator. The experimental results illustrate the framework can transform SPM into practical flow entries, synchronously perceive the modifications caused by cutting down one connected path or changing SPM, and continuously keep the data plane holding the security properties defined by SPM at runtime.}
+}
+
+
+@article{DBLP:journals/compsec/LinWZXLZ24,
+	author = {Peihong Lin and
+                  Pengfei Wang and
+                  Xu Zhou and
+                  Wei Xie and
+                  Kai Lu and
+                  Gen Zhang},
+	title = {HyperGo: Probability-based directed hybrid fuzzing},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103851},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103851},
+	doi = {10.1016/J.COSE.2024.103851},
+	timestamp = {Sun, 06 Oct 2024 21:22:22 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LinWZXLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Directed grey-box fuzzing (DGF) is a target-guided fuzzing intended for testing specific targets (e.g., the potential buggy code). Despite numerous techniques proposed to enhance directedness, the existing DGF techniques still face challenges, such as taking into account the difficulty of reaching different basic blocks when designing the fitness metric, and promoting the effectiveness of symbolic execution (SE) when solving the complex constraints in the path to the target. In this paper, we propose a directed hybrid fuzzer called HyperGo. To address the challenges, we introduce the concept of path probability and combine the probability with distance to form an adaptive fitness metric called probability-based distance. By combining the two factors, probability-based distance can adaptively guide DGF toward paths that are closer to the target and have more easy-to-satisfy path constraints. Then, we put forward an Optimized Symbolic Execution Complementary (OSEC) scheme to combine DGF and SE in a complementary manner. The OSEC would prune the unreachable branches and unsolvable branches, and prioritize symbolic execution of the seeds whose paths are closer to the target and have more branches that are difficult to be covered by DGF. We evaluated HyperGo on 2 benchmarks consisting of 25 programs with a total of 120 target sites. The experimental results show that HyperGo achieves 37.75×, 29.11×, 23.34×, 95.61× and 143.22× speedup compared to AFLGo, AFLGoSy, BEACON, WindRanger, and ParmeSan, respectively in reaching target sites, and 3.44×, 3.63×, 4.10×, 3.26×, and 3.00× speedup in exposing known vulnerabilities. Moreover, HyperGo discovered 10 undisclosed vulnerabilities from 5 real-world programs.}
+}
+
+
+@article{DBLP:journals/compsec/HoongR24,
+	author = {Yang Hoong and
+                  Davar Rezania},
+	title = {Navigating Cybersecurity Governance: The influence of opportunity
+                  structures in socio-technical transitions for small and medium enterprises},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103852},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103852},
+	doi = {10.1016/J.COSE.2024.103852},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/HoongR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This study examines cybersecurity discourses of small and medium size businesses in Canada. The findings culminated in a novel conceptual framework, which captures the intricate interplay between the discourse of agency, prevailing conditions, and the resultant discourse of strategy. Central to this model is the discourse of agency, framing cybersecurity as either a high agency mechanism actively contributing to business objectives, or a low agency mechanism perceived as a passive burden. The conditions under which businesses operate, characterized by external pressures and internal motivations, alongside the degree of environmental support, further shape their cybersecurity narratives. These dynamics significantly influence the resultant discourse of strategy, leading to four distinct strategic narratives: Synergistic Asset, Operational Pragmatism, Ambivalent Prospect, and Impractical Liability. For instance, a discourse of Synergistic Asset reflects a perception of an environment positively influenced by robust governmental cybersecurity initiatives, setting benchmarks in cybersecurity practices. Conversely, a discourse of Impractical Liability reflects pronounced levels of risk, influenced by societal narratives and economic apprehensions. We offer a comprehensive model for understanding cybersecurity discourses, bridging empirical findings with theoretical underpinnings, and providing valuable insights for both academia and industry.}
+}
+
+
+@article{DBLP:journals/compsec/ChavaliKSMC24,
+	author = {Lalitha Chavali and
+                  Abhinav Krishnan and
+                  Paresh Saxena and
+                  Barsha Mitra and
+                  Aneesh Sreevallabh Chivukula},
+	title = {Off-policy actor-critic deep reinforcement learning methods for alert
+                  prioritization in intrusion detection systems},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103854},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103854},
+	doi = {10.1016/J.COSE.2024.103854},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ChavaliKSMC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Alert prioritization plays a very important role in network security as it helps security teams manage and respond to the overwhelming volume of alerts generated by intrusion detection systems (IDSs). Although current deep reinforcement learning (DRL) based deep deterministic policy gradient (DDPG) has achieved good performance for alert prioritization, there are still limitations in dealing with DDPG's instability and limited exploration capabilities. In this paper, we propose TD3-AP and SAC-AP, two DRL empowered off-policy actor-critic alert prioritization methods based on twin delayed deep deterministic policy gradient (TD3) and soft actor-critic (SAC), respectively. We model the interaction between an adversary and a defender as a zero-sum game and use a double oracle framework to obtain mixed strategy Nash equilibrium (MSNE). Our objective is to minimize the defender's loss which represents the inability of the defender to investigate alerts generated due to the attacks. To demonstrate the benefits and scalability of the proposed approaches, we conduct extensive experiments on three datasets: MQTT-IoT-IDS2020, DARPA 2000 LLDOS 1.0 and CSE-CIC-IDS2018. The results depict that TD3-AP and SAC-AP exhibit a decrease in the defender's loss by 50% and 14.28%, respectively, in comparison to the alert prioritization method based on DDPG. The improvements are significantly higher when the proposed approaches are compared with traditional alert prioritization methods including Uniform, Snort, Fuzzy and RAP. Additionally, we also provide an analysis of the interpretability of our results through the utilization of SHapley Additive exPlanations (SHAP). We assess the sensitivity of our proposed approaches to different hyperparameters and evaluate the training time and computational resources necessary for their implementation.}
+}
+
+
+@article{DBLP:journals/compsec/WangYFLWL24,
+	author = {Qiannan Wang and
+                  Changchun Yin and
+                  Liming Fang and
+                  Zhe Liu and
+                  Run Wang and
+                  Chenhao Lin},
+	title = {GhostEncoder: Stealthy backdoor attacks with dynamic triggers to pre-trained
+                  encoders in self-supervised learning},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103855},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103855},
+	doi = {10.1016/J.COSE.2024.103855},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/WangYFLWL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Within the realm of computer vision, self-supervised learning (SSL) pertains to training pre-trained image encoders utilizing a substantial quantity of unlabeled images. Pre-trained image encoders can serve as feature extractors, facilitating the construction of downstream classifiers for various tasks. However, the use of SSL has led to an increase in security research related to various backdoor attacks. Currently, the trigger patterns used in backdoor attacks on SSL are mostly visible or static (sample-agnostic), making backdoors less covert and significantly affecting the attack performance. In this work, we propose GhostEncoder, the first dynamic invisible backdoor attack on SSL. Unlike existing backdoor attacks on SSL, which use visible or static trigger patterns, GhostEncoder utilizes image steganography techniques to encode hidden information into benign images and generate backdoor samples. We then fine-tune the pre-trained image encoder on a manipulation dataset to inject the backdoor, enabling downstream classifiers built upon the backdoored encoder to inherit the backdoor behavior for target downstream tasks. We evaluate GhostEncoder on three downstream tasks and results demonstrate that GhostEncoder provides practical stealthiness on images and deceives the victim model with a high attack success rate without compromising its utility. Furthermore, GhostEncoder withstands state-of-the-art defenses, including STRIP, STRIP-Cl, and SSL-Cleanse.}
+}
+
+
+@article{DBLP:journals/compsec/OnievaJL24,
+	author = {Jose Antonio Onieva and
+                  Pablo P{\'{e}}rez Jim{\'{e}}nez and
+                  Javier L{\'{o}}pez},
+	title = {Malware similarity and a new fuzzy hash: Compound Code Block Hash
+                  (CCBHash)},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103856},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103856},
+	doi = {10.1016/J.COSE.2024.103856},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/OnievaJL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the last few years, malware analysis has become increasingly important due to the rise of sophisticated cyberattacks. One of the objectives of this cybersecurity branch is to find similarities between different files or functions used by malware programmers, thus allowing malware detection, classification and even attribution in a timely manner. In this article we survey the state of the art in this area, reviewing the different techniques that can be applied to the field, with the objective of studying similarity, and therefore detecting, classifying and attributing malware samples. We have developed a fuzzy hash capable of characterizing malware by generating an easily comparable and storable signature of its functions. Since our goal is to detect these similarities in huge amounts of data within a reasonable time-frame, the size of the hash must be limited while retaining as much information as possible.}
+}
+
+
+@article{DBLP:journals/compsec/AggarwalS24,
+	author = {Akshay Aggarwal and
+                  Shashi Kant Srivastava},
+	title = {Exploring eustress and fear: {A} new perspective on protection motivation
+                  in information security policy compliance within the financial sector},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103857},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103857},
+	doi = {10.1016/J.COSE.2024.103857},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/AggarwalS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Information security policy (ISP) compliance has emerged as a significant challenge for contemporary businesses. This underscores the crucial role of employing fear appeals to encourage employee compliance with ISP. However, the existing literature is rife with mixed and inconsistent findings regarding the influence of fear appeals on employees' intentions to comply with ISP. In an effort to address this inconsistency and delve into the mechanisms through which fear appeals impact ISP compliance, we expanded the Protection Motivation Theory by incorporating the Transactional Model of Stress and Coping. Notably, we introduced a positive emotion, eustress, into the mediating mechanism alongside fear. Our hypothesis posited that fear appeals not only generate fear but also evoke eustress, subsequently positively influencing ISP compliance. We conducted a study among financial sector employees and validated our hypothesis using structural equation modeling techniques. Our primary theoretical contributions include highlighting the critical role of eustress in enhancing ISP compliance and proposing a parallel mechanism through which fear appeals impact ISP compliance. From a practical standpoint, we demonstrate that eustress plays a more significant role in motivating employees to comply with ISP. Furthermore, we provide insights into how organizations can design fear appeal messages by incorporating the concept of eustress, thereby optimizing their effectiveness in promoting ISP compliance.}
+}
+
+
+@article{DBLP:journals/compsec/Chaudhary24,
+	author = {Sunil Chaudhary},
+	title = {Driving behaviour change with cybersecurity awareness},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103858},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103858},
+	doi = {10.1016/J.COSE.2024.103858},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/Chaudhary24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Organisations implementing cybersecurity awareness (CSA) should strive to positively change employees’ attitudes and behaviours. In practice, though, most of such initiatives only manage to increase employees’ knowledge. In cybersecurity, knowledge on its own will have no significanst value unless it is used to guide decisions and inspire actions.}
+}
+
+
+@article{DBLP:journals/compsec/LinYSYLH24,
+	author = {Ying{-}Dar Lin and
+                  Shin{-}Yi Yang and
+                  Didik Sudyana and
+                  Fietyata Yudha and
+                  Yuan{-}Cheng Lai and
+                  Ren{-}Hung Hwang},
+	title = {Two-stage multi-datasource machine learning for attack technique and
+                  lifecycle detection},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103859},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103859},
+	doi = {10.1016/J.COSE.2024.103859},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LinYSYLH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intrusion detection systems (IDS) have increasingly adopted machine learning (ML) techniques to enhance their ability to detect a wide range of attack variants. However, the traditional focus in current research primarily revolves around identifying specific attack types or techniques using a single data source. However, this approach lacks a holistic perspective on attacks, which can result in missed detections. To improve the effectiveness of responding to detected attacks, it is essential to identify them based on their lifecycles and incorporate information from multiple data sources. In this study, we present three distinct approaches for detecting attack lifecycles, each leveraging different ML methodologies: a single-stage ML model, a two-stage ML+ML approach, and ML with sequence matching (ML+SM). Simultaneously, we explore the benefits of utilizing multiple data sources, including network traffic, system logs, and host statistics, to enhance technique detection capabilities. Our evaluation of these methods reveals that on lifecycle detection, the two-stage ML+ML approach outperforms the others, achieving an impressive F1 score of 0.994. In contrast, the single-stage and ML+SM methods yield F1 scores of 0.887 and 0.189, respectively. Furthermore, the integration of multiple data sources proves highly advantageous, with the combination of all three sources yielding the highest F1 score of 0.922 on technique detection.}
+}
+
+
+@article{DBLP:journals/compsec/KM24,
+	author = {Jayashre K and
+                  Amsaprabhaa M},
+	title = {Safeguarding media integrity: {A} hybrid optimized deep feature fusion
+                  based deepfake detection in videos},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103860},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103860},
+	doi = {10.1016/J.COSE.2024.103860},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/KM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The surge in deepfake techniques allows even non-experts to create deceptive videos using only source and target images, posing risks such as impersonation, character defamation, and spreading misinformation on various platforms. Existing methods often prove insufficient, particularly when faced with videos generated through diverse deepfake techniques that feature variations in lighting conditions and ethnicities. This paper introduces a novel approach called Hybrid Optimized Deep Feature Fusion-based Deepfake Detection (HODFF-DD) in videos, employing a spotted hyena optimizer. The HODFF-DD framework is designed to be resilient across ethnicities and varying lighting conditions, capable of detecting deepfake videos created by different techniques. The architecture comprises two integral components: a customized model incorporating InceptionResNetV1 and InceptionResNetV2, and a Bidirectional Long-Short Term Memory (BiLSTM). In this framework, faces extracted from videos undergo feature extraction at the frame level using our custom model comprising InceptionResNetV1 and InceptionResNetV2. The resulting sequences of features are then utilized to train a temporally aware BiLSTM for binary classification between real and fake videos. To optimize network weights, a bio-inspired spotted hyena optimizer is applied during the training process. Evaluation on diverse datasets, including the Kaggle dataset, FaceForensics++ (FF++) encompassing videos manipulated using various techniques (DeepFakes, FaceSwap, Face2Face, FaceShifter, and NeuralTextures), and the FakeAVCeleb dataset, demonstrates the effectiveness of our presented approach. Our method achieves an accuracy exceeding 90 % on subsets like DeepFakes, FaceSwap, and Face2Face.}
+}
+
+
+@article{DBLP:journals/compsec/ChenHPGZ24,
+	author = {Xi Chen and
+                  Wei Huang and
+                  Ziwen Peng and
+                  Wei Guo and
+                  Fan Zhang},
+	title = {Diversity supporting robustness: Enhancing adversarial robustness
+                  via differentiated ensemble predictions},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103861},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103861},
+	doi = {10.1016/J.COSE.2024.103861},
+	timestamp = {Thu, 24 Oct 2024 08:17:21 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenHPGZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning models remain susceptible to adversarial attacks, prompting a primary focus on individual defense strategies. Previous studies have shown that increasing diversity among ensemble models can enhance their adversarial robustness. However, existing diversity metrics often lack a direct association with robustness, potentially limiting ensemble methods’ effectiveness in countering adversarial attacks. This paper presents a new diversity training method, termed Enhancing Adversarial Robustness through Diversity that Supports Robustness (EADSR), which is strongly linked to increased adversarial robustness. We developed a safety space hypothesis and a simultaneous training method based on the models’ responsiveness to non-natural perturbations which amplifies ensemble model diversity. By categorizing the ensemble models’ prediction behaviors into four classes, four regularization methods are applied for diversity training throughout the training process. We conducted comparative analysis with existing diversity methods to find a remarkable 30%–100% improvement on multiple benchmark datasets. The EADSR method incurs manageable training costs and is applicable to complex datasets such as ImageNet, demonstrating its effectiveness and practicality as a defense approach.}
+}
+
+
+@article{DBLP:journals/compsec/ShenderovitzN24,
+	author = {Gil Shenderovitz and
+                  Nir Nissim},
+	title = {Bon-APT: Detection, attribution, and explainability of {APT} malware
+                  using temporal segmentation of {API} calls},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103862},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103862},
+	doi = {10.1016/J.COSE.2024.103862},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ShenderovitzN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advanced Persistent Threats (APTs) are highly sophisticated cyberattacks that are aimed at achieving strategic goals and are usually backed by a well-funded entity. In this paper, we tackle the challenges of detecting and attributing APTs by proposing Bon-APT, a temporal learning method that analyzes and segment the occurrences of API calls invoked during the dynamic analysis of the examined PE. Those segments can be used to profile the temporal behavior of an APT, provide insights into its modus operandi, and induce an accurate machine-learning based model for the detection and attribution of APTs. Moreover, Bon-APT provides a human comprehensible explainability regarding the relations among segments as well as the behavior of the APT in each of them. This not only improves transparency and reliability from a human expert perspective, but it can also enrich the security experts with new knowledge regarding APTs' behavior. To evaluate Bon-APT, we built a unique collection of 12,655 APTs, belonging to 188 different cyber-groups and 17 different nations, which, to the best of our knowledge, is the largest collection of its kind. We conducted four experiments to evaluate the proposed method and compared its performance to the performance of state-of-the-art methods on the tasks of APT detection and authorship attribution (for both group and nation). Bon-APT achieved promising results in each of the tasks while outperforming the state-of-the-art methods. Bon-APT also provides a simple and concise explanation regarding its decisions and the APT behavior, as well as an easy, straightforward visual and quantitative behavioral comparison.}
+}
+
+
+@article{DBLP:journals/compsec/KhanLZ24,
+	author = {Md Sabuj Khan and
+                  Hengjian Li and
+                  Chuan Zhao},
+	title = {Deep secure PalmNet: {A} novel cancelable palmprint template protection
+                  scheme with deep attention net and randomized hashing security mechanism},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103863},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103863},
+	doi = {10.1016/J.COSE.2024.103863},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/KhanLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Overcoming challenges in the current cancelable palmprint template is essential for enhancing privacy and security in biometric systems, as these templates exhibit vulnerabilities in both template security and recognition performance. To address these challenges, we present a novel cancelable palmprint template protection scheme with a deep attention net and randomized hashing security mechanism. Firstly, to enhance recognition performance, we designed a deep attention net that is integrated into the model, aiming to improve its feature extraction ability. Additionally, in recognition of the paramount importance of security and privacy, we introduce a randomized hashing security mechanism. This mechanism, incorporating chaotic sequences as weights in a neuron activation layer, appends to the model and enables dynamic control of neuron activation while generating diverse palmprint feature templates. Subsequently, it enhances security and privacy by combining a Logistic-Tent-Sine (LTTS) random key with palmprint feature values through matrix multiplication. Furthermore, to optimize efficiency, particularly with a large dataset, a binarization layer is implemented using the Straight-Through Estimation (STE) algorithm. This layer contributes to computational efficiency and expedient data processing, further improving the performance of our palmprint template protection. The experimental results validate the outstanding accuracy of this scheme on TJU and PolyU palmprint datasets, establishing it as a state-of-the-art solution with remarkable recognition performance. Moreover, security analysis confirms its compliance with cancelable biometric template protection criteria, ensuring superior irreversibility, unlinkability, revocability, and privacy against various attacks.}
+}
+
+
+@article{DBLP:journals/compsec/ManirihoMC24,
+	author = {Pascal Maniriho and
+                  Abdun Naser Mahmood and
+                  Mohammad Jabed Morshed Chowdhury},
+	title = {MeMalDet: {A} memory analysis-based malware detection framework using
+                  deep autoencoders and stacked ensemble under temporal evaluations},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103864},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103864},
+	doi = {10.1016/J.COSE.2024.103864},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ManirihoMC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware attacks continue to evolve, making detection challenging for traditional static and dynamic analysis techniques. On the other hand, memory analysis provides valuable behavioral insights, but prior research lacks temporal evaluations which are critical for robust detection of new malware variants over time. This paper presents MeMalDet, a novel memory analysis-based malware detection technique using deep autoencoders and stacked ensemble learning. We introduce an improved dataset with temporal attributes enabling more realistic evaluations of memory-based malware detection techniques under concept drift (temporal data split). MeMalDet extracts optimal features from memory dumps using deep autoencoders in an unsupervised manner, avoiding manual feature engineering. A stacked ensemble of supervised classifiers then performs highly accurate malware detection. Extensive experiments on our improved large-scale public dataset demonstrate MeMalDet’s ability to maintain high performance when detecting obfuscated malware under temporal splits. We achieve up to 98.82% accuracy and 98.72% F1-score in detecting previously unseen advanced obfuscated malware, significantly improving upon state-of-the-art memory analysis-based malware detection techniques. The improved dataset enables temporally robust evaluations, which is a novel contribution. MeMalDet combines the benefits of representation learning and supervised machine learning ensemble classification for effective malware detection over time using memory analysis. This research provides a new capability for identifying evasive modern malware and combating evolving real-world threats.}
+}
+
+
+@article{DBLP:journals/compsec/TangSWDTX24,
+	author = {Yunlong Tang and
+                  Jing Sun and
+                  Huan Wang and
+                  Junyi Deng and
+                  Liang Tong and
+                  Wenhong Xu},
+	title = {A method of network attack-defense game and collaborative defense
+                  decision-making based on hierarchical multi-agent reinforcement learning},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103871},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103871},
+	doi = {10.1016/J.COSE.2024.103871},
+	timestamp = {Thu, 08 Aug 2024 12:56:51 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/TangSWDTX24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Faced with the challenges of security strategy design brought about by the complexity of attack behavior and the dynamism of network structure, dynamic hierarchical intelligent defense methods have shown their effectiveness. However, in complex network environments, their application requires a higher level of coordination mechanisms. Therefore, this paper proposes a hierarchical multi-agent reinforcement learning network attack and defense game and cooperative defense decision-making method, which autonomously and efficiently completes the formulation of defense strategies and defense behavior responses. Firstly, we construct a Stackelberg hypergame model of cyberspace conflicts, and under the condition of information loss, characterize the multi-layer dynamic defense coordination response mechanism. Secondly, By utilizing a hierarchical multi-agent reinforcement learning method as the driving force for game evolution, we sequentially solve the Nash equilibrium of the game, and form a dynamic autonomous defense strategy. Finally, we construct a hierarchical multi-agent reinforcement learning framework, which decouples the defense decision problem, reduces the dimension of the defense action space and the exploration difficulty of the strategy space, and learns coordinated defense strategies more efficiently. We used the CybORG (Cyber Operations Research Gym) environment for simulation. We compared and analyzed the autonomously generated cyber defense strategies with other related works, verifying the superior coordination performance of our method in defense strategy generation and control.}
+}
+
+
+@article{DBLP:journals/compsec/WangLDW24,
+	author = {Zhiying Wang and
+                  Guiyun Li and
+                  Yajing Diao and
+                  Nianxin Wang},
+	title = {Warning deterrence or knowledge guidance? Research on triggering mechanism
+                  of phishing sensitivity},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103875},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103875},
+	doi = {10.1016/J.COSE.2024.103875},
+	timestamp = {Mon, 05 Aug 2024 21:42:42 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/WangLDW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Using S-O-R model, this study explores the triggering mechanism of phishing sensitivity caused by security warning deterrence, security knowledge guidance, and security warning deterrence + security knowledge guidance. Study 1 explores the triggering effect of these three types of stimuli on phishing sensitivity through online experiments, and considers the moderating effect based on phishing situation. The results show that knowledge guidance and warning deterrence + knowledge guidance have significant triggering effects on phishing sensitivity, whereas warning deterrence has no such effects. The phishing situation plays a moderating role. In study 2, a cognitive neural experiment is conducted. The functional near-infrared spectroscopy (fNIRS) technology is used to explore S-O-R triggering mechanism of phishing sensitivity mediated by cognitive processing and trust. The results show that both cognitive processing and trust play a mediating role between security intervention and phishing sensitivity. The research results have important theoretical value and practical significance for improving phishing sensitivity.}
+}
+
+
+@article{DBLP:journals/compsec/HayatABW24,
+	author = {Amber Hayat and
+                  Syed Sadaf Ali and
+                  Ashok Kumar Bhateja and
+                  Naoufel Werghi},
+	title = {FinTem: {A} secure and non-invertible technique for fingerprint template
+                  protection},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103876},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103876},
+	doi = {10.1016/J.COSE.2024.103876},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/HayatABW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In today’s automated society, authentication has become a necessity. Fingerprint-based authentication is the predominant choice due to its advantages. However, existing biometric methodologies have certain privacy and security challenges as they directly store the extracted minutiae points in the database, potentially enabling malicious entities to reconstruct fingerprints. The proposed approach constructs a Delaunay triangle from minutiae points, and features are extracted using triangle properties (incircle, circumcircle, and excircle). A secure user template is formed by incorporating fingerprint features, generating a secure bitstring, and utilizing a distinct user key achieved through the salting process. The system’s security is enhanced by feature mapping. The proposed method demonstrates exceptional revocability, diversity, security, and performance and has been rigorously evaluated on nine databases, namely FVC2000 (DB1 & DB2), FVC2002 (DB1, DB2, DB3, & DB4), FVC2004 (DB1 & DB2), and IIT Kanpur database, which is a large database.}
+}
+
+
+@article{DBLP:journals/compsec/GuanHMG24,
+	author = {Siwei Guan and
+                  Zhiwei He and
+                  Shenhui Ma and
+                  Mingyu Gao},
+	title = {Multivariate time series anomaly detection with variational autoencoder
+                  and spatial-temporal graph network},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103877},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103877},
+	doi = {10.1016/J.COSE.2024.103877},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GuanHMG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Effective anomaly detection in multivariate time series (MTS) is very essential for modern complex physical equipment. A single anomaly in physical equipment can cause a series of failures due to fault propagation. Therefore, the equipment needs to be comprehensively monitored by an anomaly detection system to ensure its health. However, given the rise in the size and complexity of the physical equipment, the number of sensors required to infer its health status has increased dramatically, and the complex temporal and spatial dependencies in sensors are difficult to capture. Aiming at the problem, this paper proposes a MTS anomaly detection algorithm called VSAD, which is based on spatial–temporal graph networks and variational autoencoder (VAE). It employs spatial–temporal graph networks to learn complex temporal and spatial dependencies in MTS. Moreover, its VAE architecture enables it to learn data distribution patterns in an unsupervised manner and its threshold is determined by an automatic threshold selection strategy. Finally, experimental results conducted on six publicly available benchmark datasets show that VSAD outperforms state-of-the-art methods for anomaly detection, with an average F1 scores improvement of about 7%.}
+}
+
+
+@article{DBLP:journals/compsec/TliliAF24,
+	author = {Fadhila Tlili and
+                  Samiha Ayed and
+                  Lamia Chaari Fourati},
+	title = {Exhaustive distributed intrusion detection system for UAVs attacks
+                  detection and security enforcement {(E-DIDS)}},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103878},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103878},
+	doi = {10.1016/J.COSE.2024.103878},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/TliliAF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed intrusion detection systems (DIDS) are a specialized subset of conventional IDSs designed for implementation in distributed environments. Each IDS is integrated into distinct entities within a monitored network, potentially distributed across various locations. These participating IDSs can be configured to detect either a particular or multiple attack types. Although DIDS has found extensive application in diverse IoT systems, its utilization in unmanned aerial vehicles (UAVs) still needs to be explored. Consequently, it is imperative to devise a comprehensive framework tailored explicitly for UAVs. It combines multiple detection units to enhance security. Based on the insights gained from previous studies, we propose an exhaustive DIDS for UAVs security enforcement in this paper. Our proposed solution offers a robust and scalable security approach. Through distributing the workload across interconnected IDSs deployed on the UAV, our solution was optimized for UAVs attacks detection to achieve high detection performance while reducing the complexity. To the best of our insight, there is no recorded DIDS for UAVs security, and attack detection has been proposed and evaluated. Furthermore, our paper provides a detailed analysis, outlining the development basis and the achieved results. We performed multiple experiments over different cases using different datasets. The achieved experimental results demonstrate that the proposed IDS has significantly high accuracy detection and low loss rates. Our proposed E-DIDS efficiently detects multiple attacks on different UAVs subsets with good global accuracy that reached 98.6% and low resource consumption.}
+}
+
+
+@article{DBLP:journals/compsec/LiZHXWZ24,
+	author = {Xuefeng Li and
+                  Chensu Zhao and
+                  Yi Hu and
+                  Honglin Xie and
+                  Yuhang Wang and
+                  Jingyang Zhao},
+	title = {Precursor of privacy leakage detection for individual user},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103879},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103879},
+	doi = {10.1016/J.COSE.2024.103879},
+	timestamp = {Thu, 08 Aug 2024 12:56:51 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiZHXWZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The pursuit of dividends from the burgeoning realm of data traffic has emerged as a prevailing trend. Given this current state of affairs, the safeguarding of personal information has become an urgent task. Current methods for personal privacy protection primarily offer alerts when information breaches occur, but at that stage, irreversible breaches have already transpired. Thus, the study of preemptive privacy breach prediction is a task of significant importance within the realm of privacy protection. However, the endeavor to predict privacy breaches in advance remains exceedingly challenging, owing to several factors: (i) The complexity of social networks gives rise to high-dimensional features. (ii) Concerning the comprehensive and precise capture of pathways leading to information leakage. (iii) How to employ time series data effectively to realize early predictions.}
+}
+
+
+@article{DBLP:journals/compsec/GreenOW24,
+	author = {Andrew William Green and
+                  Dejarvis Oliver and
+                  Amy B. Woszczynski},
+	title = {To report or not to report? Extending Protection Motivation Theory
+                  to Vulnerability Discovery and Disclosure},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103880},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103880},
+	doi = {10.1016/J.COSE.2024.103880},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GreenOW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vulnerability researchers face difficult choices when considering whether to reporting a finding to an organization with which they are unaffiliated. We used components of Protection Motivation Theory (PMT) to create the Vulnerability Discovery and Disclosure (VDD) model to understand the decision-making processes of vulnerability researchers. PMT uses high fear appeals, threat appraisals, and coping appraisals to encourage employee prosocial behaviors while VDD proposes low fear and threat with high coping, to encourage reporting. In this exploratory study, we surveyed active vulnerability researchers to gain insight into their concerns when deciding to report to an organization. Using principal components analysis, we developed and refined the VDD survey, which may be tested by future researchers. We also discovered a higher-order efficacy construct, comprised of response and self-efficacy. We theorize that well-developed vulnerability disclosure policies, in line with a low-fear, low-threat appraisal and high efficacy may establish a culture of trust between organizations and vulnerability researchers, encouraging more reports.}
+}
+
+
+@article{DBLP:journals/compsec/ChenQCMM24,
+	author = {Xiuzhen Chen and
+                  Weicheng Qiu and
+                  Lixing Chen and
+                  Yinghua Ma and
+                  Jin Ma},
+	title = {Fast and practical intrusion detection system based on federated learning
+                  for {VANET}},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103881},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103881},
+	doi = {10.1016/J.COSE.2024.103881},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenQCMM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {VANET facilitates communication between vehicles and roadside units, thereby enhancing traffic safety and efficiency. However, it also introduces several attack vectors, compromising security and privacy. To enhance the practicality and precision of existing VANET intrusion detection systems, we propose a novel hybrid algorithm named VAN-IDS. This algorithm combines packet analysis and physical feature analysis. Temporal properties of packets are analyzed using Bi-LSTM, while physical attributes of vehicles are evaluated using LightGBM. Predictive outputs from both models are merged using the Dempster–Shafer theory. Data is collected from the F2MD simulation environment, and experiments are conducted to evaluate the efficacy of VAN-IDS. Results show that VAN-IDS achieves an accuracy exceeding 98.5% in detecting DoS and Sybil attacks, surpassing existing VANET IDSs and meeting real-time detection requirements. Federated learning is introduced, with VAN-FED-IDS designed to accelerate model training and updates, while protecting the privacy of the model and dataset. Roadside units (RSUs) serve as edge computing nodes for local model training, while cloud services aggregate models for collaborative training of detection algorithms. In these experiments, the open-source federated learning frameworks Flower and FedTree are used to assess communication overhead and training duration in both single-machine simulation and multi-machine deployment scenarios. This demonstrates the viability of federated learning, which can protect local data privacy, expedite model training and updates within the IDS, and maintain the original model’s detection accuracy.}
+}
+
+
+@article{DBLP:journals/compsec/LiuWHLL24,
+	author = {Wanping Liu and
+                  Baojuan Wang and
+                  Dong Huang and
+                  Haolan Luo and
+                  Ling Lu},
+	title = {{CFOA:} Exploring transferable adversarial examples by content feature
+                  optimization with attention guidance},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103882},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103882},
+	doi = {10.1016/J.COSE.2024.103882},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuWHLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep neural networks are known to be highly susceptible to adversarial examples, created by adding small and carefully-designed perturbations on original images. In black-box scenarios, attacking neural networks is challenging since the information about models is not available. Generating transferable adversarial examples on surrogate models is a viable way. However, current mainstream transfer-based attacks seldomly consider the relationship between transferability and content features of the image. To effectively enhance the attack success rate at the feature level, we newly propose an attack method called Content Feature Optimization Attack (CFOA). This novel CFOA approach operates on white-box models, aiming to generate transferable adversarial examples by targeting the content feature representations of images in the feature space. The method involves the extraction and parameterization of content features, followed by the iterative generation of feature-level perturbations guided by attention loss and adversarial loss. Ultimately, the adversarial examples generated by CFOA exhibit strong transferability on other black-box models. Experimental results show that our method produces adversarial examples with higher success rates in transferability compared to state-of-the-art methods, and importantly, they can effectively evade certain defense mechanisms, presenting a challenge for adversarial defense.}
+}
+
+
+@article{DBLP:journals/compsec/BaseriCH24,
+	author = {Yaser Baseri and
+                  Vikas Chouhan and
+                  Abdelhakim Hafid},
+	title = {Navigating quantum security risks in networked environments: {A} comprehensive
+                  study of quantum-safe network protocols},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103883},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103883},
+	doi = {10.1016/J.COSE.2024.103883},
+	timestamp = {Mon, 05 Aug 2024 21:42:42 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/BaseriCH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The emergence of quantum computing poses a formidable security challenge to network protocols traditionally safeguarded by classical cryptographic algorithms. This paper provides an exhaustive analysis of vulnerabilities introduced by quantum computing in a diverse array of widely utilized security protocols across the layers of the TCP/IP model, including TLS, IPsec, SSH, PGP, and more. Our investigation focuses on precisely identifying vulnerabilities susceptible to exploitation by quantum adversaries at various migration stages for each protocol while also assessing the associated risks and consequences for secure communication. We delve deep into the impact of quantum computing on each protocol, emphasizing potential threats posed by quantum attacks and scrutinizing the effectiveness of post-quantum cryptographic solutions. Through carefully evaluating vulnerabilities and risks that network protocols face in the post-quantum era, this study provides invaluable insights to guide the development of appropriate countermeasures. Our findings contribute to a broader comprehension of quantum computing’s influence on network security and offer practical guidance for protocol designers, implementers, and policymakers in addressing the challenges stemming from the advancement of quantum computing. This comprehensive study is a crucial step towards fortifying the security of networked environments in the quantum age.}
+}
+
+
+@article{DBLP:journals/compsec/SheikhiK24,
+	author = {Saeid Sheikhi and
+                  Panos Kostakos},
+	title = {Safeguarding cyberspace: Enhancing malicious website detection with
+                  {PSO} optimized XGBoost and firefly-based feature selection},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103885},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103885},
+	doi = {10.1016/J.COSE.2024.103885},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/SheikhiK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the exponential growth of internet usage worldwide has created a conducive environment for the expansion of malicious activities. Among these threats, malicious websites pose a significant risk to individual users and corporations. This paper presents a robust and efficient model for the detection of various types of malicious websites with high accuracy in the process. The proposed approach employs a two-step process. Firstly, a feature selection method based on the Firefly algorithm is utilized to identify the most relevant features. Subsequently, an optimized version of the XGBoost algorithm is applied to classify websites based on the selected features. Optimization of XGBoost's parameters is achieved through the Particle Swarm Optimization (PSO) algorithm to enhance its performance. To assess the efficacy of the introduced model, the model is evaluated against several benchmark classification algorithms using a dataset comprising over 36,000 websites. In binary classification, the introduced model surpasses other benchmark methods with a significant 98.42 % classification accuracy and an F1 score of 0.984. For multiclass problem classification, it consistently achieves over 98 % accuracy in each class. The test results highlight the proposed model's robust performance, characterized by exceptional classification accuracy and F1-measure rates. It demonstrates the capability to detect various types of malicious websites with high precision and minimal false error rates.}
+}
+
+
+@article{DBLP:journals/compsec/CremerSMFRM24,
+	author = {Frank Cremer and
+                  Barry Sheehan and
+                  Martin Mullins and
+                  Michael Fortmann and
+                  Barry J. Ryan and
+                  Stefan Materne},
+	title = {On the insurability of cyber warfare: An investigation into the German
+                  cyber insurance market},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103886},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103886},
+	doi = {10.1016/J.COSE.2024.103886},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/CremerSMFRM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Insurance is an important part of a constellation of institutions that assist in the provision of security, resilience and welfare. This is true across a range of threats, including those in the cyber domain. Cyber risks, particularly those associated with cyber warfare, present a considerable threat to the international economy and society owing to their inherent unpredictability and far-reaching consequences. These risks have the potential to impact security and cause significant economic losses, making them a critical concern for governments, businesses, and individuals alike. This research addresses the protection gap arising from cyber warfare exclusions in the context of cyber insurance. Furthermore, this study analyses the impact of war exclusion clauses on cyber insurance coverage during the Ukraine and Russia conflict. A mixed methods approach was employed, analyzing 44 cyber insurance policies in the German SME insurance market, and conducting interviews with 26 cyber insurance experts from various areas of the industry. It is found that insurers employ vaguely worded war exclusion clauses to restrict the scope of their policies. The study finds that such exclusionary provisions fail to account for emerging forms of warfare, including hybrid warfare and rapidly evolving cyber operations. The analysis provides practical solutions to address these challenges by highlighting the problems of the cyber war exclusion clause, demonstrating the perceptions and understanding of cyber insurers, and providing possible solutions to the insurability of cyber war risks. A well-functioning insurance market around cyber warfare would improve the resilience of nation-states in the face of such attacks. This paper provides important insights on the operation of this critical risk transfer market, based on the view of market participants.}
+}
+
+
+@article{DBLP:journals/compsec/GowthamRJV24,
+	author = {M. S. Gowtham and
+                  M. Ramkumar and
+                  S. Syed Jamaesha and
+                  M. Vigenesh},
+	title = {Artificial self-attention rabbits battle royale multiscale network
+                  based robust and secure data transmission in mobile Ad Hoc networks},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103889},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103889},
+	doi = {10.1016/J.COSE.2024.103889},
+	timestamp = {Tue, 15 Oct 2024 20:57:49 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GowthamRJV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In a Mobile Ad hoc Network (MANET), the network structure constantly evolves due to the movement of devices, users, or nodes. The Black Hole Attack (BHA) is recognized as the most impactful threat in MANETs, where an attacker node intentionally discards all data traffic, hence minimizing the network performance. Therefore, developing a secure and robust routing protocol is vital for efficient data transmission in a MANET. Although existing solutions have been designed to counteract malicious nodes, these solution presents drawbacks such as the need for additional hardware, notable delivery delays, limited throughput, increased energy consumption, and minimum packet delivery ratio. Thus, this research work introduces a new updated Ad hoc On-demand Distance Vector (AODV) routing protocol that integrates the benefits of the Artificial Rabbits Battle Royale Optimization (ARBRO), and Self-attention Multiscale Network (SMNet). The role of the ARBRO algorithm is to optimize the route by selecting the most appropriate node properties. Then, SMNet identifies the BHA node using these node properties. The proposed scheme is implemented in MATLAB. Experimental results determines that the introduced approach attains a delay of 0.039 s, a throughput of 94.57 Kbps, and a packet delivery ratio of 98.76 %, which are better than the existing techniques. Simulation results demonstrate that the introduced method improves network performance by enhancing the quality of service in the presence of a BHA.}
+}
+
+
+@article{DBLP:journals/compsec/LiHLZS24,
+	author = {Yufeng Li and
+                  Chengjian Huang and
+                  Qi Liu and
+                  Xiangyu Zheng and
+                  Ke Sun},
+	title = {Integrating security in hazard analysis using STPA-Sec and {GSPN:}
+                  {A} case study of automatic emergency braking system},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103890},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103890},
+	doi = {10.1016/J.COSE.2024.103890},
+	timestamp = {Thu, 29 Aug 2024 10:40:34 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiHLZS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hazard analysis is a vital step in developing intelligent connected vehicles, aiming to eliminate or control hazards in the initial stages of system development and to provide theoretical support for the system’s safety design. However, conventional hazard analysis methods, such as Fault Tree Analysis and Failure Mode and Effects Analysis, suffer from two shortcomings: they do not account for the impact of cybersecurity factors on system safety and do not provide sufficient quantification of hazard scenarios. To this end, we propose a quantifiable hazard analysis method with security consideration, which integrates System Theoretic Process Analysis for Security (STPA-Sec) and Generalized Stochastic Petri Net (GSPN), supporting the extraction, modeling, and quantification of hazards. Specifically, we employ STPA-Sec for qualitative analysis to identify causal scenarios, safety requirements, security requirements, and the corresponding mitigations. Then, based on the identified causal scenarios, a GSPN model is established to quantify system-level hazards. A case study on a real open-source test vehicle demonstrates that the proposed method not only offers a comprehensive analysis of hazards but also provides a quantitative assessment. Comparative assessments suggest that the proposed method exhibits an advantage in terms of analysis processes (integrating security) and results (quantification).}
+}
+
+
+@article{DBLP:journals/compsec/GwebuW24,
+	author = {Kholekile L. Gwebu and
+                  Jing Wang},
+	title = {The defining features of a robust information security climate},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103891},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103891},
+	doi = {10.1016/J.COSE.2024.103891},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GwebuW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data breaches have become a common occurrence with serious consequences, making organizational security management critically important. Nonetheless, the research community has not yet clearly defined the characteristics of a strong organizational security climate. This study conducts a comprehensive literature analysis to identify a collection of research-based and managerially relevant constructs that represent the essential components of a strong security climate. We operationalize the identified measures of the constructs and empirically validate them for reliability, construct validity, and nomological validity in terms of their relationships with employees' security awareness, neutralization, and intention to comply with organizational information security policies (ISPs). The results suggest that these integral elements, when embraced by organizations, discourage employees’ use of neutralization to justify violation of ISPs and improve employees’ security awareness and their ISP compliance intention. Organizations can use the identified subcomponents and their corresponding measures as a diagnostic decision support instrument to make a reliable and valid assessment of the strengths and weaknesses of their security climate, to continuously monitor their security climate, and to develop interventions that contribute to a strong security climate.}
+}
+
+
+@article{DBLP:journals/compsec/GuoHZWJS24,
+	author = {Longtao Guo and
+                  Huakun Huang and
+                  Lingjun Zhao and
+                  Peiliang Wang and
+                  Shan Jiang and
+                  Chunhua Su},
+	title = {Reentrancy vulnerability detection based on graph convolutional networks
+                  and expert patterns under subspace mapping},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103894},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103894},
+	doi = {10.1016/J.COSE.2024.103894},
+	timestamp = {Sun, 06 Oct 2024 21:22:22 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GuoHZWJS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart contracts with automatic execution capability provide a vast development space for transactions in Blockchain. However, due to the vulnerabilities in smart contracts, Blockchain has suffered huge economic losses, which greatly undermines people’s trust in Blockchain and smart contracts. In this paper, we explore a vulnerability detection method based on graph neural networks and combine both contract source code and opcode. The structure of the method consists of four modules, i.e., preprocessing, subspace mapping, feature extraction, and detection modules. In the feature mapping module, we use a multi-subspace mapping approach to explore the impact of different subspace mappings on the detection method. For reentrancy vulnerability, we conducted extensive experiments. The experiments prove that our method achieves 95% accuracy and 94% F1-Score on average.}
+}
+
+
+@article{DBLP:journals/compsec/DavisAA24,
+	author = {Joshua M. Davis and
+                  Deepti Agrawal and
+                  Rebekah Austin},
+	title = {Fostering security-related citizenship through the employee-supervisor
+                  relationship: An examination of supervisor security embodiment},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103896},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103896},
+	doi = {10.1016/J.COSE.2024.103896},
+	timestamp = {Thu, 22 Aug 2024 20:25:16 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/DavisAA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Organizational information security performance is increasingly dependent on employees’ security-related citizenship behaviors that stretch beyond the scope of formal organizational prescription and control. Unfortunately, cultivating enactment of these valued behaviors has proven challenging for many companies. The literature has recognized workplace relationships as important determinants of behavioral security outcomes and extra-role security behaviors (ERBs) in particular. Taken further, an employee's relationship with the immediate supervisor is recognized as one of the most influential relational factors shaping a variety of workplace behaviors, including those related to security. Consistent with these notions, scholars have called for making the employee-supervisor relationship a more central component of behavioral security research and practice. Currently however, beyond recognition of this relationship's importance, the knowledge base is unclear about how it shapes ERB enactment. Because employees view supervisors as both organizational agents and as individuals in their own rights, this relationship has the potential to drive productive or counterproductive security behaviors, depending on how aligned the supervisor's security values are with those of the organization. Yet, the security literature has given surprisingly little consideration to the notion that employees can differ in the extent to which they perceive supervisors as embodying organizational information security values. Responding to this gap, the current study examines how employee-supervisor relations and perceived security-related value alignment between supervisors and the broader organization shape employees’ commitment to organizational information security and ultimately, ERB enactment. Grounded in the social identity theory of leadership (SITL), a research model is developed that positions high-quality employee-supervisor exchange as a direct antecedent of affective commitment to organizational information security, which then serves as a central intrinsic motivational mechanism driving ERB enactment. Further, rooted in SITL's principles on leader prototypicality and supervisor organizational embodiment, employee-perceived value alignment between the immediate supervisor and the organization as a whole—referred to here as supervisor security embodiment (SSE)—is introduced as a critical boundary condition influencing the extent to which employee-supervisor relations drive commitment. Results from model testing empirically demonstrate the value of SSE in explicating how this important relationship shapes workplace ERB enactment, through its influence on affective commitment to organizational information security performance.}
+}
+
+
+@article{DBLP:journals/compsec/MorenoRSC24,
+	author = {Jes{\'{u}}s Fernando Cevallos Moreno and
+                  Alessandra Rizzardi and
+                  Sabrina Sicari and
+                  Alberto Coen{-}Porisini},
+	title = {{NERO:} NEural algorithmic reasoning for zeRO-day attack detection
+                  in the IoT: {A} hybrid approach},
+	journal = {Comput. Secur.},
+	volume = {142},
+	pages = {103898},
+	year = {2024},
+	url = {https://doi.org/10.1016/j.cose.2024.103898},
+	doi = {10.1016/J.COSE.2024.103898},
+	timestamp = {Sun, 08 Sep 2024 16:07:25 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/MorenoRSC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly detection approaches for network intrusion detection learn to identify deviations from normal behavior on a data-driven basis. However, current approaches strive to infer the degree of abnormality of out-of-distribution samples when these appertain to different zero-day attacks. Inspired by the successes of the neural algorithmic reasoning paradigm to leverage the generalization of rule-based behavior, this paper presents a deep learning strategy for solving zero-day network attack detection and categorization. Moreover, focusing on the particular scenario of the Internet of Things (IoT), the privacy preservation requirement may imply a low training data regime for any learning algorithm. To this respect, the presented framework uses metric-based meta-learning to achieve few-shot learning capabilities. The presented pipeline is called NERO, as it imports the encode-process-decode architecture from the NEural algorithmic reasoning blueprint to converge zeRO-day attack detection policies within constrained training data.}
+}
