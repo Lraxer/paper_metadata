@@ -1,0 +1,912 @@
+@inproceedings{DBLP:conf/dsn/RuizGarciaAFYKD24,
+	author = {Juan{-}Carlos Ruiz{-}Garcia and
+                  Homa Alemzadeh and
+                  Jean{-}Charles Fabre and
+                  Jiangshan Yu and
+                  Sy{-}Yen Kuo and
+                  Elias P. Duarte},
+	title = {Test of Time Award; {DSN} 2024},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {xxvi},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00014},
+	doi = {10.1109/DSN58291.2024.00014},
+	timestamp = {Fri, 08 Nov 2024 08:17:22 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/RuizGarciaAFYKD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Test-of-Time Award recognizes two outstanding papers published 10 years ago at DSN, in the DSN proceedings (research track, practical experience report or tool papers), that have had a sustained and important impact on the theory and/or practice of dependable systems and networks computing research. DSN has several areas under its umbrella and with two awards there are conditions to recognize more than one area. In exceptional situations (not enough nominations), the time frame for awards can be extended to 10-12 years, and only one paper can be awarded, in this order.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/BarlettaCMKI24,
+	author = {Marco Barletta and
+                  Marcello Cinque and
+                  Catello Di Martino and
+                  Zbigniew T. Kalbarczyk and
+                  Ravishankar K. Iyer},
+	title = {Mutiny! How Does Kubernetes Fail, and What Can We Do About It?},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {1--14},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00016},
+	doi = {10.1109/DSN58291.2024.00016},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/BarlettaCMKI24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we i) analyze and classify real-world failures of Kubernetes (the most popular container orchestration system), ii) develop a framework to perform a fault/error injection campaign targeting the data store preserving the cluster state, and iii) compare results of our fault/error injection experiments with real-world failures, showing that our fault/error injections can recreate many real-world failure patterns. The paper aims to address the lack of studies on systematic analyses of Kubernetes failures to date. Our results show that even a single fault/error (e.g., a bit-flip) in the data stored can propagate, causing cluster-wide failures (3% of injections), service networking issues (4%), and service under/overprovisioning (24%). Errors in the fields tracking dependencies between object caused 51% of such cluster-wide failures. We argue that controlled fault/error injection-based testing should be employed to proactively assess Kubernetes' resiliency and guide the design of failure mitigation strategies.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WadaY24,
+	author = {Takeru Wada and
+                  Hiroshi Yamada},
+	title = {Reboot-Based Recovery of Unikernels at the Component Level},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {15--28},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00017},
+	doi = {10.1109/DSN58291.2024.00017},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WadaY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The unikernel is a library operating system (OS) where OS functions are linked to the target applications. Making the unikernel layer as reliable as possible is mandatory because it controls the linked application's execution. However, like commodity OS kernels, the unikernel suffers from software bugs and non-deterministic hardware failures. The current standard for recovering a failed unikernel is reboot-based and it involves restarting the whole unikernel-linked application, which leads to service stops and long downtimes. This paper presents VampOS that performs efficient reboot-based recovery of the unikernel layer. VampOS forces the unikernel components to interact with each other in a message-passing manner to restart only the damaged one while keeping the others and the application running. We prototyped VampOS on Unikraft 0.8.0 and QEMU 6.1.50. The experimental results show that the prototypes for four applications effectively recover the failed components with almost zero downtime.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/YuSHY24,
+	author = {Sheng Yu and
+                  Wei Song and
+                  Xunchao Hu and
+                  Heng Yin},
+	title = {On the Correctness of Metadata-Based {SBOM} Generation: {A} Differential
+                  Analysis Approach},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {29--36},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00018},
+	doi = {10.1109/DSN58291.2024.00018},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/YuSHY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Amidst rising concerns of software supply chain attacks, the Software Bill of Materials (SBOM) has emerged as a pivotal tool, offering a detailed listing of software components to manage vulnerabilities, dependencies, and licensing. While many SBOM generation tools are extensively used in both commercial and open-source realms, the correctness of these tools remains largely unscrutinized. To date, there has not been a systematic study addressing the correctness of contemporary SBOM generation solutions. In this paper, we conduct a large-scale differential analysis of the correctness of four popular SBOM generators. Surprisingly, our evaluation reveals all four SBOM generators exhibit inconsistent SBOMs and dependency omissions, leading to incomplete and potentially inaccurate SBOMs. Moreover, we construct a parser confusion attack against these tools, introducing a new attack vector to conceal malicious, vulnerable, or illegal packages within the software supply chain. Drawing from our analysis, we propose best practices for SBOM generation and introduce a benchmark to steer the development of more robust SBOM generators.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/StavrakakisPNB24,
+	author = {Dimitrios Stavrakakis and
+                  Alexandrina Panfil and
+                  MJin Nam and
+                  Pramod Bhatotia},
+	title = {{SPP:} Safe Persistent Pointers for Memory Safety},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {37--52},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00019},
+	doi = {10.1109/DSN58291.2024.00019},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/StavrakakisPNB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory safety violations, such as buffer overflows, are the primary cause of security and reliability issues in software systems. Like the volatile main memory, byte-addressable persistent memory (PM) storage devices are also prone to memory safety exploits because PM devices are directly mapped to the address space and accessed via the load/store interface using pointers. However, the PM pointer representation is persistent, i.e., its offset and the associated object are persistent across system reboots. Therefore, the current memory safety mechanisms for the volatile main memory are inadequate for ensuring the safety of persistent pointers. To this end, we propose Safe Persistent Pointers (SPP), a practical memory safety approach against buffer overflows for PM applications. SPP augments persistent pointers with memory safety properties. SPP is based on a simple combination of tagged pointers, efficient persistent memory layout, and transactional updates to the memory safety metadata for ensuring crash consistency. SPP's efficient pointer representation does not require additional memory lookup operations at runtime while incurring minimal space overheads for storing the memory safety metadata. We implement SPP based on the LLVM compiler infrastructure accompanied by a runtime library and an adapted version of PM development kit (PMDK). Our evaluation demonstrates that SPP incurs low runtime and space overheads while preserving the crash-consistency property and maintaining the PMDK API intact, i.e., requiring no source code modifications.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/PavloffAP24,
+	author = {Ulysse Pavloff and
+                  Yackolley Amoussou{-}Guenou and
+                  Sara {Tucci Piergiovanni}},
+	title = {Byzantine Attacks Exploiting Penalties in Ethereum PoS},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {53--65},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00020},
+	doi = {10.1109/DSN58291.2024.00020},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/PavloffAP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In May 2023, the Ethereum blockchain experienced its first inactivity leak, a mechanism designed to reinstate chain finalization amid persistent network disruptions. This mechanism aims to reduce the voting power of validators who are unreachable within the network, reallocating this power to active validators. This paper investigates the implications of the inactivity leak on safety within the Ethereum blockchain. Our theoretical analysis reveals scenarios where actions by Byzantine validators expedite the finalization of two conflicting branches, and instances where Byzantine validators reach a voting power exceeding the critical safety threshold of one-third. Additionally, we revisit the probabilistic bouncing attack, illustrating how the inactivity leak can result in a probabilistic breach of safety, potentially allowing Byzantine validators to exceed the one-third safety threshold. Our findings uncover how penalizing inactive nodes can compromise blockchain properties, particularly in the presence of Byzantine validators capable of coordinating actions.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/NguyenFN24,
+	author = {Nhu Long Nguyen and
+                  Nickolas J. G. Falkner and
+                  Hung X. Nguyen},
+	title = {ADSynth: Synthesizing Realistic Active Directory Attack Graphs},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {66--74},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00021},
+	doi = {10.1109/DSN58291.2024.00021},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/NguyenFN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Active Directory (AD), a directory service for Windows domain networks, is a common target for attackers due to its widespread use and the confidential data it contains. According to Microsoft, 95 million AD accounts are attacked every day and new attacks involving AD are a common occurrence. Despite frequent attacks against Active Directory and its critical role in network security, there are no publicly available datasets and tools for generating realistic AD graphs. This absence hinders the development and testing of novel methods for protecting AD systems. Realistic AD datasets are also essential for training and up-skilling human AD defenders. In this work, we develop ADSynth, a scalable and realistic AD attack graph generator. ADSynth uses metagraphs to model design principles of realistic AD systems, relying on three novel ideas: (1) metagraph abstractions of best practices in AD organizational design, (2) metagraph abstractions of security design principles in AD systems, and (3) a random metagraph model of common security misconfigurations. Our experiments demonstrate ADSynth's scalability in creating realistic AD graphs under various security settings. We apply ADSynth to some recent research on AD security and demonstrate that data from ADSynth significantly benefit these studies. ADSynth has been released to the community 1 1 https.z/adsynthcsizcr.github.io/ 2 2 https://github.com/adsynthesizer/ADSynth.git.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/OlgunOYTLRSGM24,
+	author = {Ataberk Olgun and
+                  Majd Osseiran and
+                  A. Giray Yaglik{\c{c}}i and
+                  Yahya Can Tugrul and
+                  Haocong Luo and
+                  Steve Rhyner and
+                  Behzad Salami and
+                  Juan G{\'{o}}mez{-}Luna and
+                  Onur Mutlu},
+	title = {Read Disturbance in High Bandwidth Memory: {A} Detailed Experimental
+                  Study on {HBM2} {DRAM} Chips},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {75--89},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00022},
+	doi = {10.1109/DSN58291.2024.00022},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/OlgunOYTLRSGM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We experimentally demonstrate the effects of read disturbance (RowHammer and RowPress) and uncover the inner workings of undocumented read disturbance defense mechanisms in High Bandwidth Memory (HBM). Detailed characterization of six real HBM2 DRAM chips in two different FPGA boards shows that (1) the read disturbance vulnerability significantly varies between different HBM2 chips and between different components (e.g., 3D-stacked channels) in-side a chip, (2) DRAM rows at the end and in the middle of a bank are more resilient to read disturbance, (3) fewer additional activations are sufficient to induce more read disturbance bitflips in a DRAM row if the row exhibits the first bitflip at a relatively high activation count, (4) a modern HBM2 chip implements undocumented read disturbance defenses that track potential aggressor rows based on how many times they are activated. We describe how our findings could be leveraged to develop more powerful read disturbance attacks and more efficient defense mechanisms. We open source all our code and data to facilitate future research at https://github.com/CMU-SAFARI/HBM-Read-Disturbance.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/HeXL24,
+	author = {Zhengyang He and
+                  Hui Xu and
+                  Guanpeng Li},
+	title = {A Fast Low-Level Error Detection Technique},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {90--98},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00023},
+	doi = {10.1109/DSN58291.2024.00023},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/HeXL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As transistors continue to shrink in size, the soft error rate in computer systems is rising, posing a critical threat of severe failures. error detection by duplicating instruction (EDDI) has been proposed as a prominent software-based technique for detecting soft errors. However, utilizing EDDI specifically at the assembly level has not been well explored in the literature. Towards this end, the paper introduces Ferrum, an innovative assembly level EDDI, which is a boosted version compared with the original assembly level EDDI by using SIMD and other compiler-level transformations. We evaluate Ferrum in both fault coverage and runtime performance compared with IR level EDDI and original assembly level EDDI. The results show that Ferrum not only ensures 100% protection coverage at the assembly level but also surpasses baseline techniques by more than 50% in runtime performance overhead.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/YukselTBOYOSLGSM24,
+	author = {Ismail Emir Y{\"{u}}ksel and
+                  Yahya Can Tugrul and
+                  F. Nisa Bostanci and
+                  Geraldo F. Oliveira and
+                  A. Giray Yaglik{\c{c}}i and
+                  Ataberk Olgun and
+                  Melina Soysal and
+                  Haocong Luo and
+                  Juan G{\'{o}}mez{-}Luna and
+                  Mohammad Sadrosadati and
+                  Onur Mutlu},
+	title = {Simultaneous Many-Row Activation in Off-the-Shelf {DRAM} Chips: Experimental
+                  Characterization and Analysis},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {99--114},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00024},
+	doi = {10.1109/DSN58291.2024.00024},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/YukselTBOYOSLGSM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We experimentally analyze the computational capability of commercial off-the-shelf(COTS) DRAM chips and the robustness of these capabilities under various timing delays between DRAM commands, data patterns, temperature, and voltage levels. We extensively characterize 120 COTS DDR4 chips from two major manufacturers. We highlight four key results of our study. First, COTS DRAM chips are capable of 1) simultaneously activating up to 32 rows (i.e., simultaneous many-row activation), 2) executing a majority of X (MAJX) operation where X>3 (i.e., MAJ5, MAJ7, and MAJ9 operations), and 3) copying a DRAM row (concurrently) to up to 31 other DRAM rows, which we call Multi-RowCopy. Second, storing multiple copies of MAJX's input operands on all simultaneously activated rows drastically increases the success rate (i.e., the percentage of DRAM cells that correctly perform the computation) of the MAJX operation. For example, MAJ3 with 32-row activation (i.e., replicating each MAJ3's input operands 10 times) has a 30.81% higher average success rate than MAJ3 with 4-row activation (i.e., no replication). Third, data pattern affects the success rate of MAJX and MUlti-RowCopy operations by 11.52% and 0.07% on average. Fourth, simultaneous many-row activation, MAJX, and Multi-RowCopy operations are highly resilient to temperature and voltage changes, with small success rate variations of at most 2.13% among all tested operations. We believe these empirical results demonstrate the promising potential of using DRAM as a computation substrate. To aid future research and development, we open-source our infrastructure at https://github.com/CMU-SAFARI/SiMRA-DRAM.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GuWLW24,
+	author = {Xuhang Gu and
+                  Qingyang Wang and
+                  Jianshu Liu and
+                  Jinpeng Wei},
+	title = {Grunt Attack: Exploiting Execution Dependencies in Microservices},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {115--128},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00025},
+	doi = {10.1109/DSN58291.2024.00025},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GuWLW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Loosely-coupled and lightweight microservices running in containers are likely to form complex execution dependencies inside the system. The execution dependency arises when two execution paths partially share component microservices, resulting in potential runtime blocking effects. In this paper, we present Grunt Attack - a novel low-volume DDoS attack that takes advantage of the execution dependencies of microservice applications. Grunt Attack utilizes legitimate HTTP requests to accurately profile the internal pairwise dependencies of all supported execution paths in the target system. By grouping and characterizing all the execution paths based on their pairwise dependencies, the Grunt attacker can target only a few execution paths to launch a low-volume DDoS attack that achieves large performance damage to the entire system. To increase the attack stealthiness, the Grunt attacker avoids creating a persistent bottleneck by alternating the target execution paths within their dependency group. We validate the effectiveness of Grunt attack through experiments of open-source microservices benchmark applications on real clouds (e.g., EC2, Azure) equipped with state-of-the-art IDS/IPS systems and live attack scenarios. Our results show that Grunt attack consumes less than 20% additional CPU resource of the target system while increasing its average response time by over 10x.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/KhalilR24,
+	author = {Alvi Ataur Khalil and
+                  Mohammad Ashiqur Rahman},
+	title = {{PAROLE:} Profitable Arbitrage in Optimistic Rollup with {ERC-721}
+                  Token Transactions},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {129--141},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00026},
+	doi = {10.1109/DSN58291.2024.00026},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/KhalilR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Optimistic rollup has emerged as a promising Layer 2 (L2) scaling solution for blockchain; however, its existing protocols are vulnerable to front/back-running activities, where an opportunistic rollup operator can strategically alter the transactions' order to create an arbitrage opportunity. Specifically, in the limited edition ERC-721 standardized non-fungible tokens (NFTs), the re-ordering of transactions introduces a lucrative threat landscape due to its scarcity-driven pricing and market volatility. In this work, we introduce PAROLE, a novel attack technique on optimistic rollup systems, where an adversarial aggregator re-orders the NFT transactions in an optimal way, leveraging model-free deep reinforcement learning (DRL) to maximize the balance of a target account. We create our own NFT called the “PAROLE Token” (PT) and deploy it in the OpenSea marketplace via Optimism Goerli to validate the attack impact. Furthermore, we collect NFT snapshots from rollup mainchains to analyze the impact in real-world NFT marketplaces.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/CuiJCKI24,
+	author = {Shengkun Cui and
+                  Saurabh Jha and
+                  Ziheng Chen and
+                  Zbigniew T. Kalbarczvk and
+                  Ravishankar K. Iyer},
+	title = {iPrism: Characterize and Mitigate Risk by Quantifying Change in Escape
+                  Routes},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {142--155},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00027},
+	doi = {10.1109/DSN58291.2024.00027},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/CuiJCKI24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper addresses the challenge of ensuring the safety of autonomous vehicles (AVs, also called ego actors) in real-world scenarios where AVs are constantly interacting with other actors. To address this challenge, we introduce iPrism which incorporates a new risk metric - the Safety-Threat Indicator (STI). Inspired by how experienced human drivers proactively mitigate hazardous situations, STI quantifies actor-related risks by measuring the changes in escape routes available to the ego actor. To actively mitigate the risk quantified by STI and avert accidents, iPrism also incorporates a reinforcement learning (RL) algorithm (referred to as the Safety-hazard Mitigation Controller (SMC)) that learns and implements optimal risk mitigation policies. Our evaluation of the success of the SMC is based on over 4800 NHTSA-based safety-critical scenarios. The results show that (i) STI provides up to 4.9 x longer lead-time-for-mitigating-accidents compared to widely-used safety and planner-centric metrics, (ii) SMC significantly reduces accidents by 37% to 98 % compared to a baseline Learning-by-Cheating (LBC) agent, and (iii) in comparison with available state-of-the-art safety hazard mitigation agents, SMC prevents up to 72.7% of accidents that the selected agents are unable to avoid. All code, model weights, and evaluation scenarios and pipelines used in this paper are available at: https://zenodo.orgldoi/10.5281/zenodo.10279653.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/DecourcelleTH24,
+	author = {Jean{-}Baptiste Decourcelle and
+                  Boris Teabe and
+                  Daniel Hagimont},
+	title = {{JITBULL:} Securing JavaScript Runtime with a Go/No-Go Policy for
+                  {JIT} Engine},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {156--168},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00028},
+	doi = {10.1109/DSN58291.2024.00028},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/DecourcelleTH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, most services are delivered through the web and thus heavily rely on JavaScript (JS). To accommodate the need for more performance, JS runtimes integrated Just-In-Time (JIT) compilation engines, which compile frequently-called portions of code for faster execution. To produce efficient machine code, the JIT applies complex optimization passes on the code in question. However, inadequate modeling of the side effects of these optimizations can introduce vulnerabilities in certain optimization passes. Such vulnerabilities are regularly discovered, and often have a high impact. Once a vulnerability is identified, it is eventually patched, but not without involving several steps (development, testing, release, user consent), leaving the system vulnerable for a relatively long period: the vulnerability window. We propose JITBULL, a solution that secures the JIT engines of JS runtimes during the vulnerability window by leveraging a vulnerability's demonstrator codes. To that end, JITBULL extracts the effects of JIT compiler optimization passes on said vulnerability demonstrator codes. For every subsequent JITed code, JITBULL compares the effects of its optimization passes with those on the demonstrator codes. If similarities are detected, JITBULL assumes that the currently executing script may be malicious and disables the related optimization passes, or if that's not possible, the whole JIT engine. We implemented JITBULL in Firefox's JS runtime (SpiderMonkey) and tested it against several known vulnerabilities with public demonstrator codes. Our results demonstrate that JITBULL consistently safeguards the JIT engine against exploitation by a variant of a known vulnerability. Moreover, we show that JITBULL exhibits a false positive rate of less than 5 % on the JS Octane benchmark suite, while causing an acceptable overhead of less than 20 %.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/XiaoYLCW24,
+	author = {Danyang Xiao and
+                  Diying Yang and
+                  Jialun Li and
+                  Xu Chen and
+                  Weigang Wu},
+	title = {Privacy Leakage from Logits Attack and its Defense in Federated Distillation},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {169--182},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00029},
+	doi = {10.1109/DSN58291.2024.00029},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/XiaoYLCW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated Distillation (FD), a popular variant of Federated Learning (FL), has attracted researchers' attention due to its ability to support heterogeneous model training. Generally, FD allows clients to upload logits associated with public datasets for knowledge transfer, yet logits may pose privacy risks. In this study, we provide the first demonstration of the impact of privacy risks caused by logits. Specifically, we design a data reconstruction attack against logits named L-Attack which can reveal sensitive information about the target client without access to the target model. Via the zeroth-order optimization technique, L-Attack involves training a server-side generator that unveils certain features of private data owned by the target client. To defend against L-Attack, we propose a label aggregation-based FD algorithm called LabelAvg which allows clients to upload predicted hard labels for knowledge transfer instead of logits. Due to the insufficient information in labels for distillation, LabelAvg provides a voting-based label smoothing mechanism that enables the server to construct smooth labels from received labels. The generated smooth labels which stand for the consensus among all clients, indicate the approximate probability distribution. Thus, these smoothed labels bear a striking similarity to logits and can be used for distillation. Analysis and experimental results prove LabelAvg is superior to baselines in terms of accuracy, privacy, and communication data volume.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/JacobsGAVV24,
+	author = {Adriaan Jacobs and
+                  Merve G{\"{u}}lmez and
+                  Alicia Andries and
+                  Stijn Volckaert and
+                  Alexios Voulimeneas},
+	title = {System Call Interposition Without Compromise},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {183--194},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00030},
+	doi = {10.1109/DSN58291.2024.00030},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/JacobsGAVV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Syscall interposition is crucial for tools that monitor/modify application behavior. Mainstream OSes have, therefore, provided syscall interposition APIs for years, but these often incur prohibitive performance penalties in syscall-intensive applications. Recent work showed how to reduce this overhead by rewriting syscall instructions 1 1 Throughout this paper, we will use the term “syscall instruction” to refer to both the x86 SYSCALL and SYSENTER instructions. to invoke the interposer directly, avoiding expensive mode/context switches. However, these methods may not locate/rewrite all relevant instructions, which is essential for many applications. Our key insight is to combine the aforementioned techniques to efficiently intercept all system calls. We present lazypoline, a tool that uses slow kernel interfaces to exhaustively locate valid syscall instructions upon their first use, and then lazily rewrites them to invoke the interposer directly in all subsequent executions. We extensively evaluate lazypoline on micro- and macrobenchmarks and show that it is non-intrusive, fully exhaustive, and it achieves the efficiency of pure rewriting, even for datacenter-scale syscall-intensive workloads.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/LouCXQGZ24,
+	author = {Xiaoxuan Lou and
+                  Kangjie Chen and
+                  Guowen Xu and
+                  Han Qiu and
+                  Shangwei Guo and
+                  Tianwei Zhang},
+	title = {Protecting Confidential Virtual Machines from Hardware Performance
+                  Counter Side Channels},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {195--208},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00031},
+	doi = {10.1109/DSN58291.2024.00031},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/LouCXQGZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In modern cloud platforms, it is becoming more important to preserve the privacy of guest virtual machines (VMs) from the untrusted host. To this end, Secure Encrypted Virtualization (SEV) is developed as a hardware extension to protect VMs by encrypting their memory pages and register states. Unfortunately, such confidential VMs are still vulnerable to micro-architectural side channels, and Hardware Performance Counters (HPCs) are a prominent information leakage source. To make matters worse, currently there is no systematic defense against the HPC side channels. We introduce Aegis, a unified framework for demystifying the inherent relations between the instruction execution and HPC event statistics, and defending VMs against HPC side channels with provable privacy guarantee and minimal performance overhead. Aegis consists of three modules. Application Profiler profiles the application offline and adopts information theory to quantitatively estimate the vulnerability of HPC events. Event Fuzzer leverages the fuzzing technique to automatically generate interesting inputs, i.e., instruction sequences, that can effectively alter the HPC observations. Event Obfuscator injects noisy instructions into the protected VM based on the differential privacy mechanisms for high efficiency and privacy. We present three case studies to demonstrate that Aegis can defeat different types of HPC side-channel attacks (i.e., website fingerprinting, DNN model extraction, keystroke sniffing). Evaluations show that Aegis can effectively decrease the attack accuracy from 90% to 2%, with only 3% overhead on the application execution time and 7% overhead on the CPU usage.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/RanchalPedrosaG24,
+	author = {Alejandro Ranchal{-}Pedrosa and
+                  Vincent Gramoli},
+	title = {{ZLB:} {A} Blockchain to Tolerate Colluding Majorities},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {209--222},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00032},
+	doi = {10.1109/DSN58291.2024.00032},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/RanchalPedrosaG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In general, consensus cannot be solved if an adversary controls a third of the system. Yet, blockchain participants typically reach consensus “eventually” despite an adversary controlling a minority of the system. Exceeding this \\frac{1}{3} cap is made possible by tolerating transient disagreements, where distinct participants select distinct blocks for the same index, before eventually agreeing on the same block. Until now, no blockchain could tolerate an attacker controlling a majority of the system. In this paper, we present Zero-Loss Blockchain ZLB, the first blockchain that tolerates an adversary controlling more than half of the system. ZLB is an open blockchain that combines recent theoretical advances in accountable Byzantine agreement to exclude undeniably faulty replicas. Interestingly, ZLB does not need a known bound on the delay of messages but progressively reduces the portion of alive but corrupt replicas below \\frac{1}{3} , and reaches consensus. Geo-distributed experiments show that ZLB outperforms HotStuff that cannot tolerate n/3 faults and is almost as fast as the scalable Redbelly Blockchain.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/MinkinK24,
+	author = {Marina Minkin and
+                  Baris Kasikci},
+	title = {ZipChannel: Cache Side-Channel Vulnerabilities in Compression Algorithms},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {223--237},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00033},
+	doi = {10.1109/DSN58291.2024.00033},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/MinkinK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While cache side-channel attacks have been known for over a decade, attacks and defenses have been mostly limited to cryptographic algorithms. In this work, we analyze the security of compression algorithms and their susceptibility to cache side-channels. We design TaintChannel, a tool that automatically detects cache side-channel vulnerabilities and apply the tool to compression software to conduct a study of vulnerabilities in popular compression algorithms—LZ77, LZ78, BWT—and their mainstream implementations. We discover that the implementation of all of these algorithms leak some or all of their input data via cache side-channels. This is concerning, as compression algorithms are widely used in software that operates on sensitive data (e.g., HTTPS). We demonstrate the practicality of these vulnerabilities via two end-to-end attacks on Bzip2. These attacks work in two different threat models and use different attack techniques. Our first attack targets compression within an SGX enclave using the Prime+Probe cache attack technique and extracts the entire input while it is being compressed with an accuracy greater than 99%. Because existing cache attack techniques fall short in targeting applications with larger memory footprint such as compression software, we develop new attack techniques for larger buffers. Our second attack works in the threat model when one application attacks a different application. It allows the attacker to identify which file is being compressed out of multiple options.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/NiuRC24,
+	author = {Zifeng Niu and
+                  Manuel Roveri and
+                  Giuliano Casale},
+	title = {ChainNet: {A} Customized Graph Neural Network Model for Loss-Aware
+                  Edge {AI} Service Deployment},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {238--251},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00034},
+	doi = {10.1109/DSN58291.2024.00034},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/NiuRC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Edge AI seeks for the deployment of deep neural network (DNN) based services across distributed edge devices, embedding intelligence close to data sources. Due to capacity constraints at the edge, a difficult challenge lies in planning a dependable deployment that minimizes the data loss rate so as to meet application Quality-of-Service (QoS) goals. In this paper, we present ChainNet, a customized graph neural network (GNN) model serving as a surrogate to assess the reliability of alternative deployments and guide the loss-aware search for an optimal edge AI deployment plan. Extensive results show that ChainNet delivers a substantial improvement in loss prediction accuracy by over 50% compared to established GNN models, such as graph attention networks (GATs). Moreover, we show that ChainNet provides significantly more dependable deployment decisions under a fixed time budget compared to simulation-based search across a spectrum of systems from small to large-scale.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WangZCE24,
+	author = {Houzhe Wang and
+                  Xiaojie Zhu and
+                  Chi Chen and
+                  Paulo Esteves{-}Ver{\'{\i}}ssimo},
+	title = {Goldfish: An Efficient Federated Unlearning Framework},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {252--264},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00035},
+	doi = {10.1109/DSN58291.2024.00035},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WangZCE24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With recent legislation on the right to be forgotten, machine unlearning has emerged as a crucial research area. It facilitates the removal of a user's data from federated trained machine learning models without the necessity for retraining from scratch. However, current machine unlearning algorithms are confronted with challenges of efficiency and validity. To address the above issues, we propose a new framework, named Goldfish. It comprises four modules: basic model, loss function, optimization, and extension. To address the challenge of low validity in existing machine unlearning algorithms, we propose a novel loss function. It takes into account the loss arising from the discrepancy between predictions and actual labels in the remaining dataset. Simultaneously, it takes into consideration the bias of predicted results on the removed dataset. Moreover, it accounts for the confidence level of predicted results. Additionally, to enhance efficiency, we adopt knowledge a distillation technique in the basic model and introduce an optimization module that encompasses the early termination mechanism guided by empirical risk and the data partition mechanism. Furthermore, to bolster the robustness of the aggregated model, we propose an extension module that incorporates a mechanism using adaptive distillation temperature to address the heterogeneity of user local data and a mechanism using adaptive weight to handle the variety in the quality of uploaded models. Finally, we conduct comprehensive experiments to illustrate the effectiveness of proposed approach.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/LiLLLH24,
+	author = {Hong{-}Wei Li and
+                  Ping{-}Ting Liu and
+                  Bo{-}Wei Lin and
+                  Yi{-}Chun Liao and
+                  Yennun Huang},
+	title = {{IPMES:} {A} Tool for Incremental {TTP} Detection Over the System
+                  Audit Event Stream},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {265--273},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00036},
+	doi = {10.1109/DSN58291.2024.00036},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/LiLLLH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advanced persistent threat (APT) cyberattacks are serious threats to corporations and governments. The prolong dwell time associated with APTs significantly increase the difficulty on detecting them in provenance graphs. To reduce the detection complexity, some works have demonstrated the effectiveness of employing pattern matching on provenance graphs in conjunction with APT lifecycle models to pinpoint short-duration attack steps, also known as “tactics, techniques, and procedures” (TTPs). However, when dealing with more complex TTPs, particularly those involving graph-based and partial ordering, few tools can incrementally and efficiently handle them. In this paper, we present IPMES 1 1 https://github.com/littleponywork/IPMES, a tool that has been publicly released to address this gap. By leveraging specific optimizations, it provides efficient incremental matching for those TTPs, and can handle practical system audit event streams. Experiments conducted on synthetic and real-world data demonstrated the practical feasibility of IPMES in TTP detection.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhengTSA24,
+	author = {Haofan Zheng and
+                  Tuan Tran and
+                  Roy Shadmon and
+                  Owen Arden},
+	title = {Decentagram: Highly-Available Decentralized Publish/Subscribe Systems},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {274--287},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00037},
+	doi = {10.1109/DSN58291.2024.00037},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhengTSA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents Decentagram, a decentralized framework for data dissemination using the publish/subscribe messaging model. Decentagram uses blockchain smart contracts to authenticate events that will be published using digital signatures or self-attestation certificates from code running in trusted execution environments (TEEs), both of which are verified on-chain. This approach permits any host with valid credentials to publish verified updates, increasing decentralization and availability of the system as a whole by simplifying compensation and incentivization, even for untrusted hosts running TEEs. Decentagram also supports on-chain subscribers where third-party contracts receive events immediately: within the same transaction as the published event. The same event will also be delivered to off-chain subscribing applications through an off-chain event broker. We provide an open-source implementation of Decentagram, and evaluate the gas cost of its on-chain components and the end-to-end latency of its off-chain component.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhengMWWSW24,
+	author = {Xiang Zheng and
+                  Xingjun Ma and
+                  Shengjie Wang and
+                  Xinyu Wang and
+                  Chao Shen and
+                  Cong Wang},
+	title = {Toward Evaluating Robustness of Reinforcement Learning with Adversarial
+                  Policy},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {288--301},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00038},
+	doi = {10.1109/DSN58291.2024.00038},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhengMWWSW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reinforcement learning agents are susceptible to evasion attacks during deployment. In single-agent environments, these attacks can occur through imperceptible perturbations injected into the inputs of the victim policy network. In multi-agent environments, an attacker can manipulate an adversarial opponent to influence the victim policy's observations indirectly. While adversarial policies offer a promising technique to craft such attacks, current methods are either sample-inefficient due to poor exploration strategies or require extra surrogate model training under the black-box assumption. To address these challenges, in this paper, we propose Intrinsically Motivated Adversarial Policy (IMAP) for efficient black-box adversarial policy learning in both single- and multi-agent environments. We formulate four types of adversarial intrinsic regularizers—maximizing the adversarial state coverage, policy coverage, risk, or divergence—to discover potential vulnerabilities of the victim policy in a principled way. We also present a novel bias-reduction method to balance the extrinsic objective and the adversarial intrinsic regularizers adaptively. Our experiments validate the effectiveness of the four types of adversarial intrinsic regularizers and the bias-reduction method in enhancing black-box adversarial policy learning across a variety of environments. Our IMAP successfully evades two types of defense methods, adversarial training and robust regularizer, decreasing the performance of the state-of-the-art robust WocaR-PPO agents by 34%-54% across four single-agent tasks. IMAP also achieves a state-of-the-art attacking success rate of 83.91% in the multi-agent game YouShallNotPass. Our code is available at https://github.com/x-zheng16/IMAP.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/MaitraASW24,
+	author = {Sudip Maitra and
+                  Tolga O. Atalay and
+                  Angelos Stavrou and
+                  Haining Wang},
+	title = {Towards Shielding 5G Control Plane Functions},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {302--315},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00039},
+	doi = {10.1109/DSN58291.2024.00039},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/MaitraASW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network Functions Virtualization (NFV) enables flexible and scalable 5G core deployment but it also introduces new attack vectors into the mobile network ecosystem, especially when network functions are deployed on public cloud infrastructure. To address this issue, Third Generation Partnership Project (3GPP) standardization body recommends isolating critical 5G core functionalities inside Hardware Mediated Execution Enclaves (HMEEs). However, the use of HMEEs can incur debilitating QoS degradation in control plane functions including Authentication and Key Agreement (AKA) protocol. In this paper, we design and implement network slices with HMEE-enforced isolation for sensitive AKA functions and characterize their performance. Our findings reveal that the use of HMEE leads to 1.2 to 1.5× increase in function execution time and 2.2 to 2.9× increase in response time for the isolated containers. While appearing very large, this overhead is a small fraction of the end-to-end session setup latency. To evaluate the feasibility of HMEE, we use a real commercial User Equipment (UE) to register with the 5G core network through the isolated AKA functions. Finally, we discuss the role of HMEEs in addressing the key issues introduced by NFV.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/KhanIM24,
+	author = {Anamta Khan and
+                  Naghmeh Ivaki and
+                  Henrique Madeira},
+	title = {A Comprehensive Study on Drones Resilience in the Presence of Inertial
+                  Measurement Unit Faults},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {316--323},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00040},
+	doi = {10.1109/DSN58291.2024.00040},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/KhanIM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unmanned aerial vehicles (UAVs) have gained immense popularity for their versatility and diverse applications. However, this increased usage has raised concerns about the safety and security of UAVs, emphasizing the critical role of their Inertial Measurement Units (IMUs) in ensuring accurate orientation and position data. IMU faults, including both Accelerometer faults and Gyrometer faults, can lead to severe consequences, such as mission failures, collisions, or loss of control. This study addresses the need to enhance UAV resilience in urban airspace by exploring the impact of various IMU faults. A comprehensive fault model is introduced in this paper, covering a range of faults from hardware malfunctions to external attacks. Through extensive fault injection experiments in a simulated environment, the study assesses the effects of different fault types and durations on mission outcomes, providing valuable insights for developing resilient and fault-tolerant UAV systems. Evaluation metrics, including inner and outer bubble violations, missions completed, flight duration, and distance traveled, offer a comprehensive understanding of IMU fault impacts in dynamic operational scenarios. Results reveal that longer injection durations, particularly at 30 seconds, increase bubble violations and significantly reduce mission completion rates. Accelerometer faults, such as “Accelerometer Freeze” and “Accelerometer Random” exhibit reduced mission completion rates of 42.5% and 5%, respectively. Gyrometer faults, especially “Gyrometer Minimum” and “Gyrometer Random” lead to the lowest mission completion rates (2.5%). Additionally, IMU faults (where the fault affects both the Accelerometer and Gyrometer), notably “IMU Minimum”, “IMU Freeze”, and “IMU Random” result in complete mission failures, highlighting the importance of understanding specific fault characteristics. These insights can contribute to developing fault tolerance mechanisms and resilient UAV systems in complex and dynamic environments.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/TangAMCWD24,
+	author = {Siyuan Tang and
+                  Eihal Alowaisheq and
+                  Xianghang Mi and
+                  Yi Chen and
+                  XiaoFeng Wang and
+                  Yanzhi Dou},
+	title = {Stealthy Peers: Understanding Security and Privacy Risks of Peer-Assisted
+                  Video Streaming},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {324--337},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00041},
+	doi = {10.1109/DSN58291.2024.00041},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/TangAMCWD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Peer-assisted delivery network (PDN) can significantly reduce the bandwidth cost incurred by traditional CDN services. However, it is unclear whether they have been deployed extensively and their security implications have never been investigated thoroughly. In this paper, we report the first effort to address this issue through an automatic pipeline to discover real-world PDN services and their customers, and a PDN analysis framework to test the potential security and privacy risks of these services. Our results have revealed the extensive adoption of PDN across the Internet, especially by Chinese video platforms. Most importantly, our analysis on these PDN services has brought to light a series of novel security vulnerabilities, i.e., free riding of PDN services, video segment pollution, and unreported privacy risks, i.e., resource squatting and extensive leakage of video viewers' IPs. We have responsibly disclosed these security risks to relevant PDN providers which in turn have well acknowledged our findings.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/HammarS24,
+	author = {Kim Hammar and
+                  Rolf Stadler},
+	title = {Intrusion Tolerance for Networked Systems through Two-Level Feedback
+                  Control},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {338--352},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00042},
+	doi = {10.1109/DSN58291.2024.00042},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/HammarS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We formulate intrusion tolerance for a system with service replicas as a two-level optimal control problem. On the local level node controllers perform intrusion recovery, and on the global level a system controller manages the replication factor. The local and global control problems can be formulated as classical problems in operations research, namely, the machine replacement problem and the inventory replenishment problem. Based on this formulation, we design TOLERANCE, a novel control architecture for intrusion-tolerant systems. We prove that the optimal control strategies on both levels have threshold structure and design efficient algorithms for computing them. We implement and evaluate TOLERANCE in an emulation environment where we run 10 types of network intrusions. The results show that TOLERANCE can improve service availability and reduce operational cost compared with state-of-the-art intrusion-tolerant systems.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WattooVZDZHGS24,
+	author = {Zainab Saeed Wattoo and
+                  Petal Vitis and
+                  Ruizhe Zhu and
+                  Noah Depner and
+                  Ivory Zhang and
+                  Jason Hein and
+                  Arpan Gujarati and
+                  Margo I. Seltzer},
+	title = {RABIT, a Robot Arm Bug Intervention Tool for Self-Driving Labs},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {353--361},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00043},
+	doi = {10.1109/DSN58291.2024.00043},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WattooVZDZHGS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Self-driving labs are transforming scientific research and accelerating experimentation using software-controlled lab equipment. These labs are exposed to human errors by inexperienced researchers working in the lab (e.g., setting incorrect target location could cause a robot arm to collide with an expensive piece of equipment). We present RABIT, a Robot Arm Bug Intervention Tool, which (i) allows systematically specifying safety rules across diverse devices and (ii) evaluates and enforces these rules using simulation, a low-fidelity testbed, and a production environment. We report our experience adapting RABIT for the Hein Lab, a state-of-the-art research lab that blends advanced robotics with synthetic organic chemistry.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhaoXCQZJ24,
+	author = {Yu Zhao and
+                  Wenjie Xue and
+                  Weijie Chen and
+                  Weizhong Qiang and
+                  Deqing Zou and
+                  Hai Jin},
+	title = {Owl: Differential-Based Side-Channel Leakage Detection for {CUDA}
+                  Applications},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {362--376},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00044},
+	doi = {10.1109/DSN58291.2024.00044},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhaoXCQZJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Over the past decade, various methods for detecting side-channel leakage have been proposed and proven to be effective against CPU side-channel attacks. These methods are valuable in assisting developers to identify and patch side-channel vulnerabilities. Nevertheless, recent research has revealed the feasibility of exploiting side-channel vulnerabilities to steal sensitive information from GPU applications, which are beyond the reach of previous side-channel detection methods. Therefore, in this paper, we conduct an in-depth examination of various GPU features and present Owl, a novel side-channel detection tool targeting CUDA applications on NVIDIA GPUs. Owl is designed to detect and locate side-channel leakage in various types of CUDA applications. When tracking the execution of CUDA applications, we design a hierarchical tracing scheme and extend the A-DCFG (Attributed Dynamic Control Flow Graph) to address the massively parallel execution in CUDA, ensuring Owl's detection scalability. After completing the initial assessment and filtering, we conduct statistical tests on the differences in program traces to determine whether they are indeed caused by input variations, subsequently facilitating the positioning of side-channel leaks. We evaluate Owl's capability to detect side-channel leaks by testing it on Libgpucrypto, PyTorch, and nvJPEG. Meanwhile, we verify that our solution effectively handles a large number of threads. Owl has successfully identified hundreds of leaks within these applications. To the best of our knowledge, we are the first to implement side-channel leakage detection for general CUDA applications.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GramoliLTZ24,
+	author = {Vincent Gramoli and
+                  Zhenliang Lu and
+                  Qiang Tang and
+                  Pouriya Zarbafian},
+	title = {{AOAB:} Optimal and Fair Ordering of Financial Transactions},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {377--388},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00045},
+	doi = {10.1109/DSN58291.2024.00045},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GramoliLTZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, opportunistic traders have extracted hundreds of millions of dollars from blockchains by reordering financial transactions. The problem stems from the fact that blockchains implement a state machine replication that orders transactions in any consistent order, regardless of the order in which these transactions were received. Existing attempts at enforcing the order perceived by honest participants suffer from cyclic dependencies or message delays. In this paper, we propose the Asynchronous Ordered Atomic Broadcast (AOAB) protocol. It does not suffer from cyclic dependencies or message delays because (i) it assigns an absolute timestamp to transactions, and (ii) it tolerates unbounded message delays. Besides being the first protocol to solve this problem, AOAB is communication-optimal and resilience-optimal. In particular, AOAB makes use of threshold signatures and information dissemination to reach a communication complexity of \\mathcal{O}(n\\ell+\\lambda n^{2})\n, where n\nis the number of processes, \\ell\nis the input (transaction) size and \\lambda\nis the security parameter. This is optimal when \\ell\\geq\\lambda n\n,}
+}
+
+
+@inproceedings{DBLP:conf/dsn/LiaoGSZNAS24,
+	author = {Jinghui Liao and
+                  Borui Gong and
+                  Wenhai Sun and
+                  Fengwei Zhang and
+                  Zhenyu Ning and
+                  Man Ho Au and
+                  Weisong Shi},
+	title = {{BFTRAND:} Low-Latency Random Number Provider for {BFT} Smart Contracts},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {389--402},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00046},
+	doi = {10.1109/DSN58291.2024.00046},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/LiaoGSZNAS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Random numbers play a crucial role in decen-tralized applications (dApps) like decentralized finance (DeFi) and non-fungible tokens (NFTs). However, their generation faces challenges due to blolckchain's deterministic and decentralized nature, risking smart contract security and ecosystem stability. Prior solutions, including Oracles, employing commit-execute schemes, suffer from higher transaction fees, extended processing times, and increased on-chain storage, compromising efficiency. This paper proposes a novel random number provider (RNP) protocol for smart contracts, eliminating dependencies on traditional commit-execute approaches. Furthermore, we systematically identify potential random number-related attacks on smart contracts, particularly Post-reveal Undo Attacks (PUAs), where attackers may reverse contract operations when randomness is unfavorable, and discuss the security requirements. Our protocol addresses these attacks by (1) incorporating distributed random beacons (D RBs) with consensus processes, bridging the semantic gap between DRB and consensus, and (2) thoroughly analyzing and classifying four types of PUA and offering robust mitigations, alongside presenting a security proof. Our experiments show the protocol significantly enhances response times and security for random number queries in smart contracts, slashing request fees by at least 89 % and reducing on-chain data by 76.4% versus current methods. This work advances the integration of DRB protocols and consensus mechanisms, securing and optimizing random number applications in dApps, thus fostering the creation of more dependable, robust systems.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GaoZWZ24,
+	author = {Song Gao and
+                  Bohua Zhan and
+                  Zhilin Wu and
+                  Lijun Zhang},
+	title = {Verifying Randomized Consensus Protocols with Common Coins},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {403--415},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00047},
+	doi = {10.1109/DSN58291.2024.00047},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GaoZWZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Randomized fault-tolerant consensus protocols with common coins are widely used in cloud computing and blockchain platforms. Due to their fundamental role, it is vital to guarantee their correctness. Threshold automata is a formal model designed for the verification of fault-tolerant consensus protocols. It has recently been extended to probabilistic threshold automata (PTAs) to verify randomized fault-tolerant consensus protocols. Nevertheless, PTA can only model randomized consensus protocols with local coins. In this work, we extend PTA to verify randomized fault-tolerant consensus protocols with common coins. Our main idea is to add a process to simulate the common coin (the so-called common-coin process). Although the addition of the common-coin process destroys the symmetry and poses technical challenges, we show how PTA can be adapted to overcome the challenges. We apply our approach to verify the agreement, validity and almostsure termination properties of 8 randomized consensus protocols with common coins.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhangCHCL24,
+	author = {Junyu Zhang and
+                  Pengfei Chen and
+                  Zilong He and
+                  Hongyang Chen and
+                  Xiaoyun Li},
+	title = {Real-Time Intrusion Detection and Prevention with Neural Network in
+                  Kernel Using eBPF},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {416--428},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00048},
+	doi = {10.1109/DSN58291.2024.00048},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhangCHCL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of public cloud, real-time intrusion detection is becoming necessary. Current methods neither address the overhead of real-time network data capturing, nor effectively balance security level with performance. These issues can be addressed by offloading intrusion detection and prevention to the extended Berkeley Packet Filter (eBPF). However, current eBPF-based methods suffer from shortcomings in model performance or inference overhead. Moreover, they overlook the issues of eBPF in real-time scenarios, such as maximum eBPF instruction limitations. In this paper, we redesign the Neural Network inference mechanism to address the limitations of eBPF. Then, we propose a thread-safe parameter hot-updating mechanism without explicit spin lock. Evaluations indicate that our method achieves model performance comparable to the current best eBPF-based method while reducing memory overhead (5KB) and inference time (3000-5000ns per flow). Our method achieve F1-scores of 0.933 and 0.992 on the offline and online datasets, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/SuZLLCV24,
+	author = {Xingyu Su and
+                  Xiaojie Zhu and
+                  Yang Li and
+                  Yong Li and
+                  Chi Chen and
+                  Paulo Jorge Esteves Ver{\'{\i}}ssimo},
+	title = {PagPassGPT: Pattern Guided Password Guessing via Generative Pretrained
+                  Transformer},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {429--442},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00049},
+	doi = {10.1109/DSN58291.2024.00049},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/SuZLLCV24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Amidst the surge in deep learning-based password guessing models, challenges of generating high-quality passwords and reducing duplicate passwords persist. To address these challenges, we present PagPassGPT, a password guessing model constructed on a Generative Pretrained Transformer (GPT). It can perform pattern guided guessing by incorporating pattern structure information as background knowledge, resulting in a significant increase in the hit rate. Furthermore, we propose D&C-GEN to reduce the repeat rate of generated passwords, which adopts the concept of a divide-and-conquer approach. The primary task of guessing passwords is recursively divided into non-overlapping subtasks. Each subtask inherits the knowledge from the parent task and predicts succeeding tokens. In comparison to the state-of-the-art model, our proposed scheme exhibits the capability to correctly guess 12% more passwords while producing 25% fewer duplicates.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/BaloochestaniGJM24,
+	author = {Arian Baloochestani and
+                  Hanish Gogada and
+                  Leander Jehl and
+                  Hein Meling},
+	title = {Iniva: Inclusive and Incentive-Compatible Vote Aggregation},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {443--455},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00050},
+	doi = {10.1109/DSN58291.2024.00050},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/BaloochestaniGJM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many blockchain platforms use committee-based consensus for scalability, finality, and security. In this consensus scheme, a committee decides which blocks get appended to the chain, typically through several voting phases. Platforms typically leverage the committee members' recorded votes to reward, punish, or detect failures. A common approach is to let the block proposer decide which votes to include, opening the door to possible attacks. For example, a malicious proposer can omit votes from targeted committee members, resulting in lost profits and, ultimately, their departure from the system. This paper presents Iniva, an inclusive and incentive-compatible vote aggregation scheme that prevents such vote omission attacks. Iniva relies on a tree overlay with carefully selected fallback paths, making it robust against process failures without needing reconfiguration or additional redundancy. Our analysis shows that Iniva significantly reduces the chance to omit individual votes while ensuring that omitting many votes incurs a significant cost. In addition, our experimental results show that Iniva enjoys robustness, scalability, and reasonable throughput.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/BandarupalliBBKLR24,
+	author = {Akhil Bandarupalli and
+                  Adithya Bhat and
+                  Saurabh Bagchi and
+                  Aniket Kate and
+                  Chen{-}Da Liu{-}Zhang and
+                  Michael K. Reiter},
+	title = {Delphi: Efficient Asynchronous Approximate Agreement for Distributed
+                  Oracles},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {456--469},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00051},
+	doi = {10.1109/DSN58291.2024.00051},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/BandarupalliBBKLR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Agreement protocols are crucial in various emerging applications, spanning from distributed (blockchains) oracles to fault-tolerant cyber-physical systems. In scenarios where sensor/oracle nodes measure a common source, maintaining output within the convex range of correct inputs, known as convex validity, is imperative. Present asynchronous convex agreement protocols employ either randomization, incurring substantial computation overhead, or approximate agreement techniques, leading to high\nO(\nn\n3\n)\n~\ncommunication for an\nn\n-node system. This paper introduces Delphi, a deterministic protocol with\nO(\nn\n2\n)\n~\ncommunication and minimal computation overhead. Delphi assumes that honest inputs are bounded, except with negligible probability, and integrates agreement primitives from literature with a novel weighted averaging technique. Experimental results highlight Delphi's superior performance, showcasing a significantly lower latency compared to state-of-the-art protocols. Specifically, for an\nn\n= 160-node system, Delphi achieves an 8x and 3x improvement in latency within CPS and AWS environments, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/DoidgeRST24,
+	author = {Isaac Doidge and
+                  Raghavendra Ramesh and
+                  Nibesh Shrestha and
+                  Joshua Tobkin},
+	title = {Moonshot: Optimizing Block Period and Commit Latency in Chain-Based
+                  Rotating Leader {BFT}},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {470--482},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00052},
+	doi = {10.1109/DSN58291.2024.00052},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/DoidgeRST24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Existing chain-based rotating-leader BFT SMR protocols for the partially synchronous network model with constant commit latencies incur block periods of at least\n2δ\n(where\nδ\nis the message transmission latency). While a protocol with a block period of\nδ\nexists under the synchronous model, its commit latency is linear in the size of the system. To close this gap, we present the first chain-based BFT SMR protocols with\nδ\ndelay between the proposals of consecutive honest leaders and commit latencies of\n3δ\n. We present three protocols for the partially synchronous model under different notions of optimistic responsiveness, two of which implement pipelining. All of our protocols achieve reorg resilience and two have short view lengths; properties that many existing chain-based BFT SMR protocols lack. We present an evaluation of our protocols in a wide-area network wherein they demonstrate significant increases in throughput and reductions in latency compared to the state-of-the-art, Jolteon. Our results also demonstrate that techniques commonly employed to reduce communication complexity—such as vote-pipelining and the use of designated vote-aggregators—actually reduce practical performance in many settings.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GyorgyiLSS24,
+	author = {Csaba Gy{\"{o}}rgyi and
+                  Kim G. Larsen and
+                  Stefan Schmid and
+                  Jir{\'{\i}} Srba},
+	title = {SyRep: Efficient Synthesis and Repair of Fast Re-Route Forwarding
+                  Tables for Resilient Networks},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {483--494},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00053},
+	doi = {10.1109/DSN58291.2024.00053},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GyorgyiLSS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In modern communication networks with stringent dependability requirements, local fast re-routing (FRR) is essential for a quick response to link failures. Configuring FRR for multiple failures is, however, challenging since a router's forwarding table may take into account only the failed links directly incident to it. We propose SyRep, an efficient method to repair and synthesize resilient FRR forwarding tables. At the heart of SyRep lies a method which identifies and removes ill-defined routing entries and employs symbolic binary decision diagram (BDD) technology to automatically replace the removed entries with correct values. SyRep cannot only be used to efficiently repair existing forwarding tables, but also to synthesize new tables from scratch, using an efficient hybrid approach: by first using fast heuristics that provide close-to-resilient routing tables and then quickly repair the ill-defined entries. We present such a fast heuristic based on novel structural reduction rules and our empirical evaluation shows that SyRep is up to three orders of magnitude faster compared to the state-of-the-art.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/XiaoCHH24,
+	author = {Yuting Xiao and
+                  Jiongyi Chen and
+                  Yupeng Hu and
+                  Jing Huang},
+	title = {{FIRMRES:} Exposing Broken Device-Cloud Access Control in IoT Through
+                  Static Firmware Analysis},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {495--506},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00054},
+	doi = {10.1109/DSN58291.2024.00054},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/XiaoCHH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Device-cloud interfaces are a critical component of IoT given their centrality of the cloud-side control over the connected devices, which has attracted an increasing number of attacks exploiting their access control. Regrettably, there is a lack of techniques to facilitate the examination of such a critical interface, primarily hindered by the challenges of dynamic firmware analysis to reconstruct device-cloud messages and generate testing cues. This paper presents FIRMRES, a principled static approach that automatically reconstructs device-cloud messages by modeling message construction semantics in IoT firmware. At the center of FIRMRES is a message field tree which is formed of the backward data flows from message delivery callsites to the potential sources of message fields. By walking through, transforming, and contextual learning from this tree, device-cloud messages are automatically reconstructed and a set of semantics during “message construction” such as the message format, the field semantics, and the order of the fields are inferred. Facilitated with the messages reconstructed by FIRMRES, we were able to manually examine the access control of device-cloud interfaces. FIRMRES reconstructed 246 effective messages from the firmware of 20 IoT devices, leading to the discovery of 13 previously-unknown vulnerabilities in their clouds.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/LiuJYLDLLT24,
+	author = {Mingxuan Liu and
+                  Zhenglong Jin and
+                  Jiahai Yang and
+                  Baoiun Liu and
+                  Haixin Duan and
+                  Ying Liu and
+                  Ximeng Liu and
+                  Shujun Tang},
+	title = {ChatScam: Unveiling the Rising Impact of ChatGPT on Domain Name Abuse},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {507--521},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00055},
+	doi = {10.1109/DSN58291.2024.00055},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/LiuJYLDLLT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since 2022, ChatGPT has been a big breakthrough in technology, creating lots of discussions online. It has had big effects in different areas, but in cybersecurity, it is both good and bad. There has been a lot of misuse, especially with squatting domains. Our research aims to understand this misuse and the potential threats it poses. We develop a novel method that looks at historical Passive DNS (PDNS) data. Based on the two-stage identification, our method can efficiently and accurately collect ChatGPT-related squatting domains. In the end, we found over 1.3 million ChatGPT-related squatting domains, part of which were shared with the security community. Our findings show that these squatting domains are increasing quickly. This is the case whether the keywords related to ChatG PT are registered with the domain registrar or set up on sub domains. Even though the number of domains is increasing, only 5.3 % set up meaningful content on their websites. After digging into their web contents, we found that these web sites show various signs of misuse, such as promotion on illegal underground websites and emerging fraudulent activities related to dialogue features. The security community is not fully aware of these threats yet. We are the first to conduct a large-scale quantitative analysis of ChatGPT-related abusive behavior. We believe that our work unveils the abuse ecosystem surrounding ChatGPT-related squatting domains. We hope to underscore the urgent need for increased attention and protective measures against ChatGPT-related domain abuse.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ChenZJZHXD24,
+	author = {Yang Chen and
+                  Shengzhi Zhang and
+                  Xiaoqi Jia and
+                  Qihang Zhou and
+                  Heqing Huang and
+                  Shaowen Xu and
+                  Haochao Du},
+	title = {SEDSpec: Securing Emulated Devices by Enforcing Execution Specification},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {522--534},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00056},
+	doi = {10.1109/DSN58291.2024.00056},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ChenZJZHXD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Device emulation is a vital aspect of virtualization, yet remains vulnerable to security threats. Prior research has focused on monitoring I/O data flow or identifying internal device anomalies but often falls short in precision and automation. In this paper, we propose a novel method that leverages the normal operations of an emulated device to formulate an execution specification. The specification acts as a criterion to evaluate the device's behavior and state transitions. We implement SEDSpec, a prototype system that automatically generates the execution specification for an emulated device and devises three check strategies for identifying any deviations from this specification, thereby ensuring normal operations and enhancing the security of the emulated device. We evaluate SEDSpec with five different execution specifications. The results show that SEDSpec can detect anomalies caused by vulnerability exploitation while maintaining the devices' regular functioning with minimal performance overhead.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/BlockloveRRPKKK24,
+	author = {Jason Blocklove and
+                  Md Raz and
+                  Prithwish Basu Roy and
+                  Hammond Pearce and
+                  Prashanth Krishnamurthy and
+                  Farshad Khorrami and
+                  Ramesh Karri},
+	title = {Offramps: An FPGA-Based Intermediary for Analysis and Modification
+                  of Additive Manufacturing Control Systems},
+	booktitle = {54th Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2024, Brisbane, Australia, June 24-27, 2024},
+	pages = {535--543},
+	publisher = {{IEEE}},
+	year = {2024},
+	url = {https://doi.org/10.1109/DSN58291.2024.00057},
+	doi = {10.1109/DSN58291.2024.00057},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/BlockloveRRPKKK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybersecurity threats in Additive Manufacturing (AM) are an increasing concern as AM adoption continues to grow. AM is now being used for parts in the aerospace, transportation, and medical domains. Threat vectors which allow for part compromise are particularly concerning, as any failure in these domains would have life-threatening consequences. A major challenge to investigation of AM part-compromises comes from the difficulty in evaluating and benchmarking both identified threat vectors as well as methods for detecting adversarial actions. In this work, we introduce a generalized platform for systematic analysis of attacks against and defenses for 3D printers. Our “OFFRAMPS” platform is based on the open-source 3D printer control board “RAMPS.“ Offramps allows analysis, recording, and modification of all control signals and I/O for a 3D printer. We show the efficacy of Offramps by presenting a series of case studies based on several Trojans, including ones identified in the literature, and show that Offramps can both emulate and detect these attacks, i.e., it can both change and detect arbitrary changes to the g-code print commands.}
+}

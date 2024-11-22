@@ -1,0 +1,1059 @@
+@inproceedings{DBLP:conf/dsn/ShenLYCZDZZ22,
+	author = {Kaiwen Shen and
+                  Jianyu Lu and
+                  Yaru Yang and
+                  Jianjun Chen and
+                  Mingming Zhang and
+                  Haixin Duan and
+                  Jia Zhang and
+                  Xiaofeng Zheng},
+	title = {HDiff: {A} Semi-automatic Framework for Discovering Semantic Gap Attack
+                  in {HTTP} Implementations},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {1--13},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00014},
+	doi = {10.1109/DSN53405.2022.00014},
+	timestamp = {Sun, 04 Aug 2024 19:40:43 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ShenLYCZDZZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Internet has become a complex distributed network with numerous middle-boxes, where an end-to-end HTTP request is often processed by multiple intermediate servers before it reaches its destination. However, a general problem in this distributed network is the semantic gap attack, which is defined as inconsistent semantic interpretations in the processing chain. While some studies have found individual semantic gap attacks, most of them are based on ad-hoc manual analysis, which is inadequate for fundamentally enhancing the security assurance of a system as complex as the HTTP network.In this work, we propose HDiff, a novel semi-automatic detecting framework, systematically exploring semantic gap attacks in HTTP implementations. We designed a documentation analyzer that employs natural language processing techniques to extract rules from specifications, and utilized differential testing to discover semantic gap attacks. We implemented and evaluated it to find three kinds of semantic gap attacks in 10 popular HTTP implementations. In total, HDiff found 14 vulnerabilities and 29 affected server pairs covering all three types of attacks. In particular, HDiff also discovered three new types of attack vectors. We have already duly reported all identified vulnerabilities to the involved HTTP software vendors and obtained 7 new CVEs from well-known HTTP software, including Apache, Tomcat, Weblogic, and Microsoft IIS Server.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GiantsidiBCB22,
+	author = {Dimitra Giantsidi and
+                  Maurice Bailleu and
+                  Natacha Crooks and
+                  Pramod Bhatotia},
+	title = {Treaty: Secure Distributed Transactions},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {14--27},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00015},
+	doi = {10.1109/DSN53405.2022.00015},
+	timestamp = {Sun, 04 Aug 2024 19:40:43 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GiantsidiBCB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed transaction processing is a fundamental building block for large-scale data management in the cloud. Given the threats of security violations in untrusted cloud environments, our work focuses on: How to design a distributed transactional KV store that achieves high-performance serializable transactions, while providing strong security properties?We introduce Treaty, a secure distributed transactional KV storage system that supports serializable ACID transactions while guaranteeing strong security properties: confidentiality, integrity, and freshness. Treaty leverages trusted execution environments (TEEs) to bootstrap its security properties, but it extends the trust provided by the limited enclave (volatile) memory region within a single node to build a secure (stateful) distributed transactional KV store over the untrusted storage, network and machines. To achieve this, Treaty embodies a secure two-phase commit protocol co-designed with a high-performance network library for TEEs. Further, Treaty ensures secure and crash-consistent persistency of committed transactions using a stabilization protocol. Our evaluation on a real hardware testbed based on the YCSB and TPC-C benchmarks shows that Treaty incurs reasonable overheads, while achieving strong security properties.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/TuliCJ22,
+	author = {Shreshth Tuli and
+                  Giuliano Casale and
+                  Nicholas R. Jennings},
+	title = {{CAROL:} Confidence-Aware Resilience Model for Edge Federations},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {28--40},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00016},
+	doi = {10.1109/DSN53405.2022.00016},
+	timestamp = {Tue, 21 Mar 2023 20:58:54 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/TuliCJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the deployment of large-scale Inter-net of Things (IoT) applications has given rise to edge federations that seamlessly interconnect and leverage resources from multiple edge service providers. The requirement of supporting both latency-sensitive and compute-intensive IoT tasks necessitates service resilience, especially for the broker nodes in typical broker-worker deployment designs. Existing fault-tolerance or resilience schemes often lack robustness and generalization capability in non-stationary workload settings. This is typically due to the expensive periodic fine-tuning of models required to adapt them in dynamic scenarios. To address this, we present a confidence aware resilience model, CAROL, that utilizes a memory-efficient generative neural network to predict the Quality of Service (QoS) for a future state and a confidence score for each prediction. Thus, whenever a broker fails, we quickly recover the system by executing a local-search over the broker-worker topology space and optimize future QoS. The confidence score enables us to keep track of the prediction performance and run parsimonious neural network fine-tuning to avoid excessive overheads, further improving the QoS of the system. Experiments on a Raspberry-Pi based edge testbed with IoT benchmark applications show that CAROL outperforms state-of-the-art resilience schemes by reducing the energy consumption, deadline violation rates and resilience overheads by up to 16, 17 and 36 percent, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/HongGZLZC22,
+	author = {Zicong Hong and
+                  Song Guo and
+                  Rui Zhang and
+                  Peng Li and
+                  Yufeng Zhan and
+                  Wuhui Chen},
+	title = {Cycle: Sustainable Off-Chain Payment Channel Network with Asynchronous
+                  Rebalancing},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {41--53},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00017},
+	doi = {10.1109/DSN53405.2022.00017},
+	timestamp = {Fri, 10 Nov 2023 17:06:05 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/HongGZLZC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Payment channel network (PCN) is a promising off-chain technology for blockchain scalability, but it suffers from poor sustainability in practice. In other words, due to the imbalanced transfer in channels, the balance in one direction of channels gradually becomes exhausted until the PCN is rebalanced via a consensus-based rebalancing protocol, during which the involved channels must be suspended. This paper presents Cycle, the first off-chain protocol for a sustainable PCN. It not only keeps the PCN at a balanced level consistently but also avoids the channel freeze incurred by the rebalancing protocol, leading to minimum failed payments and sustained PCN service, respectively. Cycle achieves these benefits based on a novel idea of asynchronous rebalancing. During the normal off-chain running, the participants share the information about their payments and asynchronously rebalance the PCN following the principle that payments along circular channels can cancel each other out. To guarantee security, the protocol resolves the disputes resulting from network latency or malicious participants by a message mechanism for synchronization and a smart contract for arbitration. Moreover, to address the privacy concern during the information sharing, a truncated Laplace mechanism is designed to achieve differential privacy. Finally, we provide a proof-of-concept implementation in Ethereum, over which a real data-based simulation shows that Cycle satisfies 31% more payments than the state-of-the-art technique.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/SuiDZ22,
+	author = {Xiao Sui and
+                  Sisi Duan and
+                  Haibin Zhang},
+	title = {Marlin: Two-Phase {BFT} with Linearity},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {54--66},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00018},
+	doi = {10.1109/DSN53405.2022.00018},
+	timestamp = {Tue, 07 May 2024 20:05:31 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/SuiDZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the first Byzantine fault-tolerant (BFT) protocol with linear communication complexity, HotStuff (PODC 2019) has received significant attention. HotStuff has three round-trips for both normal case operations and view change protocols. Follow-up studies attempt to reduce the number of phases for HotStuff. These protocols, however, all give up of one thing in return for another.This paper presents Marlin, a BFT protocol with linearity, having two phases for normal case operations and two or three phases for view changes. Marlin uses the same cryptographic tools as in HotStuff and introduces no additional assumptions. We implement a new and efficient Golang library for Marlin and HotStuff, showing Marlin outperforms HotStuff for both the common case and the view change.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/RuschBMSKOSSPKP22,
+	author = {Signe R{\"{u}}sch and
+                  Kai Bleeke and
+                  Ines Messadi and
+                  Stefan Schmidt and
+                  Andreas Krampf and
+                  Katharina Olze and
+                  Susanne Stahnke and
+                  Robert Schmid and
+                  Lukas Pirl and
+                  Roland Kittel and
+                  Andreas Polze and
+                  Marquart Franz and
+                  Matthias M{\"{u}}ller and
+                  Leander Jehl and
+                  R{\"{u}}diger Kapitza},
+	title = {ZugChain: Blockchain-Based Juridical Data Recording in Railway Systems},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {67--78},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00019},
+	doi = {10.1109/DSN53405.2022.00019},
+	timestamp = {Sat, 30 Sep 2023 09:39:08 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/RuschBMSKOSSPKP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In modern trains, a juridical recording unit logs events that occur during operation. This data is used to reconstruct the exact chain of events in case of failures and crashes. To ensure data recovery after an accident, the recorder is hardened against physical damage and secured against tampering; however, it is a single proprietary device and by no means indestructible.This paper presents ZugChain, a distributed, blockchain-based juridical recording unit that opportunistically utilizes on-train hardware. ZugChain offers high reliability via replication and tamper-resistance due to the nature of blockchains. It implements a permissioned blockchain based on a Byzantine fault-tolerant agreement protocol suitable for diverse communication systems. To utilize the logged data for advanced services, e. g., predictive maintenance, ZugChain securely and continuously exports traces to private data centers. We demonstrate ZugChain's feasibility with an implementation running on real train hardware, where we show that ZugChain orders data within 14 ms using at maximum 15 % of the total available shared CPU resources, thus fulfilling requirements of juridical recorders.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhouSRYSSA22,
+	author = {Xugui Zhou and
+                  Anna Schmedding and
+                  Haotian Ren and
+                  Lishan Yang and
+                  Philip Schowitz and
+                  Evgenia Smirni and
+                  Homa Alemzadeh},
+	title = {Strategic Safety-Critical Attacks Against an Advanced Driver Assistance
+                  System},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {79--87},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00020},
+	doi = {10.1109/DSN53405.2022.00020},
+	timestamp = {Sat, 30 Sep 2023 09:39:08 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhouSRYSSA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A growing number of vehicles are being transformed into semi-autonomous vehicles (Level 2 autonomy) by relying on advanced driver assistance systems (ADAS) to improve the driving experience. However, the increasing complexity and connectivity of ADAS expose the vehicles to safety-critical faults and attacks. This paper investigates the resilience of a widely-used ADAS against safety-critical attacks that target the control system at opportune times during different driving scenarios and cause accidents. Experimental results show that our proposed Context-Aware attacks can achieve an 83.4% success rate in causing hazards, 99.7% of which occur without any warnings. These results highlight the intolerance of ADAS to safety-critical attacks and the importance of timely interventions by human drivers or automated recovery mechanisms to prevent accidents.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/JhaCTHSKKI22,
+	author = {Saurabh Jha and
+                  Shengkun Cui and
+                  Timothy Tsai and
+                  Siva Kumar Sastry Hari and
+                  Michael B. Sullivan and
+                  Zbigniew T. Kalbarczyk and
+                  Stephen W. Keckler and
+                  Ravishankar K. Iyer},
+	title = {Exploiting Temporal Data Diversity for Detecting Safety-critical Faults
+                  in {AV} Compute Systems},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {88--100},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00021},
+	doi = {10.1109/DSN53405.2022.00021},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/JhaCTHSKKI22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Silent data corruption caused by random hardware faults in autonomous vehicle (AV) computational elements is a significant threat to vehicle safety. Previous research has explored design diversity, data diversity, and duplication techniques to detect such faults in other safety-critical domains. However, these are challenging to use for AVs in practice due to significant resource overhead and design complexity. We propose, DiverseAV, a low-cost data-diversity-based redundancy technique for detecting safety-critical random hardware faults in computational elements. DiverseAV introduces data-diversity between the redundant agents by exploiting the temporal semantic consistency available in the AV sensor data. DiverseAV is a black-box technique that offers a plug-and-play solution as it requires no knowledge of the internals of the AI agent responsible for executing driving decisions, requiring little to no modification to the agent itself for achieving high coverage of transient and permanent hardware faults. It is commercially viable because it avoids software modifications to agents that are costly in terms of development and testing time. Specifically, DiverseAV distributes the sensor data between the two software agents in a round-robin manner. As a result, the sensor data for two consecutive time steps are semantically similar in terms of their worldview but significantly different at the bit level, thus ensuring the state and data diversity between the two agents necessary for detecting faults. We demonstrate DiverseAV using an open-source self-driving AI agent which is controlling a car in an open-source world simulator.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GujaratiWACLSTZ22,
+	author = {Arpan Gujarati and
+                  Zainab Saeed Wattoo and
+                  Maryam Raiyat Aliabadi and
+                  Sean Clark and
+                  Xiaoman Liu and
+                  Parisa Shiri and
+                  Amee Trivedi and
+                  Ruizhe Zhu and
+                  Jason Hein and
+                  Margo I. Seltzer},
+	title = {Arming {IDS} Researchers with a Robotic Arm Dataset},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {101--108},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00022},
+	doi = {10.1109/DSN53405.2022.00022},
+	timestamp = {Mon, 08 Jul 2024 12:39:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/GujaratiWACLSTZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industry 4.0 is rapidly transforming traditional manufacturing practices. Smart manufacturing technologies that automate research and development using a combination of robotic arms and domain-specific cyber-physical systems are at the core of this transformation. Unfortunately, dependence on networked communication increases the risk of security attacks, which must be mitigated using either platforms that are secure by design or intrusion detection and prevention systems. We report on an ongoing project to design and develop intrusion detection systems (IDS) for the Hein Lab, a smart manufacturing research lab in the chemical sciences domain. Designing effective IDS requires large datasets and high-quality, domain-specific benchmarks, which are difficult to obtain. To address this gap, we present the Robotic Arm Dataset (RAD), which we collected at the Hein Lab over a three-month period. We also present our non-intrusive tracing framework RATracer, which can be retrofitted onto any existing Python-based automation pipeline, and two sets of preliminary analyses based on the command and power data in RAD.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhangLKE22,
+	author = {Tao Zhang and
+                  Timothy Lesch and
+                  Kenneth Koltermann and
+                  Dmitry Evtyushkin},
+	title = {{STBPU:} {A} Reasonably Secure Branch Prediction Unit},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {109--123},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00023},
+	doi = {10.1109/DSN53405.2022.00023},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhangLKE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern processors have suffered a deluge of threats exploiting branch instruction collisions inside the branch prediction unit (BPU), from eavesdropping on secret-related branch operations to triggering malicious speculative executions. Protecting branch predictors tends to be challenging from both security and performance perspectives. For example, partitioning or flushing BPU can stop certain collision-based exploits but only to a limited extent. Meanwhile, such mitigations negatively affect branch prediction accuracy and further CPU performance. This paper proposes Secret Token Branch Prediction Unit (STBPU), a secure BPU design to defend against collision-based transient execution attacks and BPU side channels while incurring minimal performance overhead. STBPU resolves the challenges above by customizing data representation inside BPU for each software entity requiring isolation. In addition, to prevent an attacker from using brute force techniques to trigger malicious branch instruction collisions, STBPU actively monitors the prediction-related events and preemptively changes BPU data representation.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/AlamG22,
+	author = {Irina Alam and
+                  Puneet Gupta},
+	title = {{COMET:} On-die and In-controller Collaborative Memory {ECC} Technique
+                  for Safer and Stronger Correction of {DRAM} Errors},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {124--136},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00024},
+	doi = {10.1109/DSN53405.2022.00024},
+	timestamp = {Mon, 26 Jun 2023 20:41:43 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/AlamG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DRAM manufacturers have started adopting on-die error correcting coding (ECC) to deal with increasing error rates. The typical single error correcting (SEC) ECC on the memory die is coupled with a single-error correcting, double-error detecting (SECDED) ECC in the memory controller. Unfortunately, the on-die SEC can miscorrect double-bit errors (which would have been safely detected but uncorrected errors in conventional in-controller SECDED) resulting in triple bit errors more than 45% of the time. These are then miscorrected in the memory controller >55% of the time resulting in silent data corruption. We introduce COllaborative Memory ECC Technique (COMET), a novel method to efficiently design either the on-die or the in-controller ECC code, that, for the first time, will eliminate silent data corruption when a double-bit error happens within the DRAM. Further, we propose a collaboration mechanism between the on-die and in-controller ECC decoders that corrects most of the double-bit errors without adding any additional redundancy bits to either of the two codes. Overall, COMET can eliminate all double-bit error induced silent data corruptions and correct almost all (99.9997%) double-bit errors with negligible area, power, and performance impact.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/OliveiraGDCBGMR22,
+	author = {Daniel Oliveira and
+                  Edoardo Giusto and
+                  Emanuele Dri and
+                  Nadir Casciola and
+                  Betis Baheri and
+                  Qiang Guan and
+                  Bartolomeo Montrucchio and
+                  Paolo Rech},
+	title = {QuFI: a Quantum Fault Injector to Measure the Reliability of Qubits
+                  and Quantum Circuits},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {137--149},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00025},
+	doi = {10.1109/DSN53405.2022.00025},
+	timestamp = {Mon, 26 Jun 2023 20:41:43 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/OliveiraGDCBGMR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Quantum computing is an up-and-coming technology that is expected to revolutionize the computation paradigm in the next few years. Qubits, the primary computing elements of quantum circuits, exploit the quantum physics proprieties to increase the parallelism and speed of computation drastically. Unfortunately, besides being intrinsically noisy, qubits have also been shown to be highly susceptible to external sources of faults, such as ionizing radiation. The latest discoveries highlight a much higher radiation sensitivity of qubits than traditional transistors and identify a much more complex fault model than bit-flip.We propose a framework to identify the quantum circuits sensitivity to radiation-induced faults and the probability for a fault in a qubit to propagate to the output. Based on the latest studies and radiation experiments performed on real quantum machines, we model the transient faults in a qubit as a phase shift with a parametrized magnitude. Additionally, our framework can inject multiple qubit faults, tuning the phase shift magnitude based on the proximity of the qubit to the particle strike location. As we show in the paper, the proposed fault injector is highly flexible, and it can be used on both quantum circuit simulators and real quantum machines. We report the finding of more than 285, 249, 536 injections on the Qiskit simulator and 53, 248 injections on real IBM machines. We consider three quantum algorithms and identify the faults and qubits that are more likely to impact the output. We also consider the fault propagation dependence on the circuit scale, showing that the reliability profile for some quantum algorithms is scale-dependent, with increased impact from radiation-induced faults as we increase the number of qubits. Finally, we also consider multi qubits faults, showing that they are much more critical than single faults. The fault injector and the data presented in this paper are available in a public repository to allow further analysis.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/TangHHKC22,
+	author = {Zhiquan Tang and
+                  Qiao Hu and
+                  Yupeng Hu and
+                  Wenxin Kuang and
+                  Jiongyi Chen},
+	title = {SEVulDet: {A} Semantics-Enhanced Learnable Vulnerability Detector},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {150--162},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00026},
+	doi = {10.1109/DSN53405.2022.00026},
+	timestamp = {Fri, 29 Jul 2022 16:33:35 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/TangHHKC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent years have seen increased attention to deep learning-based vulnerability detection frameworks that leverage neural networks to identify vulnerability patterns. Considerable efforts have been made; still, existing approaches are less ac-curate in practice. Prior works fail to comprehensively capture semantics from source code or adopt the appropriate design of neural networks. This paper presents SEVulDet, a Semantics-Enhanced learnable Vulnerability Detector that can accurately pinpoint vulnerability patterns by preserving path semantics into gadgets and learning from flexible-length codes. SEVulDet has two main characteristics: (i) SEVulDet employs a path-sensitive code slicing approach to extract sufficient path semantics and control flow logic into code gadgets. (ii) by inserting a spatial pyramidal pooling layer into the Convolutional Neural Network (CNN) with a well-designed multilayer attention mechanism, SEVulDet can handle gadgets of flexible-length semantics to avoid semantics loss incurred by traditional truncating or padding operations, and thus learn more potential vulnerability patterns. Comprehensive experimental results show that SEVulDet significantly outperforms classical static approaches and excels with state-of-the-art deep learning-based solutions by improving F1-measure to roughly 94.5%. Particularly, the elaborate design of the SEVulDet architecture helps us identify more real-world vulnerabilities than existing technologies.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ChanGPG22,
+	author = {Abraham Chan and
+                  Arpan Gujarati and
+                  Karthik Pattabiraman and
+                  Sathish Gopalakrishnan},
+	title = {The Fault in Our Data Stars: Studying Mitigation Techniques against
+                  Faulty Training Data in Machine Learning Applications},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {163--171},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00027},
+	doi = {10.1109/DSN53405.2022.00027},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ChanGPG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning (ML) has been adopted in many safety-critical applications like automated driving and medical diagnosis. Incorrect decisions by ML models can lead to catastrophic consequences, such as vehicle crashes and inappropriate medical procedures, thereby endangering our lives. The correct behaviour of a ML model is contingent upon the availability of well-labelled training data. However, obtaining large and high-quality training datasets for safety-critical applications is difficult, often resulting in the use of faulty training data.We compare the efficacy of five different error mitigation techniques, derived from a survey of more than 200 related articles, which are designed to tolerate noisy/faulty training data. We experimentally find that the error mitigation capabilities of these techniques vary across datasets, ML models, and different kinds of faults. We further find that ensemble learning offers the highest resilience among all the techniques across different configurations, followed by label smoothing.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/HerathWYY22,
+	author = {Jerome Dinal Herath and
+                  Priti Prabhakar Wakodikar and
+                  Ping Yang and
+                  Guanhua Yan},
+	title = {CFGExplainer: Explaining Graph Neural Network-Based Malware Classification
+                  from Control Flow Graphs},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {172--184},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00028},
+	doi = {10.1109/DSN53405.2022.00028},
+	timestamp = {Tue, 02 Aug 2022 22:23:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/HerathWYY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the ever increasing threat of malware, extensive research effort has been put on applying Deep Learning for malware classification tasks. Graph Neural Networks (GNNs) that process malware as Control Flow Graphs (CFGs) have shown great promise for malware classification. However, these models are viewed as black-boxes, which makes it hard to validate and identify malicious patterns. To that end, we propose CFG-Explainer, a deep learning based model for interpreting GNN-oriented malware classification results. CFGExplainer identifies a subgraph of the malware CFG that contributes most towards classification and provides insight into importance of the nodes (i.e., basic blocks) within it. To the best of our knowledge, CFGExplainer is the first work that explains GNN-based mal-ware classification. We compared CFGExplainer against three explainers, namely GNNExplainer, SubgraphX and PGExplainer, and showed that CFGExplainer is able to identify top equisized subgraphs with higher classification accuracy than the other three models.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/MalikMFSK22,
+	author = {Mateen Malik and
+                  Mehdi Maleki and
+                  Peter Folkesson and
+                  Behrooz Sangchoolie and
+                  Johan Karlsson},
+	title = {ComFASE: {A} Tool for Evaluating the Effects of {V2V} Communication
+                  Faults and Attacks on Automated Vehicles},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {185--192},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00029},
+	doi = {10.1109/DSN53405.2022.00029},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/MalikMFSK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents ComFASE, a communication fault and attack simulation engine. ComFASE is used to identify and evaluate potentially dangerous behaviours of interconnected automated vehicles in the presence of faults and attacks in wireless vehicular networks. ComFASE is built on top of OM-NET++ (a network simulator) and integrates SUMO (a traffic simulator) and Veins (a vehicular network simulator). The tool is flexible in modelling different types of faults and attacks and can be effectively used to study the interplay between safety and cybersecurity attributes by injecting cybersecurity attacks and evaluating their safety implications. To demonstrate the tool, we present results from a series of simulation experiments, where we injected delay and denial-of-service attacks on wireless messages exchanged between vehicles in a platooning application. The results show how different variants of attacks influence the platooning system in terms of collision incidents.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/HouserHCW22,
+	author = {Rebekah Houser and
+                  Shuai Hao and
+                  Chase Cotton and
+                  Haining Wang},
+	title = {A Comprehensive, Longitudinal Study of Government {DNS} Deployment
+                  at Global Scale},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {193--204},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00030},
+	doi = {10.1109/DSN53405.2022.00030},
+	timestamp = {Tue, 18 Jun 2024 20:16:47 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/HouserHCW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Within the Domain Name System (DNS), government domains form a particularly valuable part of the names-pace, representing trusted sources of information, vital services, and gateways for government personnel to engage in their duties. As the COVID-19 pandemic has unfolded, governments’ digital resources have become increasingly important to provide support to populations largely in isolation. The accessibility of these resources relies largely on the trustworthiness of the domains that represent them. In this paper, we conduct an extensive measurement study focused on the availability and legitimacy of DNS records in the authoritative nameservers of government domains for over 190 countries. Our measurements reveal that thousands of domains do not use replicated authoritative name-servers, as well as a substantial increase in the trend of more domains relying on a single third-party DNS services provider. We also find more than 1,000 domains vulnerable to hijacking due to defective delegations. Our work shows that although robust overall, the deployments of authoritative nameservers in government domains still contain a non-trivial number of configurations that do not meet RFC requirements, leading to poor performance and reduced reliability that may leave domains vulnerable to hijacking.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/MahmoudTABW22,
+	author = {Abdulrahman Mahmoud and
+                  Thierry Tambe and
+                  Tarek Aloui and
+                  David Brooks and
+                  Gu{-}Yeon Wei},
+	title = {GoldenEye: {A} Platform for Evaluating Emerging Numerical Data Formats
+                  in {DNN} Accelerators},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {206--214},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00031},
+	doi = {10.1109/DSN53405.2022.00031},
+	timestamp = {Tue, 07 May 2024 20:05:32 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/MahmoudTABW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents GoldenEye, a functional simulator with fault injection capabilities for common and emerging numerical formats, implemented for the PyTorch deep learning framework. GoldenEye provides a unified framework for numerical format evaluation of DNNs, including traditional number systems such as fixed and floating point, as well as recent DNN-inspired formats such as block floating point and AdaptivFloat. Additionally, GoldenEye enables single- and multi- bit flips at various logical and functional points during a value’s lifetime for resiliency analysis, including for the first time attention to numerical values’ hardware metadata. This paper describes Golden-Eye’s technical design and implementation which make it an easy-to-use, extensible, versatile, and fast tool for dependability research and future DNN accelerator design. We showcase its utility with three case studies: a unifying platform for number system comparison and evaluation, a design-space exploration heuristic for data type selection, and fast DNN reliability analysis for different error models. GoldenEye is open-sourced and available at: https://github.com/ma3mool/goldeneye.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/FoersterHPST22,
+	author = {Klaus{-}Tycho Foerster and
+                  Juho Hirvonen and
+                  Yvonne{-}Anne Pignolet and
+                  Stefan Schmid and
+                  Gilles Tr{\'{e}}dan},
+	title = {On the Price of Locality in Static Fast Rerouting},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {215--226},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00032},
+	doi = {10.1109/DSN53405.2022.00032},
+	timestamp = {Tue, 07 May 2024 20:05:32 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/FoersterHPST22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern communication networks feature fully decen-tralized flow rerouting mechanisms which allow them to quickly react to link failures. This paper revisits the fundamental algorithmic problem underlying such local fast rerouting mechanisms. Is it possible to achieve perfect resilience, i.e., to define local routing tables which preserve connectivity as long as the underlying network is still connected? Feigenbaum et al. [1] and Foerster et al. [2] showed that, unfortunately, it is impossible in general.This paper charts a more complete landscape of the feasibility of perfect resilience. We first show a perhaps surprisingly large price of locality in static fast rerouting mechanisms: even when source and destination remain connected by a linear number of link-disjoint paths after link failures, local rerouting algorithms cannot find any of them which leads to a disconnection on the routing level. This motivates us to study resilience in graphs which exclude certain dense minors, such as cliques or a complete bipartite graphs, and in particular, provide characterizations of the possibility of perfect resilience in different routing models. We provide further insights into the price of locality by showing impossibility results for few failures and investigate perfect resilience on Topology Zoo networks.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/KohKH22,
+	author = {Changseok Koh and
+                  Jonghoon Kwon and
+                  Junbeom Hur},
+	title = {{BLAP:} Bluetooth Link Key Extraction and Page Blocking Attacks},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {227--238},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00033},
+	doi = {10.1109/DSN53405.2022.00033},
+	timestamp = {Mon, 26 Jun 2023 20:41:43 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/KohKH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure Simple Pairing (SSP) and Link Manager Protocol (LMP) authentication are two main authentication mechanisms in Bluetooth specification. In this paper, we present two novel attacks, called link key extraction and page blocking attacks, breaking LMP authentication and SSP authentication, respectively. Link key extraction attack allows attackers to extract link keys of Bluetooth devices generated during the SSP procedure by exploiting Bluetooth HCI dump. Page blocking attacks by man-in-the-middle (MITM) attackers enforce Blue-tooth connections, enabling subsequent SSP downgrade attacks to bypass the SSP authentication challenge. In order to demonstrate the efficacy, we implement our attacks on various real-world devices and show that (1) a target link key is dumped into a log and extracted efficiently, possibly leading to the subsequent impersonation attack, and (2) malicious MITM connections can be established with 100% success rate, enabling subsequent SSP downgrade attack. We investigate the root causes for the vulnerabilities and present mitigations.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/CuijpersSSS22,
+	author = {Pieter Cuijpers and
+                  Stefan Schmid and
+                  Nicolas Schnepf and
+                  Jir{\'{\i}} Srba},
+	title = {The Hazard Value: {A} Quantitative Network Connectivity Measure Accounting
+                  for Failures},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {239--250},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00034},
+	doi = {10.1109/DSN53405.2022.00034},
+	timestamp = {Tue, 07 May 2024 20:05:32 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/CuijpersSSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To meet their stringent requirements in terms of performance and dependability, communication networks should be "well connected". While classic connectivity measures typically revolve around topological properties, e.g., related to cuts, these measures may not reflect well the degree to which a network is actually dependable. We introduce a more refined measure for network connectivity, the hazard value, which is developed to meet the needs of a real network operator. It accounts for crucial aspects affecting the dependability experienced in practice, including actual traffic patterns, distribution of failure probabilities, routing constraints, and alternatives for services with preferences therein. We analytically show that the hazard value fulfills several fundamental desirable properties that make it suitable for comparing different network topologies with one another, and for reasoning about how to efficiently enhance the robustness of a given network. We also present an optimised algorithm to compute the hazard value and an experimental evaluation against networks from the Internet Topology Zoo and classical datacenter topologies, such as fat trees and BCubes. This evaluation shows that the algorithm computes the hazard value within minutes for realistic networks, making it practically usable for network designers.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/PagnottaHGM22,
+	author = {Giulio Pagnotta and
+                  Dorjan Hitaj and
+                  Fabio De Gaspari and
+                  Luigi V. Mancini},
+	title = {PassFlow: Guessing Passwords with Generative Flows},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {251--262},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00035},
+	doi = {10.1109/DSN53405.2022.00035},
+	timestamp = {Wed, 07 Dec 2022 23:08:59 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/PagnottaHGM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent advances in generative machine learning models rekindled research interest in the area of password guessing. Data-driven password guessing approaches based on GANs, language models, and deep latent variable models have shown impressive generalization performance and offer compelling properties for the task of password guessing.This paper proposes PassFlow, a flow-based generative model approach to password guessing. Flow-based models allow for precise log-likelihood computation and optimization, which enables exact latent variable inference. Additionally, flow-based models provide meaningful latent space representation, which enables operations such as exploration of specific subspaces of the latent space and interpolation. We demonstrate the applicability of generative flows to the context of password guessing, departing from previous applications of flow-networks which are mainly limited to the continuous space of image generation. We show that PassFlow is able to outperform prior state-of-the-art GAN-based approaches in the password guessing task while using a training set that is orders of magnitudes smaller than that of prior art. Furthermore, a qualitative analysis of the generated samples shows that PassFlow can accurately model the distribution of the original passwords, with even non-matched samples closely resembling human-like passwords.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WangCXH22,
+	author = {Wenlu Wang and
+                  Pengfei Chen and
+                  Yibin Xu and
+                  Zilong He},
+	title = {Active-MTSAD: Multivariate Time Series Anomaly Detection With Active
+                  Learning},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {263--274},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00036},
+	doi = {10.1109/DSN53405.2022.00036},
+	timestamp = {Sat, 01 Jul 2023 10:38:34 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WangCXH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Time series anomaly detection is an important research topic in the field of intelligent operation and maintenance. When software systems are frequently updated with continuous integration and deployment, the distribution of KPI data will also change, and the accuracy of anomaly detection models will inevitably decrease. To tackle this problem, we propose an active anomaly detection framework named Active-MTSAD suitable for multi-dimensional time series, combining unsupervised anomaly detection and active learning. The active learning module introduces three feedback strategies, namely denominator penalty, negative penalty, and metric learning, to learn new anomalous patterns under new data distribution. In metric learning, we consider the difference between normal and abnormal samples in reconstruction error and latent space. We conduct extensive experiments on a large-scale public dataset and a real-world dataset coming from Tencent. The experimental results show that Active-MTSAD can still achieve excellent performance in real scenarios where the distribution changes with only 0.2% of labels.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhangWMXYZJ22,
+	author = {Pengcheng Zhang and
+                  Yunong Wang and
+                  Xuhua Ma and
+                  Yaoheng Xu and
+                  Bin Yao and
+                  Xudong Zheng and
+                  Linquan Jiang},
+	title = {Predicting DRAM-Caused Node Unavailability in Hyper-Scale Clouds},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {275--286},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00037},
+	doi = {10.1109/DSN53405.2022.00037},
+	timestamp = {Mon, 07 Nov 2022 09:29:33 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhangWMXYZJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DRAM faults are major hardware sources of cloud node unavailability. To enable early preventive actions and mitigate DRAM fault impacts, prior studies focus on predicting DRAM uncorrectable errors (UEs) that typically cause immediate node unavailability. In our cloud with over half a million nodes, we firstly observe that the correctable error storm (numerous CEs occur in a short period) dominates 56% DRAM-caused node unavailability (DCNU). Therefore, we propose to predict DCNU that takes account into both UEs and CE storms. Observing that DCNUs have strong relevance to temporal statistics and spatial patterns of CEs, we design novel spatio-temporal features to train the prediction model. Considering the model’s real effects cannot be evaluated by traditional metrics like F1-score, we propose a new metric NURR to quantify the node unavailability reduction and tune model hyperparameters with NURR. Our approach achieves over 40% better NURR than existing methods on historical data and runs stably in the production environment.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WangCWH22,
+	author = {Ping{-}Lun Wang and
+                  Tzu{-}Wei Chao and
+                  Chia{-}Chien Wu and
+                  Hsu{-}Chun Hsiao},
+	title = {Tool: An Efficient and Flexible Simulator for Byzantine Fault-Tolerant
+                  Protocols},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {287--294},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00038},
+	doi = {10.1109/DSN53405.2022.00038},
+	timestamp = {Fri, 29 Jul 2022 16:33:35 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WangCWH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A Byzantine Fault-Tolerant (BFT) protocol protects a distributed system from faulty participants. To provide both liveness and safety, many such protocols assume they are dealing with a partially-synchronous network, which will eventually stabilize after a global stabilization time (GST). In a real-world network environment, however, there is no such guarantee of bounded transmission time for network packets. For this reason, even if a BFT protocol is mathematically proven to achieve both liveness and safety, its overall performance is difficult to analyze theoretically, especially if there are bad network conditions or adversarial behaviors. Accordingly, we propose a simulator for evaluating the performance of BFT protocols under various network conditions and attacks, and we implement it to empirically compare the performance of eight representative protocols. Experiment results show that our simulator can simulate 16 times as many nodes as an existing simulator supports (512 vs. 32), and it is over 500 times faster when simulating 32 nodes (38 milliseconds vs. 19.4 seconds).}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ChaiYDZ22,
+	author = {Huajun Chai and
+                  Lingyun Ying and
+                  Haixin Duan and
+                  Daren Zha},
+	title = {Invoke-Deobfuscation: AST-Based and Semantics-Preserving Deobfuscation
+                  for PowerShell Scripts},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {295--306},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00039},
+	doi = {10.1109/DSN53405.2022.00039},
+	timestamp = {Fri, 29 Jul 2022 16:33:35 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ChaiYDZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, PowerShell has been widely used in cyber attacks and malicious PowerShell scripts can easily evade the detection of anti-virus software through obfuscation. Existing deobfuscation tools often fail to recover obfuscated scripts correctly due to imprecise obfuscation identification, improper recovery and wrong replacement. In this paper, we propose an AST-based and semantics-preserving deobfuscation approach, Invoke-Deobfuscation. It utilizes recoverable nodes of Abstract Syntax Tree to identify obfuscated pieces precisely, simulates the recovery process through Invoke function and variable tracing, and replaces obfuscated pieces in place to keep the original semantics. We build a large evaluation dataset containing 39,713 wild PowerShell scripts. Compared with the state-of-the-art tools, the experimental results show Invoke-Deobfuscation performs most efficiently. It recovers much more key information than others and significantly reduces samples’ obfuscation score, on average, by 46%. Moreover, 100% of Invoke-Deobfuscation’s results have the same network behavior as the original scripts.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/NguyenPN22,
+	author = {Hoang Hai Nguyen and
+                  Kartik Palani and
+                  David M. Nicol},
+	title = {Exploiting monotonicity and symmetry for efficient simulation of highly
+                  dependable systems},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {307--318},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00040},
+	doi = {10.1109/DSN53405.2022.00040},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/NguyenPN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Evaluation of highly dependable systems requires estimating the probability of a significant rare event under which the system fails to meet the requirement. To improve the estimation accuracy, advanced Monte Carlo simulation techniques such as importance sampling (IS) are commonly used. However, IS is known to misbehave under high dimension. As a result, the IS estimator can have a large relative error and underestimate the rare event probability. In this paper, we propose a novel IS method based on the idea of maximum weight minimization (MWM). Our method works by finding the sampling distribution that minimizes the maximum weight of a rare event sample. To alleviate the curse of dimensionality, we develop further heuristics based on two problem-specific structures, namely, monotonicity and symmetry. Using extensive examples from network reliability, stochastic flow analysis, cyber-security risk assessment, and fault tree analysis, we evaluate the performance of MWM, demonstrate its accuracy and scalability, and highlight applications where it outperforms state-of-the-art techniques.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/LiuLXD22,
+	author = {Chang Liu and
+                  Yanwei Liu and
+                  Zhen Xu and
+                  Liang Dai},
+	title = {RAPMiner: {A} Generic Anomaly Localization Mechanism for {CDN} System
+                  with Multi-dimensional KPIs},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {319--330},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00041},
+	doi = {10.1109/DSN53405.2022.00041},
+	timestamp = {Sun, 31 Dec 2023 00:37:04 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/LiuLXD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As essential work in IT operations, anomaly localization, aiming to identify the affected scope of Internet infrastructure once an anomaly alarm occurs, is challenging due to the huge search space. The existing solutions usually show limited performances in the CDN scenario since they take the desirable assumptions that do not match with the practical anomaly pattern features. To address this issue, in this paper, we propose RAPMiner, which first uses a classification power-based redundant attribute deletion to prune the non-root cause attribute combinations, and then adopts an anomaly confidence-guided layer-by-layer top-down search to avoid searching for anomaly but non-root patterns. Both of them are effective in narrowing the search space. Experimental results show that RAPMiner can achieve comparable performance with the SOTA approach on the published Squeeze dataset according to F1-score and efficiency, as well as the best RC@k with stable parameter sensitivity on the RAPMD.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/DaoJJMN22,
+	author = {Dinhnguyen Dao and
+                  Rhongho Jang and
+                  Changhun Jung and
+                  David Mohaisen and
+                  DaeHun Nyang},
+	title = {Minimizing Noise in HyperLogLog-Based Spread Estimation of Multiple
+                  Flows},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {331--342},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00042},
+	doi = {10.1109/DSN53405.2022.00042},
+	timestamp = {Sun, 12 Nov 2023 02:13:34 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/DaoJJMN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cardinality estimation has become an essential building block of modern network monitoring systems due to the increasing concerns of cyberattacks (e.g., Denial-of-Service, worm, spammer, scanner, etc.). However, the ever-increasing attack scale and the diversity of patterns (i.e., flow size distribution) will produce a biased estimation of existing solutions if apply a monotonic hypothesis for network traffic. The most representative solution is virtual HyperLogLog (vHLL), which extended the proven HLL, a single element cardinality estimation solution, to a multi-tenant version using a memory random sharing and noise elimination approach. In this paper, we show that the assumption made by vHLL’s does not work for large-scale network traffic with diverse flow distributions. To resolve the issue, we propose a novel noise elimination method, called Rank Recovery-based Spread Estimator (RRSE), which is tolerant to both attack and normal traffic scenarios while using limited computation and storage. We show that our recovery function is more reliable than state-of-the-art approaches. Moreover, we implemented RRSE in a programmable switch to show the feasibility.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ParkKWL22,
+	author = {Haram Park and
+                  Carlos Nkuba Kayembe and
+                  Seunghoon Woo and
+                  Heejo Lee},
+	title = {L2Fuzz: Discovering Bluetooth {L2CAP} Vulnerabilities Using Stateful
+                  Fuzz Testing},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {343--354},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00043},
+	doi = {10.1109/DSN53405.2022.00043},
+	timestamp = {Mon, 05 Feb 2024 20:30:56 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/ParkKWL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bluetooth Basic Rate/Enhanced Data Rate (BR/EDR) is a wireless technology used in billions of devices. Recently, several Bluetooth fuzzing studies have been conducted to detect vulnerabilities in Bluetooth devices, but they fall short of effectively generating malformed packets. In this paper, we propose L2FUZZ, a stateful fuzzer to detect vulnerabilities in Bluetooth BR/EDR Logical Link Control and Adaptation Protocol (L2CAP) layer. By selecting valid commands for each state and mutating only the core fields of packets, L2FUZZ can generate valid malformed packets that are less likely to be rejected by the target device. Our experimental results confirmed that: (1) L2FUZZ generates up to 46 times more malformed packets with a much less packet rejection ratio compared to the existing techniques, and (2) L2FUZZ detected five zero-day vulnerabilities from eight real-world Bluetooth devices.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/GuoLLCYX22,
+	author = {Hanqing Guo and
+                  Chenning Li and
+                  Lingkun Li and
+                  Zhichao Cao and
+                  Qiben Yan and
+                  Li Xiao},
+	title = {{NEC:} Speaker Selective Cancellation via Neural Enhanced Ultrasound
+                  Shadowing},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {355--366},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00044},
+	doi = {10.1109/DSN53405.2022.00044},
+	timestamp = {Mon, 13 Feb 2023 07:51:32 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/GuoLLCYX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose NEC (Neural Enhanced Cancellation), a defense mechanism, which prevents unautho-rized microphones from capturing a target speaker’s voice. Compared with the existing scrambling-based audio cancellation approaches, NEC can selectively remove a target speaker’s voice from a mixed speech without causing interference to others. Specifically, for a target speaker, we design a Deep Neural Network (DNN) model to extract high-level speaker-specific but utterance-independent vocal features from his/her reference audios. When the microphone is recording, the DNN generates a shadow sound to cancel the target voice in real-time. Moreover, we modulate the audible shadow sound onto an ultrasound frequency, making it inaudible for humans. By leveraging the non-linearity of the microphone circuit, the microphone can accurately decode the shadow sound for target voice cancellation. We implement and evaluate NEC comprehensively with 8 smartphone microphones in different settings. The results show that NEC effectively mutes the target speaker at a microphone without interfering with other users’ normal conversations.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/DayaratneSRL22,
+	author = {Thusitha Dayaratne and
+                  Mahsa Salehi and
+                  Carsten Rudolph and
+                  Ariel Liebman},
+	title = {False Data Injection Attack Detection for Secure Distributed Demand
+                  Response in Smart Grids},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {367--380},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00045},
+	doi = {10.1109/DSN53405.2022.00045},
+	timestamp = {Sat, 30 Sep 2023 09:39:07 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/DayaratneSRL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed demand response (DR) schemes for smart energy networks rely on data from various sources, many of them outside the network operator’s perimeter. Therefore, compromised inputs from false data injection attacks (FDIAs) can be detrimental to the expectations of stakeholders, pro-vide financial benefits to malicious actors, compromise the commercial viability of the scheme and have the potential to disrupt the energy supply. Due to the heterogeneity of data sources, FDIAs are arduous to prevent with standard security controls. Thus, detecting FDIAs is necessary to facilitate impact mitigations. However, FDIA detection in the residential DR context is arduous, given the inherent challenges such as the noisiness of residential demand, lack of labelled data in real-life settings, and variety and dynamicity of demand forecasts (e.g., weekdays vs weekend, different months/seasons). Addressing mentioned challenges, in this paper, we propose a data-driven unsupervised anomaly detection approach, named Clustering-based Spectral Residual (CSR), to detect false data injection attacks in smart grids’ DR. The CSR model is based on the popular k-means clustering and Spectral Residual method. The combination highlights the attack time slots, which increases the detection accuracy in our model. A supervised model is also proposed based on Convolutional Neural Network (CNN) to increase the detection accuracy in scenarios where label information is available. Using an energy consumption dataset from Austin, Texas, as a case study and through extensive experimental results, we show that our proposed CSR and CNN models outperform 25 widely used anomaly detection benchmarks.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/MasettiRCG22,
+	author = {Giulio Masetti and
+                  Leonardo Robol and
+                  Silvano Chiaradonna and
+                  Felicita Di Giandomenico},
+	title = {Solution Bundles of Markov Performability Models through Adaptive
+                  Cross Approximation},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {381--392},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00046},
+	doi = {10.1109/DSN53405.2022.00046},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/MasettiRCG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A technique to approximate solution bundles, i.e., solutions of a parametric model where parameters are treated as independent variables instead of constants, is presented for Markov models. Analyses based on an approximated solution bundle are more efficient than those that solve the model for all combinations of parameters’ values separately. In this paper the idea is to properly adapt low rank tensor approximation techniques, and in particular Adaptive Cross Approximation, to the evaluation of performability attributes. Application on exemplary case studies confirms the advantages of the new solution technique with respect to solving the model for all time and parameters’ combinations.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/YangSSRYL22,
+	author = {Tianyi Yang and
+                  Jiacheng Shen and
+                  Yuxin Su and
+                  Xiaoxue Ren and
+                  Yongqiang Yang and
+                  Michael R. Lyu},
+	title = {Characterizing and Mitigating Anti-patterns of Alerts in Industrial
+                  Cloud Systems},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {393--401},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00047},
+	doi = {10.1109/DSN53405.2022.00047},
+	timestamp = {Sat, 30 Sep 2023 09:39:08 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/YangSSRYL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Alerts are crucial for requesting prompt human intervention upon cloud anomalies. The quality of alerts significantly affects the cloud reliability and the cloud provider’s business revenue. In practice, we observe on-call engineers being hindered from quickly locating and fixing faulty cloud services because of the vast existence of misleading, non-informative, non-actionable alerts. We call the ineffectiveness of alerts "anti-patterns of alerts". To better understand the anti-patterns of alerts and provide actionable measures to mitigate anti-patterns, in this paper, we conduct the first empirical study on the practices of mitigating anti-patterns of alerts in an industrial cloud system. We study the alert strategies and the alert processing procedure at Huawei Cloud, a leading cloud provider. Our study combines the quantitative analysis of millions of alerts in two years and a survey with eighteen experienced engineers. As a result, we summarized four individual anti-patterns and two collective anti-patterns of alerts. We also summarize four current reactions to mitigate the anti-patterns of alerts, and the general preventative guidelines for the configuration of alert strategy. Lastly, we propose to explore the automatic evaluation of the Quality of Alerts (QoA), including the indicativeness, precision, and handleability of alerts, as a future research direction that assists in the automatic detection of alerts’ anti-patterns. The findings of our study are valuable for optimizing cloud monitoring systems and improving the reliability of cloud services.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/McDonoughGWW22,
+	author = {Kenton McDonough and
+                  Xing Gao and
+                  Shuai Wang and
+                  Haining Wang},
+	title = {Torpedo: {A} Fuzzing Framework for Discovering Adversarial Container
+                  Workloads},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {402--414},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00048},
+	doi = {10.1109/DSN53405.2022.00048},
+	timestamp = {Tue, 18 Jun 2024 20:16:47 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/McDonoughGWW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Containers enable a computing system to host multiple isolated applications, making more cost-efficient use of the available computing resources. However, exploiting shared computing resources, adversaries can launch various real-world attacks (e.g., denial-of-service attacks) inside containers. In this paper, we present TORPEDO, a fuzzing-based approach to detecting out-of-band workloads: such workloads could largely interfere the performance of colocated container instances on the same host, gaining extra unfair advantages on the system resources without being charged appropriately. TORPEDO mutates inputs of OS syscalls and simultaneously monitors the resource consumption of multiple container instances. It uses resource-guided heuristics to find inputs that maximize the difference in resource consumption between container instances and resource limits. We evaluate TORPEDO on widely-used containerization platforms and demonstrate that it can verify adversarial workloads that are manually discovered by existing research. More importantly, TORPEDO identifies several zero-day vulnerabilities that are not known to the public.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/EspinozaWFT22,
+	author = {Antonio M. Espinoza and
+                  Riley Wood and
+                  Stephanie Forrest and
+                  Mohit Tiwari},
+	title = {Back to the future: N-Versioning of Microservices},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {415--427},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00049},
+	doi = {10.1109/DSN53405.2022.00049},
+	timestamp = {Sat, 30 Sep 2023 09:39:07 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/EspinozaWFT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Microservices are the dominant architecture used to build internet-scale applications today. Being internet-facing, their most critical attack surfaces are the OWASP top 10 Web Application Security Risks. Many of the top 10 OWASP attack types—injection, cross site scripting, broken access control and security misconfigurations—have persisted for many years despite major investments in code analysis and secure development patterns. Because microservices decompose monolithic applications into components using clean APIs, they lend themselves to practical application of a classic security/resilience principle, N-versioning. The paper introduces RDDR, a principled approach for applying N-versioning to microservices to improve resilience to data leaks. RDDR applies N-versioning to vulnerable microservices, requiring minimal code changes and with low performance impact beyond the cost of replicating microservices. Our evaluation demonstrates RDDR mitigating vulnerabilities of the top 5 of the top 10 OWASP types by applying diversity and redundancy to individual microservices.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/FuZCDV22,
+	author = {Chenglong Fu and
+                  Qiang Zeng and
+                  Haotian Chi and
+                  Xiaojiang Du and
+                  Siva Likitha Valluru},
+	title = {IoT Phantom-Delay Attacks: Demystifying and Exploiting IoT Timeout
+                  Behaviors},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {428--440},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00050},
+	doi = {10.1109/DSN53405.2022.00050},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/FuZCDV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper unveils a set of new attacks against Internet of Things (IoT) automation systems. We first propose two novel IoT attack primitives: Event Message Delay and Command Message Delay (event messages are generated by IoT devices to report device states, and command messages are used to control IoT devices). Our insight is that timeout detection in the TCP layer is decoupled from data protection in the Transport Layer Security (TLS) layer. As a result, even when a session is protected by TLS, its IoT event and/or command messages can still be significantly delayed without triggering alerts. It is worth highlighting that, by compromising/controlling one WiFi device in a smart environment, the attacker can delay the IoT messages of other non-compromised IoT devices; we thus call the attacks IoT Phantom-Delay Attacks. Our study shows the attack primitives can be used to build rich attacks and some of them can induce persistent effects. The presented attacks are very different from jamming. 1) Unlike jamming, our attacks do not discard any packets and thus do not trigger re-transmission. 2) Our attacks do not cause disconnection or timeout alerts. 3) Unlike reactive jamming, which usually relies on special hardware, our attacks can be launched from an ordinary WiFi device. Our evaluation involves 50 popular IoT devices and demonstrates that they are all vulnerable to the phantom-delay attacks. Finally, we discuss the countermeasures. We have contacted multiple IoT platforms regarding the vulnerable IoT timeout behaviors, and Google, Ring and SimpliSafe have acknowledged the problem.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/NicolettiHS22,
+	author = {Stefano M. Nicoletti and
+                  Ernst Moritz Hahn and
+                  Mari{\"{e}}lle Stoelinga},
+	title = {{BFL:} a Logic to Reason about Fault Trees},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {441--452},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00051},
+	doi = {10.1109/DSN53405.2022.00051},
+	timestamp = {Sun, 02 Oct 2022 15:59:19 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/NicolettiHS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Safety-critical infrastructures must operate safely and reliably. Fault tree analysis is a widespread method used to assess risks in these systems: fault trees (FTs) are required — among others — by the Federal Aviation Authority, the Nuclear Regulatory Commission, in the ISO26262 standard for autonomous driving and for software development in aerospace systems. Although popular both in industry and academia, FTs lack a systematic way to formulate powerful and understandable analysis queries. In this paper, we aim to fill this gap and introduce Boolean Fault tree Logic (BFL), a logic to reason about FTs. BFL is a simple, yet expressive logic that supports easier formulation of complex scenarios and specification of FT properties. Alongside BFL, we present model checking algorithms based on binary decision diagrams (BDDs) to analyse specified properties in BFL, patterns and an algorithm to construct counterexamples. Finally, we propose a case-study application of BFL by analysing a COVID-19related FT.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/YoonKBS22,
+	author = {Man{-}Ki Yoon and
+                  Jung{-}Eun Kim and
+                  Richard M. Bradford and
+                  Zhong Shao},
+	title = {TimeDice: Schedulability-Preserving Priority Inversion for Mitigating
+                  Covert Timing Channels Between Real-time Partitions},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {453--465},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00052},
+	doi = {10.1109/DSN53405.2022.00052},
+	timestamp = {Wed, 07 Dec 2022 23:08:59 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/YoonKBS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Timing predictability is a precondition for successful communication over a covert timing channel. Real-time systems are particularly vulnerable to timing channels because real-time applications can easily have temporal locality due to limited uncertainty in schedules. In this paper, we show that real-time applications can create hidden information flow even when the temporal isolation among the time partitions is strictly enforced. We then introduce an online algorithm that randomizes time-partition schedules to reduce the temporal locality, while guaranteeing the schedulability of, and thus the temporal isolation among, time partitions. We also present an analysis of the cost of the randomization on the responsiveness of real-time tasks. From an implementation on a Linux-based real-time operating system, we validate the analysis and evaluate the scheduling overhead as well as the impact on an experimental real-time system.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/BolatCOEO22,
+	author = {Alperen Bolat and
+                  Seyyid Hikmet {\c{C}}elik and
+                  Ataberk Olgun and
+                  Oguz Ergin and
+                  Marco Ottavi},
+	title = {{ERIC:} An Efficient and Practical Software Obfuscation Framework},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {466--474},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00053},
+	doi = {10.1109/DSN53405.2022.00053},
+	timestamp = {Sun, 06 Oct 2024 20:59:53 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/BolatCOEO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern cloud computing systems distribute software executables over a network to keep the software sources, which are typically compiled in a security-critical cluster, secret. However, these executables are still vulnerable to reverse engineering techniques that can extract secret information from programs (e.g., an algorithm, cryptographic keys), violating the IP rights and potentially exposing the trade secrets of the software developer. Malicious parties can (i) statically analyze the disassembly of the executable (static analysis) or (ii) dynamically analyze the software by executing it on a controlled device and observe performance counter values or exploit side-channels to reverse engineer software (dynamic analysis).We develop ERIC, a new, efficient, and general software obfuscation framework. ERIC protects software against (i) static analysis, by making only an encrypted version of software executables available to the human eye, no matter how the software is distributed, and (ii) dynamic analysis, by guaranteeing that an encrypted executable can only be correctly decrypted and executed by a single authenticated device. ERIC comprises key hardware and software components to provide efficient software obfuscation support: (i) a hardware decryption engine (HDE) enables efficient decryption of encrypted hardware in the target device, (ii) the compiler can seamlessly encrypt software executables given only a unique device identifier. Both the hardware and software components are ISA-independent, making ERIC general. The key idea of ERIC is to use physical unclonable functions (PUFs), unique device identifiers, as secret keys in encrypting software executables. Malicious parties that cannot access the PUF in the target device cannot perform static or dynamic analyses on the encrypted binary.We develop ERIC’s prototype on an FPGA to evaluate it end-to-end. Our prototype extends RISC-V Rocket Chip with the hardware decryption engine (HDE) to minimize the overheads of software decryption. We augment the custom LLVM-based compiler to enable partial/full encryption of RISC-V executables. The HDE incurs minor FPGA resource overheads, it requires 2.63% more LUTs and 3.83% more flip-flops compared to the Rocket Chip baseline. LLVM-based software encryption increases compile time by 15.22% and the executable size by 1.59%. ERIC is publicly available and can be downloaded from https://github.com/kasirgalabs/ERIC.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/YaglikciLOOPPHK22,
+	author = {Abdullah Giray Yaglik{\c{c}}i and
+                  Haocong Luo and
+                  Geraldo F. de Oliviera and
+                  Ataberk Olgun and
+                  Minesh Patel and
+                  Jisung Park and
+                  Hasan Hassan and
+                  Jeremie S. Kim and
+                  Lois Orosa and
+                  Onur Mutlu},
+	title = {Understanding RowHammer Under Reduced Wordline Voltage: An Experimental
+                  Study Using Real {DRAM} Devices},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {475--487},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00054},
+	doi = {10.1109/DSN53405.2022.00054},
+	timestamp = {Mon, 05 Feb 2024 20:30:56 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/YaglikciLOOPPHK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {RowHammer is a circuit-level DRAM vulnerability, where repeatedly activating and precharging a DRAM row, and thus alternating the voltage of a row’s wordline between low and high voltage levels, can cause bit flips in physically nearby rows. Recent DRAM chips are more vulnerable to RowHammer: with technology node scaling, the minimum number of activate-precharge cycles to induce a RowHammer bit flip reduces and the RowHammer bit error rate increases. Therefore, it is critical to develop effective and scalable approaches to protect modern DRAM systems against RowHammer. To enable such solutions, it is essential to develop a deeper understanding of the RowHammer vulnerability of modern DRAM chips. However, even though the voltage toggling on a wordline is a key determinant of RowHammer vulnerability, no prior work experimentally demonstrates the effect of wordline voltage (V PP ) on the RowHammer vulnerability. Our work closes this gap in understanding.This is the first work to experimentally demonstrate on 272 real DRAM chips that lowering V PP reduces a DRAM chip’s RowHammer vulnerability. We show that lowering V PP 1) increases the number of activate-precharge cycles needed to induce a RowHammer bit flip by up to 85.8 % with an average of 7.4 % across all tested chips and 2) decreases the RowHammer bit error rate by up to 66.9 % with an average of 15.2 % across all tested chips. At the same time, reducing V PP marginally worsens a DRAM cell’s access latency, charge restoration, and data retention time within the guardbands of system-level nominal timing parameters for 208 out of 272 tested chips. We conclude that reducing V PP is a promising strategy for reducing a DRAM chip’s RowHammer vulnerability without requiring modifications to DRAM chips.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhangMLGB22,
+	author = {Yiwei Zhang and
+                  Siqi Ma and
+                  Juanru Li and
+                  Dawu Gu and
+                  Elisa Bertino},
+	title = {KingFisher: Unveiling Insecurely Used Credentials in IoT-to-Mobile
+                  Communications},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {488--500},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00055},
+	doi = {10.1109/DSN53405.2022.00055},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhangMLGB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Today users can access and/or control their IoT devices using mobile apps. Such interactions often rely on IoT-to-Mobile communication that supports direct data exchanges between IoT devices and smartphones. To guarantee mutual authentication and encrypted data transmission in IoT-to-Mobile communications while keeping lightweight implementation, IoT devices and smartphones often share credentials in advance with the help of a cloud server. Since these credentials impact communication security, in this paper we seek to understand how such sensitive materials are implemented. We design a set of analysis techniques and implement them in KingFisher, an analysis framework. KingFisher identifies shared credentials, tracks their uses, and examines violations against nine security properties that the implementation of credentials should satisfy. With an evaluation of eight real-world IoT solutions with more than 35 million deployed devices, KingFisher revealed that all these solutions involve insecurely used credentials, and are subject to privacy leakage or device hijacking.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/PatatSF22,
+	author = {Gwendal Patat and
+                  Mohamed Sabt and
+                  Pierre{-}Alain Fouque},
+	title = {WideLeak: How Over-the-Top Platforms Fail in Android},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {501--508},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00056},
+	doi = {10.1109/DSN53405.2022.00056},
+	timestamp = {Sun, 12 Nov 2023 02:13:34 +0100},
+	biburl = {https://dblp.org/rec/conf/dsn/PatatSF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, most content providers rely on DRM (Digital Right Management) to protect media from illegal distribution. Becoming a major platform for streaming, Android provides its own DRM framework that does not comply with existing DRM standards. Thus, OTT (over-the-top) platforms need to adapt their apps to suit Android design, despite a fragmented ecosystem and little public documentation. Unfortunately, the security implications of how OTT apps leverage Widevine, the most popular Android DRM, have not been studied yet.In this paper, we report the first experimental study on the state of Widevine use in the wild. Our study explores OTT compliance with Widevine guidelines regarding asset protection and legacy phone support. With the evaluation of premium OTT apps, our experiments bring to light that most apps adopt weak and potentially vulnerable practices. We illustrate our findings by showing how to easily recover media content from many OTT apps, including Netflix.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ShimomuraY22,
+	author = {Tsuyoshi Shimomura and
+                  Hiroshi Yamada},
+	title = {Hardening In-memory Key-value Stores against ECC-uncorrectable Memory
+                  Errors},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {509--521},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00057},
+	doi = {10.1109/DSN53405.2022.00057},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ShimomuraY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory errors that can be detected but cannot be fixed by error correction code (ECC) modules, called ECC-uncorrectable errors, have a severe impact on the availability of the datacenter applications. In-memory key-value stores (KVSes) suffer relatively more from ECC-uncorrectable errors compared with other applications because they typically allocate a large amount of memory and manage KVs and their running states in their address spaces. The standard way of recovery is the all-clean approach that reboots the damaged applications. This eliminates all the memory objects, causing a significant performance degradation of the in-memory KVSes. This paper presents a partial-surgery approach that forces in-memory KVSes to prune the damaged objects and reconstructs their internals by using undamaged ones. We prototyped our approach on memcached 1.4.39 and Redis 5.0.3, and conducted several experiments. The results show that the prototypes successfully recover from our injected memory errors and significantly outperform the conventional all-clean approach.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/SabraMJ22,
+	author = {Mohd Sabra and
+                  Anindya Maiti and
+                  Murtuza Jadliwala},
+	title = {Background Buster: Peeking through Virtual Backgrounds in Online Video
+                  Calls},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {522--533},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00058},
+	doi = {10.1109/DSN53405.2022.00058},
+	timestamp = {Fri, 29 Jul 2022 16:33:35 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/SabraMJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video calling applications such as Zoom and Skype have become the preferred medium for both personal and professional communications. One feature in these applications that has gained prominence is the virtual background feature, which enables users to conceal their background by blending in a virtual image or video in place of the real background, thus providing users with background and contextual privacy. However, this feature is not robust enough, and depending on the target user’s activities, movement and accessories worn during the call, portions of the user’s background could leak which can then be reconstructed to reveal significant portions of the user’s real background, and other contextual information related to the real background. This paper conducts an investigative analysis of the background privacy provided by the virtual background feature in video calling applications by designing a novel background reconstruction framework, and using it to reveal users’ real background. By means a large dataset of call videos, collected from human subject participants and in the wild, a comprehensive evaluation of the proposed framework and related privacy attacks under a variety of different experimental parameters is then carried out. Results from these evaluations show that significant leakage of background information is feasible under certain conditions, rendering the feature ineffective in protecting privacy and giving users a false sense of security.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/ZhouHCNLG22,
+	author = {Ziyi Zhou and
+                  Xing Han and
+                  Zeyuan Chen and
+                  Yuhong Nan and
+                  Juanru Li and
+                  Dawu Gu},
+	title = {SIMulation: Demystifying (Insecure) Cellular Network based One-Tap
+                  Authentication Services},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {534--546},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00059},
+	doi = {10.1109/DSN53405.2022.00059},
+	timestamp = {Fri, 29 Jul 2022 16:33:36 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/ZhouHCNLG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A recently emerged cellular network based One-Tap Authentication (OTAuth) scheme allows app users to quickly sign up or log in to their accounts conveniently: Mobile Network Operator (MNO) provided tokens instead of user passwords are used as identity credentials. After conducting a first in-depth security analysis, however, we have revealed several fundamental design flaws among popular OTAuth services, which allow an adversary to easily (1) perform unauthorized login and register new accounts as the victim, (2) illegally obtain identities of victims, and (3) interfere OTAuth services of legitimate apps. To further evaluate the impact of our identified issues, we propose a pipeline that integrates both static and dynamic analysis. We examined 1,025/894 Android/iOS apps, each app holding more than 100 million installations. We confirmed 396/398 Android/iOS apps are affected. Our research systematically reveals the threats against OTAuth services. Finally, we provide suggestions on how to mitigate these threats accordingly.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/WangGDW22,
+	author = {Dong Wang and
+                  Yu Gao and
+                  Wensheng Dou and
+                  Jun Wei},
+	title = {DisTA: Generic Dynamic Taint Tracking for Java-Based Distributed Systems},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {547--558},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00060},
+	doi = {10.1109/DSN53405.2022.00060},
+	timestamp = {Fri, 14 Jul 2023 07:54:24 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/WangGDW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Dynamic taint tracking is a powerful information flow analysis approach, which can be applied in many analysis scenarios, e.g., debugging, testing, and security vulnerability detection. Most dynamic taint tracking approaches are designed for standalone systems, and cannot support inter-node taint tracking in distributed systems. Few inter-node taint tracking approaches are designed for specific distributed systems, e.g., Apache Spark, and require specific modifications to different distributed systems.In this paper, we present DisTA, a generic dynamic taint tracking tool for Java-based distributed systems. By instrumenting common network communication modules in Java, DisTA can perform inter-node taint tracking for different distributed systems with little manual efforts. We evaluate DisTA on five large-scale real-world distributed systems, e.g., ZooKeeper and Yarn, and require only 10 LOC launch script modification on average. The experimental results show that DisTA can accurately track all inter-node taints with a relatively low overhead.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/KimLKJC22,
+	author = {Hyungseok Kim and
+                  Junoh Lee and
+                  Soomin Kim and
+                  Seungil Jung and
+                  Sang Kil Cha},
+	title = {How'd Security Benefit Reverse Engineers? : The Implication of Intel
+                  {CET} on Function Identification},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {559--566},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00061},
+	doi = {10.1109/DSN53405.2022.00061},
+	timestamp = {Mon, 24 Apr 2023 14:58:38 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/KimLKJC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As CPU vendors introduce various hardware-assisted security features, modern compilers have started to produce binaries containing security-related instructions. Interestingly, such instructions tend to alter the shape of resulting binaries, which can potentially affect the effectiveness of binary analysis. This paper presents the first systematic study on the implication of the Intel CET (Control-flow Enforcement Technology) instructions on function identification. Our study finds that CET-relevant instructions provide useful, although limited, hints for function entries. Therefore, we devise a novel function identification algorithm that utilizes the usage patterns of CET instructions, and demonstrate a tool named FunSeeker that implements the idea. Our evaluation shows that FunSeeker significantly outperforms current state-of-the-art function identification tools in terms of both correctness and speed.}
+}
+
+
+@inproceedings{DBLP:conf/dsn/SilvaSMSYB22,
+	author = {Bruno Vieira Resende e Silva and
+                  Clay Stevens and
+                  Niloofar Mansoor and
+                  Witawas Srisa{-}an and
+                  Tingting Yu and
+                  Hamid Bagheri},
+	title = {SAINTDroid: Scalable, Automated Incompatibility Detection for Android},
+	booktitle = {52nd Annual {IEEE/IFIP} International Conference on Dependable Systems
+                  and Networks, {DSN} 2022, Baltimore, MD, USA, June 27-30, 2022},
+	pages = {567--579},
+	publisher = {{IEEE}},
+	year = {2022},
+	url = {https://doi.org/10.1109/DSN53405.2022.00062},
+	doi = {10.1109/DSN53405.2022.00062},
+	timestamp = {Sun, 04 Aug 2024 19:40:42 +0200},
+	biburl = {https://dblp.org/rec/conf/dsn/SilvaSMSYB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the ever-increasing popularity of mobile devices over the last decade, mobile applications and the frameworks upon which they are built frequently change, leading to a confusing jumble of devices and applications utilizing differing features even within the same framework. For Android apps and devices—the largest such framework and marketplace— mismatches between the version of the app API installed on a device and the version targeted by the developers of an app running on that device can lead to run-time crashes, providing a poor user experience. This paper presents SAINTDroid, a holistic compatibility analysis approach that seamlessly examines both the application code and the framework code by gradually loading and analyzing classes as needed during the compatibility analysis to enable efficient and scalable identification of various types of crash-leading Android compatibility issues. We applied SAINTDroid to 3,590 real-world apps and compared the analysis results against the state-of-the-art techniques, which corroborates that SAINTDroid is up to 76% more successful in detecting compatibility issues while issuing significantly fewer false alarms. The experimental results also show that SAINTDroid is remarkably (up to 8.3 times and four times on average) faster than the state-of-the-art techniques.}
+}
