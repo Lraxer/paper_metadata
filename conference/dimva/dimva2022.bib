@@ -1,0 +1,303 @@
+@inproceedings{DBLP:conf/dimva/DasBMMSVK22,
+	author = {Dipanjan Das and
+                  Priyanka Bose and
+                  Aravind Machiry and
+                  Sebastiano Mariani and
+                  Yan Shoshitaishvili and
+                  Giovanni Vigna and
+                  Christopher Kruegel},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Hybrid Pruning: Towards Precise Pointer and Taint Analysis},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {1--22},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_1},
+	doi = {10.1007/978-3-031-09484-2\_1},
+	timestamp = {Sat, 30 Sep 2023 09:38:59 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DasBMMSVK22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Pointer and taint analyses are the building blocks for several other static analysis techniques. Unfortunately, these techniques frequently sacrifice precision in favor of scalability by over-approximating program behaviors. Scaling these analyses to real-world codebases written in memory-unsafe languages while retaining precision under the constraint of practical time and resource budgets is an open problem. In this paper, we present a novel technique called hybrid\xa0pruning, where we inject the information collected from a program’s dynamic trace, which is accurate by its very nature, into a static pointer or taint analysis system to enhance its precision. We also tackle the challenge of combining static and dynamic analyses, which operate in two different analysis domains, in order to make the interleaving possible. Finally, we show the usefulness of our approach by reducing the false positives emitted by a static vulnerability detector that consumes the improved points-to and taint information. On our dataset of 12 CGC and 8 real-world applications, our hybrid approach cuts down the warnings up to \\(21\\%\\) over vanilla static analysis, while reporting 19 out of 20 bugs in total.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DhoogeVVWT22,
+	author = {Laurens D'hooge and
+                  Miel Verkerken and
+                  Bruno Volckaert and
+                  Tim Wauters and
+                  Filip De Turck},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Establishing the Contaminating Effect of Metadata Feature Inclusion
+                  in Machine-Learned Network Intrusion Detection Models},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {23--41},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_2},
+	doi = {10.1007/978-3-031-09484-2\_2},
+	timestamp = {Mon, 25 Jul 2022 08:39:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DhoogeVVWT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern datasets in intrusion detection are designed to be evaluated by machine learning techniques and often contain metadata features which ought to be removed prior to training. Unfortunately many published articles include (at least) one such metadata feature in their models, namely destination port. In this article, it is shown experimentally that this feature acts as a prime target for shortcut learning. When used as the only predictor, destination port can separate ten state of the art intrusion detection datasets (CIC collection, UNSW-NB15, CIDDS collection, CTU-13, NSL-KDD and ISCX-IDS2012) with 70 to 100% accuracy on class-balanced test sets. Any model that includes this feature will learn this strong relationship during training which is only meaningful within the dataset. Dataset authors can take countermeasures against this influence, but when applied properly, the feature becomes non-informative and could just as easily not have been part of the dataset in the first place. Consequently, this is the central recommendation in this article. Dataset users should not include destination port (or any other metadata feature) in their models and dataset authors should avoid giving their users the opportunity to use them.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MeloniSMG22,
+	author = {Francesco Meloni and
+                  Alessandro Sanna and
+                  Davide Maiorca and
+                  Giorgio Giacinto},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Extended Abstract: Effective Call Graph Fingerprinting for the Analysis
+                  and Classification of Windows Malware},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {42--52},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_3},
+	doi = {10.1007/978-3-031-09484-2\_3},
+	timestamp = {Sat, 30 Sep 2023 09:38:59 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MeloniSMG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malicious Windows executables still constitute one of the major threats to computer security. Various machine learning-based approaches have been proposed to distinguish them from benign applications or perform family classification, a critical task for threat intelligence. However, most of these techniques do not explicitly model the relationships between the various parts of the code. Additionally, the proposed systems, including deep learning ones, were vulnerable to adversarial attacks. This paper presents a novel, static learning-based method to detect and classify executables based on call graph fingerprinting. In particular, we generate a fingerprint for each call graph based on user-defined and library functions. Then, we represent the information sent to the classifier through a MinHash encoding that increases the overall system robustness against fine-grained modifications. The attained results show that our proposed approach can accurately distinguish malware families from each other by showing intriguing robustness properties. We claim that these results make this approach a promising research direction that deserves further exploration.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WangIWL22,
+	author = {Michael Wang and
+                  Alex Interrante{-}Grant and
+                  Ryan Whelan and
+                  Tim Leek},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {{COBRA-GCN:} Contrastive Learning to Optimize Binary Representation
+                  Analysis with Graph Convolutional Networks},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {53--74},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_4},
+	doi = {10.1007/978-3-031-09484-2\_4},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/WangIWL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ability to quickly identify whether two binaries are similar is critical for many security applications, with use cases ranging from triaging millions of novel malware samples, to identifying whether a binary contains a known exploitable bug. There have been many program analysis approaches to solving this problem, however, most machine learning approaches in the last 5 years have focused on function similarity, and there have been no techniques released that are able to perform robust many to many comparisons of full programs. In this paper, we present the first machine learning approach capable of learning a robust representation of programs based on their similarity, using a combination of supervised natural language processing and graph learning. We name our prototype COBRA: Contrastive Learning to Optimize Binary Representation Analysis. We evaluate our model on several different metrics for program similarity, such as compiler optimizations, code obfuscations, and different pieces of semantically similar source code. Our approach outperforms current techniques for full binary diffing, achieving an F1 score and AUC .6 and .12, respectively, higher than BinDiff while also having the ability to perform many-to-many comparisons.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SakaziES22,
+	author = {Shay Sakazi and
+                  Yuval Elovici and
+                  Asaf Shabtai},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Prioritizing Antivirus Alerts on Internal Enterprise Machines},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {75--95},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_5},
+	doi = {10.1007/978-3-031-09484-2\_5},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SakaziES22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security analysts in large enterprises must handle hundreds or even thousands of alerts raised by antivirus (AV) solutions each day. Thus, a mechanism for analyzing, correlating, and prioritizing these alerts (events) is essential. In this paper, we present an unsupervised machine learning-based method for prioritizing AV alerts. The proposed method converts time windows that include sensitive (important) events to a vector of features and utilizes a set of autoencoder (AE) models, each of which is trained to rank a specific type of sensitive event; then it aggregates their results to identify abnormal and potentially critical machines (i.e., machine that require further examination). We evaluate our proposed method using real McAfee ePO datasets collected from a large organization over a four-month period. Security analysts manually inspected the machines for which an alert was raised by the proposed method, and on average 56% of the alerts were found to be relevant (i.e., require further investigation) compared with 43% raised by baseline models and 7% raised by random selection, thus demonstrating the proposed method’s effectiveness at prioritizing AV events.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SchillingM22,
+	author = {Joschua Schilling and
+                  Tilo M{\"{u}}ller},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {{VANDALIR:} Vulnerability Analyses Based on Datalog and {LLVM-IR}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {96--115},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_6},
+	doi = {10.1007/978-3-031-09484-2\_6},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SchillingM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While modern-day static analysis tools are capable of finding standard vulnerabilities as well as complex patterns, implementing those tools is expensive regarding both development time and runtime performance. During the last years, domain specific languages like Datalog have gained popularity as they simplify the development process of analyses and rule sets dramatically. Similarly, intermediate representations like LLVM-IR are used to facilitate static source code analysis. In this paper, we present VANDALIR, a vulnerability analyzer and detector based on Datalog and LLVM-IR. VANDALIR is a static source code analyzer that allows to define and customize detection rules in a high-level, declarative way. We implement VANDALIR as a comprehensive static analysis tool, aiming to simplify vulnerability detection by a new combination of modern technologies. Besides the novel design of VANDALIR, we present a predefined detection rule set covering stack-based memory corruption, double free and format string vulnerabilities. As we show, our rule set achieves a detection rate of over 90% on test cases from the Juliet Test Suite, outperforming well-established vulnerability scanners such as the Clang Static Analyzer. Furthermore, we evaluated VANDALIR on open source projects and could reproduce existing vulnerabilities as well as identify previously unknown vulnerabilities.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/HetterichS22,
+	author = {Lorenz Hetterich and
+                  Michael Schwarz},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Branch Different - Spectre Attacks on Apple Silicon},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {116--135},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_7},
+	doi = {10.1007/978-3-031-09484-2\_7},
+	timestamp = {Mon, 19 Jun 2023 08:51:32 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/HetterichS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since the disclosure of Spectre, extensive research has been conducted on both new attacks, attack variants, and mitigations. However, most research focuses on \\(\\times \\)86 CPUs, with only very few insights on ARM CPUs, despite their huge market share. In this paper, we focus on the ARMv8-based Apple CPUs and demonstrate a reliable Spectre attack. For this, we solve several challenges specific to Apple CPUs and their operating system. We systematically evaluate alternative high-resolution timing primitives, as timers used for microarchitectural attacks on other ARM CPUs are unavailable. As cache-maintenance instructions are ineffective, we demonstrate a reliable eviction-set generation from an unprivileged application. Based on these building blocks, we demonstrate a fast Evict+Reload cross-core covert channel, and a Spectre-PHT attack leaking more than 1500 B/s on an iPhone. Without mitigations for all Spectre variants and the rising market share of ARM CPUs, more research on ARM CPUs is required.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BlairRE22,
+	author = {William Blair and
+                  William K. Robertson and
+                  Manuel Egele},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {MPKAlloc: Efficient Heap Meta-data Integrity Through Hardware Memory
+                  Protection Keys},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {136--155},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_8},
+	doi = {10.1007/978-3-031-09484-2\_8},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BlairRE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory corruption exploits continue to plague high profile applications such as web browsers, high performance servers, and mobile devices. Modern defenses for these targets have rendered classic attack vectors that execute shellcode directly on the stack impotent and obsolete. Instead, modern exploits frequently corrupt the data structures found in a program’s memory allocator in order to take control of running processes. These attacks against the heap are much harder to defend against versus classic stack-based buffer overflows because they often rely on an allocator acting on corrupted data in order to take control of a process. In this work, we introduce MPKAlloc, a memory allocator that utilizes memory protection keys (MPKs) found in recent Intel CPUs to effectively isolate heap meta-data from adversaries. We present our prototype implementation of MPKAlloc which hardens the tcmalloc and PartitionAlloc memory allocators used by the popular Chrome web browser. MPKAlloc protects each page containing heap meta-data with a key that provides an allocator exclusive access to the page. Effectively, MPKAlloc thwarts an adversary’s ability to access or corrupt heap meta-data at the hardware level. We embed the MPKAlloc defense in the open-source Chromium web browser, and demonstrate MPKAlloc stopping realistic attack vectors. Furthermore, we evaluate the performance overhead of Chromium configured with MPKAlloc on the top 50 web sites contained in the Alexa site ranking. Our evaluation shows that MPKAlloc introduces a geometric mean of 1.71% performance overhead (2.44% on average) when browsing the most popular web sites, in exchange for a significant increase in security against heap meta-data exploitation.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/AcharyaV22,
+	author = {Bhupendra Acharya and
+                  Phani Vadrevu},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {A Human in Every {APE:} Delineating and Evaluating the Human Analysis
+                  Systems of Anti-Phishing Entities},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {156--177},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_9},
+	doi = {10.1007/978-3-031-09484-2\_9},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/AcharyaV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We conducted a large-scale evaluation of some popular Anti-Phishing Entities (APEs). As part of this, we submitted arrays of CAPTCHA challenge-laden honey sites to 7 APEs. An analysis of the “click-through rates” during the visits from the APEs showed strong evidence for the presence of formidable human analysis systems in conjunction with automated crawler systems. In summary, we estimate that as many as 10% to 24% of URLs submitted to each of 4 APEs (Google Safe Browsing, Microsoft SmartScreen, Bitdefender and Netcraft) were likely visited by human analysts. In contrast to prior works, these measurements present a very optimistic picture for web security as, for the first time, they show presence of expansive human analysis systems to tackle suspicious URLs that might otherwise be challenging for automated crawlers to analyze. This finding allowed us an opportunity to conduct the first systematic study of the robustness of the human analysis systems of APEs which revealed some glaring weaknesses in them. We saw that all the APEs we studied fall prey to issues such as lack of geolocation and client device diversity exposing their human systems to targeted evasive attacks. Apart from this, we also found a specific weakness across the entire APE ecosystem that enables creation of long-lasting phishing pages targeted exclusively against Android/Chrome devices by capitalizing on discrepancies in web sensor API outputs. We demonstrate this with the help of 10 artificial phishing sites that survived indefinitely despite repeated reporting to all APEs. We suggest mitigations for all these issues. We also conduct an elaborate disclosure process with all affected APEs in an attempt to persuade them to pursue these mitigations.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/KondoTSMYM22,
+	author = {Mizuki Kondo and
+                  Rui Tanabe and
+                  Natsuo Shintani and
+                  Daisuke Makita and
+                  Katsunari Yoshioka and
+                  Tsutomu Matsumoto},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Amplification Chamber: Dissecting the Attack Infrastructure of Memcached
+                  DRDoS Attacks},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {178--196},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_10},
+	doi = {10.1007/978-3-031-09484-2\_10},
+	timestamp = {Mon, 25 Jul 2022 08:39:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/KondoTSMYM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed and reflective denial-of-service (DRDoS) attacks have been one of the most devastating and harmful threats on the Internet. By abusing open Internet services such as DNS and NTP, attackers can boost traffics without revealing their IP addresses. In the case of Memcached DRDoS attacks, adversaries often set large caches on amplifiers using TCP requests before launching the attack, which gives us hints on the IP addresses of the attack infrastructure. In this paper, we trace back the anonymous attack to their origins and investigate their attack infrastructure. During the 15 months of monitoring (September 2018 to November 2019) via eleven honeypots, we observed 820,729 Memcached DRDoS attacks. Out of them, 370,795 attacks were associated with TCP set requests, and 127,771 attacks were associated with UDP set requests. We found 199 unique IP addresses in 54 ASes used to set the large caches for these attacks and that attackers keep using the same large caches or even borrow the cache set by someone else. This implies a relatively small number of threat actors compared to the vast number of attacks. In the case of hotspots where setters are concentrated, the attack infrastructures had functionalities such as scanners to find amplifiers, setters to prepare the attacks, and launchers to generate the DDoS traffic. By conducting a TTL-based trilateration analysis, we found that 7,407 attacks originated from the setters, indicating 16.6% of the setters also worked as launchers. Finally, we confirmed that there were still over 15,000 amplifiers in the wild scattering over 1,000 ASes. This result suggests that the threats of Memcached DRDoS attacks will continue to exist, and our analysis of the attack infrastructures could provide helpful information to take practical actions such as takedowns. We have provided the obtained results on the attack infrastructures to our national CERT.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LiuFCHCSL22,
+	author = {Songsong Liu and
+                  Pengbin Feng and
+                  Jiahao Cao and
+                  Xu He and
+                  Tommy Chin and
+                  Kun Sun and
+                  Qi Li},
+	editor = {Lorenzo Cavallaro and
+                  Daniel Gruss and
+                  Giancarlo Pellegrino and
+                  Giorgio Giacinto},
+	title = {Consistency is All {I} Ask: Attacks and Countermeasures on the Network
+                  Context of Distributed Honeypots},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 19th International Conference, {DIMVA} 2022, Cagliari, Italy, June
+                  29 - July 1, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13358},
+	pages = {197--217},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-09484-2\_11},
+	doi = {10.1007/978-3-031-09484-2\_11},
+	timestamp = {Fri, 01 Jul 2022 15:28:37 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LiuFCHCSL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The honeypot technique has proved its value in system protection and attack analysis over the past 20 years. Distributed honeypot solutions emerge to solve the high cost and risk of maintaining a functional honeypot system. In this paper, we uncover that all existing distributed honeypot systems suffer from one type of anti-honeypot technique called network context cross-checking (NC3) which enables attackers to detect network context inconsistencies before and after breaking into a targeted system. We perform a systematic study of NC3 and identify nine types of network context artifacts that may be leveraged by attackers to identify distributed honeypot systems. As a countermeasure, we propose HoneyPortal, a stealthy traffic redirection framework to defend against the NC3 attack. The basic idea is to project a remote honeypot into the protected local network as a believable host machine. We conduct experiments in a real testbed, and the experimental results show that HoneyPortal can effectively defeat NC3 attacks with a low performance overhead.}
+}

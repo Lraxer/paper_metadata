@@ -1,0 +1,777 @@
+@inproceedings{DBLP:conf/dimva/BockenekVR24,
+	author = {Joshua A. Bockenek and
+                  Freek Verbeek and
+                  Binoy Ravindran},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Exceptional Interprocedural Control Flow Graphs for x86-64 Binaries},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {3--22},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_1},
+	doi = {10.1007/978-3-031-64171-8\_1},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BockenekVR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Standard control flow graphs (CFGs) extracted from binaries by state-of-the-art disassembly/decompilation tools do not include information about exception-related control flow. However, such information is useful when statically analyzing programs that utilize structured exceptions. To fill that gap, we propose the concept of Exceptional Interprocedural Control Flow Graphs (EICFGs). These graphs extend traditional CFGs by adding edges for stack unwinding, frame cleanup, and try/catch behavior caused by thrown exceptions. We provide an approach for generating EICFGs from x86-64 binaries featuring C++ exceptions. The approach is based on symbolically executing an abstract semantics that includes binary-level exception-related function calls. We validated our abstract semantics by generating concrete test cases that were then evaluated using real binaries. We applied an implementation of our approach to 341 off-the-shelf x86-64 binaries compiled from C++ as well as C and Fortran source code. From those binaries, we identified 2574 unique throws and successfully resolved the exceptional control flow for every one of them. We show that resolving throws leads to increased instruction reachability and uncovers edges not found by state-of-the-art tools such as Ghidra.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WangXA24,
+	author = {Ruizhe Wang and
+                  Meng Xu and
+                  N. Asokan},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {S2malloc: Statistically Secure Allocator for Use-After-Free Protection
+                  and More},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {23--43},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_2},
+	doi = {10.1007/978-3-031-64171-8\_2},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/WangXA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attacks on heap memory are ever-increasing. Existing entropy-based secure memory allocators can provide statistical defenses against various heap-based exploits, including use-after-free (UAF). However, although UAF mitigation is in scope, such allocators are not tailored to detect failed UAF attempts. Consequently, an attacker can beat entropy-based protection by repeating the same attack, possibly in combination with heap spraying, to improve their chance of success further. We introduce \\(\\textsc {S2malloc}\\), aiming to enhance UAF-attempt detection without compromising other security guarantees or introducing significant overhead. \\(\\textsc {S2malloc}\\) consists of three new constructs in the secure allocator design space: free block canaries (FBC) to detect UAF attempts, random in-block offset (RIO) to stop the attacker from accurately overwriting the victim object, and random bag layout (RBL) to impede attackers from estimating the block size based on its address. We show that \\(\\textsc {S2malloc}\\) can detect UAF attempts with a reasonable probability and is practical, with only a 2.8% CPU overhead on PARSEC and an 11.5% CPU overhead on SPEC.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/ContiDOT24,
+	author = {Mauro Conti and
+                  Marin Duroyon and
+                  Gabriele Orazi and
+                  Gene Tsudik},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Acoustic Side-Channel Attacks on a Computer Mouse},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {44--63},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_3},
+	doi = {10.1007/978-3-031-64171-8\_3},
+	timestamp = {Sun, 06 Oct 2024 20:59:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/ContiDOT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Acoustic Side-Channel Attacks (ASCAs) extract sensitive information by using audio emitted from a computing devices and their peripherals. Attacks targeting keyboards are popular and have been explored in the literature. However, similar attacks targeting other human-interface peripherals, such as computer mice, are under-explored. To this end, this paper considers security leakage via acoustic signals emanating from normal mouse usage. We first confirm feasibility of such attacks by showing a proof-of-concept attack that classifies four mouse movements with 97% accuracy in a controlled environment. We then evolve the attack towards discerning twelve unique mouse movements using a smartphone to record the experiment. Using Machine Learning (ML) techniques, the model is trained on an experiment with six participants to be generalizable and discern among twelve movements with 94% accuracy. In addition, we experiment with an attack that detects a user action of closing a full-screen window on a laptop. Achieving an accuracy of 91%, this experiment highlights exploiting audio leakage from computer mouse movements in a realistic scenario.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/KreeHW24,
+	author = {Lukas Kree and
+                  Ren{\'{e}} Helmke and
+                  Eugen Winter},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Using Semgrep {OSS} to Find {OWASP} Top 10 Weaknesses in {PHP} Applications:
+                  {A} Case Study},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {64--83},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_4},
+	doi = {10.1007/978-3-031-64171-8\_4},
+	timestamp = {Fri, 02 Aug 2024 21:41:22 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/KreeHW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given PHP’s continuous success, it remains an important task to ensure security in its applications. While code reviews are a common measure to catch bugs during development, they lack scalability, are error-prone, and time-consuming\xa0[2, 38, 41]. Thus, static analysis tools like Semgrep emerged to provide programmatic feedback on code. But static analyses often show low precision, which can jeopardize utility. In this case study, we investigate precision rates for Semgrep OSS for common web weaknesses from the OWASP Top 10\xa0[35]. We explore method and tool limitations in weakness detection, OWASP classes, and Semgrep’s public PHP rule set. We apply the latter to 300 open source applications, invest 34\xa0h in manual sample validation, and derive precision rates for each OWASP class. Our validation shows that the rules correctly detected weaknesses for seven OWASP classes with 86% precision, demonstrating the tool’s utility. Yet, we estimate that most findings are not exploitable (81%). Thus, there is still considerable assessment overhead for users. Our work further highlights that only a subset of weaknesses are detectable, as dimensions such as runtime context and insecure design remain hidden. Finally, we advise practitioners to not exclusively rely on public rules, as translating application-specific business logic and design choices may open up to the detection of previously uncovered weaknesses.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BenahmedQLD24,
+	author = {Sofiane Benahmed and
+                  Abdullah Qasem and
+                  Anis Lounis and
+                  Mourad Debbabi},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Modularizing Directed Greybox Fuzzing for Binaries over Multiple {CPU}
+                  Architectures},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {84--103},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_5},
+	doi = {10.1007/978-3-031-64171-8\_5},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BenahmedQLD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Directed Greybox Fuzzing has proven effective in vulnerability detection areas such as bug reproduction and patch testing. However, existing directed fuzzers are often difficult to customize, lack modularity and have limited binary support. This constrains their usability on complex software or when the source code is unavailable; a challenge encountered when fuzzing embedded systems. This article addresses these limitations by introducing the Directed Fuzzing Toolkit (DRIFT) as a platform for directed fuzzing within the modular framework LibAFL. DRIFT modularizes techniques from the state-of-the-art directed fuzzer AFLGo and adapts them for binary applications thereby augmenting LibAFL’s highly customizable fuzzers with directed fuzzing capabilities. Additionally, by leveraging Ghidra’s analysis, DRIFT achieves architecture agnostic static analysis, opening doors for DGF to tackle previously challenging scenarios. Our evaluation of DRIFT shows a 90% correlation in static analysis metrics over binary compared to its source-code counterpart. Fuzzing performance was also notable despite operating over emulation. In benchmarks, DRIFT’s performance exceeds the original fuzzer with up to doubled bug discovery rates and 9–40\\(\\times \\) faster exploitation times of target bugs. These results are attributed to the toolkit’s modular design and its integration with LibAFL. Additionally, DRIFT includes a profiling platform for DGF metrics and is incorporated with the Magma benchmark. Together, these features position DRIFT as a practical advancement in directed fuzzing within LibAFL.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TofighiOZSK24,
+	author = {Mohammad Ali Tofighi and
+                  Behzad Ousat and
+                  Javad Zandi and
+                  Esteban Schafir and
+                  Amin Kharraz},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Constructs of Deceit: Exploring Nuances in Modern Social Engineering
+                  Attacks},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {107--127},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_6},
+	doi = {10.1007/978-3-031-64171-8\_6},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TofighiOZSK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite the increasing effort in the defense community to develop robust security solutions, social engineering attacks are getting more prevalent every year. Detecting fraudulent websites has been a concurrent task of both academia and industry in combating this type of attack. A common approach is to use supervised methods and labeled data to locate suspicious cases. In this paper, we evaluate a set of more common features related to the development and deployment aspects of websites that have been widely used in detecting scam and phishing websites over the years. As threat actors and the defense community are in a cat-and-mouse game, we aim to investigate whether such features are still prevalent or how to move forward in determining signs of malice when looking at the problem space at scale. Our study challenges the efficacy of deployment-based features, such as infrastructure providers or certificate issuers, in detecting fraudulent websites. Additionally, we perform an empirical analysis of the development aspects of websites that can be utilized in the detection pipeline.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DigregorioMDGCPZ24,
+	author = {Gabriele Digregorio and
+                  Salvatore Maccarrone and
+                  Mario D'Onghia and
+                  Luigi Gallo and
+                  Michele Carminati and
+                  Mario Polino and
+                  Stefano Zanero},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Tarallo: Evading Behavioral Malware Detectors in the Problem Space},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {128--149},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_7},
+	doi = {10.1007/978-3-031-64171-8\_7},
+	timestamp = {Sun, 06 Oct 2024 20:59:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DigregorioMDGCPZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning algorithms can effectively classify malware through dynamic behavior but are susceptible to adversarial attacks. Existing attacks, however, often fail to find an effective solution in both the feature and problem spaces. This issue arises from not addressing the intrinsic nondeterministic nature of malware, namely executing the same sample multiple times may yield significantly different behaviors. Hence, the perturbations computed for a specific behavior may be ineffective for others observed in subsequent executions. In this paper, we show how an attacker can augment their chance of success by leveraging a new and more efficient feature space algorithm for sequential data, which we have named Position Sensitive - Fast Gradient Sign Method, and by adopting two problem space strategies specially tailored to address nondeterminism in the problem space. We implement our novel algorithm and attack strategies in Tarallo, an end-to-end adversarial framework that significantly outperforms previous works in both white and black-box scenarios. Our preliminary analysis in a sandboxed environment and against two Recurrent Neural Network (RNN)-based malware detectors, shows that Tarallo achieves a success rate up to 99% on both feature and problem space attacks while significantly minimizing the number of modifications required for misclassification.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/AssaianteNDQ24,
+	author = {Cristian Assaiante and
+                  Simone Nicchi and
+                  Daniele Cono D'Elia and
+                  Leonardo Querzoni},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Evading Userland {API} Hooking, Again: Novel Attacks and a Principled
+                  Defense Method},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {150--173},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_8},
+	doi = {10.1007/978-3-031-64171-8\_8},
+	timestamp = {Fri, 02 Aug 2024 21:41:22 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/AssaianteNDQ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Monitoring how a program utilizes userland APIs is behind much dependability and security research. To intercept and study their invocations, the established practice targets the prologue of API implementations for inserting hooks. This paper questions the validity of this design for security uses by examining completeness and correctness attacks to it. We first show how evasions that jump across the hook instrumentation are practical and can reach places much deeper than those we currently find in executables in the wild. Next, we propose and demonstrate TOCTTOU attacks that lead monitoring systems to observe false indicators for the argument values that a program uses for API calls. To mitigate both threats, we design a static analysis to identify vantage points for effective hook placement in API code, supporting both reliable call recording and accurate argument extraction. We use this analysis to implement an open-source prototype API monitor, Toxotidae, that we evaluate against adversarial and benign executables for Windows.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DHondtOL24,
+	author = {Alexandre D'Hondt and
+                  Charles{-}Henry Bertrand Van Ouytsel and
+                  Axel Legay},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Extended Abstract: Evading Packing Detection: Breaking Heuristic-Based
+                  Static Detectors},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {174--183},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_9},
+	doi = {10.1007/978-3-031-64171-8\_9},
+	timestamp = {Fri, 02 Aug 2024 21:41:22 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DHondtOL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, executable packing remains an open issue in its detection especially when it comes to static analysis. Packing is significantly used in malware to hide malicious code from detection systems. These last years, many studies about static packing detection addressed this problem with heuristics and machine learning, considering different ad hoc techniques, algorithms and feature sets but very few addressed it from the adversarial point of view, that is, how to fool heuristics by altering samples with targeted modifications. The objective of this work is to study to what extent it is easy to evade detection by open source static detectors that are commonly used by the community by applying alterations on packed samples, which require only slight adaptations of the related packers, resulting in evasion. An adversarial setting from the problem-space perspective is addressed by using realistic modifications of binary samples that target common significant features. For this purpose, alterations and datasets are composed and static detection is applied using the experimental toolkit Packing Box. Results of alterations are shown, in terms of information gain of features and accuracy of detection, on open source static packing detectors. Finally, their significant effects are highlighted and their effectiveness is evaluated.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PfisterMBKRA24,
+	author = {Moritz Pfister and
+                  Robert Michael and
+                  Max Boll and
+                  Cosima K{\"{o}}rfer and
+                  Konrad Rieck and
+                  Daniel Arp},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Listening Between the Bits: Privacy Leaks in Audio Fingerprints},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {184--204},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_10},
+	doi = {10.1007/978-3-031-64171-8\_10},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PfisterMBKRA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Audio content recognition is an emerging technology that forms the basis for mobile services, such as automatic song recognition, second-screen synchronization, and broadcast monitoring. The technology utilizes audio fingerprints, short patterns that are extracted from audio recordings of a smartphone and enable the identification of specific content. These fingerprints are generally considered privacy-friendly, as they contain minimal information of the original signal. As a result, mobile applications have emerged in the past few years that silently monitor user habits by collecting such audio fingerprints in the background. In this paper, we systematically examine whether audio fingerprints leak sensitive information from the recording environment and potentially violate the privacy of smartphone users. To this end, we analyze three popular audio recognition solutions and develop attacks to infer sensitive information from their fingerprints. To the best of our knowledge, we are the first to show that the identification of speakers and words in the fingerprints is possible. Based on our analysis, we conclude that current audio fingerprints do not sufficiently protect privacy and should be used with great caution.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/NeefO24,
+	author = {Sebastian Neef and
+                  Maath Oudeh},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Bringing UFUs Back into the Air with {FUEL:} {A} Framework for Evaluating
+                  the Effectiveness of Unrestricted File Upload Vulnerability Scanners},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {207--226},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_11},
+	doi = {10.1007/978-3-031-64171-8\_11},
+	timestamp = {Thu, 22 Aug 2024 20:23:20 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/NeefO24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unrestricted file upload (UFU) is a class of web security vulnerabilities that can have a severe impact on web applications if uploaded files are not sufficiently validated or securely handled. A review of related work shows an increased interest in finding new methods to discover such vulnerabilities. However, each publication evaluates its new vulnerability scanner against a different set of artificial or real-world applications available at the time of writing. Thus, we identify the need for a comprehensive testing framework to allow a reproducible comparison between existing and future UFU vulnerability scanners. Our contributions include the File Upload Exploitation Lab (FUEL), which models 15 distinct UFU vulnerabilities in isolated scenarios to enable a reproducible evaluation of UFU scanners’ capabilities. The results of evaluating four black-box UFU scanners against FUEL show that no scanner manages to identify all UFU vulnerabilities, leaving real-world websites at risk of compromise due to false negatives. Our work aims to solve this problem by extending an existing UFU scanner with multiple new detection and exploitation techniques, which we call Fuxploider-NG, to increase its accuracy from \\(\\sim \\)50% to over 90%, thereby surpassing the capabilities of existing UFU scanners and showcasing the importance of FUEL\xa0as a UFU vulnerability evaluation framework. To foster open science and future work in this area, we open-source FUEL\xa0and Fuxploider-NG.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PaliathTBWDS24,
+	author = {Vivin Paliath and
+                  Erik Trickel and
+                  Tiffany Bao and
+                  Ruoyu Wang and
+                  Adam Doup{\'{e}} and
+                  Yan Shoshitaishvili},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {SandPuppy: Deep-State Fuzzing Guided by Automatic Detection of State-Representative
+                  Variables},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {227--250},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_12},
+	doi = {10.1007/978-3-031-64171-8\_12},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PaliathTBWDS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Current state-of-the-art automated fuzzing approaches cannot explore deep program-states without human assistance. Recently, Ijon allowed humans to provide code-annotations on the target to expose program state to the fuzzer. However, this requires a human to read, understand, and annotate the program source, which limits scalability and applicability. In this paper we introduce SandPuppy, a technique that automatically identifies potential state-representative variables and applies Ijon-style instrumentation to expose corresponding state to the fuzzer. To identify these variables and their semantics, SandPuppy collects runtime variable-value traces from an initial fuzzing run and analyzes them along with the program source to instrument the program and expose internal state to the fuzzer. This process repeats and identifies additional variables, allowing the exploration of deeper states. We evaluated SandPuppy against synthetic and real-world targets representing various fuzzing-challenges. The results show that SandPuppy can automatically solve problems that purely coverage-based approaches cannot solve without assistance from human experts. For example, SandPuppy can automatically play and solve levels of Super Mario Bros, maze programs, and identify complex, deep states in real-world targets such as libtpms, resulting from combinations of previously identified states. Evaluating SandPuppy on real-world targets such as jsoncpp, libtpms, PcapPlusPlus, and readelf demonstrates that SandPuppy generally improves coverage compared to AFL, AFL++, LafIntel, RedQueen, SGFuzz, and Ferry. In all, SandPuppy identified ten unknown vulnerabilities in PcapPlusPlus and one unknown vulnerability in dmg2img.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/Some24,
+	author = {Doli{\`{e}}re Francis Som{\'{e}}},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Extended Abstract - Tracking Manifests - Persistent Identifiers in
+                  Progressive Web Apps},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {251--260},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_13},
+	doi = {10.1007/978-3-031-64171-8\_13},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/Some24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Progressive Web Applications (PWAs) are web apps that blur the lines of differences with native apps thanks to advanced web technologies at their core. On the one hand, service workers (SWs) bring offline experience to users, background syncing, out-of-bound web push notifications, and turn web apps into client-side proxies that can intercept HTTP requests, and generate responses to fulfill them. On the other hand, web application manifests provide the metadata that makes PWAs installable on the user’s device, just like any other native app. In this work, we provide the first privacy assessment of the design and implementation of web manifests, demonstrating that they can be leveraged by adversaries to persist unique identifiers which can be reused to identify and track users. To make matters worse, these identifiers can outlive privacy and tracking protection mechanisms like clearing all browsing data, unregistering SWs, etc. making them similar to supercookies, the most invasive type of persistent identifiers. From an empirical study of 37.6M websites in the wild, we report that the adoption of PWAs is prevalent on the Web, suggesting potential harm to user’s privacy. We reported our findings to browser vendors, discussing countermeasures that amount to implementing in the browser additional options for users to uninstall PWAs when they clear their browsing data. With this work, we also raise awareness of the persistence-by-design nature of mechanisms like web app manifests and think that they should be held to the same privacy standards as other client-side storage like the infamous cookies that are under extensive scrutiny by regulations like the GDPR.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MarazziJZR24,
+	author = {Michele Marazzi and
+                  Patrick Jattke and
+                  Jason Zibung and
+                  Kaveh Razavi},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {PayRide: Secure Transport e-Ticketing with Untrusted Smartphone Location},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {261--282},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_14},
+	doi = {10.1007/978-3-031-64171-8\_14},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MarazziJZR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The smartphone location is the basis for a plethora of popular applications, such as traffic navigation, games, and geotagging. Since the user can manipulate the reported location, it is possible to compromise these applications with fake locations. These attacks generally have a limited impact, but this is changing with the increasing level of trust in the smartphone location. As a prominent example, recent transport e-ticketing applications perform financial transactions based on the assumption that the smartphone location represents that of the user. Unfortunately, this assumption leads to location-based attacks with direct financial implications. We present FreeRide, a real-world attack that allows a malicious user to ride public transports for free. Existing mitigations against FreeRide are either ineffective or impractical since they attempt to enforce the integrity of the smartphone location. Instead of enforcing location integrity, our proposed mitigation, PayRide, establishes the user’s location using the position of the public transport. We have formally verified the PayRide protocol and evaluated its boundary conditions based on a range of possible accuracies reported by the smartphone and public transport.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TsouvalasN24,
+	author = {Billy Tsouvalas and
+                  Nick Nikiforakis},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Knocking on Admin's Door: Protecting Critical Web Applications
+                  with Deception},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {283--306},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_15},
+	doi = {10.1007/978-3-031-64171-8\_15},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TsouvalasN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we introduce PageKnocker, a deception-based supplementary authentication mechanism, aimed primarily at protecting the public-facing authentication endpoints of critical web applications. PageKnocker is inspired by the network security concept of port knocking, and uses the requests to the web application as a means of authentication for the login page. Specifically, the authentication is successful (i.e. the user gets to access the login page of a web application), if the user’s request sequence matches their personal predefined request sequence. In this manner, PageKnocker offers web application administrators the comparative advantage of knowing the nature of a visitor even before that visitor sends the first set of credentials. Alongside PageKnocker, we introduce two deceptive login environments, one overtly deceptive and one clandestine, towards which we direct any unauthenticated user attempting to reach the real login page. To evaluate the security and usability of page knocks, we deploy PageKnocker-protected honeypots in the wild and perform a separate user study, showing that PageKnocker can resist tens of thousands of brute-forcing bots, while remaining usable and intuitive.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/HorimotoLB24,
+	author = {Suguru Horimoto and
+                  Keane Lucas and
+                  Lujo Bauer},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Approach for the Optimization of Machine Learning Models for Calculating
+                  Binary Function Similarity},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {309--329},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_16},
+	doi = {10.1007/978-3-031-64171-8\_16},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/HorimotoLB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Binary function similarity comparison is essential in a variety of security fields, such as software vulnerability detection and malware analysis, because it enables engineers to accelerate otherwise time-consuming tasks. While various approaches for binary function similarity comparison have been proposed, in an experiment of previous work to fairly evaluate existing methods, a method combining graph neural network (GNN) and bag-of-words (BoW) exhibited the highest performance. In this method, each basic block (BB) in a function is embedded into a vector by BoW. As a result, the function vector is derived from sparse vectors. In this paper, we propose a method combining a GNN with fastText, instead of BoW. Furthermore, in order to optimize machine learning models for calculating binary function similarity, we apply early stopping based on mean reciprocal rank (MRR) to our machine learning training. Our method outperformed the previous method combining GNN and BoW by up to 2% in AUC, up to 9% in Recall@1 and up to 7% in MRR10 in a certain case. Additionally, through a function search case study in malware analysis, our method has been found to be applicable for finding distinctive functions present in LockBit Ransomware.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/KucsvanCPC24,
+	author = {Zsolt Levente Kucsv{\'{a}}n and
+                  Marco Caselli and
+                  Andreas Peter and
+                  Andrea Continella},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Inferring Recovery Steps from Cyber Threat Intelligence Reports},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {330--349},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_17},
+	doi = {10.1007/978-3-031-64171-8\_17},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/KucsvanCPC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Within the constantly changing threat landscape, Security Operation Centers are overwhelmed by suspicious alerts, which require manual investigation. Nonetheless, given the impact and severity of modern threats, it is crucial to quickly mitigate and respond to potential incidents. Currently, security operators use predefined sets of actions from so-called playbooks to respond to incidents. However, these playbooks need to be manually created and updated for each threat, again increasing the workload of the operators. In this work, we research approaches to automate the inference of recovery steps by automatically identifying steps taken by threat actors within Cyber Threat Intelligence reports and translating these steps into recovery steps that can be defined in playbooks. Our insight is that by analyzing the text describing threats, we can effectively infer their corresponding recovery actions. To this end, we first design and implement a semantic approach based on traditional Natural Language Processing techniques, and we then study a generative approach based on recent Large Language Models (LLMs). Our experiments show that even if the LLMs were not designed to solve domain-specific problems, they outperform the precision of semantic approaches by up to 45%. We also evaluate factuality showing that LLMs tend to produce up to 90 factual errors over the entire dataset.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DunlapMRE24,
+	author = {Trevor Dunlap and
+                  John Speed Meyers and
+                  Bradley Reaves and
+                  William Enck},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Pairing Security Advisories with Vulnerable Functions Using Open-Source
+                  LLMs},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {350--369},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_18},
+	doi = {10.1007/978-3-031-64171-8\_18},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DunlapMRE24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the reliance on open-source software dependencies increases, managing the security vulnerabilities in these dependencies becomes complex. State-of-the-art industry tools use reachability analysis of code to alert developers when security vulnerabilities in dependencies are likely to impact their projects. These tools heavily rely on precisely identifying the location of the vulnerability within the dependency, specifically vulnerable functions. However, the process of identifying vulnerable functions is currently either manual or uses a naive automated approach that falsely assumes all changed functions in a security patch link are vulnerable. In this paper, we explore using open-source large language models (LLMs) to improve pairing security advisories with vulnerable functions. We explore various prompting strategies, learning paradigms (i.e., zero-shot vs. few-shot), and show our approach generalizes to other open-source LLMs. Compared to the naive automated approach, we show a 173% increase in precision while only having an 18% decrease in recall. The significant increase in precision to enhance vulnerable function identification lays the groundwork for downstream techniques that depend on this critical information for security analysis and threat mitigation.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SoltaniNMFTK24,
+	author = {Arian Soltani and
+                  D'Jeff K. Nkashama and
+                  Jordan F. Masakuna and
+                  Marc Frappier and
+                  Pierre{-}Martin Tardif and
+                  Froduald Kabanza},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Extended Abstract: Assessing Language Models for Semantic Textual
+                  Similarity in Cybersecurity},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {370--380},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_19},
+	doi = {10.1007/978-3-031-64171-8\_19},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SoltaniNMFTK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In light of the significant strides made by large language models (LLMs) in the field of natural language processing (NLP) [5], our research seeks to evaluate and contrast their proficiency in establishing associations within the realm of cybersecurity. Our experimental framework involves juxtaposing actual connections from various cybersecurity knowledge graphs (including MITRE CAPEC, D3FEND, and CVE connections to ATT &CK) against predictions made by LLMs using semantic textual similarity (STS). These connections span a broad spectrum, encapsulating diverse abstractions of threat descriptions, attack patterns, defense strategies, and vulnerabilities. The language models chosen for this study are varied, comprising state-of-the-art models from STS leaderboards, LLMs (GPT3.5 and PaLM), and ATTACK BERT [1], a cybersecurity domain-specific language model. Our experiments provide valuable insights into the differentiation between language models and data sources, thereby facilitating the broader application of STS in cybersecurity.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DrichelQM24,
+	author = {Arthur Drichel and
+                  Benedikt von Querfurth and
+                  Ulrike Meyer},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Extended Abstract: {A} Transfer Learning-Based Training Approach for
+                  {DGA} Classification},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {381--391},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_20},
+	doi = {10.1007/978-3-031-64171-8\_20},
+	timestamp = {Thu, 22 Aug 2024 20:23:20 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DrichelQM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose a novel training method based on transfer learning (TL) and fine-tuning to improve the detection performance of domain generation algorithm (DGA) classifiers. This new training approach allows a classifier to learn nuances of domains generated by specific DGAs, which greatly improves a classifier’s separation performance between benign and malicious samples. Additionally, we develop and optimize four novel models for DGA binary and multiclass classification based on more recently proposed deep learning (DL) architectures. We comparatively evaluate the resulting DGA classifiers in a unified setting for statistically significant improvements, and assess whether the classifiers generalize well between different networks and are time-robust. In a real-world setting, our best performing model improves the state of the art by 2–3.4% in true-positive rate (TPR) at the same fixed false-positive rates (FPRs).}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LounisADH24,
+	author = {Anis Lounis and
+                  Anthony Andreoli and
+                  Mourad Debbabi and
+                  Aiman Hanna},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Seum Spread: Discerning Security Flaws in IoT Firmware via Call Sequence
+                  Semantics},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {395--415},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_21},
+	doi = {10.1007/978-3-031-64171-8\_21},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LounisADH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet-of-Things (IoT) devices play a central role in the modern digital landscape by providing uninterrupted convenience, but their history has been marked by the opportunities they provide bad actors desiring to exploit them. Vulnerable firmware remains a major factor in exploiting IoT devices. Persistent storage interfaces, which allow data retention even after power loss, can exacerbate this problem. This work examines and informs on the security impact of persistent storage through the lens of security-critical sanitization bypass flaws, computed attack surface spread, and the presence of command injection vulnerabilities; three facets of firmware code that can influence its susceptibility to exploitation. The assessment is established upon manually annotated call sequences that allow reasoning about path sanitization in order to formulate well-founded observations. We assemble a dataset of 100 IoT firmware images from four well-known vendors and initially find 68 devices whose persistent storage receives attacker-controllable input in over 4800 unique unsanitized paths. Furthermore, we discovered 77 instances of sanitization bypass flaws in 32 devices. In addition, we create the taint spread metric to assess the impact of tainted persistent storage on a firmware’s attack surface; in one alarming instance we find tainted data to affect over 1500 firmware code locations. Finally, we leverage the modeled call sequences to detect and exploit seven 0-day command injection vulnerabilities in five acquired devices and five assigned PSVs.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MechelinckDFVB24,
+	author = {Ruben Mechelinck and
+                  Daniel Dorfmeister and
+                  Bernhard Fischer and
+                  Stijn Volckaert and
+                  Stefan Brunthaler},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {GlueZilla: Efficient and Scalable Software to Hardware Binding using
+                  Rowhammer},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {416--438},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_22},
+	doi = {10.1007/978-3-031-64171-8\_22},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MechelinckDFVB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industrial-scale reverse engineering affects the majority of companies in the mechanical and plant engineering sector and imposes significant economic damages. Although reverse engineering mitigations exist, economic damage has not been impacted, indicating that they have failed to address the problem. A closer investigation shows that industrial-scale reverse engineering typically only expends efforts on replicating hardware, since software can often be copied verbatim—no reverse engineering effort required. We present GlueZilla, a system that binds software to hardware through user-space rowhammer PUFs. GlueZilla transforms programs such that they only exhibit their intended behavior on the single machine they are bound to at compile time. When run on any other machine, the programs will exhibit a different functionality. GlueZilla relies on unclonable machine features and thereby forces counterfeiters to not clone just the hardware but also the software. Cloning both hard- and software drives up reverse engineering costs, thereby also decreasing the economic viability of industrial-scale reverse engineering. GlueZilla works on commodity hardware and does not rely on expensive hardware components. Our evaluation shows that GlueZilla is effective and incurs 16% run-time performance overhead in a practical case.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MatsuoTSKM24,
+	author = {Kazuki Matsuo and
+                  Satoshi Tanda and
+                  Kuniyasu Suzaki and
+                  Yuhei Kawakoya and
+                  Tatsuya Mori},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {SmmPack: Obfuscation for {SMM} Modules with {TPM} Sealed Key},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {439--459},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_23},
+	doi = {10.1007/978-3-031-64171-8\_23},
+	timestamp = {Thu, 22 Aug 2024 20:23:20 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MatsuoTSKM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {System Management Mode (SMM) is the highest-privileged operating mode of x86 and x86-64 processors. Through SMM exploitation, attackers can tamper with the Unified Extensible Firmware Interface (UEFI) firmware, disabling the security mechanisms implemented by the operating system and hypervisor. Vulnerabilities enabling SMM code execution are often reported as Common Vulnerabilities and Exposures (CVEs); however, no security mechanisms currently exist to prevent attackers from analyzing those vulnerabilities. To increase the cost of vulnerability analysis of SMM modules, we introduced SmmPack. The core concept of SmmPack involves encrypting an SMM module with the key securely stored in a Trusted Platform Module (TPM). We assessed the effectiveness of SmmPack in preventing attackers from obtaining and analyzing SMM modules using various acquisition methods. Our results show that SmmPack significantly increases the cost by narrowing down the means of module acquisition. Furthermore, we demonstrated that SmmPack operates without compromising the performance of the original SMM modules. We also clarified the management and adoption methods of SmmPack, as well as the procedure for applying BIOS updates, and demonstrated that the implementation of SmmPack is realistic.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/JuffingerNHSAG24,
+	author = {Jonas Juffinger and
+                  Sudheendra Raghav Neela and
+                  Martin Heckel and
+                  Lukas Schwarz and
+                  Florian Adamsky and
+                  Daniel Gruss},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Presshammer: Rowhammer and Rowpress Without Physical Address Information},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {460--479},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_24},
+	doi = {10.1007/978-3-031-64171-8\_24},
+	timestamp = {Thu, 22 Aug 2024 20:23:20 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/JuffingerNHSAG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern DRAM is susceptible to fault attacks that undermine the entire system’s security. The most well-studied disturbance effect is Rowhammer, where an attacker repeatedly opens and closes (i.e., hammers) different rows, which can lead to bitflips in adjacent rows. Different hammering strategies include double-sided, hammering two rows sandwiching a victim row, and one-location, hammering a single row. One-location Rowhammer requires no physical address information, as any location in memory is mapped to a DRAM row, and no relation between rows is required for hammering. The recently discovered Rowpress differs from Rowhammer by not hammering rows but keeping them open longer, evident by a disjoint set of affected memory locations. In this paper, we examine the differences between four attack variants: one-location Rowhammer, a one-location Rowpress variant we developed, double-sided Rowhammer, and double-sided Rowpress on a set of 12 DDR4 modules. Our methodology is to hammer and press the exact same set of physical memory locations in all attack variants. Surprisingly, our results show that on 4 out of 12 DDR4 modules, we were only able to reproduce double-sided Rowhammer but none of the other attack variants. On 2 DDR4 modules, we were able to reproduce all attack variants. We find that the number of unique bitflip locations ranges from 161 to 15\xa0612, when hammering the exact same set of physical memory locations. Our one-location Rowhammer attack induces roughly the same amount of bitflips as double-sided Rowhammer, however, only 61.8\xa0% of bitflip locations overlap. We explain this by one-location Rowhammer inducing bitflips due to the Rowhammer as well as the Rowpress effect, making the differentiation of both methods difficult, therefore, calling it Presshammer. Based on our observed bitflips, we develop the first end-to-end one-location Rowpress attack. One-location Rowpress requires only minimal physical address information that an attacker can acquire through a same-row same-bank side-channel attack. Our end-to-end attack escalates to kernel privileges within less than 10\xa0min.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DumanZWD24,
+	author = {Onur Duman and
+                  Mengyuan Zhang and
+                  Lingyu Wang and
+                  Mourad Debbabi},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {SecMonS: {A} Security Monitoring Framework for {IEC} 61850 Substations
+                  Based on Configuration Files and Logs},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {483--502},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_25},
+	doi = {10.1007/978-3-031-64171-8\_25},
+	timestamp = {Fri, 02 Aug 2024 21:41:22 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DumanZWD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Substations are critical components of the smart grid since compromising them can lead to significant consequences, such as blackouts. Threat modeling aims to model different ways critical networks, such as substations, can be attacked. Attack graphs are commonly used for modeling threats and there is a huge literature on attack graphs. However, attack graph generation is still an open problem, and attack graphs are usually generated based on static configurations. To overcome those challenges, this paper provides an attack graph-based threat modeling and Markov Decision Process (MDP)-based monitoring framework for substations, named SecMonS. Specifically, we first generate static attack graphs based on substation configuration language (SCL) descriptions of intelligent electronic devices (IED). Second, we generate automaton models for modeling the behaviors of IEDs directly from log files that contain Generic Object Oriented Substation Event (GOOSE) protocol parameter values. Third, we enhance static attack graphs with automaton models to ensure that those threat models contain updated information based on real-world attacks. Fourth, we tackle the state space explosion faced by MDP models which are utilized for identifying potential physical consequences of attacks to integrate physical aspects of attacks into the threat modeling. Lastly, we evaluate the practicality of SecMonS through simulations using data both from a public data set and randomly generated events for different types of attacks.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/EfatinasabMBRC24,
+	author = {Emad Efatinasab and
+                  Francesco Marchiori and
+                  Alessandro Brighente and
+                  Mirco Rampazzo and
+                  Mauro Conti},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {FaultGuard: {A} Generative Approach to Resilient Fault Prediction
+                  in Smart Electrical Grids},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {503--524},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_26},
+	doi = {10.1007/978-3-031-64171-8\_26},
+	timestamp = {Sun, 06 Oct 2024 20:59:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/EfatinasabMBRC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Predicting and classifying faults in electricity networks is crucial for uninterrupted provision and keeping maintenance costs at a minimum. Thanks to the advancements in the field provided by the smart grid, several data-driven approaches have been proposed in the literature to tackle fault prediction tasks. Implementing these systems brought several improvements, such as optimal energy consumption and quick restoration. Thus, they have become an essential component of the smart grid. However, the robustness and security of these systems against adversarial attacks have not yet been extensively investigated. These attacks can impair the whole grid and cause additional damage to the infrastructure, deceiving fault detection systems and disrupting restoration.\n In this paper, we present FaultGuard, the first framework for fault type and zone classification resilient to adversarial attacks. To ensure the security of our system, we employ an Anomaly Detection System (ADS) leveraging a novel Generative Adversarial Network training layer to identify attacks. Furthermore, we propose a low-complexity fault prediction model and an online adversarial training technique to enhance robustness. We comprehensively evaluate the framework’s performance against various adversarial attacks using the IEEE13-AdvAttack dataset, which constitutes the state-of-the-art for resilient fault prediction benchmarking. Our model outclasses the state-of-the-art even without considering adversaries, with an accuracy of up to 0.958. Furthermore, our ADS shows attack detection capabilities with an accuracy of up to 1.000. Finally, we demonstrate how our novel training layers drastically increase performances across the whole framework, with a mean increase of 154% in ADS accuracy and 118% in model accuracy.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/GaltierANOCK24,
+	author = {Florent Galtier and
+                  Guillaume Auriol and
+                  Vincent Nicomette and
+                  Paul L. R. Olivier and
+                  Romain Cayre and
+                  Mohamed Ka{\^{a}}niche},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Wireless Modulation Identification: Filling the Gap in IoT Networks
+                  Security Audit},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {525--544},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_27},
+	doi = {10.1007/978-3-031-64171-8\_27},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/GaltierANOCK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The massive deployment of IoT devices comes with the creation of many wireless communication protocols designed to support various applications. However, while some of these protocols are public and widely used, such as Bluetooth Low Energy or Enhanced ShockBurst, the specifications of other protocols are only partially, if at all, publicly available, making it difficult for security researchers to study them, especially for auditing purposes. In this paper, we address this issue by presenting an innovative, easy-to-use and protocol-agnostic toolkit to analyze unknown network communications. The toolkit is designed to automatically infer their physical layer characteristics and to extract the binary content of their frames. We conducted experiments to identify the modulation parameters for various wireless communications used by off-the-shelf devices as well as for randomly generated protocols, considering both FSK and ASK modulations. In addition, our results show that the proposed toolkit is capable of successfully detecting covert channels in wireless environments. We also conducted a case study on an undocumented proprietary wireless mouse protocol.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/CanbolatFEH24,
+	author = {Sine Canbolat and
+                  Clemens Frub{\"{o}}se and
+                  Ghada Elbez and
+                  Veit Hagenmeyer},
+	editor = {Federico Maggi and
+                  Manuel Egele and
+                  Mathias Payer and
+                  Michele Carminati},
+	title = {Extended Abstract: Assessing {GNSS} Vulnerabilities in Smart Grids},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 21st International Conference, {DIMVA} 2024, Lausanne, Switzerland,
+                  July 17-19, 2024, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {14828},
+	pages = {545--555},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-3-031-64171-8\_28},
+	doi = {10.1007/978-3-031-64171-8\_28},
+	timestamp = {Sat, 20 Jul 2024 14:18:50 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/CanbolatFEH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For the future power grid, the need for time-synchronized measurement data of high resolution also comes with the drawback of an increasing reliance on Global Navigation Satellite Signals (GNSSs) for time synchronization. Although the manipulation of GNSS signals has been extensively investigated, the question of risk magnitude of such attacks on the power grid is still open: Apart from proof-of-principle examples that require the attacker to have profound knowledge of the system, the risk to real world systems remains largely undetermined. In this paper, we present a vulnerability analysis of a time server used in International Electrotechnical Commission (IEC) 61850-based substations to five GNSS spoofing attacks. We demonstrate that using a GNSS simulator, both quick-conspicuous and slow-stealthy attacks are successful. We assess the difficulty in the scope of a qualitative risk assessment. Our findings can support quantitative risk analysis, and hence decision-makers in ensuring grid stability.}
+}

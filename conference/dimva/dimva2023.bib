@@ -1,0 +1,357 @@
+@inproceedings{DBLP:conf/dimva/WichelmannPSP023,
+	author = {Jan Wichelmann and
+                  Christopher Peredy and
+                  Florian Sieck and
+                  Anna P{\"{a}}tschke and
+                  Thomas Eisenbarth},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {{MAMBO-V:} Dynamic Side-Channel Leakage Analysis on {RISC-V}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_1},
+	doi = {10.1007/978-3-031-35504-2\_1},
+	timestamp = {Sun, 12 Nov 2023 02:16:02 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/WichelmannPSP023.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {RISC–V is an emerging technology, with applications ranging from embedded devices to high-performance servers. Therefore, more and more security-critical workloads will be conducted with code that is compiled for RISC–V. Well-known microarchitectural side-channel attacks against established platforms like x86 apply to RISC–V CPUs as well. As RISC–V does not mandate any hardware-based side-channel countermeasures, a piece of code compiled for a generic RISC–V CPU in a cloud server cannot make safe assumptions about the microarchitecture on which it is running. Existing tools for aiding software-level precautions by checking side-channel vulnerabilities on source code or x86 binaries are not compatible with RISC–V machine code. In this work, we study the requirements and goals of architecture-specific leakage analysis for RISC–V and illustrate how to achieve these goals with the help of fast and precise dynamic binary analysis. We implement all necessary building blocks for finding side-channel leakages on RISC–V, while relying on existing mature solutions when possible. Our leakage analysis builds upon the modular side-channel analysis framework Microwalk, that examines execution traces for leakage through secret-dependent memory accesses or branches. To provide suitable traces, we port the ARM dynamic binary instrumentation tool MAMBO to RISC–V. Our port named MAMBO–V can instrument arbitrary binaries which use the 64-bit general purpose instruction set. We evaluate our toolchain on several cryptographic libraries with RISC–V support and identify multiple leakages.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BotvinnikLRMO23,
+	author = {Marina Botvinnik and
+                  Tomer Laor and
+                  Thomas Rokicki and
+                  Cl{\'{e}}mentine Maurice and
+                  Yossi Oren},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {The Finger in the Power: How to Fingerprint PCs by Monitoring Their
+                  Power Consumption},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {24--45},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_2},
+	doi = {10.1007/978-3-031-35504-2\_2},
+	timestamp = {Sun, 12 Nov 2023 02:16:02 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/BotvinnikLRMO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Power analysis has long been used to tell apart different instructions running on the same machine. In this work, we show that it is also possible to use power consumption to tell apart different machines running the same instructions, even if these machines have entirely identical hardware and software configurations, and even if the power consumption measurements are carried out using low-rate software-based methods. We collected an extended dataset of power consumption traces from 291 desktop and server systems, spanning multiple processor generations and vendors (Intel and AMD). After analyzing them, we discovered that profiling the power consumption of individual assembly instructions makes it possible to create a fingerprinting agent that can identify individual machines with high accuracy. Our classifier approaches its peak accuracy after less than 10 instructions, meaning that the fingerprint can take a very short time to capture. We analyzed the stability of the fingerprint over time and discovered that, while it remains relatively stable, it is significantly affected by temperature changes. We also carried out a proof-of-concept evaluation using portable WebAssembly code, showing that our method can still be applied, albeit at a reduced accuracy, without using native instructions for the profiling step. Our method depends on the ability to measure power, which is currently restricted to high-privileged “ring 0” code on modern PCs. This limits the current use of our method to defense-only settings, such as strengthening authentication or anti-counterfeiting. Our tools and datasets are publicly released as an open-source repository. Our work highlights the importance of protecting power consumption measurements from unauthorized access.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WangLZL23,
+	author = {Wubing Wang and
+                  Mengyuan Li and
+                  Yinqian Zhang and
+                  Zhiqiang Lin},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {PwrLeak: Exploiting Power Reporting Interface for Side-Channel Attacks
+                  on {AMD} {SEV}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {46--66},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_3},
+	doi = {10.1007/978-3-031-35504-2\_3},
+	timestamp = {Thu, 12 Dec 2024 08:33:29 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/WangLZL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {An increasing number of Trusted Execution Environment (TEE) is adopting to a variety of commercial products for protecting data security on the cloud. However, TEEs are still exposed to various side-channel vulnerabilities, such as execution order-based, timing-based, and power-based vulnerabilities. While recent hardware is applying various techniques to mitigate order-based and timing-based side-channel vulnerabilities, power-based side-channel attacks remain a concern of hardware security, especially for the confidential computing settings where the server machines are beyond the control of cloud users. In this paper, we present PwrLeak, an attack framework that exploits AMD’s power reporting interfaces to build power side-channel attacks against AMD Secure Encrypted Virtualization (SEV)-protected VM. We design and implement the attack framework with three general steps: (1) identify the instruction running inside AMD SEV, (2) apply a power interpolator to amplify power consumption, including an emulation-based interpolator for analyzing purposes and a more general interrupt-based interpolator, and (3) infer secrets with various analysis approaches. A case study of using the emulation-based interpolator to infer the whole JPEG images processed by libjpeg demonstrates its ability to help analyze power consumption inside SEV VM. Our end-to-end attacks against Intel’s Integrated Performance Primitives (Intel IPP) library indicates that PwrLeak can be exploited to infer RSA private keys with over 80% accuracy using the interrupt-based interpolator.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LooseMPB023,
+	author = {Nils Loose and
+                  Felix M{\"{a}}chtle and
+                  Claudius Pott and
+                  Volodymyr Bezsmertnyi and
+                  Thomas Eisenbarth},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Madvex: Instrumentation-Based Adversarial Attacks on Machine Learning
+                  Malware Detection},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {69--88},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_4},
+	doi = {10.1007/978-3-031-35504-2\_4},
+	timestamp = {Sun, 04 Aug 2024 19:42:33 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LooseMPB023.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {WebAssembly (Wasm) is a low-level binary format for web applications, which has found widespread adoption due to its improved performance and compatibility with existing software. However, the popularity of Wasm has also led to its exploitation for malicious purposes, such as cryptojacking, where malicious actors use a victim’s computing resources to mine cryptocurrencies without their consent. To counteract this threat, machine learning-based detection methods aiming to identify cryptojacking activities within Wasm code have emerged. It is well-known that neural networks are susceptible to adversarial attacks, where inputs to a classifier are perturbed with minimal changes that result in a crass misclassification. While applying changes in image classification is easy, manipulating binaries in an automated fashion to evade malware classification without changing functionality is non-trivial. In this work, we propose a new approach to include adversarial examples in the code section of binaries via instrumentation. The introduced gadgets allow for the inclusion of arbitrary bytes, enabling efficient adversarial attacks that reliably bypass state-of-the-art machine learning classifiers such as the CNN-based Minos recently proposed at NDSS 2021. We analyze the cost and reliability of instrumentation-based adversarial example generation and show that the approach works reliably at minimal size and performance overheads.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/YuM23,
+	author = {Fangyi Yu and
+                  Miguel Vargas Martin},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Honey, {I} Chunked the Passwords: Generating Semantic Honeywords Resistant
+                  to Targeted Attacks Using Pre-trained Language Models},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {89--108},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_5},
+	doi = {10.1007/978-3-031-35504-2\_5},
+	timestamp = {Fri, 07 Jul 2023 23:30:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/YuM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Honeywords are fictitious passwords inserted into databases in order to identify password breaches. The major challenge is producing honeywords that are difficult to distinguish from real passwords. Although the generation of honeywords has been widely investigated in the past, the majority of existing research assumes attackers have no knowledge of the users. These honeyword generating techniques (HGTs) may utterly fail if attackers exploit users’ personal identifiable information (PII) and the real passwords include users’ PII. The literature has demonstrated that password guessing is more effective when focusing on each of the chunks that compose a password (e.g., “P@ssword123” contains two chunks: “P@ssword” and “123”) and it has been suggested that, when available, PII should be used to generate honeywords. We thus leverage these findings to base our HGT method on any possible PII contained within passwords, and introduce a new, and more robust than its literature counterparts, method to generate honeywords, which consists of generating honeywords with GPT-3 using the semantic chunks of their corresponding real passwords. Furthermore, we propose a new metric, HWSimilarity, to evaluate the capability of HGTs. HWSimilarity is a pre-trained language model-based similarity metric that considers the semantic meaning of passwords when measuring the indistinguishability of honeywords and their counterparts. Comparing our chunk-level GPT-3 HGT to two state-of-the-art HGTs and using GPT-3 alone, we show that our HGT can generate honeywords that are more indistinguishable than its counterparts.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/0001T23,
+	author = {Alessandro Erba and
+                  Nils Ole Tippenhauer},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {White-Box Concealment Attacks Against Anomaly Detectors for Cyber-Physical
+                  Systems},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {111--131},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_6},
+	doi = {10.1007/978-3-031-35504-2\_6},
+	timestamp = {Mon, 26 Jun 2023 20:48:32 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/0001T23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly detection for cyber-physical systems is an effective method to detect ongoing process anomalies caused by an attacker. Recently, a number of anomaly detection techniques were proposed (e.g., ML based, invariant rule based, control theoretical). Little is known about the resilience of those anomaly detectors against attackers that conceal their attacks to evade detection. In particular, their resilience against white-box concealment attacks has so far only been investigated for the subset of neural network-based detectors. In this work, we demonstrate for the first time that white-box concealment attacks can also be applied to detectors that are not based on neural network solutions. In order to achieve this, we propose a generic white-box attack that evades anomaly detectors and can be adapted even if the target detection technique does not optimize a loss function. We design and implement a framework to perform our attacks, and test it on several detectors from related work. Our results show that it is possible to completely evade a wide range of detectors (based on diverse detection techniques) while reducing the number of samples that need to be manipulated (compared to prior black-box concealment attacks).}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BalduzziSCP23,
+	author = {Marco Balduzzi and
+                  Francesco Sortino and
+                  Fabio Castello and
+                  Leandro Pierguidi},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {A Security Analysis of {CNC} Machines in Industry 4.0},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {132--152},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_7},
+	doi = {10.1007/978-3-031-35504-2\_7},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BalduzziSCP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Computer numerical control (CNC) machines are extensively used in production plants and are considered a crucial asset for organizations worldwide. These machines require unique controllers that differ from those used in other types of machine tools in terms of software architecture, protocols, and design, so to meet the high precision and accuracy demands of their applications. The growing adoption of network-enabled systems in the industrial domain, driven by Industry 4.0, has resulted in an increased use of CNC machines. These machines have evolved from traditional mechanical machines to full-fledged systems with multiple networking services for smart connectivity. This study investigates the risks associated with this technological development. Using actual machine installations, we conducted the first empirical evaluation of the privacy and security implications of Industry 4.0 in the CNC domain. Our findings revealed that malicious users could conduct five types of attacks: compromise, denial-of-service, damage, hijacking, and theft. We reported our findings to the affected vendors and proposed mitigations to manufacturers, integrators and end-users. Our work aims to provide an opportunity to increase awareness in a domain where security does not appear to be a priority at present.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LiebergenCKG23,
+	author = {Kevin van Liebergen and
+                  Juan Caballero and
+                  Platon Kotzias and
+                  Chris Gates},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {A Deep Dive into the VirusTotal File Feed},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {155--176},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_8},
+	doi = {10.1007/978-3-031-35504-2\_8},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LiebergenCKG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Online scanners analyze user-submitted files with a large number of security tools and provide access to the analysis results. As the most popular online scanner, VirusTotal (VT) is often used for determining if samples are malicious, labeling samples with their family, hunting for new threats, and collecting malware samples. We analyze 328M VT reports for 235M samples collected for one year through the VT file feed. We use the reports to characterize the VT file feed in depth and compare it with the telemetry of an AV vendor. We answer questions such as How diverse is the feed? How fresh are the samples it provides? What fraction of samples can be labeled on first sight? How different are the malware families in the feed and the AV telemetry?\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LeiLSW23,
+	author = {Yunsen Lei and
+                  Julian P. Lanson and
+                  Craig A. Shue and
+                  Timothy W. Wood},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Attackers as Instructors: Using Container Isolation to Reduce Risk
+                  and Understand Vulnerabilities},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {177--197},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_9},
+	doi = {10.1007/978-3-031-35504-2\_9},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LeiLSW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To achieve economies of scale, popular Internet destinations concurrently serve hundreds or thousands of users on shared physical infrastructure. This resource sharing enables attacks that misuse permissions and affect other users. Our work uses containerization to create “single-use servers” which are dynamically instantiated and tailored for each user’s permissions. This isolates users and eliminates attacker persistence. Further, it simplifies analysis, allowing the fusion of logs to help defenders localize vulnerabilities associated with security incidents. We thus mitigate attacks and convert them into debugging traces to aid remediation. We evaluate the approach using three systems, including the popular WordPress content management system. It eliminates attacker persistence, propagation, and permission misuse. It has low CPU and latency costs and requires linear memory consumption, which we reduce with a customized page merging technique.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/HelmkeD23,
+	author = {Ren{\'{e}} Helmke and
+                  Johannes vom Dorp},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Extended Abstract: Towards Reliable and Scalable Linux Kernel {CVE}
+                  Attribution in Automated Static Firmware Analyses},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {201--210},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_10},
+	doi = {10.1007/978-3-031-35504-2\_10},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/HelmkeD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In vulnerability assessments, software component-based CVE attribution is a common method to identify possibly vulnerable systems at scale. However, such version-centric approaches yield high false-positive rates for binary distributed Linux kernels in firmware images. Not filtering included vulnerable components is a reason for unreliable matching, as heterogeneous hardware properties, modularity, and numerous development streams result in a plethora of vendor-customized builds. To make a step towards increased result reliability while retaining scalability of the analysis method, we enrich version-based CVE matching with kernel-specific build data from binary images using automated static firmware analysis. In a case study with 127 router firmware images, we show that in comparison to naive version matching, our approach identifies 68% of all version CVE matches as false-positives and reliably removes them from the result set. For 12% of all matches it provides additional evidence of issue applicability.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/HafkemeyerSC23,
+	author = {Linus Hafkemeyer and
+                  Jerre Starink and
+                  Andrea Continella},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Divak: Non-invasive Characterization of Out-of-Bounds Write Vulnerabilities},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {211--232},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_11},
+	doi = {10.1007/978-3-031-35504-2\_11},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/HafkemeyerSC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite the high level of automation that fuzzing has brought into the vulnerability research process, the assessment of a discovered vulnerability’s implications mostly requires human expertise and intuition. A promising approach to reduce such a manual effort is the automatic extraction of vulnerability characteristics that provide vital clues for exploitability. In this work, we focus on out-of-bounds write vulnerabilities and investigate how to automatically distill the set of source code-level objects affected by such unintended writes. As this poses unique challenges with regard to the invasiveness of the analysis methods, we propose a novel approach that enables monitoring a compiled program for spatial memory safety violations without the need for heavy instrumentation. We implement Divak, a prototype of our design, and we evaluate it on both benchmarks and real-world vulnerabilities, showing that its detection and characterization capabilities outperform instrumentation-based tools in several scenarios, at the cost of an increased overhead.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PengF0KL023,
+	author = {Anni Peng and
+                  Dongliang Fang and
+                  Wei Zhou and
+                  Erik van der Kouwe and
+                  Yin Li and
+                  Yuqing Zhang},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {{CEFI:} Command Execution Flow Integrity for Embedded Devices},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {235--255},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_12},
+	doi = {10.1007/978-3-031-35504-2\_12},
+	timestamp = {Tue, 20 Jun 2023 14:45:29 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PengF0KL023.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As embedded devices are widely used in increasingly complex settings (e.g., smart homes and industrial control systems), one device is usually connected with multiple entities, such as mobile apps and the cloud. Recent research has shown that privilege separation vulnerabilities, which allow violations of authority between different entities, are occuring in IoT systems. Because such vulnerabilities can be exploited without violating static control flow and data flow, existing CFI and DFI solutions cannot prevent them. We present CEFI, the first method to enforce integrity of command execution on embedded devices after deployment. CEFI provides fine-grained Command Execution Flow Integrity by preventing external commands from being executed on control flow paths belonging to interaction channels that are not authorized to perform them. Using minimal manual annotations as a starting point, CEFI statically determined the legal path set (from the start to the end point) and instruments the program to verify the legitimacy of the command execution at runtime by checking whether the calling context is consistent between the runtime executed path and statically obtained legal path set. We evaluate our prototype with five real-world firmware samples, and show that CEFI has an average performance overhead of just 0.18%, an average memory overhead of 0.19%, and that CEFI can effectively protect embedded devices against attacks on privilege separation vulnerabilities even if they do not violate control flow.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BertaniBBCZP23,
+	author = {Alessandro Bertani and
+                  Marco Bonelli and
+                  Lorenzo Binosi and
+                  Michele Carminati and
+                  Stefano Zanero and
+                  Mario Polino},
+	editor = {Daniel Gruss and
+                  Federico Maggi and
+                  Mathias Fischer and
+                  Michele Carminati},
+	title = {Untangle: Aiding Global Function Pointer Hijacking for Post-CET Binary
+                  Exploitation},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 20th International Conference, {DIMVA} 2023, Hamburg, Germany, July
+                  12-14, 2023, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13959},
+	pages = {256--275},
+	publisher = {Springer},
+	year = {2023},
+	url = {https://doi.org/10.1007/978-3-031-35504-2\_13},
+	doi = {10.1007/978-3-031-35504-2\_13},
+	timestamp = {Sun, 06 Oct 2024 20:59:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BertaniBBCZP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we combine static code analysis and symbolic execution to bypass Intel’s Control-Flow Enforcement Technology (CET) by exploiting function pointer hijacking. We present Untangle, an open-source tool that implements and automates the discovery of global function pointers in exported library functions and their call sites. Then, it determines the constraints that need to be satisfied to reach those pointers. Our approach manages naive built-in types and complex parameters like structure pointers. We demonstrate the effectiveness of Untangle on 8 of the most used open source C libraries, identifying 57 unique global function pointers, reachable through 1488 different exported functions. Untangle can find and verify the correctness of the constraints for 484 global function pointer calls, which can be used as attack vectors for control-flow hijacking. Finally, we discuss current and future defense mechanisms against control-flow hijacking using global function pointers.\n}
+}

@@ -1,0 +1,517 @@
+@inproceedings{DBLP:conf/dimva/InnocentiMKCK21,
+	author = {Tommaso Innocenti and
+                  Seyed Ali Mirheidari and
+                  Amin Kharraz and
+                  Bruno Crispo and
+                  Engin Kirda},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {You've Got (a Reset) Mail: {A} Security Analysis of Email-Based Password
+                  Reset Procedures},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {1--20},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_1},
+	doi = {10.1007/978-3-030-80825-9\_1},
+	timestamp = {Sun, 17 Dec 2023 20:56:27 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/InnocentiMKCK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The password recovery process is a critical part of a website’s functionality. Many websites that provide online services to their users also need to solve the problem of allowing their users to reset their passwords (e.g., if they have forgotten it). A popular, established technique for allowing a user to recover a lost account is to allow her to send a reset link to her own account via email. Although it might seem easy at a first glance, the security requirements of the password recovery process require web sites to carefully design each step of the process to be resilient even in the presence of an attack. In this paper, we present an in-depth security analysis of the email-based recovery mechanisms of a wide range of web applications. By manually registering accounts and triggering the password recovery process for each website, we were able to study the password reset mechanisms of web sites from three different groups in the Alexa Top 5K (i.e., popular sites, medium popular sites, low popular sites). In this work, we show that the lack of standards in the password recovery process plagues many websites with security weaknesses, and negatively influences the security of the reset process itself. We also show that concrete password-recovery reset attacks can be launched against a high percentage of websites that might even lead to account takeover.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BenolliMAC21,
+	author = {Michele Benolli and
+                  Seyed Ali Mirheidari and
+                  Elham Arshad and
+                  Bruno Crispo},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {The Full Gamut of an Attack: An Empirical Analysis of OAuth {CSRF}
+                  in the Wild},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {21--41},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_2},
+	doi = {10.1007/978-3-030-80825-9\_2},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BenolliMAC21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {OAuth 2.0 is a popular and industry-standard protocol. To date, different attack classes and relevant countermeasures have been proposed. However, despite the presence of guidelines and best practices, the current implementations are still vulnerable and error-prone. In this research, we focus on OAuth Cross-Site Request Forgery (OCSRF) as an overlooked attack scenario. We studied one of the most recurrent types of OCSRF attacks by proposing several novel attack strategies based on different status of the victim browser. In order to validate them, we designed a repeatable methodology and conducted a large-scale analysis on 314 high-ranked sites to assess the prevalence of OCSRF vulnerabilities. Our automated crawler discovered about 36% of targeted sites are still vulnerable and detected about 20% more well-hidden vulnerable sites utilizing the novel attack strategies. Although our experiment revealed a significant increase in the number of OCSRF protection compared to the past scale analyses, over one-fourth are still vulnerable to at least one proposed attack strategy.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SubramaniPK21,
+	author = {Karthika Subramani and
+                  Roberto Perdisci and
+                  Maria Konte},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Detecting and Measuring In-The-Wild DRDoS Attacks at IXPs},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {42--67},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_3},
+	doi = {10.1007/978-3-030-80825-9\_3},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SubramaniPK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed reflective denial of service (DRDoS) attacks are a popular choice among adversaries. In fact, one of the largest DDoS attacks ever recorded, reaching a peak of 1.3\xa0Tbps against GitHub, was a memcached-based DRDoS attack. More recently, a record-breaking 2.3\xa0Tbps attack against Amazon AWS was due to a CLDAP-based DRDoS attack. Although reflective attacks have been known for years, DRDoS attacks are unfortunately still popular and largely unmitigated. In this paper, we measure in-the-wild DRDoS attacks as observed from a large Internet exchange point (IXP) and provide a number of security-relevant insights. To enable our measurements, we first developed IXmon, an open-source DRDoS detection system specifically designed for deployment at large IXP-like network connectivity providers and peering hubs. We deployed IXmon at Southern Crossroads (SoX), an IXP-like hub that provides both peering and upstream Internet connectivity services to more than 20 research and education (R&E) networks in the South-East United States. In a period of about 21 months, IXmon detected more than 900 DRDoS attacks towards 31 different victim ASes. An analysis of the real-world DRDoS attacks detected by our system shows that most DRDoS attacks are short lived, lasting only a few minutes, but that large-volume, long-lasting, and highly-distributed attacks against R&E networks are not uncommon. We then use the results of our analysis to discuss possible attack mitigation approaches that can be deployed at the IXP level, before the attack traffic overwhelms the victim’s network bandwidth.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/QuinkertTH21,
+	author = {Florian Quinkert and
+                  Dennis Tatang and
+                  Thorsten Holz},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Digging Deeper: An Analysis of Domain Impersonation in the Lower {DNS}
+                  Hierarchy},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {68--87},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_4},
+	doi = {10.1007/978-3-030-80825-9\_4},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/QuinkertTH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attackers use various techniques to lure victims to malicious domains. A typical approach is to generate domains which look similar to well-known ones so that a confused victim is tricked into visiting the domain. An important attack technique in practice is the impersonation of domains in the lower DNS hierarchy as subdomains of otherwise unsuspiciously looking domains, such as paypal.com.foo.example.com. In this paper, we present an in-depth, empirical measurement study of low-level domain impersonations to understand their prevalence and provide a basis for the development of corresponding countermeasures. We introduce a generic measurement approach to find and analyze such domains in phishing feeds from three large anti-phishing vendors (PhishLabs, Phishtank, and OpenPhish) covering multiple years and a data set consisting of one and a half years of certificate transparency logs (CTL). In our measurement study, we discovered more than 122,000 cases of domain impersonations detected during the last seven years in PhishLabs, almost 3,000 in Phishtank, and a couple of hundred instances in OpenPhish. Additionally, we compared the usage of low-level domain impersonation with other well-known domain squatting techniques and find that low-level domain impersonation is among the most popular squatting techniques in the wild.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WichelmannBP021,
+	author = {Jan Wichelmann and
+                  Sebastian Berndt and
+                  Claudius Pott and
+                  Thomas Eisenbarth},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Help, My Signal has Bad Device! - Breaking the Signal Messenger's
+                  Post-Compromise Security Through a Malicious Device},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {88--105},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_5},
+	doi = {10.1007/978-3-030-80825-9\_5},
+	timestamp = {Wed, 28 Jun 2023 15:47:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/WichelmannBP021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In response to ongoing discussions about data usage by companies and governments, and its implications for privacy, there is a growing demand for secure communication techniques. While during their advent, most messenger apps focused on features rather than security, this has changed in the recent years: Since then, many have adapted end-to-end encryption as a standard feature. One of the most popular solutions is the Signal messenger, which aims to guarantee forward secrecy (i.\xa0e.\xa0security of previous communications in case of leakage of long-term secrets) and future secrecy (i.\xa0e.\xa0security of future communications in case of leakage of short-term secrets). If every user uses exactly one device, it is known that Signal achieves forward secrecy and even post-compromise security (i.\xa0e.\xa0security of future communications in case of leakage of long-term secrets). But the Signal protocol also allows for the use of multiple devices via the Sesame protocol. This multi-device setting is typically ignored in the security analysis of Signal. In this work, we discuss the security of the Signal messenger in this multi-device setting. We show that the current implementation of the device registration allows an attacker to register an own, malicious device, which gives them unrestricted access to all future communication of their victim, and even allows full impersonation. This directly shows that the current Signal implementation does not guarantee post-compromise security. We discuss several countermeasures, both simple ones aiming to increase detectability of our attack, as well as a broader approach that seeks to solve the root issue, namely the weak device registration flow.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/NikolicMSS21,
+	author = {Ivica Nikolic and
+                  Radu Mantu and
+                  Shiqi Shen and
+                  Prateek Saxena},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Refined Grey-Box Fuzzing with Sivo},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {106--129},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_6},
+	doi = {10.1007/978-3-030-80825-9\_6},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/NikolicMSS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We design and implement from scratch a new fuzzer called Sivo that refines multiple stages of grey-box fuzzing. First, Sivo refines data-flow fuzzing in two ways: (a) it provides a new taint inference engine that requires only logarithmic number of tests in the input size to infer dependency of many program branches on the input bytes, and (b) it employs a novel method for inverting branches by solving a systems of inequalities efficiently. Second, our fuzzer refines accurate tracking and detection of code coverage with simple and easily implementable methods. Finally, Sivo refines selection of parameters and strategies by parameterizing all stages of fuzzing and then dynamically selecting optimal values during fuzzing. Thus the fuzzer can easily adapt to a target program and rapidly increase coverage. We compare our fuzzer to 11 other state-of-the-art grey-box fuzzers on 27 popular benchmarks. Our evaluation shows that Sivo scores the highest both in terms of code coverage and in terms of number of found vulnerabilities.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MirzaeiVKLK21,
+	author = {Omid Mirzaei and
+                  Roman Vasilenko and
+                  Engin Kirda and
+                  Long Lu and
+                  Amin Kharraz},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {{SCRUTINIZER:} Detecting Code Reuse in Malware via Decompilation and
+                  Machine Learning},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {130--150},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_7},
+	doi = {10.1007/978-3-030-80825-9\_7},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MirzaeiVKLK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Growing numbers of advanced malware-based attacks against governments and corporations, for political, financial and scientific gains, have taken security breaches to the next level. In response to such attacks, both academia and industry have investigated techniques to model and reconstruct these attacks and to defend against them. While such efforts have been all useful in mitigating the effects of modern attacks, automated malware code reuse inspection and campaign attribution have received less attention. In this paper, we present an automated system, called SCRUTINIZER, to identify code reuse in malware via a novel machine learning-based encoding mechanism at the function-level. By creating a large knowledge base of previously observed and tagged malware campaigns, we can compare unknown samples against this knowledge base and determine how much overlap exists. SCRUTINIZER leverages an unsupervised learning approach to filter out irrelevant functions before code reuse detection. It provides two valuable capabilities. First, it identifies ties between an unknown sample and those malware specimens that are known to be used by a specific campaign. Second, it inspects if specific tools or functionalities are used by a campaign. Using SCRUTINIZER, we were able to identify 12 samples that were previously unknown to us and that we were able to correctly assign to well-known APT campaigns.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WangCCZL21,
+	author = {Wubing Wang and
+                  Guoxing Chen and
+                  Yueqiang Cheng and
+                  Yinqian Zhang and
+                  Zhiqiang Lin},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Specularizer : Detecting Speculative Execution Attacks via Performance
+                  Tracing},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {151--172},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_8},
+	doi = {10.1007/978-3-030-80825-9\_8},
+	timestamp = {Thu, 12 Dec 2024 08:33:29 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/WangCCZL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents Specularizer, a framework for uncovering speculative execution attacks using performance tracing features available in commodity processors. It is motivated by the practical difficulty of eradicating such vulnerabilities in the design of CPU hardware and operating systems and the principle of defense-in-depth. The key idea of Specularizer is the use of Hardware Performance Counters and Processor Trace to perform lightweight monitoring of production applications and the use of machine learning techniques for identifying the occurrence of the attacks during offline forensics analysis. Different from prior works that use performance counters to detect side-channel attacks, Specularizer monitors triggers of the critical paths of the speculative execution attacks, thus making the detection mechanisms robust to different choices of side channels used in the attacks. To evaluate Specularizer, we model all known types of exception-based and misprediction-based speculative execution attacks and automatically generate thousands of attack variants. Experimental results show that Specularizer yields superior detection accuracy and the online tracing of Specularizer incur reasonable overhead.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/0027XCL21,
+	author = {Wei Huang and
+                  Shengjie Xu and
+                  Yueqiang Cheng and
+                  David Lie},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Aion Attacks: Manipulating Software Timers in Trusted Execution Environment},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {173--193},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_9},
+	doi = {10.1007/978-3-030-80825-9\_9},
+	timestamp = {Sun, 04 Aug 2024 19:42:33 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/0027XCL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Side-channel attacks are a threat to secure software running in a Trusted Execution Environment (TEE). To protect Intel SGX applications from these attacks, researchers have proposed mechanisms to detect cache-probing and repeated interrupts that these attacks rely on. These defenses often rely on high-resolution timers. However, since there is no trusted high-resolution timer hardware module, developers have resorted to software timers, which unfortunately underestimate the scope of possible attacks. In this paper, we propose Aion attacks that manipulate the speed of a reference software timer to subvert defensive mechanisms against SGX side-channel attacks. Specifically, we introduce a CPU thermal attack that leverages the thermal management mechanism to change the execution speed of the timer thread, and a cache eviction attack that evicts the target timer counters and forces the system to load them from memory instead of cache. We evaluated the above Aion attacks and introduced an analytical model and show that software timers cannot be improved to fit the defenders under our attacks.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/YuanD021,
+	author = {Chuhong Yuan and
+                  Dong Du and
+                  Haibo Chen},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Third-Eye: Practical and Context-Aware Inference of Causal Relationship
+                  Violations in Commodity Kernels},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {194--214},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_10},
+	doi = {10.1007/978-3-030-80825-9\_10},
+	timestamp = {Wed, 30 Nov 2022 16:40:27 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/YuanD021.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A causal relationship implies that a function call should follow another function call. However, causal relationships can be implicit in practice and therefore often missed and violated by developers, causing many serious risks such as memory leaks and crashes. Although a set of works are proposed to mitigate the issue, they fall short in solving two main challenges: the contradiction between bugs in specific paths and intra-function path-explosion, and missing contextual constraints of causal relationships, which leads to high performance cost or failing to detect context-related bugs. This paper proposes Third-Eye, a practical static analysis tool that infers causal relationship violations for commodity kernels like Linux. Third-Eye leverages the intersection-based call sequence building algorithm to cope with intra-function path-explosion, which can reduce the number of paths while collecting callee information as much as possible. Besides, Third-Eye detects causal relationship violations context-sensitively based on a statistical method. Our experiments show Third-Eye is effective and efficient—successfully identified 60\xa0bugs in Linux 5.3. Of them, 41\xa0 have been confirmed and fixed by Linux developers (The accepted patches are in https://ipads.se.sjtu.edu.cn:1312/opensource/third-eye.).\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SetayeshfarRKL21,
+	author = {Omid Setayeshfar and
+                  Junghwan John Rhee and
+                  Chung Hwan Kim and
+                  Kyu Hyung Lee},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Find My Sloths: Automated Comparative Analysis of How Real Enterprise
+                  Computers Keep Up with the Software Update Races},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {215--236},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_11},
+	doi = {10.1007/978-3-030-80825-9\_11},
+	timestamp = {Sat, 30 Sep 2023 09:38:59 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SetayeshfarRKL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A software update is a critical but complicated part of software security. Its delay poses risks due to vulnerabilities and defects of software. Despite the high demand to shorten the update lag and keep the software up-to-date, software updates involve factors such as human behavior, program configurations, and system policies, adding variety in the updates of software. Investigating these factors in a real environment poses significant challenges such as the knowledge of software release schedules from the software vendors and the deployment times of programs in each user’s machine. Obtaining software release plans requires information from vendors which is not typically available to public. On the users’ side, tracking each software’s exact update installation is required to determine the accurate update delay. Currently, a scalable and systematic approach is missing to analyze these two sides’ views of a comprehensive set of software. We performed a long term system-wide study of update behavior for all software running in an enterprise by translating the operating system logs from enterprise machines into graphs of binary executable updates showing their complex, and individualized updates in the environment. Our comparative analysis locates risky machines and software with belated or dormant updates falling behind others within an enterprise without relying on any third-party or domain knowledge, providing new observations and opportunities for improvement of software updates. Our evaluation analyzes real data from 113,675 unique programs used by 774 computers over 3 years.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DureyLRR21,
+	author = {Antonin Durey and
+                  Pierre Laperdrix and
+                  Walter Rudametkin and
+                  Romain Rouvoy},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {FP-Redemption: Studying Browser Fingerprinting Adoption for the Sake
+                  of Web Security},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {237--257},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_12},
+	doi = {10.1007/978-3-030-80825-9\_12},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DureyLRR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Browser fingerprinting has established itself as a stateless technique to identify users on the Web. In particular, it is a highly criticized technique to track users. However, we believe that this identification technique can serve more virtuous purposes, such as bot detection or multi-factor authentication. In this paper, we explore the adoption of browser fingerprinting for security-oriented purposes. More specifically, we study 4\xa0types of web pages that require security mechanisms to process user data: sign-up, sign-in, basket and payment pages. We visited 1,\xa0485\xa0pages on 446\xa0domains and we identified the acquisition of browser fingerprints from 405\xa0pages. By using an existing classification technique, we identified 169\xa0distinct browser fingerprinting scripts included in these pages. By investigating the origins of the browser fingerprinting scripts, we identified 12 security-oriented organizations who collect browser fingerprints on sign-up, sign-in, and payment pages. Finally, we assess the effectiveness of browser fingerprinting against two potential attacks, namely stolen credentials and cookie hijacking. We observe browser fingerprinting being successfully used to enhance web security.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/AbdelraoofTDR21,
+	author = {Ahmed Abdelraoof and
+                  Benjamin Taubmann and
+                  Thomas Dangl and
+                  Hans P. Reiser},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Introspect Virtual Machines Like It Is the Linux Kernel!},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {258--277},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_13},
+	doi = {10.1007/978-3-030-80825-9\_13},
+	timestamp = {Thu, 29 Jul 2021 13:42:15 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/AbdelraoofTDR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Virtual machine introspection (VMI) allows a monitoring application, usually running in a separate virtual machine on the same host, to peek into another guest virtual machine running on the same host, check and modify both registers and memory state of the guest. It has gained popularity in malware analysis, software reverse engineering, and intrusion detection systems. However, VMI comes with a huge overhead, which not only is a waste of resources but also can tip malware that VMI is being used. In this paper, we present an approach to significantly enhance the performance of VMI. Our work eliminates a large number of context switches between the monitored guest system, the hypervisor, and the monitoring application. Our approach implements the management of tracing directly into the hypervisor and uses asynchronous events between hypervisor and monitoring process to minimize the performance impact of tracing without losing functionality. We show that our approach reduces the main bottlenecks of introspection by more than an order of magnitude compared to the popular approach using LibVMI and the Xen hypervisor.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DidierM21,
+	author = {Guillaume Didier and
+                  Cl{\'{e}}mentine Maurice},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Calibration Done Right: Noiseless Flush+Flush Attacks},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {278--298},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_14},
+	doi = {10.1007/978-3-030-80825-9\_14},
+	timestamp = {Sun, 06 Oct 2024 20:59:46 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DidierM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Caches leak information through timing measurements and side-channel attacks. Several attack primitives exist with different requirements and trade-offs. Flush+Flush is a stealthy and fast one that uses the timing of the clflush instruction depending on whether a line is cached. We show that the CPU interconnect plays a bigger role than previously thought in these timings and in Flush+Flush error rate. In this paper, we show that a naive implementation that does not account for the topology of the interconnect yields very high error rates, especially on modern CPUs as the number of cores increases. We therefore reverse-engineer this topology and revisit the calibration phase of Flush+Flush for different attacker models to determine the correct threshold for clflush hits and misses. We show that our method yields close-to-noiseless side-channel attacks by attacking the AES T-tables implementation of OpenSSL, and by building a covert channel. We obtain a maximal capacity of 5.8\xa0Mbit/s with our method, compared to 1.9\xa0Mbit/s with a naive Flush+Flush implementation on an Intel Core i9-9900 CPU.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TungH21,
+	author = {Yu{-}Jye Tung and
+                  Ian G. Harris},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Zero Footprint Opaque Predicates: Synthesizing Opaque Predicates from
+                  Naturally Occurring Invariants},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {299--318},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_15},
+	doi = {10.1007/978-3-030-80825-9\_15},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TungH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A popular control-flow obfuscation approach used to protect software is inserting opaque predicates. However, recent research has questioned the usefulness of opaque predicates with the realization that simple heuristic attacks can effectively detect them. In this paper, we introduce a novel approach to construct opaque predicates that prevents both heuristic attacks and automated attacks by having opaque predicates syntactically and semantically resemble real predicates. Our approach uses abstract interpretation to infer variables’ value sets. From each value set, we synthesize an opaque predicate that 1) evaluates all items in its value set to the same truth value and 2) shares real predicates’ common syntactic features. Our opaque predicates syntactically resemble real predicates because they share real predicates’ common syntactic features and their invariants are naturally occurring as they are inferred from the program’s semantics. Previous approaches to constructing opaque predicates are susceptible to heuristic attacks because they use synthetic invariants that can inadvertently introduce unnatural code. Our opaque predicates semantically resemble real predicates because the naturally occurring invariants they use are based on value sets. Like real predicates’ variables, our opaque predicates’ variables can also take on different values during runtime. From our evaluation, we show promising results that our opaque predicates can withstand automated attacks. Current state-of-the-art deobfuscation, dynamic symbolic execution, can only detect 41% of our opaque predicates.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/KarbabD21,
+	author = {ElMouatez Billah Karbab and
+                  Mourad Debbabi},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {PetaDroid: Adaptive Android Malware Detection Using Deep Learning},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {319--340},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_16},
+	doi = {10.1007/978-3-030-80825-9\_16},
+	timestamp = {Tue, 07 May 2024 20:12:11 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/KarbabD21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Android malware detection is a significant problem that affects billions of users using millions of Android applications (apps) in existing markets. Thiss paper proposes PetaDroid, a framework for accurate Android malware detection and family clustering on top of static analyses. PetaDroid automatically adapts to Android malware and benign changes over time with resilience to common binary obfuscation techniques. The framework employs novel techniques elaborated on top of natural language processing (NLP) and machine learning techniques to achieve accurate, adaptive, and resilient Android malware detection and family clustering. We extensively evaluated PetaDroid on multiple reference datasets. PetaDroid achieved a high detection rate (98–99% f1-score) under different evaluation settings with high homogeneity in the produced clusters (96%). We conducted a thorough quantitative comparison with state-of-the-art solutions MaMaDroid, DroidAPIMiner, MalDozer, in which PetaDroid outperforms them under all the evaluation settings.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/QuinkertDH21,
+	author = {Florian Quinkert and
+                  Martin Degeling and
+                  Thorsten Holz},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Spotlight on Phishing: {A} Longitudinal Study on Phishing Awareness
+                  Trainings},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {341--360},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_17},
+	doi = {10.1007/978-3-030-80825-9\_17},
+	timestamp = {Wed, 07 Dec 2022 23:13:18 +0100},
+	biburl = {https://dblp.org/rec/conf/dimva/QuinkertDH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Phishing is in practice one of the most common attack vectors threatening digital assets. An attacker sends a legitimate-looking e-mail to a victim to lure her on a website with the goal of tricking the victim into revealing credentials. A phishing e-mail can use both technical (e.g., a forged link) and psychological vectors (e.g., an authoritarian tone) to persuade the victim. In this paper, we present an analysis of more than 420,000 phishing e-mails sent over more than 1.5 years by a consulting company offering awareness trainings. Our data set contains detailed information on how users interact with the e-mails, e.g., when they click on links and what psychological vectors are used in the e-mails to convince the recipient of its legitimacy. While previous studies often used lab environments, the e-mails in our data set are sent to real users during their day-to-day work so that we can study their behavior in a genuine setting. Our results indicate a continually decreasing click rate (from 19% to 10%) with progressing awareness training. We also found some psychological vectors, including an authoritative tone and curiosity, to be more effective than others to trick a user into falling for this type of scam e-mails.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TatangFH21,
+	author = {Dennis Tatang and
+                  Robin Flume and
+                  Thorsten Holz},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Extended Abstract: {A} First Large-Scale Analysis on Usage of {MTA-STS}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {361--370},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_18},
+	doi = {10.1007/978-3-030-80825-9\_18},
+	timestamp = {Tue, 13 Jul 2021 16:58:14 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TatangFH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, email is still the most popular communication channel of the Internet. It is based on Simple Mail Transfer Protocol (SMTP), which lacks basic security properties such as confidentiality and authenticity despite its ever-growing importance. This results in spam and frequent phishing attacks, often with spoofed sender email addresses to appear more trustworthy, as well as non-encrypted transmissions by default. To address these known problems, additional protocols such as STARTTLS have been developed. STARTTLS enables transport encryption with Transport Layer Security (TLS) for SMTP sessions between two email servers. However, an attacker can take advantage of the fact that the encryption is opportunistic and the STARTTLS command is sent in plain. Therefore, it can be stripped out of the communication, resulting in an inevitable plaintext transmission of the email message itself. This attack is referred to as TLS downgrade. The new Mail Transfer Agent Strict Transport Security (MTA-STS) protocol targets the prevention of TLS downgrades for incoming SMTP sessions. In this paper, we conduct the first large-scale, longitudinal measurement study on the adoption of MTA-STS. We show that it is activated by 0.0124% out of 1.76 million scanned domains, with a lower bound of 45.4% for the growth of the adoption rate within five months.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TenganaSCRLO21,
+	author = {Lizzy Tengana and
+                  Jesus Solano and
+                  Alejandra Castelblanco and
+                  Esteban Rivera and
+                  Christian Lopez and
+                  Mart{\'{\i}}n Ochoa},
+	editor = {Leyla Bilge and
+                  Lorenzo Cavallaro and
+                  Giancarlo Pellegrino and
+                  Nuno Neves},
+	title = {Centy: Scalable Server-Side Web Integrity Verification System Based
+                  on Fuzzy Hashes},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 18th International Conference, {DIMVA} 2021, Virtual Event, July
+                  14-16, 2021, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {12756},
+	pages = {371--390},
+	publisher = {Springer},
+	year = {2021},
+	url = {https://doi.org/10.1007/978-3-030-80825-9\_19},
+	doi = {10.1007/978-3-030-80825-9\_19},
+	timestamp = {Thu, 29 Jul 2021 13:42:15 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TenganaSCRLO21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Providing integrity guarantees for websites rendered on a user’s browser is a crucial security property for web applications. There are several ways to tamper with data being received or rendered on the client side, including browser hijacking, malicious plugins, cross-site scripting attacks and manipulation of data in transit. Detecting such attacks is important for content providers in order to generate alerts and prevent further attacks. Detection of website integrity is a challenging task, due to the heterogeneity of possible attacks. In this work we present an approach to detect integrity attacks that is designed to scale to millions of clients while offering high accuracy. Our approach is based on a fine grained analysis of website internal components and a clustering technique. Such clustering allows for an efficient automatic and semi-automatic classification of client-side content (such as scripts, forms, iframes, etc.). This approach is partially implemented in a productive system and is evaluated on a real-world dataset belonging to a sample of tens of thousands unique visits. We show that we can achieve up\xa0to 98.7% accuracy on real data based on a labelled prefix, and up\xa0to 99.4% compression ratio on incoming to-be-classified client-side content. To the best of our knowledge, we are the first study to show a scalable and practical clustering system for web integrity detection.}
+}
