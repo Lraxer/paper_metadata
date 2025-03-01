@@ -1,0 +1,503 @@
+@article{DBLP:journals/cn/QinGLX22,
+	author = {Yudong Qin and
+                  Deke Guo and
+                  Lailong Luo and
+                  Ming Xu},
+	title = {A joint orchestration of security and functionality services at network
+                  edge},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {108951},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.108951},
+	doi = {10.1016/J.COMNET.2022.108951},
+	timestamp = {Mon, 28 Aug 2023 21:39:18 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/QinGLX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Edge computing emerges as a new paradigm to provide low-latency network services in close proximity to end users. Based on the network function virtualization (NFV) technology, network services can be flexibly and scalably provisioned as virtual network function (VNF) chains deployed at edge servers. With such advantages, both the industry and research communities have done extensive studies on deploying VNF chains at network edge. The existing works mainly take an ideal assumption that the network is totally safe and there are no malicious users. Therefore, they leverage all available resources to serve their users. However, such an assumption is impractical in real networks. Security services, such as firewall, deep packet detection, intrusion detection, are always required for production networks. The existing service deployment methods fail to consider the co-existence of security services and functionality services. In this paper, we present the topic of joint deployment of both security and functionality services, wherein the security services are responsible to check the data flows before being processed by the functionality services. To solve this problem, we propose the Secure Deployment Pattern, which aims to simultaneously satisfy the security protection and QoS requirements at network edge. It divides the services into two kinds, i.e., the user-oriented functionality services, and the service provider-oriented security services. In this case, it is very challenging to jointly deploy the security services and functional services with respect to the resource and latency constraints. We formulate this problem as an integer programming model, and propose the heuristic algorithms to solve it. As far as we know, this paper is the first step, which targets at a proper orchestration of security and functionality services in edge computing. Extensive evaluations show that the proposed algorithms are effective and efficient, in terms of the execution time and the average number of served requests.}
+}
+
+
+@article{DBLP:journals/cn/MaryamPE22,
+	author = {Hafsa Maryam and
+                  Tania Panayiotou and
+                  Georgios Ellinas},
+	title = {Learning quantile QoT models to address uncertainty over unseen lightpaths},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {108992},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.108992},
+	doi = {10.1016/J.COMNET.2022.108992},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/MaryamPE22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Uncertainty in quality-of-transmission (QoT) estimation is traditionally addressed through empirical, myopic margins, ignoring the fact that each unseen lightpath is subject to different levels of uncertainty. To address this limitation, in this work, deep quantile regression is leveraged to finer capture QoT estimation uncertainty through the inference of margins that act discriminative over the unseen lightpaths. Specifically, deep-quantile regression is applied to approximate QoT models capable of inferring the QoT of unseen lightpaths, according to a predefined level of certainty. Quantile models automatically account for the uncertainty during inference, without the need to consider additional empirical margins for decision-making (i.e., the margins are learned and considered upon inference). It is shown that quantile QoT models lead to significant margin reduction when compared to baseline myopic margin schemes, resulting in more confident and network efficient allocation decisions.}
+}
+
+
+@article{DBLP:journals/cn/GiakoumakisPVI22,
+	author = {Giannis Giakoumakis and
+                  Eva Papadogiannaki and
+                  Giorgos Vasiliadis and
+                  Sotiris Ioannidis},
+	title = {Scheduling of multiple network packet processing applications using
+                  Pythia},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109006},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109006},
+	doi = {10.1016/J.COMNET.2022.109006},
+	timestamp = {Mon, 05 Feb 2024 20:24:11 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/GiakoumakisPVI22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern commodity computing systems are composed by a number of different heterogeneous processing units, each of which has its own unique performance and energy characteristics. However, the majority of current network packet processing frameworks targets only a specific processing unit (either the CPU or accelerator), leaving the remaining computational resources under-utilized or even idle.}
+}
+
+
+@article{DBLP:journals/cn/WuDLX22,
+	author = {Ke Wu and
+                  Dezun Dong and
+                  Cunlu Li and
+                  Weixia Xu},
+	title = {Revisiting network congestion avoidance through adaptive packet-chaining
+                  reservation},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109008},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109008},
+	doi = {10.1016/J.COMNET.2022.109008},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/WuDLX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Endpoint congestion is a bottleneck in high-performance computing (HPC) networks, which severely impacts system performance, especially for latency-sensitive applications. When the long messages (or flows) has a far larger duration than the round-trip time (RTT), the proactive or reactive countermeasures, an effective solution to endpoint solution, can control the injection rate within a proper range dynamically. However, many HPC applications produce hybrid traffic (a mix of short and long messages) and are dominated by short messages. Existing proactive congestion avoidance methods face the great challenge of scheduling the rapidly changing traffic caused by these short messages. In this paper, we first propose the Packet-Chaining Reservation Protocol (PCRP), that is, a novel congestion management strategy which leverages the advantages of proactive (scheduling the whole flow) and reactive (scheduling the single packet) congestion avoidance techniques. In fact, it is an eclectic method of scheduling. We select the chaining of packets as a flexible reservation granularity between the whole flow and a single packet. The PCRP allows small flows to be speculatively transmitted without being discarded. It also gives the small flows an appropriate priority based on the detected traffic conditions. The PCRP can make a quick respond to network conditions, effectively avoiding endpoint congestion and reducing the average flow delay. However, PCRP is only suitable for short-flow-dominant traffic, as it performs poorly when facing other traffic. This is because PCRP can starve longer flows and thus introduces the unbearable tail delay. Therefore, we further propose the Packet-Chaining Reservation Protocol with Adaptive Framework (PCRP+), which is a reservation protocol that can flexibly adjust the scheduling strategy according to the network load. The PCRP+ can achieve and maintain low tail delay and desirable universality by adopting the adaptive framework. We conduct extensive experiments to evaluate the PCRP+ and compare it with the Speculative Reservation Protocol (SRP) and Bilateral Flow Reservation Protocol (BFRP), the two most typical proactive reservation-based protocols. Evaluation results demonstrate that our design can reduce the flow latency by an average of 25.71%, 21.21%, and 29.01% for hotspot traffic, uniform traffic, and GPCNeT traffic, respectively.}
+}
+
+
+@article{DBLP:journals/cn/ChangRJXX22,
+	author = {Jinyong Chang and
+                  Qiaochuan Ren and
+                  Yanyan Ji and
+                  Maozhi Xu and
+                  Rui Xue},
+	title = {Secure medical data management with privacy-preservation and authentication
+                  properties in smart healthcare system},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109013},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109013},
+	doi = {10.1016/J.COMNET.2022.109013},
+	timestamp = {Mon, 28 Aug 2023 21:39:18 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/ChangRJXX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The potential of combining Internet-of-Medical-Things technology with medical cloud storage can greatly improve the current smart healthcare environment. But some critical obstacles arise when developing the two technologies. One of the most difficult aspects is how to efficiently guarantee medical data’s privacy and authentication since the biomedical sensors (BMSs), implanted on patient’s body, have very limited battery life and computing abilities. Another one is to check the integrity of data stored on medical cloud. In this paper, we propose a secure and lightweight, especially for the BMSs, data management model for healthcare system, in which a BMS only needs to perform symmetric encryption consisting of XOR and message-authentication-code (MAC) operations. The adopted encryption technique ensures the privacy and authentication of medical data. Moreover, an aggregated homomorphic certificateless signature scheme is also proposed for the personal-assisted device and server device, which guarantees the public verifiability of medical data stored on cloud. Meanwhile, the certificateless property naturally implies that the whole system is immune to key-escrow attack. Finally, the detailed performance analysis and comparisons with related works show that our proposed system is very competitive in terms of communication overheads and computational costs.}
+}
+
+
+@article{DBLP:journals/cn/LuttringerAMBCP22,
+	author = {Jean{-}Romain Luttringer and
+                  Thomas Alfroy and
+                  Pascal M{\'{e}}rindol and
+                  Quentin Bramas and
+                  Fran{\c{c}}ois Clad and
+                  Cristel Pelsser},
+	title = {Deploying near-optimal delay-constrained paths with Segment Routing
+                  in massive-scale networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109015},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109015},
+	doi = {10.1016/J.COMNET.2022.109015},
+	timestamp = {Sat, 30 Sep 2023 10:07:03 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/LuttringerAMBCP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With a growing demand for quasi-instantaneous communication services such as real-time video streaming, cloud gaming, and industry 4.0 applications, multi-constraint Traffic Engineering (TE) becomes increasingly important. While legacy TE management planes like MPLS have proven laborious to deploy, Segment Routing (SR) drastically eases the deployment of TE paths and is thus increasingly adopted by Internet Service Providers (ISP). There is now a clear need in computing and deploying Delay-Constrained Least-Cost paths (DCLC) with SR for real-time interactive services requiring both low delay and high bandwidth routes. However, most current DCLC solutions are not tailored for SR. They also often lack efficiency (particularly exact schemes) or guarantees (by relying on unbounded heuristics). Similarly to approximation schemes, we argue that the actual challenge is to design an algorithm providing both performances and strong guarantees. However, conversely to most of these schemes, we also consider operational constraints to provide a practical, high-performance implementation.}
+}
+
+
+@article{DBLP:journals/cn/LiHSTCJWSX22,
+	author = {Ying Li and
+                  Yi Huang and
+                  Suranga Seneviratne and
+                  Kanchana Thilakarathna and
+                  Adriel Cheng and
+                  Guillaume Jourjon and
+                  Darren Webb and
+                  David B. Smith and
+                  Richard Yi Da Xu},
+	title = {From traffic classes to content: {A} hierarchical approach for encrypted
+                  traffic classification},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109017},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109017},
+	doi = {10.1016/J.COMNET.2022.109017},
+	timestamp = {Fri, 15 Nov 2024 15:28:13 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiHSTCJWSX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The vast majority of Internet traffic is now end-to-end encrypted, and while encryption provides user privacy and security, it has made network surveillance an impossible task. Various parties are using this limitation to distribute problematic content such as fake news, copy-righted material, and propaganda videos. Recent advances in machine learning techniques have shown great promise in extracting content fingerprints from encrypted traffic captured at the various points in IP core networks. Nonetheless, content fingerprinting from listening to encrypted wireless traffic remains a challenging task due to the difficulty in distinguishing re-transmissions and multiple flows on the same link. In this paper, we show the potential of fingerprinting internet traffic by passively sniffing WiFi frames in air, without connecting to the WiFi network by leveraging deep learning methods. First, we show the possibility of building a generic traffic classifier using a hierarchical approach that is able to identity most common traffic types in the Internet and reveal fine-granular details such as identifying the exact content of the traffic. Second, we demonstrate the possibility of using Multi-Layer Perceptron (MLP) and Recurrent Neural Networks (RNNs) to identify streaming traffic, such as video and music, from a closed set, by sniffing WiFi traffic that is encrypted at both Media Access Control (MAC) and Transport layers. Overall, our results demonstrate that we can achieve over 95% accuracy in identifying traffic types such as web, video streaming, and audio streaming as well as identifying the exact content consumed by the user.}
+}
+
+
+@article{DBLP:journals/cn/TsipisO22,
+	author = {Athanasios Tsipis and
+                  Konstantinos Oikonomou},
+	title = {Joint optimization of social interactivity and server provisioning
+                  for interactive games in edge computing},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109028},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109028},
+	doi = {10.1016/J.COMNET.2022.109028},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/TsipisO22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed interactive applications (DIAs), like immersive virtual reality and multiplayer cloud games, where players team-up and form social communities to participate in collaborative virtual events, dominate the modern cloud multimedia industry. Still, due to the massive workload, intensive graphics processing and delay intolerance, conventional cloud-only models are increasingly becoming ineffective. Thankfully, with the shift towards Mobile Edge Computing, game providers can leverage existing cellular infrastructure to deploy edge servers that supply gaming services in a highly accessible fashion. One fundamental challenge, that naturally arises, is the discovery of the most suitable player-to-edge server assignment strategy, that achieves a balanced trade-off between conflicting objectives that refer to high social interactivity on the one hand and low-cost server provisioning on the other. In this article, the core properties of social interactivity for gaming DIAs are investigated through formal formulation under diverse social aspects and strict assignment rules, respecting, in the meantime, the provisioning cost and constraints of the edge servers. We call this the “Social Interactivity-oriented Edge Allocation” (SIEA) problem and prove its\nNP\n-hardness. Based on our theoretical analysis, we present SIEA-\nH\n, a two-phase heuristic algorithm to efficiently assign players to servers and then iteratively refine the edge allocation strategy. SIEA-\nH\nis evaluated using comprehensive trace-driven simulations. The results demonstrate how it surpasses the baseline and state-of-the-art assignment alternatives in reducing the total cost, especially as the number of servers and their capacity grows, or the coverage area expands, while for players it exhibits the highest admission rate and the best overall resource management.}
+}
+
+
+@article{DBLP:journals/cn/GomezKCS22,
+	author = {Jose Gomez and
+                  Elie F. Kfoury and
+                  Jorge Crichigno and
+                  Gautam Srivastava},
+	title = {A survey on {TCP} enhancements using P4-programmable devices},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109030},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109030},
+	doi = {10.1016/J.COMNET.2022.109030},
+	timestamp = {Thu, 05 Jan 2023 14:06:40 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/GomezKCS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The increasing performance requirements of today’s Internet applications demand a reliable mechanism to transfer data. Many applications rely on the Transmission Control Protocol (TCP) as the transport protocol, due to its ability to adapt to properties of the network and to be robust in the face of many kinds of failures. However, improving the performance of applications that rely on TCP has been limited by the closed nature of legacy switches, which do not provide accurate visibility of network events. With the emergence of P4-programmable devices, developers can rapidly implement and test customized solutions that use fine-grained telemetry, provide sub round-trip time feedback to end devices to enhance congestion control, precisely isolate traffic to offer better Quality of Service (QoS), quickly detect congestion and re-route traffic via alternate paths, and optimize server resources by offloading protocols.}
+}
+
+
+@article{DBLP:journals/cn/CarrascoWF22,
+	author = {Mayra Alexandra Macas Carrasco and
+                  Chunming Wu and
+                  Walter Fuertes},
+	title = {A survey on deep learning for cybersecurity: Progress, challenges,
+                  and opportunities},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109032},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109032},
+	doi = {10.1016/J.COMNET.2022.109032},
+	timestamp = {Sun, 02 Oct 2022 15:31:00 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/CarrascoWF22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the number of Internet-connected systems rises, cyber analysts find it increasingly difficult to effectively monitor the produced volume of data, its velocity and diversity. Signature-based cybersecurity strategies are unlikely to achieve the required performance for detecting new attack vectors. Moreover, technological advances enable attackers to develop sophisticated attack strategies that can avoid detection by current security systems. As the cyber-threat landscape worsens, we need advanced tools and technologies to detect, investigate, and make quick decisions regarding emerging attacks and threats. Applications of artificial intelligence (AI) have the potential to analyze and automatically classify vast amounts of Internet traffic. AI-based solutions that automate the detection of attacks and tackle complex cybersecurity problems are gaining increasing attention. This paper comprehensively presents the promising applications of deep learning, a subfield of AI based on multiple layers of artificial neural networks, in a wide variety of security tasks. Before critically and comparatively surveying state-of-the-art solutions from the literature, we discuss the key characteristics of representative deep learning architectures employed in cybersecurity applications, we introduce the emerging trends in deep learning, and we provide an overview of necessary resources like a generic framework and suitable datasets. We identify the limitations of the reviewed works, and we bring forth a vision of the current challenges of the area, providing valuable insights and good practices for researchers and developers working on related problems. Finally, we uncover current pain points and outline directions for future research to address them.}
+}
+
+
+@article{DBLP:journals/cn/MartiniGC22,
+	author = {Barbara Martini and
+                  Molka Gharbaoui and
+                  Piero Castoldi},
+	title = {Intent-based zero-touch service chaining layer for software-defined
+                  edge cloud networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109034},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109034},
+	doi = {10.1016/J.COMNET.2022.109034},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/MartiniGC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Edge Computing, along with Software Defined Networking and Network Function Virtualization, are causing network infrastructures to become as distributed clouds extended to the edge with services provided as dynamically established sequences of virtualized functions (i.e., dynamic service chains) thereby elastically addressing different processing requirements of application data flows. However, service operators and application developers are not inclined to deal with descriptive configuration directives to establish and operate services, especially in case of service chains. Intent-based Networking is emerging as a novel approach that simplifies network management and automates the implementation of network operations required by applications.}
+}
+
+
+@article{DBLP:journals/cn/BagnuloG22,
+	author = {Marcelo Bagnulo and
+                  Alberto Garc{\'{\i}}a{-}Mart{\'{\i}}nez},
+	title = {An experimental evaluation of {LEDBAT++}},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109036},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109036},
+	doi = {10.1016/J.COMNET.2022.109036},
+	timestamp = {Thu, 25 Aug 2022 08:36:56 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/BagnuloG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {LEDBAT++ is the evolution of LEDBAT, a congestion control algorithm originally designed to provide less-than-best-effort transport on the Internet. LEDBAT++ aims to address a number of shortcomings present in LEDBAT, including late-comer advantage, latency drift, competition on equal grounds with best effort traffic in the presence of small buffers and difficulties experienced while measuring the variations on the delay.}
+}
+
+
+@article{DBLP:journals/cn/SarieddineAS22,
+	author = {Khaled Sarieddine and
+                  Hassan Artail and
+                  Ha{\"{\i}}dar Safa},
+	title = {An Opportunistic Vehicle-Based Task Assignment for IoT offloading},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109038},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109038},
+	doi = {10.1016/J.COMNET.2022.109038},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/SarieddineAS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IoT is one of the most prolific origins of data that is collected from sensory inputs. IoT devices are characterized by low computational power, thus motivating the computation offloading scheme, a promising technique that mitigates energy performance issues in limited power devices. Instead of offloading to fog or cloud, a new research track is emerging where devices unload their computational needs to vehicles roaming around, and this particular type of offloading is called vehicular fog offloading. In this paper, we propose the use of vehicles as Mobile Computing Nodes (MCNs) roaming around within an area to offer computational services to IoT devices. Assigning tasks to an appropriate MCN by an IoT device that wishes to offload specific communication tasks to it will be formulated based on the quality of the communication channel and on the time needed to offload the computation request. Specifically, the vehicle which will serve as an MCN must be within the range of the requesting fixed IoT device and offer suitable SINR and the estimated duration of connection values, while taking into consideration its mobility. Another challenge would be delivering the results back to the IoT device or another party, knowing that the vehicles will not be stationary. The performance results show that the proposed system represents a promising solution by offering computation offloading services and delivering the results within acceptable times, regardless of where the vehicle might be when it wants to return the results.}
+}
+
+
+@article{DBLP:journals/cn/AsaadM22,
+	author = {Safar M. Asaad and
+                  Halgurd S. Maghdid},
+	title = {A Comprehensive Review of Indoor/Outdoor Localization Solutions in
+                  IoT era: Research Challenges and Future Perspectives},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109041},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109041},
+	doi = {10.1016/J.COMNET.2022.109041},
+	timestamp = {Sun, 02 Oct 2022 15:31:00 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/AsaadM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The number of connected mobile devices and Internet of Things (IoT) is growing around us, rapidly. Since most of people's daily activities are relying on these connected things or devices. Specifically, this past year (with COVID-19) changed daily life in abroad and this is increased the use of IoT-enabled technologies in the health sector, work, and play. Further, the most common service via using these technologies is the localization/positioning service for different applications including: geo-tagging, billing, contact tracing, health-care system, point-of-interest recommendations, social networking, security, and more. Despite the availability of a large number of localization solutions in the literature, the precision of localization cannot meet the needs of consumers. For that reason, this paper provides an in-depth investigation of the existing technologies and techniques in the localization field, within the IoT era. Furthermore, the benefits and drawbacks of each technique with enabled technologies are illustrated and a comparison between the utilized technologies in the localization is made. The paper as a guideline is also going through all of the metrics that may be used to assess the localization solutions. Finally, the state-of-the-art solutions are examined, with challenges and perspectives regarding indoors/outdoors environments are demonstrated.}
+}
+
+
+@article{DBLP:journals/cn/WuLYFSYLL22,
+	author = {Wenjia Wu and
+                  Yujing Liu and
+                  Jiazhi Yao and
+                  Xiaolin Fang and
+                  Feng Shan and
+                  Ming Yang and
+                  Zhen Ling and
+                  Junzhou Luo},
+	title = {Learning-aided client association control for high-density WLANs},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109043},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109043},
+	doi = {10.1016/J.COMNET.2022.109043},
+	timestamp = {Tue, 15 Aug 2023 14:56:00 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/WuLYFSYLL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As wireless local area network (WLAN) continues to become popular, there is an increasing number of clients with huge data traffic demands. Especially, some high client-density environments are emerging, such as industrial plants, stadiums, and event centers, which poses significant challenges in terms of client association control. Under such environments, conventional client-side solutions that select access points (APs) according to simple indicators such as signal strength may result in poor network performance, and although some centralized association control mechanisms are proposed, it is still difficult that a large amount of complex global network status information needs to be effectively and efficiently utilized. To meet these challenges, we investigate the online centralized association control problem that aims to improve user quality of experience (QoE), and propose a deep reinforcement learning (DRL) aided solution, called Wi-OAC, where an image-like state pattern is designed to achieve state reformulation for deep Q-network (DQN), and the double DQN and dueling DQN strategies are combined to improve convergence speed. On the basis of offline training, Wi-OAC can determine the proper AP-client associations for the arriving clients. Both simulation experiments and real-world experiments have been conducted to validate the effectiveness of Wi-OAC. In real-world experiments, we build a Wi-OAC testbed including 3 APs and 54 clients in less than 10.5 m\n2\narea, and the results show that Wi-OAC can significantly improve the performance on the client throughput, AP load balancing and user QoE.}
+}
+
+
+@article{DBLP:journals/cn/ChenNCT22,
+	author = {Chen Chen and
+                  Lars Nagel and
+                  Lin Cui and
+                  Fung Po Tso},
+	title = {Distributed federated service chaining: {A} scalable and cost-aware
+                  approach for multi-domain networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109044},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109044},
+	doi = {10.1016/J.COMNET.2022.109044},
+	timestamp = {Tue, 05 Sep 2023 17:29:06 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/ChenNCT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Future networks are expected to support cross-domain, cost-aware and fine-grained services in an efficient and flexible manner. Service Function Chaining (SFC) has been introduced as a promising approach to deliver these services. In the literature, centralized resource orchestration is usually employed to process SFC requests and manage computing and network resources. However, centralized approaches inhibit the scalability and domain autonomy in multi-domain networks. They also neglect location and hardware dependencies of service chains.}
+}
+
+
+@article{DBLP:journals/cn/CallejoBRLGC22,
+	author = {Patricia Callejo and
+                  Marcelo Bagnulo and
+                  Jaime Gonz{\'{a}}lez Ruiz and
+                  Andra Lutu and
+                  Alberto Garc{\'{\i}}a{-}Mart{\'{\i}}nez and
+                  Rub{\'{e}}n Cuevas},
+	title = {Measuring DoH with web ads},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109046},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109046},
+	doi = {10.1016/J.COMNET.2022.109046},
+	timestamp = {Tue, 21 Mar 2023 21:08:27 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/CallejoBRLGC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper we present a large measurement study of the impact on the performance of the adoption of HTTPS as a transport for the DNS protocol (DoH) with public resolvers compared to the existent approach of using non-encrypted transport of DNS queries with the resolver services locally provided by ISPs. Using on web-ads as the mean to execute our tests, we perform over 42 million measurements from more than 4 million vantage points distributed in 32 countries and served by over 2,500 ISPs. We find that, the median resolution time increased 17 ms when using DoH with Cloudflare, 41 ms when using DoH with Quad9, 68 ms when using DoH with Google and 170 ms when using DoH with DNS.SB, compared to using Do53 with the local resolver for a non-cached name. We find similar increases even when using caching. The results presented in the paper contribute to the ongoing discussion of the tradeoffs involved in the combined adoption of public resolvers and DoH.}
+}
+
+
+@article{DBLP:journals/cn/BoobalanRPDPMGH22,
+	author = {M. Parimala Boobalan and
+                  Swarna Priya Ramu and
+                  Quoc{-}Viet Pham and
+                  Kapal Dev and
+                  Sharnil Pandya and
+                  Praveen Kumar Reddy Maddikunta and
+                  Thippa Reddy Gadekallu and
+                  Thien Huynh{-}The},
+	title = {Fusion of Federated Learning and Industrial Internet of Things: {A}
+                  survey},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109048},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109048},
+	doi = {10.1016/J.COMNET.2022.109048},
+	timestamp = {Wed, 07 Dec 2022 23:01:41 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/BoobalanRPDPMGH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industrial Internet of Things (IIoT) lays a new paradigm for the concept of Industry 4.0 and paves an insight for new industrial era. Nowadays smart machines and smart factories use machine learning/deep learning based models for incurring intelligence. However, storing and communicating the data to the cloud and end device leads to issues in preserving privacy. In order to address this issue, Federated Learning (FL) technology is implemented in IIoT by the researchers nowadays to provide safe, accurate, robust and unbiased models. Integrating FL in IIoT ensures that no local sensitive data is exchanged, as the distribution of learning models over the edge devices has become more common with FL. Therefore, only the encrypted notifications and parameters are communicated to the central server. In this paper, we provide a thorough overview on integrating FL with IIoT in terms of privacy, resource and data management. The survey starts by articulating IIoT characteristics and fundamentals of distributed machine learning and FL. The motivation behind integrating IIoT and FL for achieving data privacy preservation and on-device learning are summarized. Then we discuss the potential of using machine learning (ML), deep learning (DL) and blockchain techniques for FL in secure IIoT. Further we analyze and summarize several ways to handle the heterogeneous and huge data. Comprehensive background on data and resource management are then presented, followed by applications of IIoT with FL in automotive, robotics, agriculture, energy, and healthcare industries. Finally, we shed light on challenges, some possible solutions and potential directions for future research.}
+}
+
+
+@article{DBLP:journals/cn/MansourAAAVOG22,
+	author = {Romany Fouad Mansour and
+                  Suliman A. Alsuhibany and
+                  Sayed Abdel{-}Khalek and
+                  Randa Alharbi and
+                  Thavavel Vaiyapuri and
+                  Ahmed J. Obaid and
+                  Deepak Gupta},
+	title = {Energy aware fault tolerant clustering with routing protocol for improved
+                  survivability in wireless sensor networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109049},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109049},
+	doi = {10.1016/J.COMNET.2022.109049},
+	timestamp = {Sun, 12 Nov 2023 02:17:57 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/MansourAAAVOG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless Sensor Networks (WSN) remain a hot research topic due to its wide range of application areas like environmental monitoring, military surveillance, healthcare, and disaster management. Network survivability is one of the challenging issues in WSN that needs to be maximized for long-run operation of the network. It can be proficiently improved by effective utilization of available energy since the nodes in WSN operate only via in-built batteries. The studies conducted earlier have mainly focused on the design of clustering and routing protocols to reduce energy consumption in the network. With this motivation, the current research paper presents a novel Energy-Aware Fault Tolerant Clustering with Routing for Improved Survivability (EAFTC-RIS) technique in WSN. The proposed EAFTC-RIS technique intends to select the Cluster Heads (CHs) and optimal routes to the destination in an optimal manner with fault tolerant mechanism. The proposed EAFTC-RIS technique primarily designs Moth Flame Optimization (MFO)-based clustering scheme for CH selection and cluster construction. Also, fault tolerant mechanism is considered to further enhance the survivability of the network. In addition, Social Spider Optimization (SSO)-based routing approach is also employed for optimal selection of routes in WSN. Clustering, routing, and fault tolerant mechanism designs, with multiple input variables, result in enhanced network survivability. The proposed EAFTC-RIS technique was validated for its performance and the outcomes were inspected under various aspects. The simulation outcomes demonstrate the superiority of EAFTC-RIS technique over recent approaches namely, EAFTC-RIS, FUCCAR-GWSO, FBECS, MLSLEEP, and Bee Cluster.}
+}
+
+
+@article{DBLP:journals/cn/NakimuliGSS22,
+	author = {Winnie Nakimuli and
+                  Jaime Garc{\'{\i}}a{-}Reinoso and
+                  Jes{\'{u}}s Enrique Sierra{-}Garc{\'{\i}}a and
+                  Pablo Serrano},
+	title = {Exploiting radio access information to improve performance of remote-controlled
+                  mobile robots in MEC-based 5G networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109061},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109061},
+	doi = {10.1016/J.COMNET.2022.109061},
+	timestamp = {Tue, 21 Mar 2023 21:08:28 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/NakimuliGSS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Industry 4.0 paradigm aims to bring real-time production data analytics, cloud computing, and cyber–physical inter-connectivity to today’s industries. This evolution fosters network-based use cases, such as remote-controlled mobile robots with stringent network latency requirements. 5G networks have become a promising technology for such use cases. However, 5G wireless communication is affected by time-varying random delays, which impact the use-case’s reliability, stability, and performance. Thus, there is an urgent need to design mechanisms to compensate for these time-varying delays at the remote end. The delay estimation can be achieved by leveraging the MEC framework on top of 5G (MEC-based 5G). Thus, this work presents a novel architecture to exploit the radio network information provided by the MEC framework to improve the performance of remote-controlled mobile robots leveraging 5G. This radio network information is used to estimate the current network delays. Accordingly, these estimated delays together with the delayed information sent by the robot are availed to the robot controller at the remote end for compensation. Besides, the message-sequence flow between the different architecture components is analyzed in detail, and the modeling equations are described. Extensive simulations prove the effectiveness of the proposed approach. Our approach is compared with the network delay estimation based on the Kalman filter. An improvement of at least 55% and 33% in the tracking error and control effort, respectively, are observed for delay values\n≥\n150\n ms.}
+}
+
+
+@article{DBLP:journals/cn/DaoVNHDC22,
+	author = {Nhu{-}Ngoc Dao and
+                  Duc{-}Nghia Vu and
+                  Woongsoo Na and
+                  Trong{-}Minh Hoang and
+                  Dinh{-}Thuan Do and
+                  Sungrae Cho},
+	title = {Adaptive bitrate streaming in multi-user downlink {NOMA} edge caching
+                  systems with imperfect {SIC}},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109064},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109064},
+	doi = {10.1016/J.COMNET.2022.109064},
+	timestamp = {Sun, 06 Oct 2024 21:22:03 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/DaoVNHDC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, mobile networks have witnessed an increasing dominance of video traffic streams to simultaneously distribute real-time contents to massive number of user devices. In this context, fifth-generation (5G) technologies and beyond expose their advanced new radio access interfaces to facilitate multi-user associations with successive interference cancellation (SIC)-based non-orthogonal multiple access (NOMA) mechanisms. However, the imperfectness of the SIC in reality may result in significant performance decrease in NOMA owing to inter-channel interference existence. Motivated by this observation, this paper studies adaptive bitrate streaming services given such a challenging transmission environment assumed. In this context, our objectives are to maximize the video bitrate (accordingly the video resolution) of the online streams while retaining the playback smoothness. The problem is transformed into a drift-plus-penalty balancing optimization, which is then resolved by an approximation algorithm. Numerical results highlight the outperformance of the proposed approach compared to existing algorithms in terms of video quality and smoothness in various system scenarios.}
+}
+
+
+@article{DBLP:journals/cn/TianBJ22,
+	author = {Junfeng Tian and
+                  Wenqing Bai and
+                  Haoyi Jia},
+	title = {{PGCE:} {A} distributed storage causal consistency model based on
+                  partial geo-replication and cloud-edge collaboration architecture},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109065},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109065},
+	doi = {10.1016/J.COMNET.2022.109065},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/TianBJ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The current causal consistency model has trouble facing the high synchronization overheads and response delays found in cloud storage systems. This paper proposes a causal consistency model for distributed storage based on partial geographical replication and Cloud-Edge collaboration structure (PGCE). The model is based on the distributed network architecture of Cloud-Edge collaboration, and the cloud dataset is divided into multiple subsets by a hash function to store these subsets in the edge nodes that are close to the user network to realize partial geo-replication. At the same time, the timestamp stabilization mechanism and metadata processing service are set up to implement data consistency between nodes on the premise of ensuring causality, reducing the overhead of metadata processing and data synchronization. The client interacts directly with the edge nodes, which reduces the response delay of interacts with the cloud DC. An evaluation of the PGCE compared with existing models shows that it has better performance in response latency and throughput.}
+}
+
+
+@article{DBLP:journals/cn/Garcia-TeodoroC22,
+	author = {Pedro Garc{\'{\i}}a{-}Teodoro and
+                  Jos{\'{e}} Camacho and
+                  Gabriel Maci{\'{a}}{-}Fern{\'{a}}ndez and
+                  Jos{\'{e}} Antonio G{\'{o}}mez{-}Hern{\'{a}}ndez and
+                  Victor Jos{\'{e}} L{\'{o}}pez{-}Mar{\'{\i}}n},
+	title = {A novel zero-trust network access control scheme based on the security
+                  profile of devices and users},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109068},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109068},
+	doi = {10.1016/J.COMNET.2022.109068},
+	timestamp = {Mon, 28 Aug 2023 21:39:17 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/Garcia-TeodoroC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security constitutes a principal concern for communication networks and services at present. This way, threats should be under control to minimize risks over time in real environments. With this aim, we introduce here a new approach for access control aimed to strengthen security in corporate networks and service providers related environments. Our proposal, named SADAC (Security Attribute-based Dynamic Access Control) presents three main novel features: (i) security related attributes regarding both configuration and operation are considered for network access control of final devices/users; (ii) a dynamic supervision procedure is implemented to evaluate the security profile associated to devices/users over time and, if so, to apply corresponding access restrictions; and (iii) a supervision procedure that also permits to diagnose the causes of inadequate security behaviours, so that the final devices/users can adapt their configuration and/or operation. We describe the overall access control methodology as well as the aspects for its implementation. In particular, we present and evaluate the specific deployment of SADAC for a corporate WiFi environment supported on a Raspberry Pi-based AP to provide Internet access to mobile devices. Through this experimentation we can conclude the convenience of adopting the approach for improving security by minimizing risks in network and communication environments.}
+}
+
+
+@article{DBLP:journals/cn/UyanAG22,
+	author = {Osman Gokhan Uyan and
+                  Ayhan Akbas and
+                  Vehbi Cagri Gungor},
+	title = {A reliable and secure multi-path routing strategy for underwater acoustic
+                  sensor networks},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109070},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109070},
+	doi = {10.1016/J.COMNET.2022.109070},
+	timestamp = {Mon, 25 Jul 2022 08:40:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/UyanAG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Underwater Acoustic Sensor Networks (UASNs) have nowadays become an attractive topic in scientific studies and commercial applications. An important challenge in UASN's design is the limited network lifetime and low reliability caused by the limited battery energy of sensor nodes and harsh channel conditions in underwater environments. In addition, sensor nodes may generate sensitive data, which needs to be concealed. To this end, cryptographic encryption is a commonly used method to cipher a data before transmission to maintain security. However, encryption methods require additional computation and extra energy, which causes a decrease in the network lifetime. To this end, transmitting fragmented data through multiple paths can be used as a security countermeasure, in conjunction with encryption against silent listening attacks. To address these challenges, in this study, an optimization framework has been developed to analyze the effects of multi-path routing, packet duplication, encryption and data fragmentation on network lifetime. In addition to an optimal solution, Simulated Annealing, Golden Section Search and Genetic Algorithm-based heuristic methods have been developed. Performance results show that the proposed approach jointly solves the problem of UASN lifetime maximization, while providing network reliability and security.}
+}
+
+
+@article{DBLP:journals/cn/LiZL22,
+	author = {Chunlin Li and
+                  Yong Zhang and
+                  Youlong Luo},
+	title = {Flexible heterogeneous data fusion strategy for object positioning
+                  applications in edge computing environment},
+	journal = {Comput. Networks},
+	volume = {212},
+	pages = {109083},
+	year = {2022},
+	url = {https://doi.org/10.1016/j.comnet.2022.109083},
+	doi = {10.1016/J.COMNET.2022.109083},
+	timestamp = {Mon, 06 May 2024 20:42:58 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/LiZL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Object perception location data come from a wide range of sources with different structures and different presentation methods. It is worthwhile to study how to fuse the data from different sources of perception and location data to improve the accuracy of location data. We have proposed a data fusion method based on RFID virtual reference tags and video multi-feature matching and perform data fusion in an edge computing environment. Firstly, two types of data are processed separately. The positioning accuracy of the tags is improved by inserting virtual reference tags when using RFID data to obtain positioning information. When using video data to obtain positioning information, the valuable segments are extracted by keyframes, and the target detection is carried out by combining three-frame differencing and background differences. Then, the location information of the items to be positioned is obtained according to the multi-feature matching and coordinate transformation. The location information of the item to be located is obtained based on multi-feature matching and coordinate transformation. Finally, the Kalman filter is used to fuse the separately processed RFID positioning data with the video positioning data. The method combines the observed values with the predicted values calculated by the model for state updating, and the positioning data with higher accuracy is obtained after several iterations. Experimental results show that data fusion at the edge server better meets the real-time demand of video data. The fused localization data has higher accuracy than RFID or video data alone for localization.}
+}
