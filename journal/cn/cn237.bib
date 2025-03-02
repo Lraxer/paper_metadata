@@ -1,0 +1,1216 @@
+@article{DBLP:journals/cn/MahboobKCA23,
+	author = {Shadab Mahboob and
+                  Koushik Kar and
+                  Jacob Chakareski and
+                  Md. Ibrahim Alam},
+	title = {CLoSER: Video caching in small-cell edge networks with local content
+                  sharing},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110033},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110033},
+	doi = {10.1016/J.COMNET.2023.110033},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/MahboobKCA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the problem of video caching in an edge network consisting of a set of small-cell base stations (SBS) that can share content among themselves over a high-capacity short-delay local network, or fetch the videos from a remote server over a long-delay connection. Even though the problem of minimizing the overall video playout delay in our framework is NP-hard, we develop CLoSER, an algorithm that can efficiently compute a solution that is close to the optimal, where the degree of sub-optimality depends on the worst case video-to-cache size ratio. In comparison with related prior work on video caching and streaming, CLoSER specifically focuses on the benefits of local sharing of the initial portion of the video content in reducing the video playout delay, and provides strong optimality guarantees with a low-complexity algorithm. We extend CLoSER to an online setting where the video popularities are not known a priori but are estimated over time through a limited amount of periodic information sharing between SBSs. With such online video popularity estimation, a distributed implementation of CLoSER requires zero explicit coordination between the SBSs and runs in\nO\n(\nN\nK\n+\nK\nlog\nK\n)\ntime, where\nN\nis the number of SBSs (caches) and\nK\nthe maximum number of videos. We carry out simulations using YouTube and Netflix video request traces, as well as synthesized traces with the same marginal distributions as the traces but varying degree of temporal correlations, and demonstrate that our algorithm uses the SBS caches effectively to reduce the video delivery delay and conserve the remote server’s bandwidth. We also show that it outperforms two other reference caching methods adapted to our system setting, over a wide range of remote-to-local bandwidth ratios. Further, we show how CLoSER extends to the scenario where each video may need to be cached in multiple bit-rates, as in Available Bit Rate (ABR) streaming.}
+}
+
+
+@article{DBLP:journals/cn/FernandezSVPHF23,
+	author = {Yaime Fern{\'{a}}ndez and
+                  Javier E. Soto and
+                  Sof{\'{\i}}a Vera and
+                  Yasmany Prieto and
+                  Cecilia Hern{\'{a}}ndez and
+                  Miguel E. Figueroa},
+	title = {A streaming algorithm and hardware accelerator to estimate the empirical
+                  entropy of network flows},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110035},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110035},
+	doi = {10.1016/J.COMNET.2023.110035},
+	timestamp = {Fri, 26 Jan 2024 07:57:17 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/FernandezSVPHF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The empirical entropy is used in network traffic monitoring and classification to detect anomalous events and manage network resources. Computing the entropy of high-speed traffic in real time requires dedicated hardware, such as programmable switches and FPGA-based accelerators. While these devices can achieve high performance by exploiting the parallelism of the algorithm, they possess limited on-chip storage. Thus, designing algorithms that estimate the entropy of network traffic with low error and memory usage is challenging. In this paper, we present an entropy-estimation streaming algorithm that operates on large datasets with sublinear memory usage. We use sketches to estimate the frequency and cardinality of network flows during an observation interval. We only store the frequencies of the most frequent flows and use them to estimate the rest of the frequencies by assuming a power-law distribution. Our results show that, using real network traces with observation intervals of up to 50 million flows, we can estimate their empirical entropy with 0.69% mean relative error, using more than three orders of magnitude less memory than an exact entropy-computation method. We also present an FPGA-based hardware accelerator for the algorithm that can operate at a line rate of more than 200 Gbps and an estimation latency of\n16\nμ\ns\n. Using fixed-point arithmetic and function approximations in the accelerator increases the mean estimation error of our algorithm by only 0.07%.}
+}
+
+
+@article{DBLP:journals/cn/LeyvaPupoC23,
+	author = {Irian Leyva{-}Pupo and
+                  Cristina Cervell{\'{o}}{-}Pastor},
+	title = {An intelligent scheduling for 5G user plane function placement and
+                  chaining reconfiguration},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110037},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110037},
+	doi = {10.1016/J.COMNET.2023.110037},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/LeyvaPupoC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Services and use cases in 5G and beyond networks are characterized by strict requirements such as ultra-low latency, increased capacity, and high user mobility. Moreover, these networks must be capable of satisfying these ambitious demands as well as anticipating and adapting to dynamically changing conditions in a quick and feasible manner. This study deals with the problem of determining the best time to readjust the user plane function (UPF) placement and session mapping configuration to avoid quality of service (QoS) degradation in the system due to user mobility. To this aim, we rely on machine learning (ML) techniques to anticipate poor QoS events and decide whether a reconfiguration procedure is required based on a pre-established QoS tolerance threshold. Specifically, an ML-based framework, called intelligent scheduling of the reconfiguration (ISR), is proposed to automate the reconfiguration process. This framework applies supervised ML methods, either regressors or classifiers, to predict the QoS values/status at a given time horizon. The simulation experiments revealed the proposed mechanism’s superiority compared to the established scheduling baseline. The ISR solution could not only keep the system QoS under desired values most of the time but also reduce the number of readjustment events by at least 50% compared to the baselines.}
+}
+
+
+@article{DBLP:journals/cn/OmriFP23,
+	author = {Aymen Omri and
+                  Javier Hernandez Fernandez and
+                  Roberto Di Pietro},
+	title = {Extending device noise measurement capacity for OFDM-based {PLC} systems:
+                  Design, implementation, and on-field validation},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110038},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110038},
+	doi = {10.1016/J.COMNET.2023.110038},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/OmriFP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Noise measurement in power line communication (PLC) systems is a common activity performed by grid operators for network tuning operations. Usually, these measurements are carried out with portable devices that have a fixed sensing and storage capacity.}
+}
+
+
+@article{DBLP:journals/cn/SartayevaCHC23,
+	author = {Yerkezhan Sartayeva and
+                  Henry C. B. Chan and
+                  Yik Him Ho and
+                  Peter H. J. Chong},
+	title = {A survey of indoor positioning systems based on a six-layer model},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110042},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110042},
+	doi = {10.1016/J.COMNET.2023.110042},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/SartayevaCHC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Indoor positioning has attracted considerable interest in both the industry and academic communities because of its wide range of applications, such as asset tracking, healthcare and context-aware services like targeted advertisements. While there are many indoor localisation methods, each has its advantages and disadvantages, taking into consideration various factors such as the effect of the indoor environment, ease of implementation, computational cost, positioning accuracy, etc. In other words, no single solution can cater for all different situations. Although many survey papers have been published on indoor positioning, new techniques and methods are proposed every year, so it is important to stay abreast of its latest developments. In addition, each survey has its own classification for indoor positioning systems without a common scheme. Inspired by the well-known OSI model and TCP/IP model, it would be desirable to develop a systematic framework for studying indoor positioning systems. In this paper, we make this new contribution by introducing a systemic survey framework based on a six-layer model to give a comprehensive survey of indoor positioning systems, namely: device layer, communication layer, network layer, data layer, method layer and application layer. Complementing the previous survey papers, this paper provides a survey of the latest research works on indoor positioning based on the six-layer model. Our emphasis is on systematic categorisation, machine learning-based enhancements, collaborative localisation and COVID-19-related applications. The six-layer model should provide a useful framework and new insights for the research community.}
+}
+
+
+@article{DBLP:journals/cn/LiangYH23,
+	author = {Weibiao Liang and
+                  Lin You and
+                  Gengran Hu},
+	title = {LRS{\_}PKI: {A} novel blockchain-based {PKI} framework using linkable
+                  ring signatures},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110043},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110043},
+	doi = {10.1016/J.COMNET.2023.110043},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiangYH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, numerous security vulnerabilities have emerged within the PKI system. For example, a compromised CA can issue illegal or fake certificates for any domains, and a CA can issue unauthorized certificates without the consent of the domain owner. In addition, some high-value target domains, such as banks and government agencies may have been frequently attacked, and the adversaries can launch the targeted attacks by making use of the disclosure of the issuing CAs. To address these pressing issues or challenges, in this work, we propose a novel blockchain-based PKI framework using linkable ring signatures, called LRS_PKI. Specially, we propose a novel certificate issuance mechanism that utilizes linkable ring signatures to hide the issuing CA, so as to reduce the risk of the PKI system being attacked. Additionally, we introduce the blockchain as a public log to record the certificate operations, and adopt the decentralized storage IPFS to store the certificates to decouple the blockchain layer and storage layer. In order to prevent the CA from issuing unauthorized certificates, we have added a condition to verify whether the issuing CA is consistent with the previous issuing CA in the certificate verification. The security analysis and experimental results show that LRS_PKI is both secure and efficient.}
+}
+
+
+@article{DBLP:journals/cn/TalebBAS23,
+	author = {Tarik Taleb and
+                  Chafika Benza{\"{\i}}d and
+                  Rami Akrem Addad and
+                  Konstantinos Samdanis},
+	title = {{AI/ML} for beyond 5G systems: Concepts, technology enablers {\&}
+                  solutions},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110044},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110044},
+	doi = {10.1016/J.COMNET.2023.110044},
+	timestamp = {Fri, 22 Mar 2024 09:01:48 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/TalebBAS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {5G brought an evolution on the network architecture employing the service-based paradigm, enabling flexibility in realizing customized services across different technology domains. Such paradigm gives rise to the adoption of analytics and Artificial Intelligence/Machine Learning (AI/ML) in mobile communications with the ease of collecting various measurements related to end-users and the network, which can be exposed towards consumers, including 3rd party applications. AI/ML may influence network planning and optimization considering the service life-cycle and introduce new operations provision, paving the way towards 6G. This article provides a survey on AI/ML considering the business, the fundamentals and algorithms across the radio, control, and management planes. It sheds light on the key technologies that assist the adoption of AI/ML in 3rd Generation Partnership Project (3GPP) networks considering service request, reporting, data collection and distribution and it overviews the main AI/ML algorithms characterizing them into user-centric and network-centric. Finally, it explores the main standardization and open source activities on AI/ML, highlighting the lessons learned and the further challenges that still need to be addressed to reap the benefits of AI/ML in automation for beyond 5G/6G mobile systems.}
+}
+
+
+@article{DBLP:journals/cn/WangRXGLG23,
+	author = {Miaomiao Wang and
+                  Lanlan Rui and
+                  Siya Xu and
+                  Zhipeng Gao and
+                  Huiyong Liu and
+                  Shaoyong Guo},
+	title = {A multi-keyword searchable encryption sensitive data trusted sharing
+                  scheme in multi-user scenario},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110045},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110045},
+	doi = {10.1016/J.COMNET.2023.110045},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/WangRXGLG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable encryption technology provides a solution for the trusted sharing of sensitive data. A large amount of encrypted data stored in data sharing servers can support keyword search without exposing data privacy, which has attracted more and more scholars’ attentions and researches. However, some multi-keyword searchable encryption schemes that deal with multi-semantic data still have security problems or low efficiency. To improve the security and efficiency of trusted sharing of sensitive data, we propose a multi-keyword searchable encryption scheme. The scheme designs a sensitive data sharing architecture based on blockchain technology, and the tamper-proof of distributed ledgers ensures the authenticity of encrypted data and indexes, as well as the supervision of sharing behaviors. On this basis, we improved the inverted index structure to achieve efficient multi-keyword searchable encryption while avoiding keyword-pair result pattern leakage. Our proposed scheme has passed formal security analysis, and simulation results show that the multi-keyword searchable encryption scheme is efficient.}
+}
+
+
+@article{DBLP:journals/cn/AratA23,
+	author = {Ferhat Arat and
+                  Sedat Akleylek},
+	title = {A new method for vulnerability and risk assessment of IoT},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110046},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110046},
+	doi = {10.1016/J.COMNET.2023.110046},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/AratA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose a generic vulnerability and risk assessment method for IoT-enabled systems. The main aim is to provide risk detection and vulnerability assessment for IoT-based systems. We present three phases of risk assessment methodology: graph construction, attack path detection, and attack path filtering for high-level attack paths. We give attack path detection, risk level computing, and attack path removing procedures to validate these phases. We represent the IoT-based network as a graphical structure. Then, we construct the topology for a given IoT-based system. The smart home system is considered as a case scenario to present a realistic instance. The National Vulnerability Database (NVD), Common Vulnerability Scoring System (CVSS), and Common Vulnerability Exposures (CVE) metrics are used to assign vulnerabilities to devices. We formulate risk factors to compute risk levels for each node, attack path, and entire graph. We use the modified Depth First Algorithm (DFS) to find all attack paths for a source and target nodes. In addition, we compute risk levels using computing procedures. Further, we filter detected attack paths considering dominance level using computational metrics. We perform the simulation on a custom Python simulator considering the designed IoT-based smart home system. We compare our proposed methods with the state of the art. According to the experimental results, the proposed methods outperform existing vulnerability-based risk assessment models regarding running time complexity and operational cost.}
+}
+
+
+@article{DBLP:journals/cn/DongGYXFY23,
+	author = {Enhuan Dong and
+                  Peng Gao and
+                  Yuan Yang and
+                  Mingwei Xu and
+                  Xiaoming Fu and
+                  Jiahai Yang},
+	title = {SmartSBD: Smart shared bottleneck detection for efficient multipath
+                  congestion control over heterogeneous networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110047},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110047},
+	doi = {10.1016/J.COMNET.2023.110047},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/DongGYXFY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multipath TCP (MPTCP) has been widely adopted in today’s mobile devices. However, two types of congestion control algorithms, uncoupled congestion control (Uncoupled CC) and coupled congestion control (Coupled CC), cannot achieve both bottleneck friendliness and throughput maximization for both of the MPTCP subflow bottleneck sharing scenarios, shared bottleneck (SB) scenario and non-shared bottleneck (NSB) scenario, leading to performance degradation in practice. In this work, we seek to enable efficient MPTCP congestion control, by alternating between Uncoupled CC algorithms and Coupled CC algorithms via smartly detecting whether the two MPTCP subflows share the same bottleneck link. We propose SmartSBD, the first learning-based data-driven approach for shared bottleneck detection, which is accurate, adaptable, and easy-to-deploy. SmartSBD is based on the key insight that the properties of subflows that share the same bottleneck often have similar trends of variation or similar values. In the training phase, SmartSBD collects system logs when MPTCP is running in real-world heterogeneous networks, extracts features, and trains a binary classifier. In the runtime phase, SmartSBD makes periodic predictions on the bottleneck sharing condition of live MPTCP subflows, and uses the prediction results to alternate between Coupled CC and Uncoupled CC. Our evaluations demonstrate that SmartSBD outperforms existing approaches.}
+}
+
+
+@article{DBLP:journals/cn/WangWSLZ23,
+	author = {Houtian Wang and
+                  Taotao Wang and
+                  Long Shi and
+                  Naijin Liu and
+                  Shengli Zhang},
+	title = {A blockchain-empowered framework for decentralized trust management
+                  in Internet of Battlefield Things},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110048},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110048},
+	doi = {10.1016/J.COMNET.2023.110048},
+	timestamp = {Thu, 23 Jan 2025 19:51:37 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/WangWSLZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The security of the Internet of Battlefield Things (IoBT) is greatly challenged by malicious intrusions from external environments. To protect IoBT from such intrusions, it is crucial to implement trust management (TM) at the node level. However, the decentralized and dynamic nature of IoBT means that participating nodes have no predetermined trust relationships. To address this issue, we propose a blockchain-empowered framework to achieve decentralized TM in IoBT. We begin by introducing a network model that integrates the space and ground segments with portable ping-pong stations. In the absence of fixed infrastructure, these stations enable rapid networking among combat units in IoBT. We also leverage these stations to form a blockchain network that manages decentralized trusts among IoBT nodes. Our blockchain-empowered TM framework consists of three algorithmic components: (i) Local Trust Computation: each IoBT node uses a local trust computation algorithm to compute the local trusts of its neighboring nodes; (ii) Global Trust Aggregation: portable ping-pong stations use a global trust aggregation algorithm to aggregate the global trusts of IoBT nodes; (iii) Blockchain Consensus Process: the global trusts of IoBT nodes are updated to the blockchain. We have also developed a new consensus algorithm that incentivizes blockchain nodes to proactively maintain the real trusts of IoBT nodes. We conducted several simulations incorporating different attack models of malicious nodes and system setups to comprehensively evaluate the performance of our TM framework. The simulation results demonstrate that our blockchain-empowered decentralized TM effectively suppresses the probability of successful attacks and thus improves the security of IoBT. In summary, our proposed framework offers a promising solution for achieving decentralized TM in IoBT, and we believe that it has the potential to significantly enhance the security of this rapidly developing field.}
+}
+
+
+@article{DBLP:journals/cn/SHRG23,
+	author = {Ahmad Salehi S. and
+                  Runchao Han and
+                  Carsten Rudolph and
+                  Marthie Grobler},
+	title = {{DACP:} Enforcing a dynamic access control policy in cross-domain
+                  environments},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110049},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110049},
+	doi = {10.1016/J.COMNET.2023.110049},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/SHRG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Enabling hybrid authorisations to enforce dynamic access control policy from single-domain to cross-domain environments (CDEs) is important for distributed services. However, traditional Attribute-Based Access Control (ABAC) models are incompatible with CDEs. To fill this gap, approaches that apply cryptographic primitives, e.g., attribute-based encryption (ABE), have been proposed. The computation and storage overhead in most ABE constructions is non-negligible and increases with the complexity of the associated policies. In addition, most access control policy systems enforce authorisation policies in a centralised way, raising serious security and privacy issues. In this paper, we introduce DACP – a practical Dynamic Access Control Policy system supporting dynamic cross-domain authorisation. DACP combines traditional ABAC approach and a novel cryptographic primitive Attribute-based group signature (ABGS). ABAC is used for the access control decision and policy enforcement according to the user’s attributes whereas ABGS is used for managing the user’s attributes between users and authorities. Thus, the user’s attributes are securely distributed along with the access structure in CDEs while preserving the user’s privacy. We present the concrete design and implementation of DACP, and evaluate it in real-world settings. The evaluation shows that DACP is practical and efficient in CDEs.}
+}
+
+
+@article{DBLP:journals/cn/ZhuL23,
+	author = {Yan Zhu and
+                  Dawei Lu},
+	title = {Satellite-assisted edge computing management based on deep reinforcement
+                  learning in industrial internet of things},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110050},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110050},
+	doi = {10.1016/J.COMNET.2023.110050},
+	timestamp = {Fri, 14 Feb 2025 20:58:24 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ZhuL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The insufficient edge computing equipment in remote areas cannot meet explosively growing computing needs of industrial Internet of things devices, which undoubtedly leads to unaffordable overheads of the device-side energy and computation timeout. In response to this problem, we propose a collaborative computation offloading architecture based on the satellite-assisted edge computing (SAEC) deployed in low earth orbit ultra-dense satellite networks which hold great promise in the 6G communications benefiting from the low latency, high bandwidth, global coverage, etc. To make the non-differentiable computation offloading problem tractable, we propose an asynchronous advantage actor-critic based SAEC offloading (ASO) deep reinforcement learning (DRL) algorithm to optimize the integrated reward reflecting in latency and energy, and optimally train the action set determining the scale of participating SAEC servers and the distribution of their computational tasks. Numerous simulation results verify that our ASO algorithm can greatly accelerate the convergence and improve the integrated reward compared with contrast methods.}
+}
+
+
+@article{DBLP:journals/cn/BozorgchenaniZCTNM23,
+	author = {Arash Bozorgchenani and
+                  Charilaos C. Zarakovitis and
+                  Su Fong Chien and
+                  Tiew On Ting and
+                  Qiang Ni and
+                  Wissam Mallouli},
+	title = {Novel modeling and optimization for joint Cybersecurity-vs-QoS Intrusion
+                  Detection Mechanisms in 5G networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110051},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110051},
+	doi = {10.1016/J.COMNET.2023.110051},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/BozorgchenaniZCTNM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid emergence of 5G technology brings new cybersecurity challenges that hold significant implications for our economy, society, and environment. Among these challenges, ensuring the effectiveness of Intrusion Detection Mechanisms (IDMs) in monitoring networks and detecting 5G-related cyberattacks is of utmost importance. However, optimizing cybersecurity levels and selecting appropriate IDMs remain as critical and ongoing challenges. This work considers multiple pre-deployed distributed Security Agents (SAs) across the network, each capable of running various IDMs, where they differ by their effectiveness in detecting the attacks (referred to as security term) and the consumption of resources (referred to as Quality of Service (QoS) costs). We formulate a joint security and QoS utility function leveraging the Cobb–Douglas production utility function. There are several parameters that impact the joint objective problem, including the set of elasticity parameters, that reflect the importance of the two objectives. We derive an optimal set of elasticity parameters in closed form to identify the balancing point where both objectives have equal utility values. Through comprehensive simulations, we demonstrate that increasing the detection level of SAs enhances the security utility while simultaneously diminishing the QoS utility, as more computational, bandwidth, and monetary resources are utilized for IDM processing. After optimization, our mechanism can strike an effective balance between cybersecurity and QoS overhead while demonstrating the importance of different parameters in the joint problem.}
+}
+
+
+@article{DBLP:journals/cn/ZhangCG23,
+	author = {Guoan Zhang and
+                  Wei Cao and
+                  Xiaohui Gu},
+	title = {Cooperative vehicular networks over Nakagami-m fading: Joint power
+                  control and spectrum scheduling},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110052},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110052},
+	doi = {10.1016/J.COMNET.2023.110052},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ZhangCG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Facilitated by the rapid development of wireless communication technologies and the broad deployment of cellular networks, vehicular communications have evolved towards ultra-reliable low-latency communications (URLLC). In this paper, we consider a device-to-device (D2D)-enabled vehicular networks, where the uplink from roadside units (RSUs) to the base station (BS) shares spectrum with D2D-enabled vehicle-to-vehicle (V2V) links. The sum capacity of RSUs is maximized by jointly optimizing the transmit power and orthogonal spectrum bands scheduling, with the minimum data rate of RSUs and the reliability of V2V links guaranteed. Specifically, under Nakagami fading channels, the statistical channel state information (CSI) of vehicular communication links is utilized instead of the instantaneous CSI to adapt to the extra overheads resulting from frequent channel estimation. Moreover, user fairness is also considered, through maximizing the minimum ergodic capacity achieved by RSUs. To solve the formulated non-convex problem, we decomposed it into a power allocation subproblem that is analytically solved, and a spectrum bands scheduling subproblem that is tackled by resorting to the Hungarian method. The validity of the proposed methods is confirmed by numerical results.}
+}
+
+
+@article{DBLP:journals/cn/LiuWZZW23,
+	author = {Yujie Liu and
+                  Shangping Wang and
+                  Duo Zhang and
+                  Qian Zhang and
+                  Jifang Wang},
+	title = {Optimal incentive strategy in blockchain-based mobile crowdsensing
+                  using game theory},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110053},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110053},
+	doi = {10.1016/J.COMNET.2023.110053},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiuWZZW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile crowdsensing (MCS) is a cutting-edge technology that leverages the computing power of mobile devices to gather environmental data, efficiently utilizing underutilized resources to complete sensing tasks. However, the lack of initiative and motivation among participants in existing MCS systems is a crucial factor limiting its development. As a result, examining the incentive mechanism in MCS becomes essential for attracting a greater number of participants to join. In addition, existing MCS systems typically employ a centralized platform, but this structure poses security issues, as the platform can manipulate MCS operations to gain inappropriate profits and is prone to single point of failures. In response to the above-mentioned issues, this paper proposes a novel blockchain-based MCS system, referred to as CrowdBS. Firstly, the system adopts a decentralized structure and distributed consensus methods to enhance the reliability and security of the system. Additionally, the use of smart contracts allows the system to automatically execute predefined operations without the need for human intervention. In MCS, this means that it can automatically trigger operations such as data collection, reward distribution, task assignment, etc., thereby improving efficiency and reducing the risk of human intervention. Secondly, the system introduces a two-stage Stackelberg game model, attracting more sensing users to participate in tasks through reasonable incentive mechanisms and ensuring fairness in reward distribution, thereby promoting efficient, reliable, and sustainable execution of crowdsensing tasks. Finally, the correctness of the model is verified through simulation experiments, and compared with the existing MCS system. The comparison results show that the system and its incentive mechanism have more comprehensive advantages in terms of reliability, security and performance.}
+}
+
+
+@article{DBLP:journals/cn/GomezKCS23,
+	author = {Jose Gomez and
+                  Elie F. Kfoury and
+                  Jorge Crichigno and
+                  Gautam Srivastava},
+	title = {A survey on network simulators, emulators, and testbeds used for research
+                  and education},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110054},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110054},
+	doi = {10.1016/J.COMNET.2023.110054},
+	timestamp = {Sun, 19 Jan 2025 14:22:24 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/GomezKCS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network operators and researchers constantly search for platforms to evaluate future deployments and test new research ideas. When experimenting, they usually face challenges in deciding on an appropriate platform to validate the advantages and limitations of their proposed system. These challenges include finding an experimentation environment that balances traffic realism, scalability, and cost. An experimenter can evaluate systems, protocols, and security implementations using simulators, emulators, or testbeds to validate the expected behavior of the proposed idea. Simulators and emulators provide a controlled environment to conduct reproducible experiments but lack realism. Testbeds provide realism and scale depending on the available resources. However, real equipment can be costly and unavailable for many experimenters. The inability to test networking ideas in a realistic environment at a large scale presents a barrier for companies, institutions, and network vendors to implement new features, thus, slowing down innovation. In the past few decades, the networking community developed new platforms to test new ideas and deployments at scale, with realism, and at lower costs. These platforms also enable the instruction of networking concepts, cybersecurity, distributed computing, storage systems, and science applications. From the learner’s side, practical hands-on experience is required to internalize concepts and improve troubleshooting skills. Learning these concepts can be challenging due to the multidisciplinary nature of networking instruction, where a learner must have a background in several computing areas (e.g., operating systems, programming languages, and computer architecture). This paper presents experimentation platforms used to conduct research in computer networks and evaluates the potential of these platforms for instructing networking courses. This paper examines the literature and presents a taxonomy of network experimentation platforms. It also discusses challenges, analyzes the limitations, and suggests future perspectives by providing an overview of the tools, a description of the underlying resources (i.e., hardware and software), and a summary of the supported experiments. The paper aims to assist experimenters and educators in deciding which platform is more suitable for their experimentation needs and discuss the challenges and future directions related to the network experimentation platforms.}
+}
+
+
+@article{DBLP:journals/cn/ZhangLZHBZ23,
+	author = {Yuandi Zhang and
+                  Jiawangnan Lu and
+                  Hongtao Zhang and
+                  Ziyi Huang and
+                  C{\'{e}}sar Briso{-}Rodr{\'{\i}}guez and
+                  Lei Zhang},
+	title = {Experimental study on low-altitude UAV-to-ground propagation characteristics
+                  in campus environment},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110055},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110055},
+	doi = {10.1016/J.COMNET.2023.110055},
+	timestamp = {Sun, 04 Aug 2024 19:48:54 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/ZhangLZHBZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, unmanned aerial vehicle (UAV)-to-ground wireless channels have become focused areas. Thus a better understanding of UAV-to-ground wireless channel characterizations is critical. The large-scale fading characterization is widely analyzed in many research works. Nevertheless, the small-scale fading characterization of low-altitude UAV-to-ground propagation has not been fully modeled. In this work, the close-in (CI) free space and floating-intercept (FI) path loss models are implemented to characterize large-scale fading. The large-scale parameters, i.e., path loss exponent (PLE), shadow fading standard deviation (STD), and shadow fading correlation coefficient, are carefully extracted, analyzed, and compared. Regarding small-scale fading, Akaike’s Information Criteria (AIC) is used to find the most suitable fading distribution. In addition, fade depth (FD), level crossing rate (LCR), and average fade duration (AFD) are also calculated. The quantitative results and comparisons show a noticeable difference with ground propagation. The parameterized models are helpful for further understanding and deployment of UAV-to-ground wireless communication systems.}
+}
+
+
+@article{DBLP:journals/cn/WangW23,
+	author = {Xiao Wang and
+                  Xudong Wang},
+	title = {GraphPowerNet: Graph-based power consumption profiling for mobile
+                  phone applications},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110056},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110056},
+	doi = {10.1016/J.COMNET.2023.110056},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/WangW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile phone power analysis provides an approach to user behavior profiling. Existing work conducts the analysis on either a single module or total power consumption, and ignores the correlation between modules. However, such correlation is vital in capturing usage patterns. To this end, graph neural networks (GNNs) are leveraged to explore such relationships among different modules. Since GNNs rely on pre-defined graph structures for message propagation, they cannot be applied directly to the scenario where the graph structure needs to be discovered. To resolve this issue, an approach called GraphPowerNet is developed. Firstly, a pseudo label-acquisition mechanism is used to cluster power consumption data into multiple virtual usage patterns that serve as supervisory information. Next, a graph learning module is designed to automatically extract the correlations among mobile phone modules. Based on the learned graph and the power consumption data, a graph convolutional model is adopted to conduct graph classification. Finally, the power consumption data is profiled by both the classification result and the graph structure. Experimental results on real world data show that the F1-score of application usage behavior classification is higher than 95%. Moreover, interpretability analysis shows that the graph learned via GraphPowerNet has strong practical significance.}
+}
+
+
+@article{DBLP:journals/cn/AhmadSS23,
+	author = {Muneeb Ahmad and
+                  Tanzeela Shakeel and
+                  Soo Young Shin},
+	title = {Image super resolution based channel estimation for future wireless
+                  communication},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110057},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110057},
+	doi = {10.1016/J.COMNET.2023.110057},
+	timestamp = {Tue, 07 May 2024 20:23:16 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/AhmadSS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, a novel image-based Deep Learning (DL) approach for channel estimation for future wireless communications is proposed. The time–frequency response of the fast-fading wireless channel is represented as a 2D image to estimate the unknown values of the channel response using known values at the pilot locations. With given images, both image Super-Resolution (SR) and image Denoising Network (DnN), termed as Super-Resolution and Denoising Network (SRDnN), are combined to estimate the wireless channel. To show the effectiveness, the proposed SRDnN is applied to Massive Multiple-Input Multiple-Output (mMIMO) with Non-Orthogonal Multiple Access (NOMA). The enhanced performances of SRDnN are quantified in terms of Mean Square Error (MSE) and Symbol Error Rate (SER). In addition, the influence of pilot numbers on SRDnN performance for next-generation mMIMO-NOMA networks is presented. The simulation results demonstrate that SRDnN is comparable to the level of Maximum Likelihood (ML) detection for both with and without complete Channel State Information (CSI) at the receiver with less number of pilots.}
+}
+
+
+@article{DBLP:journals/cn/RobitzschCPCGSI23,
+	author = {Sebastian Robitzsch and
+                  Marco Centenaro and
+                  Nicola di Pietro and
+                  Lu{\'{\i}}s Cordeiro and
+                  Andre S. Gomes and
+                  Peter Sanders and
+                  Arif Ishaq},
+	title = {Prospects on the adoption of a microservice-based architecture in
+                  5G systems and beyond},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110058},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110058},
+	doi = {10.1016/J.COMNET.2023.110058},
+	timestamp = {Fri, 26 Jan 2024 07:57:17 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/RobitzschCPCGSI23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The increasing softwarisation of mobile core network functions is fostering the evolution of the mobile network architecture itself, which in its fifth generation (5G) has moved towards a service provider/consumer framework and service-based interfaces. Moreover, the 5G architecture is suitable for the exploitation of the mobile technology for dedicated, non-public uses as an alternative to nation-wide deployments. The 5G core networks are a crucial part of this architectural paradigm shift, which aims at closing the gap between the telecommunications domain and the information technology world at large. The objective of this article is to discuss the adoption of software design concepts like microservices and cloud-nativeness in the context of mobile networks. Specifically, we will (i) advocate the need for a non-trivial adaptation of the 5G core network and a redesign of its functions into a microservice-based architecture, (ii) identify an approach to achieve this objective and put it into practice by decomposing three exemplary network functions, both theoretically and practically, in microservices in charge of distinct responsibilities, and (iii) propose ways forward towards the adoption and further extension of these concepts in beyond-5G mobile systems.}
+}
+
+
+@article{DBLP:journals/cn/ZhangXC23,
+	author = {Quanwei Zhang and
+                  Qingjun Xiao and
+                  Yuexiao Cai},
+	title = {A generic sketch for estimating super-spreaders and per-flow cardinality
+                  distribution in high-speed data streams},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110059},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110059},
+	doi = {10.1016/J.COMNET.2023.110059},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ZhangXC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For a high-speed network, it is an important task to process the IP packet stream using limited memory and measure its statistical metrics of interest. While many algorithms have been proposed to estimate the cardinality of a single data stream (i.e., the number of distinct elements), it remains a great challenge when a stream contains numerous sub-streams, called flows. In this paper, we focus on a problem of designing a generic data structure to measure multiple types of per-flow statistics in a high-speed stream, including per-flow cardinality, top-\nK\nsuper-spreading flows with the greatest cardinalities, per-flow cardinality moments and per-flow cardinality distribution. Previous solutions for generic measurement mainly focus on the frequency-related statistics measurement, while this paper makes a step forward to support deduplication, i.e., cardinality-related measuring. To address this new problem, we propose a generic sketch named M2D. The challenge is that the per-flow cardinality distribution is often highly skewed with a small proportion of super-spreaders. To tame the skewness, we adopt the adjustable progressive sampling technique, which samples subsets of flows by an exponentially decreasing probability according to their cardinalities. Based on the sampled super-spreaders, we estimate the moments of per-flow cardinalities with different orders. We finally apply the method of moments to reconstruct the per-flow cardinality distribution with no priori knowledge about its formula. Our experiments show M2D’s high memory efficiency (average savings of 38%) and satisfactory distribution estimation accuracy (2% to 98% improvement) than other algorithms.}
+}
+
+
+@article{DBLP:journals/cn/RochmanSFNIPG23,
+	author = {Muhammad Iqbal Rochman and
+                  Vanlin Sathya and
+                  Dami{\'{a}}n Fern{\'{a}}ndez and
+                  Norlen Nunez and
+                  Ahmed S. Ibrahim and
+                  William Payne and
+                  Monisha Ghosh},
+	title = {A comprehensive analysis of the coverage and performance of 4G and
+                  5G deployments},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110060},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110060},
+	doi = {10.1016/J.COMNET.2023.110060},
+	timestamp = {Tue, 15 Oct 2024 16:43:29 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/RochmanSFNIPG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {5G New Radio (5G NR), has now been deployed in all available bands: low (\n<\n1 GHz), mid (1–6 GHz), and high (\n>\n24 GHz), each with a trade-off between coverage and throughput/latency performance. The preceding 4G Long Term Evolution (4G LTE) networks also catching up to 5G mid-band by deploying in the unlicensed 5 GHz (using License Assisted Access/LAA) and the 3.5 GHz Citizens Broadband Radio Service (CBRS). We present a comprehensive analysis of 4G and 5G deployments in Chicago and Miami, focusing on coverage, throughput, and latency performance in low-, mid-, and high-bands, under several scenarios: outdoor, outdoor-to-indoor, and under high temperature. To measure deployed networks, we utilized a scalable methodology with commercial and custom apps to collect detailed signal data (e.g., signal strength, cell ID, throughput) on user device (i.e., smartphones). The analysis based on our measurements yields the following findings: (i) when comparing the throughput and latency performance of optimized mid-band 4G networks to 5G (both standalone (SA) and non-standalone (NSA)), they exhibit comparable performance, and (ii) it is important to note that mmWave 5G has the capability to deliver multi-Gbps throughput, even in NSA mode. However, this high-speed performance is susceptible to limitations imposed by factors such as distance, body interference, obstructions (such as Low-e glass), and overheating, which can render its performance less reliable. Therefore, even though 5G exhibits considerable potential in its early stages, additional efforts are required to guarantee that the stated goals of 5G are met.}
+}
+
+
+@article{DBLP:journals/cn/AhmadiKS23,
+	author = {Mojtaba Ahmadi and
+                  Sahar Kianian and
+                  Zahra Shirmohammadi},
+	title = {Social-aware energy management in {D2D} communications},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110061},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110061},
+	doi = {10.1016/J.COMNET.2023.110061},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/AhmadiKS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid evolution of cellular networks (4G and 5G), has led to an unprecedented increase in network traffic, driven by both the growing number of mobile users and the escalating data consumption per user. This surge significantly impacts energy consumption and quality of service (QoS). Device to Device (D2D) communication technology has emerged as a promising solution. However, D2D communication encounters substantial challenges, particularly in the domain of energy management. This paper presents a novel social-aware framework designed to address the energy management challenges in D2D communications. It explores how users' social network characteristics can optimize D2D communication for enhanced energy efficiency. The framework includes two innovative methods, SOCICHS and SOCICF, specifically developed for cluster head selection and cluster formation. These methods seamlessly integrate both social and physical information to facilitate energy-efficient D2D communication. Additionally, we propose a comprehensive model for D2D communication management within this framework. To evaluate the effectiveness of the approach, extensive experiments were conducted, involving a maximum population of 1200 users and the consideration of various coefficient values (τ1, τ2). The use of the GOWALLA dataset revealed an average energy efficiency improvement of 25 % and 31 % when compared to base scenarios. Likewise, the analysis of the BRIGHTKITE dataset showed energy efficiency enhancements of 23 % and 32 %. These findings reveal the significant impact of social-aware clustering on energy management within D2D communications. Moreover, the integration of physical features, such as distance, into the framework demonstrated its additional value in achieving efficient energy consumption.}
+}
+
+
+@article{DBLP:journals/cn/ZhuYLLM23,
+	author = {Zhengbin Zhu and
+                  Hong Yu and
+                  Qinrang Liu and
+                  Dongpei Liu and
+                  Bo Mei},
+	title = {{FFRLI:} Fast fault recovery scheme based on link importance for data
+                  plane in {SDN}},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110062},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110062},
+	doi = {10.1016/J.COMNET.2023.110062},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ZhuYLLM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For many years, link fault recovery has always been a hotspot problem in Software-Defined Networking (SDN). Current researches mainly include proactive and reactive schemes. However, proactive scheme wastes the Ternary Content Addressable Memory (TCAM) and bandwidth resources seriously, and reactive scheme has a long recovery time. Hence, none of them qualifies as a complete solution. In this paper, we present a new two-stage fast fault recovery scheme based on link importance (FFRLI) to balance backup resource consumption and recovery time. In stage 1, FFRLI innovatively introduces Markov chains and pinning control to evaluate the importance and rank of different links, and labels them as main link, minor link and edge link. On this basis, in stage 2, we develop different recovery schemes and optimization objectives for different links. More specifically, for main links, we minimize the hops of backup path and install flow rules into switches in advance. Similarly, we store backup path of minor link in controller, and improve A-star algorithm to minimize hops and distance of backup path. Finally, FFRLI takes reactive recovery for edges link and adopts bidirectional Dijkstra to reduce backup path calculation time. Compared to existing state-of-the-art solutions, the simulation results present that FFRLI can effectively balance the consumption of backup resource and fault recovery time, and achieve fast fault link recovery.}
+}
+
+
+@article{DBLP:journals/cn/ChangC23,
+	author = {Wei{-}Teng Chang and
+                  Ben{-}Jye Chang},
+	title = {Dynamic extended sigmoid-based scheduling with virtualized {RB} allocation
+                  for maximizing frequency numerology efficiency in 5G/B5G {NR} networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110063},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110063},
+	doi = {10.1016/J.COMNET.2023.110063},
+	timestamp = {Wed, 03 Jan 2024 08:34:10 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ChangC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {New trends of extremely ultra-low delay, ultra-high reliability, long-distance high-moving, etc., are strongly required for achieving Emergency resecure, Active Safe Driving (ASD), IoV communications, LEO communications, etc. Thus, 3GPP 5 G/B5G specifies flexible numerology technology providing different frequency SCS modes with different slot-times for diverse types of flows requiring different 5QIs in terms of delay, data rate, jitter, loss probability, and reliability. Although based on the frequency numerology, 3GPP Release 17 specifies three types of RB allocations, i.e., Types 0, 1, and dynamic switching allocations for UL access, such static and consecutive RB allocations result in inefficient numerology and frequency spectrum efficiency. As a result, typical critical issues exhibit in B5G NR, including high mutual exclusion (MX) of numerology, RB state independency flow scheduling, and static RB allocations suffering from dynamic flowing traffic. Thus, this paper proposes the Extended Sigmoid-based Scheduling with a Virtualized RB Allocation (SSA) consisting of two phases. Phase 1 proposes an Extended Sigmoid-based Cost-based Flow Scheduling (SCFS) algorithm to dynamically differentiate flow priorities. Phase 2 proposes a dynamic Virtualized RB pre-Allocation (VRBA) mechanism to maximize radio RB utilization and minimize mutual exclusion in 5 G frequency numerology. Numerical results indicate that the proposed SSA outperforms the compared approaches in network delay, jitter, resource utilization, network reward, and net-profit. Consequently, this paper achieves several objectives and contributions: 1) analyzing the QoS requirements of different applications with limited frequency spectrum, 2) proposing vRB state-related dynamic flow scheduling algorithm to maximize network efficiency, 3) minimizing numerology MX for vRB allocation, and 4) proposing adaptive cost-reward-based scheduling.}
+}
+
+
+@article{DBLP:journals/cn/LuoLWCY23,
+	author = {Pengcheng Luo and
+                  Yuan Liu and
+                  Zekun Wang and
+                  Jian Chu and
+                  Genke Yang},
+	title = {A novel Congestion Control algorithm based on inverse reinforcement
+                  learning with parallel training},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110071},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110071},
+	doi = {10.1016/J.COMNET.2023.110071},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LuoLWCY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the growing impact of the Internet, computer network communication has become an essential component for various industries. Congestion Control (CC) algorithms serve as the backbone of network communication, significantly affecting network quality. However, designing a CC algorithm that performs optimally across diverse network environments presents substantial challenges. The task of redesigning and optimizing CC algorithms for specific network environments demands both expert experience and a substantial workforce. In this paper, we proposed an inverse reinforcement learning (IRL) algorithm that can use expert data to guide the self-optimization of the CC model in specific network environments. To enhance model training efficiency, we propose a parallel training framework and a visualization analysis tool, enabling distributed training and real-time control level analysis. In the experiments, we assess the performance of 16 algorithms across 3 network scenarios using Pantheon. Our IRL model achieves the optimal level of network performance in satellite network, enhancing throughput by 10%–23%. For delay performance, it ranks 2nd in wired network and achieves a 21%–67% improvement over traditional TCP algorithms in regular network.}
+}
+
+
+@article{DBLP:journals/cn/UllahAKABKJC23,
+	author = {Safi Ullah and
+                  Jawad Ahmad and
+                  Muazzam Ali Khan and
+                  Mohammed S. Alshehri and
+                  Wadii Boulila and
+                  Anis Koubaa and
+                  Sana Ullah Jan and
+                  M. Munawwar Iqbal Ch},
+	title = {{TNN-IDS:} Transformer neural network-based intrusion detection system
+                  for MQTT-enabled IoT Networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110072},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110072},
+	doi = {10.1016/J.COMNET.2023.110072},
+	timestamp = {Sun, 04 Aug 2024 19:48:54 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/UllahAKABKJC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Internet of Things (IoT) is a global network that connects a large number of smart devices. MQTT is a de facto standard, lightweight, and reliable protocol for machine-to-machine communication, widely adopted in IoT networks. Various smart devices within these networks are employed to handle sensitive information. However, the scale and openness of IoT networks make them highly vulnerable to security breaches and attacks, such as eavesdropping, weak authentication, and malicious payloads. Hence, there is a need for advanced machine learning (ML) and deep learning (DL)-based intrusion detection systems (IDS). Existing ML-based IoT-IDSs face several limitations in effectively detecting malicious activities, mainly due to imbalanced training data. To address this, this study introduces a transformer neural network-based intrusion detection system (TNN-IDS) specifically designed for MQTT-enabled IoT networks. The proposed approach aims to enhance the detection of malicious activities within these networks. The TNN-IDS leverages the parallel processing capability of the Transformer Neural Network, which accelerates the learning process and results in improved detection of malicious attacks. To evaluate the performance of the proposed system, it was compared with various IDSs based on ML and DL approaches. The experimental results demonstrate that the proposed TNN-IDS outperforms other systems in terms of detecting malicious activity. The TNN-IDS achieved optimum accuracies reaching 99.9% in detecting malicious activities.}
+}
+
+
+@article{DBLP:journals/cn/HajarKA23,
+	author = {Muhammad Shadi Hajar and
+                  Harsha Kumara Kalutarage and
+                  M. Omar Al{-}Kadri},
+	title = {3R: {A} reliable multi agent reinforcement learning based routing
+                  protocol for wireless medical sensor networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110073},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110073},
+	doi = {10.1016/J.COMNET.2023.110073},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/HajarKA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Interest in the Wireless Medical Sensor Network (WMSN) is rapidly gaining attention thanks to recent advances in semiconductors and wireless communication. However, by virtue of the sensitive medical applications and the stringent resource constraints, there is a need to develop a routing protocol to fulfill WMSN requirements in terms of delivery reliability, attack resiliency, computational overhead, and energy efficiency. This paper proposes 3R, a reliable multi agent reinforcement learning routing protocol for WMSN. 3R uses a novel resource-conservative Reinforcement Learning (RL) model to reduce the computational overhead, along with two updating methods to speed up the algorithm convergence. The reward function is re-defined as a punishment, combining the proposed trust management system to defend against well-known dropping attacks. Furthermore, an energy model is integrated with the reward function to enhance the network lifetime and balance energy consumption across the network. The proposed energy model only uses local information to avoid the resource burdens and the security concerns of exchanging energy information. Experimental results prove the lightweightness, attacks resiliency and energy efficiency of 3R, making it a potential routing candidate for WMSN.}
+}
+
+
+@article{DBLP:journals/cn/AbdelhakamEIS23,
+	author = {Mostafa M. Abdelhakam and
+                  Mahmoud M. Elmesalawy and
+                  Ibrahim I. Ibrahim and
+                  Samir G. Sayed},
+	title = {Collaborative CoMP and trajectory optimization for energy minimization
+                  in multi-UAV-assisted IoT networks with QoS guarantee},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110074},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110074},
+	doi = {10.1016/J.COMNET.2023.110074},
+	timestamp = {Tue, 07 May 2024 20:23:16 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/AbdelhakamEIS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For the Internet of Things (IoT) networks, the coverage may be drastically degraded when disasters or breakdowns occur due to the destroyed communication network. Using unmanned aerial vehicles (UAVs) as flying base stations for IoT emergency coverage is possible because of their agility and low-altitude deployment. With the deployment of UAVs, strong co-channel interference may be formed in the network because of the line-of-sight channels between UAVs and the ground terminals. To address this issue, in this paper, coordinated multi-point (CoMP) technique along with the proper deployment of UAVs is developed in a multi-UAV-assisted IoT network. However, CoMP is difficult to implement for the entire network due to its processing delay and overhead. Therefore, the network is splatted into overlapped clusters by employing a user-centric clustering approach. We aim to minimize the system’s energy consumption, including propulsion and communication energy, while optimizing the CoMP clusters and beamforming vectors, as well as the UAVs’ trajectories and velocities. The energy minimization problem is formulated subject to target information rate for IoT users, UAVs’ mobility, and maximum transmit power constraints. Since the formulated problem suffers from nonconvexity, an efficient solution is proposed to deal with it. First, for fixed clusters and beamforming vectors, the UAVs’ trajectories and velocities are optimized. Then, for fixed UAVs’ deployment, we optimize the CoMP clusters and beamforming vectors. Finally, two sub-problems are solved alternatively using an alternating optimization technique. Numerical results verify that the proposed solution is effective.}
+}
+
+
+@article{DBLP:journals/cn/LiuFZZWH23,
+	author = {Jingyao Liu and
+                  Guangsheng Feng and
+                  Zhibo Zhang and
+                  Liying Zheng and
+                  Huiqiang Wang and
+                  Jyri H{\"{a}}m{\"{a}}l{\"{a}}inen},
+	title = {Joint mixed-timescale optimization of content caching and delivery
+                  policy in NOMA-based vehicular networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110075},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110075},
+	doi = {10.1016/J.COMNET.2023.110075},
+	timestamp = {Fri, 26 Jan 2024 07:57:17 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiuFZZWH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, the development of Internet of Vehicles (IoV) and the increasing popularity of video applications have led to the fast-growing in-car video demand causing numerous challenges in wireless networks. Pre-caching and non-orthogonal multiple access (NOMA) have been regarded as two effective techniques to alleviate the mentioned challenge. In this paper, we propose a cache-aided cooperative transmission to maximize the quality of service (QoS) in the NOMA-based vehicular network. A QoS-oriented joint optimization problem is formulated, which incorporates power allocation, content caching, and delivery strategy. Considering, on the one hand, the slow update rate of cache content and, on the other hand, frequent handovers of vehicles between different transmitters, a mixed-timescale optimization is proposed where the serving cache is updated in a long-term phase, while content delivery and power allocation are optimized in a short-term phase. In the proposed approach, content caching is determined based on future user requests, vehicle tracking, and other delivery information. To make this possible, we leverage a substantial number of stochastic samples to approximate content caching in the long-term caching phase. Due to the NOMA-based transmission and integral variables, the setting leads to a Mixed Integer Non-Linear Programming (MINLP) problem, which is NP-hard. To solve this problem, an iterative method based on sample average approximation (SAA) and Successive Convex Approximation (SCA) is applied. Simulations demonstrate that the proposed algorithm can achieve better QoS than other recently proposed transmission schemes.}
+}
+
+
+@article{DBLP:journals/cn/MoorthyMBMG23,
+	author = {Sabarish Krishna Moorthy and
+                  Nicholas Mastronarde and
+                  Elizabeth Serena Bentley and
+                  Michael J. Medley and
+                  Zhangyu Guan},
+	title = {OSWireless: Hiding specification complexity for zero-touch software-defined
+                  wireless networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110076},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110076},
+	doi = {10.1016/J.COMNET.2023.110076},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/MoorthyMBMG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the current practice of wireless engineering, to optimize wireless networks engineers usually need to grapple simultaneously with network modeling, algorithm and protocol design as well as their implementation on distributed edge nodes. This process is tedious and error prone. In this article we attempt to address this challenge by designing OSWireless, a new control plane for optimizing software-defined wireless networks. At the core of OSWireless is the virtualization of four control plane functionalities, including intent, mathematical, algorithmic and forwarding specifications, and then provide them as a service to network engineers. To this end, we design two new subplanes for the control plane: Wireless Network Abstraction Specification (WiNAS) Subplane and Optimization-as-a-Service (OaaS) Subplane. The former converts intent specifications defined using high-level Application Programming Interfaces (APIs) to the corresponding mathematical specifications, and the latter generates automatically operational (possibly distributed) algorithmic specifications. We prototype OSWireless and deploy it over NeXT, a newly developed software-defined experimentation testbed, and showcase the automated control program generation capability of OSWireless and the optimality of the resulting programs considering a variety of network control problems. We further test the applicability of OSWireless on UBSim, a newly-developed Python based simulator for integrated aerial-ground networks, considering location optimization of mobile nodes as an example. Through developing OSWireless, we hope to accelerate research towards future zero-touch software-defined wireless networks with reduced management complexity.}
+}
+
+
+@article{DBLP:journals/cn/WuYL23,
+	author = {Lisheng Wu and
+                  Xiaoming You and
+                  Sheng Liu},
+	title = {Multi-ant colony algorithm based on cooperative game and dynamic path
+                  tracking},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110077},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110077},
+	doi = {10.1016/J.COMNET.2023.110077},
+	timestamp = {Wed, 03 Jan 2024 08:34:10 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/WuYL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {For the problems of slow convergence and low stability in traditional ant colony algorithm when solving large-scale Traveling Salesman Problem (TSP), a multi-ant colony algorithm based on cooperative game and dynamic path tracking (CDMACA) is proposed. Firstly, a novel heterogeneous multi-population is formed by Ant Colony System (ACS) and Max–Min Ant System (MMAS). Secondly, a cooperative game is introduced. In the isomorphic populations, all the populations cooperate and then the pheromone income will be distributed to the participants based on the contribution. Populations with higher contribution will obtain more income, which can improve the accuracy of the solutions; On the other hand, in the heterogeneous populations, a learning mechanism is introduced to enable heterogeneous populations to learn the optimal solution from each other to further improve the accuracy. Thirdly, a dynamic path tracking mechanism is proposed to reward or punish the public paths with pheromone based on the similarity of the optimal solutions, which can enhance the concentration of pheromone on the optimal path, thus improving the convergence. Finally, when the algorithm stalls, a pheromone balance mechanism is introduced. By dynamically cutting the pheromone on the current optimal path, the probability of the optimal path being chosen will decrease, which can help the algorithm jump out of the local optimum. Through a large number of TSP instances, the proposed algorithm in this paper can further improve the accuracy when solving large-scale TSP compared with other improved algorithms.}
+}
+
+
+@article{DBLP:journals/cn/KuriharaTK23,
+	author = {Jun Kurihara and
+                  Toshiaki Tanaka and
+                  Takeshi Kubo},
+	title = {{\(\mu\)}ODNS: {A} distributed approach to {DNS} anonymization with
+                  collusion resistance},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110078},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110078},
+	doi = {10.1016/J.COMNET.2023.110078},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/KuriharaTK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The traditional Domain Name System (DNS) lacks fundamental security and privacy features in its design. As privacy concerns increased on the Internet, security and privacy enhancements of DNS have been actively investigated. Specifically, in the context of user privacy in DNS queries, several relay-based anonymization schemes have been recently introduced. However, these schemes are vulnerable to collusion between relays and full-service resolvers, which means user identities cannot be hidden from resolvers. This paper introduces a new concept for achieving user anonymity in DNS queries through a multiple-relay-based approach, called\nμ\nODNS (Mutualized Oblivious DNS), by extending the concept of existing relay-based schemes.\nμ\nODNS introduces a reasonable assumption that each user has at least one trusted or dedicated relay within the network and mutually shares the relay with other users. The user simply sets his trusted relay as the next-hop relay to convey his queries to the resolver and randomly chooses its zero or more subsequent relays shared by other entities. Under this assumption, the user’s identity remains concealed from the target resolver in\nμ\nODNS even if an unknown subset of relays colludes with the resolver. Namely, in\nμ\nODNS, users can preserve their anonymity by paying a small cost of sharing their resources. Additionally, we extend existing protocols, Anonymized DNSCrypt and Oblivious DoH, to provide practical Proof-of-Concept specifications and implementations as instances of\nμ\nODNS. These implementations are publicly available on the Internet as open-source software and public services. Furthermore, we demonstrate, through measurements of round-trip times for DNS messages, that our implementation can minimize the performance degradation resulting from its privacy enhancements, achieving performance levels that maintain the positive user experiences observed in existing schemes.}
+}
+
+
+@article{DBLP:journals/cn/WuZXF23,
+	author = {Qiyu Wu and
+                  Fucai Zhou and
+                  Jian Xu and
+                  Da Feng},
+	title = {Lightweight and Verifiable Secure Aggregation for Multi-dimensional
+                  Data in Edge-enhanced IoT},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110079},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110079},
+	doi = {10.1016/J.COMNET.2023.110079},
+	timestamp = {Tue, 07 May 2024 20:23:15 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/WuZXF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The development of IoT applications promotes the generation of large-scale data. In this situation, more and more organizations or institutions are interested in collecting and analyzing these data to obtain high-quality information to serve people’s lives. Nevertheless, existing secure aggregation solutions are mostly proposed under the honest-but-curious threat model, without considering malicious aggregators. Actually, the aggregation node may return tampered or forged aggregation results for vulnerabilities or ulterior motives. It is more challenging to devise efficient verifiable data aggregation due to the characteristics of IoT devices. In this paper, we propose a Lightweight and Verifiable Secure Aggregation Scheme for Multi-dimensional Data in Edge-enhanced IoT (LVSA-MD), which allows the secure aggregation of multi-dimensional data, and the requester can verify the correctness and integrity of the aggregation results. In LVSA-MD, we combine Chinese remainder theorem with secret sharing technique to protect the individual data privacy, as well as reducing the communication overhead. Moreover, by involving homomorphic MAC, we achieve a lightweight verifiable mechanism to ensure the integrity of result. We additionally employ identity-based signature to achieve the source authentication. Detailed security analysis demonstrates that the proposed LVSA-MD achieves the goal of protecting privacy, integrity and authentication. Moreover, extensive theoretical analyses and experimental evaluations show that our LVSA-MD performs efficiently with respect to computation and communication while retaining more desired properties.}
+}
+
+
+@article{DBLP:journals/cn/RenZLLZZ23,
+	author = {Qingqing Ren and
+                  Shuyong Zhu and
+                  Lu Lu and
+                  Zhiqiang Li and
+                  Guangyu Zhao and
+                  Yujun Zhang},
+	title = {NetShield: An in-network architecture against byzantine failures in
+                  distributed deep learning},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110081},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110081},
+	doi = {10.1016/J.COMNET.2023.110081},
+	timestamp = {Fri, 15 Nov 2024 15:28:13 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/RenZLLZZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There is a growing trend of training deep learning networks on distributed clusters. Unfortunately, distributed deep learning (DDL) is prone to Byzantine failures where some nodes corrupt training by sending malicious gradients to the parameter server (PS). Existing works address this problem by implementing Byzantine defenses on the PS. However, Byzantine defenses come with large computational overhead, seriously affecting the DDL’s training performance. Moreover, malicious gradients are not identified until they are transmitted to the endpoint (PS), which leads to a waste of network resources and a decrease in communication efficiency.}
+}
+
+
+@article{DBLP:journals/cn/SahinAD23,
+	author = {Emre Sahin and
+                  Mustafa Alper Akkas and
+                  Orhan Dagdeviren},
+	title = {Nanonetwork-based search and rescue operations in debris areas},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110082},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110082},
+	doi = {10.1016/J.COMNET.2023.110082},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/SahinAD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Earthquake is one of the most destructive natural disasters. It is vital to carry out search and rescue (SAR) operations in the debris area after such a major disaster. Although there are various technologies to rescue living things in the debris area, reaching narrow gaps in the rubble is a very difficult process. Nanonetworks operating on terahertz (THz) communication channels are composed of thousands of nanodevices that can pass through even ultrasmall gaps. In this paper, we propose an application that utilizes nanodevices for SAR operations in debris areas. To the best of our knowledge, our paper is the first study to provide a detailed and specialized analysis of this application. We work on channel models by extensively analyzing transmittance, propagation loss, absorption loss, path loss, signal-to-noise ratio (\nS\nN\nR\n), and capacity. Besides, we investigate a physical layer (PHY) model by considering the effects of using directional or omnidirectional antennas to ensure optimal throughput and energy consumption. Moreover, we present an exhaustive performance analysis of the modulation technique with respect to various nanodevice counts and densities.}
+}
+
+
+@article{DBLP:journals/cn/ChenLXXSY23,
+	author = {Ciyuan Chen and
+                  Junzhou Luo and
+                  Zhuqing Xu and
+                  Runqun Xiong and
+                  Dian Shen and
+                  Zhimeng Yin},
+	title = {Enabling large-scale low-power LoRa data transmission via multiple
+                  mobile LoRa gateways},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110083},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110083},
+	doi = {10.1016/J.COMNET.2023.110083},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ChenLXXSY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Low-Power Wide Area Networks (LPWANs) enable large-scale Internet of Things (IoT) applications. LoRa is a promising LPWAN technology, but LoRa nodes are battery-powered, so their lifetime depends on energy efficiency. In practice, LoRa nodes have short battery life because long transmission distances to gateways incur high energy costs. With expensive battery replacement, particularly in large networks, it is crucial to reduce LoRa nodes’ energy consumption. Existing low-power transmission techniques focus on static or single mobile gateways, consuming substantial remote node energy unfit for large-scale networks. This paper proposes integrating LoRa with mobility to minimize node energy use by shortening transmission distances. We design the first large-scale mobile LoRa system, MLoRaDrone, using multiple unmanned aerial vehicles (UAVs) equipped with LoRa gateways flying near nodes. First, we present a low-power mechanism for reliable node sensing and UAV communication. Next, we develop a LoRa transmission parameter assignment strategy encompassing a distributed ADMM-based optimal transmission policy and a\n3\n2\n-approximation channel allocation. Moreover, we propose a UAV trajectory scheduling scheme with a 4-approximation minimizing node energy and UAV flight paths. Evaluations on varied scales verify MLoRaDrone effectiveness for different node counts and UAV paths. Compared to baselines, MLoRaDrone reduces 3000-node energy consumption by up to 35.56\n×\nwithin 25\nkm\n2\n.}
+}
+
+
+@article{DBLP:journals/cn/JawadMC23,
+	author = {Aqeel Thamer Jawad and
+                  Rihab Maaloul and
+                  Lamia Chaari},
+	title = {A comprehensive survey on 6G and beyond: Enabling technologies, opportunities
+                  of machine learning and challenges},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110085},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110085},
+	doi = {10.1016/J.COMNET.2023.110085},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/JawadMC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multiple nations are now in the process of launching 5G mobile networks. All of the telecoms industry has been revolutionized by the concept of 5G networks. Since late 2018, researchers and telecom players have been actively exploring the potential of 6G as a successor to 5G. It is anticipated that the 6G generation would have even more severe performance criteria than the 5G generation had. New sophisticated technologies and paradigms must be included into 6G network designs and procedures to satisfy the requirements and standards of the sixth generation. As a result, several publications and studies covering the relevant technologies, techniques, algorithms, and architectures have appeared in the recent few years. The current paper fills a gap in the literature by offering informative recommendations for further study of 6G networks. Connectivity targets within 6G are outlined, and the study explains the wireless progression toward 6G networks. The technologies are outlined, as are the obstacles that must be surmounted. This chapter also provides a thorough and up-to-date overview of the state of the art. Additionally, multiple classifications of 6G capabilities and techniques are provided, with an emphasis on the advantages and disadvantages of each process. In order to accelerate the advancement of 6G technologies and fulfill their needs, we also identify open problems and potential future possibilities.}
+}
+
+
+@article{DBLP:journals/cn/LiLYSWWY23,
+	author = {Peng Li and
+                  Junzuo Lai and
+                  Ye Yang and
+                  Meng Sun and
+                  Chi Wu and
+                  Wei Wu and
+                  Xiaowei Yuan},
+	title = {Attribute-based anonymous credential: Delegation, traceability, and
+                  revocation},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110086},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110086},
+	doi = {10.1016/J.COMNET.2023.110086},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiLYSWWY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attribute-based anonymous credential schemes have been envisioned with the motivation to allow users to prove the possession of their attributes interactively with service providers anonymously. So far, three major properties: delegation, traceability, and revocation, have been considered in attribute-based anonymous credential schemes. Delegation gives credential owners the ability to issue more restricted credentials to other users. Traceability helps the organization to find out invalid users or expired credentials. Revocation allows the organization to revoke someone’s right of use. Although these properties are practical in reality, no existing schemes provide all of them. In this paper, we propose a delegatable, traceable, and revocable attribute-based anonymous credential scheme, with the security analysis of anonymity, unforgeability and traceability. We also find out that partial attributes of the credential can be updated by the issuer interactively with the credential holder, which is more efficient than regenerating a new one. Finally, we implement our scheme and the result of the experiment shows that it is practical and efficient.}
+}
+
+
+@article{DBLP:journals/cn/GanLZZXL23,
+	author = {Chenquan Gan and
+                  Anqi Liu and
+                  Qingyi Zhu and
+                  Ye Zhu and
+                  Yong Xiang and
+                  Jun Liu},
+	title = {Social tie-driven coupling propagation of user awareness and information
+                  in Device-to-Device communications},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110087},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110087},
+	doi = {10.1016/J.COMNET.2023.110087},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/GanLZZXL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Regarding information dissemination in Device-to-Device (D2D) communications, most existing works only consider user awareness as the influencing factor, which cannot accurately reflect the interaction between users and devices. In fact, user awareness and information interaction are inseparable from the social tie that describes the users’ intimacy. In this paper, we propose a social tie-driven coupling propagation dynamical model, taking into account both user awareness diffusion and information transmission. This model includes interprocess interaction factors that fully describe the user–user and user-device interaction behaviors. Through intensive experiments on the real-world Peer-to-Peer (P2P) and Facebook datasets with a tailored propagation algorithm, we show that the proposed model has a higher propagation speed and covers a larger propagation range than that of an existing single propagation process model. Our work also reveals that a strong social tie between users will promote the transmission of device information, which further accelerates the diffusion of user awareness.}
+}
+
+
+@article{DBLP:journals/cn/AwadLA23,
+	author = {Mirna Awad and
+                  Aris Leivadeas and
+                  Abir Awad},
+	title = {Multi-resource predictive workload consolidation approach in virtualized
+                  environments},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110088},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110088},
+	doi = {10.1016/J.COMNET.2023.110088},
+	timestamp = {Sat, 13 Jan 2024 17:37:22 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/AwadLA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The revolution of virtualization technologies and Cloud computing solutions has emphasized the need for energy-efficient and Service level agreement (SLA)-aware resource management techniques in cloud data centers. Workload consolidation in Infrastructure-as-a-Service (IaaS) providers allows for efficient utilization of hardware resources and reduced energy consumption by consolidating workloads onto fewer physical servers. To ensure successful workload consolidation, it is crucial for IaaS providers to carefully estimate the host state and identify overloaded and underloaded hosts, thereby avoiding overly aggressive consolidation. Existing proposals determine the host state depending on its current resource utilization or a single anticipated resource utilization value, and often consider only a single resource type of the host, such as CPU. These limitations may lead to unreliable host state estimations, resulting in excessive and needless service migrations between physical machines (PMs). This, in turn, can lead to extra delays in service execution, degraded performance, increased power consumption, and SLA violations. To address these challenges, we propose a workload consolidation approach that leverages a multi-resource and multi-step resource utilization prediction model. Based on this model, our overload and underload decision-making algorithms consider the forecasted future trend (sequence of future value) of each host resource's utilization, including CPU, memory, and bandwidth. Through extensive experimentations conducted with two real-world datasets, we demonstrate that our approach can significantly reduce power consumption, SLA violation rate, and the number of migrations compared to existing benchmarks.}
+}
+
+
+@article{DBLP:journals/cn/SerratoDRGT23,
+	author = {Nuria Gonz{\'{a}}lez Serrato and
+                  Marta Solera Delgado and
+                  Fernando Ruiz and
+                  Carolina Gij{\'{o}}n and
+                  Mat{\'{\i}}as Toril},
+	title = {A quality of experience model for live video in first-person-view
+                  drone control in cellular networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110089},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110089},
+	doi = {10.1016/J.COMNET.2023.110089},
+	timestamp = {Sun, 06 Oct 2024 21:22:04 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/SerratoDRGT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Several upcoming 5G and 6G services will rely on unmanned aerial vehicles (UAV) sending live information to remote terminals. Thus, understanding the traffic flows that might influence end-user experience in these services is key for cellular network operators. One of these UAV-based services is first person view (FPV) drone control, consisting on the remote control of the UAV in Beyond Visual Line of Sight scenarios using only the live video visualized in a ground control station. This work focuses on the networking aspects of this service by presenting the assembly, integration and evaluation methodology of an UAV quadrotor teleoperated via FPV through a Long Term Evolution (LTE) network or WiFi radio access link. To assess system performance, three different connectivity schemes between UAV and ground control station are tested, namely server-based connection via LTE, direct LTE, and peer-to-peer WiFi connection. Then, several experiments are carried out in the testbed to characterize telemetry, control and video traffic for FPV service in the above schemes. Later, a methodology is defined to estimate Quality of Experience (QoE) for FPV service based on image quality and video latency measurements collected at network and application level. Results show that the QoE model for live video introduced in this work can be the basis of more sophisticated models for cellular FPV services.}
+}
+
+
+@article{DBLP:journals/cn/WangZYLWX23,
+	author = {Wei Wang and
+                  Weiping Zhao and
+                  Dingcheng Yang and
+                  An Li and
+                  Yapeng Wang and
+                  Lin Xiao},
+	title = {Secure two-way transmission via untrusted {UAV} Relay: Joint path
+                  design and slot-pairing strategy},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110090},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110090},
+	doi = {10.1016/J.COMNET.2023.110090},
+	timestamp = {Sun, 21 Jul 2024 18:15:36 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/WangZYLWX23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper proposes a novel two-way secure communication system that allows numerous pairs of ground users (GUs) communicate with one another using an untrusted UAV relay (UUR), where the UUR can eavesdrop on information while helping GUs perform two-way information transmission. We propose a safe scheme using slot pairing and joint path design to ensure the security of communication. Specifically, according to the physical-layer network coding (PNC) protocol, the collected information from GUs is cached in the UAV’s shock absorber before being transmitted as the UAV approaches optimal channel conditions. By matching the channel status of two-way transmission with the slot-pairing approach, our goal is to optimize the system’s secrecy sum rate (SSR). Due to the hybrid integer non-convex optimization problem, the formulated problem is difficult to address. As a result, we decompose it into three subproblems and propose an effective iterative algorithm that uses the block coordinate descent (BCD) approach and the sequential convex approximation (SCA) technique. The convergence and efficacy of our proposed scheme are demonstrated by numerical results.}
+}
+
+
+@article{DBLP:journals/cn/LiWW23,
+	author = {Xia Li and
+                  Xiaoli Wang and
+                  Yuping Wang},
+	title = {{DRL} assisted multi-objective algorithm for multicast scheduling
+                  in elastic optical network},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110091},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110091},
+	doi = {10.1016/J.COMNET.2023.110091},
+	timestamp = {Wed, 03 Jan 2024 08:34:10 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiWW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multicasting, as a main transmission mode for most of the current applications in elastic optical network, has attracted more and more research attention. In this paper, we investigate multicast scheduling model and solving algorithm. First, we model the multicast scheduling problem as a multi-objective optimization problem (MOP) by minimizing the bandwidth resources and maximizing the user service quality, and then, we propose a deep reinforcement learning assisted multi-objective algorithm for the model (DRL-MM), in which we design source node selection strategy, routing scheme, modulation scheme and spectrum assignment scheme for each multicast session. To identify the superiority of the proposed DRL-MM, we conduct the experiments and compare DRL-MM with an approximation based Steiner tree algorithm (STA-RSA) and a load-balancing routing tree-based algorithm (LD-RSA) through the experiments. The results show that DRL-MM outperforms STA-RSA and LD-RSA in terms of both bandwidth resource usage and user service quality.}
+}
+
+
+@article{DBLP:journals/cn/DangiL23,
+	author = {Ramraj Dangi and
+                  Praveen Lalwani},
+	title = {Feature selection based machine learning models for 5G network slicing
+                  approximation},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110093},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110093},
+	doi = {10.1016/J.COMNET.2023.110093},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/DangiL23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The development of 5G networks is expected to introduce novel concepts and challenges in domains such as technology, security, and customer demands due to advancements in mobile internet and communication services. The three main services that the 5G network provides are enhanced mobile broadband (eMBB), massive machine-type communication (mMTC), and ultra-reliable low-latency communication (URLLC). Network slicing is the practice of dividing a single physical network into many virtual networks in order to facilitate the delivery of multiple services across that network. These slices improve the network’s reliability and make it possible to provide more customized services. This article provides an overview of 5G network slicing, discussing its layers and overall architecture. Additionally, the paper proposes a machine learning network slicing model based on feature selection, comprising three main components. Firstly, data collection involves gathering two different datasets from various sources. Secondly, feature selection algorithms are applied to choose the most relevant set of features, as the collected datasets may contain numerous unnecessary attributes and values. Lastly, various classification models are utilized on the selected features to predict the optimal network slice, thereby improving the efficiency of the 5G network. The analytical results and simulation models demonstrate that the proposed machine learning models with feature selection perform exceptionally well and accurately predict 5G network slices.}
+}
+
+
+@article{DBLP:journals/cn/ZaballosMN23,
+	author = {Agust{\'{\i}}n Zaballos and
+                  Adri{\`{a}} Mallorqu{\'{\i}} and
+                  Joan Navarro},
+	title = {Unboxing trustworthiness through quantum internet},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110094},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110094},
+	doi = {10.1016/J.COMNET.2023.110094},
+	timestamp = {Mon, 05 Feb 2024 20:24:12 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ZaballosMN23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The unreliable nature of IoT systems drives practitioners to implement heavyweight fault tolerance mechanisms to identify those untrustworthy nodes that are misbehaving erratically and, thus, ensure that the sensed data from the IoT domain are correct. Quantum Internet might be a promising assistance to minimize traffic congestion and avoid worsening reliability due to the link saturation effect by using a quantum consensus layer. In this regard, the purpose of this paper is to explore and simulate the usage of quantum consensus architecture in one of the most challenging natural environments in the world where researchers need a responsive sensor network: the remote sensing of permafrost in Antarctica. More specifically, this paper describes the use case of permafrost remote sensing in Antarctica, proposes the usage of a quantum consensus management plane to reduce the traffic overhead associated with fault tolerance protocols, and discusses, by means of simulation, possible improvements to increase the trustworthiness of a holistic telemetry system by exploiting the complexity reduction offered by the quantum parallelism. Collected insights from this research can be generalized to current and forthcoming IoT environments.}
+}
+
+
+@article{DBLP:journals/cn/EbrahimH23,
+	author = {Maad Ebrahim and
+                  Abdelhakim Hafid},
+	title = {Privacy-aware load balancing in fog networks: {A} reinforcement learning
+                  approach},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110095},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110095},
+	doi = {10.1016/J.COMNET.2023.110095},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/EbrahimH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fog Computing emerged to support the growing demands of real-time Internet of Things (IoT) applications, which require high availability of distributed computing services. Intelligent workload distribution is needed to maximize the utilization of Fog resources while minimizing the time required to process these workloads. Such Load Balancing (LB) algorithms are critical in dynamic environments with heterogeneous resources and workload requirements along with unpredictable traffic demands. In this paper, LB is provided using Reinforcement Learning (RL), which optimizes the system performance by minimizing the waiting delay of IoT workloads. The novelty of the proposed approach is the privacy-aware state and reward representation tailored to provide efficient load distribution without requiring load and resource information from Fog nodes. Unlike existing RL-based LB approaches, our approach considers the privacy requirements of Fog service providers, who might like to hide such information to prevent competing providers from calculating, for example, better pricing strategies. Balancing the load without observing Fog load and resource information allows for dynamic adaptation to changes in Fog resources and the load they are handling. In addition, the state representation is carefully designed to enable the agent to dynamically adapt to changes in workload requirements and in the distribution of IoT devices. The proposed algorithm is interactively evaluated with Discrete-event Simulation (DES) to mimic practical deployment in realistic environments. In addition, the algorithm’s generalization ability is evaluated with longer simulations than what it was trained on, which has never been explored before to the best of our knowledge. The results provided in this paper show how the proposed approach improves the total execution delay over baseline methods by at least 82% and 87% using medium and high workload generation rates, respectively. We also compared our Privacy-Aware RL (PARL) agent with Privacy-Lacking RL (PLRL) agents from the literature. The results show how the PARL agent efficiently handles the added complexity of partial observability (to maintain privacy) while achieving the optimal performance of fully observable PLRL agents.}
+}
+
+
+@article{DBLP:journals/cn/XiaoLW23,
+	author = {Qingjun Xiao and
+                  Yifei Li and
+                  Yeke Wu},
+	title = {Finding recently persistent flows in high-speed packet streams based
+                  on cuckoo filter},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110097},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110097},
+	doi = {10.1016/J.COMNET.2023.110097},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/XiaoLW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In high-speed networks, flow-level traffic measurement is an essential tool to understand how network bandwidth is consumed and support the detection of anomalous traffic. While many prior work focuses on tracking the frequent flows (a.k.a. heavy hitters), in this paper, we put more focus on tracking the persistent flows, which jointly consider the frequency, duration and regularity of the packet arrival events of a flow. Although this more generalized metric called persistence has been defined before, it is still unknown how to use limited memory on data plane to monitor the top-\nk\npersistent flows in a recent time interval. In this paper, we propose an algorithm named PFD-DW built upon cuckoo filter (an improved version of hash table with better memory efficiency), to monitor the top-\nk\npersistent flows under the time-decaying window. It can be regarded as a variant of cuckoo filter, which transforms each bucket into a bucket-level min-heap. Its advantage is that, when the table is full and a packet of a new flow arrives, it can select the least persistent flow along the cuckoo kicking path as the victim of flow replacement. We deliberately avoid the scanning of the entire table to keep the high time efficiency. Based on real-world network traffic traces, we evaluate the performance of our DAKP-CF, a degraded version of PFD-DW that only considers each flow’s packet arrival frequency. The results show that it outperforms the existing algorithms for the top-\nk\nfrequent flow identification task. It provides nearly 98% identification accuracy with roughly 50% less memory cost. We also evaluate our PFD-DW algorithm for the more generalized task of identifying the recently persistent flows. It provides 93% identification rate of top-3000 persistent flows using only 576KB memory, while attaining 1.5% persistence estimation error. Its memory cost is reduced by 97% than another proposed solution PFD-SW under sliding time window. We have also developed a prototype of PFD-DW, based on the Fd.io VPP software switch accelerated by Intel DPDK.}
+}
+
+
+@article{DBLP:journals/cn/XuCSXC23a,
+	author = {Yuwei Xu and
+                  Jie Cao and
+                  Kehui Song and
+                  Qiao Xiang and
+                  Guang Cheng},
+	title = {Corrigendum to "FastTraffic: {A} lightweight method for encrypted
+                  traffic fast classification" [Computer Networks, Volume 235,
+                  November 2023, 109965]},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110098},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110098},
+	doi = {10.1016/J.COMNET.2023.110098},
+	timestamp = {Wed, 03 Jan 2024 08:34:10 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/XuCSXC23a.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{DBLP:journals/cn/TakedaSCO23,
+	author = {Kenta Takeda and
+                  Takehiro Sato and
+                  Bijoy Chand Chatterjee and
+                  Eiji Oki},
+	title = {Lightpath provisioning model considering crosstalk-derived fragmentation
+                  in spectrally-spatially elastic optical networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110099},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110099},
+	doi = {10.1016/J.COMNET.2023.110099},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/TakedaSCO23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, multi-core fiber (MCF) has been incorporated with elastic optical networks (EONs) to enhance the fiber capacity, which forms spectrally-spatially EONs (SS-EONs). In MCF, inter-core crosstalk (XT) occurs and degrades the signal quality. Fragmentation is one of the major issues since it leads to inefficient utilization of spectrum resources. Fragmentation metric-aware spectrum resource allocation is one of the solutions to suppress fragmentation. In SS-EONs, several studies have been conducted to deal with inter-core XT and fragmentation. The conventional fragmentation-aware model considering XT calculates the fragmentation metric by distinguishing spectrum slots as vacant or not. Some vacant slots are unavailable due to inter-core XT, and the unavailable vacant slots can cause fragmentation. This paper proposes a fragmentation-aware lightpath provisioning model, which suppresses the fragmentation caused by allocating spectrum slots to lightpaths and due to inter-core XT. The proposed model classifies vacant slots into available ones and unavailable ones. An optimization problem is formulated as an integer linear programming (ILP) problem. A heuristic algorithm is introduced when the ILP problem is not tractable. Numerical results observe that the proposed model suppresses the blocking probability compared to a benchmark model based on the literature.}
+}
+
+
+@article{DBLP:journals/cn/LiuGYT23,
+	author = {Su Liu and
+                  Peiyuan Guan and
+                  Jiong Yu and
+                  Amir Taherkordi},
+	title = {FedSSC: Joint client selection and resource management for communication-efficient
+                  federated vehicular networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110100},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110100},
+	doi = {10.1016/J.COMNET.2023.110100},
+	timestamp = {Mon, 05 Feb 2024 20:24:12 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/LiuGYT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a promising distributed technology, federated learning (FL) has been widely used in vehicular networks involving large amounts of IoT-enabled sensor data, which derives federated vehicular networks (FVNs). However, the efficiency of FVN is generally limited by vehicle selection policy and communication conditions, which leads to high communication costs and latency. The original FVN transmits model parameters from a random subset of vehicles to the roadside unit (RSU) and ignores the diversity of learning quality among vehicles. In addition, a few vehicles with poor wireless channel conditions may prolong communication latency. To address these two issues, we propose a communication-efficient federated learning approach, composed of Vehicle Selection, Student–Project Allocation (SPA) matching model, and Convex Optimization, called FedSSC, to improve the communication efficiency in FVN. The parameter variations for the same vehicle in two consecutive rounds are used to quantify the quality of the learning results by cosine distance and Affinity Propagation (AP) clustering. Moreover, a subchannel allocation algorithm based on the SPA matching model, as well as a convex optimal power allocation solution are integrated to minimize the communication latency of each training round. According to extensive experiments, the proposed FedSSC reduces the communication overhead by 26.32% on average compared with the benchmarks, whereas the communication latency decreases by 21.84%.}
+}
+
+
+@article{DBLP:journals/cn/BollaBLMTP23,
+	author = {Raffaele Bolla and
+                  Roberto Bruschi and
+                  Chiara Lombardo and
+                  Alireza Mohammadpour and
+                  Riccardo Trivisonno and
+                  Wint Yi Poe},
+	title = {A 5G multi-gNodeB simulator for ultra-reliable 0.5-100 GHz communication
+                  in indoor Industry 4.0 environments},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110103},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110103},
+	doi = {10.1016/J.COMNET.2023.110103},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/BollaBLMTP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industry 4.0 is evolving towards new challenging applications with tight reliability constraints. While simulation tools for the characterization of the physical and radio features of production environments would be very useful, there is a lack of awareness about radio propagation in the presence of 5G technologies. In this context, this paper presents a simulator, based on the 3rd Generation Partnership Project (3GPP) TR 38.901 report, able to describe the physical layer, channel model, and channel modulation applied in 5G. The simulator takes as input the physical characteristics of the considered area and the objects inside of it and provides, with a two-layered approach, the time series of Block Error Rate (BLER) values according to the simulated propagation paths in the presence of moving objects followed by a reliability analysis of the gNodeBs with respect to the user position computed through statistical and geometrical calculations. Through our simulator, we have discovered that the current 5G technology systems may not be sufficient to meet the high reliability demands in safety applications in Industry 4.0 systems. This finding emphasizes the need for additional solutions to enhance the reliability of 5G technology in industrial settings.}
+}
+
+
+@article{DBLP:journals/cn/ChaudharyHK23,
+	author = {Pankaj Chaudhary and
+                  Neminath Hubballi and
+                  Sameer G. Kulkarni},
+	title = {eNCache: Improving content delivery with cooperative caching in Named
+                  Data Networking},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110104},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110104},
+	doi = {10.1016/J.COMNET.2023.110104},
+	timestamp = {Wed, 03 Jan 2024 08:34:10 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ChaudharyHK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Content centric networks offer better response time and resilience to failures by caching the content in the network routers. Owing to the limited capacity of caches and the quest for maximizing the utilization of available caches has lead to many interesting caching techniques. While on-path caching is a commonly adopted caching technique to reduce content access latency, it does not guarantee better cache hit ratio when considered across multiple receivers in the network. In this paper, we present eNCache which is a cooperative caching method that cooperates among the routers in the neighborhood to improve overall performance. It retains the simplicity of on-path caching and makes caching, routing (queries and replies) decisions by interacting with off-path routers in the neighborhood. We present the working of eNCache with algorithms for request handling and caching decisions at every router. We also formalize the interaction between a router and its neighbors by providing an extension to the Named Data Networking Interest packet structure. We evaluate and compare the performance of eNCache with other popular on-path caching strategies by performing simulations on standard RocketFuel Internet Service Provider (ISP) topologies using a discrete event simulator. We also compare the performance of a variant of enhanced NCache, i.e., eNCache with hash based off-path caching methods. Our simulation results show that eNCache has reduced latency, better cache hit ratio and diversity.}
+}
+
+
+@article{DBLP:journals/cn/TanYRRTA23,
+	author = {Haining Tan and
+                  Tao Ye and
+                  Sadaqat ur Rehman and
+                  Obaid Ur Rehman and
+                  Shanshan Tu and
+                  Jawad Ahmad},
+	title = {A novel routing optimization strategy based on reinforcement learning
+                  in perception layer networks},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110105},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110105},
+	doi = {10.1016/J.COMNET.2023.110105},
+	timestamp = {Sat, 08 Jun 2024 13:14:22 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/TanYRRTA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Wireless sensor networks have become incredibly popular due to the Internet of Things’ (IoT) rapid development. IoT routing is the basis for the efficient operation of the perception-layer network. As a popular type of machine learning, reinforcement learning techniques have gained significant attention due to their successful application in the field of network communication. In the traditional Routing Protocol for low-power and Lossy Networks (RPL) protocol, to solve the fairness of control message transmission between IoT terminals, a fair broadcast suppression mechanism, or Drizzle algorithm, is usually used, but the Drizzle algorithm cannot allocate priority. Moreover, the Drizzle algorithm keeps changing its redundant constant k value but never converges to the optimal value of k. To address this problem, this paper uses a combination based on reinforcement learning (RL) and trickle timer. This paper proposes an RL Intelligent Adaptive Trickle-Timer Algorithm (RLATT) for routing optimization of the IoT awareness layer. RLATT has triple-optimized the trickle timer algorithm. To verify the algorithm’s effectiveness, the simulation is carried out on Contiki operating system and compared with the standard trickling timer and Drizzle algorithm. Experiments show that the proposed algorithm performs better in terms of packet delivery ratio (PDR), power consumption, network convergence time, and total control cost ratio.}
+}
+
+
+@article{DBLP:journals/cn/QuanDXCWJ23,
+	author = {Yu{-}xuan Quan and
+                  Yu{-}ning Dong and
+                  Yang Xiang and
+                  Shan{-}shan Chen and
+                  Zaijian Wang and
+                  Jiong Jin},
+	title = {Fast online classification of network traffic using new feature-embedded
+                  hierarchical structure},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110106},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110106},
+	doi = {10.1016/J.COMNET.2023.110106},
+	timestamp = {Mon, 24 Feb 2025 08:21:28 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/QuanDXCWJ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The fast online classification (FOC) of network traffic plays a critical role in the network resource management and quality of service support. However, traditional network flow features result in poor performance in FOC (with fewer packets). To tackle the issue, this study proposes two new features: (1) The conditional frequency of packet size (PSize), for which the PSize is quantized into several equal bins and the PSize-level conditional frequency of two consecutive packets is calculated; (2) The statistical feature of rate sequence that is obtained by dividing the inter-arrival time into the PSize sequences. Due to the real-time requirement of online classification, we analyze the time complexity of flow feature calculation and attempt to balance the classification speed and the accuracy in feature selection by reducing the feature dimensionality. In addition, a new feature-embedded hierarchical classification structure is developed for the scenario in which the network video traffic accounts for a relatively large proportion. Fewer packets are used in the early stage of binary classification of non-video vs. video, and then, the subsequent data packets are employed for the fine-grained classification of their respective flows. The effectiveness of the proposed method is evaluated on two real-world network datasets, and our method is compared with the state-of-the-art methods in terms of time performance, resource usage, and classification accuracy. The experimental results confirm the superiority of our approach in fast online classification.}
+}
+
+
+@article{DBLP:journals/cn/YangYQWWQQ23,
+	author = {Xu Yang and
+                  Jiahe Yu and
+                  Saiyu Qi and
+                  Qiuhao Wang and
+                  Jianfeng Wang and
+                  Yanan Qiao and
+                  Yong Qi},
+	title = {Less payment and higher efficiency: {A} verifiable, fair and forward-secure
+                  range query scheme using blockchain},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110108},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110108},
+	doi = {10.1016/J.COMNET.2023.110108},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/YangYQWWQQ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable symmetric encryption (SSE) has recently been under the spotlight in a cloud data storage system due to its high efficiency. SSE allows a client to outsource his private data while maintaining data searchability. To ensure the correctness of query results, verifiable SSE has attracted a lot of attention from both academia and industry to enable reliable encrypted search over the untrusted cloud server. However, most traditional verifiable SSE schemes focus on point queries instead of range queries. Moreover, no effective countermeasures are available to prevent clients from maliciously rejecting the correct result for denying the payment. In this paper, we take the first step to study verifiable range queries with fairness and forward security. First, to support efficient range query over numerical values, we propose Prefix Tree-like Keyword Set (PTKS), a novel data structure to largely reduce the number of search tokens. Specifically, the number of search tokens is up to a logarithmic value (e.g., 7) of the query range width (e.g., [0, 1000]) with PTKS. Then, we propose a double-layer verification mechanism including client-side verification and on-chain verification via the smart contract on the blockchain to achieve cost-effective fair verification. In addition, our range query scheme supports forward-secure update operations. Based on these, we propose a blockchain-based verifiable, fair and forward-secure range query scheme. Finally, extensive experiments demonstrate the efficiency of our scheme.}
+}
+
+
+@article{DBLP:journals/cn/KarmakarVHTS23,
+	author = {Kallol Krishna Karmakar and
+                  Vijay Varadharajan and
+                  Michael Hitchens and
+                  Uday Kiran Tupakula and
+                  Prajna Sariputra},
+	title = {A trust-aware openflow switching framework for software defined networks
+                  {(SDN)}},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110109},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110109},
+	doi = {10.1016/J.COMNET.2023.110109},
+	timestamp = {Sun, 04 Aug 2024 19:48:53 +0200},
+	biburl = {https://dblp.org/rec/journals/cn/KarmakarVHTS23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software Defined Networks (SDN) and Network Function Virtualisation (NFV) are prime driving technologies behind 5G and Beyond 5G (B5G) communications. The network control intelligence segregation in the SDN infrastructure enables dynamic network features (such as dynamic end-to-end management of security and quality of service (QoS)) offering significantly improved network performance. Even if one assumes that the centralised SDN controller can be security hardened and hence can be trusted, a fundamental challenge in such networks is that the data plane and switching devices are susceptible to cyberattacks. A malicious adversary can compromise them during run-time making them unreliable for secure and trusted communications. Furthermore, the controller communicating with OpenFlow switching devices is unable to accurately assess the state of the switching devices, which serves as the communication base for NFVs in 5G networks. Vulnerable switching devices can put the whole 5G network infrastructure at risk. Hence, there is a clear need for the controller and the management layer to determine the trustworthiness of the switching devices at run-time. The current trend is for many such devices to deploy trusted computing functionality such as Trusted Platform Module (TPM) or Software Guard Extension (SGx) to achieve local as well as remote attestation. In this paper, we present a dynamic trust management framework for evaluating the trustworthiness of the OpenFlow switching devices deployed in the SDN based networks. We formulate device properties that need to be assessed to determine the trust status of the device. We develop a trust enhanced security architecture which can be used to evaluate the trustworthiness of devices and determine their deployment in the provision of network services. The proposed framework uses subjective logic based techniques to derive trust levels of the switching devices at run-time, which are then used by the architecture to make trust enhanced decisions on the provision of network services. A prototype implementation of the proposed architecture is described, which demonstrates how the trustworthiness of the OpenFlow devices are assessed at run-time. The paper concludes with the performance and security analysis of the implemented trust enhanced architecture services.}
+}
+
+
+@article{DBLP:journals/cn/HuSTCLW23,
+	author = {Xiaoyan Hu and
+                  Zhuozhuo Shu and
+                  Zhongqi Tong and
+                  Guang Cheng and
+                  Ruidong Li and
+                  Hua Wu},
+	title = {Fine-grained Ethereum behavior identification via encrypted traffic
+                  analysis with serialized backward inference},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110110},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110110},
+	doi = {10.1016/J.COMNET.2023.110110},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/HuSTCLW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Blockchain has developed rapidly in recent years. Asymmetric to the rapid development of the blockchain industry is the backwardness of blockchain regulatory technology. The existing research on blockchain security mainly explores blockchain technology and focuses on analyzing on-chain data. We argue that analyzing blockchain network traffic can provide a new perspective on building behavior patterns and blockchain regulation. Ethereum, as the most applied blockchain platform, has flourished with the maturity of blockchain technology. Monitoring fine-grained Ethereum behaviors is essential for the healthy development of Ethereum. However, different Ethereum behaviors are transmitted in an encrypted and persistent connection and are difficult to segment. Besides, the four Get class behaviors, including getBlockHeaders, getNodeData, getReceipts, and getBlockBodies, are indistinguishable from Ethereum traffic. This work proposes a Fine-grained Ethereum Behavior Identification system via encrypted traffic analysis with Serialized Backward Inference, dubbed FEBI-SBI. FEBI-SBI first performs Ethereum behavior traffic segmentation using packets with a load length of 32 Bytes and ACK values larger than their preceding packets in the same direction as the segmenting points. Then, the flow segments for Ethereum behaviors are fed to machine learning classifiers to perform coarse-grained Ethereum behavior identification. Finally, for the Get class behaviors indistinguishable by the machine learning classifiers, FEBI-SBI applies behavior serialized backward inference to identify them from their corresponding fine-grained Send class behaviors identified by the machine learning classifiers. Our experimental results demonstrate the effectiveness and efficiency of FEBI-SBI in identifying fine-grained Ethereum behaviors. FEBI-SBI can be applied to effectively identify anomaly behaviors on the Ethereum network and thus enable the regulation of Ethereum users.}
+}
+
+
+@article{DBLP:journals/cn/ChenGWWC23,
+	author = {Yitong Chen and
+                  Chaoqin Gan and
+                  Shibao Wu and
+                  Xiaoqi Wang and
+                  Yixin Chen},
+	title = {(Vehicle's YB)-based {LPB} prediction model and anti-LPB (communication
+                  link)-reconstruction strategy in the {(VLC/RF)-V2X} network},
+	journal = {Comput. Networks},
+	volume = {237},
+	pages = {110112},
+	year = {2023},
+	url = {https://doi.org/10.1016/j.comnet.2023.110112},
+	doi = {10.1016/J.COMNET.2023.110112},
+	timestamp = {Sat, 13 Jan 2024 17:37:23 +0100},
+	biburl = {https://dblp.org/rec/journals/cn/ChenGWWC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The hybrid vehicle-to-everything (V2X) network based on visible light communication (VLC) and radio frequency (RF) ((VLC/RF)-V2X Network) can provide a stable communication network to vehicles. It has great development forward. However, light path blocking (LPB) is a major problem for vehicular visible light communication (V-VLC). It can cause serious communication outage because the visible light signal cannot penetrate opaque obstacles. In view of this, a (vehicle’s yielding behavior (YB))-based LPB prediction model and an anti-LPB (communication link)-reconstruction strategy in the hybrid network are firstly proposed. At first, based on vehicles’ yielding behavior, a LPB prediction model is constructed. By this model, LPB can be predicted before the VLC link is blocked. Next, based on the prediction result of the model, a strategy of restructuring communication links is present. By this strategy, communication links can be self-adaptive changed or supplemented. Then, based on the proposed model and strategy, the anti-LPB scheme is finished. By the scheme, LPB can be avoided timely, communication outages and redundant handovers can be reduced effectively. Finally, by simulations, the model’s validity and the scheme’s effectiveness have been demonstrated. Through LPB prediction and link reconstruction, the proposed scheme avoids LPB caused by user-behavior blockage at source for the first time in multiple road regions. And it has the comparative advantages of faster response time and lower handover number. Compared with other methods, the average advance time of handovers is improved by 66.94% and the average handover number of the network is reduced by 68.48%. What is more, the path loss (PL) caused by LPBs is reduced by 92% on average.}
+}
