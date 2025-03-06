@@ -1,0 +1,654 @@
+@article{DBLP:journals/tissec/0008DANS024,
+	author = {Shen Wang and
+                  Mahshid Delavar and
+                  Muhammad Ajmal Azad and
+                  Farshad Nabizadeh and
+                  Steve Smith and
+                  Feng Hao},
+	title = {Spoofing Against Spoofing: Toward Caller {ID} Verification in Heterogeneous
+                  Telecommunication Systems},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {1:1--1:25},
+	year = {2024},
+	url = {https://doi.org/10.1145/3625546},
+	doi = {10.1145/3625546},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/0008DANS024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Caller ID spoofing is a global industry problem and often acts as a critical enabler for telephone fraud. To address this problem, the Federal Communications Commission has mandated telecom providers in the U.S. to implement STIR/SHAKEN, an industry-driven solution based on digital signatures. STIR/SHAKEN relies on a public key infrastructure (PKI) to manage digital certificates, but scaling up this PKI for the global telecom industry is extremely difficult, if not impossible. Furthermore, it only works with IP-based systems (e.g., SIP), leaving the traditional non-IP systems (e.g., SS7) unprotected. So far the alternatives to the STIR/SHAKEN have not been sufficiently studied. In this article, we propose a PKI-free solution, called Caller ID Verification (CIV). CIV authenticates the caller ID based on a challenge-response process instead of digital signatures, hence requiring no PKI. It supports both IP and non-IP systems. Perhaps counter-intuitively, we show that number spoofing can be leveraged, in conjunction with Dual-tone Multi-frequency, to efficiently implement the challenge-response process, i.e., using spoofing to fight against spoofing. We implement CIV for Voice over Internet Protocol, cellular, and landline phones across heterogeneous networks (SS7/SIP) by only updating the software on the user’s phone. This is the first caller ID authentication solution with working prototypes for all three types of telephone systems in the current telecom architecture. Finally, we show how the implementation of CIV can be optimized by integrating it into telecom clouds as a service, which users may subscribe to.}
+}
+
+
+@article{DBLP:journals/tissec/OttmannBF24,
+	author = {Jenny Ottmann and
+                  Frank Breitinger and
+                  Felix C. Freiling},
+	title = {An Experimental Assessment of Inconsistencies in Memory Forensics},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {2:1--2:29},
+	year = {2024},
+	url = {https://doi.org/10.1145/3628600},
+	doi = {10.1145/3628600},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/OttmannBF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory forensics is concerned with the acquisition and analysis of copies of volatile memory (memory dumps). Based on an empirical assessment of observable inconsistencies in 360 memory dumps of a running Linux system, we confirm a state of overwhelming inconsistency in memory forensics: almost a third of these dumps had an empty process list and was therefore obviously incomplete. Out of those dumps that were analyzable, almost every second dump showed some form of inconsistency that potentially impacts the interpretation of the dump in a forensic investigation. These results are based on a new way to estimate the level of causal consistency of a memory dump. The factors influencing these inconsistencies are less clear but in general correlate with the level of concurrency (system load and number of threads).}
+}
+
+
+@article{DBLP:journals/tissec/BlassN24,
+	author = {Erik{-}Oliver Blass and
+                  Guevara Noubir},
+	title = {Forward Security with Crash Recovery for Secure Logs},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {3:1--3:28},
+	year = {2024},
+	url = {https://doi.org/10.1145/3631524},
+	doi = {10.1145/3631524},
+	timestamp = {Thu, 29 Feb 2024 20:54:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/BlassN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Logging is a key mechanism in the security of computer systems. Beyond supporting important forward security properties, it is critical that logging withstands both failures and intentional tampering to prevent subtle attacks leaving the system in an inconsistent state with inconclusive evidence. We propose new techniques combining forward security with crash recovery for secure log data storage. As the support of specifically forward integrity and the online nature of logging prevent the use of conventional coding, we propose and analyze a coding scheme resolving these unique design constraints. Specifically, our coding enables forward integrity, online encoding, and most importantly a constant number of operations per encoding. It adds a new log item by 𝖷𝖮𝖱 ing it to k cells of a table. If up to a certain threshold of cells is modified by the adversary, or lost due to a crash, we still guarantee recovery of all stored log items. The main advantage of the coding scheme is its efficiency and compatibility with forward integrity. The key contribution of the paper is the use of spectral graph theory techniques to prove that k is constant in the number n of all log items ever stored and small in practice, e.g., k = 5. Moreover, we prove that to cope with up to \\(\\sqrt {n}\\) modified or lost log items, storage expansion is constant in n and small in practice. For k = 5, the size of the table is only 12% more than the simple concatenation of all n items. We propose and evaluate original techniques to scale the computation cost of recovery to several GBytes of security logs. We instantiate our scheme into an abstract data structure which allows to either detect adversarial modifications to log items or treat modifications like data loss in a system crash. The data structure can recover lost log items, thereby effectively reverting adversarial modifications.}
+}
+
+
+@article{DBLP:journals/tissec/0004SLGW24,
+	author = {Han Cao and
+                  Qindong Sun and
+                  Yaqi Li and
+                  Rong Geng and
+                  Xiaoxiong Wang},
+	title = {Efficient History-Driven Adversarial Perturbation Distribution Learning
+                  in Low Frequency Domain},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {4:1--4:25},
+	year = {2024},
+	url = {https://doi.org/10.1145/3632293},
+	doi = {10.1145/3632293},
+	timestamp = {Thu, 29 Feb 2024 20:54:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/0004SLGW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The existence of adversarial image makes us have to doubt the credibility of artificial intelligence system. Attackers can use carefully processed adversarial images to carry out a variety of attacks. Inspired by the theory of image compressed sensing, this paper proposes a new black-box attack, \\(\\mathcal {N}\\text{-HSA}_{LF}\\). It uses covariance matrix adaptive evolution strategy (CMA-ES) to learn the distribution of adversarial perturbation in low frequency domain, reducing the dimensionality of solution space. And sep-CMA-ES is used to set the covariance matrix as a diagonal matrix, which further reduces the dimensions that need to be updated for the covariance matrix of multivariate Gaussian distribution learned in attacks, thereby reducing the computational cost of attack. And on this basis, we propose history-driven mean update and current optimal solution-guided improvement strategies to avoid the evolution of distribution to a worse direction. The experimental results show that the proposed \\(\\mathcal {N}\\text{-HSA}_{LF}\\) can achieve a higher attack success rate with fewer queries on attacking both CNN-based and transformer-based target models under \\(L_2\\)-norm and \\(L_\\infty\\)-norm constraints of perturbation. We also conduct an ablation study and the results show that the proposed improved strategies can effectively reduce the number of visits to the target model when making adversarial examples for hard examples. In addition, our attack is able to make the integrated defense strategy of GRIP-GAN and noise-embedded training ineffective to a certain extent.}
+}
+
+
+@article{DBLP:journals/tissec/ShresthaMS24,
+	author = {Prakash Shrestha and
+                  Ahmed Tanvir Mahdad and
+                  Nitesh Saxena},
+	title = {Sound-based Two-factor Authentication: Vulnerabilities and Redesign},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {5:1--5:27},
+	year = {2024},
+	url = {https://doi.org/10.1145/3632175},
+	doi = {10.1145/3632175},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ShresthaMS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reducing the level of user effort involved in traditional two-factor authentication (TFA) constitutes an important research topic. An interesting representative approach, Sound-Proof, leverages ambient sounds to detect the proximity between the second-factor device (phone) and the login terminal (browser), and it eliminates the need for the user to transfer PIN codes. In this article, we identify a weakness of the Sound-Proof system that makes it completely vulnerable to passive “environment guessing” and active “environment manipulating” remote attackers and proximity attackers. Addressing these security issues, we propose Listening-Watch, a new TFA mechanism based on a wearable device (watch/bracelet) and active browser-generated random speech sounds. As the user attempts to log in, the browser populates a short random code encoded into speech, and the login succeeds if the watch’s audio recording contains this code (decoded using speech recognition) and is similar enough to the browser’s audio recording. The remote attacker, who has guessed/manipulated the user’s environment, will be defeated, since authentication success relies upon the presence of the random code in watch’s recordings. The proximity attacker will also be defeated unless it is extremely close (<50 cm) to the watch, since the wearable microphones are usually designed to capture only nearby sounds (e.g., voice commands).}
+}
+
+
+@article{DBLP:journals/tissec/SwarnkarS24,
+	author = {Mayank Swarnkar and
+                  Neha Sharma},
+	title = {\emph{OptiClass}: An Optimized Classifier for Application Layer Protocols
+                  Using Bit Level Signatures},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {6:1--6:23},
+	year = {2024},
+	url = {https://doi.org/10.1145/3633777},
+	doi = {10.1145/3633777},
+	timestamp = {Thu, 29 Feb 2024 20:54:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SwarnkarS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network traffic classification has many applications, such as security monitoring, quality of service, traffic engineering, and so on. For the aforementioned applications, Deep Packet Inspection (DPI) is a popularly used technique for traffic classification because it scrutinizes the payload and provides comprehensive information for accurate analysis of network traffic. However, DPI-based methods reduce network performance because they are computationally expensive and hinder end-user privacy as they analyze the payload. To overcome these challenges, bit-level signatures are significantly used to perform network traffic classification. However, most of these methods still need to improve performance as they perform one-by-one signature matching of unknown payloads with application signatures for classification. Moreover, these methods become stagnant with the increase in application signatures. Therefore, to fill this gap, we propose OptiClass, an optimized classifier for application protocols using bit-level signatures. OptiClass performs parallel application signature matching with unknown flows, which results in faster, more accurate, and more efficient network traffic classification. OptiClass achieves twofold performance gains compared to the state-of-the-art methods. First, OptiClass generates bit-level signatures of just 32 bits for all the applications. This keeps OptiClass swift and privacy-preserving. Second, OptiClass uses a novel data structure called BiTSPLITTER for signature matching for fast and accurate classification. We evaluated the performance of OptiClass on three datasets consisting of twenty application protocols. Experimental results report that OptiClass has an average recall, precision, and F1-score of 97.36%, 97.38%, and 97.37%, respectively, and an average classification speed of 9.08 times faster than five closely related state-of-the-art methods.}
+}
+
+
+@article{DBLP:journals/tissec/0002LDP0024,
+	author = {Yong Zeng and
+                  Jiale Liu and
+                  Tong Dong and
+                  Qingqi Pei and
+                  Jianfeng Ma and
+                  Yao Liu},
+	title = {Eyes See Hazy while Algorithms Recognize Who You Are},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {7:1--7:23},
+	year = {2024},
+	url = {https://doi.org/10.1145/3632292},
+	doi = {10.1145/3632292},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/0002LDP0024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Facial recognition technology has been developed and widely used for decades. However, it has also made privacy concerns and researchers’ expectations for facial recognition privacy-preserving technologies. To provide privacy, detailed or semantic contents in face images should be obfuscated. However, face recognition algorithms have to be tailor-designed according to current obfuscation methods, as a result the face recognition service provider has to update its commercial off-the-shelf (COTS) products for each obfuscation method. Meanwhile, current obfuscation methods have no clearly quantified explanation. This paper presents a universal face obfuscation method for a family of face recognition algorithms using global or local structure of eigenvector space. By specific mathematical explanations, we show that the upper bound of the distance between the original and obfuscated face images is smaller than the given recognition threshold. Experiments show that the recognition degradation is 0% for global structure based and 0.3%-5.3% for local structure based, respectively. Meanwhile, we show that even if an attacker knows the whole obfuscation method, he/she has to enumerate all the possible roots of a polynomial with an obfuscation coefficient, which is computationally infeasible to reconstruct original faces. So our method shows a good performance in both privacy and recognition accuracy without modifying recognition algorithms.}
+}
+
+
+@article{DBLP:journals/tissec/KlubanMY24,
+	author = {Maryna Kluban and
+                  Mohammad Mannan and
+                  Amr M. Youssef},
+	title = {On Detecting and Measuring Exploitable JavaScript Functions in Real-world
+                  Applications},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {8:1--8:37},
+	year = {2024},
+	url = {https://doi.org/10.1145/3630253},
+	doi = {10.1145/3630253},
+	timestamp = {Sun, 19 Jan 2025 14:43:37 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/KlubanMY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {JavaScript is often rated as the most popular programming language for the development of both client-side and server-side applications. Because of its popularity, JavaScript has become a frequent target for attackers who exploit vulnerabilities in the source code to take control over the application. To address these JavaScript security issues, such vulnerabilities must be identified first. Existing studies in vulnerable code detection in JavaScript mostly consider package-level vulnerability tracking and measurements. However, such package-level analysis is largely imprecise, as real-world services that include a vulnerable package may not use the vulnerable functions in the package. Moreover, even the inclusion of a vulnerable function may not lead to a security problem if the function cannot be triggered with exploitable inputs. In this article, we develop a vulnerability detection framework that uses vulnerable pattern recognition and textual similarity methods to detect vulnerable functions in real-world JavaScript projects, combined with a static multi-file taint analysis mechanism to further assess the impact of the vulnerabilities on the whole project (i.e., whether the vulnerability can be exploited in a given project). We compose a comprehensive dataset of 1,360 verified vulnerable JavaScript functions using the Snyk vulnerability database and the VulnCode-DB project. From this ground-truth dataset, we build our vulnerable patterns for two common vulnerability types: prototype pollution and Regular Expression Denial of Service (ReDoS). With our framework, we analyze 9,205,654 functions (from 3,000 NPM packages, 1,892 websites and 557 Chrome Web extensions), and detect 117,601 prototype pollution and 7,333 ReDoS vulnerabilities. By further processing all 5,839 findings from NPM packages with our taint analyzer, we verify the exploitability of 290 zero-day cases across 134 NPM packages. In addition, we conduct an in-depth contextual analysis of the findings in 17 popular/critical projects and study the practical security exposure of 20 functions. With our semi-automated vulnerability reporting functionality, we disclosed all verified findings to project owners. We also obtained 25 published CVEs for our findings, 19 of them rated as “Critical” severity and six rated as “High” severity. Additionally, we obtained 169 CVEs that are currently “Reserved” (as of Apr. 2023). As evident from the results, our approach can shift JavaScript vulnerability detection from the coarse package/library level to the function level and thus improve the accuracy of detection and aid timely patching.}
+}
+
+
+@article{DBLP:journals/tissec/Tang00XX024,
+	author = {Li Tang and
+                  Qingqing Ye and
+                  Haibo Hu and
+                  Qiao Xue and
+                  Yaxin Xiao and
+                  Jin Li},
+	title = {DeepMark: {A} Scalable and Robust Framework for DeepFake Video Detection},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {9:1--9:26},
+	year = {2024},
+	url = {https://doi.org/10.1145/3629976},
+	doi = {10.1145/3629976},
+	timestamp = {Thu, 29 Feb 2024 20:54:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/Tang00XX024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid growth of DeepFake video techniques, it becomes increasingly challenging to identify them visually, posing a huge threat to our society. Unfortunately, existing detection schemes are limited to exploiting the artifacts left by DeepFake manipulations, so they struggle to keep pace with the ever-improving DeepFake models. In this work, we propose DeepMark, a scalable and robust framework for detecting DeepFakes. It imprints essential visual features of a video into DeepMark Meta (DMM) and uses it to detect DeepFake manipulations by comparing the extracted visual features with the ground truth in DMM. Therefore, DeepMark is future-proof, because a DeepFake video must aim to alter some visual feature, no matter how “natural” it looks. Furthermore, DMM also contains a signature for verifying the integrity of the above features. And an essential link to the features as well as their signature is attached with error correction codes and embedded in the video watermark. To improve the efficiency of DMM creation, we also present a threshold-based feature selection scheme and a deduced face detection scheme. Experimental results demonstrate the effectiveness and efficiency of DeepMark on DeepFake video detection under various datasets and parameter settings.}
+}
+
+
+@article{DBLP:journals/tissec/WangML0JG24,
+	author = {Li Wang and
+                  Xiangtao Meng and
+                  Dan Li and
+                  Xuhong Zhang and
+                  Shouling Ji and
+                  Shanqing Guo},
+	title = {{DEEPFAKER:} {A} Unified Evaluation Platform for Facial Deepfake and
+                  Detection Models},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {10:1--10:34},
+	year = {2024},
+	url = {https://doi.org/10.1145/3634914},
+	doi = {10.1145/3634914},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/WangML0JG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deepfake data contains realistically manipulated faces—its abuses pose a huge threat to the security and privacy-critical applications. Intensive research from academia and industry has produced many deepfake/detection models, leading to a constant race of attack and defense. However, due to the lack of a unified evaluation platform, many critical questions on this subject remain largely unexplored. How is the anti-detection ability of the existing deepfake models? How generalizable are existing detection models against different deepfake samples? How effective are the detection APIs provided by the cloud-based vendors? How evasive and transferable are adversarial deepfakes in the lab and real-world environment? How do various factors impact the performance of deepfake and detection models? To bridge the gap, we design and implement DEEPFAKER a unified and comprehensive deepfake detection evaluation platform. Specifically, DEEPFAKER has integrated 10 state-of-the-art deepfake methods and 9 representative detection methods, while providing a user-friendly interface and modular design that allows for easy integration of new methods. Leveraging DEEPFAKER, we conduct a large-scale empirical study of facial deepfake/detection models and draw a set of key findings: (i)\xa0the detection methods have poor generalization on samples generated by different deepfake methods; (ii)\xa0there is no significant correlation between anti-detection ability and visual quality of deepfake samples; (iii)\xa0the current detection APIs have poor detection performance and adversarial deepfakes can achieve about 70% attack success rate on all cloud-based vendors, calling for an urgent need to deploy effective and robust detection APIs; (iv)\xa0the detection methods in the lab are more robust against transfer attacks than the detection APIs in the real-world environment; and (v)\xa0deepfake videos may not always be more difficult to detect after video compression. We envision that DEEPFAKER will benefit future research on facial deepfake and detection.}
+}
+
+
+@article{DBLP:journals/tissec/0002DNW24,
+	author = {Liqun Chen and
+                  Changyu Dong and
+                  Christopher J. P. Newton and
+                  Yalan Wang},
+	title = {Sphinx-in-the-Head: Group Signatures from Symmetric Primitives},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {11:1--11:35},
+	year = {2024},
+	url = {https://doi.org/10.1145/3638763},
+	doi = {10.1145/3638763},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/0002DNW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Group signatures and their variants have been widely used in privacy-sensitive scenarios such as anonymous authentication and attestation. In this paper, we present a new post-quantum group signature scheme from symmetric primitives. Using only symmetric primitives makes the scheme less prone to unknown attacks than basing the design on newly proposed hard problems whose security is less well-understood. However, symmetric primitives do not have rich algebraic properties, and this makes it extremely challenging to design a group signature scheme on top of them. It is even more challenging if we want a group signature scheme suitable for real-world applications, one that can support large groups and require few trust assumptions. Our scheme is based on MPC-in-the-head non-interactive zero-knowledge proofs, and we specifically design a novel hash-based group credential scheme, which is rooted in the SPHINCS+ signature scheme but with various modifications to make it MPC (multi-party computation) friendly. The security of the scheme has been proved under the fully dynamic group signature model. We provide an implementation of the scheme and demonstrate the feasibility of handling a group size as large as 260. This is the first group signature scheme from symmetric primitives that supports such a large group size and meets all the security requirements.}
+}
+
+
+@article{DBLP:journals/tissec/Qiao0K24,
+	author = {Yan Qiao and
+                  Kui Wu and
+                  Majid Khabbazian},
+	title = {Non-intrusive Balance Tomography Using Reinforcement Learning in the
+                  Lightning Network},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {12:1--12:32},
+	year = {2024},
+	url = {https://doi.org/10.1145/3639366},
+	doi = {10.1145/3639366},
+	timestamp = {Thu, 29 Feb 2024 20:54:50 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/Qiao0K24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Lightning Network (LN) is a second layer system for solving the scalability problem of Bitcoin transactions. In the current implementation of LN, channel capacity (i.e., the sum of individual balances held in the channel) is public information, while individual balances are kept secret for privacy concerns. Attackers may discover a particular balance of a channel by sending multiple fake payments through the channel. Such an attack, however, can hardly threaten the security of the LN system due to its high cost and noticeable intrusions. In this work, we present a novel non-intrusive balance tomography attack, which infers channel balances silently by performing legal transactions between two pre-created LN nodes. To minimize the cost of the attack, we propose an algorithm to compute the optimal payment amount for each transaction and design a path construction method using reinforcement learning to explore the most informative path to conduct the transactions. Finally, we propose two approaches (NIBT-RL and NIBT-RL-β) to accurately and efficiently infer all individual balances using the results of these transactions. Experiments using simulated account balances over actual LN topology show that our method can accurately infer 90% ∼ 94% of all balances in LN with around 12 USD.}
+}
+
+
+@article{DBLP:journals/tissec/ShiMGS24,
+	author = {Zhenpeng Shi and
+                  Nikolay Matyunin and
+                  Kalman Graffi and
+                  David Starobinski},
+	title = {Uncovering {CWE-CVE-CPE} Relations with Threat Knowledge Graphs},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {1},
+	pages = {13:1--13:26},
+	year = {2024},
+	url = {https://doi.org/10.1145/3641819},
+	doi = {10.1145/3641819},
+	timestamp = {Sun, 19 Jan 2025 14:43:37 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ShiMGS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security assessment relies on public information about products, vulnerabilities, and weaknesses. So far, databases in these categories have rarely been analyzed in combination. Yet, doing so could help predict unreported vulnerabilities and identify common threat patterns. In this article, we propose a methodology for producing and optimizing a knowledge graph that aggregates knowledge from common threat databases (CVE, CWE, and CPE). We apply the threat knowledge graph to predict associations between threat databases, specifically between products, vulnerabilities, and weaknesses. We evaluate the prediction performance both in closed world with associations from the knowledge graph and in open world with associations revealed afterward. Using rank-based metrics (i.e., Mean Rank, Mean Reciprocal Rank, and Hits@N scores), we demonstrate the ability of the threat knowledge graph to uncover many associations that are currently unknown but will be revealed in the future, which remains useful over different time periods. We propose approaches to optimize the knowledge graph and show that they indeed help in further uncovering associations. We have made the artifacts of our work publicly available.}
+}
+
+
+@article{DBLP:journals/tissec/EbrahimpourH24,
+	author = {Ghader Ebrahimpour and
+                  Mohammad Sayad Haghighi},
+	title = {Is Bitcoin Future as Secure as We Think? Analysis of Bitcoin Vulnerability
+                  to Bribery Attacks Launched through Large Transactions},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {14},
+	year = {2024},
+	url = {https://doi.org/10.1145/3641546},
+	doi = {10.1145/3641546},
+	timestamp = {Sun, 19 Jan 2025 14:43:37 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/EbrahimpourH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bitcoin uses blockchain technology to maintain transactions order and provides probabilistic guarantees to prevent double-spending, assuming that an attacker’s computational power does not exceed 50% of the network power. In this article, we design a novel bribery attack and show that this guarantee can be hugely undermined. Miners are assumed to be rational in this setup, and they are given incentives that are dynamically calculated. In this attack, the adversary misuses the Bitcoin protocol to bribe miners and maximize their gained advantage. We will reformulate the bribery attack to propose a general mathematical foundation upon which we build multiple strategies. We show that, unlike Whale Attack, these strategies are practical, especially in the future when halvings lower the mining rewards. In the so-called “guaranteed variable-rate bribing with commitment” strategy, through optimization by Differential Evolution (DE), we show how double-spending is possible in the Bitcoin ecosystem for any transaction whose value is above 218.9BTC, and this comes with 100% success rate. A slight reduction in the success probability, e.g., by 10%, brings the threshold down to 165BTC. If the rationality assumption holds, then this shows how vulnerable blockchain-based systems like Bitcoin are. We suggest a soft fork on Bitcoin to fix this issue at the end.}
+}
+
+
+@article{DBLP:journals/tissec/ConconeGGRM24,
+	author = {Federico Concone and
+                  Salvatore Gaglio and
+                  Andrea Giammanco and
+                  Giuseppe Lo Re and
+                  Marco Morana},
+	title = {AdverSPAM: Adversarial SPam Account Manipulation in Online Social
+                  Networks},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {15},
+	year = {2024},
+	url = {https://doi.org/10.1145/3643563},
+	doi = {10.1145/3643563},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/ConconeGGRM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the widespread adoption of Machine Learning (ML) at the core of complex IT systems has driven researchers to investigate the security and reliability of ML techniques. A very specific kind of threats concerns the adversary mechanisms through which an attacker could induce a classification algorithm to provide the desired output. Such strategies, known as Adversarial Machine Learning (AML), have a twofold purpose: to calculate a perturbation to be applied to the classifier’s input such that the outcome is subverted, while maintaining the underlying intent of the original data. Although any manipulation that accomplishes these goals is theoretically acceptable, in real scenarios perturbations must correspond to a set of permissible manipulations of the input, which is rarely considered in the literature. In this article, we present AdverSPAM, an AML technique designed to fool the spam account detection system of an Online Social Network (OSN). The proposed black-box evasion attack is formulated as an optimization problem that computes the adversarial sample while maintaining two important properties of the feature space, namely statistical correlation and semantic dependency. Although being demonstrated in an OSN security scenario, such an approach might be applied in other context where the aim is to perturb data described by mutually related features. Experiments conducted on a public dataset show the effectiveness of AdverSPAM compared to five state-of-the-art competitors, even in the presence of adversarial defense mechanisms.}
+}
+
+
+@article{DBLP:journals/tissec/SommerGKKS24,
+	author = {Florian Sommer and
+                  Mona Gierl and
+                  Reiner Kriesten and
+                  Frank Kargl and
+                  Eric Sax},
+	title = {Combining Cyber Security Intelligence to Refine Automotive Cyber Threats},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {16},
+	year = {2024},
+	url = {https://doi.org/10.1145/3644075},
+	doi = {10.1145/3644075},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SommerGKKS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern vehicles increasingly rely on electronics, software, and communication technologies (cyber space) to perform their driving task. Over-The-Air (OTA) connectivity further extends the cyber space by creating remote access entry points. Accordingly, the vehicle is exposed to security attacks that are able to impact road safety. A profound understanding of security attacks, vulnerabilities, and mitigations is necessary to protect vehicles against cyber threats. While automotive threat descriptions, such as in UN R155, are still abstract, this creates a risk that potential vulnerabilities are overlooked and the vehicle is not secured against them. So far, there is no common understanding of the relationship of automotive attacks, the concrete vulnerabilities they exploit, and security mechanisms that would protect the system against these attacks. In this article, we aim at closing this gap by creating a mapping between UN R155, Microsoft STRIDE classification, Common Attack Pattern Enumeration and Classification (CAPEC), and Common Weakness Enumeration (CWE). In this way, already existing detailed knowledge of attacks, vulnerabilities, and mitigations is combined and linked to the automotive domain. In practice, this refines the list of UN R155 threats and therefore supports vehicle manufacturers, suppliers, and approval authorities to meet and assess the requirements for vehicle development in terms of cybersecurity. Overall, 204 mappings between UN threats, STRIDE, CAPEC attack patterns, and CWE weaknesses were created. We validated these mappings by applying our Automotive Attack Database (AAD) that consists of 361 real-world attacks on vehicles. Furthermore, 25 additional attack patterns were defined based on automotive-related attacks.}
+}
+
+
+@article{DBLP:journals/tissec/ChenHK24,
+	author = {Jiayi Chen and
+                  Urs Hengartner and
+                  Hassan Khan},
+	title = {{MRAAC:} {A} Multi-stage Risk-aware Adaptive Authentication and Access
+                  Control Framework for Android},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {17},
+	year = {2024},
+	url = {https://doi.org/10.1145/3648372},
+	doi = {10.1145/3648372},
+	timestamp = {Fri, 02 Aug 2024 21:40:52 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ChenHK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adaptive authentication enables smartphones and enterprise apps to decide when and how to authenticate users based on contextual and behavioral factors. In practice, a system may employ multiple policies to adapt its authentication mechanisms and access controls to various scenarios. However, existing approaches suffer from contradictory or insecure adaptations, which may enable attackers to bypass the authentication system. Besides, most existing approaches are inflexible and do not provide desirable access controls. We design and build a multi-stage risk-aware adaptive authentication and access control framework (MRAAC), which provides the following novel contributions: Multi-stage: MRAAC organizes adaptation policies in multiple stages to handle different risk types and progressively adapts authentication mechanisms based on context, resource sensitivity, and user authenticity. Appropriate access control: MRAAC provides libraries to enable sensitive apps to manage the availability of their in-app resources based on MRAAC’s risk awareness. Extensible: While existing proposals are tailored to cater to a single use case, MRAAC supports a variety of use cases with custom risk models. We exemplify these advantages of MRAAC by deploying it for three use cases: an enhanced version of Android Smart Lock, guest-aware continuous authentication, and corporate app for BYOD. We conduct experiments to quantify the CPU, memory, latency, and battery performance of MRAAC. Our evaluation shows that MRAAC enables various stakeholders (device manufacturers, enterprise and secure app developers) to provide complex adaptive authentication workflows on COTS Android with low processing and battery overhead.}
+}
+
+
+@article{DBLP:journals/tissec/BayerKSR24,
+	author = {Markus Bayer and
+                  Philipp Kuehn and
+                  Ramin Shanehsaz and
+                  Christian Reuter},
+	title = {CySecBERT: {A} Domain-Adapted Language Model for the Cybersecurity
+                  Domain},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {18},
+	year = {2024},
+	url = {https://doi.org/10.1145/3652594},
+	doi = {10.1145/3652594},
+	timestamp = {Sun, 19 Jan 2025 14:43:37 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/BayerKSR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The field of cysec is evolving fast. Security professionals are in need of intelligence on past, current and —ideally — upcoming threats, because attacks are becoming more advanced and are increasingly targeting larger and more complex systems. Since the processing and analysis of such large amounts of information cannot be addressed manually, cysec experts rely on machine learning techniques. In the textual domain, pre-trained language models such as Bidirectional Encoder Representations from Transformers (BERT) have proven to be helpful as they provide a good baseline for further fine-tuning. However, due to the domain-knowledge and the many technical terms in cysec, general language models might miss the gist of textual information. For this reason, we create a high-quality dataset and present a language model specifically tailored to the cysec domain that can serve as a basic building block for cybersecurity systems. The model is compared on 15 tasks: Domain-dependent extrinsic tasks for measuring the performance on specific problems, intrinsic tasks for measuring the performance of the internal representations of the model, as well as general tasks from the SuperGLUE benchmark. The results of the intrinsic tasks show that our model improves the internal representation space of domain words compared with the other models. The extrinsic, domain-dependent tasks, consisting of sequence tagging and classification, show that the model performs best in cybersecurity scenarios. In addition, we pay special attention to the choice of hyperparameters against catastrophic forgetting, as pre-trained models tend to forget the original knowledge during further training.}
+}
+
+
+@article{DBLP:journals/tissec/BernabeRodriguezGL24,
+	author = {Julen Bernab{\'{e}}{-}Rodr{\'{\i}}guez and
+                  Albert Garreta and
+                  Oscar Lage},
+	title = {A Decentralized Private Data Marketplace using Blockchain and Secure
+                  Multi-Party Computation},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {19},
+	year = {2024},
+	url = {https://doi.org/10.1145/3652162},
+	doi = {10.1145/3652162},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/BernabeRodriguezGL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Big data has proven to be a very useful tool for companies and users, but companies with larger datasets have ended being more competitive than the others thanks to machine learning or artificial intelligence. Secure multi-party computation (SMPC) allows the smaller companies to jointly train arbitrary models on their private data while assuring privacy, and thus gives data owners the ability to perform what are currently known as federated learning algorithms. Besides, with a blockchain it is possible to coordinate and audit those computations in a decentralized way. In this document, we consider a private data marketplace as a space where researchers and data owners meet to agree the use of private data for statistics or more complex model trainings. This document presents a candidate architecure for a private data marketplace by combining SMPC and a public, general-purpose blockchain. Such a marketplace is proposed as a smart contract deployed in the blockchain, while the privacy preserving computation is held by SMPC.}
+}
+
+
+@article{DBLP:journals/tissec/ParkK24,
+	author = {Namgyu Park and
+                  Jong Kim},
+	title = {Toward Robust {ASR} System against Audio Adversarial Examples using
+                  Agitated Logit},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {2},
+	pages = {20},
+	year = {2024},
+	url = {https://doi.org/10.1145/3661822},
+	doi = {10.1145/3661822},
+	timestamp = {Fri, 02 Aug 2024 21:40:52 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ParkK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automatic speech recognition (ASR) systems are vulnerable to audio adversarial examples, which aim at deceiving ASR systems by adding perturbations to benign speech signals. These audio adversarial examples appear indistinguishable from benign audio waves, but the ASR system decodes them as intentional malicious commands. Previous studies have demonstrated the feasibility of such attacks in simulated environments (over-line) and have further showcased the creation of robust physical audio adversarial examples (over-air). Various defense techniques have been proposed to counter these attacks. However, most of them have either failed to handle various types of attacks effectively or have resulted in significant time overhead. In this article, we propose a novel method for detecting audio adversarial examples. Our approach involves feeding both smoothed audio and original audio inputs into the ASR system. Subsequently, we introduce noise to the logits before providing them to the decoder of the ASR. We demonstrate that carefully selected noise can considerably influence the transcription results of audio adversarial examples while having minimal impact on the transcription of benign audio waves. Leveraging this characteristic, we detect audio adversarial examples by comparing the altered transcription, resulting from logit noising, with the original transcription. The proposed method can be easily applied to ASR systems without requiring any structural modifications or additional training. Experimental results indicate that the proposed method exhibits robustness against both over-line and over-air audio adversarial examples, outperforming state-of-the-art detection methods.}
+}
+
+
+@article{DBLP:journals/tissec/ValentimDMC24,
+	author = {Rodolfo Vieira Valentim and
+                  Idilio Drago and
+                  Marco Mellia and
+                  Federico Cerutti},
+	title = {X-squatter: {AI} Multilingual Generation of Cross-Language Sound-squatting},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {21:1--21:27},
+	year = {2024},
+	url = {https://doi.org/10.1145/3663569},
+	doi = {10.1145/3663569},
+	timestamp = {Thu, 03 Oct 2024 00:46:08 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/ValentimDMC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sound-squatting is a squatting technique that exploits similarities in word pronunciation to trick users into accessing malicious resources. It is an understudied threat that has gained traction with the popularity of smart speakers and audio-only content, such as podcasts. The picture gets even more complex when multiple languages are involved. We here introduce X-squatter, a multi- and cross-language AI-based system that relies on a Transformer Neural Network for generating high-quality sound-squatting candidates. We illustrate the use of X-squatter by searching for domain name squatting abuse across hundreds of millions of issued TLS certificates, alongside other squatting types. Key findings unveil that approximately 15% of generated sound-squatting candidates have associated TLS certificates, well above the prevalence of other squatting types (7%). Furthermore, we employ X-squatter to assess the potential for abuse in PyPI packages, revealing the existence of hundreds of candidates within a 3-year package history. Notably, our results suggest that the current platform checks cannot handle sound-squatting attacks, calling for better countermeasures. We believe X-squatter uncovers the usage of multilingual sound-squatting phenomena on the Internet and it is a crucial asset for proactive protection against the threat.}
+}
+
+
+@article{DBLP:journals/tissec/AmeerPSBG24,
+	author = {Safwa Ameer and
+                  Lopamudra Praharaj and
+                  Ravi Sandhu and
+                  Smriti Bhatt and
+                  Maanak Gupta},
+	title = {ZTA-IoT: {A} Novel Architecture for Zero-Trust in IoT Systems and
+                  an Ensuing Usage Control Model},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {22:1--22:36},
+	year = {2024},
+	url = {https://doi.org/10.1145/3671147},
+	doi = {10.1145/3671147},
+	timestamp = {Thu, 03 Oct 2024 00:46:08 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AmeerPSBG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, several researchers motivated the need to integrate Zero Trust (ZT) principles when designing and implementing authentication and authorization systems for IoT. An integrated Zero Trust IoT system comprises the network infrastructure (physical and virtual) and operational policies in place for IoT as a product of a ZT architecture plan. This article proposes a novel Zero Trust architecture for IoT systems called ZTA-IoT. Additionally, based on different types of interactions between various layers and components in this architecture, we present ZTA-IoT-ACF, an access control framework that recognizes different interactions that need to be controlled in IoT systems. Within this framework, the article then refines its focus to object-level interactions, i.e., interactions where the target resource is a device (equivalently a thing) or an information file generated or stored by a device. Building on the recently proposed Zero Trust score-based authorization framework (ZT-SAF), we develop the object-level Zero Trust score-based authorization framework for IoT systems, denoted as ZTA-IoT-OL-SAF, to govern access requests in this context. With this machinery in place, we finally develop a novel usage control model for users-to-objects and devices-to-objects interactions, denoted as UCON \\(_{IoT}\\). We give formal definitions, illustrative use cases, and a proof-of-concept implementation of UCON\\(_{IoT}\\). This article is a first step toward establishing a rigorous formally defined score-based access control framework for Zero Trust IoT systems.}
+}
+
+
+@article{DBLP:journals/tissec/AhmedPSA24,
+	author = {Abu Shohel Ahmed and
+                  Aleksi Peltonen and
+                  Mohit Sethi and
+                  Tuomas Aura},
+	title = {Security Analysis of the Consumer Remote {SIM} Provisioning Protocol},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {23:1--23:36},
+	year = {2024},
+	url = {https://doi.org/10.1145/3663761},
+	doi = {10.1145/3663761},
+	timestamp = {Thu, 03 Oct 2024 00:46:08 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/AhmedPSA24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remote SIM provisioning (RSP) for consumer devices is the protocol specified by the GSM Association for downloading SIM profiles into a secure element in a mobile device. The process is commonly known as eSIM, and it is expected to replace removable SIM cards. The security of the protocol is critical because the profile includes the credentials with which the mobile device will authenticate to the mobile network. In this article, we present a formal security analysis of the consumer RSP protocol. We model the multi-party protocol in applied pi calculus, define formal security goals, and verify them in ProVerif. The analysis shows that the consumer RSP protocol protects against a network adversary when all the intended participants are honest. However, we also model the protocol in realistic partial compromise scenarios where the adversary controls a legitimate participant or communication channel. The security failures in the partial compromise scenarios reveal weaknesses in the protocol design. The most important observation is that the security of RSP depends unnecessarily on it being encapsulated in a TLS tunnel. Also, the lack of pre-established identifiers means that a compromised download server anywhere in the world or a compromised secure element can be used for attacks against RSP between honest participants. Additionally, the lack of reliable methods for verifying user intent can lead to serious security failures. Based on the findings, we recommend practical improvements to RSP implementations, future versions of the specification, and mobile operator processes to increase the robustness of eSIM security.}
+}
+
+
+@article{DBLP:journals/tissec/HeHGC24,
+	author = {Xinyu He and
+                  Fengrui Hao and
+                  Tianlong Gu and
+                  Liang Chang},
+	title = {CBAs: Character-level Backdoor Attacks against Chinese Pre-trained
+                  Language Models},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {24:1--24:26},
+	year = {2024},
+	url = {https://doi.org/10.1145/3678007},
+	doi = {10.1145/3678007},
+	timestamp = {Thu, 03 Oct 2024 00:46:08 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/HeHGC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Pre-trained language models (PLMs) aim to assist computers in various domains to provide natural and efficient language interaction and text processing capabilities. However, recent studies have shown that PLMs are highly vulnerable to malicious backdoor attacks, where triggers could be injected into the models to guide them to exhibit the expected behavior of the attackers. Unfortunately, existing research on backdoor attacks has mainly focused on English PLMs and paid less attention to Chinese PLMs. Moreover, these extant backdoor attacks do not work well against Chinese PLMs. In this article, we disclose the limitations of English backdoor attacks against Chinese PLMs, and propose the character-level backdoor attacks (CBAs) against the Chinese PLMs. Specifically, we first design three Chinese trigger generation strategies to ensure that the backdoor is effectively triggered while improving the effectiveness of the backdoor attacks. Then, based on the attacker’s capabilities of accessing the training dataset, we develop trigger injection mechanisms with either the target label similarity or the masked language model, which select the most influential position and insert the trigger to maximize the stealth of backdoor attacks. Extensive experiments on three major natural language processing tasks in various Chinese PLMs and English PLMs demonstrate the effectiveness and stealthiness of our method. In addition, CBAs have very strong resistance against three state-of-the-art backdoor defense methods.}
+}
+
+
+@article{DBLP:journals/tissec/GunasingheAB24,
+	author = {Hasini Gunasinghe and
+                  Mikhail J. Atallah and
+                  Elisa Bertino},
+	title = {{PEBASI:} {A} Privacy preserving, Efficient Biometric Authentication
+                  Scheme based on Irises},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {25:1--25:31},
+	year = {2024},
+	url = {https://doi.org/10.1145/3677017},
+	doi = {10.1145/3677017},
+	timestamp = {Wed, 09 Oct 2024 17:11:02 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/GunasingheAB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce a novel privacy-preserving biometric authentication scheme based on irises that allows a user to enroll once at a trusted biometric certification authority (BCA) and authenticate to online service providers (SPs) multiple times without involving the BCA during the authentication. Our scheme preserves the user’s biometric privacy from the SPs and transactional privacy from the BCA, while providing security against a malicious user. During the enrollment, the BCA issues a signed token that encrypts the user’s biometrics. We introduce techniques enabling the SP and the user to perform secure computation of biometric matching between such encrypted biometrics and the user’s biometrics captured at the authentication time. We provide a prototype implementation, a performance evaluation, and a security analysis of the protocol.}
+}
+
+
+@article{DBLP:journals/tissec/OuDZLL24,
+	author = {Weihan Ou and
+                  Steven H. H. Ding and
+                  Mohammad Zulkernine and
+                  Li Tao Li and
+                  Sarah Labrosse},
+	title = {VeriBin: {A} Malware Authorship Verification Approach for {APT} Tracking
+                  through Explainable and Functionality-Debiasing Adversarial Representation
+                  Learning},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {3},
+	pages = {26:1--26:37},
+	year = {2024},
+	url = {https://doi.org/10.1145/3669901},
+	doi = {10.1145/3669901},
+	timestamp = {Thu, 03 Oct 2024 00:46:08 +0200},
+	biburl = {https://dblp.org/rec/journals/tissec/OuDZLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware attacks are posing a significant threat to national security, cooperate network, and public endpoint security. Identifying the Advanced Persistent Threat (APT) groups behind the attacks and grouping their activities into attack campaigns help security investigators trace their activities thus providing better security protections against future attacks. Existing Cyber Threat Intelligent (CTI) components mainly focus on malware family identification and behavior characterization, which cannot solve the APT tracking problem: while APT tracking needs one to link malware binaries of multiple families to a single threat actor, these behavior or function-based techniques are tightened up to a specific attack technique and would fail on connecting different families. Binary Authorship Attribution (AA) solutions could discriminate against threat actors based on their stylometric traits. However, AA solutions assume that the author of a binary is within a fixed candidate author set. However, real-world malware binaries may be created by a new unknown threat actor. To address this research gap, we propose VeriBin for the Binary Authorship Verification (BAV) problem. VeriBin is a novel adversarial neural network that extracts functionality-agnostic style representations from assembly code for the AV task. The extracted style representations can be visualized and are explainable with VeriBin’s multi-head attention mechanism. We benchmark VeriBin with state-of-the-art coding style representations on a standard dataset and a recent malware-APT dataset. Given two anonymous binaries of out-of-sample authors, VeriBin can accurately determine whether they belong to the same author or not. VeriBin is resilient to compiler optimizations and robust against malware family variants.}
+}
+
+
+@article{DBLP:journals/tissec/SathiM24,
+	author = {Vipin N. Sathi and
+                  C. Siva Ram Murthy},
+	title = {Boost Your Immunity: {VACCINE} for Preventing a Novel Stealthy Slice
+                  Selection Attack in 5G and Beyond},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {27:1--27:29},
+	year = {2024},
+	url = {https://doi.org/10.1145/3686152},
+	doi = {10.1145/3686152},
+	timestamp = {Wed, 06 Nov 2024 22:18:39 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SathiM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {G networks can offer network slices customized according to the demands of the services to enhance the quality of their users’ experience. The time for selecting an appropriate network slice to facilitate traffic flow between users and services by the core network functions in 5G networks is crucial for services such as emergency service and ultra-reliable low latency services. Therefore, we propose a distributed slice selection architecture for 5G and beyond networks to reduce the waiting time for starting services for users. The proposed architecture distributes slice selection function\xa0(SSF) to the edge of the network. The networks have to ensure stealthy slice selection attack\xa0(S3 attack) free operation, as moving the SSF to the edge increases attack surface. Attackers can launch S3 attack by manipulating the slice selection decisions of SSFs distributed in the network edge. The S3 attacker intentionally maps service requests from users to inappropriate network slices to damage cloud radio access network utilization and the quality of experience of users. In this article, we also present a countermeasure to tackle the S3 attack using a novel protocol called VACCINE (verifiable privacy-preserving protocol for slice selection in 5G and beyond networks). VACCINE also ensures privacy-preserving slice selection by the SSFs to prevent traffic analysis attacks. We prove the chosen-ciphertext attack security strength of VACCINE and also compare the computational cost of VACCINE with other related protocols.}
+}
+
+
+@article{DBLP:journals/tissec/SchulmannZ24,
+	author = {Haya Schulmann and
+                  Shujie Zhao},
+	title = {ZPredict: ML-Based {IPID} Side-channel Measurements},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {28:1--28:33},
+	year = {2024},
+	url = {https://doi.org/10.1145/3672560},
+	doi = {10.1145/3672560},
+	timestamp = {Sun, 19 Jan 2025 14:43:38 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SchulmannZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network reconnaissance and measurements play a central role in improving Internet security and are important for understanding the current deployments and trends. Such measurements often require coordination with the measured target. This limits the scalability and the coverage of the existing proposals. IP Identification (IPID) provides a side channel for remote measurements without requiring the targets to install agents or visit the measurement infrastructure. However, current IPID-based techniques have technical limitations due to their reliance on the idealistic assumption of stable IPID changes or prior knowledge, making them challenging to adopt for practical measurements. In this work, we aim to tackle the limitations of existing techniques by introducing a novel approach: predictive analysis of IPID counter behavior. This involves utilizing a machine learning (ML) model to understand the historical patterns of IPID counter changes and predict future IPID values. To validate our approach, we implement six ML models and evaluate them on realistic IPID data collected from 4,698 Internet sources. Our evaluations demonstrate that among the six models, the Gaussian Process (GP) model has superior accuracy in tracking and predicting IPID values. Using the GP-based predictive analysis, we implement a tool, called ZPredict, to infer various favorable information about target networks or servers. Our evaluation on a large dataset of public servers demonstrates its effectiveness in idle port scanning, measuring Russian censorship, and inferring Source Address Validation. Our study methodology is ethical and was developed to mitigate any potential harm, taking into account the concerns associated with measurements.}
+}
+
+
+@article{DBLP:journals/tissec/SateesanVSHPM24,
+	author = {Arish Sateesan and
+                  Jo Vliegen and
+                  Simon Scherrer and
+                  Hsu{-}Chun Hsiao and
+                  Adrian Perrig and
+                  Nele Mentens},
+	title = {SPArch: {A} Hardware-oriented Sketch-based Architecture for High-speed
+                  Network Flow Measurements},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {29:1--29:34},
+	year = {2024},
+	url = {https://doi.org/10.1145/3687477},
+	doi = {10.1145/3687477},
+	timestamp = {Sun, 19 Jan 2025 14:43:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/SateesanVSHPM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network flow measurement is an integral part of modern high-speed applications for network security and data-stream processing. However, processing at line rate while maintaining the required data structure within the on-chip memory of the hardware platform is a challenging task for measurement algorithms, especially when accuracy is of primary importance, such as in network security applications. Most of the existing measurement algorithms are no exception to such issues when deployed in high-speed networking environments and are also not tailored for efficient hardware implementation. Sketch-based measurement algorithms minimize the memory requirement and are suitable for high-speed networks but possess a low memory-accuracy trade-off and lack the versatility of individual flow mapping. To address these challenges, we present a hardware-friendly data structure named Sketch-based Pseudo-associative array Architecture (SPArch). SPArch is highly accurate and extremely memory-efficient, making it suitable for network flow measurement and security applications. The parallelism in SPArch ensures minimal and constant memory access cycles. Unlike other sketch architectures, SPArch provides the functionality of individual flow mapping similar to associative arrays, and the optimized version of SPArch allows the organization of counters in multiple buckets based on the flow sizes. An in-depth analysis of SPArch is carried out in this article and implemented SPArch on the Alveo data center accelerator card, demonstrating its suitability for high-speed networks.}
+}
+
+
+@article{DBLP:journals/tissec/MohantyT24,
+	author = {Susil Kumar Mohanty and
+                  Somanath Tripathy},
+	title = {Flexichain: Flexible Payment Channel Network to Defend Against Channel
+                  Exhaustion Attack},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {30:1--30:26},
+	year = {2024},
+	url = {https://doi.org/10.1145/3687476},
+	doi = {10.1145/3687476},
+	timestamp = {Sun, 19 Jan 2025 14:43:37 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/MohantyT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The payment channel network (PCN) is an effective off-chain scaling solution widely recognized for reducing operational costs on permissionless blockchains. However, it still faces challenges such as lack of flexibility, channel exhaustion, and poor sustainability. Currently, a separate deposit is required for each payment channel, which locks a significant amount of coins for a longer period. This restricts the ability to move locked coins across their channels off-chain. Additionally, unbalanced (unidirectional) transfers can lead to channel exhaustion, rendering the channel unsustainable. To address these issues, we propose a novel off-chain flexible PCN protocol called Flexichain. Unlike existing approaches, Flexichain allows users to deposit coins per user rather than per channel. This provides flexibility to move coins freely between channels without relying on the blockchain or disrupting the off-chain cycle. Flexichain is proven to be secure under the Universal Composability framework and resistant against channel exhaustion attacks. To assess the performance of Flexichain, we conduct experiments on both on-chain and off-chain operations using snapshots of the Lightning Network. We evaluate the on-chain gas costs, success ratio and success amount of off-chain payments under uniform and skewed payment demands, as well as the computational and communication overheads of the off-chain contracts.}
+}
+
+
+@article{DBLP:journals/tissec/CeragioliGDB24,
+	author = {Lorenzo Ceragioli and
+                  Letterio Galletta and
+                  Pierpaolo Degano and
+                  David A. Basin},
+	title = {Specifying and Verifying Information Flow Control in SELinux Configurations},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {31:1--31:35},
+	year = {2024},
+	url = {https://doi.org/10.1145/3690636},
+	doi = {10.1145/3690636},
+	timestamp = {Sun, 19 Jan 2025 14:43:38 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/CeragioliGDB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security Enhanced Linux (SELinux) is a security architecture for Linux implementing Mandatory Access Control. It has been used in numerous security-critical contexts ranging from servers to mobile devices. However, its application is challenging as SELinux security policies are difficult to write, understand, and maintain. Recently, the intermediate language CIL was introduced to foster the development of high-level policy languages and to write structured configurations. Despite CIL’s high level features, CIL configurations are hard to understand as different constructs interact in non-trivial ways. Moreover, there is no mechanism to ensure that a given configuration obeys desired information flow policies. To remedy this, we enrich CIL with a formal semantics, and we propose IFCIL, a backward compatible extension of CIL for specifying fine-grained information flow requirements. Using IFCIL, administrators can express confidentiality, integrity, and non-interference properties. We also provide a tool to statically verify these requirements and we experimentally assess it on ten real-world policies.}
+}
+
+
+@article{DBLP:journals/tissec/AhmedCASL24,
+	author = {Mukhtar Ahmed and
+                  Jinfu Chen and
+                  Ernest Akpaku and
+                  Rexford Nii Ayitey Sosu and
+                  Ajmal Latif},
+	title = {{DELM:} Deep Ensemble Learning Model for Anomaly Detection in Malicious
+                  Network Traffic-based Adaptive Feature Aggregation and Network Optimization},
+	journal = {{ACM} Trans. Priv. Secur.},
+	volume = {27},
+	number = {4},
+	pages = {32:1--32:36},
+	year = {2024},
+	url = {https://doi.org/10.1145/3690637},
+	doi = {10.1145/3690637},
+	timestamp = {Wed, 06 Nov 2024 22:18:39 +0100},
+	biburl = {https://dblp.org/rec/journals/tissec/AhmedCASL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid advancements in internet technology, the complexity and sophistication of network traffic attacks are increasing, making it challenging for traditional anomaly detection systems to analyze and detect malicious network attacks. The increasing advancedness of cyber threats calls for innovative approaches to identify malicious patterns within network traffic precisely. The primary issue lies in the fact that these approaches do not focus on the essential adaptive features of network traffic. We proposed an effective anomaly detection system for malicious network traffic attacks called the Deep Ensemble Learning Model (DELM). We leverage the structure of the Feedforward Deep Neural Network (FDNN), and Deep Belief Network (DBN), incorporating multiple hidden layers with non-linear activation functions. Integrating Adaptive Feature Aggregation (AFA) with the FDNN algorithm dynamically adjusts the feature aggregation process based on incoming traffic characteristics to improve adaptability. The Conditional Generative Network was employed to enhance DELM for generating data for minority classes. To improve the model’s accuracy, we applied batch normalization and data augmentation techniques for preprocessing, utilized n-gram, one-hot encoding, and feature aggregation methods for effective feature extraction. This study significantly contributes to network security by enhancing systems for detecting malicious network traffic. With its interpretability and adaptability, our proposed model shows promise in addressing the evolving cyber threat and fortifying critical network infrastructure. The experimental results demonstrate that our model performs with higher stability than the existing state-of-the-art detection approaches, as reflected by its higher accuracy, precision, recall, F1-score, and AUC-ROC.}
+}
