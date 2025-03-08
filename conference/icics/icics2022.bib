@@ -1,0 +1,909 @@
+@inproceedings{DBLP:conf/icics/CaoCLP22,
+	author = {Jinzheng Cao and
+                  Qingfeng Cheng and
+                  Xinghua Li and
+                  Yanbin Pan},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {{BS:} Blockwise Sieve Algorithm for Finding Short Vectors from Sublattices},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {3--18},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_1},
+	doi = {10.1007/978-3-031-15777-6\_1},
+	timestamp = {Wed, 07 Dec 2022 13:34:27 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/CaoCLP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Shortest Vector Problem is a crucial part of the lattice theory and a central lattice problem in analyzing lattice-based cryptography. This work provides a new algorithm that finds a short vector by calling the sieve oracle in projected sublattices orthogonal to each other. We first propose the Block Sieve algorithm. With blockwise sieving, proper insertion and reduction, the coordinates of the right end of vector v can be recovered. The algorithm moves the block to recover the other coordinates. We continue to optimize the algorithm and propose the Progressive Block Sieve algorithm, employing techniques such as skipping to accelerate the procedure. In a d-dimensional lattice, smaller sieve calls in (\\(d-\\varTheta ({d}/\\ln {d})\\))-dimensional sublattices are enough to find a short vector. We compare the experimental results on different lattices to test the performance of the new approach. On challenge lattices, our algorithm takes less time and fewer tours than original reduction algorithms to reach a similar outcome. As an application of the new algorithm, we test the performance of solving Learning With Errors problem. Our algorithm is able to solve the instances about 5% faster than sieving.}
+}
+
+
+@inproceedings{DBLP:conf/icics/TanSZ22,
+	author = {Teik Guan Tan and
+                  De Wen Soh and
+                  Jianying Zhou},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Calibrating Learning Parity with Noise Authentication for Low-Resource
+                  Devices},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {19--36},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_2},
+	doi = {10.1007/978-3-031-15777-6\_2},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/TanSZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Learning Parity with Noise (LPN) is an attractive post-quantum cryptosystem for low-resource devices due to its simplicity. Communicating parties only require the use of AND and XOR gates to generate or verify LPN cryptogram samples exchanged between the parties. However, the LPN setup is complicated by different parameter choices including key length, noise rate, sample size, and verification window which can determine the usability and security of the implementation. To address advances in LPN cryptanalysis, recommendations for ever increasing key lengths have made LPN no longer feasible for low-resource devices. In this paper, we use a series of experiments to simulate and cryptanalyze LPN authentication under different parameter values to arrive at recommended values suitable for low-resource devices. We also examine the impact of limiting the key lifespan of the LPN secret vector as a means to balance security while keeping key lengths relatively short.}
+}
+
+
+@inproceedings{DBLP:conf/icics/GaoXWH22,
+	author = {Jing Gao and
+                  Jun Xu and
+                  Tianyu Wang and
+                  Lei Hu},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {New Results of Breaking the {CLS} Scheme from {ACM-CCS} 2014},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {37--54},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_3},
+	doi = {10.1007/978-3-031-15777-6\_3},
+	timestamp = {Fri, 10 Nov 2023 21:09:29 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/GaoXWH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {At ACM-CCS 2014, Cheon, Lee and Seo introduced a particularly fast additively homomorphic encryption scheme (CLS scheme) based on a new number theoretic assumption, the co-Approximate Common Divisor (co-ACD) assumption. However, at Crypto 2015, Fouque et al. presented several lattice-based attacks that effectively devastated this scheme. They proved that a few known plaintexts are sufficient to break both the symmetric-key and the public-key variants, and they gave a heuristic lattice method for solving the search co-ACD problem. In this paper, we mainly improve in terms of the number of samples, and propose a new key-retrieval attack. We first give an effective attack by Coppersmith’s method to break the co-ACD problem with \\(N=p_1\\cdots p_n\\) is known. If n is within a certain range, our work is theoretically valid for a wider range of parameters. When \\(n=2\\), we can successfully solve it with only two samples, that is the smallest number of needed samples to the best of our knowledge. A known plaintext attack on the CLS scheme can be simply converted to solving the co-ACD problem with a known N, again requiring fewer samples than before to retrieve the private key. Finally, we show a ciphertext-only attack with a hybrid approach of direct lattice and Coppersmith’s method that can recover the key with a smaller number of ciphertexts and without any restriction on the plaintext size, but N is needed. All of our attacks are heuristic, but we have experimentally verified that these attacks work efficiently for the parameters proposed in the CLS scheme, which can be broken in seconds by experiments.}
+}
+
+
+@inproceedings{DBLP:conf/icics/GuoW22,
+	author = {Tingting Guo and
+                  Peng Wang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {A Note on the Security Framework of Two-key DbHtS MACs},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {55--68},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_4},
+	doi = {10.1007/978-3-031-15777-6\_4},
+	timestamp = {Sun, 06 Oct 2024 21:05:25 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/GuoW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Double-block Hash-then-Sum (DbHtS) MACs are a class of MACs that achieve beyond-birthday-bound (BBB) security, including SUM-ECBC, PMAC_Plus, 3kf9, LightMAC_Plus, etc. Recently, Shen et al. (CRYPTO 2021) proposed a security framework for two-key DbHtS MACs in the multi-user setting, stating that when the underlying block cipher is ideal and the universal hash functions are regular and almost universal, the two-key DbHtS MACs achieve 2n/3-bit security. Unfortunately, the regular and universal properties can not guarantee the BBB security of two-key DbHtS MACs. We propose three counter-examples which are proved to be 2n/3-bit secure in the multi-user setting by the framework, but can be broken with probability 1 using only \\(\\mathcal {O}(2^{n/2})\\) queries even in the single-user setting. We also point out the miscalculation in their proof leading to such a flaw. However, we haven’t found attacks against 2k-SUM-ECBC, 2k-PMAC_Plus, and 2k-LightMAC_Plus proved 2n/3-bit security in their paper.}
+}
+
+
+@inproceedings{DBLP:conf/icics/QiuYYZ22,
+	author = {Zhi Qiu and
+                  Kang Yang and
+                  Yu Yu and
+                  Lijing Zhou},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Maliciously Secure Multi-party {PSI} with Lower Bandwidth and Faster
+                  Computation},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {69--88},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_5},
+	doi = {10.1007/978-3-031-15777-6\_5},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/QiuYYZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Private Set Intersection (PSI) allows a set of mutually distrustful parties, each holds a private data set, to compute the intersection of all sets, such that no information is revealed except for the intersection. The state-of-the-art PSI protocol (Garimella et al., CRYPTO’21) in the multi-party setting tolerating any number of malicious corruptions requires the communication bandwidth of \\(O(n\\ell |\\mathbb F |)\\) bits for the central party \\(P_0\\) due to the star architecture, where n is the number of parties, \\(\\ell \\) is the size of each set and \\(|\\mathbb F |\\) is the size of an exponentially large field \\(\\mathbb F \\). When n and \\(\\ell \\) are large, this forms an efficiency bottleneck (especially for networks with restricted bandwidthes). In this paper, we present a new multi-party PSI protocol in dishonest-majority malicious setting, which reduces the communication bandwidth of the central party \\(P_0\\) from \\(O(n\\ell |\\mathbb F |)\\) bits to \\(O(\\ell |\\mathbb F |)\\) bits using a tree architecture. Furthermore, our PSI protocol reduces the expensive LPN encoding operations performed by \\(P_0\\) by a factor of n as well as the computational cost by \\(2n\\ell \\) hash operations in total. Additionally, while the multi-party PSI protocol (Garimella et al., CRYPTO’21) with a single output is secure, we present a simple attack against its multi-output extension, which allows an adversary to learn more information on the sets of honest parties beyond the intersection of all sets.}
+}
+
+
+@inproceedings{DBLP:conf/icics/ChenXZZ22,
+	author = {Siwei Chen and
+                  Zejun Xiang and
+                  Xiangyong Zeng and
+                  Shasha Zhang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Conditional Cube Attacks on Full Members of {KNOT-AEAD} Family},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {89--108},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_6},
+	doi = {10.1007/978-3-031-15777-6\_6},
+	timestamp = {Tue, 26 Mar 2024 14:37:58 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/ChenXZZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {KNOT is a family of permutation-based lightweight AEAD and hashing algorithms, which is submitted to the NIST Lightweight Cryptography Standardization process and becomes one of the 32 candidates in the second round. In this paper, we focus on the security of the initialization phase of full members of KNOT-AEAD family against conditional cube attacks in the nonce-respecting setting. To be specific, we introduce a conditional cube attack framework by exploiting linearization technique and division property based degree evaluation. With this framework, we can use a conditional cube set including only one public variable to construct a conditional cube distinguisher, and then to recovery one key bit with a negligible time and data. As a result, we present the 8-, 8-, 8-, and 9-round practical full key-recovery attacks on KNOT-AEAD (128, 256, 64), KNOT-AEAD (128, 384, 192), KNOT-AEAD (192, 384, 96) and KNOT-AEAD (256, 512, 128), and a 9-round theoretical full key-recovery attack on KNOT-AEAD (128, 384, 192) with a complexity of \\(2^{51.72}\\) and a negligible data complexity. To the best of our knowledge, this is the first time to achieve the practical full key-recovery attacks on all members of round-reduced KNOT-AEAD.}
+}
+
+
+@inproceedings{DBLP:conf/icics/SunZZTQM22,
+	author = {Shuo Sun and
+                  Yongbin Zhou and
+                  Rui Zhang and
+                  Yang Tao and
+                  Zehua Qiao and
+                  Jingdian Ming},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Fast Fourier Orthogonalization over {NTRU} Lattices},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {109--127},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_7},
+	doi = {10.1007/978-3-031-15777-6\_7},
+	timestamp = {Fri, 02 Sep 2022 10:50:10 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/SunZZTQM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {FALCON is an efficient and compact lattice-based signature scheme. It is also one of the round 3 finalists in the NIST PQC standardization process. The core of FALCON is a trapdoor sampling algorithm, which has found numerous applications in lattice-based cryptography. It needs the fast Fourier orthogonalization algorithm to build an LDL tree. But the LDL tree needs much RAM to store, which may limit the application of FALCON on memory-constrained devices. On the other hand, if building the LDL tree dynamically, the signature cost will almost double. In this work, we discover the LDL tree of FALCON has some symmetric structure, and prove why this phenomenon occurs. With this property, we can reduce the generation time and storage of the LDL tree by almost half without affecting the efficiency of FALCON. We verify the correctness and validity of our way in the implementations of FALCON. In addition, the result applies to the cyclotomic field \\(\\mathbb {Q}[x]/(x^n-x^{n/2}+1)\\) with \\(n = 3 \\cdot 2 ^\\kappa \\). But we can not apply it to NTRU module lattices so far.}
+}
+
+
+@inproceedings{DBLP:conf/icics/ChenSLC22,
+	author = {Kaini Chen and
+                  Peisong Shen and
+                  Kewei Lv and
+                  Chi Chen},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Secure Sketch and Fuzzy Extractor with Imperfect Randomness: An Information-Theoretic
+                  Study},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {128--147},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_8},
+	doi = {10.1007/978-3-031-15777-6\_8},
+	timestamp = {Thu, 22 Feb 2024 07:27:34 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/ChenSLC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzy extractor retrieves the same cryptographic key from samples of one noisy source. Information-theoretically secure fuzzy extractors are usually constructed by secure sketches and seeded extractors. However, current constructions rely heavily on perfect randomness, which is difficult to obtain in the real world. In this paper, we analyze the security deficiency of current secure sketches and fuzzy extractors in the imperfect randomness setting where no perfect randomness is available. Furthermore, we discuss the information-theoretic security of several explicit fuzzy extractors based on two-source extractors in the imperfect randomness setting.}
+}
+
+
+@inproceedings{DBLP:conf/icics/FangWZ22,
+	author = {Boyue Fang and
+                  Weize Wang and
+                  Yunlei Zhao},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Tight Analysis of Decryption Failure Probability of Kyber in Reality},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {148--160},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_9},
+	doi = {10.1007/978-3-031-15777-6\_9},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/FangWZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Kyber is a candidate in the third round of the National Institute of Standards and Technology (NIST) Post-Quantum Cryptography (PQC) Standardization. However, because of the protocol’s independence assumption, the bound on the decapsulation failure probability resulting from the original analysis is not tight. In this work, we give a rigorous mathematical analysis of the actual failure probability calculation, and provides the Kyber security estimation in reality rather than only in a statistical sense. Our analysis does not make independency assumptions on errors, and is with respect to concrete public keys in reality. Through sample test and experiments, we also illustrate the difference between the actual failure probability and the result given in the proposal of Kyber. The experiments show that, for Kyber-512 and 768, the failure probability resulting from the original paper is relatively conservative, but for Kyber-1024, the failure probability of some public keys is worse than claimed. This failure probability calculation for concrete public keys can also guide the selection of public keys in the actual application scenarios. What’s more, we measure the gap between the upper bound of the failure probability and the actual failure probability, then give a tight estimate. Our work can also re-evaluate the traditional \\(1-\\delta \\) correctness in the literature, which will help re-evaluate some candidates’ security in NIST post-quantum cryptographic standardization.}
+}
+
+
+@inproceedings{DBLP:conf/icics/WuWZH22,
+	author = {Yuxuan Wu and
+                  Ding Wang and
+                  Yunkai Zou and
+                  Ziyi Huang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Improving Deep Learning Based Password Guessing Models Using Pre-processing},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {163--183},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_10},
+	doi = {10.1007/978-3-031-15777-6\_10},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/WuWZH22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Passwords are the most widely used authentication method and play an important role in users’ digital lives. Password guessing models are generally used to understand password security, yet statistic-based password models (like the Markov model and probabilistic context-free grammars (PCFG)) are subject to the inherent limitations of overfitting and sparsity. With the improvement of computing power, deep-learning based models with higher crack rates are emerging. Since neural networks are generally used as black boxes for learning password features, a key challenge for deep-learning based password guessing models is to choose the appropriate preprocessing methods to learn more effective features. To fill the gap, this paper explores three new preprocessing methods and makes an attempt to apply them to two promising deep-learning networks, i.e., Long Short-Term Memory (LSTM) neural networks and Generative Adversarial Networks (GAN). First, we propose a character-feature based method for encoding to replace the canonical one-hot encoding. Second, we add so far the most comprehensive recognition rules of words, keyboard patterns, years, and website names into the basic PCFG, and find that the frequency distribution of extracted segments follows the Zipf’s law. Third, we adopt Xu et al.’s PCFG improvement with chunk segmentation at CCS’21, and study the performance of the Chunk+PCFG preprocessing method when applied to LSTM and\xa0GAN. Extensive experiments on six large real-world password datasets show the effectiveness of our preprocessing methods. Results show that within 50 million guesses: 1) When we apply the PCFG preprocessing method to PassGAN (a GAN-based password model proposed by Hitja et al. at ACNS’19), 13.83%–38.81% (26.79% on average) more passwords can be cracked; 2) Our LSTM based model using PCFG for preprocessing (short for PL) outperforms Wang et al.’s original PL model by 0.35%–3.94% (1.36% on average). Overall, our preprocessing methods can improve the attacking rates in four over seven tested cases. We believe this work provides new feasible directions for guessing optimization, and contributes to a better understanding of deep-learning based models.}
+}
+
+
+@inproceedings{DBLP:conf/icics/TolbertHNLS22,
+	author = {Matthew M. Tolbert and
+                  Elie M. Hess and
+                  Mattheus C. Nascimento and
+                  Yunsen Lei and
+                  Craig A. Shue},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Exploring Phone-Based Authentication Vulnerabilities in Single Sign-On
+                  Systems},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {184--200},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_11},
+	doi = {10.1007/978-3-031-15777-6\_11},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/TolbertHNLS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Phone-based authenticators (PBAs) are commonly incorporated into multi-factor authentication and passwordless login schemes for corporate networks and systems. These systems require users to prove that they possess a phone or phone number associated with an account. The out-of-band nature of PBAs and their security may not be well understood by users. Further, the frequency of PBA prompts may desensitize users and lead to increased susceptibility to phishing or social engineering. We explore such risks to PBAs by exploring PBA implementation options and two types of attacks. When employed with a real-world PBA system, we found the symptoms of such attacks were subtle. A subsequent user study revealed that none of our participants noticed the attack symptoms, highlighting the limitations and risks associated with PBAs.}
+}
+
+
+@inproceedings{DBLP:conf/icics/SciancaleporeRC22,
+	author = {Savio Sciancalepore and
+                  Simone Raponi and
+                  Daniele Caldarola and
+                  Roberto Di Pietro},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {{FRACTAL:} Single-Channel Multi-factor Transaction Authentication
+                  Through a Compromised Terminal},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {201--217},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_12},
+	doi = {10.1007/978-3-031-15777-6\_12},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/SciancaleporeRC22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-Factor Authentication (MFA) schemes currently used for verifying the authenticity of Internet banking transactions rely either on dedicated devices (namely, tokens) or on out-of-band channels—typically, the mobile cellular network. However, when both the dedicated devices and the additional channel are not available and the Primary Authentication Terminal (PAT) is compromised, MFA schemes cannot reliably guarantee transaction authenticity. The afore-mentioned situation is typical, e.g., offshore or on-board of aircraft, when only few untrusted terminals have Internet connection. In this paper, we present FRACTAL, a new scheme providing single-channel transaction MFA through general-purpose additional authentication terminals. Moreover, the proposed solution is also resilient against a potentially-compromised PAT. FRACTAL easily scales up as per the number of multiple authentication factors, and it is extensible beyond the banking scenario, e.g., to unattended and constrained scenarios, by integrating also Internet of Things (IoT) devices as additional authentication terminals. Other than enjoying a formal verification of its security properties via ProVerif, FRACTAL is also supported by an extensive experimental performance assessment. Our real-world Proof-of-Concept scenarios, implemented using Spring micro-services, show that FRACTAL can complete a transaction in about 2\xa0s, independently from the remote server location. The flexibility of use, the guaranteed security, and the striking performance, characterize FRACTAL as a solution with an expected high potential impact in the authentication field, for both Industry and Academia.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiuLM22,
+	author = {Zhen Liu and
+                  Yining Liu and
+                  Weizhi Meng},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Lightweight and Practical Privacy-Preserving Image Masking in Smart
+                  Community},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {221--239},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_13},
+	doi = {10.1007/978-3-031-15777-6\_13},
+	timestamp = {Sat, 30 Sep 2023 09:45:21 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/LiuLM22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Advances in the Internet of Things (IoT) and telecommunications technologies (e.g., 5G) have contributed to the development of smart cities and nations (collectively referred to as smart communities). In a smart community, IoT devices can collect significant information about urban residents (e.g., a large number of images collected by cameras containing sensitive information), and such information may be shared with intermediate nodes. In real-world deployment, intermediate nodes are not completely trusted, where the information collected may be used for commercial purposes (e.g., user profiling and advertising) or malicious activities (e.g., covert surveillance). In this paper, we introduce an approach to ensure privacy-preserving image masking. Specifically, before the image is transmitted to the camera owner or the monitoring cloud platform, only sensitive areas instead of the entire image will be processed according to the camera owner’s settings, which allows to significantly reduce the computational cost. Then, in order to reduce the interactions between the community data center and the IoT camera, the monitoring cloud platform performs proxy re-encryption. This allows the community data center to recover the original image without relying on the IoT device’s private key. Our evaluation indicates the utility and efficiency of our approach, as compared with similar schemes.}
+}
+
+
+@inproceedings{DBLP:conf/icics/HanXGZ22,
+	author = {Yang Han and
+                  Dawei Xu and
+                  Jiaqi Gao and
+                  Liehuang Zhu},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Using Blockchains for Censorship-Resistant Bootstrapping in Anonymity
+                  Networks},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {240--260},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_14},
+	doi = {10.1007/978-3-031-15777-6\_14},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/HanXGZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With Tor being a popular anonymity network, many censors and ISPs have blocked access to it. Tor relies on privately and selectively distributing IPs of circumvention proxies (i.e., bridges) to censored clients for censorship evasion. However, existing distributors are still vulnerable to blocking or compromising anonymity. This paper introduces Antiblok, a new and practical channel for bridge distribution leveraging blockchain, a globally decentralized environment. A key insight of Antiblok is that all blockchain transactions are under pseudonymous identities, allowing requesting clients to fetch bridge information while maintaining anonymity, regardless of the trustworthiness of blockchain nodes. To prevent the use of off-chain communication channels, we present an account sharing protocol based on DH key exchange. The unblockability of Antiblok depends on the economic consequences of blocking the Ethereum system. We show that Antiblok effectively thwarts client-side blocking of the distribution channel for Tor bridges, and we describe the security of our design.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiZGLCA22,
+	author = {Meng Li and
+                  Mingwei Zhang and
+                  Jianbo Gao and
+                  Chhagan Lal and
+                  Mauro Conti and
+                  Mamoun Alazab},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Repetitive, Oblivious, and Unlinkable SkNN Over Encrypted-and-Updated
+                  Data on Cloud},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {261--280},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_15},
+	doi = {10.1007/978-3-031-15777-6\_15},
+	timestamp = {Mon, 26 Jun 2023 20:42:47 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/LiZGLCA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Location-Based Services (LBSs) depend on a Service Provider (SP) to store data owners’ geospatial data and to process data users’ queries. For example, a Yelp user queries the SP to retrieve the k nearest Starbucks by submitting her/his current location. It is well-acknowledged that location privacy is vital to users and several prominent Secure k Nearest Neighbor (SkNN) query processing schemes are proposed. We observe that no prior work addresses the requirement of repetitive query after index update and its privacy issue, i.e., how to match a data item from the cloud repetitively in an oblivious and unlinkable manner. Meanwhile, a malicious SP may skip some data items and recommend others due to unfair competition. In this work, we formally define the repetitive query and its privacy objectives and present an Repetitive, Oblivious, and Unlinkable SkNN scheme ROU. Specifically, we design a multi-level structure to organize locations to further improve search efficiency. Second, we integrate data item identity into the framework of existing SkNN query processing. Data owners encrypt their data item identity and location information into a secure index, and data users encrypt a customized identity range of a previously retrieved data item and location information into a token. Next, the SP uses the token to query the secure index to find the specific data item via privacy-preserving range querying. We formally prove the privacy of ROU in the random oracle model. We build a prototype based on a server to evaluate the performance with a real-world dataset. Experimental results show that ROU is efficient and practical in terms of computational cost, communication overhead, and result verification.}
+}
+
+
+@inproceedings{DBLP:conf/icics/AlromihCG22,
+	author = {Arwa Alromih and
+                  John A. Clark and
+                  Prosanta Gope},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Privacy-Aware Split Learning Based Energy Theft Detection for Smart
+                  Grids},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {281--300},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_16},
+	doi = {10.1007/978-3-031-15777-6\_16},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/AlromihCG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Energy thefts are one of the critical attacks that often cause high revenue losses for utility companies around the world. Effective detection of such attacks is very important and must be implemented to comply laws and regulations that govern users’ privacy. Current detection approaches rely on significant amounts of raw fine-grained smart meter data and generally do not consider privacy. On the other hand, most privacy-preserving machine learning (PPML) approaches, such as homomorphic ML and federated learning, are not well suited to the smart grid environment due to their processing complexity and communication overheads. Therefore, our contributions in this work are twofold: first, we propose an enhanced privacy-preserving detection model for energy thefts using the concept of Split Learning. Subsequently, since the classical Split Learning cannot be directly applied in the smart grid (SG) environment due to its communication overhead, we introduce a new variant of Split Learning that is more communication-efficient and suits the smart grid environment. The proposed model can ensure two advantages over the existing techniques. First, the use of Split Learning enables the training of a detection model without any need for raw data. This helps in achieving data privacy. Second, the splitting of the detection model allows the system to be more robust against honest-but-curious adversaries. Our evaluations show that the proposed detection model can ensure better privacy protection and communication efficiency, which are essential for smart grid, without compromising detection accuracy.}
+}
+
+
+@inproceedings{DBLP:conf/icics/YuitoSY22,
+	author = {Makoto Yuito and
+                  Kenta Suzuki and
+                  Kazuki Yoneyama},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Query-Efficient Black-Box Adversarial Attack with Random Pattern Noises},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {303--323},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_17},
+	doi = {10.1007/978-3-031-15777-6\_17},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/YuitoSY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adversarial examples are one of the largest vulnerability of deep neural networks. An attacker can deceive the classifiers easily with the malicious inputs (called adversarial examples), which perturbations are slightly added to benign inputs. Various attack methods have been studied in both white-box and black-box settings, and some methods achieve high attack success rates even in the black-box settings; that is, the attacker is restricted to only query accesses to the target network. In this paper, we propose a simple hyperparameter-free score-based black-box \\(\\ell _\\infty \\)-adversarial attack using local uniform noises and a random search. Specifically, we construct adversarial perturbations by combining local uniform noises such as vertical-wise and horizontal-wise, and incorporate this idea into the random search method to update the perturbation sequentially. We evaluate our method in terms of attack success rates and query efficiency using models that classify common datasets CIFAR-10 and ImageNet. We show that our method achieves higher attack success rates and query efficiency than previous attack methods, especially in low-query budgets on both untargeted and targeted attack settings. We also examine attacks to adversarially trained models and discuss the effect of local uniform noises on these models. Furthermore, we show that our method achieves relatively high attack success rates and query efficiency on average against input-transformation-based defense methods, and is virtually unaffected by these defense methods.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LeiYWDMW22,
+	author = {Qi Lei and
+                  Zijia Yang and
+                  Qin Wang and
+                  Yaoling Ding and
+                  Zhe Ma and
+                  An Wang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Autoencoder Assist: An Efficient Profiling Attack on High-Dimensional
+                  Datasets},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {324--341},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_18},
+	doi = {10.1007/978-3-031-15777-6\_18},
+	timestamp = {Wed, 22 Mar 2023 16:53:36 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/LeiYWDMW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning (DL)-based profiled attack has been proved to be a powerful tool in side-channel analysis. However, most attacks merely focus on small datasets, in which their points of interest are well-trimmed for attacks. Countermeasures applied in embedded systems always result in high-dimensional side-channel traces, i.e., the high-dimension of each input trace. These traces inevitably require complicated designs of neural networks and large sizes of trainable parameters for exploiting the correct keys. Therefore, performing profiled attacks (directly) on high-dimensional datasets is difficult. To bridge this gap, we propose a dimension reduction tool for high-dimensional traces by combining signal-to-noise ratio (SNR) analysis and autoencoder. With the designed asymmetric undercomplete autoencoder (UAE) architecture, we extract a small group of critical features from numerous time samples. The compression rate by using our UAE method reaches 40x on synchronized datasets and 30x on desynchronized datasets. This preprocessing step facilitates the profiled attacks by extracting potential leakage features. To demonstrate its effectiveness, we evaluate our proposed method on the raw ASCAD dataset with 100,000 samples in each trace. We also derive desynchronized datasets from the raw ASCAD dataset and validate our method under random delay effect. We further propose a \\(2^n\\)-structure MLP network as the attack model. By applying UAE and attack model on these traces, experimental results show all correct subkeys on synchronized datasets and desynchronized datasets are successfully revealed within hundreds of seconds. This indicates that our autoencoder can significantly facilitate DL-based profiled attacks on high-dimensional datasets.}
+}
+
+
+@inproceedings{DBLP:conf/icics/SongDDGW22,
+	author = {Liantao Song and
+                  Yan Ding and
+                  Pan Dong and
+                  Yong Guo and
+                  Chuang Wang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {{TZ-IMA:} Supporting Integrity Measurement for Applications with {ARM}
+                  TrustZone},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {342--358},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_19},
+	doi = {10.1007/978-3-031-15777-6\_19},
+	timestamp = {Fri, 02 Sep 2022 10:50:10 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/SongDDGW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of cloud computing and distributed systems, the computer system becomes increasingly complicated and open. To protect the integrity of applications, Integrity Measurement Architecture (IMA) is applied in the Linux kernel. However, traditional operating systems are complex and may contain many potential vulnerabilities. If the sensitive data used in IMA is leaked or modified, the protection mechanism will lose effectiveness. This paper proposes TZ-IMA, a security-enhanced solution to verify the integrity of applications based on ARM TrustZone technology. The system saves the encrypted reference hash value of applications and the encryption key in the normal world and in TrustZone, respectively. Before an application is executed, the integrity of application is checked by the secure world. Moreover, a vPCR module is constructed in TrustZone to protect the security of the measurement list. Based on the trusted anchor provided by TrustZone, TZ-IMA enables a challenger to prove that the attesting platform has sufficient integrity to be used. TZ-IMA is implemented on ARMv8 development board, and the evaluation results demonstrate that the overhead is only approximately 5% compared with the original system.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiLCPW22,
+	author = {Xiaoting Li and
+                  Xiao Liu and
+                  Lingwei Chen and
+                  Rupesh Prajapati and
+                  Dinghao Wu},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {FuzzBoost: Reinforcement Compiler Fuzzing},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {359--375},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_20},
+	doi = {10.1007/978-3-031-15777-6\_20},
+	timestamp = {Sun, 21 Jul 2024 18:16:57 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/LiLCPW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Enforcing the correctness of compilers is important for the current computing systems. Fuzzing is an efficient way to find security vulnerabilities in software by repeatedly testing programs with enormous modified, or fuzzed input data. However, in the context of compilers, fuzzing is challenging because the inputs are pieces of code that are required to be both syntactically and semantically valid to pass front-end checks. Also, the fuzzed inputs are expected to be distinct enough to trigger abnormal crashes, memory leaks, or failing assertions that have not been detected before. In this paper, we formalize compiler fuzzing as a reinforcement learning problem and propose an automatic code synthesis framework called FuzzBoost to empower the input code mutations in the fuzzing process. In our learning system, we incorporate the deep Q-learning algorithm to perform multi-step code mutations in each training episode, and design a reward policy to assess the testing coverage information collected at runtime. By interacting with the system, the fuzzing agent learns to predict code mutation actions that maximizing the fuzzing rewards. We validate the effectiveness of our proposed approach and the preliminary evidence shows that our reinforcement fuzzing method can outperform the fuzzing baseline on production compilers. Our results also show that a pre-trained model can boost the fuzzing process for seed programs with similar patterns.}
+}
+
+
+@inproceedings{DBLP:conf/icics/ChangKCY22,
+	author = {Tzu{-}Hsien Chang and
+                  Yen{-}Ting Kuo and
+                  Jiun{-}Peng Chen and
+                  Bo{-}Yin Yang},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Secure Boolean Masking of Gimli - Optimization and Evaluation on the
+                  Cortex-M4},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {376--393},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_21},
+	doi = {10.1007/978-3-031-15777-6\_21},
+	timestamp = {Fri, 22 Mar 2024 08:50:37 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/ChangKCY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Gimli is a highly secure permutation with high performance across a broad range of platforms. However, side-channel analysis poses a threat to the Gimli without any masking protection. To resist side-channel analysis, the current state of the art of Boolean masking in software proposes an efficient scheme of bitwise logic operations. In practice, a software implementation of masked Gimli may leak information due to pipeline registers and also due to other effects. To avoid unintentional leakage, costly overheads are required, such as more randomness and higher-order share implementation. For our implementation, we present two efficient optimal masked Gimli implementations for the ARM Cortex-M4 on the STM32F407 Discovery(a common Cortex-M4 board) and evaluate their security using TVLA. In 3-shared scenarios, our approach performs with high security with a t-statistic value bounded by a threshold of 4.5 standard deviations, which implies that leakage information cannot be detected. Furthermore, our results promise significant performance improvement for the implementation on Cortex-M processors, with a reduction of the amount of overhead for masking by 61% and 76% for 2 and 3 shared scenarios, respectively.}
+}
+
+
+@inproceedings{DBLP:conf/icics/WangLCYLWL22,
+	author = {Zhi Wang and
+                  Chaoge Liu and
+                  Xiang Cui and
+                  Jie Yin and
+                  Jiaxi Liu and
+                  Di Wu and
+                  Qixu Liu},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {DeepC2: AI-Powered Covert Command and Control on OSNs},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {394--414},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_22},
+	doi = {10.1007/978-3-031-15777-6\_22},
+	timestamp = {Sun, 02 Oct 2022 16:05:05 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/WangLCYLWL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Command and control (C &C) is important in an attack. It transfers commands from the attacker to the malware in the compromised hosts. Currently, some attackers use online social networks (OSNs) in C &C tasks. There are two main problems in the C &C on OSNs. First, the process for the malware to find the attacker is reversible. If the malware sample is analyzed by the defender, the attacker would be exposed before publishing the commands. Second, the commands in plain or encrypted form are regarded as abnormal contents by OSNs, which would raise anomalies and trigger restrictions on the attacker. The defender can limit the attacker once it is exposed. In this work, we propose DeepC2, an AI-powered C &C on OSNs, to solve these problems. For the reversible hard-coding, the malware finds the attacker using a neural network model. The attacker’s avatars are converted into a batch of feature vectors, and the defender cannot recover the avatars in advance using the model and the feature vectors. To solve the abnormal contents on OSNs, hash collision and text data augmentation are used to embed commands into normal contents. The experiment on Twitter shows that command-embedded tweets can be generated efficiently. The malware can find the attacker covertly on OSNs. Security analysis shows it is hard to recover the attacker’s identifiers in advance.}
+}
+
+
+@inproceedings{DBLP:conf/icics/PengSLPLMG22,
+	author = {Hongyi Peng and
+                  Vinay Sachidananda and
+                  Teng Joon Lim and
+                  Rajendra Patil and
+                  Mingchang Liu and
+                  Sivaanandh Muneeswaran and
+                  Mohan Gurusamy},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {{ODDITY:} An Ensemble Framework Leverages Contrastive Representation
+                  Learning for Superior Anomaly Detection},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {417--437},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_23},
+	doi = {10.1007/978-3-031-15777-6\_23},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/PengSLPLMG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ensemble approaches are promising for anomaly detection due to the heterogeneity of network traffic. However, existing ensemble approaches lack applicability and efficiency. We propose ODDITY, a new end-to-end data-driven ensemble framework. ODDITY use Diverse Autoencoders trained on a pre-clustered subset with contrastive representation learning to encourage base-leaners to give distinct predictions. Then, ODDITY combines the extracted features with a supervised gradient boosting meta-learner. Experiments using benchmarking and real-world network traffic datasets demonstrate that ODDITY is superior in terms of efficiency and precision. ODDITY averages 0.8350 AUPRC on benchmarking datasets (10% better than traditional machine learning algorithms and 6% better than the state-of-the-art semi-supervised ensemble method). ODDITY also outperforms the state-of-the-art on real-world datasets regarding better detection accuracy and speed. Moreover, ODDITY is more resilient to evasion attacks and has a promising potential for unsupervised anomaly detection.}
+}
+
+
+@inproceedings{DBLP:conf/icics/AnSG22,
+	author = {Tongjian An and
+                  Xuefei Shui and
+                  Hongkui Gao},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Deep Learning Based Webshell Detection Coping with Long Text and Lexical
+                  Ambiguity},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {438--457},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_24},
+	doi = {10.1007/978-3-031-15777-6\_24},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/AnSG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Webshell is a web page used by hackers for communicating with the web server and network intrusion. To detect webshell, deep learning methods are proposed to automatically extract features and mine semantics from PHP script. Although deep learning methods show a promising perspective, challenges still exist including the challenge of text selection when coping with long PHP script, the challenge of coping with lexical ambiguity in programming language and the challenge of decline of generalization ability to unseen PHPs if training samples are not treated reasonably. To resolve these challenges, we propose a two-stage deep learning webshell detection method. In stage one, a TextRank based sentence-level text selection model is proposed to preserve code semantic via extracting high-value code lines. While in stage two, after the tokenization of selected code lines, a CodeBert based token embedding model is utilized to resolve lexical ambiguity and generate token representation vectors. Down-stream task specified classifier is further utilized to detect webshell and to fine-tune the token embedding model. In training procedure, we split training/validation data set more reasonably to prevent data leakage. Besides, for the additional man labour of disposing false alarm in practical application, an extra large benign PHP data set is utilized for more solid validation. Experiments demonstrate the effectiveness of our method.}
+}
+
+
+@inproceedings{DBLP:conf/icics/XiaWZL22,
+	author = {Fengliang Xia and
+                  Guixing Wu and
+                  Guochao Zhao and
+                  Xiangyu Li},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {SimCGE: Simple Contrastive Learning of Graph Embeddings for Cross-Version
+                  Binary Code Similarity Detection},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {458--471},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_25},
+	doi = {10.1007/978-3-031-15777-6\_25},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/XiaWZL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Binary code similarity detection (BCSD) has many applications in computer security, whose task is to detect the similarity of two binary functions without having access to the source code. Recently deep learning methods have shown better efficiency, accuracy, and potential in BCSD. Most of them reduce losses by the Siamese network, and they ignore some shortcomings of the Siamese network. In this paper, we introduce the idea of contrastive learning into graph neural networks and experimentally demonstrate that the way of training graph models by contrastive learning is significantly better than Siamese. In addition, we found that Principal Neighbourhood Aggregation for Graph Nets (PNA) has the best ability to extract structural information of control flow graph (CFG) among various graph neural networks.}
+}
+
+
+@inproceedings{DBLP:conf/icics/RabhiBP22,
+	author = {Mouna Rabhi and
+                  Spiridon Bakiras and
+                  Roberto Di Pietro},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {{FN2:} Fake News DetectioN Based on Textual and Contextual Features},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {472--491},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_26},
+	doi = {10.1007/978-3-031-15777-6\_26},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/RabhiBP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fake news is a serious concern that has received a lot of attention lately due to its harmful impact on society. In order to limit the spread of fake news, researchers have proposed automated ways to identify fake news articles using artificial intelligence and neural network models. However, existing methods do not achieve a high level of accuracy, which hinders their efficacy in real life. To this end, we introduce FN2 (Fake News detectioN): a novel neural-network based framework that combines both textual and contextual features of the news articles. Among the many unique features of FN2, it utilizes a set of explicit contextual features that are easy to collect and already available in the raw user metadata. To evaluate the accuracy of our classification model, we collected a real dataset from a fact-checking website, comprising over 16 thousand politics-related news articles. Our experimental results show that FN2 improves the accuracy by at least \\(13\\%\\), compared to current state-of-the-art approaches. Moreover, it achieves better classification results than the existing models. Finally, preliminary results also show that FN2 provides a quite good generalization—outperforming competitors—also when applied to a qualitatively different data-set (entertainment news). The novelty of the approach, the staggering quantitative results, its versatility, as well as the discussed open research issues, have a high potential to open up novel research directions in the field.}
+}
+
+
+@inproceedings{DBLP:conf/icics/GaoWP22,
+	author = {Mohan Gao and
+                  Peng Wu and
+                  Li Pan},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Malware Detection with Limited Supervised Information via Contrastive
+                  Learning on {API} Call Sequences},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {492--507},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_27},
+	doi = {10.1007/978-3-031-15777-6\_27},
+	timestamp = {Mon, 03 Mar 2025 18:09:10 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/GaoWP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Malware is a software capable of causing damage to computer systems. Conventional malware detection methods either require feature engineering to extract specific features or require a large amount of labeled data to train an end-to-end deep learning model. Both feature engineering and labelling are laborious. In this paper, we propose a semi-supervised contrastive learning malware detection method based on API call sequences with limited label information, called SCLMD. Specifically, a heterogeneous graph is constructed from API behavior to express the rich relationships among labeled and unlabeled software. After extracting the structural and sequential features of software by two encoders, we adopt the cross-view contrastive learning to obtain the shared and consistent feature of software. A hybrid positive selection strategy is designed to select positive pairs for contrastive learning by the guidance of the limited label information. Experimental results on two real world datasets show that the SCLMD outperforms the baseline methods, especially when the supervised information is limited.}
+}
+
+
+@inproceedings{DBLP:conf/icics/DongWYLCYWBBZKA22,
+	author = {Bo Dong and
+                  Yuhang Wu and
+                  Micheal Yeh and
+                  Yusan Lin and
+                  Yuzhong Chen and
+                  Hao Yang and
+                  Fei Wang and
+                  Wanxin Bai and
+                  Krupa Brahmkstri and
+                  Yimin Zhang and
+                  Chinna Kummitha and
+                  Verma Abhisar},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Semi-supervised Context Discovery for Peer-Based Anomaly Detection
+                  in Multi-layer Networks},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {508--524},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_28},
+	doi = {10.1007/978-3-031-15777-6\_28},
+	timestamp = {Tue, 02 Apr 2024 15:34:50 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/DongWYLCYWBBZKA22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {User-related cyber security attacks could cause tremendous losses to any organization. Detecting such threat can be formulated as anomaly detection problem in multilayer networks where each layer of the multilayer networks contain different contextual information regarding the users. While there have been many works proposed for peer-based anomaly detection, there has been little endeavor in discover the appropriate context (peers) for anomaly detection in multilayer networks. In this paper, we propose a context discovery method, which integrates the relations provided by each individual network layer and detects the anomalous nodes in networks based on the optimized peers of nodes with (or without) limited feedback from cybersecurity experts. The proposed system addresses the frequently encountered challenges when conducting anomaly detection, i.e., feedback sparsity, and the newly emerged challenge associated with multilayer networks, i.e., finding peers of each node based on conflicting information provided by individual layers. The proposed system is capable of capturing the anomalies in multilayer networks and outperforms the widely used peer-based anomaly detection algorithms on both synthetic and real-world sensor network and cybersecurity datasets.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiuSPPMG22,
+	author = {Mingchang Liu and
+                  Vinay Sachidananda and
+                  Hongyi Peng and
+                  Rajendra Patil and
+                  Sivaanandh Muneeswaran and
+                  Mohan Gurusamy},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Peekaboo: Hide and Seek with Malware Through Lightweight Multi-feature
+                  Based Lenient Hybrid Approach},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {525--545},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_29},
+	doi = {10.1007/978-3-031-15777-6\_29},
+	timestamp = {Fri, 02 Sep 2022 10:50:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/LiuSPPMG22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we propose –  Peekaboo  – a multiple feature-based lenient hybrid analysis for malware detection and classification. Our solution uses application programming interface (API) calls and operational codes (opcodes) extracted dynamically and statically as the behavioral features, and uses Recurrent Neural Network (RNN) to model both static and dynamic malicious behaviors. Peekaboo carries out dynamic analysis for a subset of samples, and static analysis for all samples in a large corpus, leading to lenient hybrid analysis. Peekaboo novelty lies in reducing the computational overhead of dynamic analysis but also utilizes multiple features to improve the model performance, making it lightweight and suitable for real-world deployment for malware detection and classification at a large scale. We have conducted multiple sets of experiments by training and evaluating Peekaboo on a large dataset, our results show a 99.67% binary classification (benign vs. malicious) accuracy and 96.30% multi-class classification (classifies samples into malware classes) accuracy with a FPR as low as 0.45%. In comparison with our baseline model, Peekaboo enables us to increase the accuracy for binary classification by more than 1% and 5% in the multi-class setting. In addition, we tested Peekaboo on unseen malware classes, and it improved the accuracy by almost 4% compared to our baseline.}
+}
+
+
+@inproceedings{DBLP:conf/icics/MamunB22,
+	author = {Mohammad Mamun and
+                  Scott Buffett},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {TapTree: Process-Tree Based Host Behavior Modeling and Threat Detection
+                  Framework via Sequential Pattern Mining},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {546--565},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_30},
+	doi = {10.1007/978-3-031-15777-6\_30},
+	timestamp = {Fri, 02 Sep 2022 10:50:10 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/MamunB22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Host behaviour modelling is widely deployed in today’s corporate environments to aid in the detection and analysis of cyber attacks. Audit logs containing system-level events are frequently used for behavior modeling as they can provide detailed insight into cyber-threat occurrences. However, mapping low-level system events in audit logs to high-level behaviors has been a major challenge in identifying host contextual behavior for the purpose of detecting potential cyber threats. Relying on domain expert knowledge may limit its practical implementation. This paper presents TapTree, an automated process-tree based technique to extract host behavior by compiling system events’ semantic information. After extracting behaviors as system generated process trees, TapTree integrates event semantics as a representation of behaviors. To further reduce pattern matching workloads for the analyst, TapTree aggregates semantically equivalent patterns and optimizes representative behaviors. In our evaluation against a recent benchmark audit log dataset (DARPA OpTC), TapTree employs tree pattern queries and sequential pattern mining techniques to deduce the semantics of connected system events, achieving high accuracy for behavior abstraction and then Advanced Persistent Threat (APT) attack detection. Moreover, we illustrate how to update the baseline model gradually online, allowing it to adapt to new log patterns over time.}
+}
+
+
+@inproceedings{DBLP:conf/icics/NoelS22,
+	author = {Steven Noel and
+                  Vipin Swarup},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Dependency-Based Link Prediction for Learning Microsegmentation Policy},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {569--588},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_31},
+	doi = {10.1007/978-3-031-15777-6\_31},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/NoelS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper describes a novel approach for predicting future links in cyber networks and applying the predictions to learn optimal microsegmentation policy rules. While link prediction has been applied for anomaly detection in computer networks, ours is the first application of link prediction for formulating network access policy. Link prediction adds an element of adaptivity for building baseline policy models, by predicting near-term requirements for network access. For predicting new links, those observed by at least one member of a node group are predicted to occur for all other members. This is a novel departure from the usual approach to link prediction, which is based on node affinity rather than shared dependencies. In our experiments with real enterprise network data, our approach significantly outperforms traditional link prediction, in which we apply established formulas for node similarity when comparing affinity-based versus dependency-based edge induction. For robustness to variation in future network behavior, we tune link prediction models by applying a low-pass signal filter to the prediction-quality curve and adaptively blend argmax and center of mass to optimize the prediction sensitivity parameter.}
+}
+
+
+@inproceedings{DBLP:conf/icics/BidehP22,
+	author = {Pegah Nikbakht Bideh and
+                  Nicolae Paladi},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Chuchotage: In-line Software Network Protocol Translation for {(D)TLS}},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {589--607},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_32},
+	doi = {10.1007/978-3-031-15777-6\_32},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/BidehP22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The growing diversity of connected devices leads to complex network deployments, often made up of endpoints that implement incompatible network application protocols. Communication between heterogeneous network protocols was traditionally enabled by hardware translators or gateways. However, such solutions are increasingly unfit to address the security, scalability, and latency requirements of modern software-driven deployments. To address these shortcomings we propose Chuchotage, a protocol translation architecture for secure and scalable machine-to-machine communication. Chuchotage enables in-line TLS interception and confidential protocol translation for software-defined networks. Translation is done in ephemeral, flow-specific Trusted Execution Environments and scales with the number of network flows. Our evaluation of Chuchotage implementing an HTTP to CoAP translation indicates a minimal transmission and translation overhead, allowing its integration with legacy or outdated deployments.}
+}
+
+
+@inproceedings{DBLP:conf/icics/BogdanelBGL22,
+	author = {Georgiana Bogdanel and
+                  Nadia Belghazi{-}Mohamed and
+                  Hilario G{\'{o}}mez{-}Moreno and
+                  Sergio Lafuente{-}Arroyo},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Study on the Effect of Face Masks on Forensic Speaker Recognition},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {608--621},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_33},
+	doi = {10.1007/978-3-031-15777-6\_33},
+	timestamp = {Sat, 30 Sep 2023 09:45:21 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/BogdanelBGL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The COVID-19 pandemic has led to a dramatic increase in the use of face masks. Face masks can affect both the acoustic properties of the signal and the speech patterns and have undesirable effects on automatic speech recognition systems as well as on forensic speaker recognition and identification systems. This is because the masks introduce both intrinsic and extrinsic variability into the audio signals. Moreover, their filtering effect varies depending on the type of mask used. In this paper we explore the impact of the use of different masks on the performance of an automatic speaker recognition system based on Mel Frequency Cepstral Coefficients to characterise the voices and on Support Vector Machines to perform the classification task. The results show that masks slightly affect the classification results. The effects vary depending on the type of mask used, but not as expected, as the results with FPP2 masks are better than those with surgical masks. An increase in speech intensity has been found with the FPP2 mask, which is related to the increased vocal effort made to counteract the effects of hearing loss.}
+}
+
+
+@inproceedings{DBLP:conf/icics/ZhangWY22,
+	author = {Kejun Zhang and
+                  Yuhao Wang and
+                  Xinying Yu},
+	editor = {Cristina Alcaraz and
+                  Liqun Chen and
+                  Shujun Li and
+                  Pierangela Samarati},
+	title = {Video Forensics for Object Removal Based on Darknet3D},
+	booktitle = {Information and Communications Security - 24th International Conference,
+                  {ICICS} 2022, Canterbury, UK, September 5-8, 2022, Proceedings},
+	series = {Lecture Notes in Computer Science},
+	volume = {13407},
+	pages = {622--637},
+	publisher = {Springer},
+	year = {2022},
+	url = {https://doi.org/10.1007/978-3-031-15777-6\_34},
+	doi = {10.1007/978-3-031-15777-6\_34},
+	timestamp = {Sat, 10 Sep 2022 20:58:33 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/ZhangWY22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To address the problems of insufficient analysis of time-domain information of tampered video by 2D convolutional neural networks and the loss of details in the pooling layer when processing frame images, a 3D video object removal tamper detection and localization model based on Darknet53 optimization network is proposed. While the Darknet53 network can fully retain the detail information in the frame, we try to give the two-dimensional Darknet53 network, which can only process spatial information, the ability to process time-domain information, and extend the two-dimensional convolutional layer into a three-dimensional convolutional layer, and also improve the detection efficiency by adjusting the network structure to reduce feature redundancy, making it more suitable for efficient processing of video tampering detection binary classification tasks. A D3D (Darknet3D) network is constructed to improve feature adequacy representation. Experimental results reveal that the temporal domain classification accuracy of the tamper detection model based on the Darknet3D is 98.9%, and the average Intersection over Union of spatial localization and tamper area labeling is 49.7%, which can effectively detect and locate the object removal tampering.}
+}
