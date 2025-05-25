@@ -1,0 +1,434 @@
+@inproceedings{DBLP:conf/icics/ZhangFJ24,
+	author = {Chensheng Zhang and
+                  Tingwei Fan and
+                  Jingwei Jiang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {How to Design Honey Vault Schemes},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {3--24},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_1},
+	doi = {10.1007/978-981-97-8798-2\_1},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/ZhangFJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A password vault encrypts and stores a user’s multiple passwords in a vault, enabling only to remember the master password. A honey vault is a specific type of password vault that yields plausible-looking decoy vaults when the master password is incorrectly guessed. This forces attackers to shift from offline guessings to online verifications. A number of honey vault schemes have been proposed, yet most of the existing schemes have not considered the behavior of attackers in practical scenarios. Accordingly, we provide a system model and a new security metric to capture the attacker’s abilities. When a user registers, a website only allows passwords meeting specific requirements, we call this password creation policies. We reveal that the attacker can use password creation policies to distinguish honey vaults, which brings significant advantages to the attacker. Experimental results show that checking only five passwords can exclude 90% honey vaults. To resist this policy verification attack, we propose that passwords following different creation policies must be processed with different distribution-transforming encoders (DTEs), rather than one common DTE as in previous schemes. To meet this demand, we provide an algorithm that can construct ideal DTEs for any determined password distribution. We believe this work provides new feasible directions for DTE, and contributes to a better understanding of honey vault.}
+}
+
+
+@inproceedings{DBLP:conf/icics/SongXXLY24,
+	author = {Zijian Song and
+                  Jun Xu and
+                  Binwu Xiang and
+                  Weijie Li and
+                  Dingfeng Ye},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {New Result for Breaking {NTRU} Encryption with Multiple Keys in Polynomial
+                  Time},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {25--39},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_2},
+	doi = {10.1007/978-981-97-8798-2\_2},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/SongXXLY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The initial NTRU problem was generally recognised to be intractable, followed by several variants such as the multi-key NTRU problem. Briefly, the problem refers to one generating multiple instances of NTRU public keys \\(\\textbf{h}_i = \\mathbf {{f}}_i/\\mathbf {{g}}\\) from the same denominato \\(\\mathbf {{g}}\\) and different \\(\\mathbf {{f}}_i\\), the task is to recover private keys \\(\\mathbf {{g}}\\) (thus \\(\\mathbf {{f}}_i\\)) through these public key instances \\(\\mathbf {{h}}_i\\). At DCC 2023, Kim et al. proposed the first polynomial time algorithm to solve this problem, which requires N instances in ring \\(\\mathbb {Z}[x]/{(x^{N}-1)}\\). We point out the weaknesses of Kim’s work, that is, the algorithm fails to work due to the impossibility of constructing equations with full rank. Moreover, even with more instances than N, the algorithm is unable to work. Then we propose a new polynomial time algorithm using linearization technique that requires half the number of instances, i.e., \\(\\lceil {\\frac{N}{2}}\\rceil +1\\). With the same parameters as in the work of Kim et al., the time required in the phase of solving equations is only tens of seconds, which indicates that our algorithm is efficient and practical.}
+}
+
+
+@inproceedings{DBLP:conf/icics/HuangLFCS24,
+	author = {Tianrong Huang and
+                  Yingying Li and
+                  Qinggan Fu and
+                  Yincen Chen and
+                  Ling Song},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Improving Differential-Neural Cryptanalysis for Large-State {SPECK}},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {40--57},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_3},
+	doi = {10.1007/978-981-97-8798-2\_3},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/HuangLFCS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {At CRYPTO 2019, Gohr presented a key recovery attack on SPECK32/64 assisted by deep learning. For the shortcoming that this technology cannot be used for large-state block ciphers, Chen\xa0et al. proposed a deep learning-assisted multi-stage key recovery framework in 2022, based on which key recovery attacks on large-state SPECK variants were successfully mounted. In this paper, we propose a parallelizable multi-stage key recovery framework. This framework uses the neural distinguisher trained by a new strategy to reduce the time required for the attack while maintaining the accuracy of key recovery. We conduct key recovery attacks on round-reduced SPECK64/96 and SPECK96/96. The results indicate that our framework significantly reduces the time complexity. Additionally, we train neural distinguishers over more rounds on partial bits by filtering the input differences, including more ciphertext information in training samples, using a stronger neural network and staged train method. Consequently, we obtain a set of neural distinguishers for 7-round SPECK64 and successfully extend the neural network-based key recovery attacks on SPECK64/96 by one round.\n}
+}
+
+
+@inproceedings{DBLP:conf/icics/SugiuraM24,
+	author = {Kou Sugiura and
+                  Mamoru Mimura},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Evasion Attempt for the Malicious PowerShell Detector Considering
+                  Feature Weights},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {58--77},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_4},
+	doi = {10.1007/978-981-97-8798-2\_4},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/SugiuraM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, dependence on digital technology has increased, raising the risk of cyber attacks. Particularly, PowerShell, known for its high convenience, has been exploited by many attackers. Prior research has proposed methods using natural language processing and machine learning to detect malicious PowerShell. On the other hand, there have been reports of the potential for evasion attacks against detectors using machine learning or neural networks. Nevertheless, the assessment of evasion attacks against malicious PowerShell detectors remains inadequate. Particularly, there have been no reported evaluations of evasion attacks targeted at detectors utilizing neural networks. In this study, we examined the feasibility of evasion attacks on models designed for detecting malicious PowerShell using neural networks. We utilized words with high attention weights extracted using the Attention mechanism for benign features. We conducted evasion attempts on models employing Deep Neural Networks (DNN), Convolutional Neural Networks (CNN), Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM), and a combined model of Attention and LSTM. The results showed a decrease in recall rates for all detectors, confirming the possibility of evasion attacks. Furthermore, we observed that the method of inserting words with high attention weights as benign features is more effective than other insertion methods.\n}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiGWLZ24,
+	author = {Jingtao Li and
+                  Bo Gao and
+                  Jianxiong Wan and
+                  Leixiao Li and
+                  Jiaxiang Zhang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {A Fast Framework for Efficiently Constructing Valuable Cubes},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {78--98},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_5},
+	doi = {10.1007/978-981-97-8798-2\_5},
+	timestamp = {Mon, 03 Mar 2025 21:09:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/LiGWLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The cube attack is a powerful technique for attacking symmetric ciphers, of which one of the core parts is the search for good cubes. The construction of candidate cubes targeting linear superpolies, proposed at Asiacrypt 2021 [20], is the dominant strategy for searching good cubes. However, the time spent on constructing candidate cubes increases significantly with initialization rounds on Trivium. To address this issue, we propose a novel framework called fast framework (The source code and data for this paper are available at https://github.com/Elpsys/Fast-Framework.), which enhances the efficiency of constructing candidates and discovers better cubes. The integration of numeric mapping and division property is the core of our framework; they can improve efficiency while guaranteeing accuracy. The proposed method is successfully applied to 830- and 832-round Trivium, both identifying more than 20 valuable cubes whose superpolies contain linear-independent terms and have the potential to be used in further practical key-recovery attacks. The experimental results demonstrated that the efficiency of constructing the mother cube is improved by at least a factor of 9 compared to conventional methods.\n}
+}
+
+
+@inproceedings{DBLP:conf/icics/TaheritajarHR24,
+	author = {Alireza Taheritajar and
+                  Zahra Mahmoudpour Harris and
+                  Reza Rahaeimehr},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {A Survey on Acoustic Side Channel Attacks on Keyboards},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {99--121},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_6},
+	doi = {10.1007/978-981-97-8798-2\_6},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/TaheritajarHR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Most electronic devices utilize keyboards to receive inputs, including sensitive information such as authentication credentials, personal and private data, emails, plans, etc. However, these systems are susceptible to acoustic side-channel attacks. Researchers have successfully developed methods that can extract typed keystrokes from ambient noise. As the prevalence of keyboard-based input systems continues to expand across various computing platforms, and with the improvement of microphone technology, the potential vulnerability to acoustic side-channel attacks also increases. This survey paper thoroughly reviews existing research, explaining why such attacks are feasible, the applicable threat models, and the methodologies employed to launch and enhance these attacks.}
+}
+
+
+@inproceedings{DBLP:conf/icics/FerrarisKK24,
+	author = {Davide Ferraris and
+                  Konstantinos Kotis and
+                  Christos Kalloniatis},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Enhancing TrUStAPIS Methodology in the Web of Things with LLM-Generated
+                  IoT Trust Semantics},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {125--144},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_7},
+	doi = {10.1007/978-981-97-8798-2\_7},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/FerrarisKK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the Internet of Things (IoT) there are ecosystems where their physical ’smart’ entities virtually interact with each other. Often, this interaction occurs among unknown entities, making trust an essential requirement to overcome uncertainty in several aspects of this interaction. However, trust is a complex concept, and incorporating it in IoT is still a challenging topic. For this reason, it is highly significant to specify and model trust in early stages of the System Development Life Cycle (SDLC) of IoT-integrated systems, thus enhancing the aforementioned task. TrUStAPIS is a requirements engineering methodology recently introduced for incorporating trust requirements during IoT-based system design. The scope of this paper is to provide an extension of TrUStAPIS by introducing IoT trust semantics compatible with the W3C Web of Things (WoT) recommendations generated with the assistance of Large Language Models (LLMs). Taking advantage of LLMs as a tool for integrating and refining existing methodologies, in this paper we present our work towards a revision of the TrUStAPIS methodology. In this work, we contribute a new conceptual model and a refined JSON-LD ontology that takes into account IoT trust semantics, providing eventually a valuable tool for software engineers to design and model IoT-based systems and services.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiLF24,
+	author = {Peixi Li and
+                  Xiang Li and
+                  Liming Fang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {{DMA:} Mutual Attestation Framework for Distributed Enclaves},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {145--164},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_8},
+	doi = {10.1007/978-981-97-8798-2\_8},
+	timestamp = {Tue, 01 Apr 2025 19:07:38 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/LiLF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remote attestation is a key mechanism for establishing trust between multiple enclaves that require interaction. Existing approaches establish trust by integrating remote attestation and TLS handshakes with the help of a centralised attestation service. However, such an approach lacks freshness and struggles to overcome advanced network attacks. In addition, over-centralised trust determination cannot satisfy scenarios requiring frequent attestations, even leading to incorrect trust decisions. For this reason, we propose DMA, which provides strong freshness binding of the attestation evidence and uses consensus algorithms to ensure balanced trust across network domains. We implement a prototype to demonstrate the scalability and efficiency resulting from the decentralised design of DMA.}
+}
+
+
+@inproceedings{DBLP:conf/icics/MeiXWL24,
+	author = {Benshan Mei and
+                  Saisai Xia and
+                  Wenhao Wang and
+                  Dongdai Lin},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Cabin: Confining Untrusted Programs Within Confidential VMs},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {165--184},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_9},
+	doi = {10.1007/978-981-97-8798-2\_9},
+	timestamp = {Mon, 03 Mar 2025 21:09:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/MeiXWL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Confidential computing safeguards sensitive computations from untrusted clouds, with Confidential Virtual Machines (CVMs) providing a secure environment for guest OS. However, CVMs often come with large and vulnerable operating system kernels, making them susceptible to attacks exploiting kernel weaknesses. The imprecise control over the read/write access in the page table has allowed attackers to exploit vulnerabilities. The lack of security hierarchy leads to insufficient separation between untrusted applications and guest OS, making the kernel susceptible to direct threats from untrusted programs. This study proposes Cabin, an isolated execution framework within guest VM utilizing the latest AMD SEV-SNP technology. Cabin shields untrusted processes to the user space of a lower virtual machine privilege level (VMPL) by introducing a proxy-kernel between the confined processes and the guest OS. Furthermore, we propose execution protection mechanisms based on fine-gained control of VMPL privilege for vulnerable programs and the proxy-kernel to minimize the attack surface. We introduce asynchronous forwarding mechanism and anonymous memory management to reduce the performance impact. The evaluation results show that the Cabin framework incurs a modest overhead (5% on average) on Nbench and WolfSSL benchmarks.}
+}
+
+
+@inproceedings{DBLP:conf/icics/XieCLLZ24,
+	author = {Yunyang Xie and
+                  Kai Chen and
+                  Shenghui Li and
+                  Bingqian Li and
+                  Ning Zhang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {UARC:Unsupervised Anomalous Traffic Detection with Improved U-Shaped
+                  Autoencoder and RetNet Based Multi-clustering},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {187--207},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_10},
+	doi = {10.1007/978-981-97-8798-2\_10},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/XieCLLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the ongoing advancement of deep learning, modern network intrusion detection systems increasingly favor utilizing deep learning networks to improve their ability to learn traffic characteristics. To address the challenge of obtaining a substantial amount of labeled training data, many intrusion detection systems now focus on unsupervised anomaly detection methods. Despite this shift, researchers still face the daunting task of distinguishing a significant volume of anomalous traffic and dealing with data imbalance. To address these real-world challenges, we introduce UARC, a system capable of achieving unsupervised anomaly traffic detection through multi-clustering. UARC utilizes an enhanced U-shaped autoencoder and a feature fusion method incorporating Masked Retnet to effectively extract spatiotemporal features from network traffic. It combines these techniques with the HDBSCAN algorithm for multi-clustering of traffic, providing a form of reverse guidance for network learning. Experimental results on multiple datasets demonstrate that UARC can cluster various types of traffic with an impressive accuracy rate of up to 97.96%, while achieving a 99.70% AUC value for anomaly detection.}
+}
+
+
+@inproceedings{DBLP:conf/icics/FardSW24,
+	author = {Hamed Fard and
+                  Tobias Schalau and
+                  Gerhard Wunder},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {An Investigation Into the Performance of Non-contrastive Self-supervised
+                  Learning Methods for Network Intrusion Detection},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {208--227},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_11},
+	doi = {10.1007/978-981-97-8798-2\_11},
+	timestamp = {Mon, 03 Mar 2025 21:09:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/FardSW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network intrusion detection, a well-explored cybersecurity field, has predominantly relied on supervised learning algorithms in the past two decades. However, their limitations in detecting only known anomalies prompt the exploration of alternative approaches. Motivated by the success of self-supervised learning in computer vision, there is a rising interest in adapting this paradigm for network intrusion detection. While prior research mainly delved into contrastive self-supervised methods, the efficacy of non-contrastive methods, in conjunction with encoder architectures serving as the representation learning backbone and augmentation strategies that determine what is learned, remains unclear for effective attack detection. This paper compares the performance of five non-contrastive self-supervised learning methods using three encoder architectures and six augmentation strategies. Ninety experiments are systematically conducted on two network intrusion detection datasets, UNSW-NB15 and 5G-NIDD. For each self-supervised model, the combination of encoder architecture and augmentation method yielding the highest average precision, recall, F1-score, and AUCROC is reported. Furthermore, by comparing the best-performing models to two unsupervised baselines, DeepSVDD, and an Autoencoder, we showcase the competitiveness of the non-contrastive methods for attack detection. Code at: https://github.com/renje4z335jh4/non_contrastive_SSL_NIDS}
+}
+
+
+@inproceedings{DBLP:conf/icics/LeeLK24,
+	author = {Ming{-}Chang Lee and
+                  Jia{-}Chun Lin and
+                  Sokratis K. Katsikas},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Impact of Recurrent Neural Networks and Deep Learning Frameworks on
+                  Real-Time Lightweight Time Series Anomaly Detection},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {228--247},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_12},
+	doi = {10.1007/978-981-97-8798-2\_12},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/LeeLK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nReal-time lightweight time series anomaly detection has become increasingly crucial in cybersecurity and many other domains. Its ability to adapt to unforeseen pattern changes and swiftly identify anomalies enables prompt responses and critical decision-making. While several such anomaly detection approaches have been introduced in recent years, they primarily utilize a single type of recurrent neural networks (RNNs) and have been implemented in only one deep learning framework. It is unclear how the use of different types of RNNs available in various deep learning frameworks affects the performance of these anomaly detection approaches due to the absence of comprehensive evaluations. Arbitrarily choosing a RNN variant and a deep learning framework to implement an anomaly detection approach may not reflect its true performance and could potentially mislead users into favoring one approach over another. In this paper, we aim to study the influence of various types of RNNs available in popular deep learning frameworks on real-time lightweight time series anomaly detection. We reviewed several state-of-the-art approaches and implemented a representative anomaly detection approach using well-known RNN variants supported by three widely recognized deep learning frameworks. A comprehensive evaluation is then conducted to analyze the performance of each implementation across real-world, open-source time series datasets. The evaluation results provide valuable guidance for selecting the appropriate RNN variant and deep learning framework for real-time, lightweight time series anomaly detection.}
+}
+
+
+@inproceedings{DBLP:conf/icics/GarneWLZZC24,
+	author = {Amina El Garne and
+                  Yunan Wei and
+                  Yucheng Lin and
+                  Shengnan Zhao and
+                  Chuan Zhao and
+                  Zhenxiang Chen},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Secure and Robust Privacy-Preserving Federated Learning For Heterogeneous
+                  Resource},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {251--270},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_13},
+	doi = {10.1007/978-981-97-8798-2\_13},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/GarneWLZZC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Privacy-preserving federated learning (PPFL) enables users to conduct tasks cooperatively without sharing their private datasets. Under the setting of the single key held by all users, the security of PPFL frameworks is guaranteed under the fragile assumption that none would reveal the key without authentication and data verification. To protect the data integrity, participants who fail to pass verification are required to be excluded from the current training round. In addition, the dynamic update of users with heterogeneous resources incurs severe degradation of the training performance in the FL process. Therefore, we propose a federated learning framework, named Solar Federated Learning (SFL). To protect the users’ privacy, we introduce the BCP cryptosystem to provide a multi-key environment and create a data integrity verification and authentication method based on the bilinear aggregation signature and verifiable secret share. To deal with the impact of the dynamical update under the resource heterogeneity, we design a scheme that enables SFL to tolerate participant dropout during the training while still guaranteeing high accuracy. We evaluated the proposed framework based on the MNIST, Fashion-MNIST, CIFAR-10, and CIFAR-100 datasets. The experimental results indicate the practicality of SFL.}
+}
+
+
+@inproceedings{DBLP:conf/icics/MiaoW24,
+	author = {Weijie Miao and
+                  Wenyuan Wu},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Privacy-Preserving Logistic Regression Model Training Scheme by Homomorphic
+                  Encryption},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {271--291},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_14},
+	doi = {10.1007/978-981-97-8798-2\_14},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/MiaoW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the field of big data, logistic regression for binary and multi-class classification is widely used. Nowadays, there is growing concern about data privacy protection issues. This paper focuses on scenarios involving two parties participating and data being horizontally distributed. Based on homomorphic encryption, a logistic regression model training scheme is designed. This scheme reduces the number of iterations in the training process by using the second-order approximation Newton’s method. It employs the conjugate gradient method to solve the Newton’s method, and introduces a small amount of interaction to reduce ciphertext domain division operations, greatly reducing the computational overhead of the ciphertext domain. Additionally, a new encoding method is used to reduce the number of ciphertext multiplications and communication overhead. Furthermore, the “One-vs-Rest" decomposition strategy is adopted, combined with SIMD(Single Instruction, Multiple Data) technology, extending the binary model to multi-classification. Experimental results show that with the use of Privacy-preserving Logistic Regression scheme (PPLR), for most datasets, setting the number of iterations to within 3 rounds can achieve accuracy comparable to existing privacy protection schemes of 5 to 7 rounds. For sample datasets with 60 and 112 dimensions, existing similar schemes require 90\xa0s and 165\xa0s to complete 5 rounds of iteration, while this scheme only requires 8\xa0s and 27\xa0s. Moreover, the communication overhead is reduced to half of the original scheme, requiring only 30.8MB and 62.7MB to complete training.}
+}
+
+
+@inproceedings{DBLP:conf/icics/SpathoulasKK24,
+	author = {Georgios P. Spathoulas and
+                  Angeliki Katsika and
+                  Georgios Kavallieratos},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Privacy Preserving and Verifiable Outsourcing of {AI} Processing for
+                  Cyber-Physical Systems},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {292--311},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_15},
+	doi = {10.1007/978-981-97-8798-2\_15},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/SpathoulasKK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cyber-physical systems (CPSs) have been used in different domains to enable automation, increase efficiency and effectiveness, and reduce the operational costs of traditional systems. CPSs come with several limitations and requirements that must be considered when designing their application to different domains. Artificial intelligence (AI) can facilitate the optimization of cyber-physical systems’ operation. However, integration of AI functionality into CPS is not easy due to limitations in hardware, software, and flexibility. The main contribution of the present paper is a novel approach for the use of remote AI services in CPSs. By employing zero-knowledge proofs, we protect the privacy of models and data and we can verify the integrity of the operations on the side of the AI service. Our experiments have shown that such an approach is feasible and brings significant offerings, such as verifiable remote AI inference for CPS. Our experiments have shown that currently available zero-knowledge implementations require large proof generation times, which hinder the effective application of remote AI services to real-world CPS.}
+}
+
+
+@inproceedings{DBLP:conf/icics/UlsmagLL24,
+	author = {Benjamin Ulsm{\aa}g and
+                  Jia{-}Chun Lin and
+                  Ming{-}Chang Lee},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Investigating the Privacy Risk of Using Robot Vacuum Cleaners in Smart
+                  Environments},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15056},
+	pages = {312--330},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8798-2\_16},
+	doi = {10.1007/978-981-97-8798-2\_16},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/UlsmagLL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Robot vacuum cleaners have become increasingly popular and are widely used in various smart environments. To improve user convenience, manufacturers also introduced smartphone applications that enable users to customize cleaning settings or access information about their robot vacuum cleaners. While this integration enhances the interaction between users and their robot vacuum cleaners, it results in potential privacy concerns because users’ personal information may be exposed. To address these concerns, end-to-end encryption is implemented between the application, cloud service, and robot vacuum cleaners to secure the exchanged information. Nevertheless, network header metadata remains unencrypted and it is still vulnerable to network eavesdropping. In this paper, we investigate the potential risk of private information exposure through such metadata. A popular robot vacuum cleaner was deployed in a real smart environment where passive network eavesdropping was conducted during several selected cleaning events. Our extensive analysis, based on Association Rule Learning, demonstrates that it is feasible to identify certain events using only the captured Internet traffic metadata, thereby potentially exposing private user information and raising privacy concerns.}
+}

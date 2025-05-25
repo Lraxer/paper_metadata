@@ -1,0 +1,446 @@
+@inproceedings{DBLP:conf/icics/XuXCWYC24,
+	author = {Yuwei Xu and
+                  Zhengxin Xu and
+                  Jie Cao and
+                  Rongrong Wang and
+                  Yali Yuan and
+                  Guang Cheng},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {TorHunter: {A} Lightweight Method for Efficient Identification of
+                  Obfuscated Tor Traffic Through Unsupervised Pre-training},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {3--23},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_1},
+	doi = {10.1007/978-981-97-8801-9\_1},
+	timestamp = {Tue, 04 Mar 2025 20:33:46 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/XuXCWYC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Onion Router (Tor) project has introduced pluggable transport technologies to hide its traffic from AI-based traffic analysis and detection. By adopting re-encryption, random padding, packet splitting, and other methods, these technologies change how Tor traffic looks and is distributed. Current encrypted traffic identification methods are designed for traffic with consistent properties and distributions due to the limitations of traditional supervised learning. They struggle to cope with the frequent changes in Tor traffic introduced by pluggable transport technologies. Inspired by the latest developments in AI, researchers suggest using unsupervised pre-training techniques for identifying encrypted traffic. This innovative approach aims to elevate the model’s generalization capabilities and enhance its performance in handling new types of traffic. However, the existing methods directly used to identify obfuscated Tor traffic still have two shortcomings. First, model fine-tuning and testing are not possible because there is no publicly available dataset containing obfuscated Tor traffic. Second, the existing models have high computational overhead, so they cannot be deployed on network devices with limited resources. Aiming at these shortcomings, we have carried out pioneer work for efficient identification of obfuscated Tor traffic. The novelty of our work lies in two points. First, we have developed an automated obfuscated Tor traffic collection system and constructed a high-quality dataset. Second, we propose TorHunter, a lightweight method for identifying obfuscated Tor traffic based on unsupervised learning. In input representation, TorHunter uses a single-byte encoding strategy to make the vocabulary smaller. It also selects a reasonable length to truncate the input sequence and decrease the number of parameters in the model. In model construction, a header-payload embedding layer is used to focus on key bytes for traffic identification. Additionally, we replace the Transformer with the Linformer to reduce computational overhead. To validate TorHunter, we carried out comparative experiments on two tasks. TorHunter achieves over \\(99\\%\\) accuracy with only 0.79M parameters and 29.9M FLOPs, outperforming 6 state-of-the-art methods.}
+}
+
+
+@inproceedings{DBLP:conf/icics/MengDLD24,
+	author = {Shengzhe Meng and
+                  Chengrui Dang and
+                  Bei Liang and
+                  Jintai Ding},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Two-Round Post-quantum Private Equality Test and {OT} from RLWE-Encryption},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {24--42},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_2},
+	doi = {10.1007/978-981-97-8801-9\_2},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/MengDLD24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This work uses the RLWE-encryption scheme to construct a novel and efficient two-round post-quantum protocol for a private equality test(PET) between two parties. The basic idea of this protocol is that the private key holder can successfully decrypt a ciphertext only when the associated correct public key pair is used for encryption. In the protocol, only half of the public key pair will be published, while two parties will encode their private message to the other half of the public key pair. Leveraging this approach, we expand the protocol into two separate post-quantum two-round 1-out-of-2 Oblivious Transfer (OT) protocols. While prior OT schemes based on Public Key Encryption have significant communication overhead, our protocols provide novel and efficient frameworks for constructing OT from RLWE encryption. Additionally, our protocols are proven to be secure in a semi-honest adversary model, reflecting their robustness for practical post-quantum security applications. Our PET protocol is significantly more efficient than alternatives based on RLWE homomorphic encryption.}
+}
+
+
+@inproceedings{DBLP:conf/icics/GridinM24,
+	author = {Iaroslav Gridin and
+                  Antonis Michalas},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Point Intervention: Improving {ACVP} Test Vector Generation Through
+                  Human Assisted Fuzzing},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {43--62},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_3},
+	doi = {10.1007/978-981-97-8801-9\_3},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/GridinM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automated Cryptographic Validation Protocol (ACVP) is an existing protocol that is used to validate a software or hardware cryptographic module automatically. In this work, we present a system providing the method and tools to produce well-covering tests in ACVP format for cryptographic libraries. The system achieves better coverage than existing fuzzing methods by using a hybrid approach to fuzzing cryptographic primitives. In addition, the system offers a framework that allows to creates easily and securely create testing modules for cryptographic libraries. The work demonstrates how this system has been used to improve automated testing of NSS (Network Security Services), a popular cryptographic library, detect its vulnerabilities and suggest ways to improve and further develop the ACVP test format.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LiFCZLLZ24,
+	author = {Yong Li and
+                  Yueyang Feng and
+                  Xi Chen and
+                  Jian Zhang and
+                  Ruxian Li and
+                  Kewei Lv and
+                  Dawei Zhang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {{FAMC:} Fair and Publicly Auditable Multi-Party Computation with Cheater
+                  Detection},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {63--83},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_4},
+	doi = {10.1007/978-981-97-8801-9\_4},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/LiFCZLLZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Secure multi-party computation (MPC) protocols do not completely prevent malicious parties from cheating. Though numerous researches on cheating detection are proposed, most cheater detection works do not guarantee fairness of the protocol. That is, if the corrupted parties try to violate fairness, the output of the computation can only be obtained by themselves, but not by the honest parties. In this paper, based on the SPDZ framework, we propose a fair secure multi-party computation protocol with honest-majority by using identifiable secret sharing. This protocol can identify corrupted parties during the execution process and prevent them from undermining the fairness of the protocol. In addition, the protocol satisfies publicly auditability, which allows any third party to verify the correctness of the protocol’s output results. The security of the protocol was proved in the universal composability framework. The protocol maintains high online efficiency when no cheating happens. And if corrupted parties try to violate the fairness, honest parties need to expend additional computation to regain the output results of the protocol, but the cost remains within a reasonable range.}
+}
+
+
+@inproceedings{DBLP:conf/icics/CaulfieldRH24,
+	author = {Adam Caulfield and
+                  Nabiha Raza and
+                  Peizhao Hu},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {X-Cipher: Achieving Data Resiliency in Homomorphic Ciphertexts},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {87--106},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_5},
+	doi = {10.1007/978-981-97-8801-9\_5},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/CaulfieldRH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Homomorphic encryption (HE) allows for computations over ciphertexts while they are encrypted. Because of this, HE supports the outsourcing of computation on private data. Due to the additional risks caused by data outsourcing, the ability to recover from losses is essential, but doing so on data encrypted under an HE scheme introduces additional challenges for recovery and usability. This work introduces X-Cipher, which aims to make HE ciphertexts resilient by ensuring they are private and recoverable simultaneously at all stages during data outsourcing. X-Cipher allows data recovery without requiring the decryption of HE ciphertexts and maintains its ability to recover and keep data private when a cluster server has been compromised. X-Cipher allows for reduced ciphertext storage overhead by introducing novel encoding and leveraging previously introduced ciphertext packing. X-Cipher’s capabilities were evaluated on a synthetic dataset to demonstrate that X-Cipher enables secure availability capabilities while enabling privacy-preserving outsourced computations.}
+}
+
+
+@inproceedings{DBLP:conf/icics/XuWW24,
+	author = {Yan Xu and
+                  Li{-}Ping Wang and
+                  Huaxiong Wang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Amortized Functional Bootstrapping for Homomorphic Evaluation of Encrypted
+                  Functions},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {107--127},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_6},
+	doi = {10.1007/978-981-97-8801-9\_6},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/XuWW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Functional bootstrapping is for a cloud server to refresh the error of a ciphertext and homomorphically evaluate a public function f without decryption. Furthermore, in some applications, a cloud server needs to perform functional bootstrapping without knowing f but given a certain encryption of f. Currently, the best amortized asymptotic complexity of the amortized variants of functional bootstrapping is \\(\\tilde{O}(1)\\) per message for a public function. However, there is no amortized algorithm for an encrypted function. In this paper, we propose a novel amortized functional bootstrapping algorithm whether the function f is public or encrypted. Firstly, we extend the amortized homomorphic automorphism technique of LW23 (Liu and Wang, EUROCRYPT 2023) to perform different automorphisms and key switching on multiple ciphertexts simultaneously. Then, by using our extended automorphism technique, we improve the homomorphic inverse number theoretic transform (NTT) technique of Guimarães et al. (ASIACRYPT 2023) to reduce costs. Next, we combine the amortized bootstrapping framework of Micciancio and Sorrell (ICALP 2018) with the above improved inverse NTT technique to construct our amortized functional bootstrapping algorithm whose amortized cost is \\(\\tilde{O}(1)\\). Moreover, the sub-Gaussian parameters of the output errors in our algorithm are \\(\\tilde{O}(E N^{9.375})\\) where N is the number of input ciphertexts and E is the sub-Gaussian parameter of the errors of bootstrapping keys, and thus they are independent of f. In particular, they are reduced by a factor of \\(\\tilde{O}(|f(x)|N^{28.625})\\) for any public function f, compared with the work of Liu and Wang (ASIACRYPT 2023).}
+}
+
+
+@inproceedings{DBLP:conf/icics/HuangWZACZZ24,
+	author = {Hao Huang and
+                  Xiaofen Wang and
+                  Ke Zhang and
+                  Man Ho Au and
+                  Sheng Cao and
+                  Qinglin Zhao and
+                  Xiaosong Zhang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Tightly Secure Linearly Homomorphic Signature Schemes for Subspace
+                  Under {DL} Assumption in {AGM}},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {128--148},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_7},
+	doi = {10.1007/978-981-97-8801-9\_7},
+	timestamp = {Mon, 05 May 2025 07:56:11 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/HuangWZACZZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Linearly homomorphic signature (LHS) allows to perform any linear combination on the already signed vectors so that it is widely applied in various scenarios. Unfortunately, the existing LHS schemes do not have tight security proof based on the hardest problem in the cyclic group setting, namely, the discrete logarithm (DL) problem, and they all rely on computationally expensive pairing operations over bilinear groups. Recently, the proposal of the algebraic group model (AGM) enables some ordinary signature schemes to be tightly reduced to the DL problem. However, it remains unknown whether LHS schemes can be proven as secure as the DL problem in the AGM. In this paper, we revisit the security of Boneh’s LHS scheme and first give a tight security proof under the DL assumption in the AGM. To improve computational efficiency, we propose a pairing-free linearly homomorphic signature (PF-LHS) scheme and a map-to-point hash function-free linearly homomorphic signature (MF-LHS) scheme, and the latter is given a tight security proof under the DL assumption in the AGM. Finally, the efficiency comparisons show that both our PF-LHS scheme and MF-LHS scheme are computationally efficient.}
+}
+
+
+@inproceedings{DBLP:conf/icics/PengWWGWDLG24,
+	author = {Yijing Peng and
+                  Junhui Wang and
+                  Zhenyu Wang and
+                  Zhenbin Guo and
+                  Yaohua Wang and
+                  Ding Deng and
+                  Shaoqing Li and
+                  Yang Guo},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {CoDPoC {IP:} {A} Configurable Data Protection Circuit to Support Multiple
+                  Key Agreement Scheme},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {151--170},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_8},
+	doi = {10.1007/978-981-97-8801-9\_8},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/PengWWGWDLG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Physical Unclonable Function(PUF)-based security protocols are effective in mitigating various security threats, including eavesdropping, interception, and cloning. Nevertheless, most existing protocols are implemented in software, with the primary drawback being their inability to integrate with actual PUF and their inefficiency. Although some strategies incorporate PUF into their design, these systems do not allow for configuration changes and are deficient in flexibility. In this paper, we propose the CoDPoC IP, a configurable data protection circuit that supports PUF-based various key agreement authentication schemes and allows for flexible scheme design adjustments through configurable registers. The CoDPoC IP offers two advantages: 1) hardware-level implementation incorporates PUF, leading to higher resource utilization, efficiency, and security; and 2) the IP supports flexible configuration of schemes. Experimental results indicate that the hardware execution time is 0.03504 milliseconds. The proposed scheme is successfully implemented and verified with low-overhead hardware.\n}
+}
+
+
+@inproceedings{DBLP:conf/icics/SivaramanNJ24,
+	author = {Navya Sivaraman and
+                  Simin Nadjm{-}Tehrani and
+                  Thomas Johansson},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Formal Analysis of Julia Key Agreement Protocol},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {171--190},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_9},
+	doi = {10.1007/978-981-97-8801-9\_9},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/SivaramanNJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The evolution of the fifth-generation network (5G) increases the demand and use of Internet of Things (IoT) devices extensively. The increased number of IoT devices increases the possibility of new attack surfaces, and thus even resource-constrained IoT devices need secure communication. In this work, we consider the Julia Key Agreement (JKA) protocol, which has been proposed as a secure and efficient protocol for communication among resource-constrained IoT devices. We formally model two variants of the JKA protocol and verify the intended security requirements, such as mutual authentication, forward secrecy, backward secrecy, and resilience to key impersonation attacks, using the Tamarin prover. Our formal analysis shows that the JKA protocol is susceptible to replay attacks under the Dolev-Yao threat model. We also expand the threat model by including several strong threat assumptions to discover interesting attack vectors.}
+}
+
+
+@inproceedings{DBLP:conf/icics/YangZ24,
+	author = {Yang Yang and
+                  Fangguo Zhang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {New Construction of Code-Based Signature Schemes},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {191--210},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_10},
+	doi = {10.1007/978-981-97-8801-9\_10},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/YangZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we present a novel approach to construct code-based digital signature schemes. Our focus is on addressing the efficiency issues stemming from the low proportion of decodable syndromes in classical CFS signature scheme. To overcome this challenge, we introduce a well-defined syndrome subspace wherein all syndromes can be efficiently decoded. Additionally, our scheme differs from traditional code-based approaches by employing a novel method for constructing public and private keys, replacing permutation matrices with invertible matrices. This transformation yields a public key matrix that is statistically indistinguishable from a random matrix. We demonstrate that our scheme achieves existential unforgeability under an adaptive chosen message attack (EUF-CMA) in the random oracle model. Comparative analysis against other code-based signature schemes, such as Wave and Enhanced pqsigRM, reveals significant advantages in both public key and signature sizes. Furthermore, compared to the three post-quantum signature schemes (Crystals-Dilithium, Falcon, and Sphincs\\(+\\)) selected as finalists by NIST PQC, our scheme still maintains a significant advantage in terms of signature size.}
+}
+
+
+@inproceedings{DBLP:conf/icics/LuoCSH24,
+	author = {Pingbin Luo and
+                  Xinjian Chen and
+                  Willy Susilo and
+                  Qiong Huang},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Identity-Based Signature from Lattices Without Trapdoors},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {211--230},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_11},
+	doi = {10.1007/978-981-97-8801-9\_11},
+	timestamp = {Mon, 03 Mar 2025 21:09:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/LuoCSH24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Currently, the majority of lattice-base identity-based signature (LB-IBS) schemes rely on lattice trapdoor technique introduced by Gentry, Peikert, and Vaikuntanathan. However, this approach significantly impacts computational efficiency. In light of this, we present an alternative method for constructing LB-IBS that does not rely on lattice trapdoors and preimage sampling function. We construct an IBS scheme by employing Lyubashevsky’s signature twice, which is essentially a public key delegation from concatenated Schnorr signatures. In order to optimize the signature size, we describe an adaptation of our scheme in module lattices setting and compression technique. Moreover, our new LB-IBS can combine with Dilithium naturally so that it could carry the advantages of the latter such as side-channel attacks protection. We demonstrate that our construction is provably secure against existential forgery on adaptively chosen message and identity attacks in random oracle model. In comparison with the most efficient LB-IBS scheme (to the best of our knowledge), the signature size of our scheme is 52% smaller and runtime of our scheme is up to 32% faster.}
+}
+
+
+@inproceedings{DBLP:conf/icics/CherryBS24,
+	author = {Ali Cherry and
+                  Konstantinos Barmpis and
+                  Siamak F. Shahandashti},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {The Emperor is Now Clothed: {A} Secure Governance Framework for Web
+                  User Authentication Through Password Managers},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {233--252},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_12},
+	doi = {10.1007/978-981-97-8801-9\_12},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/CherryBS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Existing approaches to facilitate the interaction between password managers and web applications fall short of providing adequate functionality and mitigation strategies against prominent attacks. HTML Autofill is not sufficiently expressive, Credential Management API does not support browser extension password managers, and other proposed solutions do not conform to established user mental models. In this paper, we propose Berytus, a browser-based governance framework that mediates the interaction between password managers and web applications. Two APIs are designed to support Berytus acting as an orchestrator between password managers and web applications. An implementation of the framework in Firefox is developed that fully supports registration and authentication processes. As an orchestrator, Berytus is able to authenticate web applications and facilitate authenticated key exchange between web applications and password managers, which as we show, can provide effective mitigation strategies against phishing, cross-site scripting, inline code injection (e.g., by a malicious browser extension), and TLS proxy in the middle attacks, whereas existing mitigation strategies such as Content Security Policy and credential tokenisation are only partially effective. The framework design also provides desirable functional properties such as support for multi-step, multi-factor, and custom authentication schemes. We provide a comprehensive security and functionality evaluation and discuss possible future directions.}
+}
+
+
+@inproceedings{DBLP:conf/icics/FanYLQL24,
+	author = {Wenjun Fan and
+                  Zichen Yang and
+                  Yuanzhen Liu and
+                  Lang Qin and
+                  Jia Liu},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {HoneyLLM: {A} Large Language Model-Powered Medium-Interaction Honeypot},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {253--272},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_13},
+	doi = {10.1007/978-981-97-8801-9\_13},
+	timestamp = {Sat, 25 Jan 2025 23:07:01 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/FanYLQL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Honeypot is a sort of deception defense tool and deliberately created for capturing malicious behaviors. The trade-off between security risk and data availability often incurs arduous efforts. Since a high-interaction honeypot (HIH) can capture much deeper system-level data while it has to disclose the full operating system, which absolutely leads to a higher security risk. In contrast, a low-/medium-interaction honeypot (LIH/MIH) revealing empty or camouflaged services has a lower security risk while it can only capture network-level data such as port scanning, access attempts, etc. To tackle this issue, this paper proposes a large language model (LLM) powered medium-interaction honeypot system, termed HoneyLLM, which aims to provide an authentic shell based on LLM rather than a real operating system to spoof the attacker to be fully engaged with the “request-response” message interaction and leave useful data. A proof-of-concept system has been created and deployed for capturing real-world attacks. Our experiments demonstrate that this system outperforms traditional honeypots in effectiveness. HoneyLLM can capture not only network activities as LIH/MIH, but also delve deeper by capturing system activities, like HIH, providing a more complete picture of attacker activity. Despite the limited current exploration of LLMs for authentic response creation for honeypot (at the time of writing, 2024 May 4th), this research signifies a breakthrough in leveraging LLM for more deceptive and dynamic cyber defense mechanisms.}
+}
+
+
+@inproceedings{DBLP:conf/icics/CuiL24,
+	author = {Bo Cui and
+                  Shuai Liu},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {TSR-Jack: An In-Browser Crypto-Jacking Detection Method Based on Time
+                  Series Representation Learning},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {273--288},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_14},
+	doi = {10.1007/978-981-97-8801-9\_14},
+	timestamp = {Thu, 09 Jan 2025 20:21:42 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/CuiL24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As the economic value of cryptocurrencies continues to ascend, an increasing number of cybercriminals exploit malicious browser scripts to commandeer the system and network resources of victims for unauthorized cryptocurrency mining. This form of browser-based mining, termed crypto-jacking, imparts substantial impact and harm to society, enterprises, and users. However, existing research methods lead to poor transferability because they require model training using labeling data from detection devices. To solve this problem, we introduce a crypto-jacking detection method based on time series representation learning, called TSR-jack. Specifically, we first collect hardware runtime system data for a period of time and generate datasets. After slicing the time series datasets, they are used to train a time series representation model, which introduces the loss of temporal information to extract temporal features. The temporal features can capture similarities between different devices and therefore address model transfer difficulties. Finally, the time vectors obtained from representation learning are fed into SVM for classification. Experimental results show that our TSR-jack method outperforms similar dynamic feature detection methods, especially when considering transferability, with a precision improvement of more than 5%.\n}
+}
+
+
+@inproceedings{DBLP:conf/icics/YangYYWYC24,
+	author = {Ke Yang and
+                  Shuguang Yuan and
+                  Jing Yu and
+                  Yuyang Wang and
+                  Tengfei Yang and
+                  Chi Chen},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {Don't Abandon the Primary Key: {A} High-Synchronization and Robust
+                  Virtual Primary Key Scheme for Watermarking Relational Databases},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {289--309},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_15},
+	doi = {10.1007/978-981-97-8801-9\_15},
+	timestamp = {Tue, 01 Apr 2025 19:07:38 +0200},
+	biburl = {https://dblp.org/rec/conf/icics/YangYYWYC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A relational database is an infrastructure that manages and shares structured data. To safeguard the copyrights of data within such databases, database watermarking is an effective technique. Most watermarking schemes rely on the primary key (PK) to locate and embed watermarks, which preserves high watermark synchronization during detection. However, these schemes become invalid once PK is erased or changed. To avoid this vulnerability, virtual primary key (VPK) schemes are proposed to replace PK. Nevertheless, duplicate values in virtual primary keys compromise synchronization. Besides, current VPK schemes fail to utilize the primary key, even when it remains unchanged. This strategy decreases detection accuracy in many cases. In addition, we find an attribute name attack. It is a common challenge of existing watermarking schemes, which distort the link between detected attributes and watermarked attributes. In this paper, we propose a high-synchronization and robust VPK scheme. It introduces a classifier to maintain the original order and number of attributes to resist attribute name attacks. To resist primary key erasure or change and mitigate synchronization problems, it generates distinct virtual primary keys. Moreover, to improve detection accuracy, our watermarking scheme integrates the primary key when it remains unchanged. Experiments demonstrate that our scheme achieves high watermark synchronization. It is robust against various attacks, even when 98% of tuples or over half of the attributes are distorted. It is also practical in terms of data distortion and overhead.}
+}
+
+
+@inproceedings{DBLP:conf/icics/XinWDLLS24,
+	author = {Mingfeng Xin and
+                  Hui Wen and
+                  Liting Deng and
+                  Hong Li and
+                  Qiang Li and
+                  Limin Sun},
+	editor = {Sokratis K. Katsikas and
+                  Christos Xenakis and
+                  Christos Kalloniatis and
+                  Costas Lambrinoudakis},
+	title = {FirmPorter: Porting RTOSes at the Binary Level for Firmware Re-hosting},
+	booktitle = {Information and Communications Security - 26th International Conference,
+                  {ICICS} 2024, Mytilene, Greece, August 26-28, 2024, Proceedings, Part
+                  {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15057},
+	pages = {310--331},
+	publisher = {Springer},
+	year = {2024},
+	url = {https://doi.org/10.1007/978-981-97-8801-9\_16},
+	doi = {10.1007/978-981-97-8801-9\_16},
+	timestamp = {Mon, 13 Jan 2025 08:06:40 +0100},
+	biburl = {https://dblp.org/rec/conf/icics/XinWDLLS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid growth of the Industrial Internet of Things (IIoT) has brought real-time operating system (RTOS) into focus as major targets for both security analysts and malicious adversaries. Due to the non-standard hardware and diverse software, embedded RTOS devices present unique challenges to security analysts for the accurate analysis of firmware binaries. The diversity in hardware components and tight coupling between firmware and hardware makes it hard to perform dynamic analysis, which must have the ability to execute firmware code in virtualized environments. However, emulating the large expanse of hardware peripherals makes analysts have to frequently modify the emulator for executing various firmware code in different virtualized environments, which greatly limits the ability of analysis. In this work, we explore the problem of firmware re-hosting related to the RTOS. A device driver is developed by developers so that RTOS can be run on their platform. By providing alternative implementations for device drivers, we can make minimal modifications to the firmware that is to be migrated from its original hardware environment into a virtualized one. We show that an approach is capable of offering the ability to emulate various RTOS firmware in an automated manner without modifying existing emulators. Our approach, called static binary-level driver porting, first locates device driver initialization function and identify driver types in the target firmware, then adapts pre-built drivers to the existing emulator hardware. Finally, it replaces the drivers in the firmware with ours by utilizing binary rewriting technique. We demonstrate the practicality of the proposed method on multiple hardware platforms and firmware samples for security analysis. The results show that the approach is flexible enough to emulate firmware for vulnerability assessment and exploit development.}
+}
