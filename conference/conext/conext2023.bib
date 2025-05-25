@@ -1,410 +1,554 @@
-@inproceedings{DBLP:conf/conext/Anand0SD23,
-	author = {Aniket Anand and
-                  Michalis Kallitsis and
-                  Jackson Sippe and
-                  Alberto Dainotti},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Aggressive Internet-Wide Scanners: Network Impact and Longitudinal
-                  Characterization},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {1--8},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/MelliaSQB23,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
+                  Lili Qiu and
+                  Olivier Bonaventure},
+	title = {{PACMNET} V1, N1, June 2023 Editorial},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT1},
+	pages = {1:1},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630583},
-	doi = {10.1145/3624354.3630583},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/Anand0SD23.bib},
+	url = {https://doi.org/10.1145/3595287},
+	doi = {10.1145/3595287},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQB23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Aggressive network scanners, i.e., ones with immoderate and persistent behaviors, ubiquitously search the Internet to identify insecure and publicly accessible hosts. These scanners generally lie within two main categories; i) benign research-oriented probers; ii) nefarious actors that forage for vulnerable victims and host exploitation. However, the origins, characteristics and the impact on real networks of these aggressive scanners are not well understood. In this paper, via the vantage point of a large network telescope, we provide an extensive longitudinal empirical analysis of aggressive IPv4 scanners that spans a period of almost two years. Moreover, we examine their network impact using flow and packet data from two academic ISPs. To our surprise, we discover that a non-negligible fraction of packets processed by ISP routers can be attributed to aggressive scanners. Our work aims to raise the network community's awareness for these ''heavy hitters'', especially the miscreant ones, whose invasive and rigorous behavior i) makes them more likely to succeed in abusing the hosts they target and ii) imposes a network footprint that can be disruptive to critical network services by incurring consequences akin to denial of service attacks.}
+	abstract = {We are very excited to introduce the first issue of the ACM Proceedings of the ACM on Networking (PACMNET) journal. The Proceedings of the ACM series presents the highest-quality research conducted in diverse areas of computer science, as represented by the ACM Special Interest Groups (SIGs). PACMNET focuses on contributions presenting significant and novel research results on emerging computer networks and their applications. PACMNET was created to collect top-quality scholarly articles in the area of computer networking. PACMNET encourages submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board.bWe started working on PACMNET in 2019, with the idea of having a new journal that guarantees both a fast publication time and a very rigorous and constructive review process. The creation of PACMNET was done with the enthusiastic support of the ACM SIGCOMM community, and it will be especially attractive for networking researchers from regions where conference publications are no valued.}
 }
 
 
-@inproceedings{DBLP:conf/conext/BartolomeoCSM23,
-	author = {Giovanni Bartolomeo and
-                  Jacky Cao and
-                  Xiang Su and
-                  Nitinder Mohan},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Characterizing Distributed Mobile Augmented Reality Applications at
-                  the Edge},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {9--18},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/ZhangLLL0L23,
+	author = {Zhehui Zhang and
+                  Yanbing Liu and
+                  Qianru Li and
+                  Zizheng Liu and
+                  Chunyi Peng and
+                  Songwu Lu},
+	title = {Dependent Misconfigurations in 5G/4.5G Radio Resource Control},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT1},
+	pages = {2:1--2:20},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630584},
-	doi = {10.1145/3624354.3630584},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/BartolomeoCSM23.bib},
+	url = {https://doi.org/10.1145/3595288},
+	doi = {10.1145/3595288},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ZhangLLL0L23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Mobile Augmented Reality (AR) is gaining traction as a compelling application due to recent advancements in hardware and software. Previous studies have suggested that distributing AR services on an edge computing infrastructure can offer significant performance benefits, especially for consolidating concurrent clients. In this study, we shed light on several research challenges directly impacting the effective integration of distributed AR and edge computing. Specifically, we conduct extensive experiments by deploying our distributed stream processing-based AR pipeline, scAtteR, on a representative edge-cloud infrastructure managed by the Oakestra framework. We uncover several unapparent challenges that inhibit the effective marriage of distributed AR when deployed on edge and demonstrate the potential improvements through scAtteR++. We offer valuable insights and best practices to the growing AR research community, specifically those interested in leveraging edge and public cloud technologies for large-scale AR operations.}
+	abstract = {In this paper, we study an important, yet unexplored problem of configuration dependencies in 5G/4.5G radio resource control (RRC). Different from the previous studies in 3G/4G networks, 5G/4.5G allows more than one cells to serve a mobile device, resulting in more configuration dynamics and complexity that vary with all the serving cells. We analyze inter-dependency among configurations, categorize dependent misconfigurations, uncover their root causes, and quantify negative performance impacts. Specifically, we formulate configuration updates into a delta state machine (DSM) and unveil two types of dependent misconfigurations among states (inter-state) and within a state (intra-state); They stem from structural dependency and cross-parameter dependency. We further show that such misconfigurations incur service disruption and performance degradation. Our findings have been largely validated with three US operators and one Chinese operator; Our study has uncovered 644 instances of problematic dependencies.}
 }
 
 
-@inproceedings{DBLP:conf/conext/SosnowskiWHSSGC23,
-	author = {Markus Sosnowski and
-                  Florian Wiedner and
-                  Eric Hauser and
-                  Lion Steger and
-                  Dimitrios Schoinianakis and
-                  Sebastian Gallenm{\"{u}}ller and
-                  Georg Carle},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {The Performance of Post-Quantum {TLS} 1.3},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {19--27},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/HarshMAG23,
+	author = {Vipul Harsh and
+                  Tong Meng and
+                  Kapil Agrawal and
+                  Philip Brighten Godfrey},
+	title = {Flock: Accurate Network Fault Localization at Scale},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT1},
+	pages = {3:1--3:22},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630585},
-	doi = {10.1145/3624354.3630585},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/SosnowskiWHSSGC23.bib},
+	url = {https://doi.org/10.1145/3595289},
+	doi = {10.1145/3595289},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HarshMAG23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Quantum Computers (QCs) differ radically from traditional computers and can efficiently solve mathematical problems fundamental to our current cryptographic algorithms. Although existing QCs need to accommodate more qubits to break cryptographic algorithms, the concern of ''Store-Now-Decrypt-Later'' (i.e., adversaries store encrypted data today and decrypt them once powerful QCs become available) highlights the necessity to adopt quantum-safe approaches as soon as possible. In this work, we investigate the performance impact of Post-Quantum Cryptography (PQC) on TLS 1.3. Different signature algorithms and key agreements (as proposed by the National Institute of Standards and Technology (NIST)) are examined through black- and white-box measurements to get precise handshake latencies and computational costs per participating library. We emulated loss, bandwidth, and delay to analyze constrained environments. Our results reveal that HQC and Kyber are on par with our current state-of-the-art, while Dilithium and Falcon are even faster. We observed no performance drawback from using hybrid algorithms; moreover, on higher NIST security levels, PQC outperformed any algorithm in use today. Hence, we conclude that post-quantum TLS is suitable for adoption in today's systems.}
+	abstract = {Inferring the root cause of failures among thousands of components in a data center network is challenging, especially for "gray" failures that are not reported directly by switches. Faults can be localized through end-to-end measurements, but past localization schemes are either too slow for large-scale networks or sacrifice accuracy. We describe Flock, a network fault localization algorithm and system that achieves both high accuracy and speed at datacenter scale. Flock uses a probabilistic graphical model (PGM) to achieve high accuracy, coupled with new techniques to dramatically accelerate inference in discrete-valued Bayesian PGMs. Large-scale simulations and experiments in a hardware testbed show Flock speeds up inference by >10000x compared to past PGM methods, and improves accuracy over the best previous datacenter fault localization approaches, reducing inference error by 1.19-11x on the same input telemetry, and by 1.2-55x after incorporating passive telemetry. We also prove Flock\'s inference is optimal in restricted settings.}
 }
 
 
-@inproceedings{DBLP:conf/conext/HuetKNC023,
-	author = {Alexis Huet and
-                  Jonatan Krolikowski and
-                  Jos{\'{e}} Manuel Navarro and
-                  Fuxing Chen and
-                  Dario Rossi},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Change Point Detection in WLANs with Random {AP} Forests},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {29--36},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/HilalG23,
+	author = {Fahad Hilal and
+                  Oliver Gasser},
+	title = {Yarrpbox: Detecting Middleboxes at Internet-Scale},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT1},
+	pages = {4:1--4:23},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630587},
-	doi = {10.1145/3624354.3630587},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/HuetKNC023.bib},
+	url = {https://doi.org/10.1145/3595290},
+	doi = {10.1145/3595290},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HilalG23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Troubleshooting WiFi networks is knowingly difficult due to the variability of the wireless medium. Complementary to existing works that focus on detecting short-term fluctuations of radio signals (i.e., anomalies), we tackle the problem of reliably detecting long-term changes in statistical properties of WiFi networks. We propose a new method to reliably gain insights on such environmental changes, which we refer to as Random Access Point Forest (RAPF). RAPF identifies the changes from a forest of individual learners, each of them consisting of a random tree approximating the signal of a specific pair of APs. The biased selection of APs in a distributed manner along with the stochastic construction of each individual tree ensure its robustness to noise and biases. We conduct a measurement campaign on a real WLAN by collecting the path loss among pairs of APs in a network for which labels are available and perform an extensive comparison of our methodology against state-of-the-art change point methodologies, which conclusively shows RAPF to yield the most robust detection capabilities.}
+	abstract = {The end-to-end principle is one of the foundations of the original Internet architecture. This principle is put to the test by middleboxes, i.e., devices which change important parts of a packet in transit. Middleboxes can have beneficial effects, such as a lower handshake time, but also make it more difficult to deploy newly developed protocols, such as TLS 1.3 and QUIC. Therefore, it is important to have a good understanding of the middlebox ecosystem in the Internet. In this paper, we present results from a multi-faceted middlebox analysis study. We develop Yarrpbox, a tool to efficiently perform middlebox detection measurements on an Internet-scale. With Yarrpbox, we perform IPv4-wide middlebox detection and find that nearly 10% of paths are affected by a total of 5.8k middlebox devices. We perform the first IPv6 study to date, uncovering a lower prevalence of middleboxes in IPv6. Moreover, we show that the location of a vantage point can have an effect on the results, leading to up to 600 more detected middleboxes. Additionally, we characterize middleboxes by mapping them to vendors and resolving aliases. Finally, we release Yarrpbox as open-source software and make data and analysis code publicly available.}
 }
 
 
-@inproceedings{DBLP:conf/conext/TanveerPSBN23,
-	author = {Hammas Bin Tanveer and
-                  Mike Puchol and
-                  Rachee Singh and
-                  Antonio Bianchi and
-                  Rishab Nithyanand},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Making Sense of Constellations: Methodologies for Understanding Starlink's
-                  Scheduling Algorithms},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {37--43},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/MelliaSQB23a,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
+                  Lili Qiu and
+                  Olivier Bonaventure},
+	title = {{PACMNET} V1, CoNEXT2, September 2023 Editorial},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT2},
+	pages = {5:1},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630586},
-	doi = {10.1145/3624354.3630586},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/TanveerPSBN23.bib},
+	url = {https://doi.org/10.1145/3609420},
+	doi = {10.1145/3609420},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQB23a.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Starlink constellations are currently the largest LEO WAN and have seen considerable interest from the research community. In this paper, we use high-frequency and high-fidelity measurements to uncover evidence of hierarchical traffic controllers in Starlink -- a global controller which allocates satellites to terminals and an on-satellite controller that schedules transmission of user flows. We then devise a novel approach for identifying how satellites are allocated to user terminals. Using data gathered with this approach, we measure the characteristics of the global controller and identify the factors that influence the allocation of satellites to terminals. Finally, we use this data to build a model which approximates Starlink's global scheduler. Our model is able to predict the characteristics of the satellite allocated to a terminal at a specific location and time with reasonably high accuracy and at a rate significantly higher than baseline.}
+	abstract = {The Proceedings of the ACM series present the highest-quality research conducted in diverse areas of computer science, as represented by the ACM Special Interest Groups (SIGs). PACMNET focuses on contributions presenting significant and novel research results on emerging computer networks and their applications. PACMNET collects top-quality scholarly articles in the area of computer networking.We encourage submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board.}
 }
 
 
-@inproceedings{DBLP:conf/conext/0001ZZVM0Z23,
-	author = {Bin Hu and
-                  Xumiao Zhang and
-                  Qixin Zhang and
-                  Nitin Varyani and
-                  Z. Morley Mao and
-                  Feng Qian and
-                  Zhi{-}Li Zhang},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {{LEO} Satellite vs. Cellular Networks: Exploring the Potential for
-                  Synergistic Integration},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {45--51},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/LendersAGNSW23,
+	author = {Martine S. Lenders and
+                  Christian Ams{\"{u}}ss and
+                  Cenk G{\"{u}}ndogan and
+                  Marcin Nawrocki and
+                  Thomas C. Schmidt and
+                  Matthias W{\"{a}}hlisch},
+	title = {Securing Name Resolution in the IoT: {DNS} over CoAP},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT2},
+	pages = {6:1--6:25},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630588},
-	doi = {10.1145/3624354.3630588},
-	timestamp = {Thu, 21 Dec 2023 15:38:27 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/0001ZZVM0Z23.bib},
+	url = {https://doi.org/10.1145/3609423},
+	doi = {10.1145/3609423},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LendersAGNSW23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Low-Earth-Orbit (LEO) satellite networks, such as Starlink, are transforming global network connectivity by bringing Internet access to remote and underserved areas. However, the current coverage and performance of the LEO satellite network service compared with those of cellular networks are under-explored. In this work, we present a measurement study of the Starlink LEO satellite network in comparison with cellular networks, aiming to uncover the potential for synergistic integration. Through a large-scale data collection campaign and in-depth analysis, we (1) identify the performance characteristics of two Starlink configurations, (2) evaluate the coverage of the current Starlink deployment compared to major cellular carriers, and (3) investigate the potential benefits of enabling multipath using both LEO satellite and cellular networks.}
+	abstract = {In this paper, we present the design, implementation, and analysis of DNS over CoAP~(DoC), a new proposal for secure and privacy-friendly name resolution of constrained IoT devices. We implement different design choices of DoC in RIOT, an open-source operating system for the IoT, evaluate performance measures in a testbed, compare with DNS over UDP and DNS over DTLS, and validate our protocol design based on empirical DNS IoT data. Our findings indicate that plain DoC is on par with common DNS solutions for the constrained IoT but significantly outperforms when additional standard features of CoAP are used such as caching. With OSCORE, we can save more than 10 kBytes of code memory compared to DTLS, when a CoAP application is already present, and retain the end-to-end trust chain with intermediate proxies, while leveraging features such as group communication or encrypted en-route caching. We also discuss a compression scheme for very restricted links that reduces data by up to 70%.}
 }
 
 
-@inproceedings{DBLP:conf/conext/WangSZXSZ23,
-	author = {Yanwei Wang and
-                  Dongdong Su and
-                  Qianqian Zhao and
-                  Linge Xiao and
-                  Yanmei Shen and
-                  Kefeng Zhu},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: {A} Fast, Scalable, and Energy-efficient Edge Acceleration
-                  Architecture based on {GPU} Cluster},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {53--54},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/LiuBSBFCCW23,
+	author = {Shinan Liu and
+                  Francesco Bronzino and
+                  Paul Schmitt and
+                  Arjun Nitin Bhagoji and
+                  Nick Feamster and
+                  Hector Garcia Crespo and
+                  Timothy Coyle and
+                  Brian Ward},
+	title = {{LEAF:} Navigating Concept Drift in Cellular Networks},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT2},
+	pages = {7:1--7:24},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630083},
-	doi = {10.1145/3624354.3630083},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/WangSZXSZ23.bib},
+	url = {https://doi.org/10.1145/3609422},
+	doi = {10.1145/3609422},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LiuBSBFCCW23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {GPU-aided servers are widely used to accelerate the increasing computing workload on edge network. However, massive computing requests can cause delays in transmission and processing at edge servers, leading to long response time and high system energy consumption. Moreover, in distributed scenarios, GPUs from different vendors can hardly communicate directly through the network. As a rare open-source GPU architecture, Vortex has been emerged to enable an FPGA accelerator to serve as a PCIe-based soft GPU. On this basis, Vortex GPUs in our edge acceleration architecture further integrate the low-latency RDMA function. Compared with the original Vortex GPU-aided servers cluster, our preliminary study shows that our Vortex GPU cluster is fast, scalable, and energy-efficient.}
+	abstract = {Operational networks commonly rely on machine learning models for many tasks, including detecting anomalies, inferring application performance, and forecasting demand. Yet, model accuracy can degrade due to concept drift, whereby the relationship between the features and the target to be predicted changes. Mitigating concept drift is an essential part of operationalizing machine learning models in general, but is of particular importance in networking's highly dynamic deployment environments. In this paper, we first characterize concept drift in a large cellular network for a major metropolitan area in the United States. We find that concept drift occurs across many important key performance indicators (KPIs), independently of the model, training set size, and time interval---thus necessitating practical approaches to detect, explain, and mitigate it. We then show that frequent model retraining with newly available data is not sufficient to mitigate concept drift, and can even degrade model accuracy further. Finally, we develop a new methodology for concept drift mitigation, Local Error Approximation of Features (LEAF). LEAF works by detecting drift; explaining the features and time intervals that contribute the most to drift; and mitigates it using forgetting and over-sampling. We evaluate LEAF against industry-standard mitigation approaches (notably, periodic retraining) with more than four years of cellular KPI data. Our initial tests with a major cellular provider in the US show that LEAF consistently outperforms periodic and triggered retraining on complex, real-world data while reducing costly retraining operations.}
 }
 
 
-@inproceedings{DBLP:conf/conext/MonterubbianoAC23,
+@article{DBLP:journals/pacmnet/MelliaSQB23b,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
+                  Lili Qiu and
+                  Olivier Bonaventure},
+	title = {PACMNET, V1, CoNEXT3, December 2023 Editorial},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {8:1--8:2},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629130},
+	doi = {10.1145/3629130},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQB23b.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Proceedings of the ACM on Networking (PACMNET) series present the highest-quality research conducted in the areas of emerging computer networks and their applications. We encourage submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board. This issue contains papers submitted for the June \'23 deadline. 129 long papers and 19 short papers were submitted to this deadline. 24 of the long papers and 5 of the short papers have been accepted after a rigorous review process organized with 50 Associate Editors and a few external reviewers. After review, each paper was conditionally accepted (with shepherding), allowed a "oneshot- major" revision, or rejected. The review process was split into two rounds. All submissions received at least 3 reviews in the first round. The papers that advanced to the second round received at least two additional reviews. After an online discussion phase among the reviewers, papers were extensively discussed during an online Associate Editors\' meeting where the final decisions were made. In case of major revision, the authors have been invited to address the reviewers\' comments and prepare a thoroughly revised version of their contribution. Revised papers have been then thoroughly reviewed again before being either accepted or rejected. This issue collects papers that have been finally accepted for publication after going through the minor revision process. The long papers published in this issue and in the two previous ones will be presented at the CoNEXT 2023 conference on December 5-8, in Paris, France together with the short papers that appear in the conference proceedings.}
+}
+
+
+@article{DBLP:journals/pacmnet/LiuDP23,
+	author = {Haoyu Liu and
+                  Alec F. Diallo and
+                  Paul Patras},
+	title = {Amoeba: Circumventing ML-supported Network Censorship via Adversarial
+                  Reinforcement Learning},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {9:1--9:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629131},
+	doi = {10.1145/3629131},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LiuDP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Embedding covert streams into a cover channel is a common approach to circumventing Internet censorship, due to censors' inability to examine encrypted information in otherwise permitted protocols (Skype, HTTPS, etc.). However, recent advances in machine learning (ML) enable detecting a range of anti-censorship systems by learning distinct statistical patterns hidden in traffic flows. Therefore, designing obfuscation solutions able to generate traffic that is statistically similar to innocuous network activity, in order to deceive ML-based classifiers at line speed, is difficult. In this paper, we formulate a practical adversarial attack strategy against flow classifiers as a method for circumventing censorship. Specifically, we cast the problem of finding adversarial flows that will be misclassified as a sequence generation task, which we solve with Amoeba, a novel reinforcement learning algorithm that we design. Amoeba works by interacting with censoring classifiers without any knowledge of their model structure, but by crafting packets and observing the classifiers' decisions, in order to guide the sequence generation process. Our experiments using data collected from two popular anti-censorship systems demonstrate that Amoeba can effectively shape adversarial flows that have on average 94% attack success rate against a range of ML algorithms. In addition, we show that these adversarial flows are robust in different network environments and possess transferability across various ML models, meaning that once trained against one, our agent can subvert other censoring classifiers without retraining.}
+}
+
+
+@article{DBLP:journals/pacmnet/JainAKF23,
+	author = {Vivek Jain and
+                  S. M. Maksudul Alam and
+                  Srikanth V. Krishnamurthy and
+                  Michalis Faloutsos},
+	title = {C2Store: {C2} Server Profiles at Your Fingertips},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {10:1--10:21},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629132},
+	doi = {10.1145/3629132},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/JainAKF23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {How can we build a definitive capability for tracking C2 servers? Having a large-scale continuously updating capability would be essential for understanding the spatiotemporal behaviors of C2 servers and, ultimately, for helping contain botnet activities. Unfortunately, existing information from threat intelligence feeds and previous works is often limited to a specific set of botnet families or short-term data collections. Responding to this need, we present C2Store, an initiative to provide the most comprehensive information on C2 servers. Our work makes the following contributions: (a) we develop techniques to collect, verify, and combine C2 server addresses from five types of sources, including uncommon platforms, such as GitHub and Twitter; (b) we create an open-access annotated database of 335,967 C2 servers across 133 malware families, which supports semantically-rich and smart queries; (c) we identify surprising behaviors of C2 servers with respect to their spatiotemporal patterns and behaviors. First, we successfully mine Twitter and GitHub and identify C2 servers with a precision of 97% and 94%, respectively. Furthermore, we find that the threat feeds identify only 24% of the servers in our database, with Twitter and GitHub providing 32%. A surprising observation is the identification of 250 IP addresses, each of which hosts more than 5 C2 servers for different botnet families at the same time. Overall, we envision C2Store as an ongoing effort that will facilitate research by providing timely, historical, and comprehensive C2 server information by critically combining multiple sources of information.}
+}
+
+
+@article{DBLP:journals/pacmnet/Jiang023,
+	author = {Maoran Jiang and
+                  Wei Gong},
+	title = {Dances with Blues: Harnessing Multi-Frequency Carriers for Commodity
+                  Bluetooth Backscatter},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {11:1--11:20},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629133},
+	doi = {10.1145/3629133},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/Jiang023.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present DanBlue, a commodity Bluetooth backscatter system that can take multi-frequency signals as excitations. Unlike all prior systems, DanBlue leverages ambient Bluetooth signals of various frequencies to backscatter in the standard Bluetooth-hopping way. To do so, we first introduce an edge proxy to identify uncontrolled ambient Bluetooth signals. Then, we design a wideband channel hopping to enable fast frequency shifts for low-power tags, empowering backscatter hopping much like active Bluetooth hopping. We prototype the DanBlue tag using off-the-shelf FPGAs and the DanBlue edge with commercial off-the-shelf (COTS) chips. Through comprehensive field studies, we show that DanBlue supports hopping from any-frequency Bluetooth excitations to any-frequency Bluetooth channels. Furthermore, the accuracy of frequency identification is as high as 99% with less than 7.1 ms latency. For the first time, we demonstrate DanBlue can emulate the Bluetooth protocol stack and seamlessly build connectivity with multiple active Bluetooth radios. We believe DanBlue is taking a crucial step forward on fully functioning battery-free Bluetooth.}
+}
+
+
+@article{DBLP:journals/pacmnet/RossaneseGLC23,
+	author = {Marco Rossanese and
+                  Andres Garcia{-}Saavedra and
+                  Andra Lutu and
+                  Xavier Costa{-}P{\'{e}}rez},
+	title = {Data-driven Analysis of the Cost-Performance Trade-off of Reconfigurable
+                  Intelligent Surfaces in a Production Network},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {12:1--12:20},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629134},
+	doi = {10.1145/3629134},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/RossaneseGLC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper presents a comprehensive study on the deployment of Reconfigurable Intelligent Surfaces (RIS) in urban environments with poor radio coverage. We focus on the city of London, a large metropolis where radio network planning presents unique challenges due to diverse geographical and structural features. Using crowd-sourced datasets, we analyze the Reference Signal Received Power (RSRP) from end-user devices to understand the existing radio coverage landscape of a major Mobile Network Operator (MNO). Our study identifies areas with poor coverage and proposes the deployment of RIS to enhance signal strength and coverage. We selected a set of potential sites for RIS deployment and, combining data from the MNO, data extracted from a real RIS prototype, and a ray-tracing tool, we analyzed the gains of this novel technology with respect to deploying more conventional technologies in terms of RSRP, coverage, and cost-efficiency. To the best of our knowledge, this is the first data-driven analysis of the cost-efficiency of RIS technology in the production of urban networks. Our findings provide compelling evidence about the potential of RIS as a cost-efficient solution for enhancing radio coverage in complex urban mobile networks. More specifically, our results indicate that large-scale RIS technology, when applied in real-world urban mobile network scenarios, can achieve 72% of the coverage gains attainable by deploying additional cells with only 22% of their Total Cost of Ownership (TCO) over a 5-year timespan. Consequently, RIS technology offers around 3x higher cost-efficiency than other more conventional coverage-enhancing technologies.}
+}
+
+
+@article{DBLP:journals/pacmnet/SamraB23,
+	author = {Ravjot Singh Samra and
+                  Marinho P. Barcellos},
+	title = {DDoS2Vec: Flow-Level Characterisation of Volumetric DDoS Attacks at
+                  Scale},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {13:1--13:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629135},
+	doi = {10.1145/3629135},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/SamraB23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Volumetric Distributed Denial of Service (DDoS) attacks have been a severe threat to the Internet for more than two decades. Some success in mitigation has been achieved based on numerous defensive techniques created by the research community, implemented by the industry, and deployed by network operators. However, evolution is not a privilege of mitigations, and DDoS attackers have found better strategies and continue to cause harm. A key challenge in winning this race is understanding the various characteristics of DDoS attacks in network traffic at scale and in a realistic manner. In this paper, we propose DDoS2Vec, a novel approach to characterise DDoS attacks in real-world Internet traffic using Natural Language Processing (NLP) techniques. DDoS2Vec is a domain-specific application of Latent Semantic Analysis that learns vector representations of potential DDoS attacks. We look into the link between natural language and computer network communication in a way that has not been previously studied. Our approach is evaluated on a large-scale dataset of flow samples collected from an Internet eXchange Point (IXP) in one year. We evaluate the performance of DDoS2Vec via multi-label classification in a Machine Learning (ML) scenario. DDoS2Vec characterises DDoS attacks more clearly than other baselines - including NLP-based approaches inspired by recent networks research and a basic non-NLP solution.}
+}
+
+
+@article{DBLP:journals/pacmnet/ZhengTZHFTZ23,
+	author = {Changgang Zheng and
+                  Haoyue Tang and
+                  Mingyuan Zang and
+                  Xinpeng Hong and
+                  Aosong Feng and
+                  Leandros Tassiulas and
+                  Noa Zilberman},
+	title = {{DINC:} Toward Distributed In-Network Computing},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {14:1--14:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629136},
+	doi = {10.1145/3629136},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ZhengTZHFTZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In-network computing provides significant performance benefits, load reduction, and power savings. Still, an in-network service's functionality is strictly limited to a single hardware device. Research has focused on enabling on-device functionality, with limited consideration to distributed in-network computing. This paper explores the applicability of distributed computing to in-network computing. We present DINC, a framework enabling distributed in-network computing, generating deployment strategies, overcoming resource constraints and providing functionality guarantees across a network. It uses multi-objective optimization to provide a deployment strategy, slicing P4 programs accordingly. DINC was evaluated using seven different workloads on both data center and wide-area network topologies, demonstrating feasibility and scalability, providing efficient distribution plans within seconds.}
+}
+
+
+@article{DBLP:journals/pacmnet/RamanVCSZ23,
+	author = {Aravindh Raman and
+                  Matteo Varvello and
+                  Hyunseok Chang and
+                  Nishanth Sastry and
+                  Yasir Zaki},
+	title = {Dissecting the Performance of Satellite Network Operators},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {15:1--15:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629137},
+	doi = {10.1145/3629137},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/RamanVCSZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rapid growth of satellite network operators (SNOs) has revolutionized broadband communications, enabling global connectivity and bridging the digital divide. As these networks expand, it is important to evaluate their performance and efficiency. This paper presents the first comprehensive study of SNOs. We take an opportunistic approach and devise a methodology which allows to identify public network measurements performed via SNOs. We apply this methodology to both M-Lab and RIPE public datasets which allowed us to characterize low level performance and footprint of up to 18 SNOs operating in different orbits. Finally, we identify and recruit paid testers on three popular SNOs (Starlink, HughesNet, and ViaSat) to evaluate the performance of popular applications like web browsing and video streaming.}
+}
+
+
+@article{DBLP:journals/pacmnet/MartinD23,
+	author = {Noah Martin and
+                  Fahad R. Dogar},
+	title = {Divided at the Edge - Measuring Performance and the Digital Divide
+                  of Cloud Edge Data Centers},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {16:1--16:23},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629138},
+	doi = {10.1145/3629138},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MartinD23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud providers are highly incentivized to reduce latency. One way they do this is by locating data centers as close to users as possible. These “cloud edge” data centers are placed in metropolitan areas and enable edge computing for residents of these cities. Therefore, which cities are selected to host edge data centers determines who has the fastest access to applications requiring edge compute — creating a digital divide between those closest and furthest from the edge. In this study we measure latency to the current and predicted cloud edge of three major cloud providers around the world. Our measurements use the RIPE Atlas platform targeting cloud regions, AWS Local Zones, and network optimization services that minimize the path to the cloud edge. An analysis of the digital divide shows rising inequality as the relative difference between users closest and farthest from cloud compute increases. We also find this inequality unfairly affects lower income census tracts in the US. This result is extended globally using remotely sensed night time lights as a proxy for wealth. Finally, we demonstrate that low earth orbit satellite internet can help to close this digital divide and provide more fair access to the cloud edge.}
+}
+
+
+@article{DBLP:journals/pacmnet/PeroniGTT23,
+	author = {Leonardo Peroni and
+                  Sergey Gorinsky and
+                  Farzad Tashtarian and
+                  Christian Timmerer},
+	title = {Empowerment of Atypical Viewers via Low-Effort Personalized Modeling
+                  of Video Streaming Quality},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {17:1--17:27},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629139},
+	doi = {10.1145/3629139},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/PeroniGTT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Quality of Experience (QoE) and QoE models are of an increasing importance to networked systems. The traditional QoE modeling for video streaming applications builds a one-size-fits-all QoE model that underserves atypical viewers who perceive QoE differently. To address the problem of atypical viewers, this paper proposes iQoE (individualized QoE), a method that employs explicit, expressible, and actionable feedback from a viewer to construct a personalized QoE model for this viewer. The iterative iQoE design exercises active learning and combines a novel sampler with a modeler. The chief emphasis of our paper is on making iQoE sample-efficient and accurate. By leveraging the Microworkers crowdsourcing platform, we conduct studies with 120 subjects who provide 14,400 individual scores. According to the subjective studies, a session of about 22 minutes empowers a viewer to construct a personalized QoE model that, compared to the best of the 10 baseline models, delivers the average accuracy improvement of at least 42% for all viewers and at least 85% for the atypical viewers. The large-scale simulations based on a new technique of synthetic profiling expand the evaluation scope by exploring iQoE design choices, parameter sensitivity, and generalizability.}
+}
+
+
+@article{DBLP:journals/pacmnet/NunesBCB0023,
+	author = {V{\'{\i}}tor Nunes and
+                  Jos{\'{e}} Br{\'{a}}s and
+                  Afonso Carvalho and
+                  Diogo Barradas and
+                  Kevin Gallagher and
+                  Nuno Santos},
+	title = {Enhancing the Unlinkability of Circuit-Based Anonymous Communications
+                  with k-Funnels},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {18:1--18:26},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629140},
+	doi = {10.1145/3629140},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/NunesBCB0023.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anonymous communication systems are essential tools for preserving privacy and freedom of expression. However, traffic analysis attacks make it challenging to maintain unlinkability in circuit-based anonymity networks like Tor, enabling adversaries to deanonymize communications. To address this problem, we introduce k-funnel, a new security primitive that enhances the unlinkability of circuit-based anonymity networks, and we present BriK, a Tor pluggable transport that implements k-funnels. k-Funnels offer k-anonymity to a group of k clients by jointly tunneling their circuits' traffic through a bridge while ensuring that the client-generated flows are indistinguishable. BriK incorporates several defense mechanisms against traffic analysis attacks, including traffic shaping schemes, synchronization protocols, and approaches for monitoring exposure to statistical disclosure attacks. Our evaluation shows that BriK is able to support web browsing and video streaming while offering k-anonymity. We evaluate the security of BriK against traffic correlation attacks leveraging state-of-the-art deep learning classifiers without considering auxiliary information and find it highly resistant. Although k-funnels require the cooperation of mutually trusted clients, limiting their coordination, our work presents a new practical solution to strengthen unlinkability in circuit-based anonymity systems.}
+}
+
+
+@article{DBLP:journals/pacmnet/FiandrinoBDPMW23,
+	author = {Claudio Fiandrino and
+                  Leonardo Bonati and
+                  Salvatore D'Oro and
+                  Michele Polese and
+                  Tommaso Melodia and
+                  Joerg Widmer},
+	title = {{EXPLORA:} {AI/ML} EXPLainability for the Open {RAN}},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {19:1--19:26},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629141},
+	doi = {10.1145/3629141},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/FiandrinoBDPMW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Open Radio Access Network (RAN) paradigm is transforming cellular networks into a system of disaggregated, virtualized, and software-based components. These self-optimize the network through programmable, closed-loop control, leveraging Artificial Intelligence (AI) and Machine Learning (ML) routines. In this context, Deep Reinforcement Learning (DRL) has shown great potential in addressing complex resource allocation problems. However, DRL-based solutions are inherently hard to explain, which hinders their deployment and use in practice. In this paper, we propose EXPLORA, a framework that provides explainability of DRL-based control solutions for the Open RAN ecosystem. EXPLORA synthesizes network-oriented explanations based on an attributed graph that produces a link between the actions taken by a DRL agent (i.e., the nodes of the graph) and the input state space (i.e., the attributes of each node). This novel approach allows EXPLORA to explain models by providing information on the wireless context in which the DRL agent operates. EXPLORA is also designed to be lightweight for real-time operation. We prototype EXPLORA and test it experimentally on an O-RAN-compliant near-real-time RIC deployed on the Colosseum wireless network emulator. We evaluate EXPLORA for agents trained for different purposes and showcase how it generates clear network-oriented explanations. We also show how explanations can be used to perform informative and targeted intent-based action steering and achieve median transmission bitrate improvements of 4% and tail improvements of 10%.}
+}
+
+
+@article{DBLP:journals/pacmnet/El-ZahrGZ23,
+	author = {Sawsan El{-}Zahr and
+                  Paul Gunning and
+                  Noa Zilberman},
+	title = {Exploring the Benefits of Carbon-Aware Routing},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {20:1--20:24},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629165},
+	doi = {10.1145/3629165},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/El-ZahrGZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Carbon emissions associated with fixed networks can be significant. However, accounting for these emissions is hard, requires changes to deployed equipment, and has contentious benefits. This work sheds light on the benefits of carbon aware networks, by exploring a set of potential carbon-related metrics and their use to define link-cost in carbon-aware link-state routing algorithms. Using realistic network topologies, traffic patterns and grid carbon intensity, we identify useful metrics and limitations to carbon emissions reduction. Consequently, a new heuristic carbon-aware traffic engineering algorithm, CATE, is proposed. CATE takes advantage of carbon intensity and routers' dynamic power consumption, combined with ports power down, to minimize carbon emissions. Our results show that there is no silver bullet to significant carbon reductions, yet there are promising directions without changes to existing routers' hardware.}
+}
+
+
+@article{DBLP:journals/pacmnet/KimMHP23,
+	author = {Duckwoo Kim and
+                  YoungGyoun Moon and
+                  Jaehyun Hwang and
+                  KyoungSoo Park},
+	title = {FlexCP: {A} Scalable Multipath {TCP} Proxy for Cellular Networks},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {21:1--21:21},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629143},
+	doi = {10.1145/3629143},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/KimMHP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Research has shown that Multipath TCP (MPTCP) improves the quality of a TCP connection by exploiting multiple paths, but its adoption in the wide area network is still fledgling. While MPTCP-TCP proxying is often employed as a practical solution, the performance of a split-connection proxy is suboptimal – it wastes CPU cycles on content relaying between two connections while it does not efficiently leverage multiple CPU cores in packet processing. We present FlexCP, a high-performance MPTCP-TCP proxy based on the following properties. First, FlexCP operates by translating the two protocols on a packet level. This approach not only avoids the overhead of flow reassembly and memory copying, but it greatly simplifies the implementation as the proxy stays away from reliable data transfer, socket buffer management, and per-hop congestion/flow control. Second, FlexCP maintains connection-to-core affinity for multiple subflows of the same MPTCP connection and its corresponding TCP connection by leveraging SmartNIC. This enables a lock-free implementation for packet processing, which significantly improves the performance. Our evaluation demonstrates that FlexCP achieves 281 Gbps of connection proxying on a single machine, outperforming existing proxies by up to 6.3× in terms of throughput while it incurs little extra latency over direct TCP/MPTCP connections.}
+}
+
+
+@article{DBLP:journals/pacmnet/CaiazziSC23,
+	author = {Tommaso Caiazzi and
+                  Mariano Scazzariello and
+                  Marco Chiesa},
+	title = {Millions of Low-latency State Insertions on {ASIC} Switches},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {22:1--22:23},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629144},
+	doi = {10.1145/3629144},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/CaiazziSC23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Key-value data structures are an essential component of today's stateful packet processors such as load balancers, packet schedulers, and more. Realizing key-value data structures entirely in the data-plane of an ASIC switch would bring enormous energy savings. Yet, today's implementations are ill-suited for stateful packet processing as they support only a limited amount of flow-state insertions per second into these data structures. In this paper, we present SWITCHAROO, a mechanism for realizing key-value data structures on programmable ASIC switches that supports both high-frequency insertions and fast lookups entirely in the data plane. We show that SWITCHAROO can be realized on ASIC, supports millions of flow-state insertions per second with only limited amount of packet recirculation.}
+}
+
+
+@article{DBLP:journals/pacmnet/001300S23,
+	author = {Xu Liu and
+                  Peng Zhang and
+                  Hao Li and
+                  Wenbing Sun},
+	title = {Modular Data Plane Verification for Compositional Networks},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {23:1--23:22},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629145},
+	doi = {10.1145/3629145},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/001300S23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern networks are increasingly using layering and bridging to form a compositional architecture. Layering protocols like VXLAN create multiple overlay networks on top of a single underlay network infrastructure. This makes network configurations even more complex, and error-prone. To check the correctness of such compositional networks, one needs to model the dependency across multiple layers (underlay and overlay) and multiple domains (different VPNs/VPCs). Existing verifiers, which are optimized to scale in single-layer single-domain networks, exhibit scalability limitations when applied to compositional networks. This paper proposes MNV, a modular network verifier that scales to large compositional networks. At its core is a new verification method termed decompose-merge reasoning, which decomposes the network into self-contained modules, verifies each module independently, and merges the verification results. Our experiments show that for a typical data center network virtualized with VXLAN, to check reachability for more than 100 million pairs of subnets, MNV is at least 100x faster than state-of-the-art tools.}
+}
+
+
+@article{DBLP:journals/pacmnet/SattlerZJGCH23,
+	author = {Patrick Sattler and
+                  Johannes Zirngibl and
+                  Mattijs Jonker and
+                  Oliver Gasser and
+                  Georg Carle and
+                  Ralph Holz},
+	title = {Packed to the Brim: Investigating the Impact of Highly Responsive
+                  Prefixes on Internet-wide Measurement Campaigns},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {24:1--24:21},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629146},
+	doi = {10.1145/3629146},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/SattlerZJGCH23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet-wide scans are an important tool to evaluate the deployment of services. To enable large-scale application layer scans, a fast, stateless port scan (e.g., using ZMap) is often performed ahead of time to collect responsive targets. It is a common expectation that port scans on the entire IPv4 address space provide a relatively unbiased view as they cover the complete address space. Previous work, however, has found prefixes where all addresses share particular properties. In IPv6, aliased prefixes and fully responsive prefixes, i.e., prefixes where all addresses are responsive, are a well-known phenomenon. However, there is no such in-depth analysis for prefixes with these responsiveness patterns in IPv4. This paper delves into the underlying factors of this phenomenon in the context of IPv4 and evaluates port scans on a total of 161 ports (142 TCP & 19 UDP ports) from three different vantage points. To account for packet loss and other scanning artifacts, we propose the notion of a new category of prefixes, which we call highly responsive prefixes (HRPs). Our findings show that the share of HRPs can make up 70% of responsive addresses on selected ports. Regarding specific ports, we observe that CDNs contribute to the largest fraction of HRPs on TCP/80 and TCP/443, while TCP proxies emerge as the primary cause of HRPs on other ports. Our analysis also reveals that application layer handshakes to targets outside HRPs are, depending on the chosen service, up to three times more likely to be successful compared to handshakes with targets located in HRPs. To improve future scanning campaigns conducted by the research community, we make our study's data publicly available and provide a tool for detecting HRPs. Furthermore, we propose an approach for a more efficient, ethical, and sustainable application layer target selection. We demonstrate that our approach has the potential to reduce the number of TLS handshakes by up to 75% during an Internet-wide scan while successfully obtaining 99 % of all unique certificates.}
+}
+
+
+@article{DBLP:journals/pacmnet/AbdousSG23,
+	author = {Sepehr Abdous and
+                  Erfan Sharafzadeh and
+                  Soudeh Ghorbani},
+	title = {Practical Packet Deflection in Datacenters},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {25:1--25:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629147},
+	doi = {10.1145/3629147},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/AbdousSG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Bursts, sudden surges in network utilization, are a significant root cause of packet loss and high latency in datacenters. Packet deflection, re-routing packets that arrive at a local hotspot to neighboring switches, is shown to be a potent countermeasure against bursts. Unfortunately, existing deflection techniques cannot be implemented in today's datacenter switches. This is because, to minimize packet drops and remain effective under extreme load, existing deflection techniques rely on certain hardware primitives (e.g., extracting packets from arbitrary locations in the queue) that datacenter switches do not support. In this paper, we address the implementability hurdles of packet deflection. This paper proposes heuristics for approximating state-of-the-art deflection techniques in programmable switches. We introduce Simple Deflection which deflects excess traffic to randomly selected, non-congested ports and Preemptive Deflection (PD) in which switches identify the packets likely to be selected for deflection and preemptively deflect them before they are enqueued. We implement and evaluate our techniques on a testbed with Intel Tofino switches. Our testbed evaluations show that Simple and Preemptive Deflection improve the 99th percentile response times by 8× and 425×, respectively, compared to a baseline drop-tail queue under 90% load. Using large-scale network simulations, we show that the performance of our algorithms is close to the deflection techniques that they intend to approximate, e.g., PD achieves 4% lower 99th percentile query completion times (QCT) than Vertigo, a recent deflection technique that cannot be implemented in off-the-shelf switches, and 2.5× lower QCT than ECMP under 95% load.}
+}
+
+
+@article{DBLP:journals/pacmnet/FriessSW23,
+	author = {Jens Friess and
+                  Haya Schulmann and
+                  Michael Waidner},
+	title = {Revocation Speedrun: How the WebPKI Copes with Fraudulent Certificates},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {26:1--26:20},
+	year = {2023},
+	url = {https://doi.org/10.1145/3629148},
+	doi = {10.1145/3629148},
+	timestamp = {Sun, 10 Dec 2023 17:01:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/FriessSW23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The TLS ecosystem depends on certificates to bootstrap secure connections. Certificate Authorities (CAs) are trusted to issue these correctly. However, as a result of security breaches or attacks, certificates may be issued fraudulently and need to be revoked prematurely. Revocation, as a reactive measure, is fundamentally damage control and, as such, time is critical. Therefore, measuring reaction delay is the first step to identifying how well the revocation system functions. In this paper we attempt to characterize the current performance of the WebPKI in dealing with fraudulent certificates. We present measurements of each step in the revocation process: the detection of certificate issuance through Certificate Transparency (CT) monitoring, the administrative revocation process at popular CAs, and the revocation checking behavior of end-user clients, both in a controlled virtualized environment and in the wild. We perform two live measurements, in 2022 and 2023, respectively, to provide a longitudinal comparison. We find that detection and revocation of fraudulent certificates is quick and efficient when leveraging CT and can be completed within 6.5 hours on average. Furthermore, CT is being increasingly enforced by some browsers. However, ∼83% of the clients we observed, across popular browsers, brands and OSes, completely disregard a certificate's status, whileall of the studied browsers still display soft-fail behavior, making them vulnerable to attackers capable of interfering with the network. Of the clients that do check revocation, we find that 35% can be made to accept a revoked certificate through the use of OCSP Stapling. We expect this number to grow with client-side adoption of OCSP Stapling [RFC6961]. Current OCSP expiration times allow a revoked certificate to remain fully valid for up to 7 days for the majority of CAs, exposing clients to attacks.}
+}
+
+
+@article{DBLP:journals/pacmnet/MonterubbianoAC23,
 	author = {Andrea Monterubbiano and
                   Rapha{\"{e}}l Azorin and
                   Gabriele Castellano and
                   Massimo Gallo and
                   Salvatore Pontarelli and
                   Dario Rossi},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Memory-efficient Random Forests in {FPGA} SmartNICs},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {55--56},
-	publisher = {{ACM}},
+	title = {{SPADA:} {A} Sparse Approximate Data Structure Representation for
+                  Data Plane Per-flow Monitoring},
+	journal = {{PACMNET}},
+	volume = {1},
+	number = {CoNEXT3},
+	pages = {27:1--27:25},
 	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630089},
-	doi = {10.1145/3624354.3630089},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/MonterubbianoAC23.bib},
+	url = {https://doi.org/10.1145/3629149},
+	doi = {10.1145/3629149},
+	timestamp = {Sun, 19 Jan 2025 15:06:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MonterubbianoAC23.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Random Forests (RF) have been a popular Machine Learning (ML) algorithm for more than two decades. This success can be attributed to its simplicity, effectiveness and explainability. However, implementing them in a high-speed programmable data plane is not trivial. To make predictions, i.e., inference, RFs must traverse each tree from the root to the leaf by comparing the features vector at each split node. This process is particularly challenging in network devices where memory is limited, and packet processing cannot be delayed, i.e., predictions occur at line rate. Nevertheless, this implementation is crucial for incorporating recent ML advances in the network, which could benefit use cases such as scheduling, measurements, and routing [1]. Prior studies such as Planter [4] have examined the implementation of RF in network switches, mapping trees to Match-Action Tables (MAT). Another line of work focused on RF implementations optimized for FPGA, mapping tree layers to pipeline stages as done in [2]. Such approaches use different tree representations that naturally come with their strengths and weaknesses depending on the trees' sparsity, depth, and input features. In this work we (1) propose a novel representation for FPGA-based Random Forests, (2) compare it against state-of-the-art implementations in terms of memory and computation requirements, and (3) evaluate our design on a flow classification task using CAIDA traffic traces.}
-}
-
-
-@inproceedings{DBLP:conf/conext/LeeKBKP23,
-	author = {Hochan Lee and
-                  Heewon Kim and
-                  Chanbin Bae and
-                  Yujin Kim and
-                  Sangheon Pack},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Quantization-Aware In-Network Aggregation for Minimizing Communication
-                  Overhead},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {57--58},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630090},
-	doi = {10.1145/3624354.3630090},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/LeeKBKP23.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {In-network aggregation (INA) can accelerate distributed deep learning (DDL) by offloading a gradient aggregation operation to programmable switches. However, as the number of jobs increases, the communication overhead increases since the INA switch's resources for aggregation are limited. To reduce the communication overhead, gradient quantization approaches that compress gradients into fewer bits can be used. Although these approaches are effective in INA, existing INA schemes cannot efficiently use the switch's resources for low-bit quantized gradients. In this paper, we propose a quantization-aware in-network aggregation (QAINA) scheme that provides flexible aggregation and achieves efficient resource utilization for low-bit quantized gradients.}
-}
-
-
-@inproceedings{DBLP:conf/conext/RollinJV23,
-	author = {Lukas R{\"{o}}llin and
-                  Romain Jacob and
-                  Laurent Vanbever},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: What Keeps Your Network up at Night?},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {59--60},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630092},
-	doi = {10.1145/3624354.3630092},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/RollinJV23.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {The demand for ever-faster links and devices is competing with the need to make networks more energy-efficient. One energy-saving technique is shutting down dispensable parts of the network. In this work, we investigate the limits of link sleeping; i.e., turning off underutilized links. We show that turning transceivers on takes on the order of seconds, making them the bottleneck for fast network wake-up. We also present a power plane prototype designed to orchestrate link sleeping alongside standard routing protocols.}
-}
-
-
-@inproceedings{DBLP:conf/conext/Huang023,
-	author = {Zhanxiang Huang and
-                  Wei Gong},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: Device Identification for Efficient Bluetooth Backscatter},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {61--62},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630084},
-	doi = {10.1145/3624354.3630084},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/Huang023.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Backscatter communication is an ultra-low-power consumption technique that leverages ambient signals to transmit data. However, existing Bluetooth backscatter systems can not adapt to the differences in excitors, resulting in unstable performance. We present BidScatter, which uses the envelope of the excitation packet to identify the excitor and then modulates data accordingly. Specifically, BidScatter achieves an average of 85% identification accuracy among the five chosen devices. Based on this identification accuracy, BidScatter can achieve over 50% more packet reception rate than RBLE.}
-}
-
-
-@inproceedings{DBLP:conf/conext/Jiang023,
-	author = {Maoran Jiang and
-                  Wei Gong},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: Efficient {BLE} Backscatter with Excitation Identification},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {63--64},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630087},
-	doi = {10.1145/3624354.3630087},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/Jiang023.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Existing BLE backscatter systems are prone to false triggering by non-target carriers, which causes invalid backscatter transmission. We present IDBlue, which can accurately identify the periodic target excitations generated from a reliable edge, thus achieving an efficient uplink. Specifically, IDBlue utilizes an Iterate-Sync method that can identify the periodic carriers among ambient signals and achieves an accuracy of 99%.}
-}
-
-
-@inproceedings{DBLP:conf/conext/FengJ023,
-	author = {Yunyun Feng and
-                  Maoran Jiang and
-                  Wei Gong},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: Duty-Cycled Paging for {LTE} Backscatter},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {65--66},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630085},
-	doi = {10.1145/3624354.3630085},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/FengJ023.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Traditional LTE backscatter devices continuously reflect signals as long as they have sufficient energy, which results in wasted energy and transmission failure since LTE receivers operate in a low duty cycle manner. We present EPScatter, which utilizes standards-compliant paging to allow tags and receivers to maintain consistent sleep and wake schedules. In particular, EPScatter uses a low-power state machine to adapt to the different transmission stages of the receiver. For example, when the receiver goes to sleep, the tag also goes to sleep for energy saving and efficient transmission.}
-}
-
-
-@inproceedings{DBLP:conf/conext/TavoriBL23,
-	author = {Jhonatan Tavori and
-                  Anat Bremler{-}Barr and
-                  Hanoch Levy},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {The Cost of Retrying: Exploiting Retry-Mechanisms in Cloud Applications
-                  by DDoS Attacks},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {67--68},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630091},
-	doi = {10.1145/3624354.3630091},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/TavoriBL23.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Retry mechanisms are commonly used in microservices architectures as a mechanism for recovering from transit errors, including network failures and service overloading. This research aims at studying the operation of cloud retry mechanisms under deliberated DDoS attacks, and their effect on the application performance and operational costs. In this poster we focus on the economic aspect, and demonstrate that enabling such mechanisms improperly might be counter-productive and expose the system to substantial and quadratic economical damage in the presence of attacks.}
-}
-
-
-@inproceedings{DBLP:conf/conext/TavoriL23,
-	author = {Jhonatan Tavori and
-                  Hanoch Levy},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {How to Attack and Congest a Network? Worst-Case Link-Targeted DDoS
-                  Attacks},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {69--70},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630088},
-	doi = {10.1145/3624354.3630088},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/TavoriL23.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Carpet-Bombing Pulse-wave attacks are new types of DDoS attacks aiming at overloading network links in order to slow down the traffic going through those links. The objective is to downgrade the network performance, or the performance of part of its traffic. The question addressed by this research is how such an attack should be performed in order to maximize performance damage. Should worst-case attacks spread across many network links? Alternatively, should it be concentrated? And which links are most likely to get attacked? We consider a general communication network model and derive performance maximizing attack strategies. We show that in order to maximize their damage, these attacks should concentrate at specific links. This approach will be further used to study optimal design and planning of networks to minimize such possible damages.}
-}
-
-
-@inproceedings{DBLP:conf/conext/ZhangRS23,
-	author = {Chunjiong Zhang and
-                  Byeong{-}Hee Roh and
-                  Gaoyang Shan},
-	editor = {Dario Rossi and
-                  Stefano Secci and
-                  Olivier Bonaventure and
-                  Lili Qiu},
-	title = {Poster: Dynamic Clustered Federated Framework for Multi-domain Network
-                  Anomaly Detection},
-	booktitle = {Companion of the 19th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2023, Paris, France, December
-                  5-8, 2023},
-	pages = {71--72},
-	publisher = {{ACM}},
-	year = {2023},
-	url = {https://doi.org/10.1145/3624354.3630086},
-	doi = {10.1145/3624354.3630086},
-	timestamp = {Sun, 10 Dec 2023 16:59:58 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/ZhangRS23.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Federated learning as a distributed category yields sub-optimal performance for the presence of Non-iid in multi-domain data. To this end, we proposes a novel clustered federated framework for unsupervised multi-domain network anomaly detection, which implements dynamic clustered federated based on the data distribution of different domain so that each edge user learns the domain-optimized inference model. Compared to baseline, the proposed method enables users to obtain domain-optimal performance.}
+	abstract = {Accurate per-flow monitoring is critical for precise network diagnosis, performance analysis, and network operation and management in general. However, the limited amount of memory available on modern programmable devices and the large number of active flows force practitioners to monitor only the most relevant flows with approximate data structures, limiting their view of network traffic. We argue that, due to the skewed nature of network traffic, such data structures are, in practice, heavily underutilized, i.e. sparse, thus wasting a significant amount of memory. This paper proposes a Sparse Approximate Data Structure (SPADA) representation that leverages sparsity to reduce the memory footprint of per-flow monitoring systems in the data plane while preserving their original accuracy. SPADA representation can be integrated into a generic per-flow monitoring system and is suitable for several measurement use cases. We prototype SPADA in P4 for a commercial FPGA target and test our approach with a custom simulator that we make publicly available, on four real network traces over three different monitoring tasks. Our results show that SPADA achieves 2× to 11× memory footprint reduction with respect to the state-of-the-art while maintaining the same accuracy, or even improving it.}
 }

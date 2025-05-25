@@ -1,412 +1,781 @@
-@inproceedings{DBLP:conf/conext/HureauDK24,
-	author = {Olivier Hureau and
-                  Andrzej Duda and
-                  Maciej Korczynski},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Stress Testing the {DMARC} Reporting System: Compliance with Standards
-                  and Ways of Improvement},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {1--9},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/MelliaSQB24,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
+                  Lili Qiu and
+                  Olivier Bonaventure},
+	title = {PACMNET, V2, CoNEXT1, March 2024 Editorial},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT1},
+	pages = {1:1},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697809},
-	doi = {10.1145/3680121.3697809},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/HureauDK24.bib},
+	url = {https://doi.org/10.1145/3649469},
+	doi = {10.1145/3649469},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQB24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {The DMARC reporting system enables domain name owners to receive failure and aggregate reports from email receivers to get insight into email authentication failures or unauthorized domain usage and take measures against phishing and spoofing attacks. In this paper, we test DMARC reporting of main Email Service Providers (ESPs) and show that most of them do not comply with the RFC specification, especially with respect to the generation of failure reports and external destination verification. We also analyze more than 40,000 DMARC aggregate reports and show that 94.93% of them do not follow the correct report syntax defined in RFC 7489. Finally, we provide recommendations for improving the DMARC reporting strategy.}
+	abstract = {The Proceedings of the ACM on Networking (PACMNET) series present the highest-quality research conducted in the areas of emerging computer networks and their applications. We encourage submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board. This issue contains four papers submitted for the June '23 deadline that were revised by their authors based on the extensive feedback provided by the reviewers. We would like to thank the many individuals who contributed to this issue of PACMNET, in particular the authors, who submitted their best work to PACMNET, and the Associate Editors, who provided constructive feedback to the authors in their reviews, participated in the online discussions and the Editors' meeting. We would like also to thank the SIGCOMM Executive Committee Chair and the CoNEXT Steering Committee members who supported and guided us as usual.}
 }
 
 
-@inproceedings{DBLP:conf/conext/LiuWCMLB24,
-	author = {Jiamo Liu and
-                  Marcin Waz and
-                  Jae Chung and
-                  Kevin Moslehpour and
-                  David Lerner and
-                  Elizabeth M. Belding},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Estimating Video Quality Using Coarse-Grained Features: Insights and
-                  Limitations from Gaussian Mixture Models},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {10--16},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/LuoLWY24,
+	author = {Yirui Luo and
+                  Chenglong Li and
+                  Zhiliang Wang and
+                  Jiahai Yang},
+	title = {{IPREDS:} Efficient Prediction System for Internet-wide Port and Service
+                  Scanning},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT1},
+	pages = {2:1--2:24},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697811},
-	doi = {10.1145/3680121.3697811},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/LiuWCMLB24.bib},
+	url = {https://doi.org/10.1145/3649470},
+	doi = {10.1145/3649470},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LuoLWY24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {The significant demand for high-quality video streaming, and the wide proliferation of this application in entertainment, education and communication, has created an urgent need for methods that ensure user Quality of Experience (QoE). Traditional approaches for predicting video playback quality have focused on fine-grained network layer features, which can be computationally intensive and require extensive data collection. To reduce the high computation demand and data collection requirements, we propose to use machine learning methods to predict mean video playback bitrate using coarse-grained features derived from real-time packet scheduling priority weights. Although coarse-grained features alone may not always perform optimally due to data ambiguity, they can still enable meaningful predictions in specific contexts. In this work, we investigate the use of coarse-grained features and their ability to predict video streaming QoE. To do so, we introduce a Gaussian Mixture Model (GMM)-based filtering technique to identify regions where the model performs well. Our evaluation shows that while our model initially achieves a 56% macro-average F1 score for the entire dataset, it reaches an 81% macro-average F1 score with the filtered subset of data. This approach highlights the potential of coarse-grained features for accurate QoE estimation by identifying the regions of the dataset where these features possess sufficient discriminative power, thereby enhancing domain knowledge and the trustworthiness of model outputs.}
+	abstract = {Internet-wide port and service scanning, a vital tool for network research, is unaffordable in time and network bandwidth consumption. However, scanning only a portion of ports and services may lead to erroneous research conclusions. Previous work has shortened scanning time by predicting potentially active ports and eliminating many invalid scan targets. Still, they suffer from inherent design flaws that compromise their performance in terms of prediction accuracy and efficiency. The vast, unevenly distributed, and noisy nature of active ports presents significant challenges for prediction systems. Meanwhile, service prediction work is still in a shortage state. In this work, we introduce IPREDS, the first efficient prediction system for Internet-wide port and service scanning. IPREDS uses its carefully designed decision model to utilize all input features and predict the scanning reward of each target in parallel, providing high coverage prediction results in minimal time. Our experiment results show that IPREDS can discover 87% of active ports across the entire IPv4 network within two hours, saving at least 87.26% of the total time and 59% of the packets sent compared to existing work. For service scanning, IPREDS finds 91% of all active services using only four handshakes on each active port and saves 85.9% time to find 69% of each active service compared to exhaustive service scanning.}
 }
 
 
-@inproceedings{DBLP:conf/conext/NayakRDMGS24,
-	author = {Siddharth Nayak and
-                  Vishesh Rangwani and
-                  Kartikay Dubey and
-                  Rajorshi Mondal and
-                  Tushar Gupta and
-                  Rinku Shah},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Reducing Data Movement Tax for Serialization in Microservices},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {17--18},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/ShouBGHLW24,
+	author = {Chaofan Shou and
+                  Rohan Bhatia and
+                  Arpit Gupta and
+                  Rob Harrison and
+                  Daniel Lokshtanov and
+                  Walter Willinger},
+	title = {Query Planning for Robust and Scalable Hybrid Network Telemetry Systems},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT1},
+	pages = {3:1--3:27},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699882},
-	doi = {10.1145/3680121.3699882},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/NayakRDMGS24.bib},
+	url = {https://doi.org/10.1145/3649471},
+	doi = {10.1145/3649471},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ShouBGHLW24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Small-scale public cloud providers cannot adopt serialization data-copy optimizations that leverage hardware acceleration or kernel-bypass zero-copy paradigm (e.g., DPDK) because of (1) accelerator deployment costs, (2) securing kernel-bypass zero-copy serialization communication relies on encryption at the NIC hardware, and (3) kernel-bypass solutions require developers to rewrite the business logic. We propose a serialization library that leverages the kernel scatter-gather communication primitives to reduce serialization data copy costs without using custom hardware or a custom network stack.}
+	abstract = {Network telemetry systems have become hybrid combinations of state-of-the-art stream processors and modern programmable data-plane devices. However, the existing designs of such systems have not focused on ensuring that these systems are also deployable in practice, i.e., able to scale and deal with the dynamics in real-world traffic and query workloads. Unfortunately, efforts to scale these hybrid systems are hampered by severe constraints on available compute resources in the data plane (e.g., memory, ALUs). Similarly, the limited runtime programmability of existing hardware data-plane targets critically affects efforts to make these systems robust. This paper presents the design and implementation of DynaMap, a new hybrid telemetry system that is both robust and scalable. By planning for telemetry queries dynamically, DynaMap allows the remapping of stateful dataflow operators to data-plane registers at runtime. We model the problem of mapping dataflow operators to data-plane targets formally and develop a new heuristic algorithm for solving this problem. We implement our algorithm in prototype and demonstrate its feasibility with existing hardware targets based on Intel Tofino. Using traffic workloads from different real-world production networks, we show that our prototype of DynaMap improves performance on average by 1-2 orders of magnitude over state-of-the-art hybrid systems that use only static query planning.}
 }
 
 
-@inproceedings{DBLP:conf/conext/OkYM24,
-	author = {Jisu Ok and
-                  Wonsup Yoon and
-                  Sue Moon},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Pushing {RDMA} into Milliseconds {RTT} Communication},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {19--20},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/HeYQPY24,
+	author = {Zhaoyuan He and
+                  Yifan Yang and
+                  Lili Qiu and
+                  Kyoungjun Park and
+                  Yuqing Yang},
+	title = {{NERVE:} Real-Time Neural Video Recovery and Enhancement on Mobile
+                  Devices},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT1},
+	pages = {4:1--4:19},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699883},
-	doi = {10.1145/3680121.3699883},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/OkYM24.bib},
+	url = {https://doi.org/10.1145/3649472},
+	doi = {10.1145/3649472},
+	timestamp = {Wed, 02 Apr 2025 16:14:26 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HeYQPY24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Thanks to its high performance and efficiency, RDMA has become an essential networking primitive in today's datacenter. However, existing RDMA-based systems mainly focus on accelerating data communication of endpoints away from each other in tens or hundreds of microseconds RTT. This paper aims to address the following question: How far can RDMA be employed without losing its performance and efficiency merit? We present our methodology and analysis to study the potential of RDMA networking over a millisecond-scale RTT path.}
+	abstract = {As mobile devices become increasingly popular for video streaming, it is crucial to optimize the streaming experience for these devices. Although deep learning-based video enhancement techniques are gaining attention, most of them cannot support real-time enhancement on mobile devices. Additionally, many of these techniques are focused solely on super-resolution and cannot handle partial or complete loss or corruption of video frames, which is common in the Internet and wireless networks. To overcome these challenges, we present NERVE, a novel approach in this paper. NERVE consists of (i) a novel video frame recovery scheme, (ii) a new super-resolution algorithm, and (iii) an enhancement-aware video bit rate adaptation algorithm. We implement NERVE on an iPhone 12, and it can support 30 frames per second (FPS). We evaluate NERVE in various networks such as 3G, 4G, 5G, and WiFi networks. Our evaluation shows that NERVE enables real-time video recovery and enhancement, and results in 24% - 83% increase in video Quality of Experience (QoE) in our video streaming system.}
 }
 
 
-@inproceedings{DBLP:conf/conext/RimlingerVFF24,
-	author = {Hugo Rimlinger and
+@article{DBLP:journals/pacmnet/AzorinMCGPR24,
+	author = {Rapha{\"{e}}l Azorin and
+                  Andrea Monterubbiano and
+                  Gabriele Castellano and
+                  Massimo Gallo and
+                  Salvatore Pontarelli and
+                  Dario Rossi},
+	title = {Taming the Elephants: Affordable Flow Length Prediction in the Data
+                  Plane},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT1},
+	pages = {5:1--5:24},
+	year = {2024},
+	url = {https://doi.org/10.1145/3649473},
+	doi = {10.1145/3649473},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/AzorinMCGPR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine Learning (ML) shows promising potential for enhancing networking tasks by providing early traffic predictions. However, implementing an ML-enabled system is a challenging task due to network devices limited resources. While previous works have shown the feasibility of running simple ML models in the data plane, integrating them into a practical end-to-end system is not an easy task. It requires addressing issues related to resource management and model maintenance to ensure that the performance improvement justifies the system overhead. In this work, we propose DUMBO, a versatile end-to-end system to generate and exploit early flow size predictions at line rate. Our system seamlessly integrates and maintains a simple ML model that offers early coarse-grain flow size prediction in the data plane. We evaluate the proposed system on flow scheduling, per-flow packet inter-arrival time distribution, and flow size estimation using real traffic traces, and perform experiments using an FPGA prototype running on an AMD(R)-Xilinx(R) Alveo U280 SmartNIC. Our results show that DUMBO outperforms traditional state-of-the-art approaches by equipping network devices data planes with a lightweight ML model. Code is available at https://github.com/cpt-harlock/DUMBO.}
+}
+
+
+@article{DBLP:journals/pacmnet/MelliaSTQ24,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
+                  Gareth Tyson and
+                  Ihsan Ayyub Qazi},
+	title = {PACMNET, V2, CoNEXT2, June 2024 Editorial},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {6:1},
+	year = {2024},
+	url = {https://doi.org/10.1145/3656294},
+	doi = {10.1145/3656294},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSTQ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Proceedings of the ACM on Networking (PACMNET) series present the highest-quality research conducted in the areas of emerging computer networks and their applications. We encourage submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board. This issue contains five articles submitted to the December\'23 deadline, where we received more than 80 articles. Each article underwent a rigorous review process involving more than 80 Editors coordinated by the two Associate Editors. In the first phase of the review process, each article received at least three reviews. After an online discussion phase, about half of the articles were rejected, and half were promoted to the second review phase. There, the Editors provided at least two additional reviews for each article. After a second discussion phase, the Editors met online to decide which articles to accept after a minor revision, which to offer the authors a "oneshot-major" revision opportunity, and which to reject. Ten articles have been offered a one-shot major revision option and five have been accepted. These have been revised by their authors based on the extensive feedback provided by the Editors who checked the revised version after modifications. The issue covers topics related to computer networks and their applications: one article on network management introduces the usage of Large Language Models, one article focuses on video streaming, one article on Internet overlay network design, one article on LoRaWAN, and one article on Internet measurements of the emerging IPv6 infrastructure. We want to thank the many individuals who contributed to this issue of PACMNET, in particular the authors, who submitted their best work to PACMNET, and the Associate Editors, who provided constructive feedback to the authors in their reviews, participated in the online discussions and the Editors\' meeting. We would like to thank the SIGCOMM Executive Committee Chair and the CoNEXT Steering Committee members who supported and guided us as usual, giving important suggestions an insight during the article selection process.}
+}
+
+
+@article{DBLP:journals/pacmnet/WangSFFKC24,
+	author = {Changjie Wang and
+                  Mariano Scazzariello and
+                  Alireza Farshin and
+                  Simone Ferlin and
+                  Dejan Kostic and
+                  Marco Chiesa},
+	title = {NetConfEval: Can LLMs Facilitate Network Configuration?},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {7:1--7:25},
+	year = {2024},
+	url = {https://doi.org/10.1145/3656296},
+	doi = {10.1145/3656296},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/WangSFFKC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper explores opportunities to utilize Large Language Models (LLMs) to make network configuration human-friendly, simplifying the configuration of network devices & development of routing algorithms and minimizing errors. We design a set of benchmarks (NetConfEval) to examine the effectiveness of different models in facilitating and automating network configuration. More specifically, we focus on the scenarios where LLMs translate high-level policies, requirements, and descriptions (i.e., specified in natural language) into low-level network configurations & Python code. NetConfEval considers four tasks that could potentially facilitate network configuration, such as (i) generating high-level requirements into a formal specification format, (ii) generating API/function calls from high-level requirements, (iii) developing routing algorithms based on high-level descriptions, and (iv) generating low-level configuration for existing and new protocols based on input documentation. Learning from the results of our study, we propose a set of principles to design LLM-based systems to configure networks. Finally, we present two GPT-4-based prototypes to (i) automatically configure P4-enabled devices from a set of high-level requirements and (ii) integrate LLMs into existing network synthesizers.}
+}
+
+
+@article{DBLP:journals/pacmnet/WangZLXPPZRS24,
+	author = {Haiping Wang and
+                  Ruixiao Zhang and
+                  Chaojun Li and
+                  Zhichen Xue and
+                  Yajie Peng and
+                  Xiaofei Pang and
+                  Yixuan Zhang and
+                  Shaorui Ren and
+                  Shu Shi},
+	title = {Twist: {A} Multi-site Transmission Solution for On-demand Video Streaming},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {8:1--8:19},
+	year = {2024},
+	url = {https://doi.org/10.1145/3656297},
+	doi = {10.1145/3656297},
+	timestamp = {Tue, 11 Mar 2025 09:49:19 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/WangZLXPPZRS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Video traffic has witnessed exponential growth in recent years. As the cost optimization space of Content Delivery Network (CDN) has reached a plateau, content providers are expanding their network infrastructure to accommodate this surge. To address the cost issue, content providers have turned to cost-effective Peer-to-Peer Content Delivery Network (PCDN) solutions. However, the utilization of limited-capability PCDN nodes may lead to a decline in overall streaming performance compared to powerful CDN servers. To bridge this performance gap, we present Twist. Twist is a receiver-driven multi-site transport that leverages multiple cost-effective PCDN nodes to achieve performance equivalent to traditional CDN solutions. It incorporates a joint flow control to prevent throughput drops that can occur when using multiple content sources, and a proactive retransmission algorithm to handle frequent packet loss. Our evaluations demonstrate that Twist improves download speed on PCDN nodes by 1.71x-2.09x compared to traditional PCDN streaming solutions. Furthermore, extensive A/B testing verifies that Twist enables PCDN to achieve comparable download performance and Quality of Experience (QoE) as CDN. Over three years of commercial deployment, Twist has already served over 300 million users and has handled 35% of the video traffic, resulting in substantial cost savings for a world-leading content provider.}
+}
+
+
+@article{DBLP:journals/pacmnet/ZhangZCW24,
+	author = {Yuchao Zhang and
+                  Huahai Zhang and
+                  Peizhuang Cong and
+                  Wendong Wang},
+	title = {{ROND:} Rethinking Overlay Network Design with Underlay Network Awareness},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {9:1--9:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3656298},
+	doi = {10.1145/3656298},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ZhangZCW24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Overlay network is an effective way for constructing end-to-end high-quality network services. Service Overlay Network (SON) leverages existing data transmission infrastructure to offer overlay network as network services, which provides flexibility and controllability for deploying value-added services. In this paper, we study the overlay topology design problem of SON deployment, that is, purchasing bandwidth with certain Quality of Service (QoS) guarantees in the underlay network, and building a logical overlay network that adapts to communication requirements with guaranteed reliability. The challenge lies in the difficulty of designing an overlay network with adaptability for dynamic of traffic requirement and uncertainty of underlay network failures. Traditional methods lack the underlay network view and rarely consider network failure scenarios, making it difficult to achieve global optimization. We mathematically formulate the minimum-cost overlay network design problem with network reliability constraints. Then, we propose a novel method, ROND, that samples critical traffic matrices to capture the dynamic of traffic patterns and generates failure scenarios to characterize the volatility of underlay network for avoiding significant network reconfiguration. On this basis, we simplify overlay network design problem and solve it iteratively, thereby minimizing the transmission cost as much as possible while ensuring the network performance. Extensive experimental results demonstrate that ROND is cost-effective and performance-guaranteed.}
+}
+
+
+@article{DBLP:journals/pacmnet/ShahidK24,
+	author = {Muhammad Osama Shahid and
+                  Bhuvana Krishnaswamy},
+	title = {{BYOG} : Multi-Channel, Real-time LoRaWAN Gateway Testbed using General-purpose
+                  Software Defined Radio},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {10:1--10:17},
+	year = {2024},
+	url = {https://doi.org/10.1145/3656299},
+	doi = {10.1145/3656299},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ShahidK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Adaptive Data Rate (ADR) is used by multi-channel LoRaWANs to meet the demanding capacity needs of LoRa networks. The network server running ADR in each channel determines the optimum data rate and assigns the appropriate spreading factor for each LoRa device to maximize the network throughput. This in turn requires the gateway to be capable of receiving LoRa packets of all possible spreading factors. Existing gateways achieve this by using multiple RF front ends, increasing the overall cost and complexity. In this work, we propose BYOG (Bring Your Own Gateway), a LoRaWAN receiver that can receive and decode 10 channels simultaneously in real-time. Towards this pipeline, we develop self-dechirping, an SF-agnostic packet detection algorithm that also detects the spreading factor of the packet. This computationally lightweight algorithm can be implemented on any general-purpose software-defined radio, bringing down the cost and ease of LoRaWAN gateway implementations. BYOG will enable research and development in LoRaWAN ADR. Using experimental, real-world datasets, we show that the proposed algorithm can detect the spreading factor accurately and operate over a wide range of SNRs using three different SDRs (RTL-SDR, HackRF One, USRP B210). BYOG performs as well as a high-end LoRaWAN gateway in terms of network throughput.}
+}
+
+
+@article{DBLP:journals/pacmnet/HilalSVG24,
+	author = {Fahad Hilal and
+                  Patrick Sattler and
                   Kevin Vermeulen and
-                  Olivier Fourmaux and
-                  Timur Friedman},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: GeoResolver, An Accurate, Scalable, and Explainable Geolocation
-                  Technique Using {DNS} Redirection},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {21--22},
-	publisher = {{ACM}},
+                  Oliver Gasser},
+	title = {A First Look At IPv6 Hypergiant Infrastructure},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT2},
+	pages = {11:1--11:25},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699884},
-	doi = {10.1145/3680121.3699884},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/RimlingerVFF24.bib},
+	url = {https://doi.org/10.1145/3656300},
+	doi = {10.1145/3656300},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HilalSVG24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Obtaining an accurate, explainable, Internet-scale IP geolocation dataset has been a longstanding goal of the research community. Despite decades of research on IP geolocation, no current technique can provide such a dataset. In particular, latency-based geolocation techniques do not scale, because, on one hand, we have thousands of available vantage points to perform measurements, but on the other hand, we have no way to select the right ones for each IP address. In this paper, we present GeoResolver, an efficient vantage point selection methodology, based on the assumption that two IP addresses that share a similar DNS redirection are likely to be geographically close together. GeoResolver performs nearly as well as a brute force approach using all the vantage points, geolocating 94% of the targets that could actually be geolocated at metro level by using all the vantage points, while using 4.3% of the probing budget compared to a state-of-the-art technique. We carefully design GeoResolver to be both accurate and scalable and with our implementation, we start a large-scale geolocation campaign.}
+	abstract = {Today\'s Internet is dominated by a small number of companies which are responsible for a large fraction of Internet traffic. These so called "hypergiants" make use of off-nets to deploy parts of their infrastructure in ISP networks. Off-nets ensure that clients from these ISPs get lower latencies and the ISP needs to send less traffic to its upstream providers. They have been relatively well studied in the IPv4 Internet, although their footprint in IPv6 remains unclear. In this paper, we take a first look at the IPv6 hypergiant infrastructure. We perform a first-of-its-kind study of IPv6 off-nets for 14 hypergiants and compare their deployment to IPv4. We find IPv6 off-nets in 2k ASes, compared to the more than 6k off-net ASes for IPv4. Moreover, the majority of IPv6 off-nets deployments are seen in ASes which already deploy IPv4 off-nets. Interestingly, we also see some hypergiants such as Disney and Hulu not making use of any IPv6 off-nets at all. We also uncover the phenomenon of cross-hypergiant deployments, where one hypergiant deploys its infrastructure in another hypergiant\'s network. Finally, we use latency measurements to compare IPv6 vs. IPv4 latency to off-net prefixes within off-net ASes and find similar results for both protocol versions. We make all our code and data available to encourage replicability.}
 }
 
 
-@inproceedings{DBLP:conf/conext/PatilT0024,
-	author = {Varun Patil and
-                  Sirapop Theeranantachai and
-                  Beichuan Zhang and
-                  Lixia Zhang},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
+@article{DBLP:journals/pacmnet/MelliaSQT24,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
                   Ihsan Ayyub Qazi and
                   Gareth Tyson},
-	title = {Poster: Distance Vector Routing for Named Data Networking},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {23--24},
-	publisher = {{ACM}},
+	title = {PACMNET, V2, CoNEXT3, September 2024 Editorial},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {12:1},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699885},
-	doi = {10.1145/3680121.3699885},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/PatilT0024.bib},
+	url = {https://doi.org/10.1145/3676859},
+	doi = {10.1145/3676859},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQT24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Although Distance Vector (DV) routing protocols can have a simple design and low overhead, they bear a bad reputation for undesired behavior: routing updates may "count to infinity" after node or link failures, which result in packet looping in the data plane. Since Named Data Networking (NDN) has a stateful data plane that can detect and mitigate packet loops, we design a DV routing protocol over NDN, ndn-dv, and demonstrate that an NDN network running ndn-dv can prevent traffic disruptions in the face of dynamic network topology changes due to failures.}
+	abstract = {The Proceedings of the ACM on Networking (PACMNET) series present the highest-quality research conducted in the areas of emerging computer networks and their applications. We encourage submissions that present new technologies, novel experimentation, creative use of networking technologies, and new insights made possible using analysis. The journal is strongly supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM) and involves top-level researchers in its Editorial Board. This issue contains five articles that were originally submitted to the December'23 deadline, which received 82 submissions in total. Each submission underwent a rigorous review process involving more than 80 Editors coordinated by the two Associate Editors. In the first phase of the review process, each article received at least three reviews. After an online discussion phase, about half of the articles were rejected, and half were promoted to the second review phase. There, the Editors provided at least two additional reviews for each article. After a second discussion phase, the Editors selected seven long articles for a ''one-shot'' resubmission in June'24. The revised papers were then reviewed again by the same editors, resulting in five accepted papers. This issue covers topics related to computer networks and their applications: two articles focus on network analytics, one article focuses on packet processing, one article focuses on network trace generation, and one article focuses on IP geolocation. We want to thank the many individuals who contributed to this issue of PACMNET, in particular the authors, who submitted their best work to PACMNET, and the Associate Editors, who provided constructive feedback to the authors in their reviews and participated in the discussions. We would also like to thank the SIGCOMM Executive Committee Chair and the CoNEXT Steering Committee members who supported and guided us as usual, giving important suggestions and insights during the article selection process.}
 }
 
 
-@inproceedings{DBLP:conf/conext/DekinderVD24,
-	author = {Florian Dekinder and
-                  Eric Vyncke and
-                  Benoit Donnet},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Evaluating Dual-Stack Content Delivery Within Websites},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {25--26},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/GhasemirahniFSMKC24,
+	author = {Hamid Ghasemirahni and
+                  Alireza Farshin and
+                  Mariano Scazzariello and
+                  Gerald Q. Maguire Jr. and
+                  Dejan Kostic and
+                  Marco Chiesa},
+	title = {{FAJITA:} Stateful Packet Processing at 100 Million pps},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {14:1--14:22},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699886},
-	doi = {10.1145/3680121.3699886},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/DekinderVD24.bib},
+	url = {https://doi.org/10.1145/3676861},
+	doi = {10.1145/3676861},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/GhasemirahniFSMKC24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {This paper aims at evaluating how content distribution is spread between IPv4 and IPv6 within popular websites. Our measurement tool, based on a headless browser technology, has shown that most websites do not opt forIPv4 or IPv6 alone, but rather for a Mixed infrastructure where both protocols are required. Within this Mixed context, data shows that content delivery through IPv4 is predominant.}
+	abstract = {Data centers increasingly utilize commodity servers to deploy low-latency Network Functions (NFs). However, the emergence of multi-hundred-gigabit-per-second network interface cards (NICs) has drastically increased the performance expected from commodity servers. Additionally, recently introduced systems that store packet payloads in temporary off-CPU locations (e.g., programmable switches, NICs, and RDMA servers) further increase the load on NF servers, making packet processing even more challenging. This paper demonstrates existing bottlenecks and challenges of state-of-the-art stateful packet processing frameworks and proposes a system, called FAJITA, to tackle these challenges & accelerate stateful packet processing on commodity hardware. FAJITA proposes an optimized processing pipeline for stateful network functions to minimize memory accesses and overcome the overheads of accessing shared data structures while ensuring efficient batch processing at every stage of the pipeline. Furthermore, FAJITA provides a performant architecture to deploy high-performance network functions service chains containing stateful elements with different state granularities. FAJITA improves the throughput and latency of high-speed stateful network functions by ~2.43x compared to the most performant state-of-the-art solutions, enabling commodity hardware to process up to ~178 Million 64-B packets per second (pps) using 16 cores.}
 }
 
 
-@inproceedings{DBLP:conf/conext/ShajarianKA24,
-	author = {Shaghayegh Shajarian and
-                  Sajad Khorsandroo and
-                  Mahmoud Abdelsalam},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Intelligent Network Management: RAG-Enhanced LLMs for Log
-                  Analysis, Troubleshooting, and Documentation},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {27--28},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/LivadariuVMG24,
+	author = {Ioana Livadariu and
+                  Kevin Vermeulen and
+                  Maxime Mouchet and
+                  Vasilis Giotsas},
+	title = {Geofeeds: Revolutionizing {IP} Geolocation or Illusionary Promises?},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {15:1--15:21},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699887},
-	doi = {10.1145/3680121.3699887},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/ShajarianKA24.bib},
+	url = {https://doi.org/10.1145/3676869},
+	doi = {10.1145/3676869},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LivadariuVMG24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Modern network management is increasingly complex, requiring administrators to handle vast amounts of log data from diverse sources, leading to inefficiencies, errors, and operational challenges. In this work, we propose a novel AI-driven framework that integrates Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG) and human-in-the-loop process to automate network management tasks such as log analysis, troubleshooting recommendations, and documentation generation. This study aims to enhance network reliability, reduce operational complexity, and move forward to autonomous network management.}
+	abstract = {Despite more than twenty years of efforts, the research community is still looking for a publicly available Internet-scale IP geolocation dataset with an explainable methodology. Recently, a new hope has appeared, with the emergence of geofeeds. Geofeeds are a self published IP geolocation dataset where operators give the geolocation of their IP addresses, with the underlying idea being that other network providers can tune their services to better serve the IP address depending on its geolocation. In this paper, we analyze whether the hope of finally obtaining the golden geolocation dataset is a real possibility or a mirage. Two years after the standardization of geofeeds, we look at how they are adopted by operators, and what is their accuracy, and how we can use them for operational and research scenarios. First, geofeeds are in the early adoption process with 1.50% and 0.70% of the allocated IPv4 and IPv6 prefixes covering the geofeed prefixes. Second, even if we cannot use geofeeds as ground truth as we found 0.9%, 4.0%, and 8.5% of the client, router, and server IP addresses with an erroneous geofeed, most of them look correct and provide at least a geolocation hint for building an internet scale IP geolocation dataset. Finally, we provide some recommendations on how to use geofeeds and how we could improve the format and the process of sharing geofeeds to improve their quality.}
 }
 
 
-@inproceedings{DBLP:conf/conext/VogtRLR24,
-	author = {Francisco Germano Vogt and
-                  Fabricio Rodriguez and
-                  Marcelo Caggiani Luizelli and
-                  Christian Esteve Rothenberg},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Towards In-Network Resource Scaling of VNFs},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {29--30},
-	publisher = {{ACM}},
-	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699888},
-	doi = {10.1145/3680121.3699888},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/VogtRLR24.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Intra-server resource orchestration is becoming increasingly challenging. Modern server architectures are now composed of multiple computing units, such as CPUs and DPUs. VNFs should be appropriately provisioned between these computing units, avoiding performance degradation and optimizing server resources. In this work, we introduce In-Network Resource Allocation (InReal), a system to orchestrate containerized VNFs. InReal can provision and manage VNF resources, optimizing CPU usage and enhancing power efficiency while meeting VNF performance requirements.}
-}
-
-
-@inproceedings{DBLP:conf/conext/LiuJLKWCNLDPL24,
-	author = {Yirui Liu and
-                  Lidong Jiang and
-                  Deguo Li and
-                  Daxiang Kang and
-                  Zhaoyang Wei and
-                  Yuqi Chai and
-                  Bin Niu and
-                  Ke Lin and
-                  Xiaoning Ding and
-                  Jianwen Pi and
-                  Hao Luo},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Poster: Jakiro: Spitting {RDMA} and {TCP} over Virtual Private Cloud},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {31--32},
-	publisher = {{ACM}},
-	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3699889},
-	doi = {10.1145/3680121.3699889},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/LiuJLKWCNLDPL24.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {A Virtual Private Cloud (VPC) that enables both RDMA and TCP provides advantages for both tenants and cloud providers. In this study, we introduce Jakiro, an innovative framework of vNIC design that supports both RDMA and TCP over a unified VPC. Jakiro holds the capability to support fundamental VPC features for both RDMA and TCP streams while maintaining compatibility with applications and intra-host RDMA optimization techniques. Our test results indicate that Jakiro introduces negligible overhead.}
-}
-
-
-@inproceedings{DBLP:conf/conext/MaLDD0024,
-	author = {Yibo Ma and
+@article{DBLP:journals/pacmnet/ZhangLJL24,
+	author = {Shiyuan Zhang and
                   Tong Li and
-                  Yuwei Du and
-                  Schahram Dustdar and
-                  Zhaocheng Wang and
+                  Depeng Jin and
                   Yong Li},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Sustainable Connections: Exploring Energy Efficiency in 5G Networks},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {33--40},
-	publisher = {{ACM}},
+	title = {NetDiff: {A} Service-Guided Hierarchical Diffusion Model for Network
+                  Flow Trace Generation},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {16:1--16:21},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697806},
-	doi = {10.1145/3680121.3697806},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/MaLDD0024.bib},
+	url = {https://doi.org/10.1145/3676870},
+	doi = {10.1145/3676870},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/ZhangLJL24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Although 5G networks offer larger capacity due to more antennas and larger bandwidths, their increased energy consumption is concerning. This paper investigates energy consumption issues from widespread 5G deployment using city-scale real-world mobile network data. Our dataset includes traffic volume, energy consumption, and base station attributes spanning May 2022, July 2023, and April 2024, covering over 10,000 4G and 5,000 5G base stations. A portion of the dataset is published on GitHub. We develop high-accuracy models to profile 4G and 5G base station energy consumption, revealing 5G inefficiencies under low traffic loads. We identify energy efficiency traps where network energy efficiency drops post-5G deployment. Our study estimates the recovery time from energy efficiency traps, emphasizes that different functional regions have varying recovery levels, and analyzes the reasons for these differences. We provide recommendations for deploying and commercializing 5G to promote sustainable connectivity.}
+	abstract = {Network flow traces are fundamental to many network management workflows. In this paper, we aim to generate high-fidelity network flow traces by explicitly modeling users' dynamic network usage intents. We propose NetDiff, a service-guided hierarchical diffusion model for network flow trace generation. NetDiff employs a hierarchical generation structure that includes a layer to model mobile users' interactions with network services, such as app usage traces, and leverages these generated app usage traces to guide network flow generation. NetDiff avoids pattern collapse and generates controlled samples by gradually eliminating noise and using service conditions to guide each step more precisely. It captures the co-usage and sequential relationships across network service usage through a pre-trained embedding model and an encoder-decoder structure. Additionally, NetDiff captures the temporal and feature correlations present in multidimensional network flow data through a two-layer transformer network. Extensive experiments on real-world network flow datasets demonstrate that NetDiff significantly outperforms state-of-the-art baselines regarding Jensen-Shannon divergence, total variation distance, and cumulative residual probability sum squares. Furthermore, NetDiff is robust across various datasets from different cities, meeting users' requirements for downstream tasks by maintaining algorithm accuracy and order.}
 }
 
 
-@inproceedings{DBLP:conf/conext/PandeyAMVZ24,
-	author = {Ayush Pandey and
-                  Rohail Asim and
-                  Khalid Mengal and
-                  Matteo Varvello and
-                  Yasir Zaki},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {\emph{SONIC: } Connect the Unconnected via {FM} Radio {\&} {SMS}},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {41--47},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/OzeryDF24,
+	author = {Aviya Ozery and
+                  Jonathan Diamant and
+                  Shir Landau Feibish},
+	title = {RecenTo: Finding Top-K Flows of the Recent Past},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {17:1--17:20},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697812},
-	doi = {10.1145/3680121.3697812},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/PandeyAMVZ24.bib},
+	url = {https://doi.org/10.1145/3676871},
+	doi = {10.1145/3676871},
+	timestamp = {Mon, 10 Mar 2025 16:00:57 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/OzeryDF24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {As of 2022, about 2.78 billion people in developing countries do not have access to the Internet. Lack of Internet access hinders economic growth, educational opportunities, and access to information and services. Recent initiatives to "connect the unconnected" have either failed (project Loon and Aquila) or are characterized by exorbitant costs (Starlink and similar), which are unsustainable for users in developing regions. This paper proposes SONIC, a novel connectivity solution that repurposes a widespread communication infrastructure (AM/FM radio) to deliver access to pre-rendered webpages. Our rationale is threefold: 1) the radio network is widely accessible -- currently reaching 70% of the world -- even in developing countries, 2) unused frequencies are highly available, 3) while data over sound can be slow, when combined with the radio network, it takes advantage of its broadcast nature, efficiently reaching a large number of users. We have designed and built a proof-of-concept for SONIC, which shows encouraging initial results.}
+	abstract = {Recent advances in programmable networks enable network operators to perform fine-grained analysis on all of the traffic as it traverses the network. One of the most common tasks, that has been widely studied, is to find the heavy hitter flows or the top-k flows. Several solutions have been presented that find such flows using a constant amount of memory and working within the confined resources and capabilities of the data plane. However, in order to pinpoint critical issues in the network, it is necessary to detect the flows that have been heavy in the recent past. Yet, existing approaches perform the task of heavy flow detection continuously, such that they can find the heavy flows over a boundless time period. In order to find heavy flows for shorter time intervals, sliding windows are often used. This requires multiple instances of the structure to clean out old data while still recording new data. Thus this requires a large amount of resources, and also requires predetermining the fixed length of the windows. We provide a formal definition of the recent top-K flows on a given stream, and present RecenTo a new deterministic counter-based algorithm for finding such flows in the data plane. The innovative technique used in RecenTo enables it to 'self-clean', thus making it easier for newer flows to enter the structure. RecenTo also makes use of a novel structure for maintaining the key and counter of the flows that provides support for the  mutual dependence  between them (i.e., sometimes the count is changed based on key and sometimes vice-versa). We evaluate RecenTo over continuous chunks of traffic and show that it consistently achieves a recall rate of ~ 0.9 for finding the top-k flows in each chunk.}
 }
 
 
-@inproceedings{DBLP:conf/conext/VernaJTM24,
-	author = {Alberto Verna and
-                  Nikhil Jha and
-                  Martino Trevisan and
-                  Marco Mellia},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {A First View of Topics {API} Usage in the Wild},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {48--54},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/BasatEHT24,
+	author = {Ran Ben Basat and
+                  Gil Einziger and
+                  Wenchen Han and
+                  Bilal Tayh},
+	title = {{SQUID:} Faster Analytics via Sampled Quantile Estimation},
+	journal = {Proc. {ACM} Netw.},
+	volume = {2},
+	number = {CoNEXT3},
+	pages = {19:1--19:23},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697810},
-	doi = {10.1145/3680121.3697810},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/VernaJTM24.bib},
+	url = {https://doi.org/10.1145/3676873},
+	doi = {10.1145/3676873},
+	timestamp = {Fri, 07 Mar 2025 10:12:26 +0100},
+	biburl = {https://dblp.org/rec/journals/pacmnet/BasatEHT24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Among several proposals for a privacy-preserving replacement of third-party cookies, Google's new Topics API is widely discussed as a possible solution. Some scepticism still lingers on the new paradigm from researchers and control bodies; however, the industry has started deploying and testing it. This paper measures the current usage of the Topics API in the wild, discovering third parties that started enabling it, the practices they adopt and their interplay with privacy policies and consent acquisition mechanisms. To do so, we deploy a crawler to record the usage of Topics API on the most popular 50,000 websites worldwide. We observe that this technology starts to get a foothold - with 47 popular ad-related third parties that are testing it to understand the opportunities it offers. We notably observe typical problems of early deployments: privacy regulation violations, unexpected solutions that allow one to circumvent abuse protection, and deployment errors.}
+	abstract = {Streaming algorithms are fundamental in the analysis of large and online datasets. A key component of many such analytic tasks is  q -MAX, which finds the largest  q  values in a number stream. Modern approaches attain a constant runtime by removing small items in bulk and retaining the largest  q  items at all times. Yet, these approaches are bottlenecked by an expensive quantile calculation. This work introduces a quantile-sampling approach called SQUID and shows its benefits in multiple analytic tasks. Using this approach, we design a novel weighted heavy hitters data structure that is faster and more accurate than the existing alternatives. We also show SQUID's practicality for improving network-assisted caching systems with a hardware-based cache prototype that uses SQUID to implement the cache policy. The challenge here is that the switch's dataplane does not allow the general computation required to implement many cache policies, while its CPU is orders of magnitude slower. We overcome this issue by passing just SQUID's samples to the CPU, thus bridging this gap. In software implementations, we show that our method is up to 6.6x faster than the state-of-the-art alternatives when using real workloads. For switch-based caching, SQUID enables a wide spectrum of data-plane-based caching policies and achieves higher hit ratios than the state-of-the-art P4LRU.}
 }
 
 
-@inproceedings{DBLP:conf/conext/MittalVHT24,
-	author = {Sankalp Mittal and
-                  Harikrishnan V. and
-                  Patel Heetkumar and
-                  Praveen Tammana},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
+@article{DBLP:journals/pacmnet/MelliaSQT24a,
+	author = {Marco Mellia and
+                  Peter Steenkiste and
                   Ihsan Ayyub Qazi and
                   Gareth Tyson},
-	title = {iGuard: Efficient Isolation Forest Design for Malicious Traffic Detection
-                  in Programmable Switches},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {55--64},
-	publisher = {{ACM}},
+	title = {PACMNET, V2, CoNEXT4, December 2024 Editorial},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {21:1},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697807},
-	doi = {10.1145/3680121.3697807},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/MittalVHT24.bib},
+	url = {https://doi.org/10.1145/3696378},
+	doi = {10.1145/3696378},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MelliaSQT24a.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {Deploying machine learning (ML) models in programmable switch data planes facilitates low latency and high throughput traffic inference at line speed. However, data planes pose significant constraints due to the limited memory and minimal support for mathematical operations and data types. As a result, the only unsupervised ML models implemented in data planes to date are Isolation Forests (iForests). However, conventional iForest models yield suboptimal malicious traffic detection performance in various traffic use cases. To address this limitation, this paper proposes iGuard, the first iForest implementation that can accurately detect malicious traffic by incorporating the "knowledge" of more powerful autoencoders. We deploy iGuard in the form of a small set of whitelist rules that could be easily installed in the switch data planes. We implement iGuard using the P4 language, and assess its performance in an experimental platform based on Intel Tofino switches. Upon evaluating iGuard on various attack traffic use cases, our model can improve accuracy up to 48.3% while maintaining a similar or lower switch memory footprint over previous approaches to implement iForest models in real-world equipment.}
+	abstract = {The Proceedings of the ACM on Networking (PACMNET) series showcases top-tier research in emerging computer networks and their applications. We welcome submissions introducing new technologies, innovative experiments, creative applications of networking technologies, and fresh insights gained through analysis. Supported by the ACM Special Interest Group on Communications and Computer Networks (SIGCOMM), the journal is backed by a distinguished Editorial Board composed of leading researchers in the field. This issue concludes the second volume of PACMNET which in total published 32 articles, with a growth of 25% compared to the first volume. This issue features 18 articles, all submitted by the June 2024 deadline when a total of 121 submissions were received. Each submission underwent a thorough review process involving over 80 Editors, coordinated by two Associate Editors. In the initial phase, every article received a minimum of three reviews. Following an online discussion, roughly half of the submissions were rejected, while the other half advanced to a second review phase. In this phase, Editors produced at least two additional reviews per article. After a further discussion and remote Editors' meeting, 18 articles were chosen for publication and appear in this issue. Topics include network measurement, security, and privacy of both traditional and novel networking technologies. From a methodological perspective, machine learning and artificial intelligence-based solutions are predominant. All papers include a thorough set of experiments to validate the proposed solutions. We would like to express our gratitude to all those who contributed to this issue of PACMNET, especially the Authors for submitting their finest work and the Associate Editors for offering valuable feedback in their reviews and engaging in the discussions. Our thanks also go to the SIGCOMM Executive Committee Chair and the CoNEXT Steering Committee members for their continued support and guidance, providing essential suggestions and insights throughout the article selection process.}
 }
 
 
-@inproceedings{DBLP:conf/conext/FrancollaFV24,
-	author = {Dimitri Francolla and
-                  Mia Filic and
-                  Shannon Veitch},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {Privacy Implications of AMQ-Based {PQ} {TLS} Authentication},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {65--72},
-	publisher = {{ACM}},
+@article{DBLP:journals/pacmnet/BuiBVNCBB024,
+	author = {Minh{-}Thanh Bui and
+                  Matteo Boffa and
+                  Rodolfo Vieira Valentim and
+                  Jos{\'{e}} Manuel Navarro and
+                  Fuxing Chen and
+                  Xiaosheng Bao and
+                  Zied Ben{-}Houidi and
+                  Dario Rossi},
+	title = {A Systematic Comparison of Large Language Models Performance for Intrusion
+                  Detection},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {22:1--22:23},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697813},
-	doi = {10.1145/3680121.3697813},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/FrancollaFV24.bib},
+	url = {https://doi.org/10.1145/3696379},
+	doi = {10.1145/3696379},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/BuiBVNCBB024.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {During the TLS 1.3 handshake, an entity (e.g., a client application) commonly transmits a chain of certificates and certificates' digital signatures to the remote party to authenticate themselves. Towards a transition to post-quantum TLS, several proposals have been made to switch to post-quantum digital signatures in these certificate chains. Since post-quantum digital signatures are much larger than those based on classical assumptions, there has been a significant line of work aiming to reduce the overhead required for post-quantum authentication. Notably, the privacy implications of the proposed changes to the authentication system in TLS have not been thoroughly evaluated. Several of these proposals suggest Intermediate Certificate Authority (ICA) suppression, in which certificates that are already known to the client can be removed from the certificate chain to reduce the communication cost. One approach uses probabilistic data structures to transmit this information; however, this technique introduces additional privacy leakage, revealing to the server all ICAs whose certificates the client used to authenticate one of their past connections. In this work, we evaluate the privacy implications of taking such approaches to ICA suppression and the severity of its impact on TLS clients. In doing so, we perform an exploratory analysis on the current state of certificate-based PKI, particularly focusing on the distribution of ICAs. We define an adversarial model and a set of experiments to concretely evaluate the privacy leakage under the outlined assumptions. Our work suggests there is a risk in including this additional vector of information to adversarial servers aiming to execute website fingerprinting attacks.}
+	abstract = {We explore the capabilities of Large Language Models (LLMs) to assist or substitute devices (i.e., firewalls) and humans (i.e., security experts) respectively in the detection and analysis of security incidents. We leverage transformer-based technologies, from relatively small to foundational sizes, to address the problem of correctly identifying the attack severity (and accessorily identifying and explaining the attack type). We contrast a broad range of LLM techniques (prompting, retrieval augmented generation, and fine-tuning of several models) using state-of-the-art machine learning models as a baseline. Using proprietary data from commercial deployment, our study provides an unbiased picture of the strengths and weaknesses of LLM for intrusion detection.}
 }
 
 
-@inproceedings{DBLP:conf/conext/WanCMJ24,
-	author = {Haoran Wan and
-                  Xuyang Cao and
-                  Alexander Marder and
+@article{DBLP:journals/pacmnet/LinMS24,
+	author = {Yu{-}Tai Lin and
+                  N. Cameron Matson and
+                  Karthikeyan Sundaresan},
+	title = {Bringing Collaborative Positioning to Native 5G Systems for Enhanced
+                  2D {\&} 3D Location Services},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {23:1--23:21},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696380},
+	doi = {10.1145/3696380},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LinMS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {5G's large bandwidths and ubiquity make it a promising candidate for catalyzing future mobile services (emergency, V2X, XR, etc.) that benefit from accurate positioning over a wide area. However, we demonstrate that its heavy reliance on infrastructure base stations significantly limits its positioning ability in urban environments, where multi-story buildings and urban canyons are the norm, resulting in only a small fraction of devices being positioned, often only in 2D. To this end, we propose  CAMP,  a novel, collaboration-augmented paradigm for 2D and 3D positioning with cellular networks, where UEs leverage 5G NR's peer-peer Sidelink protocol to directly enable positioning measurements between each other in a scalable manner. Leveraging better connectivity (higher degree and SNR) between devices, CAMP overcomes the challenges inherent to infrastructure approaches. It brings algorithmic innovations in distributed, stochastic access and dynamic resource scheduling in a 5G-compliant manner to Sidelink measurements that are otherwise not scalable in conventional gNB-driven Sidelink operation.  CAMP  is implemented as a near real-time xApp service in the Open-RAN framework. Evaluations in a small cell 5G test-bed and a large-scale RAN on Colosseum, highlight its ability to position over 80% (72%) UEs with under 3m accuracy in 2D (3D) in real-world urban scenarios (compared to 30% with infrastructure approaches) and with 7-25x less overhead compared to baseline collaborative schemes.}
+}
+
+
+@article{DBLP:journals/pacmnet/0001MZAWWYXHYJS24,
+	author = {Xiaoliang Wang and
+                  Penghui Mi and
+                  Yong Zhu and
+                  Baoyi An and
+                  Yinhua Wang and
+                  Lixiang Wang and
+                  Xuezhi Yu and
+                  Qiong Xie and
+                  Xiang Huang and
+                  Mingliang Yin and
+                  Chaoyang Ji and
+                  Wei Sun and
+                  Yihang Lv and
+                  Yuhang Chen and
+                  Cam{-}Tu Nguyen and
+                  Chen Tian and
+                  Xiaoming Fu},
+	title = {EdgeCross: Cloud Scale Traffic Management at Peering Edges},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {24:1--24:23},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696396},
+	doi = {10.1145/3696396},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/0001MZAWWYXHYJS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud providers deployed dozens of PoPs and data centers globally to serve billions of geo-distributed users. The traffic management at peering edges has become a key capability of cloud network operators to meet the diverse demands of users. With the rapid growth of cloud applications, users have recently announced new performance requirements, e.g., achieving latency as low as possible instead of maintaining a specified delay. The conventional inter-domain bandwidth allocation approach, which aims to reduce the high operating expenditures of bandwidth usage, fails to meet these new requirements. We further reveal that the flow scheduling among PoPs may fail due to the limited link capacity hidden by the cloud private backbone network controller. Therefore we seek a new traffic management at peering edges. We propose a new controller framework, EdgeCross, that satisfies not only users' emerging demands but maintains low operating costs. The large number of fine-grain application-aware flows and the consideration of backbone links' capacity lead to very high complexity of routing computation and verification for the controller. EdgeCross introduces a two-phase operation that first achieves the low-expense bandwidth allocation according to the standard 95th percentile billing model and then allocates specified flows to peering edges based on users' requirements. EdgeCross further reduces large memory consumption by proposing an effective routing table compression approach. The evaluation based on a production network with 16 PoPs has shown that EdgeCross can successfully process the routes of 1 billion flows in 10 seconds, reduce the average delay for performance-sensitive flows by 2 milliseconds compared to traditional BGP, and is able to save the bandwidth cost by 10-26% compared to the state-of-the-art Cascara.}
+}
+
+
+@article{DBLP:journals/pacmnet/FengGCABS0Y24,
+	author = {Weiqi Feng and
+                  Jiaqi Gao and
+                  Xiaoqi Chen and
+                  Gianni Antichi and
+                  Ran Ben Basat and
+                  Michael Mingchao Shao and
+                  Ying Zhang and
+                  Minlan Yu},
+	title = {{F3:} Fast and Flexible Network Telemetry with an {FPGA} coprocessor},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {25:1--25:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696397},
+	doi = {10.1145/3696397},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/FengGCABS0Y24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traffic monitoring in the dataplane is vital for reacting to network events such as microbursts, incast, and attacks. However, current solutions are constrained by the limited resources available on modern ASICs and don't provide the flexibility required to identify repeating patterns, such as applications whose flows communicate with a server at regular intervals. While such flexibility can be achieved using a co-processing CPU, it is generally too slow to provide insights quickly enough. In this paper, we show how an FPGA co-processor placed alongside the switching pipeline enables flexible traffic monitoring at data plane rates. While FPGAs have large memory and expressive processing, their throughput is significantly lower than switch ASICs. To bridge the throughput gap, we split query execution between the switch and FPGA and present methods that prevent processing all packets in FPGA. As a result, our system misses up to 5.0x fewer DDoS attack vectors than ACC-Turbo, the state-of-the-art on-switch solution, and up to 24% fewer microburst-contributing flows for the same precision rate.}
+}
+
+
+@article{DBLP:journals/pacmnet/CuppersSBG24,
+	author = {Joscha C{\"{u}}ppers and
+                  Adrien Schoen and
+                  Gregory Blanc and
+                  Pierre{-}Fran{\c{c}}ois Gimenez},
+	title = {FlowChronicle: Synthetic Network Flow Generation through Pattern Set
+                  Mining},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {26:1--26:20},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696407},
+	doi = {10.1145/3696407},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/CuppersSBG24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network traffic datasets are regularly criticized, notably for the lack of realism and diversity in their attack or benign traffic. Generating synthetic network traffic using generative machine learning techniques is a recent area of research that could complement experimental test beds and help assess the efficiency of network security tools such as network intrusion detection systems. Most methods generating synthetic network flows disregard the temporal dependencies between them, leading to unrealistic traffic. To address this issue, we introduce  FlowChronicle , a novel synthetic network flow generation tool from mined patterns and Bayesian networks. As a core component, we propose a novel pattern miner in combination with statistical models to preserve temporal dependencies. We empirically compare our method against state-of-the-art techniques on several criteria, namely realism, diversity, compliance, and novelty. This evaluation demonstrates the capability of  FlowChronicle  to achieve high-quality generation while significantly outperforming the other methods in preserving temporal dependencies between flows. Besides, in contrast to deep learning methods, the patterns identified by  FlowChronicle  are explainable, and experts can verify their soundness. Our work substantially advances synthetic network traffic generation, offering a method that enhances both the utility and trustworthiness of the generated network flows.}
+}
+
+
+@article{DBLP:journals/pacmnet/AnPDSS24,
+	author = {Qing An and
+                  Divyanshu Pandey and
+                  Rahman Doost{-}Mohammady and
+                  Ashutosh Sabharwal and
+                  Srinivas Shakkottai},
+	title = {Helix: {A} {RAN} Slicing Based Scheduling Framework for Massive {MIMO}
+                  Networks},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {27:1--27:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696399},
+	doi = {10.1145/3696399},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/AnPDSS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {An important aspect of 5G networks is the development of Radio Access Network (RAN) slicing, a concept wherein the virtualized infrastructure of wireless networks is subdivided into slices (or enterprises), tailored to fulfill specific use-cases. A key focus in this context is the efficient radio resource allocation to meet various enterprises' service-level agreements (SLAs). In this work, we introduce Helix: a channel-aware and SLA-aware RAN slicing framework for massive multiple input multiple output (MIMO) networks where resource allocation extends to incorporate the spatial dimension available through beamforming. Essentially, the same time-frequency resource block (RB) can be shared across multiple users through multiple antennas. Notably, certain enterprises, particularly those operating critical infrastructure, necessitate dedicated RB allocation, denoted as private networks, to ensure security. Conversely, some enterprises would allow resource sharing with others in the public network to maintain network performance while minimizing capital expenditure. Building upon this understanding, Helix comprises scheduling schemes under both scenarios: where different slices share the same set of RBs, and where they require exclusivity of allocated RBs. We validate the efficacy of our proposed schedulers through simulation by utilizing a channel data set collected from a real-world massive MIMO testbed. Our assessments demonstrate that resource sharing across slices using our approach can lead up to 60.9% reduction in RB usage compared to other approaches. Moreover, our proposed schedulers exhibit significantly enhanced operational efficiency, with significantly faster running time compared to exhaustive greedy approaches while meeting the stringent 5G sub-millisecond-level latency requirement.}
+}
+
+
+@article{DBLP:journals/pacmnet/LeeMK24,
+	author = {Jinseo Lee and
+                  David Mohaisen and
+                  Min Suk Kang},
+	title = {Measuring DNS-over-HTTPS Downgrades: Prevalence, Techniques, and Bypass
+                  Strategies},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {28:1--28:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696385},
+	doi = {10.1145/3696385},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/LeeMK24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DNS-over-HTTPS (DoH) is a privacy-enhancing protocol that encrypts plaintext query data in DNS resolution. However, DoH often faces accessibility challenges due to phenomena known as DoH downgrades, where DoH queries are reverted to plaintext DNS queries. Unlike downgrades in other security protocols, which are undoubtedly malicious, the act of downgrading DoH queries can be both desirable and undesirable depending on the context; e.g., enterprise networks are officially advised to avoid or downgrade DoH for security reasons. Recent research has drawn attention to the deeper examination of the phenomena of DoH downgrades, focusing on the prevalence, techniques, and potential bypass strategies. However, existing studies on DoH downgrades have several limitations, notably that they severely overestimate the severity of DoH downgrades across the globe as they lack any distinction between desirable and undesirable downgrades of DoH. In this work, we conduct a large-scale measurement study to provide a more accurate depiction of the DoH downgrade landscape. By minimizing the influence of desirable downgrades of DoH in our measurement probes, we show a skewed long-tail distribution of DoH downgrades across the globe. Our stateful probing techniques also reveal hidden DoH filtering mechanisms that were previously undetected. Furthermore, we design near perfect bypass strategies against existing DoH downgrades. Our study expands our limited understanding of DoH downgrades, offering a more accurate, fine-grained, and comprehensive view of the phenomena.}
+}
+
+
+@article{DBLP:journals/pacmnet/SunXAM24,
+	author = {Chuanhao Sun and
+                  Kai Xu and
+                  Gianni Antichi and
+                  Mahesh K. Marina},
+	title = {NetGSR: Towards Efficient and Reliable Network Monitoring with Generative
+                  Super Resolution},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {29:1--29:27},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696400},
+	doi = {10.1145/3696400},
+	timestamp = {Tue, 08 Apr 2025 09:35:35 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/SunXAM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network monitoring systems are a key building block in today's networks. They all follow a common framework where measurement data from network elements is aggregated at a central collector for network-wide visibility. When designing network monitoring systems, two key properties have to be taken into account: (1) efficiency, to minimize the communication overhead from network elements to the collector; (2) high-fidelity, to faithfully represent the network status. However, in presence of network dynamics, tracking the right operating point to ensure both high fidelity and efficiency is hard and we observe that prior monitoring approaches trade off one for the other. In this paper, we show that it is possible to satisfy both these properties with  NetGSR,  a new deep learning based solution we introduce that reconstructs the fine-grained behavior of network status at the collector while requiring low resolution measurement data from network elements. This is achieved through a combination of a new custom-tailored conditional deep generative model  (DistilGAN),  and a new feedback mechanism  (Xaminer)  based on model uncertainty estimation and denoising that allows the collector to adjust the sampling rate for measurement data from network elements, at run-time. We extensively evaluate NetGSR using three different network scenarios with corresponding real-world network monitoring datasets as well as two downstream use cases. We show that  NetGSR  can faithfully reconstruct fine-grained network status with 25x greater measurement efficiency than prior approaches while requiring only few ms of inference time at the collector.}
+}
+
+
+@article{DBLP:journals/pacmnet/PatelZNJ24,
+	author = {Sagar Patel and
+                  Junyang Zhang and
+                  Nina Narodytska and
+                  Sangeetha Abdu Jyothi},
+	title = {Practically High Performant Neural Adaptive Video Streaming},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {30:1--30:23},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696401},
+	doi = {10.1145/3696401},
+	timestamp = {Wed, 09 Apr 2025 16:40:18 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/PatelZNJ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite offering early promise, Deep Reinforcement Learning (DRL) suffers from several challenges in adaptive bitrate streaming stemming from the uncertainty and noise in network conditions. However, in this paper, we find that although these challenges complicate the training process, in practice, we can substantially mitigate their effects by addressing a key overlooked factor: the skewed input trace distribution in DRL training datasets. We introduce a generalized framework,  Plume , to automatically identify and balance the skew using a three-stage process. First, we identify the critical features that determine the behavior of the traces. Second, we classify the traces into clusters. Finally, we prioritize the salient clusters to improve the  overall  performance of the controller. We implement our ideas with a novel ABR controller,  Gelato , and evaluate the performance against state-of-the-art controllers in the real world for more than a year, streaming 59 stream-years of television to over 280,000 users on the live streaming platform Puffer. Gelato trained with Plume outperforms all baseline solutions and becomes the first controller on the platform to deliver statistically significant improvements in both video quality and stalling, decreasing stalls by as much as 75%.}
+}
+
+
+@article{DBLP:journals/pacmnet/Wan0WJZWZ0024,
+	author = {Zirui Wan and
+                  Jiao Zhang and
+                  Haoran Wei and
+                  Zhuo Jiang and
+                  Xiaolong Zhong and
+                  Wenfei Wu and
+                  Huaping Zhou and
+                  Tian Pan and
+                  Tao Huang},
+	title = {{RECC:} Joint Congestion Control Based on {RTT} and {ECN} for High-speed
+                  {RDMA} Networks},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {31:1--31:18},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696402},
+	doi = {10.1145/3696402},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/Wan0WJZWZ0024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Together with the construction of RDMA networks for data center applications, the RDMA-coupled DCQCN dominates the RDMA Congestion Control (CC). However, DCQCN suffers severe performance problems in high-speed RDMA networks with modern high-performance distributed applications such as machine learning training. This paper presents RECC, inspired by both the latest emerging programmability of RDMA NICs (RNICs) and limitations in existing RDMA congestion control mechanisms. RECC comprehensively leverages RTT and ECN events from RNICs to handle congestion timely and precisely, along with a History-aware Burst Smooth mechanism to avoid wrong rate decisions under various traffic patterns. We implement RECC completely based on commercial RNICs without any modifications to switches, RDMA protocol stack, and applications. The results of microbenchmark testbed experiments and real Machine Learning (ML) workload experiments with hundreds of 200G RNICs show that RECC can significantly reduce network tail latency and pause duration by up to 64.4% and 95%, respectively, compared with DCQCN. In addition, large-scale simulations with realistic workloads demonstrate that RECC achieves comparable performance with HPCC.}
+}
+
+
+@article{DBLP:journals/pacmnet/HeYLQD024,
+	author = {Zhaoyuan He and
+                  Yifan Yang and
+                  Shuozhe Li and
+                  Lili Qiu and
+                  Diyuan Dai and
+                  Yuqing Yang},
+	title = {{VIGOR:} Reviving Cloud Gaming Sessions},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {32:1--32:20},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696403},
+	doi = {10.1145/3696403},
+	timestamp = {Wed, 02 Apr 2025 16:14:26 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HeYLQD024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cloud gaming is a multi-billion dollar industry. A client in cloud gaming sends its movement to the game server on the Internet, which renders and transmits the resulting video back. In order to provide a good gaming experience, a latency below 80 ms is required. This means that video rendering, encoding, transmission, decoding, and displaying have to finish within that time frame, which is especially challenging to achieve due to server overload, network congestion, and losses. In this paper, we propose VIGOR, a new method to revive cloud gaming sessions by recovering lost or corrupted video frames. Unlike traditional video frame recovery, VIGOR uses game states to enhance recovery accuracy significantly and utilizes partially decoded frames to recover lost portions. We develop a holistic system that consists of (i) efficiently extracting game states, (ii) modifying H.264 video decoder to generate a mask to indicate which portions of video frames need recovery, and (iii) designing a novel neural network to recover either complete or partial video frames. VIGOR is extensively evaluated using iPhone 12 and laptop implementations, and we demonstrate the utility of game states in the game video recovery and the effectiveness of our overall design.}
+}
+
+
+@article{DBLP:journals/pacmnet/KatariaLBGBPARC24,
+	author = {Bhaskar Kataria and
+                  Palak Lnu and
+                  Rahul Bothra and
+                  Rohan Gandhi and
+                  Debopam Bhattacherjee and
+                  Venkata N. Padmanabhan and
+                  Irena Atov and
+                  Sriraam Ramakrishnan and
+                  Somesh Chaturmohta and
+                  Chakri Kotipalli and
+                  Rui Liang and
+                  Ken Sueda and
+                  Xin He and
+                  Kevin Hinton},
+	title = {Saving Private {WAN:} Using Internet Paths to Offload {WAN} Traffic
+                  in Conferencing Services},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {33:1--33:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696404},
+	doi = {10.1145/3696404},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/KatariaLBGBPARC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Large-scale video conferencing services incur significant network cost while serving surging global demands. Our work systematically explores the opportunity to offload a fraction of this traffic to the Internet, a cheaper routing option offered already by cloud providers, from WAN without drop in application performance. First, with a large-scale latency measurement study with 3.5 million data points per day spanning 241K source cities and 21 data centers across the globe, we demonstrate that Internet paths perform comparable to or better than the private WAN for parts of the world (e.g., Europe and North America). Next, we present Titan, a live (12+ months) production system that carefully moves a fraction of the conferencing traffic to the Internet using the above observation. Finally, we propose  Titan-Next  - a research prototype that jointly assigns the conferencing server and routing option (Internet or WAN) for individual calls. With 5 weeks of production data, we show Titan-Next reduces the sum of peak bandwidth on WAN links that defines the operational network cost by up to 61% compared to state-of-the-art baselines.}
+}
+
+
+@article{DBLP:journals/pacmnet/DiamantF24,
+	author = {Jonathan Diamant and
+                  Shir Landau Feibish},
+	title = {SetD4: Sets With Deletions and Decay in the Data Plane},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {34:1--34:22},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696391},
+	doi = {10.1145/3696391},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/DiamantF24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sets are a fundamental data type in Computer Science. Data structures used to maintain sets need to enable the insertion and deletion of keys from the set and support a lookup operation to check if a key belongs to the set. Recent advances in programmable networks allow performing fine-grained network telemetry and other network functions right in the data plane, many of which utilize sets. One of the most common data structure in use for maintaining sets in the data plane is the Bloom Filter (BF). Existing implementations of BFs in the data plane support key insertion and lookup, yet due to the harsh processing restrictions of the data plane, they do  not  support deletions. We present SetD4, the first data structure for maintaining sets in the data plane that supports insertion, lookup  and deletion.  SetD4 maintains a modified BF, which holds the set, as well as two auxiliary structures that allow the safe removal of keys from the set. In addition, we present a variant of SetD4 that also supports decay, which allows the automatic removal of keys from the structure after a predefined time interval. We analyze SetD4 and show precise error rates for both the decaying and non-decaying structures. We have implemented SetD4 on the Tofino programmable switch and show that it can achieve high accuracy with limited overhead when compared to the current state-of-the-art set-membership data structures in the data plane with better false-positive and false-negative error rates.}
+}
+
+
+@article{DBLP:journals/pacmnet/GhoshCSSSB24,
+	author = {Ushasi Ghosh and
+                  Azuka J. Chiejina and
+                  Nathan Stephenson and
+                  Vijay K. Shah and
+                  Srinivas Shakkottai and
+                  Dinesh Bharadia},
+	title = {{SPARC:} Spatio-Temporal Adaptive Resource Control for Multi-site
+                  Spectrum Management in NextG Cellular Networks},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {35:1--35:18},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696405},
+	doi = {10.1145/3696405},
+	timestamp = {Tue, 01 Apr 2025 19:03:20 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/GhoshCSSSB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This work presents SPARC (Spatio-Temporal Adaptive Resource Control), a novel approach for multi-site spectrum management in NextG cellular networks. SPARC addresses the challenge of limited licensed spectrum in dynamic environments. We leverage the O-RAN architecture to develop a multi-timescale RAN Intelligent Controller (RIC) framework, featuring an xApp for near-real-time interference detection and localization, and a xApp for real-time intelligent resource allocation. By utilizing base stations as spectrum sensors, SPARC enables efficient and fine-grained dynamic resource allocation across multiple sites, enhancing signal-to-noise ratio (SNR) by up to 7dB, spectral efficiency by up to 15%, and overall system throughput by up to 20%. Comprehensive evaluations, including emulations and over-the-air experiments, demonstrate the significant performance gains achieved through SPARC, showcasing it as a promising solution for optimizing resource efficiency and network performance in NextG cellular networks.}
+}
+
+
+@article{DBLP:journals/pacmnet/WirtgenRPB24,
+	author = {Thomas Wirtgen and
+                  Nicolas Rybowski and
+                  Cristel Pelsser and
+                  Olivier Bonaventure},
+	title = {The Multiple Benefits of a Secure Transport for {BGP}},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {36:1--36:23},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696406},
+	doi = {10.1145/3696406},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/WirtgenRPB24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {BGP distributes prefixes advertised by Autonomous Systems (ASes) and computes the best paths between them. It is the only routing protocol used to exchange interdomain routes on the Internet. Since its original definition in the late 1980s, BGP uses TCP. To prevent attacks, BGP has been extended with features such as TCP-MD5, TCP-AO, GTSM and data-plane filters. However, these ad hoc solutions were introduced gradually as the Internet grew. In parallel, TLS was standardized to secure end-to-end data-plane communications. Today, a large proportion of the Internet traffic is secured using TLS. Surprisingly, BGP still does not use TLS despite its adequate security features to establish BGP sessions. In this paper, we make the case for using a secure transport with BGP. This can be achieved with TLS combined with TCP-AO or by replacing TCP by QUIC. This protects the BGP stream using established secure transport protocols. In addition, we show that a secure transport using X.509 certificates enables BGP routers to be securely and automatically configured from these certificates. We extend the open-source BIRD BGP daemon to support TLS with TCP-AO and QUIC, to handle such certificates and demonstrate several use cases that benefit from the secure and automated capabilities enabled by our proposal.}
+}
+
+
+@article{DBLP:journals/pacmnet/YiCXJ24,
+	author = {Fan Yi and
+                  Kun Woo Cho and
+                  Yaxiong Xie and
                   Kyle Jamieson},
-	editor = {Vijay Gopalakrishnan and
-                  Jia Wang and
-                  Ihsan Ayyub Qazi and
-                  Gareth Tyson},
-	title = {NR-Scope: {A} Practical 5G Standalone Telemetry Tool},
-	booktitle = {Proceedings of the 20th International Conference on emerging Networking
-                  EXperiments and Technologies, CoNEXT 2024, Los Angeles, CA, USA, December
-                  9-12, 2024},
-	pages = {73--80},
-	publisher = {{ACM}},
+	title = {WaveFlex: {A} Smart Surface for Private 5G {CBRS} Networks},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {37:1--37:21},
 	year = {2024},
-	url = {https://doi.org/10.1145/3680121.3697808},
-	doi = {10.1145/3680121.3697808},
-	timestamp = {Sat, 30 Nov 2024 21:10:19 +0100},
-	biburl = {https://dblp.org/rec/conf/conext/WanCMJ24.bib},
+	url = {https://doi.org/10.1145/3696394},
+	doi = {10.1145/3696394},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/YiCXJ24.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org},
-	abstract = {NextG cellular networks are designed to meet Quality of Service requirements for various applications in and beyond smartphones and mobile devices. However, lacking introspection into the 5G Radio Access Network (RAN application and transport layer designers are ill-poised to cope with the vagaries of the wireless last hop to a mobile client, while 5G network operators run mostly closed networks, limiting their potential for co-design with the wider internet and user applications. This paper presents NR-Scope, a passive, incrementally-deployable, and independently-deployable Standalone 5G network telemetry system that can stream fine-grained RAN capacity, latency, and retransmission information to application servers to enable better millisecond scale, application-level decisions on offered load and bit rate adaptation than end-to-end latency measurements or end-to-end packet losses currently permit. Our experimental evaluation on various 5G Standalone base stations demonstrates NR-Scope can achieve less than 0.1% throughput error estimation for every UE in a RAN. The code is available at https://github.com/PrincetonUniversity/NR-Scope.}
+	abstract = {We present the design and implementation of  WaveFlex,  the first smart surface that enhances Private 5G networks operating under the shared-license framework in the Citizens Broadband Radio Service frequency band. WaveFlex works in the presence of frequency diversity: multiple nearby base stations operating on different frequencies, as dictated by a Spectrum Access System coordinator. It also handles time dynamism: due to the dynamic sharing rules of the CBRS band, base stations occasionally switch channels, especially when priority users enter the network. Finally, WaveFlex operates independently of the network itself, not requiring access to nor modification of the gNB or UEs, yet it remains compliant with and effective on prevailing cellular protocols. We have designed and fabricated WaveFlex on a custom multi-layer PCB, software defined radio based network monitor, and supporting control software and hardware. Our experimental evaluation benchmarks operational Private 5G and LTE networks running at full line rate. In a realistic indoor office scenario, 5G experimental results demonstrate an 8.58~dB average SNR gain, and an average throughput gain of 10.77 Mbps under a single gNB, and 12.84 Mbps under three gNBs, corresponding to throughput improvements of 18.4% and 19.5%, respectively.}
+}
+
+
+@article{DBLP:journals/pacmnet/HassanAIS024,
+	author = {Ahmad Hassan and
+                  Shivang Aggarwal and
+                  Mohamed Ibrahim and
+                  Puneet Sharma and
+                  Feng Qian},
+	title = {Wixor: Dynamic {TDD} Policy Adaptation for 5G/xG Networks},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {38:1--38:24},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696395},
+	doi = {10.1145/3696395},
+	timestamp = {Tue, 01 Apr 2025 19:03:21 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/HassanAIS024.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the era of 5G and beyond, dynamic Time Division Duplex (TDD) has become essential for supporting applications that demand high bandwidth and low latency. Emerging uplink-intensive use cases such as real-time video analytics, autonomous vehicles and augmented reality further complicate the balance between uplink and downlink resources. Despite their potential, TDD policies employed by current 5G networks remain underexplored. Our investigation reveals that existing TDD policies are static and predominantly downlink-focused, failing to adapt to fluctuating network demands. We introduce Wixor, a robust dynamic TDD policy adaptation system tailored for 5G and next-generation (xG) networks. It proactively adjusts the allocation of TDD resources between uplink and downlink, addressing various practical challenges. Prototyped on a programmable testbed, Wixor demonstrates substantial performance improvements across diverse applications, achieving up to 96.5% enhancement in Quality of Experience (QoE) compared to existing baselines.}
+}
+
+
+@article{DBLP:journals/pacmnet/MahmudSI24,
+	author = {Shohaib Mahmud and
+                  Haiying Shen and
+                  Anand P. Iyer},
+	title = {{PACER:} Accelerating Distributed {GNN} Training Using Communication-Efficient
+                  Partition Refinement and Caching},
+	journal = {{PACMNET}},
+	volume = {2},
+	number = {CoNEXT4},
+	pages = {39:1--39:18},
+	year = {2024},
+	url = {https://doi.org/10.1145/3697805},
+	doi = {10.1145/3697805},
+	timestamp = {Fri, 11 Apr 2025 11:34:35 +0200},
+	biburl = {https://dblp.org/rec/journals/pacmnet/MahmudSI24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Despite recent breakthroughs in distributed Graph Neural Network (GNN) training, large-scale graphs still generate significant network communication overhead, decreasing time and resource efficiency. Although recently proposed partitioning or caching methods try to reduce communication inefficiencies and overheads, they are not sufficiently effective due to their sampling pattern-agnostic nature. This paper proposes a Pipelined Partition Aware Caching and Communication Efficient Refinement System (Pacer), a communication-efficient distributed GNN training system. First, Pacer intelligently estimates each partition's access frequency to each vertex by jointly considering the sampling method and graph topology. Then, it uses the estimated access frequency to refine partitions and caching vertices in its two-level cache (CPU and GPU) to minimize data transfer latency. Furthermore, Pacer incorporates a pipeline-based minibatching method to mask the effect of the network communication. Experimental results on real-world graphs show that Pacer outperforms state-of-the-art distributed GNN training system in training time by 40% on average.}
 }
