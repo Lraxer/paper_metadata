@@ -1,0 +1,222 @@
+@article{DBLP:journals/tods/CarmeliTGKR23,
+	author = {Nofar Carmeli and
+                  Nikolaos Tziavelis and
+                  Wolfgang Gatterbauer and
+                  Benny Kimelfeld and
+                  Mirek Riedewald},
+	title = {Tractable Orders for Direct Access to Ranked Answers of Conjunctive
+                  Queries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {1},
+	pages = {1:1--1:45},
+	year = {2023},
+	url = {https://doi.org/10.1145/3578517},
+	doi = {10.1145/3578517},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/CarmeliTGKR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the question of when we can provide  direct access to the k-th answer  to a Conjunctive Query (CQ) according to a specified order over the answers in time logarithmic in the size of the database, following a preprocessing step that constructs a data structure in time quasilinear in database size. Specifically, we embark on the challenge of identifying  the tractable answer orderings , that is, those orders that allow for such complexity guarantees. To better understand the computational challenge at hand, we also investigate the more modest task of providing access to only a single answer (i.e., finding the answer at a given position), a task that we refer to as  the selection problem , and ask when it can be performed in quasilinear time. We also explore the question of when selection is indeed easier than ranked direct access. We begin with  lexicographic orders . For each of the two problems, we give a decidable characterization (under conventional complexity assumptions) of the class of tractable lexicographic orders for every CQ without self-joins. We then continue to the more general  orders by the sum of attribute weights  and establish the corresponding decidable characterizations, for each of the two problems, of the tractable CQs without self-joins. Finally, we explore the question of when the satisfaction of Functional Dependencies (FDs) can be utilized for tractability and establish the corresponding generalizations of our characterizations for every set of unary FDs.}
+}
+
+
+@article{DBLP:journals/tods/DoG23,
+	author = {Thanh Do and
+                  Goetz Graefe},
+	title = {Robust and Efficient Sorting with Offset-value Coding},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {1},
+	pages = {2:1--2:23},
+	year = {2023},
+	url = {https://doi.org/10.1145/3570956},
+	doi = {10.1145/3570956},
+	timestamp = {Wed, 17 May 2023 21:57:28 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/DoG23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sorting and searching are large parts of database query processing, e.g., in the forms of index creation, index maintenance, and index lookup, and comparing pairs of keys is a substantial part of the effort in sorting and searching. We have worked on simple, efficient implementations of decades-old, neglected, effective techniques for fast comparisons and fast sorting, in particular offset-value coding. In the process, we happened upon its mutually beneficial relationship with prefix truncation in run files as well as the duality of compression techniques in row- and column-format storage structures, namely prefix truncation and run-length encoding of leading key columns. We also found a beneficial relationship with consumers of sorted streams, e.g., merging parallel streams, in-stream aggregation, and merge join. We report on our implementation in the context of Google’s Napa and F1\xa0Query systems as well as an experimental evaluation of performance and scalability.}
+}
+
+
+@article{DBLP:journals/tods/HuangWSLZP23,
+	author = {Ruihong Huang and
+                  Jianmin Wang and
+                  Shaoxu Song and
+                  Xuemin Lin and
+                  Xiaochen Zhu and
+                  Jian Pei},
+	title = {Efficiently Cleaning Structured Event Logs: {A} Graph Repair Approach},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {1},
+	pages = {3:1--3:44},
+	year = {2023},
+	url = {https://doi.org/10.1145/3571281},
+	doi = {10.1145/3571281},
+	timestamp = {Fri, 28 Feb 2025 17:23:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/HuangWSLZP23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Event data are often dirty owing to various recording conventions or simply system errors. These errors may cause serious damage to real applications, such as inaccurate provenance answers, poor profiling results, or concealing interesting patterns from event data. Cleaning dirty event data is strongly demanded. While existing event data cleaning techniques view event logs as sequences, structural information does exist among events, such as the task passing relationships between staffs in workflow or the invocation relationships among different micro-services in monitoring application performance. We argue that such structural information enhances not only the accuracy of repairing inconsistent events but also the computation efficiency. It is notable that both the structure and the names (labeling) of events could be inconsistent. In real applications, while an unsound structure is not repaired automatically (which requires manual effort from business actors to handle the structure error), it is highly desirable to repair the inconsistent event names introduced by recording mistakes. In this article, we first prove that the inconsistent label repairing problem is NP-complete. Then, we propose a graph repair approach for (1) detecting unsound structures, and (2) repairing inconsistent event names. Efficient pruning techniques together with two heuristic solutions are also presented. Extensive experiments over real and synthetic datasets demonstrate both the effectiveness and efficiency of our proposal.}
+}
+
+
+@article{DBLP:journals/tods/FakasK23,
+	author = {Georgios John Fakas and
+                  Georgios Kalamatianos},
+	title = {Proportionality on Spatial Data with Context},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {2},
+	pages = {4:1--4:37},
+	year = {2023},
+	url = {https://doi.org/10.1145/3588434},
+	doi = {10.1145/3588434},
+	timestamp = {Fri, 21 Jul 2023 22:26:52 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/FakasK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {More often than not, spatial objects are associated with some context, in the form of text, descriptive tags (e.g., points of interest, flickr photos), or linked entities in semantic graphs (e.g., Yago2, DBpedia). Hence, location-based retrieval should be extended to consider not only the locations but also the context of the objects, especially when the retrieved objects are too many and the query result is overwhelming. In this article, we study the problem of selecting a subset of the query result, which is the most representative. We argue that objects with similar context and nearby locations should proportionally be represented in the selection. Proportionality dictates the pairwise comparison of all retrieved objects and hence bears a high cost. We propose novel algorithms which greatly reduce the cost of proportional object selection in practice. In addition, we propose pre-processing, pruning, and approximate computation techniques that their combination reduces the computational cost of the algorithms even further. We theoretically analyze the approximation quality of our approaches. Extensive empirical studies on real datasets show that our algorithms are effective and efficient. A user evaluation verifies that proportional selection is more preferable than random selection and selection based on object diversification.}
+}
+
+
+@article{DBLP:journals/tods/HuWYLLZ23,
+	author = {Donghui Hu and
+                  Qing Wang and
+                  Song Yan and
+                  Xiaojun Liu and
+                  Meng Li and
+                  Shuli Zheng},
+	title = {Reversible Database Watermarking Based on Order-preserving Encryption
+                  for Data Sharing},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {2},
+	pages = {5:1--5:25},
+	year = {2023},
+	url = {https://doi.org/10.1145/3589761},
+	doi = {10.1145/3589761},
+	timestamp = {Tue, 20 May 2025 16:48:30 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/HuWYLLZ23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the era of big data, data sharing not only boosts the economy of the world but also brings about problems of privacy disclosure and copyright infringement. The collected data may contain users’ sensitive information; thus, privacy protection should be applied to the data prior to them being shared. Moreover, the shared data may be re-shared to third parties without the consent or awareness of the original data providers. Therefore, there is an urgent need for copyright tracking. There are few works satisfying the requirements of both privacy protection and copyright tracking. The main challenge is how to protect the shared data and realize copyright tracking while not undermining the utility of the data. In this article, we propose a novel solution of a reversible database watermarking scheme based on order-preserving encryption. First, we encrypt the data using order-preserving encryption and adjust an encryption parameter within an appropriate interval to generate a ciphertext with redundant space. Then, we leverage the redundant space to embed robust reversible watermarking. We adopt grouping and K-means to improve the embedding capacity and the robustness of the watermark. Formal theoretical analysis proves that the proposed scheme guarantees correctness and security. Results of extensive experiments show that OPEW has 100% data utility, and the robustness and efficiency of OPEW are better than existing works.}
+}
+
+
+@article{DBLP:journals/tods/ChenZY23,
+	author = {Yaxing Chen and
+                  Qinghua Zheng and
+                  Zheng Yan},
+	title = {Efficient Bi-objective {SQL} Optimization for Enclaved Cloud Databases
+                  with Differentially Private Padding},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {2},
+	pages = {6:1--6:40},
+	year = {2023},
+	url = {https://doi.org/10.1145/3597021},
+	doi = {10.1145/3597021},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/ChenZY23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hardware-enabled enclaves have been applied to efficiently enforce data security and privacy protection in cloud database services. Such enclaved systems, however, are reported to suffer from I/O-size (also referred to as communication-volume)-based side-channel attacks. Albeit differentially private padding has been exploited to defend against these attacks as a principle method, it introduces a challenging bi-objective parametric query optimization (BPQO) problem and current solutions are still not satisfactory. Concretely, the goal in BPQO is to find a Pareto-optimal plan that makes a tradeoff between query performance and privacy loss; existing solutions are subjected to poor computational efficiency and high cloud resource waste. In this article, we propose a two-phase optimization algorithm called TPOA to solve the BPQO problem. TPOA incorporates two novel ideas:  divide-and-conquer  to separately handle parameters according to their types in optimization for dimensionality reduction;  on-demand-optimization  to progressively build a set of necessary Pareto-optimal plans instead of seeking a complete set for saving resources. Besides, we introduce an acceleration mechanism in TPOA to improve its efficiency, which prunes the non-optimal candidate plans in advance. We theoretically prove the correctness of TPOA, numerically analyze its complexity, and formally give an end-to-end privacy analysis. Through a comprehensive evaluation on its efficiency by running baseline algorithms over synthetic and test-bed benchmarks, we can conclude that TPOA outperforms all benchmarked methods with an overall efficiency improvement of roughly two orders of magnitude; moreover, the acceleration mechanism speeds up TPOA by 10-200×.}
+}
+
+
+@article{DBLP:journals/tods/PavanVBM23,
+	author = {A. Pavan and
+                  N. Variyam Vinodchandran and
+                  Arnab Bhattacharyya and
+                  Kuldeep S. Meel},
+	title = {Model Counting Meets \emph{F}\({}_{\mbox{0}}\) Estimation},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {3},
+	pages = {7:1--7:28},
+	year = {2023},
+	url = {https://doi.org/10.1145/3603496},
+	doi = {10.1145/3603496},
+	timestamp = {Sat, 28 Oct 2023 13:59:34 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/PavanVBM23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Constraint satisfaction problems (CSPs) and data stream models are two powerful abstractions to capture a wide variety of problems arising in different domains of computer science. Developments in the two communities have mostly occurred independently and with little interaction between them. In this work, we seek to investigate whether bridging the seeming communication gap between the two communities may pave the way to richer fundamental insights. To this end, we focus on two foundational problems: model counting for CSP’s and computation of zeroth frequency moments ( F 0 ) for data streams. Our investigations lead us to observe a striking similarity in the core techniques employed in the algorithmic frameworks that have evolved separately for model counting and  F 0  computation. We design a recipe for translating algorithms developed for  F 0  estimation to model counting, resulting in new algorithms for model counting. We also provide a recipe for transforming sampling algorithm over streams to constraint sampling algorithms. We then observe that algorithms in the context of distributed streaming can be transformed into distributed algorithms for model counting. We next turn our attention to viewing streaming from the lens of counting and show that framing  F 0  estimation as a special case of #DNF counting allows us to obtain a general recipe for a rich class of streaming problems, which had been subjected to case-specific analysis in prior works. In particular, our view yields an algorithm for multidimensional range efficient  F 0  estimation with a simpler analysis.}
+}
+
+
+@article{DBLP:journals/tods/SarkarPSZA23,
+	author = {Subhadeep Sarkar and
+                  Tarikul Islam Papon and
+                  Dimitris Staratzis and
+                  Zichen Zhu and
+                  Manos Athanassoulis},
+	title = {Enabling Timely and Persistent Deletion in LSM-Engines},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {3},
+	pages = {8:1--8:40},
+	year = {2023},
+	url = {https://doi.org/10.1145/3599724},
+	doi = {10.1145/3599724},
+	timestamp = {Fri, 27 Oct 2023 20:40:00 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/SarkarPSZA23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data-intensive applications have fueled the evolution of  log-structured merge (LSM)  based key-value engines that employ the  out-of-place  paradigm to support high ingestion rates with low read/write interference. These benefits, however, come at the cost of  treating deletes as second-class citizens . A delete operation inserts a  tombstone  that invalidates older instances of the deleted key. State-of-the-art LSM-engines do not provide guarantees as to how fast a tombstone will propagate to  persist the deletion . Further, LSM-engines only support deletion on the sort key. To delete on another attribute (e.g., timestamp), the entire tree is read and re-written, leading to undesired latency spikes and increasing the overall operational cost of a database. Efficient and persistent deletion is key to support: (i) streaming systems operating on a window of data, (ii) privacy with latency guarantees on data deletion, and (iii)  en masse  cloud deployment of data systems. Further, we document that LSM-based key-value engines perform suboptimally in the presence of deletes in a workload. Tombstone-driven logical deletes, by design, are unable to purge the deleted entries in a timely manner, and retaining the invalidated entries perpetually affects the overall performance of LSM-engines in terms of space amplification, write amplification, and read performance. Moreover, the potentially unbounded latency for persistent deletes brings in critical privacy concerns in light of the data privacy protection regulations, such as the  right to be forgotten  in EU’s GDPR, the  right to delete  in California’s CCPA and CPRA, and  deletion right  in Virginia’s VCDPA. Toward this, we introduce the delete design space for LSM-trees and highlight the performance implications of the different classes of delete operations. To address these challenges, in this article, we build a new key-value storage engine,  Lethe + , that uses a very small amount of additional metadata, a set of new delete-aware compaction policies, and a new physical data layout that weaves the sort and the delete key order. We show that  Lethe +  supports any user-defined threshold for the delete persistence latency offering  higher read throughput  (1.17× -1.4×) and  lower space amplification  (2.1× -9.8×), with a modest increase in write amplification (between 4% and 25%) that can be further amortized to less than 1%. In addition,  Lethe +  supports efficient range deletes on a  secondary delete key  by dropping entire data pages without sacrificing read performance or employing a costly full tree merge.}
+}
+
+
+@article{DBLP:journals/tods/LeventidisRGMR23,
+	author = {Aristotelis Leventidis and
+                  Laura Di Rocco and
+                  Wolfgang Gatterbauer and
+                  Ren{\'{e}}e J. Miller and
+                  Mirek Riedewald},
+	title = {DomainNet: Homograph Detection and Understanding in Data Lake Disambiguation},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {3},
+	pages = {9:1--9:40},
+	year = {2023},
+	url = {https://doi.org/10.1145/3612919},
+	doi = {10.1145/3612919},
+	timestamp = {Thu, 09 Nov 2023 21:13:49 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/LeventidisRGMR23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern data lakes are heterogeneous in the vocabulary that is used to describe data. We study a problem of disambiguation in data lakes:  How can we determine if a data value occurring more than once in the lake has different meanings and is therefore a homograph?  While word and entity disambiguation have been well studied in computational linguistics, data management, and data science, we show that data lakes provide a new opportunity for disambiguation of data values, because tables implicitly define a massive network of interconnected values. We introduce  DomainNet , which efficiently represents this network, and investigate to what extent it can be used to disambiguate values without requiring any supervision. DomainNet  leverages network-centrality measures on a bipartite graph whose nodes represent data values and attributes to determine if a value is a homograph. A thorough experimental evaluation demonstrates that state-of-the-art techniques in domain discovery cannot be re-purposed to compete with our method. Specifically, using a domain discovery method to identify homographs achieves an F1-score of 0.38 versus 0.69 for  DomainNet , which separates homographs well from data values that have a unique meaning. On a real data lake, our top-100 precision is 93%. Given a homograph, we also present a novel method for determining the number of meanings of the homograph and for assigning its data lake attributes to a meaning. We show the influence of homographs on two downstream tasks: entity-matching and domain discovery.}
+}
+
+
+@article{DBLP:journals/tods/LuMNT23,
+	author = {Shangqi Lu and
+                  Wim Martens and
+                  Matthias Niewerth and
+                  Yufei Tao},
+	title = {Partial Order Multiway Search},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {4},
+	pages = {10:1--10:31},
+	year = {2023},
+	url = {https://doi.org/10.1145/3626956},
+	doi = {10.1145/3626956},
+	timestamp = {Fri, 26 Jan 2024 07:56:36 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/LuMNT23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Partial order multiway search  (POMS) is a fundamental problem that finds applications in crowdsourcing, distributed file systems, software testing, and more. This problem involves an interaction between an algorithm 𝒜 and an oracle, conducted on a directed acyclic graph 𝒢 known to both parties. Initially, the oracle selects a vertex  t  in 𝒢 called the  target . Subsequently, 𝒜 must identify the target vertex by probing reachability. In each  probe , 𝒜 selects a set  Q  of vertices in 𝒢, the number of which is limited by a pre-agreed value  k . The oracle then reveals, for each vertex  q  ∈  Q , whether  q  can reach the target in 𝒢. The objective of 𝒜 is to minimize the number of probes. We propose an algorithm to solve POMS in  𝑂 \u2062 ( l o g 1 + 𝑘 \u2061 𝑛 + 𝑑 𝑘 \u2062 l o g 1 + 𝑑 \u2061 𝑛 )  probes, where  n  represents the number of vertices in 𝒢, and  d  denotes the largest out-degree of the vertices in 𝒢. The probing complexity is asymptotically optimal. Our study also explores two new POMS variants: The first one, named  taciturn POMS , is similar to classical POMS but assumes a weaker oracle, and the second one, named  EM POMS , is a direct extension of classical POMS to the  external memory  (EM) model. For both variants, we introduce algorithms whose performance matches or nearly matches the corresponding theoretical lower bounds.}
+}
+
+
+@article{DBLP:journals/tods/HerodotouK23,
+	author = {Herodotos Herodotou and
+                  Elena Kakoulli},
+	title = {Cost-based Data Prefetching and Scheduling in Big Data Platforms over
+                  Tiered Storage Systems},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {48},
+	number = {4},
+	pages = {11:1--11:40},
+	year = {2023},
+	url = {https://doi.org/10.1145/3625389},
+	doi = {10.1145/3625389},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/HerodotouK23.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The use of storage tiering is becoming popular in data-intensive compute clusters due to the recent advancements in storage technologies. The Hadoop Distributed File System, for example, now supports storing data in memory, SSDs, and HDDs, while OctopusFS and hatS offer fine-grained storage tiering solutions. However, current big data platforms (such as Hadoop and Spark) are not exploiting the presence of storage tiers and the opportunities they present for performance optimizations. Specifically, schedulers and prefetchers will make decisions only based on data locality information and completely ignore the fact that local data are now stored on a variety of storage media with different performance characteristics. This article presents Trident, a scheduling and prefetching framework that is designed to make task assignment, resource scheduling, and prefetching decisions based on both locality and storage tier information. Trident formulates task scheduling as a minimum cost maximum matching problem in a bipartite graph and utilizes two novel pruning algorithms for bounding the size of the graph, while still guaranteeing optimality. In addition, Trident extends YARN’s resource request model and proposes a new storage-tier-aware resource scheduling algorithm. Finally, Trident includes a cost-based data prefetching approach that coordinates with the schedulers for optimizing prefetching operations. Trident is implemented in both Spark and Hadoop and evaluated extensively using a realistic workload derived from Facebook traces as well as an industry-validated benchmark, demonstrating significant benefits in terms of application performance and cluster efficiency.}
+}

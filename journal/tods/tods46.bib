@@ -1,0 +1,330 @@
+@article{DBLP:journals/tods/TraubGCBKRM21,
+	author = {Jonas Traub and
+                  Philipp Marian Grulich and
+                  Alejandro Rodriguez Cuellar and
+                  Sebastian Bre{\ss} and
+                  Asterios Katsifodimos and
+                  Tilmann Rabl and
+                  Volker Markl},
+	title = {Scotty: General and Efficient Open-source Window Aggregation for Stream
+                  Processing Systems},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {1},
+	pages = {1:1--1:46},
+	year = {2021},
+	url = {https://doi.org/10.1145/3433675},
+	doi = {10.1145/3433675},
+	timestamp = {Mon, 28 Aug 2023 21:41:35 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/TraubGCBKRM21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Window aggregation is a core operation in data stream processing. Existing aggregation techniques focus on reducing latency, eliminating redundant computations, or minimizing memory usage. However, each technique operates under different assumptions with respect to workload characteristics, such as properties of aggregation functions (e.g., invertible, associative), window types (e.g., sliding, sessions), windowing measures (e.g., time- or count-based), and stream (dis)order. In this article, we present  Scotty , an efficient and general open-source operator for sliding-window aggregation in stream processing systems, such as Apache Flink, Apache Beam, Apache Samza, Apache Kafka, Apache Spark, and Apache Storm. One can easily extend Scotty with user-defined aggregation functions and window types. Scotty implements the concept of general stream slicing and derives workload characteristics from aggregation queries to improve performance without sacrificing its general applicability. We provide an in-depth view on the algorithms of the general stream slicing approach. Our experiments show that Scotty outperforms alternative solutions.}
+}
+
+
+@article{DBLP:journals/tods/AmarilliBMN21,
+	author = {Antoine Amarilli and
+                  Pierre Bourhis and
+                  Stefan Mengel and
+                  Matthias Niewerth},
+	title = {Constant-Delay Enumeration for Nondeterministic Document Spanners},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {1},
+	pages = {2:1--2:30},
+	year = {2021},
+	url = {https://doi.org/10.1145/3436487},
+	doi = {10.1145/3436487},
+	timestamp = {Tue, 27 Apr 2021 15:11:03 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/AmarilliBMN21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the information extraction framework known as  document spanners  and study the problem of efficiently computing the results of the extraction from an input document, where the extraction task is described as a sequential  variable-set automaton  (VA). We pose this problem in the setting of enumeration algorithms, where we can first run a preprocessing phase and must then produce the results with a small delay between any two consecutive results. Our goal is to have an algorithm that is tractable in combined complexity, i.e., in the sizes of the input document and the VA, while ensuring the best possible data complexity bounds in the input document size, i.e., constant delay in the document size. Several recent works at PODS’18 proposed such algorithms but with linear delay in the document size or with an exponential dependency in size of the (generally nondeterministic) input VA. In particular, Florenzano et\xa0al. suggest that our desired runtime guarantees cannot be met for general sequential VAs. We refute this and show that, given a nondeterministic sequential VA and an input document, we can enumerate the mappings of the VA on the document with the following bounds: the preprocessing is linear in the document size and polynomial in the size of the VA, and the delay is independent of the document and polynomial in the size of the VA. The resulting algorithm thus achieves tractability in combined complexity and the best possible data complexity bounds. Moreover, it is rather easy to describe, particularly for the restricted case of so-called extended VAs. Finally, we evaluate our algorithm empirically using a prototype implementation.}
+}
+
+
+@article{DBLP:journals/tods/MitchellFH21,
+	author = {Rory Mitchell and
+                  Eibe Frank and
+                  Geoffrey Holmes},
+	title = {An Empirical Study of Moment Estimators for Quantile Approximation},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {1},
+	pages = {3:1--3:21},
+	year = {2021},
+	url = {https://doi.org/10.1145/3442337},
+	doi = {10.1145/3442337},
+	timestamp = {Tue, 27 Apr 2021 15:11:03 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/MitchellFH21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We empirically evaluate lightweight moment estimators for the single-pass quantile approximation problem, including maximum entropy methods and orthogonal series with Fourier, Cosine, Legendre, Chebyshev and Hermite basis functions. We show how to apply stable summation formulas to offset numerical precision issues for higher-order moments, leading to reliable single-pass moment estimators up to order 15. Additionally, we provide an algorithm for GPU-accelerated quantile approximation based on parallel tree reduction. Experiments evaluate the accuracy and runtime of moment estimators against the state-of-the-art KLL quantile estimator on 14,072 real-world datasets drawn from the OpenML database. Our analysis highlights the effectiveness of variants of moment-based quantile approximation for highly space efficient summaries: their average performance using as few as five sample moments can approach the performance of a KLL sketch containing 500 elements. Experiments also illustrate the difficulty of applying the method reliably and showcases which moment-based approximations can be expected to fail or perform poorly.}
+}
+
+
+@article{DBLP:journals/tods/MeduriCS21,
+	author = {Venkata Vamsikrishna Meduri and
+                  Kanchan Chowdhury and
+                  Mohamed Sarwat},
+	title = {Evaluation of Machine Learning Algorithms in Predicting the Next {SQL}
+                  Query from the Future},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {1},
+	pages = {4:1--4:46},
+	year = {2021},
+	url = {https://doi.org/10.1145/3442338},
+	doi = {10.1145/3442338},
+	timestamp = {Tue, 27 Apr 2021 15:11:03 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/MeduriCS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Prediction of the next SQL query from the user, given her sequence of queries until the current timestep, during an ongoing interaction session of the user with the database, can help in speculative query processing and increased interactivity. While existing machine learning-- (ML) based approaches use recommender systems to suggest relevant queries to a user, there has been no exhaustive study on applying temporal predictors to predict the next user issued query. In this work, we experimentally compare ML algorithms in predicting the immediate next future query in an interaction workload, given the current user query or the sequence of queries in a user session thus far. As a part of this, we propose the adaptation of two powerful temporal predictors: (a) Recurrent Neural Networks (RNNs) and (b) a Reinforcement Learning approach called Q-Learning that uses Markov Decision Processes. We represent each query as a comprehensive set of fragment embeddings that not only captures the SQL operators, attributes, and relations but also the arithmetic comparison operators and constants that occur in the query. Our experiments on two real-world datasets show the effectiveness of temporal predictors against the baseline recommender systems in predicting the structural fragments in a query w.r.t. both quality and time. Besides showing that RNNs can be used to synthesize novel queries, we find that exact Q-Learning outperforms RNNs despite predicting the next query entirely from the historical query logs.}
+}
+
+
+@article{DBLP:journals/tods/CarmeliK21,
+	author = {Nofar Carmeli and
+                  Markus Kr{\"{o}}ll},
+	title = {On the Enumeration Complexity of Unions of Conjunctive Queries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {2},
+	pages = {5:1--5:41},
+	year = {2021},
+	url = {https://doi.org/10.1145/3450263},
+	doi = {10.1145/3450263},
+	timestamp = {Sun, 06 Aug 2023 20:50:59 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/CarmeliK21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the enumeration complexity of  Unions of Conjunctive Queries (UCQs) . We aim to identify the UCQs that are tractable in the sense that the answer tuples can be enumerated with a linear preprocessing phase and a constant delay between every successive tuples. It has been established that, in the absence of self-joins and under conventional complexity assumptions, the CQs that admit such an evaluation are precisely the free-connex ones. A union of tractable CQs is always tractable. We generalize the notion of free-connexity from CQs to UCQs, thus showing that some unions containing intractable CQs are, in fact, tractable. Interestingly, some unions consisting of only intractable CQs are tractable too. We show how to use the techniques presented in this article also in settings where the database contains cardinality dependencies (including functional dependencies and key constraints) or when the UCQs contain disequalities. The question of finding a full characterization of the tractability of UCQs remains open. Nevertheless, we prove that, for several classes of queries, free-connexity fully captures the tractable UCQs.}
+}
+
+
+@article{DBLP:journals/tods/MhedhbiKS21,
+	author = {Amine Mhedhbi and
+                  Chathura Kankanamge and
+                  Semih Salihoglu},
+	title = {Optimizing One-time and Continuous Subgraph Queries using Worst-case
+                  Optimal Joins},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {2},
+	pages = {6:1--6:45},
+	year = {2021},
+	url = {https://doi.org/10.1145/3446980},
+	doi = {10.1145/3446980},
+	timestamp = {Mon, 14 Jun 2021 17:44:32 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/MhedhbiKS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the problem of optimizing one-time and continuous subgraph queries using the new worst-case optimal join plans. Worst-case optimal plans evaluate queries by matching one query vertex at a time using multiway intersections. The core problem in optimizing worst-case optimal plans is to pick an ordering of the query vertices to match. We make two main contributions: 1. A cost-based dynamic programming optimizer for one-time queries that (i) picks efficient query vertex orderings for worst-case optimal plans and (ii) generates  hybrid plans  that mix traditional binary joins with worst-case optimal style multiway intersections. In addition to our optimizer, we describe an  adaptive technique  that changes the query vertex orderings of the worst-case optimal subplans during query execution for more efficient query evaluation. The plan space of our one-time optimizer contains plans that are not in the plan spaces based on tree decompositions from prior work. 2. A cost-based greedy optimizer for continuous queries that builds on the delta subgraph query framework. Given a set of continuous queries, our optimizer decomposes these queries into multiple delta subgraph queries, picks a plan for each delta query, and generates a single combined plan that evaluates all of the queries. Our combined plans share computations across operators of the plans for the delta queries if the operators perform the same intersections. To increase the amount of computation shared, we describe an additional optimization that shares partial intersections across operators. Our optimizers use a new cost metric for worst-case optimal plans called  intersection-cost . When generating hybrid plans, our dynamic programming optimizer for one-time queries combines intersection-cost with the cost of binary joins. We demonstrate the effectiveness of our plans, adaptive technique, and partial intersection sharing optimization through extensive experiments. Our optimizers are integrated into GraphflowDB.}
+}
+
+
+@article{DBLP:journals/tods/WeiL21,
+	author = {Ziheng Wei and
+                  Sebastian Link},
+	title = {Embedded Functional Dependencies and Data-completeness Tailored Database
+                  Design},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {2},
+	pages = {7:1--7:46},
+	year = {2021},
+	url = {https://doi.org/10.1145/3450518},
+	doi = {10.1145/3450518},
+	timestamp = {Mon, 28 Aug 2023 21:41:35 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/WeiL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We establish a principled schema design framework for data with missing values. The framework is based on the new notion of an embedded functional dependency, which is independent of the interpretation of missing values, able to express completeness and integrity requirements on application data, and capable of capturing redundant data value occurrences that may cause problems with processing data that meets the requirements. We establish axiomatic, algorithmic, and logical foundations for reasoning about embedded functional dependencies. These foundations enable us to introduce generalizations of Boyce-Codd and Third normal forms that avoid processing difficulties of any application data, or minimize these difficulties across dependency-preserving decompositions, respectively. We show how to transform any given schema into application schemata that meet given completeness and integrity requirements, and the conditions of the generalized normal forms. Data over those application schemata are therefore fit for purpose by design. Extensive experiments with benchmark schemata and data illustrate the effectiveness of our framework for the acquisition of the constraints, the schema design process, and the performance of the schema designs in terms of updates and join queries.}
+}
+
+
+@article{DBLP:journals/tods/ChenS21,
+	author = {Yangjun Chen and
+                  Gagandeep Singh},
+	title = {Graph Indexing for Efficient Evaluation of Label-constrained Reachability
+                  Queries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {2},
+	pages = {8:1--8:50},
+	year = {2021},
+	url = {https://doi.org/10.1145/3451159},
+	doi = {10.1145/3451159},
+	timestamp = {Mon, 14 Jun 2021 17:44:32 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/ChenS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a directed edge labeled graph  G , to check whether vertex  v  is reachable from vertex  u  under a label set  S  is to know if there is a path from  u  to  v  whose edge labels across the path are a subset of  S . Such a query is referred to as a  label-constrained reachability  ( LCR ) query. In this article, we present a new approach to store a compressed transitive closure of  G  in the form of intervals over spanning trees (forests). The basic idea is to associate each vertex  v  with two sequences of some other vertices: one is used to check reachability from  v  to any other vertex, by using intervals, while the other is used to check reachability to  v  from any other vertex. We will show that such sequences are in general much shorter than the number of vertices in  G.  Extensive experiments have been conducted, which demonstrates that our method is much better than all the previous methods for this problem in all the important aspects, including index construction times, index sizes, and query times.}
+}
+
+
+@article{DBLP:journals/tods/TrummerWWMMJAR21,
+	author = {Immanuel Trummer and
+                  Junxiong Wang and
+                  Ziyun Wei and
+                  Deepak Maram and
+                  Samuel Moseley and
+                  Saehan Jo and
+                  Joseph Antonakakis and
+                  Ankush Rayabhari},
+	title = {SkinnerDB: Regret-bounded Query Evaluation via Reinforcement Learning},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {3},
+	pages = {9:1--9:45},
+	year = {2021},
+	url = {https://doi.org/10.1145/3464389},
+	doi = {10.1145/3464389},
+	timestamp = {Mon, 03 Mar 2025 22:25:52 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/TrummerWWMMJAR21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {SkinnerDB uses reinforcement learning for reliable join ordering, exploiting an adaptive processing engine with specialized join algorithms and data structures. It maintains no data statistics and uses no cost or cardinality models. Also, it uses no training workloads nor does it try to link the current query to seemingly similar queries in the past. Instead, it uses reinforcement learning to learn optimal join orders from scratch during the execution of the current query. To that purpose, it divides the execution of a query into many small time slices. Different join orders are tried in different time slices. SkinnerDB merges result tuples generated according to different join orders until a complete query result is obtained. By measuring execution progress per time slice, it identifies promising join orders as execution proceeds. Along with SkinnerDB, we introduce a new quality criterion for query execution strategies. We upper-bound expected execution cost regret, i.e., the expected amount of execution cost wasted due to sub-optimal join order choices. SkinnerDB features multiple execution strategies that are optimized for that criterion. Some of them can be executed on top of existing database systems. For maximal performance, we introduce a customized execution engine, facilitating fast join order switching via specialized multi-way join algorithms and tuple representations. We experimentally compare SkinnerDB’s performance against various baselines, including MonetDB, Postgres, and adaptive processing methods. We consider various benchmarks, including the join order benchmark, TPC-H, and JCC-H, as well as benchmark variants with user-defined functions. Overall, the overheads of reliable join ordering are negligible compared to the performance impact of the occasional, catastrophic join order choice.}
+}
+
+
+@article{DBLP:journals/tods/SongGZWY21,
+	author = {Shaoxu Song and
+                  Fei Gao and
+                  Aoqian Zhang and
+                  Jianmin Wang and
+                  Philip S. Yu},
+	title = {Stream Data Cleaning under Speed and Acceleration Constraints},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {3},
+	pages = {10:1--10:44},
+	year = {2021},
+	url = {https://doi.org/10.1145/3465740},
+	doi = {10.1145/3465740},
+	timestamp = {Mon, 26 Jun 2023 20:55:05 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/SongGZWY21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Stream data are often dirty, for example, owing to unreliable sensor reading or erroneous extraction of stock prices. Most stream data cleaning approaches employ a smoothing filter, which may seriously alter the data without preserving the original information. We argue that the cleaning should avoid changing those originally correct/clean data, a.k.a. the  minimum modification rule  in data cleaning. To capture the knowledge about  what is clean , we consider the (widely existing) constraints on the speed and acceleration of data changes, such as fuel consumption per hour, daily limit of stock prices, or the top speed and acceleration of a car. Guided by these semantic constraints, in this article, we propose the constraint-based approach for cleaning stream data. It is notable that existing data repair techniques clean (a sequence of) data  as a whole  and fail to support stream computation. To this end, we have to relax the global optimum over the entire sequence to the local optimum in a window. Rather than the commonly observed NP-hardness of general data repairing problems, our major contributions include (1) polynomial time algorithm for global optimum, (2) linear time algorithm towards local optimum under an efficient  median-based solution , and (3) experiments on real datasets demonstrate that our method can show significantly lower L1 error than the existing approaches such as smoother.}
+}
+
+
+@article{DBLP:journals/tods/LinMJHW21,
+	author = {Xuelian Lin and
+                  Shuai Ma and
+                  Jiahao Jiang and
+                  Yanchen Hou and
+                  Tianyu Wo},
+	title = {Error Bounded Line Simplification Algorithms for Trajectory Compression:
+                  An Experimental Evaluation},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {3},
+	pages = {11:1--11:44},
+	year = {2021},
+	url = {https://doi.org/10.1145/3474373},
+	doi = {10.1145/3474373},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/LinMJHW21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nowadays, various sensors are collecting, storing, and transmitting tremendous trajectory data, and it is well known that the storage, network bandwidth, and computing resources could be heavily wasted if raw trajectory data is directly adopted. Line simplification algorithms are effective approaches to attacking this issue by compressing a trajectory to a set of continuous line segments, and are commonly used in practice. In this article, we first classify the error bounded line simplification algorithms into different categories and review each category of algorithms. We then study the data aging problem of line simplification algorithms and distance metrics from the views of aging friendliness and aging errors. Finally, we present a systematic experimental evaluation of representative error bounded line simplification algorithms, including both compression optimal and sub-optimal methods, in terms of commonly adopted perpendicular Euclidean, synchronous Euclidean, and direction-aware distances. Using real-life trajectory datasets, we systematically evaluate and analyze the performance (compression ratio, average error, running time, aging friendliness, and query friendliness) of error bounded line simplification algorithms with respect to distance metrics, trajectory sizes, and error bounds. Our study provides a full picture of error bounded line simplification algorithms, which leads to guidelines on how to choose appropriate algorithms and distance metrics for practical applications.}
+}
+
+
+@article{DBLP:journals/tods/KhamisKNS21,
+	author = {Mahmoud Abo Khamis and
+                  Phokion G. Kolaitis and
+                  Hung Q. Ngo and
+                  Dan Suciu},
+	title = {Bag Query Containment and Information Theory},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {3},
+	pages = {12:1--12:39},
+	year = {2021},
+	url = {https://doi.org/10.1145/3472391},
+	doi = {10.1145/3472391},
+	timestamp = {Mon, 05 Feb 2024 20:25:49 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/KhamisKNS21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The query containment problem is a fundamental algorithmic problem in data management. While this problem is well understood under set semantics, it is by far less understood under bag semantics. In particular, it is a long-standing open question whether or not the conjunctive query containment problem under bag semantics is decidable. We unveil tight connections between information theory and the conjunctive query containment under bag semantics. These connections are established using information inequalities, which are considered to be the laws of information theory. Our first main result asserts that deciding the validity of a generalization of information inequalities is many-one equivalent to the restricted case of conjunctive query containment in which the containing query is acyclic; thus, either both these problems are decidable or both are undecidable. Our second main result identifies a new decidable case of the conjunctive query containment problem under bag semantics. Specifically, we give an exponential-time algorithm for conjunctive query containment under bag semantics, provided the containing query is chordal and admits a simple junction tree.}
+}
+
+
+@article{DBLP:journals/tods/MaFCLZL21,
+	author = {Chenhao Ma and
+                  Yixiang Fang and
+                  Reynold Cheng and
+                  Laks V. S. Lakshmanan and
+                  Wenjie Zhang and
+                  Xuemin Lin},
+	title = {On Directed Densest Subgraph Discovery},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {4},
+	pages = {13:1--13:45},
+	year = {2021},
+	url = {https://doi.org/10.1145/3483940},
+	doi = {10.1145/3483940},
+	timestamp = {Sun, 12 Nov 2023 02:21:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/MaFCLZL21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a directed graph  G , the directed densest subgraph (DDS) problem refers to the finding of a subgraph from  G , whose density is the highest among all the subgraphs of  G . The DDS problem is fundamental to a wide range of applications, such as fraud detection, community mining, and graph compression. However, existing DDS solutions suffer from efficiency and scalability problems: on a 3,000-edge graph, it takes three days for one of the best exact algorithms to complete. In this article, we develop an efficient and scalable DDS solution. We introduce the notion of [ x ,  y ]-core, which is a dense subgraph for  G , and show that the densest subgraph can be accurately located through the [ x ,  y ]-core with theoretical guarantees. Based on the [ x ,  y ]-core, we develop exact and approximation algorithms. We further study the problems of maintaining the DDS over dynamic directed graphs and finding the weighted DDS on weighted directed graphs, and we develop efficient non-trivial algorithms to solve these two problems by extending our DDS algorithms. We have performed an extensive evaluation of our approaches on 15 real large datasets. The results show that our proposed solutions are up to six orders of magnitude faster than the state-of-the-art.}
+}
+
+
+@article{DBLP:journals/tods/SinghPBBFJKP21,
+	author = {Shikha Singh and
+                  Prashant Pandey and
+                  Michael A. Bender and
+                  Jonathan W. Berry and
+                  Martin Farach{-}Colton and
+                  Rob Johnson and
+                  Thomas M. Kroeger and
+                  Cynthia A. Phillips},
+	title = {Timely Reporting of Heavy Hitters Using External Memory},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {4},
+	pages = {14:1--14:35},
+	year = {2021},
+	url = {https://doi.org/10.1145/3472392},
+	doi = {10.1145/3472392},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/SinghPBBFJKP21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given an input stream  S  of size  N , a  ɸ-heavy hitter  is an item that occurs at least  ɸN  times in  S . The problem of finding heavy-hitters is extensively studied in the database literature. We study a real-time heavy-hitters variant in which an element must be reported shortly after we see its T = ɸ N-th occurrence (and hence it becomes a heavy hitter). We call this the Timely Event Detection ( TED ) Problem. The  TED  problem models the needs of many real-world monitoring systems, which demand accurate (i.e., no false negatives) and timely reporting of all events from large, high-speed streams with a low reporting threshold (high sensitivity). Like the classic heavy-hitters problem, solving the  TED  problem without false-positives requires large space (Ω (N) words). Thus in-RAM heavy-hitters algorithms typically sacrifice accuracy (i.e., allow false positives), sensitivity, or timeliness (i.e., use multiple passes). We show how to adapt heavy-hitters algorithms to external memory to solve the  TED  problem on large high-speed streams while guaranteeing accuracy, sensitivity, and timeliness. Our data structures are limited only by I/O-bandwidth (not latency) and support a tunable tradeoff between reporting delay and I/O overhead. With a small bounded reporting delay, our algorithms incur only a logarithmic I/O overhead. We implement and validate our data structures empirically using the Firehose streaming benchmark. Multi-threaded versions of our structures can scale to process 11M observations per second before becoming CPU bound. In comparison, a naive adaptation of the standard heavy-hitters algorithm to external memory would be limited by the storage device’s random I/O throughput, i.e., ≈100K observations per second.}
+}
+
+
+@article{DBLP:journals/tods/BenediktBJT21,
+	author = {Michael Benedikt and
+                  Pierre Bourhis and
+                  Louis Jachiet and
+                  Efthymia Tsamoura},
+	title = {Balancing Expressiveness and Inexpressiveness in View Design},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {4},
+	pages = {15:1--15:40},
+	year = {2021},
+	url = {https://doi.org/10.1145/3488370},
+	doi = {10.1145/3488370},
+	timestamp = {Fri, 17 Dec 2021 17:23:43 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/BenediktBJT21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the design of data publishing mechanisms that allow a collection of autonomous distributed data sources to collaborate to support queries. A common mechanism for data publishing is via  views : functions that expose derived data to users, usually specified as declarative queries. Our autonomy assumption is that the views must be on individual sources, but with the intention of supporting integrated queries. In deciding what data to expose to users, two considerations must be balanced. The views must be sufficiently expressive to support queries that users want to ask—the  utility  of the publishing mechanism. But there may also be some expressiveness restrictions. Here, we consider two restrictions, a  minimal information  requirement, saying that the views should reveal as little as possible while supporting the utility query, and a  non-disclosure  requirement, formalizing the need to prevent external users from computing information that data owners do not want revealed. We investigate the problem of designing views that satisfy both expressiveness and inexpressiveness requirements, for views in a restricted information systems - query languages (conjunctive queries), and for arbitrary views.}
+}
+
+
+@article{DBLP:journals/tods/GrezRUV21,
+	author = {Alejandro Grez and
+                  Cristian Riveros and
+                  Mart{\'{\i}}n Ugarte and
+                  Stijn Vansummeren},
+	title = {A Formal Framework for Complex Event Recognition},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {46},
+	number = {4},
+	pages = {16:1--16:49},
+	year = {2021},
+	url = {https://doi.org/10.1145/3485463},
+	doi = {10.1145/3485463},
+	timestamp = {Mon, 05 Feb 2024 20:25:49 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/GrezRUV21.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Complex event recognition (CER) has emerged as the unifying field for technologies that require processing and correlating distributed data sources in real time. CER finds applications in diverse domains, which has resulted in a large number of proposals for expressing and processing complex events. Existing CER languages lack a clear semantics, however, which makes them hard to understand and generalize. Moreover, there are no general techniques for evaluating CER query languages with clear performance guarantees. In this article, we embark on the task of giving a rigorous and efficient framework to CER. We propose a formal language for specifying complex events, called  complex event logic  (CEL), that contains the main features used in the literature and has a denotational and compositional semantics. We also formalize the so-called selection strategies, which had only been presented as by-design extensions to existing frameworks. We give insight into the language design trade-offs regarding the strict sequencing operators of CEL and selection strategies. With a well-defined semantics at hand, we discuss how to efficiently process complex events by evaluating CEL formulas with unary filters. We start by introducing a formal computational model for CER, called  complex event automata  (CEA), and study how to compile CEL formulas with unary filters into CEA. Furthermore, we provide efficient algorithms for evaluating CEA over event streams using constant time per event followed by output-linear delay enumeration of the results.}
+}

@@ -1,0 +1,332 @@
+@article{DBLP:journals/tods/GottlobLOP24,
+	author = {Georg Gottlob and
+                  Matthias Lanzinger and
+                  Cem Okulmus and
+                  Reinhard Pichler},
+	title = {Fast Parallel Hypertree Decompositions in Logarithmic Recursion Depth},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {1},
+	pages = {1:1--1:43},
+	year = {2024},
+	url = {https://doi.org/10.1145/3638758},
+	doi = {10.1145/3638758},
+	timestamp = {Mon, 01 Apr 2024 11:15:43 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/GottlobLOP24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Various classic reasoning problems with natural hypergraph representations are known to be tractable if a hypertree decomposition (HD) of low width exists. The resulting algorithms are attractive for practical use in fields like databases and constraint satisfaction. However, algorithmic use of HDs relies on the difficult task of first computing a decomposition of the hypergraph underlying a given problem instance, which is then used to guide the algorithm for this particular instance. The performance of purely sequential methods for computing HDs is inherently limited, yet the problem is, theoretically, amenable to parallelisation. In this article, we propose the first algorithm for computing hypertree decompositions that is well suited for parallelisation. The newly proposed algorithm  log- k -decomp  requires only a logarithmic number of recursion levels and additionally allows for highly parallelised pruning of the search space by restriction to so-called balanced separators. We provide a detailed experimental evaluation over the HyperBench benchmark and demonstrate that  log- k -decomp  outperforms the current state of the art significantly.}
+}
+
+
+@article{DBLP:journals/tods/FanLPJY24,
+	author = {Wenfei Fan and
+                  Ping Lu and
+                  Kehan Pang and
+                  Ruochun Jin and
+                  Wenyuan Yu},
+	title = {Linking Entities across Relations and Graphs},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {1},
+	pages = {2:1--2:50},
+	year = {2024},
+	url = {https://doi.org/10.1145/3639363},
+	doi = {10.1145/3639363},
+	timestamp = {Sun, 19 Jan 2025 13:41:56 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/FanLPJY24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article proposes a notion of parametric simulation to link entities across a relational database 𝒟 and a graph  G . Taking functions and thresholds for measuring vertex closeness, path associations, and important properties as parameters, parametric simulation identifies tuples  t  in 𝒟 and vertices  v  in  G  that refer to the same real-world entity, based on both topological and semantic matching. We develop machine learning methods to learn the parameter functions and thresholds. We show that parametric simulation is in quadratic-time by providing such an algorithm. Moreover, we develop an incremental algorithm for parametric simulation; we show that the incremental algorithm is bounded relative to its batch counterpart, i.e., it incurs the minimum cost for incrementalizing the batch algorithm. Putting these together, we develop  HER , a parallel system to check whether ( t, v ) makes a match, find all vertex matches of  t  in  G , and compute all matches across 𝒟 and  G , all in quadratic-time; moreover,  HER  supports incremental computation of these in response to updates to 𝒟 and  G . Using real-life and synthetic data, we empirically verify that  HER  is accurate with F-measure of 0.94 on average, and is able to scale with database 𝒟 and graph  G  for both batch and incremental computations.}
+}
+
+
+@article{DBLP:journals/tods/WangTZYZGC24,
+	author = {Zhaoguo Wang and
+                  Chuzhe Tang and
+                  Xiaodong Zhang and
+                  Qianmian Yu and
+                  Binyu Zang and
+                  Haibing Guan and
+                  Haibo Chen},
+	title = {Ad Hoc Transactions through the Looking Glass: An Empirical Study
+                  of Application-Level Transactions in Web Applications},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {1},
+	pages = {3:1--3:43},
+	year = {2024},
+	url = {https://doi.org/10.1145/3638553},
+	doi = {10.1145/3638553},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/WangTZYZGC24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many transactions in web applications are constructed ad hoc in the application code. For example, developers might explicitly use locking primitives or validation procedures to coordinate critical code fragments. We refer to database operations coordinated by application code as  ad hoc transactions . Until now, little is known about them. This paper presents the first comprehensive study on ad hoc transactions. By studying 91 ad hoc transactions among eight popular open-source web applications, we found that (i) every studied application uses ad hoc transactions (up to 16 per application), 71 of which play critical roles; (ii) compared with database transactions, concurrency control of ad hoc transactions is much more flexible; (iii) ad hoc transactions are error-prone—53 of them have correctness issues, and 33 of them are confirmed by developers; and (iv) ad hoc transactions have the potential for improving performance in contentious workloads by utilizing application semantics such as access patterns. Based on these findings, we discuss the implications of ad hoc transactions to the database research community.}
+}
+
+
+@article{DBLP:journals/tods/CurrimSS24,
+	author = {Sabah Currim and
+                  Richard T. Snodgrass and
+                  Young{-}Kyoon Suh},
+	title = {Identifying the Root Causes of {DBMS} Suboptimality},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {1},
+	pages = {4:1--4:40},
+	year = {2024},
+	url = {https://doi.org/10.1145/3636425},
+	doi = {10.1145/3636425},
+	timestamp = {Sun, 19 Jan 2025 13:41:56 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/CurrimSS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The query optimization phase within a database management system (DBMS) ostensibly finds the fastest query execution plan from a potentially large set of enumerated plans, all of which correctly compute the same result of the specified query. Sometimes the cost-based optimizer selects a slower plan, for a variety of reasons. Previous work has focused on increasing the performance of specific components, often a single operator, within an individual DBMS. However, that does not address the fundamental question: from where does this suboptimality arise, across DBMSes generally? In particular, the contribution of each of many possible factors to DBMS suboptimality is currently unknown. To identify the root causes of DBMS suboptimality, we first introduce the notion of  empirical suboptimality  of a query plan chosen by the DBMS, indicated by the existence of a query plan that performs more efficiently than the chosen plan, for the same query. A crucial aspect is that this can be measured externally to the DBMS, and thus does not require access to its source code. We then propose a novel  predictive model  to explain the relationship between various factors in query optimization and empirical suboptimality. Our model associates suboptimality with the factors of complexity of the schema, of the underlying data on which the query is evaluated, of the query itself, and of the DBMS optimizer. The model also characterizes concomitant interactions among these factors. This model induces a number of specific hypotheses that were tested on multiple DBMSes. We performed a series of experiments that examined the plans for thousands of queries run on four popular DBMSes. We tested the model on over a million of these query executions, using correlational analysis, regression analysis, and causal analysis, specifically Structural Equation Modeling (SEM). We observed that the dependent construct of empirical suboptimality prevalence correlates positively with nine specific constructs characterizing four identified factors that explain in concert much of the variance of suboptimality of two extensive benchmarks, across these disparate DBMSes. This predictive model shows that it is the common aspects of these DBMSes that predict suboptimality,  not  the particulars embedded in the inordinate complexity of each of these DBMSes. This paper thus provides a new methodology to study mature query optimizers, identifies underlying DBMS-independent causes for the observed suboptimality, and quantifies the relative contribution of each of these causes to the observed suboptimality. This work thus provides a roadmap for fundamental improvements of cost-based query optimizers.}
+}
+
+
+@article{DBLP:journals/tods/ArroyueloGHNRRS24,
+	author = {Diego Arroyuelo and
+                  Adri{\'{a}}n G{\'{o}}mez{-}Brand{\'{o}}n and
+                  Aidan Hogan and
+                  Gonzalo Navarro and
+                  Juan L. Reutter and
+                  Javiel Rojas{-}Ledesma and
+                  Adri{\'{a}}n Soto},
+	title = {The Ring: Worst-case Optimal Joins in Graph Databases using (Almost)
+                  No Extra Space},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {2},
+	pages = {5:1--5:45},
+	year = {2024},
+	url = {https://doi.org/10.1145/3644824},
+	doi = {10.1145/3644824},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/ArroyueloGHNRRS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present an indexing scheme for triple-based graphs that supports join queries in worst-case optimal (wco) time within compact space. This scheme, called a  ring , regards each triple as a cyclic string of length 3. Each rotation of the triples is lexicographically sorted and the values of the last attribute are stored as a column, so we obtain the order of the next column by stably re-sorting the triples by its attribute. We show that, by representing the columns with a compact data structure called a wavelet tree, this ordering enables forward and backward navigation between columns without needing pointers. These wavelet trees further support wco join algorithms and cardinality estimations for query planning. While traditional data structures such as B-Trees, tries, and so on, require 6 index orders to support all possible wco joins over triples, we can use one ring to index them all. This ring replaces the graph and uses only sublinear extra space, thus supporting wco joins in almost no space beyond storing the graph itself. Experiments querying a large graph (Wikidata) in memory show that the ring offers nearly the best overall query times while using only a small fraction of the space required by several state-of-the-art approaches. We then turn our attention to some theoretical results for indexing tables of arity  d  higher than 3 in such a way that supports wco joins. While a single ring of length  d  no longer suffices to cover all  d ! orders, we need much fewer rings to index them all:  O (2 d ) rings with a small constant. For example, we need 5 rings instead of 120 orders for  d =5. We show that our rings become a particular case of what we dub  order graphs , whose nodes are attribute orders and where stably sorting by some attribute leads us from an order to another, thereby inducing an edge labeled by the attribute. The index is then the set of columns associated with the edges, and a set of rings is just one possible graph shape. We show that other shapes, like for example a single ring instead of several ones of length  d , can lead us to even smaller indexes, and that other more general shapes are also possible. For example, we handle  d =5 attributes within space equivalent to 4 rings.}
+}
+
+
+@article{DBLP:journals/tods/ChapmanLMT24,
+	author = {Adriane Chapman and
+                  Luca Lauro and
+                  Paolo Missier and
+                  Riccardo Torlone},
+	title = {Supporting Better Insights of Data Science Pipelines with Fine-grained
+                  Provenance},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {2},
+	pages = {6:1--6:42},
+	year = {2024},
+	url = {https://doi.org/10.1145/3644385},
+	doi = {10.1145/3644385},
+	timestamp = {Sun, 19 Jan 2025 13:41:53 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/ChapmanLMT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Successful data-driven science requires complex data engineering pipelines to clean, transform, and alter data in preparation for machine learning, and robust results can only be achieved when each step in the pipeline can be justified, and its effect on the data explained. In this framework, we aim at providing data scientists with facilities to gain an in-depth understanding of how each step in the pipeline affects the data, from the raw input to training sets ready to be used for learning. Starting from an extensible set of data preparation operators commonly used within a data science setting, in this work we present a provenance management infrastructure for generating, storing, and querying very granular accounts of data transformations, at the level of individual elements within datasets whenever possible. Then, from the formal definition of a core set of data science preprocessing operators, we derive a  provenance semantics  embodied by a collection of templates expressed in PROV, a standard model for data provenance. Using those templates as a reference, our provenance generation algorithm generalises to any operator with observable input/output pairs. We provide a prototype implementation of an application-level provenance capture library to produce, in a semi-automatic way, complete provenance documents that account for the entire pipeline. We report on the ability of that reference implementation to capture provenance in real ML benchmark pipelines and over TCP-DI synthetic data. We finally show how the collected provenance can be used to answer a suite of provenance benchmark queries that underpin some common pipeline inspection questions, as expressed on the Data Science Stack Exchange.}
+}
+
+
+@article{DBLP:journals/tods/ZhangT24,
+	author = {Chao Zhang and
+                  Farouk Toumani},
+	title = {Sharing Queries with Nonequivalent User-defined Aggregate Functions},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {2},
+	pages = {7:1--7:46},
+	year = {2024},
+	url = {https://doi.org/10.1145/3649133},
+	doi = {10.1145/3649133},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/ZhangT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article presents Sharing User-Defined Aggregate Function (SUDAF), a declarative framework that allows users to write User-defined Aggregate Functions (UDAFs) as mathematical expressions and use them in Structured Query Language statements.  SUDAF  rewrites partial aggregates of UDAFs using built-in aggregate functions and supports efficient dynamic caching and reusing of partial aggregates. Our experiments show that rewriting UDAFs using built-in functions can significantly speed up queries with UDAFs, and the proposed sharing approach can yield up to two orders of magnitude improvement in query execution time. The article studies also an extension of  SUDAF  to support sharing partial results between arbitrary queries with UDAFs. We show a connection with the problem of query rewriting using views and introduce a new class of rewritings, called  SUDAF  rewritings, which enables to use views that have aggregate functions different from the ones used in the input query. We investigate the underlying rewriting-checking and rewriting-existing problem. Our main technical result is a reduction of these problems to, respectively, rewriting-checking and rewriting-existing of the so-called  aggregate candidates , a class of rewritings that has been deeply investigated in the literature.}
+}
+
+
+@article{DBLP:journals/tods/CarmeliGKLT24,
+	author = {Nofar Carmeli and
+                  Martin Grohe and
+                  Benny Kimelfeld and
+                  Ester Livshits and
+                  Muhammad Tibi},
+	title = {Database Repairing with Soft Functional Dependencies},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {2},
+	pages = {8:1--8:34},
+	year = {2024},
+	url = {https://doi.org/10.1145/3651156},
+	doi = {10.1145/3651156},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/CarmeliGKLT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A common interpretation of soft constraints penalizes the database for every violation of every constraint, where the penalty is the cost (weight) of the constraint. A computational challenge is that of finding an optimal subset: a collection of database tuples that minimizes the total penalty when each tuple has a cost of being excluded. When the constraints are strict (i.e., have an infinite cost), this subset is a “cardinality repair” of an inconsistent database; in soft interpretations, this subset corresponds to a “most probable world” of a probabilistic database, a “most likely intention” of a probabilistic unclean database, and so on. Within the class of functional dependencies, the complexity of finding a cardinality repair is thoroughly understood. Yet, very little is known about the complexity of finding an optimal subset for the more general soft semantics. The work described in this manuscript makes significant progress in that direction. In addition to general insights about the hardness and approximability of the problem, we present algorithms for two special cases (and some generalizations thereof): a single functional dependency, and a bipartite matching. The latter is the problem of finding an optimal “almost matching” of a bipartite graph where a penalty is paid for every lost edge and every violation of monogamy. For these special cases, we also investigate the complexity of additional computational tasks that arise when the soft constraints are used as a means to represent a probabilistic database in the case of a probabilistic unclean database.}
+}
+
+
+@article{DBLP:journals/tods/TenchWZBCDDFSZ24,
+	author = {David Tench and
+                  Evan West and
+                  Victor Zhang and
+                  Michael A. Bender and
+                  Abiyaz Chowdhury and
+                  Daniel DeLayo and
+                  J. Ahmed Dellas and
+                  Mart{\'{\i}}n Farach{-}Colton and
+                  Tyler Seip and
+                  Kenny Zhang},
+	title = {GraphZeppelin: How to Find Connected Components (Even When Graphs
+                  Are Dense, Dynamic, and Massive)},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {3},
+	pages = {9:1--9:31},
+	year = {2024},
+	url = {https://doi.org/10.1145/3643846},
+	doi = {10.1145/3643846},
+	timestamp = {Sun, 19 Jan 2025 13:41:56 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/TenchWZBCDDFSZ24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Finding the connected components of a graph is a fundamental problem with uses throughout computer science and engineering. The task of computing connected components becomes more difficult when graphs are very large, or when they are dynamic, meaning the edge set changes over time subject to a stream of edge insertions and deletions. A natural approach to computing the connected components problem on a large, dynamic graph stream is to buy enough RAM to store the entire graph. However, the requirement that the graph fit in RAM is an inherent limitation of this approach and is prohibitive for very large graphs. Thus, there is an unmet need for systems that can process dense dynamic graphs, especially when those graphs are larger than available RAM. We present a new high-performance streaming graph-processing system for computing the connected components of a graph. This system, which we call  GraphZeppelin , uses new linear sketching data structures ( CubeSketch ) to solve the streaming connected components problem and as a result requires space asymptotically smaller than the space required for a lossless representation of the graph.  GraphZeppelin  is optimized for massive dense graphs:  GraphZeppelin  can process millions of edge updates (both insertions and deletions) per second, even when the underlying graph is far too large to fit in available RAM. As a result  GraphZeppelin  vastly increases the scale of graphs that can be processed.}
+}
+
+
+@article{DBLP:journals/tods/BugedoRS24,
+	author = {Sebasti{\'{a}}n Bugedo and
+                  Cristian Riveros and
+                  Jorge Salas},
+	title = {A Family of Centrality Measures for Graph Data Based on Subgraphs},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {3},
+	pages = {10:1--10:45},
+	year = {2024},
+	url = {https://doi.org/10.1145/3649134},
+	doi = {10.1145/3649134},
+	timestamp = {Mon, 03 Mar 2025 22:25:52 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/BugedoRS24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present the theoretical foundations and first experimental study of a new approach in centrality measures for graph data. The main principle is straightforward: the more relevant subgraphs around a vertex, the more central it is in the network. We formalize the notion of “relevant subgraphs” by choosing a family of subgraphs that, given a graph  G  and a vertex  v , assigns a subset of connected subgraphs of  G  that contains  v . Any of such families defines a measure of centrality by counting the number of subgraphs assigned to the vertex, i.e., a vertex will be more important for the network if it belongs to more subgraphs in the family. We show several examples of this approach. In particular, we propose the All-Subgraphs (All-Trees) centrality, a centrality measure that considers every subgraph (tree). We study fundamental properties over families of subgraphs that guarantee desirable properties over the centrality measure. Interestingly, All-Subgraphs and All-Trees satisfy all these properties, showing their robustness as centrality notions. To conclude the theoretical analysis, we study the computational complexity of counting certain families of subgraphs and show a linear time algorithm to compute the All-Subgraphs and All-Trees centrality for graphs with bounded treewidth. Finally, we implemented these algorithms and computed these measures over more than one hundred real-world networks. With this data, we present an empirical comparison between well-known centrality measures and those proposed in this work.}
+}
+
+
+@article{DBLP:journals/tods/GershteinAGMN24,
+	author = {Shay Gershtein and
+                  Uri Avron and
+                  Ido Guy and
+                  Tova Milo and
+                  Slava Novgorodov},
+	title = {Automated Category Tree Construction: Hardness Bounds and Algorithms},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {3},
+	pages = {11:1--11:32},
+	year = {2024},
+	url = {https://doi.org/10.1145/3664283},
+	doi = {10.1145/3664283},
+	timestamp = {Sun, 22 Dec 2024 15:49:29 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/GershteinAGMN24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Category trees, or taxonomies, are rooted trees where each node, called a category, corresponds to a set of related items. The construction of taxonomies has been studied in various domains, including e-commerce, document management, and question answering. Multiple algorithms for automating construction have been proposed, employing a variety of clustering approaches and crowdsourcing. However, no formal model to capture such categorization problems has been devised, and their complexity has not been studied. To address this, we propose in this work a combinatorial model that captures many practical settings and show that the aforementioned empirical approach has been warranted, as we prove strong inapproximability bounds for various problem variants and special cases when the goal is to produce a categorization of the maximum utility. In our model, the input is a set of  n  weighted item sets that the tree would ideally contain as categories. Each category, rather than perfectly match the corresponding input set, is allowed to exceed a given threshold for a given similarity function. The goal is to produce a tree that maximizes the total weight of the sets for which it contains a matching category. A key parameter is an upper bound on the number of categories an item may belong to, which produces the hardness of the problem, as initially each item may be contained in an arbitrary number of input sets. For this model, we prove inapproximability bounds, of order  ˜ Θ \u2061 ( √ 𝑛 )  or  ˜ Θ \u2061 ( 𝑛 ) , for various problem variants and special cases, loosely justifying the aforementioned heuristic approach. Our work includes reductions based on parameterized randomized constructions that highlight how various problem parameters and properties of the input may affect the hardness. Moreover, for the special case where the category must be identical to the corresponding input set, we devise an algorithm whose approximation guarantee depends solely on a more granular parameter, allowing improved worst-case guarantees, as well as the application of practical exact solvers. We further provide efficient algorithms with much improved approximation guarantees for practical special cases where the cardinalities of the input sets or the number of input sets each items belongs to are not too large. Finally, we also generalize our results to DAG-based and non-hierarchical categorization.}
+}
+
+
+@article{DBLP:journals/tods/HuM24,
+	author = {Pan Hu and
+                  Boris Motik},
+	title = {Accurate Sampling-Based Cardinality Estimation for Complex Graph Queries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {3},
+	pages = {12:1--12:46},
+	year = {2024},
+	url = {https://doi.org/10.1145/3689209},
+	doi = {10.1145/3689209},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/HuM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Accurately estimating the cardinality (i.e., the number of answers) of complex queries plays a central role in database systems. This problem is particularly difficult in graph databases, where queries often involve a large number of joins and self-joins. Recently, Park et\xa0al. [ 55 ] surveyed seven state-of-the-art cardinality estimation approaches for graph queries. The results of their extensive empirical evaluation show that a sampling method based on the  WanderJoin  online aggregation algorithm [ 47 ] consistently offers superior accuracy. We extended the framework by Park et\xa0al. [ 55 ] with three additional datasets and repeated their experiments. Our results showed that WanderJoin is indeed very accurate, but it can often take a large number of samples and thus be very slow. Moreover, when queries are complex and data distributions are skewed, it often fails to find valid samples and estimates the cardinality as zero. Finally, complex graph queries often go beyond simple graph matching and involve arbitrary nesting of relational operators such as disjunction, difference, and duplicate elimination. Neither of the methods considered by Park et\xa0al. [ 55 ] is applicable to such queries. In this article, we present a novel approach for estimating the cardinality of complex graph queries. Our approach is inspired by WanderJoin, but, unlike all approaches known to us, it can process complex queries with arbitrary operator nesting. Our estimator is strongly consistent, meaning that the average of repeated estimates converges with probability one to the actual cardinality. We present optimisations of the basic algorithm that aim to reduce the chance of producing zero estimates and improve accuracy. We show empirically that our approach is both accurate and quick on complex queries and large datasets. Finally, we discuss how to integrate our approach into a simple dynamic programming query planner, and we confirm empirically that our planner produces high-quality plans that can significantly reduce end-to-end query evaluation times.}
+}
+
+
+@article{DBLP:journals/tods/DongFYTM24,
+	author = {Wei Dong and
+                  Juanru Fang and
+                  Ke Yi and
+                  Yuchao Tao and
+                  Ashwin Machanavajjhala},
+	title = {Instance-optimal Truncation for Differentially Private Query Evaluation
+                  with Foreign Keys},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {4},
+	pages = {13:1--13:40},
+	year = {2024},
+	url = {https://doi.org/10.1145/3697831},
+	doi = {10.1145/3697831},
+	timestamp = {Sat, 25 Jan 2025 23:34:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/DongFYTM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Answering SPJA queries under differential privacy (DP), including graph pattern counting under node-DP as an important special case, has received considerable attention in recent years. The dual challenge of foreign-key constraints combined with self-joins is particularly tricky to deal with, and no existing DP mechanisms can correctly handle both. For the special case of graph pattern counting under node-DP, the existing mechanisms are correct (i.e., satisfy DP), but they do not offer nontrivial utility guarantees or are very complicated and costly. In this article, we propose two mechanisms for solving this problem with both efficiency and strong utility guarantees. The first mechanism, called  R2T , is simple and efficient, while achieving  down-neighborhood optimality  with a logarithmic optimality ratio. Down-neighborhood optimality is a new notion of optimality that we introduce for measuring the utilities of DP mechanisms, which can be considered as a natural relaxation of instance optimality, and it is especially suitable for functions with a large or unbounded sensitivity. Our second mechanism further reduces the optimality ratio to a double logarithm, which is also known to be optimal, thus we call this mechanism  OPT 2 . While OPT 2  also runs in polynomial time, it does have a higher computational cost than R2T in practice. Both R2T and OPT 2  are simple enough that they can be easily implemented on top of any RDBMS and an LP solver. Experimental results show that they offer order-of-magnitude improvements in terms of utility over existing techniques, even those specifically designed for graph pattern counting.}
+}
+
+
+@article{DBLP:journals/tods/BenediktBGKM24,
+	author = {Michael Benedikt and
+                  Maxime Buron and
+                  Stefano Germano and
+                  Kevin Kappelmann and
+                  Boris Motik},
+	title = {Rewriting the Infinite Chase for Guarded TGDs},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {4},
+	pages = {14:1--14:44},
+	year = {2024},
+	url = {https://doi.org/10.1145/3696416},
+	doi = {10.1145/3696416},
+	timestamp = {Sat, 25 Jan 2025 23:34:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/BenediktBGKM24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Guarded tuple-generating dependencies  (GTGDs) are a natural extension of description logics and referential constraints. It has long been known that queries over GTGDs can be answered by a variant of the  chase —a quintessential technique for reasoning with dependencies. However, there has been little work on concrete algorithms and even less on implementation. To address this gap, we revisit  Datalog rewriting  approaches to query answering, where a set of GTGDs is transformed to a Datalog program that entails the same base facts on each base instance. We show that a rewriting consists of “shortcut” rules that circumvent certain chase steps, we present several algorithms that compute a rewriting by deriving such “shortcuts” efficiently, and we discuss important implementation issues. Finally, we show empirically that our techniques can process complex GTGDs derived from synthetic and real benchmarks and are thus suitable for practical use.}
+}
+
+
+@article{DBLP:journals/tods/MunozR24,
+	author = {Martin Mu{\~{n}}oz and
+                  Cristian Riveros},
+	title = {Streaming Enumeration on Nested Documents},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {4},
+	pages = {15:1--15:39},
+	year = {2024},
+	url = {https://doi.org/10.1145/3701557},
+	doi = {10.1145/3701557},
+	timestamp = {Mon, 03 Mar 2025 22:25:52 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/MunozR24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Some of the most relevant document schemas used online, such as XML and JSON, have a nested format. In the past decade, the task of extracting data from nested documents over streams has become especially relevant. We focus on the streaming evaluation of queries with outputs of varied sizes over nested documents. We model queries of this kind as Visibly Pushdown Annotators (VPAnn), a computational model that extends visibly pushdown automata with outputs and has the same expressive power as monadic second-order logic over nested documents. Since processing a document through a VPAnn can generate a massive number of results, we are interested in reading the input in a streaming fashion and enumerating the outputs one after another as efficiently as possible, namely, with constant delay. This article presents an algorithm that enumerates these elements with constant delay after processing the document stream in a single pass. Furthermore, we show that this algorithm is worst-case optimal in terms of update-time per symbol and memory usage.}
+}
+
+
+@article{DBLP:journals/tods/FanPLT24,
+	author = {Wenfei Fan and
+                  Kehan Pang and
+                  Ping Lu and
+                  Chao Tian},
+	title = {Making It Tractable to Detect and Correct Errors in Graphs},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {49},
+	number = {4},
+	pages = {16:1--16:75},
+	year = {2024},
+	url = {https://doi.org/10.1145/3702315},
+	doi = {10.1145/3702315},
+	timestamp = {Sat, 25 Jan 2025 23:34:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/FanPLT24.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article develops Hercules, a system for entity resolution (ER), conflict resolution (CR), timeliness deduction (TD), and missing value/link imputation (MI) in graphs. It proposes GCR + s, a class of graph cleaning rules (GCR) that support not only predicates for ER and CR but also temporal orders to deduce timeliness and data extraction to impute missing data. As opposed to previous graph rules, GCR + s are defined with a dual graph pattern to accommodate irregular structures of schemaless graphs and adopt patterns of a star form to reduce the complexity. We show that while the implication and satisfiability problems are intractable for GCR + s, it is in polynomial time to detect and correct errors with GCR + s. Underlying Hercules, we train a ranking model to predict the temporal orders on attributes and embed it as a predicate of GCR + s. We provide an algorithm for discovering GCR + s by combining the generations of patterns and predicates. We also develop a method for conducting ER, CR, TD, and MI in the same process to improve the overall quality of graphs by leveraging their interactions and chasing with GCR + s; we show that the method has the Church–Rosser property under certain conditions. Using real-life and synthetic graphs, we empirically verify that Hercules is 53% more accurate than the state-of-the-art graph cleaning systems and performs comparably in efficiency and scalability.}
+}

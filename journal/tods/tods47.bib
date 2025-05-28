@@ -1,0 +1,329 @@
+@article{DBLP:journals/tods/BergerGPS22,
+	author = {Gerald Berger and
+                  Georg Gottlob and
+                  Andreas Pieris and
+                  Emanuel Sallinger},
+	title = {The Space-Efficient Core of Vadalog},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {1},
+	pages = {1:1--1:46},
+	year = {2022},
+	url = {https://doi.org/10.1145/3488720},
+	doi = {10.1145/3488720},
+	timestamp = {Sun, 19 Jan 2025 13:41:56 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/BergerGPS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vadalog is a system for performing complex reasoning tasks such as those required in advanced knowledge graphs. The logical core of the underlying Vadalog language is the warded fragment of tuple-generating dependencies (TGDs). This formalism ensures tractable reasoning in data complexity, while a recent analysis focusing on a practical implementation led to the reasoning algorithm around which the Vadalog system is built. A fundamental question that has emerged in the context of Vadalog is whether we can limit the recursion allowed by wardedness in order to obtain a formalism that provides a convenient syntax for expressing useful recursive statements, and at the same time achieves space-efficiency. After analyzing several real-life examples of warded sets of TGDs provided by our industrial partners, as well as recent benchmarks, we observed that recursion is often used in a restricted way: the body of a TGD contains at most one atom whose predicate is mutually recursive with a predicate in the head. We show that this type of recursion, known as  piece-wise linear  in the Datalog literature, is the answer to our main question. We further show that piece-wise linear recursion alone, without the wardedness condition, is not enough as it leads to undecidability. We also study the relative expressiveness of the query languages based on (piece-wise linear) warded sets of TGDs. Finally, we give preliminary experimental evidence for the practical effect of piece-wise linearity on Vadalog.}
+}
+
+
+@article{DBLP:journals/tods/TongZZCX22,
+	author = {Yongxin Tong and
+                  Yuxiang Zeng and
+                  Zimu Zhou and
+                  Lei Chen and
+                  Ke Xu},
+	title = {Unified Route Planning for Shared Mobility: An Insertion-based Framework},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {1},
+	pages = {2:1--2:48},
+	year = {2022},
+	url = {https://doi.org/10.1145/3488723},
+	doi = {10.1145/3488723},
+	timestamp = {Mon, 13 Jun 2022 20:57:44 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/TongZZCX22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There has been a dramatic growth of shared mobility applications such as ride-sharing, food delivery, and crowdsourced parcel delivery. Shared mobility refers to transportation services that are shared among users, where a central issue is  route planning . Given a set of workers and requests, route planning finds for each worker a route, i.e., a sequence of locations to pick up and drop off passengers/parcels that arrive from time to time, with different optimization objectives. Previous studies lack practicability due to their conflicted objectives and inefficiency in inserting a new request into a route, a basic operation called  insertion . In addition, previous route planning solutions fail to exploit the appearance patterns of future requests hidden in historical data for optimization. In this paper, we present a unified formulation of route planning called URPSM. It has a well-defined parameterized objective function which eliminates the contradicted objectives in previous studies and enables flexible multi-objective route planning for shared mobility. We propose two insertion-based frameworks to solve the URPSM problem. The first is built upon the  plain-insertion  widely used in prior studies, which processes online requests only, whereas the second relies on a new insertion operator called  prophet-insertion  that handles both online and predicted requests. Novel dynamic programming algorithms are designed to accelerate both insertions to only linear time. Theoretical analysis shows that no online algorithm can have a constant competitive ratio for the URPSM problem under the competitive analysis model, yet our prophet-insertion-based framework can achieve a constant optimality ratio under the instance-optimality model. Extensive experimental results on real datasets show that our insertion-based solutions outperform the state-of-the-art algorithms in both effectiveness and efficiency by a large margin (e.g., up to 30 ×  more effective in the objective and up to 20 ×  faster).}
+}
+
+
+@article{DBLP:journals/tods/BinnaZPSL22,
+	author = {Robert Binna and
+                  Eva Zangerle and
+                  Martin Pichl and
+                  G{\"{u}}nther Specht and
+                  Viktor Leis},
+	title = {Height Optimized Tries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {1},
+	pages = {3:1--3:46},
+	year = {2022},
+	url = {https://doi.org/10.1145/3506692},
+	doi = {10.1145/3506692},
+	timestamp = {Sun, 02 Oct 2022 15:51:46 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/BinnaZPSL22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present the Height Optimized Trie (HOT), a fast and space-efficient in-memory index structure. The core algorithmic idea of HOT is to dynamically vary the number of bits considered at each node, which enables a consistently high fanout and thereby good cache efficiency. For a fixed maximum node fanout, the overall tree height is minimal and its structure is deterministically defined. Multiple carefully engineered node implementations using SIMD instructions or lightweight compression schemes provide compactness and fast search and optimize HOT structures for different usage scenarios. Our experiments, which use a wide variety of workloads and data sets, show that HOT outperforms other state-of-the-art index structures for string keys both in terms of search performance and memory footprint, while being competitive for integer keys.}
+}
+
+
+@article{DBLP:journals/tods/AumullerHMPS22,
+	author = {Martin Aum{\"{u}}ller and
+                  Sariel Har{-}Peled and
+                  Sepideh Mahabadi and
+                  Rasmus Pagh and
+                  Francesco Silvestri},
+	title = {Sampling a Near Neighbor in High Dimensions - Who is the Fairest of
+                  Them All?},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {1},
+	pages = {4:1--4:40},
+	year = {2022},
+	url = {https://doi.org/10.1145/3502867},
+	doi = {10.1145/3502867},
+	timestamp = {Mon, 13 Jun 2022 20:57:44 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/AumullerHMPS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Similarity search is a fundamental algorithmic primitive, widely used in many computer science disciplines. Given a set of points  S  and a radius parameter  r  > 0, the r-near neighbor ( r -NN) problem asks for a data structure that, given any query point  q , returns a point  p  within distance at most  r  from  q . In this paper, we study the  r -NN problem in the light of individual fairness and providing equal opportunities: all points that are within distance  r  from the query should have the same probability to be returned. In the low-dimensional case, this problem was first studied by Hu, Qiao, and Tao (PODS 2014).  Locality sensitive hashing (LSH) , the theoretically strongest approach to similarity search in high dimensions, does not provide such a fairness guarantee. In this work, we show that  LSH  based algorithms can be made fair, without a significant loss in efficiency. We propose several efficient data structures for the exact and approximate variants of the fair NN problem. Our approach works more generally for sampling uniformly from a sub-collection of sets of a given collection and can be used in a few other applications. We also develop a data structure for fair similarity search under inner product that requires nearly-linear space and exploits locality sensitive filters. The paper concludes with an experimental evaluation that highlights the unfairness of state-of-the-art NN data structures and shows the performance of our algorithms on real-world datasets.}
+}
+
+
+@article{DBLP:journals/tods/Schmid22,
+	author = {Markus L. Schmid},
+	title = {Conjunctive Regular Path Queries with Capture Groups},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {2},
+	pages = {5:1--5:52},
+	year = {2022},
+	url = {https://doi.org/10.1145/3514230},
+	doi = {10.1145/3514230},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/Schmid22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In practice, regular expressions are usually extended by so-called capture groups or capture variables, which allow to capture a subexpression by a variable that can be referenced in the regular expression in order to describe repetitions of subwords. We investigate how this concept could be used for pattern-based graph querying; i.e., we investigate conjunctive regular path queries (CRPQs) that are extended by capture variables. If capture variables are added to CRPQs in a completely unrestricted way, then Boolean evaluation becomes PSPACE-hard in data complexity, even for single-edge graph patterns. On the other hand, if capture variables do not occur under a Kleene star, then the data complexity drops to NL-completeness. Combined complexity is in EXPSPACE but drops to PSPACE-completeness if the depth (i.e., the nesting depth of capture variables) is bounded, and it drops to NP-completeness if the size of the images of capture variables is bounded by a constant (regardless of the depth or of whether capture variables occur under a Kleene star). In the application of regular expressions as string searching tools, references to capture variables only describe exact repetitions of subwords (i.e., they implement the equality relation on strings). Following recent developments in graph database research, we also study CRPQs with capture variables that describe arbitrary regular relations. We show that if the expressions have depth 0, or if the size of the images of capture variables is bounded by a constant, then we can allow arbitrary regular relations while staying in the same complexity bounds. We also investigate the problems of checking whether a given tuple is in the solution set and computing the whole solution set. On the conceptual side, we add capture variables to CRPQs in such a way that they can be defined in an expression on one arc of the graph pattern but also referenced in expressions on other arcs. Hence, they add to CRPQs the possibility to define inter-dependencies between different paths, which is a relevant feature of pattern-based graph querying.}
+}
+
+
+@article{DBLP:journals/tods/FanT22,
+	author = {Wenfei Fan and
+                  Chao Tian},
+	title = {Incremental Graph Computations: Doable and Undoable},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {2},
+	pages = {6:1--6:44},
+	year = {2022},
+	url = {https://doi.org/10.1145/3500930},
+	doi = {10.1145/3500930},
+	timestamp = {Mon, 25 Jul 2022 08:41:11 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/FanT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The incremental problem for a class  Q  of graph queries aims to compute, given a query  𝑄 ∈ Q , graph  G , answers  Q ( G ) to  Q  in  G  and updates  ΔG  to  G  as input, changes  ΔO  to output  Q ( G ) such that  Q ( G ⊕ ΔG ) =  Q ( G )⊕ ΔO . It is called  bounded  if its cost can be expressed as a polynomial function in the sizes of  Q ,  ΔG  and  ΔO , which reduces the computations on possibly big  G  to small  ΔG  and  ΔO . No matter how desirable, however, our first results are negative: For common graph queries such as traversal, connectivity, keyword search, pattern matching, and maximum cardinality matching, their incremental problems are unbounded. In light of the negative results, we propose two characterizations for the effectiveness of incremental graph computation: (a)  localizable , if its cost is decided by small neighbors of nodes in  ΔG  instead of the entire  G ; and (b)  bounded relative to  a batch graph algorithm  T , if the cost is determined by the sizes of  ΔG  and changes to the affected area that is necessarily checked by any algorithms that incrementalize  T . We show that the incremental computations above are either localizable or relatively bounded by providing corresponding incremental algorithms. That is, we can either reduce the incremental computations on big graphs to small data, or incrementalize existing batch graph algorithms by minimizing unnecessary recomputation. Using real-life and synthetic data, we experimentally verify the effectiveness of our incremental algorithms.}
+}
+
+
+@article{DBLP:journals/tods/ChengYQHLNW22,
+	author = {Ji Cheng and
+                  Da Yan and
+                  Wenwen Qu and
+                  Xiaotian Hao and
+                  Cheng Long and
+                  Wilfred Ng and
+                  Xiaoling Wang},
+	title = {Mining Order-preserving Submatrices under Data Uncertainty: {A} Possible-world
+                  Approach and Efficient Approximation Methods},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {2},
+	pages = {7:1--7:57},
+	year = {2022},
+	url = {https://doi.org/10.1145/3524915},
+	doi = {10.1145/3524915},
+	timestamp = {Thu, 10 Apr 2025 12:01:11 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/ChengYQHLNW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a data matrix  𝐷 , a submatrix  𝑆  of  𝐷  is an order-preserving submatrix (OPSM) if there is a permutation of the columns of  𝑆 , under which the entry values of each row in  𝑆  are strictly increasing. OPSM mining is widely used in real-life applications such as identifying coexpressed genes and finding customers with similar preference. However, noise is ubiquitous in real data matrices due to variable experimental conditions and measurement errors, which makes conventional OPSM mining algorithms inapplicable. No previous work on OPSM has ever considered uncertain value intervals using the well-established possible world semantics. We establish two different definitions of significant OPSMs based on the  possible world semantics : (1)\xa0expected support-based and (2)\xa0probabilistic frequentness-based. An optimized dynamic programming approach is proposed to compute the probability that a row supports a particular column permutation, with a closed-form formula derived to efficiently handle the special case of uniform value distribution and an accurate cubic spline approximation approach that works well with any uncertain value distributions. To efficiently check the probabilistic frequentness, several effective pruning rules are designed to efficiently prune insignificant OPSMs; two approximation techniques based on the Poisson and Gaussian distributions, respectively, are proposed for further speedup. These techniques are integrated into our two OPSM mining algorithms, based on prefix-projection and Apriori, respectively. We further parallelize our prefix-projection-based mining algorithm using PrefixFPM, a recently proposed framework for parallel frequent pattern mining, and we achieve a good speedup with the number of CPU cores. Extensive experiments on real microarray data demonstrate that the OPSMs found by our algorithms have a much higher quality than those found by existing approaches.}
+}
+
+
+@article{DBLP:journals/tods/ArroyueloNRR22,
+	author = {Diego Arroyuelo and
+                  Gonzalo Navarro and
+                  Juan L. Reutter and
+                  Javiel Rojas{-}Ledesma},
+	title = {Optimal Joins Using Compressed Quadtrees},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {2},
+	pages = {8:1--8:53},
+	year = {2022},
+	url = {https://doi.org/10.1145/3514231},
+	doi = {10.1145/3514231},
+	timestamp = {Sun, 19 Jan 2025 13:41:55 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/ArroyueloNRR22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Worst-case optimal join algorithms have gained a lot of attention in the database literature. We now count several algorithms that are optimal in the worst case, and many of them have been implemented and validated in practice. However, the implementation of these algorithms often requires an enhanced indexing structure: to achieve optimality one either needs to build completely new indexes or must populate the database with several instantiations of indexes such as B + -trees. Either way, this means spending an extra amount of storage space that is typically one or two orders of magnitude more than what is required to store the raw data. We show that worst-case optimal algorithms can be obtained directly from a representation that regards the relations as point sets in variable-dimensional grids, without the need of any significant extra storage. Our representation is a compressed quadtreefor the static indexes and a quadtreebuilt on the fly that shares subtrees (which we dub a qdag) for intermediate results. We develop a compositional algorithm to process full join queries under this representation, which simulates navigation of the quadtreeof the output, and show that the running time of this algorithm is worst-case optimal in data complexity. We implement our index and compare it experimentally with state-of-the-art alternatives. Our experiments show that our index uses even less space than what is needed to store the data in raw form (and replaces it) and one or two orders of magnitude less space than the other indexes. At the same time, our query algorithm is competitive in time, even sharply outperforming other indexes in various cases. Finally, we extend our framework to evaluate more expressive queries from relational algebra, including not only joins and intersections but also unions and negations. To obtain optimality on those more complex formulas, we introduce a lazy version of qdagswe dub lqdags, which allow us navigate over the quadtreerepresenting the output of a formula while only evaluating what is needed from its components. We show that the running time of our query algorithms on this extended set of operations is worst-case optimal under some constraints. Moving to full relational algebra, we also show that lqdagscan handle selections and projections. While worst-case optimality is no longer guaranteed, we introduce a partial materialization scheme that extends results from Deep and Koutris regarding compressed representation of query results.}
+}
+
+
+@article{DBLP:journals/tods/CarmeliZBCKS22,
+	author = {Nofar Carmeli and
+                  Shai Zeevi and
+                  Christoph Berkholz and
+                  Alessio Conte and
+                  Benny Kimelfeld and
+                  Nicole Schweikardt},
+	title = {Answering (Unions of) Conjunctive Queries using Random Access and
+                  Random-Order Enumeration},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {3},
+	pages = {9:1--9:49},
+	year = {2022},
+	url = {https://doi.org/10.1145/3531055},
+	doi = {10.1145/3531055},
+	timestamp = {Thu, 22 Sep 2022 19:58:56 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/CarmeliZBCKS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As data analytics becomes more crucial to digital systems, so grows the importance of characterizing the database queries that admit a more efficient evaluation. We consider the tractability yardstick of answer enumeration with a polylogarithmic delay after a linear-time preprocessing phase. Such an evaluation is obtained by constructing, in the preprocessing phase, a data structure that supports polylogarithmic-delay enumeration. In this article, we seek a structure that supports the more demanding task of a “random permutation”: polylogarithmic-delay enumeration in truly random order. Enumeration of this kind is required if downstream applications assume that the intermediate results are representative of the whole result set in a statistically meaningful manner. An even more demanding task is that of “random access”: polylogarithmic-time retrieval of an answer whose position is given. We establish that the free-connex acyclic CQs are tractable in all three senses: enumeration, random-order enumeration, and random access; and in the absence of self-joins, it follows from past results that every other CQ is intractable by each of the three (under some fine-grained complexity assumptions). However, the three yardsticks are separated in the case of a  union of CQs (UCQ ): while a union of free-connex acyclic CQs has a tractable enumeration, it may (provably) admit no random access. We identify a fragment of such UCQs where we can guarantee random access with polylogarithmic access time (and linear-time preprocessing) and a more general fragment where we can guarantee tractable random permutation. For general unions of free-connex acyclic CQs, we devise two algorithms with relaxed guarantees: one has logarithmic delay in expectation, and the other provides a permutation that is almost uniformly distributed. Finally, we present an implementation and an empirical study that show a considerable practical superiority of our random-order enumeration approach over state-of-the-art alternatives.}
+}
+
+
+@article{DBLP:journals/tods/AsudehDJLNTZZ22,
+	author = {Abolfazl Asudeh and
+                  Gautam Das and
+                  H. V. Jagadish and
+                  Shangqi Lu and
+                  Azade Nazi and
+                  Yufei Tao and
+                  Nan Zhang and
+                  Jianwen Zhao},
+	title = {On Finding Rank Regret Representatives},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {3},
+	pages = {10:1--10:37},
+	year = {2022},
+	url = {https://doi.org/10.1145/3531054},
+	doi = {10.1145/3531054},
+	timestamp = {Thu, 29 Sep 2022 08:01:46 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/AsudehDJLNTZZ22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Selecting the best items in a dataset is a common task in data exploration. However, the concept of “best” lies in the eyes of the beholder: Different users may consider different attributes more important and, hence, arrive at different rankings. Nevertheless, one can remove “dominated” items and create a “representative” subset of the data, comprising the “best items” in it. A Pareto-optimal representative is guaranteed to contain the best item of each possible ranking, but it can be a large portion of data. A much smaller representative can be found if we relax the requirement of including the best item for each user and instead just limit the users’ “regret.” Existing work defines regret as the loss in score by limiting consideration to the representative instead of the full dataset, for any chosen ranking function. However, the score is often not a meaningful number, and users may not understand its absolute value. Sometimes small ranges in score can include large fractions of the dataset. In contrast, users do understand the notion of rank ordering. Therefore, we consider items’ positions in the ranked list in defining the regret and propose the  rank-regret representative  as the minimal subset of the data containing at least one of the top- k  of any possible ranking function. This problem is polynomial time solvable in two-dimensional space but is NP-hard on three or more dimensions. We design a suite of algorithms to fulfill different purposes, such as whether relaxation is permitted on  k , the result size, or both, whether a distribution is known, whether theoretical guarantees or practical efficiency is important, and so on. Experiments on real datasets demonstrate that we can efficiently find small subsets with small rank-regrets.}
+}
+
+
+@article{DBLP:journals/tods/ZengWLYDW22,
+	author = {Tianjing Zeng and
+                  Zhewei Wei and
+                  Ge Luo and
+                  Ke Yi and
+                  Xiaoyong Du and
+                  Ji{-}Rong Wen},
+	title = {Persistent Summaries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {3},
+	pages = {11:1--11:42},
+	year = {2022},
+	url = {https://doi.org/10.1145/3531053},
+	doi = {10.1145/3531053},
+	timestamp = {Thu, 22 Sep 2022 19:58:56 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/ZengWLYDW22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A  persistent data structure , also known as a  multiversion data structure  in the database literature, is a data structure that preserves all its previous versions as it is updated over time. Every update (inserting, deleting, or changing a data record) to the data structure creates a new version, while all the versions are kept in the data structure so that any previous version can still be queried. Persistent data structures aim at recording all versions accurately, which results in a space requirement that is at least linear to the number of updates. In many of today’s big data applications, in particular, for high-speed streaming data, the volume and velocity of the data are so high that we cannot afford to store everything. Therefore, streaming algorithms have received a lot of attention in the research community, which uses only sublinear space by sacrificing slightly on accuracy. All streaming algorithms work by maintaining a small data structure in memory, which is usually called a  sketch ,  summary , or  synopsis . The summary is updated upon the arrival of every element in the stream, thus it is  ephemeral , meaning that it can only answer queries about the current status of the stream. In this article, we aim at designing persistent summaries, thereby giving streaming algorithms the ability to answer queries about the stream at any prior time.}
+}
+
+
+@article{DBLP:journals/tods/GuoWWLT22,
+	author = {Qintian Guo and
+                  Sibo Wang and
+                  Zhewei Wei and
+                  Wenqing Lin and
+                  Jing Tang},
+	title = {Influence Maximization Revisited: Efficient Sampling with Bound Tightened},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {3},
+	pages = {12:1--12:45},
+	year = {2022},
+	url = {https://doi.org/10.1145/3533817},
+	doi = {10.1145/3533817},
+	timestamp = {Thu, 22 Sep 2022 19:58:56 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/GuoWWLT22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a social network  G  with  n  nodes and  m  edges, a positive integer  k , and a cascade model  C , the  influence maximization (IM)  problem asks for  k  nodes in  G  such that the expected number of nodes influenced by the  k  nodes under cascade model  C  is maximized. The state-of-the-art approximate solutions run in  O(k(n+m) log  n/ ε 2 ) expected time while returning a (1 - 1/ e  - ε) approximate solution with at least 1 - 1/ n  probability. A key phase of these IM algorithms is the random  reverse reachable (RR)  set generation, and this phase significantly affects the efficiency and scalability of the state-of-the-art IM algorithms. In this article, we present a study on this key phase and propose an efficient random RR set generation algorithm under IC model. With the new algorithm, we show that the expected running time of existing IM algorithms under IC model can be improved to  O(k ċ n  log  n ċ 2 ), when for any node  v , the total weight of its incoming edges is no larger than a constant. For the general IC model where the weights are skewed, we present a sampling algorithm SKIP. To the best of our knowledge, it is the first index-free algorithm that achieves the optimal time complexity of the sorted subset sampling problem. Moreover, existing approximate IM algorithms suffer from scalability issues in high influence networks where the size of random RR sets is usually quite large. We tackle this challenging issue by reducing the average size of random RR sets without sacrificing the approximation guarantee. The proposed solution is orders of magnitude faster than states of the art as shown in our experiment. Besides, we investigate the issues of forward propagation and derive its time complexity with our proposed subset sampling techniques. We also present a heuristic condition to indicate when the forward propagation approach should be utilized to estimate the expected influence of a given seed set.}
+}
+
+
+@article{DBLP:journals/tods/KetsmanKNV22,
+	author = {Bas Ketsman and
+                  Christoph Koch and
+                  Frank Neven and
+                  Brecht Vandevoort},
+	title = {Deciding Robustness for Lower {SQL} Isolation Levels},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {4},
+	pages = {13:1--13:41},
+	year = {2022},
+	url = {https://doi.org/10.1145/3561049},
+	doi = {10.1145/3561049},
+	timestamp = {Tue, 31 Jan 2023 20:45:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/KetsmanKNV22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While serializability always guarantees application correctness, lower isolation levels can be chosen to improve transaction throughput at the risk of introducing certain anomalies. A set of transactions is robust against a given isolation level if every possible interleaving of the transactions under the specified isolation level is serializable. Robustness therefore always guarantees application correctness with the performance benefit of the lower isolation level. While the robustness problem has received considerable attention in the literature, only sufficient conditions have been obtained. The most notable exception is the seminal work by Fekete where he obtained a characterization for deciding robustness against SNAPSHOT ISOLATION. In this article, we address the robustness problem for the lower SQL isolation levels READ UNCOMMITTED and READ COMMITTED, which are defined in terms of the forbidden dirty write and dirty read patterns. The first main contribution of this article is that we characterize robustness against both isolation levels in terms of the absence of counter-example schedules of a specific form (split and multi-split schedules) and by the absence of cycles in interference graphs that satisfy various properties. A critical difference with Fekete’s work, is that the properties of cycles obtained in this article have to take the relative ordering of operations within transactions into account as READ UNCOMMITTED and READ COMMITTED do not satisfy the atomic visibility requirement. A particular consequence is that the latter renders the robustness problem against READ COMMITTED coNP-complete. The second main contribution of this article is the coNP-hardness proof. For READ UNCOMMITTED, we obtain LOGSPACE-completeness.}
+}
+
+
+@article{DBLP:journals/tods/CateD22,
+	author = {Balder ten Cate and
+                  Victor Dalmau},
+	title = {Conjunctive Queries: Unique Characterizations and Exact Learnability},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {4},
+	pages = {14:1--14:41},
+	year = {2022},
+	url = {https://doi.org/10.1145/3559756},
+	doi = {10.1145/3559756},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/CateD22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We answer the question of which conjunctive queries are uniquely characterized by polynomially many positive and negative examples and how to construct such examples efficiently. As a consequence, we obtain a new efficient exact learning algorithm for a class of conjunctive queries. At the core of our contributions lie two new polynomial-time algorithms for constructing frontiers in the homomorphism lattice of finite structures. We also discuss implications for the unique characterizability and learnability of schema mappings and of description logic concepts.}
+}
+
+
+@article{DBLP:journals/tods/WeiWLMS22,
+	author = {Victor Junqiu Wei and
+                  Raymond Chi{-}Wing Wong and
+                  Cheng Long and
+                  David M. Mount and
+                  Hanan Samet},
+	title = {Proximity Queries on Terrain Surface},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {4},
+	pages = {15:1--15:59},
+	year = {2022},
+	url = {https://doi.org/10.1145/3563773},
+	doi = {10.1145/3563773},
+	timestamp = {Sun, 19 Jan 2025 13:41:54 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/WeiWLMS22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the advance of the geo-spatial positioning and the computer graphics technology, digital terrain data has become increasingly popular nowadays. Query processing on terrain data has attracted considerable attention from both the academic and the industry communities. Proximity queries such as the shortest path/distance query,  k  nearest/farthest neighbor query, and top- k  closest/farthest pairs query are fundamental and important queries in the context of the terrain surfaces, and they have a lot of applications in Geographical Information System, 3D object feature vector construction, and 3D object data mining. In this article, we first study the most fundamental type of query, namely, shortest distance and path query, which is to find the shortest distance and path between two points of interest on the surface of the terrain. As observed by existing studies, computing the exact shortest distance/path is very expensive. Some existing studies proposed  ϵ -approximate distance and path oracles, where  ϵ  is a non-negative real-valued error parameter. However, the best-known algorithm has a large oracle construction time, a large oracle size, and a large query time. Motivated by this, we propose a novel  ϵ -approximate distance and path oracle called the  S pace  E fficient distance and path oracle (SE),  which has a small oracle construction time, a small oracle size, and a small distance and path query time, thanks to its compactness of storing concise information about pairwise distances between any two points-of-interest. Then, we propose several algorithms for the  k  nearest/farthest neighbor and top- k  closest/farthest pairs queries with the assistance of our distance and path oracle  SE . Our experimental results show that the oracle construction time, the oracle size, and the distance and path query time of  SE  are up to two, three, and five orders of magnitude faster than the best-known algorithm, respectively. Besides, our algorithms for other proximity queries including  k  nearest/farthest neighbor queries and top- k  closest/farthest pairs queries significantly outperform the state-of-the-art algorithms by up to two orders of magnitude.}
+}
+
+
+@article{DBLP:journals/tods/DoGN22,
+	author = {Thanh Do and
+                  Goetz Graefe and
+                  Jeffrey F. Naughton},
+	title = {Efficient Sorting, Duplicate Removal, Grouping, and Aggregation},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {47},
+	number = {4},
+	pages = {16:1--16:35},
+	year = {2022},
+	url = {https://doi.org/10.1145/3568027},
+	doi = {10.1145/3568027},
+	timestamp = {Tue, 31 Jan 2023 20:45:40 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/DoGN22.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Database query processing requires algorithms for duplicate removal, grouping, and aggregation. Three algorithms exist: in-stream aggregation is most efficient by far but requires sorted input; sort-based aggregation relies on external merge sort; and hash aggregation relies on an in-memory hash table plus hash partitioning to temporary storage. Cost-based query optimization chooses which algorithm to use based on several factors, including the sort order of the input, input and output sizes, and the need for sorted output. For example, hash-based aggregation is ideal for output smaller than the available memory (e.g., Query\xa01 of TPC-H), whereas sorting the entire input and aggregating after sorting are preferable when both aggregation input and output are large and the output needs to be sorted for a subsequent operation such as a merge join. Unfortunately, the size information required for a sound choice is often inaccurate or unavailable during query optimization, leading to sub-optimal algorithm choices. In response, this article introduces a new algorithm for sort-based duplicate removal, grouping, and aggregation. The new algorithm always performs at least as well as both traditional hash-based and traditional sort-based algorithms. It can serve as a system’s only aggregation algorithm for unsorted inputs, thus preventing erroneous algorithm choices. Furthermore, the new algorithm produces sorted output that can speed up subsequent operations. Google’s F1\xa0Query uses the new algorithm in production workloads that aggregate petabytes of data every day.}
+}
