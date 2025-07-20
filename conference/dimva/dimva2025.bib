@@ -1,0 +1,997 @@
+@inproceedings{DBLP:conf/dimva/NakanoKC25,
+	author = {Hiroki Nakano and
+                  Takashi Koide and
+                  Daiki Chiba},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {ScamFerret: Detecting Scam Websites Autonomously with Large Language
+                  Models},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {3--25},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_1},
+	doi = {10.1007/978-3-031-97620-9\_1},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/NakanoKC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rise of sophisticated scam websites that exploit human psychological vulnerabilities, distinguishing between legitimate and scam websites has become increasingly challenging. This paper presents ScamFerret, an innovative agent system employing a large language model (LLM) to autonomously collect and analyze data from a given URL to determine whether it is a scam. Unlike traditional machine learning models that require large datasets and feature engineering, ScamFerret leverages LLMs’ natural language understanding to accurately identify scam websites of various types and languages without requiring additional training or fine-tuning. Our evaluation demonstrated that ScamFerret achieves 0.972 accuracy in classifying four scam types in English and 0.993 accuracy in classifying online shopping websites across three different languages, particularly when using GPT-4. Furthermore, we confirmed that ScamFerret collects and analyzes external information such as web content, DNS records, and user reviews as necessary, providing a basis for identifying scam websites from multiple perspectives. These results suggest that LLMs have significant potential in enhancing cybersecurity measures against sophisticated scam websites.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/MazzuzS25,
+	author = {Neriya Mazzuz and
+                  Asaf Shabtai},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Domain Name Encryption Does Not Ensure Privacy: Website Fingerprinting
+                  Attack With Only a Few Samples Using Siamese Network},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {26--45},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_2},
+	doi = {10.1007/978-3-031-97620-9\_2},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/MazzuzS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, awareness of information security and the importance of protecting user privacy has grown significantly among Internet users. As a result, substantial effort is being invested to developing and deploying new protocols aimed at enhancing privacy and preventing the leakage of sensitive personal data. One of the most sensitive pieces of information at risk is the domain name, whose exposure can reveal a user’s browsing history and habits. To address this privacy concern, various technologies have been introduced, including DNS over TLS, DNS over HTTPS, DNS over QUIC, Encrypted Client Hello, and Protected QUIC Initial Packets. However, despite these advancements, studies have demonstrated that these mechanisms do not provide a fully comprehensive solution, as attackers can still infer users’ browsing activity under certain conditions. This is due to the fact that web pages are highly dynamic, with their content frequently changing. In this research, we propose an adaptive website fingerprinting attack based on a Siamese network model. We evaluate the effectiveness of the attack on both TLS and QUIC protocols and show that it can accurately infer domain names associated IP addresses using only a few traffic samples. Moreover, we demonstrate that the model maintains strong performance over time, enabling near real-time classification even several months after model training. The success of the attack and model’s robustness over time highlight the ongoing privacy risks faced by users, as our attack provides adversaries with a novel tool to uncover users’ browsing history and identify visited domain names.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LeiS25,
+	author = {Yunsen Lei and
+                  Craig A. Shue},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Making (Only) the Right Calls: Preventing Remote Code Execution Attacks
+                  in {PHP} Applications with Contextual, State-Sensitive System Call
+                  Filtering},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {46--65},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_3},
+	doi = {10.1007/978-3-031-97620-9\_3},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LeiS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {PHP powers over 76% of websites worldwide, making security vulnerabilities in its applications particularly damaging. Unfortunately, such defects remain common: in 2021, nine of the top 15 most-exploited vulnerabilities identified by CISA involved remote code execution (RCE). Prior research has attempted to contain RCE through system call filtering (e.g., via seccomp), but these efforts are typically coarse-grained. They allow all system calls that could potentially be invoked anywhere in the application, providing attackers substantial opportunities for exploit. We introduce a fine-grained, state-sensitive approach that builds an automaton for each PHP script, mapping different execution stages to carefully curated system call subsets. At runtime, our kernel module combines information from system call traces and PHP script-level events to apply these context-driven allow-lists. We demonstrate our method’s effectiveness against real-world CVEs and against attackers crafting RCE payloads designed to mimic legitimate calls. Our model successfully detects these “stealth” attacks and maintains a low performance overhead of only 1%—a substantial improvement over the 5% overhead observed in prior work.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/LanferBA25,
+	author = {Eric Lanfer and
+                  Dominik Brockmann and
+                  Nils Aschenbruck},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Generating the {WEB-IDS23} Dataset},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {66--72},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_4},
+	doi = {10.1007/978-3-031-97620-9\_4},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/LanferBA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly-based Network Intrusion Detection Systems (NIDS) require correctly labelled, representative and diverse datasets for an accurate evaluation and development. However, several widely used datasets do not include labels which are fine-grained enough and, together with small sample sizes, can lead to overfitting issues that also remain undetected when using test data. Additionally, the cybersecurity sector is evolving fast, and new attack mechanisms require the continuous creation of up-to-date datasets. To address these limitations, we developed a modular traffic generator that can simulate a wide variety of benign and malicious traffic. It incorporates multiple protocols, variability through randomization techniques and can produce attacks along corresponding benign traffic, as it occurs in real-world scenarios. Using the traffic generator, we create a dataset capturing over 12 million samples with 82 flow-level features and 22 fine-grained labels. Additionally, we include several web attack types which are often underrepresented in other datasets.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BadouxTP25,
+	author = {Nicolas Badoux and
+                  Flavio Toffalini and
+                  Mathias Payer},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Sourcerer: Channeling the void},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {75--95},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_5},
+	doi = {10.1007/978-3-031-97620-9\_5},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BadouxTP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Type confusion vulnerabilities occur when a program misinterprets an object as an incompatible type. Such errors result in undefined behavior and can lead to illegal memory accesses undermining security. For compatibility reasons, the C++ programming language tolerates insecure type conversions, delegating the responsibility for assuring an object’s type to the developer. Sanitizers help developers detect and patch vulnerabilities during dynamic testing, i.e., before they reach production environments. However, current type confusion sanitizers either incur prohibitive runtime overheads, or fail to check all casts. In particular, casts from void* have historically been overlooked due to challenges in recognizing the underlying object’s type, thus leading to incomplete type coverage. We introduce Sourcerer, a new sanitizer that correctly and fully traces and recognizes all type confusions, in particular, casts from unrelated types and void*. Sourcerer enriches the classes involved in a cast with runtime type information to perform precise runtime checks. When compared with the state-of-the-art, Sourcerer expands type coverage to all cast operations, 8,507M additional casts on the SPEC CPU2006 and CPU2017 benchmarks—a 118% increase—with reasonable average performance overhead of 5.14% . Additionally, we conduct an ablation study to understand what causes this runtime overhead and showcase a fuzzing campaign finding six bugs, highlighting the improved bug-finding capabilities when Sourcerer is deployed.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/IrtizaZWHK25,
+	author = {Saquib Irtiza and
+                  Mahmoud Zamani and
+                  Shamila Wickramasuriya and
+                  Kevin W. Hamlen and
+                  Latifur Khan},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {CodeGrafter: Unifying Source and Binary Graphs for Robust Vulnerability
+                  Detection},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {96--117},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_6},
+	doi = {10.1007/978-3-031-97620-9\_6},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/IrtizaZWHK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {CodeGrafter is a novel framework for detecting security vulnerabilities in compiled C/C++ programs by integrating source- and binary-level code features into a unified Cross-Domain Code Property Graph (CDCPG). By combining the high-level semantic insights from source code with the detailed low-level information from compiled assembly, CodeGrafter uncovers vulnerabilities that are not detectable via source analysis or binary analysis alone. By combining both, it examines compiler decisions, such as dead code elimination, build-environment-dependent semantics (e.g., macros and pragmas), and compiler-generated interface code, to avoid false positives and false negatives in its analysis. For example, it can detect Points of Interests (POIs) where vulnerability severity is influenced by compilation-specific factors, such as stack layouts that place critical data near buffers. To streamline vulnerability detection, CodeGrafter represents these POIs as graphs and leverages Graph Neural Networks (GNNs) to significantly reduce manual auditing effort. Evaluations on six real-world applications demonstrate that CodeGrafter outperforms prior works that rely solely on source or binary-level representations alone, achieving an F1-score of 0.937 and a recall of 0.945 in identifying vulnerable functions.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TangLDML25,
+	author = {ZhiZhuo Tang and
+                  Jian Lin and
+                  Weiyu Dong and
+                  Hang Ma and
+                  Tieming Liu},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {SyzForge: An Automated System Call Specification Generation Process
+                  for Efficient Kernel Fuzzing},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {118--139},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_7},
+	doi = {10.1007/978-3-031-97620-9\_7},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TangLDML25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Linux kernel, a cornerstone of modern computing across servers, mobile devices, and embedded systems, is increasingly vulnerable due to its vast complexity and continuous evolution. Fuzz testing has emerged as a critical technique for identifying kernel vulnerabilities, with tools like Syzkaller uncovering thousands of bugs through system call (syscall) fuzzing. However, the effectiveness of such tools relies heavily on manually crafted syscall specifications, a process that struggles to keep pace with the kernelâ€™s dynamic nature and intricate semantics. This paper presents SyzForge, a novel automated framework to generate precise syscall specifications for Linux kernel drivers. SyzForge integrates four stages: static analysis to distill kernel semantics from source code, symbolic execution for dynamic constraint-based parameter solving, fuzzing with Syzkaller to assess coverage, and large language model (LLM)-driven refinement to correct specification errors. Evaluated on Linux kernel version 6.12, SyzForge achieves a 13.3% increase in code coverage compared to default Syzkaller specifications, outperforming KernelGPT by 4.3%, SyzDescribe by 5.5%, and DIFUZE by 24.3%. Furthermore, it identifies 19 previously unreported vulnerabilities, demonstrating its practical impact. By automating a traditionally manual process, SyzForge enhances fuzzing efficiency, improves vulnerability detection, and strengthens kernel security. This work addresses key limitations in existing specification generation methods, offering a scalable and adaptable solution to safeguard the Linux ecosystem amid its ongoing development.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/CastiglioneMB25,
+	author = {Gianpietro Castiglione and
+                  Marcello Maugeri and
+                  Giampaolo Bella},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Machine Learning for Vulnerability Detection as Target Oracle
+                  in Automated Fuzz Driver Generation},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {140--145},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_8},
+	doi = {10.1007/978-3-031-97620-9\_8},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/CastiglioneMB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In vulnerability detection, machine learning has been used as an effective static analysis technique, although it suffers from a significant rate of false positives. Contextually, in vulnerability discovery, fuzzing has been used as an effective dynamic analysis technique, although it requires manually writing fuzz drivers. Fuzz drivers usually target a limited subset of functions in a library that must be chosen according to certain criteria, e.g., the depth of a function, the number of paths. These criteria are verified by components called target oracles. In this work, we propose an automated fuzz driver generation workflow composed of: (1) identifying a likely vulnerable function by leveraging a machine learning for vulnerability detection model as a target oracle, (2) automatically generating fuzz drivers, (3) fuzzing the target function to find bugs which could confirm the vulnerability inferred by the target oracle. We show our method on an existing vulnerability in libgd, with a plan for large-scale evaluation.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/ErtmerDY25,
+	author = {Philipp Ertmer and
+                  Robbie Dumitru and
+                  Yuval Yarom},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Reverse-Engineering the Address Translation Caches},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {149--168},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_9},
+	doi = {10.1007/978-3-031-97620-9\_9},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/ErtmerDY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The address translation process and the responsible memory management unit (MMU) in modern CPUs have been the subject of multiple recent microarchitectural side-channel attacks. A precondition to many of these attacks is familiarity with the intimate details of the microarchitectural implementation of the process. However, because vendors do not typically publish extensive information on this, attackers must resort to reverse engineering techniques. Indeed, past works have investigated such techniques, providing insights and novel understanding on the implementation of components used in the address translation process. In this work, we improve this understanding. We extend the cache desynchronization technique of Tatar et al., and apply it to the page translation caches, which store partial address translation information. We develop automated tooling for investigating five generations of Intel processors, ranging from Haswell to Alder Lake. Our investigations correct mistakes in prior publications, identify a cache level that was missed so far, and discover two hitherto unknown replacement policies. This new understanding of address translation can increase attack precision and facilitate better address-translation-based attacks.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/JuffingerWSG25,
+	author = {Jonas Juffinger and
+                  Hannes Weissteiner and
+                  Thomas Steinbauer and
+                  Daniel Gruss},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {The {HMB} Timing Side Channel: Exploiting the SSD's Host Memory
+                  Buffer},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {169--190},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_10},
+	doi = {10.1007/978-3-031-97620-9\_10},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/JuffingerWSG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Over the past three decades, cache side channels evolved from specialized attacks on cryptographic implementations to generic techniques (e.g., Flush+Reload and Page Cache Attacks) on general-purpose operations. During the last decade, SSDs became the de facto standard persistent storage, where capacity is not the highest priority. In this paper, we present a novel cache side channel, targeting the host-memory buffer (HMB) used by mid-range SSDs to cache translations from logical page addresses to physical page addresses. We demonstrate that, compared to page cache attacks, our attacks are significantly faster as we can evict reliably in only 22\xa0ms. Consequently, we propose a hybrid attack, using the slow page cache eviction as little as possible and using the HMB side channel for our main attack. We evaluate the HMB side channel in four practical attacks: First, we evaluate the capacity of the HMB side channel in a covert channel scenario, achieving up to 8.3\xa0kbit/s channel capacity. Second, we demonstrate a UI redress attack using the HMB side channel, where the fake UI element covers the real one within 100\xa0ms. Third, given that multiple pages from different security contexts are translated through the same HMB entry, we demonstrate blind templating attacks, that allow to spy on accesses to arbitrary other files whose translation is co-located in the same HMB entry. We use this to demonstrate a cross-VM covert channel and a remote side channel where an unprivileged process without network access exfiltrates data to a remote system over the network, through the HMB side channel by using an nginx web server as a confused deputy.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/GinerNG25,
+	author = {Lukas Giner and
+                  Sudheendra Raghav Neela and
+                  Daniel Gruss},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Cohere+Reload: Re-enabling High-Resolution Cache Attacks on {AMD}
+                  {SEV-SNP}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {191--212},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_11},
+	doi = {10.1007/978-3-031-97620-9\_11},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/GinerNG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {\nConfidential computing platforms, e.g., AMD SEV-SNP, allow running mutually distrusting workloads on the same hardware with the protection of several isolation mechanisms: data is encrypted in RAM, and access to unencrypted data is architecturally prevented. Furthermore, access and cache line operations are restricted, mitigating attacks like Flush+Reload. The hypervisor can access the encrypted data of virtual machines, e.g., for migration purposes. This creates a coherency challenge around modifications between encrypted and decrypted cache lines. AMD enforces coherency between these two cache lines by removing one when the other is accessed.\n In this paper, we present Cohere+Reload, a novel side-channel attack exploiting AMD’s coherency for encrypted memory. We discover two types of leakage in the coherency mechanism: First, coherence conflicts leak victim operations on a spatial granularity of a 2\xa0kB block. Second, the timing correlates with number and location of accesses the victim performed within the confidential virtual machine, allowing to infer how often or where within a coherence partition victim accesses were performed, with a maximum spatial resolution of 256 bytes. We evaluate Cohere+Reload in two synthetic and two real-world attacks: In synthetic attacks, we demonstrate that Cohere+Reload can observe the control flow and access locations in workloads within a confidential virtual machine. We present a real-world attack on mbedTLS RSA, leaking 4096 key bits in a single-trace attack, with 99.7\xa0% of bits correct. We present another real-world attack on OpenSSL AES exploiting disalignments on a cache line granularity: In a first round T-table attack we achieve an accuracy of 100\xa0% in only 1500 encryptions and with a novel correlation attack an accuracy of 92.81\xa0% in 12000 encryptions. We conclude that the coherence approach for AMD SEV-SNP should be re-evaluated and discuss further potential mitigations.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/AbascalR25,
+	author = {Le{\'{o}}n Abascal and
+                  Ricardo J. Rodr{\'{\i}}guez},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Extracting Cryptographic Keys from Windows Live Processes},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {213--219},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_12},
+	doi = {10.1007/978-3-031-97620-9\_12},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/AbascalR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cryptographic keys are a fundamental aspect of modern system security, but when compromised, they become a critical vulnerability, especially in ransomware attacks. Paradoxically, these keys must be available in memory at runtime to function, creating a unique opportunity for defensive tools. We introduce KeyReaper, an open-source tool designed to locate cryptographic keys in active Windows processes using advanced memory analysis. Unlike traditional approaches that rely on static memory dumps, KeyReaper performs dynamic analysis in real time, restricting the search to process heap memory to improve efficiency and accuracy. It employs robust key identification heuristics to minimize false positives and is designed for seamless integration with Endpoint Detection and Response systems. KeyReaper also encourages extensibility: its open-source nature allows researchers and practitioners to enhance its capabilities with custom key detection algorithms. We validated our approach through extensive experiments involving both proof-of-concept ransomware and real-world samples, demonstrating the effectiveness of key extraction and decryption success. Our tool provides a practical path to strengthening ransomware mitigation strategies.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/CohenDMYR25,
+	author = {Roxane Cohen and
+                  Robin David and
+                  Riccardo Mori and
+                  Florian Yger and
+                  Fabrice Rossi},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Experimental Study of Binary Diffing Resilience on Obfuscated Programs},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {223--243},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_13},
+	doi = {10.1007/978-3-031-97620-9\_13},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/CohenDMYR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Obfuscation is commonly employed to protect sensitive program assets in legitimate use\xa0cases or to conceal malicious behavior in the context of malware. By altering the binary code of\xa0a compiled program, obfuscation disrupts binary analysis techniques, such as binary diffing or similarity. However, there is little comprehensive academic research addressing the effects of obfuscation on binary analysis tools and quantifying its impact. In this study, we examine how different types of obfuscation influence binary diffing algorithms. Specifically, we demonstrate a clear relationship between the type of obfuscation and\xa0the performance of the diffing algorithms used. Our benchmarks emphasize that, contrary to common assumptions, intra-procedural and data obfuscations have a limited impact on binary diffing when applied alone. In contrast, inter-procedural obfuscations significantly affect the diffing process, degrading performances by up to 40 f1-score points when comparing low and high obfuscation levels. These results highlight the need for modular diffing approaches, where parameters and features can be fine-tuned to handle adversarial scenarios, such as obfuscation. To support this research, we have released a comprehensive dataset comprising pairs of\xa0clear and obfuscated compiled programs, along with metadata specifying the type and exact location of each obfuscation. This dataset is intended to facilitate further research\xa0in this area.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DramkoBGS25,
+	author = {Luke Dramko and
+                  Deniz B{\"{o}}l{\"{o}}ni{-}Turgut and
+                  Claire {Le Goues} and
+                  Edward J. Schwartz},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Quantifying and Mitigating the Impact of Obfuscations on Machine-Learning-Based
+                  Decompilation Improvement},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {244--266},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_14},
+	doi = {10.1007/978-3-031-97620-9\_14},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DramkoBGS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Decompilers are tools that reverse the process of compilation, converting executable binaries into a high-level language like C. They are useful in situations where the original source code is unavailable, such as when analyzing malware, doing vulnerability research, and patching legacy software. Unfortunately, decompilation is necessarily incomplete, because the compiler discards many of the abstractions that make source code readable, like identifier names and types. A large body of existing work uses machine learning to predict missing names, types, and other abstractions in decompiled code. However, little of this work considers obfuscations: semantics-preserving transformations that obscure the functionality and design of a program. At the same time, obfuscations are common in practice, especially in malware. In this work, we perform a quantitative analysis of the impact that obfuscations have on decompiled code. Further, we investigate the degree to which training on obfuscated code mitigates the impact of obfuscations. We perform our experiments on three different models from the literature: DIRTY, HexT5, and VarBERT. We find that obfuscations do negatively impact machine learning models, but training on obfuscations can partially help recover lost accuracy.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BesteMHFCBHES25,
+	author = {David Beste and
+                  Gr{\'{e}}goire Menguy and
+                  Hossein Hajipour and
+                  Mario Fritz and
+                  Antonio Emanuele Cin{\`{a}} and
+                  S{\'{e}}bastien Bardin and
+                  Thorsten Holz and
+                  Thorsten Eisenhofer and
+                  Lea Sch{\"{o}}nherr},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Exploring the Potential of LLMs for Code Deobfuscation},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {267--286},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_15},
+	doi = {10.1007/978-3-031-97620-9\_15},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BesteMHFCBHES25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Code obfuscation alters software code to conceal its logic while retaining functionality, aiding intellectual property protection but hindering security audits and malware analysis. To address this, automated deobfuscation techniques have been developed, though existing approaches remain constrained by limited scope and specificity. Motivated by these challenges, this paper explores a novel approach for code deobfuscation based on Large Language Models (LLMs).  First, we investigate the general capabilities of LLMs in reducing code complexity by choosing five different source-to-source obfuscation methods. Despite challenges regarding semantical correctness, our findings indicate that LLMs can be very effective in this task. Building on this, we fine-tune two versatile models capable of simplifying code obfuscated through up to seven different chained obfuscation transformations while consistently outperforming deobfuscation based on compiler optimizations and general-purpose LLMs. Our best model demonstrates an average Halstead metric program length reduction of 89.21% for our most challenging scenario. Finally, we conduct a memorization test to assess if performance stems from memorized code rather than true deobfuscation capabilities, which our models pass.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BotturaPYDQ25,
+	author = {Nicola Bottura and
+                  Giorgia Di Pietro and
+                  Yuya Yamada and
+                  Daniele Cono D'Elia and
+                  Leonardo Querzoni},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: All Right Then, (Don't) Keep Your Secrets: Exposing {API}
+                  Hashing in Malware},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {I}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15747},
+	pages = {287--293},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97620-9\_16},
+	doi = {10.1007/978-3-031-97620-9\_16},
+	timestamp = {Thu, 17 Jul 2025 13:55:40 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BotturaPYDQ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern malware employs disparate anti-analysis techniques to complicate analysis attempts. Among them, API hashing conceals the identity of imported library functions—key indicators for understanding malware behavior—by replacing their standard names with hashed values. Currently, resolving these obfuscated calls relies heavily on manual expertise and community-maintained hash repositories, both of which are time-consuming and difficult to scale. In this work, we explore an automated approach to deobfuscate API hashing. By leveraging dynamic program analysis, we identify and map hash values back to their original function names while also extracting information about the hashing scheme. Our method can then use malware itself as a “hash oracle”, enabling on-demand resolution of standard function names through the malware’s hashing logic, enabling automatic updates of repositories.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/TripathiGB25,
+	author = {Jayesh Tripathi and
+                  Heitor Murilo Gomes and
+                  Marcus Botacin},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Towards Explainable Drift Detection and Early Retrain in ML-Based
+                  Malware Detection Pipelines},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {3--24},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_1},
+	doi = {10.1007/978-3-031-97623-0\_1},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/TripathiGB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The current largest challenge in ML-based malware detection is maintaining high detection rates while samples evolve. Although multiple works have proposed drift detectors and retraining-aware pipelines that work with reasonable efficiency, none of these detectors and pipelines are currently explainable, which limits our understanding of the threats’ evolution and the detector’s efficiency. Despite previous works that presented taxonomies of concept drift events, no practical solution for explainable drift detection in malware pipelines existed until this work. Our insight to change this scenario is to split the classifier knowledge into two: (1) the knowledge about the frontier between Malware (M) and Goodware (G); and (2) the knowledge about the concept of the (M and G) classes. Thus, we can understand whether the concept or the classification frontier changed by measuring the variations in these two domains. We make this approach practical by deploying a pipeline with meta-classifiers to measure these sub-classes of the main malware detector. We demonstrate via 5K+ experiment runs the viability of our solution by (1) illustrating how it explains every drift point of the DREBIN and AndroZoo datasets and (2) how an explainable drift detector makes online retraining to achieve higher rates and requires fewer retraining points.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PapafragkakiV25,
+	author = {Konstantina Papafragkaki and
+                  Giorgos Vasiliadis},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {InferONNX: Practical and Privacy-Preserving Machine Learning Inference
+                  Using Trusted Execution Environments},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {25--43},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_2},
+	doi = {10.1007/978-3-031-97623-0\_2},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PapafragkakiV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine learning is increasingly applied in critical domains where sensitive data is involved. When models are deployed on untrusted devices, this raises significant privacy concerns for both model providers and end-users. Trusted Execution Environments (TEEs), which offer hardware-based protection for data during processing, can mitigate these concerns. However, their limited memory resources pose challenges for deploying traditional machine learning frameworks. In this paper, we propose InferONNX, a lightweight machine learning inference service designed to run within Intel SGX. It embeds a high-level, portable, and framework-agnostic model format into the enclave, enabling easy execution of a wide range of machine learning and deep learning models. To address the memory limitations of Intel SGX, InferONNX employs two key strategies: a compact runtime with a small memory footprint, and model partitioning to reduce the memory required during inference. By executing model partitions instead of the full model, the system achieves 1.5\\(\\times \\) to 4\\(\\times \\) faster inference depending on the model size.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PordaneshBTC25,
+	author = {Saman Pordanesh and
+                  Sufiyan Bukhari and
+                  Benjamin Tan and
+                  Lorenzo De Carli},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Hiding in Plain Sight: On the Robustness of AI-Generated Code Detection},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {44--64},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_3},
+	doi = {10.1007/978-3-031-97623-0\_3},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PordaneshBTC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {AI code assistants, such as GitHub Copilot, are an increasingly popular coding aid, but they also present risks. Large language models (LLMs) upon which those assistants are built may generate insecure/incorrect code, either by accident or as a result of code poisoning attacks. In general, LLMs obfuscate the lineage of source code used for training. This is a problem, for example, in the context of supply chain security, where tracking provenance is of the utmost importance. While a number of recent approaches can flag AI-generated code based on a combination of lexical and syntactic features, such works have not been evaluated in realistic settings. First, we identify and operationalize a number of recently proposed AI code identification tools, measuring their baseline performance on datasets generated by state-of-the-art models. Then, we verify the robustness of such approaches to variations in training sets and prompting strategies. Results show that existing AI code detectors tend to be fragile and have limited accuracy in real-world scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WuMLT25,
+	author = {Xiaolong Wu and
+                  Aravind Kumar Machiry and
+                  Yung{-}Hsiang Lu and
+                  Dave Jing Tian},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {FlexGE: Towards Secure and Flexible Model Partition for Deep Neural
+                  Networks},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {65--85},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_4},
+	doi = {10.1007/978-3-031-97623-0\_4},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/WuMLT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Proprietary deep neural network (DNN) models are being deployed in the cloud nowadays. With the increased usage of AI accelerators in the cloud, there is a growing need for privacy protection for outsourced deep learning computations. Existing works use a Trusted Execution Environment (TEE) to shield DNN partitions, which puts a subset of the DNN model in TEEs and offloads the rest of the computation on GPUs. However, these solutions use fixed security primitives and model partition policy, which precludes per-model specialization to balance the security and performance requirements. In this paper, we present a novel on-demand model inference system, FlexGE, that partitions the DNN model between TEE and GPU accelerator with programmable partition policies and protection primitives based on the user’s configuration. FlexGE achieves this by tailoring the protection profile as well as the model partition policy and partitioning the model at build time as opposed to design time. We implement FlexGE using Darknet and GEVisor, and evaluate it on five popular DNNs. Our evaluation shows that FlexGE is flexible and outperforms the state-of-the-art in terms of security and performance.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/PelayoBenedetRG25,
+	author = {Tom{\'{a}}s Pelayo{-}Benedet and
+                  Ricardo J. Rodr{\'{\i}}guez and
+                  Carlos Hernandez Ga{\~{n}}{\'{a}}n},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Exploring the Zero-Shot Potential of Large Language Models
+                  for Detecting Algorithmically Generated Domains},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {86--92},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_5},
+	doi = {10.1007/978-3-031-97623-0\_5},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/PelayoBenedetRG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Domain generation algorithms enable resilient malware communication by generating pseudo-random domain names. While traditional detection relies on task-specific algorithms, the use of Large Language Models (LLMs) to identify Algorithmically Generated Domains (AGDs) remains largely unexplored. This work evaluates nine LLMs from four major vendors in a zero-shot environment, without fine-tuning. The results show that LLMs can distinguish AGDs from legitimate domains, but they often exhibit a bias, leading to high false positive rates and overconfident predictions. Adding linguistic features offers minimal accuracy gains while increasing complexity and errors. These findings highlight both the promise and limitations of LLMs for AGD detection, indicating the need for further research before practical implementation.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/KhalidMSR25,
+	author = {Asfa Khalid and
+                  Se{\'{a}}n {\'{O}}g Murphy and
+                  Cormac J. Sreenan and
+                  Utz Roedig},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Using Machine Learning to Infer Network Structure from Security
+                  Metadata},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {93--99},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_6},
+	doi = {10.1007/978-3-031-97623-0\_6},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/KhalidMSR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In distributed cloud-edge environments, data-driven decision-making is essential for enhancing operational efficiency and maintaining a competitive advantage. Achieving this requires strong guarantees of data integrity and authenticity, as any compromise can lead to inaccurate insights, loss of trust, and financial damage. To address the cybersecurity risks posed by data transmission across complex, heterogeneous networks, Data Confidence Fabrics have been introduced. These enhance data security by generating metadata at each stage of transmission and storing it using distributed ledgers, which ensures the immutability and verifiability of this metadata. However, despite these benefits, the public accessibility of ledgers introduces significant privacy concerns. While previous research has focused on hostname obfuscation to protect network structure, timestamps often remain exposed, creating an exploitable vulnerability. We demonstrate that one can use K-means clustering on exposed timestamp patterns to reconstruct the obfuscated network structure, even when hostnames are fully obfuscated. Our findings reveal a critical gap in existing metadata protection mechanisms and highlight the need for defense against timestamp-based inference attacks.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/RidleyBS25,
+	author = {Norah Ridley and
+                  Enrico Branca and
+                  Natalia Stakhanova},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {More Than You Signed Up For: Exposing Gaps in the Validation of Android's
+                  App Signing},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {103--123},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_7},
+	doi = {10.1007/978-3-031-97623-0\_7},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/RidleyBS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Android’s ubiquitous flexibility has helped it to become one of the most widely used mobile operating systems in the world. However, the convenient and extensive access to phone resources adopted by Android has revealed inefficiencies of its existing protections. Among these protections is application (app) signing. This process is intended to maintain the integrity of the app after it is released, and it provides users with confidence in the app’s authenticity. We analyze the functionality of Android signature verification and identify the logical gaps in the process that can be used to hide a malicious payload. We demonstrate the security implications of these gaps.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/SunXZWS25,
+	author = {Shiyu Sun and
+                  Yunlong Xing and
+                  Grant Zou and
+                  Xinda Wang and
+                  Kun Sun},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {An Empirical Study of Multi-language Security Patches in Open Source
+                  Software},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {124--146},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_8},
+	doi = {10.1007/978-3-031-97623-0\_8},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/SunXZWS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Vulnerabilities in software repositories written in multiple programming languages present a major challenge to modern software quality assurance, especially those resulting from interactions between different languages. Existing static and dynamic program analysis tools are generally constrained to single-language analysis, while current deep-learning models lack the capability to process cross-language interactions effectively. To gain deeper insights into vulnerability patterns and patching behaviors in multi-language code, we conduct a measurement study on commits associated with multi-language security patches. We first collect a large-scale dataset of multi-language security patches from the MITRE corporation. We then analyze trends in language combinations, assess their proneness to vulnerabilities, and compare the severity of these vulnerabilities to those in single-language patches. Additionally, we classify patch patterns based on the types of language interactions to support automated program repair. To encourage further research, we release our dataset to the community, fostering deeper investigation into multi-language security patch development and enhancement.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/JumanaVA25,
+	author = {Jumana and
+                  Parjanya Vyas and
+                  Yousra Aafer},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Red Light for Security: Uncovering Auto Feature Check and Access Control
+                  Gaps in {AAOS}},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {147--166},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_9},
+	doi = {10.1007/978-3-031-97623-0\_9},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/JumanaVA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Android Automotive Operating System (AAOS) is a specialized version of the Android OS designed for in-vehicle infotainment and system control. Prominent automakers such as Honda, General Motors (GM), Volvo, and Ford have already adopted it in their latest vehicles. Despite its popularity, the security of AAOS integration has hardly been evaluated, particularly at the framework layer, where auto feature and access control anomalies are likely to arise. To bridge the gap, we perform the first security evaluation of automotive entry points in AAOS. Our study is enabled by AutoAcRaptor, an automated pipeline that leverages static analysis to identify automotive entry points, generate their access control and auto feature specifications, and analyze them for potential security risks. Our evaluation of AutoAcRaptor on two AOSP and eight automaker AAOS images demonstrates that it is able to identify 23 auto feature and access control anomalies, on average per ROM. We report ten cases to the corresponding automakers. At the time of writing, five have been acknowledged while the rest are pending verification.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/RossiniPDCL25,
+	author = {Roberto Rossini and
+                  Simeone Pizzi and
+                  Samuele Doria and
+                  Mauro Conti and
+                  Eleonora Losiouk},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: {SPECK:} From Google Textual Guidelines to Automatic Detection
+                  of Android Apps Vulnerabilities},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {167--172},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_10},
+	doi = {10.1007/978-3-031-97623-0\_10},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/RossiniPDCL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper addresses vulnerabilities in Android apps introduced by developers failing to follow Google’s security guidelines. Existing tools do not cover all guidelines, leaving many violations undetected. We propose SPECK, a static rule-based taint analysis system that detects violations of all 31 Google guidelines, outperforming current tools. Analyzing 500 popular apps, we find every app has at least one violation, highlighting the need for comprehensive detection.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/ZhangHGS25,
+	author = {Ruiyi Zhang and
+                  Tristan Hornetz and
+                  Lukas Gerlach and
+                  Michael Schwarz},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Taming the Linux Memory Allocator for Rapid Prototyping},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {175--194},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_11},
+	doi = {10.1007/978-3-031-97623-0\_11},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/ZhangHGS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Microarchitectural attacks pose an increasing threat to system security. They enable attackers to extract sensitive information such as cryptographic keys, website usage patterns, or keystrokes. Software-level defenses, such as constant-time implementations, mitigate some attack vectors but impose significant challenges on developers. Operating-system-level mitigations, such as page coloring and memory isolation, address these threats but require intricate kernel modifications and time-consuming workflows, making prototyping new defenses complex. In this paper, we present MAPAlloc (Microarchitectural Prototyping Allocator), a flexible, cross-architecture framework for rapidly prototyping memory allocation-based defenses and attacks on Linux systems. Using a simple domain-specific language, MAPAlloc allows for precise control over physical memory allocation on x86, ARMv8, and RISC-V. MAPAlloc enables quick implementation and evaluation of mitigations such as page coloring and novel techniques like layered page coloring, increasing the number of cache colors from 32 to 256 on modern CPUs. We demonstrate MAPAlloc ’s versatility through case studies that prevent Prime+Probe and DRAMA attacks and reverse-engineer the AMD Zen 4 complex cache-indexing function for use in layered page coloring. Additionally, we prototype a Prime+Probe attack with an incomplete non-linear slice function from previous work by limiting the physical memory using MAPAlloc. Without MAPAlloc, such defense and attack prototypes require complicated modifications of the Linux kernel, making them hard to develop and test. Thus, MAPAlloc is an essential framework for simplifying research in microarchitectural security.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BossiMCZL25,
+	author = {Lorenzo Bossi and
+                  Daniele Mammone and
+                  Michele Carminati and
+                  Stefano Zanero and
+                  Stefano Longari},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Linux Hurt Itself in Its Confusion! Exploiting Out-of-Memory Killer
+                  for Confusion Attacks via Heuristic Manipulation},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {195--215},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_12},
+	doi = {10.1007/978-3-031-97623-0\_12},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BossiMCZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Linux kernel’s Out-of-Memory (OOM) killer ensures system stability by terminating processes when memory is exhausted, but its heuristic-based design was not built for adversarial contexts. This paper introduces OOM Confusion Attacks, a novel class of Denial of Service (DoS) attacks that exploit the OOM killer to execute privileged process termination, targeting critical services rather than attacker processes. By orchestrating memory exhaustion through numerous unprivileged processes, these attacks may kill target applications, block service recovery, and destabilize systems. We demonstrate the feasibility of OOM Confusion Attacks\xa0on default Linux configurations commonly used by cloud providers, formulate and quantify the resource constraints for success, and evaluate application exposure to OOM Confusion Attacks. Additionally, we identify race conditions that can be exploited to block the recovery of privileged services. To mitigate these threats, we propose strategies to increase the resilience of critical applications.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/AubardMGC25,
+	author = {Lucas Aubard and
+                  Johan Mazel and
+                  Gilles Guette and
+                  Pierre Chifflier},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Overlapping Data in Network Protocols: Bridging {OS} and {NIDS} Reassembly
+                  Gap},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {216--236},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_13},
+	doi = {10.1007/978-3-031-97623-0\_13},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/AubardMGC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {IPv4, IPv6, and TCP have a common mechanism allowing one to split an original data packet into several chunks. Such chunked packets may have overlapping data portions and, OS network stack implementations may reassemble these overlaps differently. A Network Intrusion Detection System (NIDS) that tries to reassemble a given flow data has to use the same reassembly policy as the monitored host OS; otherwise, the NIDS or the host may be subject to attack. In this paper, we provide several contributions that enable us to analyze NIDS resistance to overlapping data chunks-based attacks. First, we extend state-of-the-art insertion and evasion attack characterizations to address their limitations in an overlap-based context. Second, we propose a new way to model overlap types using Allen’s interval algebra, a spatio-temporal reasoning. This new modeling allows us to formalize overlap test cases, which ensures exhaustiveness in overlap coverage and eases the reasoning about and use of reassembly policies. Third, we analyze the reassembly behavior of several OSes and NIDSes when processing the modeled overlap test cases. We show\xa0that 1) OS reassembly policies evolve over time\xa0and 2) all the tested NIDSes are (still) vulnerable to overlap-based evasion and insertion attacks.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/CalavaroCCBQ25,
+	author = {Marco Calavaro and
+                  Pasquale Caporaso and
+                  Luca Capotombolo and
+                  Giuseppe Bianchi and
+                  Francesco Quaglia},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: On the Usage of Kernel Shadow Stacks for User-Level Programs},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {237--242},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_14},
+	doi = {10.1007/978-3-031-97623-0\_14},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/CalavaroCCBQ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Backward edge Control-Flow Integrity (CFI) has been widely supported via user-space shadow stacks. In this paper we introduce innovative kernel shadow stacks for user-space programs. By placing itself at a higher privilege level, the information kept by the kernel shadow stack can no way be altered by the (attacked) user-level code. We provide the main hints of our implementation of the kernel shadow stack for Linux, and report data related to an assessment we carried out of our proposal.\n\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/StaufferG25,
+	author = {Nicola Stauffer and
+                  G{\"{u}}rkan G{\"{u}}r},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Referencing Your Privileges - {A} Data-Only Exploit Technique
+                  for the Windows Kernel},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {243--249},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_15},
+	doi = {10.1007/978-3-031-97623-0\_15},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/StaufferG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this poster, we present an exploit technique using an integer overflow turned out-of-bounds write inside the paged pool to escalate our privileges on the latest Windows 11 version 24H2. We describe our exploitation strategy and demonstrate how we used it to carry out the exploit. We also identify some future technical directions that could improve this exploit technique.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/GennaroDPZC25,
+	author = {Marco Di Gennaro and
+                  Mario D'Onghia and
+                  Mario Polino and
+                  Stefano Zanero and
+                  Michele Carminati},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {PackHero: {A} Scalable Graph-Based Approach for Efficient Packer Identification},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {253--274},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_16},
+	doi = {10.1007/978-3-031-97623-0\_16},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/GennaroDPZC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anti-analysis techniques, particularly packing, challenge malware analysts, making packer identification fundamental. Existing packer identifiers have significant limitations: signature-based methods lack flexibility and struggle against dynamic evasion, while Machine Learning approaches require extensive training data, limiting scalability and adaptability. Consequently, achieving accurate and adaptable packer identification remains an open problem. This paper presents PackHero, a scalable and efficient methodology for identifying packers using a novel static approach. PackHero employs a Graph Matching Network and clustering to match and group Call Graphs from programs packed with known packers. We evaluate our approach on a public dataset of malware and benign samples packed with various packers, demonstrating its effectiveness and scalability across varying sample sizes. PackHero achieves a macro-average F1-score of 93.7% with just 10 samples per packer, improving to 98.3% with 100 samples. Notably, PackHero requires fewer samples to achieve stable performance compared to other Machine Learning-based tools. Overall, PackHero matches the performance of State-of-the-art signature-based tools, outperforming them in handling Virtualization-based packers such as Themida/Winlicense, with a recall of 100%.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/RuaroGMMGKV25,
+	author = {Nicola Ruaro and
+                  Fabio Gritti and
+                  Robert McLaughlin and
+                  Dongyu Meng and
+                  Ilya Grishchenko and
+                  Christopher Kruegel and
+                  Giovanni Vigna},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {A History of Greed: Practical Symbolic Execution for Ethereum Smart
+                  Contracts},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {275--296},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_17},
+	doi = {10.1007/978-3-031-97623-0\_17},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/RuaroGMMGKV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Smart contracts have transformed blockchain applications, enabling decentralized computation and automated asset management without intermediaries. However, with the growth of decentralized finance, the high financial stakes make smart contract vulnerabilities particularly critical. Because vulnerabilities often go undetected, they lead to substantial losses and diminished trust in blockchain systems. Symbolic execution has emerged as a powerful technique to uncover subtle vulnerabilities by systematically exploring feasible execution paths. However, most existing symbolic execution tools for smart contracts are tailored to specific vulnerability patterns, making them unsuitable for detecting new types of vulnerabilities. In this paper, we introduce Greed, a highly versatile symbolic execution framework for Ethereum (or EVM-based) smart contracts. Greed features a state-of-the-art symbolic execution engine coupled with a suite of supporting analyses and a modular design that allows security researchers to prototype new analyses rapidly. To evaluate the effectiveness and extensibility of Greed, we compare it with the state-of-the-art. We first show that Greed can explore significantly more code paths – reaching 84% of all CALL statements, as opposed to 9% on average across existing tools. To demonstrate the ease of use (and extensibility) of Greed, we then implement a novel analysis to detect controllable JUMPI instructions and evaluate it against all deployed contracts on Ethereum and Binance Smart Chain (BSC), identifying 390 previously unknown vulnerable contracts. By releasing Greed to the community, we aim to lower the barrier to developing advanced security analyses for smart contracts, empowering security researchers to rapidly prototype new analyses and contribute to a more secure and resilient blockchain ecosystem.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/WaserSSM25,
+	author = {Moritz Waser and
+                  David Schrammel and
+                  Robert Schilling and
+                  Stefan Mangard},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {{FAULTLESS:} Flexible and Transparent Fault Protection for Superscalar
+                  {RISC-V} Processors},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {297--315},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_18},
+	doi = {10.1007/978-3-031-97623-0\_18},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/WaserSSM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fault injection\xa0(FI) attacks pose a significant threat to the reliability and security of devices. They can cause data or control-flow corruption, leading to system failure or allowing malicious attackers to steal secret data or leak cryptographic keys. To protect against faults, many vendors extend their processors with lockstep capabilities, which require either dedicated hardware duplication or a reconfigurable second core that can act as a shadow core. The former causes a large hardware overhead while the latter requires an inflexible configuration during boot time with additional implications for software design. Software-based fault protection requires recompilation of existing code with custom compilers, which introduces compatibility issues. This paper presents Faultless: A fault protection mechanism that transparently performs hardware-based instruction duplication and utilizes the existing redundancy in superscalar processors. Contrary to lockstep approaches, our design facilitates a flexible protection approach with marginal hardware overhead that allows developers to toggle the fault protection during runtime, providing a choice between security and performance. The design is fully transparent and compatible with preexisting binaries. We implement our prototype based on the VeeR EH1 RISC-V processor and show that, when active, our fault protection generates an average performance overhead between 32% and 79%, depending on the hardware configuration. Non-critical applications can deactivate the feature and run without any overheads. On an Artix-7 FPGA, our hardware modifications incur a minimal overhead of 3.5% for LUTs and 2.8% for flip-flops.}
+}
+
+
+@inproceedings{DBLP:conf/dimva/BinderBBWH25,
+	author = {Ryan Binder and
+                  Joshua Byun and
+                  Dane Brown and
+                  T. Owens Walker and
+                  Jennie Hill},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: Building Confidence in Hardware-Based Ransomware Detection
+                  Through Hardware Performance Counter Event Correlation},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {316--322},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_19},
+	doi = {10.1007/978-3-031-97623-0\_19},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/BinderBBWH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybercrime is projected to cause over $10 trillion in damages through 2025 and ransomware has increasingly become the weapon of choice for cyber criminals. While hardware performance counters (HPCs) offer promising low-level insights for identifying ransomware behavior, concerns remain about their effectiveness in real-world settings. This work introduces a visualization tool that correlates HPC event data with ransomware execution to identify the most informative counters. Initial testing performed on a real-world dataset collected in a non-virtualized environment demonstrates the tool’s potential to enhance early detection and address key concerns surrounding the practical use of HPCs for security applications.\n}
+}
+
+
+@inproceedings{DBLP:conf/dimva/DigregorioBCCZL25,
+	author = {Gabriele Digregorio and
+                  Francesco Bleggi and
+                  Federico Caroli and
+                  Michele Carminati and
+                  Stefano Zanero and
+                  Stefano Longari},
+	editor = {Manuel Egele and
+                  Veelasha Moonsamy and
+                  Daniel Gruss and
+                  Michele Carminati},
+	title = {Poster: FedBlockParadox - {A} Framework for Simulating and Securing
+                  Decentralized Federated Learning},
+	booktitle = {Detection of Intrusions and Malware, and Vulnerability Assessment
+                  - 22nd International Conference, {DIMVA} 2025, Graz, Austria, July
+                  9-11, 2025, Proceedings, Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15748},
+	pages = {323--328},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97623-0\_20},
+	doi = {10.1007/978-3-031-97623-0\_20},
+	timestamp = {Thu, 17 Jul 2025 13:55:41 +0200},
+	biburl = {https://dblp.org/rec/conf/dimva/DigregorioBCCZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A significant body of research in decentralized federated learning focuses on combining the privacy-preserving properties of federated learning with the resilience and transparency offered by blockchain-based systems. While these approaches are promising, they often lack flexible tools to evaluate system robustness under adversarial conditions. To fill this gap, we present FedBlockParadox, a modular framework for modeling and evaluating decentralized federated learning systems built on blockchain technologies, with a focus on resilience against a broad spectrum of adversarial attack scenarios. It supports multiple consensus protocols, validation methods, aggregation strategies, and configurable attack models. By enabling controlled experiments, FedBlockParadox provides a valuable resource for researchers developing secure, decentralized learning solutions. The framework is open-source and built to be extensible by the community.\n}
+}
