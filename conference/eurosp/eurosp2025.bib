@@ -1,0 +1,1253 @@
+@inproceedings{DBLP:conf/eurosp/BoureanuWRST25,
+	author = {Ioana Boureanu and
+                  Stephan Wesemeyer and
+                  Fortunat Rajaona and
+                  Steve Schneider and
+                  Helen Treharne},
+	title = {A Systematic Study of Practical {\&} Formal Privacy in the 5G
+                  {AKMA} Procedure},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1--16},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00010},
+	doi = {10.1109/EUROSP63326.2025.00010},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BoureanuWRST25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We systematically scrutinise all the facets of privacy in the 5G delegated-authentication procedure called AKMA (Authentication and Key Management for Applications based on 3GPP credentials in the 5G Systems). We define, in general terms, a privacy-threat model and privacy requirements for this protocol. Using these definitions, we find numerous privacy failings in the AKMA protocol. We propose a patch, called AKMAp, which imposes minimal changes on AKMA, yet it attains all our privacy requirements. We also formalise and analyse all of this in terms of formal privacy-verification in the Dolev-Yao model; to this end, we use the Tamarin prover to systematically carried out our formal analyses of AKMA and AKMAp.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/GomesMV25,
+	author = {Catarina Gomes and
+                  Ricardo Mendes and
+                  Jo{\~{a}}o P. Vilela},
+	title = {Active Attribute Inference Against Well-Generalized Models In Federated
+                  Learning},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {17--37},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00011},
+	doi = {10.1109/EUROSP63326.2025.00011},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/GomesMV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated Learning (FL), a distributed learning mechanism where data is decentralized across multiple devices and periodic gradient updates are shared, is an alternative to centralized training that aims to address privacy issues arising from raw data sharing. Despite the expected privacy benefits, prior research showcases the potential privacy leakage derived from overfitting, exploited by passive attacks. However, limited attention has been given to understanding and defending against active threats that increase model leakage by interfering with the training process, instead of relying on overfitting. This work addresses this gap by introducing Active Attribute Inference (AAI⋆), a novel active attack that encodes sensitive attribute information by making any targeted training sample leave a distinguishable footprint on the gradient of maliciously modified neurons [8]. Results, using two real-world datasets, show that it is possible to successfully encode sensitive information incurring a small error in terms of neuron activation. More importantly, on a practical scenario, AAI⋆ can improve upon a state-of-the-art approach by achieving over 90% of restricted ROC AUC, therefore increasing model leakage. To defend against such active attacks, this work introduces several attack detection strategies tailored for different levels of the defender’s knowledge. Including the novel White-box Attack Detection Mechanism (WADM⋆) that detects abnormal changes in weights distribution, and two black-box strategies based on the monitorization of model performance. Results show that the detection rate can be 100% on both datasets. Remarkably, WADM⋆ reduces any attack to random guessing while preserving model utility, offering significant improvements over existing defenses, particularly when clients are non-IID. By proposing active attacks against well-generalized models and effective countermeasures, this research contributes to a better understanding of privacy in FL systems.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/FautHKR25,
+	author = {Dennis Faut and
+                  Julia Hesse and
+                  Lisa Kohl and
+                  Andy Rupp},
+	title = {Scalable and Fine-Tuned Privacy Pass from Group Verifiable Random
+                  Functions},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {38--59},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00012},
+	doi = {10.1109/EUROSP63326.2025.00012},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/FautHKR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anonymous token schemes are cryptographic protocols for limiting the access to online resources to credible users. The resource provider issues a set of access tokens to the credible user that they can later redeem anonymously, i.e., without the provider being able to link their redemptions. When combined with credibility tests such as CAPTCHAs, anonymous token schemes can significantly increase user experience and provider security, without exposing user access patterns to providers.Current anonymous token schemes such as the Privacy Pass protocol by Davidson et al. rely on oblivious pseudorandom functions (OPRFs), which let server and user jointly compute randomly looking access tokens. For those protocols, token issuing costs are linear in the number of requested tokens.In this work, we propose a new approach for building anonymous token schemes. Instead of relying on two-party computation to realize a privacy-preserving pseudorandom function evaluation, we propose to offload token generation to the user by using group verifiable random functions (GVRFs). GVRFs are a new cryptographic primitive that allow users to produce verifiable pseudorandomness. Opposed to standard VRFs, verification is anonymous within the group of credible users. We give a construction of group VRFs from the Dodis-Yampolskiy VRF and EquivalenceClass Signatures, based on pairings and a new Diffie-Hellman inversion assumption that we analyze in the Generic Group Model. Our construction enjoys compact public keys and proofs, while evaluation and verification costs are only slightly increased compared to the Dodis-Yampolskiy VRF.By deploying a group VRF instead of a OPRF, we obtain an anonymous token scheme where communication as well as server-side computation during the issuing phase is constant and independent of the number of tokens a user requests. Moreover, by means of our new concept of updatable token policies, the number of unspent tokens in circulation can retrospectively (i.e., even after the credibility check) be decreased or increased in order to react to the current or expected network situation. Our tokens are further countable and publicly verifiable. This comes at the cost of higher computational efforts for token redemption and verification as well as somewhat weaker unlinkability guarantees compared to Privacy Pass.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/MoazenPAB25,
+	author = {Mojtaba Moazen and
+                  Nicolae Paladi and
+                  Adnan Jamil Ahsan and
+                  Musard Balliu},
+	title = {TAPShield: Securing Trigger-Action Platforms against Strong Attackers},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {60--77},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00013},
+	doi = {10.1109/EUROSP63326.2025.00013},
+	timestamp = {Sat, 06 Sep 2025 20:31:28 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/MoazenPAB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Automation apps enable seamless connection of IoT devices and services to provide useful functionality for end-users. Apps are typically executed on cloud-based Trigger-Action Platforms (TAPs) such as IFTTT and Node-RED, supporting both single- and multi-tenant models. Such models raise security and privacy concerns in the face of cloud attackers and malicious app makers, resulting in massive and uncontrolled exfiltration of sensitive user data.To address these concerns, we design TAPShield, an architecture that uses confidential computing and language-level sandboxing to protect user data against untrustworthy TAPs and malicious apps. TAPShield targets JavaScript-driven TAPs built on the Node.js environment and uses trusted execution environments implemented with Intel SGX to protect against cloud attackers. It further uses language-level sandboxes such as vm2 and SandTrap to protect against malicious apps. We implement TAPShield for two popular TAPs, Node-RED and IFTTT, and report on the security, performance, and compatibility trade-offs on a range of real-world apps. Our results show clear security benefits with acceptable performance overhead, while adhering to existing development practices of production-scale TAPs.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/ElzerJRS25,
+	author = {Karina Elzer and
+                  Eric Jedermann and
+                  Stefanie Roos and
+                  Jens B. Schmitt},
+	title = {They See Me Scooting - {A} Long-Term Real-World Data Analysis of Shared
+                  Micro-Mobility Services and their Privacy Leakage},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {78--92},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00014},
+	doi = {10.1109/EUROSP63326.2025.00014},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/ElzerJRS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In many places, a surge of micro-mobility sharing systems, as for instance e-scooters, can be observed. Shared micro-mobility is a cost-efficient and flexible alternative to owning vehicles and, furthermore, leads to reduced traffic and air pollution. However, sharing information about vehicles impacts the privacy of the individuals using such vehicles as changes in vehicle state are linked to an individual’s mobility pattern. Malicious exploitation of knowledge on mobility patterns of individuals may assist in criminal activities such as stalking or burglary. Thus, it is very important that micro-mobility sharing platforms do not leak sensitive data about the mobility patterns of their users, resulting in a tradeoff between sharing and privacy.To characterize the privacy leakage in one specific instance of shared micro-mobility, we conducted a large-scale, long-term data collection from scooters run by the e-scooter company Tier in the European university town Kaiserslautern. Indeed, the data reveals several privacy issues: For instance, we were able to reconstruct work and school schedules of various individuals. Furthermore, we could infer interests and hobbies by visits to, e.g., sports facilities. Our initial discovery of such leakages was aided by the fact that the specific e-scooter company does not comply with existing privacy standards, in particular the use of dynamic IDs. Yet, an a-posteriori analysis of our data shows that even with dynamic IDs, we are able to re-construct 80% of the trips, which still constitutes a substantial privacy leakage.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/MertensBRS25,
+	author = {Gilles Mertens and
+                  Nataliia Bielova and
+                  Vincent Roca and
+                  Cristiana Santos},
+	title = {You Can't Trust Your Tag Neither: Privacy Leaks and Potential
+                  Legal Violations within the Google Tag Manager},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {93--112},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00015},
+	doi = {10.1109/EUROSP63326.2025.00015},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/MertensBRS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Tag Management Systems (TMS) were developed in order to support website Publishers in installing multiple third-party JavaScript scripts (Tags) on their websites. Google has proposed its own TMS called "Google Tag Manager" (GTM) that is currently present on 52% of the top 1 million most popular websites. However, GTM has not yet been thoroughly evaluated by the academic research community. In this work, we study, for the first time, the Tags provided within the GTM system. Our methodology consists in installing Tags in isolation to analyze the types of data that Tags collect and contrast them to the legal and technical documentation, in collaboration with a legal expert. Across three studies - in-depth analysis of 6 Tags, automated analysis of 718 Tags, and analysis of Google "Consent Mode" - we discover multiple hidden data leaks, incomplete and diverging declarations, undisclosed third- parties and cookies, personal data sharing without consent and we further identify potential legal violations within EU Data Protection law.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BianchiBCV25,
+	author = {Tommaso Bianchi and
+                  Alessandro Brighente and
+                  Mauro Conti and
+                  Andrea Valori},
+	title = {Your Car Tells Me Where You Drove: {A} Novel Path Inference Attack
+                  via {CAN} Bus and {OBD-II} Data},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {113--132},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00016},
+	doi = {10.1109/EUROSP63326.2025.00016},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BianchiBCV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {During police investigations, the possibility of extracting coordinates data of a vehicle without relying on GPS is vital because the targets may know about possible bugs using this technology and take action against them. To this aim, extracting non-encrypted data from the Controller Area Network (CAN) provides a valid solution for officers. Indeed, CAN exchanges non-encrypted data, including physical information about the car’s movement. In this paper, we present On Path Diagnostic - Intrusion & Inference (OPD-II), a novel path inference attack leveraging a physical car model and a map matching algorithm to infer the path driven by a car based on CAN bus data. Unlike available attacks, our approach only requires the attacker to know the initial location and heading of the victim’s car and is not limited by the availability of training data, road configurations, or the need to access other victim’s devices (e.g., smartphones). We implement our attack on a set of four different cars and a total number of 59 tracks in different road and traffic scenarios. We achieve an average 95.75% accuracy in reconstructing the coordinates of the recorded path by leveraging a dynamic map matching algorithm that outperforms other state-of-the-art proposals while removing their set of assumptions.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/MladenovES25,
+	author = {Martin Mladenov and
+                  L{\'{a}}szl{\'{o}} Erdodi and
+                  Georgios Smaragdakis},
+	title = {All that Glitters is not Gold: Uncovering Exposed Industrial Control
+                  Systems and Honeypots in the Wild},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {133--152},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00017},
+	doi = {10.1109/EUROSP63326.2025.00017},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/MladenovES25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industrial control systems have enabled the digitalization and automation of industrial production and services, such as electric powerhouses, the electric grid, and water supply networks. Due to their critical role, any exposure to the public Internet makes them vulnerable to attacks that may have catastrophic implications.In this paper, we report that the readily available application-layer scanning on all ports opens new avenues to assess the exposure of devices that run industrial control protocols that were not possible with previously proposed active port scanning. We consider 17 widely used industrial control system protocols and develop a methodology that unveils around 150 thousand industrial control systems exposed around the globe. Our study shows that many allegedly exposed industrial control systems are honeypots that emulate industrial protocols. Our methodology infers the presence of honeypots and classifies them into three tiers based on the confidence that these act as honeypots: low-, medium-, and high-confidence. We classify them thanks to large-scale application-layer scanning on all ports and multiple independent attributes, including network information, number of open ports, and known honeypot signatures. Our results show that 15% to 25% of the exposed industrial control systems are honeypots (with two-thirds of them belonging to the medium- or high-confidence categories). Our results challenge previous reports on the prevalence and distribution of exposed industrial control systems. The developed methodology enables industry operators to assess exposed assets and aid protection teams in creating stealthier honeypots.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/ScholtesKSP25,
+	author = {Raoul Scholtes and
+                  Soheil Khodayari and
+                  Cristian{-}Alexandru Staicu and
+                  Giancarlo Pellegrino},
+	title = {{CHARON:} Polyglot Code Analysis for Detecting Vulnerabilities in
+                  Scripting Languages Native Extensions},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {153--168},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00018},
+	doi = {10.1109/EUROSP63326.2025.00018},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/ScholtesKSP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Scripting languages like Python or JavaScript are extremely popular among developers, in part due to their massive open-source ecosystems that enable smooth code reuse. However, recent work shows that a lot of scripting code runs C/C++ code under the hood, via native extensions. This might introduce subtle security issues that can surprise the users. Prior work in this domain relies on simple, intra-procedural, flow-insensitive data flow analysis to detect such problems, but it is unclear if a more holistic polyglot static analysis could be feasible, and if so, what are its costs and benefits.In this work, we propose CHARON, the first inter-procedural, polyglot static analysis for detecting vulnerabilities in scripting languages. Our approach advocates for linking together the code property graphs of the different languages and performing cross-language data flow analysis by switching between code representations, when cross-language function calls are encountered. In this way, CHARON supports data flows that cross several times the language boundary, spanning multiple functions on either side. We evaluated CHARON on 11.8K polyglot packages from npm and PyPI, containing 896M lines of code. CHARON identified 5,813 manually-confirmed, vulnerable data flows in 116 packages. We performed a baseline comparison of CHARON with single-language analysis on native code, showing a ~6x increase in true positives and ~4%, less false positive alerts. We demonstrated exploitability of the discovered vulnerabilities by creating 63 PoCs across 34 packages, showing, among others, how we can escalate a buffer overflow vulnerability in native extensions to arbitrary code execution, which we believe to be the first of its kind. Overall, our results show that inter-procedural, polyglot analysis is both feasible and effective for detection of native extension vulnerabilities.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/KumarCG25,
+	author = {Shreyas Kumar and
+                  Evelyn Crowe and
+                  Guofei Gu},
+	title = {Demystifying the Perceptions Gap Between Designers and Practitioners
+                  in Two Security Standards},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {169--187},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00019},
+	doi = {10.1109/EUROSP63326.2025.00019},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/KumarCG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Although widely adopted, the effectiveness of corporate security standards like ISO 27001 and NIST CSF is not well established. Budgetary restrictions, skills shortages, existing infrastructure, adoption difficulties, and usability challenges can hinder the implementation of complete security measures. As a result, organizations can opt to adopt only part of the available security procedures. Among the different security techniques and validations available, many companies choose to follow security standards such as the NIST Cybersecurity Framework or ISO 27001:2013, which consist of many individual guidelines. However, some of these guidelines may be outdated, unclear, or incapable of addressing new technologies, resulting in insufficient practical and actionable security improvements. We conducted two studies to understand the perceptions and pain points of practitioners. In the first study, 30 security experts evaluated the perceived effectiveness of the 113 ISO 27001 guidelines and the 108 NIST Cybersecurity Framework guidelines, ranking them as High, Medium or Low. They also provided their perspectives and insights behind the total 1326 ratings and what areas of improvement existed in the standards. Building on the initial study’s recommendations, we engaged 14 additional security experts to explore the pain points and potential changes in security systems through in-depth interviews. Our findings indicate that in order to enhance the perception and effectiveness of the standards, timely updates, flexibility, maintainability, cost-effectiveness, and the ability to impact technical security are needed.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/DrakonakisIP25,
+	author = {Kostas Drakonakis and
+                  Sotiris Ioannidis and
+                  Jason Polakis},
+	title = {Dredging the River Styx: Fortifying the Web through Robust and Real-Time
+                  Script Attribution},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {188--208},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00020},
+	doi = {10.1109/EUROSP63326.2025.00020},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/DrakonakisIP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The modern web ecosystem relies heavily on the inclusion of third-party scripts as they offer useful, and often necessary, functionality. This inclusion leads to the "blending" of code from different origins, which has significant ramifications. Specifically, the inability to effectively and robustly disambiguate between first-party and embedded third-party scripts can severely undermine the security and privacy guarantees of existing defenses (e.g., blocking trackers or preventing vulnerabilities such as DOM XSS), as well as the validity of web measurement studies. To address that gap we propose StyxJS, a system that is able to provide real-time attribution of third-party scripts while preventing evasive tactics that can be employed by malicious scripts. This is achieved through an automated pipeline consisting of stack walking, script rewriting, browser API overriding, and tamper-proofing mechanisms. Crucially, our system does not require any developer input or prior knowledge about the website and can, thus, be readily incorporated into any countermeasure or web measurement apparatus that requires robust script attribution. We conduct an extensive experimental evaluation of our system and demonstrate that it accurately captures more script inclusion techniques compared to prior work, while incurring a negligible performance overhead, and effectively maintains page-deployed security mechanisms (e.g., CSP). We also detail the straightforward process and benefits of retrofitting a varied set of existing defenses on top of StyxJS, as well as leveraging it to analyze the web ecosystem. We will release our system as an open source project, to allow security researchers and practitioners to benefit from StyxJS’ capabilities.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/CurtinSGOM25,
+	author = {Miriam Curtin and
+                  Brian Sheehan and
+                  Melanie Gruben and
+                  Gillian O'Carroll and
+                  Hazel Murray},
+	title = {Enhancing Cybersecurity Awareness in Small and Medium Enterprises
+                  Through a User-Friendly Risk Assessment Tool},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {209--226},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00021},
+	doi = {10.1109/EUROSP63326.2025.00021},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/CurtinSGOM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Small and medium enterprises (SMEs) are the backbone of the global economy and are increasingly vulnerable to cyber threats due to constrained resources and limited cybersecurity expertise. Despite the availability of international cybersecurity guidance, SMEs struggle to identify and mitigate their cyber risks effectively. This study addresses this gap by developing an accessible, SME-focused cyber risk assessment tool that simplifies cybersecurity for non-experts. Through a comprehensive review of existing risk assessment frameworks and iterative collaboration with SMEs, we designed a user-friendly tool. Piloted with Irish SMEs, the tool provided valuable insights into the current cybersecurity landscape, revealing critical vulnerabilities in areas such as data protection, where 67% of participants said they did not test their backups, and incident preparedness, where 83% of participants said they would not know what to do if a cyber incident occurred. Our tool not only evaluates cyber risk but also enhances SME awareness by guiding them through key cybersecurity considerations. This study demonstrates that an intuitive risk assessment tool can empower SMEs to strengthen their cyber resilience, ensuring more businesses can proactively protect themselves against evolving threats.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/MengasciniWWSP25,
+	author = {Andrea Mengascini and
+                  Rebecca Weil and
+                  Annabelle Walle and
+                  J{\"{u}}rgen Steimle and
+                  Giancarlo Pellegrino},
+	title = {Exploring the Design Space for Security Warnings in Immersive Environments},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {227--250},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00022},
+	doi = {10.1109/EUROSP63326.2025.00022},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/MengasciniWWSP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {More and more immersive environments support third-party applications, leading to concerns about the trustworthiness of user interfaces (UIs), which attackers could exploit, endangering users. Although security warnings attempt to safeguard users by highlighting risks, most studies primarily target security indicators as usable intervention for app transitions in virtual reality. Our research broadens this focus by providing a systematic, data-driven investigation of security warnings for third-party applications in immersive environments. We analyzed a decade’s worth of top VR interactions and security conference findings and assessed the top 10 free VR applications from two leading stores each. From our design process, we implemented four warnings. Through two user studies involving 61 participants, we measured their responses to these warnings during virtual object interactions. Our findings indicate that a red glow on an object was the most effective warning, frequently associated with danger, while pop-up warnings were the least effective.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/KumardG25,
+	author = {Shreyas Kumar and
+                  Paula deWitte and
+                  Guofei Gu},
+	title = {Incentivizing Security Excellence in Cyber Liability Insurance},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {251--267},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00023},
+	doi = {10.1109/EUROSP63326.2025.00023},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/KumardG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper investigates current practices and inherent shortcomings in Cyber Liability Insurance (CLI), highlighting critical gaps due to inconsistent risk assessment methodologies and weak incentives for cybersecurity excellence. We employ a mixed-method research design that combines a quantitative pilot study of 209 businesses, direct policy-purchasing experiments, and structured interviews with 26 Chief Information Security Officers (CISO). The findings reveal significant premium variations—from  600 t o n e a r l y 600 to nearly  7,000 for identical coverages—due primarily to inconsistent security assessments and policy complexities. Furthermore, empirical policy acquisitions demonstrated that multiple insurers approved coverage with minimal or no cybersecurity diligence, underscoring systemic issues in insurer incentive alignment. Based on these insights, we propose a structured framework advocating customized dynamic cyber liability policies with risk-based premiums, stan-dardized assessments, and incentives aligned with proactive cybersecurity practices. This framework promotes transparency, incentivizes better security practices, and outlines clear directions for future research, contributing toward a more responsive cyber-liability insurance market.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/LiZHL25,
+	author = {Jiliang Li and
+                  Yifan Zhang and
+                  Yu Huang and
+                  Kevin Leach},
+	title = {MalMixer: Few-Shot Malware Classification with Retrieval-Augmented
+                  Semi-Supervised Learning},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {268--288},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00024},
+	doi = {10.1109/EUROSP63326.2025.00024},
+	timestamp = {Wed, 15 Oct 2025 20:25:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/LiZHL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent growth and proliferation of malware have tested practitioners’ ability to promptly classify new samples according to malware families. In contrast to labor-intensive reverse engineering efforts, machine learning approaches have demonstrated increased speed and accuracy. However, most existing deep-learning malware family classifiers must be calibrated using a large number of samples that are painstakingly manually analyzed before training. Furthermore, as novel malware samples arise that are beyond the scope of the training set, additional reverse engineering effort must be employed to update the training set. The sheer volume of new samples found in the wild creates substantial pressure on practitioners’ ability to reverse engineer enough malware to adequately train modern classifiers.In this paper, we present MALMIXER, a malware family classifier using semi-supervised learning that achieves high accuracy with sparse training data. We present a domain-knowledge-aware data augmentation technique for malware feature representations, enhancing few-shot performance of semi-supervised malware family classification. We show that MALMIXER achieves state-of-the-art performance in few-shot malware family classification settings. Our research confirms the feasibility and effectiveness of lightweight, domain-knowledge-aware data augmentation methods for malware features and shows the capabilities of similar semi-supervised classifiers in addressing malware classification issues.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/WangXFZM25,
+	author = {Haoyuan Wang and
+                  Yue Xue and
+                  Xuan Feng and
+                  Chao Zhou and
+                  Xianghang Mi},
+	title = {Port Forwarding Services Are Forwarding Security Risks},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {289--303},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00025},
+	doi = {10.1109/EUROSP63326.2025.00025},
+	timestamp = {Wed, 08 Oct 2025 16:27:46 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/WangXFZM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We conduct the first comprehensive security study on two widely used port forwarding services (PFS), which emerge in recent years and make the web services deployed in internal networks available on the Internet along with better usability but less complexity compared to traditional techniques (e.g., NAT traversal techniques). Our study is made possible through a set of effective and efficient methodologies, which are designed to uncover the technical mechanisms of PFS, experiment attack scenarios for PFS protocols, automatically discover and snapshot port-forwarded websites (PFWs) at scale, and classify PFWs into well-observed categories. Leveraging these methodologies, we have observed the widespread adoption of PFS with millions of PFWs distributed across tens of thousands of ISPs worldwide. Furthermore, 32.31% PFWs have been classified into website categories that serve access to critical infrastructure or data, such as, web consoles for industrial control systems, IoT controllers, code repositories, and office automation systems. And 18.57% PFWs did not enforce any access control for external visitors. Also identified are two types of attacks inherent in the protocols of Oray (one well-adopted PFS provider), and the notable abuse of PFSes by malicious actors in activities such as malware distribution, botnet operation and phishing.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/Some25,
+	author = {Doli{\`{e}}re Francis Som{\'{e}}},
+	title = {{WWXSS:} Systematic Study, and Large-Scale Measurement of Cross-Site
+                  Scripting {(XSS)} in Web Workers Contexts},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {304--321},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00026},
+	doi = {10.1109/EUROSP63326.2025.00026},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/Some25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the increasing prevalence of progressive web applications, web workers have found themselves in the spotlight. Indeed, workers have drastically changed the attack surface of the Web. For instance, prior work has demonstrated unique flaws enabled by service workers, e.g., their computation, persistence, and caching capabilities or their ability to process in the background web push messages and synchronization with the backend. Regarding XSS (cross-site scripting), its treatment in web worker contexts by various Web stakeholders is hugely unsatisfactory and insufficient. Content injection attacks are still primarily framed from the perspective of webpages, including the defense mechanisms [53]. In this work, we undertake the first comprehensive security analysis of content injection attacks in all web workers, focusing on XSS. To do so, we start by defining a transparent threat model, considering that workers are dedicated to code execution but lack a DOM, meaning that the ways attackers infect them differ from web pages. Then, we devise a rigorous methodology we applied to a large-scale dataset of 4,757,077 workers collected from 56,945,781 websites in the wild. As a result, through extensive manual vetting, we confirmed different server and client XSS flavors in at least 89,945 workers affecting 31,619 sites. These vulnerabilities can be attributed to 131 unique frameworks/codebases. We reported our findings to the affected vendors. Many of them acknowledged the issue, and at the time of this writing, the problem has been fixed for at least 82.3% of the vulnerable workers. From a defensive side, we engaged in an extensive discussion with proposals. We demonstrated how to extend the Content Security Policy and the importScripts function implementations to allow the expression and support of finer-grained policies like nonces and hashes, which we believe can help thwart most of the workers’ XSS attacks discussed in this work. We submitted our proposal to the W3C Web Application Security Working Group, reinstating a discontinued discussion on extending nonces and hashes to JavaScript APIs and web workers.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/RostamipoorSP25,
+	author = {Maryam Rostamipoor and
+                  Aliakbar Sadeghi and
+                  Michalis Polychronakis},
+	title = {KubeKeeper: Protecting Kubernetes Secrets Against Excessive Permissions},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {322--338},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00027},
+	doi = {10.1109/EUROSP63326.2025.00027},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/RostamipoorSP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Kubernetes has become the dominant platform for managing containerized applications, but its native Secrets management mechanisms introduce security vulnerabilities, especially in environments where third-party applications may have excessive permissions. In this paper, we present KubeKeeper, a comprehensive solution for protecting Kubernetes Secrets against leakage due to excessive permissions. KubeKeeper automatically encrypts Secrets and ensures that only explicitly authorized Pods can access their decrypted form. This is achieved by integrating with Kubernetes’ admission control framework to transparently enforce access policies, without requiring changes to application code and with minimal integration effort into existing cluster infrastructure. We evaluated KubeKeeper on a diverse set of 498 Kubernetes applications and demonstrate that it successfully protects Secrets against all identified excessive permissions, without introducing performance degradation during execution or any significant overhead during Pod creation and deployment.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/XuXHCMZ25,
+	author = {Haoxuan Xu and
+                  Jia Xiang and
+                  Zhen Huang and
+                  Guoxing Chen and
+                  Yan Meng and
+                  Haojin Zhu},
+	title = {Latte: Layered Attestation for Portable Enclaved Applications},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {339--354},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00028},
+	doi = {10.1109/EUROSP63326.2025.00028},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/XuXHCMZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Trusted Execution Environment (TEE) has become increasingly popular in privacy-protected cloud computing, and its rapid development has led to the availability of various heterogeneous TEE platforms on cloud servers. To facilitate portable TEE applications on heterogeneous TEE platforms, portable languages or intermediate representations (IRs) with platform-dependent TEE runtimes are adopted. However, existing remote attestation solutions for portable TEE applications follow a nested attestation pattern, i.e., attesting only the TEE runtime and relying on the TEE runtime to measure the loaded portable application, leading to potential security issues. On the other hand, directly packing the TEE runtime and the portable application into an enclave for secure attestation undermines the portability of the portable TEE applications.In this paper, we introduce the concept of portable identities to identify portable TEE applications, and propose a layered attestation framework, Latte, achieving both security and portability in attesting portable TEE applications. We provide a prototype implementation of Latte to validate its practicality, with WebAssembly as the portable IR, and Intel SGX and RISC-V Penglai as the exemplar heterogeneous TEEs. The evaluation demonstrates that Latte introduces minimal performance overhead compared with the nested attestation pattern.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/GerettoJGB25,
+	author = {Elia Geretto and
+                  Andrea Jemmett and
+                  Cristiano Giuffrida and
+                  Herbert Bos},
+	title = {LibAFLGo: Evaluating and Advancing Directed Greybox Fuzzing},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {355--373},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00029},
+	doi = {10.1109/EUROSP63326.2025.00029},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/GerettoJGB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While greybox fuzzing is routinely applied in production environments with great success, directed greybox fuzzing has struggled to gain real-world adoption—despite the great (intuitive) promise and the many optimizations proposed in literature. In practice, directed fuzzers struggle for three critical issues. First, popular implementations build on and compare to ancient baselines, often derived from AFLGo. Unfortunately, none of the optimizations that are essential for performance in modern greybox fuzzers are available in these baselines. As a result, we find reported improvements in directed fuzzing are often only "imaginary" and do not lead to better performance on a modern baseline. Second, directed fuzzing evaluations commonly ignore or misinterpret important factors affecting fuzzing overhead—such as build times and timeouts. As design decisions now build on unreliable data, we find the directed fuzzers perform worse than expected in practice. Third, while almost all directed fuzzers rely on (expensive) analysis stacks, such as points-to and reachability analysis components, they often opt for very different implementations. Since these implementations have their own unique benefits and drawbacks, we find performance differences of directed fuzzers are frequently due to these components rather than the proposed directed fuzzing optimization.In this paper, we investigate the practical impact of these issues by means of an analysis and evaluation of a representative set of popular directed greybox fuzzers. As a way forward, we then present LibAFLGo, a modular directed fuzzing framework that addresses all three issues and allows one to directly compare different directed fuzzing policies on top of a modern fuzzing stack. Our experimental results on state-of-the-art directed fuzzing policies provide two main insights. First, the original AFLGo policies outperform more recent directed fuzzing policies when testing on a modern fuzzing stack. Second, none of the directed fuzzing policies can favorably compete with (nondirected) LibAFL, which scored better overall performance across benchmarks. As such, the quest for efficient directed fuzzing policies must continue.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/SchluterT25,
+	author = {Till Schl{\"{u}}ter and
+                  Nils Ole Tippenhauer},
+	title = {PreFence: {A} Fine-Grained and Scheduling-Aware Defense Against Prefetching-Based
+                  Attacks},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {374--394},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00030},
+	doi = {10.1109/EUROSP63326.2025.00030},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/SchluterT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Speculative loading of memory, called hardware prefetching, is common in modern CPUs and may cause microarchitectural side-channel vulnerabilities. As prior work has shown, prefetching can be exploited to bypass process isolation and leak secrets. However, to this date, no effective and efficient countermeasure has been presented that secures software on affected systems. Often, disabling prefetching permanently is considered the only reasonable defense, despite the significant performance penalties this entails.In this work, we propose PreFence, a fine-grained and scheduling-aware defense against prefetching-based attacks for any platform where the prefetcher can be disabled. PreFence extends the process scheduler to be aware of security requirements of individual processes and to manage the prefetcher’s state to protect against malicious parallel processes, even on SMT-enabled platforms. This allows us to efficiently disable the prefetcher only during security-critical operations, with a single system call. Library and application developers can protect their code with minimal changes, and users can protect entire legacy applications using a wrapper program.We implement our countermeasure for an x86 64 and an ARM processor. We evaluate PreFence on two attacks from prior work and find that it reliably stops prefetch leakage with low performance overhead (less than 3%) on the vulnerable functions. In addition, we observe that PreFence causes only negligible performance impact when no security-relevant code is executed. Finally, we evaluate the performance of a real-world web-server application that uses PreFence to protect security-critical code for HTTPS handling. Compared to disabling the prefetcher permanently, we find that our countermeasure allows the application to significantly benefit from the prefetcher (running up to 15.8% (Intel) and 7.2% (ARM) faster on average), while at the same time achieving the same security.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BolcskeiJWR25,
+	author = {Matej B{\"{o}}lcskei and
+                  Patrick Jattke and
+                  Johannes Wikner and
+                  Kaveh Razavi},
+	title = {Rubicon: Precise Microarchitectural Attacks with Page-Granular Massaging},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {395--410},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00031},
+	doi = {10.1109/EUROSP63326.2025.00031},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BolcskeiJWR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Microarchitectural attacks like Rowhammer and Spectre rely on precisely targeting specific memory page frames despite the inherent unpredictability of memory allocation. Due to the lack of a generic mechanism to accurately place the target data in the pages of interest, these attacks resort to spraying their target or scanning the entire physical memory for it. These approaches, however, suffer from unreliability and inefficiency. In contrast, the deterministic behavior of page allocators presents an opportunity to enhance existing attacks and enable new ones.This paper introduces Rubicon, a novel technique for page-granular physical memory massaging within the Linux kernel’s Zoned Buddy Allocator (ZBA). Rubicon leverages three new primitives that enable placing a page frame at the head of any chosen ZBA free list, ensuring it is prioritized for allocation regardless of its initial state or per-CPU freelist association. Using Rubicon, we build the first deterministic privilege escalation Rowhammer exploit on x86 with a success rate of 100%. Our integration of Rubicon into a recent Spectre attack shows that the root hash of /etc/shadow can now be leaked in 27.8 and 9.5 seconds on AMD and Intel systems — a 6.8× and 284× speedup over the original attack, respectively. We also propose and evaluate practical mitigations for Rubicon, which limit page movement between ZBA lists with negligible performance and fragmentation impact.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BehnerEP25,
+	author = {Eva{-}Maria C. Behner and
+                  Steffen Enders and
+                  Elmar Padilla},
+	title = {SoK: No Goto, No Cry? The Fairy Tale of Flawless Control-Flow Structuring},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {411--431},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00032},
+	doi = {10.1109/EUROSP63326.2025.00032},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BehnerEP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Decompilers play a crucial role in the detailed analysis of malware or firmware, particularly because control-flow structuring allows the recovery of high-level code that is more readable to human analysts. Despite the ongoing debate over their usage of gotos to work around constraints during control-flow structuring, pattern-matching approaches remain prevalent among both commercial and open-source decompilers. With the emergence of pattern-independent restructuring techniques, various attempts have been made to overcome readability limitations, especially concerning the use of gotos. However, despite these advances, recent approaches often fail to thoroughly address several inherent challenges of control-flow structuring, thereby affecting output quality or practicality.In this paper, we systematize the intrinsic challenges of control-flow structuring that every approach must address. In addition, we review existing methods, comparing them, while highlighting both their advantages and limitations with respect to these challenges. Specifically, we emphasize the practicability issues of current pattern-independent restructuring techniques and discuss whether and how future methods might overcome them. Finally, we explore the theoretical potential to mitigate some of these challenges by suggesting methodology ideas for various aspects of control-flow structuring. Overall, this paper enables other researchers to make informed decisions when developing or enhancing control-flow structuring methods, thereby preventing negative side-effects arising from the interdependence of challenges.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/NezhadHEMY25,
+	author = {Mahshid Mehr Nezhad and
+                  Feng Hao and
+                  Gregory Epiphaniou and
+                  Carsten Maple and
+                  Timur Yunusov},
+	title = {SoK: Security of {EMV} Contactless Payment Systems},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {432--457},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00033},
+	doi = {10.1109/EUROSP63326.2025.00033},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/NezhadHEMY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The widespread adoption of EMV (Europay, Mastercard, and Visa) contactless payment systems has greatly improved convenience for both users and merchants. However, this growth has also exposed significant security challenges. This SoK provides a comprehensive analysis of security vulnerabilities in EMV contactless payments, particularly within the open-loop systems used by Visa and Mastercard. We categorize attacks into seven attack vectors across three key areas: application selection, cardholder authentication, and transaction authorization. We replicate the attacks on Visa and Mastercard protocols using our experimental platform to determine their practical feasibility and offer insights into the current security landscape of contactless payments. Our study also includes a detailed evaluation of the underlying protocols, along with a comparative analysis of Visa and Mastercard, highlighting vulnerabilities and recommending countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/ArapinisDRRZ25,
+	author = {Myrto Arapinis and
+                  Vincent Danos and
+                  Ma{\"{\i}}wenn Racouchot and
+                  David A. R. Robin and
+                  Thomas Zacharias},
+	title = {Attacking and Fixing the Android Protected Confirmation Protocol},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {458--479},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00034},
+	doi = {10.1109/EUROSP63326.2025.00034},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/ArapinisDRRZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Android Protected Confirmation (APC) is an authentication protocol designed by Google. It leverages the extra security of the Trusted Execution Environment (TEE) to secure transactions even in the presence of a compromised OS. The intended security guarantee for APC is that if a transaction has been signed under APC, then the user must have previously given its explicit consent, even if an attacker has gained root access to the victim’s Android OS. In this paper, we present a security analysis of APC in the Universal Composability (UC) framework. We uncover two attacks on the design of the protocol which allow a root adversary to issue transactions without the user consenting to them. We provide an attack implementation on a Google Pixel phone, and propose light-weight fixes. Finally, we specify the ideal UC functionality capturing the intended security guarantees for APC, and prove that the fixed protocol UC-realizes it.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/FanKLTZ25,
+	author = {Lei Fan and
+                  Jonathan Katz and
+                  Zhenghao Lu and
+                  Phuc Thai and
+                  Hong{-}Sheng Zhou},
+	title = {Best-Possible Unpredictable Proof-of-Stake: An Impossibility and a
+                  Practical Design},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {480--503},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00035},
+	doi = {10.1109/EUROSP63326.2025.00035},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/FanKLTZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The proof-of-stake (PoS) protocols aim to reduce the unnecessary computing power waste seen in Bitcoin. Various practical and provably secure designs have been proposed, like Ouroboros Praos (Eurocrypt 2018) and Snow White (FC 2019). However, the essential security property of unpredictability in these protocols remains insufficiently explored. This paper delves into this property in the cryptographic setting to achieve the "best possible" unpredictability for PoS protocols.We first present an impossibility result for all PoS protocols under the single-extension design framework, where each honest player extends one chain per round. The state-of-the-art permissionless PoS protocols (e.g., Praos, Snow White, and more), are all under this single-extension framework. Our impossibility result states that, if a single-extension PoS protocol achieves the best possible unpredictability, then this protocol cannot be proven secure unless more than 73% of stake is honest.To overcome this impossibility, we introduce a new design framework called multi-extension PoS, allowing each honest player to extend multiple chains using greedy strategy in a round. This strategy allows us to construct a class of PoS protocols that achieve the best possible unpredictability. Additionally, we design a new tiebreak rule for the multi-extension protocol to choose the best chain that can be extended faster, ensuring that the adversary cannot slow-down the chain growth of honest players. It is noteworthy that these protocols can be proven secure, assuming a much smaller fraction (e.g., 57%) of stake to be honest.For a comprehensive security analysis in the cryptographic setting, we develop several new techniques. Analyzing chain growth becomes highly non-trivial as players can extend multiple chains. We introduce a new analysis framework using the Markov chain to assess the chain growth of a multi-extension protocol. To prove the common prefix property, we introduce a concept called "virtual chains" and present a reduction from the regular version of the common prefix to "common prefix w.r.t. virtual chains."}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/SarencheTMSP25,
+	author = {Roozbeh Sarenche and
+                  Ertem Nusret Tas and
+                  Barnab{\'{e}} Monnot and
+                  Caspar Schwarz{-}Schilling and
+                  Bart Preneel},
+	title = {Commitment Attacks on Ethereum's Reward Mechanism},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {504--526},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00036},
+	doi = {10.1109/EUROSP63326.2025.00036},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/SarencheTMSP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Validators in permissionless, large-scale blockchains, such as Ethereum, are typically payoff-maximizing, rational actors. Ethereum relies on in-protocol incentives, like rewards for correct and timely votes, to induce honest behavior and secure the blockchain. However, external incentives, such as the block proposer’s opportunity to capture maximal extractable value (MEV), may tempt validators to deviate from honest protocol participation.We show a series of commitment attacks on LMD GHOST, a core part of Ethereum’s consensus mechanism. We demonstrate how a single adversarial block proposer can orchestrate long-range chain reorganizations by manipulating Ethereum’s reward system for timely votes. These attacks disrupt the intended balance of power between proposers and voters: by leveraging credible threats, the adversarial proposer can coerce voters from previous slots into supporting blocks that conflict with the honest chain, enabling a chain reorganization.In response, we introduce a novel reward mechanism that restores the voters’ role as a check against proposer power. Our proposed mitigation is fairer and more decentralized – not only in the context of these attacks – but also practical for implementation in Ethereum.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BultelCJLN25,
+	author = {Xavier Bultel and
+                  C{\'{e}}line Chevalier and
+                  Charl{\`{e}}ne Jojon and
+                  Diandian Liu and
+                  Benjamin Nguyen},
+	title = {Cryptographic Commitments on Anonymizable Data},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {527--548},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00037},
+	doi = {10.1109/EUROSP63326.2025.00037},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BultelCJLN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Local Differential Privacy (LDP) mechanisms consist of (locally) adding controlled noise to data in order to protect the privacy of their owner. In this paper, we introduce a new cryptographic primitive called LDP commitment. Usually, a commitment ensures that the committed value cannot be modified before it is revealed. In the case of an LDP commitment, however, the value is revealed after being perturbed by an LDP mechanism. Opening an LDP commitment therefore requires a proof that the mechanism has been correctly applied to the value, to ensure that the value is still usable for statistical purposes. We also present a security model for this primitive, in which we define the hiding and binding properties. Finally, we present a concrete scheme for an LDP staircase mechanism (generalizing the randomized response technique), based on classical cryptographic tools and standard assumptions. We provide an implementation in Rust that demonstrates its practical efficiency (the generation of a commitment requires just a few milliseconds).On the application side, we show how our primitive can be used to ensure simultaneously privacy, usability and traceability of medical data when it is used for statistical studies in an open science context. We consider a scenario where a hospital provides sensitive patients data signed by doctors to a research center after it has been anonymized, so that the research center can verify both the provenance of the data (i.e. verify the doctors’ signatures even though the data has been noised) and that the data has been correctly anonymized (i.e. is usable even though it has been anonymized).}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/MaHHZWW25,
+	author = {Kai Ma and
+                  Ningyu He and
+                  Jintao Huang and
+                  Bosi Zhang and
+                  Ping Wu and
+                  Haoyu Wang},
+	title = {Cybersquatting in Web3: The Case of {NFT}},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {549--564},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00038},
+	doi = {10.1109/EUROSP63326.2025.00038},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/MaHHZWW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybersquatting refers to the practice where attackers register a domain name similar to a legitimate one to confuse users for illegal gains. With the growth of the Non-Fungible Token (NFT) ecosystem, there are indications that cybersquatting tactics have evolved from targeting domain names to NFTs. This paper presents the first in-depth measurement study of NFT cybersquatting. By analyzing over 220K NFT collections with over 150M NFT tokens, we have identified 8,019 cybersquatting NFT collections targeting 654 popular NFT projects. Through systematic analysis, we discover and characterize seven distinct squatting tactics employed by scammers. We further conduct a comprehensive measurement study of these cybersquatting NFT collections, examining their metadata, associated digital asset content, and social media status. Our analysis reveals that these NFT cybersquatting activities have resulted in a significant financial impact, with over 670K victims affected by these scams, leading to a total financial exploitation of $59.26 million. Our findings demonstrate the urgency to identify and prevent NFT squatting abuses.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/HafizYSPOMC25,
+	author = {Syed Mahbub Hafiz and
+                  Bahattin Yildiz and
+                  Marcos A. Simpl{\'{\i}}cio Jr. and
+                  Thales B. Paiva and
+                  Henrique S. Ogawa and
+                  Gabrielle De Micheli and
+                  Eduardo Lopes Cominetti},
+	title = {Incompleteness in Number-Theoretic Transforms: New Tradeoffs and Faster
+                  Lattice-Based Cryptographic Applications},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {565--584},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00039},
+	doi = {10.1109/EUROSP63326.2025.00039},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/HafizYSPOMC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Lattices are the basis of most NIST-recommended post-quantum cryptography (PQC) schemes, required to thwart the threat posed by the eventual construction of large-scale quantum computers. At the same time, lattices enable more advanced cryptographic constructions, such as fully homomorphic encryption (FHE), which is increasingly used for privacy-preserving applications like machine learning. This work delves into the efficiency and trade-off assessment of polynomial multiplication algorithms and their applications to PQC, FHE, and other schemes. Such algorithms are at the core of lattice-based cryptography and may become a critical bottleneck when deploying PQC-and FHE-based solutions on resource-constrained devices. We propose a formal analysis of so-called incompleteness in the Number Theoretic Transform (NTT). Although this concept is not new, our systematization shows how to optimize polynomial multiplication in quotient rings, considering factors such as the degree of incompleteness, the associated prime moduli, constraints of the target platform, and target security level. Besides efficiency, we formally show that the systematized family of incomplete NTT variants supports a larger set of prime moduli. This property enables new trade-offs for algorithms like the FIPS-approved module-lattice-based key encapsulation mechanism (ML-KEM) and faster amortized bootstrapping in FHE schemes. Our results include shorter ciphertexts in ML-KEM with only a modest hit in performance and a 6 – 42% performance boost in the NTT computation of a state-of-the-art FHE solution.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/KimuraIMSI25,
+	author = {Hayato Kimura and
+                  Ryoma Ito and
+                  Kazuhiko Minematsu and
+                  Shogo Shiraki and
+                  Takanori Isobe},
+	title = {Not in The Prophecies: Practical Attacks on Nostr},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {585--606},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00040},
+	doi = {10.1109/EUROSP63326.2025.00040},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/KimuraIMSI25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Distributed social networking services (SNSs) recently received significant attention as an alternative to traditional, centralized SNSs, which have inherent limitations on user privacy and freedom. We provide the first in-depth security analysis of Nostr, an open-source, distributed SNS protocol developed in 2019 with more than 1.1 million registered users. We investigate the specification of Nostr and the client implementations and present a number of practical attacks allowing forgeries on various objects, such as encrypted direct messages (DMs), by a malicious user or a malicious server. Even more, we show a confidentiality attack against encrypted DMs by a malicious user exploiting a flaw in the link preview mechanism and the CBC malleability. Our attacks are due to cryptographic flaws in the protocol specification and client implementation, some of which in combination elevate the forgery attack to a violation of confidentiality. We verify the practicality of our attacks via Proof-of-Concept implementations and discuss how to mitigate them.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/DurakLLM25,
+	author = {F. Bet{\"{u}}l Durak and
+                  Kim Laine and
+                  Simon Langowski and
+                  Radames Cruz Moreno},
+	title = {Sandi: {A} System for Accountability},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {607--630},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00041},
+	doi = {10.1109/EUROSP63326.2025.00041},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/DurakLLM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present a system, Sandi, for creating trust through accountability. Concretely, we focus on online communication scenarios, where the communicating parties do not know each other, yet would benefit from a degree of initial trust. Sandi can be seen as a reputation system that measures bad behavior, with strong integrity protections and resistance to manipulation. Unlike most reputation systems, Sandi is entirely based on "downvotes" and therefore requires strong privacy guarantees to prevent retaliation. It utilizes a ticket-based reporting mechanism to limit who can report. We also prove that Sandi incentivizes good behavior in a well-defined sense.Sandi is by design unidirectional, so that message senders have Sandi scores and receivers can report them for inappropriate communication, but it is designed to benefit both senders and receivers. Senders benefit, as receivers are more likely to react to communication with the added trust signal. Receivers benefit from seeing senders’ scores, allowing them to make more informed decisions about which senders to trust.Receivers do not need registered accounts and neither senders nor receivers need long-term keys. Sandi guarantees score integrity, communication privacy, reporter privacy to protect reporting receivers, and sender unlinkability. Sandi can be implemented on top of any communication system that allows for small binary data transfer.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/AgarwalE25,
+	author = {Archita Agarwal and
+                  Zachary Espiritu},
+	title = {Sequentially Consistent Concurrent Encrypted Multimaps},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {631--654},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00042},
+	doi = {10.1109/EUROSP63326.2025.00042},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/AgarwalE25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Encrypted data structures are essential for designing efficient encrypted search algorithms and secure databases. However, a critical aspect that has not been adequately addressed is the concurrent nature of modern databases, which allow multiple operations to be executed simultaneously. Agarwal, Kamara, and Moataz (Asiacrypt 2024) recently initiated the study of concurrent encrypted data structures and introduced formalisms for their design and analysis.Building on their foundational work, we adapt their security definitions to support sequential consistency instead of linearizability. While linearizability offers a strong correctness guarantee by ensuring operations appear to occur instantaneously, sequential consistency allows operations to be executed in a consistent order without immediate synchronization across clients, making it more efficient for concurrent environments. We present a new concurrent encrypted multimap (EMM), denoted as SCM, which achieves sequential consistency and provides significant improvements in both asymptotic and empirical efficiency compared to their linearizable EMM scheme, TST.Additionally, we develop a benchmarking suite designed to assess the performance of concurrent EMMs, extending the widely used YCSB benchmark to accommodate multimaps that allow multiple values to be associated with a single key. Our results demonstrate that SCM outperforms TST across various workloads and datasets, especially as the number of concurrent operations increases. In our experiments with 16 concurrent clients, SCM has up to 357× faster P95 read latency (with the best read performance as the overall percentage of reads decreases) and up to 69× faster P95 write latency (with the best write performance as the percentage of writes approaches 50%) than TST, demonstrating SCM effectively balances efficiency and correctness.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/ChevalierLMP25,
+	author = {C{\'{e}}line Chevalier and
+                  Guirec Lebrun and
+                  Ange Martinelli and
+                  J{\'{e}}r{\^{o}}me Pl{\^{u}}t},
+	title = {The Art of Bonsai: How Well-Shaped Trees Improve the Communication
+                  Cost of {MLS}},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {655--676},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00043},
+	doi = {10.1109/EUROSP63326.2025.00043},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/ChevalierLMP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Messaging Layer Security (MLS) is a Secure Group Messaging protocol that uses for its handshake a binary tree – called a Ratchet Tree – in order to reach a logarithmic communication cost in the number of group members. This Ratchet Tree represents users as its leaves; therefore any change in the group membership results in adding or removing a leaf in the tree. MLS consequently implements what we call a tree evolution mechanism, consisting of a user add algorithm – determining where to insert a new leaf – and a tree expansion process – stating how to increase the size of the tree when no space is available for a new user. The tree evolution mechanism currently used by MLS is designed so that it naturally left-balances the Ratchet Tree. However, such a tree structure is often quite inefficient in terms of communication cost. Furthermore, one may wonder whether the binary Ratchet Tree has a degree optimized for the features of MLS.Therefore, we study in this paper how to improve the communication cost of the handshake in MLS – realized through an operation called a commit – by considering both the tree evolution mechanism and the tree degree used for the Ratchet Tree. To do so, we determine the tree structure that optimizes its communication cost and we propose algorithms for both the user add and the tree expansion processes, that allow to remain close to that optimal structure and thus to have a communication cost as close as possible to the optimum. We also find out the Ratchet Tree degree that is best suited to a given set of parameters induced by the encryption scheme used by MLS. This study shows that when using classical (i.e. pre-quantum) ciphersuites, a binary tree is indeed the most appropriate Ratchet Tree; nevertheless, with post-quantum algorithms, it generally becomes more interesting to use instead a ternary tree.Our improvements do not change the TreeKEM protocol and are easy to implement. With parameter sets corresponding to practical ciphersuites, they reduce TreeKEM’s communication cost by 5 to 10%. In particular, the gain of 10% appears in the post-quantum setting – when both an optimized tree evolution mechanism and a ternary tree are necessary –, which is precisely the context where any optimization of the protocol’s communication cost is welcome, due to the large bandwidth of PQ encrypted communication.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BandaraPGKVTV25,
+	author = {Vinuri Bandara and
+                  Stijn Pletinckx and
+                  Ilya Grishchenko and
+                  Christopher Kruegel and
+                  Giovanni Vigna and
+                  Juan Tapiador and
+                  Narseo Vallina{-}Rodriguez},
+	title = {Beneath the Surface: An Analysis of {OEM} Customizations on the Android
+                  {TLS} Protocol Stack},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {677--700},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00044},
+	doi = {10.1109/EUROSP63326.2025.00044},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BandaraPGKVTV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The open-source nature of the Android Open Source Project (AOSP) allows Original Equipment Manufacturers (OEMs) to customize the Android operating system, contributing to what is known as Android fragmentation. Google has implemented the Compatibility Definition Document (CDD) and the Compatibility Test Suite (CTS) to ensure the integrity and security of the Android ecosystem. However, the effectiveness of these policies and measures in warranting OEM compliance remains uncertain. This paper empirically studies for the first time the nature of OEM customizations in the Android TLS protocol stack, and their security implications on user-installed mobile apps across thousands of Android models. We find that approximately 80% of the analyzed Android models deviate from the standard AOSP TLS codebase and that OEM customizations often involve code changes in functions used by app developers for enhancing TLS security like end-point and certificate verification. Our analysis suggests that these customizations are likely influenced by factors such as manufacturers’ supply chain dynamics and patching prioritization tactics, including the need to support legacy components. We conclude by identifying potential root causes and emphasizing the need for stricter policy enforcement, better supply chain controls, and improved patching processes across the ecosystem.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/WagnerBBZWH25,
+	author = {Eric Wagner and
+                  Frederik Basels and
+                  Jan Bauer and
+                  Till Zimmermann and
+                  Klaus Wehrle and
+                  Martin Henze},
+	title = {Caiba: Multicast Source Authentication for {CAN} Through Reactive
+                  Bit Flipping},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {710--719},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00045},
+	doi = {10.1109/EUROSP63326.2025.00045},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/WagnerBBZWH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Controller Area Networks (CANs) are the back-bone for reliable intra-vehicular communication. Recent cyberattacks have, however, exposed the weaknesses of CAN, which was designed without any security considerations in the 1980s. Current efforts to retrofit security via intrusion detection or message authentication codes are insufficient to fully secure CAN as they cannot adequately protect against masquerading attacks, where a compromised communication device, a so-called electronic control units, imitates another device. To remedy this situation, multicast source authentication is required to reliably identify the senders of messages. In this paper, we present Caiba, a novel multicast source authentication scheme specifically designed for communication buses like CAN. Caiba relies on an authenticator overwriting authentication tags on-the-fly, such that a receiver only reads a valid tag if not only the integrity of a message but also its source can be verified. To integrate Caiba into CAN, we devise a special message authentication scheme and a reactive bit overwriting mechanism. We achieve interoperability with legacy CAN devices, while protecting receivers implementing the AUTOSAR SecOC standard against masquerading attacks without communication overhead or verification delays.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/LipphardtFG25,
+	author = {Friedemann Lipphardt and
+                  Anja Feldmann and
+                  Devashish Gosain},
+	title = {Can You Hear Me? {A} First Study of VoIP Censorship Techniques in
+                  Saudi Arabia and the {UAE}},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {720--736},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00046},
+	doi = {10.1109/EUROSP63326.2025.00046},
+	timestamp = {Sat, 06 Sep 2025 20:31:28 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/LipphardtFG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Internet censorship is a well-explored area, typically focusing on Web censorship enacted by powerful nation-states like China and Russia. In this paper, we diverge from the norm and study the unexplored VoIP censorship prevalent in the Middle East for over a decade. We present the first research analyzing the VoIP filtering mechanics deployed nationwide. Based on extensive on-the-ground experiments, our investigation reveals novel censorship techniques for distinctly filtering VoIP traffic originating from specific apps.We meticulously analyze the VoIP traffic of nine popular apps and reveal the presence of sophisticated "middleboxes" placed within the local ISPs. These middleboxes possess the unique capability to selectively block the calling facility, leaving the rest of the apps’ features, such as texting and media sharing, completely unhindered. Unlike traditional Web filtering techniques that often require inspecting DNS and HTTP(s) traffic, our research demonstrates that the middlebox scrutinizes the STUN protocol requests and response packets to individually identify the application-specific VoIP call flow. Our analysis of widely used apps such as WhatsApp, Signal, and Facebook Messenger reveals a uniquely characterizable flow of STUN packets. We experimentally confirm that the censor exploits such fingerprints to block VoIP calls made through these apps. Furthermore, our experiments unveil additional nuances in censorship tactics. For apps like LINE, the middlebox searches for the VoIP server IP address in some selective packets. On a successful match, it drops the packets, effectively disrupting the call.In essence, our findings provide valuable insights into the intricate mechanisms of sophisticated VoIP filtering techniques, paving the way for more informed approaches to combating such censorship practices.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/SirosSP25,
+	author = {Ilja Siros and
+                  Dave Singel{\'{e}}e and
+                  Bart Preneel},
+	title = {CovFUZZ: Coverage-based fuzzer for 4G{\&}5G protocols},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {737--754},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00047},
+	doi = {10.1109/EUROSP63326.2025.00047},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/SirosSP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {4G and 5G represent the current cellular communication standards utilized daily by billions of users for various applications. Consequently, ensuring the security of 4G and 5G network implementations is critically important. This paper introduces an automated fuzzing framework designed to test the security of 4G and 5G Attach procedure implementations. Our framework provides a comprehensive solution for uplink and downlink fuzzing in 4G, as well as downlink fuzzing in 5G, while supporting fuzzing on all layers except the physical layer. To guide the fuzzing process, we introduce a novel algorithm that assigns probabilities to packet fields and adjusts these probabilities based on coverage information from the device-under-test (DUT). For cases where coverage information from the DUT is unavailable, we propose a novel methodology to estimate it. When evaluating our framework, we first run the random fuzzing experiments, where the mutation probabilities are fixed throughout the fuzzing, and give an insight into how those probabilities should be chosen to optimize the Random fuzzer to achieve the best coverage. Next, we evaluate the efficiency of the proposed coverage-based algorithms by fuzzing open-source 4G stack (srsRAN) instances and show that the fuzzer guided by our algorithm outperforms the optimized Random fuzzer in terms of DUT’s code coverage. In addition, we run fuzzing tests on 13 commercial off-the-shelf (COTS) devices. In total, we discovered vulnerabilities in 10 COTS devices and all of the srsRAN 4G instances.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/KlementBBCKSCK25,
+	author = {Felix Klement and
+                  Alessandro Brighente and
+                  Anup Kiran Bhattacharjee and
+                  Stefano Cecconello and
+                  Fernando Kuipers and
+                  Georgios Smaragdakis and
+                  Mauro Conti and
+                  Stefan Katzenbeisser},
+	title = {Endless Subscriptions: Open {RAN} is Open to {RIC} {E2} Subscription
+                  Denial of Service Attacks},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {755--770},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00048},
+	doi = {10.1109/EUROSP63326.2025.00048},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/KlementBBCKSCK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Telecommunication services are essential in ensuring the operation of numerous critical infrastructures. While mobile network security increased with the advancement of generations, emerging concepts such as the Open Radio Access Network (O-RAN) are transforming the traditional operation of Radio Access Networks (RANs). Novel concepts and technologies are finding their way into RANs with a focus on softwareization and virtualization. This increases the overall attack surface and introduces new attack vectors not necessarily found in traditional RANs. This paper shows that Denial of Service (DoS) attacks leveraging subscription mechanisms can compromise O-RAN implementations. We present a novel DoS attack targeting the Near Real-Time (Near-RT) RAN Intelligent Controller (RIC). By deploying a malicious xApp, we demonstrate how an adversary can flood the Near-RT RIC with excessive subscription requests, leading to service disruption. This attack exploits the lack of rate-limiting mechanisms within the Service Model (SM), a critical component of the Near-RT RIC responsible for handling E2 subscription requests. We systematically evaluate various attack scenarios and investigate the underlying vulnerabilities exposed. Furthermore, we propose and assess countermeasures to safeguard publicly accessible O-RAN systems from such threats.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BardhiJISLCK25,
+	author = {Enkeleda Bardhi and
+                  Chenxing Ji and
+                  Ali Imran and
+                  Muhammad Shahbaz and
+                  Riccardo Lazzeretti and
+                  Mauro Conti and
+                  Fernando Kuipers},
+	title = {O'MINE: {A} Novel Collaborative DDoS Detection Mechanism for
+                  Programmable Data-Planes},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {771--788},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00049},
+	doi = {10.1109/EUROSP63326.2025.00049},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BardhiJISLCK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The emergence of softwarized network devices, like programmable switches and smart NICs, has brought about new and advanced network functionalities. Intelligent decision-making becomes possible at line rate by offloading network functionality from the network control-plane to the programmable data-plane. In this paper, we offload fine-grained Distributed Denial of Service (DDoS) attack detection to the data-plane. The state-of-the-art in this regard, mainly aims to embed Machine Learning (ML) models into the data-plane without compromising on inference accuracy. Besides accuracy, we must consider multiple other factors, like traffic feature availability and false positive rates. To that end, we propose O’MINE: ONE MODEL IS NOT ENOUGH, a novel collaborative detection mechanism comprising lightweight ML models. This maximises the detection accuracy while keeping the false positive rate (FPR) low. We use three state-of-the-art datasets to evaluate the O’MINE algorithm and its ML models. Our results show that O’MINE can detect DDoS attacks with high accuracy (≈98% and ≈96% with full and scarce training data, respectively) and low FPR (≈0.22% and ≈0.72% with full and scarce training data, respectively), outperforming the state-of-the-art. Lastly, O’MINE only consumes a few device resources (≈6% of LUT and ≈4% of FF) on the Xlinx Alevo U250 FPGA we have used for inference at line rate.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/SteinbockTBSBLC25,
+	author = {Magdalena Steinb{\"{o}}ck and
+                  Jens Troost and
+                  Wilco Van Beijnum and
+                  Jan Seredynski and
+                  Herbert Bos and
+                  Martina Lindorfer and
+                  Andrea Continella},
+	title = {SoK: Hardening Techniques in the Mobile Ecosystem - Are We There Yet?},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {789--806},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00050},
+	doi = {10.1109/EUROSP63326.2025.00050},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/SteinbockTBSBLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Irrespective of the security and isolation guarantees offered by the mobile operating system, the Mobile Application Security Verification Standard (MASVS) recommends app developers to implement hardening techniques for self-protection—to prevent tampering and leakage, detect jailbreaks, etc. Despite regulations incentivize developers toward implementing self-protection, our understanding of the use of hardening techniques is still very limited—especially regarding differences, if any, between the two main mobile ecosystems. In this paper, we systematize knowledge on the use and analysis of hardening techniques, covering, for the first time, both Android and iOS apps.To this end, we present HALY, a framework to analyze the adoption of hardening techniques. Using HALY’s static and dynamic analysis, we analyze 2,646 popular apps available on both Android and iOS, and measure the prevalence of hardening techniques. Contrary to expectation, apps on iOS underperform in self-protection, implementing only half of the recommended hardening techniques compared to their Android counterparts—challenging the long-held belief that iOS is simply “more secure.” Equally surprising, while privacy-sensitive apps implement more self-protection, many apps implement hardening techniques on only one of the two OSes. Furthermore, as many common techniques are easy to individually bypass, the additional security is questionable. Overall, almost all apps implement some hardening techniques, but as many as 24.1% (Android) and 73.6% (iOS) implement fewer than half of the recommended ones, and we only found 26 apps on Android to implement all eight and only one app on iOS adopt all seven analyzed techniques.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/LiZCDCLYDQ25,
+	author = {Guancheng Li and
+                  Minghao Zhang and
+                  Jianjun Chen and
+                  Ge Dai and
+                  Pinji Chen and
+                  Huiming Liu and
+                  Yang Yu and
+                  Haixin Duan and
+                  Zhiyun Qian},
+	title = {The Danger of Packet Length Leakage: Off-path {TCP/IP} Hijacking Attacks
+                  Against Wireless and Mobile Networks},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {807--821},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00051},
+	doi = {10.1109/EUROSP63326.2025.00051},
+	timestamp = {Wed, 10 Sep 2025 14:09:50 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/LiZCDCLYDQ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To combat eavesdropping and injection attacks, wireless networks widely adopt encryption to provide confidentiality and integrity guarantees. In this paper, we present a novel and generic attack, termed LenOracle, which can hijack the TCP/UDP connections over encrypted wireless networks (e.g., 5G/4G/3G and Wi-Fi) via packet injections from the Internet. Due to the design nature of wireless networks and stream ciphers they used, the length of IP packets being transmitted can be acquired by radio sniffing. It thus provides a side channel for adversaries. We found that adversaries could utilize this side channel with TCP features to infer the presence of a connection, infer the protocol state (sequence number, acknowledge number) of the connection, and finally hijack TCP/IP connections over wireless networks. Through real-world experiments in commercial LTE networks and real Wi-Fi networks, we demonstrated that the LenOracle attack is practical and severe against both TCP and UDP connections. For the former, we successfully injected a fake short message into a victim TCP connection; For the latter, we were able to inject a fake DNS response into a UDP connection and poisoned the DNS cache of the victim device. Following the responsible disclosure policy, we have reported our findings and mitigation recommendations to GSMA and Wi-Fi Alliance. The GSMA acknowledged that the issue affects 5G/4G/3G, notified all its members (operators and vendors worldwide) of this issue, and highlighted the mitigation we proposed.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/FraserS25,
+	author = {Ashley Fraser and
+                  Steve Schneider},
+	title = {A Formal Security Analysis of Hyperledger AnonCreds},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {822--844},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00052},
+	doi = {10.1109/EUROSP63326.2025.00052},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/FraserS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In an anonymous credential system, users collect credentials from issuers, and can use their credentials to generate privacy-preserving identity proofs that can be shown to third-party verifiers. Since the introduction of anonymous credentials by Chaum in 1985, there has been promising advances with respect to system design, security analysis and real-world implementations of anonymous credential systems.In this paper, we examine Hyperledger AnonCreds, an anonymous credential system that was introduced in 2017 and is currently undergoing specification. Despite being implemented in deployment-ready identity system platforms, there is no formal security analysis of the Hyperledger AnonCreds protocol. We rectify this, presenting syntax and a security model for, and a first security analysis of, the Hyperledger AnonCreds protocol. In particular, we demonstrate that Hyperledger AnonCreds is correct, and satisfies notions of unforgeability and anonymity. We conclude with a discussion on the implications of our findings, highlighting the importance of rigorous specification efforts to support security evaluation of real-world cryptographic protocols.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/JohanssonKN25,
+	author = {Thomas Johansson and
+                  Mustafa Khairallah and
+                  Vu Nguyen},
+	title = {Efficient Authentication Protocols from the Restricted Syndrome Decoding
+                  Problem},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {845--860},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00053},
+	doi = {10.1109/EUROSP63326.2025.00053},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/JohanssonKN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we introduce an oracle version of the Restricted Syndrome Decoding Problem (RSDP) and propose novel authentication protocols based on the hardness of this problem. They follow the basic structure of the HB-family of authentication protocols and later improvements but demonstrate several advantages.An appropriate choice of multiplicative subgroup and ring structure gives rise to a very efficient hardware implementation compared to other Learning Parity with Noise based approaches. In addition, the new protocols also have lower key size, lower communication costs, and potentially better completeness/soundness compared to learning-based alternatives. This is appealing in the context of low-cost, low-powered authenticating devices such as radio frequency identification (RFID) systems. Lastly, we show that with additional assumptions, RSDP can be used to instantiate a Man-in-the-Middle secured authentication protocol.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/DaemenHMAK25,
+	author = {Joan Daemen and
+                  Seth Hoffert and
+                  Silvia Mella and
+                  Gilles Van Assche and
+                  Ronny Van Keer},
+	title = {Shaking up authenticated encryption},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {861--882},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00054},
+	doi = {10.1109/EUROSP63326.2025.00054},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/DaemenHMAK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Authenticated encryption (AE) is a cryptographic mechanism that allows communicating parties to protect the confidentiality and integrity of messages exchanged over a public channel, provided they share a secret key. In this work, we present new AE schemes leveraging the SHA- 3 standard functions SHAKE128 and SHAKE256, offering 128 and 256 bits of security strength, respectively, and their “Turbo” counterparts. They support session-based communication, where a ciphertext authenticates the sequence of messages since the start of the session. The chaining in the session allows decryption in segments, avoiding the need to buffer the entire deciphered cryptogram between decryption and validation. And, thanks to the collision resistance of (Turbo)SHAKE, they provide so-called CMT-4 committing security, meaning that they provide strong guarantees that a ciphertext uniquely binds to the key, plaintext and associated data. The AE schemes we propose have a unique combination of advantages. The most important are that 1) their security is based on the security claim of SHAKE, that has received a large amount of public scrutiny, that 2) they make use of the standard KECCAK-p permutation that not only receives more and more dedicated hardware support, but also allows competitive software-only implementations thanks to the TurboSHAKE instances, and that 3) they do not suffer from a 64-bit birthday bound like most AES-based schemes. Of independent interest, we introduce the deck cipher as the stateful counterpart of the deck function and the duplex cipher generalizing keyed duplex and harmonize their security notions. Finally, we provide an elegant solution for multi-layer domain separation.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/LeKWMAT25,
+	author = {Binh Minh Le and
+                  Jiwon Kim and
+                  Simon S. Woo and
+                  Kristen Moore and
+                  Alsharif Abuadbba and
+                  Shahroz Tariq},
+	title = {SoK: Systematization and Benchmarking of Deepfake Detectors in a Unified
+                  Framework},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {883--902},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00055},
+	doi = {10.1109/EUROSP63326.2025.00055},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/LeKWMAT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deepfakes have rapidly emerged as a serious threat to society due to their ease of creation and dissemination, triggering the accelerated development of detection technologies. However, many existing detectors rely on lab-generated datasets for validation, which may not prepare them for novel, real-world deepfakes. This paper extensively reviews and analyzes state-of-the-art deepfake detectors, evaluating them against several critical criteria. These criteria categorize detectors into 4 high-level groups and 13 fine-grained sub-groups, aligned with a unified conceptual framework we propose. This classification offers practical insights into the factors affecting detector efficacy. We evaluate the generalizability of 16 leading detectors across comprehensive attack scenarios, including black-box, white-box, and gray-box settings. Our systematized analysis and experiments provide a deeper understanding of deepfake detectors and their generalizability, paving the way for future research and the development of more proactive defenses against deepfakes.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/HellemansKRDCBPM25,
+	author = {Wouter Hellemans and
+                  Nada El Kassem and
+                  Md Masoom Rabbani and
+                  Edlira Dushku and
+                  Liqun Chen and
+                  An Braeken and
+                  Bart Preneel and
+                  Nele Mentens},
+	title = {{SPARK:} Secure Privacy-Preserving Anonymous Swarm Attestation for
+                  In-Vehicle Networks},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {903--922},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00056},
+	doi = {10.1109/EUROSP63326.2025.00056},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/HellemansKRDCBPM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, vehicles have evolved into cyberphysical autonomous systems that rely on sensor data from various sources within the vehicle. With the emergence of Vehicle-to-Everything (V2X) technology, the scope of the collaborative functionality in vehicles is now expanding to the inter-vehicular level. To support these modern capabilities, the complexity of the Electronic Control Units (ECUs) and the In-Vehicle Network (IVN) architecture is rapidly increasing. As a result, IVNs are now swarms of devices that communicate safety-critical data. Unfortunately, current vehicular networks lack security, opening the path to numerous cyberattacks. A typical solution for verifying the integrity of multiple devices is swarm attestation. However, in a typical IVN setting, only the Original Equipment Manufacturer (OEM) has access to the legitimate configuration of the ECUs and does not want to disclose this information due to intellectual property and security concerns. Therefore, state- of-the-art swarm attestation schemes, which do not provide privacy guarantees, are unsuitable for IVNs.This paper proposes Secure Privacy Preserving Anonymous Swarm Attestation for In-Vehicle Networks (SPARK), which builds upon a novel group signature scheme to enable privacy-preserving, anonymous, and traceable swarm attestation of IVNs. We validate SPARK through a proof-of-concept implementation using a standardized hardware Trusted Platform Module (TPM 2.0) and representative hardware platforms. The results demonstrate the real-world applicability of SPARK.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/ChengBTSG25,
+	author = {Yutong Cheng and
+                  Osama Bajaber and
+                  Saimon Amanuel Tsegai and
+                  Dawn Song and
+                  Peng Gao},
+	title = {CTINexus: Automatic Cyber Threat Intelligence Knowledge Graph Construction
+                  Using Large Language Models},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {923--938},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00057},
+	doi = {10.1109/EUROSP63326.2025.00057},
+	timestamp = {Wed, 10 Sep 2025 14:09:50 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/ChengBTSG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Textual descriptions in cyber threat intelligence (CTI) reports, such as security articles and news, are rich sources of knowledge about cyber threats, crucial for organizations to stay informed about the rapidly evolving threat landscape. However, current CTI knowledge extraction methods lack flexibility and generalizability, often resulting in inaccurate and incomplete knowledge extraction. Syntax parsing relies on fixed rules and dictionaries, while model fine-tuning requires large annotated datasets, making both paradigms challenging to adapt to new threats and ontologies. To bridge the gap, we propose CTINexus, a novel framework leveraging optimized in-context learning (ICL) of large language models (LLMs) for data-efficient CTI knowledge extraction and high-quality cybersecurity knowledge graph (CSKG) construction. Unlike existing methods, CTINexus requires neither extensive data nor parameter tuning and can adapt to various ontologies with minimal annotated examples. This is achieved through: (1) a carefully designed automatic prompt construction strategy with optimal demonstration retrieval for extracting a wide range of cybersecurity entities and relations; (2) a hierarchical entity alignment technique that canonicalizes the extracted knowledge and removes redundancy; (3) an long-distance relation prediction technique to further complete the CSKG with missing links. Our extensive evaluations using 150 real-world CTI reports collected from 10 platforms demonstrate that CTINexus significantly outperforms existing methods in constructing accurate and complete CSKG, highlighting its potential to transform CTI analysis with an efficient and adaptable solution for the dynamic threat landscape.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/CadetBMAH25,
+	author = {Xavier F. Cadet and
+                  Anastasia Borovykh and
+                  Mohammad Malekzadeh and
+                  Sara Ahmadi{-}Abhari and
+                  Hamed Haddadi},
+	title = {Deep Unlearn: Benchmarking Machine Unlearning for Image Classification},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {939--962},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00058},
+	doi = {10.1109/EUROSP63326.2025.00058},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/CadetBMAH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Machine unlearning (MU) aims to remove the influence of particular data points from the learnable parameters of a trained machine learning model. This is a crucial capability in light of data privacy requirements, trustworthiness, and safety in deployed models. MU is particularly challenging for deep neural networks (DNNs), such as convolutional nets or vision transformers, as such DNNs tend to memorize a notable portion of their training dataset. Nevertheless, the community lacks a rigorous and multifaceted study that looks into the success of MU methods for DNNs. In this paper, we investigate 18 state-of-the-art MU methods across various benchmark datasets and models, with each evaluation conducted over 10 different initializations, a comprehensive evaluation involving MU over 100K models. We show that, with the proper hyperparameters, Masked Small Gradients (MSG) and Convolution Transpose (CT), consistently perform better in terms of model accuracy and run-time efficiency across different models, datasets, and initializations, assessed by population-based membership inference attacks (MIA) and per-sample unlearning likelihood ratio attacks (U-LiRA). Furthermore, our benchmark highlights the fact that comparing a MU method only with commonly used baselines, such as Gradient Ascent (GA) or Successive Random Relabeling (SRL), is inadequate, and we need better baselines like Negative Gradient Plus (NG+) with proper hyperparameter selection.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/VasilatosMLAM25,
+	author = {Christoforos Vasilatos and
+                  Dunia J. Mahboobeh and
+                  Hithem Lamri and
+                  Manaar Alam and
+                  Michail Maniatakos},
+	title = {LLMPot: Dynamically Configured LLM-based Honeypot for Industrial Protocol
+                  and Physical Process Emulation},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {963--979},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00059},
+	doi = {10.1109/EUROSP63326.2025.00059},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/VasilatosMLAM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Industrial Control Systems (ICS) are extensively used in critical infrastructures ensuring efficient, reliable, and continuous operations. However, their increasing connectivity and addition of advanced features make them vulnerable to cyber threats, potentially leading to severe disruptions in essential services. In this context, honeypots play a vital role by acting as decoy targets within ICS networks, or on the Internet, helping to detect, log, analyze, and develop mitigations for ICS-specific cyber threats. Deploying ICS honeypots, however, is challenging due to the necessity of accurately replicating industrial protocols and device characteristics, a crucial requirement for effectively mimicking the unique operational behavior of different industrial systems. Additionally, the difficulty is increased by the substantial manual effort involved in replicating the PLC’s control logic. This is necessary to capture attacker traffic that seeks to interfere with critical infrastructure operations. In this paper, we propose LLMPot, a novel approach for designing honeypots in ICS networks harnessing the potency of Large Language Models (LLMs). LLMPot aims to provide a dynamic framework that can be used to optimize the creation of realistic honeypots with vendor-agnostic configurations and for various control logic, aiming to eliminate the manual effort and specialized knowledge traditionally required by existing strategies. We conducted extensive experiments focusing on a wide array of parameters, demonstrating that LLMPot can effectively create honeypot devices implementing different industrial protocols, PLC configurations, and diverse control logic.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/CapozziTWYDLCQ25,
+	author = {Gianluca Capozzi and
+                  Tong Tang and
+                  Jie Wan and
+                  Ziqi Yang and
+                  Daniele Cono D'Elia and
+                  Giuseppe Antonio Di Luna and
+                  Lorenzo Cavallaro and
+                  Leonardo Querzoni},
+	title = {On the Lack of Robustness of Binary Function Similarity Systems},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {980--1001},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00060},
+	doi = {10.1109/EUROSP63326.2025.00060},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/CapozziTWYDLCQ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Binary function similarity, which often relies on learning-based algorithms to identify what functions in a pool are most similar to a given query function, is a sought-after topic in different communities, including machine learning, software engineering, and security. Its importance stems from the impact it has in facilitating several crucial tasks, from reverse engineering and malware analysis to automated vulnerability detection. Whereas recent work cast light around performance on this long-studied problem, the research landscape remains largely lackluster in understanding the resiliency of the state-of-the-art machine learning models against adversarial attacks. As security requires to reason about adversaries, in this work we assess the robustness of such models through a simple yet effective black-box greedy attack, which modifies the topology and the content of the control flow of the attacked functions. We demonstrate that this attack is successful in compromising all the models, achieving average attack success rates of 57.06% and 95.81% depending on the problem settings (targeted and untargeted attacks). Our findings are insightful: top performance on clean data does not necessarily relate to top robustness properties, which explicitly highlights performance-robustness trade-offs one should consider when deploying such models, calling for further research.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/LuoC25,
+	author = {Kaijing Luo and
+                  Ka{-}Ho Chow},
+	title = {Harmless Backdoor-based Client-side Watermarking in Federated Learning},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1002--1020},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00061},
+	doi = {10.1109/EUROSP63326.2025.00061},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/LuoC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Protecting intellectual property (IP) in federated learning (FL) is increasingly important as clients contribute proprietary data to collaboratively train models. Model watermarking, particularly through backdoor-based methods, has emerged as a popular approach for verifying ownership and contributions in deep neural networks trained via FL. By manipulating their datasets, clients can embed a secret pattern, resulting in non-intuitive predictions that serve as proof of participation, useful for claiming incentives or IP co-ownership. However, this technique faces practical challenges: (i) client watermarks can collide, leading to ambiguous ownership claims, and (ii) malicious clients may exploit watermarks to manipulate model predictions for harmful purposes. To address these issues, we propose Sanitizer, a server-side method that ensures client-embedded backdoors can only be activated in harmless environments but not natural queries. It identifies subnets within client-submitted models, extracts backdoors throughout the FL process, and confines them to harmless, client-specific input subspaces. This approach not only enhances Sanitizer’s efficiency but also resolves conflicts when clients use similar triggers with different target labels. Our empirical results demonstrate that Sanitizer achieves near-perfect success verifying client contributions while mitigating the risks of malicious watermark use. Additionally, it reduces GPU memory consumption by 85% and cuts processing time by at least 5× compared to the baseline. Our code is open-sourced at https://hku-tasr.github.io/Sanitizer/.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/YoshidaSS25,
+	author = {Haruki Yoshida and
+                  Yuichi Sugiyama and
+                  Ryota Shioya},
+	title = {AceCov: Auxiliary Composite Edge Coverage for Fuzzing},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1021--1033},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00062},
+	doi = {10.1109/EUROSP63326.2025.00062},
+	timestamp = {Sat, 06 Sep 2025 20:31:29 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/YoshidaSS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security flaws in software, including bugs and vulnerabilities, can cause serious issues, and fuzzing has been extensively studied and employed to identify them. A typical fuzzer automatically generates test inputs and feeds back information obtained from executed programs for efficient software verification. As the feedback information, edge coverage, which is based on edge traversals in a control flow graph, is widely used. We focus on branches whose results change depending on the traversal of a particular edge in the control flow graph. In particular, we found that when a branch depends on a combination of multiple edge traversals, it is difficult for existing edge coverage to cover the branch outcome. Based on this observation, we propose a novel coverage metric for such branches: auxiliary composite-edge coverage (AceCov). AceCov works together with existing edge coverage to provide an auxiliary coverage metric only for branches such as the one described above, where the edge coverage does not cover the result. We implemented AceCov in AFL++ and evaluated it using FuzzBench and MAGMA. The evaluation results show a performance improvement of up to 3.36% and an average improvement of 1.19% over AFL++. We also identified four bugs that AFL++ failed to find.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/CasagrandeA25,
+	author = {Marco Casagrande and
+                  Daniele Antonioli},
+	title = {{CTRAPS:} {CTAP} Client Impersonation and {API} Confusion on {FIDO2}},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1034--1048},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00063},
+	doi = {10.1109/EUROSP63326.2025.00063},
+	timestamp = {Tue, 14 Oct 2025 19:35:20 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/CasagrandeA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {FIDO2 is a popular technology for single-factor and second-factor authentication. It is specified in an open standard including the WebAuthn and CTAP application layer protocols. We focus on CTAP which allows the communication between FIDO2 clients and authenticators. No prior work explored the CTAP Authenticator API which is a critical protocol-level attack surface as it deals with credential creation, deletion, and management. We address this gap by presenting the first security and privacy evaluation of the CTAP Authenticator API. We uncover two classes of CTAP protocol-level attacks we call CTRAPS.The client impersonation (CI) attacks exploit the lack of client authentication to tamper with FIDO2 authenticators. They include zero-click attacks capable of deleting FIDO2 credentials, including passkeys, without user interaction. The API confusion (AC) attacks abuse the lack of protocol API enforcements and confound FIDO2 authenticators, clients, and users into calling unwanted CTAP APIs while thinking they are calling legitimate ones. For example, a victim thinks is authenticating to a website, when they are deleting their credentials. The CTRAPS attacks are conducted either in proximity or remotely and are effective regardless of the underlying CTAP transport (USB, NFC, or BLE).We detail the eight vulnerabilities in the CTAP specification enabling the CTRAPS attacks. Seven of them are novel and include unauthenticated CTAP clients and trackable FIDO2 credentials. We release CTRAPS, an original toolkit to analyze CTAP and conduct the CTRAPS attacks. We confirm the attacks’ feasibility by exploiting six popular authenticators, including a FIPS-certified one, from Yubico, Feitian, SoloKeys, and Google, and ten widely used relying parties, such as Microsoft, Apple, GitHub, and Facebook. We discuss eight backward-compliant countermeasures to fix the attacks and their root causes. We responsibly disclosed our findings to the FIDO Alliance and the affected vendors.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/VinckJVV25,
+	author = {Jonas Vinck and
+                  Adriaan Jacobs and
+                  Alexios Voulimeneas and
+                  Stijn Volckaert},
+	title = {Divide and Conquer: Introducing Partial Multi-Variant Execution},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1049--1066},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00064},
+	doi = {10.1109/EUROSP63326.2025.00064},
+	timestamp = {Tue, 14 Oct 2025 19:35:21 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/VinckJVV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {After several decades of defensive research against the exploitation of memory errors, a wide range of techniques has been proposed, yet no silver bullet has been found. Multi-Variant eXecution (MVX) is one promising proposal for defending against a wide range of known and potentially unknown attacks. MVX systems run multiple program variants in parallel on the same inputs while monitoring their behavior and deduplicating their outputs. By constructing these program variants using automated software diversity techniques, we can ensure that the variants behave identically under normal operating conditions but diverge when attacked. The MVX system detects these divergences and reacts appropriately.State-of-the-art MVX systems have several fundamental problems that inhibit their real-world adoption. First, they often require full source code availability to construct variants and eliminate non-deterministic program behavior. Second, they incur significant resource overhead that linearly increases with the number of variants running in parallel.We propose Partial Multi-Variant eXecution (PMVX), a technique that can mitigate these problems by limiting the scope of MVX to certain well-delineated parts of a target application and by running the rest of the application in Single-Variant eXecution (SVX) mode. PMVX relaxes the source code availability requirement of traditional MVX systems and yields substantially reduced resource consumption while maintaining the strong security guarantees of these systems. However, PMVX implementations must address the non-trivial problem of ensuring all variants are in equivalent states whenever they switch from SVX to MVX mode.We designed and implemented a proof-of-concept PMVX system called FORTDIVIDE that solves this state-equivalency problem using state migration and resynchronization. We thoroughly evaluated the security and performance of our system as a whole, and of our state migration and synchro-nization mechanisms in isolation. We conclude that PMVX has great potential but needs to be applied with the utmost care since the added overhead of state resynchronization can quickly outweigh the benefits of running in SVX mode.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/AdilettaTDSI25,
+	author = {Andrew J. Adiletta and
+                  M. Caner Tol and
+                  Kemal Derya and
+                  Berk Sunar and
+                  Saad Islam},
+	title = {LeapFrog: The Rowhammer Instruction Skip Attack},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1067--1081},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00065},
+	doi = {10.1109/EUROSP63326.2025.00065},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/AdilettaTDSI25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Since its inception, Rowhammer exploits have rapidly evolved into increasingly sophisticated threats compromising data integrity and the control flow integrity of victim processes. Nevertheless, it remains a challenge for an attacker to identify vulnerable targets (i.e., Rowhammer gadgets), understand the outcome of the attempted fault, and formulate an attack that yields useful results.In this paper, we present a new type of Rowhammer gadget, called a LeapFrog gadget, which, when present in the victim code, allows an adversary to subvert code execution to bypass a critical piece of code (e.g., authentication check logic, encryption rounds, padding in security protocols). The LeapFrog gadget manifests when the victim code stores the Program Counter (PC) value in the user or kernel stack (e.g., a return address during a function call) which, when tampered with, repositions the return address to a location that bypasses a security-critical code pattern.This research also presents a systematic process to identify LeapFrog gadgets. This methodology enables the automated detection of susceptible targets and the determination of optimal attack parameters. We first show the attack on a decision tree algorithm to show the potential implications. Secondly, we employ the attack on OpenSSL to bypass the encryption and reveal the plaintext. We then use our tools to scan the Open Quantum Safe library and report on the number of LeapFrog gadgets in the code. Lastly, we demonstrate this new attack vector through a practical demonstration in a client/server TLS handshake scenario, successfully inducing an instruction skip in a client application. Our findings extend the impact of Rowhammer attacks on control flow and contribute to developing more robust defenses against these increasingly sophisticated threats.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/FangDRDP25,
+	author = {Vivian Fang and
+                  Emma Dauterman and
+                  Akshay Ravoor and
+                  Akshit Dewan and
+                  Raluca Ada Popa},
+	title = {LegoLog: {A} configurable transparency log},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1082--1103},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00066},
+	doi = {10.1109/EUROSP63326.2025.00066},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/FangDRDP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Transparency logs are critical for a wide range of applications, from web certificates to end-to-end encrypted messaging. Today, many transparency log designs exist for various applications and workloads, and developers must fully understand the design space to find the best design for their needs. Worse, if a developer needs a transparency log for an application and workload without an existing transparency log, the developer (who might not be an expert) must design a new log. To address these challenges, we introduce the paradigm of a configurable transparency log, which takes as input a description of the application work-load and constraints of different entities and automatically outputs a transparency log uniquely suited to the application. We present the first configurable transparency log design, LegoLog, which we implement and empirically evaluate end-to-end for three specialized transparency logs. We also show that LegoLog can express six different applications, and we compare the asymptotic complexity of LegoLog and existing transparency logs tailored to individual applications. We find that configurability does not come at the cost of performance: LegoLog can capture a variety of applications while performing comparably to existing, special-purpose transparency logs.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BognarB25,
+	author = {Marton Bognar and
+                  Jo Van Bulck},
+	title = {openIPE: An Extensible Memory Isolation Framework for Microcontrollers},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1104--1120},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00067},
+	doi = {10.1109/EUROSP63326.2025.00067},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BognarB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given the popularity of low-end microcontrollers, manufacturers and researchers have proposed memory isolation mechanisms for these devices. However, current proposals face two main shortcomings. First, due to a lack of extensible reference implementations of commercial specifications, academic systems commonly use custom memory isolation mechanisms, reducing compatibility and the chance of real-world adoption. Second, recent research has demonstrated crucial and overlapping vulnerabilities, including in commercial systems. Unfortunately, efforts to mitigate and validate these issues are hindered by the disconnect in codebases.This paper proposes openIPE, an open research platform for extensible, industry-compliant hardware-software co-designs. Our platform introduces minimal hardware extensions for memory isolation based on Texas Instruments’ specification for Intellectual Property Encapsulation (IPE), alongside a versatile firmware layer enabling rapid prototyping of advanced security extensions. We establish a robust security testing infrastructure and demonstrate the capabilities of our framework through a comprehensive study on secure interrupt handling, an important research area for microcontrollers. Our evaluation shows that openIPE allows for the independent reproduction and comparison of existing proposals and enables a novel solution that achieves strong architectural and microarchitectural security with minimal hardware modifications and low overhead.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/BotturaDQ25,
+	author = {Nicola Bottura and
+                  Daniele Cono D'Elia and
+                  Leonardo Querzoni},
+	title = {Pfuzzer: Practical, Sound, and Effective Multi-path Analysis of Environment-sensitive
+                  Malware with Coverage-guided Fuzzing},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1121--1139},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00068},
+	doi = {10.1109/EUROSP63326.2025.00068},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/BotturaDQ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Among the behaviors and tactics that malware can exhibit, environment-sensitive logic likely poses the longest-standing challenge to the analysis capabilities of automatic systems such as sandboxes. Current analysis approaches either fall short in anticipating adversarial tactics by design, or incur prohibitive costs and other roadblocks when reasoning on real-world code. As a result, manual analysis remains the primary way to identify behaviors that show only when a machine meets specific expectations of the sample.To address these issues, we present the first practical, sound, and effective solution for multi-path exploration of environment-sensitive malware. We argue how the popular coverage-guided fuzzing paradigm from software testing can effectively achieve this task, provided we can devise original design solutions (such as coverage feedback and environment mutations) tailored to the unique characteristics of malware to enable this application. Our approach not only can disarm many evasions without requiring expert knowledge, but also unveil additional activities that would not show in a baseline run due to environmental conditions unrelated to evasion.We build a manually annotated dataset of environment-sensitive malware and use it to estimate the analysis capabilities of the approach. Our Pfuzzer implementation reveals activity that the best competitor misses for 36.09% of the samples: such activity either follows evasions that deceive existing systems or comes from behaviors that show only in other "right" environments. Pfuzzer also unveils dormant evasive tactics for 70.64% of the samples that one may wrongly deem as non-evasive after a baseline run.}
+}
+
+
+@inproceedings{DBLP:conf/eurosp/NguyenLT25,
+	author = {Truong Son Nguyen and
+                  Tancr{\`{e}}de Lepoint and
+                  Ni Trieu},
+	title = {Mario: Multi-round Multiple-Aggregator Secure Aggregation with Robustness
+                  against Malicious Actors},
+	booktitle = {10th {IEEE} European Symposium on Security and Privacy, EuroS{\&}P
+                  2025, Venice, Italy, June 30 - July 4, 2025},
+	pages = {1140--1164},
+	publisher = {{IEEE}},
+	year = {2025},
+	url = {https://doi.org/10.1109/EuroSP63326.2025.00069},
+	doi = {10.1109/EUROSP63326.2025.00069},
+	timestamp = {Tue, 02 Sep 2025 18:28:33 +0200},
+	biburl = {https://dblp.org/rec/conf/eurosp/NguyenLT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Federated Learning (FL) enables multiple clients to collaboratively train a machine learning model while keeping their data private, eliminating the need for data sharing. Two common approaches to secure aggregation (SA) in FL are the single-aggregator and multiple-aggregator models. This work focuses on improving the multiple-aggregator model.Existing multiple-aggregator protocols such as Prio (NSDI 2017), Prio+ (SCN 2022), Elsa (S&P 2023) either offer robustness only in the presence of semi-honest servers or provide security without robustness and are limited to two aggregators. We introduce Mario, the first multiple-aggregator Secure Aggregation protocol that is both secure and robust in a malicious setting. Similar to prior work of Prio and Prio+, Mario provides secure aggregation in a setup of n servers and m clients. Unlike previous work, Mario removes the assumption of semi-honest servers, and provides a complete protocol with robustness under malicious clients and malicious servers. Our implementation shows that Mario is 3.40× and 283.4× faster than Elsa and Prio+, respecitively.}
+}

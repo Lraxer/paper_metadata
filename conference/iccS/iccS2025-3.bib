@@ -1,0 +1,632 @@
+@inproceedings{DBLP:conf/iccS/KorzenWSF25,
+	author = {Marcin Korzen and
+                  Jaroslaw Wozniak and
+                  Grigory M. Sklyar and
+                  Mateusz Firkowski},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Control Synthesis of Homogeneous Approximations of Nonlinear Systems},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {3--16},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_1},
+	doi = {10.1007/978-3-031-97632-2\_1},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KorzenWSF25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The objective of the paper is to describe computational methods of control synthesis for a certain class of nonlinear driftless control systems. Such systems are previously found to be simplifications (called homogeneous approximations) of more complicated nonlinear systems that still preserve most crucial properties of the original ones like controllability. The class of systems in question have a special feed-forward form that is sufficiently easy to integrate and allows to solve concrete problems in control theory. Here we continue our research with describing the computational procedure for control synthesis as the extension of existing software libraries in Python language. We show that our approach leads to faster computation times compared to standard methods. The results are illustrated with some numerical experiments and simulations.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ZhuangZLSLGM25,
+	author = {Shangyuan Zhuang and
+                  Wei Zhang and
+                  Fengqi Liu and
+                  Jiyan Sun and
+                  Yinlong Liu and
+                  Liru Geng and
+                  Wei Ma},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Robust Ensemble Malware Detector Against Powerful Adversaries},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {17--32},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_2},
+	doi = {10.1007/978-3-031-97632-2\_2},
+	timestamp = {Thu, 17 Jul 2025 13:55:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ZhuangZLSLGM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Considering the vulnerability of machine learning to adversarial attacks, the state-of-the-art malware detectors are designed with appropriate ensembles. However, most ensemble detectors are developed based on unreasonable and weak threat assumptions, which do not match the characteristics of real-world adversaries with powerful adaptive mixed capabilities. Such detectors will unavoidably suffer severe failures in practical deployment. To this end, we build two realistic powerful adversary models and propose NashAE as a robust malware detector based on a novel Game-theory-enabled ensemble adversarial training approach against them. Specifically, NashAE establishes a Minimax Game where the adversary and detector compete on opposing targets. By solving the Nash equilibrium of the game, NashAE can obtain the optimal ensemble adversarial training strategy under adversaries’ constantly adaptive attacks. Since the game has no closed-form solution, we further develop a simplified solution scheme based on Bayesian optimization to find the approximate Nash equilibrium of the game. We conduct comprehensive experiments with 10 baseline detection models on 2 malware datasets. Experimental results show that NashAE can achieve a stable detection rate of 58% higher than advanced methods after only 15 iterations against the most powerful adversaries.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/HuPPM25,
+	author = {Andong Hu and
+                  Luca Pennati and
+                  Ivy Peng and
+                  Stefano Markidis},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Physics-Aware Compression of Plasma Distribution Functions with GPU-Accelerated
+                  Gaussian Mixture Models},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {33--47},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_3},
+	doi = {10.1007/978-3-031-97632-2\_3},
+	timestamp = {Thu, 17 Jul 2025 13:55:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/HuPPM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data compression is a critical technology for large-scale plasma simulations. Storing complete particle information requires Terabyte-scale data storage, and analysis requires ad-hoc scalable post-processing tools. We propose a physics-aware in-situ compression method using Gaussian Mixture Models (GMMs) to approximate electron and ion velocity distribution functions with a number of Gaussian components. This GMM-based method allows us to capture plasma features such as mean velocity and temperature, and it enables us to identify heating processes and generate beams. We first construct a histogram to reduce computational overhead and apply GPU-accelerated, in-situ GMM fitting within iPIC3D, a large-scale implicit Particle-in-Cell simulator, ensuring real-time compression. The compressed representation is stored using the ADIOS 2 library, thus optimizing the I/O process. The GPU and histogramming implementation provides a significant speed-up with respect to GMM on particles (both in time and required memory at run-time), enabling real-time compression. Compared to algorithms like SZ, MGARD, and BLOSC2, our GMM-based method has a physics-based approach, retaining the physical interpretation of plasma phenomena such as beam formation, acceleration, and heating mechanisms. Our GMM algorithm achieves a compression ratio of up to \\(10^4\\), requiring a processing time comparable to, or even lower than, standard compression engines.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/BieleckaBSW25,
+	author = {Marzena Bielecka and
+                  Andrzej Bielecki and
+                  Aleksander Suchorab and
+                  Igor Wojnicki},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Hierarchical Structural Information - Theory and Applications},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {48--59},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_4},
+	doi = {10.1007/978-3-031-97632-2\_4},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/BieleckaBSW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces a novel measure to quantify structural information in hierarchical graphs. It addresses the limitation of current methods that do not adequately account for hierarchical structures. By considering inner structural information and distinguishability of higher-level vertices, the proposed measure captures the additional information generated by the hierarchy. The hypothesis that hierarchical graphs contain more structural information is validated using the “Countries” dataset. The results demonstrate a measurable increase in the information content when the hierarchical structure is considered, compared to a simple graph representation. This highlights the importance of recognizing and utilizing hierarchy to enhance the informational richness of graphs, potentially improving the performance of graph-based machine learning models.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/MarcilloBTT25,
+	author = {Christian Roberto Vergara Marcillo and
+                  Rami Bahsoon and
+                  Nikos Tziritas and
+                  Georgios Theodoropoulos},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Connectionist Approach to Federated Digital Twins},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {60--74},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_5},
+	doi = {10.1007/978-3-031-97632-2\_5},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/MarcilloBTT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Digital Twins (DTs) have driven significant innovation across industries, creating virtual replicas of physical assets that enable continuous learning, optimization, and informed decision-making. Digital Twins Systems of Systems (SoS) pose open challenges that relate to representation, orchestration, and management at scale and call for innovative approaches for collaborative modelling of their ecosystem. Federated Digital Twins (FDTs) have emerged as a solution, enabling integration and resource sharing between independent DTs, fostering collaboration, and unlocking the full potential of interconnected systems. This work proposes a framework inspired by connectionism theory to model FDTs as a system of systems, drawing on federated systems and cognitive neuroscience to facilitate collaboration and emergent communication patterns. A Smart Connected Farming case study is used as a proof of concept for the proposed framework.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/PoczekajloMDTGK25,
+	author = {Pawel Poczekajlo and
+                  Leonid V. Moroz and
+                  Ewa Deelman and
+                  Michela Taufer and
+                  Pawel Gepner and
+                  Jerzy Krawiec},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Low Latency Recoding {CORDIC} Algorithm for {FPGA} Implementation},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {75--89},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_6},
+	doi = {10.1007/978-3-031-97632-2\_6},
+	timestamp = {Tue, 05 Aug 2025 22:39:48 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/PoczekajloMDTGK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Coordinate Rotation Digital Computer (CORDIC) algorithm is widely recognized for its fast real-time processing capabilities, making it highly suitable for hardware implementations in diverse applications such as signal processing, high-performance computing, and edge computing devices. Despite its advantages, the traditional CORDIC algorithm’s iterative computational method introduces significant challenges, including a complex structure and high hardware resource consumption, which can limit its efficiency and scalability in certain applications. In this article, we introduce an innovative and efficient variation of the CORDIC algorithm designed to address these challenges. Our proposed algorithm significantly reduces the number of required operations while maintaining computational accuracy, thereby optimizing performance. Furthermore, we demonstrate that this streamlined algorithm can be effectively implemented on Field-Programmable Gate Arrays (FPGAs), leveraging their reconfigurable hardware to achieve enhanced processing speeds and reduced resource utilization. This advancement not only improves the feasibility of using CORDIC in resource-constrained environments but also expands its applicability in modern computing contexts.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/KozielPL25,
+	author = {Slawomir Koziel and
+                  Anna Pietrenko{-}Dabrowska and
+                  Leifur Leifsson},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Global Optimization of Microwave Circuits Using Dimensionality Reduction
+                  and Multi-fidelity {EM} Simulations},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {90--103},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_7},
+	doi = {10.1007/978-3-031-97632-2\_7},
+	timestamp = {Tue, 05 Aug 2025 22:39:47 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/KozielPL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The growing complexity of contemporary microwave circuits made numerical optimization imperative as a performance-boosting tool. Yet, it is intricate because of the high costs incurred by electromagnetic (EM) analysis required to evaluate the system’s quality reliably. These expenses are particularly significant in global optimization, which is necessary in many situations. This study introduces an innovative strategy for high-efficacy globalized optimization of passive components. Our methodology leverages reduction of the problem dimensionality implemented using a rapid global sensitivity analysis and a custom-developed machine learning (ML) algorithm employing fast surrogate models established in the reduced domain. The designs rendered by the ML process are further refined in the local sense in the full-dimensionality parameter space using a gradient-based routine. Additional improvement in efficiency is obtained by employing multi-fidelity EM simulations with the low-fidelity models used for global search and high-fidelity ones only utilized in fine-tuning. The presented approach has been comprehensively validated utilizing two coupling circuits and juxtaposed against a pool of benchmark algorithms. The obtained results underscore the remarkable efficacy of our procedure. The typical running cost does not exceed a hundred high-fidelity EM analyses, corresponding to sizable savings over the benchmark. At the same time, the proposed method renders designs of competitive quality.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/BorisovaKSN25,
+	author = {Julia Borisova and
+                  Andrey Kuznetsov and
+                  Gleb V. Solovev and
+                  Nikolay O. Nikitin},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Understanding the Limitations of Deep Transformer Models for Sea Ice
+                  Forecasting},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {104--118},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_8},
+	doi = {10.1007/978-3-031-97632-2\_8},
+	timestamp = {Tue, 05 Aug 2025 22:39:46 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/BorisovaKSN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {It would not be an exaggeration to say that we live in the era of transformers. Due to the great results of generative models for video prediction, spatio-temporal data of various kinds are usually treated as video-like sequences - and this is a good assumption for many problems. However, we want to argue that transformer-based prediction is not the best option for some spatio-temporal cases with regular grid and strong periodicity (since most discussions about the limitations of transformer applicability focus only on time series). In the paper, we considered the task of sea ice forecasting and analyzed two transformer-based architectures (TimeSformer and SwinLSTM) against the proposed baseline - a lightweight convolutional network with different setups of convolutional layers (2D and 3D). Experiments for long-term forecasting of Arctic seas show that transformers do not reproduce the annual dynamics of sea ice. At the same time, the CNN-based solutions allow to outperform the existing state-of-the-art numerical (SEAS5) and data-driven (IceNet) forecasts, with a quality improvement of up to 30% in the mean absolute error and up to 10% in the structural similarity index. A similar experiment is provided for the synthetic example of video data. Due to the analysis of the obtained results, this problem is caused by the nature of the model and the data and can be faced in many scientific and industrial tasks outside sea ice. Code and supplementary materials for this research are available on GitHub: https://github.com/ITMO-NSS-team/sea_ice_transformers.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/LemosCR25,
+	author = {Marco Lemos and
+                  Pedro J. S. Cardoso and
+                  Jo{\~{a}}o M. F. Rodrigues},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Microscopic Binary Engagement Model},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {119--134},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_9},
+	doi = {10.1007/978-3-031-97632-2\_9},
+	timestamp = {Tue, 05 Aug 2025 22:39:48 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/LemosCR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Tracking audience engagement in real-time offers numerous benefits. For instance, event planners can make dynamic adjustments to presentations or activities to maintain high levels of interest and participation. This enhances the overall experience for attendees by ensuring the content remains engaging and relevant. This paper proposes a model for computing the binary engagement within groups. The model does this by identifying individuals’ engagement during the events’ time frames, which are then combined, i.e., the engagement of the group is computed by aggregating the engagement of each individual. For each individual of the group, the engagement model incorporates the computation over time of the gaze direction, valence, and arousal, classifying the engagement into two primary levels: not-engaged and engaged. The engaged category is further divided into two sublevels: positive and negative engagement. Experimental results confirm the model’s effectiveness, showcasing reliable identity tracking and accurate assessment of engagement states in dynamic scenarios.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ChenMS25,
+	author = {Yanbin Chen and
+                  Christian B. Mendl and
+                  Helmut Seidl},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Dead Gate Elimination},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {135--150},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_10},
+	doi = {10.1007/978-3-031-97632-2\_10},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ChenMS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hybrid quantum algorithms combine the strengths of quantum and classical computing. Many quantum algorithms, such as the variational quantum eigensolver (VQE), leverage this synergy. However, quantum circuits are executed in full, even when only subsets of measurement outcomes contribute to subsequent classical computations. In this manuscript, we propose a novel circuit optimization technique that identifies and removes dead gates. We prove that the removal of dead gates has no influence on the probability distribution of the measurement outcomes that contribute to the subsequent calculation result. We implemented and evaluated our optimization on a VQE instance, a quantum phase estimation (QPE) instance, and hybrid programs embedded with random circuits of varying circuit width, confirming its capability to remove a non-trivial number of dead gates in real-world algorithms. The effect of our optimization scales up as more measurement outcomes are identified as non-contributory, resulting in a proportionally greater reduction of dead gates.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/OlasSWOL25,
+	author = {Tomasz Olas and
+                  Lukasz Szustak and
+                  Roman Wyrzykowski and
+                  Mateusz Olas and
+                  Marco Lapegna},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Advances in Adapting Memory-Bound {CFD} Computations to {RISC-V} Multicore
+                  Architecture},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {151--166},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_11},
+	doi = {10.1007/978-3-031-97632-2\_11},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/OlasSWOL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper tackles the challenge of adapting HPC codes to RISC-V architecture for real-world applications with memory-bound numerical codes. The Multidimensional Positive Definite Advection Transport Algorithm (MPDATA) application is the code we study as a use case. This work explores whether the methodology developed in our previous works for Intel and AMD x86 architectures can address performance trade-offs and bottlenecks of multicore RISC-V computing platforms while executing the memory-bound MPDATA code. The explored platforms include: (i) Banana Pi BPI-F3 low-power platform, and (ii) Milk-V system with the 64-core Sophon SG2042 processor. Special emphasis is given to efficient vectorization and using lower-precision computations. Besides performance, energy consumption is studied as well.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/WitkowskiDS25,
+	author = {Konrad Witkowski and
+                  Agnieszka Duraj and
+                  Piotr S. Szczepaniak},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Detecting Potential {HIV} Inhibitors Using the Cross Siamese Network},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {167--182},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_12},
+	doi = {10.1007/978-3-031-97632-2\_12},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/WitkowskiDS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The issue of in silico analysis plays a crucial role in designing new medicines in modern day pharmaceutical industry. Selecting the best candidate for a new drug among countless molecules is a challenge which can be facilitated by machine learning methods. Following article addresses the problem of computational prediction of Human Immunodeficiency Virus (HIV) inhibition level among molecules. We introduced the cross siamese network (CSN) - a novel architecture based on siamese neural network - generating an embedding aiming to enhance the prediction process. The proposed neural net is a hybrid type model which combines embeddings generated from several subnetwork trained in estimating HIV inhibition level and other chemical properties like: solubility, lipophilicity or toxicological effects. To verify the efficiency of the proposed solution we trained a set of k-nearest neighbors classifiers on starting molecules’ fingerprints and embeddings outputted by the experimental models. The results from this test showed that some versions of model enhanced the molecular embeddings, improving their utility for predicting HIV inhibition.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/NakaoIIFWH25,
+	author = {Kai Nakao and
+                  Hideaki Ito and
+                  Tsuyoshi Ichimura and
+                  Kohei Fujita and
+                  Lalith Wijerathne and
+                  Muneo Hori},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Generation of Quality Green's Function Libraries in Complex Three-Dimensional
+                  Crustal Structures by Adaptive Mesh Refinement},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {183--197},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_13},
+	doi = {10.1007/978-3-031-97632-2\_13},
+	timestamp = {Thu, 17 Jul 2025 13:55:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/NakaoIIFWH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fault slip estimation from crustal deformation is essential for understanding earthquake mechanisms, and three-dimensional subsurface models have become incorporated in the estimation to account for the geometric and material heterogeneity in the crust. In the estimation process, a precomputed Green’s function library (GFL), which represents the displacement field due to unit point loads at each receiver on ground surface, can be employed for computing arbitrary source responses through convolution of the source terms and the GFL. However, challenges remain in generating meshes adapted to the singularity of the point loads and in assessing the accuracy of the GFL. We developed a GFL computation method, Adaptive Finite Element Method for Green’s Function Library (AFEM-GFL). By combining initial meshes with good element quality and a mesh refinement algorithm that is resistant to element quality degradation, our method can generate meshes well adapted to computing GFLs. The accuracy of the results is assessed through convergence of the solution and comparisons between the convergent solutions from different initial meshes. In numerical experiments on a two-layered half-space and a realistic crustal structure of Japan, accurate and convergent GFLs were obtained with moderate amount of computational resources in the settings where it was difficult to achieve with uniform meshes even using a massively parallel supercomputer. These quality GFLs will serve as a robust foundation for reliable fault slip estimation.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/FengCYS25,
+	author = {Xiaoyu Feng and
+                  Huangxin Chen and
+                  Bo Yu and
+                  Shuyu Sun},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {An Iterative Scheme for the Solidification Benchmark Modeling},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {198--212},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_14},
+	doi = {10.1007/978-3-031-97632-2\_14},
+	timestamp = {Tue, 05 Aug 2025 22:39:47 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/FengCYS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The processes of solidification and macro-segregation involve intricate interactions across multiple physical, phase, and compositional fields, including mass, momentum, energy, and material transfer. Accurate prediction of phase transitions, chemical heterogeneities, and compositional flows is crucial in fields such as materials science, energy science, and planetary science. Numerical benchmark studies provide an effective means to explore these phenomena. This paper presents an iterative scheme based on operator splitting and evaluates its accuracy, stability, and implementation through a relevant benchmark problem. The results demonstrate strong performance of the scheme, particularly in capturing key physical phenomena such as channel segregation, freckle formation, and edge effects.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ChenCKSXXYZZ25,
+	author = {Huangxin Chen and
+                  Yuxiang Chen and
+                  Jisheng Kou and
+                  Shuyu Sun and
+                  Dunhui Xiao and
+                  Xuejun Xu and
+                  Haitao Yu and
+                  Tao Zhang and
+                  Xiaoying Zhuang},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Robust, Efficient, and Long-Time Accurate Schemes to Simulate Gas
+                  Storage in Geological Formation},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {213--227},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_15},
+	doi = {10.1007/978-3-031-97632-2\_15},
+	timestamp = {Fri, 01 Aug 2025 22:40:33 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ChenCKSXXYZZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we consider the numerical simulation of gas storage in geological formation in the context of hydrogen underground storage and carbon dioxide geological sequestration. We construct two energy-stable numerical schemes: one based on the energy factorization approach, which rigorously preserves the energy dissipation principle and combines discontinuous Galerkin approximations with mixed finite elements for spatial discretization; the other based on a stabilization approach, which conserves the original energy functional, has an adaptive stabilization parameter and time-stepping strategy, and ensures the boundedness of molar density. Through numerical experiments with methane gas, our schemes are validated in terms of capturing coupled hydro-mechanical processes, handling strong nonlinearities, and maintaining conservation properties.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/DhanyalakshmiZRAH25,
+	author = {Ramamurthy Dhanyalakshmi and
+                  Alexander Zakharov and
+                  Natalia Romanchuk and
+                  J. Anitha and
+                  D. Jude Hemanth},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {A Hybrid Approach for Medical Deepfake Detection Using Depth-Wise
+                  Convolutions in Vision Transformer and Frequency Domain Analysis},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {228--240},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_16},
+	doi = {10.1007/978-3-031-97632-2\_16},
+	timestamp = {Fri, 18 Jul 2025 07:42:01 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/DhanyalakshmiZRAH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {These days, identifying medical deepfakes is crucial for preventing fraudulent activity, to avoid inaccurate diagnoses, as well as to uphold patient confidence. The massive increase in the production of realistic synthetic medical images presents significant challenges for clinical decision-making, highlighting the need for effective detection techniques. This proposed method offers a hybrid deepfake detection model which incorporates a lightweight Depth-Wise Convolution module in a Vision Transformer (DWConv-ViT) and a Fast Fourier Transform (FFT) module to improve feature extraction in the deepfake detection process. In contrast to conventional models which primarily use either frequency-based analysis or spatial analysis, our method integrates both feature types to increase resilience against malicious attacks. The proposed model was trained and tested using two datasets consisting of real knee X-ray images and GAN-generated osteoarthritis X-ray images. By utilizing both spatial and frequency-based details, our approach improves generalization and robustness against sophisticated deep-fake approaches. Therefore, this work helps to ensure the reliability and validity of medical diagnoses.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/SharmaVJPN25,
+	author = {Amartya Das Sharma and
+                  Louis Viot and
+                  Piet Jarmatz and
+                  Hauke Preu{\ss} and
+                  Philipp Neumann},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Static Load Balancing for Molecular-Continuum Flow Simulations with
+                  Heterogeneous Particle Systems and on Heterogeneous Hardware},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {241--255},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_17},
+	doi = {10.1007/978-3-031-97632-2\_17},
+	timestamp = {Tue, 05 Aug 2025 22:39:49 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/SharmaVJPN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Load balancing in particle simulations is a well-researched field, but its effect on molecular-continuum coupled simulations is comparatively less explored. In this work, we implement static load balancing into the macro-micro-coupling tool (MaMiCo), a software for molecular-continuum coupling, and demonstrate its effectiveness in two classes of experiments by coupling with the particle simulation software ls1 mardyn. The first class comprises a liquid-vapour multiphase scenario, modelling evaporation of a liquid into vacuum and requiring load balancing due to heterogeneous particle distributions in space. The second class considers execution of molecular-continuum simulations on heterogeneous hardware, running at very different efficiencies. After a series of experiments with balanced and unbalanced setups, we find that, with our balanced configurations, we achieve a reduction in runtime by 44% and 55% respectively.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/LiWSJWRL25,
+	author = {Hao Li and
+                  Zehui Wang and
+                  Shang Shang and
+                  Zhengwei Jiang and
+                  Qiuyun Wang and
+                  Fangli Ren and
+                  Baoxu Liu},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Joint Spatial-Temporal Representation for Host Intrusion Detection
+                  System},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {256--269},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_18},
+	doi = {10.1007/978-3-031-97632-2\_18},
+	timestamp = {Thu, 17 Jul 2025 13:55:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/LiWSJWRL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Host-based Intrusion Detection Systems (HIDS) collect host system logs and generate alerts when the host is attacked. However, existing research fails to adequately capture the spatiotemporal relationships within host behaviors, limiting the accuracy of their representation and modeling. To address this, we propose a spatiotemporal graph representation learning method. This method extracts key data from system logs to construct provenance graphs. A spatiotemporal joint encoder decomposes features along spatial and temporal dimensions independently, then aggregates them to capture spatiotemporal dependencies, explicitly modeling these relationships in host behavior. Experiments on the Streamspot and DARPA-Theia datasets show that the proposed method effectively captures interaction patterns and outperforms baseline models in recall rate, false positive rate, and other evaluation metrics.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/TynesCFW25,
+	author = {Michael Tynes and
+                  Kyle Chard and
+                  Ian T. Foster and
+                  Logan T. Ward},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Will It Blend? Mixing Numerical and Machine-Learned Physics Quantities
+                  for Accurate on-the-Fly Surrogate Modeling},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {270--284},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_19},
+	doi = {10.1007/978-3-031-97632-2\_19},
+	timestamp = {Sat, 09 Aug 2025 12:14:13 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/TynesCFW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Learning and deploying inexpensive replacements for computationally expensive subroutines “on-the-fly” (OTF) during a dynamic simulation offers potential advantages and unique drawbacks. In OTF learning, a machine learned surrogate function is trained to replace a target subroutine in a simulation as the dynamics evolve. The advantages of OTF learning include reducing simulation error and model training costs, but the weaknesses include the possibility of introducing artifacts when adaptively updating the physics of the simulation over time. Here, we enhance an existing control system, Proxima, which ensures that surrogates are used appropriately in time-independent state-sampling-based simulations, to time-dependent dynamical simulations by introducing a “blending” procedure that hides discontinuities when transitioning between original subroutine and surrogate. Our new control system, Proxima+Blend, produces a blend of the surrogate and target functions according to the relationship between error and an uncertainty signal observed as the dynamic simulation evolves. We show that while the original control system can shorten application runtime and accurately capture some macro-scale observables of a molecular dynamics simulation, the addition of blending is necessary to avoid unphysical dynamics at shorter time and length scales and to correct observables derived from these dynamics. Proxima+Blend delivers a 1.5x speedup over use of the target subroutine while producing solutions within 5% error in dynamical quantities, while the original Proxima algorithm has up to 80% error. Our implementation of Proxima+Blend can be deployed by simply replacing the existing subroutine with a wrapper that includes a machine learning approach for surrogate training along with specifying control and uncertainty signals for the simulation of interest.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/MilanoCCG25,
+	author = {Marianna Milano and
+                  Pietro Cinaglia and
+                  Mario Cannataro and
+                  Pietro Hiram Guzzi},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Biological Community Detection with Graph Neural Network and Network
+                  Curvature Analysis on Gene Co-expression Networks},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {285--296},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_20},
+	doi = {10.1007/978-3-031-97632-2\_20},
+	timestamp = {Thu, 17 Jul 2025 13:55:42 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/MilanoCCG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Biomedical networks are critical for representing complex biological systems, and network curvature is a key structural property that captures topological features not highlighted by traditional graph metrics. This study introduces a Graph Neural Network (GNN)-based approach for detecting communities in cancer-specific Gene Co-expression Networks (GCNs), using Ollivier-Ricci curvature as an integral feature. The inclusion of curvature has shown to enhance the detection of biologically significant communities, improve network modularity, and enable finer partitioning. These preliminary results indicate that curvature-based analyses can offer new insights into the organization of gene co-expression networks, aiding in the understanding of biological modularity, disease mechanisms, and functional interactions.}
+}
+
+
+@inproceedings{DBLP:conf/iccS/ShekhovtsovDS25,
+	author = {Andrii Shekhovtsov and
+                  Jean Dezert and
+                  Wojciech Salabun},
+	editor = {Michael H. Lees and
+                  Wentong Cai and
+                  Siew Ann Cheong and
+                  Yi Su and
+                  David Abramson and
+                  Jack J. Dongarra and
+                  Peter M. A. Sloot},
+	title = {Incorporating Performance Ordering in {MCDA:} {A} Study of the Frobenius
+                  {SPOTIS} Method},
+	booktitle = {Computational Science - {ICCS} 2025 - 25th International Conference,
+                  Singapore, July 7-9, 2025, Proceedings, Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {15905},
+	pages = {297--309},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-031-97632-2\_21},
+	doi = {10.1007/978-3-031-97632-2\_21},
+	timestamp = {Tue, 05 Aug 2025 22:39:49 +0200},
+	biburl = {https://dblp.org/rec/conf/iccS/ShekhovtsovDS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Most Multi-Criteria Decision Analysis (MCDA) methods encode a decision-maker’s preferences through criterion weights, yet even a well-weighted model can yield ties or virtually indistinguishable scores. We propose Frobenius SPOTIS (Fro-SPOTIS), which is a generalization of the classical SPOTIS method that incorporates ordering information to resolve such ambiguities. Each alternative’s attribute-based ranking of criteria is compared with a reference ranking derived from the criteria weights. This comparison is performed by converting both rankings into pairwise preference-score matrices and computing the Frobenius distance between them. This distance, modulated by a tolerance parameter \\(\\tau \\in [0,1]\\), is used to modify to the native SPOTIS score: \\(\\tau = 0\\) recovers the original SPOTIS results, while higher values increasingly favor alternatives whose performance ordering aligns with the reference. A three-alternative example shows how Fro-SPOTIS untangles an otherwise unresolved tie, and two sensitivity analysis studies trace how rankings shift with (i) changes in the underlying data and (ii) variations in \\(\\tau \\). The results confirm that Fro-SPOTIS retains the simplicity of SPOTIS while offering a more flexible and expressive approach to tie-breaking in MCDA.}
+}
