@@ -1,0 +1,761 @@
+@inproceedings{DBLP:conf/esorics/AngR25,
+	author = {Kian Kai Ang and
+                  Damith C. Ranasinghe},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {QUIC-Fuzz: An Effective Greybox Fuzzer For The {QUIC} Protocol},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {1--22},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_1},
+	doi = {10.1007/978-3-032-07894-0\_1},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AngR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Network applications are routinely under attack. We consider the problem of developing an effective and efficient fuzzer for the recently ratified QUIC network protocol to uncover security vulnerabilities. QUIC offers a unified transport layer for low latency, reliable transport streams that is inherently secure, ultimately representing a complex protocol design characterised by new features and capabilities for the Internet. Fuzzing a secure transport layer protocol is not trivial. The interactive, strict, rule-based, asynchronous nature of communications with a target, the stateful nature of interactions, security mechanisms to protect communications (such as integrity checks and encryption), and inherent overheads (such as target initialisation) challenge generic network protocol fuzzers. We discuss and address the challenges pertinent to fuzzing transport layer protocols (like QUIC), developing mechanisms that enable fast, effective fuzz testing of QUIC implementations to build a prototype grey-box mutation-based fuzzer—QUIC-Fuzz. We test 6, well-maintained server-side implementations, including from Google and Alibaba with QUIC-Fuzz. The results demonstrate the fuzzer is both highly effective and generalisable. Our testing uncovered 10 new security vulnerabilities, precipitating 2 CVE assignments thus far. In code coverage, QUIC-Fuzz outperforms other existing state-of-the-art network protocol fuzzers—Fuzztruction-Net, ChatAFL, and ALFNet—with up to an 84% increase in code coverage where QUIC-Fuzz outperformed statistically significantly across all targets and with a majority of bugs only discoverable by QUIC-Fuzz. We open-source QUIC-Fuzz on GitHub https://github.com/QUICTester/QUIC-Fuzz.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AustaMD25,
+	author = {C{\'{e}}drick Austa and
+                  Jan Tobias M{\"{u}}hlberg and
+                  Jean{-}Michel Dricot},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Systematic Assessment of Cache Timing Vulnerabilities on {RISC-V}
+                  Processors},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {23--42},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_2},
+	doi = {10.1007/978-3-032-07894-0\_2},
+	timestamp = {Sat, 15 Nov 2025 13:45:36 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AustaMD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While interest in the open RISC-V instruction set architecture is growing, tools to assess\xa0the security of concrete processor implementations are lacking. There\xa0are dedicated tools and benchmarks for common microarchitectural side-channel vulnerabilities for popular processor families such as Intel x86-64 or ARM, but not for RISC-V. In this paper we describe our efforts in porting\xa0an Intel x86-64 benchmark suite for cache-based timing vulnerabilities to RISC-V. We then use this benchmark to evaluate the security of three commercially available RISC-V processors, the T-Head C910 and the SiFive U54 and\xa0U74 cores. We observe that the C910 processor exhibits more distinct timing types than the other processors, leading to the assumption that\xa0code running on the C910 would be exposed to more microarchitectural vulnerability sources. In addition, our evaluation reveals that \\(37.5\\%\\) of the vulnerabilities covered by the benchmark exist in all processors, while only \\(6.8\\%\\)\xa0are absent from all cores. Our work, in particular the ported benchmark,\xa0aims to support RISC-V processor designers to identify leakage sources early\xa0in their designs and to support the development of countermeasures.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BilloirLCRWB25,
+	author = {Eddie Billoir and
+                  Romain Laborde and
+                  Daniele Canavese and
+                  Yves R{\"{u}}tschl{\'{e}} and
+                  Ahmad Samer Wazan and
+                  Abdelmalek Benzekri},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {No Root, No Problem: Automating Linux Least Privilege and Securing
+                  Ansible Deployments},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {43--63},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_3},
+	doi = {10.1007/978-3-032-07894-0\_3},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BilloirLCRWB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article addresses the challenges of enforcing the Principle of Least Administrative Privilege (PoLAP) in Linux systems. We present an innovative approach that orchestrates multiple Linux low-level security mechanisms to provide fine-grained control over the privileges of system administrators. We implemented a completely open-source framework to monitor, analyze, and grant the minimum set of privileges required to perform specific administrative tasks. To demonstrate its practicality in modern deployment approaches, we integrated our framework with the Ansible automation platform towards a zero-trust strategy in Infrastructure-as-Code environments. Our solution reduces the risk of supply chain and internal attacks associated with administrative privilege management while maintaining operational efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChoudhariKR25,
+	author = {Amit Choudhari and
+                  Shorya Kumar and
+                  Christian Rossow},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {NICraft: Malicious {NIC} Firmware-Based Cache Side-Channel Attack},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {64--83},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_4},
+	doi = {10.1007/978-3-032-07894-0\_4},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ChoudhariKR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Being in the central position for network communication, Network Interface Card (NICs) can intercept, modify, and generate network packets. But little is known about how NICs can launch attacks that go beyond simple traffic sniffing and manipulation. In this work, we demonstrate how a malicious NIC can leverage a stock operating system to leak memory access patterns of user-space processes via a cache side-channel attack. Specifically, we uncover an exploitable gadget in the TCP/IP stack’s IP reassembly process that enables a Prime+Probe cache side-channel attack. Our approach achieves fine-grained control, targeting individual cache sets. We validate its practicality by establishing a high-accuracy bi-directional covert channel between a user application and the NIC that bypasses firewalls, achieving transmission rates of 0.1 bits/sec upstream and 0.76 bits/sec downstream. In addition, we demonstrate its application in monitoring system activity by detecting periods of keystroke activity of 20 users across multiple sessions with a precision of over 96%, highlighting the potential privacy risks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ChungM25,
+	author = {Minu Chung and
+                  Hyungon Moon},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Identifying Potential Timing Leakages from Hardware Design with Precondition
+                  Synthesis},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {84--104},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_5},
+	doi = {10.1007/978-3-032-07894-0\_5},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ChungM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Computer systems operate on hardware that does not execute in constant time. Timing leakage, which refers to information leakage through this timing variability, enables even remote attackers to steal secrets from production systems. The significance of timing leakage necessitates mechanisms to identify, understand, and prevent potential timing leakage at design time for hardware modules. This work proposes a mechanism that automatically identifies potential timing leakages from hardware design by synthesizing the precondition that confines the timing channel. Our mechanism, LeakSynth, obtains this precondition by gathering examples of initial states exhibiting variable or constant execution times. Specifically, LeakSynth synthesizes the predicate that distinguishes these examples and interprets it to produce a precondition under which the hardware module’s timing leakage is confined to a subset of its internal registers. Our evaluation using nine hardware modules, including four processors, demonstrates that LeakSynth can quickly synthesize the preconditions. We also show that the preconditions can be used to automatically produce annotations for existing constant-time verification tools. Not to mention that such annotations must be written manually without the help of LeakSynth, the automatically generated annotations are more relaxed, i.e., encompass more initial states.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DanieleBMCP25,
+	author = {Cristian Daniele and
+                  Timme Bethe and
+                  Marcello Maugeri and
+                  Andrea Continella and
+                  Erik Poll},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {LibAFLstar: Fast and State-Aware Protocol Fuzzing},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {105--123},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_6},
+	doi = {10.1007/978-3-032-07894-0\_6},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/DanieleBMCP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzing is arguably one of the most effective software vulnerability discovery techniques. However, despite recent advances, fuzzing stateful software suffers from severe inefficiencies and scalability limitations. This hinders automated testing for software that relies on state models, such as protocol implementations. Unlike stateless approaches, efficient stateful fuzzers need to i) explore the state model of the target system, ii) focus on the most interesting states, iii) track which messages are interesting for each state, and iv) handle expensive restarts and synchronizations of the system. In this paper, we present LibAFLstar, a fast and state-aware protocol fuzzer that addresses the aforementioned challenges leveraging i) partial message sequences, ii) a novel state scheduler, iii) state-aware queues and bitmaps, and iv) persistent mode. We fine-tune our approach by running an extensive ablation study with more than 20 configurations over six protocol implementations. Then, we evaluate LibAFLstar on the same protocol implementations (FTP, RTSP and HTTP) for 24 hours. We compare LibAFLstar ’s performance with two state-of-the-art fuzzers: AFLNet and ChatAFL. Our experiments show that LibAFLstar is more than \\(30\\times \\) faster than competitors and achieves, on average, \\(1.4\\times \\) more coverage.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/GelocziMK25,
+	author = {Emiliia Gel{\'{o}}czi and
+                  Nico Mexis and
+                  Stefan Katzenbeisser},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {{PUSH} for Security: {A} PUF-Based Protocol to Prevent Session Hijacking},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {124--143},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_7},
+	doi = {10.1007/978-3-032-07894-0\_7},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/GelocziMK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Session hijacking attacks still affect thousands of users of web services every year. In this paper, we propose a novel lightweight hardware-binding protocol that associates a web session with a device using a unique fingerprint derived from an SRAM-based Physical Unclonable Function (PUF). The hardware/software co-design of the proposed protocol ensures continuous verification of the session’s legitimacy without introducing additional latency. Furthermore, it enables the timely termination of a hijacked session, thereby mitigating the impact of session hijacking attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Gingupalli25,
+	author = {Sarat Chandra Prasad Gingupalli},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Hardening {HSM} Clusters: Resolving Key Sync Vulnerabilities for Robust
+                  {CU} Isolation},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {144--163},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_8},
+	doi = {10.1007/978-3-032-07894-0\_8},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/Gingupalli25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper exposes critical vulnerabilities in key syncing within Hardware Security Module (HSM) clusters, revealing design flaws\xa0that bypass user authorization and make cluster objects accessible\xa0to anyone within the cluster. In an ideal HSM cluster, objects should be shared across partitions for availability, yet their usage\xa0must remain restricted to their creating user for security. However,\xa0when using the Partition Crypto Officer (PCO) for syncing, objects become cluster-shared, but encrypting them with a masking key—unique\xa0per partition yet accessible to all users of the partition—compromises the user-owned property. We demonstrate how this lack of\xa0user isolation can be exploited to extract sensitive information\xa0from clusters. The issue is further exacerbated by\xa0data encryption/decryption APIs that fail to enforce segregation between key-wrapping and data-encryption algorithms, exposing plaintext\xa0keys at the HSM boundary. To counter these threats, we propose two robust solutions: (1) a nonce-based approach, where the Hierarchical Deterministic (HD) wallet\xa0[3] is path-restricted per user, and users derive transport keys for masking objects using\xa0a combination of a nonce and the masking key; and (2)\xa0a public-key-based model, where each Crypto User (CU) in the HSM\xa0is assigned an independent key pair upon creation and uses\xa0this user-specific key pair to encrypt their respective objects in\xa0the cluster. Through detailed demonstrations, we illustrate how\xa0these approaches establish CU isolation in widely deployed cloud\xa0HSM clusters, effectively mitigating the identified vulnerabilities.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HeDGLY25,
+	author = {Fengliang He and
+                  Hong{-}Ning Dai and
+                  Hanyang Guo and
+                  Xiapu Luo and
+                  Jiadi Yu},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {AcouListener: An Inaudible Acoustic Side-Channel Attack on {AR/VR}
+                  Systems},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {164--183},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_9},
+	doi = {10.1007/978-3-032-07894-0\_9},
+	timestamp = {Sun, 07 Dec 2025 22:10:17 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HeDGLY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Although augmented reality (AR) and virtual reality (VR) systems have garnered extensive attention from both industry and academia, their built-in sensors continuously collect sensitive user data, making them potential targets for malicious attacks. To assess the threat of inaudible acoustic channels in AR/VR, we propose AcouListener, a novel side-channel attack that uses inaudible acoustic signals emitted and received by off-the-shelf VR headsets or mobile phones. Variations in the acoustic channel caused by hand movements allow attackers to reconstruct user input (e.g., passwords). AcouListener is implemented as a camouflaged mobile app that runs on AR/VR or mobile platforms. We evaluate it across three common VR attack scenarios: (1) inferring victims’ unlocking patterns, (2) handwriting patterns and (3) typing words and passwords on virtual keyboards. AcouListener achieves an average F1-score of 84%, 95% and 80%, respectively. Furthermore, we present countermeasures against this inaudible acoustic attack.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HeckelAJRG25,
+	author = {Martin Heckel and
+                  Florian Adamsky and
+                  Jonas Juffinger and
+                  Fabian Rauscher and
+                  Daniel Gruss},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Verifying {DRAM} Addressing in Software},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {184--203},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_10},
+	doi = {10.1007/978-3-032-07894-0\_10},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HeckelAJRG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we introduce a novel approach to reliably verifying DRAM addressing functions and function components from software.\xa0We perform the first systematic analysis of 5 DRAM function reverse-engineering tools on 2 different DDR3, 4 DDR4, and 4 DDR5 system configurations, revealing a significant variance in the success rate of these tools, from 0% to 92.9%. We discover the previously unknown rank selection side channel\xa0and reverse engineer its function on two DDR4 and two DDR5 systems. These results enable novel DDR5 row-conflict side-channel attacks, which we demonstrate in two scenarios: First, we evaluate the\xa0DDR5 row-conflict side channel in a covert channel with 1.39Mbit/s. Second, we evaluate the channel in a website fingerprinting attack with an F\\(_1\\) score of 84% on DDR4 and 74% on DDR5.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HeckelWAG25,
+	author = {Martin Heckel and
+                  Hannes Weissteiner and
+                  Florian Adamsky and
+                  Daniel Gruss},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Epistemology of Rowhammer Attacks: Threats to Rowhammer Research Validity},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {204--223},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_11},
+	doi = {10.1007/978-3-032-07894-0\_11},
+	timestamp = {Sun, 07 Dec 2025 22:10:17 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HeckelWAG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The Rowhammer effect is a disturbance error in DRAM that attackers can trigger from software. The first publication on Rowhammer in 2014 evaluated 129 Dual In-line Memory Modules (DIMMs) on an FPGA and showed that 110 DIMMs are affected, indicating that Rowhammer is a widespread issue. However, until now, no case outside of academia is known in which Rowhammer was used for attacks, indicating a stark discrepancy between the attention Rowhammer receives and its real-world relevance. This paper systematically analyzes 32 offensive Rowhammer papers, including 48 experiments. However, we avoid finger-pointing but identify six threats to the validity and relevance of Rowhammer research results and give multiple examples. The threats include small sample sizes, overestimated attacker capabilities, unrealistic attack scenarios, non-comparability of the results, age and wear of hardware, and sub-optimal attack performance metrics. Additionally, we provide recommendations with detailed justification to the scientific community to mitigate those threats: (1)\xa0pre-experimental testing of DIMM integrity, (2)\xa0increasing and broadening the DIMM sample size, (3)\xa0expanding reproduction studies of published work, (4)\xa0defining attacks in real-world conditions and distinguishing them from theoretical ones, (5)\xa0publishing DIMM manufacturing data, (6)\xa0documenting DIMM wear and, (7)\xa0leveraging multiple metrics for bit flip evaluations.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HuangYCLW25,
+	author = {Fugeng Huang and
+                  Jiahong Yang and
+                  Haibo Cheng and
+                  Wenting Li and
+                  Ping Wang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Personalized Password Guessing via Modeling Multiple Leaked Credentials
+                  of the Same User},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {224--242},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_12},
+	doi = {10.1007/978-3-032-07894-0\_12},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HuangYCLW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As password breaches increase, users frequently face multiple password leaks. Because of memory limitations, users often reuse or slightly modify their passwords across different accounts. This behavior makes targeted password-guessing attacks, which leverage leaked passwords, a serious security threat. While previous studies have primarily focused on single-leak scenarios, where the attacker possesses only one leaked password, multi-leak scenarios remain insufficiently explored. In this work, we propose Pass2Pass-T, a model designed to capture similarities across multiple passwords from the same user. Pass2Pass-T leverages Transformers to predict a target password from multiple leaked passwords of the same user. Additionally, we are the first to empirically evaluate the multi-leak attacks on real-world password datasets. In multi-leak scenarios, Pass2Pass-T enhances the Transformer with input compression and segmented positional encoding, tailored to the distinct characteristics of password sequences unlike natural language texts. It also utilizes transfer learning to effectively model patterns across multiple passwords. With five leaked passwords, our model compromises 4.87% of user accounts on the first guess, achieving a 7.27\\(\\times \\) improvement over state-of-the-art strategies that process each leaked password individually. In single-leak scenarios, Pass2Pass-T matches existing models at 1,000 guesses and achieves a 4.46% improvement at \\(10^{7}\\) guesses.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HuangSZCZY25,
+	author = {Hao Huang and
+                  Xiuwei Shang and
+                  Junqi Zhang and
+                  Shaoyin Cheng and
+                  Weiming Zhang and
+                  Nenghai Yu},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {WelkIR: Flow-Sensitive Pre-trained Embeddings from Compiler {IR} for
+                  Vulnerability Detection},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {243--262},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_13},
+	doi = {10.1007/978-3-032-07894-0\_13},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HuangSZCZY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {While most vulnerability detection methods rely on source code features, such as Abstract Syntax Tree (AST), some have adopted compiler intermediate representations (IRs) for their efficient code representations. However, IR-based methods struggle with modeling long-range dependencies, exhibit limitations in semantic extraction, and suffer from inadequate model evaluation. To address these challenges, we propose WelkIR, a two-tier IR-based Transformer model for vulnerability detection, which is fine-tuned from a flow-sensitive pre-trained model on task-specific data. During pre-training, we introduce three novel pre-training tasks to capture the program semantics: Control Flow Prediction (CFP), Data Def-Use Prediction (DDP), and Data Reachability Prediction (DRP). The pre-trained model is then fine-tuned on task-specific data to refine its understanding of vulnerable code patterns, resulting in a specialized vulnerability detection model. We evaluate WelkIR through comprehensive experiments. On the Juliet benchmark, WelkIR achieves a 7.01%–23.26% improvement in macro F1-score compared to state-of-the-art baselines. We additionally construct ARVul, which, to the best of our knowledge, is the first large-scale LLVM IR-based vulnerability dataset, comprising 3,732 vulnerable functions from 217 real-world projects. On ARVul, WelkIR outperforms baselines by 9.01%–32.74% in F1-score. Ablation studies confirm that the proposed pre-training tasks contribute to WelkIR’s performance in vulnerability detection.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/JiaoLLCYZC25,
+	author = {Weihua Jiao and
+                  Qingbao Li and
+                  Xilong Li and
+                  Zhifeng Chen and
+                  Weiping Yao and
+                  Guimin Zhang and
+                  Fei Cao},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Edge Coverage Feedback of Embedded Systems Fuzzing Based on Debugging
+                  Interfaces},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {263--282},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_14},
+	doi = {10.1007/978-3-032-07894-0\_14},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/JiaoLLCYZC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzing is one of the most widely used dynamic testing techniques for identifying bugs and vulnerabilities. However, the lack of accurate and generalized hardware-based coverage feedback methods hinders the application of Coverage-based Gray-box Fuzzing (CGF) on embedded systems. To cope with this problem, we propose an edge-coverage feedback method based on debugging interfaces for the first time and implement the prototype tool HIFuzz. HIFuzz first utilizes hardware breakpoints and debug probes to obtain information about a single node on the execution path. Other nodes on the path are then traced based on the dominance relations between nodes in the Control-Flow Graph (CFG). Finally, HIFuzz analyzes the edges contained in the execution path to obtain edge coverage feedback. In addition, we customize the breakpoint setting strategy and seed scheduling strategy for HIFuzz to improve the probability of hitting breakpoints and discovering new paths. Experiments show that HIFuzz can efficiently trace execution paths based on breakpoints and dominance relations. In tests using the MSP430, ESP32, and STM32, an average of 2.3 to 4.1 new edges can be tracked per breakpoint hit, saving 56.5% to 75.6% of the probing task. Compared with the state-of-the-art fuzzer GDBFuzz and black-box fuzzing, HIFuzz achieves the highest coverage in 8 of the 9 scenarios. In addition, our approach achieves high performance without impacting execution efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KimJS25,
+	author = {Taehun Kim and
+                  Hyerean Jang and
+                  Youngjoo Shin},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Cache Demote for Fast Eviction Set Construction and Page Table Attribute
+                  Leakage},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {283--302},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_15},
+	doi = {10.1007/978-3-032-07894-0\_15},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KimJS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {ISA extensions are increasingly used to enhance performance for specialized workloads without major architectural redesign. However, these enhancements can unintentionally introduce new microarchitectural attack surfaces. This paper examines security implications of Intel’s new cldemote extension, which optimizes data sharing by transferring cache lines from upper to lower-level caches. Our analysis shows the cldemote facilitates efficient eviction set construction in non-inclusive LLCs without helper threads or extensive memory operations. Our method reduces eviction set construction time by 36% with high success rates. Additionally, we find cldemote’s execution latency leaks sensitive data such as TLB states, page table permissions, and translation termination levels. Leveraging these leaks, we successfully derandomize the kernel base address in 2.49 ms on Linux. Finally, we discuss potential mitigations, emphasizing the broad security impacts of emerging ISA extensions.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LamsterRUM25,
+	author = {Lukas Lamster and
+                  Fabian Rauscher and
+                  Martin Unterguggenberger and
+                  Stefan Mangard},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {WaitWatcher and WaitGuard: Detecting Flush-Based Cache Side-Channels
+                  Through Spurious Wakeups},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {303--322},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_16},
+	doi = {10.1007/978-3-032-07894-0\_16},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LamsterRUM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Flush+Reload and Flush+Flush attacks target CPU caches and allow malicious actors to leak confidential data across different CPU cores. Typically, detection mechanisms against such attacks leverage hardware performance counters to observe architectural and microarchitectural events. However, recent research has shown that state-of-the-art security monitors can effectively be bypassed by camouflaged Flush+Reload attacks. Thus, flush-based cache side-channel attacks are still a significant threat to system security. In this work, we present WaitGuard, a novel detection technique with a >99.9% detection rate based on the userspace monitor and wait instructions. Our framework automatically profiles internal CPU interactions of userspace monitor/waits with other unprivileged instructions. We use WaitWatcher to analyze \\(7\\) different server and desktop-class x86 CPUs from Intel and AMD. In our analysis, we uncover \\(5\\) spurious wakeup triggers and \\(18\\) user-mode instructions that completely bypass the wakeup mechanisms. Based on our analysis, we develop WaitGuard, a novel detection mechanism that repurposes the recently introduced userspace monitor and wait instructions to detect flush-based cache side-channel attacks on modern x86 hardware. We implement WaitGuard as a drop-in security monitor that reliably detects Flush+Reload and Flush+Flush attacks with a detection rate of >99.9%, even when introducing heavy system noise. Moreover, we find that WaitGuard also detects the previously invisible camouflaged Flush+Reload attacks. Finally, we demonstrate the real-world applicability of WaitGuard by showing its effectiveness in detecting Flush+Reload attacks on the OpenSSL AES T-table implementation.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LeeKSHS25,
+	author = {Woomin Lee and
+                  Taehun Kim and
+                  Seunghee Shin and
+                  Junbeom Hur and
+                  Youngjoo Shin},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {T-Time: {A} Fine-Grained Timing-Based Controlled-Channel Attack Against
+                  Intel {TDX}},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {323--341},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_17},
+	doi = {10.1007/978-3-032-07894-0\_17},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LeeKSHS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intel’s Trust Domain Extensions (TDX) is a Confidential Virtual Machine (CVM) technology designed to enhance security through Trusted Execution Environments (TEEs). Although TDX effectively mitigates interrupt-based stepping attacks, it remains vulnerable to controlled-channel attacks, which exploit page-level memory access patterns to infer secret-dependent control flows. Current defenses confine sensitive execution within single memory pages to reduce observable access patterns. We challenge this strategy by introducing T-Time, a fine-grained timing-based controlled-channel attack targeting Intel TDX. T-Time precisely measures dwell time—the interval between consecutive page faults—to uncover previously hidden sensitive control flows. We further enhance T-Time’s precision through a cache-based amplification technique. We validate T-Time in two practical scenarios: extracting a 4096-bit RSA private key from MbedTLS, and reconstructing a WebP image through timing analysis during decoding. Our findings demonstrate that existing page-level defenses are inadequate against fine-grained timing attacks.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiZZLG25,
+	author = {Baiyang Li and
+                  Yujia Zhu and
+                  Yuedong Zhang and
+                  Qingyun Liu and
+                  Li Guo},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Unraveling DoH Traces: Padding-Resilient Website Fingerprinting via
+                  {HTTP/2} Key Frame Sequences},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {342--360},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_18},
+	doi = {10.1007/978-3-032-07894-0\_18},
+	timestamp = {Fri, 31 Oct 2025 08:02:11 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiZZLG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {DNS-over-HTTPS (DoH) has been widely adopted by major web browsers to enhance the security and privacy of DNS transactions. To mitigate traffic analysis threats such as website fingerprinting (WFP) attacks, many DoH deployments apply EDNS(0) padding at both the client and resolver. As the padding strategy equalizes DNS data sizes, it diminishes the efficacy of previous WFP attacks that exploit TLS-layer length patterns. Moreover, TLS-level features fail to capture the application-layer behavior of HTTP/2, which underlies DoH communication. In this paper, we propose a novel WFP method for DoH that operates at the application layer. Our approach extracts the sequence of HTTP/2 key frames that encapsulate DNS queries and responses, and then derives time interval features that remain informative even in the presence of padding. Experimental results show that our approach achieves over 87% accuracy in the same-environment settings and maintains robustness across different resolver implementations and operating systems settings. Compared to existing WFP techniques, our method improves accuracy by at least 6% in same-environment tests and 19% in cross-environment scenarios. In addition, we conduct an Internet-scale measurement of 6,617 public DoH resolvers and uncover widespread deficiencies in padding adoption, which exacerbate fingerprint leakage. Based on these findings, we propose practical countermeasures to further strengthen DoH privacy.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MaLZZ25,
+	author = {Lin Ma and
+                  Xingwei Lin and
+                  Ziming Zhang and
+                  Yajin Zhou},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {NLSaber: Enhancing Netlink Family Fuzzing via Automated Syscall Description
+                  Generation},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {361--381},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_19},
+	doi = {10.1007/978-3-032-07894-0\_19},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MaLZZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently, security researchers have uncovered a significant number of high-severity vulnerabilities in Netlink families, posing serious threats to overall kernel security. Despite these risks, there are no automated methods available to effectively detect bugs in Netlink families. For example, Syzkaller—a state-of-the-art, general-purpose kernel fuzzer—fails to achieve effective fuzzing for Netlink families because it depends on manually written descriptions that are often incomplete or inaccurate. To address this gap, we present NLSaber, the first specialized tool designed for enhancing Netlink family fuzzing. NLSaber uses static taint analysis to construct parse graphs that model the message parsing process, and then automatically generates complete and accurate fuzzing descriptions based on these graphs. In our evaluation on Linux 6.1.70, NLSaber identified 76 target families, encompassing 865 operations. The generated fuzzing descriptions were significantly more complete (supporting 43% more families) and more accurate (93% vs. 33% accuracy) compared to existing descriptions. Using these generated descriptions, our enhanced fuzzer improved code coverage by 9.1% over Syzkaller in families supported by both tools (and by 40.8% when including Syzkaller-unsupported families). Additionally, NLSaber uncovered 19 previously unknown vulnerabilities, all reported and confirmed, with 12 CVEs assigned.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/MarinKPCP25,
+	author = {Eduard Marin and
+                  Jinwoo Kim and
+                  Alessio Pavoni and
+                  Mauro Conti and
+                  Roberto Di Pietro},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {The Hidden Dangers of Public Serverless Repositories: An Empirical
+                  Security Assessment},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {382--401},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_20},
+	doi = {10.1007/978-3-032-07894-0\_20},
+	timestamp = {Thu, 25 Dec 2025 12:47:18 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/MarinKPCP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Serverless computing has rapidly emerged as a prominent cloud paradigm, enabling developers to focus solely on application logic without the burden of managing servers or underlying infrastructure. Public serverless repositories have become key to accelerating the development of serverless applications. However, their growing popularity makes them attractive targets for adversaries. Despite this, the security posture of these repositories remains largely unexplored, exposing developers and organizations to potential risks. In this paper, we present the first comprehensive analysis of the security landscape of serverless components hosted in public repositories. We analyse 2,758 serverless components from five widely used public repositories popular among developers and enterprises, and 125,936 Infrastructure as Code (IaC) templates across three widely used IaC frameworks. Our analysis reveals systemic vulnerabilities including outdated software packages, misuse of sensitive parameters, exploitable deployment configurations, susceptibility to typo-squatting attacks and opportunities to embed malicious behaviour within compressed serverless components. Finally, we provide practical recommendations to mitigate these threats.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BorhanKWJM25,
+	author = {Alireza Moghaddas Borhan and
+                  Hugo Kermabon{-}Bobinnec and
+                  Lingyu Wang and
+                  Yosr Jarraya and
+                  Suryadipta Majumdar},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {CapMan: Detecting and Mitigating Linux Capability Abuses at Runtime
+                  to Secure Privileged Containers},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {402--422},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_21},
+	doi = {10.1007/978-3-032-07894-0\_21},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BorhanKWJM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Linux capabilities represent an important security feature for enabling fine-grained management of privileges. However, limitations in selectively enabling capabilities for processes and lagging adoption from application developers often lead the operators to run containers with unnecessary privileges. Although this can potentially be addressed by modifying the application, minimizing the set of enabled capabilities, assigning capabilities to executable files, or using user space utilities like Ptrace, those solutions typically require manual efforts, only provide partial protection, or incur significant overhead. In this paper, we present CapMan, a solution that secures privileged containers by detecting and mitigating potential capability abuses at runtime. Our main idea is threefold. First, CapMan examines all capability requests made by system calls to ensure full protection. Second, CapMan performs the detection directly inside the Linux kernel to ensure its efficiency. Third, CapMan mitigates capability abuses in a transparent manner without requiring any change made to the application or container. Our evaluation of CapMan using real-world CVEs and capability abuses shows that it can mitigate all the tested capability abuses (most of which are missed by a state-of-the-art solution) with negligible performance overhead.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ParadaALCR25,
+	author = {Javier Parada and
+                  Cristina Alcaraz and
+                  Javier L{\'{o}}pez and
+                  Juan Caubet and
+                  Rodrigo Rom{\'{a}}n},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Digital Twin for Adaptive Adversary Emulation in IIoT Control Networks},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {423--442},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_22},
+	doi = {10.1007/978-3-032-07894-0\_22},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ParadaALCR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The number of threats in industrial ecosystems is increasing, especially in critical sectors, which have become a particularly lucrative target. These ecosystems have evolved into very complex interconnected systems, driven by the need to adapt to new digitalization and automation trends which extend their attack surface. In addition, the criticality of these systems makes them particularly difficult to test. For these reasons, this paper covers the application of digital twins as the target of Adversary Emulation for the purpose of improving the security of industrial environments. This is done by involving automated and adaptive adversaries by means of reinforcement learning. Starting from an offensive strategy, these adversaries are able to adapt to the context, attacking the most critical parts of industrial systems. Adversarial attacks are driven by control theory and centrality techniques, providing a safe and efficient way to test critical industrial networks. The proposed methodology also includes the effective training and validation of adversaries by creating a probabilistic model from the analysis of digital twins. The paper provides relevant results on the development of adversarial adversaries and test models, and highlights the importance and opportunities of attack automation in virtualized environments.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/JahromiAO25,
+	author = {Ali Sadeghi Jahromi and
+                  AbdelRahman Abdou and
+                  Paul C. van Oorschot},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Formal Security Analysis of ss2DNS},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {443--463},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_23},
+	doi = {10.1007/978-3-032-07894-0\_23},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/JahromiAO25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Motivated by limitations in DNSSEC, ss2DNS has been recently proposed as an alternative scheme that augments recursive resolver and nameserver interactions with stronger real-time security and privacy properties. In this paper, using a symbolic model of ss2DNS in the Tamarin protocol verifier, and the assumption that none of the relevant cryptographic keys are compromised, we formally verify the security and privacy properties of the DNS resolution process with the root zone when using ss2DNS. The validity of these proofs is then extended to the other subordinate zones. We also explore the impact of key and entity compromises on ss2DNS security and privacy properties.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/SunXYHLC25,
+	author = {Wenju Sun and
+                  Xi Xiao and
+                  Qiben Yan and
+                  Guangwu Hu and
+                  Qing Li and
+                  Chuan Chen},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {High-Efficiency Fuzzing Technique Using Hooked {I/O} System Calls
+                  for Targeted Input Analysis},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {464--483},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_24},
+	doi = {10.1007/978-3-032-07894-0\_24},
+	timestamp = {Fri, 31 Oct 2025 08:02:13 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/SunXYHLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzing is a widely used software testing technique that inputs random data to uncover bugs. Coverage-guided fuzzing (CGF) is one of the most successful approaches, which uses code coverage feedback to guide testing. It randomly mutates bytes of the entire input file to find interesting inputs, which often results in a large search space. Existing fuzzers need to analyze the entire input file for mutation, leading to inefficiencies. To overcome this limitation, we propose Hook-Based Fuzz (HBFuzz), a heuristic fuzzing method that focuses only on the data that the program actually reads. By tracking data flow through hooking mechanisms, HBFuzz narrows the search space and significantly improves fuzzing efficiency. We evaluate HBFuzz on 16 real-world programs and the MAGMA benchmark, which includes various common software vulnerabilities. Experimental results demonstrate that HBFuzz achieves 2.17%–23.52% higher code coverage compared to other fuzzers and uncovers the highest number of unique vulnerabilities. Additionally, it outperforms competitors in bug discovery speed, emerging as the fastest in uncovering 23 of the evaluated vulnerabilities.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/TefekEKC25,
+	author = {Utku Tefek and
+                  Ertem Esiner and
+                  Felix Kottmann and
+                  Deming Chen},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {VeriFLo: Verifiable Provenance with Fault Localization for Inter-domain
+                  Routing},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {484--504},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_25},
+	doi = {10.1007/978-3-032-07894-0\_25},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/TefekEKC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Modern digital infrastructure demands reliable data delivery across networks. While data plane provenance verification can attest to a packet’s origin and path, it is susceptible to packet drops and malicious corruption of verification data, leaving the receiver unable to discern the cause of the fault. We propose a lightweight data plane provenance scheme with fault localization. By appending short, symmetric key marks at each hop and cumulatively reporting traffic counts, VeriFLo enables identification of links responsible for misbehavior in routing. Unlike existing fault localization schemes, the VeriFLo protocol does not require a path-aware network, and provides stronger security guarantees than BGPsec for inter-domain routing. We present security proofs for path unforgeability and fault localization, showing that either link of a misbehaving router can be identified with overwhelming probability even with a few bytes of marginal communication overhead per intermediary.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/VitaleADRIKCB25,
+	author = {Antonino Vitale and
+                  Simone Aonzo and
+                  Savino Dambra and
+                  Nanda Rani and
+                  Lorenzo Ippolito and
+                  Platon Kotzias and
+                  Juan Caballero and
+                  Davide Balzarotti},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {The Polymorphism Maze: Understanding Diversities and Similarities
+                  in Malware Families},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {505--525},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_26},
+	doi = {10.1007/978-3-032-07894-0\_26},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/VitaleADRIKCB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this work, we explore the complexities introduced by polymorphism in malware families, a tactic used by malware authors to alter the appearance of their code and evade detection mechanisms, resulting in a growing volume of unique malware samples. We examine 66,160 malicious Portable Executable (PE) files grouped into 743 families from three popular malware datasets. Our research addresses three key questions: measuring structural component-level differences between PE files, identifying prevalent polymorphic techniques affecting multiple components, and pinpointing component-level causes of polymorphism. We introduce a methodology for component-level structural comparison of PE files and apply it to investigate the diversity and similarity of samples within a family, considering factors such as packing and truncation. Our study reveals that polymorphism in malware is driven by multiple overlapping factors, extending beyond just the use of packing tools. These findings highlight the complex nature of malware families and inform future research, improving our understanding of malware variations and their implications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YuWQZSCLZGH25,
+	author = {Jintong Yu and
+                  Yuxuan Wang and
+                  Shipei Qu and
+                  Yubo Zhao and
+                  Yipeng Shi and
+                  Pei Cao and
+                  Xiangjun Lu and
+                  Chi Zhang and
+                  Dawu Gu and
+                  Cheng Hong},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {End-to-End Non-profiled Side-Channel Analysis on Long Raw Traces},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {III}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16055},
+	pages = {526--544},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07894-0\_27},
+	doi = {10.1007/978-3-032-07894-0\_27},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/YuWQZSCLZGH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the advancement of deep learning techniques, Deep Learning-based Non-profiled Side-Channel Analysis (DL-NSCA) can automatically learn and combine features, making it a promising method that can skip the manual and precise selection of Points of Interest (PoIs). Existing DL-NSCA methods assume that the attacker can identify a short leakage interval (usually less than 5000 points) containing PoIs from raw traces (more than 100,000 points) and then feed the leakage interval into the neural network to recover the key. However, in practice, the attacker often faces a black-box scenario with unknown underlying implementations, making locating the short interval from raw traces challenging, especially when masking countermeasures exist. To address this issue, we propose a lightweight end-to-end DL-NSCA model called convWIN-MCR, which consists of a performance-optimizing component, convWIN, and an accelerator component, MCR. It can efficiently process raw traces without the need to manually identify the short leakage interval. On the public dataset ASCADv1, while the state-of-the-art model Multi-Output Regression (MOR) requires 28,000 traces and 24\xa0min to recover the key from the leakage interval with 1,400 feature points, our framework only requires 6,000 traces in 13\xa0min to directly analyze raw traces with 250,000 feature points. To further validate the practical applicability of our framework, we successfully crack a commercial USIM card by analyzing its raw traces and recovering its 128-bit AES key.}
+}

@@ -1,0 +1,713 @@
+@inproceedings{DBLP:conf/esorics/AbeNOPST25,
+	author = {Masayuki Abe and
+                  Masaya Nanri and
+                  Miyako Ohkubo and
+                  Octavio Perez{-}Kempner and
+                  Daniel Slamanig and
+                  Mehdi Tibouchi},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {A Certified-Input Mixnet from Two-Party Mercurial Signatures on Randomizable
+                  Ciphertexts},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {1--21},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_1},
+	doi = {10.1007/978-3-032-07891-9\_1},
+	timestamp = {Sat, 15 Nov 2025 13:45:36 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AbeNOPST25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A certified-input mixnet introduced by Hébant et al. \xa0(PKC ’20) employs homomorphically signed ciphertexts to reduce\xa0the complexity of shuffling arguments. However, the state-of-the-art construction relies on heavy Groth-Sahai proofs for\xa0key homomorphism, and only achieves honest-user security, limiting broader applicability. This work proposes a novel certified-input mixnet achieving stronger security guarantees, alongside better efficiency. This is achieved by introducing a tailored signature scheme, two-party mercurial signatures on randomizable ciphertexts, that allows users and\xa0an authority to jointly sign ciphertexts supporting key, ciphertext, and signature randomization without compromising integrity and privacy. We compare our approach to previous works that employ structured ciphertexts, implement our protocols, and provide performance benchmarks. Our results show that verifying the mixing process for 50,000 ciphertexts takes just 135\xa0s on a commodity laptop using ten mixers, underscoring the practicality and efficiency of our approach.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/AvitabileBF25,
+	author = {Gennaro Avitabile and
+                  Vincenzo Botta and
+                  Dario Fiore},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {{\textdollar}{\textbackslash}mathfrak \{Tetris\}{\textdollar}! Traceable
+                  Extendable Threshold Ring Signatures and More},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {22--41},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_2},
+	doi = {10.1007/978-3-032-07891-9\_2},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/AvitabileBF25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traceable ring signatures enhance ring signatures by adding an accountability layer. Specifically, if a party signs two different messages within the protocol, their identity is revealed. Another desirable feature is extendability. In particular, extendable threshold ring signatures (\\(\\textsf{ETRS}\\)) allow to non-interactively update already finalized signatures by enlarging the ring or the set of signers. Combining traceability and extendability in a single scheme is unexplored and would offer a new tool for privacy-preserving voting schemes in scenarios where the voters are not known in advance. In this paper, we show how to reconcile both properties by introducing and constructing a new cryptographic primitive called Tetris. Notably, our Tetris construction simultaneously achieves a strong flavor of anonymity and linear-size signatures, which is the main technical challenge in existing techniques. To solve this challenge, we develop a new approach to traceability that leads to several conceptual and technical contributions. Among those, we introduce and construct, based on Groth-Sahai proofs, extendable shuffle arguments that can be non-interactively updated by several provers.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BaekCSRL25,
+	author = {Joonsang Baek and
+                  Seongbong Choi and
+                  Willy Susilo and
+                  Partha Sarathi Roy and
+                  Hyung Tae Lee},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Efficient One-Pass Private Set Intersection from Pairings with Offline
+                  Preprocessing},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {42--62},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_3},
+	doi = {10.1007/978-3-032-07891-9\_3},
+	timestamp = {Sat, 15 Nov 2025 13:45:36 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BaekCSRL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present an efficient pairing-based private set intersection\xa0(PSI) protocol with offline preprocessing. Our protocol is one-pass as a receiver does not have to transmit any message to a sender for the entire PSI operation, implying that a sender can initiate a protocol execution anytime at will by sending a PSI message to the receiver. Moreover, the sender’s computation and communication costs are independent of the size of the receiver’s input set. We prove that our protocol is secure against semi-honest adversaries under the (standard) bilinear Diffie-Hellman assumption in the random oracle model. We also extend our semi-honest secure PSI protocol to achieve malicious security without compromising efficiency. Our experiments show that the receiver’s intersection retrieval runs 100–1000 times faster than that of Aranha et al.’s protocol (ACM CCS ’22), which is the state-of-the-art pairing-based PSI protocol, depending on the size of sets, and maintains a similar amount of computation and communication costs for the sender. Thanks to the much less computational burden for the receiver, our PSI protocols are expected to handle data sets of moderately large size well.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BianXLW25,
+	author = {Bingxue Bian and
+                  Qiaoer Xu and
+                  Jiatao Liu and
+                  Jianfeng Wang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Practical Robust Dynamic Searchable Symmetric Encryption Supporting
+                  Conjunctive Queries},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {63--83},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_4},
+	doi = {10.1007/978-3-032-07891-9\_4},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BianXLW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Dynamic Searchable Symmetric Encryption (DSSE) allows clients to securely update encrypted data, in addition to performing queries. Although researchers developed the first conjunctive SSE with forward and backward privacy in 2021, the proposed scheme cannot fully achieve the desired dynamicity for conjunctive queries. Very recently, an enhanced conjunctive DSSE was presented with new backward privacy for conjunctive queries (i.e., Type-\\(\\textrm{O}\\)). However, it incurs substantial computational overhead in both update and search operations. Furthermore, how to extend conjunctive DSSE to handle abnormal update operations (e.g., re-insertion of deleted entries) remains a challenging problem. To tackle the above limitations, we propose ROXT, a robust and efficient conjunctive DSSE scheme with forward and enhanced Type-\\(\\textrm{O}\\) backward security. ROXT ensures robustness through a tag verification mechanism based on the Counting Bloom Filter, which accurately identifies valid ciphertexts using locally maintained compressed deletion lists. To enhance efficiency, ROXT integrates a shared cache mechanism with the OXT framework for search optimization. Performance evaluations show that ROXT significantly outperforms the state-of-the-art SDSSE-CQ in both update and search efficiency. Specifically, ROXT achieves a \\(3.98\\times \\) speedup in update latency and improves search efficiency by up to \\(106.27\\times \\) on the client side and \\(3.25\\times \\) on the server side.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/BrezotHPP25,
+	author = {Th{\'{e}}ophile Br{\'{e}}zot and
+                  Chlo{\'{e}} H{\'{e}}bant and
+                  Paola de Perthuis and
+                  David Pointcheval},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Security Analysis of Covercrypt: {A} Quantum-Safe Hybrid Key Encapsulation
+                  Mechanism for Hidden Access Policies},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {84--102},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_5},
+	doi = {10.1007/978-3-032-07891-9\_5},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/BrezotHPP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ETSI Technical Specification 104 015 proposes a framework to build Key Encapsulation Mechanisms (KEMs) with access policies and attributes, in the Ciphertext-Policy Attribute-Based Encryption (CP-ABE) vein. Several security guarantees and functionalities are claimed, such as pre-quantum and post-quantum hybridization to achieve security against Chosen-Ciphertext Attacks (CCA), anonymity, and traceability. In this paper, we present a formal security analysis of a more generic construction, with application to the specific Covercrypt scheme, based on the pre-quantum ECDH and the post-quantum ML-KEM Key Encapsulation Mechanisms. We additionally provide an open-source library that implements the ETSI standard, in Rust, with high efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/CinalKKW25,
+	author = {Adrian Cinal and
+                  Przemyslaw Kubiak and
+                  Miroslaw Kutylowski and
+                  Gabriel Wechta},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Anamorphic Monero Transactions: The Threat of Bypassing Anti-money
+                  Laundering Laws},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {103--123},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_6},
+	doi = {10.1007/978-3-032-07891-9\_6},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/CinalKKW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we analyze the clash between privacy-oriented cryptocurrencies and emerging legal frameworks\xa0for combating financial crime, focusing in particular on the recent European Union regulations. We analyze Monero, a leading “privacy coin” and a major point of concern for crime-fighters, and\xa0study the scope of due diligence that must be exercised under the new\xa0law with regard to Monero trading platforms and how it translates to\xa0the technical capabilities of the Monero protocol. We both recognize flaws in the legislation and identify technical pitfalls threatening either the effective compliance of, say, Monero exchanges or\xa0the anonymity endeavour of Monero itself. Of independent interest\xa0is that we turn to anamorphic cryptography (marking one of the\xa0first practical applications of the concept) and leverage it to build\xa0a hidden transaction layer embedded in the Monero blockchain\xa0that obfuscates illegal money flow and circumvents transaction-level attempts at enforcing the EU law.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/DamodaranRRR25,
+	author = {Aditya Damodaran and
+                  Simon Rastikian and
+                  Peter B. R{\o}nne and
+                  Peter Y. A. Ryan},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Hyperion: Transparent End-to-End Verifiable Voting with Coercion Mitigation},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {124--143},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_7},
+	doi = {10.1007/978-3-032-07891-9\_7},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/DamodaranRRR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We present Hyperion, an end-to-end verifiable e-voting scheme that allows the voters to identify their votes\xa0in cleartext in the final tally. In contrast to schemes like \\(\\textit{Selene}\\) or sElect, identification is not via (private) tracker numbers but via cryptographic commitment terms. After publishing\xa0the tally, the Election Authority provides each voter with\xa0an individual dual key. Voters identify their votes by raising\xa0their dual key to their secret trapdoor key and finding the matching commitment term in the tally. The dual keys are self-certifying\xa0in that, without the voter’s trapdoor key, it is intractable to forge\xa0a dual key that, when raised to the trapdoor key, will match\xa0an alternative commitment. On the other hand, a voter can use their\xa0own trapdoor key to forge a dual key to fool any would-be coercer. We provide new improved definitions of privacy and verifiability\xa0for e-voting schemes and prove the scheme secure against these, as\xa0well as proving security with respect to earlier definitions in\xa0the literature. We provide a prototype implementation and provide measurements\xa0which demonstrate that our scheme is practical for large scale elections.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/FanBSHL25,
+	author = {Qijia Fan and
+                  Chenhao Bao and
+                  Xuanyu Shi and
+                  Shuai Han and
+                  Shengli Liu},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Two-Factor Authenticated Key Exchange with Enhanced Security from
+                  Post-quantum Assumptions},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {144--163},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_8},
+	doi = {10.1007/978-3-032-07891-9\_8},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/FanBSHL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Two-factor authenticated key exchange (2fAKE) protocol requires a client to provide two authentication factors\xa0to authenticate itself and establish a shared session key with\xa0a server, thus providing double-insurance. \xa0\xa0\xa0\xa0In this work, we focus on 2fAKE with biometrics\xa0and passwords serving as the two factors. Such 2fAKE might be\xa0the most convenient one for the client. However, the use of biometrics and passwords may increase the risk of their leakage. To protect\xa0the privacy of biometrics and passwords, we formalize an enhanced security model for 2fAKE. Specifically, we require zero-knowledge on the biometrics, namely the server database\xa0as well as the protocol transcripts do not reveal any information\xa0about the biometrics. As for passwords, we require that the compromise\xa0of the server database does not leak the passwords of clients. \xa0\xa0\xa0\xa0We then propose a generic construction of 2fAKE,\xa0which enjoys both great convenience and enhanced security. It does\xa0not require the client to store any secrets, does not store\xa0the passwords in plain in the server database, and achieves zero-knowledge on the biometrics throughout the protocol.\xa0By instantiating the generic construction with post-quantum secure building blocks, we immediately get concrete 2fAKE protocol\xa0with enhanced security from post-quantum assumptions,\xa0which provides even stronger security guarantees. The experiments\xa0show that our 2fAKE instantiation achieves high efficiency, where\xa0the server stores just 3.1 KB in database for one client,\xa0the communication is only 3 rounds and costs 4.3 KB, the client runs\xa0in 25 ms and the server runs in only 0.2 ms.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/Hamada25,
+	author = {Koki Hamada},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Concretely Efficient Parallel-Accessible {DORAM} for 100K-Sized Array},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {164--185},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_9},
+	doi = {10.1007/978-3-032-07891-9\_9},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/Hamada25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We propose a concretely efficient parallel-accessible distributed oblivious RAM (DORAM). DORAM is a secure multi-party computation (MPC) protocol that enables private access\xa0to secret-shared arrays. Due to its wide application to more complex MPC protocols, many studies have been conducted on concretely efficient DORAMs. The best known concrete performance is about\xa0900 accesses/second for arrays of sizes in the range \\(2^{13}\\)\xa0to \\(2^{30}\\), achieved by a DORAM proposed by Falk et al. In this paper, we propose a DORAM that provides concretely efficient parallel access for relatively small-sized arrays. Our DORAM is\xa0a three-party MPC protocol that is perfectly secure against a passive and static adversary who can corrupt up to one party. For\xa0an N-element array of D-bit elements, our DORAM accesses elements at k distinct addresses with \\(O(k\\sqrt{N} (\\log N + D))\\)\xa0bits communication in 7 rounds and \\(O(kN (\\log N + D))\\)\xa0bits computation. When \\(D=61\\) and \\(N=2^{17}\\approx \\text {100K}\\),\xa0the concrete performance of our DORAM is 452 accesses/second\xa0for sequential accesses. Thanks to the round complexity that\xa0is independent of the number of parallel access elements, the concrete performance of our protocol improves as k increases, achieving 1,076 accesses/second and 1,521 accesses/second in the cases\xa0of \\(k=4\\) and \\(k=16\\), respectively. As a byproduct, our\xa0DORAM simultaneously achieves information-theoretic security, constant round complexity, and sublinear communication complexity for\xa0the first time.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/HernandezSanchezE25,
+	author = {Arturo Hern{\'{a}}ndez{-}S{\'{a}}nchez and
+                  Santiago Escobar},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {A Symbolic Analysis of Hash Functions Vulnerabilities in Maude-NPA},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {186--204},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_10},
+	doi = {10.1007/978-3-032-07891-9\_10},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/HernandezSanchezE25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Maude-NPA is an analysis tool for cryptographic security protocols that takes into account the algebraic properties of\xa0the cryptosystem. Some cryptographic properties and protocols using\xa0them have been beyond Maude-NPA capabilities. Hash functions have\xa0been extensively used as a key component in cryptographic protocols,\xa0but have never been analysed in Maude-NPA. In this paper, we study\xa0some hash vulnerabilities and analyze several protocols using Maude-NPA.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KaluderovicCM25,
+	author = {Novak Kaluderovic and
+                  Nan Cheng and
+                  Aikaterini Mitrokotsa},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {A Post-quantum Distributed {OPRF} from the Legendre {PRF}},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {205--225},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_11},
+	doi = {10.1007/978-3-032-07891-9\_11},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KaluderovicCM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A distributed OPRF enables a client to evaluate a pseudorandom function on a client-chosen input using a distributed key shared among multiple servers, ensuring that the servers learn nothing about the input or output, while the client learns nothing about the key. We present a post-quantum OPRF suitable for a distributed server setting, requiring only two rounds of communication between the client and servers, with server-to-server communication limited to a pre-computation phase. Our approach leverages the Legendre PRF, computed through a single MPC multiplication and opening during the online phase. We introduce a novel MPC technique that achieves multiplication and opening in one round using replicated secret sharing (RSS) in a malicious adversarial model. This allows for the quantum-secure, verifiable evaluation of the Legendre OPRF against malicious adversaries under a threshold assumption, without requiring inter-server communication. Beyond the Legendre PRF, this method is also of interest for general MPC operations. To our knowledge, our distributed OPRF (dOPRF) is the first post-quantum construction with these properties. We compare our approach to state-of-the-art MPC solutions and provide an implementation of our proposed dOPRF, benchmarking it against existing OPRF constructions. In practical settings, our results demonstrate superior efficiency.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KumarMCGM25,
+	author = {Chandan Kumar and
+                  Nimish Mishra and
+                  Suvradip Chakraborty and
+                  Satrajit Ghosh and
+                  Debdeep Mukhopadhyay},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {{TERRA:} Trojan-Resilient Reverse-Firewall for Cryptographic Applications},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {226--246},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_12},
+	doi = {10.1007/978-3-032-07891-9\_12},
+	timestamp = {Sun, 09 Nov 2025 16:31:29 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KumarMCGM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reverse firewalls (RFs), introduced by Mironov and Stephens Davidowitz at Eurocrypt 2015, provide a defence mechanism for cryptographic protocols against subversion attacks. In a subversion setting, an adversary compromises the machines of honest parties, enabling the leakage of their secrets through the protocol transcript. Previous research in this area has established robust guarantees, including resistance against data exfiltration for an RF. In this work, we present a new perspective focused on the implementation specifics of RFs. The inherently untrusted nature of RFs exposes their real-world implementations to the risk of Trojan insertion—an especially pressing issue in today’s outsourced supply chain ecosystem. We argue how Trojan-affected RF implementations can compromise their core exfiltration resistance property, leading to a complete breakdown of the RF’s security guarantees. Building on this perspective, we propose an enhanced definition for “Trojan-resilient Reverse Firewalls” (Tr-RF), incorporating an additional Trojan resilience property. We then present concrete instantiations of Tr-RFs for Coin Tossing (CT) and Oblivious Transfer (OT) protocols, utilizing techniques from Private Circuit III (CCS’16) to convert legacy RFs into Tr-RFs. We also give simulation-based proofs to claim the enhanced security guarantees of our Tr-RF instantiations. Additionally, we offer concrete implementations of our Tr-RF based CT and OT protocols utilizing the Open-Portable Trusted Execution Environment (OP-TEE). Through OP-TEE, we practically realize assumptions made in Private Circuit III that are critical to ensuring Tr-RF security, bridging the gap between theoretical models and real-world applications. To the best of our knowledge, this provides the first practical implementation of reverse firewalls for any cryptographic functionality. Our work emphasizes the importance of evaluating protocol specifications within implementation-specific contexts.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/KumazakiK25,
+	author = {Remma Kumazaki and
+                  Yuichi Kaji},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Reaction Attack on {TFHE:} Minimum Number of Oracle Queries and Nearly
+                  Optimum Attacking Scheme},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {247--261},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_13},
+	doi = {10.1007/978-3-032-07891-9\_13},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/KumazakiK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This study clarifies the minimum number of queries necessary for a reaction attack on the fully homomorphic encryption over the torus (TFHE). Homomorphic encryption is crucial to ensure both the confidentiality of data and the flexibility for computation. The unique usage of homomorphic encryption allows a reaction attack by a malicious homomorphic server, in which a legitimate client is abused as a ciphertext verification oracle. This study uses an information-theoretical approach to derive a lower bound on the number of queries, an essential measure of the threat of a reaction attack. The tightness of the lower bound is then shown by constructing a nearly optimum attacking scheme that almost achieves the bound. The lower bound is numerically calculated for a commonly used implementation of TFHE, where the computed value clearly and explicitly indicates the borderline which a TFHE client should not pass.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LiB25,
+	author = {Qinyi Li and
+                  Xavier Boyen},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Predicate-Private Asymmetric Searchable Encryption for Conjunctions
+                  from Lattices},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {262--281},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_14},
+	doi = {10.1007/978-3-032-07891-9\_14},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LiB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Searchable encryption (SE) enables searching encrypted data for useful information without full decryption. Asymmetric searchable encryption (ASE) allows anyone to encrypt data \\(\\textbf{y}\\) with a public key, producing ciphertext \\(\\textsf{ct}_\\textbf{y}\\). Given a predicate \\(P_\\textbf{x}(\\cdot )\\) over an attribute \\(\\textbf{x}\\), a testing token \\(\\textsf{Tk}_\\textbf{x}\\) can be generated to evaluate \\(P_\\textbf{x}(\\textbf{y})\\) from \\(\\textsf{ct}_\\textbf{y}\\). It is crucial to ensure that the token holder cannot infer information about \\(\\textbf{x}\\) from \\(\\textsf{Tk}_\\textbf{x}\\), even after evaluating the predicate on multiple ciphertexts. An ASE system meeting this requirement is called an enhanced predicate-private ASE. This paper proposes an enhanced predicate-private ASE system for conjunction predicates, based on standard lattice-based hard problems. This is the first post-quantum enhanced predicate-private ASE system supporting predicates beyond equality. At its core is a predicate-private Hidden Vector Encryption (HVE) scheme that handles large attribute universes. Our system enables privacy-preserving pattern matching on encrypted data, making it practical for various secure applications.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/LongWLXJ25,
+	author = {Chongyu Long and
+                  Yuewu Wang and
+                  Lingguang Lei and
+                  Haoyang Xing and
+                  Jiwu Jing},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {DEBridge: Towards Secure and Practical Plausibly Deniable Encryption
+                  Based on {USB} Bridge Controller},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {282--302},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_15},
+	doi = {10.1007/978-3-032-07891-9\_15},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/LongWLXJ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Plausibly deniable encryption (PDE) systems have been developed to enable users to securely store sensitive data while plausibly denying its existence under coercion to disclose encryption keys. However, the majority of existing PDE systems are software-based, lacking hardware-level security protection for keys. Additionally, they often require the installation of additional supporting software and depend on specific operating systems (OS), file systems (FS), or storage media, significantly limiting their practicality. To address these limitations, we present DEBridge, the first PDE system based on the USB bridge controller—a component that supports and controls data transfer between a host and a storage device. With the help of USB bridge controller, DEBridge introduces hardware security modules to provide hardware-level security protection for keys. We implement the “pseudo disk” as an interface for users to interact with the device, thereby avoiding the installation of additional software. Furthermore, DEBridge integrates hidden volume technology that supports multi-level deniability into the firmware of the USB bridge controller, thereby eliminating the dependence on OS, FS or storage media. We implement DEBridge on the TUSB9261 USB bridge controller and evaluate its feasibility and performance. Given the peculiarities and sensitivities of PDE systems themselves, we believe that the security and practicality brought by DEBridge are of significant value.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/PalakH25,
+	author = {Palak and
+                  Thomas Haines},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Formalisation of the {KZG} Polynomial Commitment Schemes in EasyCrypt},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {303--320},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_16},
+	doi = {10.1007/978-3-032-07891-9\_16},
+	timestamp = {Wed, 05 Nov 2025 16:01:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/PalakH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this paper, we present formally verified proofs of\xa0the popular KZG Polynomial Commitment Schemes (PCSs), including\xa0the security proofs for the properties of correctness, polynomial binding, evaluation binding and hiding. Polynomial commitment schemes have various applications in cryptography and computer science, including verifiable computation, blockchain\xa0and cryptocurrencies, secure multi-party computation as well as in\xa0the construction of ZK-SNARKs. To validate security, we utilise EasyCrypt, an interactive theorem prover that allows for formal verification of cryptographic primitives and protocols.\xa0This approach enforces correct proofs which cover all required cases\xa0and formalising assumptions reducing the risk of overlooked vulnerabilities. This formalisation validates the current understanding of KZG’s PCSs as secure while clarifying various issues in the original claims.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ParkLHSK25,
+	author = {Jaehwan Park and
+                  Hyeonbum Lee and
+                  Junbeom Hur and
+                  Jae Hong Seo and
+                  Doowon Kim},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {{UTRA:} Universal Token Reusability Attack and Token Unforgeable Delegatable
+                  Order-Revealing Encryption},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {321--340},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_17},
+	doi = {10.1007/978-3-032-07891-9\_17},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ParkLHSK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As datasets grow, users increasingly rely on cloud services for data storage and processing. Consequently, concerns regarding data protection and the practical use of encrypted data have emerged as significant challenges. One promising solution is order-revealing encryption (ORE), which enables efficient operations on encrypted numerical data. To support distributed environments with different users, delegatable ORE (DORE) extends this functionality to multi-client settings, enabling order comparisons between ciphertexts encrypted under different secret keys. However, Hahn et al. proposed a token forgery attack against DORE with a threat model and introduced the secure DORE (SEDORE) scheme as a countermeasure. Despite this enhancement, we claim that SEDORE remains vulnerable under the same threat model. In this paper, we present a novel Universal Token Reusability Attack, which exposes a critical vulnerability in SEDORE with the identical threat model. To mitigate this, we introduce the concept of verifiable delegatable order-revealing encryption (VDORE), along with a formal definition of token unforgeability. Building on this, we design a new scheme, Token Unforgeable DORE (\\(\\textsf{TUDORE}\\)), which ensures token unforgeability. Moreover, \\(\\textsf{TUDORE}\\) achieves 1.5\\(\\times \\) faster token generation than SEDORE with enhanced security.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ShaoLZS25,
+	author = {Yan Shao and
+                  Yuejun Liu and
+                  Yongbin Zhou and
+                  Mingyao Shao},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Enhanced Key Mismatch Attacks on Lattice-Based KEMs: Multi-bit Inference
+                  and Ciphertext Generalization},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {341--358},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_18},
+	doi = {10.1007/978-3-032-07891-9\_18},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ShaoLZS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Key Mismatch Attacks (KMA) pose a significant threat\xa0to lattice-based key encapsulation mechanisms (KEMs), such\xa0as CRYSTALS-Kyber (Kyber), standardized as NIST FIPS 203. Despite advancements in KMA, including multi-positional strategies\xa0and enhanced oracles like the Multi-Value Key Mismatch Oracle (MV-KMO), existing methods suffer from high query counts and detectable ciphertexts, limiting their practicality. This paper proposes techniques to enhance KMA efficiency and stealth against Kyber\xa0and Saber. First, for CPA-secure KEMs, we propose a multi-bit inference strategy that uses crafted ciphertexts to extract information\xa0about multiple private key coefficients per Key Mismatch Oracle\xa0(KMO) query, reducing the required queries for Kyber1024 from 2368 to\xa02268 and for FireSaber from 2623 to 2571. Second, for CCA-secure KEMs,\xa0we present a minimal-query KMA method leveraging the Hamming Weight Incremental (HWI) leakage model to recover the full decapsulated message, thereby reducing queries from 2176 to 12 for Kyber1024\xa0and from 2433 to 16 for FireSaber. Third, we develop a stealthy\xa0KMA variant for CCA-secure KEMs that reconstructs the noise vector\xa0to recover the private key, generating ciphertexts statistically indistinguishable from legitimate ones, as confirmed by entropy\xa0and Kullback-Leibler (KL) divergence analyses. These advancements improve KMA performance and covertness, revealing critical vulnerabilities in lattice-based KEMs and informing future cryptographic defenses.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/UnterguggenbergerLOSM25,
+	author = {Martin Unterguggenberger and
+                  Lukas Lamster and
+                  Mathias Oberhuber and
+                  Simon Scherer and
+                  Stefan Mangard},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Code Encryption with Intel {TME-MK} for Control-Flow Enforcement},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {359--378},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_19},
+	doi = {10.1007/978-3-032-07891-9\_19},
+	timestamp = {Sun, 04 Jan 2026 13:43:15 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/UnterguggenbergerLOSM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Memory safety errors enable an adversary to corrupt\xa0code pointers, diverting the program’s control flow. Recent CPU features, such as Intel CET/IBT, harden software systems against exploitation attempts that maliciously redirect control flow operations.\xa0While IBT limits valid indirect branch targets, forward-edge transfers\xa0can still be redirected to any IBT-marked function. Thus, IBT cannot provide fine-grained protection against forward-edge control-flow attacks. This paper presents code encryption with Intel TME-MK,\xa0a novel approach for control-flow enforcement against software exploitation on off-the-shelf x86 machines. We repurpose the\xa0Intel TME-MK runtime encryption to achieve function-level code encryption. Encrypted functions are only accessible through function pointers associated with the correct key, thereby enforcing fine-grained restrictions for control-flow transfers. We demonstrate two\xa0new encryption-based techniques for software hardening in practice: forward-edge control-flow integrity and library encryption.\xa0We implement a security-hardened toolchain that combines compiler instrumentation and a loader extension to ensure the validity of\xa0the program’s execution flow through efficient hardware-backed encryption. Our prototype shows a geomean performance overhead\xa0of 7.8\xa0% for forward-edge control-flow integrity and 2.2\xa0% \xa0for library encryption evaluated with the SPEC CPU2017 benchmark suite.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WeiHL25,
+	author = {Xiaoyang Wei and
+                  Shuai Han and
+                  Shengli Liu},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Optimized Privacy-Preserving Multi-signatures from Discrete Logarithm
+                  Assumption},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {379--399},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_20},
+	doi = {10.1007/978-3-032-07891-9\_20},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WeiHL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Multi-signatures allow a set of signers to generate a joint signature for the same message, which have been a popular realm in recent years. Tessaro and Zhu (EUROCRYPT’23) proposed an optimized version of a two-round multi-signature scheme \\(\\textsf{MuSig2}\\) (CRYPTO’21), called \\(\\mathsf {MuSig2\\text {-}H}\\), whose security relies on the plain discrete logarithm assumption. However, heavy computational overhead cannot be avoided during aggregated key generation, due to multiple exponentiations. Crites et al. (CRYPTO’22) proposed \\(\\textsf{SpeedyMuSig}\\), a more efficient version of \\(\\textsf{MuSig2}\\). Unfortunately, its proof relies on a non-standard assumption (the OMDL assumption) in an idealized model (the AGM). In a very recent work, Abou Haidar et al. (PKC’25) presented \\(\\mathsf {PP\\text {-}MuSig2}\\), a privacy-preserving version of \\(\\textsf{MuSig2}\\) which satisfies the strongest unforgeability and privacy, but failed to optimize efficiency and provide detailed proof of security reduction under the AOMDL assumption. In this paper, we propose an optimized multi-signature scheme, called \\(\\mathsf {PP\\text {-}SpeedyMuSig2\\text {-}H}\\), with high efficiency, strong security and privacy. Firstly, we use proofs of possession during key generation and verification, to improve the efficiency. Then, we revisit the framework of \\(\\mathsf {PP\\text {-}MuSig2}\\) and add privacy to the original \\(\\mathsf {MuSig2\\text {-}H}\\) scheme. Moreover, we prove the strongest security and privacy of the new scheme in detail, where its security proof relies on the discrete logarithm assumption and the random oracle model, without using the AGM. Finally, we instantiate \\(\\mathsf {PP\\text {-}SpeedyMuSig2\\text {-}H}\\) based on the discrete logarithm assumption.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/WuZDWZY25,
+	author = {Zhuo Wu and
+                  Xinxuan Zhang and
+                  Yi Deng and
+                  Yuanju Wei and
+                  Zhongliang Zhang and
+                  Liuyu Yang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Polylogarithmic Polynomial Commitment Scheme over Galois Rings},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {400--420},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_21},
+	doi = {10.1007/978-3-032-07891-9\_21},
+	timestamp = {Mon, 24 Nov 2025 14:56:59 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/WuZDWZY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces the first multilinear polynomial commitment scheme (PCS) over Galois rings achieving \\(\\mathcal {O}(\\log ^2 n)\\) verification cost. It achieves \\(\\mathcal {O}(n\\log n)\\) committing time and \\(\\mathcal {O}(n)\\) evaluation opening prover time. This PCS can be used to construct zero-knowledge proofs for arithmetic circuits over Galois rings, facilitating verifiable computation in applications requiring proofs of polynomial ring operations (e.g., verifiable fully homomorphic encryption). First we construct random foldable linear codes over Galois rings with sufficient code distance and present a distance preservation theorem over Galois rings. Second we extend the \\(\\textsf {Basefold}\\) commitment (Zeilberger et al., Crypto 2024) to multilinear polynomials over Galois rings. Our approach reduces proof size and verifier time from \\(\\mathcal {O}(\\sqrt{n})\\) to \\(\\mathcal {O}(\\log ^2 n)\\) compared to Wei et al., PKC 2025. Furthermore, we give a batched multipoint opening protocol for evaluation phase that collapses the proof size and verifier time of N polynomials at M points from \\(\\mathcal {O}(NM \\log ^2 n)\\) to \\(\\mathcal {O}(\\log ^2 n)\\), prover time from \\(\\mathcal {O}(NMn)\\) to \\(\\mathcal {O}(n)\\), further enhancing efficiency.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/XuH25,
+	author = {Changhong Xu and
+                  Honggang Hu},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Efficient Homomorphic Evaluation for Non-polynomial Functions},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {421--441},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_22},
+	doi = {10.1007/978-3-032-07891-9\_22},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/XuH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Efficient computation of non-polynomial functions in homomorphic encryption schemes is important for secure operations across various fields. Recent studies have focused on developing efficient algorithms for these computations. In this paper, we extend the Remez algorithm to derive an approximate polynomial with minimal relative error, enabling the homomorphic evaluation of non-polynomial functions such as the reciprocal m-th root function \\(f(x) = x^{-1/m}\\) where \\(m\\in \\mathbb {Z}^+\\) and the exponential function \\(f(x)=e^x\\). Additionally, we introduce a novel approximate polynomial \\(u(x)=\\sum _{i=0}^{n}c_i r^{i}x^{mi+1}\\) designed to further refine the approximation range for \\(f(x)=x^{-1/m}\\). Utilizing these methods, we introduce new algorithms for the homomorphic evaluation of inverse, square root, and exponential functions, which are subsequently implemented with the SEAL library. The experimental results demonstrate the superiority of our algorithms, requiring only \\(20\\%\\) of the execution time for the inverse function and \\(15\\%\\) for the square root function compared to previous method. Furthermore, based on our approximate inverse and exponential algorithms, we propose a new algorithm for the softmax function that exhibits reduced computation time and significantly smaller maximum and average errors.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/YangZXLWWL25,
+	author = {Yifan Yang and
+                  Kexin Zhang and
+                  Peng Xu and
+                  Zhaojun Lu and
+                  Wei Wang and
+                  Weiqi Wang and
+                  Kaitai Liang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Athena: Accelerating KeySwitch and Bootstrapping for Fully Homomorphic
+                  Encryption on {CUDA} {GPU}},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {442--462},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_23},
+	doi = {10.1007/978-3-032-07891-9\_23},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/YangZXLWWL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fully Homomorphic Encryption (FHE) enables computation over encrypted data, but it faces significant challenges in practical implementation due to its high computational costs, particularly in HMult, HRot, and Bootstrapping operations. This work presents Athena, an accelerated FHE system built on GPUs with a new algorithm-hardware co-design approach. Specifically, to accelerate HMult, HRot, and Bootstrapping, we redesign their common and expensive operation KeySwitch, based on the KLSS method proposed by Kim et al. in CRYPTO’23, and accelerate its core operations, namely NTT, EBConv, and IP. We further optimize the dataflow of Bootstrapping by reducing redundant EBConv and (I)NTT operations, and by improving the global memory I/O in the double-hoisting-based C2S/S2C operation. Moreover, Athena is designed as a general-purpose system that supports various cryptographic parameters. Experimental results demonstrate that Athena significantly improves the performance of KeySwitch and Bootstrapping. In particular, Athena’s accelerated KeySwitch optimizes HMult \\(2.17\\times \\sim 4.40\\times \\) and HRot \\(1.89\\times \\sim 4.54\\times \\) compared to TensorFHE (HPCA’23), Poseidon (HPCA’23), and FAB (HPCA’23), respectively. Besides, Athena’s Bootstrapping outperforms TensorFHE by nearly \\(2.74\\times \\).}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZainMKE25,
+	author = {Sara Zain and
+                  Jannik M{\"{a}}hn and
+                  Stefan K{\"{o}}psell and
+                  Sebastian Ertel},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Formally-Verified Security Against Forgery of Remote Attestation Using
+                  SSProve},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {463--484},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_24},
+	doi = {10.1007/978-3-032-07891-9\_24},
+	timestamp = {Sat, 15 Nov 2025 13:45:37 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ZainMKE25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remote attestation (RA) is the foundation for trusted execution environments in the cloud and trusted device driver onboarding in operating systems. However, RA misses a rigorous mechanized definition of\xa0its security properties in one of the strongest models, i.e., the semantic model. Such a mechanization requires the concept of State-Separating Proofs (SSP). However, SSP was only recently implemented as a foundational framework in the Rocq Prover. Based on this framework, this paper presents the first mechanized formalization of the fundamental security properties of RA. Our Rocq Prover development first defines digital signatures\xa0and formally verifies security against forgery in the strong existential attack model. Based on these results, we define RA and reduce the security of RA to the security of digital signatures. Our development provides evidence that the RA protocol is secure against forgery. Additionally, we extend our reasoning to the primitives of RA and reduce their security to the security of\xa0the primitives of the digital signatures.}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhangZ25,
+	author = {Xin Zhang and
+                  Yifan Zhang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {SafePath: Encryption-Less On-Demand Input Path Protection for Mobile
+                  Devices},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {485--505},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_25},
+	doi = {10.1007/978-3-032-07891-9\_25},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhangZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Sensitive data from input devices such as touchscreens and microphones is vulnerable to attackers with OS-level privileges. While prior work has primarily focused on protecting data after it reaches applications, the problem of securing the data path from the device to the application remains underexplored. Existing solutions either use encryption, which incurs significant performance overhead and complexity in key management, or bypass the OS entirely, which reduces compatibility and requires substantial changes to the application. We present SafePath, a system that secures input data paths without encryption or OS bypass. SafePath\xa0leverages ARM memory virtualization to implement a minimal memory hypervisor that intercepts device input data at its entry point into the system, stores it securely, and transmits only lightweight data indices to applications. This design isolates sensitive data from the OS while preserving the native input path structure and requiring minimal modifications to applications. We prototype SafePath\xa0on ARM hardware and support six different input devices. Evaluation shows that SafePath\xa0blocks OS-level access to input data while preserving system performance. For example, under high system load, it reduces audio frame loss by over 45% compared to encryption-based approaches and maintains over 98% of native throughput across all tested devices. These results demonstrate that SafePath\xa0offers strong protection with low overhead and practical deployability.\n}
+}
+
+
+@inproceedings{DBLP:conf/esorics/ZhuZSDWY25,
+	author = {Xudong Zhu and
+                  Xinxuan Zhang and
+                  Xuyang Song and
+                  Yi Deng and
+                  Yuanju Wei and
+                  Liuyu Yang},
+	editor = {Vincent Nicomette and
+                  Abdelmalek Benzekri and
+                  Nora Boulahia{-}Cuppens and
+                  Jaideep Vaidya},
+	title = {Extending Groth16 for Disjunctive Statements},
+	booktitle = {Computer Security - {ESORICS} 2025 - 30th European Symposium on Research
+                  in Computer Security, Toulouse, France, September 22-24, 2025, Proceedings,
+                  Part {II}},
+	series = {Lecture Notes in Computer Science},
+	volume = {16054},
+	pages = {506--527},
+	publisher = {Springer},
+	year = {2025},
+	url = {https://doi.org/10.1007/978-3-032-07891-9\_26},
+	doi = {10.1007/978-3-032-07891-9\_26},
+	timestamp = {Thu, 30 Oct 2025 10:40:56 +0100},
+	biburl = {https://dblp.org/rec/conf/esorics/ZhuZSDWY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Two most common ways to design non-interactive zero knowledge (NIZK) proofs are based on Sigma (\\(\\varSigma \\))-protocols (an efficient way to prove algebraic statements) and zero-knowledge succinct non-interactive arguments of knowledge (zk-SNARK) protocols (an efficient way to prove arithmetic statements). However, in the applications of cryptocurrencies such as privacy-preserving credentials, privacy-preserving audits, and blockchain-based voting systems, the zk-SNARKs for general statements are usually implemented with encryption, commitment, or other algebraic cryptographic schemes. Moreover, zk-SNARKs for many different arithmetic statements may also be required to be implemented together. Clearly, a typical solution is to extend the zk-SNARK circuit to include the code for algebraic part. However, complex cryptographic operations in the algebraic algorithms will significantly increase the circuit size, which leads to impractically large proving time and CRS size. Thus, we need a flexible enough proof system for composite statements including both algebraic and arithmetic statements. Unfortunately, while the conjunction of zk-SNARKs is relatively natural and numerous effective solutions are currently available (e.g. by utilizing the commit-and-prove technique), the disjunction of zk-SNARKs is rarely discussed in detail. In this paper, we mainly focus on the disjunctive statements of Groth16, and we propose a Groth16 variant—CompGroth16, which provides a framework for Groth16 to prove the disjunctive statements that consist of a mix of algebraic and arithmetic components. Specifically, we could directly combine CompGroth16 with \\(\\varSigma \\)-protocol or even CompGroth16 with CompGroth16 just like the logical composition of \\(\\varSigma \\)-protocols. From this, we can gain many good properties, such as broader expression, better prover’s efficiency and shorter CRS. In addition, for the combination of CompGroth16 and \\(\\varSigma \\)-protocol, we also present two representative application scenarios to demonstrate the practicality of our construction.}
+}
