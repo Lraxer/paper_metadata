@@ -1,0 +1,1523 @@
+@article{DBLP:journals/vldb/PanZLYLGL25,
+	author = {Dong Pan and
+                  Xu Zhou and
+                  Wensheng Luo and
+                  Zhibang Yang and
+                  Qing Li and
+                  Yunjun Gao and
+                  Kenli Li},
+	title = {Accelerating maximum biplex search over large bipartite graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {1},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00882-9},
+	doi = {10.1007/S00778-024-00882-9},
+	timestamp = {Thu, 04 Dec 2025 12:02:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/PanZLYLGL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a typical most-to-most connected quasi-biclique model, k-biplex allows nodes on each side of a fully connected subgraph to lose at most k connections. In this paper, we investigate the maximum k-biplex search problem to find a k-biplex with the maximum number of edges and prove that it is NP-hard and inapproximable. To solve this problem, we first define a new dense subgraph over a given bipartite graph, named (x,\xa0y)-core, based on which a core-based maximum k-biplex search (CMBS) framework is presented by introducing a core-based graph reduction technique. In addition, we design a bidirectional positioning strategy and propose a \\(\\hbox {CMBS}^+\\) framework. After that, two exact algorithms, namely a maximum k-biplex search (MBPS) algorithm and a core-based symmetric search (CSS) algorithm, are developed to compute the maximum k-biplex in (x,\xa0y)-cores. In particular, MBPS integrates degree-based and 2-hop pruning strategies, and CSS explores symmetric BK branching and early termination strategies. To process large bipartite graphs more effectively, we further develop a heuristic fast search (HFS) algorithm and a FPGA-based parallel HFS (FP-HFS) algorithm, where a two-level parallel architecture at and inside the processing element (PE) is introduced to improve the pipeline. Moreover, a double buffering technique is utilized to overcome the resource limitation of FP-HFS and improve scalability. Extensive experiments conducted on 12 real datasets, as well as two synthetic datasets, demonstrate the efficiency and effectiveness of the proposed algorithms.}
+}
+
+
+@article{DBLP:journals/vldb/ArroyueloGN25,
+	author = {Diego Arroyuelo and
+                  Adri{\'{a}}n G{\'{o}}mez{-}Brand{\'{o}}n and
+                  Gonzalo Navarro},
+	title = {Evaluating regular path queries on compressed adjacency matrices},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {2},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00885-6},
+	doi = {10.1007/S00778-024-00885-6},
+	timestamp = {Sun, 22 Dec 2024 15:49:51 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/ArroyueloGN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Regular Path Queries (RPQs), which are essentially regular expressions to be matched against the labels of paths in labeled graphs, are at the core of graph database query languages like SPARQL and GQL. A way to solve RPQs is to translate them into a sequence of operations on the adjacency matrices of each label. We design and implement a Boolean algebra on sparse matrix representations and, as an application, use them to handle RPQs. Our baseline representation uses the same space and time as the previously most compact index for RPQs, outperforming it on the hardest types of queries—those where both RPQ endpoints are unspecified. Our more succinct structure, based on \\(k^2\\)-trees, is 4 times smaller than any existing representation that handles RPQs. While slower, it still solves complex RPQs in a few seconds and slightly outperforms the smallest previous structure on the hardest RPQs. Our new sparse-matrix-based solutions dominate a good portion of the space/time tradeoff map, being outperformed only by representations that use much more space. They also implement an algebra of Boolean matrices that is of independent interest beyond solving RPQs.}
+}
+
+
+@article{DBLP:journals/vldb/HuXZ25,
+	author = {Zheng Hu and
+                  Cong Xu and
+                  Weiguo Zheng},
+	title = {A powerful reducing framework for accelerating set intersections over
+                  graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {3},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00881-w},
+	doi = {10.1007/S00778-024-00881-W},
+	timestamp = {Mon, 03 Mar 2025 22:26:44 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/HuXZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given two sets of vertices \\(S_a\\) and \\(S_b\\) of a graph, computing their common vertices, namely set intersection, is one primitive operation in many graph algorithms such as triangle counting, maximal clique enumeration, and subgraph matching. Therefore, accelerating set intersections is beneficial to these graph tasks. In the paper, we propose a novel reducing framework for speeding up set intersections over graphs rather than intersecting the two sets directly. In the reducing phase, the vertices that cannot fall into the intersection are screened out by applying the range reduction. Based on the truncated subsets, the intersection can be easily obtained at low cost. To optimize the range codes, we formulate the problem of range code optimization and prove its NP-hardness. We develop efficient yet effective algorithms for two typical scenarios, namely global intersection and local intersection. Moreover, we present a novel two-level strategy and a nested reducing framework to enhance the performance. The results of extensive experiments over real graphs show that our approach can achieve significant speedups compared to the state-of-the-art algorithms.\n}
+}
+
+
+@article{DBLP:journals/vldb/LiuW25,
+	author = {Hao Liu and
+                  Raymond Chi{-}Wing Wong},
+	title = {On efficient 3D object retrieval},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {4},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00884-7},
+	doi = {10.1007/S00778-024-00884-7},
+	timestamp = {Wed, 27 Aug 2025 11:29:35 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiuW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Due to the growth of the 3D technology, digital 3D models represented in the form of point clouds have attracted a lot of attention from both industry and academia. In this paper, due to a variety of applications, we study a fundamental problem called the 3D object retrieval, which is to find a set of 3D point clouds stored in a database that are similar to a given query 3D point cloud. To the best of our knowledge, solving the problem of 3D object retrieval efficiently remains unexplored in the research community. In this paper, we propose a framework called C\\(_2\\)O to find the answer efficiently with the help of an index built on the database. In most of our experiments, C\\(_2\\)O performs up to 2 orders of magnitude faster than all adapted algorithms in the literature. In particular, when the database size scales up to 100 million points, C\\(_2\\)O answers the 3D object retrieval within 10\xa0s but all adapted exact algorithms need more than 1000\xa0s.}
+}
+
+
+@article{DBLP:journals/vldb/ZeakisPSK25,
+	author = {Alexandros Zeakis and
+                  George Papadakis and
+                  Dimitrios Skoutas and
+                  Manolis Koubarakis},
+	title = {An in-depth analysis of pre-trained embeddings for entity resolution},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {5},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00879-4},
+	doi = {10.1007/S00778-024-00879-4},
+	timestamp = {Sun, 01 Feb 2026 13:44:27 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/ZeakisPSK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recent works on entity resolution (ER) leverage deep learning techniques that rely on language models to improve effectiveness. These techniques are used both for blocking and matching, the two main steps of ER. Several language models have been tested in the literature, with fastText and BERT variants being most popular. However, there is no detailed analysis of their strengths and weaknesses. We cover this gap through a thorough experimental analysis of 12 popular pre-trained language models over 17 established benchmark datasets. First, we examine their relative effectiveness in blocking, unsupervised matching and supervised matching. We enhance our analysis by also investigating the complementarity and transferability of the language models and we further justify their relative performance by looking into the similarity scores and ranking positions each model yields. In each task, we compare them with several state-of-the-art techniques in the literature. Then, we investigate their relative time efficiency with respect to vectorization overhead, blocking scalability and matching run-time. The experiments are carried out both in schema-agnostic and schema-aware settings. In the former, all attribute values per entity are concatenated into a representative sentence, whereas in the latter the values of individual attributes are considered. Our results provide novel insights into the pros and cons of the main language models, facilitating their use in ER applications.}
+}
+
+
+@article{DBLP:journals/vldb/HuLZO25,
+	author = {Lin Hu and
+                  Yinnian Lin and
+                  Lei Zou and
+                  M. Tamer {\"{O}}zsu},
+	title = {A graph pattern mining framework for large graphs on {GPU}},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {6},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00883-8},
+	doi = {10.1007/S00778-024-00883-8},
+	timestamp = {Wed, 08 Jan 2025 21:11:21 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/HuLZO25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Graph pattern mining (GPM) is an important problem in graph processing. There are many parallel frameworks for GPM, many of which suffer from low performance. GPU is a powerful option for accelerating graph processing, but parallel GPM algorithms produce a large number of intermediate results, limiting GPM implementations on GPU. In this paper, we present GAMMA, an out-of-core GPM framework on GPU, that makes full use of host memory to process large graphs. GAMMA adopts a self-adaptive implicit host memory access approach to achieve high bandwidth, which is transparent to users. It provides flexible and effective interfaces for users to build their algorithms. We also propose several optimizations over primitives provided by GAMMA in the out-of-core GPU system, as well as optimizations to perform set intersections since they are widely used in GPM. Experimental results show that GAMMA scales better with graph size over the state-of-the-art approaches—by an order of magnitude—and is also faster than existing GPM systems.}
+}
+
+
+@article{DBLP:journals/vldb/ShinZWA25,
+	author = {Jaewoo Shin and
+                  Libin Zhou and
+                  Jianguo Wang and
+                  Walid G. Aref},
+	title = {An update-intensive LSM-based R-tree index},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {7},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00876-7},
+	doi = {10.1007/S00778-024-00876-7},
+	timestamp = {Thu, 09 Oct 2025 14:59:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ShinZWA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many applications require update-intensive workloads on spatial objects, e.g., social-network services and shared-riding services that track moving objects. By buffering insert and delete operations in memory, the Log Structured Merge Tree (LSM) has been used widely in various systems because of its ability to handle write-heavy workloads. While the focus on LSM has been on key-value stores and their optimizations, there is a need to study how to efficiently support LSM-based secondary indexes (e.g., location-based indexes) as modern, heterogeneous data necessitates the use of secondary indexes. In this paper, we investigate the augmentation of a main-memory-based memo structure into an LSM secondary index structure to handle update-intensive workloads efficiently. We conduct this study in the context of an R-tree-based secondary index. In particular, we introduce the LSM RUM-tree that demonstrates the use of an Update Memo in an LSM-based R-tree to enhance the performance of the R-tree’s insert, delete, update, and search operations. The LSM RUM-tree introduces new strategies to control the size of the Update Memo to make sure it always fits in memory for high performance. The Update Memo is a light-weight in-memory structure that is suitable for handling update-intensive workloads without introducing significant overhead. Experimental results using real spatial data demonstrate that the LSM RUM-tree achieves up to 6.6x speedup on update operations and up to 249292x speedup on query processing over existing LSM R-tree implementations.}
+}
+
+
+@article{DBLP:journals/vldb/GeorgiadisZM25,
+	author = {Thanasis Georgiadis and
+                  Eleni Tzirita Zacharatou and
+                  Nikos Mamoulis},
+	title = {Raster interval object approximations for spatial intersection joins},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {8},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00887-4},
+	doi = {10.1007/S00778-024-00887-4},
+	timestamp = {Mon, 03 Mar 2025 22:26:44 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/GeorgiadisZM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Spatial join processing techniques that identify intersections between complex geometries (e.g., polygons) commonly follow a two-step filter-and-refine pipeline. The filter step evaluates the query predicate on the minimum bounding rectangles (MBRs) of the geometries, while the refinement step eliminates false positives by applying the query on the exact geometries. To accelerate spatial join evaluation over complex geometries, we propose a raster intervals approximation of object geometries and introduce a powerful intermediate step in the pipeline. In a preprocessing phase, our method (i) rasterizes each object geometry using a fine grid, (ii) models groups of nearby cells that intersect the polygon as an interval, and (iii) encodes each interval with a bitstring capturing the overlap of each cell in it with the polygon. Going one step further, we improve our approach by approximating each object with two sets of intervals that succinctly capture the raster cells that (i) intersect with the object and (ii) are fully contained within the object. Using this representation, we show that we can verify whether two polygons intersect through a sequence of linear-time joins between the interval sets. Our approximations are effectively compressible and customizable for partitioned data and polygons of varying sizes, rasterized at different granularities. Finally, we propose a novel algorithm that computes the interval approximation of a polygon without fully rasterizing it first, rendering the computation of approximations orders of magnitude faster. Experiments on real data demonstrate the effectiveness and efficiency of our proposal over previous work.}
+}
+
+
+@article{DBLP:journals/vldb/MondalKSC25,
+	author = {Manuel Mondal and
+                  Mourad Khayati and
+                  H{\^{o}}ng{-}{\^{A}}n Sandlin and
+                  Philippe Cudr{\'{e}}{-}Mauroux},
+	title = {A survey of multimodal event detection based on data fusion},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {9},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00878-5},
+	doi = {10.1007/S00778-024-00878-5},
+	timestamp = {Mon, 03 Mar 2025 22:26:44 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/MondalKSC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the emergence of the Internet of Things (IoT) and the rise of shared multimedia content on social media networks, available datasets have become increasingly heterogeneous. Several multimodal techniques for detecting events in data of different types and formats have emerged. Those techniques implement various detection algorithms and present different trade-offs in terms of data fusion. Unfortunately, little is known about their underlying detection mechanisms, as existing comparisons are limited to either unimodal event detection techniques or specific types or representations for multimodal techniques. Understanding the behavior of multimodal event detection techniques remains an acute open research problem. In this work, we present a systematic literature review of multimodal event detection techniques. We describe how various techniques leverage information from different modalities through data fusion. We further propose a novel taxonomy of multimodal event detection techniques according to their temporal orientation and the inner workings of their detection mechanism. Finally, we analyze the datasets and metrics used in previous works as well as their reported results.  Our survey allows to uncover the properties of each approach and discuss future research directions in this field.}
+}
+
+
+@article{DBLP:journals/vldb/MessaoudMS25,
+	author = {Aghiles Ait Messaoud and
+                  Sonia Ben Mokhtar and
+                  Anthony Simonet{-}Boulogne},
+	title = {Tee-based key-value stores: a survey},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {10},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00877-6},
+	doi = {10.1007/S00778-024-00877-6},
+	timestamp = {Sat, 25 Jan 2025 23:15:52 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/MessaoudMS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Key-Value Stores (KVSs) are No-SQL databases that store data as key-value pairs and have gained popularity due to their simplicity, scalability, and fast retrieval capabilities. However, storing sensitive data in KVSs requires strong security properties to prevent data leakage and unauthorized tampering. While software (SW)-based encryption techniques are commonly used to maintain data confidentiality and integrity, they suffer from several drawbacks. They strongly assume trust in the hosting system stack and do not secure data during processing unless using performance-heavy techniques (e.g.,homomorphic encryption). Alternatively, Trusted Execution Environments (TEEs) provide a solution that enforces the confidentiality and integrity of code and data at the CPU level, allowing users to build trusted applications in an untrusted environment. They also secure data in use by providing an encapsulated processing environment called enclave. Nevertheless, TEEs come with their own set of drawbacks, including performance issues due to memory size limitations and CPU context switching. This paper examines the state of the art in TEE-based confidential KVSs and highlights common design strategies used in KVSs to leverage TEE security features while overcoming their inherent limitations. This work aims to provide a comprehensive understanding of the use of TEEs in KVSs and to identify research directions for future work.}
+}
+
+
+@article{DBLP:journals/vldb/AhmedGVZ25,
+	author = {Waqas Ahmed and
+                  Leticia I. G{\'{o}}mez and
+                  Alejandro A. Vaisman and
+                  Esteban Zim{\'{a}}nyi},
+	title = {Reconciling tuple and attribute timestamping for temporal data warehouses},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {11},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00889-2},
+	doi = {10.1007/S00778-024-00889-2},
+	timestamp = {Sat, 25 Jan 2025 23:15:52 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/AhmedGVZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data Warehouses (DWs) requir e storing and analyzing time-varying data to reflect changes that occur in the business world. Solutions to this problem build on the field of temporal databases and adopt the tuple-timestamping approach, where tuples are timestamped with their validity interval. Alternatively, the attribute timestamping approach represents a time-varying attribute with a list of its evolving values and the time when these changes occurred. The SQL:2011 standard has favored the tuple timestamping approach, which has also been used for temporal DWs, despite that it yields very long and complex SQL queries. This paper aims at reconciling both approaches and advocates for a database that can support both models, in a way such that they complement each other. We show that, to efficiently operate with tuple timestamping, we need appropriate time data types and operations for representing and manipulating temporal elements. We also show that many applications are more naturally and efficiently modeled and implemented using attribute timestamping. To prove the feasibility of our proposal, we implemented a portion of the TPC-DS benchmark using three alternative approaches, two of them based on classic tuple timestamping (including the well-known slowly-changing dimensions model), and a third one, based on our proposal. For the latter, we used MobilityDB, a novel spatiotemporal database built on top of PostgreSQL, that integrates both models in a natural way. Experiments showed that our proposal outperformed the other two ones, in many cases, by orders of magnitude.}
+}
+
+
+@article{DBLP:journals/vldb/GuoLHW25,
+	author = {Yunyan Guo and
+                  Guoliang Li and
+                  Ruilin Hu and
+                  Yong Wang},
+	title = {In-database query optimization on {SQL} with {ML} predicates},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {12},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00888-3},
+	doi = {10.1007/S00778-024-00888-3},
+	timestamp = {Mon, 03 Feb 2025 17:25:05 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/GuoLHW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Extended SQL with machine learning (ML) predicates, commonly referred to as SQL+ML, integrates ML abilities into traditional SQL processing in databases. When processing SQL+ML queries, some methods move data from database (DB) systems to ML systems to support SQL+ML queries. Such methods are not only costly due to maintaining two copies of data, but also pose security risks due to data movement. Fortunately, in-database SQL+ML processing addresses these limitations. However, conventional DB optimizers take ML predicates as UDFs (user-defined functions) and cannot optimize them using query rewriter and cost models. To boost the efficiency of in-database SQL+ML processing, this paper proposes to generate SQL predicates based on ML predicates and add them into SQL+ML queries, which can prune a significant number of irrelevant tuples and thus improve the performance. Optimizing SQL+ML queries presents three challenges: (C1) how to generate valid SQL predicates, (C2) how to select high-quality SQL predicates, and (C3) how to optimize the query using SQL predicates. To address these challenges, we propose Smart, which integrates three novel modules into the database optimizer: (1) inference rewrite: generating tight and valid SQL predicates for logical optimization; (2) progressive inference: selecting high-pruning-power but low-overhead SQL predicates to prune irrelevant tuples; (3) cost-optimal inference: optimizing the cost of query plan with selected SQL predicates for physical optimization. We implemented Smart in PostgreSQL and evaluated it on four widely-used benchmarks, JOB, TPC-H, SSB, and Flight. Experimental results revealed that Smart performed up to three orders of magnitude faster than the state-of-art baselines.}
+}
+
+
+@article{DBLP:journals/vldb/MannAJP25,
+	author = {Willi Mann and
+                  Nikolaus Augsten and
+                  Christian S. Jensen and
+                  Mateusz Pawlik},
+	title = {{SWOOP:} top-k similarity joins over set streams},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {13},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00880-x},
+	doi = {10.1007/S00778-024-00880-X},
+	timestamp = {Sat, 25 Jan 2025 23:15:52 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/MannAJP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We provide efficient support for applications that aim to continuously find pairs of similar sets in rapid streams, such as Twitter streams that emit tweets as sets of words. Using a sliding window model, the top-k result changes as new sets enter the window or existing ones leave the window. Specifically, when a set arrives, it may form a new top-k result pair with any set already in the window. When a set leaves the window, all its pairings in the top-k result must be replaced with other pairs. It is therefore not sufficient to maintain the k most similar pairs since less similar pairs may become top-k pairs later. We propose SWOOP, a highly scalable stream join algorithm. Novel indexing techniques and sophisticated filters efficiently prune obsolete pairs as new sets enter the window. SWOOP incrementally maintains a provably minimal stock of similar pairs to update the top-k result at any time. Empirical studies confirm that SWOOP is able to support stream rates that are orders of magnitude faster than the rates supported by existing approaches.}
+}
+
+
+@article{DBLP:journals/vldb/SongYCYXLC25,
+	author = {Yitong Song and
+                  Bin Yao and
+                  Zhida Chen and
+                  Xin Yang and
+                  Jiong Xie and
+                  Feifei Li and
+                  Mengshi Chen},
+	title = {Efficient top-k spatial-range-constrained approximate nearest neighbor
+                  search on geo-tagged high-dimensional vectors},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {1},
+	pages = {14},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00894-5},
+	doi = {10.1007/S00778-024-00894-5},
+	timestamp = {Thu, 23 Oct 2025 23:00:52 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/SongYCYXLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In location-based services, data objects often possess dual attributes, featuring both structured geographic attributes and vector attributes derived from unstructured sources (i.e., images and text). This paper studies the problem of top-k spatial-Range-constrained Approximate Nearest Neighbor Search (k-RANNS) for such data. Specifically, given a query vector q and a geospatial range R, the k-RANNS query identifies top-k objects whose spatial coordinates are located within R and whose vectors are most similar to v. This query is quite common in location-based services. For example, food delivery platforms often recommend restaurants within a user’s city that align with their previous orders. Albeit existing solutions can be applied to k-RANNS queries, they face challenges in memory efficiency and performance stability across various selective queries. This is due to their lack of effective mechanisms to manage the index memory overhead and their disregard for the impact of query selectivity on query performance. To address these challenges, we introduce Mesh, a Memory-Efficient index for the Spatial-range-constrained High-dimensional k-ANNS query. Mesh is a workload-aware index designed to optimize query efficiency for a given workload with various selective queries while ensuring memory overhead below a predefined constraint. Its construction poses a combinatorial optimization problem, proven to be NP-hard. We propose a theoretically guaranteed approximation algorithm as a practical solution for the combinatorial optimization problem. We also develop an efficient query algorithm that can adaptively decide the execution strategy for each query with specific selectivity, and present several techniques to further enhance query efficiency. Extensive experiments show that Mesh outperforms competitors by up to orders of magnitude while using less memory, and exhibits stable performance across various selective queries.}
+}
+
+
+@article{DBLP:journals/vldb/KimMBKS25,
+	author = {Hyunju Kim and
+                  Heechan Moon and
+                  Fanchen Bu and
+                  Jihoon Ko and
+                  Kijung Shin},
+	title = {Estimating simplet counts via sampling},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {15},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00890-9},
+	doi = {10.1007/S00778-024-00890-9},
+	timestamp = {Fri, 07 Mar 2025 18:30:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/KimMBKS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Simplicial complexes are higher-order combinatorial structures which have been used to represent real-world complex systems. In this paper, we focus on the local patterns in simplicial complexes called simplets, a generalization of graphlets. We study the problem of counting simplets of a given size in a given simplicial complex. For this problem, we extend a sampling algorithm based on color coding, from graphs to simplicial complexes, with essential technical novelty. We theoretically analyze our proposed algorithm named SC3, showing its correctness, unbiasedness, convergence, and time/space complexity. Through extensive experiments on sixteen real-world datasets, we show the superiority of SC3 in terms of accuracy, speed, and scalability, compared to the baseline methods. We use the counts given by SC3 for simplicial complex analysis, especially for characterization, which is further used for simplicial complex clustering, where SC3 shows a strong ability of characterization with domain-based similarity. Additionally, we explore a variant of simplet counting (specifically, estimating the relative counts of simplets) under realistic scenarios where the entire simplicial complex is not provided at once but can only be partially accessed, for instance, through a limited number of API calls. For such scenarios, we propose a random-walk-based sampling algorithm, SCRW, and analyze its theoretical properties. In our experiments, SCRW requires, on average, \\(16.5\\times \\) less memory than SC3, while the speed-accuracy trade-offs provided by the two methods are comparable.}
+}
+
+
+@article{DBLP:journals/vldb/MulderFY25,
+	author = {Thomas Mulder and
+                  George Fletcher and
+                  Nikolay Yakovets},
+	title = {Optimizing navigational graph queries},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {16},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00892-7},
+	doi = {10.1007/S00778-024-00892-7},
+	timestamp = {Sun, 15 Jun 2025 21:07:02 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/MulderFY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We study the optimization of navigational graph queries in the form of the Regular Queries, i.e., queries which combine recursive and pattern-matching fragments. Current approaches to their evaluation are not effective in practice. Towards addressing this, we present a number of novel powerful optimization techniques which aim to constrain the intermediate results during query evaluation. We show how these techniques can be planned effectively and executed efficiently towards the first practical evaluation solution for complex navigational queries on real-world workloads. Indeed, our experimental results show several orders of magnitude improvement in query evaluation performance over state-of-the-art techniques on a wide range of queries on diverse datasets.}
+}
+
+
+@article{DBLP:journals/vldb/LiuLZSC25,
+	author = {Qiyu Liu and
+                  Maocheng Li and
+                  Yuxiang Zeng and
+                  Yanyan Shen and
+                  Lei Chen},
+	title = {How good are multi-dimensional learned indexes? An experimental survey},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {17},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00893-6},
+	doi = {10.1007/S00778-024-00893-6},
+	timestamp = {Fri, 07 Mar 2025 18:30:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/LiuLZSC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Efficient indexing is fundamental to managing and analyzing multi-dimensional data. A growing trend is to directly learn the storage layout of multi-dimensional data using simple machine learning models, leading to the concept of Learned Index. Compared to conventional indexing methods that have been used for decades (e.g., kd-tree and R-tree variants), learned indexes have demonstrated empirical advantages in both space and time efficiency on modern architectures. However, there is a lack of comprehensive evaluation across existing multi-dimensional learned indexes under a standardized benchmark, making it challenging to identify the most suitable index for specific data types and query patterns. This gap also hinders the widespread adoption of learned indexes in practical applications. In this paper, we present the first in-depth empirical study to answer the question: how good are multi-dimensional learned indexes? We evaluate ten recently published indexes under a unified experimental framework, which includes standardized implementations, datasets, query workloads, and evaluation metrics. We thoroughly investigate the evaluation results and discuss the findings that may provide insights for future learned index design.}
+}
+
+
+@article{DBLP:journals/vldb/JiangLZCZL25,
+	author = {Changkun Jiang and
+                  Heze Lao and
+                  Chaorui Zhang and
+                  Ji Cheng and
+                  Chen Jason Zhang and
+                  Jianqiang Li},
+	title = {HeteroStamp: leveraging heterogeneous social interactions for mobility
+                  prediction-enhanced cost-aware spatiotemporal crowdsensing},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {18},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00891-8},
+	doi = {10.1007/S00778-024-00891-8},
+	timestamp = {Mon, 07 Jul 2025 17:48:16 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/JiangLZCZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Accurately predicting user mobility is crucial for effectively assigning spatiotemporal crowdsensing tasks to appropriate mobile users, thereby enhancing task completion rates. While prior studies have proposed various trajectory-based mobility prediction methods, they have not adequately addressed the heterogeneous relationships between completed spatiotemporal tasks and users’ social trajectories. In this article, we present a new spatiotemporal crowdsensing framework that incorporates Heterogeneous Social interactions into the joint design of task allocation and mobility prediction (HeteroStamp). Unlike prior studies, HeteroStamp jointly considers heterogeneous social mobility prediction and social interaction cost-aware task allocation. To achieve this, HeteroStamp incorporates a new social mobility model that employs heterogeneous social graph embedding to extract historical mobility features. Furthermore, a tailored deep learning approach is utilized to predict users’ trajectories. Leveraging the mobility prediction module, HeteroStamp incorporates a cost-aware task allocation module that maximizes task coverage while considering users’ social interaction costs and tasks’ spatiotemporal completion constraints. We show the NP-hardness of the task coverage maximization problem, and propose both a local greedy algorithm and a global heuristic algorithm to efficiently solve it. To evaluate HeteroStamp’s performance, we conduct experiments using two widely-used real-world datasets. The results reveal that HeteroStamp outperforms existing state-of-the-art baselines in terms of achieving more accurate task-user matching and enhanced task completion rates.}
+}
+
+
+@article{DBLP:journals/vldb/TongZSPFXZZCXXL25,
+	author = {Yongxin Tong and
+                  Yuxiang Zeng and
+                  Yang Song and
+                  Xuchen Pan and
+                  Zeheng Fan and
+                  Chunbo Xue and
+                  Zimu Zhou and
+                  Xiaofei Zhang and
+                  Lei Chen and
+                  Yi Xu and
+                  Ke Xu and
+                  Weifeng Lv},
+	title = {Hu-Fu: efficient and secure spatial queries over data federation},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {19},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00896-3},
+	doi = {10.1007/S00778-024-00896-3},
+	timestamp = {Fri, 07 Mar 2025 18:30:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/TongZSPFXZZCXXL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data isolation has become an obstacle to scale up query processing over big data, since sharing raw data among data owners is often prohibitive due to security concerns. A promising solution is to perform secure queries over a federation of multiple data owners leveraging secure multi-party computation (SMC) techniques, as evidenced by recent federation studies on relational data. However, existing solutions are highly inefficient on spatial queries due to excessive secure distance operations for query processing and their usage of general-purpose SMC libraries for secure operation implementation. In this paper, we propose Hu-Fu, the first system for efficient and secure spatial query processing on a data federation. Hu-Fu seamlessly supports five mainstream spatial queries at scale, while ensuring both data and query privacy (i.e., sensitive spatial information of data owners and query users). The idea is to decompose the secure processing of a spatial query into as many plaintext operations and as few secure operations as possible, where fewer secure operators are involved and all of them are implemented dedicatedly. As a working system, Hu-Fu supports not only query input in native SQL, but also heterogeneous spatial databases (e.g., PostGIS, GeoMesa, and SpatialHadoop) at the backend. Extensive experiments show that Hu-Fu usually outperforms the state-of-the-arts in running time and communication cost while guaranteeing security.}
+}
+
+
+@article{DBLP:journals/vldb/TaoGMR25,
+	author = {Yuchao Tao and
+                  Amir Gilad and
+                  Ashwin Machanavajjhala and
+                  Sudeepa Roy},
+	title = {Differentially private explanations for aggregate query answers},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {20},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00895-4},
+	doi = {10.1007/S00778-024-00895-4},
+	timestamp = {Tue, 19 Aug 2025 13:16:25 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/TaoGMR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Differential privacy (DP) is the state-of-the-art and rigorous notion of privacy for answering aggregate database queries while preserving the privacy of sensitive information in the data. In today’s era of data analysis, however, it poses new challenges for users to understand the trends and anomalies observed in the query results: Is the unexpected answer due to the data itself, or is it due to the extra noise that must be added to preserve DP? In the second case, even the observation made by the users on query results may be wrong. In the first case, can we still mine interesting explanations from the sensitive data while protecting its privacy? To address these challenges, we present a three-phase framework DPXPlain, which is the first system to the best of our knowledge for explaining group-by aggregate query answers with DP. In its three phases, DPXPlain (a) answers a group-by aggregate query with DP, (b) allows users to compare aggregate values of two groups and with high probability assesses whether this comparison holds or is flipped by the DP noise, and (c) eventually provides an explanation table containing the approximately ‘top-k’ explanation predicates along with their relative influences and ranks in the form of confidence intervals, while guaranteeing DP in all steps. We perform an extensive experimental analysis of DPXPlain with multiple use-cases on real and synthetic data showing that DPXPlain efficiently provides insightful explanations with good accuracy and utility.\n}
+}
+
+
+@article{DBLP:journals/vldb/Trummer25,
+	author = {Immanuel Trummer},
+	title = {Generating highly customizable python code for data processing with
+                  large language models},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {21},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00900-4},
+	doi = {10.1007/S00778-025-00900-4},
+	timestamp = {Tue, 01 Apr 2025 19:05:20 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/Trummer25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {CARD (Coding Assistant for Relational Data analysis) generates Python code that processes relational queries on raw data. Users can customize generated code via natural language instructions, e.g., by instructing the system to use specific libraries or produce certain output. Internally, CARD uses large language models such as GPT-4o to synthesize code. CARD automatically constructs prompts describing code generation tasks to the language models. Those prompts contain information on data format, customization requirements, as well as processing plans, generated by CARD’s scenario-specific query planner. CARD automatically tests generated code by comparing its output to the output of a reference SQL engine. In case of inconsistencies, CARD re-generates code with a certain degree of randomization. Furthermore, CARD can automatically generate libraries of code samples for specific customization scenarios in a pre-processing step, leveraging those samples at run time for few-shot learning. The experiments show that CARD generates accurate code in the vast majority of scenarios. Furthermore, current trends in language models are likely to benefit CARD’s performance in the future.}
+}
+
+
+@article{DBLP:journals/vldb/PengLCSSCC25,
+	author = {Jingshu Peng and
+                  Qiyu Liu and
+                  Zhao Chen and
+                  Yingxia Shao and
+                  Yanyan Shen and
+                  Lei Chen and
+                  Jiannong Cao},
+	title = {From Sancus to Sancus\({}^{\mbox{q}}\): staleness and quantization-aware
+                  full-graph decentralized training in graph neural networks},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {22},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00897-2},
+	doi = {10.1007/S00778-024-00897-2},
+	timestamp = {Fri, 07 Mar 2025 18:30:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/PengLCSSCC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Graph neural networks (GNNs) have emerged due to their success at modeling graph data. Yet, it is challenging for GNNs to efficiently scale to large graphs. Thus, distributed GNNs come into play. To avoid communication caused by expensive data movement between workers, we propose Sancus and its advanced version Sancus, the staleness and quantization-aware communication-avoiding decentralized GNN system. By introducing a set of novel bounded embedding staleness metrics and adaptively skipping broadcasts, Sancus abstracts decentralized GNN processing as sequential matrix multiplication and uses historical embeddings via cache. To further mitigate the communication volume, Sancus conducts quantization-aware communication on embeddings to reduce the size of broadcast messages. Theoretically, we show bounded approximation errors of embeddings and gradients with a known fastest convergence guarantee. Empirically, we evaluate Sancus and Sancus with common GNN models via different system setups on large-scale benchmark datasets. Compared to SOTA works, Sancus can avoid up to \\(86\\%\\) communication with \\(3.0\\times \\) faster throughput on average without accuracy loss.}
+}
+
+
+@article{DBLP:journals/vldb/SkavantzosL25,
+	author = {Philipp Skavantzos and
+                  Sebastian Link},
+	title = {Third and Boyce-Codd normal form for property graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {23},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00902-2},
+	doi = {10.1007/S00778-025-00902-2},
+	timestamp = {Sun, 02 Nov 2025 21:29:29 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/SkavantzosL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Normalization minimizes sources of potential data inconsistency and costs of update maintenance incurred by data redundancy. For relational databases, different classes of dependencies cause data redundancy and have resulted in proposals such as Third, Boyce–Codd, Fourth and Fifth Normal Form. Features of more advanced data models make it challenging to extend achievements from the relational model to missing, non-atomic, or uncertain data. We initiate research on the normalization of graph data, starting with a class of functional dependencies tailored to property graphs. We show that this class captures important semantics of applications, constitutes a rich source of data redundancy, its implication problem can be decided in linear time, and facilitates the normalization of property graphs flexibly tailored to their labels and properties that are targeted by applications. We normalize property graphs into Boyce–Codd Normal Form without loss of data and dependencies whenever possible, but guarantee Third Normal Form in general. Experiments on real-world property graphs quantify and qualify various benefits of graph normalization: (1) removing redundant property values as sources of inconsistent data, (2) detecting inconsistency as violation of functional dependencies, (3) reducing overheads for updates by orders of magnitude, and (4) significant speed ups of queries.}
+}
+
+
+@article{DBLP:journals/vldb/HeltSALF25,
+	author = {Jeffrey Helt and
+                  Abhinav Sharma and
+                  Daniel J. Abadi and
+                  Wyatt Lloyd and
+                  Jose M. Faleiro},
+	title = {{C5:} cloned concurrency control that always keeps up},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {24},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00901-3},
+	doi = {10.1007/S00778-025-00901-3},
+	timestamp = {Fri, 07 Mar 2025 18:30:43 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/HeltSALF25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Asynchronously replicated primary-backup databases are commonly deployed to improve availability and offload read-only transactions. To both apply replicated writes from the primary and serve read-only transactions, the backups implement a cloned concurrency control protocol. The protocol ensures read-only transactions always return a snapshot of state that previously existed on the primary. This compels the backup to exactly copy the commit order resulting from the primary’s concurrency control. Existing cloned concurrency control protocols guarantee this by limiting the backup’s parallelism. As a result, the primary’s concurrency control executes some workloads with more parallelism than these protocols. In this paper, we prove that this parallelism gap leads to unbounded replication lag, where writes can take arbitrarily long to replicate to the backup and which has led to catastrophic failures in production systems. We then design C5, the first cloned concurrency protocol to provide bounded replication lag. We implement two versions of C5: Our evaluation in MyRocks, a widely deployed database, demonstrates C5 provides bounded replication lag. Our evaluation in Cicada, a recent in-memory database, demonstrates C5 keeps up with even the fastest of primaries.\n\n\n}
+}
+
+
+@article{DBLP:journals/vldb/BurckhardtCGJKMMZ25,
+	author = {Sebastian Burckhardt and
+                  Badrish Chandramouli and
+                  Chris Gillum and
+                  David Justo and
+                  Konstantinos Kallas and
+                  Connor McMahon and
+                  Christopher S. Meiklejohn and
+                  Xiangfeng Zhu},
+	title = {Netherite: efficient execution of serverless workflows},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {25},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00898-1},
+	doi = {10.1007/S00778-024-00898-1},
+	timestamp = {Thu, 06 Mar 2025 20:49:26 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/BurckhardtCGJKMMZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Serverless applications are popular because they can provide scalability and load-based billing with minimal developer effort. Beyond simple stateless functions (FaaS), modern serverless programming models such as Durable Functions (DF) now provide stateful abstractions, such as workflows, tasks and actors, whose state and progress is implicitly and continuously persisted. This automatic resilience greatly simplifies development, but also creates performance challenges, such as a large number of IOps. To address these challenges, we introduce Netherite, a novel architecture for executing serverless workflows on an elastic cluster. Netherite groups the numerous application objects into a smaller number of partitions, and pipelines the state persistence of each partition. This improves latency and throughput, as it enables workflow steps to group commit, even if causally dependent. Moreover, Netherite leverages FASTER’s hybrid log approach to support larger-than-memory application state, and to enable efficient partition movement between compute hosts. Our evaluation shows that (a) Netherite achieves lower latency and higher throughput than the original DF engine, by more than an order of magnitude in some cases, and (b) that Netherite has lower latency than some commonly used alternatives, like AWS Step Functions or cloud storage triggers.}
+}
+
+
+@article{DBLP:journals/vldb/YuWYQZZL25,
+	author = {Yuanhang Yu and
+                  Dong Wen and
+                  Michael Yu and
+                  Lu Qin and
+                  Ying Zhang and
+                  Wenjie Zhang and
+                  Xuemin Lin},
+	title = {Querying historical K-cores in large temporal graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {2},
+	pages = {26},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00903-1},
+	doi = {10.1007/S00778-025-00903-1},
+	timestamp = {Tue, 14 Oct 2025 19:49:39 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/YuWYQZZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many real-world relationships between entities can be modeled as temporal graphs, where each edge is associated with a timestamp or a time interval representing its occurrence. The k-core is a fundamental model used to capture cohesive subgraphs in a simple graph and have drawn much research attention over the last decade. Despite widespread research, none of the existing works support the efficient querying of historical k-cores in temporal graphs. In this paper, given an integer k and a time window, we study the problem of computing all the nodes belonging to the k-core in the graph snapshot over the time window. We propose an index-based solution and several pruning strategies to reduce the index size. We design a novel algorithm to construct this index, whose running time is linear to the final index size. We also propose algorithms to maintain our index given the continuous arrival of new edges. Lastly, we conducted extensive experiments on several real-world temporal graphs to show the high effectiveness of our index-based solution.}
+}
+
+
+@article{DBLP:journals/vldb/MiaoZSNYTJC25,
+	author = {Xupeng Miao and
+                  Hailin Zhang and
+                  Yining Shi and
+                  Xiaonan Nie and
+                  Zhi Yang and
+                  Yangyu Tao and
+                  Jie Jiang and
+                  Bin Cui},
+	title = {Efficient and scalable huge embedding model training via distributed
+                  cache management},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {27},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00908-w},
+	doi = {10.1007/S00778-025-00908-W},
+	timestamp = {Tue, 11 Nov 2025 08:43:30 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/MiaoZSNYTJC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Embedding models have been an effective learning paradigm for high-dimensional data. However, one open issue of embedding models is that their representations (latent factors) often result in large parameter space. We observe that existing distributed training frameworks face a scalability issue of embedding models since updating and retrieving the shared embedding parameters from servers usually dominates the training cycle. In this paper, we propose HET, a new system framework that significantly improves the scalability of huge embedding model training. We embrace skewed popularity distributions of embeddings as a performance opportunity and leverage it to address the communication bottleneck with an embedding cache. To ensure consistency across the caches, we incorporate a new consistency model into HET design, which provides fine-grained consistency guarantees on a per-embedding basis. Compared to previous work that only allows staleness for read operations, HET also utilizes staleness for write operations. Evaluations on six representative tasks show that HET achieves up to 88% embedding communication reductions and up to \\(20.68\\times \\) performance speedup over the state-of-the-art baselines.}
+}
+
+
+@article{DBLP:journals/vldb/PengMZGDY25,
+	author = {Huanhuan Peng and
+                  Xiaoye Miao and
+                  Jinshan Zhang and
+                  Yunjun Gao and
+                  Shuiguang Deng and
+                  Jianwei Yin},
+	title = {Cost-aware prediction service pricing with incomplete information},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {28},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00909-9},
+	doi = {10.1007/S00778-025-00909-9},
+	timestamp = {Mon, 07 Apr 2025 17:57:26 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/PengMZGDY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Trading the machine learning-based prediction services has been up-and-coming for individuals and small companies. It serves to directly provide the predictions, e.g., classifications, for consumers without domain knowledge. Existing prediction service pricing methods closely rely on the strong assumption of completely known information on service quality and consumers’ valuations. In this paper, we study the profit maximization problem of pricing prediction services under incomplete information for the first time. We propose a novel Service Market model, named SMELT, considering multiple types of customers with dEmand and quaLity-aware valuaTions. We first derive the theoretical optimal solution to maximize service profit with complete information. Then, we develop an effective framework PSPricer under the profit ratio guarantee to solve the profit maximization problem with incomplete information. It is capable of not only efficiently getting the sub-optimal service price with bounded revenue loss, but also effectively learning the service quality function with the maximum likelihood estimation. Moreover, due to the resource-intensive and costly characteristic of machine learning model inference, we further extend the SMELT model to consider the inevitable inference cost in service trading. We formulate a novel cost-aware profit maximization problem and derive the general optimal solution. The PSPricer framework is tailored with an effective heuristic to maximize the cost-aware profit with the theoretical profit ratio guarantee. Extensive experiments on real-life datasets demonstrate our theoretical findings and the effectiveness and efficiency of PSPricer in various settings, compared with the state-of-the-art approaches.}
+}
+
+
+@article{DBLP:journals/vldb/ZhangL25,
+	author = {Zhuoxing Zhang and
+                  Sebastian Link},
+	title = {Mixed covers: optimizing updates and queries using minimal keys and
+                  functional dependencies},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {29},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00910-2},
+	doi = {10.1007/S00778-025-00910-2},
+	timestamp = {Sun, 02 Nov 2025 21:29:29 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhangL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Covers for a set of functional dependencies (FDs) are fundamental for many areas of data management, such as integrity maintenance, query optimization, database design, and data cleaning. When declaring integrity constraints, keys enjoy native support in database systems while FDs need to be enforced by triggers or at application level. Consequently, maximizing the use of keys will provide the best support. We propose the new notion of mixed cover for a set of FDs, comprising the set of minimal keys together with a cover for the set of non-key FDs implied by the FD set. We establish sequential and parallel algorithms for computing mixed covers from a given set of FDs, and illustrate that they complement each other in terms of their performance. Even though FD covers are typically smaller in number or size than their corresponding mixed cover, the latter generate orders of magnitude lower overheads during integrity maintenance. We also quantify how mixed covers improve the performance of query, refresh and insert operations on the TPC-H benchmark under different constraint workloads and scaling factors. Finally, we illustrate the growth of performance improvement for optimal over minimal-reduced covers, justifying the significant time required for computing the former.}
+}
+
+
+@article{DBLP:journals/vldb/LiuPIH25,
+	author = {Chunwei Liu and
+                  Anna Pavlenko and
+                  Matteo Interlandi and
+                  Brandon Haynes},
+	title = {Data formats in analytical DBMSs: performance trade-offs and future
+                  directions},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {30},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00911-1},
+	doi = {10.1007/S00778-025-00911-1},
+	timestamp = {Thu, 01 May 2025 20:36:41 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiuPIH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper evaluates the suitability of Apache Arrow, Parquet, and ORC as formats for subsumption in an analytical DBMS. We systematically identify and explore the high-level features that are important to support efficient querying in modern OLAP DBMSs and evaluate the ability of each format to support these features. We find that each format has trade-offs that make it more or less suitable for use as a format in a DBMS and identify opportunities to more holistically co-design a unified in-memory and on-disk data representation. Notably, for certain popular machine learning tasks, none of these formats perform optimally, highlighting significant opportunities for advancing format design. Our hope is that this study can be used as a guide for system developers designing and using these formats, as well as provide the community with directions to pursue for improving these common open formats.}
+}
+
+
+@article{DBLP:journals/vldb/LiHY25,
+	author = {Rui Li and
+                  Zongyan He and
+                  Jeffrey Xu Yu},
+	title = {Join optimization revisited: a novel {DP} algorithm for join{\&}sort
+                  order selection},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {31},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00906-y},
+	doi = {10.1007/S00778-025-00906-Y},
+	timestamp = {Mon, 07 Apr 2025 17:57:26 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiHY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Join order selection has been widely studied, and the widely used algorithm to find the optimal join order is Dynamic Programming (DP). However, it is also known that the existing DP algorithms cannot deal with the so-called interesting order (e.g., sort order), or the algorithm to consider sort order together with joins will violate the optimal substructure behind DP. As a result, it is difficult for DBMSs to find the optimal join order given sort orders, as it comes with extremely high overhead. In this paper, we study a novel DP algorithm to find the optimal join order by taking sort orders into consideration. We call it a join&sort orders selection problem, which is to minimize the total join&sort cost to process a join query. This problem is challenging, because both the join order selection and the sort order selection for a given join-tree are known to be NP-hard. In addition, join&sort orders are dependent in the sense that the change of one order affects the selection of the other. We show that the optimal substructure exists in dealing with join&sort orders selection by DP under some simple condition, which we call \\(\\varOmega \\)-condition. The \\(\\varOmega \\)-Condition is not a condition to restrict join queries to optimize, but is a condition that allows us to find the optimal for any join queries. We present DP algorithms for bushy and linear join trees, discussing the pruning techniques and the complexity of the algorithms. We conduct extensive experimental studies to show the efficiency and robustness of our approach.}
+}
+
+
+@article{DBLP:journals/vldb/BoniolKBLHPTEFP25,
+	author = {Paul Boniol and
+                  Ashwin K. Krishna and
+                  Marine Bruel and
+                  Qinghua Liu and
+                  Mingyi Huang and
+                  Themis Palpanas and
+                  Ruey S. Tsay and
+                  Aaron J. Elmore and
+                  Michael J. Franklin and
+                  John Paparrizos},
+	title = {{VUS:} effective and efficient accuracy measures for time-series anomaly
+                  detection},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {32},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00907-x},
+	doi = {10.1007/S00778-025-00907-X},
+	timestamp = {Wed, 24 Sep 2025 20:46:39 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/BoniolKBLHPTEFP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly detection (AD) is a fundamental task for time-series analytics with important implications for the downstream performance of many applications. In contrast to other domains where AD mainly focuses on point-based anomalies (i.e., outliers in standalone observations), AD for time series is also concerned with range-based anomalies (i.e., outliers spanning multiple observations). Nevertheless, it is common to use traditional point-based information retrieval measures, such as Precision, Recall, and F-score, to assess the quality of methods by thresholding the anomaly score to mark each point as an anomaly or not. However, mapping discrete labels into continuous data introduces unavoidable shortcomings, complicating the evaluation of range-based anomalies. Notably, the choice of evaluation measure may significantly bias the experimental outcome. Despite over six decades of attention, there has never been a large-scale systematic quantitative and qualitative analysis of time-series AD evaluation measures. This paper extensively evaluates quality measures for time-series AD to assess their robustness under noise, misalignments, and different anomaly cardinality ratios. Our results indicate that measures producing quality values independently of a threshold (i.e., AUC-ROC and AUC-PR) are more suitable for time-series AD. Motivated by this observation, we first extend the AUC-based measures to account for range-based anomalies. Then, we introduce a new family of parameter-free and threshold-independent measures, volume under the surface (VUS), to evaluate methods while varying parameters. We also introduce two optimized implementations for VUS that reduce significantly the execution time of the initial implementation. Our findings demonstrate that our four measures are significantly more robust in assessing the quality of time-series AD methods.\n}
+}
+
+
+@article{DBLP:journals/vldb/YinFLCOC25,
+	author = {Ziqi Yin and
+                  Shanshan Feng and
+                  Shang Liu and
+                  Gao Cong and
+                  Yew Soon Ong and
+                  Bin Cui},
+	title = {{LIST:} learning to index spatio-textual data for embedding based
+                  spatial keyword queries},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {33},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00886-5},
+	doi = {10.1007/S00778-024-00886-5},
+	timestamp = {Wed, 27 Aug 2025 08:27:25 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/YinFLCOC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the proliferation of spatio-textual data, Top-k KNN spatial keyword queries (TkQs), which return a list of objects based on a ranking function that considers both spatial and textual relevance, have found many real-life applications. To efficiently handle TkQs, many indexes have been developed, but the effectiveness of TkQ is limited. To improve effectiveness, several deep learning models have recently been proposed, but they suffer severe efficiency issues and there are no efficient indexes specifically designed to accelerate the top-k search process for these deep learning models. To tackle these issues, we consider embedding based spatial keyword queries, which capture the semantic meaning of query keywords and object descriptions in two separate embeddings to evaluate textual relevance. Although various models can be used to generate these embeddings, no indexes have been specifically designed for such queries. To fill this gap, we propose LIST, a novel machine learning based Approximate Nearest Neighbor Search index that Learns to Index the Spatio-Textual data. LIST utilizes a new learning-to-cluster technique to group relevant queries and objects together while separating irrelevant queries and objects. There are two key challenges in building an effective and efficient index, i.e., the absence of high-quality labels and the unbalanced clustering results. We develop a novel pseudo-label generation technique to address the two challenges. Additionally, we introduce a learning based spatial relevance model that can integrate with various text relevance models to form a lightweight yet effective relevance for reranking objects retrieved by LIST. Experimental results show that (1) our lightweight embedding based relevance model significantly outperforms state-of-the-art relevance models; (2) LIST outperforms state-of-the-art indexes, providing a better trade-off between effectiveness and efficiency.}
+}
+
+
+@article{DBLP:journals/vldb/LuoZYYLW25,
+	author = {Qi Luo and
+                  Wenjie Zhang and
+                  Zhengyi Yang and
+                  Dongxiao Yu and
+                  Xuemin Lin and
+                  Liping Wang},
+	title = {Efficient indexing and searching of constrained core in hypergraphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {34},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00915-x},
+	doi = {10.1007/S00778-025-00915-X},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LuoZYYLW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Hypergraphs are generalized graph models that capture high-order relationships through hyperedges that contain arbitrary vertices. In large-scale hypergraphs, it is common to observe global sparsity and local density, which makes identifying the dense substructures a fundamental task in graph mining. This paper introduces a framework called (k,\xa0p)-PoolCore for searching constrained cohesive subgraphs in hypergraphs, with k representing the degree constraint of vertices and p indicating the size constraint of hyperedges. We theoretically analyze the monotonicity and hierarchical properties of (k,\xa0p)-PoolCore. To capitalize on these properties, we propose a tree-based PoolCore index that organizes all (k,\xa0p)-PoolCores within trees to facilitate efficient queries. Furthermore, we optimize this index to establish a list-based PoolCore index, which offers O(1) query time complexity in most cases without additional space complexity in large-scale hypergraphs. Our extensive experiments and case studies on real-world hypergraphs demonstrate the advantages of (k,\xa0p)-PoolCore in hypergraph decomposition and modeling cohesiveness substructures. The proposed tree-based PoolCore index achieves a remarkable \\(10^6\\) speedup compared to the basic computation method. Additionally, the optimized list-based PoolCore index further accelerates querying by at least 100x while maintaining space-complexity efficiency and scalability in real-world hypergraphs.}
+}
+
+
+@article{DBLP:journals/vldb/LiZWZDZHL25,
+	author = {Pengfei Li and
+                  Yong Zhang and
+                  Wenqing Wei and
+                  Rong Zhu and
+                  Bolin Ding and
+                  Jingren Zhou and
+                  Shuxian Hu and
+                  Hua Lu},
+	title = {{GRELA:} Exploiting graph representation learning in effective approximate
+                  query processing},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {35},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00914-y},
+	doi = {10.1007/S00778-025-00914-Y},
+	timestamp = {Wed, 11 Jun 2025 21:00:52 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiZWZDZHL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Approximate query processing (AQP) plays a critical role in modern data analytics. Although machine learning models are used for AQP, existing methods fail to uncover implicit relationships among the underlying data, the aggregate functions in queries, and the query predicates. In this work, we propose a Graph REpresentation Learning-based AQP model (GRELA for short) for answering queries with multiple aggregate functions. GRELA models the aggregate functions and the query predicates as task and clause nodes respectively in a graph and then learns appropriate node representations via its two modules. In particular, the \\(\\texttt {Encoder}\\) module coalesces query predicates and underlying data into the representations of clause nodes. The \\(\\mathbf {\\texttt {Graph}}\\) module bridges task nodes and clause nodes such that each task node can aggregate the information from its neighborhood into its representation. Through the inner products of clause and task representations, GRELA is able to make accurate estimates for queries with multiple aggregate functions. Extensive experimental results verify that GRELA outperforms the state-of-the-art AQP methods on different kinds of datasets.}
+}
+
+
+@article{DBLP:journals/vldb/JiLBC25,
+	author = {Daomin Ji and
+                  Hui Luo and
+                  Zhifeng Bao and
+                  J. Shane Culpepper},
+	title = {Table integration in data lakes unleashed: pairwise integrability
+                  judgment, integrable set discovery, and multi-tuple conflict resolution},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {36},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00917-9},
+	doi = {10.1007/S00778-025-00917-9},
+	timestamp = {Sun, 01 Feb 2026 13:44:27 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/JiLBC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Table integration aims to create a comprehensive table by consolidating tuples containing relevant information. In this work, we investigate the challenge of integrating multiple tables from a data lake, focusing on three core tasks: (1) pairwise integrability judgment, which determines whether a tuple pair is integrable, accounting for any occurrences of semantic equivalence or typographical errors; (2) integrable set discovery, which identifies all integrable sets in a table based on pairwise integrability judgments established in the first task; (3) multi-tuple conflict resolution, which resolves conflicts between multiple tuples during integration. To this end, we train a binary classifier to address the task of pairwise integrability judgment. Given the scarcity of labeled data in data lakes, we propose a self-supervised adversarial contrastive learning algorithm to perform classification, which incorporates data augmentation methods and adversarial examples to autonomously generate new training data. Upon the output of pairwise integrability judgment, each integrable set can be considered as a community—a densely connected sub-graph where nodes and edges correspond to tuples in the table and their pairwise integrability, respectively—we proceed to investigate various community detection algorithms to address the integrable set discovery objective. Moving forward to tackle multi-tuple conflict resolution, we introduce an innovative in-context learning methodology. This approach capitalizes on the knowledge embedded within large language models to effectively resolve conflicts that arise when integrating multiple tuples. Notably, our method minimizes the need for annotated data, making it particularly suited for scenarios where labeled datasets are scarce. Since no suitable test collections are available for our tasks, we develop our own benchmarks using two real-world dataset repositories: Real and Join. We conduct extensive experiments on these benchmarks to validate the robustness and applicability of our methodologies in the context of integrating tables within data lakes.}
+}
+
+
+@article{DBLP:journals/vldb/LiKKZS25,
+	author = {Qian Li and
+                  Peter Kraft and
+                  Christos Kozyrakis and
+                  Matei Zaharia and
+                  Michael Stonebraker},
+	title = {{DBOS:} three years later},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {3},
+	pages = {37},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-024-00899-0},
+	doi = {10.1007/S00778-024-00899-0},
+	timestamp = {Wed, 14 May 2025 14:10:01 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiKKZS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In our VLDB 2022 publication (Skiadopoulos, 2022), we presented the rationale for a DBMS-oriented operating system and reported a series of experiments supporting this approach. This paper provides a comprehensive update on the project, which evolved as a research initiative for two additional years before transitioning into a venture-capital-backed startup over the past 18 months. During this period, we developed a provenance system and a programming environment integrating Python and TypeScript, accompanied by detailed performance evaluations. Furthermore, we outline the modifications made to the research prototype to support the demands of commercialization.}
+}
+
+
+@article{DBLP:journals/vldb/LiCSSZHC25,
+	author = {Shuaimin Li and
+                  Xuanang Chen and
+                  Yuanfeng Song and
+                  Yunze Song and
+                  Chen Jason Zhang and
+                  Fei Hao and
+                  Lei Chen},
+	title = {prompt4vis: prompting large language models with example mining for
+                  tabular data visualization},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {38},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00912-0},
+	doi = {10.1007/S00778-025-00912-0},
+	timestamp = {Sun, 06 Jul 2025 13:22:36 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiCSSZHC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We are currently in the epoch of Large Language Models (LLMs), which have transformed numerous technological domains within the database community. In this paper, we examine the application of LLMs in text-to-visualization (text-to-vis). The advancement of natural language processing technologies has made natural language interfaces more accessible and intuitive for visualizing tabular data. However, despite utilizing advanced neural network architectures, current methods such as Seq2Vis, ncNet, and RGVisNet for transforming natural language queries into DV commands still underperform, indicating significant room for improvement. In this paper, we introduce Prompt4Vis, a novel framework that leverages LLMs and In-context learning to enhance the generation of data visualizations from natural language. Given that In-context learning’s effectiveness is highly dependent on the selection of examples, it is critical to optimize this aspect. Additionally, encoding the full database schema of a query is not only costly but can also lead to inaccuracies. This framework includes two main components: (1) an example mining module that identifies highly effective examples to enhance In-context learning capabilities for text-to-vis applications, and (2) a schema filtering module designed to streamline database schemas. Comprehensive testing on the NVBench dataset has shown that Prompt4Vis significantly outperforms the current state-of-the-art model, RGVisNet, by approximately 35.9% on development sets and 71.3% on test sets. To the best of our knowledge, Prompt4Vis is the first framework to incorporate In-context learning for enhancing text-to-vis, marking a pioneering step in the domain.}
+}
+
+
+@article{DBLP:journals/vldb/BudiuRZPSKGBCMT25,
+	author = {Mihai Budiu and
+                  Leonid Ryzhyk and
+                  Gerd Zellweger and
+                  Ben Pfaff and
+                  Lalith Suresh and
+                  Simon Kassing and
+                  Abhinav Gyawali and
+                  Matei Budiu and
+                  Tej Chajed and
+                  Frank McSherry and
+                  Val Tannen},
+	title = {{DBSP:} automatic incremental view maintenance for rich query languages},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {39},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00922-y},
+	doi = {10.1007/S00778-025-00922-Y},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/BudiuRZPSKGBCMT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Incremental view maintenance (IVM) has long been a central problem in database theory and practice. Many solutions have been proposed for restricted classes of database languages (such as the relational algebra or Datalog), restricted classes of queries, and restricted classes of database changes. In this paper we give a general, heuristic-free solution to this problem in 4 steps: (1) we describe a simple but expressive language called DBSP for describing computations over data streams; (2) we give a new mathematical definition of IVM using DBSP; (3) we give an algorithm for converting any DBSP program into an incremental program; this algorithm reduces the problem of incrementalizing a complex query to the problem of incrementalizing the primitive operations that compose the query. Finally, (4) we show that practical database query languages, such as SQL and Datalog, can be directly implemented on top of DBSP, using primitives that have efficient incremental implementations. As a consequence, we obtain a general recipe for efficient IVM for essentially arbitrary queries written in all these languages.}
+}
+
+
+@article{DBLP:journals/vldb/TangFGP25,
+	author = {Dixin Tang and
+                  Alan D. Fekete and
+                  Indranil Gupta and
+                  Aditya G. Parameswaran},
+	title = {Transactional panorama: a conceptual framework for user perception
+                  in analytical visual interfaces (extended version)},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {40},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00923-x},
+	doi = {10.1007/S00778-025-00923-X},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/TangFGP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Many tools empower analysts and data scientists to consume analysis results in a visual interface. When the underlying data changes, these results need to be updated, but this update can take a long time—all while the user continues to explore the results. Tools can either (i) hide away results that haven’t been updated, hindering exploration; (ii) make the updated results immediately available to the user (on the same screen as old results), leading to confusion and incorrect insights; or (iii) present old—and therefore stale—results to the user during the update. To help users reason about these options and others, and make appropriate trade-offs, we introduce Transactional Panorama, a formal framework that adopts transaction s to jointly model the system refreshing the analysis results and the user interacting with them. We introduce three key properties that are important for user perception in this context: visibility (allowing users to continuously explore results), consistency (ensuring that results presented are from the same version of the data), and monotonicity (making sure that results don’t “go back in time”). Within transactional panorama, we characterize all feasible property combinations, design new mechanisms (that we call lenses) for presenting analysis results to the user while preserving a given property combination, formally prove their relative orderings for various performance criteria, and discuss their use cases. We propose novel algorithms to preserve each property combination and efficiently present fresh analysis results. We implement our framework into a popular, open-source BI tool, illustrate the relative performance implications of different lens es, and demonstrate the benefits of the novel lens es and our optimizations.}
+}
+
+
+@article{DBLP:journals/vldb/NikookarNRAO25,
+	author = {Sepideh Nikookar and
+                  Sohrab Namazi Nia and
+                  Senjuti Basu Roy and
+                  Sihem Amer{-}Yahia and
+                  Behrooz Omidvar{-}Tehrani},
+	title = {Model reusability in Reinforcement Learning},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {41},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00920-0},
+	doi = {10.1007/S00778-025-00920-0},
+	timestamp = {Sun, 06 Jul 2025 13:22:37 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/NikookarNRAO25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The ability to reuse trained models in Reinforcement Learning (RL) holds substantial practical value in particular for complex tasks. While model reusability is widely studied for supervised models in data management, to the best of our knowledge, this is the first ever principled study that is proposed for RL. To capture trained policies, we develop a framework based on an expressive and lossless graph data model that accommodates Temporal Difference Learning and Deep-RL based RL algorithms. Our framework is able to capture arbitrary reward functions that can be composed at inference time. The framework comes with theoretical guarantees and shows that it yields the same result as policies trained from scratch. We design a parameterized algorithm that strikes a balance between efficiency and quality w.r.t cumulative reward. Our experiments with two common RL tasks (query refinement and robot movement) corroborate our theory and show the effectiveness and efficiency of our algorithms.\n}
+}
+
+
+@article{DBLP:journals/vldb/HaubenschildL25,
+	author = {Michael Haubenschild and
+                  Viktor Leis},
+	title = {Oltp in the cloud: architectures, tradeoffs, and cost},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {42},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00913-z},
+	doi = {10.1007/S00778-025-00913-Z},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/HaubenschildL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {What is the best architecture for cloud OLTP systems? How costly is it to run a specific workload? Which and how many hardware instances should be provisioned? To answer such questions systematically, we develop an analytical model framework for cloud OLTP. It enables the analysis of a wide variety of workloads and determines the cost-optimal architecture and hardware configuration for each. Workloads are specified in terms of dataset size, performance, latency, availability and durability requirements. System designs are evaluated based on the CPU, memory, storage, and network resources they require. We study a concrete model instance that is calibrated with the LeanStore storage engine and real-world hardware/service options and prices from AWS, one of the major cloud providers. Our analysis yields several observations on how to achieve fast, durable and cost-efficient OLTP in the cloud.}
+}
+
+
+@article{DBLP:journals/vldb/ZhangWLSCCXXG25,
+	author = {Jun Zhang and
+                  Jue Wang and
+                  Huan Li and
+                  Lidan Shou and
+                  Ke Chen and
+                  Gang Chen and
+                  Qin Xie and
+                  Guiming Xie and
+                  Xuejian Gong},
+	title = {{HMI:} hierarchical knowledge management for efficient multi-tenant
+                  inference in pretrained language models},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {43},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00919-7},
+	doi = {10.1007/S00778-025-00919-7},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhangWLSCCXXG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The significant computational demands of pretrained language models (PLMs), which often require dedicated hardware, present a substantial challenge in serving them efficiently, especially in multi-tenant environments. To address this, we introduce HMI, a Hierarchical knowledge management-based Multi-tenant Inference system, designed to manage tenants with distinct PLMs resource-efficiently. Our approach is three-fold: Firstly, we categorize PLM knowledge into general, domain-specific, and task-specific. Leveraging insights on knowledge acquisition across different model layers, we construct hierarchical PLMs (hPLMs) by extracting and storing knowledge at different levels, significantly reducing GPU memory usage per tenant. Secondly, we establish hierarchical knowledge management for hPLMs generated by various tenants in HMI. We manage domain-specific knowledge with acceptable storage increases by constructing and updating domain-specific knowledge trees based on frequency. We manage task-specific knowledge within limited GPU memory through parameter swapping. Finally, we propose system optimizations to enhance resource utilization and inference throughput. These include fine-grained pipelining via hierarchical knowledge prefetching to overlap CPU and I/O operations with GPU computations, and optimizing parallel implementations with batched matrix multiplications. Our experimental results demonstrate that the proposed HMI can efficiently serve up to 10,000 hPLMs (hBERTs and hGPTs) on a single GPU, with only a negligible compromise in accuracy.}
+}
+
+
+@article{DBLP:journals/vldb/ZhangQCDY25,
+	author = {Zhihao Zhang and
+                  Jianpeng Qi and
+                  Lei Cao and
+                  Junyu Dong and
+                  Yanwei Yu},
+	title = {Efficiently Counting Four-Node Motifs in Large-Scale Temporal Graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {44},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00926-8},
+	doi = {10.1007/S00778-025-00926-8},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhangQCDY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Temporal motifs are compact subgraph patterns that recur frequently within a sequence of timestamps. They reveal implicit insights in the graph data and guide informed decision-making. However, current methods for exactly counting temporal motifs face challenges of high time complexity and inapplicability when motifs involve four nodes and struggle to scale to larger temporal graphs. In this paper, we propose a novel and exact counting framework tailored to 4-node, 3-edge, and 4-edge single-interaction temporal motifs whose time window size is constrained in a fixed interval. To speed up the counting process, we begin by categorizing all 4-node temporal motifs based on their structural characteristics. Subsequently, we present three rapid and precise sub-algorithms, each dedicated to counting motifs within its category. To expedite the counting process, we implement a series of straightforward and highly effective counters. Our algorithm cleverly uses these counters to identify and record all temporal motif instances based on the information and interrelationships of edges, significantly enhancing counting efficiency, especially for large-scale temporal graphs. Our extensive experiments on 14 large-scale real-world temporal graphs demonstrate the superiority of our work in terms of efficiency. Results show that our work significantly outperforms all state-of-the-art baselines and achieves a remarkable speedup of up to 25,816-fold.}
+}
+
+
+@article{DBLP:journals/vldb/ZhouHYS25,
+	author = {Xinjing Zhou and
+                  Xiangpeng Hao and
+                  Xiangyao Yu and
+                  Michael Stonebraker},
+	title = {Tiered-Indexing: Optimizing Access Methods for Skew},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {45},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00928-6},
+	doi = {10.1007/S00778-025-00928-6},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhouHYS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Real-world DBMS workloads invariably exhibit skewed access patterns, where a small number of "hot" records are accessed much more frequently than the remaining "cold" records. Page-oriented data structures, such as B+trees, dynamic hash tables, heap files, and LSM-tree, are sub-optimal in terms of memory utilization under skewed access conditions. Hot records might be co-located with cold ones on pages in the data structure. Caching those lukewarm pages in the buffer pool lowers memory utilization due to the mismatch of caching granularity (page) and access granularity (record), leading to sub-optimal performance. Recently, the 2-Tree approach was proposed to improve caching efficiency for B+trees using record-level migration. In this paper, we generalize the 2-Tree approach to Tiered-Indexing that can be applied to common buffer-managed data structures to efficiently handle skew using record migration. Using this architecture, we extend hash tables, heap files, and LSM-trees with I/O-efficient record migration. Moreover, we design a general mechanism to ensure data structure consistency for Tiered-Indexing data structures during record migration using optimistic lock coupling. Compared to traditional 1-Tier and state-of-the-art record-caching designs, we observe significant throughput and memory utilization improvement across B+tree, hash table, heap file, and LSM-tree under skewed workloads.}
+}
+
+
+@article{DBLP:journals/vldb/GaoXPML25,
+	author = {Xiangyu Gao and
+                  Xingxing Xiao and
+                  Xiao Pan and
+                  Dongjing Miao and
+                  Jianzhong Li},
+	title = {Efficient Algorithms for Uncertain Restricted Skyline Query Processing},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {46},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00925-9},
+	doi = {10.1007/S00778-025-00925-9},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/GaoXPML25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid growth of uncertain data, query processing on uncertain data has become an important research area. Although considerable efforts have been devoted to answering certain types of queries on uncertain data, how to perform restricted skyline (rskyline) queries on uncertain data remains an open problem. To fill the gap, this paper studies the all rskyline probabilities (ARSP) problem, which aims to compute the probability of each uncertain tuple appearing in the rskyline, and the most-likely rskyline (MLRS) problem, which aims to identify a set of uncertain tuples with the highest probability of being the rskyline. We prove that no algorithm can solve the ARSP problem in strongly subquadratic time, unless the orthogonal vectors conjecture fails and the MLRS problem is NP-hard. When \\(\\mathcal {F}\\) is a set of linear scoring functions subject to a set of linear constraints on weights, we propose two efficient algorithms for solving the ARSP problem. For a special linear constraint, we further develop an algorithm with sublinear query time. For the MLRS problem, we first design a series of data reduction rules to reduce the input data size. Then, we propose two exact algorithms with different search strategies, as well as a local search based approximation algorithm to further improve the time efficiency. Experimental results show that these two problems provide complementary and comprehensive perspectives on rskylines of uncertain datasets, and demonstrate the effectiveness and efficiency of the proposed algorithms.}
+}
+
+
+@article{DBLP:journals/vldb/LiHYWC25,
+	author = {Peng Li and
+                  Yeye He and
+                  Cong Yan and
+                  Yue Wang and
+                  Surajit Chaudhuri},
+	title = {Auto-tables: synthesizing multi-step transformations to relationalize
+                  tables without using examples},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {47},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00921-z},
+	doi = {10.1007/S00778-025-00921-Z},
+	timestamp = {Sun, 06 Jul 2025 13:22:37 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiHYWC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Relational tables, where each row corresponds to an entity and each column corresponds to an attribute, have been the standard for tables in relational databases. However, such a standard cannot be taken for granted when dealing with tables “in the wild”. Our survey of real spreadsheet-tables and web-tables shows that over 30% of such tables do not conform to the relational standard, for which complex table-restructuring transformations are needed before these tables can be queried easily using SQL-based tools. Unfortunately, the required transformations are non-trivial to program, which has become a substantial pain point for technical and non-technical users alike, as evidenced by large numbers of forum questions in places like StackOverflow and Excel/Tableau forums. We develop an Auto-Tables system that can automatically synthesize pipelines with multi-step transformations (in Python or other languages), to transform non-relational tables into standard relational forms for downstream analytics, obviating the need for users to manually program transformations. We compile an extensive benchmark for this new task, by collecting 244 real test cases from user spreadsheets and online forums. Our evaluation suggests that Auto-Tables can successfully synthesize transformations for over 70% of test cases at interactive speeds, without requiring any input from users, making this an effective tool for both technical and non-technical users to prepare data for analytics.}
+}
+
+
+@article{DBLP:journals/vldb/BonifatiDFHHMMSST25,
+	author = {Angela Bonifati and
+                  Stefania Dumbrava and
+                  George Fletcher and
+                  Jan Hidders and
+                  Matthias Hofer and
+                  Wim Martens and
+                  Filip Murlak and
+                  Joshua Shinavier and
+                  Slawek Staworko and
+                  Dominik Tomaszuk},
+	title = {Threshold queries in theory and in the wild},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {49},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00916-w},
+	doi = {10.1007/S00778-025-00916-W},
+	timestamp = {Sun, 06 Jul 2025 13:22:37 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/BonifatiDFHHMMSST25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Threshold queries are an important class of queries that only require computing or counting answers up to a specified threshold value. To the best of our knowledge, threshold queries have been largely disregarded in the research literature, which is surprising considering how common they are in practice. In this paper, we present a deep theoretical analysis of threshold query evaluation and show that thresholds can be used to significantly improve the asymptotic bounds of state-of-the-art query evaluation algorithms. We also empirically show that threshold queries are significant in practice. In surprising contrast to conventional wisdom, we found important scenarios in real-world data sets in which users are interested in computing the results of queries up to a certain threshold, independent of a ranking function that orders the query results.}
+}
+
+
+@article{DBLP:journals/vldb/BonteCCKT25,
+	author = {Pieter Bonte and
+                  Christophe Call{\'{e}} and
+                  Olivier Cur{\'{e}} and
+                  Haridimos Kondylakis and
+                  Riccardo Tommasini},
+	title = {Languages and systems for {RDF} stream processing, a survey},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {50},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00927-7},
+	doi = {10.1007/S00778-025-00927-7},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/BonteCCKT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data streams which are now massively and constantly arriving from Internet of Things devices, sensors and social media, require efficient processing, querying and reasoning within a given timeframe. With this in mind, the RDF data model, the cornerstone of the Web of Data, supports a feature-rich stream processing ecosystem that takes into account the temporal dimension associated with events. These timestamped streams support advanced temporal analysis ranging from time-based queries, temporal anomaly detection to temporal reasoning. This survey is the first to provide a comprehensive overview of the field of RDF stream processing, focusing on (query) languages, systems, and benchmarks. For each of these areas, we present salient dimensions, propose a taxonomy of existing work, detail the concepts at the core of each approach and describe their main technical aspects and implementation. We hope that the survey will help readers understand this scientifically rich field and identify the most relevant method for various usage scenarios.}
+}
+
+
+@article{DBLP:journals/vldb/ZhaoLZHXXHYD25,
+	author = {Hongyao Zhao and
+                  Wei Lu and
+                  Zhanhao Zhao and
+                  Yinhao Hong and
+                  Quanqing Xu and
+                  Jinliang Xiao and
+                  Fusheng Han and
+                  Chuanhui Yang and
+                  Xiaoyong Du},
+	title = {An Efficient Two-Round Distributed Transaction Processing Approach
+                  over Heterogeneous Networks},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {51},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00929-5},
+	doi = {10.1007/S00778-025-00929-5},
+	timestamp = {Mon, 30 Jun 2025 21:54:09 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhaoLZHXXHYD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Countrywide and worldwide business, like gaming and social networks, drives the popularity of inter-data-center transactions. To support inter-data-center transaction processing and data center fault tolerance simultaneously, existing protocols suffer from significant performance degradation due to high-latency and unstable networks. In this paper, we propose RedT, a novel distributed transaction processing protocol that works in heterogeneous networks. In detail, nodes within a data center are inter-connected via the RDMA-capable network, and nodes across data centers are inter-connected via TCP/IP networks. RedT extends two-phase commit (2PC) by decomposing transactions into sub-transactions in terms of the data center granularity, and proposing a pre-write-log mechanism that is able to reduce the number of inter-data-center round-trips from a maximal of 6 to 2. Furthermore, RedT optimizes read-only transactions to commit with no inter-data-center communication. RedT supports supports both serializability and snapshot isolation. Extensive evaluation against state-of-the-art protocols shows that RedT can achieve up to \\(1.80\\times \\) higher throughputs and \\(0.41\\times \\) lower latency.}
+}
+
+
+@article{DBLP:journals/vldb/HouZLYLXYD25,
+	author = {Jiamin Hou and
+                  Zhanhao Zhao and
+                  Wei Lu and
+                  Shiming Yang and
+                  Shuang Liu and
+                  Quanqing Xu and
+                  Chuanhui Yang and
+                  Xiaoyong Du},
+	title = {An efficient and scalable graph database with built-in temporal support},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {53},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00932-w},
+	doi = {10.1007/S00778-025-00932-W},
+	timestamp = {Fri, 04 Jul 2025 22:16:33 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/HouZLYLXYD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Real-world graphs are often dynamic and evolve over time. It is crucial for storing and querying a graph’s evolution in graph databases. However, existing works either suffer from high storage overhead or lack efficient temporal query support, or both. In this paper, we propose \\(\\textsf {AeonG}\\), a new graph database with built-in temporal support. Based on a novel temporal graph model, we build \\(\\textsf {AeonG}\\) with a hybrid storage engine and an efficient temporal query engine. The storage engine consists of current storage to manage the most recent versions of graph objects, and historical storage to manage previous versions. This separation minimizes the performance degradation when querying the most recent graph object versions. To reduce the historical storage overhead, we propose an anchor+delta strategy, in which we periodically create a complete version (namely anchor) of a graph object, and maintain every change (namely delta) between two adjacent anchors of the same object. In the query engine, we propose an anchor-based version retrieval technique to skip unnecessary historical version traversals to boost temporal query processing. Further, we extend \\(\\textsf {AeonG}\\) into a cloud-native database with disaggregated compute and storage layers, thus enabling elastic and scalable management of temporal graph data. Extensive experiments are conducted on both real and synthetic datasets. The results show that \\(\\textsf {AeonG}\\) achieves up to 5.73\\(\\times \\) lower storage consumption and 2.57\\(\\times \\) lower temporal query latency against state-of-the-art approaches, while introducing only 9.74% performance degradation for supporting temporal features.}
+}
+
+
+@article{DBLP:journals/vldb/CambriaIBC25,
+	author = {Francesco Cambria and
+                  Francesco Invernici and
+                  Anna Bernasconi and
+                  Stefano Ceri},
+	title = {Mine Graph Rule: {A} New {GQL} Operator for Mining Association Rules
+                  in Property Graph Databases},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {54},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00934-8},
+	doi = {10.1007/S00778-025-00934-8},
+	timestamp = {Tue, 05 Aug 2025 22:51:41 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/CambriaIBC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mining information from graph databases is becoming overly important. To approach this problem, current methods focus on identifying subgraphs with specific topologies; as of today, no work has been dedicated to jointly expressing the syntax and semantics of mining operations over rich property graphs. We define MINE GRAPH RULE, a new operator for mining association rules from property graph databases, by following a research trend that has already been pursued for relational and XML databases. We describe the syntax and semantics of the operator, which allows measuring the support and confidence of each rule, and then we show many examples of increasing complexity, thereby providing a gentle introduction to the rich expressive power of the language, which is designed to be easy-to-use by GQL experts. Although the emphasis of this paper is on providing the syntax and semantics of the MINE GRAPH RULE operator, with several examples of use, we also developed an implementation of the operator on top of Neo4j, the most successful/adopted graph database system to date; the implementation is available as a portable Neo4j plugin, which we use to showcase real-world applications. At the end of our paper, we show the execution performance in a variety of synthetically generated settings, by varying the text of operators, the size of the graph, the ratio between node types, the method for creating relationships, and the maximum support and confidence; we also show our operator at work on two real-life graphs respectively describing music playlists and archived literature, and provide interesting examples of extracted association rules.\n}
+}
+
+
+@article{DBLP:journals/vldb/GraurMPFWA25,
+	author = {Dan Graur and
+                  Ingo M{\"{u}}ller and
+                  Mason Proffitt and
+                  Ghislain Fourny and
+                  Gordon T. Watts and
+                  Gustavo Alonso},
+	title = {The Status-Quo in nested data processing for high-energy physics},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {55},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00924-w},
+	doi = {10.1007/S00778-025-00924-W},
+	timestamp = {Wed, 30 Jul 2025 12:00:29 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/GraurMPFWA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Nested data is valuable and ubiquitous. It is being generated in ever-increasing volumes across industrial and research environments and frequently contains valuable information that is extracted through analytical workloads. Despite its popularity and value, there is no clear-cut understanding of the status quo in analytical workloads for nested data in high-energy physics (HEP). In this paper, we seek to define the landscape of nested data processing in HEP by evaluating 10 systems and their query languages on the IRIS HEP ADL benchmark, a popular and representative HEP benchmark. We attempt not only to understand how well these systems perform from a query latency and scalability point of view but also from a query language usability perspective. The result of our evaluation paints an interesting and rather complex picture of existing solutions. Many of the evaluated systems are between one and two orders of magnitude slower than the domain-specific system used in HEP today, while a few of the commodity systems provide on-par performance at greater costs. Moreover, the evaluated query languages and dialects vary greatly in how naturally and concisely they can express nested query patterns. These observations suggest that while commodity data management systems and their query languages are viable tools for nested data processing, significant work remains to make them competitive with domain-specific solutions like those used by the HEP community.\n}
+}
+
+
+@article{DBLP:journals/vldb/ParciakWHNPV25,
+	author = {Marcel Parciak and
+                  Sebastiaan Weytjens and
+                  Niel Hens and
+                  Frank Neven and
+                  Liesbet M. Peeters and
+                  Stijn Vansummeren},
+	title = {Measuring approximate functional dependencies: a comparative study},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {4},
+	pages = {56},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00931-x},
+	doi = {10.1007/S00778-025-00931-X},
+	timestamp = {Tue, 05 Aug 2025 22:51:41 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ParciakWHNPV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Approximate functional dependencies (abbreviated: AFDs) are functional dependencies (FDs) that “almost” hold in a relation. While various measures have been proposed to quantify the level to which an FD holds approximately, they are difficult to compare and it is unclear which measure is preferable when one needs to discover FDs in real-world data, i.e., data that only approximately satisfies the FD. In response, this paper formally and qualitatively compares AFD measures. We obtain a formal comparison through a novel presentation of measures in terms of Shannon and logical entropy. Qualitatively, we perform a sensitivity analysis w.r.t. structural properties of input relations. Quantitatively, we study the effectiveness of AFD measures for ranking linear AFDs on real world data. Based on this analysis, we give clear recommendations for the AFD measures to use in practice.}
+}
+
+
+@article{DBLP:journals/vldb/SahaKKL25,
+	author = {Arkaprava Saha and
+                  Xiangyu Ke and
+                  Arijit Khan and
+                  Laks V. S. Lakshmanan},
+	title = {Beyond influence: voting theory for opinion maximization},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {57},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00933-9},
+	doi = {10.1007/S00778-025-00933-9},
+	timestamp = {Tue, 05 Aug 2025 22:51:41 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/SahaKKL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We investigate the dynamics of opinion maximization through voting strategies: Identify a limited number of seed users in a social network for a target campaigner, amidst competing campaigners, aiming to maximize a voting-based score for the target campaigner within a given time horizon. Diverging from the conventional assumption that users are being confined to binary states of being active or inactive, with the option to switch states frozen upon one-time activation, this work recognizes the dynamic nature of user preferences. Even with preferred opinions, users may exhibit openness to alternative viewpoints, and their preferences may evolve over time due to social influence. To fill the gap, we draw on models grounded in opinion formation and diffusion, explore diverse voting-based scores, and strategically apply them in various real-world scenarios to effectively capture a user’s evolving vote for multiple campaigners, in the context of a social network and within a given time horizon. Our problem is \\(\\textbf{NP}\\)-hard, does not have any \\(\\textbf{PTAS}\\) unless \\(\\textbf{P}\\) \\(=\\) \\(\\textbf{NP}\\), and is non-submodular for various scores. We design greedy seed selection algorithms with quality guarantees via sandwich approximation. To improve the efficiency, we develop random walk and sketch-based opinion computation, with quality guarantees. Empirical results validate our effectiveness, efficiency, and scalability.}
+}
+
+
+@article{DBLP:journals/vldb/AyadLP25,
+	author = {Lorraine A. K. Ayad and
+                  Grigorios Loukides and
+                  Solon P. Pissis},
+	title = {Text indexing for long patterns using locally consistent anchors},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {58},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00935-7},
+	doi = {10.1007/S00778-025-00935-7},
+	timestamp = {Sat, 09 Aug 2025 12:15:17 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/AyadLP25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In many real-world database systems, a large fraction of the data is represented by strings: sequences of letters over some alphabet. This is because strings can easily encode data arising from different sources. It is often crucial to represent such string datasets in a compact form but also to simultaneously enable fast pattern matching queries. This is the classic text indexing problem. The four absolute measures anyone should pay attention to when designing or implementing a text index are: (i) index space; (ii) query time; (iii) construction space; and (iv) construction time. Unfortunately, however, most (if not all) widely-used indexes (e.g., suffix tree, suffix array, or their compressed counterparts) are not optimized for all four measures simultaneously, as it is difficult to have the best of all four worlds. Here, we take an important step in this direction by showing that text indexing with sampling based on locally consistent anchors (lc-anchors) offers remarkably good performance in all four measures, when we have at hand a lower bound \\(\\ell \\) on the length of the queried patterns — which is arguably a quite reasonable assumption in practical applications. Specifically, we improve on a recently proposed index that is based on bidirectional string anchors (bd-anchors), a new type of lc-anchors, by: (i) introducing a randomized counterpart of bd-anchors which outperforms bd-anchors; (ii) designing an average-case linear-time algorithm to compute (the randomized) bd-anchors; and (iii) developing a semi-external-memory implementation and an internal-memory implementation to construct the index in small space using near-optimal work. Our index offers average-case guarantees. In our experiments using real (benchmark) datasets of sizes up to 10GB, we show that it compares favorably based on the four measures to all classic indexes: (compressed) suffix tree; (compressed) suffix array; and the FM-index. We also present a counterpart of our index with worst-case guarantees based on the lc-anchors notion of partitioning sets. To the best of our knowledge, this is the first index achieving the best of all worlds in the regime where we have at hand a lower bound \\(\\ell \\) on the length of the queried patterns.}
+}
+
+
+@article{DBLP:journals/vldb/TianZWJCZZ25,
+	author = {Anxin Tian and
+                  Alexander Zhou and
+                  Yue Wang and
+                  Xun Jian and
+                  Lei Chen and
+                  Yan Zhou and
+                  Chen Zhang},
+	title = {Distributed Truss Decomposition over Large Directed Graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {59},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00938-4},
+	doi = {10.1007/S00778-025-00938-4},
+	timestamp = {Thu, 25 Dec 2025 12:46:29 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/TianZWJCZZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {To capture vertex relationships in graphs, triangles are used since they represent the minimal structural unit that provides both closure and path redundancy. In directed graphs, triangles can be divided into cycle triangles and flow triangles. A D-truss is a subgraph that requires each edge forms cycle triangles with at least \\(k_c\\) vertices and flow triangles with at least \\(k_f\\) vertices. Though the D-truss decomposition is effective for revealing the cycle-flow relationships in directed graphs, its single-machine solutions are far from scalable for real-world large graphs. In this work, we propose efficient distributed solutions for D-truss decomposition. First, we introduce a converge-based algorithm \\(\\textsf{DisDomConv}\\) that computes trussness pairs iteratively to a fixed point. Then, we utilize the peel idea and propose a batch-peel algorithm \\(\\textsf{DisBatPeel}\\), which spares the extra overhead in \\(\\textsf{DisDomConv}\\). For addressing the bottleneck of communication cost, we propose triangle-related acceleration and the type-aware balanced partitioner. Finally, we present the stratified local-peel method \\(\\textsf{StraLocPeel}\\) that reduces considerable communication overhead. The experiments on real-world graphs verify that all of our solutions solve D-truss decomposition on large real-world graphs within limited time. \\(\\textsf{StraLocPeel}\\) shows the best efficiency and scalability among all algorithms, which is on average \\(42.6\\times \\) faster than the existing sequential solution, \\(27.4\\times \\) faster than \\(\\textsf{DisDomConv}\\), and \\(12.1\\times \\) faster than \\(\\textsf{DisBatPeel}\\).}
+}
+
+
+@article{DBLP:journals/vldb/SunCWWZZL25,
+	author = {Renjie Sun and
+                  Chen Chen and
+                  Xiaoyang Wang and
+                  Yanping Wu and
+                  Wenjie Zhang and
+                  Ying Zhang and
+                  Xuemin Lin},
+	title = {Efficient maximum signed biclique and biplex identification in signed
+                  bipartite graphs},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {60},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00939-3},
+	doi = {10.1007/S00778-025-00939-3},
+	timestamp = {Wed, 10 Sep 2025 14:09:53 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/SunCWWZZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the literature, various cohesive subgraph models for bipartite graphs have been proposed for different applications. One important cohesive structure is biclique, where each vertex in one set is completely connected to all vertices in the other set. However, previous studies mainly focus on unsigned bipartite graphs, while signed information naturally exists in real applications, such as trust/distrust and friendship/antagonism. The neglect of signed information may fail to discover the inherent properties of networks. In this paper, we propose a novel model, named signed (k,\xa0l)-biclique (SBC), by enforcing constraints over the number of positive and negative connections. Specifically, given a signed bipartite graph and two positive integers k,\xa0l, SBC is a biclique, where each vertex has no less than k positive neighbors and no more than l negative neighbors. Considering the strict requirement of biclique, which may limit its application in real scenarios, we further introduce a new model, named signed \\((k,l,\\theta )\\)-biplex (SBP), which relaxes the biclique constraint in SBC with the \\(\\theta \\)-biplex model. We prove the problems of finding the maximum signed (k,\xa0l)-biclique (MaxSBC) and the maximum signed \\((k,l,\\theta )\\)-biplex (MaxSBP) are both NP-hard. To solve the two problems, efficient search paradigms are developed accordingly. Moreover, to handle large graphs, targeted optimization strategies are designed for each model, including effective unpromising vertex filtering and unnecessary branch pruning. Finally, comprehensive experiments are conducted on 10 graphs to demonstrate the efficiency and effectiveness of the proposed techniques and models.}
+}
+
+
+@article{DBLP:journals/vldb/LiASXLJZ25,
+	author = {Jiajia Li and
+                  Qiulin An and
+                  Yang Song and
+                  Xing Xiong and
+                  Lei Li and
+                  Fengmei Jin and
+                  Xiaofang Zhou},
+	title = {Route optimization with collective spatial keywords: {A} skyline-based
+                  approach},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {61},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00940-w},
+	doi = {10.1007/S00778-025-00940-W},
+	timestamp = {Thu, 11 Sep 2025 09:20:24 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/LiASXLJZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the development of location-based services, smart cities, and intelligent transportation, route planning has evolved beyond shortest path finding to satisfy user’s flexible travel purposes through the Optimal Routes with Collective Spatial Keywords (ORCSK) routing. Because different Points of Interest (POIs) contain different sets of keywords, the user usually needs to visit multiple POIs to fulfill all needs. Moreover, the POIs’ stop hardness (time and cost) also influences user experience, but it was ignored by the existing solutions. Therefore, this work proposes to extend the ORCSK problem into Skyline Optimal Routes with Collective Spatial Keyword (Sky-ORCSK) by considering both distance and stop hardness. Specifically, we first propose the IG-Sky algorithm from the spatial keyword search perspective by extending the IG-Tree. Then we propose the DA-Sky algorithm from the path enumeration perspective by extending our previous DA-CSK. Furthermore, five optimization strategies are proposed to improve efficiency by pruning the search space. Extensive experimental evaluations on real-world datasets demonstrate the algorithms’ efficacy and reliability, marking a significant step forward in refined route planning for modern urban environments.}
+}
+
+
+@article{DBLP:journals/vldb/ZhangCPR25,
+	author = {Yunjia Zhang and
+                  Yannis Chronis and
+                  Jignesh M. Patel and
+                  Theodoros Rekatsinas},
+	title = {Simple Adaptive Query Processing vs. Learned Query Optimizers: Observations
+                  and Analysis},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {5},
+	pages = {62},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00936-6},
+	doi = {10.1007/S00778-025-00936-6},
+	timestamp = {Thu, 25 Sep 2025 20:36:31 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhangCPR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {There have been many decades of work on optimizing query processing in database management systems. Recently, modern machine learning (ML), and specifically reinforcement learning (RL), have gained increased attention as a means to develop a query optimizer (QO). In this work, we take a closer look at two recent RL-based QO methods to better understand their behavior. We find that these RL-based methods do not generalize as well as it seems at first glance. Thus, we ask a simple question: How do RL-based QOs compare to a simple, modern, adaptive query processing approach? To answer this question, we chose two simple adaptive query processing techniques and implemented them in PostgreSQL. The first adapts an individual join operation on-the-fly and switches between a Nested Loop Join algorithm and a Hash Join algorithm to avoid sub-optimal join algorithm decisions. The second is a technique called Lookahead Information Passing (LIP), in which adaptive semijoin techniques are used to make a pipeline of join operations execute efficiently. To our surprise, we find that this simple adaptive query processing approach is not only competitive to these RL-based approaches but, in some cases, outperforms the RL-based approaches. The adaptive approach is also appealing because it does not require an expensive training step, and it is fully interpretable compared to the RL-based QO approaches. Further, the adaptive method works across complex query constructs that RL-based QO methods currently cannot optimize.}
+}
+
+
+@article{DBLP:journals/vldb/ZhangLZQW25,
+	author = {Qi Zhang and
+                  Rong{-}Hua Li and
+                  Yalong Zhang and
+                  Hongchao Qin and
+                  Guoren Wang},
+	title = {Density decomposition on large static and dynamic graphs: algorithms
+                  and applications},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {63},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00942-8},
+	doi = {10.1007/S00778-025-00942-8},
+	timestamp = {Sun, 01 Feb 2026 13:44:27 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhangLZQW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Locally-densest subgraph (LDS) decomposition is a fundamental decomposition in graph analysis that finds numerous applications in various domains, including community detection, fraud detection, graph querying, and graph visualization. However, the LDS decomposition is computationally challenging for both static and dynamic graphs. Furthermore, the LDS decomposition often produces an excessive number of dense subgraph layers, leading to the unnecessary partition of tightly-connected subgraphs. To address these limitations, an alternative concept called density decomposition was proposed, which can generate a more reasonable number of dense subgraph layers. However, the state-of-the-art algorithm for density decomposition requires \\(O(m^2)\\) time (m is the number of edges of the graph), which is very costly for large graphs. In this paper, we conduct an in-depth investigation of density decomposition and propose efficient algorithms for computing it on both static and dynamic graphs. First, we establish a novel relationship between density decomposition and LDS decomposition. Second, based on these relationships, we propose novel algorithms to compute the density decomposition on static graphs with carefully designed network flow and divide-and-conquer techniques. Our proposed static algorithms significantly reduce the time complexity to \\(O(m^{3/2}\\log p)\\) (p is often a very small constant in real-world graphs). Third, for dynamic graphs, we develop three dynamic algorithms with efficient O(m) time complexity. Furthermore, we study a new community search problem based on the concept of density composition. To resolve this problem, we propose two online algorithms and two index-based algorithms. Among these, the maximum spanning tree-based index enables a search algorithm with a time complexity linearly proportional to the size of the subtree formed by the query vertices. Efficient index maintenance techniques are also developed to handle edge insertions and deletions. Extensive experiments on several large real-world graphs demonstrate the high efficiency, scalability, and effectiveness of the proposed algorithms.}
+}
+
+
+@article{DBLP:journals/vldb/PengCSTKNCY25,
+	author = {Jinfeng Peng and
+                  Hanghai Cui and
+                  Derong Shen and
+                  Nan Tang and
+                  Yue Kou and
+                  Tiezheng Nie and
+                  Hang Cui and
+                  Ge Yu},
+	title = {GARF\({}^{\mbox{+}}\): self-supervised and interpretable data cleaning
+                  with sequence generative adversarial networks},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {64},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00941-9},
+	doi = {10.1007/S00778-025-00941-9},
+	timestamp = {Tue, 14 Oct 2025 19:49:39 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/PengCSTKNCY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Data cleaning has always been a challenging issue in data research. As data volumes grow exponentially, manual cleaning has become increasingly impractical. Despite substantial efforts in automated data cleaning, significant human effort remains essential, either for providing prior knowledge to generate rules or labeling data to train models. In this paper, we study the problem of self-supervised and interpretable data cleaning, which automatically extracts interpretable data repair rules from dirty data. We propose a novel framework, namely Garf+, based on sequence generative adversarial networks (SeqGAN). A key objective of Garf+ is to capture data repair rules (e.g., the city “Dothan” can uniquely determine that the county is “Houston”). Garf+ employs a SeqGAN consisting of a generator G and a discriminator D that trains G to learn the dependency relationships (e.g., given the city “Dothan” as input, G infers that the county should be “Houston”). After training, the generator G can be used to generate data repair rules, but such generated rules may contain incorrect rules, especially when learned from dirty data. To mitigate this problem, Garf+ further updates the learned relationships with another discriminator \\(D'\\) to iteratively improve the quality of both rules and data. By taking advantage of both logical and learning-based methods, Garf+ achieves interpretable data cleaning without requiring prior knowledge or labeled training data. Furthermore, Garf+ explores the potential of open-source large language models (LLMs) in data cleaning. Through fine-tuning, LLMs can effectively assimilate both general knowledge and domain-specific information. Garf+ integrates LLMs as a knowledge enhancement module to support rule generation and data repair processes. Extensive experiments on real-world and synthetic datasets demonstrate the effectiveness of Garf+, including its original approach (Garf) and two variants designed to tackle various scenarios. Garf+ outperforms state-of-the-art methods with high precision and recall across different datasets, through learning from dirty datasets autonomously without human supervision.}
+}
+
+
+@article{DBLP:journals/vldb/OulefkiBBBM25,
+	author = {Samira Oulefki and
+                  Lamia Berkani and
+                  Nassim Boudjenah and
+                  Ladjel Bellatreche and
+                  A{\"{\i}}cha Mokhtari},
+	title = {BioGITOM: Matching Biomedical Ontologies with Graph Isomorphism Transformer},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {65},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00943-7},
+	doi = {10.1007/S00778-025-00943-7},
+	timestamp = {Tue, 14 Oct 2025 19:49:39 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/OulefkiBBBM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ontology Matching (OM) plays a central role in ensuring interoperability across heterogeneous biomedical ontologies. Existing approaches are broadly classified into (i) traditional methods that rely on external lexicons and predefined rules, and (ii) learning methods that leverage Deep Learning (DL) and Graph Neural Networks (GNNs) to generate expressive concept representations. In particular, learning OM methods often make use of Graph Convolutional Networks. Motivated by the success of Graph Isomorphism Networks and the versatility of Graph Transformers across various applications, in this paper, we propose a hybrid GNN model named Graph Isomorphism Transformer (GIT). This study explores the benefits of applying the GIT model to OM, emphasizing its potential to enhance accuracy, and improve the scalability of learning-based systems. We introduce BioGITOM, a new OM approach comprising five core modules: (1) the Preprocessing is applied to refine raw data and extract pertinent features; (2) the Concept Features Encoder, which generates semantic encodings; (3) the GIT model, tailored to enhance concepts embeddings with structural features; (4) the Gating Aggregator, employed to derive final concepts’ embeddings by integrating both semantic and structural feature encodings; and (5) the Mappings Selector, designed to identify mappings between concepts. Comprehensive experiments conducted on the Bio-ML track of the Ontology Alignment Evaluation Initiative (\\(\\text {OAEI}^{1}\\)) showcase the effectiveness of BioGITOM. The results highlight the superior performance of BioGITOM compared to state-of-the-art traditional and learning-based methods.}
+}
+
+
+@article{DBLP:journals/vldb/KangZBDGMG25,
+	author = {Hongbo Kang and
+                  Yiwei Zhao and
+                  Guy E. Blelloch and
+                  Laxman Dhulipala and
+                  Yan Gu and
+                  Charles McGuffey and
+                  Phillip B. Gibbons},
+	title = {PIM-tree: {A} Skew-resistant Index for Processing-in-Memory},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {66},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00937-5},
+	doi = {10.1007/S00778-025-00937-5},
+	timestamp = {Tue, 14 Oct 2025 19:49:39 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/KangZBDGMG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The performance of today’s in-memory indexes is bottlenecked by the memory latency/bandwidth wall. Processing-in-memory (PIM) is an emerging approach that potentially mitigates this bottleneck by enabling low-latency memory access whose aggregate memory bandwidth scales with the number of PIM nodes. There is an inherent tension, however, between minimizing inter-node communication and achieving load balance in PIM systems, in the presence of workload skew. This paper presents PIM-tree, an ordered index for PIM systems that achieves both low communication and high load balance, regardless of the degree of skew in data/queries. Our skew-resistant index is based on a novel division of labor between the multi-core host CPU and the PIM nodes, which leverages the strengths of each. We introduce push-pull search, which dynamically decides whether to push queries to a PIM-tree node (CPU \\(\\rightarrow \\) PIM-node) or pull the node’s keys back to the CPU (PIM-node \\(\\rightarrow \\) CPU) based on workload skew. Combined with other PIM-friendly optimizations (shadow subtrees and chunking), PIM-tree achieves high throughput, (guaranteed) low communication, and (guaranteed) high load balance, for batches of point queries, updates, and range scans. We implement the PIM-tree structure, in addition to prior proposed PIM indexes, on the latest PIM system from UPMEM, with 32 CPU cores and 2048 PIM nodes. On workloads with 500 million keys and batches of 1 million queries, the throughput using PIM-trees is up to \\(69.7\\times \\) and \\(59.1\\times \\) higher than the two best prior PIM-based methods. As far as we know these are the first implementations of ordered indexes on real PIM systems.}
+}
+
+
+@article{DBLP:journals/vldb/ArroyueloCGLNRV25,
+	author = {Diego Arroyuelo and
+                  Daniela Campos and
+                  Adri{\'{a}}n G{\'{o}}mez{-}Brand{\'{o}}n and
+                  Yuval Linker and
+                  Gonzalo Navarro and
+                  Carlos Rojas and
+                  Domagoj Vrgoc},
+	title = {CompactLTJ: Space {\&} Time Efficient Leapfrog Triejoin on Graph
+                  Databases},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {67},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00945-5},
+	doi = {10.1007/S00778-025-00945-5},
+	timestamp = {Sat, 11 Oct 2025 10:20:10 +0200},
+	biburl = {https://dblp.org/rec/journals/vldb/ArroyueloCGLNRV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Leapfrog Triejoin (LTJ) is arguably the most practical and popular worst-case-optimal (wco) algorithm for solving basic graph patterns in graph databases. Its main drawback is that it needs the database triples (subject, predicate, object) represented as paths in a trie, for each of the six orders of subject, predicate, and object. The resulting blowup in space makes most systems disregard LTJ or implement it only partially, which makes their corresponding algorithms non-wco. In this paper we show that, by using compact data structures, it is possible to build an index that at the same time matches the query time performance of the fastest classic wco index, and uses a fraction of the space of non-wco indices (which are much slower). Concretely, we make use of compact tree representations to store functional tries using one bit per trie edge, instead of one pointer, and further reduce the space by storing partial tries. Our most compact variant uses 5–6 times less space than classic wco implementations and 2–3 times less than classic non-wco systems. At solving queries, it is on par with the fastest classic wco system, and 30–40 times faster than non-wco systems. We further incorporate improved query resolution strategies into CompactLTJ variants, which makes it considerably faster than classic wco systems as well, on queries that do not output too many results. Finally, we show how CompactLTJ can incorporate dynamism without altering its performance, even under very demanding update regimes. We leave a public fully-functional implementation of CompactLTJ that can be directly used by practitioners.}
+}
+
+
+@article{DBLP:journals/vldb/ZhongSJLLC25,
+	author = {Kai Zhong and
+                  Luming Sun and
+                  Tao Ji and
+                  Pengju Liu and
+                  Cuiping Li and
+                  Hong Chen},
+	title = {{FOSS:} {A} learned doctor for query optimization},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {68},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00947-3},
+	doi = {10.1007/S00778-025-00947-3},
+	timestamp = {Fri, 31 Oct 2025 15:10:59 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/ZhongSJLLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Query optimizer is a critical component of a database management system, significantly impacting both user experience and resource utilization. To further enhance the capabilities of query optimizers, recent research has explored the application of deep learning. They either learn to construct plans from scratch in a bottom-up manner or steer the plan generation behavior of the traditional optimizer using hints. While they have shown promising results on certain workloads, they often suffer from low training efficiency or a constrained plan search space. To address these challenges, we introduce FOSS, a novel learned framework for query optimization. Our key insight is that while traditional optimizers may produce suboptimal plans due to estimation errors, only minor adjustments to specific suboptimal nodes are sufficient to achieve a highly efficient execution plan. FOSS assigns a reinforcement learning-based planner to refine the original plan generated by the traditional optimizer, making targeted modifications through a sequence of actions. Additionally, an evaluator is employed to assess candidate plans and select the final execution plan. To accelerate planner training, we integrate the evaluator and the traditional optimizer to construct a simulated environment, which enables the rapid generation of high-quality simulated experiences for planner updates. We evaluate the performance of FOSS on PostgreSQL and MySQL using the Join Order Benchmark, TPC-DS, and Stack Overflow workloads. The experimental results demonstrate that FOSS outperforms the state-of-the-art methods in terms of latency performance. FOSS achieves a total latency speedup of 1.30x to 9.09x over PostgreSQL and 1.35x to 7.14x over MySQL across various benchmarks.}
+}
+
+
+@article{DBLP:journals/vldb/DanPZM25,
+	author = {Tangpeng Dan and
+                  Xiao Pan and
+                  Bolong Zheng and
+                  Xiaofeng Meng},
+	title = {{DHL:} an efficient hierarchical index for shortest distance querying
+                  in time-dependent road networks},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {69},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00946-4},
+	doi = {10.1007/S00778-025-00946-4},
+	timestamp = {Fri, 31 Oct 2025 15:10:59 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/DanPZM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A shortest distance query is a fundamental operation of various location-based services in time-dependent road networks. Unfortunately, existing methods (e.g., G-tree-like, 2-hop labeling-like) are prohibitively expensive in terms of space/time. To this end, we propose a novel Double Hierarchical Labeling (DHL) index, which consists of a Hierarchical Graph Partition (HGP) tree and a hierarchical border labeling list. For HGP-tree, we first use a hierarchical graph partitioning to split the entire road network into hierarchical subgraphs and then index these subgraphs by a balanced tree. To preserve all connectivity information between border vertices of subgraphs, a Time-based Distance Inverted File (TDIF) is constructed for each leaf node of the HGP-tree. For the hierarchical labeling list, we construct it only for border vertices and use it to sped-up query processing. Moreover, a label propagation update is proposed to manage label updating when weights change. Considering three different situations between the given query vertices, we propose a phase-aware search algorithm with an extra-pruning method. Meanwhile, we extend our query methods to support the latest departure time querying. At last, to further improve the query efficiency and guarantee the algorithm can handle very large time-dependent road networks, we obtain the global boundaries and develop an efficient intra-pruning algorithm OPGB which does not rely on any additional parameter. We conduct extensive experiments on eight real-world datasets. As shown in the results, by adopting different pruning technologies, our proposed DHL achieves 44.09% and 54.83% speedup on average for the distance querying when compared with the state-of-the-art methods respectively which demonstrate the superiority of the proposed proposals on query processing and index maintenance.}
+}
+
+
+@article{DBLP:journals/vldb/YangCYWCS25,
+	author = {Yi Yang and
+                  Yurong Cheng and
+                  Ye Yuan and
+                  Guoren Wang and
+                  Lei Chen and
+                  Yongjiao Sun},
+	title = {Privacy-Utility Balanced Cooperative Online Matching in Spatial Crowdsourcing},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {70},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00944-6},
+	doi = {10.1007/S00778-025-00944-6},
+	timestamp = {Fri, 31 Oct 2025 15:10:59 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/YangCYWCS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of spatial temporal crowdsourcing applications, the online task assignment problem has been widely studied as one of the most typical problems. It ensures efficient and accurate matching between tasks and workers. Traditional task assignment only focuses on solving the task assignment on a single platform. Recently, with the widespread application of data sharing technology, cross online task assignment has been proposed, aiming at increasing the mutual benefit through cooperations. However, existing methods do not consider data privacy protection during the cooperation process, resulting in the leakage of sensitive information such as users’ location and historical data of platform. In this paper, we propose Privacy-preserving Cooperative Online Matching problem, which protects the privacy of the users and workers on their respective platforms. We design a PCOM framework and provide theoretical proof that the framework satisfies Differential Privacy. We then propose two privacy-preserving algorithms to solve PCOM. Furthermore, to reduce the impact of location perturbation on matching results, we design a new geographical location perturbation mechanism and a cooperative platform selection algorithm. Extensive experiments on real and synthetic datasets confirm the effectiveness and efficiency of our algorithms.}
+}
+
+
+@article{DBLP:journals/vldb/LuXJCS25,
+	author = {Pengkai Lu and
+                  Zhongle Xie and
+                  Dawei Jiang and
+                  Ke Chen and
+                  Lidan Shou},
+	title = {Cohort query processing without misleading aging effects},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {71},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00948-2},
+	doi = {10.1007/S00778-025-00948-2},
+	timestamp = {Fri, 31 Oct 2025 15:10:59 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/LuXJCS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cohort analysis is a powerful method widely employed in fields like medicine and sociology studying how groups of individuals behave over time under different initial conditions. Business data analysts seek to apply this method to massive Internet user activity datasets, aiming to uncover the impact of user attributes and application changes on behavior. However, cohort analysis queries are difficult to specify and costly to execute in traditional database systems. Moreover, the variability in how users allocate time both within and outside Internet applications introduces inconsistencies in user experiences, even among those with identical usage durations. This disparity leads to individual aging bias, distorting the estimation of aging effects on user behavior. To address these challenges, we propose extending database systems to facilitate cohort analysis while mitigating individual aging bias. Central to our approach is a general cohort analysis schema that integrates “constraint-chain-based age". This novel concept effectively eliminates aging bias by aligning the age of user activities with their unique application experiences. Building on this schema, we develop two distinct evaluation implementations for cohort query processing. The first, an intrusive implementation, extends SQL with custom operators that natively support constraint-chain-based age calculation. This implementation leverages a columnar evaluation framework optimized for cohort queries, incorporating advanced techniques like redundant sub-operator coalescence to enhance query plan optimization. The second, a non-intrusive implementation, is designed for rapid deployment on existing relational databases (row-store or column-store) using standard SQL, providing a baseline for performance and usability comparison. Extensive experiments validate the effectiveness of our approach, demonstrating that the intrusive implementation achieves substantial performance gains over the non-intrusive alternative. These results highlight the advantages of embedding native cohort query support into database systems.}
+}
+
+
+@article{DBLP:journals/vldb/SylligardosPPSB25,
+	author = {Emmanouil Sylligardos and
+                  John Paparrizos and
+                  Themis Palpanas and
+                  Pierre Senellart and
+                  Paul Boniol},
+	title = {{MSAD:} {A} deep dive into model selection for time series anomaly
+                  detection},
+	journal = {{VLDB} J.},
+	volume = {34},
+	number = {6},
+	pages = {72},
+	year = {2025},
+	url = {https://doi.org/10.1007/s00778-025-00949-1},
+	doi = {10.1007/S00778-025-00949-1},
+	timestamp = {Thu, 13 Nov 2025 08:56:03 +0100},
+	biburl = {https://dblp.org/rec/journals/vldb/SylligardosPPSB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Anomaly detection is a fundamental task for time-series analytics with important implications for the downstream performance of many applications. Despite increasing academic interest and the large number of methods proposed in the literature, recent benchmarks and evaluation studies demonstrated that no overall best anomaly detection methods exist when applied to very heterogeneous time series datasets. Therefore, the only scalable and viable solution to solve anomaly detection over very different time series collected from diverse domains is to propose a model selection method that will select, based on time series characteristics, the best anomaly detection methods to run. Existing AutoML solutions are, unfortunately, not directly applicable to time series anomaly detection, and no evaluation of time series-based approaches for model selection exists. Towards that direction, this paper studies the performance of time series classification methods used as model selection for anomaly detection. In total, we evaluate 234 model configurations derived from 16 base classifiers across more than 1980 time series, and we propose the first extensive experimental evaluation of time series classification as model selection for anomaly detection. Our results demonstrate that model selection methods outperform every single anomaly detection method while being in the same order of magnitude regarding execution time. This evaluation is the first step to demonstrate the accuracy and efficiency of time series classification algorithms for anomaly detection, and represents a strong baseline that can then be used to guide the model selection step in general AutoML pipelines.}
+}
