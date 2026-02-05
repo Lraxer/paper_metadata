@@ -1,0 +1,342 @@
+@article{DBLP:journals/tods/BringmannCM25,
+	author = {Karl Bringmann and
+                  Nofar Carmeli and
+                  Stefan Mengel},
+	title = {Tight Fine-Grained Bounds for Direct Access on Join Queries},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {1},
+	pages = {1:1--1:44},
+	year = {2025},
+	url = {https://doi.org/10.1145/3707448},
+	doi = {10.1145/3707448},
+	timestamp = {Wed, 11 Jun 2025 21:01:45 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/BringmannCM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the task of lexicographic direct access to query answers. That is, we want to simulate an array containing the answers of a join query sorted in a lexicographic order chosen by the user. A recent dichotomy showed for which queries and orders this task can be done in polylogarithmic access time after quasilinear preprocessing, but this dichotomy does not tell us how much time is required in the cases classified as hard. We determine the preprocessing time needed to achieve polylogarithmic access time for all join queries and all lexicographical orders. To this end, we propose a decomposition-based general algorithm for direct access on join queries. We then explore its optimality by proving lower bounds for the preprocessing time based on the hardness of a certain online Set-Disjointness problem, which shows that our algorithm’s bounds are tight for all lexicographic orders on join queries. Then, we prove the hardness of Set-Disjointness based on the Zero-Clique Conjecture, which is an established conjecture from fine-grained complexity theory. Interestingly, while proving our lower bound, we show that self-joins do not affect the complexity of direct access (up to logarithmic factors). Our algorithm can also be used to solve queries with projections and relaxed order requirements, though in these cases, its running time is not necessarily optimal. We also show that similar techniques to those used in our lower bounds can be used to prove that, for enumerating answers to Loomis-Whitney joins, it is not possible to significantly improve upon trivially computing all answers at preprocessing. This, in turn, gives further evidence (based on the Zero-Clique Conjecture) to the enumeration hardness of self-join-free cyclic joins with respect to linear preprocessing and constant delay.}
+}
+
+
+@article{DBLP:journals/tods/MouratidisLT25,
+	author = {Kyriakos Mouratidis and
+                  Keming Li and
+                  Bo Tang},
+	title = {Marrying Top-k with Skyline Queries: Operators with Relaxed Preference
+                  Input and Controllable Output Size},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {1},
+	pages = {2:1--2:37},
+	year = {2025},
+	url = {https://doi.org/10.1145/3705726},
+	doi = {10.1145/3705726},
+	timestamp = {Wed, 11 Jun 2025 21:01:45 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/MouratidisLT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The two paradigms to identify records of preference in a multi-objective setting rely either on dominance (e.g., the skyline operator) or on a utility function defined over the records’ attributes (typically using a top- k  query). Despite their proliferation, each has its own palpable drawbacks. Motivated by these drawbacks, we identify three hard requirements for practical decision support, namely, personalization, controllable output size, and flexibility in preference specification. With these requirements as a guide, we combine elements from both paradigms and propose two new operators,  ORD  and  ORU . We present a suite of algorithms for their efficient processing, dedicating more technical effort to  ORU , whose nature is inherently more challenging. Specifically, besides a sophisticated algorithm for  ORD , we describe two exact methods for  ORU  and one approximate. We perform a qualitative study to demonstrate how our operators work and evaluate the performance of our algorithms against adaptations of previous work that mimic their output.}
+}
+
+
+@article{DBLP:journals/tods/LiSCY25,
+	author = {Yiming Li and
+                  Yanyan Shen and
+                  Lei Chen and
+                  Mingxuan Yuan},
+	title = {A Caching-based Framework for Scalable Temporal Graph Neural Network
+                  Training},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {1},
+	pages = {3:1--3:46},
+	year = {2025},
+	url = {https://doi.org/10.1145/3705894},
+	doi = {10.1145/3705894},
+	timestamp = {Wed, 11 Jun 2025 21:01:45 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/LiSCY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Representation learning over dynamic graphs is critical for many real-world applications such as social network services and recommender systems. Temporal graph neural networks (T-GNNs) are powerful representation learning methods and have demonstrated remarkable effectiveness on continuous-time dynamic graphs. However, T-GNNs still suffer from high time complexity, which increases linearly with the number of timestamps and grows exponentially with the model depth, making them not scalable to large dynamic graphs. To address the limitations, we propose  Orca , a novel framework that accelerates T-GNN training by caching and reusing intermediate embeddings. We design an optimal caching policy, named  MRD , for the uniform cache replacement problem, where embeddings at different intermediate layers have identical dimensions and recomputation costs.  MRD  not only improves the efficiency of training T-GNNs by maximizing the number of cache hits but also reduces the approximation errors by avoiding keeping and reusing extremely stale embeddings. For the general cache replacement problem, where embeddings at different intermediate layers can have different dimensions and recomputation costs, we solve this NP-hard problem by presenting a novel two-stage framework with approximation guarantees on the achieved benefit of caching. Furthermore, we have developed profound theoretical analyses of the approximation errors introduced by reusing intermediate embeddings, providing a thorough understanding of the impact of our caching and reuse schemes on model outputs. We also offer rigorous convergence guarantees for model training, adding to the reliability and validity of our  Orca  framework. Extensive experiments have validated that  Orca  can obtain two orders of magnitude speedup over state-of-the-art T-GNNs while achieving higher precision on various dynamic graphs.}
+}
+
+
+@article{DBLP:journals/tods/JasnyZNLB25,
+	author = {Matthias Jasny and
+                  Tobias Ziegler and
+                  Jacob Nelson{-}Slivon and
+                  Viktor Leis and
+                  Carsten Binnig},
+	title = {Synchronizing Disaggregated Data Structures with One-Sided {RDMA:}
+                  Pitfalls, Experiments and Design Guidelines},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {1},
+	pages = {4:1--4:40},
+	year = {2025},
+	url = {https://doi.org/10.1145/3716377},
+	doi = {10.1145/3716377},
+	timestamp = {Wed, 11 Jun 2025 21:01:45 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/JasnyZNLB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Remote data structures built with one-sided Remote Direct Memory Access (RDMA) are at the heart of many disaggregated database management systems today. Concurrent access to these data structures by thousands of remote workers necessitates a highly efficient synchronization scheme. Remarkably, our investigation reveals that existing synchronization schemes display substantial variations in performance and scalability. Even worse, some schemes do not correctly synchronize, resulting in rare and hard-to-detect data corruption. Motivated by these observations, we conduct the first comprehensive analysis of one-sided synchronization techniques and provide general principles for correct synchronization using one-sided RDMA. Our research demonstrates that adherence to these principles not only guarantees correctness but also results in substantial performance enhancements. This article is an extended version of\xa0[ 72 ] in which we investigate modern 400G NICs. Our findings reveal that the challenges persist even with new generations of NICs. Consequently, we turn our attention to alternative networking hardware, such as smart switches, to address some of the limitations associated with one-sided synchronization.}
+}
+
+
+@article{DBLP:journals/tods/Metwally25,
+	author = {Ahmed Metwally},
+	title = {Scaling and Load-Balancing Equi-Joins},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {2},
+	pages = {5:1--5:41},
+	year = {2025},
+	url = {https://doi.org/10.1145/3722102},
+	doi = {10.1145/3722102},
+	timestamp = {Tue, 05 Aug 2025 22:51:25 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/Metwally25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The task of joining two tables is fundamental for querying databases. In this article, we focus on the equi-join problem, where a pair of records from the two joined tables are part of the join results if equality holds between their values in the join column(s). While this is a tractable problem when the number of records in the joined tables is relatively small, it becomes very challenging as the table sizes increase, especially if hot keys (join column values with a large number of records) exist in both joined tables. This article, an extended version of [ 60 ], proposes Adaptive-Multistage-Join (AM-Join) for scalable and fast equi-joins in distributed shared-nothing architectures. AM-Join utilizes (a) Tree-Join, a proposed novel algorithm that scales well when the joined tables share hot keys, and (b) Broadcast-Join, the fastest known algorithm when joining keys that are hot in only one table. Unlike the state-of-the-art algorithms, AM-Join (a) holistically solves the join-skew problem by achieving load balancing throughout the join execution, and (b) supports all outer-join variants without record deduplication or custom table partitioning. For the fastest AM-Join outer-join performance, we propose the Index-Broadcast-Join (IB-Join) family of algorithms for Small-Large joins, where one table fits in memory and the other can be up to orders of magnitude larger. The outer-join variants of IB-Join improve on the state-of-the-art Small-Large outer-join algorithms. The proposed algorithms can be adopted in any shared-nothing architecture. We implemented a MapReduce version using Spark. Our evaluation shows the proposed algorithms execute significantly faster and scale to more skewed and orders-of-magnitude bigger tables when compared to the state-of-the-art algorithms.}
+}
+
+
+@article{DBLP:journals/tods/SunHXBC25,
+	author = {Zitan Sun and
+                  Xin Huang and
+                  Jianliang Xu and
+                  Francesco Bonchi and
+                  Lijun Chang},
+	title = {Probabilistic Truss Decomposition on Uncertain Graphs: Indexing and
+                  Dynamic Maintenance},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {2},
+	pages = {6:1--6:40},
+	year = {2025},
+	url = {https://doi.org/10.1145/3721428},
+	doi = {10.1145/3721428},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/SunHXBC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Networks in many real-world applications come with an inherent uncertainty in their structure, due to, for example, noisy measurements, inference and prediction models, or for privacy purposes. Modeling and analyzing uncertain graphs have attracted a great deal of attention. Among the various graph analytic tasks studied, the extraction of dense substructures, such as cores or trusses, has a central role. In this article, we study the problem of ( k , γ)-truss indexing and querying over an uncertain graph  . A ( k , γ)-truss is the largest subgraph of   such that the probability of each edge being contained in at least  k -2 triangles is no less than γ. Our first proposal, CPT-index, keeps all the ( kz , γ)-trusses: retrieval for any given  k  and γ can be executed in an optimal linear time w.r.t. the graph size of the queried ( k , γ)-truss. We develop a bottom-up CPT-indexconstruction scheme and an improved algorithm for fast CPT-indexconstruction using top-down graph partitions. For trading off between ( k ,γ)-truss offline indexing and online querying, we further develop an approximate indexing approach ε, Δ r -APXequipped with two parameters, ε and Δ r , that govern tolerated errors. In addition, we further investigate the problem of maintaining ( k , γ)-truss indexes over dynamic uncertain graphs, where the update of vertex/edge insertions/deletions and also edge probability increments/decrements may frequently occur. We propose a comprehensive solution for CPT-indexand (ε, Δ r -APXmaintenance by addressing one fundamental task of one edge’s probability increment/decrement. To reduce the scope of affected edges that have trussness changed, we categorize three types of candidate edges and propose tight lower/upper bounds for trussness refinement, which can efficiently accomplish CPT-indexmaintenance in a local update scheme. Our proposed techniques for one single edge change can also be extended to handle a batch update of multiple edges. Extensive experiments using large-scale uncertain graphs with 261 million edges validate the efficiency of our proposed indexing and querying algorithms, as well as our ( k ,γ)-truss index maintenance algorithms, against state-of-the-art methods. Case studies on real-world graphs demonstrate the significant efficiency improvement by our proposed solutions as well as interesting discoveries.}
+}
+
+
+@article{DBLP:journals/tods/WangQHSHJRWS25,
+	author = {Chen Wang and
+                  Jialin Qiao and
+                  Xiangdong Huang and
+                  Shaoxu Song and
+                  Haonan Hou and
+                  Tian Jiang and
+                  Lei Rui and
+                  Jianmin Wang and
+                  Jiaguang Sun},
+	title = {Apache IoTDB: {A} Time Series Database for Large Scale IoT Applications},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {2},
+	pages = {7:1--7:45},
+	year = {2025},
+	url = {https://doi.org/10.1145/3726523},
+	doi = {10.1145/3726523},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/WangQHSHJRWS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A typical industrial scenario encounters thousands of devices with millions of sensors, consistently generating billions of data points. It poses new requirements of time series data management, not well addressed in existing solutions, including (1) device-defined ever-evolving schema, (2) mostly periodical data collection, (3) strongly correlated series, (4) variously delayed data arrival, and (5) highly concurrent data ingestion. In this paper, we present a time series database management system, Apache IoTDB. It consists of (i) a time series native file format, TsFile, with specially designed data encoding, and (ii) an IoTDB engine for efficiently handling delayed data arrivals and processing queries. We introduce a native distributed solution with distributed queries optimized by parallel operators. We also explore efficient TsFile synchronization mechanisms, ensuring seamless data integration without the need for ETL processes. The system achieves a throughput of 10 million inserted values per second. Queries such as 1-day data selection of 0.1 million points and 3-year data aggregation over 10 million points can be processed in 100 ms. Comparisons with InfluxDB, TimescaleDB, KairosDB, Parquet and ORC over real world data loads demonstrate the superiority of IoTDB and TsFile.}
+}
+
+
+@article{DBLP:journals/tods/VandevoortKN25,
+	author = {Brecht Vandevoort and
+                  Bas Ketsman and
+                  Frank Neven},
+	title = {Allocating Isolation Levels to Transactions in a Multiversion Setting},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {2},
+	pages = {8:1--8:24},
+	year = {2025},
+	url = {https://doi.org/10.1145/3716374},
+	doi = {10.1145/3716374},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/VandevoortKN25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {A serializable concurrency control mechanism ensures consistency for OLTP systems at the expense of a reduced transaction throughput. A DBMS, therefore usually offers the possibility to allocate lower isolation levels for some transactions when it is safe to do so. However, such trading of consistency for efficiency does not come with any safety guarantees. In this article, we study the mixed robustness problem which asks whether, for a given set of transactions and a given allocation of isolation levels, every possible interleaved execution of those transactions that is allowed under the provided allocation is always serializable. That is, whether the given allocation is indeed safe. While robustness has already been studied in the literature for the homogeneous setting where all transactions are allocated the same isolation level, the heterogeneous setting that we consider in this article, despite its practical relevance, has largely been ignored. We focus on multiversion concurrency control and consider the isolation levels that are available in PostgreSQL and Oracle: read committed (RC), snapshot isolation (SI), and serializable snapshot isolation (SSI). We show that the mixed robustness problem can be decided in polynomial time. In addition, we provide a polynomial time algorithm for computing the optimal robust allocation for a given set of transactions, prioritizing lower over higher isolation levels. The present results therefore establish the groundwork to automate isolation level allocation within existing databases supporting multiversion concurrency control.}
+}
+
+
+@article{DBLP:journals/tods/LebedaT25,
+	author = {Christian Janos Lebeda and
+                  Jakub Tetek},
+	title = {Better Differentially Private Approximate Histograms and Heavy Hitters
+                  using the Misra-Gries Sketch},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {3},
+	pages = {9:1--9:26},
+	year = {2025},
+	url = {https://doi.org/10.1145/3716375},
+	doi = {10.1145/3716375},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/LebedaT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We consider the problem of computing differentially private approximate histograms and heavy hitters in a stream of elements. In the non-private setting, this is often done using the sketch of Misra and Gries [Science of Computer Programming, 1982]. Chan, Li, Shi, and Xu [PETS 2012] describe a differentially private version of the Misra-Gries sketch, but the amount of noise it adds can be large and scales linearly with the size of the sketch; the more accurate the sketch is, the more noise this approach has to add. We present a better mechanism for releasing a Misra-Gries sketch under (ε, δ)-differential privacy. It adds noise with magnitude independent of the size of the sketch; in fact, the maximum error coming from the noise is the same as the best known in the private non-streaming setting, up to a constant factor. Our mechanism is simple and likely to be practical. We also give a simple post-processing step of the Misra-Gries sketch that does not increase the worst-case error guarantee. It is sufficient to add noise to this new sketch with less than twice the magnitude of the non-streaming setting. This improves on the previous result for ε-differential privacy where the noise scales linearly to the size of the sketch. Finally, we consider a general setting where users can contribute multiple distinct elements. We present a new sketch with maximum error matching the Misra-Gries sketch. For many parameters in this setting our sketch can be released with less noise under (ε, δ)-differential privacy.}
+}
+
+
+@article{DBLP:journals/tods/ChaiJTFMWLLYW25,
+	author = {Chengliang Chai and
+                  Kaisen Jin and
+                  Nan Tang and
+                  Ju Fan and
+                  Dongjing Miao and
+                  Jiayi Wang and
+                  Yuyu Luo and
+                  Guoliang Li and
+                  Ye Yuan and
+                  Guoren Wang},
+	title = {Cost-effective Missing Value Imputation for Data-effective Machine
+                  Learning},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {3},
+	pages = {10:1--10:36},
+	year = {2025},
+	url = {https://doi.org/10.1145/3716376},
+	doi = {10.1145/3716376},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/ChaiJTFMWLLYW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given a dataset with incomplete data (e.g., missing values), training a machine learning model over the incomplete data requires two steps. First, it requires a data-effective step that cleans the data in order to improve the data quality (and the model quality on the cleaned data). Second, it requires a data-efficient step that selects a core subset of the data (called coreset) such that the trained models on the entire data and the coreset have similar model quality, in order to save the computational cost of training. The first-data-effective-then-data-efficient methods are too costly, because they are expensive to clean the whole data; while the first-data-efficient-then-data-effective methods have low model quality, because they cannot select high-quality coreset for incomplete data. In this article, we investigate the problem of coreset selection over incomplete data for data-effective and data-efficient machine learning. The essential challenge is how to model the incomplete data for selecting high-quality coreset. To this end, we propose the  GoodCore  framework towards selecting a good coreset over incomplete data with low cost. To model the unknown complete data, we utilize the combinations of possible repairs as possible worlds of the incomplete data. Based on possible worlds,  GoodCore  selects an expected optimal coreset through gradient approximation without training ML models. We formally define the expected optimal coreset selection problem, prove its NP-hardness, and propose a greedy algorithm with an approximation ratio. To make  GoodCore  more efficient, we propose optimization methods that incorporate human-in-the-loop imputation or automatic imputation method into our framework. Moreover, a group-based strategy is utilized to further accelerate the coreset selection with incomplete data given large datasets. Experimental results show the effectiveness and efficiency of our framework with low cost.}
+}
+
+
+@article{DBLP:journals/tods/JohnKL25,
+	author = {Sachin Basil John and
+                  Christoph Koch and
+                  Peter Lindner},
+	title = {High-dimensional Data Cubes},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {3},
+	pages = {11:1--11:43},
+	year = {2025},
+	url = {https://doi.org/10.1145/3716373},
+	doi = {10.1145/3716373},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/JohnKL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {We introduce an approach to supporting high-dimensional data cubes at interactive query speeds and moderate storage cost. Our approach is based on binary(-domain) data cubes that are judiciously partially materialized; the missing information can be quickly approximated using statistical or linear programming techniques. This enables new applications such as exploratory data analysis for feature engineering and other fields of data science. Moreover, it removes the need to compromise when building a data cube—all columns we might ever wish to use can be included as dimensions. Our approach also speeds up certain dice, roll-up, and drill-down operations on data cubes with hierarchical dimensions compared to traditional data cubes.}
+}
+
+
+@article{DBLP:journals/tods/AamerHPB25,
+	author = {Heba Aamer and
+                  Jan Hidders and
+                  Jan Paredaens and
+                  Jan Van den Bussche},
+	title = {Expressiveness within Sequence Datalog},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {3},
+	pages = {12:1--12:38},
+	year = {2025},
+	url = {https://doi.org/10.1145/3732283},
+	doi = {10.1145/3732283},
+	timestamp = {Sat, 09 Aug 2025 12:16:07 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/AamerHPB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Motivated by old and new applications, we investigate Datalog as a language for sequence databases. We reconsider classical features of Datalog programs, such as negation, recursion, intermediate predicates, and relations of higher arities. We also consider new features that are useful for sequences, notably, equations between path expressions, and “packing”. Our goal is to clarify the relative expressiveness of all these different features, in the context of sequences. Towards our goal, we establish a number of redundancy and primitivity results, showing that certain features can, or cannot, be expressed in terms of other features. These results paint a complete picture of the expressiveness relationships among all possible Sequence Datalog fragments that can be formed using the six features that we consider.}
+}
+
+
+@article{DBLP:journals/tods/Tao25,
+	author = {Yufei Tao},
+	title = {Editorial: {A} Message from the New Editor-in-Chief},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {4},
+	pages = {13:1},
+	year = {2025},
+	url = {https://doi.org/10.1145/3736110},
+	doi = {10.1145/3736110},
+	timestamp = {Thu, 11 Sep 2025 20:25:14 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/Tao25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{DBLP:journals/tods/XieYL25,
+	author = {Jiadong Xie and
+                  Jeffrey Xu Yu and
+                  Yingfan Liu},
+	title = {Graph Based K-Nearest Neighbor Search Revisited},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {4},
+	pages = {14:1--14:30},
+	year = {2025},
+	url = {https://doi.org/10.1145/3736716},
+	doi = {10.1145/3736716},
+	timestamp = {Thu, 11 Sep 2025 20:25:14 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/XieYL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The problem of  k -nearest neighbor ( k -NN) search is a fundamental problem to find the exact  k  nearest neighbor points for a user-given query point  q  in a  d -dimensional large dataset  D  with  n  points, and the approximate  k -NN ( k -ANN) search problem is to find the approximate  k -NN. Both are extensively studied to support real applications. Among all approaches, the graph-based approaches have been seen as the best to support  k -NN/ANN in recent studies. The state-of-the-art graph-based approach, τ-MG, finds 1-NN,  p ¯ 1 , over a graph index  G τ  constructed for  D  based on a predetermined parameter τ where the distance between  p ¯ 1  and  q  is less than τ, and finds  k -ANN based on the approach taken for 1-NN. There are some main issues in τ-MG and other graph-based approaches. One is that it is difficult to predetermine τ which can ensure to find 1-NN and can do it efficiently. This is because the accuracy/efficiency is related to the size of the graph index  G τ  constructed. To achieve high accuracy is at the expense of efficiency. In addition, like all the other existing graph-based approaches, it does not have a theoretical guarantee to ensure  k -NN for the same reason to use the same graph index,  G τ , for both 1-NN and  k -NN ( k  > 1). In this article, we propose a new graph-based approach for  k -NN with a theoretical guarantee. We construct a labeled graph,  G , and we do not need to predetermine τ. Instead, we find 1-NN over a subgraph,  G τ ˙ , of  G , virtually constructed in a dynamic manner. Here,  τ ˙  we use is query-dependent and can be smaller than τ, and the subgraph  G τ ˙  is smaller than  G τ  when  τ ˙ = τ . We find  k -NN in two phases. In the navigation phase, we find 1-NN,  p ¯ 1 , of  q  over  G τ ˙ . In the second refinement phase, for  k  > 1, we explore the neighbors within the vicinity region of  p ¯ 1  in  G . Based on our solution for  k -NN in theory, we propose new algorithms to support  k -ANN efficiently in practice. We conduct extensive performance studies and confirm the effectiveness and efficiency of our new approach.}
+}
+
+
+@article{DBLP:journals/tods/WeiL25,
+	author = {Ziheng Wei and
+                  Sebastian Link},
+	title = {The Bounded Cardinality Normal Form for the Logical Design of Relational
+                  Database Schemata},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {4},
+	pages = {15:1--15:45},
+	year = {2025},
+	url = {https://doi.org/10.1145/3744897},
+	doi = {10.1145/3744897},
+	timestamp = {Sun, 02 Nov 2025 21:29:39 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/WeiL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The goal of classical normalization is to maintain data consistency under updates, with a minimum level of effort. Given functional dependencies (FDs) alone, this goal is only achievable in the special case an FD-preserving Boyce–Codd Normal Form (BCNF) decomposition exists. As we show, in all other cases the level of effort can be neither controlled nor quantified. In response, we establish the ℓ-Bounded Cardinality Normal Form, parameterized by a positive integer ℓ. For every ℓ, the normal form condition requires from every instance that every value combination over the left-hand side of every non-trivial FD does not occur in more than ℓ tuples. BCNF is captured when ℓ =1. We show that schemata in ℓ-Bounded Cardinality Normal Form characterize instances in which updates to at most ℓ occurrences of any redundant data value are sufficient to maintain data consistency. In fact, for the smallest ℓ in which a schema is in ℓ-Bounded Cardinality Normal Form we capture an equilibrium between worst-case update inefficiency and best-case join efficiency, where some redundant data value can be joined with up to ℓ other data values. We then establish algorithms that compute schemata in ℓ-Bounded Cardinality Normal Form for the smallest level ℓ attainable across all lossless, FD-preserving decompositions. Additional algorithms (i) attain even smaller levels of effort based on the loss of some FDs, and (ii) decompose schemata based on prioritized FDs that cause high levels of effort. Our framework informs de-normalization already during logical design. In particular, every materialized view exhibits an equilibrium level ℓ that quantifies its worst-case incremental maintenance cost and its best-case support for join queries. Experiments with synthetic and real-world data illustrate which properties the schemata have that result from our algorithms, and how these properties predict the performance of update and query operations on instances over the schemata, without and with materialized views. We further demonstrate how our framework can automate the design of data warehouses by mining data for dimensions that exhibit high levels of data redundancy. In an effort to align data and the business rules that govern them, we use lattice theory to characterize ℓ-Bounded Cardinality Normal Form on database instances and schemata. As a consequence, any difference in constraints observed at instance and schema levels provides an opportunity to improve data quality, insight derived from analytics, and database performance.}
+}
+
+
+@article{DBLP:journals/tods/JiYWWJ25,
+	author = {Shuping Ji and
+                  Jianguo Yao and
+                  Wei Wang and
+                  Jun Wei and
+                  Hans{-}Arno Jacobsen},
+	title = {Efficient Parallel Boolean Expression Matching},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {4},
+	pages = {16:1--16:41},
+	year = {2025},
+	url = {https://doi.org/10.1145/3736756},
+	doi = {10.1145/3736756},
+	timestamp = {Sat, 31 Jan 2026 18:52:07 +0100},
+	biburl = {https://dblp.org/rec/journals/tods/JiYWWJ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Boolean expression matching plays an important role in many applications. However, existing solutions still show efficiency and scalability limitations. For example, existing solutions often exhibit degraded performance when applied to high-dimensional and diverse workloads, and existing algorithms rarely consider supporting concurrent matching and index updating under multicore environments. To overcome these limitations, in this article, we first design the  PS-Tree  data structure to efficiently index Boolean expressions in one dimension. By dividing predicates into disjoint predicate spaces,  PS-Tree  achieves high matching performance and good expressiveness. Based on the  PS-Tree , we propose a Boolean expression matching algorithm called  PSTDynamic . By dynamically adjusting the index and efficiently filtering out a large proportion of unmatching expressions,  PSTDynamic  achieves high matching performance under high-dimensional and diverse workloads. For multicore environment, we further extend the  PSTDynamic  algorithm to  PSTParallel  to achieve scalability with lower matching latency and higher matching throughput. We run experiments on both synthetic and real-world datasets. The experiments verify that our proposed algorithms show high efficiency and parallelism. Moreover, they also achieve fast index construction and a small memory footprint. Comprehensive experiments show that our solutions drastically outperform state-of-the-art methods.}
+}
+
+
+@article{DBLP:journals/tods/ZhaoDK25,
+	author = {Hangdong Zhao and
+                  Shaleen Deep and
+                  Paraschos Koutris},
+	title = {Space-Time Tradeoffs for Conjunctive Queries with Access Patterns},
+	journal = {{ACM} Trans. Database Syst.},
+	volume = {50},
+	number = {4},
+	pages = {17:1--17:45},
+	year = {2025},
+	url = {https://doi.org/10.1145/3743130},
+	doi = {10.1145/3743130},
+	timestamp = {Thu, 11 Sep 2025 20:25:14 +0200},
+	biburl = {https://dblp.org/rec/journals/tods/ZhaoDK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In this article, we investigate space-time tradeoffs for answering conjunctive queries with access patterns (CQAPs). The goal is to create a space-efficient data structure in an initial preprocessing phase and use it for answering (multiple) queries in an online phase. Previous work has developed data structures that trades off space usage for answering time for queries of practical interest, such as the path and triangle query. However, these approaches lack a comprehensive framework and are not generalizable. Our main contribution is a general algorithmic framework for obtaining space-time tradeoffs for any CQAP. Our framework builds upon the PANDA algorithm and tree decomposition techniques. We demonstrate that our framework captures all state-of-the-art tradeoffs that were independently produced for various queries. Furthermore, we show surprising improvements over the state-of-the-art tradeoffs known in the existing literature for reachability queries.}
+}
