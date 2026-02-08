@@ -1,0 +1,1744 @@
+@article{DBLP:journals/compsec/LiuLX25,
+	author = {Dengbo Liu and
+                  Zhi Li and
+                  Daoyun Xu},
+	title = {Generate universal adversarial perturbations by shortest-distance
+                  soft maximum direction attack},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104168},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104168},
+	doi = {10.1016/J.COSE.2024.104168},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuLX25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep  neural networks  (DNNs) are vulnerable to adversarial attacks. Compared to the instance-specific adversarial examples, Universal Adversarial Perturbation (UAP) can fool the target model of different inputs with only one perturbation. However, previous UAP generation algorithms do not consider the shortest distance to the decision boundary of the Last  Linear Operator  (LLO), which hampers the UAP’s attackability under a limited  perturbation size . In this paper, the LLO is analyzed to obtain several properties based on which the decision space of the LLO is modeled. Then, the UAP generation algorithm for the shortest-distance attack based on LLO is proposed. Moreover, we propose the maximum direction attack and combine it with the shortest-distance attack to obtain the shortest-distance soft maximum attack, which improves the transferability of UAP. To validate the performance of the algorithm proposed in this paper, we conduct UAP white-box and black-box attack experiments using the ImageNet dataset, and the results show that the attack success rate exceeds the latest research results.}
+}
+
+
+@article{DBLP:journals/compsec/XueCWC25,
+	author = {Jiacheng Xue and
+                  Xiang Chen and
+                  Jiyu Wang and
+                  Zhanqi Cui},
+	title = {Towards prompt tuning-based software vulnerability assessment with
+                  continual learning},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104184},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104184},
+	doi = {10.1016/J.COSE.2024.104184},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/XueCWC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Software  vulnerability assessment  (SVA) has become increasingly important due to the growing reliance on various software systems and the rising complexity of cyber threats. SVA aims to quickly identify and remediate high-risk vulnerabilities in software systems, which helps protect  sensitive information  and maintain the integrity of digital infrastructure. In our study, we focus on prompt tuning-based SVA. Prompt tuning reduces computational costs by tuning the input prompts instead of the entire model. We further incorporate the continual learning paradigm to enable the SVA model to adapt to new vulnerabilities as they emerge dynamically. This paradigm ensures the SVA model remains up-to-date, reduces the risk of catastrophic forgetting, and provides resource-efficient updates. To achieve this goal, we propose a novel method SVACL. SVACL combines confidence-based replay and  regularization methods  for continual learning. Additionally, SVACL uses both  source code  and vulnerability descriptions to create hybrid prompts for prompt tuning with the pre-trained model CodeT5. Experimental results demonstrate that SVACL outperforms state-of-the-art SVA baselines by 20% to 380% in terms of  MCC performance measure . Finally, our ablation study results confirm the effectiveness of the component settings (such as confidence-based replay, regularization method,  vulnerability information  fusion, CodeT5, and hybrid prompts) for SVACL. Therefore, our study provides the first promising step toward prompt tuning-based SVA with continual learning.}
+}
+
+
+@article{DBLP:journals/compsec/LiuMWZXW25,
+	author = {Danjun Liu and
+                  Xuan Meng and
+                  Pengfei Wang and
+                  Xu Zhou and
+                  Wei Xie and
+                  Baosheng Wang},
+	title = {Constructing arbitrary write via puppet objects and delivering gadgets
+                  in Linux kernel},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104189},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104189},
+	doi = {10.1016/J.COSE.2024.104189},
+	timestamp = {Tue, 27 May 2025 10:48:53 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuMWZXW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Researchers have proposed various methods to perform  kernel exploitation , which facilitates vulnerability evaluation and fixing. To sum up, traditional approaches tend to construct ROP chains or perform arbitrary write to escalate privileges. However, the former depends on some unusual ROP gadgets to save the stack  frame pointer  and demands adequate kernel memory space to hold the ROP chain. Additionally, to construct arbitrary write, existing approaches either rely on the usability of a certain kernel object or have restrictions on the write value. These limitations sometimes hinder the exploitation of the vulnerability. In this paper, to overcome the limitations of existing exploitation strategies, we propose an elegant approach, which uses  puppet objects  and  delivering gadgets  to construct arbitrary writes. This approach relies on common ROP gadgets, requires less controllable memory, imposes fewer restrictions, and features a concise exploitation process. We also devise a tool named  PODE  to automatically identify puppet objects in Linux kernel and select suitable puppet objects and delivering gadgets for a given vulnerability. We evaluate  PODE  using 22 real-world kernel vulnerabilities and successfully exploit 16 of them using puppet objects, demonstrating that it not only diversifies the ways to perform  kernel exploitation  but also escalates the exploitability of kernel vulnerabilities.}
+}
+
+
+@article{DBLP:journals/compsec/BlinowskiS25,
+	author = {Grzegorz J. Blinowski and
+                  Michal Szaknis},
+	title = {Fuzzing trusted execution environments with Rust},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104196},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104196},
+	doi = {10.1016/J.COSE.2024.104196},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/BlinowskiS25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Fuzzing, a software testing technique, aims to uncover bugs by subjecting the target program to random inputs, thus discerning abnormal program behaviors such as crashes. In this paper, we present the design and implementation of a fuzzing framework designed to test TEEs (Trusted Execution Environment). Our framework leverages established  software tools  in a novel way: (1) We employ the Rust programming language in a two-way  code generator : to translate fuzzer output to a sequence of system calls and in a “reverse translation” process, where sample code snippets are used to seed the fuzzer – a single API specification suffices for both endeavors; (2) Our fuzzer exhibits the ability to iteratively traverse the API's specification, scrutinize object dependencies, and judiciously reuse objects. These features significantly amplify its bug-finding prowess. (3) A versatile Rust  proc macro  mechanism is used to process the API specification. The fuzzer's code is built with the Rust compiler sans the necessity for additional specialized tools. (4) To enable the efficient stateful execution of TEEs, we have tailored the QEMU system emulator accordingly. To verify the usability and performance of our fuzzer, and to test various configuration options we conducted a series of tests with a popular open-source OP-TEE trusted operating system.}
+}
+
+
+@article{DBLP:journals/compsec/NolanTH25,
+	author = {Louis Nolan and
+                  Denise L. Tennant and
+                  Deanna House},
+	title = {Navigating challenging terrain surrounding DoD response to homeland
+                  attacks on critical infrastructure: Case studies of prior incidents
+                  utilizing an extended taxonomy of cyber harms},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104198},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104198},
+	doi = {10.1016/J.COSE.2024.104198},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/NolanTH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The complexity of DoD response to cyberattacks on critical infrastructure entities is a relatively understudied area, particularly when considering attacks that fall within the nebulous area of response, the cyber grey zone. Reliance on critical infrastructure by private, public, and defense sectors establishes the need for proactive research in this context, particularly learning from prior incidents to inform and plan for future events and responses. This research utilizes an extended taxonomy to categorize harms and thresholds related to cyberattacks on critical infrastructure to understand integrated (rather than divisive) approaches that utilize Department of Defense capabilities. The researchers extend a taxonomy of cyber harms to provide a system of categorization that can assist with determining when a threshold, or cyber red line, is surpassed and provide a starting point to establish future considerations under which an engagement by the Department of Defense is appropriate.}
+}
+
+
+@article{DBLP:journals/compsec/PandeyM25,
+	author = {Nimisha Pandey and
+                  Pramod Kumar Mishra},
+	title = {Conditional entropy-based hybrid DDoS detection model for IoT networks},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104199},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104199},
+	doi = {10.1016/J.COSE.2024.104199},
+	timestamp = {Wed, 04 Dec 2024 22:33:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/PandeyM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In a distributed denial-of-service (DDoS) attack, an attacker channelizes the resources of a  botnet  to launch  denial of service attack  on the victim. The increased use of  IoT  devices and dependence of users on e-services like online shopping and online payments have elevated the liability risks. The entropy provides a significant measure of randomness. The variation in entropy of traffic features determines the presence of abrupt traffic. This paper uses entropy and  conditional entropy  to achieve insights on data and feeds it to the proposed 2-stage detection approach for multi-class classification. The proposed model employs four classifiers for first hand classification. Further, stacking generalization-based second stage achieves the final detection process. The recently launched CIC  IoT  2023 dataset is used to illustrate the findings of the study. The proposed approach produces an accuracy of 99.86%. Further, this paper utilizes  relative entropy  for the determination of deflection of traffic behavior between the attack and legitimate samples. Comparisons have been made among symmetric versions of information divergence,  ϕ <math><mi is="true">ϕ</mi></math> -divergence and Kullback–Leibler divergence along with, Hellinger distance and  total variation  distance. It is found that the information distance gives a better differentiation between the entropy of legitimate traffic and attack traffic.  Significance Statement  Entropy has been manipulated to define the nature of incoming traffic for any rule-based detection. This work explores the significance of  conditional entropy  for the ML-based detection of DDoS attacks in a recently launched IoT-based dataset. Additionally, the effectiveness of KL-divergence, information divergence,  ϕ <math><mi is="true">ϕ</mi></math> -divergence, Hellinger distance and  total variation  distance is compared for differentiating between legitimate traffic and attack traffic.}
+}
+
+
+@article{DBLP:journals/compsec/LinCTZ25,
+	author = {Yuwei Lin and
+                  Yonghong Chen and
+                  Hui Tian and
+                  Xiaolong Zhuang},
+	title = {Covert timing channel detection based on isolated binary trees},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104200},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104200},
+	doi = {10.1016/J.COSE.2024.104200},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LinCTZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a communication method for concealing information, the covert network channel is often exploited for malicious purposes due to its inherently difficult-to-detect nature, posing potential risks to  network security . In this paper, we propose a detection method based on isolated  binary trees , aiming to address the problem of the novel  covert channel  imitating legitimate traffic patterns and injecting additional anomalies to evade detection. This method is based on the Isolation Forest algorithm, which can be classified into different categories by analyzing the stepwise function features of network traffic and using isolation binary  trees  generated with random split thresholds. At the same time, we validate the proposed detection model using a publicly available dataset. The experimental results demonstrate that eliminating outliers significantly enhances the stepwise function features while preserving the original form of legitimate traffic. Compared to the model without outlier handling, the average AUC scores for TRCTC and Jitterbug improved by 7.37% and 2.23%, respectively. Furthermore, we achieved superior performance on a new channel named  ϵ <math><mi is="true">ϵ</mi></math> - κ <math><mi is="true">κ</mi></math> libur and  ϵ <math><mi is="true">ϵ</mi></math> - κ <math><mi is="true">κ</mi></math> libur-O compared to using deep learning-based detection methods.}
+}
+
+
+@article{DBLP:journals/compsec/AllamiNGKJL25,
+	author = {Ali A. Allami and
+                  Tyler Nicewarner and
+                  Ken Goss and
+                  Ashish Kundu and
+                  Wei Jiang and
+                  Dan Lin},
+	title = {Oblivious and distributed firewall policies for securing firewalls
+                  from malicious attacks},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104201},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104201},
+	doi = {10.1016/J.COSE.2024.104201},
+	timestamp = {Tue, 29 Apr 2025 16:56:14 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/AllamiNGKJL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Firewalls are effective in preventing attacks initiated from outside of an organization’s network, but they are vulnerable to external threats, e.g. ransomware attacks may expose sensitive firewall data to malicious entities or disable network protection from the firewall. In this paper, we present Obliv-FW: a novel distributed architecture and a suite of protocols to obliviously manage and evaluate firewall rules and policies to prevent external attacks oriented to the firewall data. Obliv-FW alleviates this issue by obfuscating the blacklist or whitelist and distributing the function of evaluating these lists across multiple servers residing in different access control zones of the organization’s internal network. Thus, both accessing and altering the rules are considerably more difficult thereby providing better protection to the local network as well as greater security for the firewall itself. Obliv-FW is developed by leveraging the existing secure multi-party computation techniques. Our empirical results show that the overhead of Obliv-FW is small, and it can be a very valuable tool to mitigate the ever-increasing threats to a private network from external attacks including ransomware attacks.}
+}
+
+
+@article{DBLP:journals/compsec/HiranoK25,
+	author = {Manabu Hirano and
+                  Ryotaro Kobayashi},
+	title = {RanSMAP: Open dataset of Ransomware Storage and Memory Access Patterns
+                  for creating deep learning based ransomware detectors},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104202},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104202},
+	doi = {10.1016/J.COSE.2024.104202},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/HiranoK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ransomware  attacks have become significant cyber threats to enterprises and public sectors. Our previous RanSAP dataset, which contained only low-level storage access patterns collected using a thin  hypervisor , was used to create behavioral-based ransomware detectors; it provides an additional protection layer when the OS-level ransomware detection systems are compromised. The previous ransomware detector, which used only low-level storage access patterns, could not detect ransomware when Office applications and web browsers were executed simultaneously. This paper presents a new open dataset named RanSMAP, which stands for Ransomware Storage and  Memory Access Patterns . It contains low-level storage and memory access patterns collected using a thin hypervisor. We provide an overview of the open RanSMAP dataset, including  directory structure  and  file formats , to guide researchers in using the dataset. We then present our  data preprocessing  method and deep-learning-based ransomware detector. The RanSMAP datasets consist of storage and memory access patterns of six ransomware samples and six  benign applications , seven Conti ransomware variants, and simultaneous execution of ransomware with benign applications collected on the machines with various CPUs, RAM generations, RAM frequencies, and RAM capacities. The experimental results show that low-level memory access patterns improved ransomware detection performance by 2.3% compared to detectors using only storage access patterns. We confirmed that ransomware detectors trained using the RanSMAP dataset can detect ransomware when Office and web browser programs are executed simultaneously. We presented the survey on state-of-the-art ransomware detection research and the availability of open behavioral-feature datasets to discuss the advantages and limitations of our RanSMAP dataset.}
+}
+
+
+@article{DBLP:journals/compsec/dAmbrosioPRU25,
+	author = {Nicola d'Ambrosio and
+                  Gaetano Perrone and
+                  Simon Pietro Romano and
+                  Alberto Urraro},
+	title = {A cyber-resilient open architecture for drone control},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104205},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104205},
+	doi = {10.1016/J.COSE.2024.104205},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/dAmbrosioPRU25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unmanned Aerial Vehicles  (UAVs) are becoming important tools in both military and civilian sectors. However, the prevalent use of  monolithic architectures  in contemporary platforms limits the swift integration of new features and significantly hampers the adaptability of UAVs to an ever-changing  operational environment . Furthermore, this constantly evolving landscape highlights the inherent complexity of assessing drone safety and security since this process requires managing multiple and rapidly changing variables. Therefore, it is imperative to adopt an open system approach that relies on  microservices  and  virtualization  in order to overcome the limits of traditional drone architectures. This study presents a new method that involves breaking down the UAV  monolithic system  into a network of separate and virtualized components, each holding a single responsibility and designed according to the Open  System Architecture  (OSA) principle. Moreover, this work proposes a novel cyber-resilience model to determine cyber threats and assess their impact on the system. This approach leverages NIST 800-53, MITRE ATT&CK, STPA-Sec, and Attack Graph in order to identify the sequence of malicious actions that can lead to a specific hazardous scenario. Lastly, we demonstrate the effectiveness of this novel architectural paradigm by developing a software-in-the-loop simulation  testbed  for  fast prototyping  new features and validating the results of the cyber-resilience model.}
+}
+
+
+@article{DBLP:journals/compsec/VinayakJ25,
+	author = {M. V. Hari Vinayak and
+                  T. Jarin},
+	title = {A hybrid model for detecting intrusions using stacked autoencoders
+                  and extreme gradient boosting},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104212},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104212},
+	doi = {10.1016/J.COSE.2024.104212},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/VinayakJ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the contemporary digital landscape dominated by the internet, a wide array of attacks occurs daily, driven by a large and diverse user base. The field of identifying these cyberattacks is rapidly growing and is mainly accomplished through the utilization of  intrusion detection systems  (IDS). The IDS is designed to continuously observe data flow and identify any potentially harmful or suspicious acts that could signal a cyberattack. Traditional machine learning (ML) techniques encounter challenges in effectively detecting unknown attacks and dealing with imbalanced  data distributions , resulting in reduced detection performance. This paper presents a hybrid IDS model that integrates an  ML  classifier like  XGBoost  with a stacked sparse  autoencoder  (SSAE). The low-dimensional features obtained from the SSAE are utilized for training the classifier. The experimental outcomes indicate that the model surpasses the formerly recommended approaches regarding  intrusion detection  and decreases the  ML  classifier’s training and testing times. We have also evaluated our model’s performance by comparing it with other advanced techniques documented in the existing literature.}
+}
+
+
+@article{DBLP:journals/compsec/ChenZLLYZ25,
+	author = {Minghao Chen and
+                  Kaijie Zhu and
+                  Bin Lu and
+                  Ding Li and
+                  Qingjun Yuan and
+                  Yuefei Zhu},
+	title = {{AECR:} Automatic attack technique intelligence extraction based on
+                  fine-tuned large language model},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104213},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104213},
+	doi = {10.1016/J.COSE.2024.104213},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenZLLYZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cyber Threat Intelligence  (CTI) reports contain resourceful intelligence on cyber-attack campaigns, which provides great help for security analysts to infer attack trends and enhance their defenses. However, due to the diversity of report content and writing styles, current intelligence extraction is mostly based on time-consuming manual efforts. Moreover, existing automatic methods generally neglect the importance of background knowledge and produce inexact extraction results. These problems prevent the effective utilization and sharing of intelligence from CTI reports. In this paper, we primarily focus on the automatic extraction of attack technique (AT) intelligence, which reveals patterns of attack behaviors and hardly changes over time. We propose a novel automatic AT extraction pipeline for CTI reports (AECR). AECR explores the feasibility of extracting AT intelligence based on a fined-tuned  large language model  (LLM). Particularly, we endow the selected LLM with enhanced domain-specific knowledge to improve its comprehension of AT-relevant content and alleviate the  hallucination  problem. Experimental results demonstrate that AECR outperforms state-of-the-art methods by a wide margin with a reasonable time cost. Specifically, we improve the accuracy, precision, recall, and F1-score by 108%, 37.2%, 22.4%, and 67.5% respectively. To the best of our knowledge, AECR is the first to perform AT extraction based on fine-tuned LLM.}
+}
+
+
+@article{DBLP:journals/compsec/ChenHWH25,
+	author = {Yanan Chen and
+                  Botao Hou and
+                  Bin Wu and
+                  Hao Hu},
+	title = {CD-Net: Robust mobile traffic classification against apps updating},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104214},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104214},
+	doi = {10.1016/J.COSE.2024.104214},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenHWH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Mobile  traffic classification  (MTC) is an increasingly important domain in traffic filtering and  malware  detection. Existing methods have achieved good results in distribution-invariant MTC. However, as apps update rapidly and users’ update time varies, the traffic of a certain app often consists of multiple versions mixed together in the real-world network. This dynamic proportion of new-version app traffic significantly affects the performance of models, even if they have been retrained with new-version app traffic. In this paper, we propose CD-Net, a robust encrypted MTC method designed to classify the mixed traffic of multi-version apps. CD-Net is based on the few-shot framework and primarily comprises two components: the  CNN  part for feature extraction and the  DNN  part for classification. When an app is updated, the  DNN  part is retrained to classify the new-version app, while the  CNN  part remains unchanged to ensure the ability to classify the original-version app. We collected a real-world dataset to validate the effectiveness of our proposed CD-Net. Before retraining with the new-version app traffic, the accuracy of all models declined during the process of an app update. However, after retraining the  DNN  part with a few samples of the new-version app traffic, the F1-Score of our model remained above 93.68% throughout the app update process, while the F1-Score of the retrained state-of-the-art method dropped to 88.28%.}
+}
+
+
+@article{DBLP:journals/compsec/WangQL25,
+	author = {Yingqing Wang and
+                  Guihe Qin and
+                  Yanhua Liang},
+	title = {A reliability anomaly detection method based on enhanced GRU-Autoencoder
+                  for Vehicular Fog Computing services},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104217},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104217},
+	doi = {10.1016/J.COSE.2024.104217},
+	timestamp = {Wed, 04 Dec 2024 22:33:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/WangQL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of the  Internet of Vehicles  (IoV), Vehicular  Fog Computing  (VFC) reduces  communication latency  by pushing  computational resources  from the cloud to the fog layer close to the vehicle. However, in dynamic IoV systems, VFC services face the challenge of abnormal reliability, which are the phenomenon of decreased reliability caused by various factors. Most of the existing IoV  anomaly detection  methods are designed to protect  data security , thus ignoring service reliability anomalies in IoV. Therefore, in order to ensure the stability of the VFC service during runtime, in this paper, we propose an enhanced  Gated Recurrent Unit  (GRU)-Autoencoder method to detect VFC service reliability anomalies. Our method uses GRU-Autoencoder as the  anomaly detection  model and uses the  Bayesian Optimization  with the Tree Parzen Estimator (BO-TPE) algorithm to select the optimal threshold coefficient. The method identifies reliability anomalies in the VFC service by estimating the reconstruction loss of the input samples. To address the challenge of  time series data anomaly detection  methods that rely heavily on representative normal reliability data for training, we propose an algorithm called Multi-stage Scored Reservoir Sampling (MSRS), which enhances the model by automatically selecting representative normal reliability data as the training set. Moreover, we elaborately designed the  checkpoint restart  algorithm to ensure that the VFC service rolls back to the most recent checkpoint state when reliability anomalies occur. We extensively evaluated the proposed method on five simulated datasets and validated its effectiveness. Our method brings a novel, automated and efficient reliability  anomaly detection  solution to VFC services.}
+}
+
+
+@article{DBLP:journals/compsec/LiTLML25,
+	author = {Jiaxing Li and
+                  Yu{-}An Tan and
+                  Xinyu Liu and
+                  Weizhi Meng and
+                  Yuanzhang Li},
+	title = {Interpretable adversarial example detection via high-level concept
+                  activation vector},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104218},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104218},
+	doi = {10.1016/J.COSE.2024.104218},
+	timestamp = {Mon, 12 May 2025 15:27:31 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiTLML25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep  neural networks  have achieved amazing performance in many tasks. However, they are easily fooled by small perturbations added to the input. Such small perturbations to  image data  are usually imperceptible to humans. The uninterpretable nature of deep  learning systems  is considered to be one of the reasons why they are vulnerable to adversarial attacks. For enhanced trust and confidence, it is crucial for artificial intelligence systems to ensure transparency, reliability, and human comprehensibility in their decision-making processes as they gain wider acceptance among the general public. In this paper, we propose an approach for defending against adversarial attacks based on conceptually interpretable techniques. Our approach to model interpretation is on high-level concepts rather than low-level pixel features. Our key finding is that adding small perturbations leads to large changes in the model concept vector tests. Based on this, we design a single image concept vector  testing method  for detecting adversarial examples. Our experiments on the Imagenet dataset show that our method can achieve an average accuracy of over 95%. We provide  source code  in the supplementary material.}
+}
+
+
+@article{DBLP:journals/compsec/AlZubiDAT25,
+	author = {Ahmad AlZu'bi and
+                  Omar Darwish and
+                  Amjad Albashayreh and
+                  Yahya M. Tashtoush},
+	title = {Cyberattack event logs classification using deep learning with semantic
+                  feature analysis},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104222},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104222},
+	doi = {10.1016/J.COSE.2024.104222},
+	timestamp = {Sun, 22 Dec 2024 15:49:41 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/AlZubiDAT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Event logs play a crucial role in cybersecurity by detecting potentially  malicious network activities  and preventing data loss or theft. Previous work did not place a high value on log messages and their impact on  security breach  prediction and  intrusion detection . This research paper introduces a novel approach for log message analysis applied to a dataset of event logs collected from various web sources. Event log messages were analyzed and categorized based on event and attack types with an  explainable AI  emphasizing the value of its key data. The study aims to enhance  intrusion detection  and minimize  performance degradation  by identifying suspicious events. In this regard, a new semantic  vectorization  framework is proposed, leveraging  deep learning  architectures to develop semantic discriminating log features, offering a cogent explanation and classification of event log messages. The use of  BERT  deep embeddings as a baseline for the prediction model allows for visualizing and interpreting the formulation of log message  semantic features . Several empirical scenarios are set and conducted extensively to evaluate the performance of the event log classifier, considering the attack type, event type, and zero-shot logs. The experimental results demonstrate that the proposed event log classifier outperforms state-of-the-art  machine learning  models, achieving a recall of 99.27% and a precision of 99.29%. This highlights the model’s ability to accurately identify events of a particular type by detecting as many suspicious events as feasible while minimizing the  misclassification rate .}
+}
+
+
+@article{DBLP:journals/compsec/LiuJLJML25,
+	author = {Xiaosheng Liu and
+                  Wenqi Jiang and
+                  Zhongwei Li and
+                  Xianji Jin and
+                  Zihan Ma and
+                  Qingyang Li},
+	title = {FuzzAGG: {A} fuzzing-driven attack graph generation framework for
+                  industrial robot systems},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104223},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104223},
+	doi = {10.1016/J.COSE.2024.104223},
+	timestamp = {Mon, 17 Feb 2025 16:53:28 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuJLJML25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As industrial robot systems (IRS) are increasingly utilized in smart factories, their information security issues have become particularly critical. Attack graphs, an essential system-level risk modeling technique, traditionally rely on predefined risk attributes and exploitation rules for their generation. However, this approach fails to meet the needs for attack graph generation and analysis in environments with missing risk data. To address this issue, this paper proposes a fuzzing-driven attack graph generation framework, FuzzAGG. This framework aims to provide an efficient and accurate method for generating attack graphs under conditions of incomplete risk data, thereby supporting information security analysis and risk assessment of IRS. In this paper, a risk data model (RDM) is constructed using the Meta Attack Language to achieve a structured description of the risk data of IRS. A fuzzing test case generation algorithm based on the MU-SeqGAN model is proposed, which can generate test cases suitable for the state machines of IRS and map them to specific Risk  Data Model Objects  (RDMOs). Additionally, a conversion unit is designed to integrate all RDMOs into a risk description file, which is then used by the generation unit to construct a graphical attack graph. In  performance tests , FuzzAGG is able to achieve automated construction of IRS attack graphs containing 1000 state nodes in 42 min and maintain 88 % risk coverage. Taking the IRS of a PCB automated production line the effectiveness of the FuzzAGG framework is validated. The results demonstrate that FuzzAGG can automatically generate and validate an attack graph containing 184 attribute nodes and atomic attack nodes in 8 min with high operational efficiency, proving the practicality and reliability of this method in automated attack graph generation.}
+}
+
+
+@article{DBLP:journals/compsec/LiWZL25,
+	author = {Yunpeng Li and
+                  Wei Wu and
+                  Yuan Zhang and
+                  Chuanyang Li},
+	title = {Palm vein template protection scheme for resisting similarity attack},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104227},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104227},
+	doi = {10.1016/J.COSE.2024.104227},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiWZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Palm vein recognition technology has rapidly developed due to its high confidentiality and the advantages of liveness detection. Various palm vein  template  protection methods have emerged to safeguard palm vein data from theft and attack. To fulfill the  performance loss  requirement of the ideal biometric  template  protection scheme, these methods make the distribution of the original palm vein data and the palm vein protection templates have a strong distance  preserving property  (similarity preserving), making it difficult to defend against similarity attack (SA). To address these risks and prevent palm vein data leakage, we propose a Nonlinear Spectral Hashing (NSH) method for palm vein template protection. To obtain palm vein templates with both performance and security, the method first performs  random projection  on palm vein data to obtain revocable and unlinkable palm vein features. Subsequently, through spectral  graph partitioning , it achieves mapping with a preserved similarity structure for palm veins, avoiding excessive  performance loss . The method then employs a nonlinear  activation function  to alter the distribution of palm vein templates with large post-mapping differences, resulting in a uniform distribution of inter-class distances for palm vein data. By reducing the distance-preserving properties, the method enhances protection against similarity attacks. Finally, a sign function is applied to obtain non-invertible binary palm vein templates. Experimental evaluations on the public Tongji University palm vein database assess the method's non-invertibility, revocability, unlinkability, resistance to similarity attack, and recognition performance. The results indicate an  Equal Error Rate  (EER) of 0.50 %, demonstrating the method's ability to maintain good recognition performance while ensuring high security.}
+}
+
+
+@article{DBLP:journals/compsec/ReevesCD25,
+	author = {Andrew Reeves and
+                  Dragana Calic and
+                  Paul H. Delfabbro},
+	title = {How to De-CyFa the actor-observer bias in cybersecurity fatigue: Building
+                  the CyFa measure of attribution styles and mitigation strategies},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104179},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104179},
+	doi = {10.1016/J.COSE.2024.104179},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ReevesCD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybersecurity fatigue and burnout, driven by an overload of security demands, are pressing concerns in the industry. Research increasingly shows that fatigued employees are more likely to engage in unsafe  cyber behaviours , making it essential for cybersecurity leaders to implement targeted mitigation strategies. However, the extent to which these leaders understand the causes of cybersecurity fatigue and can identify effective solutions remains unclear. There is concern that cybersecurity professionals and non-cyber employees may view each other as distinct groups, potentially leading to biased decision-making, where each group recommends different interventions for themselves versus others. This actor-observer bias could have significant implications for leadership decisions, yet it remains underexplored in this context. This study examines what cybersecurity professionals believe are the causes of cybersecurity fatigue in their workplaces and the strategies they would adopt to mitigate it. It compares these views with those of non-cybersecurity managers and regular employees. Using  attribution theory , we developed a novel measure, CyFa (pronounced “cipher”), to assess mitigation strategy preferences and attribution styles. Data from 506 participants across these groups were analysed. The findings suggest that actor-observer bias is present in all groups, with cybersecurity professionals and managers being no better at avoiding this bias than others. Differences between the groups often reflected a tendency to avoid responsibility rather than superior decision-making. Additionally, cybersecurity professionals were found to rely heavily on certain strategies, like employee awareness training, while neglecting others, such as organisational system changes.}
+}
+
+
+@article{DBLP:journals/compsec/VeitWBVEM25,
+	author = {Maxime Veit and
+                  Oliver Wiese and
+                  Fabian Lucas Ballreich and
+                  Melanie Volkamer and
+                  Douglas Engels and
+                  Peter Mayer},
+	title = {SoK: The past decade of user deception in emails and today's
+                  email clients' susceptibility to phishing techniques},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104197},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104197},
+	doi = {10.1016/J.COSE.2024.104197},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/VeitWBVEM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {User deception in emails is still one of the biggest security risks companies and end-users face alike. Attackers try to mislead their victims when assessing whether emails are dangerous to interact with, e.g., by using techniques based on dangerous links, dangerous attachments, or both. In this work, we present a systematic literature research of deception techniques discussed in the scientific literature of the last decade. We systematize the deception techniques, focusing on techniques that use misleading sender, link, and/or attachment information. We identify 23 deception techniques which we classify as either those that email clients should protect users against (13) and those that email clients cannot protect against and thus should be addressed in security awareness measures (10). We propose a security rating for the susceptibility of email clients to these 13 deception techniques and perform an empirical evaluation to analyze the susceptibility of seven representative email clients (web, mobile apps, desktop apps) to these deception techniques. The results of our evaluation indicate that most email clients are in need of improvement to defend against the deception techniques. Hardening email clients against these deception techniques is necessary to increase the resistance against them — without unnecessarily burdening users.}
+}
+
+
+@article{DBLP:journals/compsec/ChenSZQZL25,
+	author = {Tieming Chen and
+                  Qijie Song and
+                  Tiantian Zhu and
+                  Xuebo Qiu and
+                  Zhiling Zhu and
+                  Mingqi Lv},
+	title = {Kellect: {A} Kernel-based efficient and lossless event log collector
+                  for windows security},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104203},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104203},
+	doi = {10.1016/J.COSE.2024.104203},
+	timestamp = {Fri, 04 Jul 2025 22:12:07 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenSZQZL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Recently,  APT  attacks have frequently happened, which are increasingly complicated. Research on dynamic detection and tracing of  APT  via audit logs has been widely of concern. For Windows, ETW(events tracing for Windows) is a well-known built-in kernel-level logs collection framework. However, existing log collection tools built on ETW suffer from working shortages, including data loss, high overhead, and weak real-time performance. Therefore, It is still challenging to directly apply ETW-based Windows tools to analyze APT attack scenarios. To address these challenges, this paper proposes an efficient and lossless kernel log collector based on ETW called Kellect. The collector dynamically optimizes the number of cache and processing threads through a multi-level cache for lossless collecting and significantly enhances analysis performance by replacing the native TDH library with a sliding pointer. Furthermore, Kellect enhances log semantics understanding by maintaining event mappings and application callstacks which provide more comprehensive characteristics for security event behavior analysis. Additionally, Kellect has compatibility with different OS versions. With plenty of experiments, Kellect demonstrates its capability to achieve non-destructive, real-time, and full collection of kernel log data generated from events with a comprehensive efficiency of 9 times greater than existing tools. It only takes extra CPU usage with approximately 2%–3% and about 40MB memory consumption. As a killer illustration to show how Kellect can work for APT, full data logs have been collected as a dataset Kellect4APT, generated by implementing diversity TTPs from the latest ATT&CK. To our best knowledge, it is the first open benchmark dataset representing ATT&CK technique-specific behaviors, which could be highly expected to improve more extensive research on APT studies.}
+}
+
+
+@article{DBLP:journals/compsec/PrummerSB25,
+	author = {Julia Pr{\"{u}}mmer and
+                  Tommy van Steen and
+                  Bibi van den Berg},
+	title = {Assessing the effect of cybersecurity training on End-users: {A} Meta-analysis},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104206},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104206},
+	doi = {10.1016/J.COSE.2024.104206},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/PrummerSB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybersecurity  behaviour of end-users continues to be a growing topic of conversation, both in organisations and in academia, as end-users are often said to be the last line of defence against cyberattacks. Unfortunately, end-users are often not aware that they engage in risky  cyber behaviours  and can, in turn, make themselves and the organisations that they work for vulnerable. Attempting to change end-user behaviour through training programs has become  common practice  in many organisations, a trend that is reflected in the academic literature as well. While a variety of literature reviews on the topic are available, an assessment of the effectiveness of these training programs through a meta-analysis has so far not been conducted. We carried out a meta-analysis based on a  systematic literature review  on the topic and an updated literature search in order to assess the overall effectiveness of cybersecurity training programs. We identified 69 studies that were eligible for inclusion. Our analysis shows that training overall has a positive effect on end-users ( d  = 0.75, 95%CI [0.58, 0.92]), particularly when assessing predictors of behaviour such as attitudes or knowledge ( d  = 1.02, 95%CI [0.58, 1.46]). Interestingly, studies assessing changes in behaviour are not able to match these results ( d  = 0.36, 95%CI [-0.09, 0.80]), showcasing a clear inability of current training approaches to change behaviour. The effect sizes obtained in this meta-analysis can act as smallest effect sizes of interest (SESOIs) for future research on end-user cybersecurity training. Further findings with regards to the effectiveness of individual training methods and other moderators are discussed.}
+}
+
+
+@article{DBLP:journals/compsec/GuoWYLPF25,
+	author = {Yunchuan Guo and
+                  Xiao Wang and
+                  Mingjie Yu and
+                  Fenghua Li and
+                  Zhen Pang and
+                  Liang Fang},
+	title = {An on-the-fly framework for usable access control policy mining},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104211},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104211},
+	doi = {10.1016/J.COSE.2024.104211},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/GuoWYLPF25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Access control policy  mining, which extracts or infers access control policies from existing system logs or configurations within a given environment, is widely applied in policy migration. No policy mining algorithm can produce completely accurate policies, necessitating human intervention to correct errors before implementation. However, humans may fail to revise the produced policies without fully understanding all permission details. In this paper, we propose an on-the-fly framework to assist human revisions by mining  usable  policies. This framework is formulated as an approximate  optimization problem , designed to avoid permission errors and redundancy by balancing submodularity and modular costs through an iterative search for access rules. The  search space  is guided by two pruning techniques: a tight  optimistic estimate  to only eliminate unpromising candidates and a  queue cutter  to sample promising candidates in advance. Experimental evaluations on two real-world and three publicly available  synthetic datasets  indicate that: 1) our method produces more concise results than existing methods, achieving a 93.2% reduction in redundancy; 2) our method is at least five times faster than state-of-the-art approaches. To further validate the usability of the policies obtained by our approach, we conducted a user study involving 30 participants and 7  large language models  (LLMs). The results show that 90.9% of participants, including LLMs such as  gpt-4o-mini , successfully modified our mined policies to meet given permission goals.}
+}
+
+
+@article{DBLP:journals/compsec/MohammedF25,
+	author = {Ahmed Burhan Mohammed and
+                  Lamia Chaari Fourati},
+	title = {Investigation on datasets toward intelligent intrusion detection systems
+                  for Intra and inter-UAVs communication systems},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104215},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104215},
+	doi = {10.1016/J.COSE.2024.104215},
+	timestamp = {Tue, 10 Jun 2025 07:37:10 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/MohammedF25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {UAVs , commonly known as drones, are increasingly utilized in various fields such as military operations, surveillance, agriculture, and delivery services. Given their expanding roles, several critical reasons underline the necessity for security and trustworthiness including sensitive operations, and Public Safety and Privacy. Effective and secure communication channels are fundamental to the reliability and efficiency of  UAVs . This involves protecting data transmission from various threats and ensuring that the communication protocols are robust against attacks. The security of communication systems directly impacts the overall trustworthiness of UAV operations, making it a critical area of focus for researchers and developers in this field.  Intrusion Detection Systems  (IDS) are vital components of a resilient architecture, essential for ensuring the security of communication systems. These  systems function  as diligent sentinels, continuously monitoring network traffic for signs of  malicious behavior  or rule violations. Additionally, IDS plays a crucial role in protecting communication networks by promptly identifying and responding to potential threats. Integrating IDS with other security measures enables organizations to significantly enhance their overall  security posture . Accordingly, several recent studies have proposed advanced approaches using  artificial intelligence  to enhance the security and trustworthiness of UAV, as well as to mitigate cyberattacks in real time. However, the efficiency of the proposed AI-based approaches relies on the learning phase, which is strongly correlated with the quality of the used datasets. In this context, the objective of this article is to offer a thorough investigation concerning this topic. Certainly, the development and testing of effective AI-based IDS for  UAVs  require access to a diverse range of datasets that precisely capture the various security challenges and potential attack scenarios. In light of this necessity, the current study undertakes a comprehensive examination of UAV communication systems and their associated networking architectures, both centralized and decentralized. This study specifically focused on Intra and Inter UAV communication systems and utilized relevant IDS datasets. Additionally, it delves into the realm of open datasets that are pertinent to intelligent intrusion detection systems. More specifically, this paper introduces a novel taxonomy designed to categorize datasets relevant to IDS within the UAV context. Furthermore, it furnishes a guide along with recommendations for the selection of appropriate datasets based on predetermined scenarios.}
+}
+
+
+@article{DBLP:journals/compsec/MohammedDKR25,
+	author = {Ali Hameed Yassir Mohammed and
+                  Rudzidatul Akmam Dziyauddin and
+                  Norshaliza Kamaruddin and
+                  Fiza Abdul Rahim},
+	title = {A hybrid ranking algorithm for secure and efficient iris template
+                  protection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104216},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104216},
+	doi = {10.1016/J.COSE.2024.104216},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/MohammedDKR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Indexing methods are mostly used to protect sensitive  biometric data  stored in templates. As such, iris template protection has been used as a way of securing the efficiency of  biometric templates  acquired from  iris images . The four requirements, namely  irreversibility , unlinkability, renewability, and performance are stipulated by the ISO/IEC 24,745 standard for biometric template protection, but these have not been met simultaneously by most of the recent indexing methods while striving to maintain efficient  iris recognition . Therefore, this study designs three new ranking algorithms, which are dense ranks (denseR), ordinal ranks (ordinalR), and hybrid dense and ordinal ranks (hybridR) for iris template protection that aims to comply to the required standard. Four iris datasets Casia-Iris-Interval, Casia-Iris-Lamp, MMU-V1, and UBRIS-V1 were used to perform the experiments across the proposed three algorithms. The results showed that the  hybridR algorithm  outperformed others with an  Equal Error Rate  of 0.16313 %. The  hybridR algorithm  also showed a time complexity of O(n log n), as well as preserved the sizes of the iris template (8192 bits), and effectively reduced the length of the template (to 1024 bits) using the shift technique. On the other hand, the worst performance is with an  Equal Error Rate  of 0.4402 % with Casia-Lamp. The work is significant for applications such as local and remote access to the digital resources that relied on iris  authentication .}
+}
+
+
+@article{DBLP:journals/compsec/WangWLSL25,
+	author = {Siyu Wang and
+                  Haiyong Wu and
+                  Ning Lu and
+                  Wenbo Shi and
+                  Zhiquan Liu},
+	title = {ATSDetector: An Android Trojan spyware detection approach with multi-features},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104219},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104219},
+	doi = {10.1016/J.COSE.2024.104219},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/WangWLSL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the widespread popularity of  Android  Trojan spyware, detection technology for  Android  Trojan spyware is very necessary to prevent financial loss. However, when considering the comprehensive  behaviors  of Android Trojan spyware, the existing approaches based on a  single feature  (static information, internal behavior, and external behavior) have low accuracy and even errors. In this paper, we propose a multi-features-based Android Trojan spyware detection approach (hereafter referred to as ATSDetector). Specifically, we first define a multi-channel  detection algorithm  supported by heterogeneous information. And then, devise a weight-size sharing mechanism to establish the correlation between different behavioral features. At last, we then conduct real-world experiments to prove the effectiveness and stability of ATSDetector. The results show that the assessment accuracy can achieve almost 96.81%, and its  kappa coefficient  is about 93.62%.}
+}
+
+
+@article{DBLP:journals/compsec/ZhangDMWXYLC25,
+	author = {Yongheng Zhang and
+                  Tingwen Du and
+                  Yunshan Ma and
+                  Xiang Wang and
+                  Yi Xie and
+                  Guozheng Yang and
+                  Yuliang Lu and
+                  Ee{-}Chien Chang},
+	title = {AttacKG+: Boosting attack graph construction with Large Language Models},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104220},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104220},
+	doi = {10.1016/J.COSE.2024.104220},
+	timestamp = {Thu, 20 Feb 2025 08:39:26 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ZhangDMWXYLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Attack  graph construction  seeks to convert textual  cyber threat intelligence  (CTI) reports into structured representations, portraying the evolutionary traces of  cyber attacks . Even though previous research has proposed various methods to construct attack graphs, they generally suffer from limited generalization capability to diverse knowledge types as well as requirement of expertise in model design and tuning. Addressing these limitations, we seek to utilize  Large Language Models  (LLMs), which have achieved enormous success in a broad range of tasks given exceptional capabilities in both language understanding and zero-shot task fulfillment. Thus, we propose a fully automatic LLM-based framework to construct attack graphs named: AttacKG + . Our framework consists of four consecutive modules: rewriter, parser, identifier, and summarizer, each of which is implemented by instruction prompting and in-context learning empowered by LLMs. Furthermore, we upgrade the existing attack knowledge schema and propose a comprehensive version. We represent a cyber attack as a temporally unfolding event, each temporal step of which encapsulates three layers of representation, including behavior graph, MITRE TTP labels, and state summary. Extensive evaluation demonstrates that: (1) our formulation seamlessly satisfies the information needs in threat event analysis, (2) our construction framework is effective in faithfully and accurately extracting the information defined by AttacKG + . and (3) our attack graph directly benefits downstream security practices such as attack reconstruction. All the code and datasets will be released upon acceptance.}
+}
+
+
+@article{DBLP:journals/compsec/AmmannammaC25,
+	author = {Tamminina Ammannamma and
+                  A. S. N. Chakravarthy},
+	title = {A bio-inspired optimal feature with convolutional GhostNet based squeeze
+                  excited deep-scale capsule network for intrusion detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104221},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104221},
+	doi = {10.1016/J.COSE.2024.104221},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/AmmannammaC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intrusion detection  plays a significant part in ensuring information security, and its primary purpose is to correctly detect multiple attacks on the network. Due to the high Internet usage, the vulnerability in the network is also increasing. The messages sent over the network are attacked by intruders, and therefore, it is necessary to identify the intrusion in the network. The proposed study introduces a bio-inspired feature selection-based technique for intrusion detection using a convolutional Ghost-Net-based deep-scale capsule network. First, inputs are collected from three different datasets: CICIDS, NBIoT, and UNSW NB15. After data collection, the data is pre-processed to improve  classification accuracy . The pre-processing phase includes various phases such as data cleaning, min-max normalization, and imputation of missing values. Then, the pre-processed data is provided for the next step of feature selection to reduce the feature  dimensionality problem  and  computational complexity . Feature selection is performed utilizing a modified Gazelle  optimization algorithm  (Mod-GO). Finally, the network intruders are classified based on the selected characteristics using a hybridized network called Convolutional GhostNet-based Squeeze Excited Deep-Scale Capsule Network (CGN_SEDSCapsNet). Then, to improve the efficiency of the proposed classifier, the Enhanced Artificial Humming Bird (EAH) algorithm is used to optimize the parameters. Thus, the output of the network detects the intrusion. The proposed method is verified experimentally, and the performance metrics are analyzed. The simulation is performed with the Python tool. Experimental verification proves the proposed CGN_SEDSCapsNet model offers better accuracy than existing techniques.}
+}
+
+
+@article{DBLP:journals/compsec/MirzaeiYH25,
+	author = {Reza Mirzaei and
+                  Nasser Yazdani and
+                  Mohammad Sayad Haghighi},
+	title = {Enhancing network tunnels anonymity through increasing combined traffic
+                  in a clustered structure},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104224},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104224},
+	doi = {10.1016/J.COSE.2024.104224},
+	timestamp = {Tue, 01 Apr 2025 19:00:05 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/MirzaeiYH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Given the visibility of the tunnel creation phase within tunnel-based  anonymity  structures, an entity’s traffic can be segregated based on the relay selection mechanism employed. Hence, the global attacker’s capability to detect communications and undermine the  anonymity  of entities is heightened. Another factor that can aid the attacker in identifying the tunnels is the improper combination of created tunnels and variations in the positioning of a combined relay within those tunnels. One potential solution to address these issues is to combine tunnels traffic by restricting the list of selectable relays. This can be accomplished by taking into account the choices made by tunnel owners and the network structure, as well as ensuring that the common selected relays occupy the same positions within the tunnels. We propose a  clustering structure  with routing capabilities to establish an infrastructure for creating combined tunnels. Our method has two key pillars. Firstly, both the tunnel creation packets and data packets follow the same pattern, making it difficult for the attacker to differentiate tunnel creation traffic from regular network traffic. Secondly, by allowing entities to join different clusters and maintaining a high ratio of entities to the number of interfaces within each cluster, the probability of combining traffic from senders within the same cluster is significantly increased. These interfaces within the proposed structure are referred to as permanent relays. Given the hierarchical nature of the proposed structure, the positions of relays within the tunnels of a cluster remain consistent. To assess the effectiveness of the proposed structure, we employ the average degree of anonymity metric, which relies on the  Shannon entropy  concept. Simulation results demonstrate a substantial increase in the degree of anonymity achieved by the proposed structure in comparison to previous approaches.}
+}
+
+
+@article{DBLP:journals/compsec/QianLLWGWZ25,
+	author = {Yaguan Qian and
+                  Zejie Lian and
+                  Yiming Li and
+                  Wei Wang and
+                  Zhaoquan Gu and
+                  Bin Wang and
+                  Yanchun Zhang},
+	title = {Evading backdoor defenses: Concealing genuine backdoors through scapegoat
+                  strategy},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104225},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104225},
+	doi = {10.1016/J.COSE.2024.104225},
+	timestamp = {Tue, 04 Mar 2025 08:09:49 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/QianLLWGWZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep neural networks  (DNNs) are vulnerable to backdoor attacks, which can leave traces in the model that are detectable by advanced defense methods. In this paper, we examine the limitations of existing backdoor attacks and defense methods, and propose a scapegoat attack framework designed to divert the attention of defenses and shield genuine backdoor attacks from detection. Our framework leverages channel activation manipulation techniques, comprising three key components: scapegoat, infiltrator, and separation. This allows our genuine backdoor attack to successfully evade defense mechanisms and overcome previously impenetrable defenses while maintaining a high attack success rate. The framework is versatile, enabling the creative configuration of base attack and scapegoat setups. We apply the framework in static, dynamic attack, and clean-label attacks scenarios, demonstrating its efficacy against various advanced defense methods on three different datasets.}
+}
+
+
+@article{DBLP:journals/compsec/MuZLK25,
+	author = {Gaoli Mu and
+                  Hanlin Zhang and
+                  Jie Lin and
+                  Fanyu Kong},
+	title = {{SMCD:} Privacy-preserving deep learning based malicious code detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104226},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104226},
+	doi = {10.1016/J.COSE.2024.104226},
+	timestamp = {Wed, 18 Jun 2025 08:09:53 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/MuZLK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid development of the Internet,  malicious code  has been continuously exposing security issues, posing a significant threat to people’s online lives.  Deep learning  has shown significant impact in the field of  malicious code  detection, multiple providers of malicious code data can offer more diverse data for deep learning, thereby improving the accuracy of malicious code detection models. However, this may raise privacy and security concerns regarding the  training data  and models. To address this challenge, our paper introduces an advanced, secure deep learning framework collaboratively trained across multiple parties. We first use privacy  set intersection  techniques to align the provided malicious code data from the participants, ensuring that they have the same attributes. The aligned data from each data provider is then securely shared with three cloud servers through secret sharing. The three cloud servers implemented a secure model training process through  secure multiparty computation . Our experiment demonstrates that our secure malicious code detection protocol exhibits satisfactory performance.}
+}
+
+
+@article{DBLP:journals/compsec/WeiXZSLHM25,
+	author = {Xiaomin Wei and
+                  Yizhen Xu and
+                  Haibin Zhang and
+                  Cong Sun and
+                  Xinghua Li and
+                  Fenghua Huang and
+                  Jianfeng Ma},
+	title = {Sensor attack online classification for UAVs using machine learning},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104228},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104228},
+	doi = {10.1016/J.COSE.2024.104228},
+	timestamp = {Tue, 08 Apr 2025 09:35:36 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/WeiXZSLHM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Unmanned Aerial Vehicle  (UAV) sensors play a vital role in maintaining flight safety and stability. However, the increasing frequency and complexity of sensor attacks have emerged as a critical threat to UAV systems. The current lack of robust multi-classification methods for detecting sensor attacks limits the effectiveness and completeness of existing defense strategies. This research addresses these challenges by leveraging machine learning (ML) techniques to classify various sensor attacks using  heterogeneous sensor  data and  control parameters , thereby enhancing UAV system security. In this study, we design and implement multiple sensor attack scenarios targeting gyroscopes,  accelerometers , barometers, and  GPS . Comprehensive datasets are collected during UAV flight, integrating diverse sensor readings, flight states, and  control parameters . By analyzing the characteristics of sensor attacks and their impact on position estimation and attitude control, we identify and extract key features. To optimize the  classification model , we employ feature importance analysis, correlation analysis, and ablation experiments, significantly reducing data dimensionality and enhancing model training efficiency. The experimental results demonstrate the proposed ML-based multi-classification model’s superior performance, achieving a detection rate of 89.38%, significantly outperforming traditional single-attack detection methods in terms of generalization capability. Our approach efficiently handles complex multi-sensor attack scenarios. Moreover, deploying the optimized model on UAV firmware enables real-time monitoring and classification, achieving an online detection rate of 74% with a  response time  of approximately 0.495 ms per detection. The model’s lightweight design, requiring only 48 KB of storage, makes it ideal for resource-constrained UAV environments. These contributions highlight the potential of our approach to enhance real-time  anomaly detection  and improve UAV system resilience against diverse sensor attacks.}
+}
+
+
+@article{DBLP:journals/compsec/NguyenGCMYLNBK25,
+	author = {Nhung H. Nguyen and
+                  Mengmeng Ge and
+                  Jin{-}Hee Cho and
+                  Terrence J. Moore and
+                  Seunghyun Yoon and
+                  Hyuk Lim and
+                  Frederica Nelson and
+                  Guangdong Bai and
+                  Dan Dongseong Kim},
+	title = {Graphical security modelling for Autonomous Vehicles: {A} novel approach
+                  to threat analysis and defence evaluation},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104229},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104229},
+	doi = {10.1016/J.COSE.2024.104229},
+	timestamp = {Wed, 20 Aug 2025 20:29:28 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/NguyenGCMYLNBK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Autonomous Vehicles (AVs) integrate numerous  control units , network components, and protocols to operate effectively and interact with their surroundings, such as  pedestrians  and other vehicles. While these technologies enhance vehicle capabilities and enrich the driving experience, they also introduce new attack surfaces, making AVs vulnerable to cyber-attacks. Such cyber-attacks can lead to severe consequences, including traffic disruption and even threats to human life. Security modelling is crucial to safeguarding AVs as it enables the simulation and analysis of an AV’s security before any potential attacks. However, the existing research on AV security modelling methods for analysing security risks and evaluating the effectiveness of security measures remains limited. In this work, we introduce a novel graphical security model and metrics to assess the security of AV systems. The proposed model utilizes initial network information to build attack graphs and attack trees at different layers of network depth. From this, various metrics are automatically calculated to analyse the security and safety of the AV network. The proposed model is designed to identify potential attack paths, analyse security and safety with precise metrics, and evaluate various defence strategies. We demonstrate the effectiveness of our framework by applying it to two AV networks and distinct AV attack scenarios, showcasing its capability to enhance the security of AVs.}
+}
+
+
+@article{DBLP:journals/compsec/AliUIH25,
+	author = {Mohammad Ali and
+                  Ahsan Ullah and
+                  Md. Rashedul Islam and
+                  Rifat Hossain},
+	title = {Assessing of software security reliability: Dimensional security assurance
+                  techniques},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104230},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104230},
+	doi = {10.1016/J.COSE.2024.104230},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/AliUIH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Security plays a crucial role in ensuring the reliability of software systems, making a secure and dependable security framework vital for safeguarding software integrity. However, evaluating the dynamic and multifaceted aspects of security presents significant challenges, as various security metrics and factors complicate the assessment of reliability. This study advances the core concepts of software security through the application of security assurance techniques, including vulnerability scanning, code review,  penetration testing , threat assessment, control evaluation, mitigation, risk assessment, and configuration review. In the context of the Software Security Reliability Model (SSRM), a framework was developed to enhance software security assurance across different stages. A comprehensive systematic literature review was conducted to identify security challenges, and the STRIDE and DREAD methodologies were applied to model security threats effectively. Additionally, a mathematical  CVSS  scoring method was utilized for risk assessment. The synthesis of diverse security methods, tools, attack patterns, and systems was analyzed, identifying 15 critical software security terms:  authentication , authorization, encryption, access control,  network security , application security, data security, incident response, compliance, threat intelligence, privacy protection, third-party risk,  cloud security ,  endpoint security , and identity management. The findings highlight these terms as key contributors to improving software security reliability.}
+}
+
+
+@article{DBLP:journals/compsec/SinghT25,
+	author = {Narendra Singh and
+                  Somanath Tripathy},
+	title = {Unveiling the veiled: An early stage detection of fileless malware},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104231},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104231},
+	doi = {10.1016/J.COSE.2024.104231},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/SinghT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The threat actors continuously evolve their tactics and techniques in a novel form to evade traditional security solutions. Fileless  malware  attacks are one such advancement, which operates directly within system memory, leaving no footprint on the disk, so became challenging to detect. Meanwhile, the current state-of-the-art approaches detect fileless attacks at the final (post-infection) stage, although, detecting attacks at an early-stage is crucial to prevent potential damage and data breaches. In this work, we propose an early-stage detection system named  Argus  to detect fileless  malware  at early-stage.  Argus  extracts key features from acquired memory dumps of suspicious processes in real-time and generates explained features. It then correlates the explained features with the MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) framework to identify fileless malware attacks before their operational stage. The experimental results show that  Argus  could successfully identify, 4356 fileless  malware samples  (out of 5026 samples) during the operational stage. Specifically, 2978 samples are detected in the pre-operational phase, while 1378 samples are detected in the operational phase.}
+}
+
+
+@article{DBLP:journals/compsec/ChenQC25,
+	author = {Jiann{-}Liang Chen and
+                  Jian{-}Fu Qiu and
+                  Yu{-}Hung Chen},
+	title = {A hybrid {DGA} DefenseNet for detecting {DGA} domain names based on
+                  FastText and deep learning techniques},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104232},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104232},
+	doi = {10.1016/J.COSE.2024.104232},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenQC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As technology rapidly advances, the Internet has become an essential part of modern life. However, public awareness of cybersecurity has not kept pace with the growing threat landscape. Cyber incidents have become more frequent, caused by factors such as  malware , software vulnerabilities, and social engineering. With the evolution of  malicious attack  methods, there is a growing need for innovative and effective cybersecurity defense strategies. This study proposed a Domain Generation Algorithm (DGA) domains detection framework leveraging a  deep learning  architecture combined with FastText. Using FastText for  word embedding  extraction, this research developed the Hybrid DGA DefenseNet (HDDN), which integrates  Convolutional Neural Networks  (CNN) and Long Short-Term Memory (LSTM) networks. This hybrid model extracts features from datasets and performs both detection and classification. On the Netlab360 and UMUDGA datasets, the model achieved detection accuracy of 97.70 % and 97.42 %, outperforming the  Random Forest  approach by 15.77 % and 16.29 %, and the C5.0 with  GAN  approach by 6.40 % and 7.22 %. Additionally, the model achieved  classification accuracy  of 93.86 % on the Netlab360 dataset and 90.09 % on the UMUDGA dataset, demonstrating the effectiveness of HDDN compared to existing methods.}
+}
+
+
+@article{DBLP:journals/compsec/NguyenHTTL25,
+	author = {Pham Thuy Sy Nguyen and
+                  Tran Nhat Huy and
+                  Tong Anh Tuan and
+                  Pham Duy Trung and
+                  Hoang Viet Long},
+	title = {Hybrid feature extraction and integrated deep learning for cloud-based
+                  malware detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104233},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104233},
+	doi = {10.1016/J.COSE.2024.104233},
+	timestamp = {Thu, 01 May 2025 20:32:43 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/NguyenHTTL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The escalating prevalence of  malware  necessitates a proactive and vigilant approach to its detection and mitigation. The ramifications of a successful  malware  attack on cloud services can be severe, underscoring the critical importance of effective  malware detection  mechanisms in cloud environments. To address this pressing need, we propose a comprehensive methodology for creating a novel cloud-based malware dataset, namely the CMD_2024 dataset. This dataset integrates static and dynamic attributes, providing a robust framework for  malware analysis . The CMD_2024 dataset, comprising 20,850 samples meticulously labeled into various malware categories such as Virus, Trojan, Worm, Ransomware, Adware, Miner, PUA, and Downloader, is designed to facilitate the testing and evaluation of diverse analysis tools,  machine learning  models,  deep learning models , and security systems. We enhance the dataset’s utility and effectiveness by focusing on dynamic features, particularly system calls within the cloud, in conjunction with static attributes. To address the challenges of the imbalance towards less common malware categories in the dataset, we employed the Conditional Tabular  Generative Adversarial Network  to generate  synthetic data , significantly improving the detection capability for these rare  malware samples . The application of various  machine learning  and  deep learning  classifiers, including our proposed integrated  deep learning models , yielded remarkable results, achieving 99.42% accuracy in  binary classification  and 86.97% in multi-class classification. These outcomes demonstrate the CMD_2024 dataset’s substantial efficacy in supporting robust  malware detection  within cloud environments.}
+}
+
+
+@article{DBLP:journals/compsec/RajkumarKA25,
+	author = {M. Rajkumar and
+                  J. Karthika and
+                  S. S. Abinayaa},
+	title = {Multi-view consistent generative adversarial network for enhancing
+                  intrusion detection with prevention systems in mobile ad hoc networks
+                  against security attacks},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104242},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104242},
+	doi = {10.1016/J.COSE.2024.104242},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/RajkumarKA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Improving security in  Mobile Ad hoc Networks  (MANETs) requires an effective  intrusion detection and prevention  scheme that addresses some research issues, such as energy efficacy, delay, detection rate, false positive rate. However, many existing solutions have faced challenges in achieving accurate detection rates while minimizing  execution time  and energy consumption. In this manuscript, a Multi-View Consistent  Generative Adversarial Network  for Enhancing  Intrusion Detection  with Prevention Systems in MANET Against Security Attacks (IDPS-MANET-MVCGAN) is proposed. Initially, the mobile users are registered in Trusted Authority under One Way Hash Chain Function. The intrusion detection is executed using four entities. In the packet analyzer, it is verified regarding if any attack is identified or not. The implementation is done in Type 2  Fuzzy Controller  that takes data through packet header. The  collected data  is fed to improved splice Kalman filtering for  data normalization . Then it is supplied to the feature extraction using Multi-Scale Ternary Pattern  Mutual Information  to extract the optimum set of features for packets classifcation. During classifcation, Multi-View Consistent  Generative Adversarial Network  (MVCGAN) is used for  packets classification  as DoS, Probe, U2R, R2L, Normal. To improve the accuracy of the method, Fire hawk  optimization algorithm  (FHOA) is used. The proposed IDPS-MANET-MVCGAN method attains 13.88 %, 25.75 %, 16.16 % better accuracy when compared with the existing models: Adaptive Marine Predator Optimization Algorithm Deep Supervised Learning  Classification dependent Intrusion Detection  Scheme for  MANET Security  (IDPS-MANET-DSLC), An Intrusion Detection Scheme utilizing Exponential Henry Gas Solubility Optimization based Deep  Neural Fuzzy Network  in MANET (IDPS-MANET-DNFN) and Adaptive  Activation Functions  along Deep Kronecker  Neural Network  optimized with Bear Smell Search Algorithm to prevent  Cyber security  attacks in MANET (IDPS-MANET-ADKNN) respectively.}
+}
+
+
+@article{DBLP:journals/compsec/YooKSK25,
+	author = {Jeong Do Yoo and
+                  Gang Min Kim and
+                  Min Geun Song and
+                  Huy Kang Kim},
+	title = {MeNU: Memorizing normality for {UAV} anomaly detection with a few
+                  sensor values},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104248},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104248},
+	doi = {10.1016/J.COSE.2024.104248},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/YooKSK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With advancements in  unmanned aerial vehicle  (UAV) technology, UAVs have become widely used across various fields, including surveillance, agriculture, and architecture. Ensuring the safety and reliability of UAVs is crucial to prevent potential damage caused by malfunctions or cyberattacks. Consequently, the need for anomaly detection in UAVs is rising as a preemptive measure against undesirable incidents. Therefore, UAV anomaly detection faces challenges such as a lack of labeled data and high system workload. In this paper, we propose MeNU, a lightweight anomaly detection system for UAVs that utilizes various sensor data to detect abnormal events. We generated a concise feature set through preprocessing steps, including timestamp pooling, missing-value imputation, and feature selection. We then employed MemAE, a variant of the autoencoder with a memory module that stores prototypical benign patterns, which is particularly effective for anomaly detection. Experimental results on the ALFA and UA datasets demonstrated MeNU’s superior performance, achieving AUC scores of 0.9856 and 0.9988, respectively, outperforming previous approaches. MeNU can be easily integrated into UAV systems, enabling efficient real-time anomaly detection.}
+}
+
+
+@article{DBLP:journals/compsec/AharonDDH25,
+	author = {Udi Aharon and
+                  Ran Dubin and
+                  Amit Dvir and
+                  Chen Hajaj},
+	title = {A classification-by-retrieval framework for few-shot anomaly detection
+                  to detect {API} injection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104249},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104249},
+	doi = {10.1016/J.COSE.2024.104249},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/AharonDDH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Application Programming Interface  (API) Injection attacks refer to the unauthorized or malicious use of APIs, which are often exploited to gain access to sensitive data or manipulate  online systems  for illicit purposes. Identifying actors that deceitfully utilize an API poses a demanding problem. Although there have been notable advancements and contributions in the field of API security, there remains a significant challenge when dealing with attackers who use novel approaches that do not match the well-known payloads commonly seen in attacks. Also, attackers may exploit standard functionalities unconventionally and with objectives surpassing their intended boundaries. Thus, API security needs to be more sophisticated and dynamic than ever, with advanced computational intelligence methods, such as  machine learning  models that can quickly identify and respond to abnormal behavior. In response to these challenges, we propose a novel unsupervised few-shot  anomaly detection  framework composed of two main parts: First, we train a dedicated generic  language model  for API based on FastText embedding. Next, we use Approximate Nearest Neighbor search in a classification-by-retrieval approach. Our framework allows for training a fast, lightweight  classification model  using only a few examples of normal API requests. We evaluated the performance of our framework using the CSIC 2010 and ATRDF 2023 datasets. The results demonstrate that our framework improves API attack detection accuracy compared to the state-of-the-art (SOTA) unsupervised  anomaly detection  baselines.}
+}
+
+
+@article{DBLP:journals/compsec/TianWQCV25,
+	author = {Hui Tian and
+                  Mengcheng Wang and
+                  Hanyu Quan and
+                  Chin{-}Chen Chang and
+                  Athanasios V. Vasilakos},
+	title = {{TEEMRDA:} Leveraging trusted execution environments for multi-replica
+                  data auditing in cloud storage},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104250},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104250},
+	doi = {10.1016/J.COSE.2024.104250},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/TianWQCV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Driven by the rising popularity of multi-replica backups for enhanced data reliability and availability in cloud storage, multi-replica data auditing, which guarantees that  cloud service providers  (CSPs) securely store all designated replicas, has become a prominent research area in  cloud data security . However, existing multi-replica auditing schemes pose a notable challenge: users incur additional computation and  communication overheads  to generate and upload multiple replicas. This approach also diverges from the conventional multi-replica storage model, where users typically  submit  a single copy and the CSP handles replica creation. To address this issue, this paper presents a novel multi-replica data auditing scheme based on Trusted execution environments (TEEs), named TEEMRDA. TEEMRDA is designed to align with real-world practices where users upload a single copy, significantly reducing user burden. To guarantee reliable multi-replica storage, we propose a random mask-based strategy implemented by TEEs to securely generate a  predetermined number  of data copies. For auditability, we introduce an impartial dual  authentication mechanism  using replica and data block index-independent signatures, employing both online and offline procedures. This approach substantially reduces the TEE’s computation overhead in generating tags for multiple-replica blocks and enhances efficiency for third-party auditors conducting data audits. Finally, we conduct comprehensive security validation and performance comparison of TEEMRDA with state-of-the-art schemes. The results demonstrate that TEEMRDA achieves secure and efficient auditing for multi-replica data, outperforming existing schemes in terms of computation and  communication overheads .}
+}
+
+
+@article{DBLP:journals/compsec/HouWFW25,
+	author = {Yiting Hou and
+                  Xianglin Wei and
+                  Jianhua Fan and
+                  Chao Wang},
+	title = {Interpretable {CAA} classification based on incorporating feature
+                  channel attention into {LSTM}},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104252},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104252},
+	doi = {10.1016/J.COSE.2024.104252},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/HouWFW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The open and broadcast nature of wireless media makes  signal transmission  among wireless media prone to different types of channel access attacks (CAA), mainly in  Medium Access Control  (MAC) layer, ranging from constant jamming to protocol manipulation attacks. CAAs can allow an adversary to greatly degrade overall  transmission bandwidth  or fully hinder legitimate users from access medium. Therefore, it is critical to timely detect and classify CAAs. A few efforts have been made through applying  deep neural networks  (DNN) for CAA detection. But they still suffer from low accuracy and poor  interpretability . In this backdrop, this paper puts forward an interpretable CAA classification  DNN model  based on feature channel attention (FCA), named FCA-LSTM. After introducing 11 types of CAAs through  state transition  model, we detail the design of FCA-LSTM, which incorporates three modules, i.e., FCA module, Long Short-Term Memory (LSTM) module, and Grad-CAM module for promoting  classification accuracy  while reducing the number of parameters. A series of experiments is conducted to compare FCA-LSTM against four benchmarks, including  ResNet50 ,  conventional neural network  (CNN), Transformer, and  LSTM . Results show that FCA-LSTM performs better than four benchmarks in general. Furthermore, the number of parameters and inference time of FCA-LSTM are both much smaller than traditional  LSTM . At last, Grad-CAM is utilized to visualize FCA-LSTM’s concern areas of an input sample. This visualization process sheds light on crucial aspects of model’s decision-making process, further fortifying its  interpretability  and overall reliability.}
+}
+
+
+@article{DBLP:journals/compsec/PadhanT25,
+	author = {Sushree Padhan and
+                  Ashok Kumar Turuk},
+	title = {A technique to detect and mitigate false data injection attacks in
+                  Cyber-Physical Systems},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104253},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104253},
+	doi = {10.1016/J.COSE.2024.104253},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/PadhanT25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The advancement in communication, computation, and control technology has led to the integration of the cyber-world and physical-world. This has also increased the incidence of  malicious attacks  in Cyber–Physical Systems (CPSs), of which false data injection (FDI) attacks are critical. FDI attacks can simultaneously modify the cyber-data and physical data in CPSs. An attacker can guess the system parameters and disrupt the system’s operation by designing  stealthy attack  sequences. There must be more than a detection scheme to defend against FDI attacks. Therefore, a combined detection and mitigation mechanism is required to secure the CPSs against FDI attacks. This paper discusses a technique for detecting and mitigating FDI attacks where the  physical system , sensor measurements, and  actuator  inputs are compromised simultaneously. We use a  watermarking scheme  for attack detection, and we use the control input synthesis and operating region concept for attack mitigation. The defender can detect the attacks and reduce the attacker’s effectiveness. A  numerical example  from a trajectory  tracking control  system is taken to evaluate the efficacy of the proposed security scheme.}
+}
+
+
+@article{DBLP:journals/compsec/ShaSRM25,
+	author = {Zhanyu Sha and
+                  Carlton Shepherd and
+                  Amir Rafi and
+                  Konstantinos Markantonakis},
+	title = {Control-flow attestation: Concepts, solutions, and open challenges},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104254},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104254},
+	doi = {10.1016/J.COSE.2024.104254},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ShaSRM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Control-flow attestation unifies the worlds of control-flow integrity and platform attestation by measuring and reporting a target’s run-time behaviour to a verifier. Trust assurances in the target are provided by testing whether its execution follows an authorised control-flow path. The problem has been explored in various settings, such as assessing the trustworthiness of cloud platforms, cyber–physical systems, and Internet of Things devices. Despite a significant number of proposals being made in recent years, the area remains fragmented, with different adversarial behaviours, verification paradigms, and deployment challenges being addressed. In this paper, we present the first survey of control-flow attestation, examining the core ideas and solutions in state-of-the-art schemes. In total, we survey over 30 papers published between 2016–2024, consolidate and compare their key features, and pose several challenges and recommendations for future research in the area.}
+}
+
+
+@article{DBLP:journals/compsec/BenShimolLKBMES25,
+	author = {Lavi Ben{-}Shimol and
+                  Danielle Lavi and
+                  Eitan Klevansky and
+                  Oleg Brodt and
+                  Dudu Mimran and
+                  Yuval Elovici and
+                  Asaf Shabtai},
+	title = {Detection of compromised functions in a serverless cloud environment},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104261},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104261},
+	doi = {10.1016/J.COSE.2024.104261},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/BenShimolLKBMES25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Serverless computing  is an emerging cloud paradigm with serverless functions at its core. While serverless environments enable software developers to focus on developing applications without the need to actively manage the underlying runtime infrastructure, they open the door to a wide variety of security threats that can be challenging to mitigate with existing methods. Existing security solutions do not apply to all serverless architectures, since they require significant modifications to the serverless infrastructure or rely on third-party services for the collection of more detailed data. In this paper, we present an extendable serverless security threat detection model that leverages cloud providers’  native monitoring tools  to detect anomalous behavior in serverless applications. Our model aims to detect compromised serverless functions by identifying post-exploitation abnormal behavior related to different types of attacks on serverless functions, and therefore, it is a last line of defense. Our approach is not tied to any specific serverless application, is agnostic to the type of threats, and is adaptable through model adjustments. To evaluate our model’s performance, we developed a serverless cybersecurity  testbed  in an AWS cloud environment, which includes two different serverless applications and simulates a variety of attack scenarios that cover the main security threats faced by serverless functions. Our evaluation demonstrates our model’s ability to detect all implemented attacks while maintaining a negligible  false alarm rate .}
+}
+
+
+@article{DBLP:journals/compsec/ZhangSLY25,
+	author = {Sanfeng Zhang and
+                  Heng Su and
+                  Hongxian Liu and
+                  Wang Yang},
+	title = {MPDroid: {A} multimodal pre-training Android malware detection method
+                  with static and dynamic features},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104262},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104262},
+	doi = {10.1016/J.COSE.2024.104262},
+	timestamp = {Tue, 01 Apr 2025 19:00:05 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ZhangSLY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The widespread deployment and open nature of the  Android  system have led to a rapid increase in  Android malware , presenting significant challenges to mobile device security. Both static and dynamic analysis methods exhibit inherent limitations while hybrid detection approaches that combine static and dynamic features struggle with efficiency. To address these issues, this paper proposes MPDroid, a multimodal pre-training enabled detection approach. MPDroid effectively learns the critical characteristics of  malicious behavior  during the pre-training phase and achieves efficient single-modality detection in the downstream tasks. MPDroid utilizes an API call graph to represent dynamic features and a function call graph for static features. During pre-training, MPDroid employs  graph convolutional networks  and multimodal fusion techniques to capture the relationships between static and dynamic features. We also address the unimodal bias problem in multimodal tasks through modality alignment and model-level fusion. Furthermore, MPDroid significantly reduces the training and inferencing time for downstream tasks by implementing a multimodal pre-training framework with static features-based downstream tasks, thereby enhancing detection efficiency. Experimental results demonstrate that MPDroid achieves an average accuracy of 98.3% and an F1-score of 97.6%, with less than 7.39 s of detection duration, indicating superior overall performance compared to existing detection methods.}
+}
+
+
+@article{DBLP:journals/compsec/XuZZLLY25,
+	author = {Lijuan Xu and
+                  Zicheng Zhao and
+                  Dawei Zhao and
+                  Xin Li and
+                  Xiyu Lu and
+                  Dingyu Yan},
+	title = {{AJSAGE:} {A} intrusion detection scheme based on Jump-Knowledge Connection
+                  To GraphSAGE},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104263},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104263},
+	doi = {10.1016/J.COSE.2024.104263},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/XuZZLLY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the field of  network security , attackers often utilize  Advanced Persistent Threats  (APT) to conduct host-based intrusions for prolonged information gathering, penetration and to cause serious damages. Recent studies have used  provenance data  containing rich contextual information to achieve effective detection of host-based APT. Extracting system entities (e.g., processes, files) and operations between entities in  provenance data  to construct a directed acyclic graph (DAG) is the key to realize attack detection by provenance graph. Previous studies extracted the features of the whole provenance graph, which did not fully capture the relationship between the nodes in the graph, and the extracted features were not accurate enough. Moreover, the original node feature information may be lost in the process of aggregation. Therefore, abnormal nodes are recognized in the detection process, leading to low detection performance and a high false alarm rate. Facing the challenge, we introduce AJSAGE, a framework based on  graph neural networks . A novel  anomaly detection  method by adding  attention mechanism  and Jump-Knowledge Connection to GraphSAGE. It enables the integration of node information across hierarchical levels, improves the detection of complex attack patterns, and enhances the accuracy and generalization of the model in node feature representation. It is able to identify features and nodes that are closely related to the  anomaly detection  task in a more focused manner. We evaluate the performance of AJSAGE on three publicly available datasets, and the results demonstrate that it significantly outperforms multiple state-of-the-art methods for host  intrusion detection .}
+}
+
+
+@article{DBLP:journals/compsec/PonteTDBOR25,
+	author = {Andrea Ponte and
+                  Dmitrijs Trizna and
+                  Luca Demetrio and
+                  Battista Biggio and
+                  Ivan Tesfai Ogbu and
+                  Fabio Roli},
+	title = {{SLIFER:} Investigating performance and robustness of malware detection
+                  pipelines},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104264},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104264},
+	doi = {10.1016/J.COSE.2024.104264},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/PonteTDBOR25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As a result of decades of research, Windows  malware detection  is approached through a plethora of techniques. However, there is an ongoing mismatch between academia – which pursues an  optimal performances  in terms of detection rate and low false alarms – and the requirements of real-world scenarios. In particular, academia focuses on combining static and dynamic analysis within a single or ensemble of models, falling into several pitfalls like (i) firing dynamic analysis without considering the computational burden it requires; (ii) discarding impossible-to-analyze samples; and (iii) analyzing robustness against  adversarial attacks  without considering that  malware detectors  are complemented with more non-machine-learning components. Thus, in this paper we bridge these gaps, by investigating the properties of  malware detectors  built with multiple and different types of analysis. To do so, we develop SLIFER, a  Windows malware detection pipeline  sequentially leveraging both static and dynamic analysis, interrupting computations as soon as one module triggers an alarm, requiring dynamic analysis only when needed. Contrary to the state of the art, we investigate how to deal with samples that impede analyzes, showing how much they impact performances, concluding that it is better to flag them as legitimate to not drastically increase false alarms. Lastly, we perform a robustness evaluation of SLIFER. Counter-intuitively, the injection of new content is either blocked more by signatures than dynamic analysis, due to byte artifacts created by the attack, or it is able to avoid detection from signatures, as they rely on constraints on file size disrupted by attacks. As far as we know, we are the first to investigate the properties of sequential malware detectors, shedding light on their behavior in real production environment.}
+}
+
+
+@article{DBLP:journals/compsec/AhmadianGW25,
+	author = {Rouhollah Ahmadian and
+                  Mehdi Ghatee and
+                  Johan Wahlstr{\"{o}}m},
+	title = {Enhancing user identification through batch averaging of independent
+                  window subsequences using smartphone and wearable data},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104265},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104265},
+	doi = {10.1016/J.COSE.2024.104265},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/AhmadianGW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Throughout daily life, individuals partake in various activities such as walking, sitting, and drinking, often in a random manner. These  physical activities  generally exhibit similar patterns across different people, posing a challenge for identifying users using smartphone and wearable data. To tackle this issue, we have developed a new model called Batch Averaging Probabilities (BAP). Our approach involves segmenting input sequences into separate windows, independently classifying each segment, and then averaging the probabilistic predictions to make the final decision. The BAP method introduces the concept of primary patterns, which are the smallest meaningful sequences. It effectively deals with the random order of primary patterns within mixed patterns. Our work includes theoretical evidence supporting the BAP method, showcasing its ability to minimize prediction variance and enhance model accuracy. Additionally, the model’s  training algorithm  employs a unique approach. Model selection and  regularization  are based on the averaged loss of segments, reducing overfitting and improving performance without the complexity associated with using an ensemble of  neural network models . We evaluated the effectiveness of our proposed method using  accelerometer  and gyroscope data from diverse user activity datasets including UIFW,  WISM , HOP, CLD,  RSSI , DI, DB2 and  HAR , demonstrating significant  performance improvements  over state-of-the-art models. Specifically, our approach outperforms DB2 by 1.08%,  HAR  by 7.67%, and DI by 14.76% in terms of accuracy.}
+}
+
+
+@article{DBLP:journals/compsec/ChaudhuriBB25,
+	author = {Abhik Chaudhuri and
+                  Rajat Kumar Behera and
+                  Pradip Kumar Bala},
+	title = {Factors impacting cybersecurity transformation: An Industry 5.0 perspective},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104267},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104267},
+	doi = {10.1016/J.COSE.2024.104267},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ChaudhuriBB25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The gamut of emerging technologies from  Industry 4.0  provided businesses with potential opportunities to create new models of products and services. However, the  cybersecurity  discontinuity of  Industry  4.0 is a major challenge for businesses due to enhanced  cybersecurity  risks and attacks resulting from lack of cybersecurity governance and knowledgeable cybersecurity teams. To overcome the cybersecurity challenges of  Industry 4.0 , the paradigm of  Industry 5.0  is considered by businesses. Hence, businesses require transforming their cybersecurity capability. Therefore, this study is undertaken to empirically investigate the factors impacting cybersecurity transformation of businesses in  Industry 5.0 . An integrated theoretical framework grounded in multiple cybersecurity determinants is proposed. The primary data were collected from 305 respondents, and the analysis was performed using quantitative methodology. The findings reveal that cybersecurity technology, cybersecurity self-efficacy, and cybersecurity process impact the cybersecurity transformation. Therefore, businesses must have a cybersecurity policy and supporting tools to enable the cybersecurity technology. Moreover, cybersecurity governance along with cybersecurity audit plays a crucial role in enhancing the self-efficacy of the workforce. Additionally, businesses must utilize cybersecurity training and threat awareness initiatives to ensure that the cybersecurity processes are as per expectation for the cybersecurity transformation.}
+}
+
+
+@article{DBLP:journals/compsec/IyiekeJRBDK25,
+	author = {Victormills Iyieke and
+                  Hesamaldin Jadidbonab and
+                  Abdur Rakib and
+                  Jeremy W. Bryans and
+                  Don Dhaliwal and
+                  Odysseas Kosmas},
+	title = {An adaptable security-by-design approach for ensuring a secure Over
+                  the Air {(OTA)} update in modern vehicles},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104268},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104268},
+	doi = {10.1016/J.COSE.2024.104268},
+	timestamp = {Mon, 03 Mar 2025 21:31:10 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/IyiekeJRBDK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rise in Connected and Automated Vehicles (CAVs) and Intelligent Transport Systems (ITSs) introduced by OEMs has increased the demand for modern vehicle sophistication. This sophistication involves a variety of software capabilities and functionalities embedded in over 100 ECUs in a vehicle. This has led to the need for over-the-air (OTA) updates. OTA updates can be delivered wirelessly, eliminating the need to bring vehicles to the garage for updates. This is more convenient for owners, reduces costs for OEMs, and reduces greenhouse gas emissions. There exist different OTA update considerations that are adopted by automotive OEMs, such as the Uptane framework, Open Mobile Alliance Device Management (OMA-DM) standard, and the general ISO 24089 standard, including subvariance of Uptane and OMA-DM. However, the systematic implementation of security-by-design applying ISO 21434 in OTA systems is less employed, and there remains a gap in this practice of security-by-design that the automotive industry can adapt to ensure a systematic approach to secure OTA update technology. OTA update security hinges on identifying vulnerability pathways for potential malicious attacks. Therefore, identifying and mitigating potential vulnerabilities throughout the OTA update process is critical for robust security. This paper proposes an adaptable security-by-design approach to OTA update, built and extended from our work Iyieke et al. (2023). The adaptable security-by-design approach is then applied to a developed prototype OTA update system based on the Uptane framework as implemented by Toradex. Security-by-design is a well-established concept in enterprise systems, but is still developing in the cyber–physical system of automotive cybersecurity. Our proposed approach covers the security engineering lifecycle, the logical security layered concept, and the security architecture. A threat analysis and risk assessment (TARA) is performed based on the international automotive cybersecurity standard ISO/SAE 21434. The highest threats identified from the TARA are formalized, and corresponding mitigation actions are defined according to UNECE WP29. Penetration testing is conducted to verify the approach’s capability to reinforce the security of the OTA update systems against some of the identified risks and threats. Our proposed approach provides a systematic and adaptable security-by-design approach to ensure secure OTA updates in modern vehicles; OEMs and other stakeholders can use it to develop secure OTA systems regardless of the OTA update technology used.}
+}
+
+
+@article{DBLP:journals/compsec/TangG25,
+	author = {Mingsheng Tang and
+                  Binbin Ge},
+	title = {Social-Hunter: {A} social heuristics-based approach to early unveiling
+                  unknown malicious logins using valid accounts},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104269},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104269},
+	doi = {10.1016/J.COSE.2024.104269},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/TangG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Using valid accounts has become a prevalent tactic among  Advanced Persistent Threat  (APT) actors for executing malicious logins. By exploiting stolen credentials, they bypass rule-based and traffic-based detection mechanisms, enabling sustained network infiltration without triggering anomalous network traffic alerts. The scarcity of feature-rich datasets and labeled samples for identifying malicious logins by unknown APT actors presents a significant challenge. To address this, we propose Social-Hunter, an innovative approach for detecting unknown malicious logins without prior knowledge or training on specific APT behaviors. Social-Hunter integrates sociological heuristics and multi-viewpoint modeling to partition groups based on social and role-based perspectives. Iterative partitioning assesses whether new login nodes fit within established group contexts, thereby identifying potential  malicious intent . A threshold parameter evaluates source node capability during cross-group logins, flagging insufficient capability as indicators of  malicious behavior . The core algorithm detects deviations from social norms and predefined thresholds. Evaluation on a 58-day dataset of  authentication  events from a real-world Los Alamos National Laboratory’s (LANL) network demonstrates Social-Hunter’s effectiveness. It achieves a true positive rate (TPR) nearing 90% with a significantly reduced false positive rate (FPR) of 0.2%. Comparative analysis against state-of-art  unsupervised methods  such as graph learning,  Local Outlier Factor  (LOF), Isolation Forest (IF), One-Class  Support Vector Machine  (One-Class SVM), Ensemble Multi-Detector (EMD), and  AutoEncoder  (AE) shows Social-Hunter improving TPR by at least 5% and reducing FPR by more than 77%. In practical event auditing for threats hunting, Social-Hunter maintains a minimal false positives rate of 0.00014% with nearly 90% TPR. Over 28 days, it triggered 956 alerts, with 672  true positives  and just 284 false alarms. The average daily  false alarm rate  is around 10, while valid alerts average 20 per day. These findings underscore Social-Hunter’s potential for early detection of APT activities in large enterprise networks.}
+}
+
+
+@article{DBLP:journals/compsec/KrawiecJBALM25,
+	author = {Piotr Krawiec and
+                  Robert Janowski and
+                  Jordi Mongay Batalla and
+                  Elzbieta Andrukiewicz and
+                  Waldemar Latoszek and
+                  Constandinos X. Mavromoustakis},
+	title = {On providing multi-level security assurance based on Common Criteria
+                  for {O-RAN} mobile network equipment. {A} test case: {O-RAN} Distributed
+                  Unit},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104271},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104271},
+	doi = {10.1016/J.COSE.2024.104271},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/KrawiecJBALM25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Open  Radio Access Network  (O-RAN) technology introduces disaggregation of RAN network functions, offering enhanced flexibility for extending hardware and software. To ensure interoperability between such components, the O-RAN Alliance (the main Standards Development Organisation of O-RAN) defined a set of new interfaces. The network may be built by integrating components from different providers. The introduction of multi-provider components and functions increases security challenges due to the increase of security surfaces (e.g., new interfaces). Therefore, it is relevant for network operators to gain a certain level of assurance that O-RAN components deployed in the network are secure. This paper proposes a framework for the security evaluation of O-RAN interfaces that provides assurance that the O-RAN component has been tested deeply enough to demonstrate its resilience to attacks. Our proposal is based on Common Criteria standards and provides several security assurance levels depending on the intended use of the O-RAN network. Each security assurance level involves a set of tests, from security conformance tests to specialised fuzzy tests. We have specified them in the  Vulnerability assessment  for the product, as required in the Common Criteria. The validation of the framework focuses on the O-DU (O-RAN Distributed Unit) component, which is a logical module responsible for the implementation of L2  layer functionalities ; nevertheless, it can be easily extended to other O-RAN components: O-CU (O-RAN Central Unit) and O-RU (O-RAN Radio Unit) as well as to Non and Near Real Time Radio Intelligent Controller (RIC). The O-DU evaluation results show that it is possible to provide the evaluation at different levels of security assurance, which correspond to different intended uses of the 5G O-RAN mobile network.}
+}
+
+
+@article{DBLP:journals/compsec/LiFLDPJ25,
+	author = {Yunfei Li and
+                  Xiaodong Fu and
+                  Li Liu and
+                  Jiaman Ding and
+                  Wei Peng and
+                  Lianyin Jia},
+	title = {Multi-domains personalized local differential privacy frequency estimation
+                  mechanism for utility optimization},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104273},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104273},
+	doi = {10.1016/J.COSE.2024.104273},
+	timestamp = {Tue, 01 Apr 2025 19:00:05 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/LiFLDPJ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Local  Differential Privacy  (LDP) has garnered considerable attention in recent years because it does not rely on trusted third parties and has low interactivity and high operational efficiency. However, current LDP frequency estimation mechanisms aggregate data using different privacy budgets within the same domain of attribute values, overlooking the aggregation requirements across different domains of attribute values. This limits the potential for enhancing the data utility under fixed privacy budgets and meeting user preferences in multiple domains of attribute values and privacy budgets. To address this issue, we define a Multi-Domains Personalized Local  Differential Privacy  (MDPLDP) model that allows users to freely choose domains of attribute values and privacy budgets according to their privacy preferences. Furthermore, based on the MDPLDP model, two new frequency estimation mechanisms are proposed: MDPLDP-Generalized Randomized Response and MDPLDP-basic Randomized Aggregatable Privacy-Preserving Ordinal Response. These mechanisms support cross-domains data aggregation and optimize data utility by adjusting the domains of attribute values and increasing privacy budgets. Theoretical analysis reveals that these new mechanisms have lower  estimation errors  than the traditional LDP mechanisms. Experiments on real and  synthetic datasets  demonstrate that the proposed mechanisms effectively reduce  estimation errors  and enhance the utility of data-frequency estimation.}
+}
+
+
+@article{DBLP:journals/compsec/Smaga25,
+	author = {Pawel Smaga},
+	title = {Profiling the victim - cyber risk in commercial banks},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104274},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104274},
+	doi = {10.1016/J.COSE.2024.104274},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/Smaga25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The aim of this study is to identify the commonalities in financial characteristics of banks targeted in  cyber attacks  in recent years. This required merging the databases with reported cyber incidents (from 01.01.2020 until 09.10.2024) with financial data on banks’ condition before the attack, as well as  macroeconomic  cross-country data. Use of statistical analysis revealed two main trends in  cyber attacks  on a worldwide sample of 186 attacks on banks. First, criminals (such as the hacker group “Cl0p” targeting mostly US banks) driven by financial gain usually exploit IT vulnerabilities in smaller, less profitable and less resilient commercial and cooperative banks, adopting the “easy prey” strategy. Second,  hacktivist  attacks (usually by the Russian-linked “NoName057(16)”), which are politically motivated, attempt to disrupt operations of larger, more profitable and solvent commercial banks, in order to “send a message”. Profitability ratios seem to be the most important characteristic distinguishing banks targeted in cyber attacks. The number of cyber attacks on banks, especially financially-driven ones, has been increasing over recent years. There is a strong correlation between the actor type, their motive, and the type of cyber incident. Prevalent data gaps and the growing intensity of cyber attacks on banks point to urgent and relevant policy implications.}
+}
+
+
+@article{DBLP:journals/compsec/OkonkwoANA25,
+	author = {Chinedu Okonkwo and
+                  Ibukun Awolusi and
+                  Chukwuma A. Nnaji and
+                  Oluwafemi Akanfe},
+	title = {Privacy and security of wearable internet of things: {A} scoping review
+                  and conceptual framework development for safety and health management
+                  in construction},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104275},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104275},
+	doi = {10.1016/J.COSE.2024.104275},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/OkonkwoANA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Traditional construction safety monitoring, primarily based on manual observation, is increasingly challenging due to site complexity, human error, and the time-consuming nature of inspections. Wearable  Internet of Things  (WIoT) devices offer potential solutions by enabling real-time monitoring of workers’ health, environment, and location, enhancing safety management. However, the adoption of  WIoT  raises privacy and security concerns, including risks of data breaches and unauthorized access to sensitive health information. This study presents a scoping review that explores privacy and security issues related to WIoT-based safety monitoring, analyzing  data types , security challenges, and regulatory frameworks. The study concludes with a privacy-informed conceptual framework for  WIoT  adoption in construction safety, providing a foundational guide for addressing privacy and security in WIoT.}
+}
+
+
+@article{DBLP:journals/compsec/OroniFNA25,
+	author = {Chrispus Zacharia Oroni and
+                  Xianping Fu and
+                  Daniela Daniel Ndunguru and
+                  Arsenyan Ani},
+	title = {Enhancing cyber safety in e-learning environment through cybersecurity
+                  awareness and information security compliance: {PLS-SEM} and FsQCA
+                  analysis},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104276},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104276},
+	doi = {10.1016/J.COSE.2024.104276},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/OroniFNA25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {E-learning has revolutionized education by increasing accessibility and flexibility, but it also presents unique  cybersecurity  challenges. This study explores how E-Learning Engagement, Cybersecurity Awareness, and  Information Security Policy  Compliance Influence Cyber Safety Measures among  virtual learning  students. Data were collected from 398  virtual learning  students and analyzed using Partial  Least Squares Structural Equation Modeling  (PLS-SEM) and Fuzzy-set Qualitative Comparative Analysis (fsQCA). The PLS-SEM results indicate that Cybersecurity Awareness and  Information Security Policy  Compliance significantly enhance Cyber Safety Measures. Additionally, E-Learning Engagement indirectly contributes to cyber safety through its positive influence on both  cybersecurity  awareness and policy compliance. The fsQCA results reveal that different pathways lead to improved cyber safety. For example, a high level of cybersecurity awareness combined with strong policy compliance consistently enhances cyber safety, even with moderate e-learning engagement. Alternatively, for students with lower cybersecurity awareness, active e-learning engagement paired with strict adherence to security policies also significantly improves cyber safety. These insights demonstrate that no single factor guarantees cyber safety; rather, multiple combinations of conditions can achieve positive outcomes. The study provides implications for educational institutions, highlighting the need for integrated strategies that combine enhancing student engagement with promoting cybersecurity awareness and enforcing information security policies to foster safer virtual learning environments.}
+}
+
+
+@article{DBLP:journals/compsec/OgbanufeJH25,
+	author = {Obi Ogbanufe and
+                  Mary C. Jones and
+                  Julie I. Hancock},
+	title = {Job demands, identity, and outcomes: The mediating role of cynicism
+                  among Cybersecurity-focused employees},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104277},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104277},
+	doi = {10.1016/J.COSE.2024.104277},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/OgbanufeJH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rise in complex cyber threats, the demand for cybersecurity-focused employees has surged, highlighting a critical talent shortage. Cybersecurity-focused employees, often overworked, are susceptible to high stress and burnout, impairing an organization's cyberattack responsiveness. While studies have addressed burnout in the information systems profession, unique  cybersecurity job characteristics  demand further exploration. These jobs require constant vigilance and the repercussions of failure are potentially severe and may impact the organization, as well as individual careers. Consequently, we scrutinize the association of professional identity with cybersecurity-focused employee burnout. Specifically, in response to recent requests for deeper burnout investigation within the  cybersecurity  profession, we utilize Maslach's Burnout-informed research coupled with the job-demands-resources literature to examine cybersecurity-focused employee burnout, with an emphasis on cynicism. We explore the role of  job characteristics , such as vigilance and sanction severity, along with the role of professional identity in cynicism, and its relationship to job performance, and intentions to leave the profession. Our cybersecurity-focused employee study reveals significant relationships and mediating effects, providing valuable insights for research and practice.}
+}
+
+
+@article{DBLP:journals/compsec/JiangLC25,
+	author = {Tian Jiang and
+                  Yunqi Liu and
+                  Xiaohui Cui},
+	title = {Textual adversarial attacks in cybersecurity named entity recognition},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104278},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104278},
+	doi = {10.1016/J.COSE.2024.104278},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/JiangLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In the cybersecurity domain,  Cyber Threat Intelligence  (CTI) includes procedures that lead to textual reports and different types of pieces of information and evidence on cyber threats. To better understand the behaviors of attackers and construct attack graphs, identifying attack-relevant entities in diverse CTI texts precisely and efficiently becomes more important, and  Named Entity Recognition  (NER) models can help extract entities automatically. However, such fine-tuned models are usually vulnerable to  adversarial attacks . In this paper, we first construct an attack framework that can explore textual  adversarial attacks  in the cybersecurity NER task by generating adversarial CTI texts. Then, we analyze the most important parts of speech (POSs) from the perspective of grammar, and propose a word-substitution-based attack method. To confront adversarial attacks, we also introduce a method to detect potential  adversarial examples . Experimental results show that cybersecurity NER models are also vulnerable to adversarial attacks. Among all attack methods, our method can generate adversarial texts that keep a balanced performance in several aspects. Furthermore,  adversarial examples  generated by all attack methods perform well in the study of transferability, and they can help improve the robustness of NER models through adversarial training. On the defense side, our detection method is simple but effective against multiple types of textual adversarial attacks.}
+}
+
+
+@article{DBLP:journals/compsec/GuiGZ25,
+	author = {Ruowei Gui and
+                  Xiaolin Gui and
+                  Xingjun Zhang},
+	title = {A trajectory privacy protection method based on the replacement of
+                  points of interest in hotspot regions},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104279},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104279},
+	doi = {10.1016/J.COSE.2024.104279},
+	timestamp = {Tue, 05 Aug 2025 22:44:08 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/GuiGZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Location-Based Services (LBS) already provides technical support for advertising, bus scheduling, and personnel tracking. However, the  trajectory data  published in LBS contains some sensitive  semantic information  related users in some locations. Through mining these data, sensitive personal information can be disclosed, such as user’s living habits, interests, daily activities,  social relations , and health condition. It is a challenge to provide users with high-quality LBS while protecting user privacy. In order to address the disadvantages of current trajectory privacy protection methods, we propose a method of trajectory privacy protection with the replacement of points of interest ( P O I s <math><mrow is="true"><mi is="true">P</mi><mi is="true">O</mi><mi is="true">I</mi><mi is="true">s</mi></mrow></math> ) based on hotspot clustering. Firstly, user stay points are extracted based on the speed threshold using a sliding time window, user stay areas are merged by the distance threshold based on user stay points, and user hotspot regions are extracted from all user stay areas using  D B S C A N <math><mrow is="true"><mi is="true">D</mi><mi is="true">B</mi><mi is="true">S</mi><mi is="true">C</mi><mi is="true">A</mi><mi is="true">N</mi></mrow></math> . Then, according to the semantic and distance features of the  P O I s <math><mrow is="true"><mi is="true">P</mi><mi is="true">O</mi><mi is="true">I</mi><mi is="true">s</mi></mrow></math>  in the hotspot regions, the sensitive regions meeting the user’s privacy needs are constructed, and the  P O I s <math><mrow is="true"><mi is="true">P</mi><mi is="true">O</mi><mi is="true">I</mi><mi is="true">s</mi></mrow></math>  are replaced in the sensitive regions according to the privacy budgets. Finally, some locations in the sensitive regions are reconstructed to minimize the trajectory change. The experimental results show that our method can improve the usability of protected trajectories about 13.8% to 16.5% compared to the  differential privacy  method under the same level of privacy protection.}
+}
+
+
+@article{DBLP:journals/compsec/ZhanXLHPG25,
+	author = {Dazhi Zhan and
+                  Kun Xu and
+                  Xin Liu and
+                  Tong Han and
+                  Zhisong Pan and
+                  Shize Guo},
+	title = {Practical clean-label backdoor attack against static malware detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104280},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104280},
+	doi = {10.1016/J.COSE.2024.104280},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ZhanXLHPG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Deep learning models  have demonstrated strong performance in  detecting malware . However, their reliance on updates from third-party crowdsourced threat sources introduces vulnerabilities that can be exploited for backdoor attacks. Backdoored models exhibit normal behavior on clean samples but can be triggered to output specific target categories when a test sample contains a predefined trigger pattern. This makes backdoor attacks challenging to detect and poses significant security risks in  malware detection . Researchers have proposed various methods for backdoor attacks on  malware detectors . Yet, existing approaches struggle to meet three strict conditions simultaneously: (1) conducting attacks in black-box scenarios, (2) accessing correct labels during attacks, and (3) preserving the original functionality of files. This paper introduces a practical framework for black-box clean-label backdoor attacks. We analyze unused byte regions in the header of  PE files  as potential injection points for triggers. In a black-box setting, we develop universal adversarial triggers using a  heuristic search algorithm , effectively embedding them as backdoor triggers to evade  malware detection . Experimental results demonstrate the effectiveness of the proposed backdoor attack in manipulating state-of-the-art detection models with high success rates.}
+}
+
+
+@article{DBLP:journals/compsec/ZhangZWGY25,
+	author = {Yufeng Zhang and
+                  Hongxin Zhang and
+                  Yijun Wang and
+                  Xiaorong Gao and
+                  Chen Yang},
+	title = {Enhancing information security through brainprint: {A} longitudinal
+                  study on {ERP} identity authentication},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104281},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104281},
+	doi = {10.1016/J.COSE.2024.104281},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ZhangZWGY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Reliable identity  authentication  is indispensable for information security. Brainprint emerges as a promising  biometric authentication  through brain signal, offering a glimpse into a secure future. However, questions surrounding its long-term stability and individual uniqueness necessitate further exploration. To address this, we developed a brainprint  authentication system  anchored in presenting self-face rapidly to evoke event related potential (ERP). A novel electroencephalogram model was proposed to trace ERP source responses. Then the ERP source signals were mapped into a multivariate  Gaussian  model derived from registered  templates  for identity  authentication . We recorded the ERP brainprint of 15 participants and authenticated their identities on the 7th, 80th and 200th day to evaluate the permanence of the brainprint system. Additionally, totally 551 invasion attempts were simulated, with 380 instances involving premeditated attacks to verify individual uniqueness in ERP. Behavioral tests were introduced to verify that intruders are capable of imitating clients’  behaviors . Under the proposed  EEG  model, we achieved an impressive client login success rate of 81%, successfully warding off all impostor attempts. These results provide preliminary evidence supporting the permanence and uniqueness of brainprint in our system, offering new perspectives for the future information security of identity authentication.}
+}
+
+
+@article{DBLP:journals/compsec/CimminoCG25,
+	author = {Andrea Cimmino and
+                  Juan Cano{-}Benito and
+                  Ra{\'{u}}l Garc{\'{\i}}a{-}Castro},
+	title = {Open Digital Rights Enforcement framework {(ODRE):} From descriptive
+                  to enforceable policies},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104282},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104282},
+	doi = {10.1016/J.COSE.2024.104282},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/CimminoCG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {From centralised platforms to decentralised ecosystems, like Data Spaces, sharing data has become a paramount challenge. For this reason, the definition of data usage policies has become crucial in these domains, highlighting the necessity of effective policy enforcement mechanisms. The Open Digital Rights Language (ODRL) is a W3C standard ontology designed to describe data usage policies, however, it lacks built-in enforcement capabilities, limiting its practical application. This paper introduces the Open Digital Rights Enforcement (ODRE) framework, whose goal is to provide ODRL with enforcement capabilities. The ODRE framework proposes a novel approach to express ODRL policies that integrates the descriptive ontology terms of ODRL with other languages that allow behaviour specification, such as dynamic data handling or function evaluation. The framework includes an enforcement algorithm for ODRL policies and two open-source implementations in Python and Java. The ODRE framework is also designed to support future extensions of ODRL to specific domain scenarios. In addition, current limitations of ODRE, ODRL, and current challenges are reported. Finally, to demonstrate the enforcement capabilities of the implementations, their performance, and their extensibility features, several experiments have been carried out with positive results.}
+}
+
+
+@article{DBLP:journals/compsec/XuKJG25,
+	author = {Shi{-}Jie Xu and
+                  Kai{-}Chuan Kong and
+                  Xiao{-}Bo Jin and
+                  Guang{-}Gang Geng},
+	title = {Unveiling traffic paths: Explainable path signature feature-based
+                  encrypted traffic classification},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104283},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104283},
+	doi = {10.1016/J.COSE.2024.104283},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/XuKJG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Encryption technology  ensures secure transmission for internet communications but poses significant challenges for effective encrypted  traffic classification , which categorizes traffic into distinct groups, facilitating the process of monitoring network activities to uncover patterns and extract valuable information applicable in areas such as network management and  anomaly detection . To this end,  machine learning  has emerged as a powerful technology for conducting encrypted traffic classification without compromising user data privacy. Machine learning-based classification demonstrates remarkable capabilities in processing vast amounts of data through sophisticated handcrafted features, with traffic path signature features representing the cutting edge of this field. This method shows stable  performance improvements  for common encrypted traffic types using only packet  length information . However, it also yields a  high dimensionality  of path signature features, complicating the training of lightweight models and hindering further innovation due to a lack of model explainability. In this paper, we first propose leveraging feature selection to conduct feature dimensionality reduction, and then try to focus on the explanation of the model from both global and local perspectives. Performance comparisons indicate that our proposed method significantly reduces the number of path signature features while preserving classification performance, which enhances computational efficiency and meets the demand for lightweight models in various application scenarios. Furthermore, this significant reduction in the feature dimensionality allows for the  interpretability  of the model, which gives the user a clear understanding of the modeling decision-making process.}
+}
+
+
+@article{DBLP:journals/compsec/CampoverdeMolinaL25,
+	author = {Milton Campoverde{-}Molina and
+                  Sergio Luj{\'{a}}n{-}Mora},
+	title = {Cybersecurity in smart agriculture: {A} systematic literature review},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104284},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104284},
+	doi = {10.1016/J.COSE.2024.104284},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/CampoverdeMolinaL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Agriculture is essential because of the current and future challenges related to food that our society must face. Agriculture is a precious resource (asset), and problems with agriculture can lead to famine and migration crises that destabilize a society. Smart agriculture can increase productivity and crop yield with new operating and business models. Smart agriculture relies on information and communication technology (ICT). However, a cyberattack on a country’s agricultural ICT can jeopardize an entire nation. In light of the aforementioned challenges and threats, this research presents a systematic literature review (SLR) to address the lack of a comprehensive review of the literature on cybersecurity in smart agriculture. This SLR analyzes 58 documents extracted from Scopus, Web of Science, and IEEE Xplore. The main findings on cybersecurity in smart agriculture encompass the challenges of cybersecurity in agriculture, the detection of attacks and intrusions, the evaluation of case studies, the assessment of frameworks, and the analysis of applied models. Organizations should also train their employees to recognize and respond to cyber threats. In addition, organizations should invest in cybersecurity processes, equipment, and training. The main contribution of this SLR is the consolidation of results to identify research findings, research gaps, and trends in cybersecurity in smart agriculture. The intended audience for this article includes researchers, farmers, and agribusinesses who may utilize frameworks, models, case studies, or emerging technologies in smart agriculture with the objective of mitigating or preventing cybersecurity threats.}
+}
+
+
+@article{DBLP:journals/compsec/BoshoffH25,
+	author = {Dutliff Boshoff and
+                  Gerhard P. Hancke},
+	title = {A classifications framework for continuous biometric authentication
+                  {(2018-2024)}},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104285},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104285},
+	doi = {10.1016/J.COSE.2024.104285},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/BoshoffH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The increase in personal devices, the amount of private and  sensitive information  these devices store/process, and the importance of this information have introduced vital security requirements for  user authentication  to facilitate data access and collection. Continuous  Biometric Authentication  is a set of techniques developed to monitor a person's  biometrics  continuously and ensures transparent/implicit  authentication . These protocols could mitigate the security and usability limitations of one-time  authentication mechanisms  in  personal computers  and mobile devices. As a result, the popularity of continuous  authentication  technologies in research has drastically increased, leading to a multitude of different  biometric data  sampling techniques. These techniques include physiological versus behavioural systems or unimodal versus multimodal  authenticators . This paper compares the various  data sampling  approaches by examining 80 recent state-of-the-art papers and outlining their respective advantages and disadvantages. Firstly, the paper introduces the proposed Continuous Biometric framework, including a diagram detailing its specifics and the rationale for focusing on  biometric data  sampling. It then explains the  system architecture  and how our framework integrates with it. Following which, the framework compares the surveyed papers across several popular authentication metrics. Lastly, the paper discusses the challenges that need to be addressed for the widespread adoption of this technology in everyday commercial use.}
+}
+
+
+@article{DBLP:journals/compsec/NasayrehKAAIG25,
+	author = {Ahmad Nasayreh and
+                  Haris M. Khalid and
+                  Hamza K. Alkhateeb and
+                  Jalal Al{-}Manaseer and
+                  Abdulla Ismail and
+                  Hasan Gharaibeh},
+	title = {Automated detection of cyber attacks in healthcare systems: {A} novel
+                  scheme with advanced feature extraction and classification},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104288},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104288},
+	doi = {10.1016/J.COSE.2024.104288},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/NasayrehKAAIG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The growing incorporation of interconnected healthcare equipment, software, networks, and operating systems into the Internet of Medical Things (IoMT) poses a risk of  security breaches . This is because the IoMT devices lack adequate safeguards against cyberattacks. To address this issue, this article presents a proposed framework for detecting anomalies and cyberattacks. The proposed integrated model employs the 1) K-nearest neighbors (KNN) algorithm for classification, while 2) utilizing long-short term memory (LSTM) for feature extraction, and 3) applying Principal component analysis (PCA) to modify and reduce the features. PCA subsequently enhances the important temporal characteristics identified by the LSTM network. The parameters of the KNN classifier were confirmed by using fivefold cross-validation after making hyperparameter adjustments. The evaluation of the proposed model involved the use of four datasets: 1) telemetry operating system network internet-of-things (TON-IoT), 2) Edith Cowan University-Internet of Health Things (ECU-IoHT) dataset, 3) intensive care unit (ICU) dataset, and 4) Washington University in St. Louis Enhanced Healthcare Surveillance System (WUSTL-EHMS) dataset. The proposed model achieved 99.9% accuracy, recall, F1 score, and precision on the WUSTL-EHMS dataset. The proposed technique efficiently mitigates cyber threats in healthcare environments.}
+}
+
+
+@article{DBLP:journals/compsec/PavithraD25,
+	author = {P. S. Pavithra and
+                  P. Durgadevi},
+	title = {Optimizing network security: Weighted average ensemble of {BPNN} and
+                  {RELM} in {EPRN-WPS} intrusion detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104289},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104289},
+	doi = {10.1016/J.COSE.2024.104289},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/PavithraD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Intrusion Detection Systems  (IDS) are crucial components of  network security  solutions designed to identify and reduce threats in real-time. The main function of IDS is to determine unauthorized access, anomalies, and misuse. When an anomaly is detected, the IDS alerts the network administrators or takes predefined actions to alleviate the threat. Several  deep learning  (DL) based techniques have been designed for effective IDS. Despite that, they face several complexities such as encrypted traffic, network complexity, less efficiency, and scalability issues. This  research work  designs a novel method named Ensemble Probability Regularized Network-based Waterwheel Plant Search (EPRN-WPS) algorithm for improving  network security  and integrity. The proposed framework integrates six phases namely, data collection, monitoring interval phase, alert  preprocessing phase , alert scrubbing phase,  alert correlation  engine phase, and alert prioritization phase. For evaluation, the proposed framework deploys the input data from the  Network Intrusion Detection  Dataset (UNR-IDD). During, the monitor interval phase the model continuously monitored the network activities to generate more accurate alerts by deriving a diverse set of data over time. In the alert  preprocessing phase , the relevant alerts are prioritized and unnecessary information is eliminated. Furthermore, the alert scrubbing phase is utilized to analyze and filter the alerts to reduce  false positives  and point out security threats. The potential threats by correlating alerts from various sources are identified in the  alert correlation  engine phase. For alert prioritization, the proposed technique EPRN-WPS combines a significance of Biased Probability  Neural Network  (BPNN), Regularized  Extreme Learning Machine  (RELM), and weighted  average ensemble  models and classifies the alerts into low, high, and medium. Moreover, the proposed framework implemented a Waterwheel plant optimization with an initial search strategy for optimizating the parameters thereby enhancing the effectiveness of the EPRN-WPS method. The proposed methodology achieves an accuracy of 98.9 %, a sensitivity of 97.2 %, a specificity of 97.7 %, an F1-score of 96.3 %, and a  False Alarm Rate  (FAR) of 1.4 %. The experimental results show the effectiveness of the proposed EPRN-WPS method in  intrusion detection  and it ensures the integrity of the network.}
+}
+
+
+@article{DBLP:journals/compsec/CalvoEOEC25,
+	author = {Albert Calvo and
+                  Santiago Escuder and
+                  Nil Ortiz and
+                  Josep Escrig and
+                  Maxime Compasti{\'{e}}},
+	title = {{RBD24} : {A} labelled dataset with risk activities using log application
+                  data},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104290},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104290},
+	doi = {10.1016/J.COSE.2024.104290},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/CalvoEOEC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This paper introduces the Risk Activities Dataset 2024 (RBD24), an open-source dataset designed to facilitate the identification and analysis of risk activities within the cybersecurity domain. The RBD24 Dataset is derived from multimodal application logs collected over a two-week period at a Spanish state university, identifying activities aligned with the early stages of the attack scenario. This dataset paves the way for novel User and Entity behaviour Analytics (UEBA) and  risk assessment frameworks  within the cybersecurity domain. In detail, the dataset offers a fully user-centric approach by providing ground-truth data for various risk behaviours, including  cryptocurrency  activities, outdated software usage, P2P file sharing, and phishing incidents. These ground-truth data, identified through  intrusion detection systems  (IDS) and experimental campaigns, are represented as a set of indicators extracted from DNS, HTTP, SSL, and SMTP protocol logs. This dataset is expected to be a valuable resource for developing and benchmarking cybersecurity models, particularly in the realm of risk behaviour assessment.}
+}
+
+
+@article{DBLP:journals/compsec/ChenWWWCH25,
+	author = {Jinfeng Chen and
+                  Hua Wu and
+                  Xiaohui Wang and
+                  Suyue Wang and
+                  Guang Cheng and
+                  Xiaoyan Hu},
+	title = {{IEA-DMS:} An Interpretable feature-driven, Efficient and Accurate
+                  Detection Method for Slow {HTTP} DoS in high-speed networks},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104291},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104291},
+	doi = {10.1016/J.COSE.2024.104291},
+	timestamp = {Thu, 01 May 2025 20:32:43 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/ChenWWWCH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Slow HTTP DoS (SHD) is a novel  DoS attack  that exploits HTTP/HTTPS. SHD often operates at the application layer with encryption and has long packet intervals due to its slow transmission rate, making it more concealed and difficult to detect. Therefore, traditional detection methods for high-speed  DDoS  are ineffective against SHD. Meanwhile, Existing SHD detection approaches need many generic features or complex models, thus becoming less interpretable and more resource-intensive to meet real-time demands in high-speed networks. Moreover, most methods rely on bidirectional traffic, neglecting the prevalent issue of asymmetric routing in high-speed networks. To overcome these shortcomings, this paper proposes IEA-DMS, an Interpretable feature-driven, Efficient and Accurate Detection Method for Slow HTTP DoS in high-speed networks. We first analyze SHD mechanisms and construct a representative feature set based on its traffic characteristics to perform effectively under sampling and asymmetric routing. Then, to fast and accurately record the features, we employ Slow HTTP DoS Sketch and provide a detailed error analysis and suggest appropriate parameters. Experiments using public datasets show that the proposed features are efficient and interpretable. Even with numerous  unidirectional flows  and a 1/64  sampling rate , IEA-DMS detects SHD accurately within 2 min with low memory usage. Besides, IEA-DMS’s processing performance reaches 13.1 Mpps and can continuously process more than 100 days of traffic without clearing memory.}
+}
+
+
+@article{DBLP:journals/compsec/XieLLYCL25,
+	author = {Yuntian Xie and
+                  Ting Lei and
+                  Zimo Li and
+                  Yujing Yang and
+                  Chunyin Chen and
+                  Yuanyuan Long},
+	title = {How do mental models affect cybersecurity awareness? The roles of
+                  questioning styles, need for cognition, and graphical representations},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104292},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104292},
+	doi = {10.1016/J.COSE.2024.104292},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/XieLLYCL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This study, grounded in psychological model theory, investigated the influence of psychological models on cybersecurity awareness. To achieve this, two online experiments were conducted with college students. Experiment 1 examined the impact of various questioning methods on cybersecurity awareness within different problem situations among 479 college students. Experiment 2 explored the interplay of cognitive needs and graphic representations in shaping cybersecurity awareness among 468 college students. Our findings revealed that both problem situations and questioning methods significantly affect cybersecurity awareness. Notably, in criminal scenarios, a four-step questioning approach demonstrated the most pronounced positive impact on cybersecurity awareness. Additionally, an interaction effect was observed between cognitive needs and graphic representations on cybersecurity awareness. Specifically, graphic representations were more effective in promoting cybersecurity awareness among individuals with high cognitive needs. These results underscore the importance of questioning methods and cognitive needs in mediating the impact of psychological models on cybersecurity awareness, while also highlighting the conditional influence of graphic representations.}
+}
+
+
+@article{DBLP:journals/compsec/CenJD25,
+	author = {Mingcan Cen and
+                  Frank Jiang and
+                  Robin Doss},
+	title = {RansoGuard: {A} RNN-based framework leveraging pre-attack sensitive
+                  APIs for early ransomware detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104293},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104293},
+	doi = {10.1016/J.COSE.2024.104293},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/CenJD25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Ransomware  has emerged as a significant security threat in cyberspace, inflicting severe economic losses and  privacy breaches  on  individual users  and organizations. Ransomware typically encrypts critical user files and demands a ransom for decryption. Traditional signature-based defense methods effectively identify known ransomware but perform poorly when confronting unknown zero-day attacks. Addressing this challenge, a ransomware detection framework called ‘RansoGuard’ is proposed. This framework aims to achieve timely identification and defense against ransomware by capturing and analyzing the sensitive  Application Programming Interface  (API) call behavior exhibited before the encryption attack is launched. A real-world ransomware  sample dataset  was constructed. The dynamic behavioral data during the pre-attack stage was analyzed, and  natural language processing  techniques were used to represent and extract key features from API call sequences. A  Recurrent Neural Network  (RNN) classifier was trained on these features to distinguish ransomware from benign software. Experimental results demonstrate that the RansoGuard framework exhibits outstanding early ransomware detection performance across different datasets, achieving a recall of 96.18% and an accuracy of 94.26%. Furthermore, it exhibits robustness in effectively countering zero-day attacks.}
+}
+
+
+@article{DBLP:journals/compsec/LiuWPQGWZ25,
+	author = {Zhen Liu and
+                  Ruoyu Wang and
+                  Bitao Peng and
+                  Lingyu Qiu and
+                  Qingqing Gan and
+                  Changji Wang and
+                  Wenbin Zhang},
+	title = {LDCDroid: Learning data drift characteristics for handling the model
+                  aging problem in Android malware detection},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104294},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104294},
+	doi = {10.1016/J.COSE.2024.104294},
+	timestamp = {Wed, 05 Mar 2025 08:16:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuWPQGWZ25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The dynamic and evolving nature of  malware  applications can lead to deteriorating performance in  malware detection  models, a phenomenon known as the model aging problem. This issue compromises the model’s effectiveness in maintaining mobile security. Model retraining have proven effective in enhancing performance on previously unseen applications. However, the substantial need for annotated data remains a significant challenge in acquiring accurate ground truth for model retraining. Therefore, this paper introduces a new method to address the model aging problem in  Android malware  detection(AMD). To alleviate the burden of manual annotation, our approach incorporates pseudo-labeled data into the retraining process. Specifically, we introduce a novel method for evaluating the data drift scores of newly emerged samples by learning their data drift characteristics. These scores guide the usage of pseudo-labeled and true-labeled data for retraining the model. Our method significantly reduces the resources required for annotation while maintaining the efficacy of  malware  detection. In long-term datasets, we demonstrate the efficacy of our models through a series of experiments. Results indicate that our method enhances the F-score by approximately 26% in predicting unseen  malware  over a span of nine years.}
+}
+
+
+@article{DBLP:journals/compsec/HalawiGhosonMBGL25,
+	author = {Nourhan Halawi{-}Ghoson and
+                  Vincent Meyrueis and
+                  Khaled Benfriha and
+                  Thomas Guiltat and
+                  St{\'{e}}phane Loub{\`{e}}re},
+	title = {A review on the static and dynamic risk assessment methods for {OT}
+                  cybersecurity in industry 4.0},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104295},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104295},
+	doi = {10.1016/J.COSE.2024.104295},
+	timestamp = {Mon, 03 Mar 2025 21:31:10 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/HalawiGhosonMBGL25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The inherent vulnerabilities of Operational Technology (OT) systems to cyberattacks have historically been mitigated through the practice of air-gapping, effectively isolating them from broader industrial networks and thereby maintaining a level of security. However, the beginning of the fourth industrial revolution (Industry 4.0) signs a concept shift towards increased  interconnectivity , enhanced visibility, and digital continuity. The transition towards  Industry 4.0  has been characterized by a marked increase in  security breaches  within industrial settings, leading to a variety of hazardous outcomes. These incidents underscore the importance of  cybersecurity  within OT environments, necessitating the development and implementation of strict  cybersecurity  measures to safeguard against potential threats. In response to this emerging threat landscape, there has been a notable shift from static risk assessment methodologies towards more dynamic approaches, particularly with the incorporation of  Artificial Intelligence  (AI) technologies. This paper presents a comprehensive literature review that explores various risk assessment approaches within the context of  Industry  4.0, focusing on industrial systems. It outlines the transition from traditional, static risk assessment methods to innovative, dynamic risk assessment strategies facilitated by the integration of AI.}
+}
+
+
+@article{DBLP:journals/compsec/TayouriCMMES25,
+	author = {David Tayouri and
+                  Omri Sgan Cohen and
+                  Inbar Maimon and
+                  Dudu Mimran and
+                  Yuval Elovici and
+                  Asaf Shabtai},
+	title = {{CORAL:} Container Online Risk Assessment with Logical attack graphs},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104296},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104296},
+	doi = {10.1016/J.COSE.2024.104296},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/TayouriCMMES25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Container-based architectures, with their highly volatile runtime configurations, rapid code changes, and dependence on third-party code, have raised security concerns. The first step in establishing solid security footing in a production application is understanding its risk exposure profile. Attack graphs (AGs), which organize the topology and identified vulnerabilities into possible attack paths as part of a larger graph, help organizations assess and prioritize risks and establish a baseline for countermeasure planning and remediation. Although AGs are valuable, their use in the container environment, where the AG must be repeatedly rebuilt due to frequent data changes, is challenging. In this paper, we present a novel approach for efficiently building container-based AGs that meets the needs of highly dynamic, real-life applications. We propose CORAL, a framework for identifying attack paths between containers, which does not require rebuilding the graph each time the underlying architecture (code or topology) changes. CORAL accomplishes this by intelligently disregarding changes that should not trigger AG build and reusing fragments of existing AGs. We propose a model to evaluate the attack paths’ risks and highlighting the riskiest path in any AG. We evaluate CORAL’s performance in maintaining an up-to-date AG for an environment with many containers. Our proposed framework demonstrated excellent performance for large topologies — searching similar topologies and reusing their AGs was two orders of magnitude faster than AG regeneration. We demonstrate how CORAL can assist in efficiently detecting  lateral movement  attacks in containerized environments using provenance graphs.}
+}
+
+
+@article{DBLP:journals/compsec/DongCSY25,
+	author = {Renhai Dong and
+                  Baojiang Cui and
+                  Yi Sun and
+                  Jun Yang},
+	title = {A combined side-channel and transient execution attack scheme on {RISC-V}
+                  processors},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104297},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104297},
+	doi = {10.1016/J.COSE.2024.104297},
+	timestamp = {Mon, 03 Mar 2025 21:31:10 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/DongCSY25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The escalating progress of RISC-V processors in both academic and industrial realms has drawn significant attention to its open-source  Instruction Set Architecture  (ISA) and  microarchitecture . Nevertheless, the growing threat of  microarchitecture  transient execution attacks in recent years has posed a severe challenge to the design of processors. Some studies have proposed that the RISC-V microarchitecture still has some flaws from the perspective of transient execution and pointed out the attack surface, which results in the RISC-V processor being unable to ensure  integrated circuit  and system security at the microarchitecture level. In this paper, we systematically examine RISC-V microarchitecture security issues and put forward a combined side-channel and transient execution attack scheme. The proposed attack scheme comprehensively analyzes cache security, timing side-channel attacks, and Physical Memory Protection (PMP) across diverse microarchitectures. Not surprisingly, we discover an unknown transient execution flaw by PMP security analysis. Moreover, we introduce 4 transient execution attack primitives exploiting microarchitectural  speculative execution  flaws and PMP transient execution to bypass data protection and privilege isolation which allow attackers to illegally access sensitive data on the microarchitectures and break the PMP rule-based memory isolation scheme. Experimental results demonstrate that the attack scheme on 6 real-world RISC-V processors achieves a high level of accuracy, successfully attacking 6 microarchitectures with approximately 97.52%. The scheme completes 1,000 attacks in less 60 s which leaks about 2,500 bits, showcasing an average efficiency improvement of 34.17% over the state-of-the-art tool. The attack can successfully retrieve the cryptographic keys, rendering this attack applicable in practical scenarios. Finally, we propose several countermeasures to defend against the attack. We reported CVE and  CNNVD  vulnerabilities and both are confirmed by the developers for security’s sake.}
+}
+
+
+@article{DBLP:journals/compsec/ChatzoglouKTKK25,
+	author = {Efstratios Chatzoglou and
+                  Vyron Kampourakis and
+                  Zisis Tsiatsikas and
+                  Georgios Karopoulos and
+                  Georgios Kambourakis},
+	title = {Unmasking the hidden credential leaks in password managers and {VPN}
+                  clients},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104298},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104298},
+	doi = {10.1016/J.COSE.2024.104298},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ChatzoglouKTKK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {With the rapid growth of software services and applications, the need to secure  digital assets  became paramount. The introduction of  Password Manager  (PM) and  Virtual Private Network  (VPN) software was established as a prerequisite toolkit to bolster the end-user arsenal. As a matter of fact, these types of artifacts have been around for at least 25 years in various flavors, including desktop and browser-based applications. This work assesses the ability of 12 desktop PM applications, 5 browsers with integrated PM, and 12 PMs in the form of browser plugins, along with 21 VPN client applications, to effectively protect the confidentiality of secret credentials. Our analysis focuses on the period during which an app is loaded into RAM. Despite the sensitive nature of these applications, our results show that across all scenarios the majority of PM applications store  plaintext passwords  in the system memory; more specifically, 75% (or 9 out of 12) of desktop PM applications, 100% (5 out of 5) of browser PMs and 75% (or 9 out of 12) of PM browser plugins leak such  sensitive information . In addition, 33% (or 7 out of 21) of VPN applications leak user credentials. This practice of storing cleartext sensitive information in system memory is widely recognized as a weakness, having also been registered as CWE-316. At the time of writing, merely four vendors have recognized our exploits as vulnerabilities. Three of these vendors have assigned the relevant Common Vulnerabilities and Exposures (CVE) IDs, namely CVE-2023-23349, CVE-2024-9203, and CVE-2024-50570, whereas the fourth one will issue a CVE ID once it implements the relevant fixes. The remaining vendors have either chosen to disregard or downplay the severity of this issue.}
+}
+
+
+@article{DBLP:journals/compsec/KarpagavalliK25,
+	author = {C. Karpagavalli and
+                  M. Kaliappan},
+	title = {Edge Implicit Weighting with graph transformers for robust intrusion
+                  detection in Internet of Things network},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104299},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104299},
+	doi = {10.1016/J.COSE.2024.104299},
+	timestamp = {Mon, 03 Mar 2025 21:31:10 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/KarpagavalliK25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the  Internet of Things  devices have progressively deployed in various applications including smart cities, intelligent transportation, healthcare, and agriculture. However, this widespread adaptation of the  Internet of Things  networks has been vulnerable to several attacks. Lack of  security protocols , unauthorized access, and improper device updates lead the Internet of Things environment to several attacks, which impact  network security  and confidentiality of users. This paper develops an innovative approach that integrates Edge Implicit Weighting and Aggregated Graph Transformer architecture for accurate and timely  intrusion detection . The proposed technique aggregates information from both one-hop and two-hop neighbors to derive immediate and extended  relational context  thereby improving the detection of complex attacks. This approach designs an Edge Implicit Weighting mechanism that allows the model to prioritize structurally significant relationships and enhance the accuracy of attack detection. The multi-head attention mechanism is introduced to enhance the detection of relevant patterns even in highly variable traffic scenarios. Further, the proposed framework incorporates the Synthetic Minority Over-sampling Technique to generate synthetic samples of minority classes to reduce  class imbalance problems  and attain balanced detection performance across all classes. The performance of the proposed detection technique is analyzed using multiple datasets with standard evaluation parameters. The proposed technique achieves outstanding performance results including an accuracy of 98.87% and a recall of 98.36%. From this experimental validation, it's clear that the proposed framework provides robust performance under diverse network conditions and handles  imbalanced data  effectively.}
+}
+
+
+@article{DBLP:journals/compsec/XieZLG25,
+	author = {Yuancheng Xie and
+                  Zhaoxin Zhang and
+                  Ning Li and
+                  Haoyang Gao},
+	title = {LeakFocus: Catching the perpetrator in routing leak event},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104300},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104300},
+	doi = {10.1016/J.COSE.2024.104300},
+	timestamp = {Thu, 09 Jan 2025 11:32:52 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/XieZLG25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Route leaks pose a significant threat to the Internet, yet traditional machine learning-based detection models often fail to accurately identify the responsible  AS , hindering timely alerting. To address this, we introduce LeakFocus, a novel framework that precisely identifies routing leak perpetrators. By analyzing the impact of route leaks on neighboring ASes, we establish a correlation between the severity of impact and proximity to the perpetrator. Leveraging this insight, we collected and optimized a large ground truth dataset using BGPmon and custom filters, significantly enhancing detection accuracy. An IQR-based (interquartile range) feature filtering approach was then employed to select ten key features that effectively differentiate legitimate from illegitimate valley paths. LeakFocus integrates temporal  convolutional neural networks  (TCNs) and node feature aggregation algorithms for routing  leak detection  and perpetrator localization. Experimental results show that LeakFocus improves detection precision by over 16% and reduces false positive rates by more than 34% compared to state-of-the-art models. Furthermore, LeakFocus provides network operators with a probabilistic list of likely violators, speeding up  response times . This framework offers significant practical value, facilitating faster localization and mitigation of routing leaks, and represents a notable advancement in managing the harmful effects of route leakage.}
+}
+
+
+@article{DBLP:journals/compsec/LiWSW25,
+	author = {Sicong Li and
+                  Jian Wang and
+                  Yafei Song and
+                  Shuo Wang},
+	title = {Retraction notice to "TriCh-LKRepNet: {A} large kernel convolutional
+                  malicious code classification network for structure reparameterisation
+                  and triple-channel mapping" [Computers {\&} Security 144
+                  {(2024)} 103937]},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104207},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104207},
+	doi = {10.1016/J.COSE.2024.104207},
+	timestamp = {Mon, 17 Feb 2025 14:39:00 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiWSW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {This article has been retracted: please see Elsevier Policy on Article Withdrawal ( https://www.elsevier.com/locate/withdrawalpolicy ). This article has been retracted at the request of the Author. The corresponding author requested to modify the title of the article, as the authors thought the new name of the model applied in the research would be better aligned with the research focus and innovations in the article. Title modification is not allowed after the publication of the article. The authors insisted that it is crucial to modify the title and decided to retract the article. The journal has agreed that the authors may submit a new version of the manuscript to the journal for review and publication, if accepted by the Editor-in-Chief.}
+}
+
+
+@article{DBLP:journals/compsec/LiuPW25,
+	author = {Liang Liu and
+                  Silin Peng and
+                  Zhijun Wu},
+	title = {Detection of {CIFA} using SMOTEBoost and {LSTM} in {NDN}},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104251},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104251},
+	doi = {10.1016/J.COSE.2024.104251},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/LiuPW25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The efficient forwarding mechanism of Named Data Networking (NDN) has attracted many scholars' attention. However, the threat of network attacks still exists in NDN, just like other networks. Among them, the Collusive Interest Flooding Attacks (CIFA) has an extremely significant attack effect in NDN. CIFA attackers send malicious interests in the form of periodic pulses with the help of collusive producers, which will affect the quality of NDN network services. Through simulating CIFA in ndnSIM, the network traffic features under CIFA and normal network state are extracted, including PIT occupancy rate, throughput, satisfaction of Interests and received data packets. Furthermore, a detection method using SMOTEBoost and LSTM is proposed by making in-depth analysis of the impact of CIFA based on the CIFA attack features. Finally, experiments show that the proposed detection method achieves 99.2 % detection rate, 0.5 % false alarm rate and 0.6 % missed alarm rate, which is far superior to other methods.}
+}
+
+
+@article{DBLP:journals/compsec/MalachWMFAES25,
+	author = {Alon Malach and
+                  Prasanna N. Wudali and
+                  Satoru Momiyama and
+                  Jun Furukawa and
+                  Toshinori Araki and
+                  Yuval Elovici and
+                  Asaf Shabtai},
+	title = {CyberShapley: Explanation, prioritization, and triage of cybersecurity
+                  alerts using informative graph representation},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104270},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104270},
+	doi = {10.1016/J.COSE.2024.104270},
+	timestamp = {Mon, 03 Mar 2025 21:31:11 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/MalachWMFAES25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {In recent years, the field of cybersecurity has seen significant advancements in the ability to  detect anomalies  and cyberattacks. This progress can be attributed to the use of  deep learning  (DL) models. Despite their superior performance, such models are imperfect, and their complex architecture makes them opaque and uninterpretable. Therefore, security analysts cannot effectively analyze the alerts generated by these models. Recently proposed methods that provide an explanation for the predictions of DL-based  anomaly detectors  tend to focus on the models’ low-level input features which necessitate further analysis to understand the alerts. As a result, when triaging alerts, security analysts spend a great deal of time analyzing the alerts before making a decision whether and how to act. To address this issue and ensure that the explanations produced for  DL  models’ output are beneficial to security analysts, we propose CyberShapley, an  XAI  approach that aims to enhance the  interpretability  of alerts generated by  anomaly detectors  by providing user-friendly explanations for the decisions made by these models. We evaluated our method on an LSTM-based anomaly detection model that raises alerts on the anomalous event sequences in the DARPA Engagement #3 and PublicArena datasets. Our method explains the anomalous event sequences associated with alerts by visualizing them as human-interpretable subgraphs (i.e., connected components) and highlighting (prioritizing) the most important components. Consequently, analysts can easily triage the event sequences by focusing on the components with high importance while disregarding the components with low importance.}
+}
+
+
+@article{DBLP:journals/compsec/BaseriCGC25,
+	author = {Yaser Baseri and
+                  Vikas Chouhan and
+                  Ali A. Ghorbani and
+                  Aaron Chow},
+	title = {Evaluation framework for quantum security risk assessment: {A} comprehensive
+                  strategy for quantum-safe transition},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104272},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104272},
+	doi = {10.1016/J.COSE.2024.104272},
+	timestamp = {Mon, 03 Mar 2025 21:31:09 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/BaseriCGC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {The rise of large-scale quantum computing poses a significant threat to traditional cryptographic security measures. Quantum attacks, particularly targeting the mathematical foundations of current asymmetric cryptographic algorithms, render them ineffective. Even standard symmetric key cryptography is susceptible, albeit to a lesser extent, with potential security enhancements through longer keys or extended hash function outputs. Consequently, the cryptographic solutions currently employed to safeguard data will be inadequately secure and vulnerable to emerging quantum technology threats. In response to this impending quantum menace, organizations must chart a course towards quantum-safe environments, demanding robust business continuity plans and meticulous risk management throughout the migration process. This study provides an in-depth exploration of the challenges associated with migrating from a non-quantum-safe cryptographic state to one resilient against quantum threats. We introduce a comprehensive security risk assessment framework that scrutinizes vulnerabilities across algorithmic, certificate, and protocol layers, covering the entire migration journey, including pre-migration, through-migration, and post-migration stages. Our methodology links identified vulnerabilities to the well-established STRIDE threat model, establishing precise criteria for evaluating their potential impact and likelihood throughout the migration process. Moving beyond theoretical analysis, we address vulnerabilities practically, especially within critical components like cryptographic algorithms, public key infrastructures, and network protocols. Our study not only identifies potential attacks and vulnerabilities at each layer and migration stage but also suggests possible countermeasures and alternatives to enhance system resilience, empowering organizations to construct a secure infrastructure for the quantum era. Through these efforts, we establish the foundation for enduring security in networked systems amid the challenges of the quantum era.}
+}
+
+
+@article{DBLP:journals/compsec/SongWSQDCLC25,
+	author = {Yubo Song and
+                  Kanghui Wang and
+                  Xin Sun and
+                  Zhongyuan Qin and
+                  Hua Dai and
+                  Weiwei Chen and
+                  Bang Lv and
+                  Jiaqi Chen},
+	title = {A multi-source log semantic analysis-based attack investigation approach},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104303},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104303},
+	doi = {10.1016/J.COSE.2024.104303},
+	timestamp = {Tue, 01 Apr 2025 19:00:05 +0200},
+	biburl = {https://dblp.org/rec/journals/compsec/SongWSQDCLC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {As  Advanced Persistent Threats  (APT) become increasingly complex and destructive, security analysts often use log data for performing attack investigation. Existing approaches based on single-source logs fail to capture the causal dependencies between complex attack behaviors. We propose a novel attack investigation approach based on the semantic analysis of multi-source logs. This approach constructs a provenance graph that integrates both application and operating system logs, which can reduce the false positive rate in the attack investigation. Given the substantial size of the graph generated from multi-source logs, we reduce its complexity by merging repeated log events, deleting unreachable nodes, and removing temporary file nodes. To resolve the issue of lacking explicit objectives in current attack investigation approaches, we introduce a new multi-stage investigation approach that enhances the speed of attack investigation. This approach divides an intrusion process into seven distinct attack stages and use a graph pattern  matching algorithm  to match attack subgraphs belonging to specific attack stages with the provenance graph. This results in an intrusion process composed of attack subgraphs representing individual stages. Experimental results demonstrate that our attack investigation approach increases precision by 15.1% and recall by 12.2%. In terms of time efficiency, our approach reduces investigation time by over 60%, with a minimal decrease of less than 2% in the F1 score.}
+}
+
+
+@article{DBLP:journals/compsec/SiponenTSV25,
+	author = {Mikko T. Siponen and
+                  Volkan Topalli and
+                  Wael Soliman and
+                  Tiina Vestman},
+	title = {Reconsidering neutralization techniques in behavioral cybersecurity
+                  as cybersecurity hygiene discounting},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104306},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104306},
+	doi = {10.1016/J.COSE.2024.104306},
+	timestamp = {Mon, 17 Feb 2025 14:39:00 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/SiponenTSV25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Neutralization Theory  (NT), with its popular neutralization techniques, have been established as a major framework to explain or predict cybersecurity policy noncompliance by users. NT states that people anticipating the perpetration of a norm violation activity will excuse their behaviors through self-talk justifications (neutralization) to avoid  guilt  and  shame . NT's appeal for cybersecurity is obvious. One can easily imagine users justifying noncompliance by neutralizing the negative outcomes of their behavior. NT, as originally formulated, assumed that guilt and shame were the exclusive outcomes of anticipated transgressions. However, in the cybersecurity context, the role of guilt and shame as the sole motivators of neutralization excuses is debatable. We argue that users may be motivated by other factors (e.g., fear, boredom, concern for efficiency) in neutralizing that could be causally more relevant in predicting noncompliance behavior in cybersecurity. What holds value for behavioral cybersecurity, we argue, is the general mechanism of NT, the process of neutralizing the impact of an anticipated negative outcome on the decision to move forward (or not) with noncompliance. We call for decoupling the general mechanism of NT (e.g., neutralizing) from the criminologically identified motivations for engaging in NT (e.g., guilt and shame). In doing so, we put forward a behavioral cybersecurity security version of NT – cybersecurity hygiene discounting – and suggest four streams of research.}
+}
+
+
+@article{DBLP:journals/compsec/NgH25,
+	author = {Chiu Yeong Ng and
+                  Mohammad Khatim Bin Hasan},
+	title = {Cybersecurity serious games development: {A} systematic review},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104307},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104307},
+	doi = {10.1016/J.COSE.2024.104307},
+	timestamp = {Mon, 17 Feb 2025 14:39:00 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/NgH25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Cybercrime  tactics evolve alongside technology, prompting researchers to enhance cybersecurity training for diverse internet users. Serious games have been developed as modern training methods over the years. However, despite all efforts,  cybercrime cases  continue to rise. This motivated the paper to conduct a comprehensive review of cybersecurity game development from 2014 to 2024, using  PRISMA  guidelines. The type of games covered include serious games,  gamification  and entertainment games. The scope of the games studied cover basic or general  cybersecurity knowledge  and specific fields such as  ethical hacking  and computer networking. A total of 53 papers were identified and analyzed in this study. The analysis results showed that most cybersecurity games were developed for users who already possessed prior knowledge of the topics delivered, though there were quite a number of games targeting general internet users. The majority of the games seemed to focus on technical aspects more than human aspects by training users on technology-related topics such as hacking,  network architectures , and more. Game design suggestions and potential features were also discussed in this paper. Considering game design aspects could help practitioners and researchers in the future when developing new games, the discussions in this paper could be beneficial in improving cybersecurity training efficacy and mitigating cybercrime risks.}
+}
+
+
+@article{DBLP:journals/compsec/ZengSZTC25,
+	author = {Li Zeng and
+                  Peisong Shen and
+                  Xiaojie Zhu and
+                  Xue Tian and
+                  Chi Chen},
+	title = {A review of privacy-preserving biometric identification and authentication
+                  protocols},
+	journal = {Comput. Secur.},
+	volume = {150},
+	pages = {104309},
+	year = {2025},
+	url = {https://doi.org/10.1016/j.cose.2024.104309},
+	doi = {10.1016/J.COSE.2024.104309},
+	timestamp = {Mon, 03 Mar 2025 21:31:12 +0100},
+	biburl = {https://dblp.org/rec/journals/compsec/ZengSZTC25.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org},
+	abstract = {Biometrics  now play a crucial role in user identification and  authentication . However, storing  biometric features  in plaintext and conducting  authentication  without protection pose a risk of  privacy leakage . To address this issue, privacy-preserving biometric identification and  authentication protocols  have been proposed. These protocols leverage techniques such as  homomorphic encryption  (HE) and secure multi-party computation (MPC) to prevent involving parties from knowing other parties’ biometrics when performing authentications or identifications between different parties. In this paper, we present a thorough survey of privacy-preserving biometric protocols, classifying them into seven distinct models based on their application scenarios. In each scenario, we delve into its security requirements and potential threats, underscoring the importance of comprehending varied application scenarios in the design of practical biometric protection schemes. We also summarize current research gaps and potential future research directions, offering insights for advancing the field.}
+}
